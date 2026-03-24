@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Oposición</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- 🔹 SIDEBAR -->
+  <div class="sidebar">
+
+    <h2>Test</h2>
+
+    <label>Bloque</label>
+    <select id="bloque" onchange="cargarTemas()">
+      <option value="">Selecciona bloque</option>
+      <option value="bloque1">Bloque 1</option>
+    </select>
+
+    <label>Tema</label>
+    <select id="tema"></select>
+
+    <label class="check">
+      <input type="checkbox" id="modoExamenCheck">
+      Modo examen
+    </label>
+
+    <button onclick="iniciar()">Empezar test</button>
+
+    <div id="resultado"></div>
+
+  </div>
+
+
+  <!-- 🔹 MAIN -->
+  <div class="main">
+
+    <div class="test-box">
+
+      <div id="contador"></div>
+
+      <h3 id="pregunta">Selecciona un tema para empezar</h3>
+
+      <div id="opciones"></div>
+
+      <button onclick="siguiente()">Siguiente</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Cuándo es obligatoria la firma?",
+    "opciones": [
+      "Siempre",
+      "Nunca",
+      "En solicitudes y recursos",
+      "Solo en notificaciones"
+    ],
+    "correcta": 2
+  }
+]

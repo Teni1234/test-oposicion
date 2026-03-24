@@ -1,0 +1,105 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* FONDO */
+body {
+  background: linear-gradient(135deg, #1e272e, #2f3640);
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #2f3640;
+  color: white;
+  padding: 20px;
+}
+
+/* SELECTS */
+select, button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* BOTÓN */
+button {
+  background: #3742fa;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: #2f3542;
+}
+
+/* CHECK */
+.check {
+  margin-top: 15px;
+  display: block;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+/* CAJA TEST */
+.test-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* CONTADOR */
+#contador {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+/* PREGUNTA */
+#pregunta {
+  margin-bottom: 20px;
+}
+
+/* OPCIONES */
+#opciones label {
+  display: block;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #f1f2f6;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#opciones label:hover {
+  background: #dfe4ea;
+}
+
+/* RESULTADO */
+#resultado {
+  margin-top: 20px;
+  font-weight: bold;
+}
