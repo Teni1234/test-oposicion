@@ -1,0 +1,717 @@
+[
+  {
+    "pregunta": "¿Qué requisitos de seguridad debe satisfacer una factura electrónica, de acuerdo con la ley 56/2007, de Medidas de Impulso de la Sociedad de la Información?",
+    "opciones": [
+      "Autenticidad de su origen y confidencialidad.",
+      "Integridad de su contenido y confidencialidad.",
+      "Autenticidad de su origen e integridad de su contenido.",
+      "Autenticidad de su origen, integridad de su contenido y confidencialidad."
+    ],
+    "correcta": 2,
+    "explicacion": "Dato Academia: Según la Ley 56/2007, los requisitos esenciales son autenticidad e integridad."
+  },
+  {
+    "pregunta": "La Ley 34/2002 (LSSI) establece en su artículo 21 respecto a las comunicaciones comerciales por correo electrónico que:",
+    "opciones": [
+      "Están permitidas si se identifica al remitente.",
+      "Quedan prohibidas las que no hayan sido solicitadas o expresamente autorizadas.",
+      "Solo pueden enviarse a personas jurídicas.",
+      "Se pueden enviar sin consentimiento si la empresa tiene más de 10 años."
+    ],
+    "correcta": 1,
+    "explicacion": "Prohibición del spam: se requiere consentimiento previo o relación contractual previa para productos similares."
+  },
+  {
+    "pregunta": "De acuerdo con la Ley 6/2020, el periodo de vigencia de los certificados cualificados:",
+    "opciones": [
+      "No será superior a 5 años.",
+      "No será superior a 3 años.",
+      "Es ilimitado.",
+      "No será superior a 6 años."
+    ],
+    "correcta": 0,
+    "explicacion": "Ley 6/2020: La vigencia máxima de los certificados cualificados es de cinco años."
+  },
+  {
+    "pregunta": "Según la Ley 34/2002, los contratos celebrados por vía electrónica en los que intervenga un consumidor se presumirán celebrados en:",
+    "opciones": [
+      "El domicilio social del vendedor.",
+      "El lugar en que el consumidor tenga su residencia habitual.",
+      "El lugar donde esté el servidor de la web.",
+      "En Madrid."
+    ],
+    "correcta": 1,
+    "explicacion": "Protección al consumidor: el lugar del contrato es su residencia habitual."
+  },
+  {
+    "pregunta": "Según el artículo 10 de la LSSI, ¿qué información NO es obligatorio que el prestador ponga en su web?",
+    "opciones": [
+      "Los prestadores de intermediación que colaboren con él.",
+      "Los datos de su inscripción en el Registro Mercantil.",
+      "Su NIF.",
+      "Su dirección de correo electrónico."
+    ],
+    "correcta": 0,
+    "explicacion": "La ley obliga a identificar al titular, pero no a sus intermediarios colaboradores."
+  },
+  {
+    "pregunta": "¿Con qué clave se genera la clave de sesión en un canal SSL autenticado con DNIe?",
+    "opciones": [
+      "Clave pública del DNIe.",
+      "Clave privada del Organismo Público.",
+      "Clave privada del DNIe.",
+      "Clave pública del Organismo Público."
+    ],
+    "correcta": 3,
+    "explicacion": "Se utiliza la clave pública del servidor para cifrar y establecer la sesión segura."
+  },
+  {
+    "pregunta": "Con carácter general, un DNI para un titular de 26 años tiene una validez de:",
+    "opciones": [
+      "2 años.",
+      "5 años.",
+      "10 años.",
+      "Permanente."
+    ],
+    "correcta": 1,
+    "explicacion": "De los 5 a los 30 años, la validez es de 5 años."
+  },
+  {
+    "pregunta": "En relación al DNIe v3.0, el PIN de acceso debe tener:",
+    "opciones": [
+      "Mínimo 4 caracteres.",
+      "Entre 8 y 12 caracteres.",
+      "Exactamente 6 números.",
+      "No tiene límites."
+    ],
+    "correcta": 1,
+    "explicacion": "Dato Academia: El PIN del DNIe debe tener entre 8 y 12 caracteres."
+  },
+  {
+    "pregunta": "Según la Ley 34/2002, ¿cuándo prescriben las infracciones MUY GRAVES?",
+    "opciones": [
+      "Al año.",
+      "A los dos años.",
+      "A los tres años.",
+      "A los cinco años."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 45 LSSI: Muy graves 3 años, graves 2 años, leves 6 meses."
+  },
+  {
+    "pregunta": "¿Qué algoritmos soporta el DNIe v3.0?",
+    "opciones": [
+      "RSA, PGP y Blowfish.",
+      "RC5 y MD5.",
+      "ElGamal y MD5.",
+      "RSA, SHA-256, Triple DES y AES."
+    ],
+    "correcta": 3,
+    "explicacion": "Soporta algoritmos modernos de firma, hash y cifrado simétrico."
+  },
+  {
+    "pregunta": "Según el Reglamento eIDAS, la firma electrónica avanzada debe:",
+    "opciones": [
+      "Vincularse a varios firmantes.",
+      "Permitir detectar cualquier modificación posterior de los datos.",
+      "Ser creada con seguridad baja.",
+      "Ser gratuita siempre."
+    ],
+    "correcta": 1,
+    "explicacion": "Requisito de integridad: cualquier cambio posterior debe ser detectable."
+  },
+  {
+    "pregunta": "¿Cuántos niveles de sello electrónico existen en eIDAS?",
+    "opciones": [
+      "Sello y sello avanzado.",
+      "Sello, sello avanzado y sello cualificado.",
+      "Sello avanzado y cualificado.",
+      "No existen sellos, solo firmas."
+    ],
+    "correcta": 1,
+    "explicacion": "Existen tres niveles, igual que para la firma electrónica."
+  },
+  {
+    "pregunta": "Plazo máximo de validez de los certificados del DNI (RD 255/2025):",
+    "opciones": [
+      "2 años.",
+      "4 años.",
+      "5 años.",
+      "10 años."
+    ],
+    "correcta": 2,
+    "explicacion": "Actualización: Los certificados no pueden superar los 5 años de validez."
+  },
+  {
+    "pregunta": "¿Qué prohíbe el artículo 20 de la LSSI sobre comunicaciones?",
+    "opciones": [
+      "Ocultar la identidad del remitente.",
+      "Enviar ofertas los lunes.",
+      "Usar PDF.",
+      "Usar más de 2 colores."
+    ],
+    "correcta": 0,
+    "explicacion": "Obligación de que el remitente sea identificable."
+  },
+  {
+    "pregunta": "El proyecto CERES de la FNMT es:",
+    "opciones": [
+      "Una red interministerial.",
+      "Una Entidad Pública de Certificación.",
+      "Un nuevo DNI.",
+      "Un sistema de multas."
+    ],
+    "correcta": 1,
+    "explicacion": "CERES es la Autoridad de Certificación pública de la FNMT."
+  },
+  {
+    "pregunta": "Validez PERMANENTE del DNI a partir de los:",
+    "opciones": [
+      "60 años.",
+      "65 años.",
+      "70 años.",
+      "75 años."
+    ],
+    "correcta": 2,
+    "explicacion": "Actualizado: Validez permanente a los 70 años cumplidos."
+  },
+  {
+    "pregunta": "¿Cómo se llama el software para usar DNIe en Android vía NFC?",
+    "opciones": [
+      "DNIeNFConnect.",
+      "DNIeDroid.",
+      "MiddleDNIe.",
+      "DNIeApp."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP Esquema: DNIeDroid es el middleware para Android."
+  },
+  {
+    "pregunta": "Ejes estratégicos de la Agenda España Digital 2026:",
+    "opciones": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correcta": 2,
+    "explicacion": "VIP Esquema: Se articula en 10 ejes estratégicos."
+  },
+  {
+    "pregunta": "Formato de firma que añade datos de revocación (CRL/OCSP):",
+    "opciones": [
+      "XAdES-BES.",
+      "XAdES-T.",
+      "XAdES-XL.",
+      "XAdES-A."
+    ],
+    "correcta": 2,
+    "explicacion": "XL (Extended Long-term) incluye toda la información para validar la firma a largo plazo."
+  },
+  {
+    "pregunta": "Novedad principal del DNI 4.0:",
+    "opciones": [
+      "Bandera de la UE con siglas del país.",
+      "Sin chip.",
+      "Color verde.",
+      "Solo para militares."
+    ],
+    "correcta": 0,
+    "explicacion": "Cumple el formato europeo con la bandera azul de la UE."
+  },
+  {
+    "pregunta": "Ejes del Plan de Digitalización AAPP 2021-2025:",
+    "opciones": [
+      "3",
+      "5",
+      "10",
+      "17"
+    ],
+    "correcta": 0,
+    "explicacion": "VIP: 3 ejes (Estado, CCAA/EELL y Proyectos de alto impacto)."
+  },
+  {
+    "pregunta": "¿A partir de qué edad es obligatorio tener DNI?",
+    "opciones": [
+      "12 años.",
+      "14 años.",
+      "16 años.",
+      "18 años."
+    ],
+    "correcta": 1,
+    "explicacion": "Obligatorio a los 14 años."
+  },
+  {
+    "pregunta": "Autoridad de Certificación raíz del DNIe:",
+    "opciones": [
+      "FNMT.",
+      "DGP.",
+      "Ministerio de Hacienda.",
+      "Telefónica."
+    ],
+    "correcta": 1,
+    "explicacion": "La Dirección General de la Policía es la AC del DNI."
+  },
+  {
+    "pregunta": "Valor legal de la firma electrónica cualificada:",
+    "opciones": [
+      "Inferior a la manual.",
+      "Equivalente a la manual.",
+      "Solo informativa.",
+      "Sustituye al pasaporte."
+    ],
+    "correcta": 1,
+    "explicacion": "Equivalencia legal plena con la firma manuscrita."
+  },
+  {
+    "pregunta": "Velocidad objetivo Agenda 2026 para el 100% población:",
+    "opciones": [
+      "30 Mbps.",
+      "50 Mbps.",
+      "100 Mbps.",
+      "1 Gbps."
+    ],
+    "correcta": 2,
+    "explicacion": "Dato VIP: 100 Mbps de velocidad de conexión."
+  },
+  {
+    "pregunta": "¿Qué es la firma centralizada o en la nube?",
+    "opciones": [
+      "Firma en Google Drive.",
+      "Firma donde el certificado se custodia en un servidor seguro (HSM) del prestador.",
+      "Firma sin contraseña.",
+      "Solo para el sector privado."
+    ],
+    "correcta": 1,
+    "explicacion": "El certificado no reside en el dispositivo del usuario, sino en el prestador (ej. Cl@ve Firma)."
+  },
+  {
+    "pregunta": "En el DNIe v3.0 y 4.0, la tecnología sin contacto que utiliza es:",
+    "opciones": [
+      "Bluetooth.",
+      "NFC.",
+      "Infrarrojos.",
+      "WiFi."
+    ],
+    "correcta": 1,
+    "explicacion": "Utiliza tecnología Near Field Communication (NFC)."
+  },
+  {
+    "pregunta": "El formato de firma PAdES es específico para:",
+    "opciones": [
+      "Archivos XML.",
+      "Documentos PDF.",
+      "Correos electrónicos.",
+      "Mensajes de texto."
+    ],
+    "correcta": 1,
+    "explicacion": "PAdES = PDF Advanced Electronic Signatures."
+  },
+  {
+    "pregunta": "Según la LSSI, un prestador debe retener los datos de tráfico por:",
+    "opciones": [
+      "6 meses.",
+      "12 meses.",
+      "24 meses.",
+      "36 meses."
+    ],
+    "correcta": 1,
+    "explicacion": "Obligación de retención de 12 meses para investigación judicial."
+  },
+  {
+    "pregunta": "Un certificado REVOCADO es aquel que:",
+    "opciones": [
+      "Ha caducado.",
+      "Ha quedado sin efecto antes de su caducidad.",
+      "Se ha renovado.",
+      "Es de otro país."
+    ],
+    "correcta": 1,
+    "explicacion": "Anulación de validez anticipada por robo, pérdida o compromiso."
+  },
+  {
+    "pregunta": "¿Qué organismo realiza la VALIDACIÓN de certificados DNIe para la Administración?",
+    "opciones": [
+      "DGP.",
+      "FNMT.",
+      "Ministerio de Justicia.",
+      "CNMV."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP Esquema: La validación para AAPP la gestiona la FNMT."
+  },
+  {
+    "pregunta": "La firma electrónica avanzada vinculada a un dispositivo cualificado se llama:",
+    "opciones": [
+      "Firma reconocida.",
+      "Firma cualificada.",
+      "Firma simple.",
+      "Firma de sistema."
+    ],
+    "correcta": 1,
+    "explicacion": "Bajo eIDAS, se denomina Firma Electrónica Cualificada."
+  },
+  {
+    "pregunta": "Sanción por infracción LEVE en la LSSI:",
+    "opciones": [
+      "Hasta 600€.",
+      "Hasta 3.000€.",
+      "Hasta 30.000€.",
+      "Hasta 150.000€."
+    ],
+    "correcta": 2,
+    "explicacion": "Escala LSSI: Leves hasta 30k, Graves hasta 150k, Muy Graves hasta 600k."
+  },
+  {
+    "pregunta": "El certificado de Autenticación del DNIe sirve para:",
+    "opciones": [
+      "Firmar facturas.",
+      "Garantizar la identidad del ciudadano en medios electrónicos.",
+      "Encriptar el disco duro.",
+      "Pagar en comercios."
+    ],
+    "correcta": 1,
+    "explicacion": "Permite asegurar que el titular es quien dice ser ante un sistema."
+  },
+  {
+    "pregunta": "¿Qué es un 'prestador cualificado' de servicios de confianza?",
+    "opciones": [
+      "Cualquier empresa informática.",
+      "El que cumple requisitos del Reglamento eIDAS y está en la lista de confianza.",
+      "Solo el Gobierno.",
+      "Cualquier proveedor con NIF."
+    ],
+    "correcta": 1,
+    "explicacion": "Debe estar supervisado y figurar en la TSL (Trust Service List)."
+  },
+  {
+    "pregunta": "La Agenda Digital 2026 tiene como eje 9:",
+    "opciones": [
+      "IA.",
+      "Ciberseguridad.",
+      "Competencias digitales.",
+      "Digitalización de la PYME."
+    ],
+    "correcta": 2,
+    "explicacion": "Eje 9: Competencias digitales (capacitación de la población)."
+  },
+  {
+    "pregunta": "¿Qué es la 'Lista de Confianza' de prestadores?",
+    "opciones": [
+      "Un listado de empresas que no pagan impuestos.",
+      "Un registro público de prestadores supervisados por el Estado.",
+      "Una agenda de contactos de la Policía.",
+      "Un listado de bancos."
+    ],
+    "correcta": 1,
+    "explicacion": "Documento legal donde constan los prestadores que cumplen el estándar cualificado."
+  },
+  {
+    "pregunta": "El DNIeDroid es necesario para:",
+    "opciones": [
+      "Usar el DNIe en el ordenador.",
+      "Desarrollar apps que usen DNIe en Android sin conocer el bajo nivel.",
+      "Renovar el DNI.",
+      "Llamar por teléfono."
+    ],
+    "correcta": 1,
+    "explicacion": "Facilita a los desarrolladores el uso del DNIe en entornos móviles."
+  },
+  {
+    "pregunta": "En un contrato electrónico, el oferente debe confirmar la recepción:",
+    "opciones": [
+      "En 24 horas.",
+      "En 48 horas.",
+      "En 72 horas.",
+      "Inmediatamente."
+    ],
+    "correcta": 0,
+    "explicacion": "Obligación de confirmar la recepción en el plazo de 24 horas."
+  },
+  {
+    "pregunta": "¿Qué servicio NO está sujeto a la LSSI?",
+    "opciones": [
+      "Hosting.",
+      "Notaría presencial.",
+      "Correo electrónico.",
+      "Venta online."
+    ],
+    "correcta": 1,
+    "explicacion": "La LSSI solo regula servicios prestados a distancia por vía electrónica."
+  },
+  {
+    "pregunta": "La Ley 6/2020 derogó la ley:",
+    "opciones": [
+      "34/2002.",
+      "59/2003.",
+      "39/2015.",
+      "11/2007."
+    ],
+    "correcta": 1,
+    "explicacion": "La Ley 6/2020 sustituyó a la antigua Ley de Firma Electrónica 59/2003."
+  },
+  {
+    "pregunta": "La clave privada de un certificado reside en:",
+    "opciones": [
+      "El chip del DNIe y no puede ser exportada.",
+      "En el servidor de la policía.",
+      "En el navegador siempre.",
+      "En un papel impreso."
+    ],
+    "correcta": 0,
+    "explicacion": "La clave privada se genera y reside dentro del chip seguro para evitar su copia."
+  },
+  {
+    "pregunta": "El formato de firma CAdES es para:",
+    "opciones": [
+      "XML.",
+      "PDF.",
+      "Datos binarios de cualquier tipo.",
+      "Solo imágenes."
+    ],
+    "correcta": 2,
+    "explicacion": "CAdES = CMS Advanced Electronic Signatures, para cualquier tipo de dato binario."
+  },
+  {
+    "pregunta": "La Agenda 2026 busca que el 25% de las empresas usen:",
+    "opciones": [
+      "Robots.",
+      "IA y Big Data.",
+      "Teletrabajo.",
+      "Facebook."
+    ],
+    "correcta": 1,
+    "explicacion": "Objetivo de digitalización empresarial."
+  },
+  {
+    "pregunta": "¿Qué es la 'huella' (hash) de un documento?",
+    "opciones": [
+      "La firma del autor.",
+      "Un resumen numérico único que garantiza que el contenido no ha cambiado.",
+      "Una imagen del documento.",
+      "El nombre del archivo."
+    ],
+    "correcta": 1,
+    "explicacion": "Base de la integridad: si el documento cambia un solo bit, el hash será distinto."
+  },
+  {
+    "pregunta": "Prescripción de infracciones LEVES de la LSSI:",
+    "opciones": [
+      "3 meses.",
+      "6 meses.",
+      "1 año.",
+      "2 años."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 45 LSSI: Leves a los 6 meses."
+  },
+  {
+    "pregunta": "El DNIe 4.0 incorpora el título de DNI en:",
+    "opciones": [
+      "Solo castellano.",
+      "Castellano e Inglés obligatoriamente.",
+      "Al menos otra lengua oficial de la Unión.",
+      "Latín."
+    ],
+    "correcta": 2,
+    "explicacion": "Cumplimiento del Reglamento UE para libre circulación."
+  },
+  {
+    "pregunta": "¿Qué componente del DNIe permite el 'no repudio'?",
+    "opciones": [
+      "La foto.",
+      "El certificado de Autenticación.",
+      "El certificado de Firma (ContentCommitment).",
+      "El número de soporte."
+    ],
+    "correcta": 2,
+    "explicacion": "El no repudio asegura que el firmante no puede negar haber firmado el mensaje."
+  },
+  {
+    "pregunta": "La tasa del DNI es gratuita para:",
+    "opciones": [
+      "Parados.",
+      "Familias numerosas.",
+      "Menores de edad.",
+      "Jubilados."
+    ],
+    "correcta": 1,
+    "explicacion": "Exención de tasa por pertenencia a familia numerosa."
+  },
+  {
+    "pregunta": "El periodo de validez del DNI para mayores de 70 años es:",
+    "opciones": [
+      "10 años.",
+      "20 años.",
+      "Permanente.",
+      "5 años."
+    ],
+    "correcta": 2,
+    "explicacion": "A partir de los 70 la validez es permanente."
+  },
+  {
+    "pregunta": "¿Quién supervisa a los prestadores de servicios de confianza en España?",
+    "opciones": [
+      "La Policía.",
+      "El Ministerio de Asuntos Económicos y Transformación Digital.",
+      "El Banco de España.",
+      "La Agencia de Protección de Datos."
+    ],
+    "correcta": 1,
+    "explicacion": "Órgano de control de los servicios electrónicos de confianza."
+  },
+  {
+    "pregunta": "El eje 10 de la Agenda 2026 se refiere a:",
+    "opciones": [
+      "Ciberseguridad.",
+      "Derechos Digitales.",
+      "Transformación Rural.",
+      "5G."
+    ],
+    "correcta": 1,
+    "explicacion": "Eje 10: Derechos digitales (Carta de Derechos Digitales)."
+  },
+  {
+    "pregunta": "El sello de tiempo (Time-stamping) sirve para:",
+    "opciones": [
+      "Poner la fecha en el ordenador.",
+      "Demostrar que unos datos existían en un momento dado y no han cambiado.",
+      "Acelerar el internet.",
+      "Firmar más rápido."
+    ],
+    "correcta": 1,
+    "explicacion": "Garantiza la existencia de la firma en un momento cronológico fiable."
+  },
+  {
+    "pregunta": "La LSSI se aplica a prestadores establecidos en España que:",
+    "opciones": [
+      "Solo vendan a españoles.",
+      "Dirijan sus servicios al territorio español.",
+      "Tengan servidores físicos aquí.",
+      "No se aplica a empresas extranjeras."
+    ],
+    "correcta": 1,
+    "explicacion": "Principio de país de origen y destino de servicios."
+  },
+  {
+    "pregunta": "Un certificado cualificado debe contener obligatoriamente:",
+    "opciones": [
+      "La dirección del domicilio.",
+      "Indicación de que se expide como cualificado.",
+      "El número de teléfono.",
+      "La cuenta bancaria."
+    ],
+    "correcta": 1,
+    "explicacion": "Requisito formal del Anexo I del Reglamento eIDAS."
+  },
+  {
+    "pregunta": "La velocidad de la conexión 5G en la Agenda 2026 debe llegar al:",
+    "opciones": [
+      "50% población.",
+      "100% espectro preparado.",
+      "75% empresas.",
+      "Solo ciudades grandes."
+    ],
+    "correcta": 1,
+    "explicacion": "Objetivo de infraestructuras: 100% espectro preparado para 5G."
+  },
+  {
+    "pregunta": "¿Qué es la pseudonimización en un certificado?",
+    "opciones": [
+      "Usar un nombre falso.",
+      "Usar un pseudónimo en lugar del nombre real, previa identificación ante el prestador.",
+      "No poner nombre.",
+      "Solo para agentes secretos."
+    ],
+    "correcta": 1,
+    "explicacion": "Permitido por la ley siempre que el prestador conozca la identidad real tras el pseudónimo."
+  },
+  {
+    "pregunta": "El middleware del DNIe es necesario para:",
+    "opciones": [
+      "Que el sistema operativo reconozca el chip y se comunique con él.",
+      "Instalar Windows.",
+      "Limpiar el chip.",
+      "Pagar la tasa."
+    ],
+    "correcta": 0,
+    "explicacion": "Puente entre el hardware (tarjeta/lector) y las aplicaciones de firma."
+  },
+  {
+    "pregunta": "Las infracciones GRAVES de la LSSI prescriben a los:",
+    "opciones": [
+      "6 meses.",
+      "1 año.",
+      "2 años.",
+      "3 años."
+    ],
+    "correcta": 2,
+    "explicacion": "Graves prescriben a los 2 años."
+  },
+  {
+    "pregunta": "El formato de firma XAdES es para documentos:",
+    "opciones": [
+      "Word.",
+      "XML.",
+      "Excel.",
+      "MP3."
+    ],
+    "correcta": 1,
+    "explicacion": "XAdES = XML Advanced Electronic Signatures."
+  },
+  {
+    "pregunta": "¿Cuál es el periodo de validez del DNI para menores de 5 años?",
+    "opciones": [
+      "1 año.",
+      "2 años.",
+      "5 años.",
+      "10 años."
+    ],
+    "correcta": 1,
+    "explicacion": "Regla específica para la infancia."
+  },
+  {
+    "pregunta": "La Carta de Derechos Digitales de España es:",
+    "opciones": [
+      "Una ley sancionadora.",
+      "Un marco de referencia para la protección de derechos en el entorno digital.",
+      "Un reglamento de la UE.",
+      "Una norma penal."
+    ],
+    "correcta": 1,
+    "explicacion": "No es vinculante como ley, sino una guía de principios y derechos."
+  },
+  {
+    "pregunta": "La tasa por renovación del DNI por cambio de datos (domicilio) es:",
+    "opciones": [
+      "12€.",
+      "Gratuita.",
+      "5€.",
+      "Solo si el DNI ha caducado."
+    ],
+    "correcta": 1,
+    "explicacion": "La renovación por cambio de datos o estado civil estando el anterior en vigor es gratuita."
+  },
+  {
+    "pregunta": "¿Qué significa que un certificado sea 'Cualificado'?",
+    "opciones": [
+      "Que es muy difícil de usar.",
+      "Que cumple requisitos técnicos y legales y el prestador está supervisado.",
+      "Que solo sirve para el Grupo A1.",
+      "Que tiene colores."
+    ],
+    "correcta": 1,
+    "explicacion": "Máximo nivel de garantía y seguridad jurídica bajo eIDAS."
+  },
+  {
+    "pregunta": "La Agenda 2026 busca que el 80% de la población tenga:",
+    "opciones": [
+      "Móvil 5G.",
+      "Competencias digitales básicas.",
+      "Certificado de la FNMT.",
+      "Internet en casa."
+    ],
+    "correcta": 1,
+    "explicacion": "Objetivo de capacitación ciudadana."
+  }
+]

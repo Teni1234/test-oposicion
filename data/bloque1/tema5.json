@@ -1,0 +1,1861 @@
+[
+  {
+    "pregunta": "Entre las prestaciones de la acción protectora que menciona el artículo 8.1 del RDL 1/2013 (Ley Discapacidad), se encuentran:",
+    "opciones": [
+      "El subsidio mínimo.",
+      "La asistencia social y prestación farmacológica.",
+      "El subsidio profesional y compensación por gastos de transporte.",
+      "La recuperación profesional."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 8.1 RDL 1/2013: La recuperación profesional es una de las prestaciones de la acción protectora."
+  },
+  {
+    "pregunta": "En cuanto a la Ley Orgánica 3/2007 y el apartado referente a la Sociedad de la Información, se indica que:",
+    "opciones": [
+      "El Gobierno promoverá sólo los contenidos web creados por mujeres.",
+      "Todos los programas públicos de desarrollo de la Sociedad de la Información incorporarán la efectiva consideración del principio de igualdad de oportunidades en su diseño y ejecución.",
+      "En los proyectos TIC sufragados con dinero privado, se garantizará que su lenguaje sea no sexista.",
+      "Dicha Ley Orgánica no hace mención a la Sociedad de la Información."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 28 LO 3/2007: Obligación de integrar la igualdad en los programas públicos TIC."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes no es un criterio general de actuación de los poderes públicos según la LO 3/2007?",
+    "opciones": [
+      "La protección de la maternidad.",
+      "La implantación de un lenguaje no sexista en el ámbito administrativo.",
+      "El fomento de la corresponsabilidad en las labores domésticas.",
+      "La paridad en la designación de altos cargos en la Administración General del Estado."
+    ],
+    "correcta": 3,
+    "explicacion": "La ley habla de 'presencia equilibrada' (40/60), no paridad absoluta obligatoria."
+  },
+  {
+    "pregunta": "Según el artículo 8 de la LO 3/2007, todo trato desfavorable a las mujeres relacionado con el embarazo o la maternidad constituye:",
+    "opciones": [
+      "Discriminación indirecta por razón de sexo.",
+      "Discriminación directa por razón de sexo.",
+      "Discriminación por asociación.",
+      "Discriminación maternal."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 8 LO 3/2007: El trato desfavorable por embarazo/maternidad es discriminación DIRECTA."
+  },
+  {
+    "pregunta": "Según el art. 63 de la Ley 1/2004, en las actuaciones relacionadas con violencia de género se protegerá la intimidad de las víctimas, en especial:",
+    "opciones": [
+      "Sus datos religiosos.",
+      "Los datos asociados a su actividad social.",
+      "Sus datos personales, los de sus descendientes y los de cualquier otra persona bajo su guarda o custodia.",
+      "Todos los referidos a su actividad profesional."
+    ],
+    "correcta": 2,
+    "explicacion": "Protección integral de la esfera personal de la víctima y su entorno cercano."
+  },
+  {
+    "pregunta": "La Ley de Dependencia define ésta como:",
+    "opciones": [
+      "Estado de carácter permanente en que se encuentran las personas por falta de autonomía física/mental/sensorial y precisan ayuda para actividades básicas.",
+      "Estado temporal de enfermedad que requiere cuidados no profesionales.",
+      "Condición de deficiencia física sin necesidad de ayuda externa.",
+      "Situación de incapacidad laboral temporal."
+    ],
+    "correcta": 0,
+    "explicacion": "Definición clave del Art. 2 Ley 39/2006."
+  },
+  {
+    "pregunta": "De acuerdo con la Ley 1/2004, señale quién participará en el Consejo Escolar del Estado:",
+    "opciones": [
+      "El Observatorio Estatal de Violencia sobre la Mujer.",
+      "El Instituto de la Mujer.",
+      "La Secretaría General de Políticas de Igualdad.",
+      "La Delegación Especial del Gobierno contra la Violencia de Género."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 8 LO 1/2004: El Observatorio Estatal participa en el Consejo Escolar."
+  },
+  {
+    "pregunta": "La Comisión contra la Violencia de Género del Consejo Interterritorial del Sistema Nacional de Salud estará compuesta por:",
+    "opciones": [
+      "Todas las provincias.",
+      "Representantes de todas las CCAA con competencia en la materia.",
+      "Representantes de sindicatos.",
+      "Víctimas de Violencia de Género."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 15 LO 1/2004."
+  },
+  {
+    "pregunta": "En la clasificación de los grados de dependencia de la Ley 39/2006, el Grado I es:",
+    "opciones": [
+      "Gran dependencia.",
+      "Dependencia moderada.",
+      "Dependencia severa.",
+      "Dependencia mínima."
+    ],
+    "correcta": 1,
+    "explicacion": "Grados: I Moderada, II Severa, III Gran Dependencia."
+  },
+  {
+    "pregunta": "El grado de dependencia será revisable:",
+    "opciones": [
+      "A instancia del interesado o de oficio por la Administración.",
+      "Solo por mejoría de la situación.",
+      "Cada 2 años obligatoriamente.",
+      "Solo por orden judicial."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 30 Ley 39/2006."
+  },
+  {
+    "pregunta": "El acoso sexual según la LO 3/2007 se define como:",
+    "opciones": [
+      "Comportamiento en función del sexo de una persona.",
+      "Cualquier comportamiento de naturaleza sexual con el propósito o efecto de atentar contra la dignidad.",
+      "Despido injustificado de una mujer.",
+      "Discriminación indirecta."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 7.1 LO 3/2007. Se basa en la naturaleza sexual de la conducta."
+  },
+  {
+    "pregunta": "¿A partir de cuántos trabajadores es obligatorio para las empresas un Plan de Igualdad?",
+    "opciones": [
+      "25",
+      "50",
+      "100",
+      "250"
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 45 LO 3/2007 (Actualizado): Empresas de 50 o más trabajadores."
+  },
+  {
+    "pregunta": "Se entiende por composición equilibrada en órganos públicos (LO 3/2007):",
+    "opciones": [
+      "Paridad absoluta 50/50.",
+      "Presencia de ambos sexos sin que ninguno supere el 60% ni sea menos del 40%.",
+      "Presencia de al menos un 30% de mujeres.",
+      "Mínimo un 20% de cada sexo."
+    ],
+    "correcta": 1,
+    "explicacion": "Regla de oro de la igualdad: 40/60%."
+  },
+  {
+    "pregunta": "En la IV Conferencia Mundial para la mujer (Pekín 1995) se estableció:",
+    "opciones": [
+      "El Decenio de la Mujer.",
+      "La Declaración sobre mujer y desarrollo.",
+      "La Plataforma de Acción.",
+      "El primer Ministerio de Igualdad."
+    ],
+    "correcta": 2,
+    "explicacion": "Pekín 1995 supuso la adopción de la Plataforma de Acción."
+  },
+  {
+    "pregunta": "Según la Ley 4/2023, la autoridad competente para la rectificación registral de la mención del sexo es:",
+    "opciones": [
+      "El encargado de la Oficina del Registro Civil.",
+      "El Ministro de Igualdad.",
+      "El Ministro de Justicia.",
+      "El Consejo de Ministros."
+    ],
+    "correcta": 0,
+    "explicacion": "VIP: Es un procedimiento administrativo ante el Registro Civil."
+  },
+  {
+    "pregunta": "Según el RDL 1/2013 (Ley Discapacidad), es discriminación directa:",
+    "opciones": [
+      "Trato discriminatorio por relación con tercero.",
+      "Persona tratada de manera menos favorable que otra en situación análoga por motivo de su discapacidad.",
+      "Disposición neutra que ocasiona desventaja.",
+      "Acoso físico."
+    ],
+    "correcta": 1,
+    "explicacion": "Definición del Art. 2.c RDL 1/2013."
+  },
+  {
+    "pregunta": "En 2005 se creó por acuerdo del Consejo de Ministros:",
+    "opciones": [
+      "La Ley Integral contra la Violencia de Género.",
+      "El Observatorio de la Mujer en las Fuerzas Armadas.",
+      "El Instituto de la Mujer.",
+      "El Consejo de Participación de la Mujer."
+    ],
+    "correcta": 1,
+    "explicacion": "Hito histórico de las FAS."
+  },
+  {
+    "pregunta": "El principio de indemnidad ante quejas por discriminación (Art. 9 LO 3/2007) se considera:",
+    "opciones": [
+      "Discriminación indirecta.",
+      "Discriminación por razón de sexo.",
+      "Indemnización económica.",
+      "Falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "Proteger a quien reclama frente a represalias."
+  },
+  {
+    "pregunta": "Las Administraciones Públicas evaluarán la efectividad del principio de igualdad (Art. 51 LO 3/2007):",
+    "opciones": [
+      "Mensualmente.",
+      "Semestralmente.",
+      "Periódicamente.",
+      "Solo si hay denuncias."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 51.a LO 3/2007."
+  },
+  {
+    "pregunta": "Medidas de fomento de planes de igualdad dirigidas a PYMES (Art. 49 LO 3/2007) son establecidas por:",
+    "opciones": [
+      "El Gobierno.",
+      "Los sindicatos.",
+      "La patronal.",
+      "Las CCAA exclusivamente."
+    ],
+    "correcta": 0,
+    "explicacion": "Competencia del Gobierno central."
+  },
+  {
+    "pregunta": "La eliminación de discriminación retributiva es un criterio de actuación de las AAPP regulado en:",
+    "opciones": [
+      "El Título I de la CE.",
+      "El Artículo 51 de la LO 3/2007.",
+      "El Estatuto de los Trabajadores.",
+      "La Ley de Presupuestos."
+    ],
+    "correcta": 1,
+    "explicacion": "Criterio de actuación transversal en la administración."
+  },
+  {
+    "pregunta": "¿A partir de qué edad se permite la rectificación registral de sexo por autodeterminación sin condiciones en la Ley 4/2023?",
+    "opciones": [
+      "12 años.",
+      "14 años.",
+      "16 años.",
+      "18 años."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP: A partir de los 16 años no se requiere ni representante ni autorización judicial."
+  },
+  {
+    "pregunta": "El concepto de 'ajustes razonables' en la Ley de Discapacidad se refiere a:",
+    "opciones": [
+      "Subvenciones a fondo perdido.",
+      "Modificaciones necesarias y adecuadas que no impongan una carga desproporcionada.",
+      "Eliminar todas las barreras físicas sin excepción.",
+      "Dar el 100% de la plaza a discapacitados."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 2.m RDL 1/2013: Proporcionalidad y necesidad."
+  },
+  {
+    "pregunta": "Sanción muy grave en materia de discapacidad según RDL 1/2013 puede llegar a:",
+    "opciones": [
+      "30.000 €.",
+      "90.000 €.",
+      "1.000.000 €.",
+      "500.000 €."
+    ],
+    "correcta": 2,
+    "explicacion": "Escala de multas hasta un millón de euros."
+  },
+  {
+    "pregunta": "El Plan Estratégico de Igualdad de Oportunidades es un instrumento básico de:",
+    "opciones": [
+      "El Ministerio de Hacienda.",
+      "El Gobierno para alcanzar el principio de igualdad.",
+      "Las Cortes Generales.",
+      "El Tribunal Supremo."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 17 LO 3/2007."
+  },
+  {
+    "pregunta": "La Delegación del Gobierno contra la Violencia de Género está adscrita al:",
+    "opciones": [
+      "Ministerio de Igualdad.",
+      "Ministerio de Justicia.",
+      "Ministerio de Interior.",
+      "Ministerio de Presidencia."
+    ],
+    "correcta": 0,
+    "explicacion": "Órgano directivo central para esta política."
+  },
+  {
+    "pregunta": "En dependencia, el 'nivel mínimo de protección' es garantizado y financiado por:",
+    "opciones": [
+      "Las CCAA.",
+      "La Administración General del Estado.",
+      "Los Ayuntamientos.",
+      "La Seguridad Social."
+    ],
+    "correcta": 1,
+    "explicacion": "AGE garantiza el nivel mínimo igual para todos."
+  },
+  {
+    "pregunta": "¿Qué porcentaje de plazas en la OEP de la AGE se reserva para discapacidad intelectual?",
+    "opciones": [
+      "Un 1%.",
+      "Un 2%.",
+      "Un 5%.",
+      "Un 7%."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 59 TREBEP: Del 7% total, al menos un 2% para discapacidad intelectual."
+  },
+  {
+    "pregunta": "Las Unidades de Igualdad en los Ministerios fueron creadas por la Ley:",
+    "opciones": [
+      "LO 1/2004.",
+      "LO 3/2007.",
+      "Ley 40/2015.",
+      "Ley 4/2023."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 77 LO 3/2007 obliga a tener una en cada ministerio."
+  },
+  {
+    "pregunta": "La rectificación registral de sexo para menores de 12 a 14 años en la Ley 4/2023 requiere:",
+    "opciones": [
+      "Manifestación ante el Registro.",
+      "Asistencia de representantes legales.",
+      "Autorización judicial previa.",
+      "No se permite."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP: De 12 a 14 es el único tramo que exige autorización judicial."
+  },
+  {
+    "pregunta": "El PIA (Programa Individual de Atención) es el instrumento que determina:",
+    "opciones": [
+      "El grado de discapacidad.",
+      "Las prestaciones y servicios que corresponden al dependiente.",
+      "El sueldo del asistente personal.",
+      "La multa por infracción."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 29 Ley 39/2006."
+  },
+  {
+    "pregunta": "La Estrategia Española sobre Discapacidad 2022-2030 tiene como centro:",
+    "opciones": [
+      "La institucionalización.",
+      "La autonomía personal y vida independiente.",
+      "El tratamiento médico.",
+      "Las ayudas familiares exclusivamente."
+    ],
+    "correcta": 1,
+    "explicacion": "Cambio de paradigma hacia la vida independiente."
+  },
+  {
+    "pregunta": "Infracciones muy graves en materia LGTBI (Ley 4/2023) prescriben a los:",
+    "opciones": [
+      "1 año.",
+      "2 años.",
+      "3 años.",
+      "5 años."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP: Muy graves 3 años, graves 2 años, leves 9 meses."
+  },
+  {
+    "pregunta": "La paridad 40/60 en listas electorales obliga a cumplirla en:",
+    "opciones": [
+      "El total de la lista.",
+      "Cada tramo de 5 puestos.",
+      "Solo los 3 primeros puestos.",
+      "Solo para elecciones generales."
+    ],
+    "correcta": 1,
+    "explicacion": "LO 3/2007 modifica la LOREG para asegurar equilibrio en cada tramo."
+  },
+  {
+    "pregunta": "La situación de violencia de género se acredita para funcionarias mediante:",
+    "opciones": [
+      "Declaración jurada.",
+      "Sentencia, orden de protección o informe del Ministerio Fiscal.",
+      "Informe médico de cabecera.",
+      "Llamada al 016."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: Medios legales específicos de acreditación."
+  },
+  {
+    "pregunta": "La 'Gran Dependencia' de la Ley 39/2006 corresponde al:",
+    "opciones": [
+      "Grado I.",
+      "Grado II.",
+      "Grado III.",
+      "Grado IV."
+    ],
+    "correcta": 2,
+    "explicacion": "Grado III = Gran Dependencia."
+  },
+  {
+    "pregunta": "El permiso de nacimiento (antiguo maternidad/paternidad) es de:",
+    "opciones": [
+      "12 semanas.",
+      "14 semanas.",
+      "16 semanas.",
+      "20 semanas."
+    ],
+    "correcta": 2,
+    "explicacion": "Equiparación a 16 semanas para ambos progenitores."
+  },
+  {
+    "pregunta": "Las 'terapias de conversión' en la Ley 4/2023 son infracciones:",
+    "opciones": [
+      "Leves.",
+      "Graves.",
+      "Muy graves.",
+      "No son infracción administrativa."
+    ],
+    "correcta": 2,
+    "explicacion": "Prohibición absoluta bajo multa muy grave."
+  },
+  {
+    "pregunta": "La prestación económica vinculada al servicio en dependencia se otorga:",
+    "opciones": [
+      "A todos los solicitantes.",
+      "Cuando no sea posible el acceso a un servicio público o concertado.",
+      "En lugar de la residencia siempre.",
+      "Solo para Grado III."
+    ],
+    "correcta": 1,
+    "explicacion": "Tiene carácter subsidiario."
+  },
+  {
+    "pregunta": "El distintivo 'Igualdad en la Empresa' se otorga por un periodo de:",
+    "opciones": [
+      "1 año.",
+      "2 años.",
+      "3 años.",
+      "Indefinido."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP: Requiere renovación cada 3 años."
+  },
+  {
+    "pregunta": "¿Qué ley regula el derecho de las personas con discapacidad a los perros de asistencia?",
+    "opciones": [
+      "Ley 39/2006.",
+      "RDL 1/2013 y normativas autonómicas.",
+      "Reglamento de Tráfico.",
+      "Ley 4/2023."
+    ],
+    "correcta": 1,
+    "explicacion": "Bases en el RDL 1/2013 y desarrollo extensivo autonómico."
+  },
+  {
+    "pregunta": "La situación de 'excedencia por violencia de género' conlleva reserva de puesto:",
+    "opciones": [
+      "3 meses.",
+      "6 meses ampliable a 18.",
+      "12 meses.",
+      "2 años."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 89.5 TREBEP."
+  },
+  {
+    "pregunta": "El principio de 'transversalidad' (mainstreaming) significa:",
+    "opciones": [
+      "Hacer leyes solo para mujeres.",
+      "Integrar la perspectiva de género en todas las políticas y actuaciones públicas.",
+      "Tener un Ministerio de Igualdad.",
+      "Sancionar la discriminación."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 15 LO 3/2007."
+  },
+  {
+    "pregunta": "El IMSERSO depende actualmente del Ministerio de:",
+    "opciones": [
+      "Sanidad.",
+      "Derechos Sociales, Consumo y Agenda 2030.",
+      "Trabajo.",
+      "Hacienda."
+    ],
+    "correcta": 1,
+    "explicacion": "Actualización ministerial 2024."
+  },
+  {
+    "pregunta": "El informe anual sobre violencia sobre la mujer es remitido por:",
+    "opciones": [
+      "El Observatorio Estatal de Violencia sobre la Mujer.",
+      "El Instituto de las Mujeres.",
+      "El Fiscal General.",
+      "El Defensor del Pueblo."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 30 LO 1/2004."
+  },
+  {
+    "pregunta": "Se considera persona con discapacidad a quien tiene una pensión de IP en grado de:",
+    "opciones": [
+      "Parcial.",
+      "Total, Absoluta o Gran Invalidez.",
+      "Solo Gran Invalidez.",
+      "No se equipara automáticamente."
+    ],
+    "correcta": 1,
+    "explicacion": "RDL 1/2013 equipara pensionistas de IP a discapacidad del 33%."
+  },
+  {
+    "pregunta": "La Ley 4/2023 prohíbe la discriminación de personas LGTBI en el ámbito rural:",
+    "opciones": [
+      "No lo menciona.",
+      "Sí, obliga a programas de sensibilización específicos.",
+      "Solo si hay más de 5000 habitantes.",
+      "Es competencia exclusiva municipal."
+    ],
+    "correcta": 1,
+    "explicacion": "Protección contra el sexismo y LGTBIfobia rural."
+  },
+  {
+    "pregunta": "En dependencia, el Grado II se denomina:",
+    "opciones": [
+      "Dependencia moderada.",
+      "Dependencia severa.",
+      "Gran dependencia.",
+      "Dependencia total."
+    ],
+    "correcta": 1,
+    "explicacion": "II = Severa."
+  },
+  {
+    "pregunta": "La Agencia EFE vela por el principio de igualdad según el artículo:",
+    "opciones": [
+      "14",
+      "38",
+      "51",
+      "77"
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 38 LO 3/2007: EFE y medios públicos."
+  },
+  {
+    "pregunta": "El derecho de acceso a la información en materia de igualdad es:",
+    "opciones": [
+      "Solo para sindicatos.",
+      "Un derecho de todos los ciudadanos según la Ley 19/2013.",
+      "Solo para mujeres.",
+      "Restringido por seguridad nacional siempre."
+    ],
+    "correcta": 1,
+    "explicacion": "Vinculación con Transparencia."
+  },
+  {
+    "pregunta": "La interrupción del embarazo en menores de 16-17 años (tras reforma 2023):",
+    "opciones": [
+      "Requiere permiso paterno.",
+      "No requiere permiso paterno ni autorización judicial.",
+      "Solo con permiso del juez.",
+      "Está prohibida."
+    ],
+    "correcta": 1,
+    "explicacion": "Recuperación de la autonomía de la menor."
+  },
+  {
+    "pregunta": "La 'vida independiente' se garantiza mediante el servicio de:",
+    "opciones": [
+      "Teleasistencia.",
+      "Asistente personal.",
+      "Ayuda a domicilio.",
+      "Residencia asistida."
+    ],
+    "correcta": 1,
+    "explicacion": "Servicio estrella para la autonomía personal."
+  },
+  {
+    "pregunta": "Las infracciones leves en dependencia prescriben a los:",
+    "opciones": [
+      "6 meses.",
+      "1 año.",
+      "2 años.",
+      "3 años."
+    ],
+    "correcta": 0,
+    "explicacion": "Plazo general de infracciones leves."
+  },
+  {
+    "pregunta": "El Consejo de Participación de la Mujer es un órgano:",
+    "opciones": [
+      "Judicial.",
+      "Colegiado de asesoramiento y cauce de participación.",
+      "Un partido político.",
+      "Dependiente del Senado."
+    ],
+    "correcta": 1,
+    "explicacion": "Interlocutor entre administración y sociedad civil."
+  },
+  {
+    "pregunta": "Sanción por discriminación LGTBI muy grave puede ser de hasta:",
+    "opciones": [
+      "10.000 €.",
+      "50.000 €.",
+      "150.000 €.",
+      "1.000.000 €."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP Ley 4/2023: Multas muy graves de 10.001 a 150.000 € (A diferencia de la de discapacidad que es 1M)."
+  },
+  {
+    "pregunta": "La Ley 1/2004 crea la figura del Fiscal de Sala de:",
+    "opciones": [
+      "Igualdad de Trato.",
+      "Violencia sobre la Mujer.",
+      "Menores.",
+      "Anticorrupción."
+    ],
+    "correcta": 1,
+    "explicacion": "Especialización del Ministerio Fiscal."
+  },
+  {
+    "pregunta": "El permiso de reducción de jornada por violencia de género es de carácter:",
+    "opciones": [
+      "No retribuido.",
+      "Retribuido íntegramente.",
+      "Retribuido si es de una hora.",
+      "Solo para personal laboral."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 49.d TREBEP: Derecho a reducción con mantenimiento de retribuciones."
+  },
+  {
+    "pregunta": "El ODS 10 busca reducir la desigualdad:",
+    "opciones": [
+      "Solo salarial.",
+      "En y entre los países.",
+      "Solo digital.",
+      "De inteligencia artificial."
+    ],
+    "correcta": 1,
+    "explicacion": "Enfoque global del ODS 10."
+  },
+  {
+    "pregunta": "¿Qué cargo preside el Consejo de Participación de la Mujer?",
+    "opciones": [
+      "El Rey.",
+      "El titular del Ministerio de Igualdad.",
+      "La Directora del Instituto de las Mujeres.",
+      "Una representante de las asociaciones."
+    ],
+    "correcta": 1,
+    "explicacion": "Liderazgo ministerial."
+  },
+  {
+    "pregunta": "En el sistema de dependencia, el 'nivel acordado' se financia entre:",
+    "opciones": [
+      "Estado y CCAA.",
+      "CCAA y Ayuntamientos.",
+      "Estado y beneficiario.",
+      "Solo el Estado."
+    ],
+    "correcta": 0,
+    "explicacion": "Financiación conjunta mediante convenios."
+  },
+  {
+    "pregunta": "La Ley 4/2023 permite la rectificación registral de sexo en extranjeros:",
+    "opciones": [
+      "No, solo españoles.",
+      "Sí, si tienen residencia legal y en su país no se garantiza el derecho.",
+      "Sí, a cualquier turista.",
+      "Solo si están asilados."
+    ],
+    "correcta": 1,
+    "explicacion": "Extensión de derechos bajo condiciones específicas."
+  },
+  {
+    "pregunta": "La sanción de demérito penaliza:",
+    "opciones": [
+      "El sueldo base.",
+      "La carrera, promoción o movilidad voluntaria.",
+      "La antigüedad acumulada.",
+      "El derecho a vacaciones."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 96 TREBEP."
+  },
+  {
+    "pregunta": "El baremo para valorar la dependencia es:",
+    "opciones": [
+      "Diferente en cada CCAA.",
+      "Único para todo el Estado.",
+      "Solo para mayores de 65.",
+      "Voluntario."
+    ],
+    "correcta": 1,
+    "explicacion": "Asegura igualdad de trato en el acceso."
+  },
+  {
+    "pregunta": "La LO 3/2007 define el acoso por razón de sexo como comportamiento que atente contra:",
+    "opciones": [
+      "La economía de la empresa.",
+      "La dignidad de la persona.",
+      "El horario laboral.",
+      "La estética del centro."
+    ],
+    "correcta": 1,
+    "explicacion": "La dignidad es el bien jurídico protegido."
+  },
+  {
+    "pregunta": "Las Juntas de Personal se eligen para unidades con al menos:",
+    "opciones": [
+      "10 funcionarios.",
+      "50 funcionarios.",
+      "100 funcionarios.",
+      "250 funcionarios."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 39 TREBEP."
+  },
+  {
+    "pregunta": "El ODS 5 es:",
+    "opciones": [
+      "Fin pobreza.",
+      "Educación.",
+      "Igualdad de género.",
+      "Energía."
+    ],
+    "correcta": 2,
+    "explicacion": "Igualdad de género."
+  },
+  {
+    "pregunta": "La inadmisión de solicitud de transparencia por 'información en curso de elaboración' es:",
+    "opciones": [
+      "Ilegal.",
+      "Una causa de inadmisión válida.",
+      "Silencio positivo.",
+      "Obligatoria siempre."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 18 Ley 19/2013."
+  },
+  {
+    "pregunta": "La situación de 'servicios especiales' permite al funcionario:",
+    "opciones": [
+      "No trabajar más.",
+      "Percibir trienios y computar tiempo para carrera.",
+      "Cobrar sueldo base de su plaza origen.",
+      "Estar en el sector privado."
+    ],
+    "correcta": 1,
+    "explicacion": "Mantiene derechos de antigüedad y promoción."
+  },
+  {
+    "pregunta": "La Ley de Dependencia establece como derecho del beneficiario:",
+    "opciones": [
+      "Elegir al cuidador familiar siempre.",
+      "La participación en el PIA.",
+      "La gratuidad total de todos los servicios.",
+      "Jubilación a los 50 años."
+    ],
+    "correcta": 1,
+    "explicacion": "Derecho a participar en la decisión de su plan de cuidados."
+  },
+  {
+    "pregunta": "Sanción grave por discriminación en discapacidad prescribe a los:",
+    "opciones": [
+      "6 meses.",
+      "1 año.",
+      "2 años.",
+      "3 años."
+    ],
+    "correcta": 2,
+    "explicacion": "Infracción 3 años, Sanción 2 años (VIP RDL 1/2013)."
+  },
+  {
+    "pregunta": "El principio de 'transversalidad' obliga a:",
+    "opciones": [
+      "Hacer un presupuesto de igualdad.",
+      "Integrar la perspectiva de género en reglamentos y leyes del Estado.",
+      "Eliminar el Ministerio de Justicia.",
+      "Prohibir el lenguaje neutro."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 15 LO 3/2007."
+  },
+  {
+    "pregunta": "La rectificación de sexo en el Registro Civil para mayores de 16 años se basa en el principio de:",
+    "opciones": [
+      "Paternalismo.",
+      "Autodeterminación de género.",
+      "Diagnóstico médico.",
+      "Vigencia temporal."
+    ],
+    "correcta": 1,
+    "explicacion": "Concepto central de la Ley 4/2023."
+  },
+  {
+    "pregunta": "La movilidad geográfica de las víctimas de violencia de género tiene como fin:",
+    "opciones": [
+      "Dar vacaciones.",
+      "Asegurar su protección y asistencia social integral.",
+      "Bajar costes.",
+      "Ninguna de las anteriores."
+    ],
+    "correcta": 1,
+    "explicacion": "Derecho preferente al traslado."
+  },
+  {
+    "pregunta": "El ODS 10 busca reducir la desigualdad:",
+    "opciones": [
+      "Solo económica.",
+      "En y entre los países.",
+      "Solo de género.",
+      "Solo digital."
+    ],
+    "correcta": 1,
+    "explicacion": "Enfoque global del ODS 10."
+  },
+  {
+    "pregunta": "El Consejo Territorial de Servicios Sociales y del SAAD es un órgano de:",
+    "opciones": [
+      "Gestión directa.",
+      "Cooperación entre el Estado y las CCAA.",
+      "Sanción.",
+      "Solo informativo."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 8 Ley 39/2006."
+  },
+  {
+    "pregunta": "La LO 3/2007 establece que la discriminación por embarazo es discriminación:",
+    "opciones": [
+      "Indirecta.",
+      "Directa.",
+      "No es discriminación.",
+      "Por asociación."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 8 LO 3/2007."
+  },
+  {
+    "pregunta": "La sanción por infracción grave en dependencia la impone:",
+    "opciones": [
+      "El Estado.",
+      "La Comunidad Autónoma competente.",
+      "El Ayuntamiento.",
+      "El Rey."
+    ],
+    "correcta": 1,
+    "explicacion": "Ejercicio de la potestad sancionadora por las CCAA."
+  },
+  {
+    "pregunta": "El ODS 17 trata sobre:",
+    "opciones": [
+      "Paz.",
+      "Salud.",
+      "Energía.",
+      "Alianzas para lograr objetivos."
+    ],
+    "correcta": 3,
+    "explicacion": "Fortalecimiento de la Alianza Mundial."
+  },
+  {
+    "pregunta": "La 'vida independiente' para personas con discapacidad se apoya en:",
+    "opciones": [
+      "La figura del asistente personal.",
+      "La familia obligatoriamente.",
+      "El ingreso en hospitales.",
+      "No existe tal concepto."
+    ],
+    "correcta": 0,
+    "explicacion": "Derecho reconocido en el RDL 1/2013."
+  },
+  {
+    "pregunta": "La rectificación registral de sexo conlleva:",
+    "opciones": [
+      "Cambio de nombre obligatorio si el anterior no es neutro.",
+      "Anulación de la personalidad jurídica.",
+      "Cambio de nacionalidad.",
+      "Nombramiento de tutor."
+    ],
+    "correcta": 0,
+    "explicacion": "Derecho al cambio de nombre coincidente con la identidad."
+  },
+  {
+    "pregunta": "La LO 1/2004 establece que la violencia de género tiene como origen:",
+    "opciones": [
+      "La mala suerte.",
+      "La situación de desigualdad y las relaciones de poder de los hombres sobre las mujeres.",
+      "Problemas económicos.",
+      "Falta de educación solamente."
+    ],
+    "correcta": 1,
+    "explicacion": "Exposición de motivos y Art. 1 de la Ley Integral."
+  },
+  {
+    "pregunta": "En cuanto a los permisos, un funcionario tiene derecho a reducción de jornada por cuidado de hijo con enfermedad grave:",
+    "opciones": [
+      "De un 25%.",
+      "De un 50%.",
+      "De al menos el 50% con carácter retribuido.",
+      "De una hora diaria."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 49.e TREBEP."
+  },
+  {
+    "pregunta": "El Observatorio de Publicidad no sexista está integrado en:",
+    "opciones": [
+      "El Ministerio de Consumo.",
+      "El Instituto de las Mujeres.",
+      "RTVE.",
+      "La CNMC."
+    ],
+    "correcta": 1,
+    "explicacion": "Funciona bajo el paraguas del Instituto de las Mujeres."
+  },
+  {
+    "pregunta": "El derecho de acompañamiento a personas con discapacidad mediante perros de asistencia se regula en:",
+    "opciones": [
+      "Ley 39/2006.",
+      "RDL 1/2013 y normativas autonómicas.",
+      "Legislación autonómica principalmente.",
+      "Ley 4/2023."
+    ],
+    "correcta": 2,
+    "explicacion": "Dato VIP: Es competencia que han desarrollado casi todas las CCAA, aunque el RDL 1/2013 sienta bases de accesibilidad."
+  },
+  {
+    "pregunta": "La interrupción voluntaria del embarazo en España se regula por la Ley Orgánica:",
+    "opciones": [
+      "1/2004.",
+      "3/2007.",
+      "2/2010.",
+      "4/2023."
+    ],
+    "correcta": 2,
+    "explicacion": "LO 2/2010 de salud sexual y reproductiva (Recientemente modificada)."
+  },
+  {
+    "pregunta": "El principio de 'Ajustes Razonables' en discapacidad significa:",
+    "opciones": [
+      "Dar dinero a todos.",
+      "Modificaciones necesarias y adecuadas que no impongan una carga desproporcionada.",
+      "Construir rampas en todos los sitios.",
+      "Bajar la dificultad de los exámenes siempre."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 2.m RDL 1/2013: Concepto clave de accesibilidad."
+  },
+  {
+    "pregunta": "La rectificación registral de la mención del sexo requiere como prueba:",
+    "opciones": [
+      "Informe médico de disforia.",
+      "2 años de tratamiento hormonal.",
+      "Solo la voluntad libremente manifestada (autodeterminación).",
+      "Sentencia judicial en todos los casos."
+    ],
+    "correcta": 2,
+    "explicacion": "Hito de la Ley 4/2023: Eliminación de requisitos médicos para mayores de 16."
+  },
+  {
+    "pregunta": "Las 'acciones positivas' en la LO 3/2007 consisten en:",
+    "opciones": [
+      "Medidas para corregir situaciones de desigualdad de hecho.",
+      "Sancionar a hombres.",
+      "Privatizar servicios.",
+      "Ninguna de las anteriores."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 11 LO 3/2007: Medidas temporales para favorecer al sexo infrarepresentado."
+  },
+  {
+    "pregunta": "¿Qué mayoría se requiere para aprobar o modificar una Ley Orgánica?",
+    "opciones": [
+      "Simple.",
+      "Absoluta en una votación final sobre el conjunto del proyecto.",
+      "Dos tercios.",
+      "Unanimidad."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 81 CE."
+  },
+  {
+    "pregunta": "El permiso por violencia de género de las funcionarias (Art. 49.d TREBEP):",
+    "opciones": [
+      "Es de 3 días.",
+      "Tiene la duración que determinen los servicios sociales o de salud.",
+      "Es de 1 mes improrrogable.",
+      "No existe tal permiso."
+    ],
+    "correcta": 1,
+    "explicacion": "Las faltas de asistencia totales o parciales se consideran justificadas según el tiempo indicado por informes especializados."
+  },
+  {
+    "pregunta": "El Consejo de Participación de la Mujer es un órgano colegiado adscrito al:",
+    "opciones": [
+      "Ministerio de Justicia.",
+      "Ministerio de Igualdad.",
+      "Presidente del Gobierno.",
+      "Defensor del Pueblo."
+    ],
+    "correcta": 1,
+    "explicacion": "Órgano de participación de las organizaciones de mujeres."
+  },
+  {
+    "pregunta": "En el Sistema de Dependencia, la prestación económica de cuidados en el entorno familiar es de carácter:",
+    "opciones": [
+      "Preferente.",
+      "Excepcional.",
+      "Obligatorio.",
+      "Sustitutorio del hospital."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 18 Ley 39/2006: Se otorga con carácter excepcional cuando no sea posible un servicio."
+  },
+  {
+    "pregunta": "La situación de 'excedencia por violencia de género' tiene reserva de puesto durante:",
+    "opciones": [
+      "6 meses.",
+      "6 meses ampliables hasta 18.",
+      "1 año.",
+      "2 años."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 89.5 TREBEP: Reserva inicial de 6 meses, ampliable por el juez."
+  },
+  {
+    "pregunta": "¿A partir de qué grado de dependencia se tiene derecho a las prestaciones del sistema?",
+    "opciones": [
+      "Grado I.",
+      "Grado II.",
+      "Grado III.",
+      "Solo si hay hospitalización."
+    ],
+    "correcta": 0,
+    "explicacion": "Desde el Grado I (Moderada) se tiene acceso al catálogo de servicios y prestaciones."
+  },
+  {
+    "pregunta": "La Ley 4/2023 reconoce el derecho a la filiación de los hijos de parejas de mujeres:",
+    "opciones": [
+      "Solo si están casadas.",
+      "Incluso si no están casadas, previa manifestación de voluntad.",
+      "Solo por adopción.",
+      "No se reconoce."
+    ],
+    "correcta": 1,
+    "explicacion": "Elimina la discriminación respecto a parejas heterosexuales de hecho."
+  },
+  {
+    "pregunta": "El acoso por razón de sexo se diferencia del acoso sexual en:",
+    "opciones": [
+      "La duración.",
+      "El sexo del agresor.",
+      "El objeto o motivo de la conducta (por el hecho de ser mujer/hombre vs contenido sexual).",
+      "No hay diferencia legal."
+    ],
+    "correcta": 2,
+    "explicacion": "Definiciones del Art. 7 LO 3/2007."
+  },
+  {
+    "pregunta": "La Estrategia Nacional para la Erradicación de la Violencia contra las Mujeres es un instrumento de:",
+    "opciones": [
+      "Planificación y coordinación.",
+      "Sanción directa.",
+      "Poder judicial.",
+      "Legislación básica."
+    ],
+    "correcta": 0,
+    "explicacion": "Instrumento marco para la acción del Gobierno."
+  },
+  {
+    "pregunta": "La educación para la igualdad en el sistema educativo (Art. 24 LO 3/2007) incluye:",
+    "opciones": [
+      "Eliminación de estereotipos.",
+      "Fomento de la resolución pacífica de conflictos.",
+      "Ambas son correctas.",
+      "Solo formación universitaria."
+    ],
+    "correcta": 2,
+    "explicacion": "Criterios para la enseñanza en todas las etapas educativas."
+  },
+  {
+    "pregunta": "El baremo de dependencia se acuerda por:",
+    "opciones": [
+      "El Rey.",
+      "El Gobierno mediante Real Decreto previo acuerdo del Consejo Territorial.",
+      "Las CCAA de forma independiente.",
+      "El Director del IMSERSO."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 27 Ley 39/2006."
+  },
+  {
+    "pregunta": "Se considera discriminación indirecta en discapacidad:",
+    "opciones": [
+      "El insulto directo.",
+      "Cuando una norma aparentemente neutra perjudica a este colectivo sin fin legítimo.",
+      "No dar becas.",
+      "Hacer chistes."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 2 RDL 1/2013."
+  },
+  {
+    "pregunta": "El derecho a la protección de la salud de las víctimas de violencia de género incluye:",
+    "opciones": [
+      "Atención psicológica especializada.",
+      "Seguimiento médico.",
+      "Protocolos sanitarios específicos.",
+      "Todas son correctas."
+    ],
+    "correcta": 3,
+    "explicacion": "Medidas en el ámbito sanitario de la Ley 1/2004."
+  },
+  {
+    "pregunta": "El distintivo empresarial en materia de igualdad se revisa cada:",
+    "opciones": [
+      "Año.",
+      "Dos años.",
+      "Tres años.",
+      "Se mantiene de por vida."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP: El distintivo tiene una vigencia temporal y requiere renovación cada 3 años."
+  },
+  {
+    "pregunta": "La reserva de plazas para discapacidad en la OEP debe ser del:",
+    "opciones": [
+      "3%",
+      "5%",
+      "7%",
+      "10%"
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 59 TREBEP: Un cupo no inferior al 7%."
+  },
+  {
+    "pregunta": "La tutela judicial efectiva para las víctimas de violencia de género se garantiza mediante:",
+    "opciones": [
+      "Justicia gratuita inmediata.",
+      "Derecho a la información.",
+      "Asistencia jurídica especializada.",
+      "Todas son correctas."
+    ],
+    "correcta": 3,
+    "explicacion": "Medidas judiciales de la LO 1/2004."
+  },
+  {
+    "pregunta": "En materia LGTBI, el deber de intervención ante casos de acoso en el trabajo es:",
+    "opciones": [
+      "Opcional.",
+      "Obligatorio para la empresa o administración.",
+      "Solo si hay denuncia policial.",
+      "Solo en el sector público."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 62 Ley 4/2023."
+  },
+  {
+    "pregunta": "El Sistema para la Autonomía y Atención a la Dependencia (SAAD) se financia por:",
+    "opciones": [
+      "El Estado.",
+      "Las CCAA.",
+      "El usuario (copago).",
+      "Todas las anteriores."
+    ],
+    "correcta": 3,
+    "explicacion": "Sistema de financiación tripartito."
+  },
+  {
+    "pregunta": "La paridad en las listas electorales (LOREG modificada por LO 3/2007) obliga a que cada sexo tenga al menos el:",
+    "opciones": [
+      "30%",
+      "40%",
+      "50%",
+      "60%"
+    ],
+    "correcta": 1,
+    "explicacion": "Cada tramo de cinco puestos debe cumplir el 40/60."
+  },
+  {
+    "pregunta": "¿A quién corresponde la presidencia del Consejo Territorial de Servicios Sociales y Dependencia?",
+    "opciones": [
+      "Al Presidente del Gobierno.",
+      "Al titular del Ministerio competente en materia de servicios sociales.",
+      "A un consejero autonómico por rotación.",
+      "Al Rey."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 8 Ley 39/2006."
+  },
+  {
+    "pregunta": "La infracción por discriminación en el acceso al empleo por motivos de discapacidad se considera:",
+    "opciones": [
+      "Leve.",
+      "Grave.",
+      "Muy grave.",
+      "Solo es delito penal."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 81.3 RDL 1/2013."
+  },
+  {
+    "pregunta": "La Ley 4/2023 establece que las Administraciones Públicas fomentarán el empleo de personas trans mediante:",
+    "opciones": [
+      "Cuotas obligatorias en el sector privado.",
+      "Protocolos de inclusión y posibles incentivos o reservas.",
+      "Obligatoriedad de teletrabajo.",
+      "No establece medidas."
+    ],
+    "correcta": 1,
+    "explicacion": "Fomento de la empleabilidad trans y LGTBI."
+  },
+  {
+    "pregunta": "El Observatorio Estatal de Violencia sobre la Mujer remite informes al Gobierno y CCAA con periodicidad:",
+    "opciones": [
+      "Mensual.",
+      "Trimestral.",
+      "Semestral.",
+      "Anual."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 30 LO 1/2004: Informe anual sobre la evolución de la violencia."
+  },
+  {
+    "pregunta": "La prestación económica para asistencia personal busca:",
+    "opciones": [
+      "Pagar a familiares.",
+      "Contratar una asistencia profesional que facilite la vida independiente.",
+      "Ingresar en una residencia.",
+      "Comprar una silla de ruedas."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 19 Ley 39/2006."
+  },
+  {
+    "pregunta": "El acoso por razón de sexo según la LO 3/2007 puede ser:",
+    "opciones": [
+      "Verbal.",
+      "Físico.",
+      "Ambas son correctas.",
+      "Solo digital."
+    ],
+    "correcta": 2,
+    "explicacion": "Cualquier comportamiento que atente contra la dignidad."
+  },
+  {
+    "pregunta": "El Consejo Escolar del Estado tiene representantes de igualdad para:",
+    "opciones": [
+      "Sancionar profesores.",
+      "Vigilar que los libros de texto no sean sexistas.",
+      "Promover la educación en valores de igualdad.",
+      "Elegir al Ministro de Educación."
+    ],
+    "correcta": 2,
+    "explicacion": "Funciones educativas de la Ley de Igualdad."
+  },
+  {
+    "pregunta": "El baremo de discapacidad es único para todo el territorio español:",
+    "opciones": [
+      "Sí, aprobado por Real Decreto.",
+      "No, cada CCAA tiene el suyo.",
+      "Solo para menores de edad.",
+      "Solo para trabajadores."
+    ],
+    "correcta": 0,
+    "explicacion": "RDL 1/2013: Garantía de igualdad en el acceso."
+  },
+  {
+    "pregunta": "La Ley 4/2023 garantiza el derecho de las personas LGTBI a:",
+    "opciones": [
+      "No discriminación sanitaria.",
+      "Protección contra el odio.",
+      "Respeto a la identidad de género.",
+      "Todas son correctas."
+    ],
+    "correcta": 3,
+    "explicacion": "Ámbitos de protección de la nueva ley."
+  },
+  {
+    "pregunta": "En el sistema de dependencia, el nivel adicional de protección es el financiado por:",
+    "opciones": [
+      "El Estado.",
+      "Cada Comunidad Autónoma con cargo a sus presupuestos.",
+      "Los Ayuntamientos.",
+      "La Unión Europea."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 7 y 10 Ley 39/2006: Nivel mínimo (Estado), nivel acordado (Estado-CCAA) y nivel adicional (CCAA)."
+  },
+  {
+    "pregunta": "La LO 3/2007 define las 'acciones positivas' como:",
+    "opciones": [
+      "Privilegios injustificados.",
+      "Medidas para favorecer al sexo menos representado para corregir desigualdades.",
+      "Programas de televisión.",
+      "Obligatoriedad de votar a mujeres."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 11 LO 3/2007."
+  },
+  {
+    "pregunta": "La situación de violencia de género se acredita para las funcionarias mediante:",
+    "opciones": [
+      "Declaración jurada.",
+      "Sentencia condenatoria, orden de protección o informe del Ministerio Fiscal.",
+      "Noticia en prensa.",
+      "Cualquier certificado médico."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: Formas tasadas de acreditación de la condición de víctima."
+  },
+  {
+    "pregunta": "El IMSERSO es el órgano de gestión de dependencia a nivel estatal dependiente del:",
+    "opciones": [
+      "Ministerio de Sanidad.",
+      "Ministerio de Derechos Sociales, Consumo y Agenda 2030.",
+      "Ministerio de Hacienda.",
+      "Ministerio de Trabajo."
+    ],
+    "correcta": 1,
+    "explicacion": "Actualización ministerial 2024."
+  },
+  {
+    "pregunta": "La LO 3/2007 establece que la igualdad es un principio rector de:",
+    "opciones": [
+      "Solo la vida política.",
+      "Todo el ordenamiento jurídico.",
+      "Solo los contratos laborales.",
+      "Solo la vida familiar."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 4 LO 3/2007: La igualdad es un principio transversal."
+  },
+  {
+    "pregunta": "La Ley de Dependencia reconoce el derecho a:",
+    "opciones": [
+      "Atención gratuita total en residencias.",
+      "Prestaciones y servicios de calidad.",
+      "Jubilación anticipada.",
+      "No pagar impuestos."
+    ],
+    "correcta": 1,
+    "explicacion": "Derechos de los ciudadanos en situación de dependencia."
+  },
+  {
+    "pregunta": "El lenguaje en las Administraciones Públicas según la LO 3/2007 debe ser:",
+    "opciones": [
+      "Neutro obligatoriamente.",
+      "No sexista.",
+      "En femenino por defecto.",
+      "No se regula."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 14.11 LO 3/2007: Implantación de un lenguaje no sexista."
+  },
+  {
+    "pregunta": "Las infracciones en materia de igualdad de trato de personas LGTBI prescriben al cabo de:",
+    "opciones": [
+      "Muy graves 3 años, graves 2 años, leves 9 meses.",
+      "Muy graves 5 años.",
+      "Todas al año.",
+      "No prescriben."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 81 Ley 4/2023."
+  },
+  {
+    "pregunta": "La Ley 1/2004 crea los Juzgados de:",
+    "opciones": [
+      "Familia.",
+      "Violencia sobre la Mujer.",
+      "Igualdad de Trato.",
+      "Dependencia."
+    ],
+    "correcta": 1,
+    "explicacion": "Órganos judiciales especializados."
+  },
+  {
+    "pregunta": "El Programa Individual de Atención (PIA) se revisa:",
+    "opciones": [
+      "Cada año.",
+      "Cuando cambie el grado de dependencia o las circunstancias personales.",
+      "Nunca.",
+      "Solo si lo pide el juez."
+    ],
+    "correcta": 1,
+    "explicacion": "Adaptabilidad del plan de cuidados."
+  },
+  {
+    "pregunta": "Se prohíbe el acoso sexual y el acoso por razón de sexo en:",
+    "opciones": [
+      "Solo el trabajo público.",
+      "Solo el trabajo privado.",
+      "Todos los ámbitos (laboral, educativo, etc.).",
+      "Solo en la vía pública."
+    ],
+    "correcta": 2,
+    "explicacion": "LO 3/2007: Protección universal frente al acoso."
+  },
+  {
+    "pregunta": "La formación en igualdad en la AGE es:",
+    "opciones": [
+      "Voluntaria.",
+      "Obligatoria para todo el personal.",
+      "Solo para directivos.",
+      "Inexistente."
+    ],
+    "correcta": 1,
+    "explicacion": "Principio de formación continua en igualdad."
+  },
+  {
+    "pregunta": "La Ley de Dependencia establece que el acceso al sistema es:",
+    "opciones": [
+      "Universal en todo el Estado.",
+      "Solo para españoles residentes.",
+      "Para españoles y extranjeros con residencia legal de 5 años (2 de ellos últimos).",
+      "Solo para pensionistas."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 5 Ley 39/2006: Requisito de residencia."
+  },
+  {
+    "pregunta": "La LO 3/2007 establece que los tribunales de selección de personal deben tener una:",
+    "opciones": [
+      "Presencia paritaria.",
+      "Composición equilibrada (40/60).",
+      "Mayoría de mujeres.",
+      "Solo expertos varones."
+    ],
+    "correcta": 1,
+    "explicacion": "Aplicación del principio de presencia equilibrada."
+  },
+  {
+    "pregunta": "En cuanto a los ODS, el ODS 5 es:",
+    "opciones": [
+      "Educación.",
+      "Igualdad de género.",
+      "Paz.",
+      "Clima."
+    ],
+    "correcta": 1,
+    "explicacion": "ODS 5: Lograr la igualdad entre los géneros."
+  },
+  {
+    "pregunta": "El permiso por adopción o acogimiento tiene la misma duración que el de nacimiento:",
+    "opciones": [
+      "Sí, 16 semanas.",
+      "No, es de 8 semanas.",
+      "No, es de 12 semanas.",
+      "Solo si el hijo tiene menos de 1 año."
+    ],
+    "correcta": 0,
+    "explicacion": "Equiparación de permisos en el TREBEP."
+  },
+  {
+    "pregunta": "La inadmisión de una solicitud de información pública por ser 'manifiestamente repetitiva' es:",
+    "opciones": [
+      "Ilegal.",
+      "Una causa válida de inadmisión.",
+      "Obligatoria.",
+      "Solo para empresas."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 18 Ley 19/2013."
+  },
+  {
+    "pregunta": "La situación de 'excedencia voluntaria por interés particular' NO computa para:",
+    "opciones": [
+      "Trienios.",
+      "Carrera profesional.",
+      "Derechos pasivos.",
+      "Todas son correctas."
+    ],
+    "correcta": 3,
+    "explicacion": "Suspensión total de la relación de servicio."
+  },
+  {
+    "pregunta": "El principio de 'No discriminación' por orientación sexual se refuerza en la Ley:",
+    "opciones": [
+      "1/2004.",
+      "3/2007.",
+      "4/2023.",
+      "39/2006."
+    ],
+    "correcta": 2,
+    "explicacion": "Ley para la igualdad real de las personas LGTBI."
+  },
+  {
+    "pregunta": "¿Qué cargo preside la Comisión Interministerial de Igualdad?",
+    "opciones": [
+      "El Rey.",
+      "El Ministro de Igualdad.",
+      "El Vicepresidente del Gobierno.",
+      "El Secretario de Estado."
+    ],
+    "correcta": 1,
+    "explicacion": "Liderazgo del departamento de Igualdad."
+  },
+  {
+    "pregunta": "La prestación económica vinculada al servicio se destina a:",
+    "opciones": [
+      "Pagar el alquiler.",
+      "Financiar el coste de un servicio privado cuando no hay plaza pública.",
+      "Comprar comida.",
+      "Viajes."
+    ],
+    "correcta": 1,
+    "explicacion": "Carácter finalista de la prestación."
+  },
+  {
+    "pregunta": "La ley de Discapacidad RDL 1/2013 prohíbe el acoso por motivo de discapacidad, calificándolo como:",
+    "opciones": [
+      "Infracción leve.",
+      "Infracción grave.",
+      "Infracción muy grave.",
+      "No es infracción."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 81 RDL 1/2013."
+  },
+  {
+    "pregunta": "La rectificación de sexo en el Registro Civil para mayores de 16 años se basa en el principio de:",
+    "opciones": [
+      "Paternalismo.",
+      "Autodeterminación de género.",
+      "Diagnóstico médico.",
+      "Vigencia temporal."
+    ],
+    "correcta": 1,
+    "explicacion": "Concepto central de la Ley 4/2023."
+  },
+  {
+    "pregunta": "La movilidad geográfica de las víctimas de violencia de género tiene como fin:",
+    "opciones": [
+      "Dar vacaciones.",
+      "Asegurar su protección y asistencia social integral.",
+      "Bajar costes.",
+      "Ninguna de las anteriores."
+    ],
+    "correcta": 1,
+    "explicacion": "Derecho preferente al traslado."
+  },
+  {
+    "pregunta": "El ODS 10 busca reducir la desigualdad:",
+    "opciones": [
+      "Solo económica.",
+      "En y entre los países.",
+      "Solo de género.",
+      "Solo digital."
+    ],
+    "correcta": 1,
+    "explicacion": "Enfoque global del ODS 10."
+  },
+  {
+    "pregunta": "El Consejo Territorial de Servicios Sociales y del SAAD es un órgano de:",
+    "opciones": [
+      "Gestión directa.",
+      "Cooperación entre el Estado y las CCAA.",
+      "Sanción.",
+      "Solo informativo."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 8 Ley 39/2006."
+  },
+  {
+    "pregunta": "La LO 3/2007 establece que la discriminación por embarazo es discriminación:",
+    "opciones": [
+      "Indirecta.",
+      "Directa.",
+      "No es discriminación.",
+      "Por asociación."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 8 LO 3/2007."
+  },
+  {
+    "pregunta": "La sanción por infracción grave en dependencia la impone:",
+    "opciones": [
+      "El Estado.",
+      "La Comunidad Autónoma competente.",
+      "El Ayuntamiento.",
+      "El Rey."
+    ],
+    "correcta": 1,
+    "explicacion": "Ejercicio de la potestad sancionadora por las CCAA."
+  },
+  {
+    "pregunta": "El ODS 17 trata sobre:",
+    "opciones": [
+      "Paz.",
+      "Salud.",
+      "Energía.",
+      "Alianzas para lograr objetivos."
+    ],
+    "correcta": 3,
+    "explicacion": "Fortalecimiento de la Alianza Mundial."
+  },
+  {
+    "pregunta": "La 'vida independiente' para personas con discapacidad se apoya en:",
+    "opciones": [
+      "La figura del asistente personal.",
+      "La familia obligatoriamente.",
+      "El ingreso en hospitales.",
+      "No existe tal concepto."
+    ],
+    "correcta": 0,
+    "explicacion": "Derecho reconocido en el RDL 1/2013."
+  },
+  {
+    "pregunta": "La rectificación registral de sexo conlleva:",
+    "opciones": [
+      "Cambio de nombre obligatorio si el anterior no es neutro.",
+      "Anulación de la personalidad jurídica.",
+      "Cambio de nacionalidad.",
+      "Nombramiento de tutor."
+    ],
+    "correcta": 0,
+    "explicacion": "Derecho al cambio de nombre coincidente con la identidad."
+  },
+  {
+    "pregunta": "La LO 1/2004 establece que la violencia de género tiene como origen:",
+    "opciones": [
+      "La mala suerte.",
+      "La situación de desigualdad y las relaciones de poder de los hombres sobre las mujeres.",
+      "Problemas económicos.",
+      "Falta de educación solamente."
+    ],
+    "correcta": 1,
+    "explicacion": "Exposición de motivos y Art. 1 de la Ley Integral."
+  },
+  {
+    "pregunta": "Infracciones en materia LGTBI leves prescriben a los:",
+    "opciones": [
+      "3 meses.",
+      "6 meses.",
+      "9 meses.",
+      "12 meses."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP Ley 4/2023: Prescripción de infracciones leves es a los 9 meses."
+  },
+  {
+    "pregunta": "La reserva de plazas para discapacidad en la OEP de la AGE es de:",
+    "opciones": [
+      "3%.",
+      "5%.",
+      "7%.",
+      "10%."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 59 TREBEP: Cupo no inferior al 7%."
+  },
+  {
+    "pregunta": "El recurso contra la resolución de la rectificación de sexo se interpone ante:",
+    "opciones": [
+      "El Tribunal Supremo.",
+      "La Dirección General de Seguridad Jurídica y Fe Pública.",
+      "El Ministerio de Igualdad.",
+      "La Agencia de Protección de Datos."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: Recurso administrativo específico ante la DGSJFP."
+  },
+  {
+    "pregunta": "El permiso de reducción de jornada por violencia de género para funcionarias es:",
+    "opciones": [
+      "Sin sueldo.",
+      "Con derecho a percibir retribuciones íntegras.",
+      "Solo para las tardes.",
+      "Máximo de 1 hora."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 49.d TREBEP."
+  },
+  {
+    "pregunta": "La falta de asistencia al trabajo por violencia de género se considera:",
+    "opciones": [
+      "Injustificada.",
+      "Falta leve.",
+      "Justificada según determinen los servicios sociales o de salud.",
+      "Causa de despido."
+    ],
+    "correcta": 2,
+    "explicacion": "Protección laboral integral."
+  },
+  {
+    "pregunta": "El baremo de dependencia lo aprueba el Gobierno mediante:",
+    "opciones": [
+      "Orden Ministerial.",
+      "Real Decreto.",
+      "Instrucción.",
+      "Ley Orgánica."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 27 Ley 39/2006."
+  },
+  {
+    "pregunta": "Se considera discriminación por asociación en discapacidad cuando:",
+    "opciones": [
+      "Se discrimina a una asociación de discapacitados.",
+      "Una persona es discriminada por su relación con una persona con discapacidad.",
+      "Se prohíben las asociaciones.",
+      "No existe tal concepto."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 2.c RDL 1/2013."
+  },
+  {
+    "pregunta": "El acoso por razón de sexo se diferencia del sexual en:",
+    "opciones": [
+      "El motivo (el hecho de ser mujer/hombre vs contenido sexual).",
+      "La gravedad.",
+      "El sueldo del agresor.",
+      "No hay diferencia."
+    ],
+    "correcta": 0,
+    "explicacion": "LO 3/2007."
+  },
+  {
+    "pregunta": "La Estrategia Nacional de Erradicación de la Violencia es un instrumento de:",
+    "opciones": [
+      "Coordinación y planificación.",
+      "Legislación directa.",
+      "Sanción penal.",
+      "Referéndum."
+    ],
+    "correcta": 0,
+    "explicacion": "Planificación política del Gobierno."
+  },
+  {
+    "pregunta": "La rectificación registral de sexo en extranjeros con residencia legal es posible si:",
+    "opciones": [
+      "Lo pide su embajada.",
+      "En su país de origen no tienen garantizado este derecho.",
+      "Llevan 10 años en España.",
+      "Nunca es posible."
+    ],
+    "correcta": 1,
+    "explicacion": "Extensión de protección de la Ley 4/2023."
+  },
+  {
+    "pregunta": "El distintivo 'Igualdad en la Empresa' es:",
+    "opciones": [
+      "Una marca de excelencia otorgada por el Ministerio de Igualdad.",
+      "Un logo obligatorio para PYMES.",
+      "Una sanción por no tener Plan de Igualdad.",
+      "Solo para organismos públicos."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 50 LO 3/2007."
+  },
+  {
+    "pregunta": "El IMSERSO tiene competencias de:",
+    "opciones": [
+      "Fijar el nivel mínimo de protección en dependencia.",
+      "Gestionar la dependencia en Ceuta y Melilla.",
+      "Ambas son correctas.",
+      "Solo dar vacaciones a jubilados."
+    ],
+    "correcta": 2,
+    "explicacion": "Funciones estatales y territoriales específicas."
+  },
+  {
+    "pregunta": "La paridad en empresas se aplica progresivamente hasta alcanzar el:",
+    "opciones": [
+      "30%.",
+      "40%.",
+      "50%.",
+      "60%."
+    ],
+    "correcta": 1,
+    "explicacion": "Objetivo de equilibrio 40/60."
+  },
+  {
+    "pregunta": "¿Qué ley introdujo el concepto de 'ajustes razonables'?",
+    "opciones": [
+      "LO 3/2007.",
+      "RDL 1/2013.",
+      "Ley 39/2006.",
+      "Ley 4/2023."
+    ],
+    "correcta": 1,
+    "explicacion": "Fundamental para la accesibilidad universal."
+  },
+  {
+    "pregunta": "La violencia de género económica consiste en:",
+    "opciones": [
+      "No pagar impuestos.",
+      "Privación injustificada de recursos para el bienestar de la mujer y sus hijos.",
+      "Cobrar menos sueldo.",
+      "No está reconocida en la ley."
+    ],
+    "correcta": 1,
+    "explicacion": "Modalidad de violencia reconocida en la LO 1/2004."
+  },
+  {
+    "pregunta": "La Comisión Interministerial de Igualdad coordina a:",
+    "opciones": [
+      "Las CCAA.",
+      "Los diferentes departamentos ministeriales del Gobierno.",
+      "Las empresas del IBEX 35.",
+      "Los sindicatos."
+    ],
+    "correcta": 1,
+    "explicacion": "Órgano de coordinación interna de la AGE."
+  },
+  {
+    "pregunta": "El ODS 17 busca fortalecer:",
+    "opciones": [
+      "El ejército.",
+      "La Alianza Mundial para el Desarrollo Sostenible.",
+      "Los bancos.",
+      "Las fronteras."
+    ],
+    "correcta": 1,
+    "explicacion": "ODS 17: Alianzas."
+  },
+  {
+    "pregunta": "El informe de impacto de género en los Presupuestos Generales del Estado es:",
+    "opciones": [
+      "Opcional.",
+      "Preceptivo.",
+      "Solo si lo pide la oposición.",
+      "Votos favorables de 2/3."
+    ],
+    "correcta": 1,
+    "explicacion": "Obligatorio en la elaboración de los presupuestos."
+  },
+  {
+    "pregunta": "La ley 4/2023 prohíbe la mutilación de menores intersexuales con fines estéticos:",
+    "opciones": [
+      "No lo menciona.",
+      "Sí, salvo por razones médicas justificadas.",
+      "Solo con permiso de los padres.",
+      "Solo a partir de los 18 años."
+    ],
+    "correcta": 1,
+    "explicacion": "Protección de la integridad física de menores."
+  },
+  {
+    "pregunta": "El baremo de discapacidad del 33% es el mínimo para:",
+    "opciones": [
+      "Ser considerado persona con discapacidad a efectos legales.",
+      "Tener una pensión contributiva.",
+      "Poder aparcar en zona azul.",
+      "No pagar el IVA."
+    ],
+    "correcta": 0,
+    "explicacion": "Umbral de reconocimiento del RDL 1/2013."
+  },
+  {
+    "pregunta": "El principio de 'No dejar a nadie atrás' es el lema de:",
+    "opciones": [
+      "La Constitución Española.",
+      "La Agenda 2030.",
+      "La Ley de Dependencia.",
+      "El TREBEP."
+    ],
+    "correcta": 1,
+    "explicacion": "Lema de los ODS."
+  }
+]
