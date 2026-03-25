@@ -148,7 +148,8 @@
     "opciones": ["Mayoría simple.", "Mayoría absoluta.", "Unanimidad.", "Decisión del Rey."],
     "correcta": 1,
     "explicacion": "Art. 80 CE: Las sesiones son públicas salvo acuerdo en contrario de cada Cámara, adoptado por mayoría absoluta o con arreglo al Reglamento."
-  },{
+  },
+  {
     "pregunta": "¿Quién nombra a los Presidentes de cada una de las Cámaras?",
     "opciones": ["El Rey.", "El Gobierno.", "Las propias Cámaras de entre sus miembros.", "El Presidente del Tribunal Supremo."],
     "correcta": 2,
@@ -297,7 +298,7 @@
     "opciones": ["El Consejo de Ministros.", "El Presidente del Gobierno en solitario.", "Las Cortes Generales.", "El Consejo de Estado."],
     "correcta": 0,
     "explicacion": "Art. 159.1 CE: El Gobierno (Consejo de Ministros) propone directamente a sus 2 miembros sin necesidad de votación parlamentaria."
-  },[
+  },
   {
     "pregunta": "Según el Título I, Capítulo Cuarto, de la Constitución Española de 1978, señale la opción correcta:",
     "opciones": [
@@ -352,7 +353,8 @@
     ],
     "correcta": 0,
     "explicacion": "Art. 159.3 CE: Los miembros del Tribunal Constitucional serán designados por un período de nueve años y se renovarán por terceras partes cada tres."
-  },,{
+  },
+  {
     "pregunta": "La Diputación Permanente del Congreso representa proporcionalmente a:",
     "opciones": [
       "Los partidos políticos.",
@@ -361,7 +363,7 @@
       "El pueblo español."
     ],
     "correcta": 2,
-    "explicacion": "Según el Reglamento y la Constitución, las Diputaciones Permanentes representan a los grupos parlamentarios en proporción a su importancia numérica[cite: 5, 8, 167]."
+    "explicacion": "Según el Reglamento y la Constitución, las Diputaciones Permanentes representan a los grupos parlamentarios en proporción a su importancia numérica."
   },
   {
     "pregunta": "Para la atribución de escaños del Congreso de los Diputados no se tendrán en cuenta aquellas candidaturas que no hubiesen obtenido al menos:",
@@ -372,7 +374,7 @@
       "Depende de cada provincia."
     ],
     "correcta": 2,
-    "explicacion": "En el sistema electoral general, el umbral mínimo para entrar en el reparto de escaños es el 3% de los votos válidamente emitidos en la circunscripción[cite: 15, 18, 171]."
+    "explicacion": "En el sistema electoral general, el umbral mínimo para entrar en el reparto de escaños es el 3% de los votos válidamente emitidos en la circunscripción."
   },
   {
     "pregunta": "Las enmiendas a la totalidad en el proceso de elaboración de un texto legislativo, tanto en el Congreso como en el Senado se debatirán:",
@@ -383,7 +385,7 @@
       "En sesión conjunta."
     ],
     "correcta": 1,
-    "explicacion": "Las enmiendas a la totalidad (que afectan al espíritu del texto o proponen un texto alternativo) se debaten siempre en el Pleno de la Cámara[cite: 25, 29, 175]."
+    "explicacion": "Las enmiendas a la totalidad (que afectan al espíritu del texto o proponen un texto alternativo) se debaten siempre en el Pleno de la Cámara."
   },
   {
     "pregunta": "La Mesa del Congreso se compone de:",
@@ -394,7 +396,7 @@
       "El Presidente, cuatro Vicepresidentes y cuatro Secretarios."
     ],
     "correcta": 3,
-    "explicacion": "El órgano rector del Congreso está formado por 9 miembros: 1 Presidente, 4 Vicepresidentes y 4 Secretarios[cite: 54, 61, 183]."
+    "explicacion": "El órgano rector del Congreso está formado por 9 miembros: 1 Presidente, 4 Vicepresidentes y 4 Secretarios."
   },
   {
     "pregunta": "En la iniciativa parlamentaria NO se denomina proposición de ley al texto presentado por:",
@@ -405,7 +407,7 @@
       "El Gobierno."
     ],
     "correcta": 3,
-    "explicacion": "Los textos legislativos presentados por el Gobierno reciben el nombre específico de 'Proyectos de Ley', mientras que el resto son 'Proposiciones de Ley'[cite: 90, 94, 193]."
+    "explicacion": "Los textos legislativos presentados por el Gobierno reciben el nombre específico de 'Proyectos de Ley', mientras que el resto son 'Proposiciones de Ley'."
   },
   {
     "pregunta": "De conformidad con lo previsto en el artículo 81 de la Constitución española, se aprobará mediante Ley Orgánica:",
@@ -416,7 +418,7 @@
       "El régimen electoral general."
     ],
     "correcta": 3,
-    "explicacion": "Art. 81 CE: Son leyes orgánicas las relativas al desarrollo de los derechos fundamentales, los Estatutos de Autonomía y el régimen electoral general[cite: 95, 99, 195]."
+    "explicacion": "Art. 81 CE: Son leyes orgánicas las relativas al desarrollo de los derechos fundamentales, los Estatutos de Autonomía y el régimen electoral general."
   },
   {
     "pregunta": "Según el artículo 82 de la Constitución Española, cuando se trate de refundir varios textos legales en uno solo, la delegación legislativa de las Cortes Generales en el Gobierno deberá otorgarse mediante:",
@@ -427,7 +429,7 @@
       "Un Decreto Legislativo."
     ],
     "correcta": 2,
-    "explicacion": "Art. 82 CE: La delegación legislativa se hace mediante Ley de Bases para formar textos articulados, o mediante Ley Ordinaria para refundir varios textos en uno solo[cite: 2371, 2374, 2591]."
+    "explicacion": "Art. 82 CE: La delegación legislativa se hace mediante Ley de Bases para formar textos articulados, o mediante Ley Ordinaria para refundir varios textos en uno solo."
   },
   {
     "pregunta": "Señale cuál de las siguientes competencias NO pertenece al Tribunal Constitucional:",
@@ -438,7 +440,7 @@
       "Impugnaciones del artículo 161 de la Constitución."
     ],
     "correcta": 1,
-    "explicacion": "El TC revisa normas con rango de LEY. El control de las disposiciones reglamentarias (normas con rango inferior a la ley) corresponde a los Tribunales ordinarios de la jurisdicción Contencioso-Administrativa[cite: 2433, 2435, 2592]."
+    "explicacion": "El TC revisa normas con rango de LEY. El control de las disposiciones reglamentarias (normas con rango inferior a la ley) corresponde a los Tribunales ordinarios de la jurisdicción Contencioso-Administrativa."
   },
   {
     "pregunta": "Según se establece por la Constitución Española de 1978, las disposiciones del Gobierno que contengan legislación delegada recibirán el título de:",
@@ -449,7 +451,7 @@
       "Leyes Orgánicas."
     ],
     "correcta": 0,
-    "explicacion": "Art. 85 CE: Las disposiciones del Gobierno que contengan legislación delegada de las Cortes (ya sea textos articulados o refundidos) reciben el nombre de Decretos Legislativos[cite: 2446, 2448, 2605]."
+    "explicacion": "Art. 85 CE: Las disposiciones del Gobierno que contengan legislación delegada de las Cortes (ya sea textos articulados o refundidos) reciben el nombre de Decretos Legislativos."
   },
   {
     "pregunta": "De acuerdo con la Constitución española de 1978, cualquier alteración de los límites provinciales habrá de ser aprobada por:",
@@ -460,7 +462,7 @@
       "Ley Orgánica de las Cortes Generales."
     ],
     "correcta": 3,
-    "explicacion": "Art. 141.1 CE: Cualquier alteración de los límites provinciales habrá de ser aprobada por las Cortes Generales mediante Ley Orgánica[cite: 2452, 2457, 2606]."
+    "explicacion": "Art. 141.1 CE: Cualquier alteración de los límites provinciales habrá de ser aprobada por las Cortes Generales mediante Ley Orgánica."
   },
   {
     "pregunta": "Según el artículo 153 de la Constitución española, el control de la actividad de los órganos de las Comunidades Autónomas NO se ejercerá por:",
@@ -471,7 +473,7 @@
       "El Tribunal de Cuentas."
     ],
     "correcta": 2,
-    "explicacion": "Art. 153 CE: El control se ejerce por el TC (constitucionalidad), Gobierno (competencias delegadas), Jurisdicción Contencioso-Administrativa (administración autónoma) y Tribunal de Cuentas (económico). El CGPJ no pinta nada aquí[cite: 2463, 2467, 2608]."
+    "explicacion": "Art. 153 CE: El control se ejerce por el TC (constitucionalidad), Gobierno (competencias delegadas), Jurisdicción Contencioso-Administrativa (administración autónoma) y Tribunal de Cuentas (económico). El CGPJ no pinta nada aquí."
   },
   {
     "pregunta": "¿Cómo se denominan las Leyes en las que las Cortes atribuyen a las Comunidades Autónomas facultades para dictar normas legislativas en materias de competencia estatal, fijando los principios, bases y directrices para ello?",
@@ -482,7 +484,259 @@
       "Leyes Básicas."
     ],
     "correcta": 1,
-    "explicacion": "Art. 150.1 CE: Las Cortes pueden atribuir a las CCAA, mediante Leyes Marco, la facultad de dictar normas sobre materias de competencia estatal, fijando principios y directrices[cite: 2553, 2555, 2623]."
+    "explicacion": "Art. 150.1 CE: Las Cortes pueden atribuir a las CCAA, mediante Leyes Marco, la facultad de dictar normas sobre materias de competencia estatal, fijando principios y directrices."
+  },
+  {
+    "pregunta": "Según el artículo 68 de la Constitución Española, ¿cuál es la circunscripción electoral en nuestro sistema electoral?",
+    "opciones": [
+      "La provincia.",
+      "El municipio.",
+      "La Comunidad Autónoma.",
+      "Distrito Municipal."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 68.2 CE: La circunscripción electoral es la provincia."
+  },
+  {
+    "pregunta": "De acuerdo con el artículo 78 de la Constitución Española, expirado el mandato de las Cortes Generales o en caso de disolución de las mismas, las Diputaciones Permanentes seguirán ejerciendo sus funciones hasta:",
+    "opciones": [
+      "La celebración de las elecciones.",
+      "La proclamación de los resultados electorales definitivos.",
+      "La elección de los nuevos presidentes de cada una de las Cámaras de las Cortes Generales.",
+      "La constitución de las nuevas Cortes Generales."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 78.3 CE: Expirado el mandato o en caso de disolución, las Diputaciones Permanentes velarán por los poderes de las Cámaras hasta que se constituyan las nuevas Cortes Generales."
+  },
+  {
+    "pregunta": "La Constitución Española regula la institución del Defensor del Pueblo como:",
+    "opciones": [
+      "Alto comisionado del Congreso de los Diputados.",
+      "Alto comisionado de las Cortes Generales.",
+      "Alto comisionado del Poder judicial.",
+      "Alto comisionado del Gobierno de la nación."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 54 CE: Una ley orgánica regulará la institución del Defensor del Pueblo, como alto comisionado de las Cortes Generales, designado por éstas para la defensa de los derechos comprendidos en este Título."
+  },
+  {
+    "pregunta": "¿En qué plazo deberán tener lugar las elecciones tras la terminación del mandato parlamentario de las Cortes Generales?",
+    "opciones": [
+      "Entre 30 y 60 días.",
+      "Dentro de los 25 días siguientes.",
+      "Entre 15 y 30 días.",
+      "A los 4 años exactos."
+    ],
+    "correcta": 0,
+    "explicacion": "Las elecciones tendrán lugar entre los treinta y sesenta días desde la terminación del mandato."
+  },
+  {
+    "pregunta": "El Congreso electo deberá ser convocado para celebrar su sesión constitutiva...",
+    "opciones": [
+      "Dentro de los 25 días siguientes a la celebración de las elecciones.",
+      "Dentro de los 30 días siguientes a las elecciones.",
+      "En el plazo de dos meses desde las elecciones.",
+      "A los 15 días de la terminación del mandato."
+    ],
+    "correcta": 0,
+    "explicacion": "El Congreso electo deberá ser convocado dentro de los veinticinco días siguientes a la celebración de las elecciones."
+  },
+  {
+    "pregunta": "¿Cuál es el número mínimo de miembros que debe componer la Diputación Permanente de cada Cámara?",
+    "opciones": [
+      "15 miembros.",
+      "21 miembros.",
+      "10 miembros.",
+      "35 miembros."
+    ],
+    "correcta": 1,
+    "explicacion": "En cada Cámara habrá una Diputación Permanente compuesta por un mínimo de veintiún miembros, que representarán a los grupos parlamentarios en proporción a su importancia numérica."
+  },
+  {
+    "pregunta": "¿Por cuánto tiempo es nombrado el Presidente del Tribunal Constitucional?",
+    "opciones": [
+      "9 años.",
+      "5 años.",
+      "3 años.",
+      "4 años."
+    ],
+    "correcta": 2,
+    "explicacion": "El Presidente del Tribunal Constitucional será nombrado entre sus miembros por el Rey, a propuesta del mismo Tribunal en pleno y por un período de tres años."
+  },
+  {
+    "pregunta": "¿Cuál es el período de designación de los miembros del Tribunal Constitucional y cómo se renuevan? (Regla del 12-9-3)",
+    "opciones": [
+      "Por 5 años y se renuevan por quintas partes cada año.",
+      "Por 9 años y se renuevan por terceras partes cada tres años.",
+      "Por 3 años y se renuevan en su totalidad.",
+      "Por 12 años y se renuevan por mitades cada seis años."
+    ],
+    "correcta": 1,
+    "explicacion": "Los miembros del Tribunal Constitucional serán designados por un período de nueve años y se renovarán por terceras partes cada tres años."
+  },
+  {
+    "pregunta": "De los 12 miembros que componen el Tribunal Constitucional, ¿cuántos son propuestos por el Senado?",
+    "opciones": [
+      "2 miembros.",
+      "4 miembros.",
+      "6 miembros.",
+      "Ninguno, todos son propuestos por el Congreso y el Gobierno."
+    ],
+    "correcta": 1,
+    "explicacion": "Cuatro miembros a propuesta del Senado, elegidos por mayoría de tres quintos."
+  },
+  {
+    "pregunta": "¿Para qué período de tiempo es elegido el Defensor del Pueblo por las Cortes Generales?",
+    "opciones": [
+      "3 años.",
+      "4 años.",
+      "5 años.",
+      "9 años."
+    ],
+    "correcta": 2,
+    "explicacion": "El Defensor del Pueblo será elegido por las Cortes Generales para un período de 5 años."
+  },
+  {
+    "pregunta": "¿Qué plazo máximo tiene una persona para presentar una queja ante el Defensor del Pueblo?",
+    "opciones": [
+      "1 año contado a partir del momento en que tuviera conocimiento de los hechos.",
+      "3 meses desde que se produjeron los hechos.",
+      "5 meses si implica a la Administración Pública.",
+      "No hay plazo establecido para la defensa de derechos fundamentales."
+    ],
+    "correcta": 0,
+    "explicacion": "El procedimiento mediante quejas se hará en escrito razonado y en el plazo de un año, contado a partir del momento en que tuviera conocimiento de los hechos objeto de la misma."
+  },
+  {
+    "pregunta": "¿Quién se encarga de nombrar y separar a los Adjuntos del Defensor del Pueblo?",
+    "opciones": [
+      "El Congreso de los Diputados por mayoría absoluta.",
+      "El Rey, a propuesta del Gobierno.",
+      "El propio Defensor del Pueblo, previa conformidad de las Cámaras.",
+      "El Presidente del Gobierno."
+    ],
+    "correcta": 2,
+    "explicacion": "Los nombra y separa el propio Defensor del Pueblo, previa conformidad de las Cámaras."
+  },
+  {
+    "pregunta": "En relación con las causas de disolución discrecional de las Cortes, NO procede la disolución:",
+    "opciones": [
+      "En el término de un año a contar desde la anterior disolución.",
+      "Si el Presidente del Gobierno no cuenta con el apoyo de su partido.",
+      "Durante las vacaciones parlamentarias.",
+      "A los dos años de comenzar la legislatura."
+    ],
+    "correcta": 0,
+    "explicacion": "No procede la disolución discrecional en el término de un año a contar desde la anterior disolución."
+  },
+  {
+    "pregunta": "¿De qué prerrogativa gozan los Diputados y Senadores exclusivamente por las opiniones manifestadas en el ejercicio de sus funciones?",
+    "opciones": [
+      "Inmunidad diplomática.",
+      "Inviolabilidad.",
+      "Aforamiento civil.",
+      "Exención de responsabilidad penal."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 71.1 CE: Los Diputados y Senadores gozarán de inviolabilidad por las opiniones manifestadas en el ejercicio de sus funciones."
+  },
+  {
+    "pregunta": "Durante el período de su mandato, los Diputados y Senadores gozarán de inmunidad y sólo podrán ser detenidos...",
+    "opciones": [
+      "Con la autorización expresa del Rey.",
+      "En caso de flagrante delito.",
+      "Por orden del Presidente de la Cámara.",
+      "En ningún caso, son absolutamente intocables."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 71.2 CE: Durante el período de su mandato, gozarán asimismo de inmunidad y sólo podrán ser detenidos en caso de flagrante delito."
+  },
+  {
+    "pregunta": "Para poder inculpar o procesar penalmente a un Diputado o Senador, ¿qué requisito previo es indispensable?",
+    "opciones": [
+      "La previa autorización de la Cámara respectiva (suplicatorio).",
+      "El visto bueno del Consejo General del Poder Judicial.",
+      "La autorización del Tribunal Constitucional.",
+      "La firma del Rey."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 71.2 CE: No podrán ser inculpados ni procesados sin la previa autorización de la Cámara respectiva (lo que se conoce comúnmente como suplicatorio)."
+  },
+  {
+    "pregunta": "¿Cuál es el órgano colegiado rector de la Cámara que organiza el trabajo parlamentario y asume su dirección y representación colegiada?",
+    "opciones": [
+      "La Junta de Portavoces.",
+      "El Pleno.",
+      "La Diputación Permanente.",
+      "La Mesa."
+    ],
+    "correcta": 3,
+    "explicacion": "La Mesa es el órgano rector y de representación colegiada de la Cámara. Organiza el trabajo y asume la dirección del mismo."
+  },
+  {
+    "pregunta": "Para ser nombrado miembro del Tribunal Constitucional, es necesario ser un jurista de reconocida competencia con más de:",
+    "opciones": [
+      "10 años de ejercicio profesional.",
+      "15 años de ejercicio profesional.",
+      "20 años de ejercicio profesional.",
+      "5 años de ejercicio profesional."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 159.2 CE: Deberán ser nombrados entre Magistrados y Fiscales, Profesores de Universidad, funcionarios públicos y Abogados, todos ellos juristas de reconocida competencia con más de quince años de ejercicio profesional."
+  },
+  {
+    "pregunta": "El Tribunal Constitucional se divide para el despacho ordinario de los asuntos en:",
+    "opciones": [
+      "Tres Salas, formadas por cuatro Magistrados cada una.",
+      "Dos Salas, formadas por seis Magistrados cada una.",
+      "Cuatro Secciones, formadas por tres Magistrados cada una.",
+      "No se divide, actúa siempre en Pleno."
+    ],
+    "correcta": 1,
+    "explicacion": "Ley Orgánica del TC: El Tribunal Constitucional consta de dos Salas. Cada Sala está compuesta por seis Magistrados nombrados por el Pleno."
+  },
+  {
+    "pregunta": "Para el despacho ordinario y la decisión o resolución sobre la admisibilidad o inadmisibilidad de los recursos, el Tribunal Constitucional actúa en:",
+    "opciones": [
+      "Salas.",
+      "Pleno.",
+      "Secciones.",
+      "Comisiones."
+    ],
+    "correcta": 2,
+    "explicacion": "Ley Orgánica del TC: Para el despacho ordinario y la resolución sobre la admisibilidad de los recursos, el Tribunal se divide en Secciones, compuestas por el Presidente (o Vicepresidente) y dos Magistrados."
+  },
+  {
+    "pregunta": "En relación con las quejas presentadas ante el Defensor del Pueblo, señale la afirmación CORRECTA:",
+    "opciones": [
+      "Se registrarán de forma obligatoria las quejas anónimas para proteger al ciudadano.",
+      "No se registrarán las quejas anónimas.",
+      "Es obligatorio la asistencia de un Letrado para presentar la queja.",
+      "Deben presentarse siempre de manera presencial en la sede."
+    ],
+    "correcta": 1,
+    "explicacion": "LO 3/1981, Art. 15: El Defensor del Pueblo no registrará las quejas anónimas, y rechazará aquellas en las que advierta mala fe, carencia de fundamento o inexistencia de pretensión."
+  },
+  {
+    "pregunta": "¿Qué coste tiene para el ciudadano las actuaciones derivadas de la presentación de una queja ante el Defensor del Pueblo?",
+    "opciones": [
+      "Depende de las tasas marcadas por el Ministerio de Justicia anuales.",
+      "Son gratuitas, pero se exige el pago del Procurador.",
+      "Son totalmente gratuitas para el interesado.",
+      "Tienen un coste de gestión si la queja es finalmente desestimada."
+    ],
+    "correcta": 2,
+    "explicacion": "LO 3/1981, Art. 15: Las actuaciones del Defensor del Pueblo serán gratuitas para el interesado y no será preceptiva la asistencia de Letrado ni de Procurador."
+  },
+  {
+    "pregunta": "Las decisiones sobre admisión o inadmisión de las quejas por parte del Defensor del Pueblo:",
+    "opciones": [
+      "Son recurribles ante el Tribunal Supremo.",
+      "No son susceptibles de recurso alguno.",
+      "Pueden ser recurridas en amparo ante el Tribunal Constitucional.",
+      "Son recurribles ante la Mesa del Congreso."
+    ],
+    "correcta": 1,
+    "explicacion": "LO 3/1981, Art. 15.3: Las decisiones sobre la admisión o inadmisión de las quejas presentadas no serán susceptibles de recurso."
   }
-]
 ]

@@ -4,7 +4,7 @@ const penalizacionPorError = 0.5;
 
 // Añade aquí los temas que tengas
 const temasPorBloque = {
-    bloque1: ["tema1", "tema2", "tema3"], 
+    bloque1: ["tema1","tema2", "tema3"], 
     bloque2: ["tema1"],
     bloque3: ["tema1"],
     bloque4: ["tema1"]
