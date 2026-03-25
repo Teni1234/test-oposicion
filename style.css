@@ -1,90 +1,83 @@
 /* --- RESET --- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 body {
-    background: #1e272e;
-    min-height: 100vh;
+  background: #1e272e;
+  color: white;
 }
 
-/* --- ESTRUCTURA BASE (Escritorio) --- */
+/* --- DISEÑO POR DEFECTO (MÓVIL) --- */
+/* En el móvil todo va en una sola columna hacia abajo */
 .container {
-    display: flex;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
 }
 
 .sidebar {
-    width: 280px;
-    background: #2f3640;
-    color: white;
-    padding: 20px;
+  width: 100%; /* Ocupa todo el ancho en el móvil */
+  background: #2f3640;
+  padding: 20px;
+  border-bottom: 4px solid #3742fa;
 }
 
 .main {
-    flex: 1;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .test-box {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 700px;
-    height: fit-content;
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* La caja se ajusta al móvil */
+  max-width: 600px;
 }
 
-/* --- ESTILOS DE ELEMENTOS --- */
+/* Ajustes de botones para dedos (grandes) */
 select, button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border-radius: 8px;
-    border: none;
-    font-size: 16px; /* Evita zoom molesto en iPhone */
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px; /* Muy importante para que no haga zoom solo */
 }
 
 button {
-    background: #3742fa;
-    color: white;
-    cursor: pointer;
+  background: #3742fa;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-#opciones label {
-    display: block;
-    padding: 12px;
-    margin-bottom: 10px;
-    background: #f1f2f6;
-    border-radius: 8px;
-}
+/* --- DISEÑO PARA PANTALLAS GRANDES (PC) --- */
+/* Solo si la pantalla mide más de 800px se pone en dos columnas */
+@media screen and (min-width: 800px) {
+  .container {
+    flex-direction: row; /* Uno al lado del otro */
+    min-height: 100vh;
+  }
 
-/* --- 📱 MODO MÓVIL (Aquí ocurre la magia) --- */
-@media screen and (max-width: 800px) {
-    .container {
-        flex-direction: column !important; /* Sidebar arriba, Test abajo */
-    }
+  .sidebar {
+    width: 300px; /* Ancho fijo solo en PC */
+    border-bottom: none;
+    border-right: 2px solid #3742fa;
+  }
 
-    .sidebar {
-        width: 100% !important; /* Ya no mide 280px, ahora mide todo el ancho */
-        padding: 15px;
-    }
+  .main {
+    padding: 40px;
+  }
 
-    .main {
-        width: 100% !important;
-        padding: 15px !important;
-    }
-
-    .test-box {
-        max-width: 100% !important;
-        padding: 15px;
-        box-shadow: none;
-    }
-    
-    h2 { font-size: 1.2rem; }
+  .test-box {
+    padding: 30px;
+  }
 }
