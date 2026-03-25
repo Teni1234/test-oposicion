@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Oposición</title>
-  <link rel="stylesheet" href="style.css?v=999">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Oposición Pro</title>
+    <link rel="stylesheet" href="style.css?v=11">
 </head>
 <body>
 
 <div class="container">
-  <div class="sidebar">
-    <h2>Ajustes Test</h2>
-    <label>Bloque</label>
-    <select id="bloque" onchange="cargarTemas()">
-      <option value="">Selecciona bloque</option>
-      <option value="bloque1">Bloque 1</option>
-    </select>
-    <label>Tema</label>
-    <select id="tema"></select>
-    <label class="check">
-      <input type="checkbox" id="modoExamenCheck"> Modo examen
-    </label>
-    <button onclick="iniciar()">EMPEZAR TEST</button>
-  </div>
+    <div class="sidebar">
+        <h2>Ajustes Test</h2>
+        
+        <label>Bloque</label>
+        <select id="bloque" onchange="cargarTemas()">
+            <option value="">Selecciona bloque</option>
+            <option value="bloque1">Bloque 1</option>
+        </select>
 
-  <div class="main">
-    <div class="test-box">
-      <div id="contador"></div>
-      <h3 id="pregunta">Elige un tema arriba</h3>
-      <div id="opciones"></div>
-      <button class="btn-next" onclick="siguiente()">Siguiente</button>
+        <label>Tema</label>
+        <select id="tema"></select>
+
+        <div style="margin-top: 20px;">
+            <label style="display: flex; align-items: center; cursor: pointer;">
+                <input type="checkbox" id="modoExamenCheck" style="width: 20px; height: 20px; margin-right: 10px;"> 
+                Modo Examen
+            </label>
+        </div>
+
+        <button onclick="iniciar()" style="background: #3742fa;">EMPEZAR TEST</button>
+        
+        <div id="resultado" style="margin-top: 25px; font-weight: bold; text-align: center;"></div>
     </div>
-  </div>
+
+    <div class="main">
+        <div class="test-box">
+            <div id="contador">Pregunta 0 / 0</div>
+            
+            <div style="background: #eee; height: 8px; border-radius: 4px; margin-bottom: 20px; overflow: hidden;">
+                <div id="barra-progreso" style="background: #3742fa; width: 0%; height: 100%; transition: 0.3s;"></div>
+            </div>
+
+            <h3 id="pregunta">Selecciona un tema para comenzar</h3>
+            
+            <div id="opciones">
+                </div>
+
+            <button class="btn-next" onclick="siguiente()">Siguiente Pregunta</button>
+        </div>
+    </div>
 </div>
 
-<script src="app.js"></script>
+<script src="app.js?v=11"></script>
 </body>
 </html>
