@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Test Oposición - Responsive</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Oposición</title>
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
 <div class="container">
+    <div class="sidebar">
+        <h2>Panel de Test</h2>
+        <label>Bloque</label>
+        <select id="bloque" onchange="cargarTemas()">
+            <option value="">Selecciona bloque</option>
+            <option value="bloque1">Bloque 1</option>
+        </select>
 
-  <div class="sidebar">
-    <h2>Configuración Test</h2>
+        <label>Tema</label>
+        <select id="tema"></select>
 
-    <label for="bloque">Bloque</label>
-    <select id="bloque" onchange="cargarTemas()">
-      <option value="">Selecciona bloque</option>
-      <option value="bloque1">Bloque 1</option>
-    </select>
+        <label class="check">
+            <input type="checkbox" id="modoExamenCheck"> Modo examen
+        </label>
 
-    <label for="tema">Tema</label>
-    <select id="tema"></select>
-
-    <label class="check">
-      <input type="checkbox" id="modoExamenCheck">
-      Modo examen
-    </label>
-
-    <button class="btn-primary" onclick="iniciar()">Empezar test</button>
-    <div id="resultado"></div>
-  </div>
-
-  <div class="main">
-    <div class="test-box">
-      <div id="contador"></div>
-      <h3 id="pregunta">Selecciona un tema para empezar</h3>
-      <div id="opciones"></div>
-      <button class="btn-next" onclick="siguiente()">Siguiente Pregunta</button>
+        <button onclick="iniciar()">Empezar test</button>
+        <div id="resultado"></div>
     </div>
-  </div>
 
+    <div class="main">
+        <div class="test-box">
+            <div id="contador"></div>
+            <h3 id="pregunta">Selecciona un tema para empezar</h3>
+            <div id="opciones"></div>
+            <button class="btn-next" onclick="siguiente()">Siguiente</button>
+        </div>
+    </div>
 </div>
 
 <script src="app.js"></script>

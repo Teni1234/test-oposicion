@@ -1,153 +1,90 @@
-/* RESET GENERAL */
+/* --- RESET --- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-html, body {
-  width: 100%;
-  min-height: 100vh;
-  background: #1e272e;
-  color: #333;
+body {
+    background: #1e272e;
+    min-height: 100vh;
 }
 
-/* LAYOUT BASE (Escritorio) */
+/* --- ESTRUCTURA BASE (Escritorio) --- */
 .container {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
+    display: flex;
+    min-height: 100vh;
 }
 
-/* SIDEBAR */
 .sidebar {
-  width: 300px;
-  background: #2f3640;
-  color: white;
-  padding: 30px 20px;
-  flex-shrink: 0; /* Evita que se encoja en escritorio */
+    width: 280px;
+    background: #2f3640;
+    color: white;
+    padding: 20px;
 }
 
-.sidebar h2 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  color: #3742fa;
-}
-
-label {
-  display: block;
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #dcdde1;
-}
-
-select, button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 8px;
-  border-radius: 8px;
-  border: none;
-  font-size: 1rem;
-}
-
-/* BOTONES */
-button {
-  cursor: pointer;
-  transition: background 0.3s ease;
-  font-weight: bold;
-}
-
-.btn-primary {
-  background: #3742fa;
-  color: white;
-  margin-top: 25px;
-}
-
-.btn-next {
-  background: #2f3542;
-  color: white;
-  margin-top: 20px;
-}
-
-button:active {
-  transform: scale(0.98);
-}
-
-/* ÁREA PRINCIPAL */
 .main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px;
-  background: linear-gradient(135deg, #1e272e, #2f3640);
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .test-box {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 700px;
-  height: fit-content;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 700px;
+    height: fit-content;
+}
+
+/* --- ESTILOS DE ELEMENTOS --- */
+select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px; /* Evita zoom molesto en iPhone */
+}
+
+button {
+    background: #3742fa;
+    color: white;
+    cursor: pointer;
 }
 
 #opciones label {
-  display: block;
-  padding: 15px;
-  margin-bottom: 12px;
-  border-radius: 10px;
-  background: #f1f2f6;
-  cursor: pointer;
-  border: 2px solid transparent;
+    display: block;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f1f2f6;
+    border-radius: 8px;
 }
 
-#opciones label:hover {
-  background: #dfe4ea;
-}
-
-/* 📱 ADAPTACIÓN PARA MÓVILES */
+/* --- 📱 MODO MÓVIL (Aquí ocurre la magia) --- */
 @media screen and (max-width: 800px) {
-  .container {
-    flex-direction: column; /* Apila el menú arriba del test */
-  }
+    .container {
+        flex-direction: column !important; /* Sidebar arriba, Test abajo */
+    }
 
-  .sidebar {
-    width: 100%;
-    padding: 20px;
-    border-bottom: 3px solid #3742fa;
-  }
+    .sidebar {
+        width: 100% !important; /* Ya no mide 280px, ahora mide todo el ancho */
+        padding: 15px;
+    }
 
-  .main {
-    padding: 15px;
-  }
+    .main {
+        width: 100% !important;
+        padding: 15px !important;
+    }
 
-  .test-box {
-    padding: 20px;
-    border-radius: 12px;
-  }
-
-  /* Evitamos que el zoom se dispare en iPhone al tocar inputs */
-  select, button, input {
-    font-size: 16px !important;
-  }
-
-  #pregunta {
-    font-size: 1.2rem;
-  }
-}
-/* Prueba de fuego: Si esto no pone el fondo rojo en móvil, 
-   es que el móvil no está leyendo tu CSS actualizado */
-@media screen and (max-width: 600px) {
-  body {
-    background: red !important;
-  }
-  .container {
-    flex-direction: column !important;
-  }
-  .sidebar, .main {
-    width: 100% !important;
-    display: block !important;
-  }
+    .test-box {
+        max-width: 100% !important;
+        padding: 15px;
+        box-shadow: none;
+    }
+    
+    h2 { font-size: 1.2rem; }
 }
