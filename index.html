@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Oposición Pro</title>
-    <link rel="stylesheet" href="style.css?v=11">
+    <link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 
@@ -16,6 +16,9 @@
         <select id="bloque" onchange="cargarTemas()">
             <option value="">Selecciona bloque</option>
             <option value="bloque1">Bloque 1</option>
+            <option value="bloque2">Bloque 2</option>
+            <option value="bloque3">Bloque 3</option>
+            <option value="bloque4">Bloque 4</option>
         </select>
 
         <label>Tema</label>
@@ -28,13 +31,41 @@
             </label>
         </div>
 
-        <button onclick="iniciar()" style="background: #3742fa;">EMPEZAR TEST</button>
+        <button onclick="iniciar()" style="background: #3742fa; margin-top: 15px;">▶ EMPEZAR TEST</button>
+        <button onclick="mostrarDashboard()" style="background: #2ed573; margin-top: 10px; color: #2f3542; font-weight: bold;">📊 VER MI PROGRESO</button>
         
         <div id="resultado" style="margin-top: 25px; font-weight: bold; text-align: center;"></div>
     </div>
 
     <div class="main">
-        <div class="test-box">
+        
+        <div id="zona-dashboard" style="display: none; width: 100%; max-width: 800px; margin: 0 auto; padding: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 style="color: #2f3542; margin: 0;">Mi Progreso por Temas 📈</h2>
+                <button onclick="volverAlTest()" style="background: #57606f; padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">Volver al Test</button>
+            </div>
+            
+            <div style="background: #f1f2f6; padding: 15px; border-radius: 8px; margin-bottom: 25px; display: flex; gap: 15px; align-items: center; border: 1px solid #dfe4ea;">
+                <strong style="color: #2f3542;">Filtrar:</strong>
+                
+                <select id="filtro-bloque" onchange="actualizarFiltrosDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; flex: 1; outline: none;">
+                    <option value="TODOS">Todos los bloques</option>
+                    <option value="BLOQUE1">Bloque 1</option>
+                    <option value="BLOQUE2">Bloque 2</option>
+                    <option value="BLOQUE3">Bloque 3</option>
+                    <option value="BLOQUE4">Bloque 4</option>
+                </select>
+
+                <select id="filtro-tema" onchange="renderizarDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; flex: 1; outline: none;">
+                    <option value="TODOS">Todos los temas</option>
+                </select>
+            </div>
+
+            <div id="dashboard-contenido">
+                </div>
+        </div>
+
+        <div class="test-box" id="zona-test">
             <div id="contador">Pregunta 0 / 0</div>
             
             <div style="background: #eee; height: 8px; border-radius: 4px; margin-bottom: 20px; overflow: hidden;">
@@ -43,14 +74,19 @@
 
             <h3 id="pregunta">Selecciona un tema para comenzar</h3>
             
-            <div id="opciones">
-                </div>
+            <div id="opciones"></div>
 
-            <button class="btn-next" onclick="siguiente()">Siguiente Pregunta</button>
+            <button id="btn-siguiente" class="btn-next" onclick="siguiente()" style="display: none;">Siguiente Pregunta</button>
+
+            <div style="margin-top: 40px; border-top: 2px solid #eee; padding-top: 20px;">
+                <h3 style="color: #2f3542; margin-bottom: 10px; font-size: 1.1rem;">Últimos Tests Realizados ☁️</h3>
+                <div id="tabla-historial"></div>
+            </div>
         </div>
+
     </div>
 </div>
 
-<script src="app.js?v=11"></script>
+<script src="app.js?v=13"></script>
 </body>
 </html>

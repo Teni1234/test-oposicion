@@ -1,12 +1,12 @@
 [
   {
-    "pregunta": "¿Cuándo es obligatoria la firma?",
-    "opciones": [
-      "Siempre",
-      "Nunca",
-      "En solicitudes y recursos",
-      "Solo en notificaciones"
-    ],
-    "correcta": 2
+    "pregunta": "Prueba 1: ¿Funciona la nube?",
+    "opciones": ["Sí", "No", "Quizás", "Nunca"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Prueba 2: ¿Pasa de pregunta?",
+    "opciones": ["Sí", "No", "A veces", "Error"],
+    "correcta": 0
   }
 ]
