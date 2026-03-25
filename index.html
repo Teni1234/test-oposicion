@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Oposición Pro</title>
-    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="style.css?v=16">
+    <style>
+        /* Estilos extra para la botonera y el repaso (los metemos aquí para no tocar el style.css) */
+        .nav-preguntas { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; padding: 10px; background: #f1f2f6; border-radius: 8px; }
+        .btn-nav { width: 35px; height: 35px; border-radius: 5px; border: 1px solid #ccc; background: white; cursor: pointer; font-weight: bold; color: #2f3542; transition: 0.2s; }
+        .btn-nav.actual { border: 2px solid #3742fa; transform: scale(1.1); box-shadow: 0 0 5px rgba(55, 66, 250, 0.5); }
+        .btn-nav.respondida { background: #7bed9f; color: #2f3542; border-color: #2ed573; }
+        .btn-nav.examen-respondida { background: #70a1ff; color: white; border-color: #1e90ff; }
+        .btn-nav.fallada { background: #ff7f50; color: white; border-color: #ff4757; }
+        
+        .caja-repaso { background: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; border-left: 5px solid #ccc; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: left;}
+        .caja-repaso.acierto { border-left-color: #2ed573; }
+        .caja-repaso.fallo { border-left-color: #ff4757; }
+        .caja-repaso.blanco { border-left-color: #a4b0be; }
+    </style>
 </head>
 <body>
 
@@ -24,14 +38,24 @@
         <label>Tema</label>
         <select id="tema"></select>
 
-        <div style="margin-top: 20px;">
+        <label style="margin-top: 15px; display: block;">Tiempo (minutos)</label>
+        <input type="number" id="tiempoExamen" value="30" min="1" max="120" style="width: 100%; padding: 8px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; font-size: 1rem;">
+
+        <div style="margin-top: 10px;">
             <label style="display: flex; align-items: center; cursor: pointer;">
                 <input type="checkbox" id="modoExamenCheck" style="width: 20px; height: 20px; margin-right: 10px;"> 
-                Modo Examen
+                Modo Examen (Ocultar aciertos)
             </label>
         </div>
 
-        <button onclick="iniciar()" style="background: #3742fa; margin-top: 15px;">▶ EMPEZAR TEST</button>
+        <div style="margin-top: 10px;">
+            <label style="display: flex; align-items: center; cursor: pointer;">
+                <input type="checkbox" id="modoAleatorioCheck" style="width: 20px; height: 20px; margin-right: 10px;" checked> 
+                Preguntas Aleatorias
+            </label>
+        </div>
+
+        <button onclick="iniciar()" style="background: #3742fa; margin-top: 25px;">▶ EMPEZAR TEST</button>
         <button onclick="mostrarDashboard()" style="background: #2ed573; margin-top: 10px; color: #2f3542; font-weight: bold;">📊 VER MI PROGRESO</button>
         
         <div id="resultado" style="margin-top: 25px; font-weight: bold; text-align: center;"></div>
@@ -47,36 +71,46 @@
             
             <div style="background: #f1f2f6; padding: 15px; border-radius: 8px; margin-bottom: 25px; display: flex; gap: 15px; align-items: center; border: 1px solid #dfe4ea;">
                 <strong style="color: #2f3542;">Filtrar:</strong>
-                
-                <select id="filtro-bloque" onchange="actualizarFiltrosDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; flex: 1; outline: none;">
+                <select id="filtro-bloque" onchange="actualizarFiltrosDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; flex: 1;">
                     <option value="TODOS">Todos los bloques</option>
                     <option value="BLOQUE1">Bloque 1</option>
                     <option value="BLOQUE2">Bloque 2</option>
                     <option value="BLOQUE3">Bloque 3</option>
                     <option value="BLOQUE4">Bloque 4</option>
                 </select>
-
-                <select id="filtro-tema" onchange="renderizarDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; flex: 1; outline: none;">
+                <select id="filtro-tema" onchange="renderizarDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; flex: 1;">
                     <option value="TODOS">Todos los temas</option>
                 </select>
             </div>
 
-            <div id="dashboard-contenido">
-                </div>
+            <div id="dashboard-contenido"></div>
         </div>
 
         <div class="test-box" id="zona-test">
-            <div id="contador">Pregunta 0 / 0</div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <div id="contador" style="margin: 0; font-weight: bold;">Preparado...</div>
+                <div id="reloj" style="font-size: 1.2rem; font-weight: bold; color: #2f3542; background: #f1f2f6; padding: 5px 15px; border-radius: 20px; transition: 0.3s;">⏱️ 00:00</div>
+            </div>
             
             <div style="background: #eee; height: 8px; border-radius: 4px; margin-bottom: 20px; overflow: hidden;">
                 <div id="barra-progreso" style="background: #3742fa; width: 0%; height: 100%; transition: 0.3s;"></div>
             </div>
 
-            <h3 id="pregunta">Selecciona un tema para comenzar</h3>
-            
-            <div id="opciones"></div>
+            <div id="navegador" class="nav-preguntas" style="display: none;"></div>
 
-            <button id="btn-siguiente" class="btn-next" onclick="siguiente()" style="display: none;">Siguiente Pregunta</button>
+            <div id="contenedor-pregunta">
+                <h3 id="pregunta">Selecciona un tema para comenzar</h3>
+                <div id="opciones"></div>
+            </div>
+
+            <div id="controles-test" style="display: none; justify-content: space-between; margin-top: 20px;">
+                <button onclick="cambiarPregunta(-1)" style="background: #a4b0be; padding: 10px 20px; font-size: 1rem;">⬅ Anterior</button>
+                <button onclick="finalizarManual()" style="background: #ff4757; padding: 10px 20px; font-size: 1rem; font-weight: bold;">Entregar Examen</button>
+                <button onclick="cambiarPregunta(1)" style="background: #3742fa; padding: 10px 20px; font-size: 1rem;">Siguiente ➡</button>
+            </div>
+
+            <div id="zona-repaso" style="display: none; margin-top: 30px; border-top: 2px solid #eee; padding-top: 20px;"></div>
 
             <div style="margin-top: 40px; border-top: 2px solid #eee; padding-top: 20px;">
                 <h3 style="color: #2f3542; margin-bottom: 10px; font-size: 1.1rem;">Últimos Tests Realizados ☁️</h3>
@@ -87,6 +121,6 @@
     </div>
 </div>
 
-<script src="app.js?v=13"></script>
+<script src="app.js?v=16"></script>
 </body>
 </html>
