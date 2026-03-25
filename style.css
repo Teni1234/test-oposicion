@@ -104,6 +104,7 @@ button:hover {
   font-weight: bold;
 }
 /* 📱 MODO MÓVIL REAL */
+/* 📱 MODO MÓVIL REAL */
 @media (max-width: 768px) {
 
   body {
@@ -115,18 +116,21 @@ button:hover {
     height: auto;
   }
 
+  /* 🔥 OCULTAR SIDEBAR */
   .sidebar {
-    width: 100%;
-    padding: 15px;
+    display: none;
   }
 
   .main {
-    padding: 15px;
+    padding: 10px;
+    align-items: stretch;
   }
 
   .test-box {
     max-width: 100%;
     padding: 15px;
+    border-radius: 10px;
+    box-shadow: none;
   }
 
   #pregunta {
