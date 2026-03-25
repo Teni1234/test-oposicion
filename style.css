@@ -137,3 +137,17 @@ button:active {
     font-size: 1.2rem;
   }
 }
+/* Prueba de fuego: Si esto no pone el fondo rojo en móvil, 
+   es que el móvil no está leyendo tu CSS actualizado */
+@media screen and (max-width: 600px) {
+  body {
+    background: red !important;
+  }
+  .container {
+    flex-direction: column !important;
+  }
+  .sidebar, .main {
+    width: 100% !important;
+    display: block !important;
+  }
+}
