@@ -4,7 +4,7 @@ const penalizacionPorError = 0.5;
 
 // Añade aquí los temas que tengas
 const temasPorBloque = {
-    bloque1: ["tema1", "tema2", "tema3"], // He añadido varios como ejemplo
+    bloque1: ["tema1", "tema2", "tema3"], 
     bloque2: ["tema1"],
     bloque3: ["tema1"],
     bloque4: ["tema1"]
@@ -46,11 +46,12 @@ function aplicarModoLunaGuardado() {
     else { body.classList.remove("dark-mode"); body.classList.add("light-mode"); if (boton) boton.innerText = "🌙"; }
 }
 
-// ================= 📚 CARGA DE TEMAS MÚLTIPLES =================
-function cargarTemas() {
+// ================= 📚 CARGA DE TEMAS MÚLTIPLES CON CONTEO AUTOMÁTICO =================
+async function cargarTemas() {
     let bloque = document.getElementById("bloque").value;
     let contenedor = document.getElementById("contenedor-temas");
     contenedor.innerHTML = "";
+    
     if (!bloque) {
         contenedor.innerHTML = '<p style="font-size: 0.9rem;">Selecciona un bloque primero</p>';
         return;
@@ -62,13 +63,34 @@ function cargarTemas() {
         <strong style="color: var(--sidebar-text);">Seleccionar Todos</strong>
     </label>`;
 
+    // Crear los contenedores de los temas primero
     temasPorBloque[bloque].forEach(t => {
-        html += `<label style="display:flex; align-items:center; margin-bottom:8px; cursor:pointer; color: var(--sidebar-text-sec);">
-            <input type="checkbox" value="${t}" class="tema-check" style="margin-right:10px; width:16px; height:16px; accent-color:#3742fa;"> 
-            ${t.toUpperCase()}
+        html += `<label style="display:flex; align-items:center; justify-content: space-between; margin-bottom:8px; cursor:pointer; color: var(--sidebar-text-sec);">
+            <div style="display:flex; align-items:center;">
+                <input type="checkbox" value="${t}" class="tema-check" style="margin-right:10px; width:16px; height:16px; accent-color:#3742fa;"> 
+                ${t.toUpperCase()}
+            </div>
+            <span id="count-${t}" class="badge-conteo" style="font-size: 0.7rem; color: #ffffff; background: #3742fa; padding: 2px 8px; border-radius: 10px; font-weight: bold; margin-left: auto;">...</span>
         </label>`;
     });
+    
     contenedor.innerHTML = html;
+
+    // Lanzar la carga asíncrona de los conteos para cada tema
+    temasPorBloque[bloque].forEach(async (t) => {
+        try {
+            const response = await fetch(`./data/${bloque}/${t}.json`);
+            if (response.ok) {
+                const data = await response.json();
+                const numPreguntas = data.length;
+                const badge = document.getElementById(`count-${t}`);
+                if (badge) badge.innerText = `${numPreguntas} preg.`;
+            }
+        } catch (error) {
+            const badge = document.getElementById(`count-${t}`);
+            if (badge) badge.innerText = "n/a";
+        }
+    });
 }
 
 function marcarTodosTemas(checkboxPrincipal) {
@@ -213,6 +235,7 @@ function dibujarNavegador() {
 function actualizarNavegadorVisual() {
     for (let i = 0; i < preguntas.length; i++) {
         let btn = document.getElementById(`nav-btn-${i}`);
+        if(!btn) continue;
         btn.className = "btn-nav"; 
         if (i === actual) btn.classList.add("actual"); 
         if (respuestasUsuario[i] !== null) {
@@ -269,11 +292,55 @@ function responder(i) {
     }
     
     let correcta = preguntas[actual].correcta;
+    let esCorrecta = (i === correcta);
+    
+    // Bloqueamos clics para que no sigan pulsando
     document.querySelectorAll("#opciones label").forEach(l => l.style.pointerEvents = "none");
-    if (i === correcta) document.getElementById("op"+i).style.background = "#d4edda";
-    else { document.getElementById("op"+i).style.background = "#f8d7da"; document.getElementById("op"+correcta).style.background = "#d4edda"; }
-    actualizarNavegadorVisual();
-    setTimeout(() => { if (actual < preguntas.length - 1) cambiarPregunta(1); }, 1200);
+    
+    // Creamos o buscamos un contenedor para la explicación
+    let contenedorExplicacion = document.getElementById("explicacion-temporal");
+    if (!contenedorExplicacion) {
+        contenedorExplicacion = document.createElement("div");
+        contenedorExplicacion.id = "explicacion-temporal";
+        document.getElementById("contenedor-pregunta").appendChild(contenedorExplicacion);
+    }
+
+    if (esCorrecta) {
+        // --- SI ACERTAMOS ---
+        document.getElementById("op"+i).style.background = "#d4edda";
+        document.getElementById("op"+i).style.border = "2px solid #2ed573";
+        
+        actualizarNavegadorVisual();
+        // Pasamos rápido (1.2 segundos)
+        setTimeout(() => { 
+            contenedorExplicacion.innerHTML = ""; 
+            if (actual < preguntas.length - 1) cambiarPregunta(1); 
+        }, 1200);
+    } else {
+        // --- SI FALLAMOS ---
+        document.getElementById("op"+i).style.background = "#f8d7da"; // Rojo la tuya
+        document.getElementById("op"+i).style.border = "2px solid #ff4757";
+        
+        document.getElementById("op"+correcta).style.background = "#d4edda"; // Verde la correcta
+        document.getElementById("op"+correcta).style.border = "2px solid #2ed573";
+
+        // MOSTRAMOS LA EXPLICACIÓN EN PANTALLA
+        contenedorExplicacion.innerHTML = `
+            <div style="margin-top:20px; padding:15px; background:#f1f2f6; border-left:5px solid #3742fa; border-radius:5px; animation: fadeIn 0.5s;">
+                <strong style="color:#3742fa;">💡 EXPLICACIÓN:</strong><br>
+                <p style="margin-top:5px; color:#2f3542; font-size:0.95rem;">${preguntas[actual].explicacion || "No hay explicación disponible para esta pregunta."}</p>
+                <div style="margin-top:10px; font-size:0.7rem; color:#a4b0be; text-align:right;">Pasando a la siguiente en 10 segundos...</div>
+            </div>
+        `;
+        
+        actualizarNavegadorVisual();
+        
+        // Esperamos 10 segundos para que te dé tiempo a leer la corrección
+        setTimeout(() => { 
+            contenedorExplicacion.innerHTML = ""; 
+            if (actual < preguntas.length - 1) cambiarPregunta(1); 
+        }, 10000); 
+    }
 }
 
 function finalizarManual() {
@@ -355,6 +422,9 @@ function mostrarRepasoDeExamen() {
             <div style="font-weight:bold; margin-bottom:8px; color:var(--text-color);">${i + 1}. ${p.pregunta}</div>
             <div style="font-size:0.9rem; margin-bottom:4px; color:var(--text-color-sec);"><strong>Tú respondiste:</strong> ${textoRespuestaMia}</div>
             ${respuestaMia !== correcta ? `<div style="font-size:0.9rem; color:#2ed573;"><strong>Respuesta correcta:</strong> ${p.opciones[correcta]}</div>` : ''}
+            
+            ${p.explicacion ? `<div style="margin-top:10px; padding:10px; background:rgba(55, 66, 250, 0.1); border-radius:5px; font-size:0.85rem; color:var(--text-color); border-left: 3px solid #3742fa;"><strong>💡 Nota de estudio:</strong> ${p.explicacion}</div>` : ''}
+            
             <div style="margin-top:8px; font-size:0.8rem; font-weight:bold; float:right;">${icono}</div>
             <div style="clear:both;"></div>
         </div>`;
@@ -362,7 +432,7 @@ function mostrarRepasoDeExamen() {
     divRepaso.innerHTML = html;
 }
 
-// --- HISTORIAL Y DASHBOARD (Sin cambios) ---
+// --- HISTORIAL Y DASHBOARD ---
 async function cargarHistorialNube() {
     const tablaDiv = document.getElementById("tabla-historial"); if (!tablaDiv) return; 
     try {

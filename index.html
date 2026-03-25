@@ -21,8 +21,28 @@
         .caja-repaso.fallo { border-left-color: #ff4757; }
         .caja-repaso.blanco { border-left-color: #a4b0be; }
 
-        /* Estilo para la lista de temas con scroll */
-        #contenedor-temas { background: var(--sidebar-input-bg); border: 1px solid var(--sidebar-border); border-radius: 8px; padding: 15px; max-height: 180px; overflow-y: auto; margin-bottom: 20px; color: var(--sidebar-text-sec); }
+        /* Estilo mejorado para la lista de temas con scroll */
+        #contenedor-temas { 
+            background: var(--sidebar-input-bg); 
+            border: 1px solid var(--sidebar-border); 
+            border-radius: 8px; 
+            padding: 10px; 
+            max-height: 250px; /* Un poco más de espacio */
+            overflow-y: auto; 
+            margin-bottom: 20px; 
+            color: var(--sidebar-text-sec); 
+        }
+
+        /* Badge de conteo automático */
+        .badge-conteo {
+            font-size: 0.7rem;
+            color: #ffffff;
+            background: #3742fa;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-left: auto;
+        }
     </style>
 </head>
 <body class="light-mode"> 
@@ -43,9 +63,9 @@
             <option value="bloque4">Bloque 4</option>
         </select>
 
-        <label>Temas (Puedes elegir varios)</label>
+        <label>Temas</label>
         <div id="contenedor-temas">
-            <p style="font-size: 0.9rem;">Selecciona un bloque primero</p>
+            <p style="font-size: 0.8rem; text-align: center; padding: 10px;">Selecciona un bloque para ver los temas disponibles y su número de preguntas.</p>
         </div>
 
         <div style="display: flex; gap: 10px; margin-bottom: 15px;">
@@ -80,32 +100,15 @@
     </div>
 
     <div class="main">
-        
         <div id="zona-dashboard" style="display: none; width: 100%; max-width: 800px; margin: 0 auto; padding: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <h2 style="color: var(--text-color); margin: 0;">Mi Progreso por Temas 📈</h2>
-                <button onclick="volverAlTest()" style="background: #57606f; padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">Volver al Test</button>
+                <h2 style="color: var(--text-color); margin: 0;">Mi Progreso 📈</h2>
+                <button onclick="volverAlTest()" style="background: #57606f; padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">Volver</button>
             </div>
-            
-            <div style="background: var(--panel-bg-sec); padding: 15px; border-radius: 8px; margin-bottom: 25px; display: flex; gap: 15px; align-items: center; border: 1px solid var(--border-color);">
-                <strong style="color: var(--text-color);">Filtrar:</strong>
-                <select id="filtro-bloque" onchange="actualizarFiltrosDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid var(--border-color); flex: 1; background: var(--panel-bg); color: var(--text-color);">
-                    <option value="TODOS">Todos los bloques</option>
-                    <option value="BLOQUE1">Bloque 1</option>
-                    <option value="BLOQUE2">Bloque 2</option>
-                    <option value="BLOQUE3">Bloque 3</option>
-                    <option value="BLOQUE4">Bloque 4</option>
-                </select>
-                <select id="filtro-tema" onchange="renderizarDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid var(--border-color); flex: 1; background: var(--panel-bg); color: var(--text-color);">
-                    <option value="TODOS">Todos los temas</option>
-                </select>
-            </div>
-
             <div id="dashboard-contenido"></div>
         </div>
 
         <div class="test-box" id="zona-test">
-            
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
                 <div id="contador" style="margin: 0; font-weight: bold;">Preparado...</div>
                 <div id="reloj" style="font-size: 1.2rem; font-weight: bold; color: var(--text-color); background: var(--panel-bg-sec); padding: 5px 15px; border-radius: 20px; transition: 0.3s;">⏱️ 00:00</div>
@@ -123,9 +126,9 @@
             </div>
 
             <div id="controles-test" style="display: none; justify-content: space-between; margin-top: 20px;">
-                <button onclick="cambiarPregunta(-1)" style="background: #a4b0be; padding: 10px 20px; font-size: 1rem;">⬅ Anterior</button>
-                <button onclick="finalizarManual()" style="background: #ff4757; padding: 10px 20px; font-size: 1rem; font-weight: bold;">Entregar Examen</button>
-                <button onclick="cambiarPregunta(1)" style="background: #3742fa; padding: 10px 20px; font-size: 1rem;">Siguiente ➡</button>
+                <button onclick="cambiarPregunta(-1)" style="background: #a4b0be; padding: 10px 20px;">⬅ Ant.</button>
+                <button onclick="finalizarManual()" style="background: #ff4757; padding: 10px 20px; font-weight: bold;">Entregar</button>
+                <button onclick="cambiarPregunta(1)" style="background: #3742fa; padding: 10px 20px;">Sig. ➡</button>
             </div>
 
             <div id="zona-repaso" style="display: none; margin-top: 30px; border-top: 2px solid var(--border-color); padding-top: 20px;"></div>
@@ -135,20 +138,18 @@
                 <div id="tabla-historial"></div>
             </div>
         </div>
-
     </div>
 </div>
 
-<script src="app.js?v=19"></script>
+<script src="app.js?v=20"></script>
+
 <script>
-        // Registrar el Service Worker para que el móvil reconozca la App
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js')
-                .then(reg => console.log('App instalable lista!'))
-                .catch(err => console.log('Error:', err));
-            });
-        }
-    </script>
+    // Registro de PWA
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js').catch(err => console.log('Error sw:', err));
+        });
+    }
+</script>
 </body>
 </html>

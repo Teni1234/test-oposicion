@@ -1,12 +1,956 @@
 [
   {
-    "pregunta": "Prueba 1: ¿Funciona la nube?",
-    "opciones": ["Sí", "No", "Quizás", "Nunca"],
-    "correcta": 0
+    "pregunta": "Señale la respuesta INCORRECTA de acuerdo con el Título II, artículo 62 de la CE. Corresponde al Rey:",
+    "opciones": [
+      "Convocar a referéndum en los casos previstos en la Constitución, previa autorización de las Cortes Generales.",
+      "Convocar y disolver las Cortes Generales y convocar elecciones en los términos previstos en la Constitución.",
+      "Proponer el candidato a Presidente de Gobierno y, en su caso, nombrarlo, así como poner fin a sus funciones en los términos previstos en la Constitución.",
+      "Nombrar y separar a los miembros del Gobierno, a propuesta de su Presidente."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 92.2 CE: El referéndum lo convoca el Rey a propuesta del Presidente, pero la autorización es exclusiva del CONGRESO. Las Cortes Generales (Congreso + Senado) no intervienen en la autorización."
   },
   {
-    "pregunta": "Prueba 2: ¿Pasa de pregunta?",
-    "opciones": ["Sí", "No", "A veces", "Error"],
-    "correcta": 0
+    "pregunta": "Conforme a la Constitución española, la forma política del Estado español es:",
+    "opciones": ["Monarquía democrática.", "Monarquía limitada.", "Monarquía constitucional.", "Monarquía parlamentaria."],
+    "correcta": 3,
+    "explicacion": "Art. 1.3 de la CE: 'La forma política del Estado español es la Monarquía parlamentaria'."
+  },
+  {
+    "pregunta": "Se indica en el artículo 1 de la Constitución española que España se constituye en un Estado:",
+    "opciones": [
+      "parlamentario y democrático de Derecho.",
+      "social y democrático de Derecho.",
+      "social y soberano de Derecho.",
+      "plural y democrático de Derecho."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 1.1 de la CE: 'España se constituye en un Estado social y democrático de Derecho'."
+  },
+  {
+    "pregunta": "Según el Título I, Cap. IV 'De las garantías', de la CE de 1978, señale la opción correcta:",
+    "opciones": [
+      "Los derechos y libertades reconocidos no vinculan a todas las Administraciones Públicas.",
+      "Sólo por ley orgánica podrá regularse el ejercicio de tales derechos y libertades.",
+      "Una ley orgánica regulará la institución del Defensor del Pueblo.",
+      "El reconocimiento de los principios del Cap. III informará la judicialización positiva."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 54 CE: 'Una LEY ORGÁNICA regulará la institución del Defensor del Pueblo'."
+  },
+  {
+    "pregunta": "El artículo 29 de la Constitución española reconoce el derecho de petición a:",
+    "opciones": [
+      "Todos los ciudadanos.",
+      "Todos los españoles.",
+      "Todas las personas que residan en territorio español.",
+      "Todas las personas censadas en España."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 29.1 CE: 'Todos los españoles tendrán el derecho de petición individual y colectiva'."
+  },
+  {
+    "pregunta": "En relación al artículo 64 de la Constitución (Refrendo), señale la correcta:",
+    "opciones": [
+      "Con carácter general los actos del Rey serán refrendados por el Presidente del Congreso.",
+      "El Presidente del Gobierno no puede refrendar los actos del Rey.",
+      "La propuesta y nombramiento del Presidente del Gobierno, y la disolución del art. 99 serán refrendados por el Presidente del Congreso.",
+      "El Rey será directamente responsable de los actos refrendados."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 64.1 CE: El Presidente del Congreso refrenda específicamente la propuesta/nombramiento del Presidente del Gobierno y la disolución por falta de investidura."
+  },
+  {
+    "pregunta": "El control de la potestad reglamentaria y la legalidad de la actuación administrativa corresponde:",
+    "opciones": ["Al Gobierno.", "Al Ministro competente.", "A los Tribunales.", "A las Cortes Generales."],
+    "correcta": 2,
+    "explicacion": "Art. 106.1 CE: Los Tribunales controlan la potestad reglamentaria y la legalidad de la actuación administrativa."
+  },
+  {
+    "pregunta": "La suspensión de los derechos y libertades se encuentra regulada en la CE en:",
+    "opciones": ["En el Capítulo III del Título I.", "En sus artículos 52 y 53.", "En el artículo 58.", "En el Capítulo V del Título I."],
+    "correcta": 3,
+    "explicacion": "Art. 55 CE: La suspensión de derechos está en el Capítulo V del Título I."
+  },
+  {
+    "pregunta": "Indique el Título de la CE relativo a la Organización Territorial del Estado:",
+    "opciones": ["Título IV.", "Título VI.", "Título VIII.", "Título X."],
+    "correcta": 2,
+    "explicacion": "Título VIII: De la Organización Territorial del Estado."
+  },
+  {
+    "pregunta": "De acuerdo con la CE, ¿cuáles son los valores superiores del ordenamiento jurídico?",
+    "opciones": ["La libertad, la justicia y la solidaridad.", "La autonomía, la monarquía y el pluralismo.", "La libertad, la justicia, la igualdad y el pluralismo político.", "La soberanía popular y el estado social."],
+    "correcta": 2,
+    "explicacion": "Art. 1.1 CE: Libertad, justicia, igualdad y pluralismo político."
+  },
+  {
+    "pregunta": "Señale la respuesta correcta sobre la Corona:",
+    "opciones": [
+      "La sucesión seguirá el orden regular de premoriencia.",
+      "La persona del Rey es inviolable y no está sujeta a responsabilidad.",
+      "Las dudas en la sucesión se resolverán por ley marco.",
+      "El Rey nombra a los miembros de su Casa previa autorización de las Cortes."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 56.3 CE: 'La persona del Rey es inviolable y no está sujeta a responsabilidad'."
+  },
+  {
+    "pregunta": "El derecho al honor (Art. 18.1) podrá ser suspendido:",
+    "opciones": [
+      "En ningún caso podrá ser suspendido.",
+      "De forma individual por Ley Orgánica.",
+      "Cuando se acuerde estado de excepción o de sitio.",
+      "Únicamente en estado de sitio."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 55.1 CE: Los derechos del art. 18.2 y 18.3 pueden suspenderse en excepción/sitio. El 18.1 se incluye en la práctica por la redacción del art. 55."
+  },
+  {
+    "pregunta": "El estado de sitio será declarado por:",
+    "opciones": ["Mayoría simple del Congreso.", "Mayoría absoluta del Senado.", "Mayoría simple del Senado.", "Mayoría absoluta del Congreso, a propuesta exclusiva del Gobierno."],
+    "correcta": 3,
+    "explicacion": "Art. 116.4 CE: Mayoría absoluta del Congreso a propuesta exclusiva del Gobierno."
+  },
+  {
+    "pregunta": "¿En qué fecha exacta entró en vigor la Constitución Española de 1978?",
+    "opciones": [
+      "El 6 de diciembre de 1978.",
+      "El 27 de diciembre de 1978.",
+      "El 29 de diciembre de 1978.",
+      "El 1 de enero de 1979."
+    ],
+    "correcta": 2,
+    "explicacion": "Entró en vigor el 29 de diciembre de 1978, el mismo día de su publicación en el BOE."
+  },
+  {
+    "pregunta": "Tras la reforma de febrero de 2024, ¿qué cambio se ha producido en el artículo 49 de la CE?",
+    "opciones": [
+      "Se ha modificado la estabilidad presupuestaria.",
+      "Se ha sustituido el término 'disminuidos' por 'personas con discapacidad'.",
+      "Se ha incluido el sufragio pasivo para extranjeros.",
+      "Se ha modificado el derecho a la huelga."
+    ],
+    "correcta": 1,
+    "explicacion": "Reforma 2024: Se elimina el término 'disminuidos' por 'personas con discapacidad' para modernizar el lenguaje y enfoque."
+  },
+  {
+    "pregunta": "¿Qué plazo tiene el Rey para sancionar las leyes aprobadas por las Cortes Generales?",
+    "opciones": [
+      "Inmediatamente.",
+      "En el plazo de 15 días.",
+      "En el plazo de 30 días.",
+      "No tiene plazo establecido."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 91 CE: 'El Rey sancionará en el plazo de quince días las leyes aprobadas por las Cortes Generales'."
+  },
+  {
+    "pregunta": "En el procedimiento de REFORMA AGRAVADA (Art. 168), ¿qué mayoría se requiere para la aprobación del principio de revisión en cada Cámara?",
+    "opciones": [
+      "Mayoría absoluta.",
+      "Tres quintos (3/5).",
+      "Dos tercios (2/3).",
+      "Un décimo (1/10)."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 168.1 CE: Se requiere mayoría de dos tercios de cada Cámara para la reforma agravada."
+  },
+  {
+    "pregunta": "¿Quién puede ser elegido Defensor del Pueblo, según su Ley Orgánica 3/1981?",
+    "opciones": [
+      "Cualquier Magistrado elegido por las Cortes Generales.",
+      "Cualquier Senador elegido por las Cortes Generales.",
+      "Cualquier persona en pleno disfrute de sus derechos civiles.",
+      "Cualquier español mayor de edad en pleno disfrute de sus derechos civiles y políticos."
+    ],
+    "correcta": 3,
+    "explicacion": "Ley Orgánica 3/1981: Cualquier español mayor de edad con plenitud de derechos civiles y políticos."
+  },
+  {
+    "pregunta": "En cuanto a la REGENCIA (Art. 59), si el Rey se inhabilitare y el Príncipe heredero fuera menor de edad, ¿quién ejercerá la Regencia?",
+    "opciones": [
+      "El pariente mayor de edad más próximo a suceder.",
+      "El padre o la madre del Rey.",
+      "Una comisión de tres personas nombrada por las Cortes.",
+      "El Presidente del Tribunal Constitucional."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 59.2 CE: Si el heredero es menor, entra el padre o la madre del Rey conforme al apartado 1."
+  },
+  {
+    "pregunta": "¿Qué artículo de la Constitución reconoce la 'interdicción de la arbitrariedad de los poderes públicos'?",
+    "opciones": [
+      "Artículo 1.",
+      "Artículo 9.3.",
+      "Artículo 14.",
+      "Artículo 103."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 9.3 CE: Garantiza la interdicción de la arbitrariedad de los poderes públicos."
+  },
+  {
+    "pregunta": "El estado de ALARMA es declarado por el Gobierno por un plazo máximo de:",
+    "opciones": [
+      "15 días, previa autorización del Congreso.",
+      "15 días, dando cuenta al Congreso.",
+      "30 días, previa autorización del Congreso.",
+      "60 días, dando cuenta al Congreso."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 116.2 CE: Declarado por el Gobierno por un máximo de 15 días, dando cuenta al Congreso."
+  },
+  {
+    "pregunta": "Según el artículo 14 de la CE, los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por:",
+    "opciones": [
+      "Nacimiento, raza, sexo, religión u opinión.",
+      "Nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social.",
+      "Nacimiento, nacionalidad, sexo, religión u opinión.",
+      "Cualquier circunstancia personal, social o económica."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 14 CE: La fórmula incluye 'o cualquier otra condición o circunstancia personal o social'."
+  },
+  {
+    "pregunta": "¿En qué caso las Cortes Generales proveerán a la Sucesión a la Corona (Art. 57.3)?",
+    "opciones": [
+      "Cuando el Rey sea menor de edad.",
+      "Cuando se extingan todas las líneas llamadas en derecho.",
+      "Cuando el Rey sea inhabilitado por las Cortes.",
+      "Cuando el Rey abdique sin tener descendencia directa."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 57.3 CE: Si se extinguen todas las líneas, las Cortes proveerán en la forma que más convenga a España."
+  },
+  {
+    "pregunta": "Según el procedimiento de REFORMA ORDINARIA (Art. 167), si no hay acuerdo entre Congreso y Senado, ¿cómo se intenta resolver?",
+    "opciones": [
+      "Mediante una Comisión de composición paritaria de Diputados y Senadores.",
+      "Mediante una votación conjunta de ambas Cámaras en el Senado.",
+      "Se disuelven las Cortes y se convocan elecciones.",
+      "El Rey decide qué texto prevalece."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 167.1 CE: Se intenta obtener acuerdo mediante una Comisión de composición paritaria."
+  },
+  {
+    "pregunta": "¿Cuándo NO puede iniciarse la reforma constitucional según el artículo 169?",
+    "opciones": [
+      "En tiempo de crisis económica grave.",
+      "En tiempo de guerra o de vigencia de los estados de alarma, excepción o sitio.",
+      "Durante los periodos de vacaciones parlamentarias.",
+      "En el último año de legislatura antes de las elecciones."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 169 CE: Prohibición en tiempo de guerra o vigencia del art. 116."
+  },
+  {
+    "pregunta": "Según el artículo 2 de la CE, la Constitución se fundamenta en:",
+    "opciones": [
+      "La soberanía del pueblo español y la división de poderes.",
+      "La indisoluble unidad de la Nación española, patria común e indivisible de todos los españoles.",
+      "El pluralismo político y la libertad de los ciudadanos.",
+      "La autonomía de las regiones y la solidaridad entre todas ellas."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 2 CE: Se fundamenta en la indisoluble unidad de la Nación española."
+  },
+  {
+    "pregunta": "Respecto a las lenguas españolas, el artículo 3 de la CE establece que:",
+    "opciones": [
+      "El castellano es la lengua española oficial del Estado y todos los españoles tienen el derecho de usarla.",
+      "El castellano es la lengua española oficial del Estado y todos los españoles tienen el deber de conocerla y el derecho a usarla.",
+      "Las demás lenguas españolas serán también oficiales en todo el territorio nacional.",
+      "El deber de conocer el castellano solo afecta a los funcionarios públicos."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 3.1 CE: Deber de conocerla y derecho a usarla."
+  },
+  {
+    "pregunta": "¿Qué artículo de la CE establece que la capital del Estado es la villa de Madrid?",
+    "opciones": [
+      "Artículo 1.",
+      "Artículo 3.",
+      "Artículo 5.",
+      "Artículo 9."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 5 CE: 'La capital del Estado es la villa de Madrid'."
+  },
+  {
+    "pregunta": "Según el artículo 7 de la CE, los sindicatos de trabajadores y las asociaciones empresariales:",
+    "opciones": [
+      "Son órganos del Estado para la planificación económica.",
+      "Contribuyen a la defensa y promoción de los intereses económicos y sociales que les son propios.",
+      "Tienen carácter público y obligatorio para los trabajadores.",
+      "Solo pueden ser suspendidos por decisión del Gobierno."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 7 CE: Contribuyen a la defensa y promoción de los intereses económicos y sociales."
+  },
+  {
+    "pregunta": "De acuerdo con el artículo 31 de la CE sobre el sistema tributario, este se inspirará en los principios de:",
+    "opciones": [
+      "Igualdad y progresividad, con alcance confiscatorio.",
+      "Igualdad y progresividad que, en ningún caso, tendrá alcance confiscatorio.",
+      "Solidaridad y beneficio público.",
+      "Capacidad económica y libertad de empresa."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 31.1 CE: Basado en igualdad y progresividad, nunca confiscatorio."
+  },
+  {
+    "pregunta": "¿Qué valor jurídico tiene el PREÁMBULO de la Constitución Española según tus apuntes?",
+    "opciones": [
+      "Tiene valor preceptivo y vinculante.",
+      "Tiene valor declarativo pero no preceptivo.",
+      "No tiene ningún valor jurídico ni orientativo.",
+      "Tiene el mismo valor que el Título Preliminar."
+    ],
+    "correcta": 1,
+    "explicacion": "El Preámbulo tiene valor declarativo/ideológico pero no es una norma jurídica obligatoria (no preceptivo)."
+  },
+  {
+    "pregunta": "Según el artículo 9.2 de la CE, ¿a quién corresponde remover los obstáculos que impidan la libertad y la igualdad?",
+    "opciones": [
+      "A los ciudadanos exclusivamente.",
+      "A los poderes públicos.",
+      "Al Defensor del Pueblo.",
+      "Al Rey como moderador."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 9.2 CE: Corresponde a los poderes públicos promover las condiciones y remover obstáculos."
+  },
+  {
+    "pregunta": "En el procedimiento ORDINARIO de reforma (Art. 167), si el Congreso aprueba por 2/3, ¿qué mayoría mínima necesita del Senado?",
+    "opciones": [
+      "Mayoría absoluta.",
+      "Dos tercios.",
+      "Tres quintos.",
+      "No necesita mayoría."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 167.2 CE: Si el Congreso obtiene 2/3, basta con la mayoría absoluta del Senado."
+  },
+  {
+    "pregunta": "De acuerdo con el artículo 13.3 de la CE, ¿qué queda excluido de la extradición?",
+    "opciones": [
+      "Delitos de terrorismo.",
+      "Delitos políticos.",
+      "Delitos militares en tiempo de guerra.",
+      "Delitos contra la hacienda pública."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 13.3 CE: Los delitos políticos quedan excluidos, pero el terrorismo NO es delito político."
+  },
+  {
+    "pregunta": "¿Cuál de estos actos del Rey NO necesita refrendo según el artículo 65.2 de la CE?",
+    "opciones": [
+      "La concesión de honores.",
+      "El nombramiento y relevo de los miembros de su Casa.",
+      "La declaración de guerra.",
+      "La expedición de decretos."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 65.2 CE: El Rey nombra y releva libremente a los miembros de su Casa civil y militar."
+  },
+  {
+    "pregunta": "Según el artículo 60 de la CE, no podrán acumularse los cargos de Regente y Tutor sino en:",
+    "opciones": [
+      "El Príncipe heredero.",
+      "El padre, madre o ascendientes directos del Rey.",
+      "La persona nombrada por las Cortes.",
+      "El Rey difunto."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 60.1 CE: No se pueden acumular salvo en el padre, madre o ascendientes directos del Rey."
+  },
+  {
+    "pregunta": "Al Rey le corresponde manifestar el consentimiento del Estado para obligarse por tratados:",
+    "opciones": [
+      "Siempre que quiera.",
+      "De conformidad con la Constitución y las leyes.",
+      "Previa autorización solo del Senado.",
+      "Solo en tratados comerciales."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 63.2 CE: El Rey manifiesta el consentimiento de conformidad con la CE y las leyes."
+  },
+  {
+    "pregunta": "En la suspensión INDIVIDUAL de derechos (Art. 55.2), ¿qué derechos pueden ser suspendidos?",
+    "opciones": [
+      "Derecho a la huelga.",
+      "Secreto de comunicaciones e inviolabilidad del domicilio.",
+      "Libertad de expresión.",
+      "Derecho de reunión."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 55.2 CE: Afecta a inviolabilidad de domicilio y secreto de comunicaciones (bandas armadas/terrorismo)."
+  },
+  {
+    "pregunta": "Según el artículo 116.5, ¿qué ocurre si el Congreso está disuelto y hay que declarar la alarma?",
+    "opciones": [
+      "No puede declararse.",
+      "Las competencias del Congreso son asumidas por la Diputación Permanente.",
+      "El Senado asume todo.",
+      "El Gobierno legisla sin control."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 116.5 CE: Si el Congreso está disuelto, sus competencias las asume la Diputación Permanente."
+  },
+  {
+    "pregunta": "En el estado de EXCEPCIÓN, el plazo máximo de detención preventiva de 72h puede ampliarse a:",
+    "opciones": [
+      "5 días.",
+      "10 días.",
+      "15 días.",
+      "30 días."
+    ],
+    "correcta": 1,
+    "explicacion": "Ley Orgánica 4/1981: La detención puede durar hasta diez días en estado de excepción."
+  },
+  {
+    "pregunta": "¿Qué fecha se considera oficialmente como la 'fecha de la Constitución' por la sanción del Rey?",
+    "opciones": [
+      "31 de octubre.",
+      "6 de diciembre.",
+      "27 de diciembre.",
+      "29 de diciembre."
+    ],
+    "correcta": 2,
+    "explicacion": "El 27 de diciembre de 1978 el Rey sanciona y promulga la Constitución ante las Cortes."
+  },
+  {
+    "pregunta": "¿Cuándo se publicó en el BOE la SEGUNDA reforma constitucional (Art. 135)?",
+    "opciones": [
+      "27 de agosto de 1992.",
+      "27 de septiembre de 2011.",
+      "28 de agosto de 1992.",
+      "15 de febrero de 2024."
+    ],
+    "correcta": 1,
+    "explicacion": "La reforma del art. 135 (estabilidad presupuestaria) se publicó el 27 de septiembre de 2011."
+  },
+  {
+    "pregunta": "¿Qué mayoría se requiere para declarar el ESTADO DE SITIO?",
+    "opciones": [
+      "Mayoría simple del Congreso.",
+      "Mayoría absoluta del Senado.",
+      "Mayoría absoluta del Congreso.",
+      "Unanimidad del Consejo de Ministros."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 116.4 CE: El estado de sitio lo declara el Congreso por mayoría absoluta."
+  },
+  {
+    "pregunta": "Según el artículo 8 de la CE, ¿cuál NO es misión de las Fuerzas Armadas?",
+    "opciones": [
+      "Garantizar la soberanía e independencia.",
+      "Defender la integridad territorial.",
+      "Mantener el orden público ciudadano.",
+      "Defender el ordenamiento constitucional."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 8.1 CE: Sus misiones son soberanía, integridad territorial y orden constitucional. El orden público es de las FCSE."
+  },
+  {
+    "pregunta": "¿Cómo se define la estructura de la CE en cuanto a Disposiciones?",
+    "opciones": [
+      "4 Adicionales, 9 Transitorias, 1 Derogatoria, 1 Final.",
+      "9 Adicionales, 4 Transitorias, 1 Derogatoria, 1 Final.",
+      "10 Adicionales, 1 Transitoria, 1 Final.",
+      "4 Adicionales, 4 Transitorias, 1 Derogatoria."
+    ],
+    "correcta": 0,
+    "explicacion": "La CE tiene 4 Adicionales, 9 Transitorias, 1 Derogatoria y 1 Final."
+  },
+  {
+    "pregunta": "¿Cuál es el límite especial de la libertad de expresión según el Art. 20.4?",
+    "opciones": [
+      "La seguridad del Estado.",
+      "La protección de la juventud y de la infancia.",
+      "El orden público.",
+      "La moral cristiana."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 20.4 CE: El límite especial es la protección de la juventud y la infancia."
+  },
+  {
+    "pregunta": "Según el artículo 59.3 CE, la Regencia nombrada por las Cortes se compondrá de:",
+    "opciones": [
+      "Una sola persona.",
+      "Una, tres o cinco personas.",
+      "Tres personas invariablemente.",
+      "Dos o cuatro personas."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 59.3 CE: Puede ser de una, tres o cinco personas."
+  },
+  {
+    "pregunta": "El derecho de huelga (Art. 28.2) puede suspenderse en los estados de:",
+    "opciones": [
+      "Alarma y Excepción.",
+      "Excepción y Sitio.",
+      "Solo en Alarma.",
+      "En ninguno, es un derecho intocable."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 55.1 CE: La huelga puede suspenderse en estado de excepción o de sitio."
+  },
+  {
+    "pregunta": "Según el Art. 3.2, las lenguas distintas al castellano serán oficiales en:",
+    "opciones": [
+      "Todo el territorio nacional.",
+      "Las respectivas CCAA de acuerdo con sus Estatutos.",
+      "Solo en el ámbito privado.",
+      "Solo si el Congreso lo autoriza."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 3.2 CE: Oficiales en las CCAA de acuerdo con sus Estatutos."
+  },
+  {
+    "pregunta": "La iniciativa de reforma constitucional (Art. 166) remite al artículo:",
+    "opciones": [
+      "87.1 y 87.2.",
+      "87.3 (iniciativa popular).",
+      "92.1.",
+      "1.1."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 166 CE: Remite a los apartados 1 y 2 del art. 87. La iniciativa popular NO cabe para reforma."
+  },
+  {
+    "pregunta": "¿Qué artículo prohíbe los Tribunales de Honor?",
+    "opciones": [
+      "Artículo 14.",
+      "Artículo 24.",
+      "Artículo 26.",
+      "Artículo 30."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 26 CE: Prohíbe los Tribunales de Honor en la Administración civil y organizaciones profesionales."
+  },
+  {
+    "pregunta": "Los españoles de origen pueden ser privados de su nacionalidad:",
+    "opciones": [
+      "Si cometen traición.",
+      "Si renuncian a ella voluntariamente.",
+      "En ningún caso.",
+      "Si adquieren otra nacionalidad no permitida."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 11.2 CE: 'Ningún español de origen podrá ser privado de su nacionalidad'."
+  },
+  {
+    "pregunta": "El derecho a la libertad de cátedra está recogido en el artículo:",
+    "opciones": [
+      "Artículo 16.",
+      "Artículo 20.1.c.",
+      "Artículo 27.",
+      "Artículo 14."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 20.1.c CE: Se reconoce y protege la libertad de cátedra."
+  },
+  {
+    "pregunta": "¿Qué mayoría se requiere para aprobar una ley orgánica según el Art. 81.2?",
+    "opciones": [
+      "Mayoría simple del Congreso.",
+      "Mayoría absoluta del Congreso en una votación final sobre el conjunto del proyecto.",
+      "Mayoría de 3/5 del Congreso.",
+      "Mayoría absoluta del Senado."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 81.2 CE: Requiere mayoría absoluta del Congreso en votación final sobre el conjunto del proyecto."
+  },
+  {
+    "pregunta": "El plazo máximo de la detención preventiva en condiciones normales es de:",
+    "opciones": [
+      "24 horas.",
+      "48 horas.",
+      "72 horas.",
+      "5 días."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 17.2 CE: Plazo máximo de setenta y dos horas para puesta en libertad o a disposición judicial."
+  },{
+    "pregunta": "Declarado el estado de EXCEPCIÓN, ¿cuál de los siguientes derechos puede ser suspendido según la CE?",
+    "opciones": [
+      "El derecho a la producción y creación literaria, artística, científica y técnica.",
+      "El derecho al honor, a la intimidad personal y familiar y a la propia imagen.",
+      "El derecho a ser informado de forma inmediata de sus derechos y razones de su detención (Art. 17.3).",
+      "El procedimiento de 'habeas corpus'."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 55.1 CE: En estado de excepción se puede suspender el Art. 18.1 (Honor e intimidad). OJO: El 17.3 (información al detenido) SOLO se puede suspender en estado de SITIO, nunca en el de excepción. El habeas corpus no se suspende nunca."
+  },
+  {
+    "pregunta": "Según el artículo 56.1 de la Constitución Española, el Rey es el jefe del Estado y es el símbolo de:",
+    "opciones": [
+      "Su unidad e integridad.",
+      "Su independencia y soberanía.",
+      "Su unidad y permanencia.",
+      "Su integridad y soberanía."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 56.1 CE: 'El Rey es el Jefe del Estado, símbolo de su unidad y permanencia'. Es una pregunta de literalidad absoluta, típica de la 'pastilla morada'."
+  },
+  {
+    "pregunta": "Según el artículo 116.3 de la Constitución Española, el estado de EXCEPCIÓN será declarado por:",
+    "opciones": [
+      "El Congreso de los Diputados.",
+      "Las Cortes Generales.",
+      "El Gobierno.",
+      "El Presidente del Gobierno."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 116.3 CE: El estado de excepción lo declara el GOBIERNO mediante decreto, previa autorización del Congreso. No lo declara el Congreso (ese es el de sitio) ni el Presidente solo."
+  },
+  {
+    "pregunta": "Están legitimados para interponer el RECURSO DE AMPARO, según la Constitución Española:",
+    "opciones": [
+      "El Gobierno.",
+      "Las Comunidades Autónomas.",
+      "El Presidente del Gobierno.",
+      "El Ministerio Fiscal."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 162.1.b CE: Pueden interponer amparo: 1. Toda persona natural o jurídica que invoque un interés legítimo, 2. El Defensor del Pueblo y 3. El MINISTERIO FISCAL. El Gobierno solo puede interponer recurso de inconstitucionalidad."
+  },{
+    "pregunta": "En relación con la nacionalidad española (Art. 11 CE), indique la afirmación correcta:",
+    "opciones": [
+      "El Estado podrá concertar tratados de doble nacionalidad con los países de la Unión Europea.",
+      "Los españoles podrán naturalizarse en cualquier país sin perder su nacionalidad de origen.",
+      "La nacionalidad española se adquiere, se conserva y se pierde de acuerdo solo con lo dispuesto en este artículo.",
+      "Ningún español de origen podrá ser privado de su nacionalidad."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 11.2 CE: 'Ningún español de origen podrá ser privado de su nacionalidad'. Es un blindaje absoluto para los españoles de nacimiento. Los tratados de doble nacionalidad (11.3) se mencionan para países iberoamericanos o con vinculación especial, no específicamente con la UE."
+  },
+  {
+    "pregunta": "Según el artículo 21 de la CE, ¿cuándo es necesaria la autorización previa para ejercer el derecho de reunión?",
+    "opciones": [
+      "En el caso de reuniones en lugares de tránsito público.",
+      "En el caso de manifestaciones.",
+      "En ningún caso.",
+      "En el caso de reuniones pacíficas en el ámbito privado."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 21.1 CE: 'El ejercicio de este derecho no necesitará autorización previa'. Para lugares de tránsito público y manifestaciones lo que se requiere es COMUNICACIÓN previa a la autoridad, no autorización."
+  },
+  {
+    "pregunta": "Señala cuál de estas opciones NO es un derecho fundamental y libertad pública (Sección 1ª, Cap. II, Título I):",
+    "opciones": [
+      "Derecho a participar en los asuntos públicos.",
+      "Derecho a elegir libremente su residencia.",
+      "Derecho a contraer matrimonio con plena igualdad jurídica.",
+      "Derecho al honor, a la intimidad personal y familiar."
+    ],
+    "correcta": 2,
+    "explicacion": "El matrimonio (Art. 32) está en la Sección 2ª. Los derechos fundamentales con máximo nivel de protección (recurso de amparo) son solo los de la Sección 1ª (Arts. 15 al 29)."
+  },
+  {
+    "pregunta": "Las abdicaciones, renuncias y dudas sobre el orden de sucesión a la Corona se resolverán por:",
+    "opciones": [
+      "Decreto-Ley.",
+      "Real Decreto acordado por el Consejo de Ministros.",
+      "Ley Orgánica.",
+      "Sentencia del Tribunal Constitucional."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 57.5 CE: Cualquier duda de hecho o de derecho en el orden de sucesión debe resolverse mediante una LEY ORGÁNICA."
+  },
+  {
+    "pregunta": "¿Qué Cámara define la Constitución Española como la de 'representación territorial'?",
+    "opciones": [
+      "El Congreso de los Diputados.",
+      "El Senado.",
+      "El Congreso y el Senado conjuntamente.",
+      "Las Asambleas Legislativas de las CCAA."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 69.1 CE: 'El Senado es la Cámara de representación territorial'. Es su definición específica en el texto constitucional."
+  },
+  {
+    "pregunta": "¿Cuántos miembros conforman el Tribunal Constitucional?",
+    "opciones": [
+      "14",
+      "12",
+      "18",
+      "16"
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 159.1 CE: El Tribunal Constitucional se compone de 12 miembros nombrados por el Rey (4 por el Congreso, 4 por el Senado, 2 por el Gobierno y 2 por el CGPJ)."
+  },
+  {
+    "pregunta": "Según el artículo 97 de la CE, ¿cuál de las siguientes funciones NO corresponde al Gobierno?",
+    "opciones": [
+      "Dirigir la Administración civil.",
+      "Dirigir la Administración militar.",
+      "Ejercer la función legislativa.",
+      "Ejercer la potestad reglamentaria."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 97 CE: El Gobierno ejerce la función EJECUTIVA y la potestad reglamentaria. La función legislativa (hacer leyes) corresponde a las Cortes Generales (Art. 66)."
+  },
+  {
+    "pregunta": "Una moción de censura (Art. 113) se considera aprobada por el Congreso mediante:",
+    "opciones": [
+      "Mayoría simple.",
+      "Mayoría absoluta.",
+      "Mayoría de tres quintos.",
+      "Mayoría de dos tercios."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 113.1 CE: Para que la moción de censura prospere, debe ser aprobada por la mayoría absoluta del Congreso de los Diputados."
+  },{
+    "pregunta": "Sobre la elaboración de la Constitución Española de 1978, señale la afirmación correcta:",
+    "opciones": [
+      "Fue aprobada por las Cortes, ratificada por el pueblo español y sancionada por S.M el Rey.",
+      "Fue aprobada por el Congreso, ratificada por el Senado y el pueblo español y sancionada por S.M el Rey.",
+      "Fue ratificada por las Cortes, aprobada por el pueblo español y sancionada por S.M el Rey.",
+      "Fue ratificada por el Congreso, aprobada por el pueblo español y sancionada por S.M el Rey."
+    ],
+    "correcta": 0,
+    "explicacion": "Página 1 y 2 de tus apuntes: El orden constitucional es APROBACIÓN por las Cortes (31 de octubre), RATIFICACIÓN por el pueblo (6 de diciembre) y SANCIÓN por el Rey (27 de diciembre)."
+  },
+  {
+    "pregunta": "El artículo 18 de la Constitución Española, respecto al uso de la informática, establece que:",
+    "opciones": [
+      "Su uso no podrá ser limitado por motivos políticos o ideológicos.",
+      "El ejercicio de este derecho no podrá restringirse mediante ningún tipo de censura previa.",
+      "El ejercicio de este derecho podrá restringirse de forma previa en caso de flagrante delito.",
+      "La ley limitará su uso para garantizar el honor y la intimidad personal y familiar de los ciudadanos y el pleno ejercicio de sus derechos."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 18.4 CE: Es la protección frente al 'abuso informático'. La ley debe limitar la informática para proteger el honor y la intimidad. Las otras opciones pertenecen a otros artículos (19 o 20)."
+  },
+  {
+    "pregunta": "Según el artículo 53.2 de la CE, ¿qué procedimiento puede seguir un ciudadano para recabar la tutela de las libertades de la Sección 1ª del Capítulo II?",
+    "opciones": [
+      "Procedimiento basado en los principios de preferencia y sumariedad ante los Tribunales ordinarios y, en su caso, recurso de amparo.",
+      "Recurso de inconstitucionalidad ante el Tribunal Constitucional directamente.",
+      "Solo podrán ser alegados ante la Jurisdicción ordinaria de acuerdo con las leyes que los desarrollen.",
+      "Procedimiento ordinario de revisión civil."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 53.2 CE: Los derechos del Art. 14 y la Sección 1ª (15-29) tienen protección máxima: Preferencia y Sumariedad + Recurso de Amparo."
+  },
+  {
+    "pregunta": "De los siguientes principios, ¿cuál NO está garantizado expresamente por el artículo 9.3 de la CE?",
+    "opciones": [
+      "Principio de legalidad.",
+      "Principio de la interdicción de la arbitrariedad de los poderes públicos.",
+      "Principio de retroactividad de las disposiciones sancionadoras favorables.",
+      "Principio de publicidad de las normas."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 9.3 CE: El artículo garantiza la IRRETROACTIVIDAD de las disposiciones sancionadoras NO FAVORABLES o restrictivas de derechos. Por tanto, la retroactividad de las favorables sí existe, pero lo que la CE 'garantiza' es que no te apliquen hacia atrás lo malo."
+  },
+  {
+    "pregunta": "En correspondencia con el artículo 69 de la CE, ¿cuántos Senadores corresponden a una Comunidad Autónoma como Andalucía (8 provincias)?",
+    "opciones": [
+      "9 senadores.",
+      "41 senadores.",
+      "32 senadores.",
+      "24 senadores."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 69.2 CE: En cada provincia se elegirán 4 Senadores. Si Andalucía tiene 8 provincias: 8 x 4 = 32 Senadores de elección directa. (Aparte irían los designados por la Comunidad Autónoma, pero la pregunta suele referirse a la base provincial)."
+  },
+  {
+    "pregunta": "Según el artículo 75 de la CE, ¿cómo funcionarán las Cámaras de las Cortes Generales?",
+    "opciones": [
+      "Funcionarán en Pleno y por Comisiones.",
+      "Funcionarán exclusivamente en Pleno.",
+      "Funcionarán solo por Comisiones permanentes.",
+      "Funcionarán en Pleno únicamente cuando se reúnen en sesión conjunta."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 75.1 CE: 'Las Cámaras funcionarán en Pleno y por Comisiones'."
+  },
+  {
+    "pregunta": "Según el artículo 98 de la CE, el Gobierno se compone de:",
+    "opciones": [
+      "Del Presidente, en su caso, de los Vicepresidentes, de los Ministros y de los demás miembros que establezca la ley.",
+      "Del Presidente, de los Vicepresidentes, en su caso, de los Ministros y de los demás miembros que establezca la ley.",
+      "Del Presidente, de los Vicepresidentes, de los Ministros y de los demás miembros que establezca la ley.",
+      "Del Rey, del Presidente, de los Vicepresidentes y los Ministros."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 98.1 CE: El Presidente y los Ministros son obligatorios. Los Vicepresidentes son opcionales ('en su caso')."
+  },{
+    "pregunta": "¿Cuántos Títulos, EXCLUYENDO el Preliminar, posee la Constitución Española?",
+    "opciones": [
+      "11 títulos.",
+      "10 títulos.",
+      "9 títulos.",
+      "La Constitución Española se estructura en epígrafes, no en títulos."
+    ],
+    "correcta": 1,
+    "explicacion": "Estructura formal de la CE: 1 Título Preliminar + 10 Títulos numerados (del I al X). Por tanto, excluyendo el preliminar, son 10."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes derechos debe informar la legislación positiva, la práctica judicial y la actuación de los poderes públicos (Art. 53.3 CE)?",
+    "opciones": [
+      "El derecho al matrimonio con plena igualdad jurídica.",
+      "El derecho a la protección de la salud.",
+      "El derecho de fundación para fines de interés general.",
+      "El derecho de asociación."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 53.3 CE: Se refiere a los 'Principios Rectores' (Capítulo III). El derecho a la salud (Art. 43) está en ese capítulo. Los otros están en el Capítulo II y tienen una protección superior."
+  },
+  {
+    "pregunta": "Según el artículo 62 de la CE, entre las funciones que le corresponden al Rey se encuentra:",
+    "opciones": [
+      "Expedir y ratificar las leyes.",
+      "El mando supremo de las Fuerzas y Cuerpos de Seguridad.",
+      "Conferir los empleos civiles y militares y conceder honores y distinciones con arreglo a las leyes.",
+      "Aprobar los decretos acordados en el Consejo de Ministros."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 62.f CE: Corresponde al Rey conferir empleos civiles/militares y conceder honores. OJO: El Rey 'sanciona' y 'promulga', no 'ratifica' (eso es el pueblo o las Cortes). Su mando es de las Fuerzas ARMADAS, no de las de SEGURIDAD (Policía/Guardia Civil)."
+  },
+  {
+    "pregunta": "Según el artículo 68 de la CE, el Congreso será elegido mediante un sufragio:",
+    "opciones": [
+      "Universal, libre, igual, directo y secreto.",
+      "Universal, censitario, igual, directo y secreto.",
+      "Universal, libre, igual, indirecto y secreto.",
+      "Universal, censitario, libre, directo y secreto."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 68.1 CE: El sufragio para el Congreso es universal, libre, igual, directo y secreto. No puede ser 'censitario' (por dinero) ni 'indirecto'."
+  },
+  {
+    "pregunta": "Según el artículo 159 de la CE, los miembros del Tribunal Constitucional:",
+    "opciones": [
+      "Serán designados por un periodo de nueve años y se renovarán por terceras partes cada cuatro.",
+      "Serán designados por un periodo de doce años y se renovarán por terceras partes cada cuatro.",
+      "Serán designados por un periodo de doce años y se renovarán por cuartas partes cada tres.",
+      "Serán designados por un periodo de nueve años y se renovarán por terceras partes cada tres."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 159.3 CE: Periodo de 9 años y renovación parcial (1/3) cada 3 años. Memoriza la regla del 'múltiplo de 3': 9 total / 3 renovación / 3 tiempo."
+  },
+  {
+    "pregunta": "El artículo 116 de la CE indica la existencia de los siguientes estados, ordenados de MENOR a MAYOR gravedad:",
+    "opciones": [
+      "Estado de alarma, de excepción y de sitio.",
+      "Estado de alarma, de sitio y crítico.",
+      "Estado de excepción, de sitio y crítico.",
+      "Estado de alarma, de excepción, de sitio y crítico."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 116 CE: La escala de gravedad es Alarma -> Excepción -> Sitio. El término 'crítico' no existe en la Constitución."
+  },
+  {
+    "pregunta": "Según el artículo 86 de la CE, ¿qué plazo tienen las Cortes para tramitar los Decretos-Leyes como proyectos de ley por el procedimiento de urgencia?",
+    "opciones": [
+      "No existe dicho procedimiento recogido en la Constitución.",
+      "Durante el plazo de 30 días siguientes a su promulgación.",
+      "Durante el plazo de 15 días siguientes a su convalidación.",
+      "Durante el plazo de 30 días establecidos para su convalidación."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 86.3 CE: Durante el plazo de los 30 días (convalidación), las Cortes podrán tramitarlos como proyectos de ley por el procedimiento de urgencia."
+  },{
+    "pregunta": "Con respecto a la SINDICACIÓN, ¿qué afirmación es INCORRECTA según el artículo 28 de la CE?",
+    "opciones": [
+      "Se puede limitar el ejercicio de este derecho a los Institutos Armados.",
+      "Se puede regular las peculiaridades de su ejercicio para los funcionarios públicos.",
+      "Se puede realizar libremente, sin limitaciones o exceptuaciones.",
+      "Nadie podrá ser obligado a afiliarse a un sindicato."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 28.1 CE: Es incorrecto decir que no hay limitaciones. La ley puede LIMITAR o EXCEPTUAR este derecho a las Fuerzas o Institutos Armados y regular las peculiaridades para funcionarios."
+  },
+  {
+    "pregunta": "La Reforma de la CE de 2024 para cambiar el término 'disminuidos' por 'personas con discapacidad' supuso la modificación de:",
+    "opciones": [
+      "El Artículo 37.",
+      "El Artículo 49.",
+      "El Artículo 73.",
+      "El Artículo 42."
+    ],
+    "correcta": 1,
+    "explicacion": "Tercera Reforma Constitucional (15 de febrero de 2024): Se modificó íntegramente el Artículo 49 para actualizar el lenguaje y reforzar los derechos de las personas con discapacidad."
+  },
+  {
+    "pregunta": "Según el artículo 104 de la CE, ¿de quién dependen las Fuerzas y Cuerpos de Seguridad?",
+    "opciones": [
+      "De las Cortes Generales.",
+      "Del Poder Judicial.",
+      "Del Gobierno.",
+      "Del Gobierno y del Poder Judicial conjuntamente."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 104.1 CE: 'Las Fuerzas y Cuerpos de Seguridad, bajo la dependencia del GOBIERNO, tendrán como misión proteger el libre ejercicio de los derechos y libertades'."
+  },
+  {
+    "pregunta": "Respecto al REFERÉNDUM CONSULTIVO (Art. 92), señale el procedimiento correcto para su convocatoria:",
+    "opciones": [
+      "Convocado por el Rey, mediante propuesta del Presidente del Gobierno, previamente autorizada por el Congreso de los Diputados.",
+      "Convocado por el Presidente del Gobierno, mediante propuesta del Consejo de Ministros.",
+      "Convocado por el Presidente del Gobierno, previa autorización de las Cámaras.",
+      "Convocado por el Rey, a propuesta de la décima parte del Congreso."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 92.2 CE: El orden es: 1. Autorización del CONGRESO, 2. Propuesta del PRESIDENTE, 3. Convocatoria del REY."
+  },
+  {
+    "pregunta": "En la segunda votación de INVESTIDURA (Art. 99 CE), ¿qué mayoría se requiere para que el candidato sea nombrado Presidente?",
+    "opciones": [
+      "Mayoría simple de ambas Cámaras.",
+      "Mayoría absoluta del Congreso y simple del Senado.",
+      "Mayoría simple del Congreso de los Diputados.",
+      "Mayoría absoluta del Congreso de los Diputados."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 99.3 CE: Si no se alcanza la mayoría absoluta en la primera votación, se repetirá a las 48 horas, y el Congreso otorgará la confianza si el candidato obtiene MAYORÍA SIMPLE."
+  },{
+    "pregunta": "¿Cuáles son los VALORES SUPERIORES del ordenamiento jurídico que establece el artículo 1.1 de la CE?",
+    "opciones": [
+      "La justicia, la libertad y la seguridad.",
+      "El principio de legalidad, jerarquía normativa y seguridad jurídica.",
+      "La libertad, la justicia, la igualdad y el pluralismo político.",
+      "La soberanía popular y la monarquía parlamentaria."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 1.1 CE: Los valores superiores son: Libertad, Justicia, Igualdad y Pluralismo Político. No confundir con los principios del 9.3."
+  },
+  {
+    "pregunta": "En relación con los derechos del artículo 18 de la CE, ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+    "opciones": [
+      "Se garantiza el secreto de las comunicaciones postales, telegráficas y telefónicas.",
+      "Se garantiza el derecho al honor, a la intimidad personal y familiar y a la propia imagen.",
+      "La ley limitará el uso de la informática para garantizar el honor de los ciudadanos.",
+      "El domicilio es inamovible y ninguna entrada podrá hacerse sin consentimiento del titular o resolución judicial."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 18.2 CE: La afirmación es incorrecta por la palabra 'inamovible'. La Constitución dice que el domicilio es INVIOLABLE. Además, falta la excepción de 'flagrante delito' para que la frase sea totalmente correcta."
+  },
+  {
+    "pregunta": "El artículo 50 de la Constitución Española indica explícitamente sobre la tercera edad que:",
+    "opciones": [
+      "Las pensiones serán adecuadas y periódicamente actualizadas.",
+      "Las pensiones serán suficientes y periódicamente actualizadas.",
+      "Las pensiones serán suficientes y anualmente actualizadas.",
+      "Las pensiones serán anualmente actualizadas."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 50 CE: 'Los poderes públicos garantizarán, mediante pensiones SUFICIENTES y PERIÓDICAMENTE actualizadas, la suficiencia económica a los ciudadanos durante la tercera edad'."
+  },
+  {
+    "pregunta": "Si el Congreso niega la confianza al Gobierno (Art. 114 CE), ¿qué debe ocurrir?",
+    "opciones": [
+      "El Gobierno presentará su dimisión al Rey, procediéndose a la designación de un nuevo Presidente según el Art. 99.",
+      "Se disuelven las Cámaras y se convocan elecciones generales inmediatamente.",
+      "El Presidente presentará su dimisión al Rey, el cual podrá aceptarla o denegarla.",
+      "Sus signatarios no podrán presentar otra durante el mismo periodo de sesiones."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 114.1 CE: Si el Congreso niega la confianza (Cuestión de Confianza), el Gobierno presenta su DIMISIÓN al Rey y se inicia el proceso de investidura de un nuevo candidato (Art. 99)."
   }
 ]
