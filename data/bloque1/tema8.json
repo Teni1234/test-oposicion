@@ -1,0 +1,1157 @@
+[
+  {
+    "pregunta": "¿Cuál de las siguientes NO es una Norma Técnica de Interoperabilidad (NTI)?",
+    "opciones": [
+      "Catálogo de estándares.",
+      "Modelo de Datos para el intercambio de asientos entre las Entidades Registrales.",
+      "Protocolo de gestión de recursos de la Administración.",
+      "Expediente Electrónico."
+    ],
+    "correcta": 2,
+    "explicacion": "Dato Academia: El 'Protocolo de gestión de recursos' no existe como NTI. Las NTI están tasadas en la DA 1ª del ENI."
+  },
+  {
+    "pregunta": "Según la Ley 40/2015, el Esquema Nacional de Interoperabilidad (ENI) se define como:",
+    "opciones": [
+      "Conjunto de obligaciones para garantizar la reutilización de la información.",
+      "Principios básicos y requisitos mínimos que garanticen adecuadamente la seguridad.",
+      "Criterios y recomendaciones en materia de seguridad, conservación y normalización para garantizar la interoperabilidad.",
+      "Criterios para declarar las aplicaciones como fuentes abiertas."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 156 Ley 40/2015: Define el ENI centrándose en criterios de normalización para que los sistemas se entiendan."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes definiciones NO es uno de los roles de la Plataforma de Intermediación (PID)?",
+    "opciones": [
+      "Mantendrá un portal web informativo con toda la documentación.",
+      "Almacenará información personal del ciudadano derivada de la transacción de intercambio de datos.",
+      "Mantendrá un centro de atención a usuarios e integradores.",
+      "Mantendrá el sistema en funcionamiento 24x7."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: La PID es un nodo de paso, NO almacena los datos personales de las transacciones para garantizar la privacidad (Minimización)."
+  },
+  {
+    "pregunta": "Según la Ley 39/2015, las personas físicas no obligadas a relacionarse electrónicamente:",
+    "opciones": [
+      "Deben elegir al principio y mantener la opción hasta el final.",
+      "Deberán comunicarse en todo caso por medios no electrónicos.",
+      "Podrán elegir y modificar el medio (electrónico o no) en cualquier momento del procedimiento.",
+      "Solo pueden usar medios electrónicos si acreditan capacidad económica."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 14.1 Ley 39/2015: Libertad de elección y modificación para personas físicas no obligadas."
+  },
+  {
+    "pregunta": "El metadato mínimo obligatorio en la NTI de Documento Electrónico es:",
+    "opciones": [
+      "Resolución.",
+      "Fecha de captura.",
+      "Idioma.",
+      "Fuente de datos."
+    ],
+    "correcta": 2,
+    "explicacion": "Según el e-EMGDE y la NTI, el Idioma es un metadato obligatorio (metadatos mínimos del documento)."
+  },
+  {
+    "pregunta": "Según el artículo 11 de la Ley 39/2015, ¿para qué trámite es OBLIGATORIO el uso de firma?",
+    "opciones": [
+      "Conocer el estado de la tramitación.",
+      "Consultar datos fiscales.",
+      "Desistir de acciones y renunciar a derechos.",
+      "Acceder a la sede electrónica."
+    ],
+    "correcta": 2,
+    "explicacion": "La firma es obligatoria para actos que impliquen voluntad del interesado (solicitudes, recursos, desistimientos)."
+  },
+  {
+    "pregunta": "¿Qué medida de seguridad del ENS (RD 311/2022) afecta directamente a la dimensión de Trazabilidad?",
+    "opciones": [
+      "Copias de seguridad.",
+      "Sellos de tiempo.",
+      "Cifrado de información.",
+      "Protección contra código dañino."
+    ],
+    "correcta": 1,
+    "explicacion": "El sello de tiempo permite acreditar el momento exacto y la secuencia de eventos, clave para la trazabilidad (T)."
+  },
+  {
+    "pregunta": "Cuando una notificación electrónica es obligatoria, se entiende rechazada si no se accede en:",
+    "opciones": [
+      "10 días naturales.",
+      "15 días naturales.",
+      "10 días hábiles.",
+      "5 días naturales."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 43.2 Ley 39/2015: 10 días naturales desde la puesta a disposición."
+  },
+  {
+    "pregunta": "Las medidas de seguridad del ENS se dividen en:",
+    "opciones": [
+      "Organizativas, Técnicas y Físicas.",
+      "Marco organizativo [org], marco operacional [op] y medidas de protección [mp].",
+      "Básicas, Medias y Altas.",
+      "Prevención, Detección y Respuesta."
+    ],
+    "correcta": 1,
+    "explicacion": "Clasificación oficial del Anexo II del RD 311/2022."
+  },
+  {
+    "pregunta": "Un sistema de categoría BÁSICA en el ENS requiere:",
+    "opciones": [
+      "Una auditoría externa cada dos años.",
+      "Una Declaración de Conformidad.",
+      "Un informe del CCN-CERT trimestral.",
+      "Certificación obligatoria por entidad acreditada."
+    ],
+    "correcta": 1,
+    "explicacion": "Para sistemas de categoría Básica es suficiente con la Declaración de Conformidad suscrita por el responsable."
+  },
+  {
+    "pregunta": "¿Qué herramienta permite la gestión integral de registros (entrada/salida) en la nube para cualquier administración?",
+    "opciones": [
+      "DIR3.",
+      "GEISER.",
+      "INSIDE.",
+      "ARCHIVE."
+    ],
+    "correcta": 1,
+    "explicacion": "GEISER es la solución integral de registro en modo nube."
+  },
+  {
+    "pregunta": "El Directorio Común de Unidades Orgánicas y Oficinas se denomina:",
+    "opciones": [
+      "SIA.",
+      "DIR3.",
+      "SIR.",
+      "REC."
+    ],
+    "correcta": 1,
+    "explicacion": "DIR3 es el inventario unificado de la estructura de las AAPP."
+  },
+  {
+    "pregunta": "El sistema que permite el intercambio de asientos registrales entre distintas AAPP se llama:",
+    "opciones": [
+      "SIR (Sistema de Interconexión de Registros).",
+      "ORVE.",
+      "FACILITA.",
+      "SARA."
+    ],
+    "correcta": 0,
+    "explicacion": "SIR es la infraestructura tecnológica que conecta las oficinas de registro."
+  },
+  {
+    "pregunta": "¿Cuál es el código identificador único de un procedimiento administrativo en la Administración?",
+    "opciones": [
+      "Código DIR3.",
+      "Código SIA.",
+      "Número de registro REC.",
+      "CSV (Código Seguro de Verificación)."
+    ],
+    "correcta": 1,
+    "explicacion": "SIA (Sistema de Información Administrativa) asigna un código único a cada procedimiento."
+  },
+  {
+    "pregunta": "La herramienta para la validación de firmas y certificados electrónicos en la AGE es:",
+    "opciones": [
+      "@firma.",
+      "VALIDE.",
+      "Autofirma.",
+      "Cl@ve."
+    ],
+    "correcta": 1,
+    "explicacion": "VALIDE es la interfaz web para que el ciudadano valide certificados y firmas."
+  },
+  {
+    "pregunta": "La aplicación de escritorio que permite firmar documentos localmente para trámites con la AAPP es:",
+    "opciones": [
+      "Firma-e.",
+      "Autofirma.",
+      "DNIeDroid.",
+      "Cl@ve Firma."
+    ],
+    "correcta": 1,
+    "explicacion": "Autofirma es el software de escritorio desarrollado por el Ministerio."
+  },
+  {
+    "pregunta": "En el ENS, la dimensión de seguridad 'Integridad' garantiza que:",
+    "opciones": [
+      "La información solo es accesible a personas autorizadas.",
+      "La información es exacta y no ha sido modificada sin autorización.",
+      "El sistema está disponible cuando se necesita.",
+      "Se conoce quién ha realizado cada acción."
+    ],
+    "correcta": 1,
+    "explicacion": "Integridad (I): Garantía de que la información no ha sido alterada."
+  },
+  {
+    "pregunta": "El Punto General de Entrada de Facturas Electrónicas de la AGE se llama:",
+    "opciones": [
+      "FACe.",
+      "FACeB2B.",
+      "SIA.",
+      "INSIDE."
+    ],
+    "correcta": 0,
+    "explicacion": "FACe es el portal para el envío de facturas electrónicas a la Administración."
+  },
+  {
+    "pregunta": "¿Qué sistema permite a los ciudadanos consultar el estado de sus expedientes y recibir notificaciones de forma unificada?",
+    "opciones": [
+      "REC.",
+      "Carpeta Ciudadana.",
+      "Notifica.",
+      "SIA."
+    ],
+    "correcta": 1,
+    "explicacion": "Carpeta Ciudadana es el punto de acceso general unificado."
+  },
+  {
+    "pregunta": "El sistema que gestiona el envío de notificaciones electrónicas de forma masiva para las AAPP es:",
+    "opciones": [
+      "DEHú.",
+      "Notifica (SNE).",
+      "ORVE.",
+      "GEISER."
+    ],
+    "correcta": 1,
+    "explicacion": "Notifica gestiona la salida de notificaciones tanto electrónicas como en papel."
+  },
+  {
+    "pregunta": "Según la NTI de Documento Electrónico, el CSV debe permitir:",
+    "opciones": [
+      "Cifrar el documento.",
+      "La comprobación de la integridad y autenticidad del documento en la sede electrónica.",
+      "Sustituir a la firma manuscrita en documentos papel.",
+      "Pagar las tasas administrativas."
+    ],
+    "correcta": 1,
+    "explicacion": "CSV (Código Seguro de Verificación) vincula el papel con el original electrónico."
+  },
+  {
+    "pregunta": "¿Cuál de estos es un principio básico del ENS tras el RD 311/2022?",
+    "opciones": [
+      "Prevención, detección, respuesta y conservación.",
+      "Interoperabilidad técnica.",
+      "Seguridad por defecto.",
+      "Vigilancia continua."
+    ],
+    "correcta": 3,
+    "explicacion": "VIP: La Vigilancia Continua es uno de los nuevos principios básicos del ENS 2022."
+  },
+  {
+    "pregunta": "La plataforma que permite a una administración consultar datos de un ciudadano en otra administración (ej. renta, DNI) se llama:",
+    "opciones": [
+      "Red SARA.",
+      "PID (Plataforma de Intermediación de Datos).",
+      "SIR.",
+      "INSIDE."
+    ],
+    "correcta": 1,
+    "explicacion": "La PID gestiona el intercambio de datos para que el ciudadano no aporte documentos que ya tiene la AAPP."
+  },
+  {
+    "pregunta": "El sistema de identificación Cl@ve Permanente está basado en:",
+    "opciones": [
+      "Certificado digital en tarjeta.",
+      "Usuario y contraseña reforzado con código enviado por SMS (OTP).",
+      "Huella dactilar.",
+      "Reconocimiento facial."
+    ],
+    "correcta": 1,
+    "explicacion": "Cl@ve Permanente usa credenciales de acceso (usuario/Clave) y SMS para niveles altos."
+  },
+  {
+    "pregunta": "La NTI de Política de Gestión de Documentos Electrónicos es obligatoria para:",
+    "opciones": [
+      "Solo los ministerios.",
+      "Todas las Administraciones Públicas.",
+      "Solo el sector público institucional.",
+      "Es voluntaria."
+    ],
+    "correcta": 1,
+    "explicacion": "Las NTI son de obligado cumplimiento para todo el sector público bajo la Ley 40/2015."
+  },
+  {
+    "pregunta": "La herramienta para la gestión de expedientes electrónicos y su remisión a la justicia (Expediente Judicial Electrónico) es:",
+    "opciones": [
+      "INSIDE.",
+      "ARCHIVE.",
+      "GEISER.",
+      "ACCEDA."
+    ],
+    "correcta": 0,
+    "explicacion": "INSIDE permite gestionar y transmitir expedientes y documentos electrónicos que cumplen el ENI."
+  },
+  {
+    "pregunta": "¿Qué herramienta de seguridad del CCN-CERT automatiza la recogida de evidencias de cumplimiento del ENS?",
+    "opciones": [
+      "PILAR.",
+      "LUCIA.",
+      "INES.",
+      "CLARA."
+    ],
+    "correcta": 2,
+    "explicacion": "INES (Informe Nacional de Estado de Seguridad) recoge el estado de seguridad de las AAPP."
+  },
+  {
+    "pregunta": "La dimensión 'Disponibilidad' (D) en el ENS garantiza que:",
+    "opciones": [
+      "Los datos no se pierdan en caso de incendio.",
+      "Las personas autorizadas puedan acceder a la información cuando la necesiten.",
+      "El software sea de código abierto.",
+      "La red sea rápida."
+    ],
+    "correcta": 1,
+    "explicacion": "Disponibilidad: Acceso a la información y servicios en el momento requerido."
+  },
+  {
+    "pregunta": "¿Cómo se llama la red de comunicaciones que conecta a todas las Administraciones Públicas españolas?",
+    "opciones": [
+      "Internet2.",
+      "Red SARA.",
+      "Red SIR.",
+      "Intranet Administrativa Única."
+    ],
+    "correcta": 1,
+    "explicacion": "SARA (Sistemas de Aplicaciones y Redes para las Administraciones) es la red privada de las AAPP."
+  },
+  {
+    "pregunta": "La herramienta para el archivo definitivo y custodia a largo plazo de documentos electrónicos es:",
+    "opciones": [
+      "INSIDE.",
+      "ARCHIVE.",
+      "SIA.",
+      "DIR3."
+    ],
+    "correcta": 1,
+    "explicacion": "ARCHIVE es la solución para el archivo de larga duración siguiendo la NTI."
+  },
+  {
+    "pregunta": "Según la Ley 39/2015, los registros electrónicos deben ser:",
+    "opciones": [
+      "Interoperables.",
+      "Solo para documentos PDF.",
+      "Solo para la capital de provincia.",
+      "Cerrados los fines de semana."
+    ],
+    "correcta": 0,
+    "explicacion": "Los registros deben ser plenamente interoperables entre sí (SIR)."
+  },
+  {
+    "pregunta": "¿Quién determina la categoría de un sistema (Baja, Media, Alta) en el ENS?",
+    "opciones": [
+      "El CCN-CERT.",
+      "El Responsable del Sistema tras un análisis de riesgos.",
+      "El Ministro de Digitalización.",
+      "La Ley 40/2015 directamente."
+    ],
+    "correcta": 1,
+    "explicacion": "La categoría se determina analizando el impacto de un incidente en las dimensiones de seguridad."
+  },
+  {
+    "pregunta": "El protocolo utilizado en el SIR para el intercambio de asientos registrales se llama:",
+    "opciones": [
+      "SCSP.",
+      "SICRES 3.0.",
+      "HTTPs.",
+      "ENI-PROT."
+    ],
+    "correcta": 1,
+    "explicacion": "SICRES es la norma técnica de intercambio de asientos registrales."
+  },
+  {
+    "pregunta": "La identificación mediante 'Cl@ve PIN' está pensada para:",
+    "opciones": [
+      "Uso diario y frecuente por empleados públicos.",
+      "Accesos ocasionales de ciudadanos, basada en validez limitada en el tiempo.",
+      "Firmar leyes en el BOE.",
+      "Acceder a servidores de alto nivel de seguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "Cl@ve PIN es un sistema de contraseña concertada de validez muy corta (24h)."
+  },
+  {
+    "pregunta": "La NTI de Reutilización de recursos de información se vincula directamente con:",
+    "opciones": [
+      "La ciberseguridad.",
+      "El Open Data y el portal datos.gob.es.",
+      "El archivo de documentos.",
+      "La firma electrónica."
+    ],
+    "correcta": 1,
+    "explicacion": "Regula cómo exponer los datos para que empresas y ciudadanos los reutilicen."
+  },
+  {
+    "pregunta": "En un expediente electrónico, el 'índice electrónico' debe estar:",
+    "opciones": [
+      "En papel impreso.",
+      "Firmado por la Administración titular.",
+      "Abierto para cambios en cualquier momento.",
+      "Escrito en inglés."
+    ],
+    "correcta": 1,
+    "explicacion": "El índice electrónico garantiza la integridad del expediente y debe ir firmado."
+  },
+  {
+    "pregunta": "¿Cuál de estas es una dimensión de la Interoperabilidad según el ENI?",
+    "opciones": [
+      "Organizativa.",
+      "Jurídica.",
+      "Económica.",
+      "Política."
+    ],
+    "correcta": 0,
+    "explicacion": "Dimensiones ENI: Organizativa, Semántica, Técnica y Temporal."
+  },
+  {
+    "pregunta": "La herramienta PILAR del CCN sirve para:",
+    "opciones": [
+      "Gestionar las notificaciones.",
+      "Análisis y gestión de riesgos siguiendo la metodología MAGERIT.",
+      "Hacer copias de seguridad.",
+      "Firmar correos."
+    ],
+    "correcta": 1,
+    "explicacion": "PILAR es la herramienta de referencia para el análisis de riesgos en el ENS."
+  },
+  {
+    "pregunta": "El Esquema Nacional de Seguridad se aplica a:",
+    "opciones": [
+      "Solo la Administración General del Estado.",
+      "Todo el Sector Público y también a entidades privadas que presten servicios a las AAPP.",
+      "Solo a empresas del IBEX 35.",
+      "Solo a los ciudadanos."
+    ],
+    "correcta": 1,
+    "explicacion": "El ámbito del ENS incluye contratistas privados que colaboren con el sector público."
+  },
+  {
+    "pregunta": "La 'Interoperabilidad Semántica' busca que:",
+    "opciones": [
+      "Los cables sean compatibles.",
+      "La información intercambiada pueda ser interpretable de forma automática por las aplicaciones.",
+      "Los jefes se pongan de acuerdo.",
+      "Los ciudadanos entiendan la web."
+    ],
+    "correcta": 1,
+    "explicacion": "Semántica = Significado. Que los datos signifiquen lo mismo para ambos sistemas."
+  },
+  {
+    "pregunta": "El SIA (Sistema de Información Administrativa) es el inventario de:",
+    "opciones": [
+      "Ordenadores de la administración.",
+      "Procedimientos y servicios de las AAPP.",
+      "Funcionarios en activo.",
+      "Edificios públicos."
+    ],
+    "correcta": 1,
+    "explicacion": "Contiene la relación de todos los trámites que ofrece la administración."
+  },
+  {
+    "pregunta": "La situación de las notificaciones se puede consultar en la DEHú, que significa:",
+    "opciones": [
+      "Dirección Electrónica Habilitada única.",
+      "Departamento de Entrega Humana.",
+      "División Electrónica de Hacienda.",
+      "Documento Especial de Herencia."
+    ],
+    "correcta": 0,
+    "explicacion": "DEHú es el punto centralizado para recibir notificaciones de múltiples AAPP."
+  },
+  {
+    "pregunta": "La herramienta que facilita a las entidades locales la interconexión con el SIR se llama:",
+    "opciones": [
+      "ORVE (Oficina de Registro Virtual).",
+      "FACILITA.",
+      "REC.",
+      "MINERVA."
+    ],
+    "correcta": 0,
+    "explicacion": "ORVE permite digitalizar el papel en ventanilla y enviarlo electrónicamente al destino."
+  },
+  {
+    "pregunta": "Un metadato se define como:",
+    "opciones": [
+      "Un dato muy grande.",
+      "Información estructurada que describe el contenido, contexto y estructura de los documentos.",
+      "Una firma electrónica.",
+      "Un virus informático."
+    ],
+    "correcta": 1,
+    "explicacion": "Son 'datos sobre los datos' para permitir su gestión y búsqueda."
+  },
+  {
+    "pregunta": "En el ENS, la 'Línea de Defensa' implica que:",
+    "opciones": [
+      "Solo hay un firewall muy fuerte.",
+      "Existen múltiples capas de seguridad independientes.",
+      "La policía vigila el edificio.",
+      "No se puede entrar en internet."
+    ],
+    "correcta": 1,
+    "explicacion": "Principio de defensa en profundidad: si una capa falla, las otras protegen."
+  },
+  {
+    "pregunta": "El Registro Electrónico Común (REC) sirve para:",
+    "opciones": [
+      "Inscribir nacimientos.",
+      "Presentar instancias genéricas dirigidas a cualquier administración.",
+      "Registrar la propiedad privada.",
+      "Inscribir contratos de alquiler."
+    ],
+    "correcta": 1,
+    "explicacion": "Portal web para presentar solicitudes que no tienen un formulario específico."
+  },
+  {
+    "pregunta": "La NTI de Documento Electrónico establece que un documento debe tener:",
+    "opciones": [
+      "Contenido, firma y metadatos.",
+      "Solo contenido.",
+      "Solo firma y fecha.",
+      "Papel y sello de tinta."
+    ],
+    "correcta": 0,
+    "explicacion": "Componentes básicos del documento electrónico según el ENI."
+  },
+  {
+    "pregunta": "La Red SARA ofrece servicios de:",
+    "opciones": [
+      "Conectividad, seguridad y servicios comunes (Firma, @firma, etc.).",
+      "Solo internet gratis.",
+      "Venta de software.",
+      "Gestión de recursos humanos."
+    ],
+    "correcta": 0,
+    "explicacion": "Es el 'pegamento' tecnológico de la administración española."
+  },
+  {
+    "pregunta": "El 'análisis de riesgos' en el ENS debe repetirse:",
+    "opciones": [
+      "Nunca.",
+      "Solo si hay un hackeo.",
+      "Al menos anualmente o cuando cambie el sistema significativamente.",
+      "Cada 10 años."
+    ],
+    "correcta": 2,
+    "explicacion": "Principio de Reevaluación Periódica."
+  },
+  {
+    "pregunta": "¿Qué es el 'CSV' (Código Seguro de Verificación)?",
+    "opciones": [
+      "Un PIN de la tarjeta bancaria.",
+      "Un código alfanumérico que garantiza la integridad de un documento impreso mediante cotejo electrónico.",
+      "El número de serie del ordenador.",
+      "Un protocolo de internet."
+    ],
+    "correcta": 1,
+    "explicacion": "Permite verificar que un papel coincide exactamente con el original electrónico."
+  },
+  {
+    "pregunta": "La plataforma @firma es un servicio de:",
+    "opciones": [
+      "Venta de certificados.",
+      "Validación multiautenticación y multifirma en modo servicios web.",
+      "Escaneado de documentos.",
+      "Correo electrónico seguro."
+    ],
+    "correcta": 1,
+    "explicacion": "Servicio común que usan las webs de la AAPP para validar las firmas de los ciudadanos."
+  },
+  {
+    "pregunta": "La NTI de Digitalización de Documentos establece que:",
+    "opciones": [
+      "Se puede escanear con cualquier móvil.",
+      "La imagen debe ser fiel al original y contener metadatos mínimos.",
+      "Los documentos digitalizados no tienen valor legal.",
+      "Solo se puede digitalizar en blanco y negro."
+    ],
+    "correcta": 1,
+    "explicacion": "Regula el proceso para que la copia electrónica sea auténtica."
+  },
+  {
+    "pregunta": "El mandato del Esquema Nacional de Seguridad (ENS) es:",
+    "opciones": [
+      "Opcional para ayuntamientos pequeños.",
+      "De obligado cumplimiento para todas las AAPP.",
+      "Solo una recomendación de la UE.",
+      "Solo para el Ministerio de Defensa."
+    ],
+    "correcta": 1,
+    "explicacion": "Obligatoriedad establecida en la Ley 40/2015."
+  },
+  {
+    "pregunta": "En el contexto de la administración electrónica, 'Terceros de confianza' son:",
+    "opciones": [
+      "Familiares del interesado.",
+      "Entidades que median en la acreditación de la identidad o firma.",
+      "Empresas de limpieza.",
+      "Abogados particulares."
+    ],
+    "correcta": 1,
+    "explicacion": "Intervienen para facilitar la relación electrónica ciudadano-AAPP."
+  },
+  {
+    "pregunta": "La herramienta para realizar la auditoría técnica de accesibilidad de una web se llama:",
+    "opciones": [
+      "ACCEDA.",
+      "VALI.",
+      "Observatorio de Accesibilidad Web.",
+      "INES."
+    ],
+    "correcta": 2,
+    "explicacion": "Servicio de diagnóstico para cumplir con la normativa de accesibilidad."
+  },
+  {
+    "pregunta": "La Interoperabilidad Organizativa trata sobre:",
+    "opciones": [
+      "Que los ordenadores tengan el mismo Windows.",
+      "La coordinación de procesos y la definición de relaciones entre organizaciones.",
+      "El idioma de los funcionarios.",
+      "El precio de los trámites."
+    ],
+    "correcta": 1,
+    "explicacion": "Acuerdos para que las instituciones colaboren de forma reglada."
+  },
+  {
+    "pregunta": "El Catálogo de Estándares de la NTI sirve para:",
+    "opciones": [
+      "Elegir el mejor ordenador.",
+      "Utilizar formatos y protocolos que aseguren la independencia tecnológica y la interoperabilidad.",
+      "Saber el precio de las licencias.",
+      "Traducir documentos."
+    ],
+    "correcta": 1,
+    "explicacion": "Garantiza que todas las AAPP usen formatos comunes (ej. PDF/A, XML)."
+  },
+  {
+    "pregunta": "La 'Sede Electrónica' se diferencia de un portal web en que:",
+    "opciones": [
+      "Es más bonita.",
+      "Tiene plena validez jurídica y el titular se responsabiliza de la integridad y veracidad.",
+      "Solo funciona con certificado.",
+      "No se puede acceder desde el móvil."
+    ],
+    "correcta": 1,
+    "explicacion": "La sede implica responsabilidad oficial sobre los contenidos y servicios."
+  },
+  {
+    "pregunta": "El derecho a no aportar documentos que ya obren en poder de las AAPP (Art. 28 Ley 39/2015):",
+    "opciones": [
+      "Es una opción del funcionario.",
+      "Es un derecho del interesado que las AAPP deben cumplir de oficio.",
+      "Solo se aplica en Hacienda.",
+      "Requiere que el interesado pague una tasa de consulta."
+    ],
+    "correcta": 1,
+    "explicacion": "Principio fundamental de 'Solo una vez'."
+  },
+  {
+    "pregunta": "La 'Copia Electrónica Auténtica' es:",
+    "opciones": [
+      "Un escaneo simple sin firma.",
+      "Un documento electrónico con el mismo valor que el original, firmado por la Administración.",
+      "Una foto del documento enviada por mail.",
+      "Un documento impreso desde internet."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 27 Ley 39/2015: Requiere firma y metadatos que garanticen la autenticidad."
+  },
+  {
+    "pregunta": "El 'Responsable de Seguridad' en el ENS es quien:",
+    "opciones": [
+      "Arregla los ordenadores.",
+      "Define y supervisa la política de seguridad y las medidas a implantar.",
+      "Vigila la puerta del edificio.",
+      "Paga las multas de seguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "Cargo estratégico diferenciado del Responsable del Sistema."
+  },
+  {
+    "pregunta": "La herramienta para la transferencia masiva de archivos entre AAPP se llama:",
+    "opciones": [
+      "FILEZILLA.",
+      "MOVEM.",
+      "SARA-Transfer.",
+      "ORVE."
+    ],
+    "correcta": 1,
+    "explicacion": "MOVEM es el servicio para mover ficheros de gran tamaño de forma segura."
+  },
+  {
+    "pregunta": "La NTI de Política de Firma Electrónica y Certificados define:",
+    "opciones": [
+      "Cómo se escribe la firma.",
+      "Las reglas y protocolos para el uso de certificados en la Administración.",
+      "El precio de los certificados.",
+      "Quién puede ser notario."
+    ],
+    "correcta": 1,
+    "explicacion": "Establece los perfiles y formatos de firma admitidos."
+  },
+  {
+    "pregunta": "En el ENS, la 'Confidencialidad' (C) asegura que:",
+    "opciones": [
+      "Los datos no se borren.",
+      "Solo las personas autorizadas tengan acceso a la información.",
+      "El sistema no se cuelgue.",
+      "Se sepa quién ha entrado."
+    ],
+    "correcta": 1,
+    "explicacion": "Protección contra el acceso no autorizado."
+  },
+  {
+    "pregunta": "La plataforma Cl@ve es un sistema de:",
+    "opciones": [
+      "Almacenamiento de archivos.",
+      "Identificación y autenticación común para todo el sector público.",
+      "Firma manuscrita digital.",
+      "Antivirus estatal."
+    ],
+    "correcta": 1,
+    "explicacion": "Unifica los sistemas de identificación (PIN, Permanente, DNIe) en una sola plataforma."
+  },
+  {
+    "pregunta": "La 'Huella Digital' o Hash se utiliza para garantizar la dimensión de:",
+    "opciones": [
+      "Disponibilidad.",
+      "Integridad.",
+      "Confidencialidad.",
+      "Trazabilidad."
+    ],
+    "correcta": 1,
+    "explicacion": "Si el dato cambia, el hash cambia. Por tanto, asegura que está íntegro."
+  },
+  {
+    "pregunta": "Según la Ley 39/2015, las AAPP asistirán en el uso de medios electrónicos a los interesados:",
+    "opciones": [
+      "Solo si pagan un extra.",
+      "No obligados, a través de las oficinas de asistencia en materia de registros.",
+      "Nunca, deben aprender solos.",
+      "Solo a través de un teléfono 902."
+    ],
+    "correcta": 1,
+    "explicacion": "Deber de asistencia para reducir la brecha digital."
+  },
+  {
+    "pregunta": "El catálogo de servicios que una administración presta a otra se publica en:",
+    "opciones": [
+      "El BOE.",
+      "El CTT (Centro de Transferencia de Tecnología).",
+      "Wikipedia.",
+      "El Diario Oficial de la UE."
+    ],
+    "correcta": 1,
+    "explicacion": "El CTT es el repositorio de soluciones para la reutilización entre AAPP."
+  },
+  {
+    "pregunta": "El 'Responsable del Servicio' en el ENS determina:",
+    "opciones": [
+      "El sueldo de los técnicos.",
+      "Los requisitos de seguridad de los servicios prestados.",
+      "La marca de los servidores.",
+      "El horario de oficina."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 10 RD 311/2022: Define qué seguridad necesita el servicio que ofrece."
+  },
+  {
+    "pregunta": "La herramienta para evaluar si una web cumple con el ENS se llama:",
+    "opciones": [
+      "CLARA.",
+      "LUCIA.",
+      "PILAR.",
+      "INES."
+    ],
+    "correcta": 1,
+    "explicacion": "LUCIA es la herramienta para la gestión de incidentes y cumplimiento (aunque INES es para el informe anual, LUCIA se centra en la respuesta y cumplimiento técnico)."
+  },
+  {
+    "pregunta": "Un sistema de categoría MEDIA en el ENS debe realizar una auditoría:",
+    "opciones": [
+      "Anual.",
+      "Cada dos años.",
+      "Cada cinco años.",
+      "Nunca, solo la categoría Alta."
+    ],
+    "correcta": 1,
+    "explicacion": "Categorías Media y Alta requieren auditoría externa cada 2 años."
+  },
+  {
+    "pregunta": "La 'Interoperabilidad Técnica' se refiere a:",
+    "opciones": [
+      "Que los políticos se hablen.",
+      "La interconexión de sistemas y servicios mediante interfaces y protocolos abiertos.",
+      "Que los funcionarios usen el mismo teclado.",
+      "Que la luz no se corte."
+    ],
+    "correcta": 1,
+    "explicacion": "Capas físicas y de red para el intercambio de bits."
+  },
+  {
+    "pregunta": "El metadato 'Estado de elaboración' en un documento electrónico indica:",
+    "opciones": [
+      "Si el autor estaba cansado.",
+      "Si el documento es original, copia u original corregido.",
+      "La ciudad donde se hizo.",
+      "El sueldo del redactor."
+    ],
+    "correcta": 1,
+    "explicacion": "Metadato obligatorio de gestión para conocer la validez del documento."
+  },
+  {
+    "pregunta": "La 'Presencia de Líneas de Defensa' en el ENS busca:",
+    "opciones": [
+      "Ahorrar dinero.",
+      "Garantizar que el fallo de una medida de seguridad sea compensado por otras.",
+      "Que haya más guardias de seguridad.",
+      "Que el sistema sea más lento."
+    ],
+    "correcta": 1,
+    "explicacion": "Principio de seguridad en capas."
+  },
+  {
+    "pregunta": "La 'Gestión de la Seguridad basada en Riesgos' significa que:",
+    "opciones": [
+      "No se hace nada hasta que pase algo.",
+      "Se aplican medidas proporcionales a los riesgos identificados.",
+      "Se contrata un seguro de vida.",
+      "Siempre se aplica la máxima seguridad posible."
+    ],
+    "correcta": 1,
+    "explicacion": "Optimización de recursos: seguridad según la importancia del activo."
+  },
+  {
+    "pregunta": "El sistema que permite la firma en la nube mediante Cl@ve se basa en:",
+    "opciones": [
+      "Certificados en custodia en un HSM (Hardware Security Module).",
+      "Un pendrive que siempre lleva el ciudadano.",
+      "Un programa pirata.",
+      "La firma con el ratón."
+    ],
+    "correcta": 0,
+    "explicacion": "Los certificados se guardan en servidores seguros de la AAPP."
+  },
+  {
+    "pregunta": "La NTI de Protocolos de Intermediación de Datos prohíbe:",
+    "opciones": [
+      "Usar servicios web.",
+      "Almacenar datos personales de las transacciones por el nodo intermedio.",
+      "Usar el protocolo SCSP.",
+      "Digitalizar documentos."
+    ],
+    "correcta": 1,
+    "explicacion": "Garantiza que la plataforma solo sea un 'túnel' seguro."
+  },
+  {
+    "pregunta": "¿Qué es la 'Carpeta Ciudadana'?",
+    "opciones": [
+      "Una mochila que da el ayuntamiento.",
+      "El punto de acceso general electrónico donde el ciudadano ve sus datos, trámites y notificaciones de forma agregada.",
+      "Una base de datos de la policía.",
+      "Un buscador tipo Google."
+    ],
+    "correcta": 1,
+    "explicacion": "Simplifica la relación con la Administración agrupando todo en un lugar."
+  },
+  {
+    "pregunta": "El 'Código Seguro de Verificación' (CSV) debe ser generado mediante:",
+    "opciones": [
+      "Un algoritmo que garantice su carácter único y vinculación al documento.",
+      "Cualquier número al azar.",
+      "El DNI del firmante.",
+      "La fecha y hora."
+    ],
+    "correcta": 0,
+    "explicacion": "Garantía técnica de vinculación indisoluble."
+  },
+  {
+    "pregunta": "La 'Vigilancia Continua' del ENS implica:",
+    "opciones": [
+      "Mirar las cámaras 24h.",
+      "Monitorizar los sistemas para detectar actividades sospechosas de forma constante.",
+      "Que el jefe revise los emails.",
+      "Hacer encuestas a los empleados."
+    ],
+    "correcta": 1,
+    "explicacion": "Principio para detectar ataques en tiempo real."
+  },
+  {
+    "pregunta": "En el SIR, si una oficina de registro recibe un papel, debe:",
+    "opciones": [
+      "Enviarlo por correo postal certificado.",
+      "Digitalizarlo, firmarlo electrónicamente y enviarlo a través del sistema de interconexión.",
+      "Guardarlo en un cajón.",
+      "Pedir al ciudadano que lo lleve él mismo."
+    ],
+    "correcta": 1,
+    "explicacion": "Funcionamiento de la oficina de asistencia en materia de registros."
+  },
+  {
+    "pregunta": "La herramienta para la gestión automatizada de expedientes de subvenciones se suele llamar:",
+    "opciones": [
+      "GEISER.",
+      "SIA.",
+      "ACCEDA.",
+      "DIR3."
+    ],
+    "correcta": 2,
+    "explicacion": "ACCEDA es una plataforma para la gestión de trámites electrónicos."
+  },
+  {
+    "pregunta": "La dimensión 'Autenticidad' (A) en el ENS asegura que:",
+    "opciones": [
+      "El sistema no tenga virus.",
+      "La identidad del usuario o proceso está verificada.",
+      "El documento es una copia fiel.",
+      "El disco duro es original."
+    ],
+    "correcta": 1,
+    "explicacion": "Autenticidad: Estar seguro de quién es la otra parte."
+  },
+  {
+    "pregunta": "El 'Esquema de Metadatos' (e-EMGDE) es un anexo de:",
+    "opciones": [
+      "La Ley 39/2015.",
+      "La NTI de Documento Electrónico.",
+      "El Código Penal.",
+      "La Constitución."
+    ],
+    "correcta": 1,
+    "explicacion": "Define qué etiquetas llevan los documentos para ser interoperables."
+  },
+  {
+    "pregunta": "El intercambio de datos entre administraciones (Interoperabilidad) es:",
+    "opciones": [
+      "Una cortesía administrativa.",
+      "Una obligación legal para evitar molestias al ciudadano.",
+      "Solo para casos de terrorismo.",
+      "Prohibido por protección de datos."
+    ],
+    "correcta": 1,
+    "explicacion": "Leyes 39 y 40 de 2015."
+  },
+  {
+    "pregunta": "La firma electrónica en el sector público se rige por:",
+    "opciones": [
+      "La NTI de Política de Firma Electrónica y de Certificados.",
+      "La voluntad del director.",
+      "El precio del certificado.",
+      "Solo el DNI electrónico."
+    ],
+    "correcta": 0,
+    "explicacion": "Asegura que las firmas sean válidas en toda la Administración."
+  },
+  {
+    "pregunta": "La 'Reevaluación Periódica' del ENS significa que:",
+    "opciones": [
+      "Hay que cambiar los ordenadores cada mes.",
+      "Se debe revisar el estado de seguridad y los riesgos de forma regular.",
+      "Se deben despedir a los técnicos cada año.",
+      "Hay que volver a leer la ley cada día."
+    ],
+    "correcta": 1,
+    "explicacion": "Principio de mejora continua en ciberseguridad."
+  },
+  {
+    "pregunta": "El sistema que permite a las AAPP enviar notificaciones en papel a través de Correos de forma integrada es:",
+    "opciones": [
+      "Notifica.",
+      "DEHú.",
+      "GEISER.",
+      "REC."
+    ],
+    "correcta": 0,
+    "explicacion": "Notifica conecta con el CIE de Correos para la impresión y envío postal."
+  },
+  {
+    "pregunta": "La Interoperabilidad 'Temporal' (ENI) garantiza que:",
+    "opciones": [
+      "El sistema sea rápido.",
+      "Los documentos se conserven y sean legibles a lo largo del tiempo (preservación digital).",
+      "Solo se trabaje por la mañana.",
+      "Los plazos administrativos se cumplan."
+    ],
+    "correcta": 1,
+    "explicacion": "Asegura que un fichero de hoy se pueda abrir dentro de 50 años."
+  },
+  {
+    "pregunta": "La herramienta para la gobernanza del catálogo de procedimientos SIA se llama:",
+    "opciones": [
+      "GEISER.",
+      "SIA (Backoffice).",
+      "DIR3.",
+      "INSIDE."
+    ],
+    "correcta": 1,
+    "explicacion": "Permite a los organismos dar de alta sus trámites."
+  },
+  {
+    "pregunta": "En el ENS, un 'Incidente de Seguridad' debe ser comunicado al:",
+    "opciones": [
+      "Ayuntamiento.",
+      "CCN-CERT (en caso de impacto significativo).",
+      "Periódico local.",
+      "Nadie, es secreto."
+    ],
+    "correcta": 1,
+    "explicacion": "Obligación de notificación al Centro Criptológico Nacional."
+  },
+  {
+    "pregunta": "La Red SARA es obligatoria para conectar con:",
+    "opciones": [
+      "Facebook.",
+      "Servicios comunes como la PID o @firma.",
+      "Bancos privados.",
+      "El correo personal."
+    ],
+    "correcta": 1,
+    "explicacion": "Es el requisito técnico para consumir servicios estatales de administración electrónica."
+  },
+  {
+    "pregunta": "El 'Índice Electrónico' garantiza que un expediente:",
+    "opciones": [
+      "Tenga muchas páginas.",
+      "Mantiene su integridad y orden cronológico de los documentos.",
+      "Sea fácil de leer.",
+      "No ocupe mucho espacio."
+    ],
+    "correcta": 1,
+    "explicacion": "Evita la manipulación o eliminación de piezas del expediente."
+  },
+  {
+    "pregunta": "La plataforma de firma 'Cl@ve Firma' permite:",
+    "opciones": [
+      "Firmar solo con el móvil.",
+      "Firmar con certificados centralizados desde cualquier dispositivo sin instalar nada.",
+      "No firmar nada.",
+      "Firmar en papel con un boli especial."
+    ],
+    "correcta": 1,
+    "explicacion": "Firma en la nube, simplificando la experiencia de usuario."
+  },
+  {
+    "pregunta": "La NTI de Documento Electrónico prohíbe el uso de:",
+    "opciones": [
+      "Formatos no incluidos en el Catálogo de Estándares.",
+      "Documentos en color.",
+      "Firmas de otros países.",
+      "Imágenes."
+    ],
+    "correcta": 0,
+    "explicacion": "Solo se permiten formatos interoperables (ej. PDF/A, XML, JPG)."
+  },
+  {
+    "pregunta": "El principio de 'Seguridad como Proceso Integral' en el ENS significa:",
+    "opciones": [
+      "Que solo importa el software.",
+      "Que hay que considerar elementos humanos, técnicos y organizativos.",
+      "Que el sistema es perfecto.",
+      "Que no hay que hacer nada más."
+    ],
+    "correcta": 1,
+    "explicacion": "La seguridad abarca toda la organización, no solo los bits."
+  },
+  {
+    "pregunta": "La 'Diferenciación de Responsabilidades' en el ENS exige que:",
+    "opciones": [
+      "Todos hagan de todo.",
+      "La persona que opera el sistema no sea la misma que supervisa la seguridad.",
+      "Solo el jefe mande.",
+      "Nadie sea responsable."
+    ],
+    "correcta": 1,
+    "explicacion": "Evita conflictos de interés y asegura la supervisión independiente."
+  },
+  {
+    "pregunta": "La herramienta que permite consultar la estructura orgánica de las administraciones es:",
+    "opciones": [
+      "DIR3.",
+      "SIA.",
+      "SIR.",
+      "FACe."
+    ],
+    "correcta": 0,
+    "explicacion": "Inventario de ministerios, CCAA, ayuntamientos y sus oficinas."
+  },
+  {
+    "pregunta": "¿Qué es el 'Esquema Nacional de Seguridad' (ENS)?",
+    "opciones": [
+      "Una ley de protección de datos.",
+      "Política de seguridad para la administración electrónica en España.",
+      "Un antivirus del Gobierno.",
+      "Un cuerpo de policía."
+    ],
+    "correcta": 1,
+    "explicacion": "RD 311/2022."
+  },
+  {
+    "pregunta": "La NTI de Expediente Electrónico exige que este contenga:",
+    "opciones": [
+      "Documentos electrónicos, índice, firma y metadatos.",
+      "Solo los documentos.",
+      "Un vídeo del expediente.",
+      "Papel escaneado."
+    ],
+    "correcta": 0,
+    "explicacion": "Estructura obligatoria del expediente según el ENI."
+  },
+  {
+    "pregunta": "La 'Política de Seguridad de la Información' debe ser aprobada por:",
+    "opciones": [
+      "El informático.",
+      "El órgano superior de la administración u organismo correspondiente.",
+      "El Rey.",
+      "La policía."
+    ],
+    "correcta": 1,
+    "explicacion": "Compromiso de la alta dirección con la ciberseguridad."
+  },
+  {
+    "pregunta": "El Punto de Acceso General (PAG) es:",
+    "opciones": [
+      "La puerta del ministerio.",
+      "El portal web (administracion.gob.es) que centraliza la información de las AAPP.",
+      "Un cable de red.",
+      "Una oficina de correos."
+    ],
+    "correcta": 1,
+    "explicacion": "Facilita la localización de trámites y servicios."
+  },
+  {
+    "pregunta": "La Interoperabilidad de los sistemas se consigue mediante:",
+    "opciones": [
+      "Formatos propietarios.",
+      "Estándares abiertos y de uso común.",
+      "Sistemas cerrados.",
+      "Programas caros."
+    ],
+    "correcta": 1,
+    "explicacion": "Asegura la independencia del fabricante y la compatibilidad."
+  },
+  {
+    "pregunta": "El 'Perfil de Cumplimiento' en el ENS sirve para:",
+    "opciones": [
+      "Ahorrar papel.",
+      "Simplificar la aplicación del ENS a entidades con sistemas muy similares (ej. Ayuntamientos).",
+      "Contratar personal.",
+      "Pagar menos multas."
+    ],
+    "correcta": 1,
+    "explicacion": "Permite adoptar un conjunto predefinido de medidas para sistemas tipo."
+  },
+  {
+    "pregunta": "La herramienta INES sirve para que las AAPP:",
+    "opciones": [
+      "Reporten anualmente su nivel de adecuación al ENS al CCN.",
+      "Busquen subvenciones.",
+      "Miren el tiempo.",
+      "Escaneen virus."
+    ],
+    "correcta": 0,
+    "explicacion": "Informe Nacional de Estado de Seguridad."
+  }
+]

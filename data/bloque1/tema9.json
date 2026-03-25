@@ -1,0 +1,937 @@
+[
+  {
+    "pregunta": "La solución integral de firma electrónica, proporcionada por el CTT, que permite simplificar todos los requisitos de creación de firmas basadas tanto en certificados locales como en certificados en la nube se llama:",
+    "opciones": [
+      "VALIDE",
+      "Stork",
+      "FIRE",
+      "Autofirma"
+    ],
+    "correcta": 2,
+    "explicacion": "FIRE (Firma en Red) es el componente horizontal para simplificar la integración de la firma electrónica en las aplicaciones."
+  },
+  {
+    "pregunta": "Señale qué afirmación es correcta con respecto a las soluciones de Ciberseguridad proporcionadas por el CCN:",
+    "opciones": [
+      "CLARA, protección y trazabilidad del dato.",
+      "ELENA, Simulador de Técnicas de Cibervigilancia.",
+      "GLORIA, Gestión de eventos e información de seguridad.",
+      "MONICA, Gestor de logs para responder ante incidentes y amenazas."
+    ],
+    "correcta": 2,
+    "explicacion": "GLORIA es el sistema SIEM (Gestión de Eventos e Información de Seguridad) del CCN-CERT."
+  },
+  {
+    "pregunta": "Según la Ley 40/2015, en relación con las sedes electrónicas y los portales de Internet, señale la respuesta correcta:",
+    "opciones": [
+      "Los portales dispondrán de sistemas que permitan el establecimiento de comunicaciones seguras siempre que sean necesarias.",
+      "El establecimiento de un portal conlleva la responsabilidad del titular respecto de la integridad, veracidad y actualización.",
+      "Se entiende por portal de internet el punto de acceso electrónico que permite el acceso a la información publicada y, en su caso, a la sede electrónica.",
+      "Los portales utilizarán certificados cualificados de autenticación de sitio web obligatoriamente."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 39 Ley 40/2015: Define portal de internet como el punto de acceso que permite llegar a la información y sedes."
+  },
+  {
+    "pregunta": "Marque la respuesta correcta relacionada con el nodo eIDAS español:",
+    "opciones": [
+      "La integración con el nodo eIDAS español se realiza a través de @Firma.",
+      "Permite el reconocimiento de identidades en soportes físicos emitidas por otros países.",
+      "Facilita la aceptación del DNI electrónico en servicios de Administración Electrónica de otros países de la UE.",
+      "Utiliza un sistema de intercambio de mensajes conforme al estándar SAML 2.0."
+    ],
+    "correcta": 3,
+    "explicacion": "El nodo eIDAS utiliza el estándar SAML 2.0 para el intercambio de aserciones de identidad entre países miembros."
+  },
+  {
+    "pregunta": "¿Qué solución común permite la gestión de la nómina de empleados públicos en la AGE?",
+    "opciones": [
+      "SOROLLA2",
+      "BADARAL",
+      "NEDAES",
+      "NOMINAe"
+    ],
+    "correcta": 2,
+    "explicacion": "NEDAES es la aplicación estándar para la gestión de nóminas en la Administración General del Estado."
+  },
+  {
+    "pregunta": "Indique cuál es la solución que proporciona un inventario unificado y común de las unidades orgánicas y oficinas de las AAPP:",
+    "opciones": [
+      "DIR3",
+      "ORVE",
+      "SICRES",
+      "Autentica"
+    ],
+    "correcta": 0,
+    "explicacion": "DIR3 (Directorio Común) es el inventario de la estructura orgánica de todas las administraciones."
+  },
+  {
+    "pregunta": "Referente a los servicios comunes, señale la respuesta correcta:",
+    "opciones": [
+      "SERVINOMINA realiza la gestión completa de las fases de nómina.",
+      "CIRCABC es una herramienta de trabajo en grupo para intercambio de información y colaboración.",
+      "eVISOR permite a un empleado público la consulta de sus nóminas.",
+      "ENVIA es una aplicación que hace posible el envío de ficheros de gran volumen."
+    ],
+    "correcta": 1,
+    "explicacion": "CIRCABC es un servicio multilingüe para gestionar secciones de trabajo colaborativo."
+  },
+  {
+    "pregunta": "Según el ENI, el ciclo de vida de los servicios incluye:",
+    "opciones": [
+      "Planificación, diseño, adquisición, construcción, despliegue, explotación, publicación, conservación y acceso.",
+      "Planificación, análisis, diseño, construcción y despliegue.",
+      "Solo diseño, explotación y borrado.",
+      "Diseño e implementación."
+    ],
+    "correcta": 0,
+    "explicacion": "Dato Academia: La interoperabilidad debe estar presente en todas estas fases."
+  },
+  {
+    "pregunta": "Según las prescripciones técnicas del sistema Cl@ve, señale la correcta:",
+    "opciones": [
+      "Está dirigido exclusivamente a ciudadanos españoles.",
+      "Ofrece tres niveles de garantía de registro.",
+      "Proporcionará a los usuarios tres modalidades de identificación.",
+      "Permitirá el acceso a servicios de firma electrónica mediante certificados electrónicos centralizados."
+    ],
+    "correcta": 3,
+    "explicacion": "Cl@ve Firma permite el uso de certificados centralizados (en la nube)."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una definición válida de SICRES?",
+    "opciones": [
+      "Oficina de registro virtual en la nube.",
+      "Herramienta para pruebas de validación de aplicaciones.",
+      "Norma que establece el modelo de datos para el intercambio de asientos entre entidades registrales.",
+      "Solución integral de registro en modo nube."
+    ],
+    "correcta": 2,
+    "explicacion": "SICRES es la norma técnica que define cómo se intercambian los datos de los registros."
+  },
+  {
+    "pregunta": "Sobre la solución horizontal Port@firmas AGE, señale la INCORRECTA:",
+    "opciones": [
+      "Permite incorporar la firma electrónica en flujos de trabajo.",
+      "Admite formatos CADES, XADES y PADES.",
+      "Puede integrarse vía Servicios Web.",
+      "La versión móvil solo permite firmar con certificado en tarjeta."
+    ],
+    "correcta": 3,
+    "explicacion": "Port@firmas móvil permite firmar también con certificados centralizados o de software."
+  },
+  {
+    "pregunta": "Según la Ley 39/2015, las AAPP NO requerirán uso obligatorio de firma para:",
+    "opciones": [
+      "Formular solicitudes.",
+      "Acceso a notificaciones.",
+      "Interponer recursos.",
+      "Desistir de acciones."
+    ],
+    "correcta": 1,
+    "explicacion": "El acceso a la notificación (comparecencia) solo requiere identificación previa."
+  },
+  {
+    "pregunta": "Según el RD 203/2021, ¿qué debe contener mínimamente una sede electrónica?",
+    "opciones": [
+      "Relación de los canales de acceso electrónico a dicha sede.",
+      "Relación de los PAG que la referencian.",
+      "Normativa del Registro al que se acceda.",
+      "Enlace al Boletín Oficial."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 11 RD 203/2021: Los canales de acceso son contenido mínimo obligatorio."
+  },
+  {
+    "pregunta": "Indique la funcionalidad principal del producto eVisor:",
+    "opciones": [
+      "Creación de mapas interactivos.",
+      "Generación de copia auténtica en papel de documentos firmados electrónicamente.",
+      "Gestión de información territorial georreferenciada.",
+      "Servicio de diagnóstico de accesibilidad."
+    ],
+    "correcta": 1,
+    "explicacion": "eVisor permite visualizar la validez de las firmas y generar copias imprimibles con CSV."
+  },
+  {
+    "pregunta": "¿Qué sujeto NO tiene obligación de relacionarse electrónicamente (Art. 14 Ley 39/2015)?",
+    "opciones": [
+      "Las personas jurídicas.",
+      "Representantes de interesados obligados.",
+      "Profesionales sin colegiación obligatoria.",
+      "Empleados públicos para trámites por su condición de tal."
+    ],
+    "correcta": 2,
+    "explicacion": "Las personas físicas sin colegiación obligatoria no están obligadas por defecto por la ley."
+  },
+  {
+    "pregunta": "¿Cuál de estas afirmaciones sobre Cl@ve es FALSA?",
+    "opciones": [
+      "Es común para todo el Sector Público Administrativo Estatal.",
+      "Requiere registro previo.",
+      "Dispone de sistemas Ocasional, Diaria y Permanente.",
+      "El órgano responsable es la SGAD."
+    ],
+    "correcta": 2,
+    "explicacion": "Los sistemas son Cl@ve PIN (ocasional) y Cl@ve Permanente; la 'Cl@ve Diaria' no existe."
+  },
+  {
+    "pregunta": "¿Qué dato NO es obligatorio en una inscripción del Registro de Apoderamientos (@podera)?",
+    "opciones": [
+      "NIF del poderdante.",
+      "Periodo de vigencia de los trámites.",
+      "Fecha de otorgamiento.",
+      "Número de referencia del alta."
+    ],
+    "correcta": 3,
+    "explicacion": "Dato Academia: El número de referencia se genera tras el alta, no es un dato a aportar para la inscripción."
+  },
+  {
+    "pregunta": "¿Cómo se llama el proyecto europeo de interoperabilidad de identidades electrónicas?",
+    "opciones": [
+      "sTESTA",
+      "INSIDE",
+      "STORK",
+      "INSPIRE"
+    ],
+    "correcta": 2,
+    "explicacion": "STORK es el precursor del nodo eIDAS europeo."
+  },
+  {
+    "pregunta": "Sobre el Punto de Acceso General (PAG), es INCORRECTO que:",
+    "opciones": [
+      "Garantice acceso al Portal de Transparencia.",
+      "Contenga información de ayudas y becas.",
+      "Dé información de otras AAPP.",
+      "Garantice el acceso a todos los portales de organismos públicos."
+    ],
+    "correcta": 3,
+    "explicacion": "El PAG no puede garantizar acceso a todos los portales externos, sino que centraliza la información y el acceso a los servicios clave."
+  },
+  {
+    "pregunta": "La red que interconecta las AAPP españolas para intercambio seguro se llama:",
+    "opciones": [
+      "Red TESTA",
+      "Red SARA",
+      "Red NEREA",
+      "RESGAL"
+    ],
+    "correcta": 1,
+    "explicacion": "SARA es la intranet de la Administración Española."
+  },
+  {
+    "pregunta": "¿Qué herramienta permite digitalizar el papel en ventanilla y enviarlo electrónicamente al destino (SIR)?",
+    "opciones": [
+      "DIR3",
+      "ORVE",
+      "REC",
+      "MINERVA"
+    ],
+    "correcta": 1,
+    "explicacion": "ORVE (Oficina de Registro Virtual) es la solución en la nube para entidades locales."
+  },
+  {
+    "pregunta": "El servicio horizontal encargado de la validación multiautenticación y multifirma es:",
+    "opciones": [
+      "VALIDE",
+      "@firma",
+      "Autofirma",
+      "TSA"
+    ],
+    "correcta": 1,
+    "explicacion": "@firma es la plataforma de servicios web de validación."
+  },
+  {
+    "pregunta": "La plataforma para la gestión de notificaciones que permite enviar avisos al móvil se llama:",
+    "opciones": [
+      "Notifica (SNE)",
+      "DEHú",
+      "Carpeta Ciudadana",
+      "PLATA"
+    ],
+    "correcta": 0,
+    "explicacion": "Notifica gestiona el envío de notificaciones y los avisos de cortesía."
+  },
+  {
+    "pregunta": "El SIA (Sistema de Información Administrativa) es:",
+    "opciones": [
+      "El inventario de unidades orgánicas.",
+      "El catálogo de procedimientos y servicios de las AAPP.",
+      "Un registro de entrada.",
+      "Un gestor de certificados."
+    ],
+    "correcta": 1,
+    "explicacion": "SIA centraliza la información de todos los trámites administrativos."
+  },
+  {
+    "pregunta": "La plataforma centralizada para el acceso de empleados públicos a aplicaciones del CTT es:",
+    "opciones": [
+      "Cl@ve",
+      "Autentica",
+      "GEISER",
+      "REC"
+    ],
+    "correcta": 1,
+    "explicacion": "Autentica es el Single Sign-On para el personal empleado público."
+  },
+  {
+    "pregunta": "La herramienta para el archivo definitivo de documentos electrónicos ENI es:",
+    "opciones": [
+      "INSIDE",
+      "ARCHIVE",
+      "SIA",
+      "REC"
+    ],
+    "correcta": 1,
+    "explicacion": "ARCHIVE es la solución para el archivo de larga duración."
+  },
+  {
+    "pregunta": "El portal oficial del Punto de Acceso General de la AGE es:",
+    "opciones": [
+      "sede.gob.es",
+      "administracion.gob.es",
+      "tramites.es",
+      "age.gob.es"
+    ],
+    "correcta": 1,
+    "explicacion": "RD 203/2021 establece administracion.gob.es como dirección del PAG."
+  },
+  {
+    "pregunta": "La plataforma que permite traducción automática de portales web se llama:",
+    "opciones": [
+      "LINGUA",
+      "PLATA",
+      "TRANS",
+      "EGEO"
+    ],
+    "correcta": 1,
+    "explicacion": "PLATA es la Plataforma de Traducción Automática."
+  },
+  {
+    "pregunta": "¿Qué sistema permite la gestión integral de registros en modo nube para cualquier organismo?",
+    "opciones": [
+      "DIR3",
+      "GEISER",
+      "INSIDE",
+      "ARCHIVE"
+    ],
+    "correcta": 1,
+    "explicacion": "GEISER gestiona libros de registro, digitalización y envío SIR."
+  },
+  {
+    "pregunta": "El sistema que permite el intercambio de asientos registrales entre distintas AAPP se llama:",
+    "opciones": [
+      "SIR",
+      "ORVE",
+      "FACILITA",
+      "SARA"
+    ],
+    "correcta": 0,
+    "explicacion": "SIR (Sistema de Interconexión de Registros) es la red de intercambio."
+  },
+  {
+    "pregunta": "¿Cuál es el código identificador único de un procedimiento en la Administración?",
+    "opciones": [
+      "Código DIR3",
+      "Código SIA",
+      "Número REC",
+      "CSV"
+    ],
+    "correcta": 1,
+    "explicacion": "SIA asigna un número de identificación único a cada procedimiento."
+  },
+  {
+    "pregunta": "La herramienta web para que el ciudadano valide certificados y firmas es:",
+    "opciones": [
+      "@firma",
+      "VALIDE",
+      "Autofirma",
+      "Cl@ve"
+    ],
+    "correcta": 1,
+    "explicacion": "VALIDE es la interfaz de cara al ciudadano para validación."
+  },
+  {
+    "pregunta": "La aplicación de escritorio para firmar documentos localmente se llama:",
+    "opciones": [
+      "Firma-e",
+      "Autofirma",
+      "DNIeDroid",
+      "Cl@ve Firma"
+    ],
+    "correcta": 1,
+    "explicacion": "Autofirma es el software cliente para firma local."
+  },
+  {
+    "pregunta": "El Punto General de Entrada de Facturas Electrónicas de la AGE se llama:",
+    "opciones": [
+      "FACe",
+      "FACeB2B",
+      "SIA",
+      "INSIDE"
+    ],
+    "correcta": 0,
+    "explicacion": "FACe es el portal centralizado para facturas electrónicas."
+  },
+  {
+    "pregunta": "¿Qué sistema permite consultar expedientes y notificaciones de forma unificada?",
+    "opciones": [
+      "REC",
+      "Carpeta Ciudadana",
+      "Notifica",
+      "SIA"
+    ],
+    "correcta": 1,
+    "explicacion": "Carpeta Ciudadana es el punto de vista unificado del ciudadano."
+  },
+  {
+    "pregunta": "El sistema que gestiona el envío de notificaciones masivas para las AAPP es:",
+    "opciones": [
+      "DEHú",
+      "Notifica",
+      "ORVE",
+      "GEISER"
+    ],
+    "correcta": 1,
+    "explicacion": "Notifica centraliza la salida de notificaciones a DEHú y papel."
+  },
+  {
+    "pregunta": "Según la NTI de Documento Electrónico, el CSV permite:",
+    "opciones": [
+      "Cifrar datos.",
+      "Comprobar integridad y autenticidad en la sede.",
+      "Sustituir la firma manual en papel.",
+      "Pagar tasas."
+    ],
+    "correcta": 1,
+    "explicacion": "CSV vincula el papel con el original electrónico para comprobación."
+  },
+  {
+    "pregunta": "La plataforma para consultar datos en otra administración (ej. renta, DNI) se llama:",
+    "opciones": [
+      "Red SARA",
+      "PID",
+      "SIR",
+      "INSIDE"
+    ],
+    "correcta": 1,
+    "explicacion": "PID (Plataforma de Intermediación de Datos) elimina la necesidad de aportar papeles."
+  },
+  {
+    "pregunta": "Cl@ve Permanente está basado en:",
+    "opciones": [
+      "Certificado en tarjeta.",
+      "Usuario/Contraseña y SMS (OTP).",
+      "Huella dactilar.",
+      "Reconocimiento facial."
+    ],
+    "correcta": 1,
+    "explicacion": "Cl@ve Permanente usa claves concertadas robustecidas con SMS."
+  },
+  {
+    "pregunta": "La herramienta para la gestión de expedientes y remisión al Expediente Judicial Electrónico es:",
+    "opciones": [
+      "INSIDE",
+      "ARCHIVE",
+      "GEISER",
+      "ACCEDA"
+    ],
+    "correcta": 0,
+    "explicacion": "INSIDE permite gestionar la estructura ENI de los expedientes."
+  },
+  {
+    "pregunta": "El Registro Electrónico Común (REC) sirve para:",
+    "opciones": [
+      "Inscribir nacimientos.",
+      "Presentar instancias genéricas a cualquier administración.",
+      "Registrar la propiedad.",
+      "Inscribir alquileres."
+    ],
+    "correcta": 1,
+    "explicacion": "REC es el registro para solicitudes sin formulario específico."
+  },
+  {
+    "pregunta": "La herramienta para mover ficheros de gran tamaño entre AAPP se llama:",
+    "opciones": [
+      "FILEZILLA",
+      "MOVEM",
+      "SARA-Transfer",
+      "ORVE"
+    ],
+    "correcta": 1,
+    "explicacion": "MOVEM es el servicio de transferencia segura de archivos voluminosos."
+  },
+  {
+    "pregunta": "La herramienta para realizar auditorías de accesibilidad web se llama:",
+    "opciones": [
+      "ACCEDA",
+      "VALI",
+      "Observatorio de Accesibilidad Web",
+      "INES"
+    ],
+    "correcta": 2,
+    "explicacion": "Proporciona informes de diagnóstico de accesibilidad."
+  },
+  {
+    "pregunta": "La plataforma de firma 'Cl@ve Firma' permite:",
+    "opciones": [
+      "Firmar solo con el móvil.",
+      "Firmar con certificados centralizados en la nube.",
+      "No firmar nada.",
+      "Firmar en papel con boli especial."
+    ],
+    "correcta": 1,
+    "explicacion": "Permite firmar sin tener el certificado instalado en el dispositivo local."
+  },
+  {
+    "pregunta": "La herramienta INES sirve para que las AAPP:",
+    "opciones": [
+      "Reporten su nivel de adecuación al ENS anualmente.",
+      "Busquen subvenciones.",
+      "Miren el tiempo.",
+      "Escaneen virus."
+    ],
+    "correcta": 0,
+    "explicacion": "INES es el Informe Nacional de Estado de Seguridad."
+  },
+  {
+    "pregunta": "El sistema que permite a las AAPP enviar notificaciones en papel vía Correos se llama:",
+    "opciones": [
+      "Notifica",
+      "DEHú",
+      "GEISER",
+      "REC"
+    ],
+    "correcta": 0,
+    "explicacion": "Notifica gestiona tanto el envío electrónico como el postal."
+  },
+  {
+    "pregunta": "La herramienta para la gobernanza del catálogo SIA se llama:",
+    "opciones": [
+      "GEISER",
+      "SIA (Backoffice)",
+      "DIR3",
+      "INSIDE"
+    ],
+    "correcta": 1,
+    "explicacion": "Permite a los gestores mantener sus procedimientos actualizados."
+  },
+  {
+    "pregunta": "¿Cuál de estas NO es una dimensión del ENS?",
+    "opciones": [
+      "Disponibilidad",
+      "Trazabilidad",
+      "Autenticidad",
+      "Sincronización"
+    ],
+    "correcta": 3,
+    "explicacion": "Las dimensiones son ACIDT: Autenticidad, Confidencialidad, Integridad, Disponibilidad y Trazabilidad."
+  },
+  {
+    "pregunta": "La 'Vigilancia Continua' es un principio del ENS introducido en:",
+    "opciones": [
+      "RD 3/2010",
+      "Ley 40/2015",
+      "RD 311/2022",
+      "RD 203/2021"
+    ],
+    "correcta": 2,
+    "explicacion": "El nuevo ENS de 2022 introdujo la vigilancia continua como principio básico."
+  },
+  {
+    "pregunta": "El sistema que conecta las redes de las AAPP para que no usen internet pública es:",
+    "opciones": [
+      "Red SARA",
+      "Red SARA 2.0",
+      "Red TESTA",
+      "RESGAL"
+    ],
+    "correcta": 0,
+    "explicacion": "Red SARA es la infraestructura de red privada de las AAPP."
+  },
+  {
+    "pregunta": "El 'Índice Electrónico' garantiza en un expediente:",
+    "opciones": [
+      "El número de páginas.",
+      "La integridad y orden de los documentos.",
+      "El autor.",
+      "El peso en MB."
+    ],
+    "correcta": 1,
+    "explicacion": "Evita la alteración o eliminación de documentos del expediente."
+  },
+  {
+    "pregunta": "Un sistema de categoría MEDIA en el ENS debe auditarse cada:",
+    "opciones": [
+      "Año.",
+      "2 años.",
+      "5 años.",
+      "Nunca."
+    ],
+    "correcta": 1,
+    "explicacion": "Auditoría obligatoria cada 2 años para Media y Alta."
+  },
+  {
+    "pregunta": "¿Qué es un 'fichero' según el RGPD?",
+    "opciones": [
+      "Un archivador de metal.",
+      "Conjunto estructurado de datos personales accesibles con criterios determinados.",
+      "Solo bases de datos informáticas.",
+      "Documentos Word."
+    ],
+    "correcta": 1,
+    "explicacion": "Definición legal amplia que incluye soportes físicos estructurados."
+  },
+  {
+    "pregunta": "El derecho al testamento digital se regula en la LOPDGDD en el artículo:",
+    "opciones": [
+      "3",
+      "12",
+      "80",
+      "96"
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 96 LOPDGDD: Derecho al testamento digital."
+  },
+  {
+    "pregunta": "La herramienta para gestionar incidentes de seguridad en las AAPP se llama:",
+    "opciones": [
+      "CLARA",
+      "LUCIA",
+      "MONICA",
+      "INES"
+    ],
+    "correcta": 1,
+    "explicacion": "LUCIA es el sistema de gestión de incidentes del CCN-CERT."
+  },
+  {
+    "pregunta": "El derecho a la desconexión digital se reconoce en el ámbito:",
+    "opciones": [
+      "Personal.",
+      "Laboral.",
+      "Familiar.",
+      "Escolar."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 88 LOPDGDD: Derecho al descanso fuera del tiempo de trabajo."
+  },
+  {
+    "pregunta": "Las multas de la AEPD para organismos públicos son:",
+    "opciones": [
+      "De hasta 20 millones.",
+      "Inexistentes (apercibimiento).",
+      "De hasta 600.000 euros.",
+      "Simbólicas de 1 euro."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 77 LOPDGDD: A las AAPP no se les ponen multas económicas."
+  },
+  {
+    "pregunta": "El Delegado de Protección de Datos (DPD) debe ser comunicado a la AEPD en:",
+    "opciones": [
+      "10 días.",
+      "15 días.",
+      "1 mes.",
+      "No hace falta."
+    ],
+    "correcta": 0,
+    "explicacion": "Plazo de 10 días tras su designación o cese."
+  },
+  {
+    "pregunta": "El principio de minimización de datos exige que sean:",
+    "opciones": [
+      "Pequeños.",
+      "Adecuados, pertinentes y limitados a lo necesario.",
+      "Secretos.",
+      "Anónimos."
+    ],
+    "correcta": 1,
+    "explicacion": "Solo se deben tratar los datos estrictamente necesarios para el fin."
+  },
+  {
+    "pregunta": "La Evaluación de Impacto (EIPD) es obligatoria cuando hay:",
+    "opciones": [
+      "Muchos datos.",
+      "Un alto riesgo para los derechos y libertades.",
+      "Nuevos empleados.",
+      "Una web nueva."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 35 RGPD."
+  },
+  {
+    "pregunta": "El derecho al olvido en redes sociales para menores se aplica si se publicó:",
+    "opciones": [
+      "Siendo mayor de edad.",
+      "Durante su minoría de edad.",
+      "En el colegio.",
+      "Cualquier foto."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 94.2 LOPDGDD: Protección especial a lo publicado siendo menor."
+  },
+  {
+    "pregunta": "La situación de las notificaciones se consulta en la DEHú, que es:",
+    "opciones": [
+      "Dirección Electrónica Habilitada única.",
+      "Departamento de Hacienda.",
+      "División de Herencias.",
+      "Documento de Identidad."
+    ],
+    "correcta": 0,
+    "explicacion": "DEHú centraliza las notificaciones de múltiples administraciones."
+  },
+  {
+    "pregunta": "La mayoría para proponer la Presidencia de la AEPD en el Congreso es:",
+    "opciones": [
+      "Simple.",
+      "Absoluta.",
+      "3/5.",
+      "2/3."
+    ],
+    "correcta": 2,
+    "explicacion": "Ratificación por mayoría de tres quintos del Congreso."
+  },
+  {
+    "pregunta": "Un sistema de videovigilancia laboral debe ser comunicado a:",
+    "opciones": [
+      "La AEPD.",
+      "Los trabajadores con carácter previo.",
+      "La policía.",
+      "Nadie."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 89 LOPDGDD: Deber de información previa a los empleados."
+  },
+  {
+    "pregunta": "La herramienta para evaluar sistemas de cifrado se llama:",
+    "opciones": [
+      "FACILITA",
+      "ValidaCripto",
+      "INES",
+      "LUCIA"
+    ],
+    "correcta": 1,
+    "explicacion": "ValidaCripto ayuda a verificar la robustez del cifrado."
+  },
+  {
+    "pregunta": "El mandato de la Presidencia de la AEPD dura:",
+    "opciones": [
+      "4 años.",
+      "5 años.",
+      "6 años.",
+      "Indefinido."
+    ],
+    "correcta": 1,
+    "explicacion": "Periodo de 5 años renovable por otro."
+  },
+  {
+    "pregunta": "El principio de responsabilidad proactiva se conoce como:",
+    "opciones": [
+      "Accountability",
+      "Privacy by design",
+      "Transparency",
+      "Security"
+    ],
+    "correcta": 0,
+    "explicacion": "El responsable debe cumplir y ser capaz de demostrarlo."
+  },
+  {
+    "pregunta": "El Registro de Actividades de Tratamiento (RAT) sustituye a:",
+    "opciones": [
+      "Las auditorías.",
+      "La inscripción de ficheros en la AEPD.",
+      "Los contratos.",
+      "Los avisos legales."
+    ],
+    "correcta": 1,
+    "explicacion": "Ya no se inscriben ficheros, se mantiene un RAT interno."
+  },
+  {
+    "pregunta": "La seudonimización permite tratar datos sin que se atribuyan a un interesado sin:",
+    "opciones": [
+      "Dinero.",
+      "Información adicional custodiada aparte.",
+      "Permiso del Rey.",
+      "Claves de internet."
+    ],
+    "correcta": 1,
+    "explicacion": "Es una medida de seguridad para reducir el riesgo."
+  },
+  {
+    "pregunta": "El derecho de oposición permite:",
+    "opciones": [
+      "No pagar impuestos.",
+      "Que no se traten datos por motivos de situación particular.",
+      "Borrar datos.",
+      "Cambiar el nombre."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 21 RGPD."
+  },
+  {
+    "pregunta": "El Canal Prioritario de la AEPD sirve para:",
+    "opciones": [
+      "Pedir citas.",
+      "Eliminar contenidos sexuales o violentos de internet urgentemente.",
+      "Pagar multas.",
+      "Consultar el BOE."
+    ],
+    "correcta": 1,
+    "explicacion": "Herramienta contra el ciberacoso y difusión de contenido sensible."
+  },
+  {
+    "pregunta": "La prescripción de una falta MUY GRAVE de la LOPDGDD es:",
+    "opciones": [
+      "1 año.",
+      "2 años.",
+      "3 años.",
+      "5 años."
+    ],
+    "correcta": 2,
+    "explicacion": "Infracción 3 años, Sanción 3 años (si >300k€)."
+  },
+  {
+    "pregunta": "El derecho de portabilidad NO se aplica si el tratamiento es para:",
+    "opciones": [
+      "Un contrato.",
+      "Cumplir una misión de interés público.",
+      "Publicidad.",
+      "Ventas."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 20.3 RGPD: Excepción para poderes públicos."
+  },
+  {
+    "pregunta": "La herramienta para PYMES de bajo riesgo se llama:",
+    "opciones": [
+      "FACILITA RGPD",
+      "MINI RGPD",
+      "GUIA RGPD",
+      "VALIDE"
+    ],
+    "correcta": 0,
+    "explicacion": "Ayuda a cumplir la ley de forma simplificada."
+  },
+  {
+    "pregunta": "El derecho a la portabilidad entrega los datos en formato:",
+    "opciones": [
+      "PDF.",
+      "Estructurado, de uso común y lectura mecánica.",
+      "Papel.",
+      "Cualquier imagen."
+    ],
+    "correcta": 1,
+    "explicacion": "Permite la interoperabilidad entre servicios."
+  },
+  {
+    "pregunta": "¿Quién nombra a los vocales del Consejo Consultivo de la AEPD?",
+    "opciones": [
+      "El Rey.",
+      "El Gobierno.",
+      "El Presidente de la AEPD.",
+      "El Congreso."
+    ],
+    "correcta": 1,
+    "explicacion": "Nombrados por el Gobierno a propuesta de diversas entidades."
+  },
+  {
+    "pregunta": "La AEPD se adscribe orgánicamente al Ministerio de:",
+    "opciones": [
+      "Interior.",
+      "Justicia.",
+      "Hacienda.",
+      "Presidencia."
+    ],
+    "correcta": 1,
+    "explicacion": "Se relaciona con el Gobierno a través del Ministerio de Justicia."
+  },
+  {
+    "pregunta": "El principio de licitud exige que el tratamiento tenga:",
+    "opciones": [
+      "Muchos datos.",
+      "Una base jurídica (Art. 6 RGPD).",
+      "Permiso del DPD.",
+      "Un contrato de seguro."
+    ],
+    "correcta": 1,
+    "explicacion": "Ningún tratamiento es legal sin una base de licitud."
+  },
+  {
+    "pregunta": "El derecho de acceso permite obtener:",
+    "opciones": [
+      "Dinero.",
+      "Confirmación y copia de los datos tratados.",
+      "Borrado total.",
+      "Cambio de domicilio."
+    ],
+    "correcta": 1,
+    "explicacion": "Saber qué tienen de mí."
+  },
+  {
+    "pregunta": "El principio de integridad y confidencialidad se refiere a:",
+    "opciones": [
+      "La seguridad de los datos.",
+      "La veracidad de los datos.",
+      "El tiempo de guardado.",
+      "El nombre del responsable."
+    ],
+    "correcta": 0,
+    "explicacion": "Garantizar que no se alteren ni se filtren."
+  },
+  {
+    "pregunta": "¿Qué es la 'privacidad desde el diseño'?",
+    "opciones": [
+      "Hacer webs bonitas.",
+      "Integrar la protección de datos desde la fase inicial de un proyecto.",
+      "Usar antivirus.",
+      "No tener web."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 25 RGPD."
+  },
+  {
+    "pregunta": "El consentimiento debe ser:",
+    "opciones": [
+      "Tácito.",
+      "Libre, específico, informado e inequívoco.",
+      "Obligatorio.",
+      "General para todo."
+    ],
+    "correcta": 1,
+    "explicacion": "No se admite el silencio como aceptación."
+  },
+  {
+    "pregunta": "Las categorías especiales de datos incluyen:",
+    "opciones": [
+      "Nombre y NIF.",
+      "Opiniones políticas y religión.",
+      "Matrícula de coche.",
+      "Número de móvil."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 9 RGPD: Datos sensibles."
+  },
+  {
+    "pregunta": "La Agencia de Protección de Datos tiene sede en:",
+    "opciones": [
+      "Barcelona.",
+      "Madrid.",
+      "Sevilla.",
+      "Bruselas."
+    ],
+    "correcta": 1,
+    "explicacion": "Sede central en la capital."
+  },
+  {
+    "pregunta": "El derecho a la educación digital busca incluir la competencia digital en:",
+    "opciones": [
+      "El sistema educativo.",
+      "Las empresas.",
+      "Los bancos.",
+      "Los bares."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 83 LOPDGDD."
+  }
+]

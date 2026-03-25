@@ -1,0 +1,1245 @@
+[
+  {
+    "pregunta": "Según establece la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales, ¿quién NO puede ponerse en contacto con los prestadores de servicios de la sociedad de la información para acceder a los contenidos de la persona fallecida?",
+    "opciones": [
+      "En caso de fallecimiento de personas con discapacidad, quienes hubiesen sido designados para el ejercicio de funciones de apoyo.",
+      "El albacea testamentario o la persona designada expresamente por el fallecido.",
+      "En caso de personas fallecidas mayores de edad, sus representantes legales o el Ministerio Fiscal de oficio.",
+      "Las personas vinculadas al fallecido por razones familiares o de hecho, así como sus herederos."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 3 LOPDGDD: La opción C es falsa porque afirma que 'no podrán', cuando la ley dice que el Ministerio Fiscal SIEMPRE puede actuar de oficio para proteger la memoria del fallecido."
+  },
+  {
+    "pregunta": "¿Cuál es la funcionalidad de la herramienta 'FACILITA' de la AEPD?",
+    "opciones": [
+      "Una herramienta para el tratamiento de datos personales de escaso riesgo.",
+      "Una aplicación para ayudar a personas con movilidad reducida.",
+      "Un software de visualización multimedia de la AGE.",
+      "Una aplicación para presentar la declaración de la renta."
+    ],
+    "correcta": 0,
+    "explicacion": "Dato Academia: FACILITA RGPD ayuda a empresas de bajo riesgo a cumplir la normativa de forma guiada."
+  },
+  {
+    "pregunta": "Según el Reglamento (UE) 2016/679 (RGPD), el derecho a recibir los datos personales en un formato estructurado y lectura mecánica para transmitirlos a otro responsable se denomina:",
+    "opciones": [
+      "Derecho de acceso.",
+      "Derecho a la portabilidad de los datos.",
+      "Derecho a la transferencia de los datos.",
+      "Derecho a la custodia de los datos."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 20 RGPD: Definición técnica del derecho a la portabilidad."
+  },
+  {
+    "pregunta": "Según el artículo 34 de la LOPDGDD, los responsables comunicarán a la AEPD los nombramientos y ceses de los Delegados de Protección de Datos (DPD) en el plazo de:",
+    "opciones": [
+      "10 días.",
+      "15 días.",
+      "1 mes.",
+      "3 meses."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 34.3 LOPDGDD: La comunicación de la designación del DPD debe hacerse en 10 días."
+  },
+  {
+    "pregunta": "¿Sigue siendo obligatoria la inscripción de ficheros en la Agencia Española de Protección de Datos tras la entrada del RGPD?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "Solo para los ficheros de responsables públicos.",
+      "Solo para los ficheros de responsables privados."
+    ],
+    "correcta": 1,
+    "explicacion": "El RGPD sustituyó la inscripción de ficheros por la obligación de mantener un Registro de Actividades de Tratamiento (RAT)."
+  },
+  {
+    "pregunta": "Las sanciones por importe igual o inferior a 40.000 euros prescriben en el plazo de:",
+    "opciones": [
+      "Diez meses.",
+      "Un año.",
+      "Dos años.",
+      "Tres años."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 73 LOPDGDD: Las sanciones de hasta 40.000 euros (leves) prescriben al año."
+  },
+  {
+    "pregunta": "Indique cuál de los siguientes NO es un derecho digital recogido en el Título X de la LOPDGDD:",
+    "opciones": [
+      "Derecho al testamento digital.",
+      "Derecho al olvido en redes sociales.",
+      "Derecho a la desconexión digital laboral.",
+      "Derecho a la propiedad privada de los datos públicos."
+    ],
+    "correcta": 3,
+    "explicacion": "La opción D no existe como tal en el Título X; los otros tres sí están regulados en los Art. 79-97."
+  },
+  {
+    "pregunta": "¿En cuál de estas entidades NO es obligatoria la designación de un Delegado de Protección de Datos?",
+    "opciones": [
+      "Establecimientos financieros de crédito.",
+      "Colegios profesionales.",
+      "Federaciones deportivas que traten datos de menores.",
+      "Profesionales de la salud que ejerzan su actividad a título individual."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 34 LOPDGDD: Los médicos o profesionales de salud que trabajan solos no tienen obligación de DPD."
+  },
+  {
+    "pregunta": "¿Qué principio se refiere a que los datos serán adecuados, pertinentes y limitados a lo necesario?",
+    "opciones": [
+      "Limitación de la finalidad.",
+      "Exactitud.",
+      "Minimización de datos.",
+      "Adecuación de datos."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 5.1.c RGPD: Principio de minimización."
+  },
+  {
+    "pregunta": "La Declaración de Conformidad con el ENS es de aplicación a sistemas de categoría:",
+    "opciones": [
+      "Alta.",
+      "Media.",
+      "Básica.",
+      "Media o alta."
+    ],
+    "correcta": 2,
+    "explicacion": "Para categoría Básica basta con una Declaración de Conformidad; para Media/Alta se requiere una Auditoría."
+  },
+  {
+    "pregunta": "La notificación de una quiebra de seguridad a la AEPD debe realizarse en un plazo de:",
+    "opciones": [
+      "24 horas.",
+      "48 horas.",
+      "72 horas.",
+      "10 días."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 33 RGPD: Sin dilación indebida y, de ser posible, en 72 horas."
+  },
+  {
+    "pregunta": "¿Cuál es la mayoría necesaria en el Congreso para proponer la Presidencia de la AEPD?",
+    "opciones": [
+      "Mayoría simple.",
+      "Mayoría absoluta.",
+      "Tres quintos (3/5).",
+      "Dos tercios (2/3)."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP Esquema: Se requiere mayoría de 3/5 del Congreso de los Diputados."
+  },
+  {
+    "pregunta": "El derecho de 'supresión' en el entorno digital se conoce habitualmente como:",
+    "opciones": [
+      "Derecho al anonimato.",
+      "Derecho al olvido.",
+      "Derecho de oposición.",
+      "Derecho de rectificación."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 17 RGPD: El derecho de supresión faculta a solicitar el borrado de enlaces en buscadores."
+  },
+  {
+    "pregunta": "Las infracciones MUY GRAVES de la LOPDGDD prescriben a los:",
+    "opciones": [
+      "1 año.",
+      "2 años.",
+      "3 años.",
+      "5 años."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 72 LOPDGDD: Muy graves 3 años, Graves 2 años, Leves 1 año."
+  },
+  {
+    "pregunta": "El Delegado de Protección de Datos (DPD) debe rendir cuentas ante:",
+    "opciones": [
+      "El Ministerio de Justicia.",
+      "La Agencia Española de Protección de Datos.",
+      "El más alto nivel jerárquico del responsable o encargado.",
+      "El comité de empresa."
+    ],
+    "correcta": 2,
+    "explicacion": "Garantía de independencia: informa directamente a la alta dirección."
+  },
+  {
+    "pregunta": "¿Qué herramienta de la AEPD ayuda a evaluar procesos de cifrado?",
+    "opciones": [
+      "Comunica-Brecha.",
+      "Evalúa-Riesgo.",
+      "ValidaCripto RGPD.",
+      "Asesora Brecha."
+    ],
+    "correcta": 2,
+    "explicacion": "ValidaCripto sirve para verificar que el cifrado cumple la normativa."
+  },
+  {
+    "pregunta": "El mandato de la Presidencia de la AEPD es de:",
+    "opciones": [
+      "4 años.",
+      "5 años.",
+      "6 años.",
+      "Indefinido."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 48 LOPDGDD: Periodo de 5 años."
+  },
+  {
+    "pregunta": "¿Qué es el Registro de Actividades de Tratamiento (RAT)?",
+    "opciones": [
+      "Un listado de empleados públicos.",
+      "Un documento interno que describe los tratamientos de datos realizados por el responsable.",
+      "Una base de datos de la policía.",
+      "Un registro de acceso al edificio."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 30 RGPD: Sustituye a la antigua inscripción de ficheros."
+  },
+  {
+    "pregunta": "El acrónimo 'ARSULIPO' representa los derechos:",
+    "opciones": [
+      "Acceso, Registro, Supresión, Uso, Licitud, Privacidad y Orden.",
+      "Acceso, Rectificación, Supresión, Limitación, Portabilidad y Oposición.",
+      "Acceso, Rectificación, Seguridad, Uso, Licitud y Portabilidad.",
+      "Son solo para empresas privadas."
+    ],
+    "correcta": 1,
+    "explicacion": "Conjunto de derechos de los ciudadanos ante el responsable del tratamiento."
+  },
+  {
+    "pregunta": "¿A partir de qué edad es lícito el consentimiento de un menor en España sin autorización paterna?",
+    "opciones": [
+      "13 años.",
+      "14 años.",
+      "16 años.",
+      "18 años."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 7 LOPDGDD: En España se fija en 14 años (el RGPD permite entre 13 y 16 según el país)."
+  },
+  {
+    "pregunta": "El principio de 'Responsabilidad Proactiva' (Accountability) significa:",
+    "opciones": [
+      "Sancionar siempre al responsable.",
+      "Que el responsable debe cumplir y ser capaz de demostrar que cumple.",
+      "Que los datos deben ser públicos.",
+      "Que la AEPD debe auditar a todas las empresas cada mes."
+    ],
+    "correcta": 1,
+    "explicacion": "Es uno de los principios fundamentales del RGPD."
+  },
+  {
+    "pregunta": "La Evaluación de Impacto (EIPD) es obligatoria cuando:",
+    "opciones": [
+      "Se contrata a un nuevo empleado.",
+      "El tratamiento suponga un alto riesgo para los derechos y libertades.",
+      "Se crea una página web básica.",
+      "Siempre que se traten datos personales."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 35 RGPD: Análisis preventivo para riesgos elevados."
+  },
+  {
+    "pregunta": "El tratamiento de datos biométricos para identificar de forma unívoca a una persona se considera:",
+    "opciones": [
+      "Tratamiento de bajo riesgo.",
+      "Categoría especial de datos (sensibles).",
+      "Dato de acceso público.",
+      "No está sujeto al RGPD."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 9 RGPD: Los datos biométricos tienen protección reforzada."
+  },
+  {
+    "pregunta": "El derecho a la desconexión digital (Art. 88 LOPDGDD) se aplica a:",
+    "opciones": [
+      "Solo empleados de empresas tecnológicas.",
+      "Todos los trabajadores y empleados públicos.",
+      "Solo directivos.",
+      "Solo en periodo de vacaciones."
+    ],
+    "correcta": 1,
+    "explicacion": "Es un derecho laboral para garantizar el descanso y la intimidad."
+  },
+  {
+    "pregunta": "Las categorías de infracciones según la LOPDGDD son:",
+    "opciones": [
+      "Leves y Graves.",
+      "Leves, Graves y Muy Graves.",
+      "Sancionables y No sancionables.",
+      "Administrativas y Penales."
+    ],
+    "correcta": 1,
+    "explicacion": "La LOPDGDD establece tres niveles de gravedad."
+  },
+  {
+    "pregunta": "¿Qué herramienta de la AEPD permite comunicar de forma anónima la existencia de contenido sensible en internet (violencia, etc)?",
+    "opciones": [
+      "Facilita.",
+      "Canal Prioritario.",
+      "Asesora Brecha.",
+      "ValidaCripto."
+    ],
+    "correcta": 1,
+    "explicacion": "El Canal Prioritario sirve para solicitar la eliminación urgente de contenidos sexuales o violentos."
+  },
+  {
+    "pregunta": "La figura del DPD debe ser designada atendiendo a:",
+    "opciones": [
+      "Su afinidad política.",
+      "Sus cualidades profesionales y conocimientos especializados en Derecho y práctica de Protección de Datos.",
+      "Ser el empleado con más antigüedad.",
+      "Ser obligatoriamente un abogado colegiado."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 37 RGPD: Criterio de idoneidad profesional."
+  },
+  {
+    "pregunta": "El mandato del Delegado de Protección de Datos en un organismo público:",
+    "opciones": [
+      "Dura 1 año.",
+      "Dura 5 años.",
+      "No tiene duración legal fija, pero se garantiza su no remoción injustificada.",
+      "Es de por vida."
+    ],
+    "correcta": 2,
+    "explicacion": "Se protege su independencia para que no pueda ser destituido por cumplir sus funciones."
+  },
+  {
+    "pregunta": "Un ejemplo de tratamiento ilícito de datos es:",
+    "opciones": [
+      "Tratar datos para salvar la vida de alguien (interés vital).",
+      "Tratar datos sin base jurídica ni consentimiento.",
+      "Tratar datos por una obligación legal.",
+      "Tratar datos para ejecutar un contrato."
+    ],
+    "correcta": 1,
+    "explicacion": "Todo tratamiento requiere una de las 6 bases del Art. 6 RGPD."
+  },
+  {
+    "pregunta": "El derecho al testamento digital permite:",
+    "opciones": [
+      "Hacer el testamento por WhatsApp.",
+      "Que los herederos accedan y gestionen los perfiles digitales del fallecido.",
+      "No pagar impuestos de sucesión digital.",
+      "Que el ordenador se borre solo al morir."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 96 LOPDGDD: Regula el destino de la identidad digital tras la muerte."
+  },
+  {
+    "pregunta": "¿Qué ocurre si un sistema de videovigilancia capta la vía pública de forma accidental?",
+    "opciones": [
+      "Es legal siempre.",
+      "Es ilegal, las cámaras privadas solo pueden captar el espacio privado (mínimo espacio necesario).",
+      "No importa si la cámara es de alta resolución.",
+      "Solo es legal si lo autoriza el Ayuntamiento."
+    ],
+    "correcta": 1,
+    "explicacion": "Principio de proporcionalidad: se debe evitar captar la vía pública."
+  },
+  {
+    "pregunta": "El derecho de acceso permite al interesado:",
+    "opciones": [
+      "Entrar en las oficinas del responsable.",
+      "Obtener confirmación de si se tratan sus datos y una copia de los mismos.",
+      "Borrar sus datos directamente.",
+      "Cambiar su nombre en el registro."
+    ],
+    "correcta": 1,
+    "explicacion": "Es el primero de los derechos ARSULIPO."
+  },
+  {
+    "pregunta": "La Agencia Española de Protección de Datos es:",
+    "opciones": [
+      "Una empresa privada.",
+      "Una Autoridad Administrativa Independiente con personalidad jurídica propia.",
+      "Un departamento del Ministerio del Interior.",
+      "Un órgano judicial."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 44 LOPDGDD."
+  },
+  {
+    "pregunta": "¿Qué es un 'tratamiento' según el RGPD?",
+    "opciones": [
+      "Solo el almacenamiento de datos en la nube.",
+      "Cualquier operación realizada sobre datos personales (recogida, registro, consulta, etc).",
+      "Solo la venta de bases de datos.",
+      "La curación de una enfermedad."
+    ],
+    "correcta": 1,
+    "explicacion": "Definición amplia que incluye casi cualquier acción con los datos."
+  },
+  {
+    "pregunta": "El principio de 'Limitación del plazo de conservación' exige:",
+    "opciones": [
+      "Guardar los datos para siempre.",
+      "Mantener los datos solo el tiempo necesario para los fines del tratamiento.",
+      "Borrar los datos cada 24 horas.",
+      "Guardar los datos en papel."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 5.1.e RGPD."
+  },
+  {
+    "pregunta": "¿Quién es el 'Responsable del Tratamiento'?",
+    "opciones": [
+      "El informático que arregla los servidores.",
+      "La persona física o jurídica que decide los fines y medios del tratamiento.",
+      "Cualquier persona que mire un dato.",
+      "El Delegado de Protección de Datos."
+    ],
+    "correcta": 1,
+    "explicacion": "Es quien tiene la capacidad de decisión sobre los datos."
+  },
+  {
+    "pregunta": "¿Quién es el 'Encargado del Tratamiento'?",
+    "opciones": [
+      "El jefe de la empresa.",
+      "Quien trata datos por cuenta del responsable (ej. una gestoría externa).",
+      "El ciudadano interesado.",
+      "El vigilante de seguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "Presta un servicio al responsable tratando sus datos."
+  },
+  {
+    "pregunta": "La LOPDGDD se aplica a tratamientos de personas fallecidas:",
+    "opciones": [
+      "No, el RGPD solo protege a personas vivas.",
+      "Sí, pero solo para que sus vinculados ejerzan derechos de acceso, rectificación o supresión.",
+      "Solo si el fallecido era famoso.",
+      "Solo si el fallecimiento fue en el extranjero."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 3 LOPDGDD: Regulación específica para fallecidos."
+  },
+  {
+    "pregunta": "El derecho a la portabilidad NO puede ejercerse cuando:",
+    "opciones": [
+      "El tratamiento se basa en el consentimiento.",
+      "El tratamiento es necesario para el cumplimiento de una misión de interés público.",
+      "El tratamiento se realiza por medios automatizados.",
+      "Se solicitan datos propios."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 20.3 RGPD: No se aplica a tratamientos en ejercicio de poderes públicos."
+  },
+  {
+    "pregunta": "Las infracciones GRAVES de la LOPDGDD prescriben a los:",
+    "opciones": [
+      "6 meses.",
+      "1 año.",
+      "2 años.",
+      "3 años."
+    ],
+    "correcta": 2,
+    "explicacion": "Prescripción de la infracción grave: 2 años."
+  },
+  {
+    "pregunta": "Las sanciones superiores a 300.000 euros (muy graves) prescriben a los:",
+    "opciones": [
+      "1 año.",
+      "2 años.",
+      "3 años.",
+      "5 años."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 73 LOPDGDD: Sanciones de más de 300.000€ prescriben a los 3 años."
+  },
+  {
+    "pregunta": "El derecho de oposición permite al interesado:",
+    "opciones": [
+      "Que sus datos no se traten por motivos relacionados con su situación particular.",
+      "Cambiar su domicilio.",
+      "Acceder a su expediente.",
+      "Pedir una indemnización."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 21 RGPD."
+  },
+  {
+    "pregunta": "El 'Registro de Actividades de Tratamiento' debe contener:",
+    "opciones": [
+      "Fines del tratamiento, categorías de interesados y destinatarios.",
+      "Solo el nombre del responsable.",
+      "Las contraseñas de los usuarios.",
+      "Fotos de los servidores."
+    ],
+    "correcta": 0,
+    "explicacion": "Contenido mínimo exigido por el Art. 30 RGPD."
+  },
+  {
+    "pregunta": "La Agencia Española de Protección de Datos se relaciona con el Gobierno a través del:",
+    "opciones": [
+      "Ministerio del Interior.",
+      "Ministerio de Justicia.",
+      "Ministerio de Hacienda.",
+      "Presidencia del Gobierno."
+    ],
+    "correcta": 1,
+    "explicacion": "Adscripción orgánica al Ministerio de Justicia."
+  },
+  {
+    "pregunta": "¿Qué mayoría se requiere en el Consejo de Diputados para nombrar al Presidente de la AEPD?",
+    "opciones": [
+      "Simple.",
+      "Absoluta.",
+      "3/5.",
+      "2/3."
+    ],
+    "correcta": 2,
+    "explicacion": "Requiere ratificación por mayoría de tres quintos."
+  },
+  {
+    "pregunta": "El derecho a la protección de datos es un derecho:",
+    "opciones": [
+      "Ordinario.",
+      "Fundamental (Art. 18.4 CE).",
+      "Solo para trabajadores.",
+      "Que no existe en la Constitución."
+    ],
+    "correcta": 1,
+    "explicacion": "Derecho fundamental derivado de la propia CE."
+  },
+  {
+    "pregunta": "La LOPDGDD prohíbe el tratamiento de datos de salud salvo:",
+    "opciones": [
+      "Consentimiento explícito o fines médicos/sanitarios legales.",
+      "Que lo pida una farmacia.",
+      "Que sea para un seguro de coche.",
+      "Nunca se pueden tratar."
+    ],
+    "correcta": 0,
+    "explicacion": "Excepciones del Art. 9 RGPD."
+  },
+  {
+    "pregunta": "El Delegado de Protección de Datos (DPD) actúa como:",
+    "opciones": [
+      "Punto de contacto con la AEPD.",
+      "Juez de la empresa.",
+      "Policía encubierto.",
+      "Abogado defensor del responsable siempre."
+    ],
+    "correcta": 0,
+    "explicacion": "Facilita la comunicación entre el organismo y la autoridad de control."
+  },
+  {
+    "pregunta": "¿Qué es la 'Seudonimización'?",
+    "opciones": [
+      "Borrar los datos para siempre.",
+      "Tratamiento de datos de modo que no puedan atribuirse a un interesado sin información adicional.",
+      "Usar un nombre falso en Facebook.",
+      "Cifrar el disco duro."
+    ],
+    "correcta": 1,
+    "explicacion": "Medida de seguridad que dificulta la identificación directa."
+  },
+  {
+    "pregunta": "El derecho al olvido en buscadores de internet permite:",
+    "opciones": [
+      "Que Google borre la noticia original de un periódico.",
+      "Que los buscadores dejen de mostrar resultados de información obsoleta o irrelevante.",
+      "Cambiar la historia de España.",
+      "No pagar multas."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 93 LOPDGDD: Desindexación de enlaces."
+  },
+  {
+    "pregunta": "Las 'transferencias internacionales' de datos a países fuera de la UE requieren:",
+    "opciones": [
+      "Nivel de protección adecuado o garantías suficientes.",
+      "Permiso del Rey.",
+      "Que el servidor sea de color azul.",
+      "Están prohibidas siempre."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 44-50 RGPD."
+  },
+  {
+    "pregunta": "La videovigilancia para fines de seguridad privada prescribe (se borra) a los:",
+    "opciones": [
+      "15 días.",
+      "30 días.",
+      "60 días.",
+      "90 días."
+    ],
+    "correcta": 1,
+    "explicacion": "Regla general de borrado al mes de la grabación."
+  },
+  {
+    "pregunta": "El derecho de rectificación obliga al responsable a:",
+    "opciones": [
+      "Pagar por el error.",
+      "Corregir los datos inexactos del interesado sin dilación.",
+      "Pedir perdón por escrito.",
+      "Borrar todos los datos."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 16 RGPD."
+  },
+  {
+    "pregunta": "La LOPDGDD protege el derecho a la intimidad en el uso de dispositivos digitales:",
+    "opciones": [
+      "Solo en casa.",
+      "Puestos a disposición de los trabajadores por el empleador.",
+      "Solo si el móvil es de última generación.",
+      "No protege la intimidad laboral."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 87 LOPDGDD."
+  },
+  {
+    "pregunta": "La 'minería de datos' (Big Data) con datos personales:",
+    "opciones": [
+      "Es ilegal siempre.",
+      "Debe cumplir con los principios de transparencia y minimización.",
+      "Solo la puede hacer el Gobierno.",
+      "No está regulada."
+    ],
+    "correcta": 1,
+    "explicacion": "Se somete a las mismas reglas que cualquier otro tratamiento."
+  },
+  {
+    "pregunta": "El derecho a la educación digital (Art. 83 LOPDGDD) busca:",
+    "opciones": [
+      "Regalar ordenadores a los niños.",
+      "Incluir la competencia digital y el uso seguro de internet en el sistema educativo.",
+      "Que no haya libros de papel.",
+      "Solo para universitarios."
+    ],
+    "correcta": 1,
+    "explicacion": "Fomento de valores y seguridad en la red desde la escuela."
+  },
+  {
+    "pregunta": "Las multas administrativas del RGPD pueden llegar hasta:",
+    "opciones": [
+      "100.000 euros.",
+      "20 millones de euros o el 4% del volumen de negocio anual.",
+      "1 millón de euros.",
+      "600.000 euros."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 83 RGPD: Escala de sanciones muy elevada."
+  },
+  {
+    "pregunta": "El principio de 'Integridad y Confidencialidad' exige:",
+    "opciones": [
+      "Que los datos sean verdaderos.",
+      "Garantizar una seguridad adecuada frente al tratamiento no autorizado o pérdida.",
+      "Que nadie pueda ver los datos nunca.",
+      "Cifrar todos los correos electrónicos."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 5.1.f RGPD."
+  },
+  {
+    "pregunta": "La Agencia Española de Protección de Datos tiene potestad:",
+    "opciones": [
+      "Legislativa.",
+      "Sancionadora y normativa.",
+      "Judicial.",
+      "Militar."
+    ],
+    "correcta": 1,
+    "explicacion": "Puede imponer multas y dictar circulares."
+  },
+  {
+    "pregunta": "¿Qué es la 'Privacidad desde el diseño'?",
+    "opciones": [
+      "Poner fotos bonitas en la web.",
+      "Integrar medidas de protección de datos desde el inicio de la creación de un sistema.",
+      "Poner un candado en la puerta.",
+      "Comprar un antivirus."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 25 RGPD: Protección de datos integrada."
+  },
+  {
+    "pregunta": "El 'Consentimiento' debe ser:",
+    "opciones": [
+      "Tácito (si no dice nada, acepta).",
+      "Libre, específico, informado e inequívoco.",
+      "Solo por escrito ante notario.",
+      "Válido para cualquier fin futuro."
+    ],
+    "correcta": 1,
+    "explicacion": "El RGPD eliminó el consentimiento tácito."
+  },
+  {
+    "pregunta": "El derecho a la limitación del tratamiento permite:",
+    "opciones": [
+      "Borrar los datos.",
+      "Que el responsable suspenda el tratamiento de los datos mientras se verifica su exactitud o licitud.",
+      "No pagar por el servicio.",
+      "Oponerse a la publicidad."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 18 RGPD."
+  },
+  {
+    "pregunta": "La LOPDGDD reconoce el derecho a la seguridad digital como:",
+    "opciones": [
+      "Tener un buen firewall.",
+      "Derecho a que las comunicaciones por internet sean seguras.",
+      "Derecho a no tener virus.",
+      "Solo para bancos."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 82 LOPDGDD."
+  },
+  {
+    "pregunta": "¿Quién nombra a los vocales del Consejo Consultivo de la AEPD?",
+    "opciones": [
+      "El Rey.",
+      "El Gobierno a propuesta de diversas instituciones (Congreso, Senado, etc).",
+      "El Presidente de la AEPD.",
+      "Por sorteo."
+    ],
+    "correcta": 1,
+    "explicacion": "Representación plural de la sociedad e instituciones."
+  },
+  {
+    "pregunta": "El derecho de rectificación en buscadores permite:",
+    "opciones": [
+      "Cambiar el contenido de una web ajena.",
+      "Que los buscadores incluyan un aviso de rectificación junto a informaciones inexactas.",
+      "Borrar la Wikipedia.",
+      "Poner una foto propia."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 94 LOPDGDD."
+  },
+  {
+    "pregunta": "La 'transparencia' en la información al interesado exige:",
+    "opciones": [
+      "Lenguaje claro, conciso y fácil de entender.",
+      "Poner el texto en letra muy pequeña.",
+      "Usar términos jurídicos complejos.",
+      "No informar de nada."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 12 RGPD."
+  },
+  {
+    "pregunta": "¿Qué es un 'fichero'?",
+    "opciones": [
+      "Un archivador de metal.",
+      "Todo conjunto estructurado de datos personales accesibles con criterios determinados.",
+      "Solo una base de datos informática.",
+      "Un documento de Word."
+    ],
+    "correcta": 1,
+    "explicacion": "Definición legal del Art. 4 RGPD."
+  },
+  {
+    "pregunta": "Las 'Categorías especiales de datos' incluyen:",
+    "opciones": [
+      "Origen étnico, opiniones políticas, convicciones religiosas, datos genéticos.",
+      "Nombre y apellidos.",
+      "Matrícula del coche.",
+      "Número de teléfono."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 9 RGPD: Datos que requieren máxima protección."
+  },
+  {
+    "pregunta": "El derecho a la protección de los menores en internet obliga a:",
+    "opciones": [
+      "Prohibirles el uso de móviles.",
+      "Garantizar su seguridad y privacidad en servicios de la sociedad de la información.",
+      "Que los padres vigilen todo siempre.",
+      "No tiene regulación."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 84 LOPDGDD."
+  },
+  {
+    "pregunta": "La LOPDGDD considera falta MUY GRAVE:",
+    "opciones": [
+      "No designar DPD cuando es obligatorio.",
+      "El tratamiento de datos de categorías especiales sin excepción legal.",
+      "No atender un derecho de acceso.",
+      "La falta de diligencia leve."
+    ],
+    "correcta": 1,
+    "explicacion": "Vulnerar los principios básicos es falta muy grave."
+  },
+  {
+    "pregunta": "El derecho a la portabilidad se diferencia del de acceso en:",
+    "opciones": [
+      "Que es gratis.",
+      "Que los datos deben entregarse en un formato interoperable para ser reutilizados.",
+      "Que no hace falta identificarse.",
+      "Que solo es para el Gobierno."
+    ],
+    "correcta": 1,
+    "explicacion": "Fomenta la competencia y el control del usuario sobre sus datos."
+  },
+  {
+    "pregunta": "La 'Exactitud' de los datos implica:",
+    "opciones": [
+      "Que los datos sean correctos y se mantengan actualizados.",
+      "Que los datos sean muchos.",
+      "Que los datos sean secretos.",
+      "Que el responsable no se equivoque nunca."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 5.1.d RGPD."
+  },
+  {
+    "pregunta": "El 'Interés Legítimo' como base de tratamiento:",
+    "opciones": [
+      "Permite hacer cualquier cosa con los datos.",
+      "Requiere un juicio de ponderación entre el interés del responsable y los derechos del interesado.",
+      "Solo vale para la Administración.",
+      "Es el consentimiento tácito."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 6.1.f RGPD."
+  },
+  {
+    "pregunta": "La LOPDGDD garantiza el derecho al olvido en servicios de redes sociales cuando:",
+    "opciones": [
+      "Los datos fueron facilitados durante la minoría de edad del interesado.",
+      "Se ha cumplido 18 años.",
+      "La foto es fea.",
+      "Solo para políticos."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 94.2 LOPDGDD: Protección reforzada para lo publicado siendo menor."
+  },
+  {
+    "pregunta": "Un Delegado de Protección de Datos puede ser:",
+    "opciones": [
+      "Un empleado interno o un profesional externo (empresa de servicios).",
+      "Solo el dueño de la empresa.",
+      "Obligatoriamente el informático.",
+      "Solo una mujer."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 37.6 RGPD."
+  },
+  {
+    "pregunta": "La información al interesado debe darse en 'capas' para:",
+    "opciones": [
+      "Ocultar información.",
+      "Facilitar la comprensión mediante una información básica y otra detallada.",
+      "Gastar menos papel.",
+      "Cumplir con el diseño de la web."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 11 LOPDGDD: Sistema de capas para transparencia."
+  },
+  {
+    "pregunta": "El 'Comité Europeo de Protección de Datos' está formado por:",
+    "opciones": [
+      "Los Jefes de Estado de la UE.",
+      "La autoridad de control de cada país y el Supervisor Europeo.",
+      "Solo informáticos de Bruselas.",
+      "Un representante de Microsoft y otro de Google."
+    ],
+    "correcta": 1,
+    "explicacion": "Asegura la aplicación coherente del RGPD en toda la Unión."
+  },
+  {
+    "pregunta": "El derecho a la portabilidad es aplicable a datos:",
+    "opciones": [
+      "Que el interesado haya facilitado y que se traten de forma automatizada.",
+      "Papeles guardados en un archivador.",
+      "Datos de terceras personas.",
+      "Solo el NIF."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 20 RGPD."
+  },
+  {
+    "pregunta": "La Agencia Española de Protección de Datos puede emitir:",
+    "opciones": [
+      "Leyes Orgánicas.",
+      "Circulares vinculantes para los responsables.",
+      "Sentencias de cárcel.",
+      "No puede emitir nada."
+    ],
+    "correcta": 1,
+    "explicacion": "Potestad normativa de la autoridad de control."
+  },
+  {
+    "pregunta": "¿Qué ocurre si el DPD no cumple con su deber de secreto?",
+    "opciones": [
+      "No pasa nada.",
+      "Puede ser sancionado disciplinariamente por su empleador.",
+      "Pierde el carnet de conducir.",
+      "Se le obliga a dimitir por ley."
+    ],
+    "correcta": 1,
+    "explicacion": "El DPD está sujeto a confidencialidad profesional."
+  },
+  {
+    "pregunta": "El derecho de 'Limitación del tratamiento' significa que los datos:",
+    "opciones": [
+      "Se borran.",
+      "Se marcan para que su tratamiento futuro esté restringido.",
+      "Se envían al extranjero.",
+      "Se publican en el BOE."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 18 RGPD."
+  },
+  {
+    "pregunta": "El 'Interés Vital' permite tratar datos sin consentimiento cuando:",
+    "opciones": [
+      "Sea necesario para proteger la vida del interesado o de otra persona.",
+      "El interesado sea rico.",
+      "Haya una guerra.",
+      "Se quiera vender un medicamento."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 6.1.d RGPD."
+  },
+  {
+    "pregunta": "La LOPDGDD obliga a las AAPP a publicar su:",
+    "opciones": [
+      "Inventario de Actividades de Tratamiento.",
+      "Sueldo de los DPD.",
+      "Lista de morosos.",
+      "Código fuente de las webs."
+    ],
+    "correcta": 0,
+    "explicacion": "Transparencia activa en el sector público."
+  },
+  {
+    "pregunta": "El derecho al testamento digital se aplica a personas fallecidas:",
+    "opciones": [
+      "Solo si murieron después de 2018.",
+      "Siempre, salvo prohibición expresa del fallecido o ley.",
+      "Solo para el dinero del banco.",
+      "No existe tal derecho."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 3 y 96 LOPDGDD."
+  },
+  {
+    "pregunta": "Un sistema de videovigilancia laboral requiere:",
+    "opciones": [
+      "Permiso del sindicato siempre.",
+      "Informar previamente a los trabajadores de su existencia y finalidad de control.",
+      "Que las cámaras sean invisibles.",
+      "Que el jefe mire las imágenes cada hora."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 89 LOPDGDD: Derecho a la intimidad frente a dispositivos de videovigilancia."
+  },
+  {
+    "pregunta": "El derecho a la rectificación en redes sociales permite:",
+    "opciones": [
+      "Que el usuario cambie su edad.",
+      "Que el responsable de la red social rectifique informaciones que afecten al derecho al honor o intimidad.",
+      "Borrar las fotos de otros.",
+      "No permite nada."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 94 LOPDGDD."
+  },
+  {
+    "pregunta": "La AEPD tiene una presidencia con rango de:",
+    "opciones": [
+      "Ministro.",
+      "Subsecretario.",
+      "Director General.",
+      "Secretario de Estado."
+    ],
+    "correcta": 1,
+    "explicacion": "A efectos de retribuciones y protocolo."
+  },
+  {
+    "pregunta": "Las infracciones LEVES de la LOPDGDD prescriben al:",
+    "opciones": [
+      "Mes.",
+      "Año.",
+      "Dos años.",
+      "Tres años."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 72 LOPDGDD: Prescripción de infracciones leves."
+  },
+  {
+    "pregunta": "El principio de 'Licitud, Lealtad y Transparencia' es:",
+    "opciones": [
+      "Opcional.",
+      "El primero de los principios del tratamiento de datos.",
+      "Solo para el Gobierno.",
+      "Un derecho digital."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 5.1.a RGPD."
+  },
+  {
+    "pregunta": "El derecho de los menores a la protección de datos en centros educativos implica:",
+    "opciones": [
+      "Que no puedan usar tablets.",
+      "El uso de datos solo para fines educativos y seguridad de los menores.",
+      "Que los profesores puedan ver sus chats privados.",
+      "No se regula en la LOPDGDD."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 92 LOPDGDD."
+  },
+  {
+    "pregunta": "El Delegado de Protección de Datos es obligatorio en:",
+    "opciones": [
+      "Todas las pequeñas empresas.",
+      "Organismos públicos y entidades que traten datos a gran escala o categorías especiales.",
+      "Solo en el Ministerio de Justicia.",
+      "En ninguna entidad."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 37 RGPD."
+  },
+  {
+    "pregunta": "La Agencia Española de Protección de Datos puede imponer multas a organismos públicos de:",
+    "opciones": [
+      "Hasta 20 millones de euros.",
+      "Cero euros (apercibimiento y medidas correctoras, no multas pecuniarias).",
+      "Hasta 600.000 euros.",
+      "Solo multas simbólicas."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 77 LOPDGDD: A las AAPP no se les imponen multas económicas, sino apercibimientos y medidas."
+  },
+  {
+    "pregunta": "El derecho a la portabilidad permite que el interesado:",
+    "opciones": [
+      "Cambie de móvil gratis.",
+      "Pida que sus datos se transmitan directamente de un responsable a otro si es técnicamente posible.",
+      "Se lleve sus datos en un papel.",
+      "Solo sirve para cambiar de banco."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 20.2 RGPD."
+  },
+  {
+    "pregunta": "El principio de 'Exactitud' obliga a borrar datos que sean:",
+    "opciones": [
+      "Viejos.",
+      "Inexactos o incompletos respecto a los fines del tratamiento.",
+      "Largos.",
+      "Digitales."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 5.1.d RGPD."
+  },
+  {
+    "pregunta": "El derecho a la seguridad digital (Art. 82 LOPDGDD) es un derecho de:",
+    "opciones": [
+      "Los ciudadanos.",
+      "Los hackers.",
+      "Las empresas de antivirus.",
+      "El Ministerio de Defensa."
+    ],
+    "correcta": 0,
+    "explicacion": "Derecho de los ciudadanos a la seguridad en sus comunicaciones electrónicas."
+  },
+  {
+    "pregunta": "Las 'Medidas Técnicas y Organizativas' (MTO) sirven para:",
+    "opciones": [
+      "Organizar la oficina.",
+      "Garantizar un nivel de seguridad adecuado al riesgo del tratamiento.",
+      "Pagar menos impuestos.",
+      "Hacer la web más rápida."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 32 RGPD."
+  },
+  {
+    "pregunta": "¿Qué es la 'privacidad por defecto'?",
+    "opciones": [
+      "Que no haya privacidad.",
+      "Que el sistema solo trate los datos necesarios para cada fin específico de forma automática.",
+      "Que el usuario tenga que configurar todo.",
+      "Poner una clave al ordenador."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 25.2 RGPD."
+  },
+  {
+    "pregunta": "El derecho al testamento digital incluye el derecho de los herederos a:",
+    "opciones": [
+      "Acceder a las claves bancarias.",
+      "Solicitar la supresión de los perfiles en redes sociales del fallecido.",
+      "Heredar el ordenador físico.",
+      "No existe tal derecho."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 96 LOPDGDD."
+  },
+  {
+    "pregunta": "La LOPDGDD establece que la formación en protección de datos debe incluirse en:",
+    "opciones": [
+      "Los temarios de oposiciones a la función pública.",
+      "Solo en cursos de informática.",
+      "En los anuncios de televisión.",
+      "No es obligatoria la formación."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 83 LOPDGDD: Impulso de la educación digital."
+  },
+  {
+    "pregunta": "El Registro de Actividades de Tratamiento es obligatorio para empresas de:",
+    "opciones": [
+      "Más de 250 trabajadores (con excepciones).",
+      "Más de 10 trabajadores.",
+      "Solo para multinacionales.",
+      "Es voluntario para todos."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 30.5 RGPD."
+  },
+  {
+    "pregunta": "El derecho a la limitación del tratamiento se ejerce ante:",
+    "opciones": [
+      "La policía.",
+      "El responsable del tratamiento.",
+      "El juez.",
+      "El Delegado de Protección de Datos exclusivamente."
+    ],
+    "correcta": 1,
+    "explicacion": "Como todos los derechos ARSULIPO, se ejerce ante el responsable."
+  },
+  {
+    "pregunta": "La Agencia Española de Protección de Datos tiene sede en:",
+    "opciones": [
+      "Barcelona.",
+      "Madrid.",
+      "Sevilla.",
+      "Bruselas."
+    ],
+    "correcta": 1,
+    "explicacion": "Sede institucional en la capital del Estado."
+  },
+  {
+    "pregunta": "El principio de 'Transparencia' obliga a que la información sea facilitada por:",
+    "opciones": [
+      "Escrito o por otros medios, inclusive electrónicos.",
+      "Solo por correo certificado.",
+      "Solo verbalmente.",
+      "No es obligatorio dar información."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 12 RGPD."
+  },
+  {
+    "pregunta": "La LOPDGDD entró en vigor en el año:",
+    "opciones": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "correcta": 2,
+    "explicacion": "Ley Orgánica 3/2018, de 5 de diciembre."
+  },
+  {
+    "pregunta": "El derecho a la desconexión digital se debe negociar:",
+    "opciones": [
+      "Individualmente.",
+      "Mediante convenios colectivos o acuerdos de empresa.",
+      "Con el Ministerio de Trabajo.",
+      "No hace falta negociar nada."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 88 LOPDGDD."
+  },
+  {
+    "pregunta": "Un dato de salud es:",
+    "opciones": [
+      "Cualquier dato relativo a la salud física o mental de una persona que revele información sobre su estado de salud.",
+      "Solo el grupo sanguíneo.",
+      "Solo si tiene una enfermedad contagiosa.",
+      "El número de la Seguridad Social solamente."
+    ],
+    "correcta": 0,
+    "explicacion": "Definición del Art. 4 RGPD."
+  },
+  {
+    "pregunta": "La 'resiliencia' de los sistemas de tratamiento significa:",
+    "opciones": [
+      "Que sean baratos.",
+      "Capacidad de recuperar la disponibilidad y acceso a los datos en caso de incidente físico o técnico.",
+      "Que el ordenador no se rompa.",
+      "Que el software sea libre."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 32 RGPD."
+  },
+  {
+    "pregunta": "El derecho a la portabilidad de los datos permite recibirlos en un formato:",
+    "opciones": [
+      "PDF siempre.",
+      "Estructurado, de uso común y lectura mecánica.",
+      "Escrito a mano.",
+      "Cualquier formato de imagen."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 20 RGPD."
+  },
+  {
+    "pregunta": "La LOPDGDD prohíbe que el DPD sea removido o sancionado por:",
+    "opciones": [
+      "Llegar tarde.",
+      "Desempeñar sus funciones en materia de protección de datos.",
+      "Robar datos.",
+      "Insultar al jefe."
+    ],
+    "correcta": 1,
+    "explicacion": "Garantía de autonomía funcional."
+  },
+  {
+    "pregunta": "El derecho de oposición al tratamiento de datos con fines de mercadotecnia directa es:",
+    "opciones": [
+      "Opcional para el responsable.",
+      "Un derecho absoluto del interesado (el responsable debe dejar de tratarlos inmediatamente).",
+      "Solo para mayores de 65 años.",
+      "Solo si se paga una tasa."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 21.2 RGPD."
+  },
+  {
+    "pregunta": "La Agencia Española de Protección de Datos publica sus resoluciones sancionadoras en:",
+    "opciones": [
+      "El BOE.",
+      "Su sede electrónica (página web).",
+      "La prensa nacional.",
+      "No las publica."
+    ],
+    "correcta": 1,
+    "explicacion": "Publicidad de las actuaciones administrativas."
+  },
+  {
+    "pregunta": "¿Qué es la 'Minimización de datos'?",
+    "opciones": [
+      "Hacer los datos más pequeños en el disco duro.",
+      "Tratar solo los datos necesarios para el fin que se persigue.",
+      "Tratar el menor número de personas posible.",
+      "No pedir el nombre completo."
+    ],
+    "correcta": 1,
+    "explicacion": "Principio fundamental de proporcionalidad."
+  },
+  {
+    "pregunta": "El derecho a la portabilidad de los datos tiene como objetivo:",
+    "opciones": [
+      "Fastidiar a las empresas.",
+      "Aumentar el control del usuario sobre sus propios datos y facilitar el cambio de proveedor.",
+      "Que los datos sean públicos.",
+      "Ahorrar espacio."
+    ],
+    "correcta": 1,
+    "explicacion": "Fomento de la economía digital y los derechos del ciudadano."
+  }
+]

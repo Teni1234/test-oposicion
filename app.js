@@ -5,7 +5,7 @@ const penalizacionPorError = 0.5;
 // Añade aquí los temas que tengas
 const temasPorBloque = {
     bloque1: ["tema1","tema2", "tema3","tema4","tema5","tema6","tema7","tema8","tema9"], 
-    bloque2: ["tema1"],
+    bloque2: ["tema1","tema2", "tema3","tema4","tema5"],
     bloque3: ["tema1"],
     bloque4: ["tema1"]
 };
@@ -16,11 +16,12 @@ let respuestasUsuario = [];
 let modoExamen = false;
 let infoActual = { bloque: "", tema: "" };
 let historialGlobal = []; 
-let preguntasFalladasParaRepaso = []; // Para el botón de "Repetir Fallos"
+let preguntasFalladasParaRepaso = [];
 
-// Variables del Cronómetro
+// Variables de Control de Tiempo
 let temporizador;
 let tiempoRestante;
+let timeoutExplicacion; // NUEVO: Controla la cuenta atrás de la explicación
 
 document.addEventListener("DOMContentLoaded", () => {
     cargarHistorialNube();
@@ -46,7 +47,7 @@ function aplicarModoLunaGuardado() {
     else { body.classList.remove("dark-mode"); body.classList.add("light-mode"); if (boton) boton.innerText = "🌙"; }
 }
 
-// ================= 📚 CARGA DE TEMAS MÚLTIPLES CON CONTEO AUTOMÁTICO =================
+// ================= 📚 CARGA DE TEMAS MÚLTIPLES =================
 async function cargarTemas() {
     let bloque = document.getElementById("bloque").value;
     let contenedor = document.getElementById("contenedor-temas");
@@ -57,13 +58,11 @@ async function cargarTemas() {
         return;
     }
 
-    // Checkbox para seleccionar TODOS
     let html = `<label style="display:flex; align-items:center; margin-bottom:10px; border-bottom:1px solid var(--sidebar-border); padding-bottom:10px; cursor:pointer;">
         <input type="checkbox" id="check-todos" onchange="marcarTodosTemas(this)" style="margin-right:10px; width:18px; height:18px; accent-color:#3742fa;">
         <strong style="color: var(--sidebar-text);">Seleccionar Todos</strong>
     </label>`;
 
-    // Crear los contenedores de los temas primero
     temasPorBloque[bloque].forEach(t => {
         html += `<label style="display:flex; align-items:center; justify-content: space-between; margin-bottom:8px; cursor:pointer; color: var(--sidebar-text-sec);">
             <div style="display:flex; align-items:center;">
@@ -76,7 +75,6 @@ async function cargarTemas() {
     
     contenedor.innerHTML = html;
 
-    // Lanzar la carga asíncrona de los conteos para cada tema
     temasPorBloque[bloque].forEach(async (t) => {
         try {
             const response = await fetch(`./data/${bloque}/${t}.json`);
@@ -114,14 +112,11 @@ async function iniciar() {
     document.getElementById("zona-repaso").innerHTML = "";
 
     const b = document.getElementById("bloque").value;
-    
-    // Buscar qué temas están marcados
     let checks = document.querySelectorAll(".tema-check:checked");
     let temasElegidos = Array.from(checks).map(c => c.value);
 
     if (!b || temasElegidos.length === 0) return alert("Selecciona un bloque y al menos UN tema.");
 
-    // Nombre para el Excel
     infoActual.bloque = b;
     infoActual.tema = temasElegidos.length > 1 ? `VARIOS (${temasElegidos.length})` : temasElegidos[0];
     
@@ -133,11 +128,8 @@ async function iniciar() {
     clearInterval(temporizador);
 
     try {
-        // Descargar todos los JSON de los temas elegidos a la vez
         let promesas = temasElegidos.map(t => fetch(`./data/${b}/${t}.json`).then(r => r.ok ? r.json() : []));
         let arraysDePreguntas = await Promise.all(promesas);
-        
-        // Juntar todos los arrays en uno solo
         preguntas = arraysDePreguntas.flat();
 
         if (preguntas.length === 0) throw new Error("No hay preguntas en los archivos.");
@@ -159,17 +151,13 @@ function iniciarTestFallos() {
     clearInterval(temporizador);
 
     infoActual.tema = infoActual.tema + " (REPASO)";
-    
-    // Clonamos las falladas para no estropearlas
     preguntas = JSON.parse(JSON.stringify(preguntasFalladasParaRepaso));
     
     let minutosInput = document.getElementById("tiempoExamen").value || 30;
-    prepararYArrancarExamen(null, minutosInput); // null para que no recorte preguntas en el repaso
+    prepararYArrancarExamen(null, minutosInput); 
 }
 
-// Lógica compartida para arrancar el test después de tener el array
 function prepararYArrancarExamen(numLimite, minutos) {
-    // 1. ¿Mezclar?
     if (document.getElementById("modoAleatorioCheck").checked) {
         preguntas = barajarArray(preguntas); 
         preguntas.forEach(p => {
@@ -179,14 +167,13 @@ function prepararYArrancarExamen(numLimite, minutos) {
         });
     }
 
-    // 2. ¿Recortar número de preguntas?
     if (numLimite > 0 && numLimite < preguntas.length) {
         preguntas = preguntas.slice(0, numLimite);
     }
 
     actual = 0;
     respuestasUsuario = new Array(preguntas.length).fill(null); 
-    preguntasFalladasParaRepaso = []; // Vaciamos para el nuevo test
+    preguntasFalladasParaRepaso = []; 
     
     document.getElementById("controles-test").style.display = "flex";
     document.getElementById("navegador").style.display = "flex";
@@ -254,6 +241,13 @@ function cambiarPregunta(direccion) {
 }
 
 function cargarPregunta(indice) {
+    // NUEVO: Cancelar cuenta atrás anterior y limpiar caja
+    clearTimeout(timeoutExplicacion);
+    let contenedorExplicacion = document.getElementById("explicacion-temporal");
+    if (contenedorExplicacion) {
+        contenedorExplicacion.innerHTML = "";
+    }
+
     actual = indice; let p = preguntas[actual];
     document.getElementById("contador").innerText = `Pregunta ${actual + 1} / ${preguntas.length}`;
     document.getElementById("barra-progreso").style.width = ((actual + 1) / preguntas.length * 100) + "%";
@@ -280,6 +274,7 @@ function cargarPregunta(indice) {
     actualizarNavegadorVisual();
 }
 
+// ================= ✅ MODALIDAD TOTAL EN RESPUESTAS =================
 function responder(i) {
     if (!modoExamen && respuestasUsuario[actual] !== null) return;
     respuestasUsuario[actual] = i;
@@ -291,13 +286,12 @@ function responder(i) {
         return; 
     }
     
-    let correcta = preguntas[actual].correcta;
+    let p = preguntas[actual];
+    let correcta = p.correcta;
     let esCorrecta = (i === correcta);
     
-    // Bloqueamos clics para que no sigan pulsando
     document.querySelectorAll("#opciones label").forEach(l => l.style.pointerEvents = "none");
     
-    // Creamos o buscamos un contenedor para la explicación
     let contenedorExplicacion = document.getElementById("explicacion-temporal");
     if (!contenedorExplicacion) {
         contenedorExplicacion = document.createElement("div");
@@ -306,41 +300,54 @@ function responder(i) {
     }
 
     if (esCorrecta) {
-        // --- SI ACERTAMOS ---
         document.getElementById("op"+i).style.background = "#d4edda";
         document.getElementById("op"+i).style.border = "2px solid #2ed573";
-        
-        actualizarNavegadorVisual();
-        // Pasamos rápido (1.2 segundos)
-        setTimeout(() => { 
-            contenedorExplicacion.innerHTML = ""; 
-            if (actual < preguntas.length - 1) cambiarPregunta(1); 
-        }, 1200);
     } else {
-        // --- SI FALLAMOS ---
-        document.getElementById("op"+i).style.background = "#f8d7da"; // Rojo la tuya
+        document.getElementById("op"+i).style.background = "#f8d7da";
         document.getElementById("op"+i).style.border = "2px solid #ff4757";
-        
-        document.getElementById("op"+correcta).style.background = "#d4edda"; // Verde la correcta
+        document.getElementById("op"+correcta).style.background = "#d4edda";
         document.getElementById("op"+correcta).style.border = "2px solid #2ed573";
-
-        // MOSTRAMOS LA EXPLICACIÓN EN PANTALLA
-        contenedorExplicacion.innerHTML = `
-            <div style="margin-top:20px; padding:15px; background:#f1f2f6; border-left:5px solid #3742fa; border-radius:5px; animation: fadeIn 0.5s;">
-                <strong style="color:#3742fa;">💡 EXPLICACIÓN:</strong><br>
-                <p style="margin-top:5px; color:#2f3542; font-size:0.95rem;">${preguntas[actual].explicacion || "No hay explicación disponible para esta pregunta."}</p>
-                <div style="margin-top:10px; font-size:0.7rem; color:#a4b0be; text-align:right;">Pasando a la siguiente en 10 segundos...</div>
-            </div>
-        `;
-        
-        actualizarNavegadorVisual();
-        
-        // Esperamos 10 segundos para que te dé tiempo a leer la corrección
-        setTimeout(() => { 
-            contenedorExplicacion.innerHTML = ""; 
-            if (actual < preguntas.length - 1) cambiarPregunta(1); 
-        }, 10000); 
     }
+
+    let htmlAnalisis = "";
+    if (p.analisis_opciones) {
+        htmlAnalisis = `<div style="margin-top:10px; border-top:1px solid rgba(0,0,0,0.1); padding-top:10px;">`;
+        ["A", "B", "C", "D"].forEach(letra => {
+            if (p.analisis_opciones[letra]) {
+                let esEstaCorrecta = (letra.charCodeAt(0) - 65 === correcta);
+                htmlAnalisis += `<p style="font-size:0.85rem; margin-bottom:5px;">
+                    <strong style="color:${esEstaCorrecta ? '#2ed573' : '#ff4757'}">${letra}:</strong> ${p.analisis_opciones[letra]}
+                </p>`;
+            }
+        });
+        htmlAnalisis += `</div>`;
+    }
+
+    const colorFondo = esCorrecta ? "#e8f8f5" : "#fdedec"; 
+    const colorBorde = esCorrecta ? "#2ed573" : "#ff4757";
+    const titulo = esCorrecta ? "✅ ¡ACIERTO!" : "❌ FALLO";
+
+    contenedorExplicacion.innerHTML = `
+        <div style="margin-top:20px; padding:15px; background:${colorFondo}; border-left:5px solid ${colorBorde}; border-radius:5px; animation: fadeIn 0.5s; color: #2f3542;">
+            <strong style="color:${colorBorde}; font-size:1.1rem;">${titulo} - ANÁLISIS COMPLETO</strong><br>
+            <p style="margin-top:5px; font-weight:bold;">${p.explicacion || ""}</p>
+            ${htmlAnalisis}
+            <div style="margin-top:10px; font-size:0.75rem; color:#57606f; text-align:right; font-weight:bold;">
+                ${esCorrecta ? 'Siguiente en 6 seg...' : 'Siguiente en 15 seg...'}
+            </div>
+        </div>
+    `;
+    
+    actualizarNavegadorVisual();
+    
+    let tiempoEspera = esCorrecta ? 10000 : 15000;
+    
+    // NUEVO: Guardamos el ID del timeout para poder cancelarlo si navegamos a mano
+    clearTimeout(timeoutExplicacion);
+    timeoutExplicacion = setTimeout(() => { 
+        contenedorExplicacion.innerHTML = ""; 
+        if (actual < preguntas.length - 1) cambiarPregunta(1); 
+    }, tiempoEspera);
 }
 
 function finalizarManual() {
@@ -352,11 +359,12 @@ function finalizarManual() {
 // ================= 🏁 FINALIZAR EXAMEN =================
 async function finalizar() {
     clearInterval(temporizador);
+    clearTimeout(timeoutExplicacion); // Cancelar si había algo a punto de cambiar
     document.getElementById("controles-test").style.display = "none";
     document.getElementById("navegador").style.display = "none";
     
     let aciertos = 0, fallos = 0, blancos = 0;
-    preguntasFalladasParaRepaso = []; // Guardaremos las que están mal o en blanco
+    preguntasFalladasParaRepaso = []; 
     
     preguntas.forEach((p, i) => {
         if (respuestasUsuario[i] === null) { blancos++; preguntasFalladasParaRepaso.push(p); }
@@ -378,7 +386,7 @@ async function finalizar() {
 
     let botonRepasoHTML = "";
     if (preguntasFalladasParaRepaso.length > 0) {
-        botonRepasoHTML = `<button onclick="iniciarTestFallos()" style="background: #ff9f43; color: #2f3542; padding: 15px 30px; font-weight: bold; width: 100%; margin-top: 20px; font-size: 1.2rem; border-radius: 8px;">🔄 Repetir solo fallos y blancos (${preguntasFalladasParaRepaso.length})</button>`;
+        botonRepasoHTML = `<button onclick="iniciarTestFallos()" style="background: #ff9f43; color: #2f3542; padding: 15px 30px; font-weight: bold; width: 100%; margin-top: 20px; font-size: 1.2rem; border-radius: 8px; cursor: pointer; border: none;">🔄 Repetir solo fallos y blancos (${preguntasFalladasParaRepaso.length})</button>`;
     }
 
     document.getElementById("contenedor-pregunta").innerHTML = `<div style="text-align:center; padding: 20px;">
@@ -403,13 +411,15 @@ async function finalizar() {
     cargarHistorialNube();
 }
 
+// ================= 🔍 REPASO FINAL (MODALIDAD TOTAL) =================
 function mostrarRepasoDeExamen() {
     let divRepaso = document.getElementById("zona-repaso");
     divRepaso.style.display = "block";
-    let html = `<h2 style="color: var(--text-color); margin-bottom: 20px;">🔍 Repaso del Examen</h2>`;
+    let html = `<h2 style="color: var(--text-color); margin-bottom: 20px;">🔍 Repaso Detallado (Modalidad Total)</h2>`;
     
     preguntas.forEach((p, i) => {
-        let respuestaMia = respuestasUsuario[i]; let correcta = p.correcta;
+        let respuestaMia = respuestasUsuario[i]; 
+        let correcta = p.correcta;
         let claseCaja = "blanco"; let icono = "⚪ Sin responder"; let textoRespuestaMia = "Dejada en blanco";
         
         if (respuestaMia !== null) {
@@ -418,14 +428,29 @@ function mostrarRepasoDeExamen() {
             else { claseCaja = "fallo"; icono = "❌ Fallo"; }
         }
         
-        html += `<div class="caja-repaso ${claseCaja}">
+        let htmlOpcionesDetalle = "";
+        if (p.analisis_opciones) {
+            htmlOpcionesDetalle = `<div style="margin-top:10px; font-size:0.85rem; opacity:0.95; padding-top: 10px; border-top: 1px dashed rgba(55, 66, 250, 0.3);">`;
+            ["A", "B", "C", "D"].forEach(letra => {
+                if (p.analisis_opciones[letra]) {
+                    htmlOpcionesDetalle += `<div style="margin-bottom:4px;"><strong>${letra}:</strong> ${p.analisis_opciones[letra]}</div>`;
+                }
+            });
+            htmlOpcionesDetalle += `</div>`;
+        }
+
+        html += `<div class="caja-repaso ${claseCaja}" style="margin-bottom:15px; padding:15px; border-radius:8px; background:var(--panel-bg); box-shadow: 0 2px 5px var(--shadow);">
             <div style="font-weight:bold; margin-bottom:8px; color:var(--text-color);">${i + 1}. ${p.pregunta}</div>
-            <div style="font-size:0.9rem; margin-bottom:4px; color:var(--text-color-sec);"><strong>Tú respondiste:</strong> ${textoRespuestaMia}</div>
-            ${respuestaMia !== correcta ? `<div style="font-size:0.9rem; color:#2ed573;"><strong>Respuesta correcta:</strong> ${p.opciones[correcta]}</div>` : ''}
+            <div style="font-size:0.95rem; margin-bottom:4px; color:var(--text-color-sec);"><strong>Tú respondiste:</strong> ${textoRespuestaMia}</div>
+            ${respuestaMia !== correcta ? `<div style="font-size:0.95rem; color:#2ed573; font-weight:bold;">Respuesta correcta: ${p.opciones[correcta]}</div>` : ''}
             
-            ${p.explicacion ? `<div style="margin-top:10px; padding:10px; background:rgba(55, 66, 250, 0.1); border-radius:5px; font-size:0.85rem; color:var(--text-color); border-left: 3px solid #3742fa;"><strong>💡 Nota de estudio:</strong> ${p.explicacion}</div>` : ''}
+            ${p.explicacion || p.analisis_opciones ? `
+            <div style="margin-top:12px; padding:12px; background:rgba(55, 66, 250, 0.08); border-radius:5px; color:var(--text-color); border-left: 4px solid #3742fa;">
+                <strong>💡 Nota de estudio:</strong> ${p.explicacion || ""}
+                ${htmlOpcionesDetalle}
+            </div>` : ''}
             
-            <div style="margin-top:8px; font-size:0.8rem; font-weight:bold; float:right;">${icono}</div>
+            <div style="margin-top:10px; font-size:0.85rem; font-weight:bold; text-align:right;">${icono}</div>
             <div style="clear:both;"></div>
         </div>`;
     });

@@ -1,0 +1,1007 @@
+[
+  {
+    "pregunta": "1. Las impresoras que utilizan calor para transferir la tinta al medio a partir de una cinta con tinta de los 4 colores CMYK se denominan:",
+    "opciones": [
+      "A. Impresoras de Sublimación.",
+      "B. Impresoras de Inyección.",
+      "C. Impresoras Térmicas.",
+      "D. Impresoras Láser."
+    ],
+    "correcta": 0,
+    "explicacion": "La sublimación utiliza calor para convertir tinta sólida (cinta) directamente en gas, que se fija en el soporte. Es el método estándar para fotografía de alta calidad y carnets.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el proceso descrito de transferencia térmica por sublimación de color.",
+      "B": "Incorrecta. Pulverizan gotas líquidas de tinta sobre el papel sin usar calor para gasificar cintas.",
+      "C": "Incorrecta. Las térmicas directas usan papel especial que se oscurece con calor, no suelen usar cintas CMYK de 4 colores.",
+      "D": "Incorrecta. Usan polvo (tóner) atraído por electricidad estática y fijado por calor, no cintas de colores."
+    }
+  },
+  {
+    "pregunta": "2. De estos tipos de conexión, ¿cuál es de audio solamente?",
+    "opciones": [
+      "A. HDMI",
+      "B. VGA",
+      "C. DVI",
+      "D. S/PDIF"
+    ],
+    "correcta": 3,
+    "explicacion": "S/PDIF es un protocolo de nivel físico para transmitir audio digital 'puro' entre dispositivos mediante cable coaxial o fibra óptica (Toslink).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Transporta vídeo de alta definición y audio multicanal simultáneamente.",
+      "B": "Incorrecta. Es una conexión analógica exclusivamente de vídeo.",
+      "C": "Incorrecta. Es una conexión digital (principalmente) de vídeo; no suele llevar audio en sus versiones estándar.",
+      "D": "Correcta. Sony/Philips Digital Interface, dedicada exclusivamente a señales sonoras."
+    }
+  },
+  {
+    "pregunta": "3. En relación a la estructura física de un disco duro, ¿qué es un sector?",
+    "opciones": [
+      "A. Conjunto de varias pistas.",
+      "B. Cada una de las divisiones de una pista.",
+      "C. Cada uno de los círculos concéntricos del disco.",
+      "D. Cada una de las caras del disco."
+    ],
+    "correcta": 1,
+    "explicacion": "Un sector es la unidad física más pequeña de almacenamiento en un disco. Las pistas se dividen en estos arcos, que tradicionalmente almacenan 512 bytes (o 4KB en Advanced Format).",
+    "analisis_opciones": {
+      "A": "Incorrecta. El conjunto de pistas con el mismo radio en todos los platos se llama 'Cilindro'.",
+      "B": "Correcta. Es la subdivisión mínima de la pista.",
+      "C": "Incorrecta. Los círculos concéntricos son las 'Pistas'.",
+      "D": "Incorrecta. Cada cara de un plato es una 'Superficie' y tiene su propia cabeza de lectura."
+    }
+  },
+  {
+    "pregunta": "4. Es una tecnología de impresión 3D:",
+    "opciones": [
+      "A. Inyección de aglutinante.",
+      "B. Impresión de chorro continuo.",
+      "C. Inyección de tinta térmica.",
+      "D. Inyección por gota a la demanda."
+    ],
+    "correcta": 0,
+    "explicacion": "La inyección de aglutinante (Binder Jetting) deposita un pegamento sobre capas de polvo para crear objetos tridimensionales.",
+    "analisis_opciones": {
+      "A": "Correcta. Es una de las 7 familias oficiales de fabricación aditiva.",
+      "B": "Incorrecta. (CIJ) Es una tecnología de impresión 2D industrial para marcaje.",
+      "C": "Incorrecta. Es el método de las impresoras de chorro de tinta domésticas (burbuja).",
+      "D": "Incorrecta. (DOD) Tecnología 2D donde solo se expulsa la gota cuando se necesita."
+    }
+  },
+  {
+    "pregunta": "5. ¿Qué componente de un escáner determina la resolución óptica?",
+    "opciones": [
+      "A. CCD (Charged-Couple Device).",
+      "B. DAC (Digital-Analog Converter).",
+      "C. OCR (Optical Character Recognition).",
+      "D. CAC (Charged-Analog Converter)."
+    ],
+    "correcta": 0,
+    "explicacion": "El sensor CCD (o CIS en modelos baratos) es el hardware que 'mira' el papel. Su número de sensores físicos determina la resolución óptica real.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el sensor fotosensible que capta la luz.",
+      "B": "Incorrecta. Un DAC convierte digital a analógico (como una tarjeta de sonido); el escáner usa un ADC (Analógico a Digital).",
+      "C": "Incorrecta. Es un software de reconocimiento de texto, no un componente óptico.",
+      "D": "Incorrecta. Es un término inventado para confundir en el test."
+    }
+  },
+  {
+    "pregunta": "6. El efecto causado por visualizar una imagen a un tamaño en el que los pixels individuales son visibles al ojo se llama:",
+    "opciones": [
+      "A. Renderizado.",
+      "B. Pixelado.",
+      "C. Degradado.",
+      "D. Interpolación."
+    ],
+    "correcta": 1,
+    "explicacion": "El pixelado ocurre cuando la resolución es tan baja respecto al tamaño de visualización que el ojo percibe los cuadros de color en lugar de formas suaves.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el proceso de generar una imagen 2D a partir de un modelo 3D.",
+      "B": "Correcta. Define el fenómeno de visualización de píxeles discretos.",
+      "C": "Incorrecta. Es una transición suave entre dos colores.",
+      "D": "Incorrecta. Es crear píxeles nuevos 'inventados' para aumentar el tamaño de una imagen."
+    }
+  },
+  {
+    "pregunta": "7. ¿Cuál de las siguientes respuestas NO es una interfaz de conexión válida para discos SSD?",
+    "opciones": [
+      "A. SAS",
+      "B. SATA",
+      "C. DVI",
+      "D. PCle"
+    ],
+    "correcta": 2,
+    "explicacion": "DVI es una interfaz exclusivamente de vídeo. Los SSD usan interfaces de almacenamiento o buses de datos generales como PCIe.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Serial Attached SCSI, común en SSD de servidores.",
+      "B": "Incorrecta. La interfaz más común para SSD de 2.5 pulgadas.",
+      "C": "Correcta. Digital Visual Interface, no tiene nada que ver con discos.",
+      "D": "Incorrecta. Bus de alta velocidad usado por los SSD modernos (NVMe)."
+    }
+  },
+  {
+    "pregunta": "8. Señale cuál de las siguientes es un formato de interfaz SSD:",
+    "opciones": [
+      "A. HHP",
+      "B. MMVe",
+      "C. MMD",
+      "D. M.2"
+    ],
+    "correcta": 3,
+    "explicacion": "M.2 es el estándar de formato físico (forma de 'chicle') que permite conectar SSDs de alto rendimiento directamente a la placa base.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No existe en hardware.",
+      "B": "Incorrecta. Escrito mal a propósito (el protocolo es NVMe).",
+      "C": "Incorrecta. No existe en hardware.",
+      "D": "Correcta. Es el factor de forma físico dominante actualmente."
+    }
+  },
+  {
+    "pregunta": "9. ¿Cuál de los siguientes periféricos NO es un periférico de entrada?",
+    "opciones": [
+      "A. Ratón",
+      "B. Teclado",
+      "C. Escáner",
+      "D. Altavoz"
+    ],
+    "correcta": 3,
+    "explicacion": "Un altavoz recibe señales del ordenador y las proyecta al exterior como sonido; por tanto, es de salida.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Introduce coordenadas y clics.",
+      "B": "Incorrecta. Introduce caracteres y comandos.",
+      "C": "Incorrecta. Introduce imágenes digitalizadas al sistema.",
+      "D": "Correcta. Es puramente de salida de información sonora."
+    }
+  },
+  {
+    "pregunta": "10. Cuál NO es un estándar/driver de escáner para tecnologías de escaneo de imágenes:",
+    "opciones": [
+      "A. ISIS.",
+      "B. OASIS.",
+      "C. TWAIN.",
+      "D. Windows Image Acquisition (WIA)."
+    ],
+    "correcta": 1,
+    "explicacion": "OASIS es una organización de estándares de software (como OpenDocument), pero no un driver para manejar escáneres.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Estándar profesional de alta velocidad.",
+      "B": "Correcta. No es un driver de escáner.",
+      "C": "Incorrecta. El estándar más universal para conectar escáneres con software.",
+      "D": "Incorrecta. El driver nativo de Microsoft Windows."
+    }
+  },
+  {
+    "pregunta": "11. En los discos magnéticos, señale cómo se denomina al tiempo que pasa desde que la cabeza se posiciona sobre la pista hasta que pasa el bloque deseado debajo:",
+    "opciones": [
+      "A. Tiempo de búsqueda.",
+      "B. Tiempo de latencia.",
+      "C. Tiempo de transferencia.",
+      "D. Tiempo de posicionamiento."
+    ],
+    "correcta": 1,
+    "explicacion": "Una vez el cabezal está en la pista (Seek Time), tiene que esperar a que el disco gire. Esa espera es la latencia rotacional.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el tiempo de llegar a la pista (movimiento del brazo).",
+      "B": "Correcta. Es el tiempo de espera al giro del plato.",
+      "C": "Incorrecta. Es el tiempo de mover los datos una vez encontrados.",
+      "D": "Incorrecta. Suele referirse a la suma de búsqueda y latencia."
+    }
+  },
+  {
+    "pregunta": "12. Los dispositivos de almacenamiento SSD (Solid State Drive):",
+    "opciones": [
+      "A. Tienen mejor rendimiento que los tradicionales HDD.",
+      "B. Son más caros que los HDD.",
+      "C. Están basados en memorias no volátiles.",
+      "D. Todas las anteriores son correctas."
+    ],
+    "correcta": 3,
+    "explicacion": "Los SSD superan en todo a los HDD salvo en el precio por GB, y usan chips Flash que no pierden datos al apagar.",
+    "analisis_opciones": {
+      "A": "Incorrecta (por incompleta). Es verdad, pero no la única.",
+      "B": "Incorrecta (por incompleta). Es verdad, su coste por TB es mayor.",
+      "C": "Incorrecta (por incompleta). Es verdad, usan NAND Flash.",
+      "D": "Correcta. Engloba todas las características definitorias."
+    }
+  },
+  {
+    "pregunta": "13. En la estructura física de un disco duro, señale qué se entiende por sector:",
+    "opciones": [
+      "A. Conjunto de varias pistas.",
+      "B. Cada una de las divisiones de una pista.",
+      "C. Cada uno de los círculos concéntricos del disco.",
+      "D. Cada una de las caras del disco."
+    ],
+    "correcta": 1,
+    "explicacion": "Pregunta repetida en el test original de academia. El sector es la unidad mínima de almacenamiento físico.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sería un cilindro.",
+      "B": "Correcta. División de la pista.",
+      "C": "Incorrecta. Es una pista.",
+      "D": "Incorrecta. Es una cara o superficie."
+    }
+  },
+  {
+    "pregunta": "14. La especificación USB 3.2:",
+    "opciones": [
+      "A. Deja de usar los cables USB Tipo C.",
+      "B. No existe, la última es la 3.1",
+      "C. Aumenta la velocidad de transferencia de datos sobre la versión anterior.",
+      "D. Ofrece velocidades de hasta 40 Gbps."
+    ],
+    "correcta": 2,
+    "explicacion": "USB 3.2 introdujo el uso de 'carriles duales' para llegar a 20 Gbps (Gen 2x2).",
+    "analisis_opciones": {
+      "A": "Incorrecta. De hecho, USB 3.2 Gen 2x2 requiere obligatoriamente Tipo C.",
+      "B": "Incorrecta. Existe y es el paso previo a USB4.",
+      "C": "Correcta. Mejora los 10 Gbps del USB 3.1.",
+      "D": "Incorrecta. Esos son USB4 y Thunderbolt 3."
+    }
+  },
+  {
+    "pregunta": "15. El número del estándar IEEE que describe el interfaz serie también conocido como 'Firewire' es:",
+    "opciones": [
+      "A. 1393.",
+      "B. 1394.",
+      "C. 1493.",
+      "D. 1492."
+    ],
+    "correcta": 1,
+    "explicacion": "Número clave que siempre cae en TAI. IEEE 1394 es el estándar de FireWire.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Distractor.",
+      "B": "Correcta. Identifica unívocamente a FireWire.",
+      "C": "Incorrecta. Distractor.",
+      "D": "Incorrecta. El año del descubrimiento de América (típica broma en tests)."
+    }
+  },
+  {
+    "pregunta": "16. ¿Cuál de las siguientes afirmaciones sobre los nuevos discos ópticos es correcta?:",
+    "opciones": [
+      "A. El coste de un disco Blu-Ray es inferior a su equivalente HD-DVD.",
+      "B. Ambos sistemas, DVD-HD y Blu-Ray trabajan con un láser rojo.",
+      "C. Los discos Blu-Ray tienen compabilidad “hacia atrás” con los antiguos DVD.",
+      "D. Los discos HD-DVD tienen compabilidad “hacia atrás” con los antiguos DVD."
+    ],
+    "correcta": 2,
+    "explicacion": "Los lectores de Blu-Ray son retrocompatibles con DVD y CD porque incluyen un láser rojo adicional (el de BR es azul-violeta).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Históricamente el HD-DVD era más barato de producir.",
+      "B": "Incorrecta. Usan láser azul (405nm) para mayor densidad.",
+      "C": "Correcta. Es un requisito del estándar.",
+      "D": "Incorrecta. Aunque también lo eran, el Blu-Ray es el estándar superviviente y la respuesta habitual en examen."
+    }
+  },
+  {
+    "pregunta": "17. ¿Cuál de las siguientes afirmaciones sobre los discos SSD es INCORRECTA?",
+    "opciones": [
+      "A. El origen de las siglas SSD es Solid State Drive.",
+      "B. El acceso a la Información almacenada en un disco SSD es más rápido que en un disco duro HDD.",
+      "C. La copia y duplicación de archivos en un disco SSD es más lenta que en un disco HDD.",
+      "D. El coste de un disco SSD, a igualdad de tamaño, es superior al de un disco HDD."
+    ],
+    "correcta": 2,
+    "explicacion": "La copia de archivos en SSD es mucho más rápida al no haber movimiento mecánico de cabezales.",
+    "analisis_opciones": {
+      "A": "Verdadera. Significa Unidad de Estado Sólido.",
+      "B": "Verdadera. Latencias de microsegundos frente a milisegundos.",
+      "C": "Incorrecta. (Falsa) Es la respuesta a marcar.",
+      "D": "Verdadera. El precio por GB es mayor en SSD."
+    }
+  },
+  {
+    "pregunta": "18. En relación con las unidades de discos magnéticos, señale la afirmación correcta:",
+    "opciones": [
+      "A. Giran a velocidad angular constante.",
+      "B. La velocidad angular va disminuyendo en las pistas más externas.",
+      "C. Giran a velocidad lineal constante.",
+      "D. Son utilizadas para grabar los datos con una densidad constante en todo el disco."
+    ],
+    "correcta": 0,
+    "explicacion": "Los HDD usan CAV (Constant Angular Velocity). Giran siempre a las mismas RPM (ej. 7200), por lo que los datos pasan más rápido por el cabezal en las pistas externas.",
+    "analisis_opciones": {
+      "A": "Correcta. Las RPM son fijas.",
+      "B": "Incorrecta. La velocidad angular es constante, la que cambia es la lineal.",
+      "C": "Incorrecta. Esto es típico de los lectores de CD (CLV).",
+      "D": "Incorrecta. La densidad varía si no se usa ZBR (Zone Bit Recording)."
+    }
+  },
+  {
+    "pregunta": "19. Respecto a la norma USB indique la respuesta INCORRECTA:",
+    "opciones": [
+      "A. USB Type-C es lo mismo que USB 3.1",
+      "B. La diferencia entre USB 3.1 Gen 1 y USB 3.1 Gen 2 se reduce solamente a la velocidad.",
+      "C. USB 3.2 permite velocidades de hasta 20 Gbps.",
+      "D. Los dispositivos USB 2.0 pueden lograr una velocidad de transferencia máxima hasta de 480 Mbps."
+    ],
+    "correcta": 0,
+    "explicacion": "Error común: Tipo C es el conector físico (forma). USB 3.1 es el protocolo (velocidad). Puedes tener un Tipo C que solo sea USB 2.0.",
+    "analisis_opciones": {
+      "A": "Incorrecta. (Falsa) Respuesta a marcar.",
+      "B": "Verdadera. Gen 1 es 5 Gbps, Gen 2 es 10 Gbps.",
+      "C": "Verdadera. En su variante Gen 2x2.",
+      "D": "Verdadera. Tasa máxima teórica del estándar High Speed."
+    }
+  },
+  {
+    "pregunta": "20. ¿Qué protocolo se utiliza para conectar teclados, ratones y otros dispositivos inalámbricos a un PC?",
+    "opciones": [
+      "A. 802.3.",
+      "B. Wi-Max.",
+      "C. 802.11.",
+      "D. Bluetooth."
+    ],
+    "correcta": 3,
+    "explicacion": "Bluetooth es el estándar IEEE 802.15.1 diseñado para redes de área personal (PAN) inalámbricas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es Ethernet (cable).",
+      "B": "Incorrecta. Es 802.16 (banda ancha inalámbrica de largo alcance).",
+      "C": "Incorrecta. Es Wi-Fi.",
+      "D": "Correcta. Estándar para periféricos inalámbricos."
+    }
+  },
+  {
+    "pregunta": "21. Las unidades SSD:",
+    "opciones": [
+      "A. Son unidades de almacenamiento que realizan la misma función que el disco duro.",
+      "B. Son unidades de almacenamiento que realizan la misma función que la memoria RAM.",
+      "C. Contienen el hardware para las comunicaciones Ethernet.",
+      "D. Contienen el hardware para la dotación de conexiones USB."
+    ],
+    "correcta": 0,
+    "explicacion": "Un SSD es un dispositivo de almacenamiento secundario, persistente y masivo.",
+    "analisis_opciones": {
+      "A": "Correcta. Ambos son almacenamiento persistente.",
+      "B": "Incorrecta. La RAM es volátil y de acceso mucho más rápido.",
+      "C": "Incorrecta. Eso es la tarjeta de red (NIC).",
+      "D": "Incorrecta. Eso es la controladora USB."
+    }
+  },
+  {
+    "pregunta": "22. De entre las siguientes jerarquías de almacenamiento, señale cuál NO está ordenada de más rápido acceso a menos rápido:",
+    "opciones": [
+      "A. Registros de la unidad central, memoria principal, unidades de disco.",
+      "B. Memoria principal, memoria caché, almacenamiento auxiliar.",
+      "C. Memoria caché, unidades de disco, bibliotecas de discos ópticos.",
+      "D. Registros de la unidad central, memoria principal, biblioteca de cintas magnéticas."
+    ],
+    "correcta": 1,
+    "explicacion": "La memoria caché es mucho más rápida que la principal (RAM). El orden correcto sería Caché -> RAM -> Auxiliar.",
+    "analisis_opciones": {
+      "A": "Correcta. Orden lógico.",
+      "B": "Incorrecta. (Mal ordenada) Respuesta a marcar.",
+      "C": "Correcta. Orden lógico.",
+      "D": "Correcta. Orden lógico."
+    }
+  },
+  {
+    "pregunta": "23. ¿Cuál de los siguientes es el nombre de un conector usado para carga y datos creado por el fabricante Apple?",
+    "opciones": [
+      "A. USB-Tipo C",
+      "B. iUSB",
+      "C. iFirewire",
+      "D. Lightning"
+    ],
+    "correcta": 3,
+    "explicacion": "Lightning es el conector propietario de 8 pines usado por Apple desde 2012 hasta la llegada de la directiva europea del USB-C.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un estándar abierto del USB-IF.",
+      "B": "Incorrecta. Término inexistente.",
+      "C": "Incorrecta. Firewire fue desarrollado por Apple pero el término iFirewire no es el nombre del conector.",
+      "D": "Correcta. Conector icónico de Apple."
+    }
+  },
+  {
+    "pregunta": "24. Indique cuál de las siguientes es una tecnología de interfaz hardware:",
+    "opciones": [
+      "A. Thunderbird",
+      "B. HIT",
+      "C. Thunderbolt",
+      "D. RISC"
+    ],
+    "correcta": 2,
+    "explicacion": "Thunderbolt es la tecnología de Intel que permite túneles de PCIe y DisplayPort en un solo cable.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un cliente de correo electrónico de Mozilla.",
+      "B": "Incorrecta. Término distractor.",
+      "C": "Correcta. Interfaz de conexión de alta velocidad.",
+      "D": "Incorrecta. Es un tipo de arquitectura de procesador."
+    }
+  },
+  {
+    "pregunta": "25. El estándar de video en el cual el brillo de los píxeles se transmite e forma de lista de números binarios se llama:",
+    "opciones": [
+      "A. CGA (Color Graphics Adapter).",
+      "B. DVI (Digital Visual Interface).",
+      "C. VGA (Video Graphics Array).",
+      "D. EGA (Extended Graphics Array).",
+      "E. HDMI"
+    ],
+    "correcta": 1,
+    "explicacion": "DVI fue el primer estándar masivo en enviar información de píxeles de forma digital (binaria) al monitor, a diferencia del VGA que era analógico.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Analógica/Digital básica antigua.",
+      "B": "Correcta. Interfaz puramente digital.",
+      "C": "Incorrecta. Puramente analógica.",
+      "D": "Incorrecta. Analógica antigua.",
+      "E": "Incorrecta. Aunque es digital, el enunciado describe la función básica que definió al DVI en su época frente al VGA."
+    }
+  },
+  {
+    "pregunta": "26. ¿Cuál de las siguientes es una tecnología de almacenamiento en disco mediante bus serie?",
+    "opciones": [
+      "A. SATA",
+      "B. ATA",
+      "C. SCSI",
+      "D. DLT"
+    ],
+    "correcta": 0,
+    "explicacion": "SATA significa Serial Advanced Technology Attachment.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el bus serie por excelencia en PCs.",
+      "B": "Incorrecta. (PATA) Era un bus paralelo de cinta ancha.",
+      "C": "Incorrecta. El SCSI original era paralelo.",
+      "D": "Incorrecta. Es una tecnología de cintas magnéticas."
+    }
+  },
+  {
+    "pregunta": "27. ¿Qué tecnología ofrece velocidades de transferencia de hasta 40 Gb/s?",
+    "opciones": [
+      "A. Thunderbolt 3",
+      "B. USB 3.0",
+      "C. Firewire s3200",
+      "D. SATA III"
+    ],
+    "correcta": 0,
+    "explicacion": "Thunderbolt 3 alcanzó los 40 Gbps, marcando un antes y un después en conectividad externa.",
+    "analisis_opciones": {
+      "A": "Correcta. Alcanza esa cifra.",
+      "B": "Incorrecta. Solo 5 Gbps.",
+      "C": "Incorrecta. Se quedó en proyecto/escasos 3.2 Gbps.",
+      "D": "Incorrecta. Solo 6 Gbps."
+    }
+  },
+  {
+    "pregunta": "28. Con un escáner (10x16 cm) los datos ocupan 1MB. En uno de 8x10 cm con misma resolución, ocuparán:",
+    "opciones": [
+      "A. 500 KB.",
+      "B. 800 KB.",
+      "C. 1MB.",
+      "D. 2MB."
+    ],
+    "correcta": 0,
+    "explicacion": "Área 1: 160 cm2 -> 1MB (1024 KB). Área 2: 80 cm2. Al ser exactamente la mitad de superficie, y manteniendo la resolución, ocupará la mitad de información.",
+    "analisis_opciones": {
+      "A": "Correcta. Cálculo matemático de superficie proporcional.",
+      "B": "Incorrecta. Fallo de cálculo.",
+      "C": "Incorrecta. Misma resolución no implica mismo tamaño si cambia el área física.",
+      "D": "Incorrecta. Sería si el área fuera el doble."
+    }
+  },
+  {
+    "pregunta": "29. En impresoras de impacto, señale cuál NO es correcto:",
+    "opciones": [
+      "A. de margarita.",
+      "B. matricial.",
+      "C. de inyección.",
+      "D. de bola."
+    ],
+    "correcta": 2,
+    "explicacion": "La inyección es 'No impacto'. No hay contacto físico de una pieza mecánica contra la cinta y el papel.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Impacto (tipo máquina de escribir).",
+      "B": "Incorrecta. Impacto (agujas).",
+      "C": "Correcta. Chorro de tinta líquido.",
+      "D": "Incorrecta. Impacto (bola tipo IBM Selectric)."
+    }
+  },
+  {
+    "pregunta": "30. Señale cuál de las siguientes afirmaciones sobre la memoria cache es correcta:",
+    "opciones": [
+      "A. La Cache L1 está integrada en el núcleo, trabajando a velocidades diferentes que el procesador.",
+      "B. La Cache L2 es más rápida que la caché L1.",
+      "C. La Cache L1 está integrada en el núcleo, trabajando a la misma velocidad que el procesador y es más rápida que L2.",
+      "D. La Cache L1 es más lenta que L2."
+    ],
+    "correcta": 2,
+    "explicacion": "La L1 es el nivel más cercano y rápido, funcionando a la frecuencia íntegra del núcleo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Trabaja a la misma velocidad.",
+      "B": "Incorrecta. Es más lenta y grande que L1.",
+      "C": "Correcta. Define perfectamente el nivel L1.",
+      "D": "Incorrecta. Es siempre más rápida."
+    }
+  },
+  {
+    "pregunta": "31. Hablando de zonas de un disco duro, señale la FALSA:",
+    "opciones": [
+      "A. Cilindro es un conjunto de varias pistas.",
+      "B. Clúster es un conjunto continuo de sectores.",
+      "C. Sector es cada uno de los lados un plato.",
+      "D. Pista es una circunferencia dentro de una cara."
+    ],
+    "correcta": 2,
+    "explicacion": "Error de concepto: Cada lado del plato es una 'Cara' o 'Superficie'. El sector es una parte de la pista.",
+    "analisis_opciones": {
+      "A": "Verdadera. Todas las pistas bajo el mismo cabezal.",
+      "B": "Verdadera. Unidad mínima de asignación del SO.",
+      "C": "Incorrecta. (Falsa) Respuesta a marcar.",
+      "D": "Verdadera. Definición geométrica en el plato."
+    }
+  },
+  {
+    "pregunta": "32. ¿Cuál es un tipo de panel de una pantalla LCD?",
+    "opciones": [
+      "A. IPS (In-Plane Switching).",
+      "B. VN (Vertical Nematic).",
+      "C. TA (Twisted Alignment).",
+      "D. PSI (Plane Switching Input)."
+    ],
+    "correcta": 0,
+    "explicacion": "IPS es la tecnología líder para calidad de color y ángulos de visión en monitores.",
+    "analisis_opciones": {
+      "A": "Correcta. Estándar de paneles LCD.",
+      "B": "Incorrecta. El término es VA (Vertical Alignment).",
+      "C": "Incorrecta. El término es TN (Twisted Nematic).",
+      "D": "Incorrecta. Término inventado."
+    }
+  },
+  {
+    "pregunta": "33. ¿Cuál de los siguientes es un tipo de almacenamiento de datos volátil?",
+    "opciones": [
+      "A. Memoria de acceso aleatorio dinámico.",
+      "B. Memoria USB.",
+      "C. Memoria flash.",
+      "D. Discos ópticos."
+    ],
+    "correcta": 0,
+    "explicacion": "La DRAM requiere energía constante para mantener los condensadores cargados; si se corta la luz, el dato desaparece.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la definición de volátil.",
+      "B": "Incorrecta. Es persistente (NAND Flash).",
+      "C": "Incorrecta. Es persistente.",
+      "D": "Incorrecta. Es persistente (grabación física/química)."
+    }
+  },
+  {
+    "pregunta": "34. Cuántos discos son necesarios como mínimo para construir un sistema RAID 5:",
+    "opciones": [
+      "A. 1",
+      "B. 2",
+      "C. 0",
+      "D. 3"
+    ],
+    "correcta": 3,
+    "explicacion": "Para poder distribuir la paridad y los datos de forma que el sistema sobreviva a un fallo de un disco, se necesitan al menos 3.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No hay redundancia posible.",
+      "B": "Incorrecta. Solo permite RAID 0 o RAID 1.",
+      "C": "Incorrecta. Absurdo.",
+      "D": "Correcta. Requisito mínimo del estándar."
+    }
+  },
+  {
+    "pregunta": "35. En teclados, señale la distribución que se utiliza principalmente en regiones germanohablantes:",
+    "opciones": [
+      "A. AZERTY",
+      "B. QWERTZ",
+      "C. HCESAR",
+      "D. QWERPY"
+    ],
+    "correcta": 1,
+    "explicacion": "El QWERTZ intercambia la Y por la Z porque en alemán la Z es mucho más común.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la distribución francesa/belga.",
+      "B": "Correcta. Distribución alemana/austriaca.",
+      "C": "Incorrecta. Distribución histórica de Portugal.",
+      "D": "Incorrecta. Término inventado."
+    }
+  },
+  {
+    "pregunta": "36. Diferencia entre monitores 1080p y 1080i con 60Hz:",
+    "opciones": [
+      "A. 1920x1080, 'i' actualiza todo, 'p' alterna líneas.",
+      "B. 1920x1080, 'p' actualiza todo, 'i' alterna líneas.",
+      "C. 1640x1080, 'i' actualiza todo, 'p' alterna líneas.",
+      "D. 1640x1080, 'p' actualiza todo, 'i' alterna líneas."
+    ],
+    "correcta": 1,
+    "explicacion": "Progresivo (p) dibuja todas las líneas del frame a la vez. Entrelazado (i) dibuja solo la mitad (pares) y en el siguiente ciclo la otra mitad (impares).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las funciones están al revés.",
+      "B": "Correcta. Resolución correcta y funciones bien definidas.",
+      "C": "Incorrecta. Resolución horizontal errónea.",
+      "D": "Incorrecta. Resolución horizontal errónea."
+    }
+  },
+  {
+    "pregunta": "37. El estándar IEEE 1394b alcanza la velocidad de transferencia de:",
+    "opciones": [
+      "A. 200 Mbps.",
+      "B. 800 Mbps o superior.",
+      "C. 400 Mbps.",
+      "D. 600 Mbps."
+    ],
+    "correcta": 1,
+    "explicacion": "El 1394a (Firewire 400) llegaba a 400; el 1394b (Firewire 800) llegó a los 800 Mbps.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el Firewire 200.",
+      "B": "Correcta. Es el Firewire 800.",
+      "C": "Incorrecta. Es el Firewire 400 estándar.",
+      "D": "Incorrecta. No es una velocidad estándar de Firewire."
+    }
+  },
+  {
+    "pregunta": "38. En el proceso de digitalización, señale la correcta:",
+    "opciones": [
+      "A. HSB: tono, saturación y compresión.",
+      "B. CRYK: cyan, rojo, amarillo y negro.",
+      "C. Resolución: bits usados para describir el color.",
+      "D. Con 1 bit de profundidad podremos elegir 2 colores."
+    ],
+    "correcta": 3,
+    "explicacion": "2 elevado a 1 bit = 2 estados posibles. Suele ser blanco o negro.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es brillo (Brightness), no compresión.",
+      "B": "Incorrecta. Es Magenta (M), no Rojo (R). CMYK.",
+      "C": "Incorrecta. Eso es la profundidad de color; la resolución es el número de píxeles.",
+      "D": "Correcta. Lógica binaria pura."
+    }
+  },
+  {
+    "pregunta": "39. ¿Cuál de los siguientes NO se corresponde con un interfaz de almacenamiento físico?",
+    "opciones": [
+      "A. SCSI",
+      "B. SATA",
+      "C. PATA",
+      "D. NAS"
+    ],
+    "correcta": 3,
+    "explicacion": "Un NAS es un dispositivo independiente conectado a la red, no un bus o interfaz físico de conexión interna.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Interfaz clásica profesional.",
+      "B": "Incorrecta. Interfaz estándar moderna.",
+      "C": "Incorrecta. Interfaz paralela antigua.",
+      "D": "Correcta. Es un concepto de red/servidor."
+    }
+  },
+  {
+    "pregunta": "40. Velocidad máxima de transferencia del USB 4.0:",
+    "opciones": [
+      "A. 20 Gbps.",
+      "B. 30 Gbps.",
+      "C. 40 Gbps.",
+      "D. 50 Gbps."
+    ],
+    "correcta": 2,
+    "explicacion": "USB4 unifica el protocolo con Thunderbolt 3 y permite 40 Gbps en sus cables certificados.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es USB 3.2 Gen 2x2.",
+      "B": "Incorrecta. No estándar.",
+      "C": "Correcta. Tope del estándar USB4.",
+      "D": "Incorrecta. (El USB4 v2 llega a 80, pero el 4.0 base es 40)."
+    }
+  },
+  {
+    "pregunta": "41. En relación con el almacenamiento, ¿qué es un SSD?",
+    "opciones": [
+      "A. Secure System Disk. Cifrado AES.",
+      "B. Solid State Disk. Usa discos magnéticos.",
+      "C. Solid State Drive. Usa memoria no volátil.",
+      "D. Solid State Device. Usa memoria volátil."
+    ],
+    "correcta": 2,
+    "explicacion": "Es una unidad de 'estado sólido' (sin partes móviles) que almacena datos de forma persistente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Definición inventada.",
+      "B": "Incorrecta. Contradictorio (Estado sólido vs Magnético).",
+      "C": "Correcta. Definición técnica exacta.",
+      "D": "Incorrecta. Si fuera volátil perdería los archivos al apagar."
+    }
+  },
+  {
+    "pregunta": "42. Estructura lógica del disco: ¿qué es la latencia media?",
+    "opciones": [
+      "A. RPM de los platos.",
+      "B. Tiempo de situarse en la pista y sector.",
+      "C. Velocidad de transferencia a la CPU.",
+      "D. Tiempo medio que tarda la aguja en situarse en el sector deseado."
+    ],
+    "correcta": 3,
+    "explicacion": "Estrictamente, la latencia es la espera al giro del plato para que el sector llegue bajo el cabezal.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una característica física que influye en la latencia.",
+      "B": "Incorrecta. Eso sería el tiempo de acceso total.",
+      "C": "Incorrecta. Es la tasa de transferencia.",
+      "D": "Correcta. Define la espera rotacional."
+    }
+  },
+  {
+    "pregunta": "43. Describa la Impresión con tecnología de sublimación de tinta:",
+    "opciones": [
+      "A. Calor para transferencia de tinta al soporte.",
+      "B. Agujas calientes sobre papel sensible.",
+      "C. Proyectan pequeñas cantidades de tinta.",
+      "D. Golpe al soporte para transferir tinta."
+    ],
+    "correcta": 0,
+    "explicacion": "Transformación de estado sólido a gaseoso mediante calor.",
+    "analisis_opciones": {
+      "A": "Correcta. Definición básica.",
+      "B": "Incorrecta. Es la impresión térmica directa.",
+      "C": "Incorrecta. Es inyección de tinta.",
+      "D": "Incorrecta. Es impacto."
+    }
+  },
+  {
+    "pregunta": "44. Copia que solo copia archivos cambiados desde la completa, aunque haya habido copias entre medias:",
+    "opciones": [
+      "A. Incremental.",
+      "B. Las copias siempre son totales.",
+      "C. Parcial.",
+      "D. Diferencial."
+    ],
+    "correcta": 3,
+    "explicacion": "La diferencial crece cada día porque siempre mira atrás hasta la última copia completa. La incremental solo mira el día anterior.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Solo copia desde la última de cualquier tipo.",
+      "B": "Incorrecta. Absurdo.",
+      "C": "Incorrecta. Término no técnico en este contexto.",
+      "D": "Correcta. Definición clásica de backup diferencial."
+    }
+  },
+  {
+    "pregunta": "45. Nombre de la tecnología para reconocimiento óptico de texto escaneado:",
+    "opciones": [
+      "A. OCR.",
+      "B. IVR.",
+      "C. JPG.",
+      "D. OTR."
+    ],
+    "correcta": 0,
+    "explicacion": "Optical Character Recognition. Transforma una imagen de letras en texto real digital.",
+    "analisis_opciones": {
+      "A": "Correcta. Sigla oficial.",
+      "B": "Incorrecta. Interactive Voice Response (telefonía).",
+      "C": "Incorrecta. Formato de compresión de imagen.",
+      "D": "Incorrecta. Distractor."
+    }
+  },
+  {
+    "pregunta": "46. Una impresión GDI (Graphics Device Interface) es:",
+    "opciones": [
+      "A. En láser, la imagen sin revelar.",
+      "B. Calidad más alta de una matricial.",
+      "C. Interfaz de comunicación paralela.",
+      "D. El SO se comunica directamente con la impresora para enviarle la imagen preparada."
+    ],
+    "correcta": 3,
+    "explicacion": "También llamada 'Winprinter'. El PC hace todo el renderizado ahorrando costes en el procesador de la impresora.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es el 'latente'.",
+      "B": "Incorrecta. Es NLQ (Near Letter Quality).",
+      "C": "Incorrecta. GDI es un modelo de software de Windows.",
+      "D": "Correcta. El 'Host' (PC) procesa la imagen."
+    }
+  },
+  {
+    "pregunta": "47. Escáneres de gran tamaño, CYMK/RGB y gran resolución óptica para diseño gráfico:",
+    "opciones": [
+      "A. de cama plana.",
+      "B. de mano.",
+      "C. de impacto.",
+      "D. de tambor."
+    ],
+    "correcta": 3,
+    "explicacion": "Son los más precisos; el original se pega a un cilindro de cristal que gira a alta velocidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Uso doméstico/oficina.",
+      "B": "Incorrecta. Baja resolución/portátil.",
+      "C": "Incorrecta. No existe escáner de impacto.",
+      "D": "Correcta. Uso profesional de alta gama."
+    }
+  },
+  {
+    "pregunta": "48. La extensión USB-On-The-Go (OTG) permite:",
+    "opciones": [
+      "A. Configurar USB en Linux sin drivers.",
+      "B. Plug and Play en Windows.",
+      "C. Mayores velocidades de transmisión.",
+      "D. Permite a un puerto actuar como servidor o como dispositivo."
+    ],
+    "correcta": 3,
+    "explicacion": "Permite que un móvil lea un teclado (móvil=host) o que el móvil sea leído por un PC (móvil=dispositivo).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Distractor.",
+      "B": "Incorrecta. Distractor.",
+      "C": "Incorrecta. No influye en la velocidad base del estándar.",
+      "D": "Correcta. Define el rol dual del puerto."
+    }
+  },
+  {
+    "pregunta": "49. Diferencia entre discos HDD y SSD correcta:",
+    "opciones": [
+      "A. Los SSD tienen partes móviles.",
+      "B. Velocidades de lectura del HDD son superiores.",
+      "C. Velocidades de escritura del SDD son inferiores.",
+      "D. Los SSD presentan una relación precio/capacidad más alta que los HDD."
+    ],
+    "correcta": 3,
+    "explicacion": "Un SSD de 2TB es mucho más caro que un HDD de 2TB.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Son estado sólido (chips).",
+      "B": "Incorrecta. Los SSD son mucho más rápidos.",
+      "C": "Incorrecta. Los SSD son mucho más rápidos.",
+      "D": "Correcta. El precio por GB es mayor."
+    }
+  },
+  {
+    "pregunta": "50. ¿Qué estándar se basa en comunicación en serie?",
+    "opciones": [
+      "A. PATA",
+      "B. SCSI 1",
+      "C. SATA",
+      "D. SCSI 3.1"
+    ],
+    "correcta": 2,
+    "explicacion": "Serial-ATA sustituyó al paralelo (PATA) enviando los datos bit tras bit a mayor frecuencia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es Paralelo-ATA.",
+      "B": "Incorrecta. Bus paralelo antiguo.",
+      "C": "Correcta. Bus serie estándar actual.",
+      "D": "Incorrecta. Aunque el SAS es serie, el término SCSI tradicionalmente evoca buses paralelos en tests TAI."
+    }
+  },
+  {
+    "pregunta": "51. Software para digitalizar texto y que pueda ser editado:",
+    "opciones": [
+      "A. OSI",
+      "B. ANSI",
+      "C. OCR",
+      "D. AVG"
+    ],
+    "correcta": 2,
+    "explicacion": "Pregunta recurrente. El OCR es la herramienta indispensable para pasar de imagen a texto editable.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Modelo de red.",
+      "B": "Incorrecta. Instituto de estándares.",
+      "C": "Correcta. Software de reconocimiento.",
+      "D": "Incorrecta. Marca de antivirus."
+    }
+  },
+  {
+    "pregunta": "52. Versión USB conocida como SuperSpeed USB:",
+    "opciones": [
+      "A. USB 1.0.",
+      "B. USB 2.0.",
+      "C. USB 3.0.",
+      "D. USB 4.0."
+    ],
+    "correcta": 2,
+    "explicacion": "USB 1.x (Full Speed), USB 2.0 (High Speed), USB 3.0 (SuperSpeed).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Low/Full Speed.",
+      "B": "Incorrecta. High Speed.",
+      "C": "Correcta. Denominación comercial oficial.",
+      "D": "Incorrecta. No usa ese nombre específico."
+    }
+  },
+  {
+    "pregunta": "53. El Dot Pitch (Tamaño de punto) es:",
+    "opciones": [
+      "A. Parámetro de monitor. Menor = mejor calidad.",
+      "B. Parámetro de monitor. Mayor = mejor calidad.",
+      "C. Parámetro de impresión. Menor = mejor calidad.",
+      "D. Parámetro de impresión. Mayor = mejor calidad."
+    ],
+    "correcta": 0,
+    "explicacion": "Es la distancia entre celdas del mismo color. Cuanto más juntas estén (menor número), más nítido se ve todo.",
+    "analisis_opciones": {
+      "A": "Correcta. Definición de nitidez en pantallas.",
+      "B": "Incorrecta. Mayor tamaño de punto hace la imagen más basta.",
+      "C": "Incorrecta. No es un término usado para resolución de impresión.",
+      "D": "Incorrecta. No es un término usado para resolución de impresión."
+    }
+  },
+  {
+    "pregunta": "54. En el True Color (color verdadero), se utilizan como mínimo:",
+    "opciones": [
+      "A. 16 bits por píxel.",
+      "B. 24 bits por píxel.",
+      "C. 8 bits por píxel.",
+      "D. 20 bits por píxel."
+    ],
+    "correcta": 1,
+    "explicacion": "8 bits para Rojo + 8 para Verde + 8 para Azul = 24 bits. Permite 16,7 millones de colores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se llama High Color.",
+      "B": "Correcta. Estándar de 24 bits.",
+      "C": "Incorrecta. Solo 256 colores.",
+      "D": "Incorrecta. Distractor."
+    }
+  },
+  {
+    "pregunta": "55. Escáner para libros antiguos o valiosos para no deteriorarlos:",
+    "opciones": [
+      "A. plano.",
+      "B. tambor.",
+      "C. rodillo.",
+      "D. cenital."
+    ],
+    "correcta": 3,
+    "explicacion": "Es una cámara montada sobre un brazo; el libro se queda abierto hacia arriba sin presiones.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Hay que dar la vuelta al libro y presionar contra el cristal.",
+      "B": "Incorrecta. Habría que arrancar las hojas o pegarlas al cilindro.",
+      "C": "Incorrecta. El libro no pasaría por los rodillos.",
+      "D": "Correcta. Uso museístico/bibliotecas."
+    }
+  },
+  {
+    "pregunta": "56. Una tarjeta gráfica de tipo discreta:",
+    "opciones": [
+      "A. Tiene una memoria dedicada.",
+      "B. Funciona con un chip en la placa base.",
+      "C. Requiere cambiar la placa base para actualizarse.",
+      "D. Se encuentra en los microprocesadores."
+    ],
+    "correcta": 0,
+    "explicacion": "Las gráficas discretas son componentes independientes con su propia RAM (VRAM) y refrigeración.",
+    "analisis_opciones": {
+      "A": "Correcta. Es su gran ventaja.",
+      "B": "Incorrecta. Eso es una gráfica integrada en placa (antiguo).",
+      "C": "Incorrecta. Se pincha en un slot PCIe y se cambia fácil.",
+      "D": "Incorrecta. Eso es una APU o gráfica integrada en CPU."
+    }
+  },
+  {
+    "pregunta": "57. Señale resolución válida para una pantalla:",
+    "opciones": [
+      "A. 8K UHD - 7680 x 3840 píxeles.",
+      "B. Ultra HD - 4320 x 1280 píxeles.",
+      "C. WQHD - 2560 x 1440 píxeles.",
+      "D. HD - 1920 × 1080 píxeles."
+    ],
+    "correcta": 2,
+    "explicacion": "Wide Quad HD es el estándar de 1440p (exactamente 2560x1440).",
+    "analisis_opciones": {
+      "A": "Incorrecta. El 8K es 7680 x 4320.",
+      "B": "Incorrecta. El Ultra HD es 3840 x 2160.",
+      "C": "Correcta. Datos técnicos exactos.",
+      "D": "Incorrecta. Eso es Full HD. El HD es 1280x720."
+    }
+  },
+  {
+    "pregunta": "58. Códigos bidimensionales con patrón de cuadrados en tres esquinas:",
+    "opciones": [
+      "A. PDF417",
+      "B. Codígo QR (Quick Response).",
+      "C. EAN.",
+      "D. Code 128."
+    ],
+    "correcta": 1,
+    "explicacion": "Esos tres cuadrados sirven para que el software sepa la orientación del código.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es de barras apiladas, rectangular.",
+      "B": "Correcta. Característica visual principal.",
+      "C": "Incorrecta. Es el de barras típico de supermercado (1D).",
+      "D": "Incorrecta. Código de barras 1D común."
+    }
+  },
+  {
+    "pregunta": "59. Respuesta correcta sobre digitalización de imágenes:",
+    "opciones": [
+      "A. Resolución se mide en ppp o ppi.",
+      "B. A mayor número de píxeles, menor tamaño de fichero.",
+      "C. Profundidad del bit es capacidad de reproducir grises.",
+      "D. Sólo TIFF y JPEG sirven para guardar una imagen digitalizada."
+    ],
+    "correcta": 0,
+    "explicacion": "Puntos por pulgada es la medida de densidad de muestreo del escáner.",
+    "analisis_opciones": {
+      "A": "Correcta. Unidades de medida estándar.",
+      "B": "Incorrecta. A más píxeles, más datos, más tamaño.",
+      "C": "Incorrecta. Es la capacidad de reproducir colores (bits por píxel).",
+      "D": "Incorrecta. Existen PNG, BMP, WEBP, etc."
+    }
+  }
+]
