@@ -1,0 +1,16 @@
+{
+  "name": "Test Oposición Pro",
+  "short_name": "TestPro",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#3742fa",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3234/3234972.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

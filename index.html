@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Oposición Pro</title>
-    <link rel="stylesheet" href="style.css?v=16">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3742fa">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3234/3234972.png">
+    <link rel="stylesheet" href="style.css?v=19">
     <style>
-        /* Estilos extra para la botonera y el repaso (los metemos aquí para no tocar el style.css) */
-        .nav-preguntas { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; padding: 10px; background: #f1f2f6; border-radius: 8px; }
-        .btn-nav { width: 35px; height: 35px; border-radius: 5px; border: 1px solid #ccc; background: white; cursor: pointer; font-weight: bold; color: #2f3542; transition: 0.2s; }
+        .nav-preguntas { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; padding: 10px; background: var(--panel-bg-sec); border-radius: 8px; }
+        .btn-nav { width: 35px; height: 35px; border-radius: 5px; border: 1px solid var(--border-color); background: var(--panel-bg); cursor: pointer; font-weight: bold; color: var(--text-color); transition: 0.2s; }
         .btn-nav.actual { border: 2px solid #3742fa; transform: scale(1.1); box-shadow: 0 0 5px rgba(55, 66, 250, 0.5); }
         .btn-nav.respondida { background: #7bed9f; color: #2f3542; border-color: #2ed573; }
         .btn-nav.examen-respondida { background: #70a1ff; color: white; border-color: #1e90ff; }
         .btn-nav.fallada { background: #ff7f50; color: white; border-color: #ff4757; }
         
-        .caja-repaso { background: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; border-left: 5px solid #ccc; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: left;}
+        .caja-repaso { background: var(--panel-bg); padding: 15px; margin-bottom: 15px; border-radius: 8px; border-left: 5px solid #ccc; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: left;}
         .caja-repaso.acierto { border-left-color: #2ed573; }
         .caja-repaso.fallo { border-left-color: #ff4757; }
         .caja-repaso.blanco { border-left-color: #a4b0be; }
+
+        /* Estilo para la lista de temas con scroll */
+        #contenedor-temas { background: var(--sidebar-input-bg); border: 1px solid var(--sidebar-border); border-radius: 8px; padding: 15px; max-height: 180px; overflow-y: auto; margin-bottom: 20px; color: var(--sidebar-text-sec); }
     </style>
 </head>
-<body>
+<body class="light-mode"> 
 
 <div class="container">
     <div class="sidebar">
-        <h2>Ajustes Test</h2>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h2 style="margin-bottom: 0;">Ajustes Test</h2>
+            <button id="theme-toggle" onclick="alternarModoLuna()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 0;">🌙</button>
+        </div>
         
         <label>Bloque</label>
         <select id="bloque" onchange="cargarTemas()">
@@ -35,11 +43,21 @@
             <option value="bloque4">Bloque 4</option>
         </select>
 
-        <label>Tema</label>
-        <select id="tema"></select>
+        <label>Temas (Puedes elegir varios)</label>
+        <div id="contenedor-temas">
+            <p style="font-size: 0.9rem;">Selecciona un bloque primero</p>
+        </div>
 
-        <label style="margin-top: 15px; display: block;">Tiempo (minutos)</label>
-        <input type="number" id="tiempoExamen" value="30" min="1" max="120" style="width: 100%; padding: 8px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; font-size: 1rem;">
+        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+            <div style="flex: 1;">
+                <label>Nº Preguntas</label>
+                <input type="number" id="numPreguntas" placeholder="Todas" min="1" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid var(--sidebar-border); background: var(--sidebar-input-bg); color: var(--sidebar-text);">
+            </div>
+            <div style="flex: 1;">
+                <label>Tiempo (min)</label>
+                <input type="number" id="tiempoExamen" value="30" min="1" max="120" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid var(--sidebar-border); background: var(--sidebar-input-bg); color: var(--sidebar-text);">
+            </div>
+        </div>
 
         <div style="margin-top: 10px;">
             <label style="display: flex; align-items: center; cursor: pointer;">
@@ -51,7 +69,7 @@
         <div style="margin-top: 10px;">
             <label style="display: flex; align-items: center; cursor: pointer;">
                 <input type="checkbox" id="modoAleatorioCheck" style="width: 20px; height: 20px; margin-right: 10px;" checked> 
-                Preguntas Aleatorias
+                Mezclar Preguntas
             </label>
         </div>
 
@@ -65,20 +83,20 @@
         
         <div id="zona-dashboard" style="display: none; width: 100%; max-width: 800px; margin: 0 auto; padding: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <h2 style="color: #2f3542; margin: 0;">Mi Progreso por Temas 📈</h2>
+                <h2 style="color: var(--text-color); margin: 0;">Mi Progreso por Temas 📈</h2>
                 <button onclick="volverAlTest()" style="background: #57606f; padding: 10px 20px; color: white; border: none; border-radius: 5px; cursor: pointer;">Volver al Test</button>
             </div>
             
-            <div style="background: #f1f2f6; padding: 15px; border-radius: 8px; margin-bottom: 25px; display: flex; gap: 15px; align-items: center; border: 1px solid #dfe4ea;">
-                <strong style="color: #2f3542;">Filtrar:</strong>
-                <select id="filtro-bloque" onchange="actualizarFiltrosDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; flex: 1;">
+            <div style="background: var(--panel-bg-sec); padding: 15px; border-radius: 8px; margin-bottom: 25px; display: flex; gap: 15px; align-items: center; border: 1px solid var(--border-color);">
+                <strong style="color: var(--text-color);">Filtrar:</strong>
+                <select id="filtro-bloque" onchange="actualizarFiltrosDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid var(--border-color); flex: 1; background: var(--panel-bg); color: var(--text-color);">
                     <option value="TODOS">Todos los bloques</option>
                     <option value="BLOQUE1">Bloque 1</option>
                     <option value="BLOQUE2">Bloque 2</option>
                     <option value="BLOQUE3">Bloque 3</option>
                     <option value="BLOQUE4">Bloque 4</option>
                 </select>
-                <select id="filtro-tema" onchange="renderizarDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; flex: 1;">
+                <select id="filtro-tema" onchange="renderizarDashboard()" style="padding: 8px; border-radius: 5px; border: 1px solid var(--border-color); flex: 1; background: var(--panel-bg); color: var(--text-color);">
                     <option value="TODOS">Todos los temas</option>
                 </select>
             </div>
@@ -90,10 +108,10 @@
             
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
                 <div id="contador" style="margin: 0; font-weight: bold;">Preparado...</div>
-                <div id="reloj" style="font-size: 1.2rem; font-weight: bold; color: #2f3542; background: #f1f2f6; padding: 5px 15px; border-radius: 20px; transition: 0.3s;">⏱️ 00:00</div>
+                <div id="reloj" style="font-size: 1.2rem; font-weight: bold; color: var(--text-color); background: var(--panel-bg-sec); padding: 5px 15px; border-radius: 20px; transition: 0.3s;">⏱️ 00:00</div>
             </div>
             
-            <div style="background: #eee; height: 8px; border-radius: 4px; margin-bottom: 20px; overflow: hidden;">
+            <div style="background: var(--barra-vacía); height: 8px; border-radius: 4px; margin-bottom: 20px; overflow: hidden;">
                 <div id="barra-progreso" style="background: #3742fa; width: 0%; height: 100%; transition: 0.3s;"></div>
             </div>
 
@@ -110,10 +128,10 @@
                 <button onclick="cambiarPregunta(1)" style="background: #3742fa; padding: 10px 20px; font-size: 1rem;">Siguiente ➡</button>
             </div>
 
-            <div id="zona-repaso" style="display: none; margin-top: 30px; border-top: 2px solid #eee; padding-top: 20px;"></div>
+            <div id="zona-repaso" style="display: none; margin-top: 30px; border-top: 2px solid var(--border-color); padding-top: 20px;"></div>
 
-            <div style="margin-top: 40px; border-top: 2px solid #eee; padding-top: 20px;">
-                <h3 style="color: #2f3542; margin-bottom: 10px; font-size: 1.1rem;">Últimos Tests Realizados ☁️</h3>
+            <div style="margin-top: 40px; border-top: 2px solid var(--border-color); padding-top: 20px;">
+                <h3 style="color: var(--text-color); margin-bottom: 10px; font-size: 1.1rem;">Últimos Tests Realizados ☁️</h3>
                 <div id="tabla-historial"></div>
             </div>
         </div>
@@ -121,6 +139,16 @@
     </div>
 </div>
 
-<script src="app.js?v=16"></script>
+<script src="app.js?v=19"></script>
+<script>
+        // Registrar el Service Worker para que el móvil reconozca la App
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                .then(reg => console.log('App instalable lista!'))
+                .catch(err => console.log('Error:', err));
+            });
+        }
+    </script>
 </body>
 </html>
