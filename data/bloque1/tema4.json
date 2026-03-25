@@ -1,0 +1,866 @@
+[
+  {
+    "pregunta": "El Tercer Plan de Acción de Gobierno Abierto de España (2017-2019) tiene 5 grandes ejes, que son:",
+    "opciones": [
+      "Colaboración, Participación, Transparencia, Compartición y Comunicación.",
+      "Colaboración, Inclusión, Transparencia, Rendición de cuentas y Formación.",
+      "No discriminación, Participación, Transparencia, Planificación y Formación.",
+      "Colaboración, Participación, Transparencia, Rendición de cuentas y Formación."
+    ],
+    "correcta": 3,
+    "explicacion": "Ejes del III Plan: Colaboración, Participación, Transparencia, Rendición de cuentas y Formación."
+  },
+  {
+    "pregunta": "La Agenda Digital 'España Digital 2025' recoge un conjunto de medidas articuladas en:",
+    "opciones": ["6 ejes.", "9 ejes.", "12 ejes.", "10 ejes."],
+    "correcta": 3,
+    "explicacion": "Se articula en 10 ejes estratégicos para la transformación digital."
+  },
+  {
+    "pregunta": "Los órganos específicos de representación de los funcionarios son:",
+    "opciones": [
+      "Los Comités de empresa.",
+      "La Unión General de Trabajadores y Comisiones Obreras.",
+      "Los Subdirectores Generales.",
+      "Los Delegados de Personal y las Juntas de Personal."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 39 TREBEP: Juntas de Personal y Delegados de Personal son los órganos de representación."
+  },
+  {
+    "pregunta": "¿Qué número de Objetivos de Desarrollo Sostenible (ODS) se incluyen en la Agenda 2030?",
+    "opciones": ["15", "12", "16", "17"],
+    "correcta": 3,
+    "explicacion": "La Agenda 2030 contiene 17 ODS y 169 metas."
+  },
+  {
+    "pregunta": "En relación con las retribuciones de los funcionarios, indique la afirmación correcta:",
+    "opciones": [
+      "El complemento especifico retribuye el especial rendimiento y la iniciativa.",
+      "Las pagas extraordinarias no pueden ser fijas en su cuantía.",
+      "El conjunto de retribuciones del grupo A no puede exceder en más de 3 veces las del E.",
+      "El complemento de destino es el correspondiente al nivel del puesto que desempeñe."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 24 TREBEP: El complemento de destino retribuye el nivel del puesto asignado."
+  },
+  {
+    "pregunta": "Según la Ley 19/2013 de Transparencia, es una infracción muy grave:",
+    "opciones": [
+      "El incumplimiento del deber de respeto a la Constitución.",
+      "El abuso de autoridad en el ejercicio del cargo.",
+      "El incumplimiento de la obligación de rendir cuentas (Art. 137 LGP).",
+      "El incumplimiento de plazos en materia de incompatibilidades sin mantenimiento de la situación."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 28 Ley 19/2013: La falta de rendición de cuentas es infracción muy grave."
+  },
+  {
+    "pregunta": "La condición de funcionario se pierde por:",
+    "opciones": [
+      "Comisión de cualquier delito.",
+      "Sanción de suspensión de funciones.",
+      "Renuncia voluntaria.",
+      "Retrasos injustificados detectados por la Inspección."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 63 TREBEP: La renuncia es una de las causas tasadas de pérdida de la condición."
+  },
+  {
+    "pregunta": "El control de las obligaciones de publicidad activa de la AGE será objeto de control por parte de:",
+    "opciones": [
+      "El Ministerio de Política Territorial.",
+      "La Secretaría de Estado de Función Pública.",
+      "El Consejo de Transparencia y Buen Gobierno.",
+      "La Subdirección General de Transparencia."
+    ],
+    "correcta": 2,
+    "explicacion": "El CTBG es el órgano encargado de velar por la publicidad activa."
+  },
+  {
+    "pregunta": "Sobre el personal eventual, el TREBEP establece que:",
+    "opciones": [
+      "Su nombramiento y cese son reglados.",
+      "Su condición no podrá constituir mérito para el acceso a la Función Pública.",
+      "Se rige por el mismo convenio del personal laboral.",
+      "Realiza funciones administrativas de carácter permanente."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 12.4 TREBEP: La condición de eventual no es mérito para oposiciones ni promoción interna."
+  },
+  {
+    "pregunta": "En el Portal de Transparencia, la información debe adecuarse a los principios de:",
+    "opciones": [
+      "Accesibilidad, integridad e interoperabilidad.",
+      "Accesibilidad, reutilización e interoperabilidad.",
+      "Accesibilidad, disponibilidad y reutilización.",
+      "Accesibilidad, disponibilidad e integridad."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 11 Ley 19/2013: Accesibilidad, interoperabilidad y reutilización."
+  },
+  {
+    "pregunta": "¿Quién forma parte de la Comisión de Transparencia y Buen Gobierno?",
+    "opciones": [
+      "Un experto propuesto por el Consejo de Consumidores y Usuarios.",
+      "Un representante de la AIReF.",
+      "Un representante del CGPJ.",
+      "Un representante de la Agencia Española de Protección de Datos."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 36.2 Ley 19/2013: La Comisión incluye un representante de la AEPD."
+  },
+  {
+    "pregunta": "Respecto al Portal de la Transparencia de la AGE, es cierto que:",
+    "opciones": [
+      "Es dependiente de la Dirección de Tecnologías de la Información (TIC).",
+      "Debe contener la información cuya solicitud sea más frecuente.",
+      "Su dirección web es www.portaltransparencia.gob.es.",
+      "Todas las anteriores son correctas."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 10 Ley 19/2013: Contendrá información de publicidad activa y la solicitada con mayor frecuencia."
+  },
+  {
+    "pregunta": "El TREBEP se aplica directamente solo cuando su legislación específica lo disponga a:",
+    "opciones": [
+      "Personal de Entidades Locales.",
+      "Personal de Universidades Públicas.",
+      "Jueces, Magistrados y Fiscales.",
+      "Personal de Organismos Públicos vinculados."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 4 TREBEP: El personal de Justicia se rige por su legislación propia y el TREBEP es supletorio."
+  },
+  {
+    "pregunta": "¿Cuál de estos derechos de los funcionarios se considera individual de ejercicio colectivo?",
+    "opciones": [
+      "La libertad sindical.",
+      "Vacaciones y descansos.",
+      "Libre asociación profesional.",
+      "Formación continua."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 15 TREBEP: Libertad sindical, huelga y negociación son derechos colectivos."
+  },
+  {
+    "pregunta": "Las pagas extraordinarias se devengan en los meses de:",
+    "opciones": ["Junio y diciembre.", "Junio y enero.", "Julio y enero.", "Julio y diciembre."],
+    "correcta": 0,
+    "explicacion": "Dato Academia: El devengo se produce en junio y diciembre."
+  },
+  {
+    "pregunta": "Un funcionario tiene permiso por traslado de domicilio sin cambio de residencia de:",
+    "opciones": ["1 día.", "2 días.", "3 días.", "8 días."],
+    "correcta": 0,
+    "explicacion": "Art. 48.b TREBEP: 1 día por traslado de domicilio sin cambio de residencia."
+  },
+  {
+    "pregunta": "La solicitud de acceso a la información pública según la Ley 19/2013:",
+    "opciones": [
+      "Solo puede presentarse en castellano.",
+      "Obliga a indicar una dirección electrónica.",
+      "Debe ser motivada necesariamente.",
+      "No está obligada a ser motivada."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 17.3 Ley 19/2013: El solicitante no está obligado a motivar su solicitud."
+  },
+  {
+    "pregunta": "El complemento de productividad retribuye:",
+    "opciones": [
+      "El grado personal consolidado.",
+      "La especial dedicación del puesto.",
+      "El especial rendimiento, actividad extraordinaria e interés o iniciativa.",
+      "Los servicios extraordinarios fuera de la jornada normal."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 24.c TREBEP: La productividad retribuye el rendimiento especial."
+  },
+  {
+    "pregunta": "Las resoluciones de compatibilidad para un segundo puesto público se inscribirán en:",
+    "opciones": [
+      "Registro Central de Personal.",
+      "Oficina de Conflicto de Intereses.",
+      "Registros de Personal correspondientes.",
+      "Secretaría de Estado de Función Pública."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 18 Ley 53/1984: Inscripción en los registros de personal correspondientes."
+  },
+  {
+    "pregunta": "¿Cuál es una retribución básica según el TREBEP?",
+    "opciones": [
+      "Complemento de destino.",
+      "Pagas extraordinarias.",
+      "Productividad.",
+      "Indemnizaciones por servicio."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 23 TREBEP: Las básicas son Sueldo, Trienios y Pagas Extraordinarias."
+  },
+  {
+    "pregunta": "El plazo máximo para resolver una reclamación ante el Consejo de Transparencia es de:",
+    "opciones": [
+      "1 mes con silencio estimatorio.",
+      "1 mes con silencio desestimatorio.",
+      "3 meses con silencio estimatorio.",
+      "3 meses con silencio desestimatorio."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 24.4 Ley 19/2013: Plazo de 3 meses, silencio negativo."
+  },
+  {
+    "pregunta": "¿Qué entidad NO está sujeta a las disposiciones de transparencia de la actividad pública?",
+    "opciones": [
+      "Corporaciones de Derecho Público en actividades administrativas.",
+      "Fundaciones del sector público.",
+      "Sociedades mercantiles con participación pública superior al 40%.",
+      "Administración Local."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 2 Ley 19/2013: Deben tener una participación superior al 50% para estar sujetas totalmente."
+  },
+  {
+    "pregunta": "El sistema normal de provisión de puestos es:",
+    "opciones": ["Concurso.", "Oposición.", "Libre designación.", "Concurso-oposición."],
+    "correcta": 0,
+    "explicacion": "Art. 78.2 TREBEP: El concurso es el sistema normal de provisión."
+  },
+  {
+    "pregunta": "Un funcionario interino por exceso de tareas puede ser nombrado por un máximo de:",
+    "opciones": [
+      "3 meses en 6 meses.",
+      "12 meses en 18 meses.",
+      "9 meses en un periodo de 18 meses.",
+      "6 meses en un periodo de 12 meses."
+    ],
+    "correcta": 2,
+    "explicacion": "Actualización Art. 10.1.c TREBEP: Máximo 9 meses en un periodo de 18."
+  },
+  {
+    "pregunta": "El cupo mínimo de reserva para personas con discapacidad en la OEP es del:",
+    "opciones": ["2%", "5%", "7%", "10%"],
+    "correcta": 2,
+    "explicacion": "Art. 59 TREBEP: Cupo no inferior al 7% de las vacantes."
+  },
+  {
+    "pregunta": "La excedencia voluntaria por interés particular requiere haber servido durante:",
+    "opciones": ["1 año previo.", "2 años previos.", "5 años inmediatamente anteriores.", "No requiere tiempo mínimo."],
+    "correcta": 2,
+    "explicacion": "Art. 89.2 TREBEP: Se requiere haber prestado servicios por un periodo mínimo de 5 años."
+  },
+  {
+    "pregunta": "El número máximo de miembros de una Mesa de Negociación es:",
+    "opciones": ["10", "12", "15", "20"],
+    "correcta": 2,
+    "explicacion": "Art. 34.1 TREBEP: Las Mesas de Negociación no podrán superar los 15 miembros."
+  },
+  {
+    "pregunta": "La sanción de separación del servicio de un funcionario solo puede ser acordada por:",
+    "opciones": [
+      "El Ministro.",
+      "El Gobierno o Consejo de Gobierno de la CCAA.",
+      "El Subsecretario de la Presidencia.",
+      "El Director de Función Pública."
+    ],
+    "correcta": 1,
+    "explicacion": "Sanción más grave: requiere acuerdo del Consejo de Ministros o Gobierno Autonómico."
+  },
+  {
+    "pregunta": "¿Qué recurso cabe contra la resolución de una solicitud de acceso a información?",
+    "opciones": [
+      "Recurso de alzada.",
+      "Reclamación potestativa ante el CTBG.",
+      "Recurso extraordinario de revisión.",
+      "Solo vía judicial directa."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 24 Ley 19/2013: Reclamación potestativa que sustituye a los recursos administrativos ordinarios."
+  },
+  {
+    "pregunta": "¿A qué subgrupo pertenecen los funcionarios con título de Técnico Superior de FP?",
+    "opciones": ["Subgrupo A1.", "Subgrupo A2.", "Grupo B.", "Subgrupo C1."],
+    "correcta": 2,
+    "explicacion": "Art. 76 TREBEP: Para el Grupo B se exige el título de Técnico Superior."
+  },
+  {
+    "pregunta": "El permiso por fallecimiento de familiar de primer grado es de:",
+    "opciones": [
+      "2 días hábiles.",
+      "3 días hábiles en misma localidad.",
+      "5 días naturales.",
+      "15 días."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 48.a TREBEP: 3 días en misma localidad, 5 si es en distinta."
+  },
+  {
+    "pregunta": "¿Quién nombra al Presidente del Consejo de Transparencia?",
+    "opciones": [
+      "El Rey.",
+      "El Gobierno por Real Decreto por 5 años.",
+      "El Congreso por mayoría absoluta.",
+      "El Ministro de Hacienda."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 37 Ley 19/2013: Gobierno por Real Decreto, periodo de 5 años no renovable."
+  },
+  {
+    "pregunta": "La carrera horizontal consiste en el ascenso de grado o escalón:",
+    "opciones": [
+      "Cambiando de cuerpo.",
+      "Sin necesidad de cambiar de puesto de trabajo.",
+      "Mediante concurso de méritos.",
+      "Pasando a un subgrupo superior."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 16.3.a TREBEP: Progresión sin cambio de puesto."
+  },
+  {
+    "pregunta": "Un funcionario nombrado personal eventual pasa a situación de:",
+    "opciones": [
+      "Servicio activo.",
+      "Servicios especiales.",
+      "Excedencia por interés particular.",
+      "Excedencia forzosa."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 87.1.i TREBEP: El personal eventual se considera servicios especiales."
+  },
+  {
+    "pregunta": "El ODS 5 trata sobre:",
+    "opciones": ["Hambre cero.", "Igualdad de género.", "Vida submarina.", "Energía limpia."],
+    "correcta": 1,
+    "explicacion": "ODS 5: Lograr la igualdad entre los géneros."
+  },
+  {
+    "pregunta": "La situación de 'Suspensión Provisional' conlleva percibir:",
+    "opciones": [
+      "Sueldo íntegro.",
+      "Nada.",
+      "Retribuciones básicas y prestación por hijo a cargo.",
+      "Sueldo base y trienios solamente."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 98.3 TREBEP: Básicas y, en su caso, ayudas familiares."
+  },
+  {
+    "pregunta": "¿Qué ley es la norma básica de incompatibilidades de la Función Pública?",
+    "opciones": ["Ley 30/1984.", "Ley 53/1984.", "Ley 40/2015.", "Ley 39/2015."],
+    "correcta": 1,
+    "explicacion": "Ley 53/1984, de 26 de diciembre."
+  },
+  {
+    "pregunta": "El permiso de paternidad (progenitor diferente a madre biológica) actual es de:",
+    "opciones": ["8 semanas.", "12 semanas.", "16 semanas.", "20 semanas."],
+    "correcta": 2,
+    "explicacion": "Art. 49.c TREBEP: Equiparado a 16 semanas."
+  },
+  {
+    "pregunta": "La inhabilitación absoluta firme produce:",
+    "opciones": [
+      "Suspensión por 6 años.",
+      "Pérdida de la condición de funcionario.",
+      "Pase a excedencia forzosa.",
+      "Traslado de localidad."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 63.e TREBEP: La inhabilitación absoluta es causa de pérdida de la condición."
+  },
+  {
+    "pregunta": "El ODS 13 se denomina:",
+    "opciones": ["Vida terrestre.", "Acción por el clima.", "Alianzas.", "Paz y justicia."],
+    "correcta": 1,
+    "explicacion": "ODS 13: Adoptar medidas urgentes para combatir el cambio climático."
+  },
+  {
+    "pregunta": "Las faltas graves prescriben a los:",
+    "opciones": ["6 meses.", "1 año.", "2 años.", "3 años."],
+    "correcta": 2,
+    "explicacion": "Art. 97 TREBEP: Las graves prescriben a los 2 años."
+  },
+  {
+    "pregunta": "¿Quién tiene derecho a solicitar información pública según la Ley 19/2013?",
+    "opciones": [
+      "Solo ciudadanos españoles.",
+      "Solo mayores de edad.",
+      "Todas las personas.",
+      "Solo interesados directos."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 12 Ley 19/2013: Derecho de acceso universal."
+  },
+  {
+    "pregunta": "La suspensión de funciones superior a 6 meses conlleva:",
+    "opciones": [
+      "Pérdida del puesto de trabajo.",
+      "Expulsión definitiva.",
+      "Pérdida de trienios.",
+      "Suspensión del derecho a huelga."
+    ],
+    "correcta": 0,
+    "explicacion": "Dato VIP: Si la suspensión excede de 6 meses, el funcionario pierde su puesto de destino."
+  },
+  {
+    "pregunta": "El ODS 17 trata sobre:",
+    "opciones": ["Energía.", "Salud.", "Alianzas para lograr objetivos.", "Fin de la pobreza."],
+    "correcta": 2,
+    "explicacion": "ODS 17: Alianza Mundial para el Desarrollo Sostenible."
+  },
+  {
+    "pregunta": "La oferta de empleo público (OEP) debe ejecutarse en el plazo de:",
+    "opciones": ["1 año.", "2 años.", "3 años.", "5 años."],
+    "correcta": 2,
+    "explicacion": "Art. 70 TREBEP: Plazo de 3 años improrrogable."
+  },
+  {
+    "pregunta": "El teletrabajo según el Art. 47 bis del TREBEP es:",
+    "opciones": [
+      "Obligatorio por necesidades del servicio.",
+      "Voluntario y reversible.",
+      "Solo para el personal eventual.",
+      "Exclusivo para situaciones de pandemia."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: El teletrabajo tiene carácter voluntario y reversible."
+  },
+  {
+    "pregunta": "En una unidad con 80 funcionarios, la Junta de Personal tendrá:",
+    "opciones": ["3 miembros.", "5 miembros.", "7 miembros.", "9 miembros."],
+    "correcta": 1,
+    "explicacion": "Art. 39 TREBEP: De 50 a 100 funcionarios corresponden 5 representantes."
+  },
+  {
+    "pregunta": "La falta de asistencia injustificada de UN SOLO DÍA se considera:",
+    "opciones": ["Leve.", "Grave.", "Muy grave.", "Simple falta de puntualidad."],
+    "correcta": 1,
+    "explicacion": "VIP: 1 día = falta grave. El abandono de servicio (más de 3 días) es muy grave."
+  },
+  {
+    "pregunta": "El ODS 6 trata sobre:",
+    "opciones": ["Agua limpia y saneamiento.", "Energía.", "Clima.", "Hambre."],
+    "correcta": 0,
+    "explicacion": "ODS 6: Agua limpia."
+  },
+  {
+    "pregunta": "El reconocimiento de compatibilidad para el sector privado lo resuelve:",
+    "opciones": [
+      "El Ministro.",
+      "La Oficina de Conflictos de Intereses.",
+      "El Secretario de Estado de Función Pública.",
+      "El Director General del Departamento."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP: Competencia delegada en la SE de Función Pública."
+  },
+  {
+    "pregunta": "Un funcionario que es candidato a elecciones queda en situación de:",
+    "opciones": [
+      "Servicio activo con permiso.",
+      "Servicios especiales.",
+      "Excedencia forzosa.",
+      "Suspensión provisional."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 87.1.f TREBEP: Candidatos a elecciones parlamentarias."
+  },
+  {
+    "pregunta": "¿Qué rango tiene el Director del Gabinete de un Ministro?",
+    "opciones": ["Subsecretario.", "Secretario de Estado.", "Director General.", "Subdirector General."],
+    "correcta": 2,
+    "explicacion": "VIP: Gabinete Ministro = Director General; Gabinete Presidente = Secretario de Estado."
+  },
+  {
+    "pregunta": "El Secretariado del Gobierno se encarga técnicamente de:",
+    "opciones": [
+      "Custodiar las actas del Consejo de Ministros.",
+      "Nombrar a los Secretarios de Estado.",
+      "Presidir la Comisión de Subsecretarios.",
+      "Sancionar a los Directores Generales."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 9 Ley del Gobierno: Custodia de archivos y elaboración de actas."
+  },
+  {
+    "pregunta": "Un funcionario interino por vacante (Art. 10.1.a) cesará si pasan:",
+    "opciones": ["1 año.", "2 años.", "3 años sin que la plaza se ocupe.", "5 años."],
+    "correcta": 2,
+    "explicacion": "Reforma TREBEP 2021: Máximo 3 años en plaza vacante."
+  },
+  {
+    "pregunta": "El ODS 2 busca:",
+    "opciones": ["Fin de la pobreza.", "Hambre cero.", "Salud.", "Educación."],
+    "correcta": 1,
+    "explicacion": "ODS 2: Hambre cero."
+  },
+  {
+    "pregunta": "La excedencia por cuidado de familiares permite un máximo de:",
+    "opciones": ["1 año.", "2 años.", "3 años.", "5 años."],
+    "correcta": 2,
+    "explicacion": "Art. 89.4 TREBEP: No superior a 3 años."
+  },
+  {
+    "pregunta": "La falta de rendimiento que NO sea continuada se califica como:",
+    "opciones": ["Leve.", "Grave.", "Muy grave.", "No es falta."],
+    "correcta": 1,
+    "explicacion": "VIP: Falta grave. Si fuera continuada y manifiesta, podría ser muy grave."
+  },
+  {
+    "pregunta": "El ODS 14 trata sobre:",
+    "opciones": ["Bosques.", "Vida submarina.", "Clima.", "Paz."],
+    "correcta": 1,
+    "explicacion": "ODS 14: Vida submarina."
+  },
+  {
+    "pregunta": "La sanción de demérito consiste en:",
+    "opciones": [
+      "Bajar de grupo.",
+      "Penalización a efectos de carrera o movilidad.",
+      "Pérdida de antigüedad.",
+      "Traslado forzoso."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 96 TREBEP: Penalización en carrera profesional."
+  },
+  {
+    "pregunta": "¿Qué cargo tiene rango de Subsecretario según la Ley 40/2015?",
+    "opciones": [
+      "El Secretario General.",
+      "El Director General.",
+      "El Secretario de Estado.",
+      "El Jefe de Gabinete de un Ministro."
+    ],
+    "correcta": 0,
+    "explicacion": "VIP: Secretarios Generales tienen rango de Subsecretario."
+  },
+  {
+    "pregunta": "Las decisiones de la Junta de Personal requieren voto favorable de:",
+    "opciones": ["Mayoría simple.", "La mitad más uno.", "Dos tercios de sus miembros.", "Unanimidad."],
+    "correcta": 2,
+    "explicacion": "VIP Esquema: Decisiones de la Junta de Personal por 2/3."
+  },
+  {
+    "pregunta": "La rehabilitación de la condición de funcionario la concede el Gobierno con carácter:",
+    "opciones": ["Ordinario.", "Obligatorio.", "Excepcional.", "Solo por vía judicial."],
+    "correcta": 2,
+    "explicacion": "Art. 68 TREBEP: Carácter excepcional tras condena penal."
+  },
+  {
+    "pregunta": "El ODS 16 busca promover:",
+    "opciones": ["Alianzas.", "Ciudades sostenibles.", "Paz, justicia e instituciones sólidas.", "Vida terrestre."],
+    "correcta": 2,
+    "explicacion": "ODS 16: Paz y Justicia."
+  },
+  {
+    "pregunta": "¿Quién es el Secretario de la Mesa General de Negociación?",
+    "opciones": [
+      "Un representante de los sindicatos.",
+      "Un funcionario designado por la Administración.",
+      "El Director de la Función Pública.",
+      "El Ministro de Hacienda."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP Esquema: Designado por la propia Administración."
+  },
+  {
+    "pregunta": "La excedencia por violencia de género tiene reserva de puesto de:",
+    "opciones": [
+      "6 meses ampliable a 18.",
+      "12 meses.",
+      "2 años.",
+      "Todo el tiempo."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 89.5 TREBEP: 6 meses iniciales ampliables a 18 por el juez."
+  },
+  {
+    "pregunta": "El ODS 7 trata sobre:",
+    "opciones": ["Trabajo decente.", "Energía asequible y no contaminante.", "Infraestructura.", "Salud."],
+    "correcta": 1,
+    "explicacion": "ODS 7: Energía."
+  },
+  {
+    "pregunta": "La jornada general en la AGE tiene un promedio semanal de:",
+    "opciones": ["35 horas.", "37 horas y 30 minutos.", "40 horas.", "36 horas."],
+    "correcta": 1,
+    "explicacion": "Jornada estándar de la AGE según resolución anual."
+  },
+  {
+    "pregunta": "El permiso por nacimiento para la madre biológica es de:",
+    "opciones": ["12 semanas.", "14 semanas.", "16 semanas.", "20 semanas."],
+    "correcta": 2,
+    "explicacion": "Art. 49.a TREBEP: 16 semanas naturales."
+  },
+  {
+    "pregunta": "La transparencia activa obliga a publicar información en:",
+    "opciones": ["BOE solamente.", "Sedes electrónicas o webs.", "Tablones de anuncios.", "Prensa diaria."],
+    "correcta": 1,
+    "explicacion": "La publicidad activa se realiza a través de las sedes electrónicas."
+  },
+  {
+    "pregunta": "La inadmisión de una solicitud de acceso a información debe ser:",
+    "opciones": ["Solo comunicada verbalmente.", "Motivada en todo caso.", "Consultada con el Rey.", "Publicada en el Portal."],
+    "correcta": 1,
+    "explicacion": "Art. 20 Ley 19/2013: Todas las inadmisiones o denegaciones deben ser motivadas."
+  },
+  {
+    "pregunta": "El ODS 4 busca:",
+    "opciones": ["Salud.", "Educación de calidad.", "Igualdad.", "Bosques."],
+    "correcta": 1,
+    "explicacion": "ODS 4: Educación."
+  },
+  {
+    "pregunta": "La sanción de 'Suspensión firme' por falta muy grave tiene un máximo de:",
+    "opciones": ["1 año.", "3 años.", "6 años.", "De por vida."],
+    "correcta": 2,
+    "explicacion": "Art. 96 TREBEP: Límite máximo de 6 años."
+  },
+  {
+    "pregunta": "La 'Carrera Vertical' se define como la promoción en:",
+    "opciones": [
+      "Grado sin cambiar de puesto.",
+      "La estructura de puestos por concurso.",
+      "Cuerpos de otros subgrupos.",
+      "Diferentes ministerios."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 16 TREBEP: Ascenso en la estructura de puestos."
+  },
+  {
+    "pregunta": "La evaluación del desempeño tiene efectos en:",
+    "opciones": ["La carrera profesional.", "La percepción de productividad.", "La formación.", "Todas son correctas."],
+    "correcta": 3,
+    "explicacion": "Art. 20 TREBEP: Afecta a carrera, retribuciones y formación."
+  },
+  {
+    "pregunta": "El ODS 10 busca la reducción de:",
+    "opciones": ["Hambre.", "Pobreza.", "Desigualdades.", "Residuos."],
+    "correcta": 2,
+    "explicacion": "ODS 10: Desigualdades."
+  },
+  {
+    "pregunta": "Las faltas muy graves prescriben a los:",
+    "opciones": ["1 año.", "2 años.", "3 años.", "5 años."],
+    "correcta": 2,
+    "explicacion": "Art. 97 TREBEP: Muy graves a los 3 años."
+  },
+  {
+    "pregunta": "La sanción por falta leve solo puede ser:",
+    "opciones": ["Apercibimiento.", "Suspensión de 5 días.", "Multa.", "Traslado."],
+    "correcta": 0,
+    "explicacion": "Faltas leves: apercibimiento por escrito."
+  },
+  {
+    "pregunta": "El derecho a la huelga del funcionario se garantiza con:",
+    "opciones": [
+      "Suspensión total del servicio.",
+      "Mantenimiento de servicios mínimos.",
+      "Prohibición de piquetes.",
+      "Solo para personal laboral."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 15 TREBEP: El derecho a la huelga incluye servicios esenciales."
+  },
+  {
+    "pregunta": "El ODS 8 trata sobre:",
+    "opciones": [
+      "Trabajo decente y crecimiento económico.",
+      "Innovación.",
+      "Clima.",
+      "Energía."
+    ],
+    "correcta": 0,
+    "explicacion": "ODS 8: Trabajo y Economía."
+  },
+  {
+    "pregunta": "Un funcionario en servicios especiales tiene derecho a reserva de:",
+    "opciones": [
+      "El mismo puesto de trabajo.",
+      "Un puesto de la misma localidad.",
+      "Puesto, localidad y retribuciones de origen.",
+      "No tiene reserva."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 87 TREBEP: El derecho a la reserva es del mismo puesto de trabajo."
+  },
+  {
+    "pregunta": "La publicidad activa debe ser objeto de revisión al menos:",
+    "opciones": ["Cada mes.", "Anualmente.", "Cada dos años.", "No es obligatoria."],
+    "correcta": 1,
+    "explicacion": "VIP: Revisión mínima anual de la información publicada."
+  },
+  {
+    "pregunta": "El ODS 11 busca lograr ciudades:",
+    "opciones": ["Inclusivas y sostenibles.", "Solo digitales.", "Sin impuestos.", "Privatizadas."],
+    "correcta": 0,
+    "explicacion": "ODS 11: Ciudades sostenibles."
+  },
+  {
+    "pregunta": "La pérdida de nacionalidad española:",
+    "opciones": [
+      "Obliga a cambiar a personal laboral.",
+      "Es causa de cese automático.",
+      "No afecta al cargo.",
+      "Supone suspensión de 1 año."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 63 TREBEP: Requisito de permanencia en la función pública."
+  },
+  {
+    "pregunta": "El personal laboral fijo tiene derecho a readmisión si el despido es:",
+    "opciones": ["Procedente.", "Nulo solamente.", "Declarado improcedente por falta muy grave.", "No tiene derecho nunca."],
+    "correcta": 2,
+    "explicacion": "Art. 96.2 TREBEP: Readmisión obligatoria si es improcedente."
+  },
+  {
+    "pregunta": "El ODS 12 trata sobre:",
+    "opciones": ["Producción y consumo responsables.", "Alianzas.", "Paz.", "Pobreza."],
+    "correcta": 0,
+    "explicacion": "ODS 12: Producción y consumo."
+  },
+  {
+    "pregunta": "Las Juntas de Personal se constituyen en unidades de al menos:",
+    "opciones": ["10 funcionarios.", "50 funcionarios.", "100 funcionarios.", "500 funcionarios."],
+    "correcta": 1,
+    "explicacion": "Art. 39 TREBEP: Mínimo 50 funcionarios por unidad electoral."
+  },
+  {
+    "pregunta": "La sanción impuesta por falta leve prescribe al:",
+    "opciones": ["Mes.", "Año.", "Dos años.", "Tres años."],
+    "correcta": 1,
+    "explicacion": "Art. 97.1 TREBEP: Sanciones leves prescriben al año (Ojo, la falta a los 6 meses)."
+  },
+  {
+    "pregunta": "El ODS 3 busca garantizar:",
+    "opciones": ["Educación.", "Salud y bienestar.", "Igualdad.", "Energía."],
+    "correcta": 1,
+    "explicacion": "ODS 3: Salud."
+  },
+  {
+    "pregunta": "El principio de 'No dejar a nadie atrás' pertenece a:",
+    "opciones": ["Ley de Transparencia.", "TREBEP.", "Agenda 2030.", "Código de Conducta."],
+    "correcta": 2,
+    "explicacion": "Lema central de los ODS."
+  },
+  {
+    "pregunta": "¿Quién ostenta la competencia de publicidad activa en el Congreso?",
+    "opciones": [
+      "El Presidente del Gobierno.",
+      "La Mesa del Congreso.",
+      "El Consejo de Transparencia.",
+      "El Ministro de la Presidencia."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 2.1.f Ley 19/2013: Los órganos constitucionales gestionan su propia transparencia."
+  },
+  {
+    "pregunta": "La situación de 'Servicio en otras Administraciones Públicas' da derecho a:",
+    "opciones": [
+      "Reserva del puesto de trabajo origen.",
+      "Reserva de la localidad solamente.",
+      "Continuar en el escalafón de origen.",
+      "No da ningún derecho en la administración origen."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 88 TREBEP: Se mantiene la reserva del puesto de trabajo."
+  },
+  {
+    "pregunta": "El ODS 1 es:",
+    "opciones": ["Hambre cero.", "Fin de la pobreza.", "Educación.", "Paz."],
+    "correcta": 1,
+    "explicacion": "ODS 1: Fin de la pobreza."
+  },
+  {
+    "pregunta": "¿Qué mayoría requiere el nombramiento del Presidente del CTBG?",
+    "opciones": ["Simple.", "Absoluta.", "Voto favorable de la Comisión parlamentaria correspondiente.", "Unanimidad."],
+    "correcta": 2,
+    "explicacion": "Art. 37 Ley 19/2013: Previa comparecencia ante la Comisión del Congreso."
+  },
+  {
+    "pregunta": "La inactividad de la Administración ante una solicitud de transparencia es:",
+    "opciones": ["Silencio positivo.", "Silencio negativo.", "Confirmación tácita.", "Anulación de la ley."],
+    "correcta": 1,
+    "explicacion": "Art. 20.4 Ley 19/2013: El silencio administrativo es desestimatorio."
+  },
+  {
+    "pregunta": "El permiso por cuidado de hijo con enfermedad grave requiere reducción de jornada de:",
+    "opciones": ["Al menos el 10%.", "Al menos el 25%.", "Al menos el 50%.", "Al menos el 75%."],
+    "correcta": 2,
+    "explicacion": "Art. 49.e TREBEP: Reducción de al menos el 50%."
+  },
+  {
+    "pregunta": "La falta de obediencia a las instrucciones de superiores es falta:",
+    "opciones": ["Leve.", "Grave.", "Muy grave.", "Solo si hay daño."],
+    "correcta": 1,
+    "explicacion": "Falta grave general. Si fuera desobediencia manifiesta a órdenes legítimas de carácter muy grave, subiría de nivel."
+  },
+  {
+    "pregunta": "El ODS 9 es:",
+    "opciones": ["Igualdad.", "Industria, innovación e infraestructura.", "Clima.", "Agua."],
+    "correcta": 1,
+    "explicacion": "ODS 9: Innovación e Infraestructura."
+  },
+  {
+    "pregunta": "¿Qué requisito es indispensable para ser Subdirector General?",
+    "opciones": [
+      "Ser funcionario del Subgrupo A1.",
+      "Tener 15 años de servicio.",
+      "Ser nombrado por el Rey.",
+      "Ser personal eventual."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 67 Ley 40/2015: Solo funcionarios de carrera del subgrupo A1."
+  },
+  {
+    "pregunta": "La situación de 'Excedencia por violencia terrorista' requiere:",
+    "opciones": [
+      "Haber trabajado 5 años.",
+      "Reconocimiento previo del Ministerio del Interior.",
+      "Sentencia judicial firme.",
+      "No requiere antigüedad mínima."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 89.6 TREBEP: No se exige periodo mínimo de servicios previos."
+  },
+  {
+    "pregunta": "El ODS 15 es:",
+    "opciones": ["Vida submarina.", "Vida de ecosistemas terrestres.", "Clima.", "Energía."],
+    "correcta": 1,
+    "explicacion": "ODS 15: Ecosistemas terrestres."
+  },
+  {
+    "pregunta": "¿Quién resuelve los expedientes de incompatibilidad en la AGE?",
+    "opciones": [
+      "El Ministro del ramo.",
+      "La Secretaría de Estado de Función Pública.",
+      "El Director General de Personal.",
+      "El Consejo de Ministros."
+    ],
+    "correcta": 1,
+    "explicacion": "Competencia centralizada en la Secretaría de Estado (antiguo Ministerio de Administraciones Públicas)."
+  },
+  {
+    "pregunta": "El permiso por exámenes finales tiene una duración de:",
+    "opciones": ["El día del examen.", "Dos días.", "Cinco días al año.", "Tres días."],
+    "correcta": 0,
+    "explicacion": "Art. 48.d TREBEP: Permiso por el tiempo indispensable."
+  },
+  {
+    "pregunta": "La sanción impuesta por falta muy grave prescribe a los:",
+    "opciones": ["1 año.", "2 años.", "3 años.", "6 años."],
+    "correcta": 2,
+    "explicacion": "Art. 97.1 TREBEP: Sanciones muy graves a los 3 años."
+  },
+  {
+    "pregunta": "El personal directivo profesional se nombra atendiendo a principios de:",
+    "opciones": [
+      "Confianza política pura.",
+      "Mérito, capacidad e idoneidad.",
+      "Antigüedad en el cuerpo.",
+      "Sorteo público."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 13 TREBEP: Mérito, capacidad, idoneidad, publicidad y concurrencia."
+  }
+]
