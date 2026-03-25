@@ -1,0 +1,488 @@
+[
+  {
+    "pregunta": "¿Qué mayoría se requiere para aprobar los Reglamentos de las Cámaras (Congreso y Senado)?",
+    "opciones": ["Mayoría simple.", "Mayoría de dos tercios.", "Mayoría absoluta de la Cámara en votación final.", "Mayoría de tres quintos."],
+    "correcta": 2,
+    "explicacion": "Art. 72.1 CE: Los Reglamentos de las Cámaras requieren mayoría absoluta de sus miembros en una votación final sobre su totalidad."
+  },
+  {
+    "pregunta": "El Congreso se compone de un número de Diputados comprendido entre:",
+    "opciones": ["250 y 350.", "300 y 400.", "350 y 400.", "300 y 350."],
+    "correcta": 1,
+    "explicacion": "Art. 68.1 CE: El rango constitucional es de 300 a 400 Diputados."
+  },
+  {
+    "pregunta": "¿Quién es competente en las causas penales contra Diputados y Senadores?",
+    "opciones": ["Tribunal Constitucional.", "Audiencia Nacional.", "Sala de lo Penal del Tribunal Supremo.", "Tribunal Superior de Justicia."],
+    "correcta": 2,
+    "explicacion": "Art. 71.3 CE: El aforamiento de las Cortes reside en la Sala de lo Penal del Tribunal Supremo."
+  },
+  {
+    "pregunta": "El Defensor del Pueblo es el alto comisionado de:",
+    "opciones": ["El Gobierno.", "El Rey.", "Las Cortes Generales.", "El Poder Judicial."],
+    "correcta": 2,
+    "explicacion": "Art. 54 CE: Es el alto comisionado de las Cortes Generales para la defensa de los derechos del Título I."
+  },
+  {
+    "pregunta": "Las sentencias del Tribunal Constitucional:",
+    "opciones": ["Pueden recurrirse ante el Supremo.", "No admiten recurso alguno.", "Admiten recurso de súplica.", "Solo las firma el Rey."],
+    "correcta": 1,
+    "explicacion": "Art. 164.1 CE: Tienen valor de cosa juzgada y contra ellas no cabe recurso alguno."
+  },
+  {
+    "pregunta": "¿Cuántos miembros del TC son a propuesta del Consejo General del Poder Judicial?",
+    "opciones": ["4 miembros.", "2 miembros.", "3 miembros.", "6 miembros."],
+    "correcta": 1,
+    "explicacion": "Art. 159.1 CE: De los 12 miembros, 2 son a propuesta del CGPJ."
+  },
+  {
+    "pregunta": "El mandato de los Diputados termina cuatro años después de su elección o el día de:",
+    "opciones": ["La constitución de las nuevas Cortes.", "La disolución de la Cámara.", "La convocatoria de elecciones.", "La formación de Gobierno."],
+    "correcta": 1,
+    "explicacion": "Art. 68.4 CE: El mandato termina cuatro años después de la elección o el día de la disolución de la Cámara."
+  },
+  {
+    "pregunta": "Las Cámaras se reunirán anualmente en:",
+    "opciones": ["Un periodo único de sesiones.", "Dos periodos ordinarios de sesiones.", "Tres periodos (trimestrales).", "Sesión permanente."],
+    "correcta": 1,
+    "explicacion": "Art. 73.1 CE: Se reúnen en dos periodos ordinarios: Sept-Dic y Feb-Jun."
+  },
+  {
+    "pregunta": "¿Quién preside las sesiones conjuntas de las Cortes Generales?",
+    "opciones": ["El Rey.", "El Presidente del Senado.", "El Presidente del Congreso.", "El Presidente del Gobierno."],
+    "correcta": 2,
+    "explicacion": "Art. 72.2 CE: Las sesiones conjuntas son presididas por el Presidente del Congreso de los Diputados."
+  },
+  {
+    "pregunta": "El Tribunal Constitucional se renueva por terceras partes cada:",
+    "opciones": ["2 años.", "3 años.", "4 años.", "9 años."],
+    "correcta": 1,
+    "explicacion": "Art. 159.3 CE: Los miembros se nombran por 9 años, pero la renovación de 1/3 del tribunal es cada 3 años."
+  },
+  {
+    "pregunta": "Las Cámaras pueden delegar en las Comisiones Legislativas Permanentes la aprobación de leyes, EXCEPTO:",
+    "opciones": ["Leyes ordinarias.", "Leyes de acompañamiento.", "Presupuestos Generales del Estado.", "Leyes de sanidad."],
+    "correcta": 2,
+    "explicacion": "Art. 75.3 CE: No pueden delegarse Presupuestos, Reforma Constitucional, Cuestiones Internacionales, Leyes Orgánicas ni de Bases."
+  },
+  {
+    "pregunta": "La circunscripción electoral para el Congreso es:",
+    "opciones": ["La Comunidad Autónoma.", "La Provincia.", "El Municipio.", "La Nación."],
+    "correcta": 1,
+    "explicacion": "Art. 68.2 CE: 'La circunscripción electoral es la provincia'."
+  },
+  {
+    "pregunta": "El Presidente del Tribunal Constitucional es nombrado por un periodo de:",
+    "opciones": ["9 años.", "3 años.", "4 años.", "6 años."],
+    "correcta": 1,
+    "explicacion": "Art. 160 CE: El Presidente del TC es nombrado por el Rey a propuesta del Tribunal en pleno por 3 años."
+  },
+  {
+    "pregunta": "¿Qué recurso se interpone ante el TC contra leyes o normas con rango de ley?",
+    "opciones": ["Recurso de amparo.", "Cuestión de ilegalidad.", "Recurso de inconstitucionalidad.", "Recurso de casación."],
+    "correcta": 2,
+    "explicacion": "Art. 161.1 CE: El recurso de inconstitucionalidad es el instrumento contra leyes y disposiciones normativas con rango de ley."
+  },
+  {
+    "pregunta": "Las Diputaciones Permanentes estarán presididas por:",
+    "opciones": ["El Rey.", "El Presidente del Gobierno.", "El Presidente de la Cámara respectiva.", "El Diputado de más edad."],
+    "correcta": 2,
+    "explicacion": "Art. 78.2 CE: Cada Diputación Permanente estará presidida por el Presidente de la Cámara respectiva."
+  },
+  {
+    "pregunta": "El Defensor del Pueblo supervisará la actividad de:",
+    "opciones": ["La Corona.", "La Administración.", "El Tribunal Supremo.", "Las Cortes Generales."],
+    "correcta": 1,
+    "explicacion": "Art. 54 CE: Su misión es supervisar la actividad de la Administración, dando cuenta a las Cortes."
+  },
+  {
+    "pregunta": "¿Quién puede interponer un recurso de inconstitucionalidad?",
+    "opciones": ["Cualquier ciudadano.", "El Presidente del Gobierno, 50 Diputados o 50 Senadores.", "Solo el Rey.", "El Tribunal Supremo."],
+    "correcta": 1,
+    "explicacion": "Art. 162.1 CE: Están legitimados el Presidente del Gobierno, Defensor del Pueblo, 50 Diputados, 50 Senadores y Gobiernos/Asambleas de CCAA."
+  },
+  {
+    "pregunta": "Nadie podrá ser miembro de las dos Cámaras simultáneamente según el artículo:",
+    "opciones": ["Art. 66.", "Art. 67.", "Art. 68.", "Art. 69."],
+    "correcta": 1,
+    "explicacion": "Art. 67.1 CE: Prohibición expresa de simultanear escaño en Congreso y Senado."
+  },
+  {
+    "pregunta": "El Senado es la Cámara de:",
+    "opciones": ["Representación territorial.", "Control económico.", "Segunda lectura obligatoria.", "Representación de los partidos."],
+    "correcta": 0,
+    "explicacion": "Art. 69.1 CE: 'El Senado es la Cámara de representación territorial'."
+  },
+  {
+    "pregunta": "Para ser elegido Defensor del Pueblo se requiere ser español y:",
+    "opciones": ["Licenciado en Derecho.", "Magistrado.", "Mayor de edad con pleno disfrute de derechos.", "Mayor de 40 años."],
+    "correcta": 2,
+    "explicacion": "LO 3/1981: Cualquier español mayor de edad con plenitud de derechos civiles y políticos."
+  },
+  {
+    "pregunta": "Las leyes orgánicas requieren para su aprobación en el Congreso:",
+    "opciones": ["Mayoría simple.", "Mayoría absoluta.", "Dos tercios.", "Tres quintos."],
+    "correcta": 1,
+    "explicacion": "Art. 81.2 CE: Requieren mayoría absoluta del Congreso en una votación final sobre el conjunto del proyecto."
+  },
+  {
+    "pregunta": "¿Quién nombra a los miembros del Tribunal Constitucional?",
+    "opciones": ["El Congreso.", "El Senado.", "El Rey.", "El Presidente del Gobierno."],
+    "correcta": 2,
+    "explicacion": "Art. 159.1 CE: Son nombrados formalmente por el Rey a propuesta de los distintos órganos."
+  },
+  {
+    "pregunta": "La validez de los acuerdos de las Cámaras requiere que estén reunidas:",
+    "opciones": ["Reglamentariamente y con asistencia de la mayoría de sus miembros.", "Con al menos 50 miembros.", "Con la presencia del Gobierno.", "En sesión secreta."],
+    "correcta": 0,
+    "explicacion": "Art. 79.1 CE: Quórum de asistencia (mayoría de miembros)."
+  },
+  {
+    "pregunta": "El recurso de amparo protege los derechos reconocidos en:",
+    "opciones": ["Toda la Constitución.", "Arts. 14 a 29 y 30.2.", "Solo el Título Preliminar.", "Arts. 1 a 10."],
+    "correcta": 1,
+    "explicacion": "Art. 53.2 CE: Protege la igualdad (14), derechos fundamentales (Secc. 1ª Cap. II) y objeción de conciencia (30.2)."
+  },
+  {
+    "pregunta": "Las sesiones de las Cámaras serán públicas salvo acuerdo por:",
+    "opciones": ["Mayoría simple.", "Mayoría absoluta.", "Unanimidad.", "Decisión del Rey."],
+    "correcta": 1,
+    "explicacion": "Art. 80 CE: Las sesiones son públicas salvo acuerdo en contrario de cada Cámara, adoptado por mayoría absoluta o con arreglo al Reglamento."
+  },{
+    "pregunta": "¿Quién nombra a los Presidentes de cada una de las Cámaras?",
+    "opciones": ["El Rey.", "El Gobierno.", "Las propias Cámaras de entre sus miembros.", "El Presidente del Tribunal Supremo."],
+    "correcta": 2,
+    "explicacion": "Art. 72.2 CE: Las Cámaras eligen a sus respectivos Presidentes y a los demás miembros de sus Mesas."
+  },
+  {
+    "pregunta": "Las Cámaras pueden nombrar Comisiones de Investigación sobre cualquier asunto de interés público. Sus conclusiones:",
+    "opciones": ["Son vinculantes para los Tribunales.", "No son vinculantes para los Tribunales.", "Obligan al Gobierno a dimitir.", "Tienen valor de sentencia judicial."],
+    "correcta": 1,
+    "explicacion": "Art. 76.1 CE: Las conclusiones de las Comisiones de Investigación no serán vinculantes para los Tribunales ni afectarán a las resoluciones judiciales."
+  },
+  {
+    "pregunta": "Es OBLIGATORIO comparecer a requerimiento de las Cámaras. La ley regulará las sanciones por incumplimiento:",
+    "opciones": ["Solo para funcionarios públicos.", "Para todos los ciudadanos.", "Solo para el Gobierno.", "Solo para miembros de la Corona."],
+    "correcta": 1,
+    "explicacion": "Art. 76.2 CE: Será obligatorio comparecer a requerimiento de las Cámaras. La ley establecerá las sanciones."
+  },
+  {
+    "pregunta": "¿Qué artículo de la CE establece que 'nadie podrá ser miembro de las dos Cámaras simultáneamente'?",
+    "opciones": ["Artículo 66.", "Artículo 67.", "Artículo 68.", "Artículo 69."],
+    "correcta": 1,
+    "explicacion": "Art. 67.1 CE: Establece la incompatibilidad de ser Diputado y Senador al mismo tiempo."
+  },
+  {
+    "pregunta": "Las Cámaras pueden recibir peticiones individuales y colectivas, pero SIEMPRE:",
+    "opciones": ["De forma presencial.", "Por escrito.", "A través del Defensor del Pueblo.", "Mediante manifestación ciudadana."],
+    "correcta": 1,
+    "explicacion": "Art. 77.1 CE: Las peticiones deben ser siempre por escrito, quedando prohibida la presentación directa por manifestaciones ciudadanas."
+  },
+  {
+    "pregunta": "La duración de las Diputaciones Permanentes es de:",
+    "opciones": ["Dos años renovables.", "Toda la legislatura hasta la constitución de las nuevas Cortes.", "Solo durante las vacaciones parlamentarias.", "Cuatro años improrrogables."],
+    "correcta": 1,
+    "explicacion": "Art. 78.3 CE: Expirado el mandato o en caso de disolución, las Diputaciones Permanentes velarán por los poderes de las Cámaras hasta que se constituyan las nuevas."
+  },
+  {
+    "pregunta": "Para la elección de Senadores, ¿cuántos corresponden a las poblaciones de Ceuta y Melilla?",
+    "opciones": ["4 senadores cada una.", "1 senador cada una.", "2 senadores cada una.", "3 senadores cada una."],
+    "correcta": 2,
+    "explicacion": "Art. 69.4 CE: Las poblaciones de Ceuta y Melilla elegirán cada una de ellas dos Senadores."
+  },
+  {
+    "pregunta": "¿Cuál es la mayoría necesaria en el Tribunal Constitucional para adoptar decisiones en el Pleno?",
+    "opciones": ["Mayoría simple.", "Mayoría de dos tercios.", "Mayoría de los miembros que lo integran (mayoría absoluta).", "Unanimidad."],
+    "correcta": 0,
+    "explicacion": "LOTC: Salvo casos especiales, el Tribunal Constitucional adopta sus decisiones por mayoría simple de los miembros presentes en el Pleno o Salas, teniendo el Presidente voto de calidad en caso de empate."
+  },
+  {
+    "pregunta": "¿Quién ostenta el cargo de Presidente del Tribunal Constitucional por derecho propio?",
+    "opciones": ["El Magistrado con más antigüedad.", "El Presidente del Tribunal Supremo.", "No existe tal cargo por derecho propio; debe ser elegido por el Pleno.", "El Fiscal General del Estado."],
+    "correcta": 2,
+    "explicacion": "Art. 160 CE: El Presidente del TC es elegido por el Pleno del propio Tribunal y nombrado por el Rey por un periodo de 3 años."
+  },
+  {
+    "pregunta": "El Defensor del Pueblo puede ser cesado por:",
+    "opciones": ["Decisión unilateral del Gobierno.", "Expiración del plazo de su nombramiento (5 años).", "Pérdida de confianza del Rey.", "Sentencia del Tribunal Supremo por delito leve."],
+    "correcta": 1,
+    "explicacion": "L.O. 3/1981: El Defensor del Pueblo cesa, entre otras causas, por expiración del plazo para el que fue nombrado (5 años)."
+  },
+  {
+    "pregunta": "¿Qué recurso se utiliza para impugnar disposiciones de las Comunidades Autónomas ante el TC?",
+    "opciones": ["Recurso de amparo.", "Cuestión de inconstitucionalidad.", "Impugnaciones previstas en el Art. 161.2 de la CE.", "Recurso de súplica."],
+    "correcta": 2,
+    "explicacion": "Art. 161.2 CE: El Gobierno podrá impugnar ante el TC las disposiciones y resoluciones de los órganos de las CCAA."
+  },
+  {
+    "pregunta": "El cargo de Magistrado del Tribunal Constitucional es INCOMPATIBLE con:",
+    "opciones": ["La docencia universitaria.", "Todo mandato representativo y cargos políticos o administrativos.", "La escritura de libros jurídicos.", "La jubilación."],
+    "correcta": 1,
+    "explicacion": "Art. 159.4 CE: Los miembros del TC tienen las mismas incompatibilidades que los miembros del Poder Judicial; no pueden tener cargos representativos ni políticos."
+  },
+  {
+    "pregunta": "¿Quién puede plantear una CUESTIÓN de inconstitucionalidad ante el TC?",
+    "opciones": ["El Presidente del Gobierno.", "50 Diputados.", "Un Juez o Tribunal que considere que una norma con rango de ley puede ser contraria a la CE.", "El Defensor del Pueblo."],
+    "correcta": 2,
+    "explicacion": "Art. 163 CE: La cuestión de inconstitucionalidad la plantean los órganos judiciales (Jueces o Tribunales) cuando dudan de la constitucionalidad de una ley aplicable a un caso."
+  },
+  {
+    "pregunta": "¿Cuántos Senadores eligen las islas mayores (Gran Canaria, Mallorca y Tenerife)?",
+    "opciones": ["1 senador.", "2 senadores.", "3 senadores.", "4 senadores."],
+    "correcta": 2,
+    "explicacion": "Art. 69.3 CE: Cada una de las islas mayores elegirá tres Senadores."
+  },
+  {
+    "pregunta": "Las Cámaras pueden reunirse en sesión extraordinaria a petición de:",
+    "opciones": ["El Rey.", "El Gobierno, la Diputación Permanente o la mayoría absoluta de los miembros de cualquiera de las Cámaras.", "El Presidente del Tribunal Supremo.", "Los ciudadanos mediante firmas."],
+    "correcta": 1,
+    "explicacion": "Art. 73.2 CE: Las sesiones extraordinarias se convocan a petición del Gobierno, la Diputación Permanente o la mayoría absoluta de miembros."
+  },
+  {
+    "pregunta": "El Defensor del Pueblo rinde informe anual a las Cortes Generales sobre su gestión y:",
+    "opciones": ["Puede dictar multas.", "Puede presentar informes extraordinarios si la gravedad lo aconseja.", "Puede detener a funcionarios.", "Puede anular leyes."],
+    "correcta": 1,
+    "explicacion": "L.O. 3/1981: Además del informe anual, el Defensor del Pueblo puede presentar informes extraordinarios ante las Cortes."
+  },
+  {
+    "pregunta": "¿Cuál es la mayoría necesaria para que el Senado proponga a sus miembros para el TC?",
+    "opciones": ["Mayoría simple.", "Mayoría absoluta.", "Tres quintos (3/5).", "Dos tercios (2/3)."],
+    "correcta": 2,
+    "explicacion": "Art. 159.1 CE: Tanto Congreso como Senado proponen por mayoría de tres quintos (3/5)."
+  },
+  {
+    "pregunta": "Según el artículo 70 de la CE, la ley electoral determinará las causas de INELEGIBILIDAD e INCOMPATIBILIDAD, que incluirán en todo caso a:",
+    "opciones": ["Los miembros del Tribunal Constitucional.", "Los funcionarios de Correos.", "Los profesores de instituto.", "Los periodistas titulados."],
+    "correcta": 0,
+    "explicacion": "Art. 70.1.a CE: Los componentes del Tribunal Constitucional son inelegibles e incompatibles para las Cortes."
+  },
+  {
+    "pregunta": "¿Qué ocurre si una sentencia del TC declara la inconstitucionalidad de una ley?",
+    "opciones": ["La ley sigue vigente hasta que el Gobierno la cambie.", "Tiene plenos efectos frente a todos (erga omnes) desde su publicación en el BOE.", "Solo afecta a las partes del proceso.", "Requiere sanción real."],
+    "correcta": 1,
+    "explicacion": "Art. 164.1 CE: Las sentencias que declaren la inconstitucionalidad de una ley tienen efectos contra todos desde el día siguiente a su publicación en el BOE."
+  },
+  {
+    "pregunta": "Los miembros de las Cortes Generales NO estarán ligados por:",
+    "opciones": ["Mandato imperativo.", "La Constitución.", "Las leyes penales.", "El secreto profesional."],
+    "correcta": 0,
+    "explicacion": "Art. 67.2 CE: 'Los miembros de las Cortes Generales no estarán ligados por mandato imperativo'."
+  },
+  {
+    "pregunta": "¿De cuántas personas se compone cada Diputación Permanente?",
+    "opciones": ["21 miembros.", "Un mínimo de 21 miembros.", "Un máximo de 21 miembros.", "41 miembros."],
+    "correcta": 1,
+    "explicacion": "Art. 78.1 CE: Las Diputaciones Permanentes estarán formadas por un mínimo de veintiún miembros."
+  },
+  {
+    "pregunta": "¿Quién convoca las elecciones y disuelve las Cortes?",
+    "opciones": ["El Presidente del Gobierno.", "El Rey, mediante Real Decreto refrendado por el Presidente del Gobierno.", "El Tribunal Supremo.", "El Presidente del Congreso."],
+    "correcta": 1,
+    "explicacion": "Art. 62.b CE: Corresponde al Rey convocar y disolver las Cortes Generales y convocar elecciones en los términos previstos en la CE."
+  },
+  {
+    "pregunta": "El Defensor del Pueblo goza de:",
+    "opciones": ["Inmunidad judicial total.", "Inviolabilidad por las opiniones manifestadas en el ejercicio de sus funciones.", "Sueldo de Ministro de por vida.", "Derecho de veto en las leyes."],
+    "correcta": 1,
+    "explicacion": "L.O. 3/1981: El Defensor del Pueblo no estará sujeto a mandato imperativo ni será perseguido por sus opiniones en el ejercicio del cargo (inviolabilidad)."
+  },
+  {
+    "pregunta": "El quórum de votación para adoptar acuerdos en las Cámaras es:",
+    "opciones": ["Mayoría simple de los miembros presentes (siempre que haya quórum de asistencia).", "Mayoría absoluta de la Cámara.", "Unanimidad de la Mesa.", "Voto favorable del Rey."],
+    "correcta": 0,
+    "explicacion": "Art. 79.2 CE: Los acuerdos, para ser válidos, deberán ser aprobados por la mayoría de los miembros presentes, sin perjuicio de las mayorías especiales."
+  },
+  {
+    "pregunta": "¿Quién elige a los 2 miembros del TC propuestos por el Gobierno?",
+    "opciones": ["El Consejo de Ministros.", "El Presidente del Gobierno en solitario.", "Las Cortes Generales.", "El Consejo de Estado."],
+    "correcta": 0,
+    "explicacion": "Art. 159.1 CE: El Gobierno (Consejo de Ministros) propone directamente a sus 2 miembros sin necesidad de votación parlamentaria."
+  },[
+  {
+    "pregunta": "Según el Título I, Capítulo Cuarto, de la Constitución Española de 1978, señale la opción correcta:",
+    "opciones": [
+      "Los derechos y libertades reconocidos no vinculan a todas las Administraciones Públicas.",
+      "Sólo por ley orgánica podrá regularse el ejercicio de tales derechos y libertades.",
+      "Una ley orgánica regulará la institución del Defensor del Pueblo.",
+      "El reconocimiento de los principios del Capítulo tercero informará la judicialización positiva."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 54 CE: 'Una ley orgánica regulará la institución del Defensor del Pueblo'. (Nota: El ejercicio de derechos se regula por LEY, pero no necesariamente Orgánica, salvo los de la Sección 1ª)."
+  },
+  {
+    "pregunta": "¿Quién puede ser elegido Defensor del Pueblo, según la Ley Orgánica 3/1981, de 6 de abril?",
+    "opciones": [
+      "Cualquier Magistrado elegido por las Cortes Generales.",
+      "Cualquier Senador elegido por las Cortes Generales.",
+      "Cualquier persona que se encuentre en el pleno disfrute de sus derechos civiles.",
+      "Cualquier español mayor de edad en pleno disfrute de sus derechos civiles y políticos."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 3 LO 3/1981: Podrá ser elegido cualquier español mayor de edad que se encuentre en el pleno disfrute de sus derechos civiles y políticos."
+  },
+  {
+    "pregunta": "Según el artículo 71 de la CE, ¿quién es el competente en las causas contra Diputados y Senadores?",
+    "opciones": [
+      "Sala de lo Penal del Tribunal Constitucional.",
+      "Sala de lo Contencioso Administrativo del Tribunal Supremo.",
+      "Sala de lo Penal del Tribunal Supremo.",
+      "Sala de lo Civil del Tribunal Supremo."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 71.3 CE: En las causas contra Diputados y Senadores será competente la Sala de lo Penal del Tribunal Supremo."
+  },
+  {
+    "pregunta": "Según el Título III 'De las Cortes Generales', las Cámaras podrán:",
+    "opciones": [
+      "Recibir peticiones individuales y colectivas, siempre por escrito, quedando prohibida la presentación directa por manifestaciones ciudadanas.",
+      "Delegar en las Comisiones Legislativas la aprobación de los Presupuestos Generales del Estado.",
+      "Reunirse en sesión extraordinaria a petición de la mayoría simple de sus miembros.",
+      "Nombrar Comisiones de Investigación cuyas conclusiones sean vinculantes para los Tribunales."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 77.1 CE: Las Cámaras pueden recibir peticiones por escrito, pero prohíbe la presentación directa mediante manifestaciones ciudadanas."
+  },
+  {
+    "pregunta": "Según el artículo 159 de la CE, los miembros del Tribunal Constitucional serán designados por períodos de:",
+    "opciones": [
+      "9 años y se renovarán por terceras partes cada 3.",
+      "9 años y se renovarán por terceras partes cada 2.",
+      "6 años y se renovarán por terceras partes cada 3.",
+      "6 años y se renovarán por terceras partes cada 2."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 159.3 CE: Los miembros del Tribunal Constitucional serán designados por un período de nueve años y se renovarán por terceras partes cada tres."
+  },,{
+    "pregunta": "La Diputación Permanente del Congreso representa proporcionalmente a:",
+    "opciones": [
+      "Los partidos políticos.",
+      "Los diputados.",
+      "Los grupos parlamentarios.",
+      "El pueblo español."
+    ],
+    "correcta": 2,
+    "explicacion": "Según el Reglamento y la Constitución, las Diputaciones Permanentes representan a los grupos parlamentarios en proporción a su importancia numérica[cite: 5, 8, 167]."
+  },
+  {
+    "pregunta": "Para la atribución de escaños del Congreso de los Diputados no se tendrán en cuenta aquellas candidaturas que no hubiesen obtenido al menos:",
+    "opciones": [
+      "Un 5% de los votos válidamente emitidos.",
+      "Un 10% de los votos válidamente emitidos.",
+      "Un 3% de los votos válidamente emitidos.",
+      "Depende de cada provincia."
+    ],
+    "correcta": 2,
+    "explicacion": "En el sistema electoral general, el umbral mínimo para entrar en el reparto de escaños es el 3% de los votos válidamente emitidos en la circunscripción[cite: 15, 18, 171]."
+  },
+  {
+    "pregunta": "Las enmiendas a la totalidad en el proceso de elaboración de un texto legislativo, tanto en el Congreso como en el Senado se debatirán:",
+    "opciones": [
+      "En la comisión legislativa.",
+      "En pleno.",
+      "En ponencia.",
+      "En sesión conjunta."
+    ],
+    "correcta": 1,
+    "explicacion": "Las enmiendas a la totalidad (que afectan al espíritu del texto o proponen un texto alternativo) se debaten siempre en el Pleno de la Cámara[cite: 25, 29, 175]."
+  },
+  {
+    "pregunta": "La Mesa del Congreso se compone de:",
+    "opciones": [
+      "El Presidente, cuatro Vicepresidentes y dos Secretarios.",
+      "El Presidente, dos Vicepresidentes y dos Secretarios.",
+      "El Presidente, dos Vicepresidentes y cuatro Secretarios.",
+      "El Presidente, cuatro Vicepresidentes y cuatro Secretarios."
+    ],
+    "correcta": 3,
+    "explicacion": "El órgano rector del Congreso está formado por 9 miembros: 1 Presidente, 4 Vicepresidentes y 4 Secretarios[cite: 54, 61, 183]."
+  },
+  {
+    "pregunta": "En la iniciativa parlamentaria NO se denomina proposición de ley al texto presentado por:",
+    "opciones": [
+      "El Congreso de los Diputados.",
+      "El pueblo (Iniciativa Popular).",
+      "El Senado.",
+      "El Gobierno."
+    ],
+    "correcta": 3,
+    "explicacion": "Los textos legislativos presentados por el Gobierno reciben el nombre específico de 'Proyectos de Ley', mientras que el resto son 'Proposiciones de Ley'[cite: 90, 94, 193]."
+  },
+  {
+    "pregunta": "De conformidad con lo previsto en el artículo 81 de la Constitución española, se aprobará mediante Ley Orgánica:",
+    "opciones": [
+      "La Ley de Presupuestos Generales del Estado.",
+      "El estatuto de los funcionarios públicos.",
+      "El régimen del concejo abierto.",
+      "El régimen electoral general."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 81 CE: Son leyes orgánicas las relativas al desarrollo de los derechos fundamentales, los Estatutos de Autonomía y el régimen electoral general[cite: 95, 99, 195]."
+  },
+  {
+    "pregunta": "Según el artículo 82 de la Constitución Española, cuando se trate de refundir varios textos legales en uno solo, la delegación legislativa de las Cortes Generales en el Gobierno deberá otorgarse mediante:",
+    "opciones": [
+      "Una Ley de Bases.",
+      "Una Ley Orgánica.",
+      "Una Ley Ordinaria.",
+      "Un Decreto Legislativo."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 82 CE: La delegación legislativa se hace mediante Ley de Bases para formar textos articulados, o mediante Ley Ordinaria para refundir varios textos en uno solo[cite: 2371, 2374, 2591]."
+  },
+  {
+    "pregunta": "Señale cuál de las siguientes competencias NO pertenece al Tribunal Constitucional:",
+    "opciones": [
+      "Recurso previo de inconstitucionalidad.",
+      "Recurso contra disposiciones reglamentarias.",
+      "Recurso de amparo.",
+      "Impugnaciones del artículo 161 de la Constitución."
+    ],
+    "correcta": 1,
+    "explicacion": "El TC revisa normas con rango de LEY. El control de las disposiciones reglamentarias (normas con rango inferior a la ley) corresponde a los Tribunales ordinarios de la jurisdicción Contencioso-Administrativa[cite: 2433, 2435, 2592]."
+  },
+  {
+    "pregunta": "Según se establece por la Constitución Española de 1978, las disposiciones del Gobierno que contengan legislación delegada recibirán el título de:",
+    "opciones": [
+      "Decretos Legislativos.",
+      "Decretos Leyes.",
+      "Proposiciones de Ley.",
+      "Leyes Orgánicas."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 85 CE: Las disposiciones del Gobierno que contengan legislación delegada de las Cortes (ya sea textos articulados o refundidos) reciben el nombre de Decretos Legislativos[cite: 2446, 2448, 2605]."
+  },
+  {
+    "pregunta": "De acuerdo con la Constitución española de 1978, cualquier alteración de los límites provinciales habrá de ser aprobada por:",
+    "opciones": [
+      "Real Decreto del Consejo de Ministros.",
+      "Decreto de la Comunidad Autónoma respectiva.",
+      "Ley ordinaria de las Cortes Generales.",
+      "Ley Orgánica de las Cortes Generales."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 141.1 CE: Cualquier alteración de los límites provinciales habrá de ser aprobada por las Cortes Generales mediante Ley Orgánica[cite: 2452, 2457, 2606]."
+  },
+  {
+    "pregunta": "Según el artículo 153 de la Constitución española, el control de la actividad de los órganos de las Comunidades Autónomas NO se ejercerá por:",
+    "opciones": [
+      "El Tribunal Constitucional.",
+      "El Gobierno.",
+      "El Consejo General del Poder Judicial.",
+      "El Tribunal de Cuentas."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 153 CE: El control se ejerce por el TC (constitucionalidad), Gobierno (competencias delegadas), Jurisdicción Contencioso-Administrativa (administración autónoma) y Tribunal de Cuentas (económico). El CGPJ no pinta nada aquí[cite: 2463, 2467, 2608]."
+  },
+  {
+    "pregunta": "¿Cómo se denominan las Leyes en las que las Cortes atribuyen a las Comunidades Autónomas facultades para dictar normas legislativas en materias de competencia estatal, fijando los principios, bases y directrices para ello?",
+    "opciones": [
+      "Leyes de Transferencia.",
+      "Leyes Marco.",
+      "Leyes de Bases.",
+      "Leyes Básicas."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 150.1 CE: Las Cortes pueden atribuir a las CCAA, mediante Leyes Marco, la facultad de dictar normas sobre materias de competencia estatal, fijando principios y directrices[cite: 2553, 2555, 2623]."
+  }
+]
+]
