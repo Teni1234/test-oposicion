@@ -1,0 +1,597 @@
+[
+  {
+    "pregunta": "En relación con la cuestión de confianza, señale la afirmación correcta:",
+    "opciones": [
+      "Sólo puede plantearla el Congreso de los Diputados, debiendo ser propuesta por, al menos, la décima parte de los Diputados.",
+      "La confianza sólo se entenderá otorgada cuando vote a favor de la misma la mayoría absoluta de los Diputados.",
+      "La confianza se entenderá otorgada cuando vote a favor de la misma la mayoría absoluta de los Diputados y la mayoría simple de los Senadores.",
+      "Sólo el Presidente del Gobierno es quien puede plantearla ante el Congreso de los Diputados."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 112 CE: El Presidente del Gobierno, previa deliberación del Consejo de Ministros, puede plantear ante el Congreso de los Diputados la cuestión de confianza."
+  },
+  {
+    "pregunta": "De acuerdo con el artículo 103.1 de la Constitución Española, la Administración Pública sirve con objetividad los intereses generales y actúa de acuerdo con los principios de:",
+    "opciones": [
+      "Eficacia, eficiencia, descentralización, desconcentración y cooperación, con sometimiento pleno a la Ley y al Derecho.",
+      "Eficacia, jerarquía, descentralización, desconcentración y coordinación, con sometimiento pleno a la ley y al Derecho.",
+      "Eficacia, jerarquía, descentralización, concentración y coordinación, con sometimiento pleno al ordenamiento jurídico.",
+      "Eficacia, jerarquía, descentralización, desconcentración y cooperación, con sometimiento pleno a la Ley y al Derecho."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 103.1 CE: Actúa de acuerdo con los principios de eficacia, jerarquía, descentralización, desconcentración y coordinación."
+  },
+  {
+    "pregunta": "Los miembros del Gobierno, excluido el Presidente:",
+    "opciones": [
+      "Son nombrados y separados por el Presidente del Tribunal Constitucional.",
+      "Son nombrados y separados por el Presidente del Gobierno.",
+      "Son nombrados y separados por el Rey, a propuesta del Presidente del Gobierno.",
+      "Son nombrados y separados por las Cortes Generales, a propuesta del Rey."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 100 CE: Los demás miembros del Gobierno serán nombrados y separados por el Rey, a propuesta de su Presidente."
+  },
+  {
+    "pregunta": "En relación al Gobierno en funciones, señale la afirmación correcta:",
+    "opciones": [
+      "Limitará su gestión a la aprobación del proyecto de ley de Presupuestos Generales del Estado, facilitando el normal desarrollo del proceso de formación del nuevo Gobierno.",
+      "Limitará su gestión al despacho ordinario de los asuntos públicos, absteniéndose de adoptar, salvo casos de urgencia debidamente acreditados o por razones de interés general, cualesquiera otras medidas.",
+      "Podrá presentar proyectos de ley al Congreso de los Diputados o, en su caso, al Senado.",
+      "Estará compuesto por el Presidente del Gobierno en funciones, los Vicepresidentes y cinco Ministros designados por el Rey."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 21 Ley 50/1997: El Gobierno en funciones facilitará el desarrollo del proceso de formación del nuevo Gobierno y limitará su gestión al despacho ordinario de los asuntos públicos."
+  },
+  {
+    "pregunta": "Según la Constitución Española, el Gobierno responde solidariamente en su gestión política ante:",
+    "opciones": [
+      "El Congreso de los Diputados.",
+      "El Rey.",
+      "El Senado.",
+      "Las Cámaras y sus Comisiones."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 108 CE: El Gobierno responde solidariamente en su gestión política ante el Congreso de los Diputados."
+  },
+  {
+    "pregunta": "Señale hasta cuándo continuará en sus funciones el Gobierno cesante:",
+    "opciones": [
+      "La toma de posesión del nuevo Gobierno.",
+      "Que lo determine la ley.",
+      "Que se constituyan las nuevas Cámaras.",
+      "Que transcurran 30 días, una vez celebradas las elecciones generales."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 101.2 CE: El Gobierno cesante continuará en funciones hasta la toma de posesión del nuevo Gobierno."
+  },
+  {
+    "pregunta": "El candidato a la Presidencia del Gobierno es:",
+    "opciones": [
+      "Elegido por los ciudadanos.",
+      "Propuesto por el Congreso de los Diputados.",
+      "Propuesto por el Rey.",
+      "Elegido por el Presidente del Congreso."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 99.1 CE: Después de cada renovación del Congreso, el Rey, previa consulta con los representantes de los Grupos políticos, propondrá un candidato a la Presidencia del Gobierno."
+  },
+  {
+    "pregunta": "Según el artículo 112 de la Constitución Española, la cuestión de confianza planteada por el Presidente del Gobierno, se entenderá otorgada cuando vote a su favor la mayoría:",
+    "opciones": [
+      "Absoluta de las Cortes Generales.",
+      "Absoluta de los Diputados.",
+      "Simple de los Diputados.",
+      "Simple de las Cortes Generales."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 112 CE: La confianza se entenderá otorgada cuando vote a favor de la misma la mayoría simple de los Diputados."
+  },
+  {
+    "pregunta": "Señale cuál de las siguientes NO es una causa de cese del Gobierno conforme al artículo 101 de la Constitución:",
+    "opciones": [
+      "Tras la celebración de elecciones generales.",
+      "En los casos de pérdida de la confianza parlamentaria previstos en la Constitución.",
+      "Por presentación de una moción de censura.",
+      "Por dimisión o fallecimiento de su Presidente."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 101.1 CE: El Gobierno cesa por la ADOPCIÓN de una moción de censura, no por su mera presentación."
+  },
+  {
+    "pregunta": "La responsabilidad criminal del Presidente y los demás miembros del Gobierno será exigible:",
+    "opciones": [
+      "Ante la Sala de lo Penal de la Audiencia Nacional.",
+      "Ante el Tribunal Constitucional.",
+      "Ante la Sala de lo Penal del Tribunal Supremo.",
+      "Ante la sala especial de la Audiencia Nacional que a estos efectos prevé la LOPJ."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 102.1 CE: La responsabilidad criminal será exigible ante la Sala de lo Penal del Tribunal Supremo."
+  },
+  {
+    "pregunta": "Según el artículo 115 de la Constitución Española, el Presidente del Gobierno, previa deliberación del Consejo de Ministros, y bajo su responsabilidad, podrá proponer la disolución de:",
+    "opciones": [
+      "El Congreso, del Senado o las Cortes Generales.",
+      "Solamente el Congreso.",
+      "El Congreso, pero sólo mediante la tramitación de una moción de censura.",
+      "El Congreso y el Senado mediante Referéndum."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 115.1 CE: El Presidente podrá proponer la disolución del Congreso, del Senado o de las Cortes Generales."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes funciones corresponde al Presidente del Gobierno?",
+    "opciones": [
+      "Aprobar los proyectos de ley y su remisión al Congreso de los Diputados o, en su caso, al Senado.",
+      "Resolver los conflictos de atribuciones que puedan surgir entre los diferentes Ministerios.",
+      "Acordar la negociación y firma de tratados internacionales, así como su aplicación provisional.",
+      "El nombramiento y separación de los Vicepresidentes y Ministros."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 2.2.m Ley 50/1997: Corresponde al Presidente proponer al Rey el nombramiento y separación de los Vicepresidentes y de los Ministros."
+  },
+  {
+    "pregunta": "El Gobierno se rige, en su organización y funcionamiento, entre otras, por la Ley:",
+    "opciones": [
+      "Ley 50/1997, de 27 de noviembre.",
+      "Ley 50/1999, de 26 de noviembre.",
+      "Ley 50/1996, de 28 de noviembre.",
+      "Ley 50/1998, de 29 de noviembre."
+    ],
+    "correcta": 0,
+    "explicacion": "El Gobierno se rige por la Ley 50/1997, de 27 de noviembre, del Gobierno."
+  },
+  {
+    "pregunta": "El Presidente del Gobierno:",
+    "opciones": [
+      "Aprueba el Proyecto de Ley de Presupuestos Generales del Estado.",
+      "Plantea ante el Congreso de los Diputados, previa deliberación del Consejo de Ministros, la moción de censura.",
+      "Manifiesta el consentimiento del Estado para obligarse internacionalmente por medio de Tratados.",
+      "Crea, modifica y suprime, por Real Decreto, los Departamentos Ministeriales así como las Secretarías de Estado."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 2.2.j Ley 50/1997: Es competencia del Presidente crear, modificar y suprimir por Real Decreto los Departamentos Ministeriales y las Secretarías de Estado."
+  },
+  {
+    "pregunta": "Según el artículo 18 de la ley 50/1997, de 27 de noviembre, del Gobierno, ¿quién actúa como Secretario de este órgano colegiado?",
+    "opciones": [
+      "El Vicepresidente Primero.",
+      "El Ministro portavoz del Gobierno.",
+      "El Ministro de la Presidencia.",
+      "El Ministro de Justicia."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 18.1 Ley 50/1997: El Ministro de la Presidencia actuará como Secretario del Consejo de Ministros."
+  },
+  {
+    "pregunta": "Según se expone en el artículo 113 de la Constitución Española, la moción de censura deberá ser propuesta por:",
+    "opciones": [
+      "Al menos la décima parte de los Diputados.",
+      "Al menos un veinte por ciento de los Diputados.",
+      "Al menos la décima parte de cada una de las Cámaras.",
+      "Al menos 20 Diputados y 20 Senadores."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 113.2 CE: Deberá ser propuesta al menos por la décima parte de los Diputados e incluir un candidato a la Presidencia."
+  },
+  {
+    "pregunta": "Según lo establecido en el artículo 98 de la Constitución:",
+    "opciones": [
+      "El Gobierno se compone del Presidente, de los Vicepresidentes, en su caso de los Ministros y de los Secretarios de Estado y de los demás miembros que establezca la ley.",
+      "El Gobierno se compone del Presidente, de los Vicepresidentes, de los Ministros, de los Secretarios de Estado y de los demás miembros que establezca la ley.",
+      "El Gobierno se compone del Presidente, de los de los Ministros de los Secretarios de Estado y de los demás miembros que establezca la ley.",
+      "El Gobierno se compone del Presidente, de los Vicepresidentes, en su caso, de los Ministros y de los demás miembros que establezca la ley."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 98.1 CE: El Gobierno se compone del Presidente, de los Vicepresidentes, en su caso, de los Ministros y de los demás miembros que establezca la ley."
+  },
+  {
+    "pregunta": "Indique cuál de las siguientes funciones no corresponde al Presidente del Gobierno, de conformidad con lo dispuesto en el artículo 2 de la Ley 50/1997, del Gobierno:",
+    "opciones": [
+      "Proponer al Rey la disolución del Congreso, del Senado o de las Cortes Generales.",
+      "Plantear ante el Congreso de los Diputados, previa deliberación del Consejo de Ministros, la cuestión de confianza.",
+      "Dirigir la política de defensa y ejercer respecto de las Fuerzas Armadas las funciones previstas en la legislación.",
+      "Expedir los decretos acordados en el Consejo de Ministros."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 62.f CE: Corresponde al REY expedir los decretos acordados en el Consejo de Ministros, no al Presidente."
+  },
+  {
+    "pregunta": "El ejercicio de la potestad reglamentaria corresponde:",
+    "opciones": [
+      "Al Rey.",
+      "Al Gobierno.",
+      "A las Cortes Generales.",
+      "A los Tribunales de Justicia."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 97 CE: El Gobierno ejerce la función ejecutiva y la potestad reglamentaria de acuerdo con la Constitución y las leyes."
+  },
+  {
+    "pregunta": "La Constitución Española de 1978 en su artículo 113 establece que:",
+    "opciones": [
+      "El Congreso de los Diputados puede exigir la responsabilidad jurídica del Gobierno mediante la adopción por mayoría absoluta de la moción de censura.",
+      "El Congreso de los Diputados puede exigir la responsabilidad política del Gobierno mediante la adopción por mayoría simple de la moción de censura.",
+      "El Congreso de los Diputados puede exigir la responsabilidad civil del Gobierno mediante la adopción por mayoría absoluta de la moción de censura.",
+      "El Congreso de los Diputados puede exigir la responsabilidad política del Gobierno mediante la adopción por mayoría absoluta de la moción de censura."
+    ],
+    "correcta": 3,
+    "explicacion": "Art. 113.1 CE: El Congreso exige responsabilidad POLÍTICA mediante mayoría ABSOLUTA."
+  },
+  {
+    "pregunta": "¿Qué Título de la Constitución está dedicado a la regulación del Gobierno?",
+    "opciones": ["El Título III.", "El Título IV.", "El Título V.", "El Título VII."],
+    "correcta": 1,
+    "explicacion": "El Título IV de la Constitución Española regula 'Del Gobierno y de la Administración'."
+  },
+  {
+    "pregunta": "¿Cuál es el supremo órgano consultivo del Gobierno?",
+    "opciones": ["El Consejo del Reino.", "El Consejo de Estado.", "El Consejo Real.", "El Consejo Consultivo."],
+    "correcta": 1,
+    "explicacion": "Según el artículo 107 de la CE, el Consejo de Estado es el supremo órgano consultivo del Gobierno."
+  },
+  {
+    "pregunta": "¿Cuál es el plazo para convocar nuevas elecciones si ningún candidato a Presidente obtiene la confianza del Congreso?",
+    "opciones": ["Un mes desde la primera votación.", "Dos meses desde la primera votación.", "Dos meses desde la segunda votación.", "Dos meses desde la tercera votación."],
+    "correcta": 1,
+    "explicacion": "Art. 99.5 CE: Si transcurrido el plazo de dos meses a partir de la primera votación de investidura ningún candidato obtiene la confianza, el Rey disolverá las Cámaras."
+  },
+  {
+    "pregunta": "¿Qué tiempo máximo puede durar un estado de alarma inicialmente?",
+    "opciones": ["15 días.", "30 días.", "7 días.", "10 días."],
+    "correcta": 0,
+    "explicacion": "Art. 116 CE: El estado de alarma será declarado por un plazo máximo de quince días."
+  },
+  {
+    "pregunta": "¿Quién determina el ámbito territorial de un estado de sitio?",
+    "opciones": ["Las Cortes Generales.", "El Senado.", "EL Congreso de los Diputados.", "El Consejo de Ministros."],
+    "correcta": 2,
+    "explicacion": "Art. 116 CE: El Congreso de los Diputados determina el ámbito territorial, duración y condiciones del estado de sitio."
+  },
+  {
+    "pregunta": "Disueltas las Cortes Generales, no procederá nueva disolución antes de que transcurra:",
+    "opciones": ["Un año desde la anterior.", "Seis meses desde la anterior.", "365 días naturales desde la anterior.", "200 días hábiles desde la anterior."],
+    "correcta": 0,
+    "explicacion": "Art. 115 CE: No procederá nueva disolución antes de que transcurra un año desde la anterior, salvo el caso del art. 99.5 CE."
+  },
+  {
+    "pregunta": "La moción de censura se adoptará por el Congreso de los Diputados por mayoría:",
+    "opciones": ["Absoluta.", "Simple.", "De dos tercios.", "De tres quintos."],
+    "correcta": 0,
+    "explicacion": "Art. 113 CE: La responsabilidad política se exige mediante la adopción por mayoría absoluta de la moción de censura."
+  },
+  {
+    "pregunta": "¿Cuántos días deben transcurrir desde la presentación de una moción de censura hasta su votación?",
+    "opciones": ["Dos días.", "Tres días.", "Cuatro días.", "Cinco días."],
+    "correcta": 3,
+    "explicacion": "Art. 113.3 CE: La moción de censura no podrá ser votada hasta que transcurran cinco días desde su presentación."
+  },
+  {
+    "pregunta": "Según la Ley 40/2015, son órganos directivos de la Administración General del Estado:",
+    "opciones": ["Los Ministros y los Secretarios de Estado.", "Los Subsecretarios y Secretarios Generales.", "Los Directores Generales y Subdirectores Generales.", "Los Delegados del Gobierno."],
+    "correcta": 2,
+    "explicacion": "Art. 55 Ley 40/2015: Los Directores Generales y Subdirectores Generales tienen la consideración de órganos directivos."
+  },
+  {
+    "pregunta": "En caso de extraordinaria y urgente necesidad, el Gobierno dicta disposiciones que toman la forma de:",
+    "opciones": ["Proyecto de ley.", "Proposición de ley.", "Decreto-ley.", "Decreto legislativo."],
+    "correcta": 2,
+    "explicacion": "Art. 86 CE: Forma establecida para casos de extraordinaria y urgente necesidad."
+  },
+  {
+    "pregunta": "¿Cómo son las deliberaciones del Consejo de Ministros?",
+    "opciones": ["Públicas en cuánto su contenido.", "Secretas.", "Secretas si así se decide por mayoría.", "Públicas en todo caso."],
+    "correcta": 1,
+    "explicacion": "Art. 14 Ley 50/1997: Las deliberaciones del Consejo de Ministros tienen carácter secreto."
+  },
+  {
+    "pregunta": "El estado de excepción no podrá exceder de:",
+    "opciones": ["Quince días.", "Treinta días.", "Veinte días.", "Sesenta días."],
+    "correcta": 1,
+    "explicacion": "Art. 116 CE: El plazo máximo es de treinta días, prorrogables por otro plazo igual."
+  },
+  {
+    "pregunta": "¿Qué rango tienen los Delegados del Gobierno en las CCAA?",
+    "opciones": ["Rango de Ministro.", "Rango de Subsecretario.", "Rango de Director General.", "Rango de Secretario de Estado."],
+    "correcta": 1,
+    "explicacion": "Art. 72 Ley 40/2015: Los Delegados del Gobierno tienen rango de Subsecretario."
+  },
+  {
+    "pregunta": "¿Quién es el jefe superior de todo el personal de un Ministerio?",
+    "opciones": ["El Ministro.", "El Secretario de Estado.", "El Subsecretario.", "El Director General."],
+    "correcta": 2,
+    "explicacion": "Art. 63 Ley 40/2015: El Subsecretario ostenta la jefatura superior de todo el personal del Departamento."
+  },
+  {
+    "pregunta": "¿Quién decide la creación de nuevas Secretarías de Estado?",
+    "opciones": ["El Rey por Ley.", "El Consejo de Ministros por Acuerdo.", "El Presidente del Gobierno por Real Decreto.", "Las Cortes Generales."],
+    "correcta": 2,
+    "explicacion": "Art. 2 Ley 50/1997: El Presidente tiene competencia para crear, modificar y suprimir Secretarías de Estado."
+  },
+  {
+    "pregunta": "¿Qué recurso interpone el Presidente del Gobierno ante el TC?",
+    "opciones": ["Recurso de amparo.", "Cuestión de inconstitucionalidad.", "Recurso de inconstitucionalidad.", "Conflicto de atribuciones."],
+    "correcta": 2,
+    "explicacion": "Art. 162 CE: El Presidente está legitimado para interponer el recurso de inconstitucionalidad."
+  },
+  {
+    "pregunta": "La suplencia de los Ministros recae sobre:",
+    "opciones": ["El Subsecretario.", "Otro miembro del Gobierno.", "El Secretario de Estado.", "El Director General."],
+    "correcta": 1,
+    "explicacion": "Art. 13 Ley 50/1997: La suplencia de los miembros del Gobierno debe recaer en otro miembro del Gobierno."
+  },
+  {
+    "pregunta": "La responsabilidad criminal del Gobierno se exige ante la Sala:",
+    "opciones": ["Sala 1ª del TS.", "Sala 2ª del TS.", "Sala 3ª del TS.", "Sala de lo Penal de la Audiencia Nacional."],
+    "correcta": 1,
+    "explicacion": "Se exige ante la Sala Segunda (de lo Penal) del Tribunal Supremo."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes NO es un principio del artículo 103 de la CE?",
+    "opciones": ["Jerarquía.", "Descentralización.", "Autonomía.", "Coordinación."],
+    "correcta": 2,
+    "explicacion": "Los principios son: eficacia, jerarquía, descentralización, desconcentración y coordinación."
+  },
+  {
+    "pregunta": "¿Cuál es el órgano de colaboración y preparación del Consejo de Ministros?",
+    "opciones": ["La Junta de Portavoces.", "Las Comisiones Delegadas.", "La Comisión General de Secretarios de Estado y Subsecretarios.", "El Gabinete de la Presidencia."],
+    "correcta": 2,
+    "explicacion": "Art. 8 Ley 50/1997: Órgano encargado de preparar los asuntos que van al Consejo de Ministros."
+  },
+  {
+    "pregunta": "¿Qué requisito de nacionalidad se exige para ser miembro del Gobierno?",
+    "opciones": [
+      "Ser español, sin más distinción.",
+      "Ser español de origen.",
+      "Ser español y tener la nacionalidad de un país de la UE.",
+      "No se exige nacionalidad española, solo residencia legal."
+    ],
+    "correcta": 0,
+    "explicacion": "VIP: Según la Ley del Gobierno, se requiere ser español, mayor de edad, disfrutar de derechos de sufragio y no estar inhabilitado."
+  },
+  {
+    "pregunta": "¿Cómo se determina la suplencia de los Ministros para el despacho de asuntos ordinarios?",
+    "opciones": [
+      "Por Real Decreto del Rey.",
+      "Por Real Decreto del Presidente del Gobierno.",
+      "Por Orden del Ministro saliente.",
+      "Por acuerdo de la Comisión General de Secretarios de Estado."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: La suplencia se determina por Real Decreto del Presidente del Gobierno (Art. 13 Ley 50/1997)."
+  },
+  {
+    "pregunta": "¿Qué rango tienen los Directores de los Gabinetes del Presidente y de los Vicepresidentes del Gobierno?",
+    "opciones": [
+      "Rango de Subsecretario.",
+      "Rango de Secretario de Estado.",
+      "Rango de Director General.",
+      "Depende del Consejo de Ministros."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: Los Directores de los Gabinetes del Presidente y de los Vicepresidentes tienen rango de Secretario de Estado."
+  },
+  {
+    "pregunta": "En cuanto al personal eventual de los Gabinetes de los Ministros, ¿qué rango ostenta su Director?",
+    "opciones": [
+      "Rango de Secretario de Estado.",
+      "Rango de Subsecretario.",
+      "Rango de Director General.",
+      "Rango de Subdirector General."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP: El Director del Gabinete de un Ministro tiene rango de Director General."
+  },
+  {
+    "pregunta": "¿Qué órgano es el responsable de la elaboración de las Actas de las reuniones del Consejo de Ministros?",
+    "opciones": [
+      "El Ministro de la Presidencia.",
+      "El Secretario de Estado de Relaciones con las Cortes.",
+      "El Secretariado del Gobierno.",
+      "El Vicepresidente Primero."
+    ],
+    "correcta": 2,
+    "explicacion": "VIP: El Secretariado del Gobierno se encarga de la elaboración de las actas de los Consejos de Ministros."
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de la Comisión General de Secretarios de Estado y Subsecretarios?",
+    "opciones": [
+      "Dictar Reales Decretos-Leyes.",
+      "Preparar las sesiones del Consejo de Ministros.",
+      "Resolver recursos de alzada.",
+      "Nombrar a los Directores Generales."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: Su función primordial es el examen de los asuntos que van a ser sometidos a aprobación del Consejo de Ministros."
+  },
+  {
+    "pregunta": "¿Qué mayoría se requiere para que el Congreso apruebe la moción de censura?",
+    "opciones": [
+      "Mayoría absoluta de los miembros presentes.",
+      "Mayoría absoluta de los miembros que integran la Cámara.",
+      "Mayoría simple.",
+      "Mayoría de dos tercios."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: Requiere mayoría absoluta del total de diputados (176 votos)."
+  },
+  {
+    "pregunta": "¿Quién ejerce la Presidencia del Consejo de Ministros cuando el Rey asiste a sus sesiones?",
+    "opciones": [
+      "El Rey.",
+      "El Presidente del Gobierno.",
+      "El Rey y el Presidente de forma conjunta.",
+      "El Ministro de la Presidencia."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: Aunque el Rey presida a efectos informativos (Art. 62.g CE), la dirección corresponde siempre al Presidente del Gobierno."
+  },
+  {
+    "pregunta": "¿Qué órgano colegiado del Gobierno se encarga de coordinar a varios Ministerios en materias comunes?",
+    "opciones": [
+      "La Comisión General de Secretarios de Estado.",
+      "Las Comisiones Delegadas del Gobierno.",
+      "El Gabinete de la Presidencia.",
+      "La Junta de Portavoces."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 6 Ley 50/1997: Las Comisiones Delegadas coordinan cuestiones que afectan a varios Ministerios."
+  },
+  {
+    "pregunta": "¿Quién actúa como Secretario en las reuniones de la Comisión General de Secretarios de Estado y Subsecretarios?",
+    "opciones": [
+      "El Ministro de la Presidencia.",
+      "El Director del Secretariado del Gobierno.",
+      "El Secretario de Estado de Comunicación.",
+      "El Subsecretario más antiguo."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: Según la Ley 50/1997, el Director del Secretariado del Gobierno ejerce la secretaría de esta comisión."
+  },
+  {
+    "pregunta": "En el Gobierno en funciones, ¿puede el Presidente plantear una cuestión de confianza?",
+    "opciones": [
+      "Sí, en casos de extrema urgencia.",
+      "No, tiene prohibido plantear la cuestión de confianza.",
+      "Sí, previa deliberación del Consejo de Ministros.",
+      "Solo si el Congreso lo autoriza."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: El Gobierno en funciones no puede plantear la cuestión de confianza ni proponer la disolución de las Cámaras."
+  },
+  {
+    "pregunta": "El cese del Presidente del Gobierno conlleva automáticamente:",
+    "opciones": [
+      "El cese de todo el Gobierno.",
+      "El cese de los Ministros, pero no de los Secretarios de Estado.",
+      "El cese únicamente del Presidente.",
+      "La convocatoria automática de elecciones."
+    ],
+    "correcta": 0,
+    "explicacion": "Art. 101 CE: El cese del Presidente implica el de todos los demás miembros del mismo."
+  },
+  {
+    "pregunta": "¿Cuál es el órgano de apoyo encargado de la comunicación oficial del Gobierno?",
+    "opciones": [
+      "El Gabinete del Presidente.",
+      "La Secretaría de Estado de Comunicación.",
+      "El Secretariado del Gobierno.",
+      "El Ministerio de la Presidencia."
+    ],
+    "correcta": 1,
+    "explicacion": "La Secretaría de Estado de Comunicación es la responsable de la política informativa oficial."
+  },
+  {
+    "pregunta": "¿Quién aprueba el Reglamento del Consejo de Estado?",
+    "opciones": [
+      "El propio Consejo de Estado.",
+      "El Gobierno mediante Real Decreto.",
+      "Las Cortes Generales.",
+      "El Rey."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: El Reglamento del Consejo de Estado lo aprueba el Consejo de Ministros mediante Real Decreto."
+  },
+  {
+    "pregunta": "¿Cuál es la sanción si el Gobierno no responde a una pregunta escrita de las Cámaras en plazo?",
+    "opciones": [
+      "Multa personal.",
+      "Se convierte en pregunta oral en Comisión.",
+      "Responsabilidad política ante el Rey.",
+      "No hay sanción jurídica."
+    ],
+    "correcta": 1,
+    "explicacion": "Si no hay respuesta en plazo, se puede pedir que se transforme en respuesta oral en Comisión."
+  },
+  {
+    "pregunta": "La responsabilidad criminal de los miembros del Gobierno por traición requiere iniciativa de:",
+    "opciones": [
+      "El 10% del Congreso.",
+      "La cuarta parte del Congreso.",
+      "La mayoría absoluta del Senado.",
+      "El Fiscal General."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 102.2 CE: La iniciativa debe partir de la cuarta parte de los miembros del Congreso."
+  },
+  {
+    "pregunta": "¿Quién preside el Consejo de Ministros en ausencia del Presidente y Vicepresidentes?",
+    "opciones": [
+      "El Ministro de la Presidencia.",
+      "Los Ministros según orden de precedencia.",
+      "El Ministro más antiguo.",
+      "El Secretario de Estado."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: En defecto de Presidente y Vicepresidentes, rige el orden de precedencia de los Ministerios."
+  },
+  {
+    "pregunta": "¿A quién corresponde la creación de los Gabinetes de los Secretarios de Estado?",
+    "opciones": [
+      "Al Presidente.",
+      "Al Consejo de Ministros mediante Real Decreto.",
+      "Al propio Secretario de Estado.",
+      "Al Ministro."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: La estructura orgánica (incluyendo gabinetes) se aprueba por Real Decreto del Consejo de Ministros."
+  },
+  {
+    "pregunta": "¿Pueden los miembros del Gobierno en funciones dictar Reales Decretos-Leyes?",
+    "opciones": [
+      "No, en ningún caso.",
+      "Sí, pero solo por razones de urgencia acreditadas.",
+      "Sí, siempre.",
+      "Solo para prórrogas."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: La Ley permite adoptar otras medidas distintas al despacho ordinario en casos de urgencia o interés general."
+  },
+  {
+    "pregunta": "¿Qué órgano se encarga de la custodia de los archivos del Consejo de Ministros?",
+    "opciones": [
+      "El Gabinete.",
+      "El Secretariado del Gobierno.",
+      "Cultura.",
+      "Subsecretaría."
+    ],
+    "correcta": 1,
+    "explicacion": "VIP: Es una función técnica específica del Secretariado del Gobierno."
+  },
+  {
+    "pregunta": "¿Qué mayoría se requiere para la declaración del estado de SITIO?",
+    "opciones": [
+      "Mayoría simple.",
+      "Mayoría absoluta del Congreso.",
+      "Mayoría de 3/5.",
+      "Absoluta de ambas Cámaras."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 116.4 CE: Se declara por mayoría absoluta del Congreso a propuesta exclusiva del Gobierno."
+  },
+  {
+    "pregunta": "¿En qué artículo de la Constitución se regula el supremo órgano consultivo del Gobierno?",
+    "opciones": ["En el artículo 105.", "En el artículo 106.", "En el artículo 107.", "En el artículo 108."],
+    "correcta": 2,
+    "explicacion": "El Consejo de Estado se regula en el artículo 107 de la Constitución Española."
+  },
+  {
+    "pregunta": "¿Qué mayoría se requiere para autorizar la acusación por traición contra el Presidente?",
+    "opciones": ["Mayoría simple del Congreso.", "Mayoría de 3/5 del Congreso.", "Mayoría absoluta del Congreso.", "Mayoría absoluta de las Cortes."],
+    "correcta": 2,
+    "explicacion": "Art. 102.2 CE: Iniciativa de la cuarta parte y aprobación por mayoría absoluta del Congreso."
+  },
+  {
+    "pregunta": "Un Ministro sin cartera es aquel que:",
+    "opciones": ["No tiene sueldo.", "No tiene asignado un Departamento Ministerial.", "No asiste al Consejo de Ministros.", "Gestiona la Casa Real."],
+    "correcta": 1,
+    "explicacion": "Miembro del Gobierno que no está al frente de un Ministerio específico."
+  },
+  {
+    "pregunta": "La iniciativa legislativa del Gobierno se ejerce mediante:",
+    "opciones": ["Proposiciones de Ley.", "Proyectos de Ley.", "Decretos-Leyes.", "Reales Decretos."],
+    "correcta": 1,
+    "explicacion": "Los textos aprobados en Consejo de Ministros se denominan Proyectos de Ley."
+  }
+]
