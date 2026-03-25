@@ -1,110 +1,73 @@
-/* RESET DE ESTILOS */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
   background: #1e272e;
   color: white;
-  min-height: 100vh;
 }
 
-/* CONTENEDOR MÁGICO */
+/* --- MÓVIL PRIMERO (Default) --- */
 .container {
-  display: flex;
-  flex-wrap: wrap; /* Si no cabe en el móvil, el test salta abajo solo */
-  min-height: 100vh;
+  display: block; /* Uno debajo de otro sí o sí */
   width: 100%;
 }
 
-/* SIDEBAR (Panel de control) */
 .sidebar {
-  flex: 1 1 300px; /* Crece si hay espacio, pero mínimo ocupa 300px */
+  width: 100%;
   background: #2f3640;
-  padding: 30px 20px;
-  border-bottom: 3px solid #3742fa;
-}
-
-.sidebar h2 {
-  color: #3742fa;
-  margin-bottom: 20px;
-}
-
-/* MAIN (Zona del test) */
-.main {
-  flex: 3 1 400px; /* Ocupa más espacio que la sidebar */
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   padding: 20px;
-  background: #1e272e;
+  border-bottom: 5px solid #3742fa;
 }
 
-/* CAJA DEL TEST */
+.main {
+  width: 100%;
+  padding: 15px;
+}
+
 .test-box {
   background: white;
   color: #333;
-  padding: 25px;
-  border-radius: 12px;
+  padding: 20px;
+  border-radius: 10px;
   width: 100%;
-  max-width: 650px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-}
-
-/* ELEMENTOS DE FORMULARIO */
-label {
-  display: block;
-  margin-top: 15px;
-  font-size: 0.9rem;
 }
 
 select, button {
   width: 100%;
-  padding: 12px;
-  margin-top: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 16px; /* Evita zoom automático en iPhone */
   border-radius: 8px;
   border: none;
-  font-size: 16px; /* Evita zoom automático en iPhone */
 }
 
 button {
   background: #3742fa;
   color: white;
   font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
-button:active {
-  transform: scale(0.98);
-}
-
-.btn-next {
-  background: #2f3542;
-  margin-top: 20px;
-}
-
-#opciones label {
-  display: block;
-  background: #f1f2f6;
-  padding: 15px;
-  margin-top: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* AJUSTES EXTRA PARA MÓVILES MUY ESTRECHOS */
-@media screen and (max-width: 480px) {
+/* --- SOLO PARA PC (Pantallas grandes) --- */
+@media screen and (min-width: 800px) {
+  .container {
+    display: flex; /* Se ponen de lado solo en PC */
+    min-height: 100vh;
+  }
   .sidebar {
-    padding: 15px;
+    width: 300px;
+    border-bottom: none;
+    border-right: 5px solid #3742fa;
   }
   .main {
-    padding: 10px;
-  }
-  .test-box {
-    padding: 15px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
   }
 }

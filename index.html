@@ -4,43 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Oposición</title>
-  <link rel="stylesheet" href="style.css?v=99">
+  <link rel="stylesheet" href="style.css?v=999">
 </head>
 <body>
 
-  <div class="container">
-
-    <div class="sidebar">
-      <h2>Panel de Control</h2>
-      
-      <label>Selecciona Bloque</label>
-      <select id="bloque" onchange="cargarTemas()">
-        <option value="">Selecciona bloque</option>
-        <option value="bloque1">Bloque 1</option>
-      </select>
-
-      <label>Selecciona Tema</label>
-      <select id="tema"></select>
-
-      <label class="check">
-        <input type="checkbox" id="modoExamenCheck"> Modo examen
-      </label>
-
-      <button onclick="iniciar()">Empezar Test</button>
-      <div id="resultado"></div>
-    </div>
-
-    <div class="main">
-      <div class="test-box">
-        <div id="contador"></div>
-        <h3 id="pregunta">Selecciona un tema para comenzar el test</h3>
-        <div id="opciones"></div>
-        <button class="btn-next" onclick="siguiente()">Siguiente Pregunta</button>
-      </div>
-    </div>
-
+<div class="container">
+  <div class="sidebar">
+    <h2>Ajustes Test</h2>
+    <label>Bloque</label>
+    <select id="bloque" onchange="cargarTemas()">
+      <option value="">Selecciona bloque</option>
+      <option value="bloque1">Bloque 1</option>
+    </select>
+    <label>Tema</label>
+    <select id="tema"></select>
+    <label class="check">
+      <input type="checkbox" id="modoExamenCheck"> Modo examen
+    </label>
+    <button onclick="iniciar()">EMPEZAR TEST</button>
   </div>
 
-  <script src="app.js"></script>
+  <div class="main">
+    <div class="test-box">
+      <div id="contador"></div>
+      <h3 id="pregunta">Elige un tema arriba</h3>
+      <div id="opciones"></div>
+      <button class="btn-next" onclick="siguiente()">Siguiente</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
