@@ -1,9 +1,9 @@
 // --- CONFIGURACIÓN ---
 const URL_NUBE = "https://script.google.com/macros/s/AKfycbw3dTrRxdC0O5Rf3HQfKqUBjhmWEUbTkRlMP0DtRPyS8_BEi9NChS4qM-OhsEqCkUZJWA/exec";
-const penalizacionPorError = 0.5; // Modo Academia Dura
+const penalizacionPorError = 0.5; 
 
 const temasPorBloque = {
-    bloque1: ["tema1"], // Añade aquí tus temas (ej: "tema1", "tema2")
+    bloque1: ["tema1"], 
     bloque2: ["tema1"],
     bloque3: ["tema1"],
     bloque4: ["tema1"]
@@ -15,7 +15,6 @@ let respuestasUsuario = [];
 let modoExamen = false;
 let infoActual = { bloque: "", tema: "" };
 
-// 🔹 Al cargar la web, traemos los datos de la nube (Google Sheets)
 document.addEventListener("DOMContentLoaded", cargarHistorialNube);
 
 function cargarTemas() {
@@ -38,14 +37,24 @@ async function iniciar() {
 
     if (!infoActual.bloque || !infoActual.tema) return alert("Selecciona bloque y tema");
 
+    // --- RUTA CORREGIDA ---
+    // Añadimos ./ al principio para asegurar que busque en la carpeta local
+    const rutaArchivo = `./data/${infoActual.bloque}/${infoActual.tema}.json`;
+
     try {
-        let res = await fetch(`data/${infoActual.bloque}/${infoActual.tema}.json`);
+        let res = await fetch(rutaArchivo);
+        
+        if (!res.ok) throw new Error(`No se encontró el archivo en: ${rutaArchivo}`);
+        
         preguntas = await res.json();
         actual = 0;
         respuestasUsuario = [];
         document.getElementById("btn-siguiente").style.display = "block";
         cargarPregunta();
-    } catch (e) { alert("Error al cargar el JSON"); }
+    } catch (e) { 
+        console.error(e);
+        alert("Error al cargar el JSON. Revisa que la carpeta 'data' y 'bloque1' existan en GitHub."); 
+    }
 }
 
 function cargarPregunta() {
@@ -83,7 +92,6 @@ function siguiente() {
     else cargarPregunta();
 }
 
-// 🔹 FINALIZAR Y ENVIAR A LA NUBE
 async function finalizar() {
     let aciertos = 0, fallos = 0;
     preguntas.forEach((p, i) => {
@@ -107,15 +115,14 @@ async function finalizar() {
     document.getElementById("opciones").innerHTML = "<h3>Guardando en la nube... ☁️</h3>";
     
     try {
-        // Enviamos al Excel de Google
         await fetch(URL_NUBE, {
             method: "POST",
-            mode: 'no-cors', // Importante para Google Apps Script
+            mode: 'no-cors',
             body: JSON.stringify(nuevoRegistro)
         });
         
         document.getElementById("opciones").innerHTML = `<h3>Nota Final: ${nota}</h3><p>Guardado con éxito.</p>`;
-        cargarHistorialNube(); // Refrescamos la tabla
+        cargarHistorialNube(); 
     } catch (e) {
         document.getElementById("opciones").innerHTML = `<h3>Nota: ${nota}</h3><p>Error al guardar en la nube.</p>`;
     }
@@ -123,9 +130,10 @@ async function finalizar() {
     document.getElementById("btn-siguiente").style.display = "none";
 }
 
-// 🔹 LEER DE LA NUBE
 async function cargarHistorialNube() {
     const tablaDiv = document.getElementById("tabla-historial");
+    if (!tablaDiv) return; // Por si acaso no existe el div en el HTML
+    
     tablaDiv.innerHTML = "<p>Cargando historial compartido...</p>";
     
     try {
@@ -140,7 +148,6 @@ async function cargarHistorialNube() {
         let html = `<table class="historial-table">
             <tr><th>Fecha</th><th>Tema</th><th>Nota</th><th>Detalles</th></tr>`;
         
-        // El Excel devuelve las filas, las ponemos al revés (más nuevo arriba)
         datos.reverse().forEach(fila => {
             let claseNota = parseFloat(fila[4]) >= 5 ? "nota-pass" : "nota-fail";
             html += `<tr>
