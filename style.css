@@ -6,6 +6,12 @@
   font-family: Arial, sans-serif;
 }
 
+/* 🔥 EVITAR DESBORDES EN MÓVIL */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* FONDO */
 body {
   background: linear-gradient(135deg, #1e272e, #2f3640);
@@ -14,7 +20,8 @@ body {
 /* LAYOUT */
 .container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
 }
 
 /* SIDEBAR */
@@ -103,30 +110,33 @@ button:hover {
   margin-top: 20px;
   font-weight: bold;
 }
+
 /* 📱 MODO MÓVIL REAL */
-/* 📱 MODO MÓVIL REAL */
-@media (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
   body {
     font-size: 14px;
   }
 
+  /* 🔥 layout vertical */
   .container {
     flex-direction: column;
-    height: auto;
   }
 
-  /* 🔥 OCULTAR SIDEBAR */
+  /* 🔥 ocultar sidebar (modo app) */
   .sidebar {
     display: none;
   }
 
+  /* 🔥 ocupar todo el ancho */
   .main {
+    width: 100%;
     padding: 10px;
     align-items: stretch;
   }
 
   .test-box {
+    width: 100%;
     max-width: 100%;
     padding: 15px;
     border-radius: 10px;
