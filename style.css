@@ -1,23 +1,19 @@
-/* RESET */
+/* RESET GENERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* 🔥 EVITAR DESBORDES EN MÓVIL */
 html, body {
   width: 100%;
-  overflow-x: hidden;
+  min-height: 100vh;
+  background: #1e272e;
+  color: #333;
 }
 
-/* FONDO */
-body {
-  background: linear-gradient(135deg, #1e272e, #2f3640);
-}
-
-/* LAYOUT */
+/* LAYOUT BASE (Escritorio) */
 .container {
   display: flex;
   min-height: 100vh;
@@ -26,134 +22,118 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-  width: 260px;
+  width: 300px;
   background: #2f3640;
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
+  flex-shrink: 0; /* Evita que se encoja en escritorio */
 }
 
-/* SELECTS */
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #3742fa;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #dcdde1;
+}
+
 select, button {
   width: 100%;
-  margin-top: 10px;
-  padding: 10px;
+  padding: 12px;
+  margin-top: 8px;
   border-radius: 8px;
   border: none;
+  font-size: 1rem;
 }
 
-/* BOTÓN */
+/* BOTONES */
 button {
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-primary {
   background: #3742fa;
   color: white;
-  cursor: pointer;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
-button:hover {
+.btn-next {
   background: #2f3542;
+  color: white;
+  margin-top: 20px;
 }
 
-/* CHECK */
-.check {
-  margin-top: 15px;
-  display: block;
+button:active {
+  transform: scale(0.98);
 }
 
-/* MAIN */
+/* ÁREA PRINCIPAL */
 .main {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 40px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1e272e, #2f3640);
 }
 
-/* CAJA TEST */
 .test-box {
   background: white;
-  padding: 25px;
-  border-radius: 12px;
+  padding: 30px;
+  border-radius: 15px;
   width: 100%;
   max-width: 700px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: fit-content;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* CONTADOR */
-#contador {
-  font-size: 14px;
-  color: gray;
-  margin-bottom: 10px;
-}
-
-/* PREGUNTA */
-#pregunta {
-  margin-bottom: 20px;
-}
-
-/* OPCIONES */
 #opciones label {
   display: block;
-  padding: 12px;
-  margin-bottom: 10px;
-  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
   background: #f1f2f6;
   cursor: pointer;
-  transition: 0.2s;
+  border: 2px solid transparent;
 }
 
 #opciones label:hover {
   background: #dfe4ea;
 }
 
-/* RESULTADO */
-#resultado {
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-/* 📱 MODO MÓVIL REAL */
-@media screen and (max-width: 900px) {
-
-  body {
-    font-size: 14px;
-  }
-
-  /* 🔥 layout vertical */
+/* 📱 ADAPTACIÓN PARA MÓVILES */
+@media screen and (max-width: 800px) {
   .container {
-    flex-direction: column;
+    flex-direction: column; /* Apila el menú arriba del test */
   }
 
-  /* 🔥 ocultar sidebar (modo app) */
   .sidebar {
-    display: none;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 3px solid #3742fa;
   }
 
-  /* 🔥 ocupar todo el ancho */
   .main {
-    width: 100%;
-    padding: 10px;
-    align-items: stretch;
+    padding: 15px;
   }
 
   .test-box {
-    width: 100%;
-    max-width: 100%;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: none;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  /* Evitamos que el zoom se dispare en iPhone al tocar inputs */
+  select, button, input {
+    font-size: 16px !important;
   }
 
   #pregunta {
-    font-size: 16px;
-  }
-
-  #opciones label {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  button {
-    padding: 12px;
-    font-size: 14px;
+    font-size: 1.2rem;
   }
 }
