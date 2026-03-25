@@ -1,55 +1,73 @@
-/* --- RESET --- */
+/* RESET DE ESTILOS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   background: #1e272e;
   color: white;
+  min-height: 100vh;
 }
 
-/* --- DISEÑO POR DEFECTO (MÓVIL) --- */
-/* En el móvil todo va en una sola columna hacia abajo */
+/* CONTENEDOR MÁGICO */
 .container {
   display: flex;
-  flex-direction: column; 
+  flex-wrap: wrap; /* Si no cabe en el móvil, el test salta abajo solo */
+  min-height: 100vh;
   width: 100%;
 }
 
+/* SIDEBAR (Panel de control) */
 .sidebar {
-  width: 100%; /* Ocupa todo el ancho en el móvil */
+  flex: 1 1 300px; /* Crece si hay espacio, pero mínimo ocupa 300px */
   background: #2f3640;
-  padding: 20px;
-  border-bottom: 4px solid #3742fa;
+  padding: 30px 20px;
+  border-bottom: 3px solid #3742fa;
 }
 
+.sidebar h2 {
+  color: #3742fa;
+  margin-bottom: 20px;
+}
+
+/* MAIN (Zona del test) */
 .main {
-  width: 100%;
-  padding: 15px;
+  flex: 3 1 400px; /* Ocupa más espacio que la sidebar */
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background: #1e272e;
 }
 
+/* CAJA DEL TEST */
 .test-box {
   background: white;
   color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100%; /* La caja se ajusta al móvil */
-  max-width: 600px;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
-/* Ajustes de botones para dedos (grandes) */
+/* ELEMENTOS DE FORMULARIO */
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
 select, button {
   width: 100%;
-  padding: 14px;
-  margin-top: 10px;
+  padding: 12px;
+  margin-top: 8px;
   border-radius: 8px;
   border: none;
-  font-size: 16px; /* Muy importante para que no haga zoom solo */
+  font-size: 16px; /* Evita zoom automático en iPhone */
 }
 
 button {
@@ -57,27 +75,36 @@ button {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-/* --- DISEÑO PARA PANTALLAS GRANDES (PC) --- */
-/* Solo si la pantalla mide más de 800px se pone en dos columnas */
-@media screen and (min-width: 800px) {
-  .container {
-    flex-direction: row; /* Uno al lado del otro */
-    min-height: 100vh;
-  }
+button:active {
+  transform: scale(0.98);
+}
 
+.btn-next {
+  background: #2f3542;
+  margin-top: 20px;
+}
+
+#opciones label {
+  display: block;
+  background: #f1f2f6;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* AJUSTES EXTRA PARA MÓVILES MUY ESTRECHOS */
+@media screen and (max-width: 480px) {
   .sidebar {
-    width: 300px; /* Ancho fijo solo en PC */
-    border-bottom: none;
-    border-right: 2px solid #3742fa;
+    padding: 15px;
   }
-
   .main {
-    padding: 40px;
+    padding: 10px;
   }
-
   .test-box {
-    padding: 30px;
+    padding: 15px;
   }
 }
