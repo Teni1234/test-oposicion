@@ -1,0 +1,1693 @@
+[
+  {
+    "pregunta": "1. En Linux, ¿qué información se muestra tras ejecutar en consola \"who -r\"?",
+    "opciones": [
+      "A. Indica el nivel de ejecución.",
+      "B. Muestra la hora en la que el sistema se ha iniciado.",
+      "C. Lista los usuarios que han iniciado sesión remota.",
+      "D. Muestra los usuarios que pertenecen al grupo de administradores (root)."
+    ],
+    "correcta": 0,
+    "explicacion": "El comando 'who -r' muestra el runlevel (nivel de ejecución) actual del sistema Linux. Este nivel indica el estado en el que se encuentra el sistema (modo multiusuario, modo gráfico, etc.), siendo un concepto clave en la administración de sistemas Unix/Linux.",
+    "analisis_opciones": {
+      "A": "Correcta. El comando muestra el nivel de ejecución (runlevel) del sistema.",
+      "B": "Incorrecta. Esta información se obtiene con comandos como 'uptime'.",
+      "C": "Incorrecta. El comando 'who' lista usuarios conectados, pero no 'who -r'.",
+      "D": "Incorrecta. No muestra grupos ni privilegios de usuarios."
+    }
+  },
+  {
+    "pregunta": "2. Indique cuál es el comando en sistemas Unix que te muestra una lista de los comandos ejecutados recientemente en el terminal activo:",
+    "opciones": [
+      "A. HELP",
+      "B. HISTORY",
+      "C. APROPOS",
+      "D. LIST"
+    ],
+    "correcta": 1,
+    "explicacion": "El comando 'history' muestra el listado de comandos ejecutados en la sesión actual del terminal. Es muy útil para reutilizar comandos previos o analizar acciones realizadas en el sistema.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es un comando estándar de Unix.",
+      "B": "Correcta. 'history' muestra el historial de comandos ejecutados.",
+      "C": "Incorrecta. 'apropos' busca comandos según su descripción.",
+      "D": "Incorrecta. No es un comando válido estándar."
+    }
+  },
+  {
+    "pregunta": "3. En el lenguaje de script Powershell, indique qué comando (cmdlet) utilizaría si quisiera crear un alias de otro cmdlet:",
+    "opciones": [
+      "A. créate-alias",
+      "B. show-alias",
+      "C. add-aliaas",
+      "D. set-alias"
+    ],
+    "correcta": 3,
+    "explicacion": "El cmdlet 'Set-Alias' permite crear alias en PowerShell para simplificar comandos. Es habitual usarlo para abreviar comandos largos y mejorar la productividad en la consola.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No existe ese cmdlet.",
+      "B": "Incorrecta. No crea alias.",
+      "C": "Incorrecta. No es un cmdlet válido.",
+      "D": "Correcta. 'Set-Alias' es el cmdlet correcto para crear alias."
+    }
+  },
+  {
+    "pregunta": "4. En el ámbito de los sistemas operativos de Microsoft, la extensión que permite mantener actualizado el sistema operativo es:",
+    "opciones": [
+      "A. Windows Online",
+      "B. Windows Update",
+      "C. Windows Defender",
+      "D. Microsoft Edge"
+    ],
+    "correcta": 1,
+    "explicacion": "Windows Update es el servicio encargado de mantener actualizado el sistema operativo mediante la instalación de parches de seguridad, mejoras y nuevas funcionalidades.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es un servicio oficial.",
+      "B": "Correcta. Es el sistema de actualización de Windows.",
+      "C": "Incorrecta. Es un antivirus.",
+      "D": "Incorrecta. Es un navegador."
+    }
+  },
+  {
+    "pregunta": "5. En Windows PowerShell, los comandos que se ejecutan se denominan:",
+    "opciones": [
+      "A. runshell",
+      "B. scriptlets",
+      "C. runiets",
+      "D. cmdlets"
+    ],
+    "correcta": 3,
+    "explicacion": "En PowerShell los comandos se denominan cmdlets, que siguen una estructura de verbo-sustantivo como 'Get-Process'. Son la base de la automatización en este entorno.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No existe.",
+      "B": "Incorrecta. No es el término usado.",
+      "C": "Incorrecta. No es correcto.",
+      "D": "Correcta. Es el término oficial."
+    }
+  },
+  {
+    "pregunta": "6. En sistemas operativos, cuando hablamos de Registro de Instrucción, ¿a qué nos estamos refiriendo?",
+    "opciones": [
+      "A. Al registro que contiene la última instrucción leída.",
+      "B. Al registro que contiene el identificador único asociado al proceso de la instrucción.",
+      "C. Al registro que contiene la dirección de la siguiente instrucción del programa que se ejecutará.",
+      "D. Al registro que contiene el número de procesos que están corriendo en paralelo."
+    ],
+    "correcta": 2,
+    "explicacion": "El registro de instrucción o contador de programa almacena la dirección de memoria de la siguiente instrucción que ejecutará la CPU, siendo clave en el ciclo de ejecución de programas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No almacena la última instrucción.",
+      "B": "Incorrecta. No guarda identificadores de procesos.",
+      "C": "Correcta. Guarda la dirección de la siguiente instrucción.",
+      "D": "Incorrecta. No tiene relación con procesos paralelos."
+    }
+  },
+  {
+    "pregunta": "7. En un sistema operativo Linux en cuanto a las instalaciones y desinstalaciones de software:",
+    "opciones": [
+      "A. Uno de los inconvenientes de estos SSOO es q deberemos estar conectados a la red para poder instalar cualquier software ya q hacemos uso de los comandos apt, rpm, urpmi... q se conectan a diferentes repositorios para descargar los paquetes de instalación.",
+      "B. Gestores d paquetes(apt, rpm, urpmi) necesitan definir una serie d fuentes o repositorios desde donde descargar los paquetes d instalación, para ello,cada gestor d paquetes cuenta con comandos orientados a su definición y actualización.",
+      "C. Repositorios asociados a un gestor de paquetes dependen de este y de la versión del SSOO.Es por ello que para mantener las últimas versiones o actualizaciones del software se recomienda la instalación de la distribución del SSOO más reciente q haya.",
+      "D. Los gestores d paquetes para la instalación d software como apt, rpm, urpmi solo permiten instalar paquetes. Para desinstalar software deberemos conocer los directorios donde están ubicados los archivos, suelen ser /bin y /sbin para borrarlos directamente"
+    ],
+    "correcta": 1,
+    "explicacion": "Los gestores de paquetes utilizan repositorios configurados como fuentes de software. Estos repositorios pueden actualizarse y gestionarse mediante comandos específicos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se puede instalar software sin conexión.",
+      "B": "Correcta. Describe correctamente el funcionamiento de repositorios.",
+      "C": "Incorrecta. No es necesario cambiar de distribución.",
+      "D": "Incorrecta. También permiten desinstalar software."
+    }
+  },
+  {
+    "pregunta": "8. Indique la tecnología utilizada por Microsoft en sus sistemas operativos Windows, cuyo objetivo específico es la sincronización de datos entre equipos de escritorio y dispositivos móviles:",
+    "opciones": [
+      "A. System Center Console Manager (SCCM).",
+      "B. ActiveSync.",
+      "C. Identity Manager.",
+      "D. Yammer."
+    ],
+    "correcta": 1,
+    "explicacion": "ActiveSync es la tecnología de Microsoft que permite sincronizar datos como correo, contactos y calendarios entre dispositivos móviles y servidores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. SCCM es gestión de sistemas.",
+      "B": "Correcta. Es la tecnología de sincronización.",
+      "C": "Incorrecta. Gestión de identidades.",
+      "D": "Incorrecta. Red social empresarial."
+    }
+  },
+  {
+    "pregunta": "9. En un sistema UNIX, cuál es la respuesta INCORRECTA:",
+    "opciones": [
+      "A. El GID es el número de identificación de grupo.",
+      "B. El UID es el número de identificación de usuario.",
+      "C. El administrador del sistema se denomina root.",
+      "D. El proceso init se refiere al proceso de arranque de un usuario."
+    ],
+    "correcta": 3,
+    "explicacion": "El proceso init es el primer proceso del sistema (PID 1) encargado de iniciar el resto de procesos del sistema, no de usuarios.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es correcto.",
+      "B": "Incorrecta. Es correcto.",
+      "C": "Incorrecta. Es correcto.",
+      "D": "Correcta. Es la incorrecta porque init no arranca usuarios."
+    }
+  },
+  {
+    "pregunta": "10. Los siguientes términos identifican modalidades de mantenimiento en sistemas de información. Indique la opción incorrecta:",
+    "opciones": [
+      "A. Correctivo.",
+      "B. Perfectivo.",
+      "C. Adaptativo.",
+      "D. Acumulativo."
+    ],
+    "correcta": 3,
+    "explicacion": "Los tipos de mantenimiento válidos son correctivo, adaptativo y perfectivo. El término acumulativo no existe en esta clasificación.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un tipo válido.",
+      "B": "Incorrecta. Es un tipo válido.",
+      "C": "Incorrecta. Es un tipo válido.",
+      "D": "Correcta. Es la opción incorrecta."
+    }
+  }
+,
+  {
+    "pregunta": "11. Si en un entorno de red sobre un sistema operativo Windows nos encontramos con una sentencia como la siguiente#> wget -r -I2 -i listado.txt lo interpretaremos como la recuperación de una serie de documentos:",
+    "opciones": [
+      "A. del sistema operativo que se leerán del fichero \"listado.txt\".",
+      "B. de la red que se leerán del fichero \"listado.txt\".",
+      "C. de la red que se volcarán en el fichero \"listado.txt\".",
+      "D. del sistema operativo que se volcarán en el fichero \"listado.txt\"."
+    ],
+    "correcta": 1,
+    "explicacion": "El comando wget se utiliza para descargar recursos desde la red. La opción '-i listado.txt' indica que las URLs a descargar se encuentran en ese fichero. Por tanto, se están recuperando recursos de la red definidos en dicho archivo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No se trata de leer archivos locales del sistema.",
+      "B": "Correcta. Descarga recursos de la red a partir de una lista de URLs.",
+      "C": "Incorrecta. No vuelca datos en el fichero, los lee desde él.",
+      "D": "Incorrecta. No trabaja con recursos del sistema local."
+    }
+  },
+  {
+    "pregunta": "12. Señale la respuesta INCORRECTA sobre el kernel de un Sistema Operativo:",
+    "opciones": [
+      "A. Controla todas las funciones importantes del hardware.",
+      "B. Se encarga del procesamiento paralelo de tareas (multitasking).",
+      "C. Es el núcleo del procesador.",
+      "D. Recibe peticiones de servicio de los procesos y los comunica con el hardware."
+    ],
+    "correcta": 2,
+    "explicacion": "El kernel es el núcleo del sistema operativo, no del procesador. Es el encargado de gestionar recursos hardware, procesos y memoria, pero no forma parte física de la CPU.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una función real del kernel.",
+      "B": "Incorrecta. Gestiona la multitarea.",
+      "C": "Correcta. Es incorrecta porque el kernel no es parte del procesador.",
+      "D": "Incorrecta. Es función real del kernel."
+    }
+  },
+  {
+    "pregunta": "13. Advanced Package Tool (APT) es un sistema de gestión de paquetes creado por el proyecto:",
+    "opciones": [
+      "A. Debian",
+      "B. Fedora",
+      "C. Red Hat",
+      "D. Ubuntu"
+    ],
+    "correcta": 0,
+    "explicacion": "APT fue desarrollado originalmente por el proyecto Debian. Aunque Ubuntu también lo usa, su origen está en Debian.",
+    "analisis_opciones": {
+      "A": "Correcta. Debian es el proyecto creador de APT.",
+      "B": "Incorrecta. Fedora usa yum/dnf.",
+      "C": "Incorrecta. Red Hat usa rpm/yum.",
+      "D": "Incorrecta. Ubuntu lo usa, pero no lo creó."
+    }
+  },
+  {
+    "pregunta": "14. Señale los tres tipos de acceso de que disponen los ficheros en un sistema operativo UNIX:",
+    "opciones": [
+      "A. Lectura, escritura y borrado.",
+      "B. Lectura, escritura y ejecución.",
+      "C. Propietario, grupo y administrador.",
+      "D. Copiar, sustituir y eliminar."
+    ],
+    "correcta": 1,
+    "explicacion": "En sistemas UNIX los permisos básicos son lectura (r), escritura (w) y ejecución (x). Estos se aplican a usuario, grupo y otros.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 'Borrado' no es permiso directo.",
+      "B": "Correcta. Son los tres permisos estándar.",
+      "C": "Incorrecta. Son tipos de usuarios, no permisos.",
+      "D": "Incorrecta. No son permisos del sistema."
+    }
+  },
+  {
+    "pregunta": "15. Queremos llevar la gestión de incidencias do un S.O. ¿Cuál de las siguientes opciones nos permite establecer las funciones y responsabilidades del departamento Informático?",
+    "opciones": [
+      "A. ASN.",
+      "B. VNC.",
+      "C. SLA.",
+      "D. MT6F"
+    ],
+    "correcta": 2,
+    "explicacion": "Un SLA (Service Level Agreement) define los niveles de servicio, responsabilidades y compromisos entre proveedor y cliente, incluyendo tiempos de respuesta y gestión de incidencias.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No aplica aquí.",
+      "B": "Incorrecta. VNC es control remoto.",
+      "C": "Correcta. Define responsabilidades y niveles de servicio.",
+      "D": "Incorrecta. No es un estándar conocido."
+    }
+  },
+  {
+    "pregunta": "16. ¿Cuál de los siguientes conceptos permite que un proceso ejecute múltiples tareas de manera simultánea o concurrente en un sistema operativo?",
+    "opciones": [
+      "A. Segmentación.",
+      "B. Paginación.",
+      "C. Prepaging.",
+      "D. Hilos."
+    ],
+    "correcta": 3,
+    "explicacion": "Los hilos (threads) permiten ejecutar múltiples flujos de ejecución dentro de un mismo proceso, posibilitando concurrencia y paralelismo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es gestión de memoria.",
+      "B": "Incorrecta. Es técnica de memoria virtual.",
+      "C": "Incorrecta. Es optimización de paginación.",
+      "D": "Correcta. Permite ejecución concurrente."
+    }
+  },
+  {
+    "pregunta": "17. ¿Qué modalidad de gestión de dispositivos móviles se basa en permitir al usuario usar su propio dispositivo personal para tareas profesionales o educativas?",
+    "opciones": [
+      "A. COPE",
+      "B. BYOD",
+      "C. COBO",
+      "D. CYOD"
+    ],
+    "correcta": 1,
+    "explicacion": "BYOD (Bring Your Own Device) permite a los usuarios utilizar sus propios dispositivos personales en entornos profesionales.",
+    "analisis_opciones": {
+      "A": "Incorrecta. COPE es dispositivo de empresa con uso personal.",
+      "B": "Correcta. Uso de dispositivo personal.",
+      "C": "Incorrecta. COBO es solo uso corporativo.",
+      "D": "Incorrecta. CYOD es elegir dispositivo de empresa."
+    }
+  },
+  {
+    "pregunta": "18. En sistemas Debian, ¿cuál de los siguientes comandos permitiría descargar la información de los paquetes desde todas las fuentes configuradas?",
+    "opciones": [
+      "A. apt update",
+      "B. apt upgrade",
+      "C. apt full-upgrade",
+      "D. apt list"
+    ],
+    "correcta": 0,
+    "explicacion": "El comando 'apt update' actualiza la lista de paquetes disponibles desde los repositorios configurados, pero no instala actualizaciones.",
+    "analisis_opciones": {
+      "A": "Correcta. Actualiza índices de paquetes.",
+      "B": "Incorrecta. Instala actualizaciones.",
+      "C": "Incorrecta. Actualiza con cambios más agresivos.",
+      "D": "Incorrecta. Lista paquetes."
+    }
+  },
+  {
+    "pregunta": "19. En Linux, ¿qué comando usaremos para ver la información relativa a una interfaz de red en particular (por ejemplo, 'eth0')?",
+    "opciones": [
+      "A. ethtoolsshd eth0",
+      "B. dhclient eth0",
+      "C. ifconfig eth0",
+      "D. tcpdump eth0"
+    ],
+    "correcta": 2,
+    "explicacion": "El comando 'ifconfig eth0' muestra información de configuración de la interfaz de red como IP, máscara y estado. Aunque está en desuso en favor de 'ip addr', sigue siendo muy preguntado en exámenes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es un comando válido.",
+      "B": "Incorrecta. Solicita IP por DHCP.",
+      "C": "Correcta. Muestra información de la interfaz.",
+      "D": "Incorrecta. Captura tráfico de red."
+    }
+  },
+  {
+    "pregunta": "20. En Linux, Solaris y otras sistemas operativos de la familia Unix existe un fichero del sistema llamado \"/etc/shadow”. Indique el propósito de este fichero:",
+    "opciones": [
+      "A. Durante un backup, para evitar modificar el sistema de ficheros, contiene las escrituras a disco pendientes (escritura en sombra) que se aplicarán al terminar.",
+      "B. Contiene los hash de los passwords de los usuarios, accesibles sólo para las herramientas de sistema y el administrador.",
+      "C. Es el registro de sectores defectuosos del disco, para que el sistema operativo utilice otros en su lugar (escritura en sombra).",
+      "D. Contiene los usuarios a los que debe hacerse un seguimiento especial, de manera que el sistema registrara procesos iniciados y recursos consumidos."
+    ],
+    "correcta": 1,
+    "explicacion": "El archivo /etc/shadow almacena las contraseñas cifradas (hash) de los usuarios del sistema. Solo es accesible por el sistema y el administrador por motivos de seguridad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tiene relación con backups.",
+      "B": "Correcta. Guarda contraseñas cifradas.",
+      "C": "Incorrecta. No gestiona sectores defectuosos.",
+      "D": "Incorrecta. No realiza auditoría de usuarios."
+    }
+  },
+  {
+    "pregunta": "21. ¿A partir de qué versión de Windows se implementa el Directorio Activo?",
+    "opciones": [
+      "A. Windows 2000 server",
+      "B. Windows NT server",
+      "C. Windows 2003 server",
+      "D. Windows NT server Service Pack 2"
+    ],
+    "correcta": 0,
+    "explicacion": "Active Directory se introdujo por primera vez en Windows 2000 Server como servicio de directorio para gestionar usuarios, equipos y recursos en red de forma centralizada.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la primera versión que incorpora Active Directory.",
+      "B": "Incorrecta. Windows NT usaba dominios pero no Active Directory.",
+      "C": "Incorrecta. Lo mejora, pero no lo introduce.",
+      "D": "Incorrecta. No incluye Active Directory."
+    }
+  },
+  {
+    "pregunta": "22. Una tarea que consiste en la limpieza mensual de las cabezas de los discos de las unidades de almacenamiento de un centro de cálculo, es mantenimiento:",
+    "opciones": [
+      "A. Preventivo.",
+      "B. Correctivo.",
+      "C. Evolutivo.",
+      "D. Detectivo."
+    ],
+    "correcta": 0,
+    "explicacion": "El mantenimiento preventivo consiste en realizar acciones periódicas para evitar fallos futuros. La limpieza de hardware es un ejemplo claro de este tipo de mantenimiento.",
+    "analisis_opciones": {
+      "A": "Correcta. Previene fallos antes de que ocurran.",
+      "B": "Incorrecta. Actúa cuando ya hay fallo.",
+      "C": "Incorrecta. Evolutivo implica mejoras.",
+      "D": "Incorrecta. No es una categoría estándar."
+    }
+  },
+  {
+    "pregunta": "23. El comando LINUX “pr-t”, de visualización de ficheros con formato:",
+    "opciones": [
+      "A. Hace una pausa para presentar la página, hasta que se pulsa <return> para continuar.",
+      "B. Suprime las 5 líneas del encabezamiento y las del final de página.",
+      "C. Lista el fichero con espaciado doble.",
+      "D. Produce una salida estándar de 66 líneas por página, con un encabezamiento de 5 líneas (2 en blanco, una de identificación y otras 2 líneas en blanco)."
+    ],
+    "correcta": 1,
+    "explicacion": "El comando 'pr' se usa para formatear la salida de texto. La opción '-t' elimina cabeceras y pies de página, mostrando solo el contenido limpio del archivo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso corresponde a comandos como 'more'.",
+      "B": "Correcta. '-t' elimina cabeceras y pies.",
+      "C": "Incorrecta. No aplica aquí.",
+      "D": "Incorrecta. Describe el comportamiento por defecto sin '-t'."
+    }
+  },
+  {
+    "pregunta": "24. En sistemas Linux, ¿qué comando muestra en pantalla por cada archivo el nombre de archivo, propietario y grupo, entre otra información?",
+    "opciones": [
+      "A. file",
+      "B. gawk",
+      "C. getfacl",
+      "D. modprobe"
+    ],
+    "correcta": 2,
+    "explicacion": "El comando 'getfacl' muestra las listas de control de acceso (ACL), incluyendo propietario, grupo y permisos detallados de cada archivo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Muestra el tipo de archivo.",
+      "B": "Incorrecta. Es un lenguaje de procesamiento de texto.",
+      "C": "Correcta. Muestra permisos y propietarios detallados.",
+      "D": "Incorrecta. Gestiona módulos del kernel."
+    }
+  },
+  {
+    "pregunta": "25. Entre las funciones de un Sistema Operativo NO se encuentra:",
+    "opciones": [
+      "A. Controlar las autorizaciones de uso para los usuarios.",
+      "B. Administrar la CPU a través de un algoritmo de programación.",
+      "C. Ejecutar rutinas de tratamiento de interrupciones en el caso de activación de una señal.",
+      "D. Constituir el conjunto de software y hardware necesario para el funcionamiento del ordenador."
+    ],
+    "correcta": 3,
+    "explicacion": "El sistema operativo es software, no incluye el hardware. Su función es gestionar recursos, procesos y dispositivos, pero no constituye el conjunto hardware-software completo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una función del sistema operativo.",
+      "B": "Incorrecta. Gestiona planificación de CPU.",
+      "C": "Incorrecta. Gestiona interrupciones.",
+      "D": "Correcta. Incluye hardware, lo cual no es función del SO."
+    }
+  },
+  {
+    "pregunta": "26. Indique cuál de las siguientes funciones NO es propia de un administrador del sistema:",
+    "opciones": [
+      "A. Realización de las copias de seguridad de los sistemas.",
+      "B. Instalación del software de base.",
+      "C. Test de integración de las aplicaciones.",
+      "D. Creación de cuentas de usuario."
+    ],
+    "correcta": 2,
+    "explicacion": "El test de integración es una tarea propia del equipo de desarrollo o QA. El administrador de sistemas se encarga de la infraestructura, usuarios, seguridad y mantenimiento del sistema.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es tarea típica del administrador.",
+      "B": "Incorrecta. También es función del administrador.",
+      "C": "Correcta. Pertenece al ámbito de desarrollo/testing.",
+      "D": "Incorrecta. Es función básica del administrador."
+    }
+  }
+,
+  {
+    "pregunta": "27. Indique cuál de los siguientes términos se corresponde con un servicio que permite a los administradores de tecnologías de la información implementar las actualizaciones de productos de Microsoft más recientes:",
+    "opciones": [
+      "A. APT-GET",
+      "B. YUM",
+      "C. WSUS",
+      "D. MOJAVE"
+    ],
+    "correcta": 2,
+    "explicacion": "WSUS (Windows Server Update Services) permite a los administradores gestionar y desplegar actualizaciones de Microsoft de forma centralizada en una red.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es gestor de paquetes en Debian.",
+      "B": "Incorrecta. Es gestor de paquetes en Red Hat.",
+      "C": "Correcta. Servicio de actualización centralizada de Microsoft.",
+      "D": "Incorrecta. Sistema operativo de Apple."
+    }
+  },
+  {
+    "pregunta": "28. En UNIX queremos dar todos los permisos sobre un fichero al owner, permiso de ejecución y lectura a los integrantes de su grupo de trabajo pero sólo permiso de lectura al resto. ¿Qué permisos deberla tener el fichero?",
+    "opciones": [
+      "A. -rwer-r--",
+      "B. -rwxr-xr--",
+      "C. -r--r-xrwx",
+      "D. -r--r-erwe"
+    ],
+    "correcta": 1,
+    "explicacion": "Los permisos serían rwx para owner, r-x para grupo y r-- para otros → rwxr-xr--.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sintaxis incorrecta.",
+      "B": "Correcta. Coincide con los permisos indicados.",
+      "C": "Incorrecta. Orden incorrecto.",
+      "D": "Incorrecta. No válida."
+    }
+  },
+  {
+    "pregunta": "29. En Linux,. ¿cuál es la finalidad del comando modprobe?",
+    "opciones": [
+      "A. Realiza test unitarios sobre código C.",
+      "B. Añade o elimina módulos del kernel de Linux.",
+      "C. Añade módulos del kernel de Linux, pero no permite eliminarlos.",
+      "D. Es equivalente en funcionalidad a la que ofrece pvcreate."
+    ],
+    "correcta": 1,
+    "explicacion": "modprobe permite cargar o descargar módulos del kernel, gestionando dependencias automáticamente.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta. También elimina.",
+      "D": "Incorrecta. pvcreate es LVM."
+    }
+  },
+  {
+    "pregunta": "30. ¿Cuál de los siguientes comandos se emplea para convertir un paquete rpm de Red Hat en un paquete deb de Debian?",
+    "opciones": [
+      "A. alien",
+      "B. zdump",
+      "C. toe",
+      "D. joe"
+    ],
+    "correcta": 0,
+    "explicacion": "El comando 'alien' permite convertir paquetes entre distintos formatos como rpm y deb.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "31. ¿Cuál de los siguientes NO es un algoritmo de planificación utilizado en sistemas Windows y Linux?",
+    "opciones": [
+      "A. Algoritmo de agrupación",
+      "B. FCFS",
+      "C. SJF",
+      "D. Round Robin"
+    ],
+    "correcta": 0,
+    "explicacion": "FCFS, SJF y Round Robin son algoritmos clásicos de planificación. 'Agrupación' no lo es.",
+    "analisis_opciones": {
+      "A": "Correcta. No existe como algoritmo estándar.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "32. El comando head en Unix/Linux:",
+    "opciones": [
+      "A. No existe ese comando.",
+      "B. Muestra las ultimas líneas de un archivo, por defecto las 10 ultimas.",
+      "C. Muestra las primeras líneas de un archivo, por defecto las 10 primeras.",
+      "D. Muestra la primera palabra de un archivo."
+    ],
+    "correcta": 2,
+    "explicacion": "head muestra las primeras líneas de un fichero (por defecto 10).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Eso es tail.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "33. Señale la respuesta que refleja, de forma ordenada, la estructura jerárquica del Directorio Activo de Microsoft.",
+    "opciones": [
+      "A. Dominio, bosque, árbol, unidad organizativa.",
+      "B. Bosque, árbol, dominio, unidad organizativa.",
+      "C. Unidad organizativa, dominio, bosque, árbol.",
+      "D. Unidad organizativa, bosque, árbol, dominio."
+    ],
+    "correcta": 1,
+    "explicacion": "La jerarquía correcta es: Bosque → Árbol → Dominio → Unidad Organizativa.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "34. Una tarea del administrador de sistemas es:",
+    "opciones": [
+      "A. Crear cuentas de usuario.",
+      "B. Realizar backups.",
+      "C. Monitorizar la carga de los sistemas.",
+      "D. Todas las anteriores son funciones del administrador de sistemas."
+    ],
+    "correcta": 3,
+    "explicacion": "Todas las opciones forman parte de las responsabilidades de un administrador de sistemas.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "35. En un servidor con sistema operativo Linux, ¿qué ocurre al ejecutar desde consola: \"touch fichero\", si fichero ya existía previamente y tenía contenido?",
+    "opciones": [
+      "A. El contenido del fichero se borra.",
+      "B. Devuelve error: File already exists.",
+      "C. Pregunta si se desea reemplazar el fichero antes de continuar .",
+      "D. Se actualizan las marcas temporales (time stamps) del fichero."
+    ],
+    "correcta": 3,
+    "explicacion": "touch no modifica el contenido, solo actualiza timestamps (fecha de acceso/modificación).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "36. De los siguientes, ¿qué documento sirve para detallar las funciones y responsabilidades, así como los objetivos a los que se compromete un proveedor al proporcionar un servicio informático?",
+    "opciones": [
+      "A. SRA",
+      "B. SLA",
+      "C. SDA",
+      "D. SRD"
+    ],
+    "correcta": 1,
+    "explicacion": "El SLA define niveles de servicio, responsabilidades y compromisos entre proveedor y cliente.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "37. En el editor de texto de Unix denominado vi, ¿cuál es el comando que deshace la última acción realizada?",
+    "opciones": [
+      "A. a",
+      "B. i",
+      "C. o",
+      "D. u"
+    ],
+    "correcta": 3,
+    "explicacion": "En vi, la tecla 'u' deshace la última acción.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "38. Los repositorios en un sistema operativo Linux son bases de datos (BBDD) o servidores que alojan aplicaciones que el sistema...:",
+    "opciones": [
+      "A. necesita.",
+      "B. necesita, vienen instalados en el sistema y protegidos en un directorio encriptado que evita que pueda ser modificado y así corromper el sistema.",
+      "C. necesita, vienen pre-instalados en el sistema y protegidos en un directorio encriptado q evita q pueda ser modificado y así corromper el sistema, al estar pre-instalados se le permite al usuario elegir q repositorios usar e instalar aplicaciones.",
+      "D. necesita, vienen preinstalados en el sistema y protegidos en un directorio encriptado q evita q pueda ser modificado y así corromper el sistema, al estar pre-instalados se permite al administrador del sistema q repositorios usar e instalar aplicaciones."
+    ],
+    "correcta": 0,
+    "explicacion": "Los repositorios son servidores donde se almacenan paquetes de software necesarios para el sistema.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "39. Si tenemos un problema de hiperpaginación(Trashing)en un equipo, ¿Qué podemos hacer para solucionarlo?",
+    "opciones": [
+      "A. Aumentar la memoria virtual.",
+      "B. Aumentar el disco duro.",
+      "C. Aumentar el número de procesadores.",
+      "D. Aumentar la memoria física."
+    ],
+    "correcta": 3,
+    "explicacion": "El thrashing ocurre cuando hay excesivos fallos de página por falta de memoria RAM. La solución más efectiva es aumentar la memoria física.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Puede empeorar el problema.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "40. En Linux, ¿cuál de las siguientes opciones utilizaría para conocer qué puertos tiene abiertos un servidor?",
+    "opciones": [
+      "A. ntpq",
+      "B. ntport",
+      "C. nmap",
+      "D. traceroute"
+    ],
+    "correcta": 2,
+    "explicacion": "nmap es una herramienta de escaneo de red que permite identificar puertos abiertos en un sistema.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "41. ¿Qué comando se debe ejecutar para mostrar un listado de los servicios en ejecución en un ordenador con sistema operativo Windows 10?",
+    "opciones": [
+      "A. Net view services",
+      "B. Net start process",
+      "C. Net start",
+      "D. Net start all"
+    ],
+    "correcta": 2,
+    "explicacion": "El comando 'net start' muestra los servicios que se están ejecutando actualmente en Windows.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "42. ¿Cuál de las siguientes NO es una secuencia de comandos disponible tras la instalación de IIS 6.0?",
+    "opciones": [
+      "A. iisvdir.vbs, que permite administrar los directorios virtuales de los sitios Web.",
+      "B. iisftpsec.vbs, que permite administrar el servicio de FTP seguro.",
+      "C. iiscnfg.vbs, que permite administrar la configuración de IIS.",
+      "D. iisback.vbs, que permite administrar las copias de seguridad de IIS."
+    ],
+    "correcta": 1,
+    "explicacion": "iisftpsec.vbs no forma parte de los scripts estándar de IIS 6.0.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "43. El nombre por el que se conoce de forma genérica a las soluciones que permiten gestionar, monitorizar y administrar dispositivos móviles de forma remota es:",
+    "opciones": [
+      "A. MDM",
+      "B. MMD",
+      "C. SCM",
+      "D. RDM"
+    ],
+    "correcta": 0,
+    "explicacion": "MDM (Mobile Device Management) engloba soluciones para gestión remota de dispositivos móviles.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "44. Indique cuál de los siguientes comandos UNIX muestra el % del uso de CPU:",
+    "opciones": [
+      "A. tar",
+      "B. crontab",
+      "C. iostat",
+      "D. netstat"
+    ],
+    "correcta": 2,
+    "explicacion": "iostat muestra estadísticas de CPU y E/S, incluyendo porcentaje de uso.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "45. En el contexto de la gestión de dispositivos móviles, qué significan las siglas BYOD:",
+    "opciones": [
+      "A. Bring Your Own Device.",
+      "B. Best Year's Open Device.",
+      "C. Backup Yearly with Online Device.",
+      "D. Buy Yet-Only Divided Device."
+    ],
+    "correcta": 0,
+    "explicacion": "BYOD significa Bring Your Own Device, es decir, uso de dispositivos personales en el trabajo.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "46. De los siguientes comandos/<combinación de teclas>, indique cuál permite salir del editor Vi salvando los cambios del fichero que se está editando:",
+    "opciones": [
+      "A. <Esc> ZZ",
+      "B. q!",
+      "C. <Ctrl + x>",
+      "D. <Supr + x>"
+    ],
+    "correcta": 0,
+    "explicacion": "En vi, 'ZZ' guarda y sale del editor.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Sale sin guardar.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "47. Se desea disponer de una propiedad del tipo de objeto \"Usuario\" no incluida en la distribución por defecto del Directorio Activo de Microsoft Windows Server 2003. Esta propiedad contendrá el número del documento nacional de identidad. ¿Qué solución de las siguientes se puede adoptar?",
+    "opciones": [
+      "A. No es posible alterar ni los tipos de objetos ni sus propiedades asociadas a los mismos en el Directorio Activo de Microsoft.",
+      "B. Se deberá realizar una operación denominada extensión del esquema del Directorio Activo.",
+      "C. Se debe enlazar el Directorio Activo con una base de datos Microsoft SQL Server 2005 definida al efecto que contenga un campo con el UID de cada objeto Usuario y el campo adicional con el número del documento nacional de identidad.",
+      "D. Se debe recurrir al uso de un Metadirectorio."
+    ],
+    "correcta": 1,
+    "explicacion": "Para añadir atributos nuevos en Active Directory se debe extender el esquema.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "48. En el sistema operativo UNIX, las contraseñas de los usuarios se guardan encriptadas en el fichero:",
+    "opciones": [
+      "A. /etc/passwd",
+      "B. /etc/shadow",
+      "C. /etc/keys",
+      "D. /etc/users"
+    ],
+    "correcta": 1,
+    "explicacion": "Las contraseñas cifradas se almacenan en /etc/shadow por seguridad.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "49. ¿Cuál es el significado del comando sort de UNIX?",
+    "opciones": [
+      "A. Genera una secuencia de números.",
+      "B. Muestra el estado de uno o varios procesos.",
+      "C. Muestra usuarios autenticados en el sistema.",
+      "D. Permite ordenar líneas de archivos."
+    ],
+    "correcta": 3,
+    "explicacion": "sort ordena líneas de texto en archivos o entrada estándar.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "50. El comando sfc /scannow:",
+    "opciones": [
+      "A. Examina todos los archivos de sistema protegidos y reemplaza los archivos dañados con una copia en caché.",
+      "B. Rrepara el entorno de arranque ubicado en la partición del sistema.",
+      "C. Muestra o establece la directiva de red de área de almacenamiento (sanSAN) para el sistema operativo.",
+      "D. Analizar uno o varios servidores con una directiva generada por SCW."
+    ],
+    "correcta": 0,
+    "explicacion": "sfc /scannow verifica integridad de archivos del sistema y repara los dañados.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "51. En un sistema operativo UNIX, ¿qué hace la siguiente cadena de comandos? $ scp paco@almendro.admin.org:/etc/hosts paco@abedul.admin.org:/etc/hosts",
+    "opciones": [
+      "A. El usuario paco está realizando una copia del fichero host del servidor abedul en el servidor almendro.",
+      "B. El usuario paco está realizando una copia del fichero host del servidor almendro en el servidor abedul.",
+      "C. El usuario paco está configurando un nuevo dominio en el servidor almendro correspondiente al servidor abedul.",
+      "D. El usuario paco está configurando un nuevo dominio en el servidor almendro con los datos de dominio guardados en el servidor abedul."
+    ],
+    "correcta": 1,
+    "explicacion": "scp copia archivos entre sistemas remotos. Aquí se copia /etc/hosts desde almendro hacia abedul.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "52. Indique cuál es el resultado de la ejecución del comando \"cat fichero | wc -l\" en Unix:",
+    "opciones": [
+      "A. Muestra el contenido de fichero.",
+      "B. El número de líneas que tiene fichero.",
+      "C. Muestra el directorio en que se encuentra fichero.",
+      "D. El número de palabras que tiene fichero."
+    ],
+    "correcta": 1,
+    "explicacion": "wc -l cuenta líneas. cat pasa el contenido al pipe.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "53. En los sistemas Linux, el comando pwd permite:",
+    "opciones": [
+      "A. Mostrar el nombre del directorio de trabajo actual.",
+      "B. Cambiar la contraseña de un usuario.",
+      "C. Informar del estado de los procesos.",
+      "D. Cambiar el directorio de trabajo."
+    ],
+    "correcta": 0,
+    "explicacion": "pwd (print working directory) muestra el directorio actual.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "54. El comando de Linux que permite conocer la ruta completa de un comando es:",
+    "opciones": [
+      "A. which",
+      "B. apropos",
+      "C. catch",
+      "D. tee"
+    ],
+    "correcta": 0,
+    "explicacion": "which muestra la ruta del ejecutable de un comando.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "55. De los siguientes comandos Linux, ¿cuál permite cambiar el sistema al nivel de ejecución 3?",
+    "opciones": [
+      "A. rlevel 3",
+      "B. inittab 3",
+      "C. switch_root 3",
+      "D. init 3"
+    ],
+    "correcta": 3,
+    "explicacion": "init 3 cambia al runlevel 3 (modo multiusuario sin GUI).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "56. Comando Unix que a-crea un archivo vacío o, si éste existe, actualiza la hora de modificación:",
+    "opciones": [
+      "A. df",
+      "B. dump",
+      "C. iconv",
+      "D. touch"
+    ],
+    "correcta": 3,
+    "explicacion": "touch crea archivos o actualiza timestamps.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "57. En un sistema UNIX el comando \"iw dev <interface name>\" (<interface name> es uno de los posibles dispositivos existentes en la máquina), muestra al administrador de redes la información de la configuración de:",
+    "opciones": [
+      "A. la interfaz Ethernet en la máquina.",
+      "B. todas las interfaces Ethernet de la máquina.",
+      "C. todas las interfaces inalámbricas de la máquina",
+      "D. la interfaz inalámbrica en la máquina."
+    ],
+    "correcta": 3,
+    "explicacion": "iw se usa para interfaces inalámbricas (WiFi).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "58. En relación a los sistemas de memoria virtual, ¿Cuál de las siguientes afirmaciones es cierta?",
+    "opciones": [
+      "A. Las tablas de páginas son usadas para traducir de direcciones de memoria real a memoria virtual.",
+      "B. La paginación minimiza la fragmentación interna y elimina la externa.",
+      "C. El único modo de implementar memoria virtual es mediante paginación.",
+      "D. Cuando se pide una dirección que se encuentra en una página que no está situada en memoria principal, se produce un fallo de página y se continúa con la ejecución del proceso."
+    ],
+    "correcta": 3,
+    "explicacion": "Un fallo de página ocurre cuando la página no está en RAM y debe cargarse desde disco.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es al revés.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "59. En Debian GNU/Linux, ¿cómo se puede obtener la versión de Linux instalada?",
+    "opciones": [
+      "A. Isb_release -a",
+      "B. Isb_release -x",
+      "C. Isb_release-1",
+      "D. Isb_release –m"
+    ],
+    "correcta": 0,
+    "explicacion": "lsb_release -a muestra la versión de la distribución.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "60. En relación al framework PowerShell Core de administración y configuración de sistemas Windows, indique la afirmación correcta:",
+    "opciones": [
+      "A. Permite interactuar con el sistema operativo, pero no con otras herramientas como IIS o Exchange.",
+      "B. Es un intérprete de comandos que devuelve y recibe texto, no objetos.",
+      "C. No permite ciertas acciones como apagar o detener servicios o modificar registros del sistema.",
+      "D. Es un proyecto open source y se encuentra disponible para Linux y macOS."
+    ],
+    "correcta": 3,
+    "explicacion": "PowerShell Core es open source y multiplataforma.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Trabaja con objetos.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "61. ¿Cuál es el comando que se utiliza en Unix para obtener como respuesta únicamente el directorio actual de trabajo?",
+    "opciones": [
+      "A. ls",
+      "B. vi",
+      "C. pwd",
+      "D. chmod"
+    ],
+    "correcta": 2,
+    "explicacion": "pwd muestra el directorio actual.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "62. En el sistema operativo Windows, ¿qué comando purga la caché de resolución de DNS?",
+    "opciones": [
+      "A. ipconfig /release",
+      "B. ipconfig /cleardns",
+      "C. ipconfig /flushdns",
+      "D. ipconfig /purgedns"
+    ],
+    "correcta": 2,
+    "explicacion": "ipconfig /flushdns limpia la caché DNS.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "63. El operador de un centro de datos desea conectarse a un ordenador UNIX para ejecutar un programa de backup de los discos. ¿Qué programa debe utilizar desde su ordenador personal?",
+    "opciones": [
+      "A. ftp",
+      "B. Un navegador Web.",
+      "C. telnet",
+      "D. IRC"
+    ],
+    "correcta": 2,
+    "explicacion": "telnet permite acceso remoto a sistemas UNIX (aunque hoy se usa ssh).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "64. ¿Cuál de las siguientes tareas no es responsabilidad de un administrador de sistema operativo?:",
+    "opciones": [
+      "A. Crear cuentas de usuario.",
+      "B. Monitorizar la carga de los sistemas y su rendimiento.",
+      "C. Gestionar las copias de seguridad.",
+      "D. Controlar el acceso físico al Centro de Proceso de Datos."
+    ],
+    "correcta": 3,
+    "explicacion": "El acceso físico corresponde a seguridad física, no al administrador de sistemas.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "65. Para saber el espacio utilizado y disponible en un servidor UNIX, un operador utiliza el comando:",
+    "opciones": [
+      "A. df.",
+      "B. bc.",
+      "C. is.",
+      "D. cp."
+    ],
+    "correcta": 0,
+    "explicacion": "df muestra uso de disco.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "66. De las siguientes soluciones, ¿cuál facilita la automatización IT y permite desplegar aplicaciones en servidores Linux?",
+    "opciones": [
+      "A. mc",
+      "B. unity3D",
+      "C. ansible",
+      "D. joe"
+    ],
+    "correcta": 2,
+    "explicacion": "Ansible es herramienta de automatización IT.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "67. ¿Con qué comando de Linux se puede comprobar la integridad de un sistema de ficheros ext3?",
+    "opciones": [
+      "A. fix.ext3",
+      "B. e2fsck",
+      "C. chkdsk",
+      "D. melt"
+    ],
+    "correcta": 1,
+    "explicacion": "e2fsck verifica y repara sistemas ext2/ext3/ext4.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "68. En Linux/Unix ¿qué señal, de las definidas en el <signal.h>, provoca la finalización ordenada de un proceso?",
+    "opciones": [
+      "A. SIGTERM",
+      "B. SIGKILL",
+      "C. SIGILL",
+      "D. SIGTTOU"
+    ],
+    "correcta": 0,
+    "explicacion": "SIGTERM permite terminar procesos de forma controlada.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Fuerza cierre.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "69. ¿Cuál de las siguientes herramientas está diseñada para administrar la configuración de sistemas similares a Unix y a Microsoft Windows de forma declarativa y dispone de una interfaz gráfica para la gestión?",
+    "opciones": [
+      "A. Puppet",
+      "B. CheSalt",
+      "C. Python",
+      "D. Maven"
+    ],
+    "correcta": 0,
+    "explicacion": "Puppet es herramienta declarativa de configuración con interfaz.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  }
+,
+  {
+    "pregunta": "1. En sistemas Linux basados en Debian, ¿qué comando se utiliza para actualizar la lista de paquetes disponibles en los repositorios?",
+    "opciones": [
+      "A. apt upgrade",
+      "B. apt install",
+      "C. apt update",
+      "D. apt refresh"
+    ],
+    "correcta": 2,
+    "explicacion": "apt update descarga la lista de paquetes disponibles desde los repositorios, pero no instala ni actualiza paquetes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Actualiza paquetes ya instalados.",
+      "B": "Incorrecta. Instala paquetes.",
+      "C": "Correcta.",
+      "D": "Incorrecta. No existe como comando estándar."
+    }
+  },
+  {
+    "pregunta": "2. ¿Cuál es la diferencia principal entre 'apt upgrade' y 'apt full-upgrade'?",
+    "opciones": [
+      "A. No hay diferencia.",
+      "B. full-upgrade permite eliminar paquetes si es necesario.",
+      "C. upgrade elimina paquetes antiguos.",
+      "D. full-upgrade solo descarga paquetes."
+    ],
+    "correcta": 1,
+    "explicacion": "apt full-upgrade puede instalar y eliminar paquetes para resolver dependencias, mientras que upgrade no elimina paquetes.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "3. En sistemas basados en Red Hat, ¿qué gestor de paquetes utiliza archivos .rpm?",
+    "opciones": [
+      "A. apt",
+      "B. yum",
+      "C. dpkg",
+      "D. snap"
+    ],
+    "correcta": 1,
+    "explicacion": "yum es el gestor de paquetes de sistemas Red Hat y trabaja con paquetes RPM.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "4. ¿Qué comando yum permite instalar un paquete?",
+    "opciones": [
+      "A. yum add",
+      "B. yum install",
+      "C. yum get",
+      "D. yum update"
+    ],
+    "correcta": 1,
+    "explicacion": "yum install instala paquetes desde repositorios.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "5. En Active Directory, ¿qué es una Unidad Organizativa (OU)?",
+    "opciones": [
+      "A. Un servidor físico.",
+      "B. Un contenedor lógico para organizar objetos.",
+      "C. Un tipo de usuario.",
+      "D. Un protocolo de red."
+    ],
+    "correcta": 1,
+    "explicacion": "Una OU es un contenedor lógico dentro de AD que permite organizar usuarios, grupos y equipos.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "6. ¿Qué es una GPO (Group Policy Object) en Active Directory?",
+    "opciones": [
+      "A. Un tipo de usuario administrador.",
+      "B. Un mecanismo para aplicar configuraciones y políticas a usuarios y equipos.",
+      "C. Un protocolo de autenticación.",
+      "D. Un servicio DNS."
+    ],
+    "correcta": 1,
+    "explicacion": "Las GPO permiten configurar políticas de seguridad y comportamiento en usuarios y equipos.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Qué herramienta de Windows se utiliza para administrar Active Directory gráficamente?",
+    "opciones": [
+      "A. Task Manager",
+      "B. Active Directory Users and Computers",
+      "C. Event Viewer",
+      "D. PowerShell ISE"
+    ],
+    "correcta": 1,
+    "explicacion": "ADUC es la herramienta principal para gestionar usuarios, grupos y OUs.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Qué comando de PowerShell permite obtener información de usuarios en Active Directory?",
+    "opciones": [
+      "A. Get-User",
+      "B. Get-ADUser",
+      "C. Get-UserInfo",
+      "D. Show-User"
+    ],
+    "correcta": 1,
+    "explicacion": "Get-ADUser es el cmdlet específico para consultar usuarios en Active Directory.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "1. ¿Cuál de las siguientes herramientas pertenece al ecosistema Microsoft y permite la administración centralizada de sistemas en red?",
+    "opciones": [
+      "A. Puppet",
+      "B. SCCM",
+      "C. Ansible",
+      "D. Salt"
+    ],
+    "correcta": 1,
+    "explicacion": "SCCM (System Center Configuration Manager) es la solución de Microsoft para la administración centralizada de sistemas, permitiendo gestionar dispositivos, actualizaciones y configuraciones.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Puppet es software de código abierto.",
+      "B": "Correcta.",
+      "C": "Incorrecta. Ansible es de Red Hat.",
+      "D": "Incorrecta. Salt es open source."
+    }
+  },
+  {
+    "pregunta": "2. ¿Cuál es la principal diferencia entre SCCM e Intune?",
+    "opciones": [
+      "A. SCCM es cloud e Intune local.",
+      "B. SCCM es on-premises e Intune es cloud.",
+      "C. Ambos son exclusivamente cloud.",
+      "D. No tienen diferencias."
+    ],
+    "correcta": 1,
+    "explicacion": "SCCM se ejecuta en infraestructura local (on-premises), mientras que Intune está diseñado para gestión en la nube.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "3. ¿Qué herramienta de gestión de configuración NO utiliza agentes en los nodos?",
+    "opciones": [
+      "A. Puppet",
+      "B. Chef",
+      "C. Ansible",
+      "D. Salt"
+    ],
+    "correcta": 2,
+    "explicacion": "Ansible es agentless: no requiere instalar agentes, utiliza SSH o WinRM para comunicarse.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Usa agentes.",
+      "B": "Incorrecta. Usa agentes.",
+      "C": "Correcta.",
+      "D": "Incorrecta. Usa arquitectura master-minion."
+    }
+  },
+  {
+    "pregunta": "4. ¿Qué herramienta utiliza 'playbooks' escritos en YAML?",
+    "opciones": [
+      "A. Chef",
+      "B. Puppet",
+      "C. Ansible",
+      "D. Salt"
+    ],
+    "correcta": 2,
+    "explicacion": "Ansible utiliza playbooks en YAML para definir el estado deseado de los sistemas.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "5. ¿Qué herramienta está escrita en Ruby y utiliza 'manifests'?",
+    "opciones": [
+      "A. Puppet",
+      "B. Ansible",
+      "C. Salt",
+      "D. SCCM"
+    ],
+    "correcta": 0,
+    "explicacion": "Puppet está escrita en Ruby y usa 'manifests' para definir configuraciones.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "6. ¿Qué herramienta está más orientada a desarrolladores y utiliza 'recipes'?",
+    "opciones": [
+      "A. Puppet",
+      "B. Chef",
+      "C. Salt",
+      "D. Ansible"
+    ],
+    "correcta": 1,
+    "explicacion": "Chef utiliza 'recipes' y está más orientado a desarrolladores, también basado en Ruby.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Qué herramienta utiliza los puertos TCP 4505 y 4506?",
+    "opciones": [
+      "A. Puppet",
+      "B. Chef",
+      "C. Salt",
+      "D. Ansible"
+    ],
+    "correcta": 2,
+    "explicacion": "Salt (SaltStack) utiliza los puertos TCP 4505 y 4506 para la comunicación entre master y minions.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Qué puerto utiliza Puppet para comunicarse con sus agentes?",
+    "opciones": [
+      "A. 22",
+      "B. 5985",
+      "C. 8140",
+      "D. 4505"
+    ],
+    "correcta": 2,
+    "explicacion": "Puppet utiliza el puerto TCP 8140 para la comunicación entre el servidor (master) y los clientes.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Qué herramienta utiliza el puerto 22 (SSH) para su funcionamiento?",
+    "opciones": [
+      "A. Puppet",
+      "B. Ansible",
+      "C. Chef",
+      "D. Salt"
+    ],
+    "correcta": 1,
+    "explicacion": "Ansible usa SSH (puerto 22) para conectarse a los nodos remotos.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. ¿Qué herramienta utiliza el puerto 5985 asociado a WinRM?",
+    "opciones": [
+      "A. Chef",
+      "B. Puppet",
+      "C. Salt",
+      "D. SCCM"
+    ],
+    "correcta": 0,
+    "explicacion": "Chef utiliza WinRM (puerto 5985) para la administración remota en entornos Windows.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "11. ¿Qué herramienta no requiere un servidor maestro?",
+    "opciones": [
+      "A. Puppet",
+      "B. Chef",
+      "C. Ansible",
+      "D. Salt"
+    ],
+    "correcta": 2,
+    "explicacion": "Ansible no necesita arquitectura master-agent, es más simple.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "12. ¿Qué herramienta permite definir el estado deseado y corregir automáticamente desviaciones?",
+    "opciones": [
+      "A. Puppet",
+      "B. Ansible",
+      "C. Ambas",
+      "D. Ninguna"
+    ],
+    "correcta": 2,
+    "explicacion": "Tanto Puppet como Ansible trabajan con el concepto de estado deseado (desired state).",
+    "analisis_opciones": {
+      "A": "Parcial.",
+      "B": "Parcial.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "1. ¿Qué significa MDM en el contexto de la gestión de dispositivos?",
+    "opciones": [
+      "A. Mobile Data Management",
+      "B. Mobile Device Management",
+      "C. Managed Device Mode",
+      "D. Multi Device Management"
+    ],
+    "correcta": 1,
+    "explicacion": "MDM (Mobile Device Management) es la gestión de dispositivos móviles, centrada en controlar y asegurar smartphones y tablets dentro de una organización.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es un término estándar en este contexto.",
+      "B": "Correcta. Es el concepto base de gestión de dispositivos móviles.",
+      "C": "Incorrecta. No corresponde a una definición real.",
+      "D": "Incorrecta. No es el significado oficial."
+    }
+  },
+  {
+    "pregunta": "2. ¿Qué diferencia principal introduce EMM respecto a MDM?",
+    "opciones": [
+      "A. Elimina la gestión de dispositivos.",
+      "B. Añade gestión de aplicaciones y contenido.",
+      "C. Solo funciona en la nube.",
+      "D. Es más simple que MDM."
+    ],
+    "correcta": 1,
+    "explicacion": "EMM (Enterprise Mobility Management) amplía MDM incluyendo MAM (gestión de aplicaciones) y MCM (gestión de contenido), además de otras capacidades empresariales.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No elimina funciones, las amplía.",
+      "B": "Correcta. Es la clave: añade MAM y MCM.",
+      "C": "Incorrecta. Puede ser cloud o híbrido.",
+      "D": "Incorrecta. Es más complejo."
+    }
+  },
+  {
+    "pregunta": "3. ¿Qué caracteriza a UEM?",
+    "opciones": [
+      "A. Solo gestiona móviles.",
+      "B. Integra MDM y EMM y gestiona todos los endpoints.",
+      "C. Sustituye a Active Directory.",
+      "D. Solo funciona en entornos Linux."
+    ],
+    "correcta": 1,
+    "explicacion": "UEM (Unified Endpoint Management) es la evolución que integra MDM y EMM y permite gestionar todos los dispositivos (móviles, PCs, IoT, etc.).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería MDM.",
+      "B": "Correcta. Es la evolución completa.",
+      "C": "Incorrecta. No sustituye AD.",
+      "D": "Incorrecta. Es multiplataforma."
+    }
+  },
+  {
+    "pregunta": "4. ¿Qué política permite a los empleados usar sus propios dispositivos?",
+    "opciones": [
+      "A. COPE",
+      "B. CYOD",
+      "C. BYOD",
+      "D. COSU"
+    ],
+    "correcta": 2,
+    "explicacion": "BYOD (Bring Your Own Device) permite a los empleados usar dispositivos personales para trabajar.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Dispositivo de empresa con uso personal permitido.",
+      "B": "Incorrecta. Elección entre dispositivos aprobados.",
+      "C": "Correcta. Dispositivo personal.",
+      "D": "Incorrecta. Uso restringido empresarial."
+    }
+  },
+  {
+    "pregunta": "5. ¿Qué modelo implica que el dispositivo es propiedad de la empresa pero permite uso personal?",
+    "opciones": [
+      "A. BYOD",
+      "B. COPE",
+      "C. CYOD",
+      "D. COBO"
+    ],
+    "correcta": 1,
+    "explicacion": "COPE (Corporate Owned Personally Enabled) implica que la empresa es dueña del dispositivo pero permite cierto uso personal.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Dispositivo personal.",
+      "B": "Correcta.",
+      "C": "Incorrecta. Elección dentro de lista.",
+      "D": "Incorrecta. Solo uso empresarial."
+    }
+  },
+  {
+    "pregunta": "6. ¿Qué modelo permite elegir un dispositivo dentro de una lista aprobada por la empresa?",
+    "opciones": [
+      "A. BYOD",
+      "B. COPE",
+      "C. CYOD",
+      "D. COSU"
+    ],
+    "correcta": 2,
+    "explicacion": "CYOD (Choose Your Own Device) permite elegir un dispositivo dentro de un catálogo aprobado.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Qué modelo implica dispositivos de empresa con uso exclusivamente laboral?",
+    "opciones": [
+      "A. BYOD",
+      "B. COPE",
+      "C. CYOD",
+      "D. COBO"
+    ],
+    "correcta": 3,
+    "explicacion": "COBO (Corporate Owned Business Only) implica uso exclusivamente profesional.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Qué modelo suele utilizar dispositivos en modo kiosco (una única app o uso limitado)?",
+    "opciones": [
+      "A. BYOD",
+      "B. COPE",
+      "C. CYOD",
+      "D. COSU"
+    ],
+    "correcta": 3,
+    "explicacion": "COSU (Corporate Owned Single Use) se usa en dispositivos con uso muy restringido, como kioscos o terminales específicos.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Cuál de las siguientes es una funcionalidad típica de las soluciones MDM?",
+    "opciones": [
+      "A. Borrado remoto",
+      "B. Gestión de bases de datos",
+      "C. Compilación de código",
+      "D. Control de versiones"
+    ],
+    "correcta": 0,
+    "explicacion": "El borrado remoto es una función clave para proteger datos en caso de pérdida o robo del dispositivo.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. ¿Qué herramienta está orientada a la gestión de dispositivos móviles en la nube dentro del ecosistema Microsoft?",
+    "opciones": [
+      "A. SCCM",
+      "B. Intune",
+      "C. Puppet",
+      "D. Chef"
+    ],
+    "correcta": 1,
+    "explicacion": "Microsoft Intune es la solución cloud para gestión de dispositivos y endpoints.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es on-premises.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  }
+]
+
+
+
+
+

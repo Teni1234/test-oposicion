@@ -1,0 +1,2239 @@
+[
+  {
+    "pregunta": "1. De entre las siguientes opciones de direcciones IPv4, ¿cuáles son dos direcciones asignables a dos host en distintas redes?",
+    "opciones": [
+      "A. 190.11.255.255 y 190.10.30.40",
+      "B. 19.24.48.35 y 19.132.250.35",
+      "C. 246.2.8.44 y 246.2.240.3",
+      "D. 213.45.128.8 y 213.45.126.74"
+    ],
+    "correcta": 1,
+    "explicacion": "Para ser asignables a hosts, no pueden ser direcciones de red ni de broadcast. En la opción B, ambas empiezan por 19 (Clase A, máscara 255.0.0.0). Como el segundo octeto es distinto (24 vs 132), pertenecen a redes Clase A diferentes y son números de host válidos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 190.11.255.255 es el broadcast de su red (Clase B).",
+      "B": "Correcta. Dos IPs de host válidas en redes separadas.",
+      "C": "Incorrecta. 246.x es Clase E (reservada/experimental).",
+      "D": "Incorrecta. 213.x es Clase C; dependiendo de la máscara podrían estar en la misma."
+    }
+  },
+  {
+    "pregunta": "2. ¿Cuál de las siguientes respuestas es correcta respecto al modelo OSI de ISO?",
+    "opciones": [
+      "A. Las capas son: Física, de red, de transporte, de sesión, de presentación y de aplicación.",
+      "B. La versión actual del estándar OSI es la ISO/IEC 7498-1:1994.",
+      "C. La capa de transporte se ocupa, entre otros, de aspectos como el enrutamiento y el reenvío.",
+      "D. La capa de sesión se divide en subcapas MAC y LLC."
+    ],
+    "correcta": 1,
+    "explicacion": "El estándar oficial que define el modelo OSI es la norma ISO/IEC 7498-1, cuya revisión de 1994 es la referencia técnica actual.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Falta la capa de Enlace (Nivel 2).",
+      "B": "Correcta. Denominación técnica exacta.",
+      "C": "Incorrecta. El enrutamiento es del Nivel 3 (Red).",
+      "D": "Incorrecta. MAC/LLC pertenecen al Nivel 2 (Enlace)."
+    }
+  },
+  {
+    "pregunta": "3. Si en una cabecera IPv6, el campo 'Cabecera siguiente' (next header) tiene el valor 17, ¿qué protocolo indica?",
+    "opciones": [
+      "A. UDP.",
+      "B. TCP.",
+      "C. FTP.",
+      "D. SSH."
+    ],
+    "correcta": 0,
+    "explicacion": "Los números de protocolo son estándares: 6 es para TCP y 17 es para UDP, tanto en IPv4 como en IPv6.",
+    "analisis_opciones": {
+      "A": "Correcta. UDP = 17.",
+      "B": "Incorrecta. TCP = 6.",
+      "C": "Incorrecta. FTP es aplicación (Nivel 7).",
+      "D": "Incorrecta. SSH es aplicación (Nivel 7)."
+    }
+  },
+  {
+    "pregunta": "4. Para obtener la dirección física (MAC) de un dispositivo, el comando a utilizar es:",
+    "opciones": [
+      "A. ipconfig /all (en Unix).",
+      "B. getmac_addrss (en Unix).",
+      "C. ifconfig (en Windows).",
+      "D. getmac (en Windows)"
+    ],
+    "correcta": 3,
+    "explicacion": "En sistemas Windows, el comando 'getmac' extrae directamente las direcciones físicas de los adaptadores de red.",
+    "analisis_opciones": {
+      "A": "Incorrecta. ipconfig es de Windows, no de Unix.",
+      "B": "Incorrecta. Comando inexistente.",
+      "C": "Incorrecta. ifconfig es de Unix/Linux.",
+      "D": "Correcta. Comando nativo de Windows."
+    }
+  },
+  {
+    "pregunta": "5. Si se utilizan 5 bits en el protocolo IP para identificar los hosts de una subred, ¿cuántos hosts pueden direccionarse?",
+    "opciones": [
+      "A. 29",
+      "B. 30",
+      "C. 31",
+      "D. 32"
+    ],
+    "correcta": 1,
+    "explicacion": "Fórmula: $2^n - 2$. Con 5 bits: $2^5 = 32$. Restamos la dirección de red y la de broadcast: $32 - 2 = 30$.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Cálculo según estándar.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Total de IPs, no asignables a hosts."
+    }
+  },
+  {
+    "pregunta": "6. Relativa al direccionamiento IPv4, indique la respuesta INCORRECTA:",
+    "opciones": [
+      "A. La dirección 172.16.52.63 es una dirección de clase B.",
+      "B. Las direcciones 192.168.123.71 y 192.168.123.133 con máscara 255.255.255.192 están en la misma red.",
+      "C. Las redes de clase A usan una máscara predeterminada de 255.0.0.0.",
+      "D. En las redes clase C se permite direccionar 254 equipos como máximo."
+    ],
+    "correcta": 1,
+    "explicacion": "Máscara .192 divide en bloques de 64. Las subredes son .0-.63, .64-.127, .128-.191. El .71 cae en la segunda y el .133 en la tercera. No están en la misma.",
+    "analisis_opciones": {
+      "A": "Correcta. Clase B (128-191).",
+      "B": "Incorrecta (Falsa). Están en redes diferentes.",
+      "C": "Correcta. Clase A es /8.",
+      "D": "Correcta. $2^8 - 2 = 254$."
+    }
+  },
+  {
+    "pregunta": "7. ¿Cuál de las siguientes no es una máscara de red posible?",
+    "opciones": [
+      "A. 255.255.240.0",
+      "B. 255.255.224.0",
+      "C. 255.255.216.0",
+      "D. 255.255.0.0"
+    ],
+    "correcta": 2,
+    "explicacion": "Una máscara debe tener todos los 'unos' a la izquierda y 'ceros' a la derecha. 216 en binario es 11011000; tiene un cero entre unos, lo cual es ilegal.",
+    "analisis_opciones": {
+      "A": "Posible. Es /20.",
+      "B": "Posible. Es /19.",
+      "C": "No posible. Rompe la regla de bits contiguos.",
+      "D": "Posible. Es /16."
+    }
+  },
+  {
+    "pregunta": "8. El orden ascendente (capa 1 a 7) que siguen las capas del modelo OSI es:",
+    "opciones": [
+      "A. Física, Enlace, Red, Transporte, Sesión, Presentación y Aplicación.",
+      "B. Física, Enlace, Red, Transporte, Presentación, Sesión y Aplicación.",
+      "C. Física, Enlace, Transporte, Red, Sesión, Aplicación y Presentación.",
+      "D. Física, Enlace, Red, Transporte, Sesión, Aplicación y Presentación."
+    ],
+    "correcta": 0,
+    "explicacion": "Mnemotecnia FERTSPA: Física, Enlace, Red, Transporte, Sesión, Presentación, Aplicación.",
+    "analisis_opciones": {
+      "A": "Correcta. Orden oficial ISO.",
+      "B": "Incorrecta. Sesión va antes que Presentación.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. Sobre el protocolo RSVP, es correcto decir:",
+    "opciones": [
+      "A. RFC 4566, destinado a describir sesiones multimedia.",
+      "B. RFC 7826, protocolo para controlar la entrega de datos en tiempo real.",
+      "C. RFC 2205, protocolo de configuración de reserva de recursos.",
+      "D. RFC 2974, posibilita el anuncio de sesiones multimedia."
+    ],
+    "correcta": 2,
+    "explicacion": "RSVP (Resource Reservation Protocol) sirve para que un host pida reserva de ancho de banda a los routers para una transmisión específica.",
+    "analisis_opciones": {
+      "A": "Incorrecta (Eso es SDP).",
+      "B": "Incorrecta (Eso es RTSP).",
+      "C": "Correcta. Definición y RFC estándar.",
+      "D": "Incorrecta (Eso es SAP)."
+    }
+  },
+  {
+    "pregunta": "10. ¿Cuánta carga útil (payload) puede almacenar un jumboframe?",
+    "opciones": [
+      "A. 7.000 bytes.",
+      "B. 1.500 bytes.",
+      "C. 9.000 bytes.",
+      "D. 10.000 bytes."
+    ],
+    "correcta": 2,
+    "explicacion": "La trama Ethernet estándar tiene 1500 bytes. Los Jumbo Frames suben ese límite a 9000 bytes para reducir la carga de la CPU en grandes transferencias.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Es el tamaño estándar, no el jumbo.",
+      "C": "Correcta. Valor típico industrial.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "11. ¿Cuál de los siguientes NO es una unidad de datos de protocolo (PDU) en la arquitectura TCP/IP?",
+    "opciones": [
+      "A. Segmento",
+      "B. Datagrama",
+      "C. Celda",
+      "D. Paquete"
+    ],
+    "correcta": 2,
+    "explicacion": "La 'Celda' es exclusiva de redes ATM. En TCP/IP usamos Segmentos (Transporte) y Paquetes/Datagramas (Internet).",
+    "analisis_opciones": {
+      "A": "Correcta (Transporte).",
+      "B": "Correcta (Internet).",
+      "C": "Incorrecta (Es de ATM).",
+      "D": "Correcta (Nombre genérico Capa 3)."
+    }
+  },
+  {
+    "pregunta": "12. ¿Cuál de los siguientes protocolos de seguridad funciona a nivel de transporte OSI?",
+    "opciones": [
+      "A. SSL.",
+      "B. Ipsec.",
+      "C. HTTPS.",
+      "D. PGP."
+    ],
+    "correcta": 0,
+    "explicacion": "SSL/TLS se sitúa sobre TCP para proporcionar un canal seguro a las capas superiores. HTTPS es nivel de aplicación usando SSL.",
+    "analisis_opciones": {
+      "A": "Correcta. Nivel 4.",
+      "B": "Incorrecta. Nivel 3 (Red).",
+      "C": "Incorrecta. Nivel 7 (Aplicación).",
+      "D": "Incorrecta. Nivel 7 (Correo)."
+    }
+  },
+  {
+    "pregunta": "13. En IPv6, las direcciones FF00::/8 son:",
+    "opciones": [
+      "A. Anycast",
+      "B. Multicast",
+      "C. Unicast",
+      "D. Loopback"
+    ],
+    "correcta": 1,
+    "explicacion": "En IPv6, cualquier dirección que empiece por FF (1111 1111 en binario) es de Multicast.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta (::1)."
+    }
+  },
+  {
+    "pregunta": "14. En una dirección IPv6 fe80::9d03:62a4:a670:911e%3 ¿Qué significa '%3'?",
+    "opciones": [
+      "A. Hace referencia al índice de zona (interfaz), común en Windows y Linux.",
+      "B. Indica que la dirección se ha obtenido de un sistema Linux.",
+      "C. Indica que la dirección se ha obtenido de un sistema Windows.",
+      "D. Ese formato no es válido en una salida oficial."
+    ],
+    "correcta": 0,
+    "explicacion": "Es el identificador de interfaz (Scope ID). Como la dirección fe80 es local al cable, si hay dos tarjetas de red, el sistema necesita saber por cuál salir mediante ese índice.",
+    "analisis_opciones": {
+      "A": "Correcta. Definición estándar del identificador de zona.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "15. Según el modelo OSI ordene los siguientes PDU's, de mayor a menor nivel:",
+    "opciones": [
+      "A. Paquete, Segmento, Trama.",
+      "B. Trama, Paquete, Segmento.",
+      "C. Segmento, Paquete, Trama.",
+      "D. Segmento, Trama, Paquete."
+    ],
+    "correcta": 2,
+    "explicacion": "Orden descendente: Nivel 4 (Segmento), Nivel 3 (Paquete), Nivel 2 (Trama).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Este es el orden ascendente.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "16. ¿Qué protocolo permite una asignación dinámica de direcciones IP?",
+    "opciones": [
+      "A. SNMP",
+      "B. DSCP",
+      "C. DHCP",
+      "D. ARP"
+    ],
+    "correcta": 2,
+    "explicacion": "DHCP automatiza la entrega de parámetros IP para que el administrador no tenga que ir PC por PC.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Gestión.",
+      "B": "Incorrecta. Calidad de servicio.",
+      "C": "Correcta.",
+      "D": "Incorrecta. Resolución IP/MAC."
+    }
+  },
+  {
+    "pregunta": "17. En el modelo OSI, las subcapas MAC y LLC se sitúan en:",
+    "opciones": [
+      "A. La capa de enlace de datos.",
+      "B. La capa de red.",
+      "C. La capa física.",
+      "D. No existen en el modelo OSI."
+    ],
+    "correcta": 0,
+    "explicacion": "El nivel 2 (Enlace) se divide en LLC (control lógico) y MAC (control de acceso físico) según IEEE 802.",
+    "analisis_opciones": {
+      "A": "Correcta. Nivel 2.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "18. Indique la afirmación INCORRECTA en relación a protocolos y sus puertos conocidos:",
+    "opciones": [
+      "A. FTP, puerto 21.",
+      "B. TELNET, puerto 23.",
+      "C. SMTP, puerto 27.",
+      "D. POP3, puerto 110."
+    ],
+    "correcta": 2,
+    "explicacion": "SMTP utiliza tradicionalmente el puerto 25 para la transferencia de correo entre servidores.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Correcta.",
+      "C": "Incorrecta (Falsa). El puerto de SMTP es 25.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "19. En relación a TCP y UDP indique cuál de las siguientes características NO es correcta:",
+    "opciones": [
+      "A. TCP es fiable.",
+      "B. UDP obliga al nivel de red a verificar que el envío es correcto.",
+      "C. TCP trabaja con un flujo de bytes.",
+      "D. UDP es un protocolo sin conexión."
+    ],
+    "correcta": 1,
+    "explicacion": "UDP es 'mejor esfuerzo' y no obliga a ninguna capa a verificar la corrección del envío. Si hay error, el paquete se pierde y punto.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (Falsa). UDP no verifica fiabilidad.",
+      "C": "Correcta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "20. ¿Qué protocolo de encaminamiento está basado en el vector distancia?",
+    "opciones": [
+      "A. BGP.",
+      "B. RIP.",
+      "C. OSPF.",
+      "D. Ninguno de los anteriores."
+    ],
+    "correcta": 1,
+    "explicacion": "RIP es el protocolo por excelencia de vector distancia, usando el número de saltos como métrica única.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Path Vector.",
+      "B": "Correcta.",
+      "C": "Incorrecta. Link State.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "21. ¿Cuál de las siguientes direcciones IP NO es asignable a un equipo en una red?",
+    "opciones": [
+      "A. 193.158.20.254",
+      "B. 54.1.0.0",
+      "C. 137.4.0.0",
+      "D. 192.178.0.254"
+    ],
+    "correcta": 2,
+    "explicacion": "137 es Clase B (máscara 255.255.0.0). La dirección 137.4.0.0 representa el ID de red completa y no puede ponerse a un host.",
+    "analisis_opciones": {
+      "A": "Asignable (Host Clase C).",
+      "B": "Asignable (Host Clase A).",
+      "C": "No asignable (ID de Red).",
+      "D": "Asignable (Host Clase C)."
+    }
+  },
+  {
+    "pregunta": "22. ¿Cuál es la wildcard de la dirección de red con IP 123.132.14.35 y máscara 255.240.0.0?",
+    "opciones": [
+      "A. 0.63.255.255",
+      "B. 0.15.255.255",
+      "C. 0.92.255.255",
+      "D. 0.32.255.255"
+    ],
+    "correcta": 1,
+    "explicacion": "Resta cada octeto de 255: $255-255=0$, $255-240=15$, $255-0=255$, $255-0=255$. Resultado: 0.15.255.255.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Cálculo matemático.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "23. La dirección IP 199.8.45.3 pertenece a una red de ordenadores de clase:",
+    "opciones": [
+      "A. B.",
+      "B. C.",
+      "C. E.",
+      "D. D."
+    ],
+    "correcta": 1,
+    "explicacion": "Rango Clase C: 192 a 223. El 199 entra en este grupo.",
+    "analisis_opciones": {
+      "A": "Incorrecta (128-191).",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "24. En una transmisión se envían secuencialmente dos tramas (A:0111011; B:0011100). Para paridad impar, ¿cuáles serían los bits?",
+    "opciones": [
+      "A. A:0; B:0",
+      "B. A:1; B:0",
+      "C. A:0; B:1",
+      "D. A:1; B:1"
+    ],
+    "correcta": 2,
+    "explicacion": "Paridad Impar: el total de '1s' debe ser impar. Trama A tiene 5 unos (ya impar), bit=0. Trama B tiene 2 unos (par), bit=1 para que sumen 3 (impar).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. A:0 (impar) y B:1 (impar).",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "25. Si tenemos la red 10, dicha red es de la clase:",
+    "opciones": [
+      "A. B.",
+      "B. A.",
+      "C. C.",
+      "D. D."
+    ],
+    "correcta": 1,
+    "explicacion": "La red 10.0.0.0/8 es el bloque privado más grande de la Clase A.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "26. Indique cuál de las siguientes direcciones IPv4 es una dirección IP clase B asignable:",
+    "opciones": [
+      "A. 10.16.7.2",
+      "B. 192.168.25.34",
+      "C. 172.16.256.22",
+      "D. 183.45.33.12"
+    ],
+    "correcta": 3,
+    "explicacion": "183 está en el rango 128-191. Es una Clase B válida.",
+    "analisis_opciones": {
+      "A": "Clase A.",
+      "B": "Clase C.",
+      "C": "IP inexistente (256).",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "27. ¿Qué capa del modelo OSI de ISO puede volver a ordenar los paquetes que ha recibido desordenados?",
+    "opciones": [
+      "A. Red",
+      "B. Transporte",
+      "C. Enlace",
+      "D. Física"
+    ],
+    "correcta": 1,
+    "explicacion": "TCP (Transporte) usa números de secuencia para reconstruir el flujo de datos original si llegan desordenados.",
+    "analisis_opciones": {
+      "A": "Incorrecta. IP no ordena.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "28. En relación a los servicios de OSI, ¿cuál de las siguientes definiciones es FALSA?",
+    "opciones": [
+      "A. Es un conjunto de primitivas que una capa proporciona a la superior.",
+      "B. Define qué operaciones puede realizar la capa, pero no cómo se implementan.",
+      "C. Es un conjunto de reglas que rigen el formato de los mensajes entre entidades iguales.",
+      "D. Está relacionado con la interfaz entre dos capas."
+    ],
+    "correcta": 2,
+    "explicacion": "La opción C define un protocolo (comunicación horizontal), no un servicio (comunicación vertical).",
+    "analisis_opciones": {
+      "A": "Verdadera.",
+      "B": "Verdadera.",
+      "C": "Falsa (Definición de protocolo).",
+      "D": "Verdadera."
+    }
+  },
+  {
+    "pregunta": "29. De los siguientes protocolos de enrutamiento, ¿cuál utiliza un algoritmo de vector de distancia?",
+    "opciones": [
+      "A. OSPF",
+      "B. IGRP",
+      "C. IS-IS",
+      "D. OLSR"
+    ],
+    "correcta": 1,
+    "explicacion": "IGRP es el predecesor de EIGRP de Cisco y se basa en vector distancia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Link State.",
+      "B": "Correcta.",
+      "C": "Incorrecta. Link State.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "30. El protocolo TCP:",
+    "opciones": [
+      "A. Es orientado a conexión y confirmado.",
+      "B. Es orientado a conexión y no confirmado.",
+      "C. Es no orientado a conexión y confirmado.",
+      "D. Es no orientado a conexión y no confirmado."
+    ],
+    "correcta": 0,
+    "explicacion": "TCP establece sesión (saludo 3 vías) y cada paquete es avisado con un ACK (confirmado).",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta (UDP)."
+    }
+  },
+  {
+    "pregunta": "31. Señale la opción INCORRECTA con respecto al protocolo IPv4:",
+    "opciones": [
+      "A. La transmisión de datos se realiza mediante datagramas.",
+      "B. Es orientado a conexión, por lo que los paquetes son tratados conjuntamente.",
+      "C. No es fiable.",
+      "D. En su cabecera incluye el campo Checksum."
+    ],
+    "correcta": 1,
+    "explicacion": "IPv4 es un protocolo de 'Mejor Esfuerzo' y NO es orientado a conexión. Los paquetes son independientes.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (Falsa). No es orientado a conexión.",
+      "C": "Correcta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "32. En IPv6, el campo 'Clase de Tráfico' tiene un tamaño de:",
+    "opciones": [
+      "A. 6 bits.",
+      "B. 8 bits.",
+      "C. 10 bits.",
+      "D. 12 bits."
+    ],
+    "correcta": 1,
+    "explicacion": "El campo Traffic Class en la cabecera fija de IPv6 mide 8 bits.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "33. Dada la dirección de red 194.168.14.0 cogemos 2 bits para subredes. ¿Hosts por subred?",
+    "opciones": [
+      "A. 62.",
+      "B. 256.",
+      "C. 254.",
+      "D. 63."
+    ],
+    "correcta": 0,
+    "explicacion": "Clase C tiene 8 bits de host. $8-2=6$ bits. $2^6=64$. Hosts utilizables: $64-2=62$.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "34. ¿Qué puerto utiliza Telnet?",
+    "opciones": [
+      "A. 23",
+      "B. 25",
+      "C. 21",
+      "D. 20"
+    ],
+    "correcta": 0,
+    "explicacion": "Puerto estándar de Telnet es el 23 TCP.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "SMTP.",
+      "C": "FTP Control.",
+      "D": "FTP Datos."
+    }
+  },
+  {
+    "pregunta": "35. ¿Cuál es puerto estándar asociado al protocolo Telnet?",
+    "opciones": [
+      "A. 443",
+      "B. 32",
+      "C. 23",
+      "D. 80"
+    ],
+    "correcta": 2,
+    "explicacion": "Telnet = 23. No confundir con SSH (22).",
+    "analisis_opciones": {
+      "A": "HTTPS.",
+      "C": "Correcta.",
+      "D": "HTTP."
+    }
+  },
+  {
+    "pregunta": "36. ¿Cuál de las siguientes no es una primitiva de servicio dentro del modelo OSI?",
+    "opciones": [
+      "A. Request",
+      "B. Indication",
+      "C. Response",
+      "D. End"
+    ],
+    "correcta": 3,
+    "explicacion": "Las cuatro son: Request, Indication, Response y Confirm. 'End' no existe.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Correcta.",
+      "C": "Correcta.",
+      "D": "Incorrecta (No es primitiva)."
+    }
+  },
+  {
+    "pregunta": "37. IPv6:",
+    "opciones": [
+      "A. Simplifica la cabecera respecto a IPv4.",
+      "B. Utiliza direcciones de 40 bytes.",
+      "C. Tiene una cabecera de longitud variable.",
+      "D. Usa 2 modos de direccionamiento, unicast y multicast."
+    ],
+    "correcta": 0,
+    "explicacion": "IPv6 quita campos de IPv4 para que los routers procesen más rápido los paquetes.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Direcciones de 16 bytes (128 bits).",
+      "C": "Incorrecta. Longitud fija (40 bytes).",
+      "D": "Incorrecta. Usa 3: Unicast, Multicast, Anycast."
+    }
+  },
+  {
+    "pregunta": "38. Señalar la afirmación cierta sobre la cabecera de un paquete IPv6:",
+    "opciones": [
+      "A. Es igual que la cabecera de IPv4.",
+      "B. La cabecera tiene un tamaño fijo, no admite extensiones.",
+      "C. Las direcciones IPv6 tienen 128 bits.",
+      "D. El campo Hop Limit indica segundos."
+    ],
+    "correcta": 2,
+    "explicacion": "Cada dirección IPv6 mide exactamente 128 bits.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Admite extensiones.",
+      "C": "Correcta.",
+      "D": "Incorrecta. Indica saltos de router."
+    }
+  },
+  {
+    "pregunta": "39. ¿Qué protocolo hay que utilizar para obtener una dirección física a partir de una dirección lógica?",
+    "opciones": [
+      "A. RARP.",
+      "B. NAT.",
+      "C. ARP.",
+      "D. PAT."
+    ],
+    "correcta": 2,
+    "explicacion": "ARP resuelve la MAC de un equipo a partir de su dirección IP.",
+    "analisis_opciones": {
+      "A": "Incorrecta. MAC a IP.",
+      "B": "Incorrecta. Traducción.",
+      "C": "Correcta.",
+      "D": "Incorrecta. PAT."
+    }
+  },
+  {
+    "pregunta": "40. ¿Cuál de los siguientes protocolos NO tiene relación directa con la telefonía IP?",
+    "opciones": [
+      "A. H.323",
+      "B. SIP",
+      "C. NETCDF",
+      "D. RTP"
+    ],
+    "correcta": 2,
+    "explicacion": "NETCDF es un formato de datos científicos. Los otros tres son los pilares de VoIP.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Correcta.",
+      "C": "Incorrecta (No es VoIP).",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "41. Indicar direcciones de red y broadcast para 132.27.31.77/26:",
+    "opciones": [
+      "A. red: 132.27.31.0/26 y broadcast: 132.27.31.127",
+      "B. red: 132.27.31.0/26 y broadcast: 132.27.31.111",
+      "C. red: 132.27.31.64/26 y broadcast: 132.27.31.127",
+      "D. red: 132.27.31.64/26 y broadcast: 132.27.31.111"
+    ],
+    "correcta": 2,
+    "explicacion": "/26 = bloques de 64. Las redes son .0, .64, .128. El .77 está en la red .64. El broadcast es .127.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "42. Una dirección IP se representa en:",
+    "opciones": [
+      "A. Decimal.",
+      "B. Binario.",
+      "C. Hexadecimal.",
+      "D. Cualquiera de las tres es correcta."
+    ],
+    "correcta": 3,
+    "explicacion": "Decimal punteado (v4), Hexadecimal (v6) o Binario (máquina). Las tres son válidas.",
+    "analisis_opciones": {
+      "D": "Correcta. Todas son formas válidas."
+    }
+  },
+  {
+    "pregunta": "43. En materia de protocolos de enrutamiento, ¿cuál es verdadera acerca de RIP?",
+    "opciones": [
+      "A. Split Horizon ayuda a reducir los tiempos de convergencia.",
+      "B. Por defecto, usa el puerto 135.",
+      "C. El protocolo de enrutamiento RIPv2 está definido en el estándar RFC 2080.",
+      "D. Utiliza el protocolo TCP por defecto."
+    ],
+    "correcta": 0,
+    "explicacion": "Split Horizon evita bucles prohibiendo anunciar una ruta por la interfaz donde se aprendió.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Usa 520 UDP.",
+      "C": "Incorrecta. RFC 2453.",
+      "D": "Incorrecta. Usa UDP."
+    }
+  },
+  {
+    "pregunta": "44. ¿Cuál es la respuesta correcta con respecto modelo TCP/IP?",
+    "opciones": [
+      "A. Tiene cinco capas: Acceso a red, Internet, Transporte, Sesión y Aplicación.",
+      "B. TCP y UDP son protocolos de la capa de Internet.",
+      "C. Telnet es un protocolo de la capa de sesión.",
+      "D. ICMP es un protocolo de la capa de Internet."
+    ],
+    "correcta": 3,
+    "explicacion": "ICMP es de control e Internet (Capa 3).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Tiene 4 capas.",
+      "B": "Incorrecta. Son de Transporte.",
+      "C": "Incorrecta. Es de Aplicación.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "45. Para una subred con máscara 255.255.255.128, ¿hosts disponibles?",
+    "opciones": [
+      "A. 126",
+      "B. 127",
+      "C. 128",
+      "D. 129"
+    ],
+    "correcta": 0,
+    "explicacion": "Máscara /25 deja 7 bits de host. $2^7 - 2 = 128 - 2 = 126$.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "46. Indique cuál de las siguientes afirmaciones sobre RIPng es verdadera:",
+    "opciones": [
+      "A. Es un protocolo de enrutamiento para IPv6.",
+      "B. Está especificado en el RFC 2180.",
+      "C. Es un protocolo basado en TCP.",
+      "D. Usa el puerto 646."
+    ],
+    "correcta": 0,
+    "explicacion": "RIPng (Next Generation) es la versión de RIP para IPv6, definida en RFC 2080.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta. Usa UDP.",
+      "D": "Incorrecta. Usa 521 UDP."
+    }
+  },
+  {
+    "pregunta": "47. El campo TTL de los datagramas IP:",
+    "opciones": [
+      "A. Impide que un mensaje esté dando vueltas indefinidamente por la red.",
+      "B. Impide que se modifique el tipo de servicio.",
+      "C. Indica el tiempo de espera en milisegundos.",
+      "D. Indica el número de paquetes."
+    ],
+    "correcta": 0,
+    "explicacion": "El Time-to-Live es la seguridad vital contra bucles infinitos en la red.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "48. La clase A de dirección IP:",
+    "opciones": [
+      "A. Usa 14 bits.",
+      "B. Usa 7 bits en el campo de dirección.",
+      "C. Usa 22 bits en el campo de dirección.",
+      "D. Usa 8 bits en el campo de dirección."
+    ],
+    "correcta": 1,
+    "explicacion": "Clase A: el 1er bit es 0, los siguientes 7 bits definen la red.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "49. Seleccione la respuesta correcta sobre los niveles y servicios del modelo OSI:",
+    "opciones": [
+      "A. Se asimila a un modelo simplificado de solamente 2 niveles.",
+      "B. Las entidades en un nivel N+1 ofrecen servicios a nivel N.",
+      "C. Un servicio confirmado utiliza Request, Indication, Response, Confirm.",
+      "D. Un servicio no confirmado utiliza 3 de las 4 primitivas."
+    ],
+    "correcta": 2,
+    "explicacion": "El ciclo de confirmación requiere las 4 primitivas para cerrar la transacción entre capas.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "50. ¿Cuál es la dirección de difusión de la red a la que pertenece el host 34.254.0.17?",
+    "opciones": [
+      "A. 34.254.255.255",
+      "B. 34.254.0.255",
+      "C. 34.254.0.0",
+      "D. 34.255.255.255"
+    ],
+    "correcta": 3,
+    "explicacion": "34.x es Clase A (/8). La red es 34.0.0.0. El broadcast es la última: 34.255.255.255.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "51. En la arquitectura TCP/IP, Telnet, HTTP y FTP funcionan en la capa de:",
+    "opciones": [
+      "A. Aplicación.",
+      "B. Internet.",
+      "C. Transporte.",
+      "D. Ninguna de las anteriores."
+    ],
+    "correcta": 0,
+    "explicacion": "Nivel superior donde residen los protocolos de servicio al usuario.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "52. Según el modelo OSI, ¿en qué capa quedaría encuadrado el protocolo RPC?",
+    "opciones": [
+      "A. Capa red.",
+      "B. Capa transporte.",
+      "C. Capa sesión",
+      "D. Capa presentación."
+    ],
+    "correcta": 2,
+    "explicacion": "RPC gestiona el diálogo entre procesos remotos (Nivel 5).",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "53. Las unidades de información que maneja el nivel de presentación se denominan:",
+    "opciones": [
+      "A. Celdas.",
+      "B. Tramas.",
+      "C. Paquetes.",
+      "D. Ninguna es correcta."
+    ],
+    "correcta": 3,
+    "explicacion": "A partir del nivel 5, se denominan genéricamente 'datos' o 'mensajes'.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "54. Indique la afirmación correcta referente a un segmento Keep-Alive:",
+    "opciones": [
+      "A. Se envía aleatoriamente.",
+      "B. Si no recibe respuesta siempre corta la conexión.",
+      "C. Se envía para comprobar si la conexión está activa.",
+      "D. Ninguna de las anteriores."
+    ],
+    "correcta": 2,
+    "explicacion": "TCP usa Keep-Alive para verificar que el otro extremo sigue conectado.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "55. La dirección de red asociada a la IP 100.100.14.35 con máscara 255.240.0.0 es:",
+    "opciones": [
+      "A. 100.100.0.0",
+      "B. 100.0.0.0",
+      "C. 100.96.0.0",
+      "D. 100.64.0.0"
+    ],
+    "correcta": 2,
+    "explicacion": "Salto de 16 ($256-240$). Redes: 0, 16... 80, 96, 112. El .100 pertenece a la red .96.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "56. Señale el protocolo de estado de enlace:",
+    "opciones": [
+      "A. IGRP",
+      "B. RIP",
+      "C. OSPF",
+      "D. EIGRP"
+    ],
+    "correcta": 2,
+    "explicacion": "OSPF utiliza inundaciones de estado de enlace para construir el mapa de red.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "57. El campo que desaparece en la cabecera estándar de IPv6 respecto a la v4 es:",
+    "opciones": [
+      "A. Fragmento.",
+      "B. Etiqueta de flujo.",
+      "C. Longitud de carga útil.",
+      "D. Límite de saltos."
+    ],
+    "correcta": 0,
+    "explicacion": "IPv6 no tiene fragmentación en la cabecera base; se hace por extensiones.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "58. El nivel sesión de OSI, ¿dónde se ubica en TCP/IP?",
+    "opciones": [
+      "A. Aplicación.",
+      "B. Transporte.",
+      "C. IP.",
+      "D. Presentación."
+    ],
+    "correcta": 0,
+    "explicacion": "Aplicación en TCP/IP absorbe Sesión y Presentación.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "59. Protocolo que permite conocer la IP asociada a una MAC:",
+    "opciones": [
+      "A. ARP",
+      "B. BOOTP",
+      "C. RARP",
+      "D. LSMAC"
+    ],
+    "correcta": 2,
+    "explicacion": "RARP es lo opuesto a ARP (MAC -> IP).",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "60. Según el modelo OSI la comunicación entre niveles homólogos se realiza mediante:",
+    "opciones": [
+      "A. Interfaz.",
+      "B. Servicios.",
+      "C. Protocolo.",
+      "D. No se pueden comunicar."
+    ],
+    "correcta": 2,
+    "explicacion": "El protocolo rige la comunicación horizontal entre sistemas.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "61. Dada 192.48.11.3 y máscara 255.255.255.128, broadcast es:",
+    "opciones": [
+      "A. C0.30.08.03 (hex).",
+      "B. 192.48.11.128",
+      "C. 11000000.01011100.00001011.00000011 (bin).",
+      "D. 11000000.00110000.00001011.01111111 (bin)."
+    ],
+    "correcta": 3,
+    "explicacion": "Red .0, broadcast .127. Traducido a binario: 11000000.00110000.00001011.01111111.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "62. ¿Cuál permite direccionar un host?",
+    "opciones": [
+      "A. 0.0.0.0",
+      "B. 255.255.255.255",
+      "C. 10.12.256.33",
+      "D. 192.168.255.25"
+    ],
+    "correcta": 3,
+    "explicacion": "IP de Clase C válida para un PC.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "63. En una dirección IPv6 unicast, el identificador de interfaz:",
+    "opciones": [
+      "A. 48 bits de mayor peso.",
+      "B. Identifica una subred.",
+      "C. Se puede calcular a partir de la MAC.",
+      "D. 64 bits de mayor peso."
+    ],
+    "correcta": 2,
+    "explicacion": "EUI-64 genera la parte de host usando la MAC física.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "64. ¿Prefijo de Multicast en IPv6?",
+    "opciones": [
+      "A. ::1/128",
+      "B. 224.0.0.0/4",
+      "C. FF00::/8",
+      "D. FC00::/7"
+    ],
+    "correcta": 2,
+    "explicacion": "FF es el distintivo de Multicast.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "65. Técnica para dar acceso a Internet a varios equipos con una sola IP externa:",
+    "opciones": [
+      "A. IP Mask",
+      "B. IP Masquerade",
+      "C. IP Translate",
+      "D. DHCP"
+    ],
+    "correcta": 1,
+    "explicacion": "IP Masquerade es una forma de NAT dinámica.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "66. ¿TTL de un paquete IP verdadera?",
+    "opciones": [
+      "A. Total Timing Live.",
+      "B. Ocupa 4 bits.",
+      "C. Se incrementa en uno.",
+      "D. Cuando alcanza el valor cero se descarta."
+    ],
+    "correcta": 3,
+    "explicacion": "Evita loops. Se decrementa en cada router.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "67. ¿Prefijo multicast IPv6?",
+    "opciones": [
+      "A. FF80::/10",
+      "B. FF00::/8",
+      "C. FE00::/8",
+      "D. FE80::/10"
+    ],
+    "correcta": 1,
+    "explicacion": "FF = Multicast.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "68. ¿Cuál es una cabecera de extensión en IPv6?",
+    "opciones": [
+      "A. Etiqueta de flujo.",
+      "B. Longitud de carga útil.",
+      "C. Cabecera siguiente.",
+      "D. Cabecera de fragmentación."
+    ],
+    "correcta": 3,
+    "explicacion": "La fragmentación es una extensión opcional en IPv6.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "69. Direcciones imprescindibles en una red Ethernet:",
+    "opciones": [
+      "A. IP.",
+      "B. MAC.",
+      "C. Máscara.",
+      "D. VPN."
+    ],
+    "correcta": 1,
+    "explicacion": "Ethernet es Nivel 2, por lo tanto usa MACs.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "70. Protocolo para IP dinámica:",
+    "opciones": [
+      "A. SNMP",
+      "B. DHCP",
+      "C. ReverseIPAddress",
+      "D. Ipconfig"
+    ],
+    "correcta": 1,
+    "explicacion": "DHCP reparte IPs.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "71. ¿Capa OSI relacionada con ARP?",
+    "opciones": [
+      "A. Aplicación.",
+      "B. Transporte.",
+      "C. Sesión.",
+      "D. Red."
+    ],
+    "correcta": 3,
+    "explicacion": "Se considera un auxiliar de la capa de Red.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "72. ¿Cuántos hosts puede direccionar 172.16.1.0/26?",
+    "opciones": [
+      "A. 62",
+      "B. 30",
+      "C. 14",
+      "D. 126"
+    ],
+    "correcta": 0,
+    "explicacion": "6 bits de host = 64. Menos 2 = 62.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "73. ¿OSPF verdadera?",
+    "opciones": [
+      "A. Open Software Path First.",
+      "B. Algoritmo Dijkstra.",
+      "C. Protocolo IP 98.",
+      "D. OSPF for IPv6 RFC 5430."
+    ],
+    "correcta": 1,
+    "explicacion": "Usa Dijkstra para calcular rutas.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "74. 213.114.93.0/26, ¿broadcast?",
+    "opciones": [
+      "A. 213.114.93.63",
+      "B. 213.114.93.127",
+      "C. 213.114.93.31",
+      "D. 213.114.93.255"
+    ],
+    "correcta": 0,
+    "explicacion": "Salto de 64. Broadcast es .63.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "75. UDP ofrece transferencia en la capa de:",
+    "opciones": [
+      "A. Transporte.",
+      "B. Aplicación.",
+      "C. Red.",
+      "D. Presentación."
+    ],
+    "correcta": 0,
+    "explicacion": "UDP/TCP = Transporte.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "76. ¿Campo incluido en ICMP?",
+    "opciones": [
+      "A. Checksum",
+      "B. Tipo de hardware",
+      "C. Número de secuencia",
+      "D. Número de ventana"
+    ],
+    "correcta": 0,
+    "explicacion": "ICMP tiene Checksum para detectar corrupción.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "77. Indique la respuesta INCORRECTA:",
+    "opciones": [
+      "A. Sesión OSI está en Aplicación TCP/IP.",
+      "B. Acceso de red TCP/IP es igual a Red OSI.",
+      "C. Presentación OSI está en Aplicación TCP/IP.",
+      "D. Transporte TCP/IP es igual a Transporte OSI."
+    ],
+    "correcta": 1,
+    "explicacion": "Red OSI = Internet TCP/IP. Acceso Red = Física + Enlace.",
+    "analisis_opciones": {
+      "B": "Incorrecta (Falsa)."
+    }
+  },
+  {
+    "pregunta": "78. Valor Tipo ICMPv6 'Paquete demasiado Grande':",
+    "opciones": [
+      "A. 2",
+      "B. 4",
+      "C. 1",
+      "D. 3"
+    ],
+    "correcta": 0,
+    "explicacion": "Tipo 2 en ICMPv6 = Packet Too Big.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "79. ¿Direccionamiento IPv6 FALSA?",
+    "opciones": [
+      "A. Compatibilidad IPSec requisito.",
+      "B. Longitud 32 bytes.",
+      "C. Innecesario NAT.",
+      "D. 64 bits menores identificador interfaz."
+    ],
+    "correcta": 1,
+    "explicacion": "IPv6 = 16 bytes (128 bits).",
+    "analisis_opciones": {
+      "B": "Incorrecta (Falsa)."
+    }
+  },
+  {
+    "pregunta": "80. ¿Nivel OSI SMTP?",
+    "opciones": [
+      "A. Presentación",
+      "B. Aplicación",
+      "C. Transporte",
+      "D. Sesión"
+    ],
+    "correcta": 1,
+    "explicacion": "Correo = Aplicación.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "81. Dirección red 113.128.14.35 máscara 255.192.0.0:",
+    "opciones": [
+      "A. 113.128.0.0",
+      "B. 113.192.0.0",
+      "C. 113.128.0.1",
+      "D. 113.192.0.1"
+    ],
+    "correcta": 0,
+    "explicacion": "Salto de 64. La red del 128 es .128.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "82. ¿OSPF verdadera?",
+    "opciones": [
+      "A. Vector distancia.",
+      "B. OSPF v3 soporta IPv6.",
+      "C. RFC 1202.",
+      "D. Pasarela exterior."
+    ],
+    "correcta": 1,
+    "explicacion": "OSPFv3 es nativo de IPv6.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "83. ¿NO es protocolo nivel Red?",
+    "opciones": [
+      "A. BGP",
+      "B. ARP",
+      "C. FTP",
+      "D. RIP"
+    ],
+    "correcta": 2,
+    "explicacion": "FTP es de Aplicación.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "84. UDP añade a IP:",
+    "opciones": [
+      "A. Fragmentación.",
+      "B. Orientado conexión.",
+      "C. Entrega garantizada.",
+      "D. Direccionamiento de Puertos."
+    ],
+    "correcta": 3,
+    "explicacion": "UDP permite identificar procesos mediante puertos.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "85. ¿Nivel OSI RZ, RZ-L y Bifase?",
+    "opciones": [
+      "A. Físico.",
+      "B. Enlace.",
+      "C. Red.",
+      "D. Sesión."
+    ],
+    "correcta": 0,
+    "explicacion": "Codificación eléctrica de bits = Nivel 1.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "86. Campo Payload Length IPv6:",
+    "opciones": [
+      "A. 4 bits.",
+      "B. 1 byte.",
+      "C. 2 bytes.",
+      "D. 4 bytes."
+    ],
+    "correcta": 2,
+    "explicacion": "Ocupa 16 bits (2 bytes).",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "87. Anycast:",
+    "opciones": [
+      "A. Un emisor y un receptor.",
+      "B. Emisor y N receptores.",
+      "C. Todos receptores.",
+      "D. Un emisor y receptor en grupo de posibles."
+    ],
+    "correcta": 3,
+    "explicacion": "Entrega al nodo más cercano.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "88. ARP qué operación:",
+    "opciones": [
+      "A. MAC a IP.",
+      "B. TCP a IP.",
+      "C. TCP a MAC.",
+      "D. IP a MAC."
+    ],
+    "correcta": 3,
+    "explicacion": "Resuelve IP a física.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "89. Longitud dirección IP:",
+    "opciones": [
+      "A. IPv4 32 bytes.",
+      "B. IPv4 16 bytes.",
+      "C. IPv6 128 bits.",
+      "D. IPv6 128 bytes."
+    ],
+    "correcta": 2,
+    "explicacion": "v6 = 128 bits.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "90. Red 127.0.0.0 verdadera:",
+    "opciones": [
+      "A. 127.0.0.1 es loopback, el resto son válidas.",
+      "B. Base de funcionamiento PING.",
+      "C. Datagrama se devuelve al remitente sin bajar a capas inferiores.",
+      "D. Red Clase A ordinaria."
+    ],
+    "correcta": 2,
+    "explicacion": "Es el bucle interno local del host.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "91. Protocolo transporte TCP/IP:",
+    "opciones": [
+      "A. SMTP",
+      "B. ARP",
+      "C. UDP",
+      "D. FTP"
+    ],
+    "correcta": 2,
+    "explicacion": "UDP es uno de los dos grandes de Transporte.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "92. Prefijo Multicast IPv6:",
+    "opciones": [
+      "A. ::1/128",
+      "B. 224.0.0.0/4",
+      "C. FF00::/8",
+      "D. FC00::/7"
+    ],
+    "correcta": 2,
+    "explicacion": "FF identifica Multicast.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "93. Modelo OSI correcta:",
+    "opciones": [
+      "A. Transporte se denominan paquetes.",
+      "B. Cada capa presta servicios a la inferior.",
+      "C. Transporte solo no orientados.",
+      "D. Presentación se encarga del formato de datos."
+    ],
+    "correcta": 3,
+    "explicacion": "La capa 6 traduce formatos y cifrados.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "94. Dirección pública Clase A:",
+    "opciones": [
+      "A. 172.16.1.7",
+      "B. 198.168.1.5",
+      "C. 98.0.0.1",
+      "D. 10.1.23.44"
+    ],
+    "correcta": 2,
+    "explicacion": "98.x.x.x no es privada, por tanto es pública.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "95. NFS nivel OSI:",
+    "opciones": [
+      "A. Red",
+      "B. Sesión",
+      "C. Aplicación",
+      "D. Enlace"
+    ],
+    "correcta": 2,
+    "explicacion": "Servicio de archivos = Nivel 7.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "96. Subcapa encargada de proporcionar interfaz común a protocolos de Red en OSI:",
+    "opciones": [
+      "A. MAC.",
+      "B. LLC (802.2).",
+      "C. Convergencia.",
+      "D. Acceso al Medio."
+    ],
+    "correcta": 1,
+    "explicacion": "La Logical Link Control independiza el software del hardware.",
+    "analisis_opciones": {
+      "B": "Correcta. Actúa como puente con el Nivel 3."
+    }
+  },
+  {
+    "pregunta": "97. Valor decimal octeto 10110110:",
+    "opciones": [
+      "A. 178",
+      "B. 182",
+      "C. 166",
+      "D. 194"
+    ],
+    "correcta": 1,
+    "explicacion": "128 + 32 + 16 + 4 + 2 = 182.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "98. Hex 0x2F a decimal:",
+    "opciones": [
+      "A. 31",
+      "B. 42",
+      "C. 47",
+      "D. 53"
+    ],
+    "correcta": 2,
+    "explicacion": "2*16 + 15 (F) = 47.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "99. Protocolo de transporte preferido para streaming (baja latencia):",
+    "opciones": [
+      "A. TCP.",
+      "B. UDP.",
+      "C. SCTP.",
+      "D. ICMP."
+    ],
+    "correcta": 1,
+    "explicacion": "UDP es rápido y eficiente para video/voz.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "100. Puerto SNMP para avisos (Traps) de agentes:",
+    "opciones": [
+      "A. 161",
+      "B. 162",
+      "C. 443",
+      "D. 514"
+    ],
+    "correcta": 1,
+    "explicacion": "Consulta=161, Trap=162.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "101. Técnica IPv6 entrega al nodo más cercano:",
+    "opciones": [
+      "A. Multicast.",
+      "B. Anycast.",
+      "C. Broadcast.",
+      "D. Unicast."
+    ],
+    "correcta": 1,
+    "explicacion": "Anycast busca la cercanía topológica.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "102. Máscara predeterminada Clase B:",
+    "opciones": [
+      "A. 255.0.0.0",
+      "B. 255.255.0.0",
+      "C. 255.255.255.0",
+      "D. 255.255.255.255"
+    ],
+    "correcta": 1,
+    "explicacion": "Clase B usa 16 bits (/16).",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "103. Campo IPv4 evita bucle infinito:",
+    "opciones": [
+      "A. Checksum.",
+      "B. TTL (Time to Live).",
+      "C. Offset.",
+      "D. IHL."
+    ],
+    "correcta": 1,
+    "explicacion": "Protege la red de paquetes zombies.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "104. Puerto TCP 22:",
+    "opciones": [
+      "A. Telnet.",
+      "B. SSH.",
+      "C. FTP.",
+      "D. SMTP."
+    ],
+    "correcta": 1,
+    "explicacion": "Puerto estándar cifrado de terminal.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "105. Dirección IPv4 loopback:",
+    "opciones": [
+      "A. 192.168.1.1",
+      "B. 127.0.0.1",
+      "C. 10.0.0.1",
+      "D. 169.254.0.1"
+    ],
+    "correcta": 1,
+    "explicacion": "Localhost v4.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "106. Capa OSI cifrado y compresión:",
+    "opciones": [
+      "A. Aplicación.",
+      "B. Presentación.",
+      "C. Sesión.",
+      "D. Red."
+    ],
+    "correcta": 1,
+    "explicacion": "Capa 6 gestiona sintaxis y seguridad.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "107. Puerto HTTPS:",
+    "opciones": [
+      "A. 80",
+      "B. 443",
+      "C. 8080",
+      "D. 21"
+    ],
+    "correcta": 1,
+    "explicacion": "Cifrado web estándar.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "108. Protocolo usa Dijkstra:",
+    "opciones": [
+      "A. RIP.",
+      "B. OSPF.",
+      "C. BGP.",
+      "D. EIGRP."
+    ],
+    "correcta": 1,
+    "explicacion": "OSPF=Link State=Dijkstra.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "109. Hosts útiles máscara .240:",
+    "opciones": [
+      "A. 16",
+      "B. 14",
+      "C. 30",
+      "D. 6"
+    ],
+    "correcta": 1,
+    "explicacion": "2^4 = 16. Menos 2 = 14.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "110. Capa opera ICMP:",
+    "opciones": [
+      "A. Enlace.",
+      "B. Red.",
+      "C. Transporte.",
+      "D. Aplicación."
+    ],
+    "correcta": 1,
+    "explicacion": "Auxiliar Nivel 3.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "111. Protocolo IP a MAC:",
+    "opciones": [
+      "A. DNS.",
+      "B. ARP.",
+      "C. RARP.",
+      "D. DHCP."
+    ],
+    "correcta": 1,
+    "explicacion": "Imprescindible para el cable.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "112. Prefijo fe80::/10:",
+    "opciones": [
+      "A. Multicast.",
+      "B. Link-Local.",
+      "C. Global Unicast.",
+      "D. Loopback."
+    ],
+    "correcta": 1,
+    "explicacion": "Obligatoria en cada interfaz v6.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "113. Protocolo para ENVIAR correo:",
+    "opciones": [
+      "A. POP3.",
+      "B. IMAP.",
+      "C. SMTP.",
+      "D. SNMP."
+    ],
+    "correcta": 2,
+    "explicacion": "POP/IMAP=Recibir, SMTP=Enviar.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "114. PDU Transporte:",
+    "opciones": [
+      "A. Trama.",
+      "B. Paquete.",
+      "C. Segmento.",
+      "D. Bit."
+    ],
+    "correcta": 2,
+    "explicacion": "Nivel 4 utiliza segmentos.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "115. Servicio Confirmado OSI:",
+    "opciones": [
+      "A. Pago.",
+      "B. 4 primitivas.",
+      "C. Fibra.",
+      "D. Sin errores."
+    ],
+    "correcta": 1,
+    "explicacion": "Cierra el ciclo de petición-respuesta.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "116. Privada Clase A RFC 1918:",
+    "opciones": [
+      "A. 172.16...",
+      "B. 10.0.0.0/8.",
+      "C. 192.168...",
+      "D. 127.0.0.0/8."
+    ],
+    "correcta": 1,
+    "explicacion": "Bloque más grande para intranet.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "117. Puerto DNS consultas:",
+    "opciones": [
+      "A. 25",
+      "B. 53",
+      "C. 110",
+      "D. 143"
+    ],
+    "correcta": 1,
+    "explicacion": "IANA puerto 53.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "118. Algoritmo Bellman-Ford:",
+    "opciones": [
+      "A. Estado Enlace.",
+      "B. Vector Distancia.",
+      "C. Vector Ruta.",
+      "D. Estático."
+    ],
+    "correcta": 1,
+    "explicacion": "Base matemática de RIP.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "119. Broadcast red .0/24:",
+    "opciones": [
+      "A. .0",
+      "B. .255",
+      "C. .1",
+      "D. .254"
+    ],
+    "correcta": 1,
+    "explicacion": "Todo unos en el último octeto.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "120. Protocolo MTU en IPv6:",
+    "opciones": [
+      "A. ARP.",
+      "B. ICMPv6.",
+      "C. TCP.",
+      "D. DNS."
+    ],
+    "correcta": 1,
+    "explicacion": "Gestiona el tamaño máximo de paquete permitido.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "121. Sesión OSI en TCP/IP es:",
+    "opciones": [
+      "A. Internet.",
+      "B. Transporte.",
+      "C. Aplicación.",
+      "D. Acceso Red."
+    ],
+    "correcta": 2,
+    "explicacion": "Absorbida por el nivel superior.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "122. Puerto LDAP:",
+    "opciones": [
+      "A. 389",
+      "B. 636",
+      "C. 445",
+      "D. 161"
+    ],
+    "correcta": 0,
+    "explicacion": "Estándar directorio TCP/UDP.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "123. Protocolo IPs auto y 67/68:",
+    "opciones": [
+      "A. DNS.",
+      "B. DHCP.",
+      "C. HTTP.",
+      "D. FTP."
+    ],
+    "correcta": 1,
+    "explicacion": "Gestiona la autoconfiguración del parque.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "124. Rango 224-239:",
+    "opciones": [
+      "A. C.",
+      "B. D (Multicast).",
+      "C. E.",
+      "D. B."
+    ],
+    "correcta": 1,
+    "explicacion": "Clase reservada para grupos.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "125. Comando tabla IP/MAC Windows:",
+    "opciones": [
+      "A. ipconfig.",
+      "B. arp -a.",
+      "C. netstat.",
+      "D. route print."
+    ],
+    "correcta": 1,
+    "explicacion": "Vuelca la caché del protocolo de resolución.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "126. Saltos máximos RIPv2:",
+    "opciones": [
+      "A. 10",
+      "B. 15",
+      "C. 16",
+      "D. 255"
+    ],
+    "correcta": 1,
+    "explicacion": "Límite del diámetro de red.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "127. SCTP vive en capa:",
+    "opciones": [
+      "A. Red.",
+      "B. Transporte.",
+      "C. Sesión.",
+      "D. Aplicación."
+    ],
+    "correcta": 1,
+    "explicacion": "Protocolo nivel 4 para telefonía IP.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "128. Hop Limit v6 sustituye a:",
+    "opciones": [
+      "A. Protocol.",
+      "B. TTL.",
+      "C. Checksum.",
+      "D. Flags."
+    ],
+    "correcta": 1,
+    "explicacion": "Misma función, nombre más descriptivo.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "129. Puerto TCP 445 Windows:",
+    "opciones": [
+      "A. RDP.",
+      "B. SMB.",
+      "C. LDAP.",
+      "D. SNMP."
+    ],
+    "correcta": 1,
+    "explicacion": "Compartición de archivos e impresoras nativo.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "130. Multicast v6 todos los nodos:",
+    "opciones": [
+      "A. ff02::1",
+      "B. ff02::2",
+      "C. ff02::5",
+      "D. ff02::9"
+    ],
+    "correcta": 0,
+    "explicacion": "Equivale al broadcast local.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "131. Puerto TFTP UDP:",
+    "opciones": [
+      "A. 21",
+      "B. 69",
+      "C. 25",
+      "D. 80"
+    ],
+    "correcta": 1,
+    "explicacion": "Puerto estándar protocolo trivial.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "132. Enrutamiento por políticas administrativas:",
+    "opciones": [
+      "A. RIP.",
+      "B. BGP.",
+      "C. OSPF.",
+      "D. Static."
+    ],
+    "correcta": 1,
+    "explicacion": "BGP no solo mira la distancia, sino el 'camino' acordado.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "133. Tamaño MAC:",
+    "opciones": [
+      "A. 32 bits.",
+      "B. 48 bits.",
+      "C. 64 bits.",
+      "D. 128 bits."
+    ],
+    "correcta": 1,
+    "explicacion": "6 octetos de identificador físico.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "134. Next Header 6 en IPv6:",
+    "opciones": [
+      "A. UDP.",
+      "B. TCP.",
+      "C. ICMP.",
+      "D. OSPF."
+    ],
+    "correcta": 1,
+    "explicacion": "Identificativo universal de TCP.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "135. Protocolo sincronización horaria:",
+    "opciones": [
+      "A. SNMP.",
+      "B. NTP.",
+      "C. PGP.",
+      "D. SMB."
+    ],
+    "correcta": 1,
+    "explicacion": "Usa puerto 123 UDP.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "136. Máscara decimal /27:",
+    "opciones": [
+      "A. .192",
+      "B. .224",
+      "C. .240",
+      "D. .248"
+    ],
+    "correcta": 1,
+    "explicacion": "128+64+32 = 224.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "137. Organización RFCs Internet:",
+    "opciones": [
+      "A. IEEE.",
+      "B. IETF.",
+      "C. ISO.",
+      "D. ITU."
+    ],
+    "correcta": 1,
+    "explicacion": "Publican los estándares técnicos de la red.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "138. BGP entre distintos AS:",
+    "opciones": [
+      "A. iBGP.",
+      "B. eBGP.",
+      "C. Interior Routing Protocol.",
+      "D. OSPF Area Connection."
+    ],
+    "correcta": 1,
+    "explicacion": "e=External. Para hablar con routers de fuera.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "139. Puerto SMTP servidores:",
+    "opciones": [
+      "A. 110",
+      "B. 143",
+      "C. 25",
+      "D. 587"
+    ],
+    "correcta": 2,
+    "explicacion": "El 25 es el puerto de transporte de correo entre MTAs.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "140. IPv6 ::1/128:",
+    "opciones": [
+      "A. Dirección no especificada.",
+      "B. Dirección de Loopback.",
+      "C. Dirección Link-Local.",
+      "D. Dirección Unicast Global."
+    ],
+    "correcta": 1,
+    "explicacion": "Equivale al 127.0.0.1.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "141. Salto subredes máscara .224:",
+    "opciones": [
+      "A. 16 direcciones.",
+      "B. 32 direcciones.",
+      "C. 64 direcciones.",
+      "D. 128 direcciones."
+    ],
+    "correcta": 1,
+    "explicacion": "256 - 224 = 32.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "142. Ventana Deslizante TCP:",
+    "opciones": [
+      "A. UDP.",
+      "B. TCP.",
+      "C. IP.",
+      "D. Ethernet."
+    ],
+    "correcta": 1,
+    "explicacion": "Mecanismo de control de flujo exclusivo de fiabilidad nivel 4.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "143. Nivel OSI DNS:",
+    "opciones": [
+      "A. Red.",
+      "B. Transporte.",
+      "C. Sesión.",
+      "D. Aplicación."
+    ],
+    "correcta": 3,
+    "explicacion": "Da servicio directo a programas.",
+    "analisis_opciones": {
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "144. OSPF Protocolo IP 89:",
+    "opciones": [
+      "A. TCP.",
+      "B. Encapsulación directa IP.",
+      "C. Aplicación.",
+      "D. Ethernet."
+    ],
+    "correcta": 1,
+    "explicacion": "OSPF no usa TCP ni UDP; viaja 'a pelo' sobre IP.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "145. Función Nivel 2 OSI:",
+    "opciones": [
+      "A. Enrutamiento.",
+      "B. Transmisión bits.",
+      "C. Transferencia fiable tramas y errores.",
+      "D. Diálogo aplicaciones."
+    ],
+    "correcta": 2,
+    "explicacion": "En enlace de datos se asegura que el cable entregue bien el paquete.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "146. Anycast v6:",
+    "opciones": [
+      "A. Todos.",
+      "B. Uno.",
+      "C. Interfaz más cercana.",
+      "D. Miembros grupo."
+    ],
+    "correcta": 2,
+    "explicacion": "Entrega al router más óptimo por métrica.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "147. TRACERT modifica campo:",
+    "opciones": [
+      "A. Checksum.",
+      "B. TTL.",
+      "C. Offset.",
+      "D. MAC."
+    ],
+    "correcta": 1,
+    "explicacion": "Lo va subiendo de 1 en 1 para forzar el error de cada router.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "148. Administración remota segura:",
+    "opciones": [
+      "A. Telnet.",
+      "B. SNMP v1.",
+      "C. SSH.",
+      "D. HTTP."
+    ],
+    "correcta": 2,
+    "explicacion": "Cifra la sesión íntegramente.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "149. Hosts Clase A:",
+    "opciones": [
+      "A. 254",
+      "B. 65.534",
+      "C. 16.777.214",
+      "D. 1.024"
+    ],
+    "correcta": 2,
+    "explicacion": "24 bits de host = 16.7 millones.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "150. IPv6 sustituto ARP:",
+    "opciones": [
+      "A. DHCPv6.",
+      "B. NDP (Neighbor Discovery).",
+      "C. SLAAC.",
+      "D. ICMPv4."
+    ],
+    "correcta": 1,
+    "explicacion": "Utiliza Multicast de ICMPv6 para encontrar vecinos.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  }
+]

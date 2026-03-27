@@ -1,0 +1,2434 @@
+[
+  {
+    "pregunta": "1. ¿Cuál de los siguientes no es un diagrama UML (Lenguaje Unificado de Modelado)?",
+    "opciones": ["A. Diagrama de casos de uso", "B. Diagrama de despliegue", "C. Diagrama de funciones", "D. Diagrama de actividades"],
+    "correcta": 2,
+    "explicacion": "El 'Diagrama de funciones' no forma parte de la especificación oficial de UML.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un diagrama de comportamiento que representa la interacción entre actores y el sistema.",
+      "B": "Incorrecta. Es un diagrama estructural que modela la arquitectura física del sistema.",
+      "C": "Correcta. No existe en UML, es un concepto externo.",
+      "D": "Incorrecta. Es un diagrama de comportamiento que representa flujos de actividades."
+    }
+  },
+  {
+    "pregunta": "2. Atendiendo a la clasificación de diagramas UML en su versión 2.5, ¿cuál de las siguientes opciones está formada exclusivamente por diagramas de estructura?",
+    "opciones": [
+      "A. Diagrama de Ciases, Diagrama de Actividad, Diagrama de Paquetes, Diagrama de Componentes, Diagrama de Despliegue.",
+      "B. Diagrama de Clases, Diagrama de Objetos, Diagrama de Secuencia, Diagrama de Componentes, Diagrama de Perfil.",
+      "C. Diagrama de Clases, Diagrama de Casos de Uso, Diagrama de Paquetes, Diagrama de Componentes, Diagrama de Despliegue.",
+      "D. Diagrama de Clases, Diagrama de Objetos, Diagrama de Paquetes, Diagrama de Despliegue, Diagrama de Perfil."
+    ],
+    "correcta": 3,
+    "explicacion": "Los diagramas de estructura representan la parte estática del sistema.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Incluye actividad (comportamiento).",
+      "B": "Incorrecta. Incluye secuencia (comportamiento).",
+      "C": "Incorrecta. Incluye casos de uso (comportamiento).",
+      "D": "Correcta. Todos son estructurales."
+    }
+  },
+  {
+    "pregunta": "3. El patrón de diseño que permite disponer de varios métodos y posibilita elegir cuál utilizar en tiempo de ejecución es:",
+    "opciones": ["A. Builder", "B. Interpreter", "C. Observer", "D. Strategy"],
+    "correcta": 3,
+    "explicacion": "Strategy define una familia de algoritmos y los hace intercambiables.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Builder construye objetos complejos.",
+      "B": "Incorrecta. Interpreter evalúa expresiones.",
+      "C": "Incorrecta. Observer notifica cambios.",
+      "D": "Correcta. Permite elegir algoritmo en ejecución."
+    }
+  },
+  {
+    "pregunta": "4. Dentro de los mecanismos comunes en UML se encuentran los mecanismos de extensibilidad. Señale cuál de los siguientes NO es un mecanismo de extensión de UML:",
+    "opciones": ["A. Estereotipos.", "B. Adornos.", "C. Valores etiquetados.", "D. Restricciones."],
+    "correcta": 1,
+    "explicacion": "Los adornos son elementos gráficos, no de extensión semántica como estereotipos o restricciones.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Extiende semántica.",
+      "B": "Correcta. Solo visual.",
+      "C": "Incorrecta. Añade metadatos.",
+      "D": "Incorrecta. Define reglas."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál de las siguientes afirmaciones NO es correcta con respecto a la herencia en Programación Orientada a Objetos (OO)?",
+    "opciones": [
+      "A. La clase que hereda contará con los atributos y métodos de la clase de la que hereda y podrá añadir otros nuevos.",
+      "B. La clase que hereda contará con los atributos y métodos de la que la que hereda y podrá modificar los métodos heredados.",
+      "C. La herencia entre dos clases puede ser múltiple, aunque no todos los lenguajes orientados a objetos ofrecen esta posibilidad.",
+      "D. La herencia entre dos clases puede ser múltiple y todo lenguaje orientado a objetos debe ofrecer esta posibilidad."
+    ],
+    "correcta": 3,
+    "explicacion": "No todos los lenguajes permiten herencia múltiple.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es correcto.",
+      "B": "Incorrecta. Se pueden sobrescribir métodos.",
+      "C": "Incorrecta. Es correcto.",
+      "D": "Correcta. Es falsa."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál de las siguientes opciones sobre la sobrecarga en el paradigma de orientación a objetos (OO) es cierta?",
+    "opciones": [
+      "A. La sobrecarga permite definir dos o más métodos con el mismo nombre y parámetros.",
+      "B. La sobrecarga permite definir dos o más métodos con el mismo nombre y parámetros de idéntico tipo, pero con distinto nombre.",
+      "C. La sobrecarga permite definir dos o más métodos con el mismo nombre y parámetros diferentes en cantidad y/o tipo.",
+      "D. La sobrecarga es un tipo de polimorfismo dinámico, ya que el compilador no puede resolver el método a referenciar en tiempo de compilación."
+    ],
+    "correcta": 2,
+    "explicacion": "Sobrecarga = mismo nombre, distinta firma.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta. Es polimorfismo estático."
+    }
+  },
+  {
+    "pregunta": "7. Respecto a los patrones de diseño GoF (Gang of Four), indique cuál de las siguientes definiciones se corresponde con el patrón Decorator:",
+    "opciones": [
+      "A. Proporciona el poder agregar una nueva funcionalidad a un objeto dinámicamente.",
+      "B. Proporciona una interfaz unificada para un conjunto de interfaces de un subsistema.",
+      "C. Proporciona un sustituto o representante de otro objeto para controlar el acceso a éste.",
+      "D. Proporciona un modo de acceder secuencialmente a los elementos de un objeto agregado sin exponer su representación interna."
+    ],
+    "correcta": 0,
+    "explicacion": "Decorator añade responsabilidades dinámicamente.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Facade.",
+      "C": "Proxy.",
+      "D": "Iterator."
+    }
+  },
+  {
+    "pregunta": "8. ¿Cuál de los siguientes patrones de diseño se utiliza para generar clases de las que se puede instanciar sólo un objeto?",
+    "opciones": ["A. Singleton.", "B. Factory.", "C. Delegate.", "D. Unity."],
+    "correcta": 0,
+    "explicacion": "Singleton garantiza una única instancia.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Crea múltiples objetos.",
+      "C": "No GoF.",
+      "D": "No GoF."
+    }
+  },
+  {
+    "pregunta": "9. En el diseño y programación Orientada a Objetos, ¿qué afirmación es correcta?",
+    "opciones": [
+      "A. Cuando una clase hereda de otra, todos los elementos privados de la clase base no son accesibles a la clase derivada.",
+      "B. Cuando una clase hereda de otra, todos los elementos privados de la clase base sí son accesibles a la clase derivada.",
+      "C. Si la clase base hace sus elementos protegidos, estos no serán heredados por las clases hijas.",
+      "D. Si la clase base hace sus elementos protegidos, no se restringe el acceso a funciones miembro de la clase."
+    ],
+    "correcta": 0,
+    "explicacion": "Privado = no accesible fuera de la clase.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. En los diagramas de clase en UML, se representan mediante un rombo hueco:",
+    "opciones": ["A. Las relaciones de agregación.", "B. Las relaciones de composición.", "C. Las relaciones de herencia.", "D. Las relaciones de dependencia."],
+    "correcta": 0,
+    "explicacion": "Agregación = rombo hueco.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Rombo relleno.",
+      "C": "Triángulo.",
+      "D": "Discontinua."
+    }
+  },
+  {
+    "pregunta": "11. Señale la FALSA en relación a los diagramas de clases de UML:",
+    "opciones": [
+      "A. El diagrama de clases recoge las clases de objetos y sus asociaciones.",
+      "B. Dentro de la estructura de una clase se definen los atributos y las operaciones o métodos.",
+      "C. Los objetos son instancias de las clases.",
+      "D. Una clase se representa por un círculo dividido en tres zonas por líneas horizontales."
+    ],
+    "correcta": 3,
+    "explicacion": "Las clases son rectángulos.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Correcta.",
+      "C": "Correcta.",
+      "D": "Falsa."
+    }
+  },
+  {
+    "pregunta": "12. Se denomina polimorfismo a:",
+    "opciones": ["A. Dividir una aplicación en módulos.", "B. Presentar información oculta.", "C. Relaciones entre objetos.", "D. Que un objeto presente diferentes comportamientos."],
+    "correcta": 3,
+    "explicacion": "Mismo mensaje, distinta respuesta.",
+    "analisis_opciones": {
+      "A": "Modularidad.",
+      "B": "Encapsulación.",
+      "C": "Relación.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "13. Un inconveniente del paradigma de orientación a objetos es:",
+    "opciones": ["A. Reutilización de código.", "B. Encapsulación y modularidad.", "C. Gestión de la configuración de las librerías de componentes.", "D. Facilitar la extensibilidad de las aplicaciones."],
+    "correcta": 2,
+    "explicacion": "Complejidad en gestión de componentes.",
+    "analisis_opciones": {
+      "A": "Ventaja.",
+      "B": "Ventaja.",
+      "C": "Correcta.",
+      "D": "Ventaja."
+    }
+  },
+  {
+    "pregunta": "14. Según el estándar UML diseñado por Booch, Jacobson y Rumbaugh, los casos de uso bien estructurados:",
+    "opciones": [
+      "A. no deben ser excesivamente genéricos ni demasiado específicos.",
+      "B. no deben ser excesivamente genéricos pero sí deben ser suficientemente específicos.",
+      "C. deben ser genéricos y suficientemente específicos.",
+      "D. pueden ser genéricos pero siempre deben ser suficientemente específicos."
+    ],
+    "correcta": 0,
+    "explicacion": "Equilibrio de abstracción.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "15. Son lenguajes de programación orientados a objetos:",
+    "opciones": [
+      "A. Basic, C, C#, C++, J#, Java, Pascal, Lisp, Simula.",
+      "B. C#, C++, Eiffel, Vala, Lisp, Pascal, Smalltalk, Visual Basic 6.0.",
+      "C. Ada 95, C#, C++, Pascal, Java, PHP 4.0, Python, Simula, Smalltalk.",
+      "D. Ada 95, C#, C++, Eiffel, Vala, Python, Simula, Smalltalk, Visual Baslc 6.0."
+    ],
+    "correcta": 3,
+    "explicacion": "Incluye lenguajes OO reales.",
+    "analisis_opciones": {
+      "A": "Incluye C/Pascal.",
+      "B": "Incluye Pascal.",
+      "C": "Incluye PHP antiguo.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "16. Indique cuál de los siguientes es un patrón de tipo creacional:",
+    "opciones": ["A. Composite", "B. Proxy", "C. Iterator", "D. Singleton"],
+    "correcta": 3,
+    "explicacion": "Singleton es creacional.",
+    "analisis_opciones": {
+      "A": "Estructural.",
+      "B": "Estructural.",
+      "C": "Comportamiento.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "17. En relación al paradigma de programación orientado a objetos, la relación “un libro tiene capítulos” es del tipo:",
+    "opciones": ["A. Composición.", "B. Especialización.", "C. Generalización.", "D. Herencia."],
+    "correcta": 0,
+    "explicacion": "Relación fuerte todo-parte.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Herencia.",
+      "C": "Herencia.",
+      "D": "Herencia."
+    }
+  },
+  {
+    "pregunta": "18. Según UML 2.0, ¿cuál NO es un diagrama de estructura?",
+    "opciones": ["A. Diagrama de Comunicación.", "B. Diagrama de Objetos.", "C. Diagrama de Componentes.", "D. Diagrama de Paquetes."],
+    "correcta": 0,
+    "explicacion": "Comunicación es comportamiento.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Estructura.",
+      "C": "Estructura.",
+      "D": "Estructura."
+    }
+  },
+  {
+    "pregunta": "19. Un objeto:",
+    "opciones": [
+      "A. Es una librería de métodos que se pueden realizar con un tipo de información.",
+      "B. Se crea como generalización de una clase.",
+      "C. Encapsula la información junto con las operaciones que se pueden realizar sobre ella.",
+      "D. Es el elemento básico de ejecución en programación orientada a objetos y estructurada."
+    ],
+    "correcta": 2,
+    "explicacion": "Objeto = datos + comportamiento.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "20. En el marco del modelado de sistemas con UML, ¿cuál de los diagramas siguientes hace especial hincapié en la ordenación temporal de los mensajes?",
+    "opciones": ["A. Diagrama de despliegue:", "B. Diagrama de estados.", "C. Diagrama de secuencia.", "D. Diagrama de comunicación."],
+    "correcta": 2,
+    "explicacion": "Secuencia muestra el orden temporal.",
+    "analisis_opciones": {
+      "A": "Estructural.",
+      "B": "Estados.",
+      "C": "Correcta.",
+      "D": "No temporal."
+    }
+  }
+,
+  {
+    "pregunta": "21. Señale la respuesta INCORRECTA respecto al Lenguaje de Modelado Unificado (UML):",
+    "opciones": [
+      "A. Es un lenguaje basado en diagramas para la especificación, visualización, construcción y documentación de cualquier sistema software.",
+      "B. Es independiente de las metodologías de análisis y diseño y de los lenguajes de programación que se utilicen en la construcción del software.",
+      "C. Se basa en el paradigma de la orientación a objetos.",
+      "D. Muestra únicamente el modelado estático de un sistema software, que puede utilizarse en las diferentes fases de su ciclo de desarrollo."
+    ],
+    "correcta": 3,
+    "explicacion": "UML modela tanto estática como dinámica.",
+    "analisis_opciones": {
+      "A": "Verdadera.",
+      "B": "Verdadera.",
+      "C": "Verdadera.",
+      "D": "FALSA."
+    }
+  },
+  {
+    "pregunta": "22. Cuál de las siguientes afirmaciones NO se corresponde con el lenguaje UML:",
+    "opciones": [
+      "A. Una clase se representa mediante un rectángulo con tres secciones, la superior contiene el identificador o nombre de la clase, la central contiene los atributos, y la inferior, las operaciones o métodos que tienen asociados.",
+      "B. Las asociaciones son los elementos que representan las relaciones que existen entre los elementos estructurales que se utilizan en los modelos.",
+      "C. Un tipo de asociación entre elementos estructurales es la dispersión.",
+      "D. La agregación es un tipo de asociación entre elementos estructurales que representa una clase que es parte de otra"
+    ],
+    "correcta": 2,
+    "explicacion": "La 'dispersión' no es un término UML.",
+    "analisis_opciones": {
+      "A": "Verdadera.",
+      "B": "Verdadera.",
+      "C": "FALSA.",
+      "D": "Verdadera."
+    }
+  },
+  {
+    "pregunta": "23. Señale la respuesta INCORRECTA. El patrón de diseño “Composite”:",
+    "opciones": [
+      "A. Es un patrón de diseño estructural que permite componer objetos en estructuras de árbol.",
+      "B. Sirve para construir objetos complejos a partir de otros más simples y similares entre sí.",
+      "C. Simplifica el tratamiento de los objetos creados que, al poseer de una interfaz común, se tratan todos de la misma manera.",
+      "D. Se recomienda su uso cuando se quiere añadir responsabilidades a objetos concretos de manera dinámica y transparente y sin afectar a otros objetos."
+    ],
+    "correcta": 3,
+    "explicacion": "La opción D define el patrón Decorator.",
+    "analisis_opciones": {
+      "A": "Verdadera.",
+      "B": "Verdadera.",
+      "C": "Verdadera.",
+      "D": "FALSA."
+    }
+  },
+  {
+    "pregunta": "24. En diseño y programación orientada a objetos, una relación de generalización entre clases:",
+    "opciones": [
+      "A. Implica que la subclase hereda las propiedades, el comportamiento y las relaciones de la superclase, a la vez que puede añadir sus propias propiedades, relaciones y comportamiento.",
+      "B. Describe un conjunto de enlaces, que definen las interconexiones semánticas entre las instancias de las clases que participan en la relación.",
+      "C. Asume una subordinación conceptual del tipo “todo/parte”, o bien “tiene un”.",
+      "D. Se representa mediante una línea discontinua que une la superclase y subclase con un rectángulo al lado de la superclase."
+    ],
+    "correcta": 0,
+    "explicacion": "Generalización es sinónimo de herencia.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Agregación.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "25. Según la clasificación de la GoF (Gang of Four), ¿qué patrón de diseño se categoriza como estructural?",
+    "opciones": ["A. Mediator", "B. Memento", "C. Prototype", "D. Bridge"],
+    "correcta": 3,
+    "explicacion": "Bridge es estructural.",
+    "analisis_opciones": {
+      "A": "Comportamiento.",
+      "B": "Comportamiento.",
+      "C": "Creacional.",
+      "D": "Estructural."
+    }
+  },
+  {
+    "pregunta": "26. En el contexto de los lenguajes de programación, ¿con qué término de los siguientes se corresponde la abstracción de un dato y su comportamiento?",
+    "opciones": ["A. Encapsulación.", "B. Objeto.", "C. Método", "D. Función."],
+    "correcta": 1,
+    "explicacion": "El objeto es la realización de la abstracción.",
+    "analisis_opciones": {
+      "A": "Mecanismo.",
+      "B": "Correcta.",
+      "C": "Parte del objeto.",
+      "D": "Procedural."
+    }
+  },
+  {
+    "pregunta": "27. En programación orientada a objetos, aquella clase que nunca será Instanciada se denomina:",
+    "opciones": ["A. Clase Privada.", "B. Clase Pública.", "C. Clase Protegida.", "D. Clase Abstracta."],
+    "correcta": 3,
+    "explicacion": "Abstracta define interfaz pero no se instancia.",
+    "analisis_opciones": {
+      "A": "Visibilidad.",
+      "B": "Visibilidad.",
+      "C": "Visibilidad.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "28. Señale la respuesta correcta, el patrón de diseño:",
+    "opciones": [
+      "A. Singleton se basa en la clonación de ejemplares coplándolos de un prototipo.",
+      "B. MVC (Model View Controler) desacopla una abstracción de su implementación, permitiendo modificarlas Independientemente.",
+      "C. Mediator coordina las relaciones entre sus asociados, permite la interacción de varios objetos, sin generar acoples fuertes en esas relaciones.",
+      "D. Memento notifica los cambios de estado de un objeto."
+    ],
+    "correcta": 2,
+    "explicacion": "Mediator reduce acoplamiento entre comunicantes.",
+    "analisis_opciones": {
+      "A": "Incorrecta (Prototype).",
+      "B": "Incorrecta (Bridge).",
+      "C": "Correcta.",
+      "D": "Incorrecta (Observer)."
+    }
+  },
+  {
+    "pregunta": "29. En la programación orientada a objetos, se utiliza el concepto del polimorfismo, que consiste en:",
+    "opciones": [
+      "A. Una clase puede heredar características de otra.",
+      "B. Una misma llamada puede suponer la ejecución de dos funciones distintas en tiempo de ejecución, según la clase del objeto.",
+      "C. Pasar mensajes a un objeto a través de sus atributos públicos.",
+      "D. Extender una clase abstracta."
+    ],
+    "correcta": 1,
+    "explicacion": "Polimorfismo dinámico: decisión en tiempo de ejecución.",
+    "analisis_opciones": {
+      "A": "Herencia.",
+      "B": "Correcta.",
+      "C": "Interacción.",
+      "D": "Implementación."
+    }
+  },
+  {
+    "pregunta": "30. El patrón de diseño de los Gang of Four (GoF) que permite separar la clase constructora que crea los objetos de la jerarquía de objetos a instanciar, centralizando así la creación de objetos es:",
+    "opciones": ["A. Prototype", "B. Builder", "C. Abstract Factory", "D. Factory Method"],
+    "correcta": 2,
+    "explicacion": "Abstract Factory crea familias de productos relacionados.",
+    "analisis_opciones": {
+      "A": "Clonación.",
+      "B": "Construcción compleja.",
+      "C": "Correcta.",
+      "D": "Específico."
+    }
+  },
+  {
+    "pregunta": "31. En relación a la representación de los diagramas de casos de uso del Lenguaje de Modelado Unificado (UML), indique la correcta.",
+    "opciones": [
+      "A. Los diagramas de casos de uso contienen actores, relaciones y casos de usos.",
+      "B. Los diagramas de casos de uso contienen almacenes, relaciones y procedimientos.",
+      "C. Los diagramas de casos de uso contienen actores, relaciones y procedimientos.",
+      "D. Los diagramas de casos de uso contienen almacenes, relaciones y casos de uso."
+    ],
+    "correcta": 0,
+    "explicacion": "Elementos básicos: Actor, Caso de Uso, Relación.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (DFD).",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "32. ¿Cuál de las siguientes declaraciones en Java de la clase miClase es correcta, siendo miInterfaz una interfaz?",
+    "opciones": [
+      "A. public class miClase implements miInterfaz.",
+      "B. public miClase implements miInterfaz.",
+      "C. public interface miClase implements miInterfaz.",
+      "D. public interface miInterfaz implements miClase."
+    ],
+    "correcta": 0,
+    "explicacion": "Sintaxis estándar de implementación.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incompleta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "33. Según METRICA v3, ¿cuál es diagrama que describe en detalle un determinado escenario de un caso de uso?",
+    "opciones": ["A. Diagrama de Interacción", "B. Diagrama de representación", "C. Diagrama de flujo de datos", "D. Diagrama de casos de uso"],
+    "correcta": 0,
+    "explicacion": "Interacción detalla escenarios dinámicos.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "34. En programación orientada a objetos, la posibilidad de tener dos o más funciones o métodos con el mismo nombre pero funcionalidad diferente, se denomina:",
+    "opciones": ["A. Polimorfismo.", "B. Refactorización.", "C. Sobrecarga.", "D. Reflexión."],
+    "correcta": 2,
+    "explicacion": "Sobrecarga: mismo nombre, distinta firma.",
+    "analisis_opciones": {
+      "A": "General.",
+      "B": "Mejora.",
+      "C": "Correcta.",
+      "D": "Metaprogramación."
+    }
+  },
+  {
+    "pregunta": "35. En el Lenguaje de Modelado Unificado (UML), según Métrica 3, en los diagramas de clase:",
+    "opciones": [
+      "A. Las relaciones de composición se representan mediante un rombo hueco.",
+      "B. Las relaciones de herencia se representan mediante un rombo hueco.",
+      "C. Las relaciones de dependencia se representan mediante un rombo hueco.",
+      "D. Las relaciones de agregación se representan mediante un rombo hueco."
+    ],
+    "correcta": 3,
+    "explicacion": "Agregación usa rombo hueco.",
+    "analisis_opciones": {
+      "A": "Relleno.",
+      "B": "Triángulo.",
+      "C": "Flecha.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "36. Indique la afirmación verdadera sobre la programación orientada a objetos, el polimorfismo es:",
+    "opciones": [
+      "A. el proceso de ocultar todos los detalles de un objeto que no contribuyen a sus características esenciales.",
+      "B. la propiedad por la cual un mismo mensaje puede originar conductas completamente diferentes al ser recibido por diferentes objetos.",
+      "C. la propiedad de un sistema que ha sido descompuesto en varios objetos coherentes e independientes.",
+      "D. la capacidad de producir componentes reutilizables para otros diseños o aplicaciones."
+    ],
+    "correcta": 1,
+    "explicacion": "Definición canónica de polimorfismo.",
+    "analisis_opciones": {
+      "A": "Abstracción.",
+      "B": "Correcta.",
+      "C": "Modularidad.",
+      "D": "Reusabilidad."
+    }
+  },
+  {
+    "pregunta": "37. ¿Cuál de los siguientes NO es una de las características del modelo orientado a objetos?",
+    "opciones": ["A. Modularidad", "B. Abstracción", "C. Durabilidad", "D. Reusabilidad"],
+    "correcta": 2,
+    "explicacion": "Durabilidad es una propiedad ACID de bases de datos, no del modelo OO puro.",
+    "analisis_opciones": {
+      "A": "Es característica.",
+      "B": "Es característica.",
+      "C": "Incorrecta (es de BD).",
+      "D": "Es característica."
+    }
+  },
+  {
+    "pregunta": "38. En UML 2.5, ¿cuál de los siguientes diagramas pertenece a la categoria de diagramas de estructura?",
+    "opciones": ["A. Diagrama de paquetes.", "B. Diagrama de flujo de información.", "C. Diagrama de secuencia.", "D. Diagrama de actividad."],
+    "correcta": 0,
+    "explicacion": "Paquetes es estructural.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Inexistente.",
+      "C": "Interacción.",
+      "D": "Comportamiento."
+    }
+  },
+  {
+    "pregunta": "39. En el contexto de la notación UML 2.4.1, indique cuál de los siguientes diagramas NO se incluye en este lenguaje de modelado:",
+    "opciones": ["A. Diagrama de estados.", "B. Diagrama de secuencia.", "C. Diagrama de actuación.", "D. Diagrama de despliegue."],
+    "correcta": 2,
+    "explicacion": "No existe el 'Diagrama de actuación'.",
+    "analisis_opciones": {
+      "A": "Existe.",
+      "B": "Existe.",
+      "C": "Correcta (NO existe).",
+      "D": "Existe."
+    }
+  },
+  {
+    "pregunta": "40. ¿Cómo se denomina a la representación de una estructura de datos abstracta junto con las operaciones que se pueden realizar con ella?",
+    "opciones": ["A. Método.", "B. Herencia.", "C. Objeto.", "D. Clase."],
+    "correcta": 3,
+    "explicacion": "La clase es la definición abstracta.",
+    "analisis_opciones": {
+      "A": "Operación.",
+      "B": "Relación.",
+      "C": "Instancia.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "41. En el contexto de la programación orientada a objetos, ¿qué entendemos por superclase?",
+    "opciones": [
+      "A. Una clase padre de la que pueden derivar una serie de subclases.",
+      "B. Una clase padre en la que se definen todas las variantes de métodos y atributos de sus clases heredadas, denominadas subclases.",
+      "C. Una clase que deriva de otra completando los métodos que deja sin definir.",
+      "D. Una clase resultado de fusión de dos o más clases padres."
+    ],
+    "correcta": 0,
+    "explicacion": "Definición jerárquica de clase padre.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Inversa.",
+      "C": "Subclase.",
+      "D": "Múltiple."
+    }
+  },
+  {
+    "pregunta": "42. Indique cuál de los siguientes es un lenguaje orientado a objetos puro:",
+    "opciones": ["A. Smalltalk", "B. C", "C. Cobol", "D. C++"],
+    "correcta": 0,
+    "explicacion": "Smalltalk es 100% orientado a objetos.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Imperativo.",
+      "C": "Imperativo.",
+      "D": "Híbrido."
+    }
+  },
+  {
+    "pregunta": "43. Todas las clases en JAVA:",
+    "opciones": [
+      "A. Implementan el interfaz “Interface”.",
+      "B. Heredan de la clase “Object”.",
+      "C. Tienen un método “getObject()”.",
+      "D. Tienen que estar dentro de un paquete."
+    ],
+    "correcta": 1,
+    "explicacion": "Jerarquía única con Object en la cima.",
+    "analisis_opciones": {
+      "A": "Falso.",
+      "B": "Correcta.",
+      "C": "Falso.",
+      "D": "No obligatorio."
+    }
+  },
+  {
+    "pregunta": "44. El patrón de diseño cuyo propósito es desacoplar una abstracción de su implementación de manera que las dos puedan evolucionar independientemente es:",
+    "opciones": ["A. Bridge", "B. Proxy", "C. Adapter", "D. Facade"],
+    "correcta": 0,
+    "explicacion": "Bridge desacopla abstracción e implementación.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Control.",
+      "C": "Traducción.",
+      "D": "Simplificación."
+    }
+  },
+  {
+    "pregunta": "45. Cuál de los siguientes es un patrón de diseño que representa y externaliza el estado interno de un objeto sin violar la encapsulación, de forma que éste puede volver a dicho estado más tarde:",
+    "opciones": ["A. Flyweight.", "B. Memento.", "C. Observer.", "D. State."],
+    "correcta": 1,
+    "explicacion": "Memento guarda estados.",
+    "analisis_opciones": {
+      "A": "Espacio.",
+      "B": "Correcta.",
+      "C": "Cambios.",
+      "D": "Estado conducta."
+    }
+  },
+  {
+    "pregunta": "46. ¿En qué consiste la herencia en programación orientada a objetos?",
+    "opciones": [
+      "A. En que diferentes objetos responden de distinta manera al mismo mensaje.",
+      "B. En el mecanismo por el cual una clase adquiere las propiedades de una clase superior.",
+      "C. El tiempo en que un objeto permanece activo en memoria.",
+      "D. En que la comunicación entre objetos se realiza por medio de mensajes explícitos predefinidos."
+    ],
+    "correcta": 1,
+    "explicacion": "Mecanismo de adquisición de propiedades.",
+    "analisis_opciones": {
+      "A": "Polimorfismo.",
+      "B": "Correcta.",
+      "C": "Persistencia.",
+      "D": "Mensajería."
+    }
+  },
+  {
+    "pregunta": "47. ¿Cuál de las siguientes características NO se corresponde con el modelo orientado a objetos?",
+    "opciones": ["A. Abstracción.", "B. Durabilidad.", "C. Modularidad.", "D. Encapsulamiento."],
+    "correcta": 1,
+    "explicacion": "Durabilidad es ACID.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Correcta (como NO OO).",
+      "C": "Correcta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "48. De los siguientes, ¿cuál es un lenguaje de programación orientado a objetos?",
+    "opciones": ["A. Standard Pascal.", "B. GW-Basic.", "C. PL/SQL.", "D. Smalltalk."],
+    "correcta": 3,
+    "explicacion": "Smalltalk es el referente puro de OO.",
+    "analisis_opciones": {
+      "A": "No.",
+      "B": "No.",
+      "C": "No.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "49. En lo referente a los patrones de diseño GoF (Gang of Four), indique cuál de los siguientes se corresponde con un patrón de comportamiento:",
+    "opciones": ["A. Adapter", "B. Iterator", "C. Composite", "D. Builder"],
+    "correcta": 1,
+    "explicacion": "Iterator es patrón de comportamiento.",
+    "analisis_opciones": {
+      "A": "Estructural.",
+      "B": "Correcta.",
+      "C": "Estructural.",
+      "D": "Creacional."
+    }
+  },
+  {
+    "pregunta": "50. Cuál de los siguientes NO es un lenguaje de programación orientado a objetos:",
+    "opciones": ["A. C++", "B. Objetive-C", "C. Oz", "D. Pascal"],
+    "correcta": 3,
+    "explicacion": "Pascal estándar es imperativo.",
+    "analisis_opciones": {
+      "A": "Híbrido.",
+      "B": "OO.",
+      "C": "Multiparadigma.",
+      "D": "Correcta (como NO OO)."
+    }
+  },
+  {
+    "pregunta": "51. El patrón de diseño cuyo propósito es convertir la interfaz de una clase en otra que esperan los clientes es:",
+    "opciones": ["A. Proxy", "B. Composite", "C. Adapter", "D. Facade"],
+    "correcta": 2,
+    "explicacion": "Adapter convierte interfaces.",
+    "analisis_opciones": {
+      "A": "Sustituto.",
+      "B": "Estructura.",
+      "C": "Correcta.",
+      "D": "Fachada."
+    }
+  },
+  {
+    "pregunta": "52. Respecto de la herencia en la programación orientada a objetos, ¿cuál de las siguientes afirmaciones es incorrecta?",
+    "opciones": [
+      "A. Por medio de la herencia unos objetos obtienen las características de otros ya existentes.",
+      "B. Con la herencia se consigue una mayor reutilización del código.",
+      "C. Tanto C++ como Java permiten la herencia múltiple.",
+      "D. La herencia permite que existan clases que nunca sean instanciadas directamente."
+    ],
+    "correcta": 2,
+    "explicacion": "Java no permite herencia múltiple de clases.",
+    "analisis_opciones": {
+      "A": "Verdadera.",
+      "B": "Verdadera.",
+      "C": "FALSA.",
+      "D": "Verdadera."
+    }
+  },
+  {
+    "pregunta": "53. En Programación Orientada a Objetos, se define clase como:",
+    "opciones": [
+      "A. Entidad provista de un conjunto de propiedades o atributos.",
+      "B. Algoritmo asociado a un objeto.",
+      "C. El medio a través del cual los objetos interactúan.",
+      "D. Conjunto de objetos con propiedades comunes."
+    ],
+    "correcta": 3,
+    "explicacion": "La clase agrupa objetos similares.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Método.",
+      "C": "Mensaje.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "54. La característica de los lenguajes orientados a objetos que permite declarar y definir dos métodos con el mismo nombre, pero distintos argumentos, se denomina:",
+    "opciones": ["A. Sobrescritura", "B. Polimorfismo", "C. Herencia", "D. Sobrecarga"],
+    "correcta": 3,
+    "explicacion": "Sobrecarga: igual nombre, distintos argumentos.",
+    "analisis_opciones": {
+      "A": "Cambio de código.",
+      "B": "General.",
+      "C": "Relación.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "55. ¿Qué patrón de diseño permite que clases con interfaces incompatibles se comuniquen?",
+    "opciones": ["A. Bridge.", "B. Adapter.", "C. Facade.", "D. Interface."],
+    "correcta": 1,
+    "explicacion": "Adapter resuelve incompatibilidad de interfaces.",
+    "analisis_opciones": {
+      "A": "Abstracción/Impl.",
+      "B": "Correcta.",
+      "C": "Interfaz simple.",
+      "D": "No es patrón."
+    }
+  },
+  {
+    "pregunta": "56. ¿Cuál de los siguientes términos hace referencia a patrones generales de software para asignación de responsabilidades en el diseño orientado a objetos?",
+    "opciones": ["A. OOD", "B. GRASP", "C. Booch", "D. Fan-In & Fan-Out"],
+    "correcta": 1,
+    "explicacion": "GRASP son patrones de responsabilidad.",
+    "analisis_opciones": {
+      "A": "Diseño general.",
+      "B": "Correcta.",
+      "C": "Método.",
+      "D": "Métricas."
+    }
+  },
+  {
+    "pregunta": "57. Los lenguajes del .NET Framework compilan a:",
+    "opciones": ["A. ByteCode", "B. ADO.NET", "C. CIL", "D. MCIL"],
+    "correcta": 2,
+    "explicacion": "CIL (Common Intermediate Language) es el estándar .NET.",
+    "analisis_opciones": {
+      "A": "Java.",
+      "B": "Datos.",
+      "C": "Correcta.",
+      "D": "MCIL no es estándar."
+    }
+  },
+  {
+    "pregunta": "58. En programación orientada a objetos ¿qué son las clases abstractas?:",
+    "opciones": ["A. Aquellas que se dividen en subclases.", "B. Las que no tienen instancias.", "C. Aquellas que están predefinidas.", "D. Las que no son reutilizables."],
+    "correcta": 1,
+    "explicacion": "Clase abstracta = cero instancias directas.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Falso."
+    }
+  }
+,
+  {
+    "pregunta": "22. Se ha producido un cambio sobre un componente de un sistema de información que ha introducido un comportamiento no deseado o errores adicionales en otros componentes no modificados. ¿Cómo se le conoce a este fenómeno?",
+    "opciones": [
+      "a) Regresión descontrolada",
+      "b) Efecto onda",
+      "c) Error expandido",
+      "d) Fallo base"
+    ],
+    "correcta": 1,
+    "explicacion": "El 'efecto onda' (ripple effect) se refiere al impacto que tiene un cambio en un módulo sobre otros módulos del sistema, lo cual está directamente relacionado con el grado de acoplamiento.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. Es el término técnico para la propagación de cambios.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "25. Le solicitan la realización de un diagrama que describa el comportamiento dinámico del sistema de información. Debe mostrar la interacción entre los objetos, así como sus vínculos e intercambios de mensaje. Para mayor claridad de las relaciones, le sugieren que no muestre el orden en que suceden o pueden ocurrir los acontecimientos. ¿Cuál de los siguientes diagramas usaría?",
+    "opciones": [
+      "a) Diagrama de colaboración",
+      "b) Diagrama de secuencia",
+      "c) Diagrama de estructura",
+      "d) Diagrama de interrelaciones"
+    ],
+    "correcta": 0,
+    "explicacion": "El diagrama de colaboración (o de comunicación en UML 2.x) se centra en la organización estructural de los objetos que intercambian mensajes, a diferencia del de secuencia, que se centra en el orden temporal.",
+    "analisis_opciones": {
+      "a)": "Correcta. Prioriza los vínculos sobre la línea temporal.",
+      "b)": "Incorrecta. Este prioriza el orden temporal.",
+      "c)": "Incorrecta. Término genérico.",
+      "d)": "Incorrecta."
+    }
+  },{
+    "pregunta": "22. Se ha producido un cambio sobre un componente de un sistema de información que ha introducido un comportamiento no deseado o errores adicionales en otros componentes no modificados. ¿Cómo se le conoce a este fenómeno?",
+    "opciones": [
+      "a) Regresión descontrolada",
+      "b) Efecto onda",
+      "c) Error expandido",
+      "d) Fallo base"
+    ],
+    "correcta": 1,
+    "explicacion": "El efecto onda describe cómo los cambios en un módulo afectan a otros, concepto clave para medir el acoplamiento entre objetos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. Término técnico para la propagación de fallos en el diseño.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "25. Le solicitan la realización de un diagrama que describa el comportamiento dinámico del sistema de información. Debe mostrar la interacción entre los objetos, así como sus vínculos e intercambios de mensaje. Para mayor claridad de las relaciones, le sugieren que no muestre el orden en que suceden o pueden ocurrir los acontecimientos. ¿Cuál de los siguientes diagramas usaría?",
+    "opciones": [
+      "a) Diagrama de colaboración",
+      "b) Diagrama de secuencia",
+      "c) Diagrama de estructura",
+      "d) Diagrama de interrelaciones"
+    ],
+    "correcta": 0,
+    "explicacion": "El diagrama de colaboración (o de comunicación en UML 2.x) se centra en la organización de los objetos y sus vínculos sin priorizar la línea temporal.",
+    "analisis_opciones": {
+      "a)": "Correcta. Prioriza la estructura de interacciones.",
+      "b)": "Incorrecta. Este diagrama prioriza el orden temporal.",
+      "c)": "Incorrecta. Término genérico de arquitectura.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "En el marco de la POO, ¿cómo se denomina a la capacidad de un objeto para ocultar sus datos internos y permitir el acceso solo a través de métodos públicos definidos?",
+    "opciones": [
+      "a) Abstracción",
+      "b) Encapsulamiento",
+      "c) Polimorfismo",
+      "d) Herencia"
+    ],
+    "correcta": 1,
+    "explicacion": "El encapsulamiento protege el estado interno del objeto y solo expone la interfaz necesaria.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Se refiere a simplificar la realidad.",
+      "b)": "Correcta. Es el principio de ocultación de datos.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },{
+    "pregunta": "31. ¿Cuál de los siguientes algoritmos de ordenación tiene una complejidad definida por O (n log n)?",
+    "opciones": [
+      "a) Bubblesort.",
+      "b) Binsort.",
+      "c) Mergesort.",
+      "d) Insertion sort."
+    ],
+    "correcta": 2,
+    "explicacion": "El algoritmo Mergesort utiliza la técnica de divide y vencerás para garantizar una complejidad temporal de n log n.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Su complejidad es cuadrática O(n²).",
+      "b)": "Incorrecta.",
+      "c)": "Correcta. Es el estándar de eficiencia para este tipo de algoritmos.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "34. En el contexto de la programación orientada a objetos, ¿qué representa la 'Cohesión'?",
+    "opciones": [
+      "a) El grado de dependencia entre dos módulos distintos.",
+      "b) La medida de la fuerza de la relación funcional de los elementos dentro de un módulo.",
+      "c) La capacidad de un objeto de tomar varias formas.",
+      "d) El mecanismo para ocultar los detalles de implementación."
+    ],
+    "correcta": 1,
+    "explicacion": "La cohesión mide qué tan estrechamente relacionadas están las responsabilidades internas de un solo módulo o clase; se busca siempre una cohesión alta.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso define el acoplamiento.",
+      "b)": "Correcta. Define la unidad funcional interna.",
+      "c)": "Incorrecta. Eso es polimorfismo.",
+      "d)": "Incorrecta. Eso es encapsulamiento."
+    }
+  },
+  {
+    "pregunta": "43. Dentro de la jerarquía de clases de UML, una clase que no puede tener instancias directas y solo sirve para ser heredada se denomina:",
+    "opciones": [
+      "a) Clase final.",
+      "b) Clase pública.",
+      "c) Clase abstracta.",
+      "d) Clase sincronizable."
+    ],
+    "correcta": 2,
+    "explicacion": "Las clases abstractas definen una interfaz común pero no permiten la creación de objetos (instanciación) a partir de ellas.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Una clase final es la que no puede ser heredada.",
+      "b)": "Incorrecta. Define visibilidad.",
+      "c)": "Correcta.",
+      "d)": "Incorrecta."
+    }
+  },{
+    "pregunta": "28. Indique la respuesta correcta en relación a los patrones de diseño:",
+    "opciones": [
+      "A. Singleton se basa en la clonación de ejemplares copiándolos de un prototipo.",
+      "B. MVC (Model View Controller) desacopla una abstracción de su implementación, permitiendo modificarlas independientemente.",
+      "C. Mediator coordina las relaciones entre sus asociados, permite la interacción de varios objetos, sin generar acoples fuertes en esas relaciones.",
+      "D. Memento notifica los cambios de estado de un objeto."
+    ],
+    "correcta": 2,
+    "explicacion": "El patrón Mediator centraliza la comunicación compleja entre objetos para evitar que se conozcan entre sí, reduciendo el acoplamiento.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso define al patrón Prototype.",
+      "B": "Incorrecta. Eso describe al patrón Bridge.",
+      "C": "Correcta. Es la función principal del mediador.",
+      "D": "Incorrecta. Eso describe al patrón Observer."
+    }
+  },
+  {
+    "pregunta": "25 (Reserva). ¿A qué patrón de diseño de la GoF (Gang of Four) pertenece el patrón 'Bridge'?",
+    "opciones": [
+      "a) Patrones de creación.",
+      "b) Patrones estructurales.",
+      "c) Patrones de comportamiento.",
+      "d) Patrones de objetos."
+    ],
+    "correcta": 1,
+    "explicacion": "Bridge es un patrón estructural que desacopla una abstracción de su implementación para que ambas puedan variar independientemente.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. Se encarga de la composición de clases u objetos.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "26 (Reserva). En el Lenguaje de Modelado Unificado (UML), ¿cuál de los siguientes es un diagrama de comportamiento?",
+    "opciones": [
+      "a) Diagrama de Clases.",
+      "b) Diagrama de Objetos.",
+      "c) Diagrama de Casos de Uso.",
+      "d) Diagrama de Componentes."
+    ],
+    "correcta": 2,
+    "explicacion": "El diagrama de Casos de Uso describe las funcionalidades del sistema desde el punto de vista del usuario, siendo un diagrama de comportamiento.",
+    "analisis_opciones": {
+      "a)": "Estructural.",
+      "b)": "Estructural.",
+      "c)": "Correcta. Comportamiento.",
+      "d)": "Estructural."
+    }
+  },{
+    "pregunta": "27. En el contexto de la Programación Orientada a Objetos, ¿qué se entiende por 'Persistencia'?",
+    "opciones": [
+      "a) La capacidad de un objeto de ser accedido por múltiples hilos simultáneamente.",
+      "b) La propiedad de un objeto por la cual su existencia trasciende el tiempo y/o el espacio del proceso que lo creó.",
+      "c) El mecanismo por el cual una clase oculta su implementación interna.",
+      "d) La relación jerárquica entre una superclase y sus subclases."
+    ],
+    "correcta": 1,
+    "explicacion": "La persistencia permite que el estado de un objeto se conserve en un medio de almacenamiento para ser recuperado en ejecuciones posteriores.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es concurrencia.",
+      "b)": "Correcta. Definición técnica de persistencia en el modelo de objetos.",
+      "c)": "Incorrecta. Eso es encapsulamiento.",
+      "d)": "Incorrecta. Eso es herencia."
+    }
+  },
+  {
+    "pregunta": "29. ¿Cuál de los siguientes diagramas de UML se utiliza para modelar la estructura estática del sistema mostrando los tipos de objetos y sus relaciones?",
+    "opciones": [
+      "a) Diagrama de Estados.",
+      "b) Diagrama de Actividad.",
+      "c) Diagrama de Clases.",
+      "d) Diagrama de Secuencia."
+    ],
+    "correcta": 2,
+    "explicacion": "El diagrama de clases es el principal diagrama estructural de UML para describir la arquitectura estática.",
+    "analisis_opciones": {
+      "a)": "Comportamiento.",
+      "b)": "Comportamiento.",
+      "c)": "Correcta. Estructural.",
+      "d)": "Interacción."
+    }
+  },
+  {
+    "pregunta": "30. En relación a los patrones de diseño estructurales de la GoF, ¿cuál tiene como objetivo proporcionar un sustituto o representante de otro objeto para controlar el acceso a este?",
+    "opciones": [
+      "a) Adapter.",
+      "b) Facade.",
+      "c) Proxy.",
+      "d) Decorator."
+    ],
+    "correcta": 2,
+    "explicacion": "El patrón Proxy actúa como un intermediario o sustituto para gestionar el acceso a un objeto real.",
+    "analisis_opciones": {
+      "a)": "Conversión de interfaces.",
+      "b)": "Interfaz simplificada.",
+      "c)": "Correcta. Representante o sustituto.",
+      "d)": "Añadir funcionalidad dinámica."
+    }
+  },{
+    "pregunta": "35. Aquel conjunto de datos donde se pueden realizar inserciones al final, y eliminaciones tanto al inicio como al final de los mismos se corresponde con...",
+    "opciones": [
+      "a) Bicola exopermitida.",
+      "b) Bicola endorestringuida.",
+      "c) Bicola de doble salida.",
+      "d) Bicola de entrada restringuida."
+    ],
+    "correcta": 3,
+    "explicacion": "Una bicola de entrada restringida solo permite insertar por un extremo, pero permite extraer por ambos, lo cual es una estructura de datos lineal avanzada.",
+    "analisis_opciones": {
+      "a)": "Término no estándar.",
+      "b)": "Término no estándar.",
+      "c)": "Incorrecta.",
+      "d)": "Correcta. Define la restricción específica de inserción."
+    }
+  },
+  {
+    "pregunta": "20. Usted descubre que el usuario Reyna tiene acceso a la base de datos de MySQL de la empresa. Considerando que el host es illo, le solicitan eliminar dicho usuario ya que no pertenece a la empresa.",
+    "opciones": [
+      "a) DELETE USER FROM illo LOGIN 'Reyna';",
+      "b) REVOKE USER Reyna:illo;",
+      "c) DROP USER 'Reyna'@'illo';",
+      "d) ALTER USER Name=Reyna Host=illo Action=PURGE"
+    ],
+    "correcta": 2,
+    "explicacion": "DROP USER es la sentencia DDL correcta para eliminar una cuenta de usuario en sistemas como MySQL.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. DELETE es para registros (DML).",
+      "b)": "Incorrecta. REVOKE quita permisos pero no borra el usuario.",
+      "c)": "Correcta. Sintaxis administrativa estándar.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "84. En el modelo entidad-relación extendido, al conjunto nominado de valores homogéneos con existencia propia con independencia de cualquier otro elemento, relación o atributo es conocido como:",
+    "opciones": [
+      "a) Entidad",
+      "b) Objeto",
+      "c) Dominio",
+      "d) Correspondencia"
+    ],
+    "correcta": 2,
+    "explicacion": "El dominio define el conjunto de valores válidos para un atributo de forma independiente a la entidad.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. La entidad es la representación del objeto.",
+      "b)": "Incorrecta.",
+      "c)": "Correcta. Definición de dominio de datos.",
+      "d)": "Incorrecta."
+    }
+  },{
+    "pregunta": "12. En el sistema de bases de datos, se percatan que, debido a algún tipo de error, el usuario Mateo no tiene asignados permisos de lectura y escritura sobre la tabla Recursos. De los siguientes comandos, indica cuál arreglaría dicha situación:",
+    "opciones": [
+      "a) ALTER Mateo IN Recursos +SELECT +INSERT;",
+      "b) ASSIGN USER Mateo TABLE Recursos SELECT INSERT;",
+      "c) GRANT SELECT, INSERT ON Recursos TO Mateo;",
+      "d) ADD USER(Mateo) PERMISSIONS(SELECT, INSERT) TABLE(Recursos);"
+    ],
+    "correcta": 2,
+    "explicacion": "La sentencia GRANT es la instrucción estándar del lenguaje de control de datos (DCL) para otorgar privilegios específicos sobre objetos a los usuarios.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Incorrecta.",
+      "c)": "Correcta. Sigue la sintaxis estándar GRANT [privilegios] ON [objeto] TO [usuario].",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "14. Le piden que se dirija al equipo que hace de salt-master para que mande órdenes a los equipos que tienen instalado Fedora. ¿Cuál sería el comando adecuado?",
+    "opciones": [
+      "a) salt -C 'os:Fedora'",
+      "b) salt -G 'os:Fedora'",
+      "c) salt -L 'os:Fedora'",
+      "d) salt -S 'os:Fedora'"
+    ],
+    "correcta": 1,
+    "explicacion": "En la gestión de configuración con SaltStack, la opción -G (Grains) se utiliza para filtrar objetivos basados en propiedades del sistema, como el sistema operativo.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. Utiliza 'Grains' para identificar el OS.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "15. ¿Cuáles de estos puertos son los que debemos tener preparados para Salt en los equipos que sean salt-minions?",
+    "opciones": [
+      "a) 4505 y 4506.",
+      "b) 7306 y 7307.",
+      "c) 80 y 443.",
+      "d) 5004 y 5005."
+    ],
+    "correcta": 0,
+    "explicacion": "SaltStack utiliza por defecto los puertos 4505 (publisher) y 4506 (request server) para la comunicación entre el master y los minions.",
+    "analisis_opciones": {
+      "a)": "Correcta.",
+      "b)": "Incorrecta.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },{
+    "pregunta": "En el modelo de objetos, ¿cuál es el concepto que describe la propiedad de un sistema que ha sido descompuesto en un conjunto de módulos coherentes e independientes?",
+    "opciones": [
+      "a) Abstracción.",
+      "b) Encapsulamiento.",
+      "c) Modularidad.",
+      "d) Jerarquía."
+    ],
+    "correcta": 2,
+    "explicacion": "La modularidad es la propiedad de un sistema descompuesto en módulos cohesivos y poco acoplados.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Se centra en las características esenciales.",
+      "b)": "Incorrecta. Se centra en la ocultación de información.",
+      "c)": "Correcta. Define la descomposición en unidades independientes.",
+      "d)": "Incorrecta. Define la ordenación de las abstracciones."
+    }
+  },
+  {
+    "pregunta": "Dentro de la jerarquía de los elementos del modelo de objetos, ¿cuáles se consideran elementos secundarios (o menores)?",
+    "opciones": [
+      "a) Abstracción, Encapsulamiento, Modularidad y Jerarquía.",
+      "b) Tipificación, Persistencia, Concurrencia.",
+      "c) Tipificación, Persistencia, Jerarquía.",
+      "d) Modularidad, Encapsulamiento, Tipificación."
+    ],
+    "correcta": 1,
+    "explicacion": "Según el modelo de Booch, los elementos menores son la tipificación, concurrencia y persistencia; los otros cuatro son principales.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Son los elementos principales.",
+      "b)": "Correcta. Son los tres elementos secundarios del modelo.",
+      "c)": "Incorrecta. La jerarquía es un elemento principal.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "En UML, ¿qué tipo de relación se utiliza para modelar que una clase utiliza los servicios de otra clase durante un tiempo limitado?",
+    "opciones": [
+      "a) Asociación.",
+      "b) Agregación.",
+      "c) Dependencia (Uso).",
+      "d) Generalización."
+    ],
+    "correcta": 2,
+    "explicacion": "La relación de dependencia o uso indica que un cambio en la clase proveedora puede afectar a la clase cliente.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Describe una conexión estructural permanente.",
+      "b)": "Incorrecta. Describe una relación todo-parte.",
+      "c)": "Correcta. Es una relación de uso puntual.",
+      "d)": "Incorrecta. Describe herencia."
+    }
+  },
+  {
+    "pregunta": "De acuerdo con la clasificación de patrones del Gang of Four (GoF), ¿cuál de los siguientes es un patrón de comportamiento aplicado a objetos?",
+    "opciones": [
+      "a) Interpreter.",
+      "b) Template Method.",
+      "c) Memento.",
+      "d) Adapter."
+    ],
+    "correcta": 2,
+    "explicacion": "Memento es un patrón de comportamiento de objetos. Interpreter y Template Method son de comportamiento pero aplicados a clases.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es de comportamiento para clases.",
+      "b)": "Incorrecta. Es de comportamiento para clases.",
+      "c)": "Correcta. Es de comportamiento para objetos.",
+      "d)": "Incorrecta. Es estructural."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes diagramas UML permite representar la estructura interna de una clase, incluyendo sus partes, conectores y puertos?",
+    "opciones": [
+      "a) Diagrama de Clases.",
+      "b) Diagrama de Estructura Compuesta.",
+      "c) Diagrama de Componentes.",
+      "d) Diagrama de Objetos."
+    ],
+    "correcta": 1,
+    "explicacion": "El diagrama de estructura compuesta detalla la arquitectura interna de un clasificador.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Muestra clases y sus relaciones externas.",
+      "b)": "Correcta. Se enfoca en la colaboración interna y puertos.",
+      "c)": "Incorrecta. Muestra la organización de componentes físicos.",
+      "d)": "Incorrecta. Muestra instancias en un momento dado."
+    }
+  },{
+    "pregunta": "En el contexto de las relaciones entre clases, ¿qué nombre recibe la propiedad que indica si una operación de una clase es 'atómica' y no puede ser interrumpida por otras operaciones en un entorno multi-hilo?",
+    "opciones": [
+      "a) Abstracción.",
+      "b) Persistencia.",
+      "c) Sincronizable.",
+      "d) Encapsulamiento."
+    ],
+    "correcta": 2,
+    "explicacion": "Una clase o método sincronizable garantiza que solo un hilo de ejecución pueda acceder a él en un momento dado, evitando condiciones de carrera.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Se centra en las características esenciales.",
+      "b)": "Incorrecta. Se centra en la supervivencia del objeto en el tiempo.",
+      "c)": "Correcta. Es el término para control de concurrencia en clases.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "Dentro de los criterios de calidad de una clase en el diseño orientado a objetos, la 'Primitividad' se define como:",
+    "opciones": [
+      "a) La capacidad de una clase para ser heredada por muchas subclases.",
+      "b) Que una operación solo puede ser implementada si se tiene acceso a la representación interna de la clase.",
+      "c) Que la clase contiene todas las operaciones necesarias para ser útil.",
+      "d) El grado de independencia de una clase respecto a sus colaboradoras."
+    ],
+    "correcta": 1,
+    "explicacion": "La primitividad indica que los métodos de la clase son básicos y no pueden descomponerse en otros métodos públicos sin acceder a los datos privados.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. Es un criterio de diseño eficiente para evitar clases 'obesas'.",
+      "c)": "Incorrecta. Eso es la completitud.",
+      "d)": "Incorrecta. Eso es el acoplamiento."
+    }
+  },
+  {
+    "pregunta": "En la jerarquía del modelo de objetos, ¿cuál es la diferencia entre una Clase y una Metaclase?",
+    "opciones": [
+      "a) No existe diferencia, son sinónimos.",
+      "b) La clase es una plantilla para objetos, y la metaclase es una plantilla para clases.",
+      "c) La metaclase es una clase que no tiene métodos, solo atributos.",
+      "d) La metaclase es la clase raíz de la que heredan todas las demás."
+    ],
+    "correcta": 1,
+    "explicacion": "Una metaclase es una clase cuyas instancias son, a su vez, otras clases; es un nivel de abstracción superior.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. Permite tratar a las clases como objetos.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta. Esa es la clase base u Object."
+    }
+  },
+  {
+    "pregunta": "En un diagrama de Clases de UML, ¿qué indica una línea con una flecha en forma de triángulo hueco apuntando hacia una clase superior?",
+    "opciones": [
+      "a) Agregación.",
+      "b) Composición.",
+      "c) Generalización (Herencia).",
+      "d) Dependencia."
+    ],
+    "correcta": 2,
+    "explicacion": "El triángulo hueco es el símbolo estándar para la generalización o herencia entre una subclase y su superclase.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Usa un rombo hueco.",
+      "b)": "Incorrecta. Usa un rombo relleno.",
+      "c)": "Correcta. Representa la relación 'es un'.",
+      "d)": "Incorrecta. Usa una flecha discontinua."
+    }
+  },
+  {
+    "pregunta": "De acuerdo con los patrones GoF, ¿cuál es el propósito principal del patrón de comportamiento 'State'?",
+    "opciones": [
+      "a) Notificar a múltiples objetos de los cambios en otro objeto.",
+      "b) Permitir que un objeto altere su comportamiento cuando su estado interno cambia, pareciendo que cambia de clase.",
+      "c) Proporcionar una forma de acceder a los elementos de una colección sin exponer su estructura.",
+      "d) Definir el esqueleto de un algoritmo en una operación, delegando algunos pasos a las subclases."
+    ],
+    "correcta": 1,
+    "explicacion": "El patrón State encapsula los comportamientos ligados a estados específicos en clases separadas.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es el patrón Observer.",
+      "b)": "Correcta. Evita el uso masivo de condicionales (if/switch).",
+      "c)": "Incorrecta. Eso es el patrón Iterator.",
+      "d)": "Incorrecta. Eso es el patrón Template Method."
+    }
+  },
+  {
+    "pregunta": "1. ¿Cuál de los siguientes no es un diagrama UML (Lenguaje Unificado de Modelado)?",
+    "opciones": [
+      "a) Diagrama de casos de uso",
+      "b) Diagrama de despliegue",
+      "c) Diagrama de funciones",
+      "d) Diagrama de actividades"
+    ],
+    "correcta": 2,
+    "explicacion": "El 'Diagrama de funciones' no forma parte de la especificación oficial de UML.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es un diagrama UML de comportamiento que representa interacciones entre actores y el sistema.",
+      "b)": "Incorrecta. Es un diagrama UML de estructura que muestra la distribución física del sistema.",
+      "c)": "Correcta. No existe en UML, es un término ajeno a la especificación oficial.",
+      "d)": "Incorrecta. Es un diagrama UML de comportamiento que representa flujos de actividades."
+    }
+  },
+  {
+    "pregunta": "2. Atendiendo a la clasificación de diagramas UML en su versión 2.5, ¿cuál de las siguientes opciones está formada exclusivamente por diagramas de estructura?",
+    "opciones": [
+      "a) Diagrama de Clases, Diagrama de Actividad, Diagrama de Paquetes, Diagrama de Componentes, Diagrama de Despliegue.",
+      "b) Diagrama de Clases, Diagrama de Objetos, Diagrama de Secuencia, Diagrama de Componentes, Diagrama de Perfil.",
+      "c) Diagrama de Clases, Diagrama de Casos de Uso, Diagrama de Paquetes, Diagrama de Componentes, Diagrama de Despliegue.",
+      "d) Diagrama de Clases, Diagrama de Objetos, Diagrama de Paquetes, Diagrama de Despliegue, Diagrama de Perfil."
+    ],
+    "correcta": 3,
+    "explicacion": "Los diagramas de estructura representan la parte estática del sistema.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Incluye diagrama de actividad, que es de comportamiento.",
+      "b)": "Incorrecta. Incluye diagrama de secuencia, que es de comportamiento.",
+      "c)": "Incorrecta. Incluye casos de uso, que son diagramas de comportamiento.",
+      "d)": "Correcta. Todos los diagramas listados pertenecen al grupo de estructura."
+    }
+  },
+  {
+    "pregunta": "3. El patrón de diseño que permite disponer de varios métodos y posibilita elegir cuál utilizar en tiempo de ejecución es:",
+    "opciones": [
+      "a) Builder",
+      "b) Interpreter",
+      "c) Observer",
+      "d) Strategy"
+    ],
+    "correcta": 3,
+    "explicacion": "Strategy define una familia de algoritmos y los hace intercambiables.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Builder se centra en construir objetos complejos paso a paso.",
+      "b)": "Incorrecta. Interpreter se usa para definir gramáticas y su evaluación.",
+      "c)": "Incorrecta. Observer gestiona notificaciones entre objetos dependientes.",
+      "d)": "Correcta. Permite seleccionar dinámicamente el algoritmo en ejecución."
+    }
+  },
+  {
+    "pregunta": "4. Dentro de los mecanismos comunes en UML se encuentran los mecanismos de extensibilidad. Señale cuál de los siguientes NO es un mecanismo de extensión de UML:",
+    "opciones": [
+      "a) Estereotipos.",
+      "b) Adornos.",
+      "c) Valores etiquetados.",
+      "d) Restricciones."
+    ],
+    "correcta": 1,
+    "explicacion": "Los adornos son elementos gráficos, no de extensión semántica.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Son mecanismos de extensión que permiten especializar elementos.",
+      "b)": "Correcta. Son elementos visuales, no mecanismos formales de extensión.",
+      "c)": "Incorrecta. Permiten añadir información adicional a los elementos.",
+      "d)": "Incorrecta. Definen reglas que deben cumplirse en el modelo."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál de las siguientes afirmaciones NO es correcta con respecto a la herencia en Programación Orientada a Objetos (OO)?",
+    "opciones": [
+      "a) La clase que hereda contará con los atributos y métodos de la clase de la que hereda.",
+      "b) La clase que hereda podrá modificar los métodos heredados.",
+      "c) La herencia entre dos clases puede ser múltiple en todos los lenguajes.",
+      "d) La herencia entre dos clases puede ser múltiple, pero no todo lenguaje debe ofrecerla."
+    ],
+    "correcta": 2,
+    "explicacion": "No todos los lenguajes OO (como Java) permiten herencia múltiple de clases.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es una característica básica de la herencia.",
+      "b)": "Incorrecta. Puede sobrescribir métodos heredados.",
+      "c)": "Correcta. Es falso, ya que lenguajes como Java no permiten herencia múltiple de clases.",
+      "d)": "Incorrecta. Es una afirmación correcta."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál de las siguientes opciones sobre la sobrecarga en el paradigma de orientación a objetos (OO) es cierta?",
+    "opciones": [
+      "a) Permite definir métodos con el mismo nombre y parámetros idénticos.",
+      "b) Permite definir métodos con distinto nombre pero mismos parámetros.",
+      "c) Permite definir métodos con el mismo nombre y parámetros diferentes en cantidad/tipo.",
+      "d) Es un tipo de polimorfismo dinámico."
+    ],
+    "correcta": 2,
+    "explicacion": "La sobrecarga se basa en tener firmas distintas (parámetros) para un mismo nombre de método.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso sería redefinición ilegal, no sobrecarga.",
+      "b)": "Incorrecta. La clave es el mismo nombre, no distinto.",
+      "c)": "Correcta. La sobrecarga implica mismo nombre y distinta firma.",
+      "d)": "Incorrecta. Es polimorfismo estático, no dinámico."
+    }
+  },
+  {
+    "pregunta": "7. Respecto a los patrones de diseño GoF (Gang of Four), indique cuál de las siguientes definiciones se corresponde con el patrón Decorator:",
+    "opciones": [
+      "a) Permite agregar una nueva funcionalidad a un objeto dinámicamente.",
+      "b) Proporciona una interfaz unificada para un subsistema.",
+      "c) Proporciona un sustituto para controlar el acceso a un objeto.",
+      "d) Permite acceder secuencialmente a los elementos de un objeto."
+    ],
+    "correcta": 0,
+    "explicacion": "Decorator añade responsabilidades dinámicamente sin usar herencia.",
+    "analisis_opciones": {
+      "a)": "Correcta. Esa es exactamente la finalidad del patrón Decorator.",
+      "b)": "Incorrecta. Describe el patrón Facade.",
+      "c)": "Incorrecta. Describe el patrón Proxy.",
+      "d)": "Incorrecta. Describe el patrón Iterator."
+    }
+  },
+  {
+    "pregunta": "8. ¿Cuál de los siguientes patrones de diseño se utiliza para generar clases de las que se puede instanciar sólo un objeto?",
+    "opciones": [
+      "a) Singleton.",
+      "b) Factory.",
+      "c) Delegate.",
+      "d) Unity."
+    ],
+    "correcta": 0,
+    "explicacion": "El Singleton garantiza una única instancia de la clase en toda la aplicación.",
+    "analisis_opciones": {
+      "a)": "Correcta. Limita la creación a una única instancia global.",
+      "b)": "Incorrecta. Factory se centra en la creación flexible de objetos.",
+      "c)": "Incorrecta. Delegate delega comportamiento, no controla instancias.",
+      "d)": "Incorrecta. No es un patrón GoF reconocido."
+    }
+  },
+  {
+    "pregunta": "9. En el diseño y programación Orientada a Objetos, ¿qué afirmación es correcta?",
+    "opciones": [
+      "a) Los elementos privados de la clase base no son accesibles a la clase derivada.",
+      "b) Todos los elementos privados de la clase base sí son accesibles a la clase derivada.",
+      "c) Los elementos protegidos no serán heredados por las clases hijas.",
+      "d) Los elementos protegidos no restringen el acceso a ninguna función."
+    ],
+    "correcta": 0,
+    "explicacion": "Lo privado es estrictamente local a la clase donde se define.",
+    "analisis_opciones": {
+      "a)": "Correcta. Los miembros privados no son accesibles directamente desde clases derivadas.",
+      "b)": "Incorrecta. Los miembros privados no son accesibles fuera de la clase.",
+      "c)": "Incorrecta. Los miembros protegidos sí se heredan.",
+      "d)": "Incorrecta. Sí restringen el acceso a ciertas clases."
+    }
+  },
+  {
+    "pregunta": "10. En los diagramas de clase en UML, se representan mediante un rombo hueco:",
+    "opciones": [
+      "a) Las relaciones de agregación.",
+      "b) Las relaciones de composición.",
+      "c) Las relaciones de herencia.",
+      "d) Las relaciones de dependencia."
+    ],
+    "correcta": 0,
+    "explicacion": "Agregación = rombo hueco; Composición = rombo relleno.",
+    "analisis_opciones": {
+      "a)": "Correcta. El rombo hueco indica agregación (relación todo-parte débil).",
+      "b)": "Incorrecta. La composición se representa con rombo relleno.",
+      "c)": "Incorrecta. La herencia se representa con triángulo.",
+      "d)": "Incorrecta. La dependencia se representa con línea discontinua."
+    }
+  },
+  {
+    "pregunta": "11. Señale la FALSA en relación a los diagramas de clases de UML:",
+    "opciones": [
+      "a) El diagrama de clases recoge las clases y sus asociaciones.",
+      "b) Se definen los atributos y las operaciones.",
+      "c) Los objetos son instancias de las clases.",
+      "d) Una clase se representa por un círculo dividido en tres zonas."
+    ],
+    "correcta": 3,
+    "explicacion": "Se representan mediante rectángulos, no círculos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es una característica real del diagrama de clases.",
+      "b)": "Incorrecta. Incluye atributos y operaciones.",
+      "c)": "Incorrecta. Es una definición correcta.",
+      "d)": "Correcta. Las clases se representan con rectángulos, no círculos."
+    }
+  },
+  {
+    "pregunta": "12. Se denomina polimorfismo a:",
+    "opciones": [
+      "a) Dividir una aplicación en módulos.",
+      "b) Presentar información oculta.",
+      "c) Relaciones entre objetos.",
+      "d) Que un objeto presente diferentes comportamientos ante un mismo mensaje."
+    ],
+    "correcta": 3,
+    "explicacion": "Es la capacidad de enviar un mensaje a objetos de distintos tipos y que cada uno responda adecuadamente.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso corresponde a modularidad.",
+      "b)": "Incorrecta. Eso es encapsulación.",
+      "c)": "Incorrecta. Describe relaciones, no comportamiento.",
+      "d)": "Correcta. Define correctamente el polimorfismo."
+    }
+  },
+  {
+    "pregunta": "13. Un inconveniente del paradigma de orientación a objetos es:",
+    "opciones": [
+      "a) Reutilización de código.",
+      "b) Encapsulación y modularidad.",
+      "c) Gestión de la configuración de las librerías de componentes.",
+      "d) Facilitar la extensibilidad."
+    ],
+    "correcta": 2,
+    "explicacion": "La complejidad de gestión de jerarquías y librerías puede ser un reto mayor que en el paradigma imperativo.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es una ventaja de la POO.",
+      "b)": "Incorrecta. También es una ventaja.",
+      "c)": "Correcta. Puede complicar el mantenimiento y configuración.",
+      "d)": "Incorrecta. Es otra ventaja de la POO."
+    }
+  },
+  {
+    "pregunta": "14. Según el estándar UML, los casos de uso bien estructurados:",
+    "opciones": [
+      "a) No deben ser excesivamente genéricos ni demasiado específicos.",
+      "b) Deben ser exclusivamente genéricos.",
+      "c) Deben ser exclusivamente específicos.",
+      "d) No tienen restricciones de nivel de detalle."
+    ],
+    "correcta": 0,
+    "explicacion": "Deben mantener un equilibrio para ser comprensibles y útiles.",
+    "analisis_opciones": {
+      "a)": "Correcta. Deben tener un nivel de detalle adecuado.",
+      "b)": "Incorrecta. Ser demasiado genérico los hace poco útiles.",
+      "c)": "Incorrecta. Ser demasiado específico los vuelve poco reutilizables.",
+      "d)": "Incorrecta. Sí hay buenas prácticas de detalle."
+    }
+  },
+  {
+    "pregunta": "15. Son lenguajes de programación orientados a objetos:",
+    "opciones": [
+      "a) Basic, C, Pascal.",
+      "b) C#, Eiffel, Smalltalk, Visual Basic 6.0.",
+      "c) Ada 95, Java, PHP 4.0, Python.",
+      "d) Ada 95, C#, C++, Eiffel, Python, Simula, Smalltalk."
+    ],
+    "correcta": 3,
+    "explicacion": "La opción D incluye lenguajes diseñados con la POO como eje (Simula fue el pionero).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Son lenguajes principalmente procedimentales.",
+      "b)": "Incorrecta. VB6 no es completamente orientado a objetos.",
+      "c)": "Incorrecta. Mezcla lenguajes que no son puramente OO.",
+      "d)": "Correcta. Todos son lenguajes orientados a objetos."
+    }
+  },
+  {
+    "pregunta": "16. Indique cuál de los siguientes es un patrón de tipo creacional:",
+    "opciones": [
+      "a) Composite",
+      "b) Proxy",
+      "c) Iterator",
+      "d) Singleton"
+    ],
+    "correcta": 3,
+    "explicacion": "Singleton gestiona la creación de la instancia única.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es un patrón estructural.",
+      "b)": "Incorrecta. También es estructural.",
+      "c)": "Incorrecta. Es de comportamiento.",
+      "d)": "Correcta. Es un patrón creacional."
+    }
+  },
+  {
+    "pregunta": "17. En la POO, la relación 'un libro tiene capítulos' es del tipo:",
+    "opciones": [
+      "a) Composición.",
+      "b) Especialización.",
+      "c) Generalización.",
+      "d) Herencia."
+    ],
+    "correcta": 0,
+    "explicacion": "Es composición porque la existencia de los capítulos depende de la del libro.",
+    "analisis_opciones": {
+      "a)": "Correcta. Es una relación fuerte todo-parte.",
+      "b)": "Incorrecta. No es una relación jerárquica.",
+      "c)": "Incorrecta. No es una generalización.",
+      "d)": "Incorrecta. No hay herencia implicada."
+    }
+  },
+  {
+    "pregunta": "18. Según UML 2.0, ¿cuál NO es un diagrama de estructura?",
+    "opciones": [
+      "a) Diagrama de Comunicación.",
+      "b) Diagrama de Objetos.",
+      "c) Diagrama de Componentes.",
+      "d) Diagrama de Paquetes."
+    ],
+    "correcta": 0,
+    "explicacion": "Comunicación es un diagrama de interacción (comportamiento).",
+    "analisis_opciones": {
+      "a)": "Correcta. Es un diagrama de comportamiento.",
+      "b)": "Incorrecta. Es de estructura.",
+      "c)": "Incorrecta. Es de estructura.",
+      "d)": "Incorrecta. Es de estructura."
+    }
+  },
+  {
+    "pregunta": "19. Un objeto:",
+    "opciones": [
+      "a) Es una librería de métodos.",
+      "b) Se crea como generalización de una clase.",
+      "c) Encapsula información junto con las operaciones sobre ella.",
+      "d) Es el elemento básico de la programación estructurada."
+    ],
+    "correcta": 2,
+    "explicacion": "Un objeto es una entidad que combina estado (datos) y comportamiento (métodos).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. No es solo métodos.",
+      "b)": "Incorrecta. Es instancia, no generalización.",
+      "c)": "Correcta. Define correctamente el concepto de objeto.",
+      "d)": "Incorrecta. Eso corresponde a programación estructurada."
+    }
+  },
+  {
+    "pregunta": "20. ¿Qué diagrama UML hace hincapié en la ordenación temporal de los mensajes?",
+    "opciones": [
+      "a) Diagrama de despliegue.",
+      "b) Diagrama de estados.",
+      "c) Diagrama de secuencia.",
+      "d) Diagrama de comunicación."
+    ],
+    "correcta": 2,
+    "explicacion": "Secuencia utiliza una línea de tiempo vertical para mostrar el orden.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es un diagrama estructural.",
+      "b)": "Incorrecta. Representa estados y transiciones.",
+      "c)": "Correcta. Muestra el orden temporal de mensajes.",
+      "d)": "Incorrecta. No enfatiza el tiempo."
+    }
+  },
+  {
+    "pregunta": "21. Señale la respuesta INCORRECTA respecto a UML:",
+    "opciones": [
+      "a) Es un lenguaje basado en diagramas.",
+      "b) Es independiente de las metodologías.",
+      "c) Se basa en el paradigma de orientación a objetos.",
+      "d) Muestra únicamente el modelado estático."
+    ],
+    "correcta": 3,
+    "explicacion": "UML modela tanto la parte estática como la dinámica del sistema.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. UML es un lenguaje visual basado en diagramas.",
+      "b)": "Incorrecta. UML puede usarse con distintas metodologías.",
+      "c)": "Incorrecta. UML está basado en orientación a objetos.",
+      "d)": "Correcta. Es falso, UML también modela comportamiento."
+    }
+  },
+  {
+    "pregunta": "22. ¿Cuál de las siguientes no se corresponde con el lenguaje UML?",
+    "opciones": [
+      "a) Clase = Rectángulo con tres secciones.",
+      "b) Asociaciones = Relaciones entre elementos estructurales.",
+      "c) Tipo de asociación = Dispersión.",
+      "d) Agregación = Una clase que es parte de otra."
+    ],
+    "correcta": 2,
+    "explicacion": "La 'dispersión' no es un tipo de asociación en UML.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es la representación estándar de clase.",
+      "b)": "Incorrecta. Define correctamente las asociaciones.",
+      "c)": "Correcta. No existe ese concepto en UML.",
+      "d)": "Incorrecta. Describe correctamente agregación."
+    }
+  },
+  {
+    "pregunta": "23. Señale la respuesta INCORRECTA sobre el patrón 'Composite':",
+    "opciones": [
+      "a) Es estructural y permite estructuras de árbol.",
+      "b) Construye objetos complejos a partir de simples.",
+      "c) Trata a todos los objetos de la misma manera por interfaz común.",
+      "d) Se usa para añadir responsabilidades dinámicamente."
+    ],
+    "correcta": 3,
+    "explicacion": "Añadir responsabilidades dinámicamente corresponde al patrón Decorator.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Composite es estructural y usa árboles.",
+      "b)": "Incorrecta. Permite composición jerárquica.",
+      "c)": "Incorrecta. Usa una interfaz común.",
+      "d)": "Correcta. Eso es propio de Decorator."
+    }
+  },
+  {
+    "pregunta": "24. En POO, una relación de generalización entre clases:",
+    "opciones": [
+      "a) Implica que la subclase hereda propiedades y comportamiento.",
+      "b) Describe enlaces entre instancias.",
+      "c) Asume una subordinación 'todo/parte'.",
+      "d) Se representa con línea discontinua."
+    ],
+    "correcta": 0,
+    "explicacion": "La generalización es la base de la herencia.",
+    "analisis_opciones": {
+      "a)": "Correcta. Define la herencia.",
+      "b)": "Incorrecta. Eso describe asociaciones.",
+      "c)": "Incorrecta. Eso es agregación/composición.",
+      "d)": "Incorrecta. Se representa con línea continua y triángulo."
+    }
+  },
+  {
+    "pregunta": "25. ¿Qué patrón de diseño GoF se categoriza como estructural?",
+    "opciones": [
+      "a) Mediator",
+      "b) Memento",
+      "c) Prototype",
+      "d) Bridge"
+    ],
+    "correcta": 3,
+    "explicacion": "Bridge desacopla abstracción de implementación.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es de comportamiento.",
+      "b)": "Incorrecta. Es de comportamiento.",
+      "c)": "Incorrecta. Es creacional.",
+      "d)": "Correcta. Es estructural."
+    }
+  },
+  {
+    "pregunta": "26. ¿Qué término corresponde a la abstracción de un dato y su comportamiento?",
+    "opciones": [
+      "a) Encapsulación.",
+      "b) Objeto.",
+      "c) Método.",
+      "d) Función."
+    ],
+    "correcta": 1,
+    "explicacion": "El objeto encapsula datos y comportamiento.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es el mecanismo, no el concepto completo.",
+      "b)": "Correcta. Es la unidad que agrupa datos y operaciones.",
+      "c)": "Incorrecta. Es solo comportamiento.",
+      "d)": "Incorrecta. No incluye estado."
+    }
+  },
+  {
+    "pregunta": "27. En POO, la clase que nunca será instanciada se denomina:",
+    "opciones": [
+      "a) Clase Privada.",
+      "b) Clase Pública.",
+      "c) Clase Protegida.",
+      "d) Clase Abstracta."
+    ],
+    "correcta": 3,
+    "explicacion": "Las clases abstractas no se instancian directamente.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es un modificador de acceso.",
+      "b)": "Incorrecta. No afecta a instanciación.",
+      "c)": "Incorrecta. Tampoco define instanciación.",
+      "d)": "Correcta. Solo sirven como base."
+    }
+  },
+  {
+    "pregunta": "28. Señale la respuesta correcta sobre patrones:",
+    "opciones": [
+      "a) Singleton se basa en clonación.",
+      "b) MVC desacopla abstracción de implementación.",
+      "c) Mediator coordina relaciones sin generar acoples fuertes.",
+      "d) Memento notifica cambios de estado."
+    ],
+    "correcta": 2,
+    "explicacion": "Mediator centraliza la comunicación entre objetos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es Prototype.",
+      "b)": "Incorrecta. Eso es Bridge.",
+      "c)": "Correcta. Reduce acoplamiento entre componentes.",
+      "d)": "Incorrecta. Eso es Observer."
+    }
+  },
+  {
+    "pregunta": "29. El polimorfismo consiste en:",
+    "opciones": [
+      "a) Herencia de características.",
+      "b) Una llamada ejecuta funciones distintas según la clase del objeto.",
+      "c) Pasar mensajes por atributos públicos.",
+      "d) Extender una clase abstracta."
+    ],
+    "correcta": 1,
+    "explicacion": "El mismo mensaje produce comportamientos distintos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es herencia.",
+      "b)": "Correcta. Define polimorfismo.",
+      "c)": "Incorrecta. No describe el concepto.",
+      "d)": "Incorrecta. No es polimorfismo."
+    }
+  },
+  {
+    "pregunta": "30. Patrón GoF que separa la creación de objetos de su jerarquía centralizando la instanciación:",
+    "opciones": [
+      "a) Prototype",
+      "b) Builder",
+      "c) Abstract Factory",
+      "d) Factory Method"
+    ],
+    "correcta": 2,
+    "explicacion": "Abstract Factory crea familias de objetos relacionados.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Se basa en clonación.",
+      "b)": "Incorrecta. Construye objetos paso a paso.",
+      "c)": "Correcta. Centraliza la creación.",
+      "d)": "Incorrecta. Delegación a subclases."
+    }
+  },
+  {
+    "pregunta": "31. En diagramas de casos de uso UML, indique la correcta:",
+    "opciones": [
+      "a) Contienen actores, relaciones y casos de uso.",
+      "b) Contienen almacenes y procedimientos.",
+      "c) Contienen actores y procedimientos.",
+      "d) Contienen almacenes y casos de uso."
+    ],
+    "correcta": 0,
+    "explicacion": "Actores y casos de uso son elementos clave.",
+    "analisis_opciones": {
+      "a)": "Correcta. Es la definición correcta.",
+      "b)": "Incorrecta. Eso es más de diagramas de datos.",
+      "c)": "Incorrecta. Falta el concepto de caso de uso.",
+      "d)": "Incorrecta. No incluye actores."
+    }
+  },
+  {
+    "pregunta": "32. ¿Cuál declaración Java es correcta (miInterfaz es interfaz)?",
+    "opciones": [
+      "a) public class miClase implements miInterfaz.",
+      "b) public miClase implements miInterfaz.",
+      "c) public interface miClase implements miInterfaz.",
+      "d) public interface miInterfaz implements miClase."
+    ],
+    "correcta": 0,
+    "explicacion": "Las clases implementan interfaces.",
+    "analisis_opciones": {
+      "a)": "Correcta. Sintaxis válida.",
+      "b)": "Incorrecta. Falta 'class'.",
+      "c)": "Incorrecta. Una interfaz no implementa.",
+      "d)": "Incorrecta. Sintaxis incorrecta."
+    }
+  },
+  {
+    "pregunta": "33. Según METRICA v3, ¿qué diagrama describe un escenario de un caso de uso?",
+    "opciones": [
+      "a) Diagrama de Interacción",
+      "b) Diagrama de representación",
+      "c) Diagrama de flujo de datos",
+      "d) Diagrama de casos de uso"
+    ],
+    "correcta": 0,
+    "explicacion": "Los diagramas de interacción detallan escenarios.",
+    "analisis_opciones": {
+      "a)": "Correcta. Describe cómo interactúan objetos.",
+      "b)": "Incorrecta. No es estándar.",
+      "c)": "Incorrecta. Es de análisis estructurado.",
+      "d)": "Incorrecta. Es más general."
+    }
+  },
+  {
+    "pregunta": "34. Tener dos métodos con el mismo nombre pero funcionalidad diferente en POO es:",
+    "opciones": [
+      "a) Polimorfismo.",
+      "b) Refactorización.",
+      "c) Sobrecarga.",
+      "d) Reflexión."
+    ],
+    "correcta": 2,
+    "explicacion": "Sobrecarga implica misma función con distinta firma.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es concepto más general.",
+      "b)": "Incorrecta. Es mejora del código.",
+      "c)": "Correcta. Cambian los parámetros.",
+      "d)": "Incorrecta. No tiene relación."
+    }
+  },
+  {
+    "pregunta": "35. En UML, las relaciones de agregación se representan con:",
+    "opciones": [
+      "a) Rombo relleno.",
+      "b) Triángulo.",
+      "c) Flecha.",
+      "d) Rombo hueco."
+    ],
+    "correcta": 3,
+    "explicacion": "Rombo hueco indica agregación.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es composición.",
+      "b)": "Incorrecta. Es herencia.",
+      "c)": "Incorrecta. No representa agregación.",
+      "d)": "Correcta. Representación estándar."
+    }
+  },
+  {
+    "pregunta": "36. El polimorfismo es:",
+    "opciones": [
+      "a) Ocultar detalles de un objeto.",
+      "b) Que un mensaje origine conductas diferentes según el objeto.",
+      "c) Descomponer el sistema en módulos.",
+      "d) Producir componentes reutilizables."
+    ],
+    "correcta": 1,
+    "explicacion": "Permite tratar objetos de forma uniforme con comportamientos distintos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es encapsulación.",
+      "b)": "Correcta. Define polimorfismo.",
+      "c)": "Incorrecta. Es modularidad.",
+      "d)": "Incorrecta. Es reutilización."
+    }
+  },
+  {
+    "pregunta": "37. ¿Cuál NO es una característica del modelo orientado a objetos?",
+    "opciones": [
+      "a) Modularidad",
+      "b) Abstracción",
+      "c) Durabilidad",
+      "d) Reusabilidad"
+    ],
+    "correcta": 2,
+    "explicacion": "Durabilidad pertenece a bases de datos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es característica de POO.",
+      "b)": "Incorrecta. Es fundamental en POO.",
+      "c)": "Correcta. No es propia de POO.",
+      "d)": "Incorrecta. Es característica clave."
+    }
+  },
+  {
+    "pregunta": "38. En UML 2.5, ¿cuál es un diagrama de estructura?",
+    "opciones": [
+      "a) Diagrama de paquetes.",
+      "b) Diagrama de flujo.",
+      "c) Diagrama de secuencia.",
+      "d) Diagrama de actividad."
+    ],
+    "correcta": 0,
+    "explicacion": "Paquetes organiza elementos del modelo.",
+    "analisis_opciones": {
+      "a)": "Correcta. Es de estructura.",
+      "b)": "Incorrecta. No es UML estándar.",
+      "c)": "Incorrecta. Es de comportamiento.",
+      "d)": "Incorrecta. Es de comportamiento."
+    }
+  },
+  {
+    "pregunta": "39. ¿Qué diagrama NO existe en UML 2.4.1?",
+    "opciones": [
+      "a) Diagrama de estados.",
+      "b) Diagrama de secuencia.",
+      "c) Diagrama de actuación.",
+      "d) Diagrama de despliegue."
+    ],
+    "correcta": 2,
+    "explicacion": "'Actuación' no es un término UML.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Sí existe.",
+      "b)": "Incorrecta. Sí existe.",
+      "c)": "Correcta. No forma parte de UML.",
+      "d)": "Incorrecta. Sí existe."
+    }
+  },
+  {
+    "pregunta": "40. Estructura de datos abstracta junto con sus operaciones:",
+    "opciones": [
+      "a) Método.",
+      "b) Herencia.",
+      "c) Objeto.",
+      "d) Clase."
+    ],
+    "correcta": 3,
+    "explicacion": "La clase define atributos y métodos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es solo comportamiento.",
+      "b)": "Incorrecta. Es relación.",
+      "c)": "Incorrecta. Es instancia.",
+      "d)": "Correcta. Define la estructura."
+    }
+  },
+  {
+    "pregunta": "41. ¿Qué es una superclase?",
+    "opciones": [
+      "a) Clase padre de la que derivan subclases.",
+      "b) Clase que define todas las variantes de las hijas.",
+      "c) Clase que completa métodos de otra.",
+      "d) Resultado de fusión de clases."
+    ],
+    "correcta": 0,
+    "explicacion": "Una superclase es la clase base de la que heredan otras, proporcionando atributos y métodos comunes.",
+    "analisis_opciones": {
+      "a)": "Correcta. Define exactamente el concepto de clase base en una jerarquía de herencia.",
+      "b)": "Incorrecta. Una superclase no define todas las variantes, sino características comunes.",
+      "c)": "Incorrecta. No 'completa' métodos, los proporciona o define.",
+      "d)": "Incorrecta. No existe ese concepto en POO."
+    }
+  },
+  {
+    "pregunta": "42. Indique un lenguaje orientado a objetos puro:",
+    "opciones": [
+      "a) Smalltalk",
+      "b) C",
+      "c) Cobol",
+      "d) C++"
+    ],
+    "correcta": 0,
+    "explicacion": "Smalltalk es un lenguaje puramente orientado a objetos donde absolutamente todo es un objeto.",
+    "analisis_opciones": {
+      "a)": "Correcta. En Smalltalk incluso números y clases son objetos.",
+      "b)": "Incorrecta. C es un lenguaje procedimental.",
+      "c)": "Incorrecta. Cobol es orientado a negocio, no OO puro.",
+      "d)": "Incorrecta. C++ es multiparadigma, no puro."
+    }
+  },
+  {
+    "pregunta": "43. Todas las clases en JAVA:",
+    "opciones": [
+      "a) Implementan Interface.",
+      "b) Heredan de Object.",
+      "c) Tienen getObject().",
+      "d) Deben estar en un paquete."
+    ],
+    "correcta": 1,
+    "explicacion": "Todas las clases en Java heredan implícitamente de java.lang.Object, aunque no se declare explícitamente.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. No todas implementan interfaces.",
+      "b)": "Correcta. Object es la raíz de la jerarquía.",
+      "c)": "Incorrecta. No existe ese método estándar.",
+      "d)": "Incorrecta. No es obligatorio."
+    }
+  },
+  {
+    "pregunta": "44. Patrón que desacopla abstracción de implementación:",
+    "opciones": [
+      "a) Bridge",
+      "b) Proxy",
+      "c) Adapter",
+      "d) Facade"
+    ],
+    "correcta": 0,
+    "explicacion": "Bridge separa la abstracción de su implementación para que ambas puedan variar independientemente.",
+    "analisis_opciones": {
+      "a)": "Correcta. Permite cambiar implementación sin afectar al cliente.",
+      "b)": "Incorrecta. Proxy controla acceso.",
+      "c)": "Incorrecta. Adapter adapta interfaces.",
+      "d)": "Incorrecta. Facade simplifica acceso."
+    }
+  },
+  {
+    "pregunta": "45. Patrón que externaliza el estado de un objeto para volver a él luego:",
+    "opciones": [
+      "a) Flyweight.",
+      "b) Memento.",
+      "c) Observer.",
+      "d) State."
+    ],
+    "correcta": 1,
+    "explicacion": "Memento guarda el estado interno de un objeto para poder restaurarlo posteriormente (ej. deshacer).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Flyweight optimiza memoria.",
+      "b)": "Correcta. Permite guardar y restaurar estados.",
+      "c)": "Incorrecta. Observer gestiona notificaciones.",
+      "d)": "Incorrecta. State cambia comportamiento según estado."
+    }
+  },
+  {
+    "pregunta": "46. La herencia consiste en:",
+    "opciones": [
+      "a) Objetos responden distinto al mismo mensaje.",
+      "b) Una clase adquiere propiedades de una superior.",
+      "c) Tiempo que el objeto vive en memoria.",
+      "d) Comunicación por mensajes explícitos."
+    ],
+    "correcta": 1,
+    "explicacion": "La herencia permite reutilizar código y extender funcionalidades creando nuevas clases a partir de otras.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es polimorfismo.",
+      "b)": "Correcta. Describe la herencia correctamente.",
+      "c)": "Incorrecta. Eso es ciclo de vida.",
+      "d)": "Incorrecta. No define herencia."
+    }
+  },
+  {
+    "pregunta": "47. ¿Cuál NO se corresponde con el modelo orientado a objetos?",
+    "opciones": [
+      "a) Abstracción.",
+      "b) Durabilidad.",
+      "c) Modularidad.",
+      "d) Encapsulamiento."
+    ],
+    "correcta": 1,
+    "explicacion": "Durabilidad es una propiedad de bases de datos, no del paradigma OO.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es fundamental en POO.",
+      "b)": "Correcta. No pertenece a la POO.",
+      "c)": "Incorrecta. Es característica clave.",
+      "d)": "Incorrecta. Es pilar fundamental."
+    }
+  },
+  {
+    "pregunta": "48. ¿Cuál es un lenguaje POO?",
+    "opciones": [
+      "a) Standard Pascal.",
+      "b) GW-Basic.",
+      "c) PL/SQL.",
+      "d) Smalltalk."
+    ],
+    "correcta": 3,
+    "explicacion": "Smalltalk es uno de los lenguajes más representativos de la programación orientada a objetos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es procedural.",
+      "b)": "Incorrecta. Es básico/imperativo.",
+      "c)": "Incorrecta. Es SQL procedural.",
+      "d)": "Correcta. Es OO puro."
+    }
+  },
+  {
+    "pregunta": "49. Patrón GoF de comportamiento:",
+    "opciones": [
+      "a) Adapter",
+      "b) Iterator",
+      "c) Composite",
+      "d) Builder"
+    ],
+    "correcta": 1,
+    "explicacion": "Iterator permite recorrer una colección sin exponer su implementación interna.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es estructural.",
+      "b)": "Correcta. Es de comportamiento.",
+      "c)": "Incorrecta. Es estructural.",
+      "d)": "Incorrecta. Es creacional."
+    }
+  },
+  {
+    "pregunta": "50. ¿Cuál NO es POO?",
+    "opciones": [
+      "a) C++",
+      "b) Objetive-C",
+      "c) Oz",
+      "d) Pascal"
+    ],
+    "correcta": 3,
+    "explicacion": "Pascal es un lenguaje procedimental clásico.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Soporta POO.",
+      "b)": "Incorrecta. Es OO.",
+      "c)": "Incorrecta. También soporta OO.",
+      "d)": "Correcta. No es OO."
+    }
+  },
+  {
+    "pregunta": "51. Patrón que convierte una interfaz en otra que el cliente espera:",
+    "opciones": [
+      "a) Proxy",
+      "b) Composite",
+      "c) Adapter",
+      "d) Facade"
+    ],
+    "correcta": 2,
+    "explicacion": "Adapter actúa como traductor entre interfaces incompatibles.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Controla acceso.",
+      "b)": "Incorrecta. Estructura jerárquica.",
+      "c)": "Correcta. Traduce interfaces.",
+      "d)": "Incorrecta. Simplifica acceso."
+    }
+  },
+  {
+    "pregunta": "52. Sobre herencia, ¿qué afirmación es incorrecta?",
+    "opciones": [
+      "a) Se obtienen características de objetos existentes.",
+      "b) Se consigue reutilización de código.",
+      "c) C++ y Java permiten herencia múltiple.",
+      "d) Permite clases no instanciables."
+    ],
+    "correcta": 2,
+    "explicacion": "Java no permite herencia múltiple de clases.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es correcto.",
+      "b)": "Incorrecta. Es una ventaja.",
+      "c)": "Correcta. Java no la permite.",
+      "d)": "Incorrecta. Hace referencia a clases abstractas."
+    }
+  },
+  {
+    "pregunta": "53. Definición de clase:",
+    "opciones": [
+      "a) Entidad con atributos.",
+      "b) Algoritmo de objeto.",
+      "c) Medio de interacción.",
+      "d) Conjunto de objetos con propiedades comunes."
+    ],
+    "correcta": 3,
+    "explicacion": "Una clase define características comunes de un conjunto de objetos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Incompleta (faltan métodos).",
+      "b)": "Incorrecta. No es definición válida.",
+      "c)": "Incorrecta. No describe una clase.",
+      "d)": "Correcta. Definición correcta."
+    }
+  },
+  {
+    "pregunta": "54. Métodos con mismo nombre pero distintos argumentos:",
+    "opciones": [
+      "a) Sobrescritura",
+      "b) Polimorfismo",
+      "c) Herencia",
+      "d) Sobrecarga"
+    ],
+    "correcta": 3,
+    "explicacion": "La sobrecarga permite métodos con mismo nombre y distinta firma.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es redefinir en subclases.",
+      "b)": "Incorrecta. Es concepto general.",
+      "c)": "Incorrecta. No aplica.",
+      "d)": "Correcta. Es overloading."
+    }
+  },
+  {
+    "pregunta": "55. Permite que clases con interfaces incompatibles se comuniquen:",
+    "opciones": [
+      "a) Bridge.",
+      "b) Adapter.",
+      "c) Facade.",
+      "d) Interface."
+    ],
+    "correcta": 1,
+    "explicacion": "Adapter permite interoperabilidad entre interfaces incompatibles.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Desacopla abstracción.",
+      "b)": "Correcta. Traduce interfaces.",
+      "c)": "Incorrecta. Simplifica uso.",
+      "d)": "Incorrecta. No es patrón."
+    }
+  },
+  {
+    "pregunta": "56. Patrones para asignación de responsabilidades:",
+    "opciones": [
+      "a) OOD",
+      "b) GRASP",
+      "c) Booch",
+      "d) Fan-In"
+    ],
+    "correcta": 1,
+    "explicacion": "GRASP define principios para asignar responsabilidades en diseño OO.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es disciplina general.",
+      "b)": "Correcta. Son patrones de responsabilidad.",
+      "c)": "Incorrecta. Es metodología.",
+      "d)": "Incorrecta. Métrica."
+    }
+  },
+  {
+    "pregunta": "57. Lenguajes .NET compilan a:",
+    "opciones": [
+      "a) ByteCode",
+      "b) ADO.NET",
+      "c) CIL",
+      "d) MCIL"
+    ],
+    "correcta": 2,
+    "explicacion": "El código .NET se compila a Common Intermediate Language (CIL).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es de Java.",
+      "b)": "Incorrecta. Es tecnología de acceso a datos.",
+      "c)": "Correcta. Lenguaje intermedio de .NET.",
+      "d)": "Incorrecta. Nombre obsoleto."
+    }
+  },
+  {
+    "pregunta": "58. ¿Qué son las clases abstractas?",
+    "opciones": [
+      "a) Divididas en subclases.",
+      "b) No tienen instancias.",
+      "c) Están predefinidas.",
+      "d) No son reutilizables."
+    ],
+    "correcta": 1,
+    "explicacion": "Las clases abstractas no pueden instanciarse directamente, sirven como base.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. No define el concepto.",
+      "b)": "Correcta. No se instancian.",
+      "c)": "Incorrecta. No necesariamente.",
+      "d)": "Incorrecta. Sí son reutilizables."
+    }
+  },
+  {
+    "pregunta": "59. Cambio en un componente que introduce errores en otros no modificados:",
+    "opciones": [
+      "a) Regresión descontrolada",
+      "b) Efecto onda",
+      "c) Error expandido",
+      "d) Fallo base"
+    ],
+    "correcta": 1,
+    "explicacion": "El efecto onda describe cómo un cambio impacta en otras partes del sistema.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. No es término estándar.",
+      "b)": "Correcta. Define impacto colateral.",
+      "c)": "Incorrecta. No es término formal.",
+      "d)": "Incorrecta. No aplica."
+    }
+  },
+  {
+    "pregunta": "60. Diagrama dinámico que muestra vínculos y mensajes sin orden temporal:",
+    "opciones": [
+      "a) Diagrama de colaboración",
+      "b) Diagrama de secuencia",
+      "c) Diagrama de estructura",
+      "d) Diagrama de interrelaciones"
+    ],
+    "correcta": 0,
+    "explicacion": "El diagrama de colaboración enfatiza relaciones, no el tiempo.",
+    "analisis_opciones": {
+      "a)": "Correcta. No prioriza la línea temporal.",
+      "b)": "Incorrecta. Sí muestra orden temporal.",
+      "c)": "Incorrecta. Es estático.",
+      "d)": "Incorrecta. No es estándar UML."
+    }
+  },
+  {
+    "pregunta": "61. Capacidad de un objeto para ocultar datos internos:",
+    "opciones": [
+      "a) Abstracción",
+      "b) Encapsulamiento",
+      "c) Polimorfismo",
+      "d) Herencia"
+    ],
+    "correcta": 1,
+    "explicacion": "El encapsulamiento protege el estado interno del objeto.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es simplificación.",
+      "b)": "Correcta. Oculta datos.",
+      "c)": "Incorrecta. Es comportamiento.",
+      "d)": "Incorrecta. Es relación."
+    }
+  },
+  {
+    "pregunta": "62. ¿Cuál es el objetivo principal del patrón Flyweight (Peso Ligero)?",
+    "opciones": [
+      "a) Reducir memoria compartiendo estado intrínseco.",
+      "b) Controlar el acceso a otro objeto.",
+      "c) Separar abstracción de implementación.",
+      "d) Añadir responsabilidades dinámicamente."
+    ],
+    "correcta": 0,
+    "explicacion": "Flyweight optimiza memoria compartiendo datos comunes entre objetos.",
+    "analisis_opciones": {
+      "a)": "Correcta. Minimiza uso de memoria.",
+      "b)": "Incorrecta. Proxy.",
+      "c)": "Incorrecta. Bridge.",
+      "d)": "Incorrecta. Decorator."
+    }
+  },
+  {
+    "pregunta": "63. En el patrón Chain of Responsibility, ¿qué sucede con la petición?",
+    "opciones": [
+      "a) Debe detenerse siempre.",
+      "b) Se procesa o se reenvía al siguiente manejador.",
+      "c) Se devuelve al cliente siempre.",
+      "d) Se copia para todos."
+    ],
+    "correcta": 1,
+    "explicacion": "La petición pasa por una cadena hasta ser manejada.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Puede continuar.",
+      "b)": "Correcta. Flujo encadenado.",
+      "c)": "Incorrecta. No necesariamente.",
+      "d)": "Incorrecta. No se replica."
+    }
+  },
+  {
+    "pregunta": "64. ¿Qué componente del patrón Command solicita ejecutar la acción?",
+    "opciones": [
+      "a) Receiver.",
+      "b) ConcreteCommand.",
+      "c) Invoker.",
+      "d) Client."
+    ],
+    "correcta": 2,
+    "explicacion": "El Invoker ejecuta el comando sin conocer su implementación.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Ejecuta la acción real.",
+      "b)": "Incorrecta. Implementa el comando.",
+      "c)": "Correcta. Dispara la ejecución.",
+      "d)": "Incorrecta. Configura el sistema."
+    }
+  },
+  {
+    "pregunta": "65. Principio GRASP que asigna responsabilidad al que tiene los datos:",
+    "opciones": [
+      "a) Bajo Acoplamiento.",
+      "b) Experto en Información.",
+      "c) Alta Cohesión.",
+      "d) Creador."
+    ],
+    "correcta": 1,
+    "explicacion": "El principio Information Expert asigna responsabilidades a quien posee la información necesaria.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Trata sobre dependencias.",
+      "b)": "Correcta. Asigna según conocimiento.",
+      "c)": "Incorrecta. Trata sobre foco de responsabilidades.",
+      "d)": "Incorrecta. Trata sobre creación de objetos."
+    }
+  }
+
+]
+
+
+
+
+
+  

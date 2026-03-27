@@ -1,0 +1,1835 @@
+[
+{
+  "pregunta": "1. Visual SourceSafe es:",
+  "opciones": [
+    "A. Una herramienta CASE.",
+    "B. Un antivirus.",
+    "C. Una herramienta de control de versiones de Microsoft.",
+    "D. Una herramienta para modelado UML."
+  ],
+  "correcta": 2,
+  "explicacion": "Visual SourceSafe es una herramienta de control de versiones de Microsoft que permite gestionar versiones de código fuente, registrar cambios y trabajar en equipo.",
+  "analisis_opciones": {
+    "A": "Incorrecta. CASE es para análisis/diseño.",
+    "B": "Incorrecta. No es antivirus.",
+    "C": "Correcta.",
+    "D": "Incorrecta. UML es modelado."
+  }
+},
+{
+  "pregunta": "2. Según establece METRICA v3, ¿qué participantes están presentes en la tarea de “Elaboración de los Manuales de Usuario”?",
+  "opciones": [
+    "A. Usuarios Expertos.",
+    "B. Consultor de Sistemas de Información.",
+    "C. Equipo de Formación.",
+    "D. Equipo de Proyecto."
+  ],
+  "correcta": 3,
+  "explicacion": "El Equipo de Proyecto es quien desarrolla el sistema y por tanto el responsable de documentarlo correctamente.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "3. La plataforma de control de versiones de Microsoft es:",
+  "opciones": [
+    "A. CVS.",
+    "B. Trello.",
+    "C. Team Foundation Server.",
+    "D. ClearCase."
+  ],
+  "correcta": 2,
+  "explicacion": "Team Foundation Server (TFS), ahora Azure DevOps, es la plataforma de Microsoft para control de versiones.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "4. Según Métrica v3, ¿qué tipo de pruebas consiste en determinar que los tiempos de respuesta están dentro de los intervalos establecidos en las especificaciones del sistema?",
+  "opciones": [
+    "A. Pruebas de respuesta.",
+    "B. Pruebas de sobrecarga.",
+    "C. Pruebas de rendimiento.",
+    "D. Pruebas de tiempo."
+  ],
+  "correcta": 2,
+  "explicacion": "Las pruebas de rendimiento miden tiempos de respuesta, consumo de recursos y comportamiento bajo carga.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "5. ¿Cuál de las siguientes soluciones es un sistema de construcción (build system) que permite automatizar tareas comunes de desarrollo, tales como la minimización (técnica minify) de código JavaScript?",
+  "opciones": [
+    "A. Gulp",
+    "B. Bitbucket",
+    "C. Babel",
+    "D. Traceur"
+  ],
+  "correcta": 0,
+  "explicacion": "Gulp automatiza tareas como minificación, compilación y empaquetado de código.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "6. ¿Qué término hace referencia a la realización de un análisis estático del código fuente de una aplicación para identificar vulnerabilidades de seguridad antes de que se implemente en un entorno de producción real?",
+  "opciones": [
+    "A. SAST.",
+    "B. OWASP.",
+    "C. DAST.",
+    "D. SART."
+  ],
+  "correcta": 0,
+  "explicacion": "SAST analiza el código sin ejecutarlo para detectar vulnerabilidades.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "7. Indique la opción correcta sobre un “repositorio bare” en el sistema de control de versiones Git:",
+  "opciones": [
+    "A. Un repositorio bare es un mecanismo para lanzar scripts de usuario cuando suceden ciertas acciones importantes.",
+    "B. Un repositorio bare se suele usar para crear un repositorio central de Git remoto.",
+    "C. No existen repositorios bare en Git.",
+    "D. Un repositorio bare se suele usar para automatizar la copia de seguridad del repositorio local de trabajo."
+  ],
+  "correcta": 1,
+  "explicacion": "Un repositorio bare no tiene directorio de trabajo y se usa como repositorio remoto.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "8. Para detectar, eliminar y/o mitigar las debilidades de una aplicación se pueden realizar diferentes análisis de seguridad durante el ciclo de vida del desarrollo de software, entre los que NO se encuentra:",
+  "opciones": [
+    "A. SAST (Static Application Security Testing).",
+    "B. S-SDLC (Secure Software Development Liability Control).",
+    "C. DAST (Dynamic Application Security Testing).",
+    "D. SCA (Software Composition Analysis)."
+  ],
+  "correcta": 1,
+  "explicacion": "SAST, DAST y SCA son reales. S-SDLC no es una categoría estándar.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta (respuesta).",
+    "C": "Correcta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "9. Las pruebas cuya finalidad es verificar que los distintos componentes del sistema interactúan correctamente a través de sus interfaces se denominan:",
+  "opciones": [
+    "A. Pruebas de artefactos.",
+    "B. Pruebas de integración.",
+    "C. Pruebas de interacción.",
+    "D. Pruebas de implantación."
+  ],
+  "correcta": 1,
+  "explicacion": "Las pruebas de integración verifican la correcta interacción entre módulos.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "10. Dado un proyecto git, ¿con qué comando puedo listar las etiquetas?",
+  "opciones": [
+    "A. git tag",
+    "B. gil list-tag",
+    "C. git rebase",
+    "D. git -t"
+  ],
+  "correcta": 0,
+  "explicacion": "El comando 'git tag' lista las etiquetas del repositorio.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+  
+
+{
+  "pregunta": "11. Es un sistema de control de versiones multiplatafonna, para desarrolladores de software:",
+  "opciones": [
+    "A. Cassandra",
+    "B. Nunit",
+    "C. Mercurial",
+    "D. Lucene"
+  ],
+  "correcta": 2,
+  "explicacion": "Mercurial es un sistema de control de versiones distribuido (DVCS), similar a Git, que permite gestionar versiones de código de forma local y remota, con soporte multiplataforma. Está diseñado para ser rápido, fiable y fácil de usar en entornos colaborativos.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Cassandra es una base de datos NoSQL distribuida, no un sistema de control de versiones.",
+    "B": "Incorrecta. NUnit es un framework de testing para .NET, no gestiona versiones.",
+    "C": "Correcta. Es un sistema de control de versiones distribuido.",
+    "D": "Incorrecta. Lucene es una librería de búsqueda (indexación de texto)."
+  }
+},
+{
+  "pregunta": "12. Dado un repositorio que se encuentra bajo control de versiones con la herramienta Git., ¿qué nombre tiene el fichero en que se indican aquellos ficheros que NO deben ser tenidos en cuenta por el control de versiones?",
+  "opciones": [
+    "A. .gitignore",
+    "B. .gituntrack",
+    "C. .gitexclude",
+    "D. .gltuncommit"
+  ],
+  "correcta": 0,
+  "explicacion": "El fichero .gitignore se utiliza para especificar qué archivos o directorios deben ser ignorados por Git. Es fundamental para evitar subir archivos innecesarios como binarios, logs o configuraciones locales.",
+  "analisis_opciones": {
+    "A": "Correcta. Es el fichero estándar de Git para ignorar archivos.",
+    "B": "Incorrecta. No existe en Git.",
+    "C": "Incorrecta. Aunque existe 'exclude' en Git internamente, no es este nombre ni uso típico.",
+    "D": "Incorrecta. No existe."
+  }
+},
+{
+  "pregunta": "13. En una clasificación de herramientas CASE basada en las fases del ciclo de desarrollo que cubren, las denominadas Lower Case se emplean en:",
+  "opciones": [
+    "A. La generación de código.",
+    "B. El análisis de requisitos.",
+    "C. La fase de planificación.",
+    "D. La fase de diseño."
+  ],
+  "correcta": 0,
+  "explicacion": "Las herramientas Lower CASE se utilizan en las fases finales del desarrollo, como la generación de código, pruebas e implementación. Las Upper CASE son para análisis/diseño y las Middle CASE para fases intermedias.",
+  "analisis_opciones": {
+    "A": "Correcta. Es su función principal.",
+    "B": "Incorrecta. Esto corresponde a Upper CASE.",
+    "C": "Incorrecta. Fase inicial (Upper CASE).",
+    "D": "Incorrecta. Más propio de Middle CASE."
+  }
+},
+{
+  "pregunta": "14. En el software para control de versiones GIT, hacer un 'commit' es:",
+  "opciones": [
+    "A. La acción de introducir comentarios iterativos entre versiones.",
+    "B. La acción de establecer un compromiso de uso (commitment) entre ambas partes.",
+    "C. La acción de descargar la rama de trabajo del repositorio central.",
+    "D. La acción de almacenar una nueva instantánea (snapshot) del estado del proyecto en el historial de GIT."
+  ],
+  "correcta": 3,
+  "explicacion": "Un commit en Git guarda una instantánea del estado del proyecto en ese momento en el historial. Es el concepto clave del control de versiones: registrar cambios de forma permanente.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Aunque los commits llevan mensajes, no es su función principal.",
+    "B": "Incorrecta. No tiene ese significado en Git.",
+    "C": "Incorrecta. Eso sería un 'pull' o 'clone'.",
+    "D": "Correcta. Define exactamente lo que hace un commit."
+  }
+},
+{
+  "pregunta": "15. Con respecto a las pruebas de regresión, señale la INCORRECTA:",
+  "opciones": [
+    "A. Ante cambios sobre un componente software, ayudan a garantizar que el resto de componentes no se ve afectado.",
+    "B. Son compatibles con las metodologías ágiles de desarrollo.",
+    "C. Normalmente, implican la repetición de las pruebas que ya se han realizado previamente.",
+    "D. No es posible automatizar las pruebas de regresión."
+  ],
+  "correcta": 3,
+  "explicacion": "Las pruebas de regresión consisten en volver a ejecutar pruebas ya realizadas para verificar que cambios recientes no rompen funcionalidades existentes. Son altamente automatizables y clave en integración continua.",
+  "analisis_opciones": {
+    "A": "Correcta. Es su objetivo principal.",
+    "B": "Correcta. Son fundamentales en Agile.",
+    "C": "Correcta. Se basan en repetir pruebas.",
+    "D": "Incorrecta (respuesta). Sí se pueden automatizar, de hecho es lo habitual."
+  }
+},
+{
+  "pregunta": "16. ¿Cuál de las siguientes opciones se utilizan para el control de versiones?",
+  "opciones": [
+    "A. Mercurial, CVS y Selenium.",
+    "B. GitLab, GitHub y Apache Subversion.",
+    "C. SVN, Git y Cucumber.",
+    "D. Selenium, Cucumber y GitLab."
+  ],
+  "correcta": 1,
+  "explicacion": "GitHub, GitLab y Subversion son plataformas o sistemas directamente relacionados con control de versiones. GitHub y GitLab son plataformas colaborativas basadas en Git.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Selenium es testing.",
+    "B": "Correcta. Todas están relacionadas con control de versiones.",
+    "C": "Incorrecta. Cucumber es testing BDD.",
+    "D": "Incorrecta. Selenium y Cucumber no son control de versiones."
+  }
+},
+{
+  "pregunta": "17. Con respecto a SonarQube, señale la INCORRECTA:",
+  "opciones": [
+    "A. Solución diseñada para realizar análisis dinámico del código fuente de manera automática.",
+    "B. Entre las verificaciones que puede realizar está la detección de código duplicado.",
+    "C. Obtiene diversas métricas sobre el código.",
+    "D. Permite definir \"Quality Gates\" con las condiciones mínimas que el proyecto debe cumplir para subir a producción."
+  ],
+  "correcta": 0,
+  "explicacion": "SonarQube realiza análisis estático del código (sin ejecutarlo). Analiza calidad, vulnerabilidades, duplicación y mantiene estándares de calidad mediante métricas y Quality Gates.",
+  "analisis_opciones": {
+    "A": "Incorrecta (respuesta). No es dinámico, es estático.",
+    "B": "Correcta. Detecta duplicidad de código.",
+    "C": "Correcta. Genera métricas (complejidad, cobertura...).",
+    "D": "Correcta. Quality Gates es una funcionalidad clave."
+  }
+},
+{
+  "pregunta": "18. ¿Cuál de los siguientes NO es un principio del Manifiesto Agil?",
+  "opciones": [
+    "A. El software funcionando es la medida principal de progreso.",
+    "B. El arte de maximizar la cantidad de trabajo realizado es esencial.",
+    "C. Los proyectos se desarrollan en torno a individuos motivados.",
+    "D. Los responsables de negocio y los desarrolladores trabajamos juntos de manera cotidiana durante todo el proyecto."
+  ],
+  "correcta": 1,
+  "explicacion": "El principio real del manifiesto ágil dice lo contrario: 'maximizar el trabajo NO realizado es esencial', es decir, simplicidad.",
+  "analisis_opciones": {
+    "A": "Correcta. Es un principio real.",
+    "B": "Incorrecta (respuesta). Está invertido.",
+    "C": "Correcta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "19. VCS (Version Control System), SCM (Software Configuration Management) y CMS (Configuration Management System) son:",
+  "opciones": [
+    "A. Formas de referirse al control de cambios de los programas de una instalación.",
+    "B. Paquetes de la herramienta CVS (Concurrent Verslons System).",
+    "C. Capas del Control Version System en Windows 10.",
+    "D. Herramientas disponibles en Office 2016."
+  ],
+  "correcta": 0,
+  "explicacion": "VCS, SCM y CMS son términos relacionados con la gestión de versiones y configuración del software, es decir, el control de cambios en los sistemas.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "20. ¿Cuál de las siguientes herramientas NO es un software para el control de versiones?",
+  "opciones": [
+    "A. JMeter",
+    "B. Subversion",
+    "C. Mercurial",
+    "D. GIT"
+  ],
+  "correcta": 0,
+  "explicacion": "JMeter es una herramienta de testing (carga y rendimiento), mientras que Subversion, Mercurial y Git son sistemas de control de versiones.",
+  "analisis_opciones": {
+    "A": "Correcta (respuesta). No es control de versiones.",
+    "B": "Incorrecta. Sí lo es (SVN).",
+    "C": "Incorrecta. Sí lo es.",
+    "D": "Incorrecta. Sí lo es."
+  }
+}
+,
+{
+  "pregunta": "21. Son herramientas específicas de control de versiones de software:",
+  "opciones": [
+    "A. Mercurial, Git y Apache Subversion.",
+    "B. Gimp, Mercurial y Git.",
+    "C. RedMine, Planner y OpenProj.",
+    "D. Cassandra, Git y REDIS."
+  ],
+  "correcta": 0,
+  "explicacion": "Mercurial, Git y Subversion (SVN) son sistemas de control de versiones (VCS) utilizados para gestionar cambios en el código fuente y colaborar entre desarrolladores.",
+  "analisis_opciones": {
+    "A": "Correcta. Todos son sistemas de control de versiones.",
+    "B": "Incorrecta. Gimp es edición de imágenes.",
+    "C": "Incorrecta. Son herramientas de gestión de proyectos.",
+    "D": "Incorrecta. Cassandra y Redis son bases de datos."
+  }
+},
+{
+  "pregunta": "22. El Proceso Unificado de Desarrollo del software:",
+  "opciones": [
+    "A. Es iterativo e incremental.",
+    "B. No necesita casos de uso si los requisitos son volátiles.",
+    "C. Es incompatible con UML.",
+    "D. No tiene en cuenta los riesgos."
+  ],
+  "correcta": 0,
+  "explicacion": "El Proceso Unificado (RUP) es iterativo e incremental, basado en casos de uso, centrado en arquitectura y orientado a riesgos.",
+  "analisis_opciones": {
+    "A": "Correcta. Es su característica principal.",
+    "B": "Incorrecta. Usa casos de uso como base.",
+    "C": "Incorrecta. UML es clave en RUP.",
+    "D": "Incorrecta. Gestiona riesgos activamente."
+  }
+},
+{
+  "pregunta": "23. En el contexto de las metodologías de desarrollo de software, ¿cuál de los siguientes es un principio del Manifiesto Agil?",
+  "opciones": [
+    "A. Son bienvenidos los requisitos cambiantes, incluso si llegan tarde al desarrollo.",
+    "B. Las personas del negocio y los desarrolladores deben coordinarse en una reunión semanal.",
+    "C. La documentación entregada es la principal medida del progreso.",
+    "D. Las mejores arquitecturas, requisitos y diseños emergen de equipos bien jerarquizados."
+  ],
+  "correcta": 0,
+  "explicacion": "El manifiesto ágil acepta cambios incluso en fases avanzadas del desarrollo, ya que prioriza la adaptación y valor para el cliente.",
+  "analisis_opciones": {
+    "A": "Correcta. Es un principio literal del manifiesto.",
+    "B": "Incorrecta. No define periodicidad concreta.",
+    "C": "Incorrecta. Lo importante es el software funcionando.",
+    "D": "Incorrecta. Agile apuesta por equipos autoorganizados."
+  }
+},
+{
+  "pregunta": "24. Según METRICA v3, ¿qué tipo de pruebas son las que tienen como objetivo verificar el correcto ensamblaje entre los distintos componentes para comprobar que interactúan correctamente a través de sus interfaces, cubren la funcionalidad establecida y se ajustan a los requisitos no funcionales especificados?",
+  "opciones": [
+    "A. Pruebas del sistema.",
+    "B. Pruebas de implantación.",
+    "C. Pruebas de regresión.",
+    "D. Pruebas de integración."
+  ],
+  "correcta": 3,
+  "explicacion": "Las pruebas de integración validan que los distintos módulos interactúan correctamente entre sí, verificando interfaces y comunicación.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Evalúa el sistema completo.",
+    "B": "Incorrecta. Relacionada con despliegue.",
+    "C": "Incorrecta. Verifica que cambios no rompen nada.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "25. Entre los productos existentes para la gestión de integración continua de software (entrega continua desde el código hasta el despliegue) se encuentra:",
+  "opciones": [
+    "A. Magnolia",
+    "B. Bamboo",
+    "C. DevExpress",
+    "D. InterSystems Ensemble"
+  ],
+  "correcta": 1,
+  "explicacion": "Bamboo es una herramienta de integración continua (CI/CD) de Atlassian que automatiza builds, tests y despliegues.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Magnolia es CMS.",
+    "B": "Correcta.",
+    "C": "Incorrecta. DevExpress es librería UI.",
+    "D": "Incorrecta. Plataforma de integración empresarial."
+  }
+},
+{
+  "pregunta": "26. Las herramientas Middle CASE se usan para:",
+  "opciones": [
+    "A. Automatizar tareas en el análisis y diseño de aplicaciones.",
+    "B. Ayudar en las fases de planificación y análisis de requisitos.",
+    "C. Automatizar la generación de código y crear programas de detección de errores.",
+    "D. Depurar programas y realizar planes de pruebas."
+  ],
+  "correcta": 0,
+  "explicacion": "Las herramientas Middle CASE cubren fases intermedias del desarrollo como diseño detallado y apoyo al análisis.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. Upper CASE.",
+    "C": "Incorrecta. Lower CASE.",
+    "D": "Incorrecta. Más ligado a testing/debug."
+  }
+},
+{
+  "pregunta": "27. En el desarrollo de sistemas de información, los prototipos rápidos sirven para:",
+  "opciones": [
+    "A. Acelerar la fase de codificación del sistema.",
+    "B. Adquirir experiencia en el análisis de un sistema.",
+    "C. No sirven para nada puesto que se desprecian.",
+    "D. Experimentar con distintas codificaciones alternativas."
+  ],
+  "correcta": 1,
+  "explicacion": "Los prototipos rápidos permiten entender mejor los requisitos y validar ideas con usuarios antes del desarrollo completo.",
+  "analisis_opciones": {
+    "A": "Incorrecta. No es su objetivo principal.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Son muy útiles.",
+    "D": "Incorrecta. No se centran en codificación."
+  }
+},
+{
+  "pregunta": "28. Siendo el nombre remoto \"origin\", y la rama \"master\", para subir los commits de una rama local a un repositorio remoto, ¿cuál sería el comando en Git?",
+  "opciones": [
+    "A. git push origin master",
+    "B. git pull origin master",
+    "C. git init origin master",
+    "D. git start origin master"
+  ],
+  "correcta": 0,
+  "explicacion": "El comando 'git push origin master' envía los commits locales de la rama master al repositorio remoto llamado origin.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. pull descarga cambios.",
+    "C": "Incorrecta. init crea repositorio.",
+    "D": "Incorrecta. No existe."
+  }
+},
+{
+  "pregunta": "29. Según establece Métrica V3, en la construcción de un sistema de información, las pruebas que permiten verificar que los componentes o subsistemas interactúan correctamente a través de sus interfaces, tanto internas como externas, cubren la funcionalidad establecida y se ajustan a los requisitos especificados en las verificaciones correspondientes son:",
+  "opciones": [
+    "A. Pruebas unitarias.",
+    "B. Pruebas de integración.",
+    "C. Pruebas del sistema.",
+    "D. Pruebas de migración."
+  ],
+  "correcta": 1,
+  "explicacion": "Las pruebas de integración comprueban la interacción entre componentes y subsistemas, asegurando que funcionan correctamente juntos.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Evalúan unidades individuales.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Evalúan el sistema completo.",
+    "D": "Incorrecta. Relacionadas con datos."
+  }
+}
+,
+{
+  "pregunta": "¿Qué es un repositorio en el contexto de los sistemas de información?",
+  "opciones": [
+    "A. Un sistema de almacenamiento de datos exclusivamente estructurados en bases de datos relacionales.",
+    "B. Un espacio digital donde se almacenan, organizan y gestionan recursos o información, permitiendo su acceso y reutilización.",
+    "C. Un servidor destinado únicamente a la ejecución de aplicaciones web.",
+    "D. Un sistema de control de versiones distribuido."
+  ],
+  "correcta": 1,
+  "explicacion": "Un repositorio es un almacén digital donde se guardan recursos (documentos, código, objetos de aprendizaje, etc.) con capacidad de organización, acceso y reutilización.",
+  "analisis_opciones": {
+    "A": "Incorrecta. No se limita a bases de datos.",
+    "B": "Correcta.",
+    "C": "Incorrecta. No es un servidor de ejecución.",
+    "D": "Incorrecta. Git es un repositorio pero no define el concepto general."
+  }
+},
+{
+  "pregunta": "¿Cuál de los siguientes tipos de repositorios está orientado a una disciplina o área concreta del conocimiento?",
+  "opciones": [
+    "A. Repositorios institucionales.",
+    "B. Repositorios de recursos.",
+    "C. Repositorios temáticos.",
+    "D. Repositorios de objetos de aprendizaje."
+  ],
+  "correcta": 2,
+  "explicacion": "Los repositorios temáticos se centran en un área específica (ej. medicina, informática, física).",
+  "analisis_opciones": {
+    "A": "Incorrecta. Son de una institución.",
+    "B": "Incorrecta. Muy genérico.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Se centran en material educativo reutilizable."
+  }
+},
+{
+  "pregunta": "¿Qué caracteriza principalmente a un repositorio institucional?",
+  "opciones": [
+    "A. Almacena únicamente código fuente.",
+    "B. Contiene recursos generados por una organización concreta, como una universidad o administración.",
+    "C. Está especializado en una única materia científica.",
+    "D. Solo contiene materiales de aprendizaje interactivos."
+  ],
+  "correcta": 1,
+  "explicacion": "Un repositorio institucional recoge la producción digital de una organización (universidad, organismo público, etc.).",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso sería más Git.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Eso es temático.",
+    "D": "Incorrecta. Eso es objetos de aprendizaje."
+  }
+},
+{
+  "pregunta": "¿Cuál de los siguientes repositorios está orientado específicamente a materiales educativos reutilizables?",
+  "opciones": [
+    "A. Repositorios institucionales.",
+    "B. Repositorios de eprints.",
+    "C. Repositorios de objetos de aprendizaje.",
+    "D. Repositorios temáticos."
+  ],
+  "correcta": 2,
+  "explicacion": "Los repositorios de objetos de aprendizaje contienen materiales educativos diseñados para reutilización (SCORM, contenidos formativos, etc.).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta. Son publicaciones científicas.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "Los repositorios de tipo e-prints se caracterizan por:",
+  "opciones": [
+    "A. Almacenar exclusivamente código fuente.",
+    "B. Contener documentos científicos como artículos, preprints o tesis.",
+    "C. Gestionar recursos multimedia interactivos.",
+    "D. Almacenar únicamente datos estructurados."
+  ],
+  "correcta": 1,
+  "explicacion": "Los e-prints son repositorios de publicaciones científicas, incluyendo versiones preliminares (preprints).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre repositorios de recursos es correcta?",
+  "opciones": [
+    "A. Solo almacenan código fuente.",
+    "B. Incluyen diferentes tipos de materiales sin limitarse a un tipo específico.",
+    "C. Están limitados a instituciones académicas.",
+    "D. Solo contienen documentos científicos."
+  ],
+  "correcta": 1,
+  "explicacion": "Los repositorios de recursos son más generales y pueden contener distintos tipos de contenidos.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué tipo de repositorio es más adecuado para almacenar la producción científica de una universidad?",
+  "opciones": [
+    "A. Repositorio temático.",
+    "B. Repositorio institucional.",
+    "C. Repositorio de objetos de aprendizaje.",
+    "D. Repositorio de recursos."
+  ],
+  "correcta": 1,
+  "explicacion": "Las universidades usan repositorios institucionales para guardar tesis, artículos y trabajos generados por la propia institución.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes opciones describe mejor la diferencia entre un repositorio temático y uno institucional?",
+  "opciones": [
+    "A. El temático almacena código y el institucional documentos.",
+    "B. El temático se basa en áreas de conocimiento y el institucional en la organización que lo gestiona.",
+    "C. El institucional es público y el temático privado.",
+    "D. No existe diferencia entre ambos."
+  ],
+  "correcta": 1,
+  "explicacion": "La diferencia clave es el criterio de organización: temática vs institución.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de los siguientes NO es un tipo de repositorio según su clasificación?",
+  "opciones": [
+    "A. Repositorios institucionales.",
+    "B. Repositorios temáticos.",
+    "C. Repositorios relacionales.",
+    "D. Repositorios de objetos de aprendizaje."
+  ],
+  "correcta": 2,
+  "explicacion": "Repositorios relacionales no es una categoría de clasificación, es un tipo de base de datos.",
+  "analisis_opciones": {
+    "A": "Correcta categoría.",
+    "B": "Correcta categoría.",
+    "C": "Incorrecta → esta es la respuesta.",
+    "D": "Correcta categoría."
+  }
+},
+{
+  "pregunta": "¿Qué característica comparten todos los repositorios independientemente de su tipo?",
+  "opciones": [
+    "A. Solo almacenan código fuente.",
+    "B. Permiten almacenar, organizar y recuperar información.",
+    "C. Están basados exclusivamente en XML.",
+    "D. Son sistemas distribuidos obligatoriamente."
+  ],
+  "correcta": 1,
+  "explicacion": "La esencia de cualquier repositorio es gestionar información (almacenamiento, organización y acceso).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+  
+  {
+    "pregunta": "136. ¿Cuál es la diferencia principal entre un Fork y un Branch?",
+    "opciones": [
+      "A. El Branch es para código abierto y el Fork para código cerrado.",
+      "B. El Branch se fusiona eventualmente con la principal (Merge), mientras que el Fork es una bifurcación que no volverá a fusionarse.",
+      "C. El Fork es más rápido que el Branch.",
+      "D. No hay diferencia, son sinónimos."
+    ],
+    "correcta": 1,
+    "explicacion": "Un Branch es una ramificación temporal para trabajar de forma aislada. Un Fork crea un camino evolutivo distinto (como Linux Mint respecto a Ubuntu).",
+    "analisis_opciones": {
+      "A": "Incorrecta. No depende del tipo de licencia.",
+      "B": "Correcta. Es la distinción fundamental de flujo de trabajo.",
+      "C": "Incorrecta. Son conceptos lógicos, no de rendimiento.",
+      "D": "Incorrecta. Tienen objetivos finales distintos."
+    }
+  },
+  {
+    "pregunta": "137. En sistemas de control de versiones distribuidos (como Git), ¿qué comando se utiliza para enviar el código a otros servidores tras haber hecho el commit local?",
+    "opciones": [
+      "A. Pull.",
+      "B. Fetch.",
+      "C. Push.",
+      "D. Update."
+    ],
+    "correcta": 2,
+    "explicacion": "En sistemas distribuidos, el commit es local. Para que los demás vean tus cambios, debes hacer un 'Push' al servidor remoto.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Pull es para descargar.",
+      "B": "Incorrecta. Fetch es para descargar sin sustituir.",
+      "C": "Correcta. Empuja los cambios locales al repositorio remoto.",
+      "D": "Incorrecta. Se usa más en sistemas centralizados (SVN)."
+    }
+  },
+  {
+    "pregunta": "138. ¿Qué acción realiza un comando 'Pull' en un sistema distribuido?",
+    "opciones": [
+      "A. Descarga el código del servidor pero no modifica el local.",
+      "B. Envía los cambios locales al servidor.",
+      "C. Descarga una copia de código de un servidor y sustituye a la local.",
+      "D. Borra la rama principal."
+    ],
+    "correcta": 2,
+    "explicacion": "El Pull es una combinación de descargar (fetch) y fusionar (merge) en el código local de forma inmediata.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es un Fetch.",
+      "B": "Incorrecta. Eso es un Push.",
+      "C": "Correcta. Sincroniza y actualiza tu copia local directamente.",
+      "D": "Incorrecta. Acción destructiva no relacionada."
+    }
+  },
+  {
+    "pregunta": "139. Si un desarrollador quiere ver qué cambios hay en el servidor pero sin que estos afecten todavía a su código local, ¿qué debe usar?",
+    "opciones": [
+      "A. Pull.",
+      "B. Fetch.",
+      "C. Commit.",
+      "D. Merge."
+    ],
+    "correcta": 1,
+    "explicacion": "El Fetch descarga la información del servidor para que sepas qué hay de nuevo, pero te permite decidir cuándo fusionarlo con tu trabajo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Pull sustituye automáticamente.",
+      "B": "Correcta. Es la descarga 'segura' o informativa.",
+      "C": "Incorrecta. Guarda cambios locales.",
+      "D": "Incorrecta. Une dos ramas."
+    }
+  },
+  {
+    "pregunta": "140. El proceso de fusionar una rama secundaria con la rama principal (Trunk) se conoce como:",
+    "opciones": [
+      "A. Fetching.",
+      "B. Branching.",
+      "C. Merging.",
+      "D. Pushing."
+    ],
+    "correcta": 2,
+    "explicacion": "El Merge consiste en integrar las modificaciones de una rama independiente en la línea de código principal.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es descargar información remota.",
+      "B": "Incorrecta. Es el acto de crear la rama, no de unirla.",
+      "C": "Correcta. Es la labor de sincronización de múltiples cambios.",
+      "D": "Incorrecta. Es enviar cambios al servidor."
+    }
+  }
+,
+{
+  "pregunta": "¿Cuál de las siguientes herramientas actúa como un programador de pares virtual basado en IA que sugiere código en tiempo real?",
+  "opciones": [
+    "A. Replit",
+    "B. GitHub Copilot",
+    "C. Tabnine",
+    "D. Cursor"
+  ],
+  "correcta": 1,
+  "explicacion": "GitHub Copilot es conocido como 'pair programmer' virtual, generando líneas o bloques completos de código en tiempo real mientras programas.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es una plataforma cloud.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Es autocompletado IA, pero no se define así.",
+    "D": "Incorrecta. Es editor con IA, no exactamente 'pair programmer'."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes herramientas es un editor de código basado en Visual Studio Code con integración de modelos como GPT-4?",
+  "opciones": [
+    "A. Tabnine",
+    "B. Replit",
+    "C. Cursor",
+    "D. CodeWhisperer"
+  ],
+  "correcta": 2,
+  "explicacion": "Cursor es un editor de código con IA integrado, basado en VS Code, que utiliza modelos avanzados como GPT-4 y Claude.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es asistente de autocompletado.",
+    "B": "Incorrecta. Es plataforma cloud.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Es herramienta de Amazon."
+  }
+},
+{
+  "pregunta": "¿Qué herramienta permite desarrollar aplicaciones completas desde el navegador sin necesidad de instalación local?",
+  "opciones": [
+    "A. Replit",
+    "B. GitHub Copilot",
+    "C. Tabnine",
+    "D. Cursor"
+  ],
+  "correcta": 0,
+  "explicacion": "Replit es una plataforma cloud que permite programar, ejecutar y desplegar aplicaciones directamente desde el navegador.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. Es asistente IA.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes herramientas se centra en la finalización automática de código mediante aprendizaje automático?",
+  "opciones": [
+    "A. Cursor",
+    "B. Tabnine",
+    "C. Replit",
+    "D. CodeWhisperer"
+  ],
+  "correcta": 1,
+  "explicacion": "Tabnine es un asistente de autocompletado basado en IA que predice código usando machine learning.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta. También sugiere código pero se centra más en seguridad y AWS."
+  }
+},
+{
+  "pregunta": "¿Qué herramienta de Amazon ofrece sugerencias de código en tiempo real y pone énfasis en la seguridad del código?",
+  "opciones": [
+    "A. Tabnine",
+    "B. GitHub Copilot",
+    "C. Amazon CodeWhisperer",
+    "D. Cursor"
+  ],
+  "correcta": 2,
+  "explicacion": "CodeWhisperer es la herramienta de Amazon que genera código y además detecta vulnerabilidades (ej. OWASP).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes características es propia de Cursor?",
+  "opciones": [
+    "A. Desarrollo exclusivamente en navegador.",
+    "B. Integración con OWASP para seguridad.",
+    "C. Chat de IA con conocimiento de la base de código.",
+    "D. Solo funciona con Java."
+  ],
+  "correcta": 2,
+  "explicacion": "Cursor destaca por tener un chat de IA que entiende el proyecto completo y puede ayudarte sobre el código existente.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso es Replit.",
+    "B": "Incorrecta. Eso es CodeWhisperer.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué herramienta permite crear aplicaciones a partir de descripciones en lenguaje natural?",
+  "opciones": [
+    "A. Replit",
+    "B. Tabnine",
+    "C. GitHub Copilot",
+    "D. Cursor"
+  ],
+  "correcta": 0,
+  "explicacion": "Replit (con su agente v2) permite generar aplicaciones completas a partir de descripciones en lenguaje natural.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes herramientas destaca por su integración con OWASP para mejorar la seguridad del código?",
+  "opciones": [
+    "A. Tabnine",
+    "B. GitHub Copilot",
+    "C. Amazon CodeWhisperer",
+    "D. Replit"
+  ],
+  "correcta": 2,
+  "explicacion": "CodeWhisperer integra buenas prácticas de seguridad (como OWASP) y detecta vulnerabilidades en el código.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre GitHub Copilot es correcta?",
+  "opciones": [
+    "A. Solo funciona en navegador.",
+    "B. Aprende del estilo de codificación del usuario.",
+    "C. Solo genera código en Python.",
+    "D. No se integra con editores."
+  ],
+  "correcta": 1,
+  "explicacion": "Copilot aprende del contexto y estilo del programador para ofrecer sugerencias más precisas.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Es multilenguaje.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes herramientas soporta múltiples lenguajes y funciona en varios editores como VS Code o Sublime?",
+  "opciones": [
+    "A. Tabnine",
+    "B. Cursor",
+    "C. Replit",
+    "D. CodeWhisperer"
+  ],
+  "correcta": 0,
+  "explicacion": "Tabnine es multiplataforma y soporta múltiples editores y lenguajes.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+  {
+    "pregunta": "141. ¿En qué consiste el modelo de 'Integración Continua' propuesto originalmente por Martin Fowler?",
+    "opciones": [
+      "A. En que los desarrolladores trabajen siempre en la misma oficina.",
+      "B. En realizar integraciones automáticas (compilación y pruebas) lo más a menudo posible para detectar fallos cuanto antes.",
+      "C. En no usar nunca sistemas de control de versiones.",
+      "D. En prohibir el uso de metodologías ágiles."
+    ],
+    "correcta": 1,
+    "explicacion": "La CI busca automatizar el ciclo de compilación y pruebas para que cualquier error de integración se detecte en horas, no en semanas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tiene que ver con la ubicación física.",
+      "B": "Correcta. Definición canónica del concepto según tus apuntes.",
+      "C": "Incorrecta. La CI depende totalmente del control de versiones.",
+      "D": "Incorrecta. Al contrario, suele estar asociada a metodologías ágiles."
+    }
+  },
+  {
+    "pregunta": "142. ¿Cuál de las siguientes es la herramienta de Integración Continua más conocida y utilizada, mencionada en el temario?",
+    "opciones": [
+      "A. Git.",
+      "B. Jenkins.",
+      "C. Subversion.",
+      "D. Maven."
+    ],
+    "correcta": 1,
+    "explicacion": "Jenkins (evolución de Hudson) es la herramienta de referencia para orquestar la integración continua.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un sistema de control de versiones.",
+      "B": "Correcta. Es el servidor de CI por excelencia.",
+      "C": "Incorrecta. Es un sistema de control de versiones centralizado.",
+      "D": "Incorrecta. Es una herramienta de construcción (build) y gestión de dependencias."
+    }
+  },
+  {
+    "pregunta": "143. En el entorno de Microsoft .NET, ¿qué herramienta se encarga de realizar específicamente las compilaciones dentro del proceso de CI?",
+    "opciones": [
+      "A. MSBUILD.",
+      "B. Ant.",
+      "C. Maven.",
+      "D. Jenkins."
+    ],
+    "correcta": 0,
+    "explicacion": "MSBUILD es el motor de construcción para .NET, equivalente a lo que es Maven o Ant en el mundo Java.",
+    "analisis_opciones": {
+      "A": "Correcta. Herramienta de compilación específica para entornos Microsoft.",
+      "B": "Incorrecta. Es para proyectos Java.",
+      "C": "Incorrecta. Es para proyectos Java.",
+      "D": "Incorrecta. Es el servidor que controla el proceso, no el que compila."
+    }
+  },
+  {
+    "pregunta": "144. Herramientas como Ant y Maven son utilizadas principalmente para:",
+    "opciones": [
+      "A. Almacenar el código fuente.",
+      "B. Realizar compilaciones, ejecutar pruebas y generar informes en proyectos Java.",
+      "C. Diseñar la interfaz de usuario.",
+      "D. Gestionar las nóminas del equipo de desarrollo."
+    ],
+    "correcta": 1,
+    "explicacion": "Son herramientas de construcción (build tools) que automatizan la creación del ejecutable a partir del código fuente en Java.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso lo hace el repositorio (Git, SVN).",
+      "B": "Correcta. Son los pilares del build en Java.",
+      "C": "Incorrecta. No son herramientas de diseño.",
+      "D": "Incorrecta. No tienen funciones administrativas."
+    }
+  },
+  {
+    "pregunta": "145. ¿Cuál de las siguientes es una ventaja directa de aplicar Integración Continua en un proyecto?",
+    "opciones": [
+      "A. El código se escribe solo mediante IA.",
+      "B. Evitar el caos de última hora en las fechas de entrega gracias a la detección continua de problemas.",
+      "C. Eliminar la necesidad de hacer copias de seguridad.",
+      "D. Reducir el sueldo de los programadores."
+    ],
+    "correcta": 1,
+    "explicacion": "Al integrar a diario, los conflictos de código se resuelven en el momento y no se acumulan para el día del lanzamiento.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sigue requiriendo intervención humana.",
+      "B": "Correcta. Es una de las ventajas principales citadas en el texto.",
+      "C": "Incorrecta. El backup sigue siendo necesario.",
+      "D": "Incorrecta. No tiene relación con costes salariales."
+    }
+  },
+  {
+    "pregunta": "146. Señale la herramienta de Integración Continua desarrollada por Atlassian que aparece en los exámenes oficiales:",
+    "opciones": [
+      "A. Bamboo.",
+      "B. CruiseControl.",
+      "C. Anthill.",
+      "D. CVS."
+    ],
+    "correcta": 0,
+    "explicacion": "Bamboo es la solución de CI/CD de Atlassian, integrada frecuentemente con Jira y Bitbucket.",
+    "analisis_opciones": {
+      "A": "Correcta. Citada en el listado de aplicaciones del tema.",
+      "B": "Incorrecta. Es una herramienta de CI pero no de Atlassian.",
+      "C": "Incorrecta. Específica para Java.",
+      "D": "Incorrecta. Es un sistema de control de versiones antiguo."
+    }
+  },
+  {
+    "pregunta": "147. ¿A qué metodologías de desarrollo suele asociarse frecuentemente la Integración Continua?",
+    "opciones": [
+      "A. Metodología en Cascada (Waterfall).",
+      "B. Programación extrema (XP) y desarrollo ágil.",
+      "C. Modelo en V.",
+      "D. Metodologías basadas estrictamente en documentación."
+    ],
+    "correcta": 1,
+    "explicacion": "La CI es un pilar del desarrollo ágil, ya que permite la entrega rápida y frecuente de software funcional.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La cascada integra al final del proceso.",
+      "B": "Correcta. Mencionado explícitamente en el temario.",
+      "C": "Incorrecta. Es una metodología tradicional.",
+      "D": "Incorrecta. El desarrollo ágil prioriza el software funcionando."
+    }
+  },
+  {
+    "pregunta": "148. Si hablamos de 'Team Foundation Build', nos referimos a una herramienta de CI integrada en el ecosistema de:",
+    "opciones": [
+      "A. Oracle.",
+      "B. Microsoft.",
+      "C. Apple.",
+      "D. Linux Foundation."
+    ],
+    "correcta": 1,
+    "explicacion": "Es la herramienta de construcción de Microsoft vinculada históricamente a TFS (Team Foundation Server), ahora Azure DevOps.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Es el equivalente a Jenkins/Maven para .Net.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "149. ¿Qué herramienta de construcción es el equivalente en .NET a lo que 'Nant' es para otros entornos?",
+    "opciones": [
+      "A. Jenkins.",
+      "B. MSBUILD.",
+      "C. Git.",
+      "D. Hudson."
+    ],
+    "correcta": 1,
+    "explicacion": "MSBUILD es la herramienta que se encarga de las compilaciones en el ecosistema .NET, tal como indica el texto de tus apuntes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un servidor de CI.",
+      "B": "Correcta. Es la herramienta de compilación.",
+      "C": "Incorrecta. Control de versiones.",
+      "D": "Incorrecta. Servidor de CI (antiguo Jenkins)."
+    }
+  },
+  {
+    "pregunta": "150. Una de las ventajas de la CI es la 'disponibilidad constante de una versión para pruebas'. Esto permite:",
+    "opciones": [
+      "A. Que el cliente nunca vea el software hasta que esté terminado.",
+      "B. Realizar demos o lanzamientos anticipados con mayor seguridad.",
+      "C. Que los programadores no tengan que probar su código.",
+      "D. Que la documentación se genere sola."
+    ],
+    "correcta": 1,
+    "explicacion": "Al tener siempre una versión que compila y pasa las pruebas, es fácil mostrar el progreso del proyecto en cualquier momento.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Lo ideal es mostrarlo cuanto antes.",
+      "B": "Correcta. Facilita el feedback continuo.",
+      "C": "Incorrecta. Las pruebas automáticas no sustituyen a la responsabilidad del programador.",
+      "D": "Incorrecta. La CI no redacta documentos."
+    }
+  }
+,
+  {
+    "pregunta": "151. ¿Cuál es la diferencia fundamental entre el modelo de gestión de versiones cliente-servidor y el modelo distribuido?",
+    "opciones": [
+      "A. El modelo distribuido no permite trabajar a varios desarrolladores a la vez.",
+      "B. En el modelo distribuido, cada desarrollador tiene una copia completa del repositorio (historial y metadatos), no solo una copia de trabajo.",
+      "C. El modelo cliente-servidor es más reciente y rápido que el distribuido.",
+      "D. El modelo cliente-servidor no requiere conexión a la red para hacer commits."
+    ],
+    "correcta": 1,
+    "explicacion": "En el modelo distribuido (como Git), cada equipo local es un repositorio completo, lo que permite trabajar y ver el historial sin conexión al servidor central.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ambos lo permiten.",
+      "B": "Correcta. Es la característica técnica que define a sistemas como Git o Mercurial.",
+      "C": "Incorrecta. El modelo cliente-servidor (CVS, SVN) es la aproximación más antigua.",
+      "D": "Incorrecta. Requiere conexión para subir (check-in) o bajar (check-out) cambios."
+    }
+  },
+  {
+    "pregunta": "152. ¿Qué sistema de control de versiones local se caracteriza por formar parte de Unix y basarse en diferencias entrelazadas para construir versiones?",
+    "opciones": [
+      "A. Git.",
+      "B. Subversion (SVN).",
+      "C. Source Code Control System (SCCS).",
+      "D. Mercurial."
+    ],
+    "correcta": 2,
+    "explicacion": "SCCS es uno de los sistemas originales de Unix para control de versiones local, previo a los sistemas en red.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es distribuido.",
+      "B": "Incorrecta. Es cliente-servidor.",
+      "C": "Correcta. Definición técnica del bloque de 'Sistemas Locales'.",
+      "D": "Incorrecta. Es distribuido."
+    }
+  },
+  {
+    "pregunta": "153. Sobre la herramienta Git, ¿cuál de las siguientes afirmaciones es correcta según el temario?",
+    "opciones": [
+      "A. Es un sistema cliente-servidor escrito exclusivamente en Java.",
+      "B. Es un sistema distribuido, escrito en múltiples lenguajes y bajo licencia GPL/LGPL.",
+      "C. Es una herramienta propietaria de IBM.",
+      "D. Solo permite gestionar ficheros de código fuente, no documentos de texto."
+    ],
+    "correcta": 1,
+    "explicacion": "Git es el sistema distribuido más popular actualmente y destaca por su versatilidad y licencia de código abierto.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es distribuido.",
+      "B": "Correcta. Recoge los datos de arquitectura y licencia del texto.",
+      "C": "Incorrecta. El de IBM es Rational ClearCase.",
+      "D": "Incorrecta. Puede gestionar cualquier tipo de fichero."
+    }
+  },
+  {
+    "pregunta": "154. ¿Qué herramienta de gestión de versiones distribuida está escrita principalmente en Python y C, y es mencionada como alternativa popular a Git?",
+    "opciones": [
+      "A. CVS.",
+      "B. Mercurial.",
+      "C. Perforce Helix.",
+      "D. Apache Subversion."
+    ],
+    "correcta": 1,
+    "explicacion": "Mercurial es, junto a Git, uno de los sistemas distribuidos más relevantes, destacando el uso de Python en su desarrollo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es cliente-servidor y está en C.",
+      "B": "Correcta. Coincide con la descripción de lenguajes y arquitectura del punto 6.",
+      "C": "Incorrecta. Es propietaria y cliente-servidor.",
+      "D": "Incorrecta. Es cliente-servidor."
+    }
+  },
+  {
+    "pregunta": "155. Identifique la herramienta de control de versiones de código abierto que está 'inspirada en CVS' y utiliza un modelo cliente-servidor:",
+    "opciones": [
+      "A. Git.",
+      "B. GNU Bazaar.",
+      "C. Subversion (SVN).",
+      "D. IBM Rational ClearCase."
+    ],
+    "correcta": 2,
+    "explicacion": "SVN (Subversion) se creó para superar las limitaciones de CVS manteniendo una filosofía de uso similar (cliente-servidor).",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es cliente-servidor.",
+      "B": "Incorrecta. Permite ambos modos pero no es la 'inspirada directamente' para sustituir a CVS.",
+      "C": "Correcta. Es el sucesor natural de CVS en el modelo centralizado.",
+      "D": "Incorrecta. Es propietaria."
+    }
+  },
+  {
+    "pregunta": "156. ¿Cuál de las siguientes herramientas de gestión de versiones tiene una licencia PROPIETARIA?",
+    "opciones": [
+      "A. CVS.",
+      "B. Perforce Helix.",
+      "C. Mercurial.",
+      "D. GNU Bazaar."
+    ],
+    "correcta": 1,
+    "explicacion": "Perforce Helix e IBM Rational ClearCase son los ejemplos de herramientas comerciales (propietarias) citadas en el texto.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Licencia GPL.",
+      "B": "Correcta. Es una herramienta de pago/comercial.",
+      "C": "Incorrecta. Licencia GPL.",
+      "D": "Incorrecta. Licencia GPL."
+    }
+  },
+  {
+    "pregunta": "157. La herramienta RCS (Revision Control System) se diferencia de otras por:",
+    "opciones": [
+      "A. Almacenar la última versión y las diferencias con la anterior para un acceso rápido.",
+      "B. Ser el primer sistema distribuido de la historia.",
+      "C. No permitir el manejo de ficheros de configuración.",
+      "D. Estar escrita en Python."
+    ],
+    "correcta": 0,
+    "explicacion": "RCS fue pionero en el almacenamiento de deltas (diferencias) para optimizar el acceso a la versión actual de un solo fichero.",
+    "analisis_opciones": {
+      "A": "Correcta. Es su mecanismo de funcionamiento básico según los apuntes.",
+      "B": "Incorrecta. Es un sistema local.",
+      "C": "Incorrecta. Se usa frecuentemente para ficheros de configuración.",
+      "D": "Incorrecta. Está escrita en C."
+    }
+  },
+  {
+    "pregunta": "158. ¿Qué herramienta permite funcionar tanto en modo DISTRIBUIDO como en modo CLIENTE-SERVIDOR según el texto?",
+    "opciones": [
+      "A. Git.",
+      "B. GNU Bazaar.",
+      "C. CVS.",
+      "D. SCCS."
+    ],
+    "correcta": 1,
+    "explicacion": "GNU Bazaar destaca por su flexibilidad, permitiendo a los equipos elegir el flujo de trabajo que prefieran.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es puramente distribuido.",
+      "B": "Correcta. Es la característica diferencial citada en el punto 7.",
+      "C": "Incorrecta. Es puramente cliente-servidor.",
+      "D": "Incorrecta. Es local."
+    }
+  },
+  {
+    "pregunta": "159. El sistema Vesta se define en los apuntes como:",
+    "opciones": [
+      "A. Un clon de CVS bajo licencia BSD.",
+      "B. Un sistema de construcción con soporte para versionado en repositorios distribuidos.",
+      "C. El antecesor directo de Git.",
+      "D. Una herramienta local para Unix."
+    ],
+    "correcta": 1,
+    "explicacion": "Vesta combina la gestión de versiones con el proceso de construcción (build).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese es OpenCVS.",
+      "B": "Correcta. Definición que aparece al final de la clasificación del texto.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "160. ¿Bajo qué licencia se distribuye Apache Subversion (SVN)?",
+    "opciones": [
+      "A. Licencia GPL.",
+      "B. Licencia Propietaria.",
+      "C. Licencia Apache.",
+      "D. Licencia LGPL."
+    ],
+    "correcta": 2,
+    "explicacion": "Aunque es código abierto, SVN tiene su propia licencia específica denominada 'Licencia Apache', a diferencia de CVS que usa GPL.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Es un dato específico que suele preguntarse para distinguir proyectos de la Apache Foundation.",
+      "D": "Incorrecta."
+    }
+  }
+,
+{
+  "pregunta": "¿A qué tipo de herramientas pertenecen BMC Remedy, EasyVista Service Manager y ServiceNow?",
+  "opciones": [
+    "A. Herramientas de desarrollo de aplicaciones móviles.",
+    "B. Herramientas de control de versiones.",
+    "C. Herramientas de gestión de servicios TI (ITSM).",
+    "D. Herramientas de pruebas unitarias."
+  ],
+  "correcta": 2,
+  "explicacion": "Estas herramientas están orientadas a la gestión de servicios TI (ITSM), incluyendo gestión de incidencias, cambios y configuración.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué es una CMDB dentro de las herramientas ITSM?",
+  "opciones": [
+    "A. Un sistema de control de versiones distribuido.",
+    "B. Una base de datos de configuración que almacena información sobre los elementos de un sistema TI.",
+    "C. Un repositorio de código fuente.",
+    "D. Un sistema de pruebas automatizadas."
+  ],
+  "correcta": 1,
+  "explicacion": "CMDB (Configuration Management Database) es una base de datos que contiene información sobre los activos TI y sus relaciones.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué herramienta incluye el módulo BMC Atrium para la gestión de la configuración?",
+  "opciones": [
+    "A. ServiceNow",
+    "B. EasyVista",
+    "C. BMC Remedy",
+    "D. GitLab"
+  ],
+  "correcta": 2,
+  "explicacion": "BMC Remedy incluye BMC Atrium como módulo CMDB para la gestión de configuración.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre ServiceNow es correcta?",
+  "opciones": [
+    "A. Es un sistema de control de versiones distribuido.",
+    "B. Es una suite ITSM que incluye CMDB.",
+    "C. Es un lenguaje de programación.",
+    "D. Es una herramienta de testing automatizado."
+  ],
+  "correcta": 1,
+  "explicacion": "ServiceNow es una plataforma ITSM que incluye módulos como CMDB, gestión de incidencias y cambios.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué característica comparten BMC Remedy, EasyVista y ServiceNow?",
+  "opciones": [
+    "A. Son herramientas open source de control de versiones.",
+    "B. Son suites que incluyen funcionalidades ITSM como gestión de incidencias y cambios.",
+    "C. Solo permiten gestionar bases de datos relacionales.",
+    "D. Son editores de código."
+  ],
+  "correcta": 1,
+  "explicacion": "Todas forman parte de suites ITSM que integran múltiples funcionalidades de gestión de servicios TI.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes herramientas incluye la CMDB como parte de su suite ITSM?",
+  "opciones": [
+    "A. Git",
+    "B. ServiceNow",
+    "C. Jenkins",
+    "D. Selenium"
+  ],
+  "correcta": 1,
+  "explicacion": "ServiceNow incluye una CMDB integrada dentro de su plataforma ITSM.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué funcionalidad NO es propia de herramientas ITSM como ServiceNow o BMC Remedy?",
+  "opciones": [
+    "A. Gestión de incidencias.",
+    "B. Gestión de cambios.",
+    "C. Control de versiones de código fuente.",
+    "D. Gestión de configuración."
+  ],
+  "correcta": 2,
+  "explicacion": "El control de versiones corresponde a herramientas como Git, no a herramientas ITSM.",
+  "analisis_opciones": {
+    "A": "Correcta funcionalidad ITSM.",
+    "B": "Correcta funcionalidad ITSM.",
+    "C": "Incorrecta → respuesta.",
+    "D": "Correcta funcionalidad ITSM."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes herramientas está orientada a la gestión de servicios TI y no al desarrollo de software?",
+  "opciones": [
+    "A. Git",
+    "B. BMC Remedy",
+    "C. Jenkins",
+    "D. Maven"
+  ],
+  "correcta": 1,
+  "explicacion": "BMC Remedy es una herramienta ITSM orientada a gestión de servicios TI, no a desarrollo.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+  {
+    "pregunta": "171. En el sistema de control de versiones Subversion (SVN), ¿qué comando se utiliza para crear una copia de trabajo local a partir del repositorio central?",
+    "opciones": [
+      "A. svn clone",
+      "B. svn checkout",
+      "C. svn pull",
+      "D. svn copy"
+    ],
+    "correcta": 1,
+    "explicacion": "En SVN, 'checkout' (o 'co') es el comando estándar para descargar el proyecto. El término 'clone' es específico de sistemas distribuidos como Git.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es terminología de Git.",
+      "B": "Correcta. Es el comando inicial en SVN.",
+      "C": "Incorrecta. 'Pull' no existe en SVN centralizado.",
+      "D": "Incorrecta. Se usa para crear ramas o etiquetas dentro del repositorio."
+    }
+  },
+  {
+    "pregunta": "172. Si un desarrollador que utiliza SVN quiere enviar sus cambios locales al servidor central, ¿qué comando debe ejecutar?",
+    "opciones": [
+      "A. svn push",
+      "B. svn upload",
+      "C. svn commit",
+      "D. svn send"
+    ],
+    "correcta": 2,
+    "explicacion": "En sistemas centralizados como SVN, 'commit' envía los cambios directamente al servidor. No existe el paso intermedio de 'push'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 'Push' es de Git.",
+      "B": "Incorrecta. Comando no estándar.",
+      "C": "Correcta. Sube y consolida los cambios en el servidor.",
+      "D": "Incorrecta. Comando no estándar."
+    }
+  },
+  {
+    "pregunta": "173. ¿Cuál es el comando de Git utilizado para inicializar un nuevo repositorio en un directorio vacío?",
+    "opciones": [
+      "A. git start",
+      "B. git create",
+      "C. git init",
+      "D. git new"
+    ],
+    "correcta": 2,
+    "explicacion": "'git init' crea un nuevo subdirectorio .git que contiene todas las estructuras necesarias para el control de versiones.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Comando básico de inicio en Git.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "174. En Git, ¿qué comando se utiliza para añadir cambios del directorio de trabajo al 'área de preparación' (staging area) antes del commit?",
+    "opciones": [
+      "A. git stage",
+      "B. git add",
+      "C. git put",
+      "D. git commit -a"
+    ],
+    "correcta": 1,
+    "explicacion": "'git add' marca los archivos que queremos incluir en la próxima 'foto' o versión del proyecto.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Aunque el área se llama stage, el comando es add.",
+      "B": "Correcta. Paso previo obligatorio antes del commit en Git.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Esta opción salta el staging, pero el comando para añadir es 'add'."
+    }
+  },
+  {
+    "pregunta": "175. Para ver el historial de commits en un repositorio de Git, indicando autor, fecha y mensaje, se utiliza:",
+    "opciones": [
+      "A. git history",
+      "B. git list",
+      "C. git log",
+      "D. git show"
+    ],
+    "correcta": 2,
+    "explicacion": "'git log' muestra la lista cronológica inversa de todos los commits realizados en la rama actual.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Nombre común pero no es el comando de Git.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Es la herramienta de auditoría básica.",
+      "D": "Incorrecta. Muestra los cambios detallados de un commit específico."
+    }
+  },
+  {
+    "pregunta": "176. En SVN, si queremos ver qué archivos han sido modificados en nuestra copia local respecto al servidor antes de subir los cambios, usamos:",
+    "opciones": [
+      "A. svn diff",
+      "B. svn status",
+      "C. svn check",
+      "D. svn list"
+    ],
+    "correcta": 1,
+    "explicacion": "'svn status' (o 'st') muestra una lista de archivos con códigos (como 'M' para modificado o 'A' para añadido).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Muestra las diferencias de líneas de código, no el estado del archivo.",
+      "B": "Correcta. Proporciona un resumen del estado de la copia de trabajo.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Lista los archivos del repositorio remoto."
+    }
+  },
+  {
+    "pregunta": "177. ¿Qué comando de Git se utiliza para cambiar de una rama a otra o para restaurar archivos del árbol de trabajo?",
+    "opciones": [
+      "A. git switch",
+      "B. git checkout",
+      "C. git branch -m",
+      "D. Las opciones A y B son correctas."
+    ],
+    "correcta": 3,
+    "explicacion": "Históricamente se usaba 'git checkout', pero en versiones modernas se introdujo 'git switch' para que fuera más intuitivo el cambio de ramas.",
+    "analisis_opciones": {
+      "A": "Parcialmente correcta. Es el comando moderno.",
+      "B": "Parcialmente correcta. Es el comando clásico multifunción.",
+      "C": "Incorrecta. Se usa para renombrar ramas.",
+      "D": "Correcta. Ambos comandos son válidos para cambiar de rama."
+    }
+  },
+  {
+    "pregunta": "178. Para fusionar los cambios de una rama 'feature' en la rama 'master' en Git, el comando es:",
+    "opciones": [
+      "A. git join master",
+      "B. git combine feature",
+      "C. git merge feature",
+      "D. git blend feature"
+    ],
+    "correcta": 2,
+    "explicacion": "'git merge' toma los cambios de la rama indicada y los integra en la rama donde nos encontramos actualmente.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Comando de fusión por excelencia.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "179. En SVN, ¿cómo se denomina al comando que descarga los cambios del servidor y los aplica automáticamente sobre tu copia local?",
+    "opciones": [
+      "A. svn pull",
+      "B. svn update",
+      "C. svn fetch",
+      "D. svn refresh"
+    ],
+    "correcta": 1,
+    "explicacion": "'svn update' (o 'up') es el comando para sincronizar tu local con el trabajo de tus compañeros en un sistema centralizado.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es de Git.",
+      "B": "Correcta. Comando vital en SVN.",
+      "C": "Incorrecta. Es de Git.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "180. Dado un repositorio Git, ¿qué comando muestra el estado actual del directorio de trabajo y del área de preparación (si hay archivos sin seguimiento o preparados para commit)?",
+    "opciones": [
+      "A. git info",
+      "B. git check",
+      "C. git status",
+      "D. git st"
+    ],
+    "correcta": 2,
+    "explicacion": "'git status' es el comando más utilizado para saber 'qué está pasando' en nuestro entorno local antes de seguir trabajando.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Proporciona el resumen de cambios locales.",
+      "D": "Incorrecta. Aunque es un alias común, el comando oficial es 'status'."
+    }
+  }
+,
+{
+  "pregunta": "¿Cuál de los siguientes sistemas de control de versiones es de tipo distribuido?",
+  "opciones": [
+    "A. CVS",
+    "B. Subversion",
+    "C. Git",
+    "D. SourceSafe"
+  ],
+  "correcta": 2,
+  "explicacion": "Git es un sistema distribuido donde cada desarrollador tiene una copia completa del repositorio.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Centralizado.",
+    "B": "Incorrecta. Centralizado.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Centralizado."
+  }
+},
+{
+  "pregunta": "¿Qué acción en Git consiste en fusionar los cambios de una rama en otra?",
+  "opciones": [
+    "A. Fork",
+    "B. Merge",
+    "C. Clone",
+    "D. Commit"
+  ],
+  "correcta": 1,
+  "explicacion": "Merge combina los cambios de distintas ramas en una sola.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Crear bifurcación independiente.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Copiar repositorio.",
+    "D": "Incorrecta. Guardar cambios."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes herramientas es una forja de desarrollo colaborativo?",
+  "opciones": [
+    "A. Jenkins",
+    "B. GitHub",
+    "C. Maven",
+    "D. Selenium"
+  ],
+  "correcta": 1,
+  "explicacion": "GitHub es una forja que permite alojar código, colaborar, gestionar proyectos y más.",
+  "analisis_opciones": {
+    "A": "Incorrecta. CI/CD.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Build.",
+    "D": "Incorrecta. Testing."
+  }
+},
+{
+  "pregunta": "¿Qué es la integración continua (CI)?",
+  "opciones": [
+    "A. Un proceso de despliegue manual de software.",
+    "B. La integración frecuente de código con compilación y pruebas automáticas.",
+    "C. Una técnica de diseño de bases de datos.",
+    "D. Un modelo de desarrollo en cascada."
+  ],
+  "correcta": 1,
+  "explicacion": "La CI consiste en integrar código frecuentemente y ejecutar automáticamente build y tests.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes herramientas se utiliza habitualmente para integración continua?",
+  "opciones": [
+    "A. Jenkins",
+    "B. Git",
+    "C. Jira",
+    "D. Eclipse"
+  ],
+  "correcta": 0,
+  "explicacion": "Jenkins es una herramienta clásica de CI/CD para automatizar builds y tests.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué representa un 'branch' en Git?",
+  "opciones": [
+    "A. Una copia de seguridad automática.",
+    "B. Una línea independiente de desarrollo.",
+    "C. Un error en el código.",
+    "D. Un commit fallido."
+  ],
+  "correcta": 1,
+  "explicacion": "Una rama permite desarrollar funcionalidades de forma aislada sin afectar a la principal.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes plataformas es una forja utilizada en la Administración General del Estado (España)?",
+  "opciones": [
+    "A. GitHub",
+    "B. GitLab",
+    "C. CTT",
+    "D. Bitbucket"
+  ],
+  "correcta": 2,
+  "explicacion": "El Centro de Transferencia de Tecnología (CTT) es la forja de la Administración pública española.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En Scrum, ¿quién es responsable de representar al cliente y priorizar el trabajo?",
+  "opciones": [
+    "A. Scrum Master",
+    "B. Product Owner",
+    "C. Equipo de desarrollo",
+    "D. Stakeholder"
+  ],
+  "correcta": 1,
+  "explicacion": "El Product Owner gestiona el backlog y representa los intereses del cliente.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes prácticas es propia de Extreme Programming (XP)?",
+  "opciones": [
+    "A. Programación en pareja",
+    "B. Cascada",
+    "C. Modelo en V",
+    "D. Big Bang deployment"
+  ],
+  "correcta": 0,
+  "explicacion": "XP incluye prácticas como programación en pareja, integración continua y refactorización.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué herramienta NO pertenece al ámbito de integración continua?",
+  "opciones": [
+    "A. Jenkins",
+    "B. Bamboo",
+    "C. GitLab CI",
+    "D. Git"
+  ],
+  "correcta": 3,
+  "explicacion": "Git es control de versiones, no herramienta de CI.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+}
+,
+  {
+    "pregunta": "191. En la estructura de directorios estándar de un repositorio Subversion (SVN), ¿cuál es el propósito del directorio '/trunk'?",
+    "opciones": [
+      "A. Almacenar copias de seguridad históricas de solo lectura.",
+      "B. Contener la línea principal de desarrollo del código fuente.",
+      "C. Guardar las ramas temporales para pruebas de errores.",
+      "D. Almacenar las etiquetas de versiones finalizadas."
+    ],
+    "correcta": 1,
+    "explicacion": "El 'trunk' es el tronco o línea principal donde reside el código en desarrollo activo. Es el equivalente al 'main' o 'master' de Git.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso se gestiona con el historial del repositorio.",
+      "B": "Correcta. Es la ubicación de la versión principal del proyecto.",
+      "C": "Incorrecta. Eso se hace en '/branches'.",
+      "D": "Incorrecta. Eso se hace en '/tags'."
+    }
+  },
+  {
+    "pregunta": "192. Dentro de un repositorio SVN, si un desarrollador desea guardar una 'instantánea' de solo lectura de una versión específica (por ejemplo, la v1.0) para que no se modifique, ¿en qué directorio debe colocarla?",
+    "opciones": [
+      "A. /trunk",
+      "B. /branches",
+      "C. /snapshots",
+      "D. /tags"
+    ],
+    "correcta": 3,
+    "explicacion": "El directorio '/tags' se utiliza para hitos o versiones cerradas. Aunque técnicamente SVN permite editarlos, la convención es que sean de solo lectura.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es para desarrollo activo.",
+      "B": "Incorrecta. Es para líneas de desarrollo paralelas que pueden cambiar.",
+      "C": "Incorrecta. Nombre no estándar en SVN.",
+      "D": "Correcta. Es la carpeta destinada a versiones etiquetadas."
+    }
+  },
+  {
+    "pregunta": "193. ¿Cuál es la principal ventaja de utilizar la 'Delta compression' en un servidor de gestión de versiones?",
+    "opciones": [
+      "A. Aumentar la velocidad de conexión a internet.",
+      "B. Optimizar el almacenamiento guardando solo las diferencias entre archivos en lugar de copias completas.",
+      "C. Cifrar el código fuente automáticamente.",
+      "D. Evitar conflictos de código entre desarrolladores."
+    ],
+    "correcta": 1,
+    "explicacion": "La compresión Delta permite que el repositorio ocupe mucho menos espacio al no duplicar las partes del archivo que no han cambiado entre versiones.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No afecta al ancho de banda de red directamente.",
+      "B": "Correcta. Es una técnica de eficiencia de almacenamiento.",
+      "C": "Incorrecta. El cifrado es una capa de seguridad distinta.",
+      "D": "Incorrecta. Los conflictos se resuelven mediante Merge."
+    }
+  },
+  {
+    "pregunta": "194. En el flujo de trabajo de Git, ¿qué sucede exactamente cuando se ejecuta el comando 'git fetch'?",
+    "opciones": [
+      "A. Se descargan los cambios del servidor y se fusionan inmediatamente con el código local.",
+      "B. Se descargan las novedades del repositorio remoto pero no se modifican los archivos del directorio de trabajo local.",
+      "C. Se borran los archivos locales para descargar una copia limpia.",
+      "D. Se envían los commits locales al servidor remoto."
+    ],
+    "correcta": 1,
+    "explicacion": "Fetch actualiza las referencias remotas en tu equipo (te dice qué han hecho otros) pero no toca tu código hasta que tú decidas hacer un merge.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es lo que hace un 'git pull'.",
+      "B": "Correcta. Es una descarga 'informativa' o de consulta.",
+      "C": "Incorrecta. Acción destructiva no relacionada.",
+      "D": "Incorrecta. Eso es un 'git push'."
+    }
+  },
+  {
+    "pregunta": "195. La herramienta 'Apache Continuum', mencionada en los anexos, se clasifica como:",
+    "opciones": [
+      "A. Un sistema de control de versiones distribuido.",
+      "B. Un servidor de integración continua para proyectos Java.",
+      "C. Un lenguaje de programación para scripts de servidor.",
+      "D. Una forja de software propiedad de Microsoft."
+    ],
+    "correcta": 1,
+    "explicacion": "Apache Continuum es un servidor de CI que trabaja junto a Maven o Ant, similar a Jenkins o Bamboo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No gestiona versiones, las utiliza.",
+      "B": "Correcta. Es una de las herramientas de CI citadas en el temario.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Es de la Apache Software Foundation."
+    }
+  }
+]

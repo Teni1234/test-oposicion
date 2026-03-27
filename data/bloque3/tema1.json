@@ -1,0 +1,2134 @@
+[
+  {
+    "pregunta": "31. Queremos almacenar en una base de datos relacional los alumnos de un determinado curso y las asignaturas en las que están matriculados. Teniendo en cuenta que un alumno estará matriculado en varias asignaturas, y que en una asignatura habrá matriculados varios alumnos, ¿cuál de las siguientes opciones refleja las tablas que serían necesarias para que dicha relación estuviese en tercera forma normal?",
+    "opciones": [
+      "a) Una tabla alumnos con el código de alumno, sus datos personales y el código de las asignaturas en las que está matriculado.",
+      "b) Una tabla asignaturas con el código de la asignatura, su denominación, y el código de los alumnos que están matriculados.",
+      "c) Tres tablas: Una tabla alumnos con el código de alumno y sus datos personales, otra tabla asignatura con el código de la asignatura y su denominación, y una tercera tabla que contuviese una fila por cada alumno y en esa fila los códigos de las asignaturas en las que estuviese matriculado.",
+      "d) Tres tablas: Una tabla alumnos con el código de alumno y sus datos personales, otra tabla asignatura con el código de la asignatura y su denominación, y una tercera tabla que contuviese, en cada fila, una tupla (código de alumno, código de asignatura) por cada alumno y cada asignatura en la éste estuviese matriculado."
+    ],
+    "correcta": 3,
+    "explicacion": "Una relación N:M (muchos a muchos) requiere una tabla intermedia para evitar grupos repetitivos y cumplir con la normalización. Esta tabla debe contener pares de claves (alumno, asignatura) para cada matrícula individual.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Violaría la 1FN al tener grupos repetitivos de asignaturas por alumno.",
+      "B": "Incorrecta. Violaría la 1FN al tener grupos repetitivos de alumnos por asignatura.",
+      "C": "Incorrecta. Si la tercera tabla guarda 'los códigos' (en plural) en una sola fila, viola la 1FN (atomicidad).",
+      "D": "Correcta. Estructura estándar de dos tablas de entidad y una de relación con registros atómicos."
+    }
+  },
+  {
+    "pregunta": "32. Según Métrica v3, en la teoría de la normalización se define el término de Dependencia Funcional como:",
+    "opciones": [
+      "a) Un atributo Y depende funcionalmente respecto de otro X, si depende funcionalmente de él en su totalidad.",
+      "b) Un atributo Y se dice que depende funcionalmente de otro X si, y sólo si, a cada valor de X le corresponde un único valor de Y.",
+      "c) Un atributo depende funcionalmente de otro si, y sólo si, depende de él a través de otro atributo.",
+      "d) Un atributo X sólo puede tomar un único valor de dominio simple."
+    ],
+    "correcta": 1,
+    "explicacion": "Es la definición matemática de dependencia funcional: X determina a Y si para cada valor de X existe exactamente un valor asociado de Y.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso define la Dependencia Funcional Completa (necesaria para 2FN).",
+      "B": "Correcta. Definición formal de dependencia funcional.",
+      "C": "Incorrecta. Eso describe una Dependencia Transitiva.",
+      "D": "Incorrecta. Eso se refiere a la atomicidad de la 1FN."
+    }
+  },
+  {
+    "pregunta": "33. ¿Cuál es uno de los motivos para aplicar la desnormalización en una base de datos?",
+    "opciones": [
+      "a) Mejorar el rendimiento.",
+      "b) Disminución de la redundancia de los datos.",
+      "c) Disminución del tamaño de la base de datos.",
+      "d) Mejor actualización del modelo de datos."
+    ],
+    "correcta": 0,
+    "explicacion": "La desnormalización sacrifica la elegancia del modelo y aumenta la redundancia para reducir el número de uniones (joins), acelerando así las consultas de lectura.",
+    "analisis_opciones": {
+      "A": "Correcta. Se busca eficiencia en tiempo de respuesta.",
+      "B": "Incorrecta. Al contrario, la desnormalización aumenta la redundancia.",
+      "C": "Incorrecta. Al repetir datos, el tamaño de la base de datos aumenta.",
+      "D": "Incorrecta. Dificulta la actualización al tener el mismo dato en varios sitios."
+    }
+  },
+  {
+    "pregunta": "34. ¿Cuál es una restricción inherente al Modelo Relacional de los sistemas gestores de base de datos?",
+    "opciones": [
+      "a) El atributo que forma parte de la clave tiene que ser numérico.",
+      "b) El atributo que forma parte de la clave no puede ser numérico.",
+      "c) El atributo que forma parte de la clave no puede tomar el valor cero.",
+      "d) El atributo que forma parte de la clave no puede tomar valores nulos."
+    ],
+    "correcta": 3,
+    "explicacion": "La Integridad de Entidad prohíbe explícitamente que cualquier atributo de la clave primaria sea nulo (NULL) para garantizar la identificación única.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las claves pueden ser de tipo texto, fecha, etc.",
+      "B": "Incorrecta. Las claves pueden ser numéricas.",
+      "C": "Incorrecta. El cero es un valor válido; el nulo representa ausencia de valor.",
+      "D": "Correcta. Es la regla de oro de la integridad de entidad."
+    }
+  },
+  {
+    "pregunta": "36. Señale, de entre las siguientes opciones, el mecanismo en el Modelo Entidad/Relación Extendido que recoge Métrica v3 consistente en relacionar dos tipos de entidades que normalmente son de dominios independientes, pero coyunturalmente se asocian:",
+    "opciones": [
+      "a) Asociación.",
+      "b) Generalización.",
+      "c) PERT.",
+      "d) Regresión."
+    ],
+    "correcta": 0,
+    "explicacion": "Métrica v3 define la Asociación como el vínculo entre entidades independientes que no comparten jerarquías de herencia pero que se relacionan por una regla de negocio específica.",
+    "analisis_opciones": {
+      "A": "Correcta. Concepto específico del E/R extendido en Métrica v3.",
+      "B": "Incorrecta. Se refiere a jerarquías de herencia (Superclase/Subclase).",
+      "C": "Incorrecta. Técnica de planificación de tiempos en proyectos.",
+      "D": "Incorrecta. No es un término de modelado de datos."
+    }
+  },
+  {
+    "pregunta": "38. ¿Cuál de las siguientes operaciones NO se considera fundamental en el álgebra relacional?",
+    "opciones": [
+      "a) Proyección.",
+      "b) Intersección.",
+      "c) Selección.",
+      "d) Unión."
+    ],
+    "correcta": 1,
+    "explicacion": "Las operaciones fundamentales son: Selección, Proyección, Unión, Diferencia y Producto Cartesiano. La Intersección es derivada porque puede expresarse mediante la diferencia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una de las 5 operaciones básicas.",
+      "B": "Correcta. Es una operación redundante o derivada.",
+      "C": "Incorrecta. Es una de las 5 operaciones básicas.",
+      "D": "Incorrecta. Es una de las 5 operaciones básicas."
+    }
+  },
+  {
+    "pregunta": "39. ¿Cuál de las siguientes afirmaciones NO es correcta?",
+    "opciones": [
+      "a) Las bases de datos relacionales se normalizan para evitar la redundancia de datos.",
+      "b) Ningun atributo que compone una clave primaria puede ser nulo.",
+      "c) Un atributo nulo representa el valor cero o una cadena vacía.",
+      "d) Uno de los objetivos de la normalización es facilitar el mantenimiento de datos y programas."
+    ],
+    "correcta": 2,
+    "explicacion": "Un valor nulo (NULL) no es un cero ni un espacio en blanco; representa un valor desconocido, no aplicable o no suministrado.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una afirmación correcta sobre la normalización.",
+      "B": "Incorrecta. Es la regla de integridad de entidad (correcta).",
+      "C": "Correcta. Es la afirmación falsa; el nulo es un estado especial distinto al cero.",
+      "D": "Incorrecta. Es un objetivo real de la normalización."
+    }
+  },
+  {
+    "pregunta": "40. Las consecuencias principales de que una base de datos NO esté normalizada adecuadamente son:",
+    "opciones": [
+      "a) Errores de Inconsistencias, Incoherencias, actualización y redundancia de datos.",
+      "b) Problemas de bloqueo en las transacciones de la base de datos.",
+      "c) Problemas de disponibilidad de la base de datos.",
+      "d) Dificultad para dimensionar adecuadamente las necesidades de almacenamiento de la base de datos."
+    ],
+    "correcta": 0,
+    "explicacion": "La falta de normalización provoca anomalías de inserción, borrado y actualización, además de redundancia que lleva a inconsistencias.",
+    "analisis_opciones": {
+      "A": "Correcta. Resume los problemas lógicos de un diseño pobre.",
+      "B": "Incorrecta. Los bloqueos dependen del control de concurrencia, no del diseño lógico.",
+      "C": "Incorrecta. La disponibilidad suele ser un factor físico o de infraestructura.",
+      "D": "Incorrecta. El dimensionamiento es una tarea de administración física."
+    }
+  },
+  {
+    "pregunta": "41. Se dice que una entidad está en segunda forma normal (2FN) si:",
+    "opciones": [
+      "a) No contiene grupos repetitivos.",
+      "b) Si todos los atributos dependen funcionalmente de la clave.",
+      "c) Si todos los atributos de la entidad que no forman parte de la clave tienen una dependencia funcional completa de la misma.",
+      "d) Si todas las dependencias multivaluales son dependencias funcionales."
+    ],
+    "correcta": 2,
+    "explicacion": "La 2FN elimina las dependencias parciales: todo atributo debe depender de la clave primaria completa, no solo de una parte de ella.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es requisito de la 1FN.",
+      "B": "Incorrecta. Deben depender de TODA la clave (dependencia completa).",
+      "C": "Correcta. Definición canónica de la 2FN.",
+      "D": "Incorrecta. Eso se refiere a la 4FN."
+    }
+  },
+  {
+    "pregunta": "42. Dada la siguiente relación: Calificación (Dni_Profesor, Nombre_Profesor, Dni_Alumno, Nota_Asignatura). La clave primaria está formada por Dni_profesor y Dni_Alumno, y Dni_profesor implica Nombre_Profesor. ¿En qué forma normal está?",
+    "opciones": [
+      "a) En primera forma normal.",
+      "b) En segunda forma normal.",
+      "c) En tercera forma normal.",
+      "d) En forma normal de Boyce-Codd."
+    ],
+    "correcta": 0,
+    "explicacion": "Como 'Nombre_Profesor' depende solo de 'Dni_Profesor' (parte de la clave), existe una dependencia parcial. Esto impide estar en 2FN, por lo que se queda en 1FN.",
+    "analisis_opciones": {
+      "A": "Correcta. Al fallar la 2FN por dependencia parcial, la forma normal es la 1FN.",
+      "B": "Incorrecta. La dependencia parcial de la clave primaria compuesta lo impide.",
+      "C": "Incorrecta. No puede ser 3FN si no es 2FN.",
+      "D": "Incorrecta. Nivel muy superior al que se encuentra esta tabla."
+    }
+  },
+  {
+    "pregunta": "43. Dentro del modelo relacional el número de atributos de una relación define su...",
+    "opciones": [
+      "a) Dominio",
+      "b) Cardinalidad",
+      "c) Grado",
+      "d) Extensión"
+    ],
+    "correcta": 2,
+    "explicacion": "El Grado (o aridad) es el número de columnas (atributos) de una tabla, mientras que la cardinalidad es el número de filas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el conjunto de valores permitidos para un atributo.",
+      "B": "Incorrecta. Es el número de tuplas o filas.",
+      "C": "Correcta. Definición técnica de grado.",
+      "D": "Incorrecta. Se refiere al conjunto de tuplas en un momento dado."
+    }
+  },
+  {
+    "pregunta": "44. En el modelo Entidad Relación número de atributos de una relación define lo que se conoce como:",
+    "opciones": [
+      "a) Grado.",
+      "b) Cardinalidad.",
+      "c) Dominio.",
+      "d) Relación."
+    ],
+    "correcta": 0,
+    "explicacion": "Tanto en el modelo E/R como en el relacional, el número de atributos determina el grado de la entidad o relación.",
+    "analisis_opciones": {
+      "A": "Correcta. Atributos = Grado.",
+      "B": "Incorrecta. Tuplas/Instancias = Cardinalidad.",
+      "C": "Incorrecta. Valores permitidos = Dominio.",
+      "D": "Incorrecta. La relación es el vínculo en sí."
+    }
+  },
+  {
+    "pregunta": "45. Dentro del modelo entidad-relación se puede definir el dominio de un atributo como:",
+    "opciones": [
+      "a) El número mínimo de correspondencias.",
+      "b) Una correspondencia o asociación entre dos o más entidades.",
+      "c) El conjunto de todos los valores posibles que puede tomar el atributo.",
+      "d) El número de tuplas o filas de un atributo."
+    ],
+    "correcta": 2,
+    "explicacion": "El dominio establece el universo de valores válidos (ej. 'enteros positivos', 'letras A-Z') que puede contener una columna.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es cardinalidad de participación.",
+      "B": "Incorrecta. Eso describe una relación.",
+      "C": "Correcta. Definición de dominio.",
+      "D": "Incorrecta. No existe el número de filas 'de un atributo'."
+    }
+  },
+  {
+    "pregunta": "47. Si en una Base de Datos Relacional tenemos una tabla que contiene una tupla cuya única clave ajena tiene un valor nulo:",
+    "opciones": [
+      "a) Estaremos incumpliendo la regla de integridad de la entidad.",
+      "b) Estaremos incumpliendo la regla de integridad referencial.",
+      "c) Dicha tupla no está relacionada con ninguna otra tupla de la entidad a la que hace referencia.",
+      "d) Existirá una tupla en la entidad a la que hace referencia con la que estará relacionada."
+    ],
+    "correcta": 2,
+    "explicacion": "La integridad referencial permite nulos en la clave ajena. Un nulo indica simplemente que esa fila concreta no tiene vínculo con la tabla referenciada.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La integridad de entidad afecta a la clave primaria, no a la ajena.",
+      "B": "Incorrecta. La integridad referencial acepta nulos (siempre que no formen parte de la PK).",
+      "C": "Correcta. El nulo rompe el vínculo semántico para esa tupla específica.",
+      "D": "Incorrecta. El nulo indica precisamente que no hay tal correspondencia."
+    }
+  },
+  {
+    "pregunta": "48. En álgebra relacional la operación que, a partir de dos relaciones del mismo tipo, obtiene una nueva relación formada por las tuplas que pertenecen a las dos relaciones de partida, se llama:",
+    "opciones": [
+      "a) Unión.",
+      "b) Intersección.",
+      "c) Diferencia.",
+      "d) Producto cartesiano."
+    ],
+    "correcta": 1,
+    "explicacion": "La intersección (∩) devuelve los elementos comunes a ambos conjuntos. Requiere que las tablas sean compatibles (mismo grado y dominios).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Devuelve tuplas de una, de otra o de ambas.",
+      "B": "Correcta. Devuelve solo las filas que están en ambas tablas.",
+      "C": "Incorrecta. Devuelve tuplas que están en la primera pero no en la segunda.",
+      "D": "Incorrecta. Combina todas las filas de una con todas las de la otra."
+    }
+  },
+  {
+    "pregunta": "49. La restricción del modelo lógico relacional por la que si en una relación hay alguna clave ajena, sus valores deben coincidir con los valores de la clave primaria a la que hace referencia, o bien, deben ser completamente nulos, se denomina:",
+    "opciones": [
+      "a) Aserción (ASSERTION).",
+      "b) Restricción de clave primaria.",
+      "c) Integridad referencial.",
+      "d) Verificación (CHECK)."
+    ],
+    "correcta": 2,
+    "explicacion": "La integridad referencial asegura que los vínculos entre tablas sean válidos, evitando 'huérfanos' (referencias a datos que no existen).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Regla de integridad general definida por el usuario.",
+      "B": "Incorrecta. Afecta a la identificación única (Integridad de Entidad).",
+      "C": "Correcta. Es la definición técnica de la restricción de clave ajena.",
+      "D": "Incorrecta. Restricción sobre el valor de una columna específica."
+    }
+  },
+  {
+    "pregunta": "50. Sean dos tablas relacionadas, A y B. En A la clave primaria es 'primaria' y en B la clave foránea es 'foranea'. Si queremos obtener mediante un JOIN las filas de A junto con las de B correspondientes, y además también las filas de A que no tengan correspondencias en B, ¿qué usaríamos?",
+    "opciones": [
+      "a) A LEFT JOIN B ON A.primaria= B.foranea",
+      "b) A INNER JOIN B ON A.primaria = B.foranea",
+      "c) A RIGHT JOIN B ON A.primaria= B.foranea",
+      "d) A OUTER JOIN B ON A.primaria= B.foranea"
+    ],
+    "correcta": 0,
+    "explicacion": "El LEFT JOIN incluye todos los registros de la tabla de la izquierda (A) y los empareja con los de la derecha (B). Si no hay match en B, rellena con nulos.",
+    "analisis_opciones": {
+      "A": "Correcta. Preserva la integridad de la tabla de la izquierda (A).",
+      "B": "Incorrecta. Solo devuelve filas que tengan match en AMBAS tablas.",
+      "C": "Incorrecta. Preservaría todas las filas de B, no las de A.",
+      "D": "Incorrecta. 'Outer join' suele requerir especificar LEFT, RIGHT o FULL en la mayoría de SGBD."
+    }
+  },
+  {
+    "pregunta": "51. El principal beneficio de la normalización de las tablas de datos en una base de datos es:",
+    "opciones": [
+      "a) Minimizar la redundancia de la información.",
+      "b) Incrementar la capacidad transaccional de la base de datos.",
+      "c) Maximizar la integridad.",
+      "d) Minimizar el tiempo de respuesta ante consultas complejas."
+    ],
+    "correcta": 0,
+    "explicacion": "Aunque la normalización ayuda a la integridad, su objetivo técnico primario y directo es la eliminación de la redundancia para evitar anomalías.",
+    "analisis_opciones": {
+      "A": "Correcta. Objetivo principal de la normalización.",
+      "B": "Incorrecta. No afecta directamente a la capacidad transaccional.",
+      "C": "Incorrecta. Es un beneficio secundario, pero la redundancia es la clave.",
+      "D": "Incorrecta. A menudo la normalización ralentiza consultas al requerir más Joins."
+    }
+  },
+  {
+    "pregunta": "52. El modelo de datos relacional fue introducido por:",
+    "opciones": [
+      "a) Codd.",
+      "b) Hamming.",
+      "c) Ritchie.",
+      "d) Adleman."
+    ],
+    "correcta": 0,
+    "explicacion": "Edgar Frank Codd publicó en 1970 el artículo 'A Relational Model of Data for Large Shared Data Banks', sentando las bases de las BBDD modernas.",
+    "analisis_opciones": {
+      "A": "Correcta. Padre del modelo relacional.",
+      "B": "Incorrecta. Conocido por códigos de detección de errores.",
+      "C": "Incorrecta. Creador del lenguaje C.",
+      "D": "Incorrecta. Uno de los inventores del algoritmo RSA."
+    }
+  },
+  {
+    "pregunta": "53. En los modelos entidad relación que se usan para modelar conceptualmente un esquema relacional:",
+    "opciones": [
+      "a) Se produce dependencia por existencia cuando una entidad fuerte no puede existir sin otra entidad débil.",
+      "b) Se produce dependencia por identificación cuando la entidad fuerte no puede identificarse sola.",
+      "c) La cardinalidad es el número de entidades con la cual otra entidad se puede asociar mediante una relación binaria.",
+      "d) El grado es el número de valores que puede tomar el atributo de una entidad."
+    ],
+    "correcta": 2,
+    "explicacion": "La cardinalidad define la proporción de elementos entre conjuntos (1:1, 1:N, N:M).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es al revés: la débil depende de la fuerte.",
+      "B": "Incorrecta. Es la entidad débil la que necesita a la fuerte para su PK.",
+      "C": "Correcta. Describe el número de instancias relacionadas.",
+      "D": "Incorrecta. Eso es el dominio."
+    }
+  },
+  {
+    "pregunta": "54. Según las 12 reglas de Codd para un sistema gestor de bases de datos (SGBD), señale cuál es la definición de la regla de no subversión:",
+    "opciones": [
+      "a) Toda la información es representada unidireccionalmente por valores en posiciones de columnas.",
+      "b) Todas las vistas teóricamente actualizables deben serlo por el SGBD.",
+      "c) Ningún lenguaje de bajo nivel puede ser usado para violar las restricciones de integridad del lenguaje de alto nivel.",
+      "d) Los cambios al nivel lógico no deben requerir un cambio en los programas de aplicación."
+    ],
+    "correcta": 2,
+    "explicacion": "La Regla 12 (No subversión) garantiza que si existe una interfaz de bajo nivel, esta no pueda saltarse las reglas de seguridad o integridad del SQL.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Regla 1 (Información).",
+      "B": "Incorrecta. Regla 6 (Actualización de vistas).",
+      "C": "Correcta. Evita el 'bypass' de la seguridad del sistema.",
+      "D": "Incorrecta. Regla 9 (Independencia lógica de datos)."
+    }
+  },
+  {
+    "pregunta": "55. Una tabla se encuentra en 5NF, Quinta Forma Normal, si:",
+    "opciones": [
+      "a) No posee dependencias multivaluadas no triviales.",
+      "b) Cada dependencia funcional tiene una clave candidata como determinante.",
+      "c) Cada dependencia de unión (join) en ella es implicada por las claves candidatas.",
+      "d) Ninguno de sus atributos no-principales depende de parte de una clave."
+    ],
+    "correcta": 2,
+    "explicacion": "La 5FN (Forma Normal de Proyección-Reunión) se alcanza cuando la tabla no puede descomponerse más sin perder información, basándose en dependencias de unión.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es la 4FN.",
+      "B": "Incorrecta. Eso es la FNBC.",
+      "C": "Correcta. Requisito técnico de la 5FN.",
+      "D": "Incorrecta. Eso es la 2FN."
+    }
+  },
+  {
+    "pregunta": "57. Dentro del modelo entidad relación, el número de tipos de entidad que participan en un tipo de relación se denomina:",
+    "opciones": [
+      "a) Participación.",
+      "b) Grado.",
+      "c) Agregación.",
+      "d) Cardinalidad."
+    ],
+    "correcta": 1,
+    "explicacion": "El Grado de una relación indica cuántas entidades intervienen en ella (ej. binaria=2, ternaria=3).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Indica si la existencia es obligatoria o opcional.",
+      "B": "Correcta. Definición de grado en interrelaciones.",
+      "C": "Incorrecta. Técnica para tratar una relación como una entidad.",
+      "D": "Incorrecta. Describe el número de ocurrencias asociadas."
+    }
+  },
+  {
+    "pregunta": "58. En el modelo entidad-relación:",
+    "opciones": [
+      "a) Sólo las entidades pueden tener atributos.",
+      "b) Sólo las relaciones pueden tener atributos.",
+      "c) Tanto las entidades como las relaciones pueden tener atributos.",
+      "d) Los atributos son independientes de las entidades y las relaciones."
+    ],
+    "correcta": 2,
+    "explicacion": "Es común asignar atributos a las relaciones, especialmente en N:M (ej. la fecha en que un alumno se matricula en una asignatura).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las relaciones también pueden tenerlos.",
+      "B": "Incorrecta. Las entidades son las portadoras principales de atributos.",
+      "C": "Correcta. Ambos elementos son descriptibles mediante atributos.",
+      "D": "Incorrecta. Los atributos siempre pertenecen a un objeto del modelo."
+    }
+  },
+  {
+    "pregunta": "59. Señale la respuesta INCORRECTA. Los tipos más corrientes de anomalías de base de datos son:",
+    "opciones": [
+      "a) Lecturas no repetibles.",
+      "b) Lecturas hundidas.",
+      "c) Lecturas sucias.",
+      "d) Lecturas fantasma."
+    ],
+    "correcta": 1,
+    "explicacion": "Las anomalías de concurrencia estándar son lecturas sucias, lecturas no repetibles y lecturas fantasma. 'Lecturas hundidas' no existe como término técnico.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Anomalía real.",
+      "B": "Correcta. Es el término inventado (respuesta incorrecta).",
+      "C": "Incorrecta. Anomalía real.",
+      "D": "Incorrecta. Anomalía real."
+    }
+  },
+  {
+    "pregunta": "60. Señale la respuesta correcta. En el modelo Entidad-Relación:",
+    "opciones": [
+      "a) Las ocurrencias de un tipo de entidad no deben tener los mismos tipos de atributos.",
+      "b) Cada ocurrencia de un tipo de entidad debe poderse distinguir de las demás.",
+      "c) Una relación puede tener atributos propios de tipo clave primaria.",
+      "d) El tipo de correspondencia es el número mínimo de ocurrencias."
+    ],
+    "correcta": 1,
+    "explicacion": "Cada instancia de una entidad debe ser única para poder ser identificada mediante una clave primaria.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Todas comparten la misma estructura de atributos.",
+      "B": "Correcta. Principio básico de identidad.",
+      "C": "Incorrecta. Las relaciones no tienen claves primarias propias; usan las de las entidades que asocian.",
+      "D": "Incorrecta. Es el número máximo, no el mínimo."
+    }
+  },
+
+
+  {
+    "pregunta": "1. Entre las restricciones aplicables al modelo relacional de datos, 'la integridad de la entidad' hace referencia a que:",
+    "opciones": [
+      "a) El conjunto de valores que pueden asociarse a esa entidad está acotado.",
+      "b) En una relación, el valor de la clave ajena debe ser igual al de la clave primaria.",
+      "c) Una clave ajena pueden admitir nulos, siempre y cuando lo permita el dominio.",
+      "d) Una clave primaria no puede ser nula, ni ninguno de los atributos que la componen."
+    ],
+    "correcta": 3,
+    "explicacion": "La integridad de entidad es una regla de integridad inherente que prohíbe que cualquier parte de la clave primaria sea nula para asegurar la identificación unívoca.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es integridad de dominio.",
+      "B": "Incorrecta. Eso es integridad referencial.",
+      "C": "Incorrecta. Es una característica de la integridad referencial.",
+      "D": "Correcta. Definición técnica de integridad de entidad."
+    }
+  },
+  {
+    "pregunta": "2. En el modelo relacional, una relación R, decimos que está en segunda forma normal (2FN) si:",
+    "opciones": [
+      "a) Está en primera forma normal (1FN) y todos los atributos que no forman parte de las claves candidatas tienen dependencia funcional completa respecto de éstas.",
+      "b) Todos los atributos que no forman parte de las claves candidatas tienen dependencia funcional completa respecto de éstas.",
+      "c) Todos sus atributos no principales dependen directamente de la clave primaria.",
+      "d) No tiene grupos repetitivos, es decir, un atributo sólo puede tomar un único valor de un dominio simple."
+    ],
+    "correcta": 0,
+    "explicacion": "La 2FN requiere estar en 1FN y eliminar las dependencias parciales, logrando que los atributos dependan de la clave completa.",
+    "analisis_opciones": {
+      "A": "Correcta. Recoge los dos requisitos de la 2FN.",
+      "B": "Incorrecta. Le falta mencionar el requisito de estar en 1FN.",
+      "C": "Incorrecta. La dependencia directa es propia de la 3FN.",
+      "D": "Incorrecta. Define la 1FN."
+    }
+  },
+  {
+    "pregunta": "3. ¿Cómo se llama el operador del álgebra relacional que aplicado sobre una relación permite obtener un subconjunto de sus atributos manteniendo el mismo número de tuplas?",
+    "opciones": [
+      "a) Unión de conjuntos.",
+      "b) Producto cartesiano.",
+      "c) Selección.",
+      "d) Proyección."
+    ],
+    "correcta": 3,
+    "explicacion": "La proyección es el operador unario que permite extraer columnas (atributos) de una tabla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Operador de conjuntos.",
+      "B": "Incorrecta. Combina todas las filas de dos tablas.",
+      "C": "Incorrecta. Filtra filas, no columnas.",
+      "D": "Correcta. Operación vertical sobre atributos."
+    }
+  },
+  {
+    "pregunta": "4. En el modelo entidad /relación, ¿qué se entiende por “tipo de correspondencia”?",
+    "opciones": [
+      "a) El número máximo de ocurrencias de cada entidad que pueden intervenir en la relación.",
+      "b) El número de entidades que participan en una relación.",
+      "c) El número mínimo y máximo de ocurrencias de una entidad que pueden estar relacionadas con una ocurrencia de otra entidad participante.",
+      "d) Es el número de elementos con características comunes que componen una entidad."
+    ],
+    "correcta": 0,
+    "explicacion": "El tipo de correspondencia representa el número máximo de ocurrencias (1:1, 1:N, N:M).",
+    "analisis_opciones": {
+      "A": "Correcta. Es la cardinalidad máxima de la relación.",
+      "B": "Incorrecta. Eso es el grado de la relación.",
+      "C": "Incorrecta. Eso es la cardinalidad de la entidad (participación).",
+      "D": "Incorrecta. Definición errónea."
+    }
+  },
+  {
+    "pregunta": "6. El procedimiento de normalización adicional consiste en:",
+    "opciones": [
+      "a) Una relación en cierta forma normal xFN se puede convertir en un conjunto de relaciones en una forma más deseable, digamos (x+1)FN.",
+      "b) La reducción sucesiva de un conjunto dado de relaciones a una forma menos deseable.",
+      "c) El proceso de reducción de una relación en cierta forma normal xFN no es reversible.",
+      "d) Existen relaciones en 2FN que no pueden ser pasadas a formas normales más deseables."
+    ],
+    "correcta": 0,
+    "explicacion": "La normalización es una técnica de descomposición sucesiva para mejorar la estructura lógica.",
+    "analisis_opciones": {
+      "A": "Correcta. Proceso incremental hacia formas óptimas.",
+      "B": "Incorrecta. Se busca una forma más deseable, no menos.",
+      "C": "Incorrecta. La normalización debe ser reversible sin pérdida de información.",
+      "D": "Incorrecta. Todas pueden ser analizadas para formas superiores."
+    }
+  },
+  {
+    "pregunta": "7. Cuál de las siguientes afirmaciones NO es uno de los objetivos que se persigue al normalizar una base de datos:",
+    "opciones": [
+      "a) Organizar los datos en grupos lógicos.",
+      "b) Reducir las relaciones existentes entre tablas.",
+      "c) Garantizar la integridad de la información.",
+      "d) Minimizar la repetición de información."
+    ],
+    "correcta": 1,
+    "explicacion": "La normalización suele aumentar el número de tablas y relaciones para eliminar la redundancia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un objetivo de diseño.",
+      "B": "Correcta. La normalización no busca reducir relaciones, frecuentemente las aumenta.",
+      "C": "Incorrecta. Es un fin principal.",
+      "D": "Incorrecta. Es el propósito de la normalización."
+    }
+  },
+  {
+    "pregunta": "8. Seleccione la respuesta correcta en relación a las bases de datos relacionales:",
+    "opciones": [
+      "a) El lenguaje para manipular datos es diferente que el que se usa para definir datos.",
+      "b) El operador BETWEEN no puede estar en una sentencia WHERE.",
+      "c) La sintaxis para borrar una tabla es: DELETE TABLE (NOMBRE_TABLA);",
+      "d) Las claves ajenas (foreign keys) pueden ser nulas."
+    ],
+    "correcta": 3,
+    "explicacion": "La integridad referencial permite que una FK sea nula si la participación de la entidad no es obligatoria.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se usa el mismo lenguaje (SQL) dividido en DDL y DML.",
+      "B": "Incorrecta. BETWEEN es un operador válido en WHERE.",
+      "C": "Incorrecta. Se usa DROP TABLE para estructuras.",
+      "D": "Correcta. Las claves ajenas aceptan nulos (salvo restricción)."
+    }
+  },
+  {
+    "pregunta": "9. En el modelo ANSI / X3 /SPARC el nivel donde se especifica qué y cómo son almacenados los datos se corresponde con:",
+    "opciones": [
+      "a) El nivel externo",
+      "b) El nivel interno",
+      "c) El nivel conceptual",
+      "d) El nivel lógico"
+    ],
+    "correcta": 1,
+    "explicacion": "El nivel interno o físico describe la representación de bajo nivel de los datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Nivel de vistas de usuario.",
+      "B": "Correcta. Nivel de almacenamiento físico.",
+      "C": "Incorrecta. Nivel de estructura lógica global.",
+      "D": "Incorrecta. No es un nivel oficial del modelo."
+    }
+  },
+  {
+    "pregunta": "10. ¿Cuál de las siguientes opciones NO representa uno de los niveles de abstracción de Bases de Datos?",
+    "opciones": [
+      "a) Interno.",
+      "b) Externo.",
+      "c) Sintáctico.",
+      "d) Conceptual."
+    ],
+    "correcta": 2,
+    "explicacion": "Los tres niveles de ANSI-SPARC son Interno, Conceptual y Externo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un nivel válido.",
+      "B": "Incorrecta. Es un nivel válido.",
+      "C": "Correcta. No pertenece a la arquitectura ANSI-SPARC.",
+      "D": "Incorrecta. Es un nivel válido."
+    }
+  },
+  {
+    "pregunta": "11. En el modelo lógico-relacional, la regla de 'integridad de entidad' dice que:",
+    "opciones": [
+      "a) Si existe clave ajena, su valor ha de ser igual al atributo clave o ser nulo.",
+      "b) Cada fila tiene que ser única, no puede haber filas duplicadas.",
+      "c) La clave principal no puede tener valor nulo.",
+      "d) Cada columna debe extraer sus valores de un dominio."
+    ],
+    "correcta": 2,
+    "explicacion": "Regla básica: ningún componente de la clave primaria puede aceptar nulos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Integridad referencial.",
+      "B": "Incorrecta. Característica de las relaciones.",
+      "C": "Correcta. Definición de integridad de entidad.",
+      "D": "Incorrecta. Integridad de dominio."
+    }
+  },
+  {
+    "pregunta": "12. ¿Cuál de las siguientes opciones NO se corresponde con una de las 12 Reglas de Codd?",
+    "opciones": [
+      "a) Regla de la no subversión.",
+      "b) Tratamiento sistemático de valores nulos.",
+      "c) Dependencia de la distribución.",
+      "d) Catálogo dinámico en línea basado en el modelo relacional."
+    ],
+    "correcta": 2,
+    "explicacion": "La regla 11 es de 'Independencia de la distribución', no de dependencia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la Regla 12.",
+      "B": "Incorrecta. Es la Regla 3.",
+      "C": "Correcta. La regla exige independencia, no dependencia.",
+      "D": "Incorrecta. Es la Regla 4."
+    }
+  },
+  {
+    "pregunta": "13. Señale la respuesta FALSA con respecto al modelo entidad-relación:",
+    "opciones": [
+      "a) Permite establecer una visión global de los datos de un sistema.",
+      "b) No tiene en cuenta restricciones de espacio de almacenamiento.",
+      "c) Representa la visión estática del dominio de información.",
+      "d) La representación obtenida es dependiente de las características del equipo."
+    ],
+    "correcta": 3,
+    "explicacion": "El modelo E/R es conceptual y, por tanto, independiente del equipo y del SGBD.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una verdad.",
+      "B": "Incorrecta. Al ser conceptual, no atiende a parámetros físicos.",
+      "C": "Incorrecta. Modela datos, no procesos.",
+      "D": "Correcta. Es falsa; el modelo es independiente del equipo."
+    }
+  },
+  {
+    "pregunta": "14. ¿Cuál de las siguientes características relacionadas con los modelos conceptuales de datos es FALSA?",
+    "opciones": [
+      "a) Representan la visión estática del dominio de la información.",
+      "b) Ayudan a representar las necesidades del usuario.",
+      "c) Representan toda la información que va a tratar el Sistema.",
+      "d) Representan la estructura física de la información."
+    ],
+    "correcta": 3,
+    "explicacion": "La estructura física se define en el diseño físico, no en el modelo conceptual.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Característica real.",
+      "B": "Incorrecta. Característica real.",
+      "C": "Incorrecta. Característica real.",
+      "D": "Correcta. Es falsa; no modelan aspectos físicos."
+    }
+  },
+  {
+    "pregunta": "15. En el modelo relacional, un atributo de una relación R2 cuyos valores han de concordar con los de la clave primaria de R1 es una:",
+    "opciones": [
+      "a) Clave candidata.",
+      "b) Clave referencial.",
+      "c) Clave secundaria.",
+      "d) Clave ajena."
+    ],
+    "correcta": 3,
+    "explicacion": "La clave ajena (Foreign Key) vincula tuplas de distintas relaciones.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Identifica tuplas en la propia relación.",
+      "B": "Incorrecta. Aunque tiene función referencial, el término técnico es clave ajena.",
+      "C": "Incorrecta. Otros índices no primarios.",
+      "D": "Correcta. Término estándar en el modelo relacional."
+    }
+  },
+  {
+    "pregunta": "17. En la teoría de normalización cuando una relación puede ser reconstruida sin pérdida a partir de sus proyecciones se dice que tiene una:",
+    "opciones": [
+      "a) Dependencia de reunión.",
+      "b) Dependencia multivaluada.",
+      "c) Dependencia funcional de Boyce/Codd.",
+      "d) Dependencia funcional mutua."
+    ],
+    "correcta": 0,
+    "explicacion": "La dependencia de reunión (Join Dependency) es clave para la 5FN y la descomposición sin pérdida.",
+    "analisis_opciones": {
+      "A": "Correcta. Relacionada con la reconstrucción por reunión.",
+      "B": "Incorrecta. Base de la 4FN.",
+      "C": "Incorrecta. Versión fuerte de la 3FN.",
+      "D": "Incorrecta. No es un término estándar."
+    }
+  },
+  {
+    "pregunta": "18. Cuál de las siguientes no es una de las reglas de Codd para los modelos relacionales:",
+    "opciones": [
+      "a) Regla de la seguridad garantizada",
+      "b) Regla de actualización de vistas",
+      "c) Independencia física de los datos",
+      "d) Independencia de la integridad."
+    ],
+    "correcta": 0,
+    "explicacion": "No existe una regla de Codd llamada 'seguridad garantizada' entre las 12 originales.",
+    "analisis_opciones": {
+      "A": "Correcta. No es una de las reglas de Codd.",
+      "B": "Incorrecta. Es la Regla 6.",
+      "C": "Incorrecta. Es la Regla 8.",
+      "D": "Incorrecta. Es la Regla 10."
+    }
+  },
+  {
+    "pregunta": "19. En diseño de bases de datos, al conjunto de valores que puede tomar un atributo se le denomina:",
+    "opciones": [
+      "a) Entidad",
+      "b) Recorrido",
+      "c) Cardinalidad",
+      "d) Dominio"
+    ],
+    "correcta": 3,
+    "explicacion": "El dominio define el conjunto de valores atómicos permitidos para un campo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Objeto del mundo real.",
+      "B": "Incorrecta. No es terminología de BD.",
+      "C": "Incorrecta. Número de tuplas.",
+      "D": "Correcta. Definición técnica de dominio."
+    }
+  },
+  {
+    "pregunta": "20. Cuando una relación no tiene ningún grupo repetitivo y además sus atributos no primarios tienen una dependencia plena con las claves se dice que está en:",
+    "opciones": [
+      "a) 1FN",
+      "b) 2FN",
+      "c) 3FN",
+      "d) 4FN"
+    ],
+    "correcta": 1,
+    "explicacion": "La eliminación de dependencias parciales (exigiendo dependencia plena) define la 2FN.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Solo exige atomicidad.",
+      "B": "Correcta. Exige dependencia funcional completa.",
+      "C": "Incorrecta. Exige además no tener dependencias transitivas.",
+      "D": "Incorrecta. Nivel de normalización superior."
+    }
+  },
+  {
+    "pregunta": "21. Una tabla se encuentra en Tercera Forma Normal (3FN) si:",
+    "opciones": [
+      "a) Está en 2FN y todo atributo que no forma parte de una clave candidata depende de ella al completo.",
+      "b) Está en 2FN y no existe ninguna dependencia transitiva.",
+      "c) Está en 2FN y no existen relaciones de dependencia de reunión no triviales.",
+      "d) Está en 2FN y los atributos que no forman parte de ninguna clave dependen de la clave principal."
+    ],
+    "correcta": 1,
+    "explicacion": "La 3FN prohíbe las dependencias funcionales entre atributos que no pertenecen a la clave primaria.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Define la 2FN.",
+      "B": "Correcta. Requisito de la 3FN.",
+      "C": "Incorrecta. Define la 5FN.",
+      "D": "Incorrecta. Definición imprecisa."
+    }
+  },
+  {
+    "pregunta": "23. En una relación n:m, ¿cuántas tablas necesitaré como mínimo para incluir la relación entera en la base de datos?",
+    "opciones": [
+      "a) 1.",
+      "b) 2.",
+      "c) 3.",
+      "d) 4."
+    ],
+    "correcta": 2,
+    "explicacion": "Se requiere una tabla para cada entidad (2) y una tabla adicional para la relación N:M.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No modela N:M.",
+      "B": "Incorrecta. Solo valdría para 1:N.",
+      "C": "Correcta. Dos de entidad y una de relación.",
+      "D": "Incorrecta. No son necesarias tantas."
+    }
+  },
+  {
+    "pregunta": "24. Señale la afirmación que NO es correcta respecto de la teoría de la normalización:",
+    "opciones": [
+      "a) Tiene por objetivo la eliminación de dependencias que originen anomalías.",
+      "b) Tiene por objetivo proporcionar una estructura más regular.",
+      "c) Constituye el soporte para el diseño de bases de datos relacionales.",
+      "d) Como resultado se obtiene un modelo físico de datos normalizado."
+    ],
+    "correcta": 3,
+    "explicacion": "La normalización se aplica en la fase de diseño lógico, no físico.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es correcta.",
+      "B": "Incorrecta. Es correcta.",
+      "C": "Incorrecta. Es correcta.",
+      "D": "Correcta. Es la falsa; se obtiene un modelo lógico."
+    }
+  },
+  {
+    "pregunta": "25. ¿Cuáles son los tres niveles que establece ANSI-SPARC?",
+    "opciones": [
+      "a) Interno, conceptual y de aplicación.",
+      "b) Interno, conceptual y externo.",
+      "c) Interno, intermedio y externo.",
+      "d) De almacenamiento, conceptual y de negocio."
+    ],
+    "correcta": 1,
+    "explicacion": "ANSI-SPARC define los niveles: Interno (físico), Conceptual (lógico global) y Externo (vistas).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Terminología errónea.",
+      "B": "Correcta. Definición estándar de ANSI-SPARC.",
+      "C": "Incorrecta. Terminología errónea.",
+      "D": "Incorrecta. Terminología errónea."
+    }
+  },
+  {
+    "pregunta": "26. Según las reglas de transformación E/R a Lógico Relacional, las interrelaciones 1:N se transforman:",
+    "opciones": [
+      "a) Propagando el identificador de la entidad N a la entidad 1.",
+      "b) Propagando la clave en cualquiera de los dos sentidos.",
+      "c) Propagando el atributo identificador de la entidad con cardinalidad 1 a la de cardinalidad N.",
+      "d) En una tabla cuya clave principal estará compuesta por ambas claves."
+    ],
+    "correcta": 2,
+    "explicacion": "La clave primaria del lado '1' se añade como clave ajena en el lado 'N'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Rompería la cardinalidad.",
+      "B": "Incorrecta. Solo hay un sentido válido.",
+      "C": "Correcta. Regla estándar de transformación.",
+      "D": "Incorrecta. Eso es para relaciones N:M."
+    }
+  },
+  {
+    "pregunta": "27. En la teoría de la normalización, ¿cuál de las siguientes NO es una característica de la dependencia funcional?",
+    "opciones": [
+      "a) Son propiedades inherentes al contenido semántico de los datos.",
+      "b) Son restricciones de integridad entre atributos.",
+      "c) Todas las restricciones de integridad se representan mediante estas dependencias.",
+      "d) Son invariantes en el tiempo."
+    ],
+    "correcta": 2,
+    "explicacion": "Existen otras restricciones de integridad que no son dependencias funcionales (ej. integridad de entidad o dominio).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es verdadera.",
+      "B": "Incorrecta. Es verdadera.",
+      "C": "Correcta. Es falsa; existen más tipos de restricciones.",
+      "D": "Incorrecta. Es verdadera."
+    }
+  },
+  {
+    "pregunta": "28. La tabla EMPLEADOS (COD_EMP, COD_DEP, TIPO, EDAD, PLANTA_DEP) con clave (COD_EMP, COD_DEP) donde PLANTA_DEP depende solo de COD_DEP:",
+    "opciones": [
+      "a) Cumple la segunda forma normal.",
+      "b) No cumple la tercera forma normal, pero cumple la segunda.",
+      "c) No cumple la segunda forma normal.",
+      "d) No cumple la cuarta forma normal, pero cumple la tercera."
+    ],
+    "correcta": 2,
+    "explicacion": "Al tener una dependencia parcial (PLANTA_DEP depende de una parte de la clave), viola la 2FN.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Viola la dependencia plena.",
+      "B": "Incorrecta. No cumple ni la 2FN.",
+      "C": "Correcta. No cumple 2FN por dependencia parcial.",
+      "D": "Incorrecta. Imposible si no cumple 2FN."
+    }
+  },
+  {
+    "pregunta": "30. Indique cuál de las siguientes NO es una de las Reglas de Codd:",
+    "opciones": [
+      "a) Regla de la independencia física de los datos.",
+      "b) Regla de no subversión.",
+      "c) Regla de la inserción, actualización y supresión de bajo nivel.",
+      "d) Regla de la actualización de vistas."
+    ],
+    "correcta": 2,
+    "explicacion": "La Regla 7 exige manipulación de ALTO NIVEL (conjuntos de registros), no de bajo nivel.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la Regla 8.",
+      "B": "Incorrecta. Es la Regla 12.",
+      "C": "Correcta. Codd rechaza el procesamiento de bajo nivel registro a registro.",
+      "D": "Incorrecta. Es la Regla 6."
+    }
+  },{
+    "pregunta": "61. Señale la respuesta correcta sobre la normalización de bases de datos en Métrica v3: ",
+    "opciones": [
+      "A. Un atributo tiene dependencia funcional completa de otro si, y sólo si, depende de él a través de otro atributo.",
+      "B. Una entidad está en 1FN si tiene grupos repetitivos, es decir, un atributo puede tomar varios valores de un dominio simple.",
+      "C. Una entidad está en 2FN si está en 1FN y todos los atributos que no forman parte de las claves candidatas tienen dependencia funcional completa respecto de éstas.",
+      "D. Una relación en 3FN estará también en 2FN, pero no en 1FN."
+    ],
+    "correcta": 2,
+    "explicacion": "La 2FN requiere estar en 1FN y que los atributos no clave dependan de la clave completa (dependencia funcional completa).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso describe una dependencia transitiva.",
+      "B": "Incorrecta. La 1FN exige que NO haya grupos repetitivos.",
+      "C": "Correcta. Definición literal de la 2FN en Métrica v3.",
+      "D": "Incorrecta. Si es 3FN, obligatoriamente es 2FN y 1FN."
+    }
+  },
+  {
+    "pregunta": "62. La “cardinalidad” en el modelo relacional es: ",
+    "opciones": [
+      "A. El número máximo de registros que se encuentran involucrados en una relación entre tablas.",
+      "B. El número de tuplas de una relación.",
+      "C. El número de columnas que se corresponden en una relación entre tablas.",
+      "D. El número mínimo de registros que se encuentran involucrados en una relación entre tablas."
+    ],
+    "correcta": 1,
+    "explicacion": "En el modelo relacional puro, la cardinalidad es el número de filas (tuplas) de la tabla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es tipo de correspondencia en el modelo E/R.",
+      "B": "Correcta. Cardinalidad = número de tuplas.",
+      "C": "Incorrecta. Eso es el grado.",
+      "D": "Incorrecta. Definición ajena al modelo relacional."
+    }
+  },
+  {
+    "pregunta": "63. En el diseño de una base de datos hay que tener en cuenta que: ",
+    "opciones": [
+      "A. La organización lógica puede ser cambiante y debe ser, prevista para reorganizaciones periódicas.",
+      "B. Las técnicas de direccionamiento tienen gran efecto sobre las estructuras lógicas.",
+      "C. Las inserciones y eliminaciones de registros suelen tener un gran efecto sobre la distribución física de los datos.",
+      "D. La eliminación de la redundancia es uno de los objetivos de la organización física."
+    ],
+    "correcta": 2,
+    "explicacion": "A nivel físico, las operaciones de escritura (altas/bajas) afectan a la disposición de los datos y al rendimiento.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El diseño lógico tiende a ser estable.",
+      "B": "Incorrecta. Existe independencia física/lógica.",
+      "C": "Correcta. Las operaciones de datos impactan en el almacenamiento físico.",
+      "D": "Incorrecta. La redundancia se gestiona en el diseño lógico (normalización)."
+    }
+  },
+  {
+    "pregunta": "64. De acuerdo con Métrica v3, en el Modelo Entidad/Relación Extendido, ¿cuál es el término que representa la participación en la relación de cada una de las entidades afectadas? ",
+    "opciones": [
+      "A. Atributo.",
+      "B. Cardinalidad.",
+      "C. Tipo de Correspondencia.",
+      "D. Dominio."
+    ],
+    "correcta": 1,
+    "explicacion": "Métrica v3 usa 'Cardinalidad' para la participación de cada entidad (mínima y máxima).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Refleja la participación de las ocurrencias.",
+      "C": "Incorrecta. Se refiere al valor máximo de la relación.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "66. Indique de las siguientes cuál NO es una de las reglas de Codd para bases de datos relacionales: ",
+    "opciones": [
+      "A. Acceso garantizado",
+      "B. Independencia de distribución.",
+      "C. Integridad de paridad.",
+      "D. No subversión."
+    ],
+    "correcta": 2,
+    "explicacion": "No existe la regla de 'Integridad de paridad' en las 12 reglas de Codd.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la Regla 2.",
+      "B": "Incorrecta. Es la Regla 11.",
+      "C": "Correcta. Es el término falso inventado.",
+      "D": "Incorrecta. Es la Regla 12."
+    }
+  },
+  {
+    "pregunta": "68. Señale la respuesta correcta relativa al Modelo Entidad/Relación Extendido según establece METRICA v3: ",
+    "opciones": [
+      "A. Un atributo se define sobre diversos dominios.",
+      "B. El dominio no tiene existencia propia y depende de las entidades, las relaciones o los atributos.",
+      "C. La entidad es aquel objeto, real o abstracto, acerca del cual se desea almacenar información en la base de datos.",
+      "D. La clave candidata es el conjunto de atributos que garantizan la unicidad de las ocurrencias e identifican la ocurrencia unívocamente."
+    ],
+    "correcta": 3,
+    "explicacion": "La definición de clave candidata de Métrica v3 se centra en la unicidad e identificación.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se define sobre un único dominio.",
+      "B": "Incorrecta. El dominio tiene existencia propia independiente.",
+      "C": "Incorrecta. Es correcta, pero la D es la definición técnica completa del modelo.",
+      "D": "Correcta. Definición exacta según la metodología."
+    }
+  },
+  {
+    "pregunta": "70. Una relación si los atributos que NO forman parte de ninguna clave dependen de fOrma completa de la clave principal se dice que está en: ",
+    "opciones": [
+      "A. Tercera Forma Normal.",
+      "B. Cuarta Forma Normal.",
+      "C. Quinta Forma Normal.",
+      "D. Segunda Forma Normal."
+    ],
+    "correcta": 3,
+    "explicacion": "La dependencia funcional completa de atributos no clave respecto a la clave define la 2FN.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Requiere ausencia de transitividades.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Es el requisito de la 2FN."
+    }
+  },
+  {
+    "pregunta": "71. La primera tarea a realizar en el diseño conceptual para crear una base de datos es: ",
+    "opciones": [
+      "A. Identificar las entidades.",
+      "B. Identificar las relaciones.",
+      "C. Identificar los atributos y asociarlos a entidades y relaciones.",
+      "D. Identificar las entidades y sus identificadores o claves."
+    ],
+    "correcta": 0,
+    "explicacion": "Lo primero en un diseño conceptual es localizar los objetos principales o entidades.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el paso inicial.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "73. Si un administrador de base de datos decide crear una tabla y posteriormente introducir unos registros en la misma, utilizará como mínimo: ",
+    "opciones": [
+      "A. 2 sentencias DDL (Lenguaje de Definición de Datos).",
+      "B. 2 sentencias DML (Lenguaje de Manipulación de Datos).",
+      "C. 1 sentencia DDL (Lenguaje de Definición de Datos) y otra DML (Lenguaje de Manipulación de Datos).",
+      "D. 2 sentencias DML (Lenguaje de Manipulación de Datos) y otra DCL (Lenguaje de Control de Datos)."
+    ],
+    "correcta": 2,
+    "explicacion": "CREATE TABLE es DDL e INSERT es DML.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Cubre la creación y la inserción.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "74. ¿Cuál de las siguientes NO es una de las reglas de Codd? ",
+    "opciones": [
+      "A. La descripción de la base de datos es almacenada de la misma manera que los datos ordinarios, esto es, en tablas y columnas, y debe ser accesible a los usuarios autorizados.",
+      "B. Todas las restricciones de integridad deben ser definibles en los datos, y almacenables en el catálogo, no en el programa de aplicación.",
+      "C. Si el sistema tiene lenguajes de alto nivel, estos lenguajes de ninguna manera pueden ser usados para violar la integridad de las reglas y restricciones expresadas en un lenguaje de bajo nivel.",
+      "D. El sistema debe poseer un lenguaje de datos que pueda soportar que la base de datos esté distribuida físicamente en distintos lugares sin que esto afecte o altere a los programas de aplicación."
+    ],
+    "correcta": 2,
+    "explicacion": "La regla 12 de Codd dice que el lenguaje de bajo nivel no puede subvertir la integridad del lenguaje de alto nivel (al revés de lo que dice la opción C).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Regla 4.",
+      "B": "Incorrecta. Regla 10.",
+      "C": "Correcta. Es la falsa por invertir los niveles.",
+      "D": "Incorrecta. Regla 11."
+    }
+  },
+  {
+    "pregunta": "76. En el marco de las reglas de Codd la regla por la que toda la información en la base de datos es representada unidireccionalmente, por valores en posiciones de las columnas dentro de filas de tablas es la que se conoce como: ",
+    "opciones": [
+      "A. Regla 3: tratamiento sistemático de valores nulos.",
+      "B. Regla 1: la regla de la información.",
+      "C. Regla 10: independencia de la integridad.",
+      "D. Regla 12: la regla de la no subversión."
+    ],
+    "correcta": 1,
+    "explicacion": "Es la Regla 1 o Regla de la Información.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Define cómo se representa la información.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "78. ¿Cuál de las siguientes es una regla de Codd? ",
+    "opciones": [
+      "A. Dependencia física de los datos.",
+      "B. Dependencia lógica de los datos.",
+      "C. Regla de la inversión.",
+      "D. Actualización de vistas."
+    ],
+    "correcta": 3,
+    "explicacion": "La actualización de vistas es la Regla 6 de Codd.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Codd pide Independencia física.",
+      "B": "Incorrecta. Codd pide Independencia lógica.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Es la Regla 6."
+    }
+  },
+  {
+    "pregunta": "80. La regla por la que ningún atributo que pertenezca a la clave primaria de una relación puede aceptar valores nulos, es lo que en el modelo relacional se conoce como: ",
+    "opciones": [
+      "A. Integridad relacional",
+      "B. Integridad de la entidad",
+      "C. Clave externa",
+      "D. Dominio"
+    ],
+    "correcta": 1,
+    "explicacion": "La Integridad de Entidad prohíbe nulos en la clave primaria.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Definición de integridad de entidad.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "83. Una relación (una tabla) se compone de los campos o atributos A, B, C y D. Sólo existe una clave candidata, y es la clave compuesta (A, B). Además, se cumple que (A, B) determina funcionalmente a C, y C determina funcionalmente a D. Indique la respuesta correcta: ",
+    "opciones": [
+      "A. La tabla no cumple ninguna forma normal.",
+      "B. La tabla está en 1FN, pero no en 2FN, ni en 3FN.",
+      "C. La tabla está en 1FN y en 2FN, pero no en 3FN.",
+      "D. La tabla está en 1FN, en 2FN y en 3FN."
+    ],
+    "correcta": 2,
+    "explicacion": "Está en 2FN (sin dependencias parciales), pero no en 3FN por la transitividad (A,B -> C -> D).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. La dependencia C->D es transitiva.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "84. La regla de Codd que contempla que un sistema relacional debe tener un sublenguaje de datos que pueda soportar bases de datos distribuidas (BDD) sin alterar los programas de aplicaciones o actividades finales es lo que dentro de las reglas de Codd se conoce como: ",
+    "opciones": [
+      "A. Independencia de la distribución",
+      "B. Independencia de la integridad",
+      "C. Regla de la no inversión",
+      "D. Actualización de vistas"
+    ],
+    "correcta": 0,
+    "explicacion": "Se refiere a la Regla 11 o de Independencia de Distribución.",
+    "analisis_opciones": {
+      "A": "Correcta. Regla 11.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "85. Dentro del modelo relacional, señale la afirmación errónea: ",
+    "opciones": [
+      "A. En una relación puede haber varias claves candidatas.",
+      "B. Una clave primaria es, a su vez, clave candidata.",
+      "C. Si se elimina un atributo de una clave candidata, ésta deja de serlo.",
+      "D. Una relación puede no tener clave candidata."
+    ],
+    "correcta": 3,
+    "explicacion": "Toda tabla en el modelo relacional debe tener al menos una clave candidata para garantizar la distinción entre tuplas.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Es la errónea porque siempre debe haber una."
+    }
+  },
+  {
+    "pregunta": "86. En el contexto de las bases de datos, ¿qué es un “snapshot”? ",
+    "opciones": [
+      "A. Es un mecanismo para la replicación de información en bases de datos distribuidas.",
+      "B. Es una forma de llamar a las vistas de las bases de datos.",
+      "C. Es un procedimiento que muestra el estado actual de las conexiones a una base de datos en un momento dado.",
+      "D. No tiene nada que ver con las bases de datos."
+    ],
+    "correcta": 0,
+    "explicacion": "Un snapshot captura el estado de los datos en un instante, útil para réplicas.",
+    "analisis_opciones": {
+      "A": "Correcta. Uso en bases distribuidas.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "87. ¿Cuál de las siguientes afirmaciones sobre la Tercera Forma Normal (3FN) es correcta? ",
+    "opciones": [
+      "A. Una entidad está en 3FN si está en 2FN y todos sus atributos no principales dependen directamente de la clave primaria, es decir, no hay dependencias funcionales transitivas de atributos no principales respecto de las claves.",
+      "B. Una entidad está en 3FN si está en 2FN y todos los atributos que no forman parte de las claves candidatas (atributos no principales) tienen dependencia funcional completa respecto de éstas.",
+      "C. La 3FN es el nivel más elevado de normalización de una tabla.",
+      "D. Una tabla está en 3FN cuando está en 2FN y además todos los atributos, tanto principales como no principales, son atómicos."
+    ],
+    "correcta": 0,
+    "explicacion": "La 3FN requiere 2FN y la ausencia de dependencias transitivas entre atributos no clave.",
+    "analisis_opciones": {
+      "A": "Correcta. Define la 3FN y la eliminación de transitividades.",
+      "B": "Incorrecta. Eso es 2FN.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "88. De entre las siguientes, señale cuál NO es una regla de CODD del modelo relacional de Bases de Datos: ",
+    "opciones": [
+      "A. Regla del acceso garantizado.",
+      "B. Regla del tratamiento sistemático de valores nulos.",
+      "C. Regla de la cardinalidad de las entidades.",
+      "D. Regla de la independencia de la distribución."
+    ],
+    "correcta": 2,
+    "explicacion": "La cardinalidad es un concepto de diseño conceptual, no una regla de gestión de Codd.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Es el término ajeno.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "89. La creación de vistas pertenece al siguiente nivel ANSI/X3/SPARC: ",
+    "opciones": [
+      "A. Conceptual.",
+      "B. Canónico.",
+      "C. Externo.",
+      "D. Físico."
+    ],
+    "correcta": 2,
+    "explicacion": "El nivel externo gestiona las vistas de usuario.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Nivel de vistas.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "90. Según describe METRICA v3 referente al Modelo Entidad/Relación Extendido, el número máximo de ocurrencias de cada tipo de entidad que pueden intervenir en una ocurrencia de la relación que se está tratando se llama: ",
+    "opciones": [
+      "A. Tipo de correspondencia.",
+      "B. Cardinalidad.",
+      "C. Especialización.",
+      "D. Agregación."
+    ],
+    "correcta": 1,
+    "explicacion": "Para Métrica v3, la cardinalidad es el número de ocurrencias (mínimo, máximo).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Suele referirse al máximo de la relación global.",
+      "B": "Correcta. Término de la participación.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "91. Un determinado diseño Entidad-Relación contiene una relación M:N entre dos entidades A y B. Al obtener su diseño lógico, dichas entidades se convierten en las tablas TA y TB con sus claves primarias respectivas KA y KB. Al transformar la mencionada relación M:N al diseño lógico, habrá que: ",
+    "opciones": [
+      "A. O bien añadir un campo adicional a la tabla A, que será una clave foránea correspondiente a KB de TB, campo adicional a la tabla B, que será foránea de KA de TA.",
+      "B. Añadir un campo adicional a la tabla A, que será una clave foránea correspondiente KB de TB, y también añadir un campo a la tabla B, que será foránea de la clave KA de TA.",
+      "C. Crear dos nuevas tablas, cada una con un campo. Cada campo es la clave primaria de su tabla, y a su vez es clave foránea, en un caso correspondiente a KA de TA y en otro, KB de TB.",
+      "D. Crear una nueva tabla, con dos campos de la clave primaria es la composición de ambos. Cada campo es una clave foránea. Uno corresponderá a KA de TA y el otro a KB de TB."
+    ],
+    "correcta": 3,
+    "explicacion": "M:N requiere siempre una nueva tabla con la combinación de ambas PK.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Define la tabla intermedia necesaria."
+    }
+  },
+  {
+    "pregunta": "93. Los valores de los atributos que forma parte de la clave principal o primaria son únicos, y la base de datos no puede admitir valores nulos ni duplicados. Esta restricción se denomina: ",
+    "opciones": [
+      "A. Integridad Auto-Referencial.",
+      "B. Integridad de Entidad.",
+      "C. Integridad de Dominio.",
+      "D. Integridad Referencial."
+    ],
+    "correcta": 1,
+    "explicacion": "La integridad de entidad asegura identificación única prohibiendo nulos y duplicados en la PK.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Regla de integridad de entidad.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "94. En una tabla, si cada determinante, atributo que determina completamente a otro, es clave candidata se dice que está en: ",
+    "opciones": [
+      "A. Primera Forma Normal",
+      "B. Segunda Forma Normal.",
+      "C. Formal Normal Boyce-Codd.",
+      "D. Quinta Formal Normal."
+    ],
+    "correcta": 2,
+    "explicacion": "La FNBC exige que todo determinante sea una clave candidata.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Definición de FNBC.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "95. En el contexto del modelo relacional, ¿qué regla de integridad determina que los atributos de la clave primaria de una relación no puedan tener valores nulos? ",
+    "opciones": [
+      "A. Integridad referencial.",
+      "B. Integridad de propagación.",
+      "C. Integridad de entidad.",
+      "D. Integridad de negocio."
+    ],
+    "correcta": 2,
+    "explicacion": "La integridad de entidad impide valores nulos en la clave primaria.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Regla de integridad de entidad.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "96. Según Métrica v3, en el modelo Entidad/Relación extendido las relaciones se definen por: ",
+    "options": [
+      "A. Categoría, nombre, tipo de correspondencia.",
+      "B. Atributo, cardinalidad, nombre.",
+      "C. Atributo, dominio, nombre.",
+      "D. Cardinalidad, nombre, tipo de correspondencia"
+    ],
+    "correcta": 3,
+    "explicacion": "Se define por su nombre, la cardinalidad de sus entidades y el tipo global de correspondencia.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Trío de elementos definitorios en Métrica v3."
+    }
+  },
+  {
+    "pregunta": "97. Una tabla se dice que esta en 3a Forma Normal si se encuentra en 2a Forma Normal y: ",
+    "opciones": [
+      "A. a)Las únicas dependencias funcionales elementales son aquellas en las que la clave principal (y claves secundarias) determinan un atributo.",
+      "B. b)Todo atributo secundario depende totalmente de la clave completa.",
+      "C. c)Los valores que componen los atributos son elementales y únicos.",
+      "D. d)No existen atributos no primarios que son transitivamente dependientes de cada posible clave de la tabla."
+    ],
+    "correcta": 3,
+    "explicacion": "La 3FN elimina las dependencias transitivas de atributos no clave.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Eso es 2FN.",
+      "C": "Incorrecta. Eso es 1FN.",
+      "D": "Correcta. Requisito de ausencia de transitividad."
+    }
+  },
+  {
+    "pregunta": "98. ¿Cuál de los siguientes es un operador fundamental del álgebra relacional? ",
+    "opciones": [
+      "A. Intersección.",
+      "B. Producto cartesiano.",
+      "C. Agrupación.",
+      "D. Cociente."
+    ],
+    "correcta": 1,
+    "explicacion": "El Producto Cartesiano es uno de los 5 operadores básicos fundamentales.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un operador derivado.",
+      "B": "Correcta. Operador fundamental.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Es derivado."
+    }
+  },
+  {
+    "pregunta": "99. ¿Cuál de las siguientes NO es un objetivo perseguido por Codd en la presentación de su modelo relacional? ",
+    "opciones": [
+      "A. Independencia lógica.",
+      "B. Independencia conceptual.",
+      "C. Independencia física.",
+      "D. Uniformidad."
+    ],
+    "correcta": 1,
+    "explicacion": "Codd definió independencia física y lógica, pero no 'conceptual' como objetivo formal.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. No es un objetivo de Codd.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "100. En una tabla de una base de datos relacional, si no existen grupos repetitivos, y todos los elementos son independientes entre sí y dependen solamente de la clave primaria de forma plena, sin existir dependencias transitivas ¿ante qué forma normal nos encontramos? ",
+    "opciones": [
+      "A. 1FN.",
+      "B. 2FN.",
+      "C. 3FN.",
+      "D. No se encuentra en ninguna forma normal."
+    ],
+    "correcta": 2,
+    "explicacion": "Al no haber grupos repetitivos (1FN), dependencia plena (2FN) y no haber transitivas, es 3FN.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Reúne todos los requisitos para la 3FN.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "102. Según Métrica v3, en el diagrama entidad relación extendido, para representar una jerarquía con subtipos que pueden solaparse, en el triángulo invertido hay que incluir el texto: ",
+    "opciones": [
+      "A. D",
+      "B. o",
+      "C. U",
+      "D. Es_un"
+    ],
+    "correcta": 1,
+    "explicacion": "En Métrica v3, para las jerarquías o generalizaciones, se utiliza una 'd' para subtipos disjuntos (exclusivos) y una 'o' (de 'overlap') para subtipos que pueden solaparse.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La 'D' indica que los subtipos son disjuntos.",
+      "B": "Correcta. La 'o' indica solapamiento entre subtipos.",
+      "C": "Incorrecta. No es una notación estándar para solapamiento en el triángulo de jerarquía.",
+      "D": "Incorrecta. 'Es_un' es la denominación genérica de la relación de herencia, pero no el texto del triángulo para solapamiento."
+    }
+  },
+  {
+    "pregunta": "103. El modelo conceptual de datos representa: ",
+    "opciones": [
+      "A. Información lógica de un sistema, Estructura y Reglas.",
+      "B. Sólo la información y la estructura de la información del sistema.",
+      "C. La descripción detallada de todos los elementos d información lógica, su estructura y las reglas que se establecen entre ellos.",
+      "D. Los conceptos a los que hace referencia la información en el sistema."
+    ],
+    "correcta": 2,
+    "explicacion": "El modelo conceptual proporciona una descripción semántica completa de los datos, incluyendo los objetos (entidades), sus propiedades (atributos), sus asociaciones (relaciones) y las reglas de integridad que los rigen.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Menos completa que la opción C.",
+      "B": "Incorrecta. Omite las reglas de integridad y negocio esenciales en el modelo.",
+      "C": "Correcta. Define de forma integral la semántica, estructura y restricciones del sistema.",
+      "D": "Incorrecta. Es una definición demasiado vaga y no técnica."
+    }
+  },
+  {
+    "pregunta": "105. En una base de datos relacional las tablas y relaciones deben cumplir una serie de reglas, son las denominadas formas normales. Contando con la forma de Boyce-Codd (BCNF) . ¿En cuántos niveles se establecen? ",
+    "opciones": [
+      "A. 3.",
+      "B. 4.",
+      "C. 5.",
+      "D. 6."
+    ],
+    "correcta": 1,
+    "explicacion": "Históricamente, los niveles de normalización más comunes que se estudian como bloque básico son: 1FN, 2FN, 3FN y FNBC (Boyce-Codd). Aunque existen niveles superiores, la pregunta pregunta por el establecimiento de estos niveles contando con la FNBC.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Se refiere a la secuencia 1FN, 2FN, 3FN y FNBC.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "108. Según la integridad de los datos en el modelo relacional. ¿A qué regla de integridad le corresponde la siguiente definición: \"Los valores de claves foráneas deben existir en la clave primaria referenciada o bien deben ser valores nulos\"? ",
+    "opciones": [
+      "A. La regla de integridad referencial",
+      "B. La regla de Integridad de dominio.",
+      "C. La regla de integridad foránea inversa.",
+      "D. La regla La regla de integridad de unicidad."
+    ],
+    "correcta": 0,
+    "explicacion": "La integridad referencial es la que garantiza la consistencia entre tablas, exigiendo que las referencias (FK) correspondan a valores existentes en la tabla padre (PK) o sean nulas.",
+    "analisis_opciones": {
+      "A": "Correcta. Definición canónica de integridad referencial.",
+      "B": "Incorrecta. La integridad de dominio afecta al rango de valores permitidos en una columna.",
+      "C": "Incorrecta. Nombre inexistente.",
+      "D": "Incorrecta. La unicidad suele asociarse a la integridad de entidad (claves primarias)."
+    }
+  },{
+    "pregunta": "22. ¿Cuál de las siguientes NO es una de las llamadas doce reglas de Codd?",
+    "opciones": [
+      "a) Independencia física de los datos",
+      "b) Independencia de distribución.",
+      "c) Independencia de actualización.",
+      "d) Independencia de integridad."
+    ],
+    "correcta": 2,
+    "explicacion": "La 'Independencia de actualización' no es una de las 12 reglas de Codd. Las reglas de independencia que él definió son: física (8), lógica (9), de integridad (10) y de distribución (11)[cite: 1].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la Regla 8[cite: 1].",
+      "B": "Incorrecta. Es la Regla 11[cite: 1].",
+      "C": "Correcta. No existe tal regla en el decálogo de Codd[cite: 1].",
+      "D": "Incorrecta. Es la Regla 10[cite: 1]."
+    }
+  },
+  {
+    "pregunta": "42. El número máximo de ocurrencias de cada tipo de entidad, se denomina...",
+    "opciones": [
+      "a) Grado",
+      "b) Cardinalidad",
+      "c) Ascensionismo",
+      "d) Tipo de correspondencia"
+    ],
+    "correcta": 3,
+    "explicacion": "El tipo de correspondencia representa la relación de cardinalidad máxima entre entidades (1:1, 1:N o N:M)[cite: 1].",
+    "analisis_opciones": {
+      "A": "Incorrecta. El grado es el número de entidades que participan en la relación[cite: 1].",
+      "B": "Incorrecta. La cardinalidad expresa el número de ocurrencias de una entidad asociadas a otra[cite: 1].",
+      "C": "Incorrecta. Término no relacionado con bases de datos[cite: 1].",
+      "D": "Correcta. Es la definición técnica de la proporción máxima de la relación[cite: 1]."
+    }
+  },
+  {
+    "pregunta": "43. Aquella abstracción de un tipo de entidad de nivel superior a partir de varios tipos de entidades, se denomina...",
+    "opciones": [
+      "a) Especialización",
+      "b) Reducción",
+      "c) Agregación",
+      "d) Generalización"
+    ],
+    "correcta": 3,
+    "explicacion": "La generalización consiste en agrupar entidades con características comunes para formar una entidad de nivel superior[cite: 1].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el proceso inverso: crear tipos específicos a partir de uno general[cite: 1].",
+      "B": "Incorrecta. No es una técnica de abstracción del modelo E/R[cite: 1].",
+      "C": "Incorrecta. Trata una relación como si fuera una entidad de nivel superior[cite: 1].",
+      "D": "Correcta. Es el proceso de síntesis hacia niveles superiores[cite: 1]."
+    }
+  },
+  {
+    "pregunta": "44. ¿Cuál es un tipo de operador fundamental del álgebra relacional?",
+    "opciones": [
+      "a) Producto Arlesiano",
+      "b) División",
+      "c) Join",
+      "d) Unión"
+    ],
+    "correcta": 3,
+    "explicacion": "Los operadores fundamentales son: Selección, Proyección, Unión, Diferencia y Producto Cartesiano. La unión es uno de ellos[cite: 1].",
+    "analisis_opciones": {
+      "A": "Incorrecta. El término correcto es Producto Cartesiano[cite: 1].",
+      "B": "Incorrecta. Es un operador derivado[cite: 1].",
+      "C": "Incorrecta. Es un operador derivado de la selección y el producto cartesiano[cite: 1].",
+      "D": "Correcta. Es una de las 5 operaciones básicas[cite: 1]."
+    }
+  },
+  {
+    "pregunta": "85. En el modelo Entidad/Relación extendido, los cuatro elementos fundamentales son:",
+    "opciones": [
+      "a) Entidad, relación, dominio y atributo",
+      "b) Entidad, relación, estructura y ocurrencia",
+      "c) Entidad, relación, atributo y categoría",
+      "d) Entidad, relación, dominio y cardinalidad"
+    ],
+    "correcta": 0,
+    "explicacion": "Los componentes básicos que definen este modelo son los objetos (entidades), sus vínculos (relaciones), sus propiedades (atributos) y el rango de valores permitidos (dominios)[cite: 1].",
+    "analisis_opciones": {
+      "A": "Correcta. Son los cuatro pilares definitorios[cite: 1].",
+      "B": "Incorrecta. Términos demasiado genéricos[cite: 1].",
+      "C": "Incorrecta. 'Categoría' es un tipo específico de relación jerárquica[cite: 1].",
+      "D": "Incorrecta. La cardinalidad describe la participación en la relación, no es un elemento base al nivel del dominio[cite: 1]."
+    }
+  },{
+    "pregunta": "63. ¿Cuál es el método HTTP que nos permite obtener un recurso en específico de un servidor?",
+    "opciones": [
+      "a) REQUEST",
+      "b) HEAD",
+      "c) OPEN",
+      "d) GET"
+    ],
+    "correcta": 3,
+    "explicacion": "El método GET se utiliza para solicitar la representación de un recurso específico. Las peticiones que usan GET solo deben recuperar datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es un método estándar de HTTP.",
+      "B": "Incorrecta. Pide las cabeceras de respuesta, pero no el cuerpo del recurso.",
+      "C": "Incorrecta. No es un método de petición HTTP.",
+      "D": "Correcta. Es el método estándar de recuperación de información."
+    }
+  },{
+    "pregunta": "37. En relación con las bases de datos relacionales, indica la respuesta INCORRECTA en relación con las características que debe presentar, atendiendo a las reglas de Codd:",
+    "opciones": [
+      "a) Debe cumplir la regla de independencia física de los datos.",
+      "b) Debe cumplir la regla de dependencia lógica de los datos.",
+      "c) Tiene que tener un catálogo dinámico en línea, basado en el modelo relacional.",
+      "d) Debe permitir la inserción, actualización y borrado de alto nivel."
+    ],
+    "correcta": 1,
+    "explicacion": "La respuesta es incorrecta porque las Reglas de Codd exigen la 'Independencia' lógica de los datos (Regla 9), no la 'dependencia'[cite: 1395, 1399].",
+    "analisis_opciones": {
+      "A": "Correcta. Corresponde a la Regla 8 (Independencia física de los datos)[cite: 1397].",
+      "B": "Incorrecta. Codd exige independencia lógica, no dependencia[cite: 1399].",
+      "C": "Correcta. Corresponde a la Regla 4 (Catálogo dinámico en línea)[cite: 1401].",
+      "D": "Correcta. Corresponde a la Regla 7 (Inserción, actualización y borrado de alto nivel)[cite: 1403]."
+    }
+  },
+  {
+    "pregunta": "8. En la organización se está utilizando para la gestión de base de datos de usuarios MySQL. ¿Qué puerto debería asegurarse que está bien configurado?",
+    "opciones": [
+      "a) El puerto 1521.",
+      "b) El puerto 3306.",
+      "c) El puerto 3360.",
+      "d) El puerto 3366."
+    ],
+    "correcta": 1,
+    "explicacion": "El puerto por defecto para el sistema gestor de bases de datos MySQL es el 3306[cite: 1717, 1721].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el puerto por defecto de Oracle[cite: 1719].",
+      "B": "Correcta. Puerto estándar de MySQL[cite: 1721].",
+      "C": "Incorrecta. No es el puerto estándar[cite: 1722].",
+      "D": "Incorrecta. No es el puerto estándar[cite: 1724]."
+    }
+  },
+  {
+    "pregunta": "63. ¿Cuál es el método HTTP que nos permite obtener un recurso en específico de un servidor?",
+    "opciones": [
+      "a) REQUEST",
+      "b) HEAD",
+      "c) OPEN",
+      "d) GET"
+    ],
+    "correcta": 3,
+    "explicacion": "El método GET se utiliza para solicitar la recuperación de un recurso específico desde un servidor[cite: 1636, 1643].",
+    "analisis_opciones": {
+      "A": "Incorrecta[cite: 1637].",
+      "B": "Incorrecta. Se usa para obtener solo las cabeceras[cite: 1639].",
+      "C": "Incorrecta[cite: 1641].",
+      "D": "Correcta. Método estándar de consulta de recursos[cite: 1643]."
+    }
+  },{
+    "pregunta": "36. Una base de datos SQL es un sistema de base de datos...",
+    "opciones": [
+      "a) Relacional.",
+      "b) No relacional.",
+      "c) De clave-valor.",
+      "d) Que usa el lenguaje SQL, independientemente del carácter relacional de la base de datos."
+    ],
+    "correcta": 0,
+    "explicacion": "Tradicionalmente, las bases de datos SQL se definen como sistemas de gestión de bases de datos relacionales (RDBMS), basándose en el modelo relacional de Codd[cite: 2231, 2233].",
+    "analisis_opciones": {
+      "a)": "Correcta. Es la definición estándar de las bases de datos basadas en SQL[cite: 2233].",
+      "b)": "Incorrecta. Estas se denominan NoSQL[cite: 2235].",
+      "c)": "Incorrecta. Es un tipo específico de NoSQL[cite: 2237].",
+      "d)": "Incorrecta. Aunque existen extensiones, la naturaleza fundamental de SQL es el modelo relacional[cite: 2239]."
+    }
+  },
+  {
+    "pregunta": "37. En el contexto de las bases de datos, \"CRUD\" es...",
+    "opciones": [
+      "a) Las siglas de \"Common Readable Usage Distribution\", por el que se establece un mecanismo de permisos para usuarios.",
+      "b) Un tipo de base de datos no relacional en el que se ejecutan rutinas comunes para comparar datos mediante vectores y árboles binarios dirigidos.",
+      "c) El acrónimo de las cuatro operaciones elementales para crear y gestionar elementos de bases de datos relacionales y no relacionales.",
+      "d) El acrónimo de los cuatro procedimientos por los que se normalizan los datos de bases de datos clave-valor, garantizando que estén, al menos, en 3FN."
+    ],
+    "correcta": 2,
+    "explicacion": "CRUD es el acrónimo de Create (Crear), Read (Leer), Update (Actualizar) y Delete (Borrar), que son las cuatro funciones básicas de la gestión de datos persistentes[cite: 2242, 2247].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Definición inventada[cite: 2243].",
+      "b)": "Incorrecta. No describe un tipo de base de datos[cite: 2245].",
+      "c)": "Correcta. Son las operaciones fundamentales de persistencia de datos[cite: 2247].",
+      "d)": "Incorrecta. La normalización no se aplica mediante CRUD y las bases de clave-valor no suelen usar 3FN[cite: 2248]."
+    }
+  },{
+    "pregunta": "36. Con respecto a las reglas de Codd, a la no alteración a nivel lógico de los programas de aplicación y actividades terminales cuando se realizan cambios en las representaciones de almacenamiento, se le conoce como...",
+    "opciones": [
+      "a) Regla de la independencia física de los datos.",
+      "b) Regla de la independencia de la integridad.",
+      "c) Regla de la independencia del almacenamiento.",
+      "d) Regla de la independencia lógica de los datos."
+    ],
+    "correcta": 0,
+    "explicacion": "La Regla 8 de Codd (Independencia física de los datos) establece que las aplicaciones deben ser inmunes a los cambios realizados en los métodos de almacenamiento o en las estructuras físicas de los datos[cite: 2831, 2832].",
+    "analisis_opciones": {
+      "a)": "Correcta. Es la definición exacta de la Regla 8[cite: 2832].",
+      "b)": "Incorrecta. La independencia de integridad (Regla 10) se refiere a que las restricciones deben estar en el catálogo y no en los programas[cite: 2834].",
+      "c)": "Incorrecta. No existe una regla con ese nombre específico en el decálogo de Codd[cite: 2836].",
+      "d)": "Incorrecta. La independencia lógica (Regla 9) se refiere a la inmunidad de las aplicaciones ante cambios en las tablas base (como dividir o combinar tablas)[cite: 2838]."
+    }
+  },
+  {
+    "pregunta": "45. Según el modelo de entidad-relación extendido, ¿A qué se le conoce como \"Cardinalidad\"?",
+    "opciones": [
+      "a) A la representación de la participación en la relación de cada una de las entidades afectadas.",
+      "b) Al número máximo de ocurrencias de cada tipo de entidad que pueden intervenir en una ocurrencia de la relación tratada.",
+      "c) A la unidad básica de información que sirve para cuantificar o describir a la entidad..",
+      "d) A la descripción, con un alto nivel de abstracción, de la distribución de datos almacenados en su sistema."
+    ],
+    "correcta": 0,
+    "explicacion": "En el contexto de Métrica v3 y el modelo E/R extendido, la cardinalidad se define como la participación (mínima y máxima) de una entidad en una relación[cite: 2914, 2915].",
+    "analisis_opciones": {
+      "a)": "Correcta. Define cómo participan las ocurrencias de las entidades en el vínculo[cite: 2915].",
+      "b)": "Incorrecta. El número máximo se suele denominar específicamente 'tipo de correspondencia'[cite: 2917].",
+      "c)": "Incorrecta. Eso describe un atributo[cite: 2919].",
+      "d)": "Incorrecta. Eso es una definición general de un modelo de datos conceptual[cite: 2921]."
+    }
+  },
+  {
+    "pregunta": "84. En el modelo entidad-relación extendido, al conjunto nominado de valores homogéneos con existencia propia con independencia de cualquier otro elemento, relación o atributo es conocido como",
+    "opciones": [
+      "a) Entidad",
+      "b) Objeto",
+      "c) Dominio",
+      "d) Correspondencia"
+    ],
+    "correcta": 2,
+    "explicacion": "El dominio es la colección de valores posibles que puede tomar un atributo, definido de forma independiente a la entidad donde se use[cite: 3279, 3280, 3286].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. La entidad representa un objeto del mundo real, no un conjunto de valores nominados[cite: 3282].",
+      "b)": "Incorrecta. No es un término técnico estándar dentro de los elementos fundamentales del modelo E/R[cite: 3284].",
+      "c)": "Correcta. Definición técnica de dominio en modelado de datos[cite: 3286].",
+      "d)": "Incorrecta. La correspondencia describe la proporción de elementos entre conjuntos[cite: 3288]."
+    }
+  },{
+    "pregunta": "45. El modelo entidad/relación extendido, según MÉTRICA v3...",
+    "opciones": [
+      "a) Se centra en el procesamiento de los datos de un sistema, entrando en consideración la eficacia.",
+      "b) Es dependiente del entorno físico, siendo una fiel representación del sistema de información objeto de estudio.",
+      "c) No debe tener en cuenta necesidades tecnológicas existentes, así como otras restricciones.",
+      "d) Describe con un bajo nivel de abstracción (y por lo tanto, de forma sencilla) la distribución de datos almacenados en un sistema"
+    ],
+    "correcta": 2,
+    "explicacion": "El modelo entidad-relación es un modelo conceptual y, por lo tanto, debe ser independiente de las restricciones tecnológicas o del entorno físico de implementación[cite: 4235, 4241].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. El modelo E/R no se centra en el procesamiento ni en la eficacia algorítmica, sino en la semántica de los datos[cite: 4237].",
+      "b)": "Incorrecta. Es un modelo conceptual, lo que implica independencia del entorno físico[cite: 4239].",
+      "c)": "Correcta. Al ser un nivel de abstracción conceptual, no considera limitaciones técnicas[cite: 4241].",
+      "d)": "Incorrecta. El modelo conceptual describe los datos con un ALTO nivel de abstracción[cite: 4243]."
+    }
+  },
+  {
+    "pregunta": "46. Según MÉTRICA v3, cuando una relación entre dos tipos de entidades implica la no existencia de las otras relaciones, dicha relación es...",
+    "opciones": [
+      "a) Univaluada",
+      "b) Exclusiva",
+      "c) Restringuida",
+      "d) Estricta"
+    ],
+    "correcta": 1,
+    "explicacion": "En el modelo E/R extendido de Métrica v3, una relación exclusiva es aquella donde la existencia de un vínculo entre entidades impide que existan otros vínculos simultáneos definidos para esas mismas ocurrencias[cite: 4245, 4249].",
+    "analisis_opciones": {
+      "a)": "Incorrecta[cite: 4248].",
+      "b)": "Correcta. Término técnico para la exclusión de relaciones en Métrica v3[cite: 4249].",
+      "c)": "Incorrecta[cite: 4251].",
+      "d)": "Incorrecta[cite: 4253]."
+    }
+  },
+  {
+    "pregunta": "22. De los siguientes, ¿cuál es considerado un operador no básico de álgebra relacional?",
+    "opciones": [
+      "a) Diferencia.",
+      "b) Producto cartesiano.",
+      "c) División.",
+      "d) Unión."
+    ],
+    "correcta": 2,
+    "explicacion": "Los operadores básicos o fundamentales son Unión, Diferencia, Producto Cartesiano, Selección y Proyección. La División es un operador derivado o no básico[cite: 4912, 4915].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es un operador básico[cite: 4914].",
+      "b)": "Incorrecta. Es un operador básico[cite: 4913].",
+      "c)": "Correcta. Es un operador complejo construido a partir de los básicos[cite: 4915].",
+      "d)": "Incorrecta. Es un operador básico[cite: 4916]."
+    }
+  },
+  {
+    "pregunta": "82. Si un atributo Y no depende de ninguno de los posibles atributos que forman parte de otro atributo X, según la teoría de la normalización, nos encontramos ante un caso, según MÉTRICA v3, de...",
+    "opciones": [
+      "a) Dependencia transitiva",
+      "b) Dependencia funcional completa",
+      "c) Dependencia unívoca",
+      "d) No dependencia"
+    ],
+    "correcta": 1,
+    "explicacion": "La dependencia funcional completa ocurre cuando un atributo depende de la totalidad de una clave compuesta y no de una parte de sus atributos constituyentes[cite: 4570, 4574].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. La transitividad implica dependencia a través de un tercero[cite: 4572].",
+      "b)": "Correcta. Definición técnica de dependencia plena o completa[cite: 4574].",
+      "c)": "Incorrecta[cite: 4576].",
+      "d)": "Incorrecta[cite: 4577]."
+    }
+  },{
+    "pregunta": "8. Se está utilizando para la gestión de base de datos de usuarios Oracle. ¿Qué puerto debería asegurarse que está bien configurado?",
+    "opciones": [
+      "a) El puerto 1521.",
+      "b) El puerto 3306.",
+      "c) El puerto 3360.",
+      "d) El puerto 3366."
+    ],
+    "correcta": 0,
+    "explicacion": "El puerto por defecto para el sistema gestor de bases de datos Oracle es el 1521.",
+    "analisis_opciones": {
+      "a)": "Correcta. Es el puerto estándar para el listener de Oracle.",
+      "b)": "Incorrecta. Es el puerto por defecto de MySQL.",
+      "c)": "Incorrecta. No es un puerto estándar de bases de datos comunes.",
+      "d)": "Incorrecta. No es un puerto estándar de bases de datos comunes."
+    }
+  },
+  {
+    "pregunta": "12. En el sistema de bases de datos, se percatan que, debido a algún tipo de error, el usuario Mateo no tiene asignados permisos de lectura y escritura sobre la tabla Recursos. De los siguientes comandos, indica cuál arreglaría dicha situación:",
+    "opciones": [
+      "a) ALTER Mateo IN Recursos +SELECT +INSERT;",
+      "b) ASSIGN USER Mateo TABLE Recursos SELECT INSERT;",
+      "c) GRANT SELECT, INSERT ON Recursos TO Mateo;",
+      "d) ADD USER(Mateo) PERMISSIONS(SELECT, INSERT) TABLE(Recursos);"
+    ],
+    "correcta": 2,
+    "explicacion": "El comando GRANT pertenece al DCL (Lenguaje de Control de Datos) y se utiliza para otorgar privilegios específicos a usuarios sobre objetos de la base de datos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Sintaxis inexistente en SQL.",
+      "b)": "Incorrecta. Sintaxis inexistente en SQL.",
+      "c)": "Correcta. Sigue la sintaxis estándar de ANSI SQL para otorgar permisos.",
+      "d)": "Incorrecta. Sintaxis inexistente en SQL."
+    }
+  },{
+    "pregunta": "36. Indica la afirmación correcta, en relación a las bases de datos relacionales:",
+    "opciones": [
+      "a) El modelo relacional fue propuesto por Edgar Frank Codd en 1971.",
+      "b) Una base de datos relacional es un conjunto de tablas compuestas por registros y campos.",
+      "c) Los valores de los campos son libres, pudiendo repetirse registros siempre que así se desee.",
+      "d) El lenguaje estándar para las bases de datos relacionales es el lenguaje de marcado XML."
+    ],
+    "correcta": 1,
+    "explicacion": "Una base de datos relacional se organiza en tablas (relaciones), donde cada fila representa un registro (tupla) y cada columna un campo (atributo).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Codd publicó el modelo relacional en 1970.",
+      "b)": "Correcta. Es la definición básica estructural del modelo.",
+      "c)": "Incorrecta. El modelo relacional exige que cada registro sea único e identificable.",
+      "d)": "Incorrecta. El lenguaje estándar es SQL, no XML."
+    }
+  },
+  {
+    "pregunta": "37. Dentro de las doce reglas de Codd, ¿cuál indica que el sistema debe ser capaz de representar información de forma específica si esta no está presente?",
+    "opciones": [
+      "a) Regla de la información.",
+      "b) Regla del tratamiento sistemático de valores nulos.",
+      "c) Regla del acceso garantizado.",
+      "d) Regla del catálogo dinámico en línea."
+    ],
+    "correcta": 1,
+    "explicacion": "La Regla 3 de Codd especifica el tratamiento sistemático de valores nulos para representar información desconocida o no aplicable de forma distinta a los valores normales.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. La Regla 1 dice que toda la información se representa mediante valores en tablas.",
+      "b)": "Correcta. Es la regla destinada a la gestión de datos ausentes.",
+      "c)": "Incorrecta. La Regla 2 garantiza que cada dato sea accesible mediante tabla, clave y columna.",
+      "d)": "Incorrecta. La Regla 4 define el acceso a la estructura de la base de datos."
+    }
+  },{
+    "pregunta": "4. Obtener un conjunto de relaciones y las restricciones que se deben cumplir sobre ellas, se realiza en el diseño:",
+    "opciones": [
+      "a) Conceptual.",
+      "b) Lógico.",
+      "c) Físico.",
+      "d) Ninguna es correcta."
+    ],
+    "correcta": 1,
+    "explicacion": "El diseño lógico transforma el esquema conceptual en estructuras de datos del modelo elegido (tablas/relaciones en el modelo relacional) y define las restricciones de integridad.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. En este nivel se habla de entidades y relaciones semánticas.",
+      "b)": "Correcta. Es donde se obtienen las tablas (relaciones).",
+      "c)": "Incorrecta. Se centra en el almacenamiento físico.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. Señale la respuesta correcta relativa al Modelo Entidad/Relación Extendido según establece METRICA v3:",
+    "opciones": [
+      "a) Un atributo se define sobre diversos dominios.",
+      "b) El dominio no tiene existencia propia y depende de las entidades, las relaciones o los atributos.",
+      "c) La entidad es aquel objeto, real o abstracto, acerca del cual se desea almacenar información en la base de datos.",
+      "d) La clave candidata es el conjunto de atributos que garantizan la unicidad de las ocurrencias e identifican la ocurrencia unívocamente."
+    ],
+    "correcta": 3,
+    "explicacion": "Aunque la fe de erratas advierte que el nivel conceptual es el que mejor define a la entidad, la opción D es la definición técnica de clave candidata aceptada por Métrica v3.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Un atributo solo se asocia a un dominio.",
+      "b)": "Incorrecta. El dominio tiene existencia propia.",
+      "c)": "Incompleta. Es una definición general, pero en los tests se prioriza la precisión de la D.",
+      "d)": "Correcta. Definición normativa del identificador unívoco."
+    }
+  },{
+    "pregunta": "En la arquitectura ANSI/X3/SPARC, ¿cuál es el nivel que describe la estructura de almacenamiento físico y los métodos de acceso gestionados por el SGBD?",
+    "opciones": [
+      "a) Nivel Conceptual.",
+      "b) Nivel Externo.",
+      "c) Nivel Interno.",
+      "d) Nivel Físico."
+    ],
+    "correcta": 2,
+    "explicacion": "El nivel interno es el que define cómo se almacenan los datos y los índices dentro del SGBD. El nivel 'Físico' real queda por debajo, fuera del control directo del SGBD.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el nivel global de datos.",
+      "B": "Incorrecta. Es la visión del usuario.",
+      "C": "Correcta. Es el esquema que describe la implementación física en el SGBD.",
+      "D": "Incorrecta. Es el soporte físico real (bits en disco), no un nivel de arquitectura de datos."
+    }
+  },
+  {
+    "pregunta": "Se dice que una relación está en Forma Normal de Boyce-Codd (BCNF) si y solo si:",
+    "opciones": [
+      "a) Está en 3FN y no tiene dependencias transitivas.",
+      "b) Está en 3FN y todo determinante es una clave candidata.",
+      "c) Está en 2FN y todos los atributos dependen de la clave primaria.",
+      "d) No tiene dependencias multivaluadas."
+    ],
+    "correcta": 1,
+    "explicacion": "La BCNF es una versión reforzada de la 3FN. Para que se cumpla, cualquier grupo de atributos que determine a otro debe ser, por fuerza, una clave candidata.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es la definición estándar de 3FN.",
+      "B": "Correcta. Es el requisito adicional que define la BCNF.",
+      "C": "Incorrecta. Eso es parte de la 2FN.",
+      "D": "Incorrecta. Eso corresponde a la 4FN."
+    }
+  },
+  {
+    "pregunta": "Según la Regla 12 de Codd (No subversión), ¿cuál de estas afirmaciones es correcta?",
+    "opciones": [
+      "a) El sistema debe ser capaz de manejar datos nulos de forma sistemática.",
+      "b) Si existe un lenguaje de bajo nivel (registro a registro), este no puede usarse para saltarse las reglas de integridad del lenguaje de alto nivel (relacional).",
+      "c) Los programas no deben verse afectados por cambios en la representación física de los datos.",
+      "d) Todas las restricciones de integridad deben estar almacenadas en el catálogo."
+    ],
+    "correcta": 1,
+    "explicacion": "La Regla 12 prohíbe que un acceso directo a los registros ignore las reglas de integridad que el SQL (lenguaje de alto nivel) sí cumpliría.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la Regla 3.",
+      "B": "Correcta. Definición literal de la Regla 12.",
+      "C": "Incorrecta. Es la Regla 8 (Independencia física).",
+      "D": "Incorrecta. Es la Regla 10 (Independencia de integridad)."
+    }
+  },
+  {
+    "pregunta": "Dentro del álgebra relacional, la operación que consiste en seleccionar un subconjunto de COLUMNAS de una relación se denomina:",
+    "opciones": [
+      "a) Selección.",
+      "b) Unión.",
+      "c) Proyección.",
+      "d) Producto Cartesiano."
+    ],
+    "correcta": 2,
+    "explicacion": "La Proyección (símbolo π) extrae columnas específicas de una tabla, eliminando las duplicadas si las hubiera.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La Selección (símbolo σ) elige FILAS basándose en una condición.",
+      "B": "Incorrecta. Combina todas las tuplas de dos relaciones compatibles.",
+      "C": "Correcta. Es la definición técnica de filtrar columnas.",
+      "D": "Incorrecta. Combina todas las filas de una tabla con todas las de otra."
+    }
+  },
+  {
+    "pregunta": "Una relación se encuentra en Segunda Forma Normal (2FN) si:",
+    "opciones": [
+      "a) No existen grupos repetitivos y los atributos son atómicos.",
+      "b) Está en 1FN y no existen dependencias funcionales parciales respecto de la clave primaria.",
+      "c) Está en 1FN y no existen dependencias transitivas.",
+      "d) No tiene dependencias de unión."
+    ],
+    "correcta": 1,
+    "explicacion": "La 2FN requiere estar en 1FN y que todos los atributos que no son clave dependan de TODA la clave primaria (si es compuesta), no solo de una parte de ella.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es el requisito de la 1FN.",
+      "B": "Correcta. Es la definición de eliminación de dependencias parciales.",
+      "C": "Incorrecta. Eso es el requisito de la 3FN.",
+      "D": "Incorrecta. Eso corresponde a la 5FN."
+    }
+  },
+  {
+    "pregunta": "Al pasar del modelo E/R al Relacional, un atributo multivaluado (como tener varios correos electrónicos) se transforma en:",
+    "opciones": [
+      "a) Una nueva columna en la tabla original.",
+      "b) Se ignora para no violar la normalización.",
+      "c) Una nueva tabla donde la clave primaria es la unión del identificador original y el atributo multivaluado.",
+      "d) Un campo de tipo texto largo donde se guardan todos los valores separados por punto y coma."
+    ],
+    "correcta": 2,
+    "explicacion": "Los atributos multivaluados generan una tabla propia para cumplir con la primera forma normal (1FN) y evitar grupos repetitivos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Limitaría el número de valores y dejaría huecos.",
+      "B": "Incorrecta. Se perdería información necesaria.",
+      "C": "Correcta. Es la regla estándar de transformación lógica.",
+      "D": "Incorrecta. Viola la atomicidad de los datos requerida en el modelo relacional."
+    }
+  },{
+    "pregunta": "En el contexto de las Reglas de Codd, la regla que establece que todos los datos de la base de datos deben ser accesibles mediante la combinación del nombre de la tabla, el valor de la clave primaria y el nombre de la columna es:",
+    "opciones": [
+      "a) Regla 1: La regla de la información.",
+      "b) Regla 2: La regla del acceso garantizado.",
+      "c) Regla 3: Tratamiento sistemático de valores nulos.",
+      "d) Regla 4: Catálogo dinámico en línea."
+    ],
+    "correcta": 1,
+    "explicacion": "La Regla 2 garantiza que se puede localizar cualquier dato de forma lógica sin conocer su ubicación física, usando solo el nombre de la tabla, la clave y la columna.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La Regla 1 dice que toda la información debe estar en tablas.",
+      "B": "Correcta. Es la definición exacta de la Regla 2.",
+      "C": "Incorrecta. Trata sobre los valores NULL.",
+      "D": "Incorrecta. Trata sobre el acceso a la estructura de la base de datos."
+    }
+  },
+  {
+    "pregunta": "Según la teoría de normalización, ¿cuál es el requisito fundamental para que una relación que ya está en 2FN pase a estar en Tercera Forma Normal (3FN)?",
+    "opciones": [
+      "a) Que todos los atributos dependan de la clave completa y no de forma parcial.",
+      "b) Que no existan dependencias funcionales transitivas entre los atributos que no forman parte de la clave primaria.",
+      "c) Que todos los valores de los atributos sean atómicos.",
+      "d) Que cada determinante sea una clave candidata."
+    ],
+    "correcta": 1,
+    "explicacion": "La 3FN elimina las dependencias transitivas (A -> B -> C). Un atributo no clave no puede depender de otro atributo no clave; todos deben depender directamente de la clave primaria.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es lo que define el paso a la 2FN.",
+      "B": "Correcta. Es la condición específica de la 3FN.",
+      "C": "Incorrecta. Eso es el requisito de la 1FN.",
+      "D": "Incorrecta. Eso define la Forma Normal de Boyce-Codd (BCNF)."
+    }
+  },
+  {
+    "pregunta": "La Regla 10 de Codd, denominada 'Independencia de la integridad', especifica que:",
+    "opciones": [
+      "a) Las restricciones de integridad deben almacenarse en el catálogo y no en los programas de aplicación.",
+      "b) Los datos deben ser independientes del hardware y del almacenamiento físico.",
+      "c) Los cambios en las tablas base no deben afectar a las vistas.",
+      "d) La base de datos debe ser accesible por lenguajes de bajo nivel."
+    ],
+    "correcta": 0,
+    "explicacion": "La Regla 10 exige que las reglas de negocio (como que un sueldo no sea negativo) se definan en la propia base de datos (catálogo), para que se cumplan siempre, independientemente de la aplicación que acceda.",
+    "analisis_opciones": {
+      "A": "Correcta. Definición de la Regla 10.",
+      "B": "Incorrecta. Es la Regla 8 (Independencia física).",
+      "C": "Incorrecta. Es la Regla 9 (Independencia lógica).",
+      "D": "Incorrecta. Codd exige un lenguaje de alto nivel (Regla 5)."
+    }
+  },
+  {
+    "pregunta": "¿Qué ocurre cuando una tabla tiene una clave primaria compuesta (por ejemplo, DNI + CódigoCurso) y un atributo (por ejemplo, NombreAlumno) depende solo de una parte de esa clave (solo del DNI)?",
+    "opciones": [
+      "a) La tabla no cumple la 1FN.",
+      "b) La tabla cumple la 3FN pero no la BCNF.",
+      "c) La tabla viola la 2FN porque existe una dependencia funcional parcial.",
+      "d) La tabla está correctamente normalizada."
+    ],
+    "correcta": 2,
+    "explicacion": "Para estar en 2FN, no pueden existir dependencias parciales. Si un atributo depende de solo 'un trozo' de la clave primaria, la tabla debe dividirse.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La 1FN solo mira que los datos sean atómicos.",
+      "B": "Incorrecta. Si viola la 2FN, automáticamente no puede cumplir ninguna superior.",
+      "C": "Correcta. Es el ejemplo clásico de violación de la 2FN.",
+      "D": "Incorrecta. La redundancia del NombreAlumno en cada curso violaría la normalización."
+    }
+  },
+  {
+    "pregunta": "La Regla 11 de Codd (Independencia de la distribución) establece que:",
+    "opciones": [
+      "a) El SGBD debe poder distribuir los datos en distintos servidores sin que el usuario o las aplicaciones lo perciban.",
+      "b) El lenguaje de datos debe permitir el acceso a los registros uno a uno.",
+      "c) Los usuarios deben conocer la ubicación física de las tablas para optimizar las consultas.",
+      "d) La integridad de la base de datos solo debe controlarse en el servidor principal."
+    ],
+    "correcta": 0,
+    "explicacion": "La Regla 11 garantiza que una aplicación funcione igual tanto si la base de datos está en un solo PC como si está fragmentada en una red distribuida.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el principio de transparencia de localización.",
+      "B": "Incorrecta. Codd aboga por el manejo de conjuntos, no registro a registro.",
+      "C": "Incorrecta. La regla busca precisamente que el usuario NO necesite saber dónde están los datos.",
+      "D": "Incorrecta. La integridad debe ser independiente de la distribución."
+    }
+  },
+  {
+    "pregunta": "¿En qué consiste la Quinta Forma Normal (5FN), también conocida como Forma Normal de Unión-Proyección (PJ/NF)?",
+    "opciones": [
+      "a) En eliminar dependencias multivaluadas.",
+      "b) En asegurar que la tabla no pueda descomponerse en tablas más pequeñas que luego se unan sin perder información.",
+      "c) En eliminar atributos que no dependan de la clave primaria.",
+      "d) En garantizar que todos los dominios sean simples."
+    ],
+    "correcta": 1,
+    "explicacion": "La 5FN trata sobre las dependencias de unión. Se asegura de que no existan casos donde la información se pierda o se generen 'filas fantasma' al dividir y volver a unir tablas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es la 4FN.",
+      "B": "Correcta. Definición técnica de la 5FN.",
+      "C": "Incorrecta. Eso se resuelve en 2FN y 3FN.",
+      "D": "Incorrecta. Eso es de la 1FN."
+    }
+  },{
+    "pregunta": "Según Métrica v3, en el Modelo Entidad/Relación Extendido, ¿cómo se denomina a la relación que se establece entre una entidad y ella misma?",
+    "opciones": [
+      "a) Relación reflexiva o recursiva.",
+      "b) Relación de exclusividad.",
+      "c) Relación de inclusión.",
+      "d) Relación de redundancia."
+    ],
+    "correcta": 0,
+    "explicacion": "Una relación reflexiva ocurre cuando una entidad se asocia consigo misma (por ejemplo, un 'Empleado' que supervisa a otros 'Empleados').",
+    "analisis_opciones": {
+      "A": "Correcta. Término técnico para auto-relaciones en el modelo E/R.",
+      "B": "Incorrecta. Trata sobre la mutua exclusión entre dos relaciones distintas.",
+      "C": "Incorrecta. Trata sobre la existencia obligatoria de una relación para que exista otra.",
+      "D": "Incorrecta. No es un tipo de relación formal."
+    }
+  },
+  {
+    "pregunta": "Al transformar una relación N:M (Muchos a Muchos) del modelo E/R al modelo Relacional (tablas), ¿qué ocurre con los atributos propios de la relación?",
+    "opciones": [
+      "a) Se pierden en la transformación.",
+      "b) Se añaden a la tabla con la cardinalidad máxima.",
+      "c) Se incluyen como columnas en la nueva tabla intermedia creada para la relación.",
+      "d) Se crea una tabla independiente para cada atributo de la relación."
+    ],
+    "correcta": 2,
+    "explicacion": "Las relaciones N:M generan una tabla intermedia cuya clave primaria es la combinación de las claves de las entidades participantes; los atributos propios de la relación se convierten en columnas de esta nueva tabla.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Eso es para relaciones 1:N.",
+      "C": "Correcta. Regla estándar de transformación lógica.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "En el contexto de la normalización, ¿qué es una 'Dependencia Multivaluada' y en qué forma normal se aborda?",
+    "opciones": [
+      "a) Cuando un atributo depende de una parte de la clave; se aborda en la 2FN.",
+      "b) Cuando existen dependencias entre atributos no clave; se aborda en la 3FN.",
+      "c) Cuando para un valor de una clave existen varios valores de otro atributo independientemente de otros; se aborda en la 4FN.",
+      "d) Cuando una tabla no puede descomponerse sin pérdida; se aborda en la 5FN."
+    ],
+    "correcta": 2,
+    "explicacion": "La Cuarta Forma Normal (4FN) se encarga de eliminar las dependencias multivaluadas, que ocurren cuando un registro implica la existencia de otros registros para mantener la consistencia de datos independientes entre sí.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es dependencia parcial.",
+      "B": "Incorrecta. Eso es dependencia transitiva.",
+      "C": "Correcta. Definición técnica de la 4FN.",
+      "D": "Incorrecta. Eso es la 5FN (dependencia de unión)."
+    }
+  },
+  {
+    "pregunta": "La Regla 9 de Codd (Independencia lógica de los datos) implica que:",
+    "opciones": [
+      "a) Los usuarios pueden cambiar de SGBD sin cambiar sus programas.",
+      "b) Las aplicaciones no deben verse afectadas por cambios en las tablas base que no alteren la información (como dividir una tabla en dos).",
+      "c) Las restricciones de integridad deben ser independientes de la distribución física.",
+      "d) El lenguaje debe soportar operaciones de conjunto."
+    ],
+    "correcta": 1,
+    "explicacion": "La Regla 9 garantiza que, si reestructuramos las tablas (sin quitar datos), las vistas y aplicaciones sigan funcionando igual.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Definición de independencia lógica frente a la física (Regla 8).",
+      "C": "Incorrecta. Mezcla la Regla 10 y la 11.",
+      "D": "Incorrecta. Esa es la Regla 7."
+    }
+  }
+]
+

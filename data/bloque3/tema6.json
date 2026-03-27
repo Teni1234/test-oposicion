@@ -1,0 +1,1693 @@
+[
+{
+  "pregunta": "¿Cuál de las siguientes características hace referencia a la posibilidad de aumento de la capacidad de cálculo los servidores en una implantación cliente/servidor?",
+  "opciones": [
+    "A. Encapsulamiento.",
+    "B. Escalabilidad horizontal.",
+    "C. Acoplamiento débil.",
+    "D. Escalabilidad vertical."
+  ],
+  "correcta": 3,
+  "explicacion": "La escalabilidad vertical consiste en aumentar la capacidad de un servidor añadiendo más recursos (CPU, RAM), es decir, aumentar su potencia de cálculo.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Encapsulamiento se refiere a ocultar la implementación, no a capacidad de cálculo.",
+    "B": "Incorrecta. La horizontal añade más máquinas, no aumenta la potencia de una sola.",
+    "C": "Incorrecta. Se refiere a independencia entre sistemas.",
+    "D": "Correcta. Incrementa la potencia del servidor existente."
+  }
+},
+{
+  "pregunta": "Señale la opción correcta sobre la arquitectura de servicios web REST:",
+  "opciones": [
+    "A. En la arquitectura REST, el servicio no almacena información sobre el estado del cliente entre peticiones.",
+    "B. El uso de identificadores está basado en SOA.",
+    "C. En la arquitectura REST, la interfaz para acceder a los recursos expuestos puede ser HTTP o FTP.",
+    "D. Es una arquitectura no orientada a recursos."
+  ],
+  "correcta": 0,
+  "explicacion": "REST es stateless (sin estado), por lo que el servidor no guarda información del cliente entre peticiones.",
+  "analisis_opciones": {
+    "A": "Correcta. REST es una arquitectura sin estado.",
+    "B": "Incorrecta. REST usa URIs, no depende de SOA.",
+    "C": "Incorrecta. REST se basa en HTTP principalmente.",
+    "D": "Incorrecta. REST está orientado a recursos."
+  }
+},
+{
+  "pregunta": "Hablando de las características funcionales en la arquitectura cliente-servidor, se habla de Presentación distribuida o \"embellecimiento\" cuando:",
+  "opciones": [
+    "A. La aplicación está soportada directamente por el servidor, excepto la presentación que es totalmente remota y reside en el cliente.",
+    "B. La lógica de los procesos se divide entre los distintos componentes del cliente y de servidor.",
+    "C. El cliente asume parte de las funciones de presentación de la aplicación, aunque siguen existiendo programas en el servidor dedicados a esta tarea.",
+    "D. El cliente realiza tanto las funciones de presentación como lo procesos."
+  ],
+  "correcta": 2,
+  "explicacion": "La presentación distribuida implica que parte de la presentación se realiza en el cliente, aunque el servidor sigue teniendo responsabilidad.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Describe presentación remota, no distribuida.",
+    "B": "Incorrecta. Se refiere a lógica distribuida.",
+    "C": "Correcta. Es la definición exacta.",
+    "D": "Incorrecta. Eso sería cliente grueso."
+  }
+},
+{
+  "pregunta": "Una de las características de la arquitectura cliente-servidor es la transparencia. Señale la respuesta correcta acerca de las transparencias que constituyen la transparencia de red:",
+  "opciones": [
+    "A. De acceso y de concurrencia.",
+    "B. De acceso y de fallos.",
+    "C. De acceso y de escalabilidad.",
+    "D. De acceso y de ubicación."
+  ],
+  "correcta": 3,
+  "explicacion": "La transparencia de red incluye la transparencia de acceso (cómo se accede) y de ubicación (dónde está el recurso).",
+  "analisis_opciones": {
+    "A": "Incorrecta. Concurrencia no es parte directa de red.",
+    "B": "Incorrecta. Fallos es otro tipo de transparencia.",
+    "C": "Incorrecta. Escalabilidad no es transparencia de red.",
+    "D": "Correcta. Son las dos fundamentales."
+  }
+},
+{
+  "pregunta": "Axis2 es:",
+  "opciones": [
+    "A. Una base de datos no-SQL.",
+    "B. Un motor de búsqueda",
+    "C. Un motor nuclear de servicios web.",
+    "D. Una librería para la automatización de tareas de compilación y despliegue de aplicaciones."
+  ],
+  "correcta": 2,
+  "explicacion": "Apache Axis2 es un motor para implementar servicios web (especialmente SOAP).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta. Es un motor de servicios web.",
+    "D": "Incorrecta. Eso sería Maven o Gradle."
+  }
+},
+{
+  "pregunta": "¿Cuál de los siguientes elementos de la arquitectura cliente/servidor se le conoce también con el término front-end?",
+  "opciones": [
+    "A. Base de Datos.",
+    "B. Servidor.",
+    "C. Cliente.",
+    "D. Al conjunto de la arquitectura."
+  ],
+  "correcta": 2,
+  "explicacion": "El front-end corresponde al cliente, que interactúa con el usuario.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es back-end.",
+    "B": "Incorrecta. Es servidor.",
+    "C": "Correcta. Es la interfaz de usuario.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál es una característica de los sistemas distribuidos?",
+  "opciones": [
+    "A. Falta de transparencia: un nodo no puede acceder a otros nodos del sistema y comunicarse con ellos.",
+    "B. Procesamiento independiente: varias máquinas no pueden procesar la misma función a la vez.",
+    "C. Escalabilidad: la capacidad computacional y de procesamiento puede escalarse hacia arriba según sea necesario cuando se añaden máquinas adicionales.",
+    "D. Comunicación diferencial: usan nodos distintos para comunicarse y sincronizarse a través de redes independientes entre sí."
+  ],
+  "correcta": 2,
+  "explicacion": "Los sistemas distribuidos destacan por su capacidad de escalar añadiendo más nodos.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Sí hay comunicación entre nodos.",
+    "B": "Incorrecta. Pueden trabajar en paralelo.",
+    "C": "Correcta. Es una característica clave.",
+    "D": "Incorrecta. No es definición estándar."
+  }
+},
+{
+  "pregunta": "La arquitectura cliente - servidor se caracteriza por varios aspectos. ¿Cuál de los siguientes NO es uno de ellos?",
+  "opciones": [
+    "A. El almacenamiento siempre se realiza sobre sistemas centralizados tipo SAN / NAS.",
+    "B. Interoperabilidad.",
+    "C. Concurrencia.",
+    "D. Compartición de recursos."
+  ],
+  "correcta": 0,
+  "explicacion": "No siempre el almacenamiento es centralizado en SAN/NAS, por lo que no es una característica obligatoria.",
+  "analisis_opciones": {
+    "A": "Correcta (es la falsa). No es obligatorio.",
+    "B": "Incorrecta. Sí es característica.",
+    "C": "Incorrecta. También lo es.",
+    "D": "Incorrecta. También lo es."
+  }
+},
+{
+  "pregunta": "El paradigma de Servicios Web (Web Services) se basa en:",
+  "opciones": [
+    "A. El intercambio de mensajes XML.",
+    "B. El empleo de servidores “Apache”.",
+    "C. La utilización de aplicaciones Java, JavaBeans y applets.",
+    "D. La firma electrónica avanzada."
+  ],
+  "correcta": 0,
+  "explicacion": "Los servicios web tradicionales (SOAP) se basan en intercambio de mensajes XML.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. No depende de Apache.",
+    "C": "Incorrecta. No es exclusivo.",
+    "D": "Incorrecta. Es un aspecto de seguridad."
+  }
+},
+{
+  "pregunta": "Un documento XML que sigue las reglas de sintaxis definidas por la especificación XML y que se valida con un DTD es documenta:",
+  "opciones": [
+    "A. Bien formado.",
+    "B. Válido.",
+    "C. No valido.",
+    "D. Estructurado."
+  ],
+  "correcta": 1,
+  "explicacion": "Un XML válido cumple sintaxis y además se ajusta a un DTD o esquema.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Solo cumple sintaxis.",
+    "B": "Correcta. Cumple sintaxis y validación.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "Representational State Transfer (REST) es una arquitectura basada en el protocolo:",
+  "opciones": [
+    "A. HTTP.",
+    "B. XML.",
+    "C. HTML.",
+    "D. JAVA."
+  ],
+  "correcta": 0,
+  "explicacion": "REST se basa en el protocolo HTTP para realizar operaciones sobre recursos mediante métodos como GET, POST, PUT o DELETE.",
+  "analisis_opciones": {
+    "A": "Correcta. REST utiliza HTTP como base.",
+    "B": "Incorrecta. XML es formato de datos, no protocolo base.",
+    "C": "Incorrecta. HTML es lenguaje de marcado.",
+    "D": "Incorrecta. Java es lenguaje, no protocolo."
+  }
+},
+{
+  "pregunta": "¿Cuál de los siguientes NO es un elemento en el esqueleto base de un mensaje SOAP 1.2?",
+  "opciones": [
+    "A. Envelope.",
+    "B. Header.",
+    "C. Body.",
+    "D. Title."
+  ],
+  "correcta": 3,
+  "explicacion": "SOAP se compone de Envelope, Header (opcional) y Body. No existe el elemento Title.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es obligatorio.",
+    "B": "Incorrecta. Es opcional pero válido.",
+    "C": "Incorrecta. Es obligatorio.",
+    "D": "Correcta. No forma parte de SOAP."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes NO es una ventaja de implementar una Arquitectura Orientada a Servicios (SOA)?",
+  "opciones": [
+    "A. Facilidad para abordar modelos de negocios basados en colaboración con otros entes (socios, proveedores).",
+    "B. Mayor acoplamiento entre aplicaciones productoras y aplicaciones consumidoras.",
+    "C. Poder para reemplazar elementos de la capa de aplicaciones SOA sin disrupción en el proceso de negocio.",
+    "D. Facilidad para la integración de tecnologías disímiles."
+  ],
+  "correcta": 1,
+  "explicacion": "SOA busca bajo acoplamiento, por lo que un mayor acoplamiento sería una desventaja.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es una ventaja clara de SOA.",
+    "B": "Correcta. Es lo contrario de lo que busca SOA.",
+    "C": "Incorrecta. Es una ventaja clave (flexibilidad).",
+    "D": "Incorrecta. Permite integrar tecnologías distintas."
+  }
+},
+{
+  "pregunta": "La escalabilidad horizontal es:",
+  "opciones": [
+    "A. La facilidad para añadir o suprimir estaciones similares para aumentar el rendimiento o capacidad.",
+    "B. La facilidad para migrar a servidores mayores o menores.",
+    "C. La característica inherente de las aplicaciones cliente-servidor por la cual es muy sencillo añadir nuevas funcionalidades.",
+    "D. La característica inherente de las aplicaciones de n-capas por la cual es muy sencillo añadir nuevas funcionalidades."
+  ],
+  "correcta": 0,
+  "explicacion": "La escalabilidad horizontal consiste en añadir más máquinas o nodos al sistema para aumentar su capacidad.",
+  "analisis_opciones": {
+    "A": "Correcta. Añadir más nodos.",
+    "B": "Incorrecta. Eso es vertical.",
+    "C": "Incorrecta. No define escalabilidad.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En el estándar \"Web Service Description Language\" (WSDL), ¿con qué elemento se describen las acciones soportadas por el servicio?",
+  "opciones": [
+    "A. Funciones.",
+    "B. Acciones.",
+    "C. Operaciones.",
+    "D. Primitivas."
+  ],
+  "correcta": 2,
+  "explicacion": "En WSDL las operaciones definen las acciones que el servicio puede realizar.",
+  "analisis_opciones": {
+    "A": "Incorrecta. No es término WSDL.",
+    "B": "Incorrecta. No es término formal.",
+    "C": "Correcta. Elemento clave.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "Señale cual NO es una característica de los servicios web:",
+  "opciones": [
+    "A. Rendimiento Alto.",
+    "B. Alta interoperabilidad.",
+    "C. Permiten la interoperabilidad entre plataformas.",
+    "D. Fomentan los estándares y protocolos basados en texto."
+  ],
+  "correcta": 0,
+  "explicacion": "Los servicios web no destacan por alto rendimiento, ya que el uso de XML/HTTP introduce sobrecarga.",
+  "analisis_opciones": {
+    "A": "Correcta. No es una característica típica.",
+    "B": "Incorrecta. Sí lo es.",
+    "C": "Incorrecta. Es una ventaja clave.",
+    "D": "Incorrecta. También es característica."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes es un estándar que se utiliza como elemento de seguridad en los servicios web?",
+  "opciones": [
+    "A. SAML",
+    "B. WSDL",
+    "C. SOAP",
+    "D. UDDI"
+  ],
+  "correcta": 0,
+  "explicacion": "SAML es un estándar de seguridad para autenticación e intercambio de credenciales.",
+  "analisis_opciones": {
+    "A": "Correcta. Es estándar de seguridad.",
+    "B": "Incorrecta. Describe servicios.",
+    "C": "Incorrecta. Es protocolo.",
+    "D": "Incorrecta. Es para descubrimiento."
+  }
+},
+{
+  "pregunta": "Para la implantación de una arquitectura Cliente/Servidor del tipo \"cliente fino - servidor grueso\":",
+  "opciones": [
+    "A. Se necesitan un mínimo de 2 equipos si se utiliza el modelo de 2 capas.",
+    "B. Se necesitan un mínimo de 3 equipos si se utiliza el modelo de 3 capas.",
+    "C. Puede ser implantada en un único equipo,",
+    "D. El cliente es el responsable del acceso a los datos físicos y de procesar la lógica de negocio."
+  ],
+  "correcta": 2,
+  "explicacion": "Aunque conceptualmente hay cliente y servidor, pueden ejecutarse en una misma máquina.",
+  "analisis_opciones": {
+    "A": "Incorrecta. No es requisito obligatorio.",
+    "B": "Incorrecta.",
+    "C": "Correcta. Puede coexistir en una máquina.",
+    "D": "Incorrecta. Eso sería cliente grueso."
+  }
+},
+{
+  "pregunta": "En un documento WSDL, el elemento ‘wsdl:binding’ se utiliza",
+  "opciones": [
+    "A. Para la definición de los datos del mensaje que se van a comunicar.",
+    "B. Como elemento contenedor para definiciones de tipos de datos.",
+    "C. No es un elemento válido.",
+    "D. Para especificar el protocolo concreto y especificación del formato de datos para un tipo de puerto determinado."
+  ],
+  "correcta": 3,
+  "explicacion": "binding define cómo se accede al servicio (protocolo y formato de mensajes).",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso es types/message.",
+    "B": "Incorrecta. Eso es types.",
+    "C": "Incorrecta.",
+    "D": "Correcta. Define protocolo y formato."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes opciones representa al elemento raíz que debe aparecer en todo mensaje SOAP?",
+  "opciones": [
+    "A. soap:Envelope",
+    "B. soap:Message",
+    "C. soap:Service",
+    "D. soap:Body"
+  ],
+  "correcta": 0,
+  "explicacion": "Envelope es el elemento raíz obligatorio de todo mensaje SOAP.",
+  "analisis_opciones": {
+    "A": "Correcta. Elemento raíz.",
+    "B": "Incorrecta. No existe.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta. Es contenido interno."
+  }
+},
+{
+  "pregunta": "En cuanto a la tecnología REST utilizada para la construcción de sistemas con arquitectura orientada a servicios, indique la opción INCORRECTA:",
+  "opciones": [
+    "A. Realiza el transporte de datos con los métodos proporcionados por HTTP como GET, POST, PUT, DELETE O PATCH.",
+    "B. Utiliza los códigos de respuesta nativos de HTTP como 200, 204, 404 ó 409.",
+    "C. En un sistema REST cada recurso es direccionable a través de su URI.",
+    "D. A pesar de la gran variedad de tipos de datos que podemos mandar con REST, no es posible utilizar el formato XML."
+  ],
+  "correcta": 3,
+  "explicacion": "REST sí permite usar XML, además de JSON y otros formatos.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es correcto.",
+    "B": "Incorrecta. También correcto.",
+    "C": "Incorrecta. Es clave en REST.",
+    "D": "Correcta. Es falsa."
+  }
+},
+{
+  "pregunta": "Es una librería para la implementación de servicios web de la API Java JAX-WS:",
+  "opciones": [
+    "A. Apache Axe.",
+    "B. Jersey.",
+    "C. Apache CXF.",
+    "D. WS4All."
+  ],
+  "correcta": 2,
+  "explicacion": "Apache CXF es un framework para implementar servicios web SOAP (JAX-WS).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta. Jersey es REST (JAX-RS).",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes NO es una característica propia de las arquitecturas cliente/servidor?",
+  "opciones": [
+    "A. Encapsulamiento de los servicios.",
+    "B. Escalabilidad horizontal y vertical.",
+    "C. Acoplamiento de sistemas.",
+    "D. Interoperabilidad de plataformas."
+  ],
+  "correcta": 2,
+  "explicacion": "Las arquitecturas cliente-servidor buscan bajo acoplamiento, no acoplamiento fuerte.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Sí es característica.",
+    "B": "Incorrecta. También lo es.",
+    "C": "Correcta. Es lo contrario.",
+    "D": "Incorrecta. También es característica."
+  }
+},
+{
+  "pregunta": "Señale la respuesta correcta respecto a las arquitecturas de microservicios:",
+  "opciones": [
+    "A. Tienen nombres únicos (como direcciones URL) que se usan para resolver su ubicación.",
+    "B. Deben ser escritos en lenguajes de programación específicos.",
+    "C. Interactúan con otros microservicios por medio de protocolos cerrados.",
+    "D. Service Fabric es la plataforma de microservicios de Apache."
+  ],
+  "correcta": 0,
+  "explicacion": "Los microservicios se identifican mediante endpoints (URLs) y se comunican normalmente vía HTTP.",
+  "analisis_opciones": {
+    "A": "Correcta. Cada servicio tiene su endpoint.",
+    "B": "Incorrecta. Son independientes del lenguaje.",
+    "C": "Incorrecta. Usan protocolos abiertos.",
+    "D": "Incorrecta. Service Fabric es de Microsoft."
+  }
+},
+{
+  "pregunta": "El protocolo que contiene las especificaciones sobre cómo debe garantizarse la integridad y seguridad en mensajería de Servicios Web es:",
+  "opciones": [
+    "A. WS-Security (WSS).",
+    "B. Kerberos.",
+    "C. Transport Layer Security (TLS).",
+    "D. BinarySecurityToken."
+  ],
+  "correcta": 0,
+  "explicacion": "WS-Security define mecanismos para asegurar mensajes SOAP mediante firma, cifrado y autenticación.",
+  "analisis_opciones": {
+    "A": "Correcta. Es el estándar específico de seguridad en servicios web.",
+    "B": "Incorrecta. Es un sistema de autenticación general.",
+    "C": "Incorrecta. Seguridad a nivel de transporte.",
+    "D": "Incorrecta. Es un elemento dentro de WS-Security."
+  }
+},
+{
+  "pregunta": "¿A qué hace referencia el modelo de 3 capas en el desarrollo de aplicaciones?",
+  "opciones": [
+    "A. A que la declaración de clases se realizará con al menos tres niveles de acceso diferenciados: clases públicas, clases privadas y clases protegidas.",
+    "B. A que se establecerán tres jerarquías de herencia de clases, en la que partiendo de una clase raíz, existirán al menos hasta otras dos capas más de herencia.",
+    "C. A que las aplicaciones se separarán en 3 capas, estableciendo una capa de Lógica de Presentación, una capa de Lógica de Negocio y una capa de Datos o de Persistencia.",
+    "D. A que el procesamiento de documentos XML puede realizarse mediante un parser DOM (modelo de árbol), SAX (basado en eventos tipo push) o STAX (basado en eventos tipo pull)."
+  ],
+  "correcta": 2,
+  "explicacion": "El modelo de 3 capas divide el sistema en presentación, lógica de negocio y datos para mejorar mantenibilidad y escalabilidad.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Habla de modificadores de acceso.",
+    "B": "Incorrecta. Habla de herencia.",
+    "C": "Correcta. Definición exacta.",
+    "D": "Incorrecta. Trata de XML."
+  }
+},
+{
+  "pregunta": "De la pila de especificaciones de los servicios web, indique cuál de los siguientes lenguajes se utiliza para la descripción de los mismos :",
+  "opciones": [
+    "A. WSIJ",
+    "B. WSDL",
+    "C. SOAP",
+    "D. UDDI"
+  ],
+  "correcta": 1,
+  "explicacion": "WSDL describe los servicios web, sus operaciones, mensajes y endpoints.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta. SOAP es protocolo.",
+    "D": "Incorrecta. UDDI es descubrimiento."
+  }
+},
+{
+  "pregunta": "El protocolo SOAP (Simple Object Access Protocol):",
+  "opciones": [
+    "A. Puede estar escrito en cualquier lenguaje de programación: Java, xml, .net.",
+    "B. Depende del protocolo de transporte subyacente.",
+    "C. No permite enviar mensajes a otras aplicaciones.",
+    "D. Es el protocolo usado en los servicios web para intercambio de mensajes entre aplicaciones."
+  ],
+  "correcta": 3,
+  "explicacion": "SOAP es un protocolo de mensajería para intercambio de información estructurada entre aplicaciones.",
+  "analisis_opciones": {
+    "A": "Incorrecta. No es lenguaje de programación.",
+    "B": "Incorrecta. Es independiente del transporte.",
+    "C": "Incorrecta. Precisamente sirve para eso.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "En el contexto de un modelo de distribución de la arquitectura cliente/servidor indique la afirmación FALSA:",
+  "opciones": [
+    "A. Las peticiones que dirigen los clientes a los servidores pueden iniciarse en modo síncrono o asíncrono.",
+    "B. En el modelo cliente/servidor es relevante la ubicación de un proceso con respecto del otro.",
+    "C. El middleware permite la interoperabilidad de las aplicaciones distribuidas.",
+    "D. El modelo cliente/servidor facilita la escalabilidad tanto vertical como horizontal del sistema."
+  ],
+  "correcta": 1,
+  "explicacion": "En cliente-servidor se busca transparencia de ubicación, por lo que la ubicación no debería ser relevante.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "FALSA. No debería importar la ubicación.",
+    "C": "Correcta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "Indique la afirmación verdadera en el contexto del modelo de distribución de la arquitectura cliente/servidor conocido como \"thin client\":",
+  "opciones": [
+    "A. Los datos residen en el servidor pero la presentación y la lógica de negocio se realizan en el cliente.",
+    "B. La lógica de negocio de la aplicación se encuentra repartida entre el cliente y el servidor.",
+    "C. El servidor se encarga de todas las funciones excepto de la presentación.",
+    "D. El dialogo entre el cliente y el servidor se inicia a petición del servidor."
+  ],
+  "correcta": 2,
+  "explicacion": "En thin client, el servidor realiza casi todo (lógica + datos), dejando al cliente solo la presentación.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso sería cliente grueso.",
+    "B": "Incorrecta. Es modelo distribuido.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Siempre inicia el cliente."
+  }
+},
+{
+  "pregunta": "En relación con la arquitectura cliente-servidor hay una diferencia conceptual entre capa y nivel, el nivel se asocia con una distribución ...",
+  "opciones": [
+    "A. Lógica.",
+    "B. Física.",
+    "C. Completa.",
+    "D. Distribuida."
+  ],
+  "correcta": 1,
+  "explicacion": "Nivel hace referencia a la distribución física, mientras que capa es lógica.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso es capa.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué afirmación es correcta en relación con el protocolo SOAP?",
+  "opciones": [
+    "A. Es un protocolo de comunicación basado en HTML.",
+    "B. Especifica el formato del mensaje de la comunicación entre ordenadores.",
+    "C. Se utiliza para intercambio de información ente ordenadores con el mismo sistema operativo.",
+    "D. Define los protocolos de transporte utilizados en el envío del mensaje."
+  ],
+  "correcta": 1,
+  "explicacion": "SOAP define el formato de los mensajes (estructura XML), no el transporte.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Es independiente del sistema.",
+    "D": "Incorrecta. No define transporte."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes opciones NO es una ventaja propia de una arquitectura en 3 capas?",
+  "opciones": [
+    "A. Reduce el tráfico en la red frente a una arquitectura de dos capas.",
+    "B. Es una arquitectura mucho más escalable.",
+    "C. La separación de roles en capas hace más fácil modificar y remplazar capas.",
+    "D. Si aumenta el tamaño o complejidad de una capa, no afecta a las demás."
+  ],
+  "correcta": 0,
+  "explicacion": "La arquitectura en 3 capas no necesariamente reduce el tráfico, incluso puede aumentarlo.",
+  "analisis_opciones": {
+    "A": "Correcta (NO ventaja).",
+    "B": "Incorrecta. Sí es ventaja.",
+    "C": "Incorrecta. También lo es.",
+    "D": "Incorrecta. Es objetivo del diseño."
+  }
+},
+{
+  "pregunta": "¿Cuál de los siguientes protocolos está asociado al descubrimiento de servicios web?",
+  "opciones": [
+    "A. LLDP (Link Layer Discovery Protocol).",
+    "B. UDDI (Universal Description Discovery and Integration).",
+    "C. WSDP (Web Service Discovery Protocol).",
+    "D. SSDP (Simple Service Discovery Protocol)."
+  ],
+  "correcta": 1,
+  "explicacion": "UDDI permite registrar y descubrir servicios web.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes acciones NO implica la ejecución de código en cliente?",
+  "opciones": [
+    "A. Ejecución de un applet.",
+    "B. Ejecución de un servicio web.",
+    "C. Ejecución de una cookie",
+    "D. Ejecución de un método Javascript."
+  ],
+  "correcta": 1,
+  "explicacion": "Los servicios web se ejecutan en el servidor, no en el cliente.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Se ejecuta en cliente.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Puede implicar ejecución en cliente.",
+    "D": "Incorrecta. Es código cliente."
+  }
+},
+{
+  "pregunta": "Señale la respuesta correcta en relación con los servicios web:",
+  "opciones": [
+    "A. Las Arquitecturas Orientadas a Servicios (SOA) se implementan con HTMLS, CSS3 y Javascript.",
+    "B. Las arquitecturas SOA están formadas por servicios de aplicación fuertemente acoplados y altamente interoperables.",
+    "C. Las arquitecturas SOA son un modelo orientado a la reutilización de los servicios en entornos de sistemas distribuidos.",
+    "D. Los servicios de una arquitectura SOA se basan en una definición formal independiente de la plataforma subyacente. Esta definición formal se realiza en el lenguaje JAVA."
+  ],
+  "correcta": 2,
+  "explicacion": "SOA busca reutilización y desacoplamiento de servicios en sistemas distribuidos.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta. SOA busca bajo acoplamiento.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Se usa WSDL."
+  }
+},
+{
+  "pregunta": "Es un framework de mensajería ESB (Enterprise Service Bus) de código abierto:",
+  "opciones": [
+    "A. Mule ESB.",
+    "B. Oracle Service Bus.",
+    "C. IBM ESB.",
+    "D. OpenUp ESB."
+  ],
+  "correcta": 0,
+  "explicacion": "Mule ESB es una solución open source para integración de servicios.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. Comercial.",
+    "C": "Incorrecta. Comercial.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En una arquitectura cliente/servidor, cuál de las siguientes afirmaciones es INCORRECTA en el ámbito de las arquitecturas multinivel:",
+  "opciones": [
+    "A. Mayor flexibilidad y modularidad.",
+    "B. Escalabilidad: facilita añadir recursos para soportar mayor número de clientes.",
+    "C. Extensibilidad: facilita añadir nuevas funcionalidades al sistema sin afectar a los clientes existentes.",
+    "D. Menor coste de comunicaciones ya que consumen menos ancho de banda."
+  ],
+  "correcta": 3,
+  "explicacion": "Las arquitecturas multinivel pueden aumentar el tráfico entre capas.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta (es falsa)."
+  }
+},
+{
+  "pregunta": "¿Cuál de entre los siguientes aplicativos se puede ejecutar en un servidor y no en el cliente?",
+  "opciones": [
+    "A. Applets de Java.",
+    "B. Controles Active X.",
+    "C. Servlet de Java.",
+    "D. Javascript."
+  ],
+  "correcta": 2,
+  "explicacion": "Los servlets se ejecutan en el servidor dentro de un contenedor.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Cliente.",
+    "B": "Incorrecta. Cliente.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Cliente."
+  }
+},
+{
+  "pregunta": "En un documento WSDL 2.0, el elemento <binding> especifica:",
+  "opciones": [
+    "A. el conjunto de puertos y dirección de los mismos.",
+    "B. los protocolos de comunicación usados.",
+    "C. los tipos de datos usados en los mensajes.",
+    "D. las operaciones permitidas."
+  ],
+  "correcta": 1,
+  "explicacion": "binding define cómo se comunica el servicio (protocolo y formato).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En un documento WSDL, ¿cómo se denomina la operación que describe un servicio en el que se recibe un mensaje pero no se responde?",
+  "opciones": [
+    "A. One-way.",
+    "B. Notification.",
+    "C. Request-no response.",
+    "D. Petition-no response."
+  ],
+  "correcta": 0,
+  "explicacion": "One-way es una operación en la que se recibe un mensaje sin respuesta.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En la configuración para los componentes de software cliente/servidor denominada \"presentación remota\",",
+  "opciones": [
+    "A. Los datos de que consta la base de datos se distribuyen entre múltiples clientes y servidores.",
+    "B. La lógica primaria de la base de datos y de la aplicación permanecen en el servidor.",
+    "C. Se asignan al cliente los procesos asociados a la introducción de datos.",
+    "D. Se ubica el Sistema Gestor de Base de Datos (SGBD) en el cliente y la base de datos física en el servidor."
+  ],
+  "correcta": 1,
+  "explicacion": "En presentación remota, casi todo se ejecuta en el servidor.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En relación con la arquitectura en n-capas aplicada a sistemas Web, ¿cuál de los siguientes elementos pertenece a la capa de datos?",
+  "opciones": [
+    "A. DCOM.",
+    "B. Navegador Web.",
+    "C. Informix.",
+    "D. EJBs."
+  ],
+  "correcta": 2,
+  "explicacion": "Informix es un sistema gestor de bases de datos, por tanto pertenece a la capa de datos.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Lógica."
+  }
+},
+{
+  "pregunta": "En una arquitectura cliente-servidor, en el modo de operación asíncrono:",
+  "opciones": [
+    "A. El proceso cliente espera hasta que el servidor ha cumplimentado la petición.",
+    "B. El proceso cliente espera hasta que expira el plazo máximo determinado.",
+    "C. El proceso cliente continúa en cuanto el servidor acusa recibo de la petición.",
+    "D. El proceso cliente continúa hasta el \"timeout\"."
+  ],
+  "correcta": 2,
+  "explicacion": "En modo asíncrono el cliente no espera la respuesta completa, continúa tras el acuse.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso es síncrono.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "Señale la afirmación FALSA respecto al patrón de diseño MVC (Modelo-Vista-Controlador):",
+  "opciones": [
+    "A. Separa la lógica de negocio de la interfaz de usuario.",
+    "B. Incrementa la reutilización y la flexibilidad.",
+    "C. Se ha utilizado en múltiples frameworks (J2EE, ASP.NET MVC, etc.).",
+    "D. El controlador gestiona todos los accesos a la información con la cual opera el sistema."
+  ],
+  "correcta": 3,
+  "explicacion": "El modelo gestiona los datos, no el controlador.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Correcta.",
+    "C": "Correcta.",
+    "D": "FALSA. Eso corresponde al modelo."
+  }
+},
+{
+  "pregunta": "De las siguientes opciones, representa un método válido dentro del protocolo HTTP:",
+  "opciones": [
+    "A. OPTIONS",
+    "B. UPDATE",
+    "C. RETRIEVE",
+    "D. TRACK"
+  ],
+  "correcta": 0,
+  "explicacion": "OPTIONS es un método HTTP estándar.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En la arquitectura cliente/servidor en 2 capas, habitualmente inicia la comunicación:",
+  "opciones": [
+    "A. El Cliente.",
+    "B. El Servidor.",
+    "C. Ambos.",
+    "D. El Servidor, a petición del Cliente."
+  ],
+  "correcta": 0,
+  "explicacion": "El cliente siempre inicia la comunicación solicitando servicios.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál NO es una característica de los servicios REST?",
+  "opciones": [
+    "A. Utiliza métodos del protocolo HTTP de forma explícita.",
+    "B. La solicitud no requiere que el servidor recupere información de estado de la aplicación.",
+    "C. Son admitidos los formatos XML y JSON para la transmisión o recepción de datos.",
+    "D. Usa la especificación UDDI para publicar y encontrar información sobre los servicios web expuestos."
+  ],
+  "correcta": 3,
+  "explicacion": "REST no usa UDDI; eso es propio de servicios web SOAP.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "¿Cuál es la principal diferencia entre una arquitectura de 2 capas y una de 3 capas?",
+  "opciones": [
+    "A. En la arquitectura de 2 capas existe una capa adicional de presentación.",
+    "B. En la arquitectura de 3 capas se separa la lógica de negocio de la presentación y los datos.",
+    "C. En la arquitectura de 2 capas se separa la lógica de negocio en una capa independiente.",
+    "D. No existe diferencia funcional entre ambas arquitecturas."
+  ],
+  "correcta": 1,
+  "explicacion": "La arquitectura de 3 capas introduce una capa intermedia de lógica de negocio separada de la presentación y los datos.",
+  "analisis_opciones": {
+    "A": "Incorrecta. La capa extra aparece en 3 capas.",
+    "B": "Correcta. Es la diferencia clave.",
+    "C": "Incorrecta. Eso ocurre en 3 capas.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En una arquitectura de 3 capas, ¿qué responsabilidad corresponde a la capa de lógica de negocio?",
+  "opciones": [
+    "A. Gestionar la interfaz de usuario.",
+    "B. Definir el estilo visual de la aplicación.",
+    "C. Aplicar las reglas de negocio y procesar la información.",
+    "D. Almacenar los datos en la base de datos."
+  ],
+  "correcta": 2,
+  "explicacion": "La capa de lógica de negocio se encarga de aplicar reglas, validar datos y procesar la información.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Presentación.",
+    "B": "Incorrecta. CSS/UI.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Datos."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones es correcta sobre la arquitectura de 2 capas?",
+  "opciones": [
+    "A. Se caracteriza por separar completamente la lógica de negocio en una capa intermedia.",
+    "B. El cliente interactúa directamente con la base de datos.",
+    "C. Permite una alta escalabilidad horizontal.",
+    "D. Es la arquitectura más utilizada en sistemas distribuidos modernos."
+  ],
+  "correcta": 1,
+  "explicacion": "En 2 capas el cliente accede directamente a la base de datos, lo que limita escalabilidad.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes es una ventaja de la arquitectura en 3 capas frente a la de 2 capas?",
+  "opciones": [
+    "A. Menor complejidad del sistema.",
+    "B. Mayor acoplamiento entre componentes.",
+    "C. Mayor facilidad de mantenimiento y escalabilidad.",
+    "D. Eliminación de la capa de datos."
+  ],
+  "correcta": 2,
+  "explicacion": "La separación en capas permite modificar partes del sistema sin afectar al resto.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En el contexto de arquitecturas de software, ¿qué diferencia existe entre capa y nivel?",
+  "opciones": [
+    "A. No existe diferencia, ambos conceptos son equivalentes.",
+    "B. Capa hace referencia a la distribución física y nivel a la lógica.",
+    "C. Capa hace referencia a la organización lógica y nivel a la distribución física.",
+    "D. Nivel se refiere únicamente a bases de datos."
+  ],
+  "correcta": 2,
+  "explicacion": "Capa es un concepto lógico y nivel es físico (distribución real).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta (invertido).",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes características define a una arquitectura Peer-to-Peer (P2P)?",
+  "opciones": [
+    "A. Existe un servidor central que coordina todas las operaciones.",
+    "B. Los nodos actúan como clientes y servidores al mismo tiempo.",
+    "C. Solo un nodo puede proporcionar servicios al resto.",
+    "D. La comunicación siempre pasa por un servidor intermedio."
+  ],
+  "correcta": 1,
+  "explicacion": "En P2P todos los nodos son equivalentes y pueden actuar como clientes y servidores.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes es una desventaja típica de la arquitectura P2P?",
+  "opciones": [
+    "A. Alta dependencia de un servidor central.",
+    "B. Dificultad en la gestión de seguridad y control.",
+    "C. Baja escalabilidad.",
+    "D. Imposibilidad de compartir recursos."
+  ],
+  "correcta": 1,
+  "explicacion": "Al no haber control central, la seguridad y gestión es más compleja.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En una arquitectura de 3 capas, ¿dónde se ubica el acceso a bases de datos?",
+  "opciones": [
+    "A. Capa de presentación.",
+    "B. Capa de lógica de negocio.",
+    "C. Capa de datos o persistencia.",
+    "D. En todas las capas."
+  ],
+  "correcta": 2,
+  "explicacion": "La capa de datos se encarga del almacenamiento y acceso a la información.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "¿Cuál de las siguientes tecnologías se utiliza para definir la estructura de una página web?",
+  "opciones": [
+    "A. CSS",
+    "B. HTML",
+    "C. JavaScript",
+    "D. XML"
+  ],
+  "correcta": 1,
+  "explicacion": "HTML es el lenguaje de marcado encargado de definir la estructura de las páginas web.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Define estilo.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Define comportamiento.",
+    "D": "Incorrecta. Define datos estructurados."
+  }
+},
+{
+  "pregunta": "¿Cuál es la función principal de XML en el desarrollo web?",
+  "opciones": [
+    "A. Definir la presentación visual de la página.",
+    "B. Ejecutar lógica en el cliente.",
+    "C. Almacenar y transportar datos estructurados.",
+    "D. Definir la estructura de páginas web."
+  ],
+  "correcta": 2,
+  "explicacion": "XML se utiliza para representar datos estructurados y facilitar su intercambio.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes tecnologías permite dotar de comportamiento dinámico a una página web en el lado del cliente?",
+  "opciones": [
+    "A. HTML",
+    "B. CSS",
+    "C. JavaScript",
+    "D. XML"
+  ],
+  "correcta": 2,
+  "explicacion": "JavaScript permite ejecutar código en el navegador para modificar dinámicamente la página.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente una página web estática?",
+  "opciones": [
+    "A. Su contenido se genera dinámicamente en función del usuario.",
+    "B. Permite interacción sin recarga mediante AJAX.",
+    "C. Su contenido es fijo y no cambia en función del usuario.",
+    "D. Utiliza exclusivamente JavaScript para generar contenido."
+  ],
+  "correcta": 2,
+  "explicacion": "Una web estática muestra siempre el mismo contenido, sin lógica dinámica.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente una página web dinámica?",
+  "opciones": [
+    "A. Solo contiene contenido HTML fijo.",
+    "B. Su contenido puede variar en función del usuario o la interacción.",
+    "C. No permite interacción con el servidor.",
+    "D. No utiliza scripts."
+  ],
+  "correcta": 1,
+  "explicacion": "Las páginas dinámicas generan contenido variable dependiendo del contexto.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué característica define a AJAX en el desarrollo web?",
+  "opciones": [
+    "A. Permite ejecutar código en el servidor.",
+    "B. Permite actualizar partes de una página sin recargarla completamente.",
+    "C. Permite definir estilos dinámicos.",
+    "D. Es un lenguaje de programación."
+  ],
+  "correcta": 1,
+  "explicacion": "AJAX permite realizar peticiones asíncronas al servidor sin recargar la página.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué es una Single Page Application (SPA)?",
+  "opciones": [
+    "A. Una aplicación que solo contiene una página HTML sin interacción.",
+    "B. Una aplicación web que recarga completamente la página en cada interacción.",
+    "C. Una aplicación web que carga una única página y actualiza dinámicamente su contenido.",
+    "D. Una aplicación que solo funciona sin conexión."
+  ],
+  "correcta": 2,
+  "explicacion": "SPA carga una única página y actualiza su contenido dinámicamente sin recargar.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes tecnologías se ejecuta en el navegador del cliente?",
+  "opciones": [
+    "A. Java Servlet",
+    "B. JSP",
+    "C. JavaScript",
+    "D. ASP.NET"
+  ],
+  "correcta": 2,
+  "explicacion": "JavaScript es ejecutado directamente por el navegador.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones es correcta respecto a los Applets de Java?",
+  "opciones": [
+    "A. Se ejecutan en el servidor.",
+    "B. Se ejecutan en el navegador del cliente.",
+    "C. Son un tipo de base de datos.",
+    "D. Son un protocolo de comunicación."
+  ],
+  "correcta": 1,
+  "explicacion": "Los applets son programas Java que se ejecutaban en el navegador.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente ActiveX?",
+  "opciones": [
+    "A. Es una tecnología cliente que permite ejecutar componentes en el navegador.",
+    "B. Es un lenguaje de marcado.",
+    "C. Es un protocolo de red.",
+    "D. Es un sistema gestor de bases de datos."
+  ],
+  "correcta": 0,
+  "explicacion": "ActiveX permite ejecutar componentes en el cliente (principalmente en Internet Explorer).",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes tecnologías ha quedado obsoleta en el desarrollo web moderno?",
+  "opciones": [
+    "A. JavaScript",
+    "B. CSS",
+    "C. Adobe Flash",
+    "D. HTML"
+  ],
+  "correcta": 2,
+  "explicacion": "Adobe Flash ha quedado obsoleto y ha sido sustituido por tecnologías modernas como HTML5.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "¿Cuál de las siguientes tecnologías es un framework de CSS utilizado en el desarrollo front-end?",
+  "opciones": [
+    "A. React",
+    "B. Angular",
+    "C. Bootstrap",
+    "D. Node.js"
+  ],
+  "correcta": 2,
+  "explicacion": "Bootstrap es un framework de CSS que facilita el diseño de interfaces web.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Librería JS.",
+    "B": "Incorrecta. Framework JS.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Back-end."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes opciones corresponde a una librería de JavaScript utilizada en el desarrollo front-end?",
+  "opciones": [
+    "A. React",
+    "B. Spring",
+    "C. Django",
+    "D. Hibernate"
+  ],
+  "correcta": 0,
+  "explicacion": "React es una librería JavaScript para construir interfaces de usuario.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. Backend Java.",
+    "C": "Incorrecta. Backend Python.",
+    "D": "Incorrecta. Persistencia."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes tecnologías se utiliza principalmente para el desarrollo de aplicaciones web front-end basadas en componentes?",
+  "opciones": [
+    "A. Angular",
+    "B. MySQL",
+    "C. PHP",
+    "D. Oracle"
+  ],
+  "correcta": 0,
+  "explicacion": "Angular es un framework front-end basado en componentes.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes tecnologías pertenece al desarrollo front-end y permite la creación de interfaces dinámicas?",
+  "opciones": [
+    "A. Vue.js",
+    "B. ASP.NET",
+    "C. PostgreSQL",
+    "D. Java EE"
+  ],
+  "correcta": 0,
+  "explicacion": "Vue.js es un framework front-end para construir interfaces dinámicas.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes tecnologías ha sido ampliamente utilizada en el pasado para contenido multimedia en el navegador pero actualmente está obsoleta?",
+  "opciones": [
+    "A. HTML5",
+    "B. CSS3",
+    "C. Adobe Flash",
+    "D. JavaScript"
+  ],
+  "correcta": 2,
+  "explicacion": "Adobe Flash fue muy usado pero hoy está completamente obsoleto.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes tecnologías se ejecuta en el navegador del cliente y fue utilizada para aplicaciones Java embebidas?",
+  "opciones": [
+    "A. Servlet",
+    "B. JSP",
+    "C. Applets",
+    "D. Spring"
+  ],
+  "correcta": 2,
+  "explicacion": "Los applets eran programas Java que se ejecutaban en el navegador.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente el protocolo SOAP?",
+  "opciones": [
+    "A. Es un lenguaje de programación.",
+    "B. Es un protocolo para intercambio de mensajes estructurados basado en XML.",
+    "C. Es un estilo arquitectónico basado en HTTP.",
+    "D. Es una base de datos distribuida."
+  ],
+  "correcta": 1,
+  "explicacion": "SOAP es un protocolo de mensajería basado en XML utilizado en servicios web.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta. Eso es REST.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de los siguientes elementos forma parte de la estructura de un mensaje SOAP?",
+  "opciones": [
+    "A. Header HTTP obligatorio",
+    "B. Envelope",
+    "C. URI",
+    "D. JSON Body"
+  ],
+  "correcta": 1,
+  "explicacion": "El mensaje SOAP se estructura en Envelope, Header (opcional) y Body.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones es correcta respecto a REST?",
+  "opciones": [
+    "A. Es un protocolo basado en XML.",
+    "B. Es un lenguaje de programación.",
+    "C. Es un estilo arquitectónico basado en HTTP.",
+    "D. Solo permite comunicación síncrona."
+  ],
+  "correcta": 2,
+  "explicacion": "REST es un estilo arquitectónico que utiliza HTTP para operar sobre recursos.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál es una característica fundamental de la arquitectura REST?",
+  "opciones": [
+    "A. Mantiene el estado de las sesiones en el servidor.",
+    "B. Es stateless, no mantiene estado entre peticiones.",
+    "C. Solo utiliza XML para el intercambio de datos.",
+    "D. Requiere un servidor central de descubrimiento."
+  ],
+  "correcta": 1,
+  "explicacion": "REST es stateless, cada petición es independiente.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes opciones representa correctamente métodos HTTP utilizados en REST?",
+  "opciones": [
+    "A. SEND, RECEIVE, UPDATE, DELETE",
+    "B. GET, POST, PUT, DELETE",
+    "C. OPEN, CLOSE, EXECUTE",
+    "D. SELECT, INSERT, UPDATE"
+  ],
+  "correcta": 1,
+  "explicacion": "REST utiliza métodos HTTP estándar como GET, POST, PUT y DELETE.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes diferencias entre SOAP y REST es correcta?",
+  "opciones": [
+    "A. SOAP es más ligero que REST.",
+    "B. REST es un protocolo y SOAP un estilo arquitectónico.",
+    "C. SOAP utiliza XML de forma obligatoria y REST no.",
+    "D. REST solo puede utilizar XML."
+  ],
+  "correcta": 2,
+  "explicacion": "SOAP requiere XML, mientras REST puede usar varios formatos.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes características corresponde a SOAP frente a REST?",
+  "opciones": [
+    "A. Mayor flexibilidad y ligereza.",
+    "B. Uso obligatorio de JSON.",
+    "C. Mayor formalidad y estructura estricta.",
+    "D. Stateless por definición."
+  ],
+  "correcta": 2,
+  "explicacion": "SOAP es más rígido y formal que REST.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones es correcta sobre el uso de formatos de datos en REST?",
+  "opciones": [
+    "A. Solo permite XML.",
+    "B. Solo permite JSON.",
+    "C. Permite múltiples formatos como JSON o XML.",
+    "D. No permite intercambio de datos."
+  ],
+  "correcta": 2,
+  "explicacion": "REST es flexible y permite múltiples formatos de representación.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "¿Cuál es la función principal de WSDL en los servicios web?",
+  "opciones": [
+    "A. Transportar mensajes entre aplicaciones.",
+    "B. Describir los servicios web y cómo acceder a ellos.",
+    "C. Registrar servicios web en un directorio.",
+    "D. Ejecutar lógica de negocio."
+  ],
+  "correcta": 1,
+  "explicacion": "WSDL describe qué hace un servicio, cómo usarlo y dónde encontrarlo.",
+  "analisis_opciones": {
+    "A": "Incorrecta. SOAP.",
+    "B": "Correcta.",
+    "C": "Incorrecta. UDDI.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En un documento WSDL, ¿qué elemento define las operaciones que puede realizar un servicio?",
+  "opciones": [
+    "A. types",
+    "B. message",
+    "C. portType",
+    "D. binding"
+  ],
+  "correcta": 2,
+  "explicacion": "portType define las operaciones disponibles del servicio.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Tipos de datos.",
+    "B": "Incorrecta. Mensajes.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Protocolo."
+  }
+},
+{
+  "pregunta": "¿Qué elemento de WSDL se utiliza para definir el protocolo y formato de los mensajes?",
+  "opciones": [
+    "A. service",
+    "B. binding",
+    "C. message",
+    "D. port"
+  ],
+  "correcta": 1,
+  "explicacion": "binding especifica cómo se comunican los mensajes (protocolo/formato).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de los siguientes elementos de WSDL define los tipos de datos utilizados?",
+  "opciones": [
+    "A. types",
+    "B. portType",
+    "C. binding",
+    "D. service"
+  ],
+  "correcta": 0,
+  "explicacion": "types define los tipos de datos usados en el servicio.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué tipo de operación en WSDL implica el envío de un mensaje sin esperar respuesta?",
+  "opciones": [
+    "A. request-response",
+    "B. solicit-response",
+    "C. one-way",
+    "D. notification"
+  ],
+  "correcta": 2,
+  "explicacion": "One-way implica envío sin respuesta.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál es la función principal de UDDI en los servicios web?",
+  "opciones": [
+    "A. Describir los servicios web.",
+    "B. Intercambiar mensajes entre aplicaciones.",
+    "C. Registrar y descubrir servicios web.",
+    "D. Ejecutar servicios web."
+  ],
+  "correcta": 2,
+  "explicacion": "UDDI permite registrar y localizar servicios web.",
+  "analisis_opciones": {
+    "A": "Incorrecta. WSDL.",
+    "B": "Incorrecta. SOAP.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En UDDI, ¿qué tipo de páginas contienen información técnica sobre los servicios?",
+  "opciones": [
+    "A. Páginas blancas",
+    "B. Páginas amarillas",
+    "C. Páginas verdes",
+    "D. Páginas azules"
+  ],
+  "correcta": 2,
+  "explicacion": "Las páginas verdes contienen detalles técnicos de los servicios.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Información básica.",
+    "B": "Incorrecta. Categorías.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué tipo de páginas en UDDI contienen información sobre la organización o empresa?",
+  "opciones": [
+    "A. Blancas",
+    "B. Amarillas",
+    "C. Verdes",
+    "D. Técnicas"
+  ],
+  "correcta": 0,
+  "explicacion": "Las páginas blancas contienen información básica de la empresa.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué tipo de páginas en UDDI clasifican los servicios por categorías?",
+  "opciones": [
+    "A. Blancas",
+    "B. Amarillas",
+    "C. Verdes",
+    "D. Técnicas"
+  ],
+  "correcta": 1,
+  "explicacion": "Las páginas amarillas clasifican servicios por categorías.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "¿Cuál es la función principal de WSDL en los servicios web?",
+  "opciones": [
+    "A. Transportar mensajes entre aplicaciones.",
+    "B. Describir los servicios web y cómo acceder a ellos.",
+    "C. Registrar servicios web en un directorio.",
+    "D. Ejecutar lógica de negocio."
+  ],
+  "correcta": 1,
+  "explicacion": "WSDL describe qué hace un servicio, cómo usarlo y dónde encontrarlo.",
+  "analisis_opciones": {
+    "A": "Incorrecta. SOAP.",
+    "B": "Correcta.",
+    "C": "Incorrecta. UDDI.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En un documento WSDL, ¿qué elemento define las operaciones que puede realizar un servicio?",
+  "opciones": [
+    "A. types",
+    "B. message",
+    "C. portType",
+    "D. binding"
+  ],
+  "correcta": 2,
+  "explicacion": "portType define las operaciones disponibles del servicio.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Tipos de datos.",
+    "B": "Incorrecta. Mensajes.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Protocolo."
+  }
+},
+{
+  "pregunta": "¿Qué elemento de WSDL se utiliza para definir el protocolo y formato de los mensajes?",
+  "opciones": [
+    "A. service",
+    "B. binding",
+    "C. message",
+    "D. port"
+  ],
+  "correcta": 1,
+  "explicacion": "binding especifica cómo se comunican los mensajes (protocolo/formato).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de los siguientes elementos de WSDL define los tipos de datos utilizados?",
+  "opciones": [
+    "A. types",
+    "B. portType",
+    "C. binding",
+    "D. service"
+  ],
+  "correcta": 0,
+  "explicacion": "types define los tipos de datos usados en el servicio.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué tipo de operación en WSDL implica el envío de un mensaje sin esperar respuesta?",
+  "opciones": [
+    "A. request-response",
+    "B. solicit-response",
+    "C. one-way",
+    "D. notification"
+  ],
+  "correcta": 2,
+  "explicacion": "One-way implica envío sin respuesta.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál es la función principal de UDDI en los servicios web?",
+  "opciones": [
+    "A. Describir los servicios web.",
+    "B. Intercambiar mensajes entre aplicaciones.",
+    "C. Registrar y descubrir servicios web.",
+    "D. Ejecutar servicios web."
+  ],
+  "correcta": 2,
+  "explicacion": "UDDI permite registrar y localizar servicios web.",
+  "analisis_opciones": {
+    "A": "Incorrecta. WSDL.",
+    "B": "Incorrecta. SOAP.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En UDDI, ¿qué tipo de páginas contienen información técnica sobre los servicios?",
+  "opciones": [
+    "A. Páginas blancas",
+    "B. Páginas amarillas",
+    "C. Páginas verdes",
+    "D. Páginas azules"
+  ],
+  "correcta": 2,
+  "explicacion": "Las páginas verdes contienen detalles técnicos de los servicios.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Información básica.",
+    "B": "Incorrecta. Categorías.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué tipo de páginas en UDDI contienen información sobre la organización o empresa?",
+  "opciones": [
+    "A. Blancas",
+    "B. Amarillas",
+    "C. Verdes",
+    "D. Técnicas"
+  ],
+  "correcta": 0,
+  "explicacion": "Las páginas blancas contienen información básica de la empresa.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué tipo de páginas en UDDI clasifican los servicios por categorías?",
+  "opciones": [
+    "A. Blancas",
+    "B. Amarillas",
+    "C. Verdes",
+    "D. Técnicas"
+  ],
+  "correcta": 1,
+  "explicacion": "Las páginas amarillas clasifican servicios por categorías.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+]
+
+
+

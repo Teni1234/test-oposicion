@@ -1,0 +1,1880 @@
+[
+  {
+    "pregunta": "1. ¿Cuál de las siguientes opciones representa una librería para gestión de logs en aplicaciones desarrolladas en la plataforma .NET?",
+    "opciones": ["A. Apache Log4C#.", "B. Apache Logging4NET.", "C. Apache Log4NET.", "D. Apache LoggedForNET."],
+    "correcta": 2,
+    "explicacion": "Log4NET es una librería oficial de Apache para logging en .NET.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No existe como librería oficial de Apache.",
+      "B": "Incorrecta. No corresponde a ningún proyecto real de Apache.",
+      "C": "Correcta. Log4NET es una librería ampliamente utilizada para gestión de logs en .NET.",
+      "D": "Incorrecta. Nombre inventado, no es una librería real."
+    }
+  },
+  {
+    "pregunta": "2. La interfaz de usuario en la que se escriben las órdenes con una sintaxis y mandatos determinados y suele utilizarse por usuarios experimentados es una interfaz:",
+    "opciones": ["A. De línea de comandos (CUI).", "B. Gráfica (GUI).", "C. De menús.", "D. Orientada a objetos (OOUI)."],
+    "correcta": 0,
+    "explicacion": "Las interfaces de línea de comandos requieren introducir órdenes manualmente.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la interfaz basada en texto donde el usuario introduce comandos.",
+      "B": "Incorrecta. GUI es gráfica, basada en ventanas y elementos visuales.",
+      "C": "Incorrecta. Es navegación mediante menús, no comandos directos.",
+      "D": "Incorrecta. No es un tipo estándar de interfaz de usuario."
+    }
+  },
+  {
+    "pregunta": "3. Son palabras reservadas del lenguaje de programación Java:",
+    "opciones": ["A. assert, boolean, explicit, public, this.", "B. abstract, float, include, private, goto.", "C. assert, boolean, return, public, this.", "D. abstract, float, out, private, goto."],
+    "correcta": 2,
+    "explicacion": "Java tiene un conjunto fijo de palabras reservadas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 'explicit' no es palabra reservada en Java.",
+      "B": "Incorrecta. 'include' no existe en Java.",
+      "C": "Correcta. Todas son palabras reservadas válidas.",
+      "D": "Incorrecta. 'out' no es palabra reservada."
+    }
+  },
+  {
+    "pregunta": "4. De las siguientes ¿cuál es la última más reciente de .NET ?",
+    "opciones": ["A. .NET 9.0", "B. .NET 10.0", "C. .NET 8.0", "D. .NET 2025"],
+    "correcta": 0,
+    "explicacion": ".NET 9.0 es la versión más reciente disponible en ese contexto.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la versión más reciente entre las opciones dadas.",
+      "B": "Incorrecta. No existe oficialmente aún.",
+      "C": "Incorrecta. Es anterior a .NET 9.",
+      "D": "Incorrecta. No sigue nomenclatura real."
+    }
+  },
+  {
+    "pregunta": "5. Indique cuál de las siguientes NO es una librería de Java proporcionada por la Apache Foundation:",
+    "opciones": ["A. Log4J", "B. Httpclient", "C. Commons-io", "D. Mockete"],
+    "correcta": 3,
+    "explicacion": "Mockete no es una librería de Apache.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una librería de logging de Apache.",
+      "B": "Incorrecta. Apache HttpClient es una librería oficial.",
+      "C": "Incorrecta. Commons IO pertenece a Apache.",
+      "D": "Correcta. No es una librería reconocida de Apache."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál de los siguientes objetivos no es un principio básico en el diseño del interfaz de usuario?",
+    "opciones": ["A. Ocultar al usuario ocasional los entresijos técnicos.", "B. Permitir que la interacción del usuario se pueda intenumpir y deshacer.", "C. Aligerar la interacción a medida que avanza el nivel de conocimiento y permitir personalizar la interacción.", "D. Garantizar la autenticación del usuario mediante sistemas criptográficos."],
+    "correcta": 3,
+    "explicacion": "La autenticación pertenece a seguridad, no a diseño de interfaz.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un principio de usabilidad (ocultar complejidad).",
+      "B": "Incorrecta. Es clave permitir deshacer acciones.",
+      "C": "Incorrecta. Mejora la experiencia del usuario.",
+      "D": "Correcta. Es un objetivo de seguridad, no de interfaz."
+    }
+  },
+  {
+    "pregunta": "7. ¿Cuál de las siguientes opciones sobre ADO.NET y los proveedores de datos del framework .NET es FALSA?",
+    "opciones": ["A. ADO.NET permite acceder a datos alojados en XML.", "B. El objeto Connection es el que proporciona conectividad con las distintas fuentes de datos.", "C. El objeto Operation permite invocar peticiones para recuperación y/o modificación de información sobre la fuente", "D. Los objetos de tipo DataSet están formados por una colección de objetos de tipo DataTable."],
+    "correcta": 2,
+    "explicacion": "No existe un objeto llamado 'Operation' en ADO.NET.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es cierto, ADO.NET puede trabajar con XML.",
+      "B": "Incorrecta. Connection gestiona la conexión.",
+      "C": "Correcta. Ese objeto no existe en ADO.NET.",
+      "D": "Incorrecta. DataSet contiene DataTables."
+    }
+  },
+  {
+    "pregunta": "8. En la plataforma .NET, ¿cuál es la unidad mínima de ejecución en el CLR?",
+    "opciones": ["A. Assembly", "B. MSIL", "C. Manifest", "D. Entity"],
+    "correcta": 0,
+    "explicacion": "El assembly es la unidad básica de despliegue y ejecución.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la unidad mínima ejecutable en .NET.",
+      "B": "Incorrecta. Es el lenguaje intermedio.",
+      "C": "Incorrecta. Es parte del assembly.",
+      "D": "Incorrecta. No aplica."
+    }
+  },
+  {
+    "pregunta": "9. ¿Cuál es la sintaxis para definir el inicio de un comentarlo en JSP?",
+    "opciones": ["A. <%--", "B. < !%--", "C. < jsp --", "D. < !jsp --"],
+    "correcta": 0,
+    "explicacion": "Los comentarios JSP usan <%-- --%>.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la sintaxis válida de comentario JSP.",
+      "B": "Incorrecta. Sintaxis inválida.",
+      "C": "Incorrecta. No existe.",
+      "D": "Incorrecta. No válida."
+    }
+  },
+  {
+    "pregunta": "10. Java, como algunos otros lenguajes de programación, permite dinámicamente limpiar o eliminar los objetos no usados o referenciados. El mecanismo que realiza esta función en Java se denomina:",
+    "opciones": ["A. Trash busher.", "B. Dust binner.", "C. Debbuger aitor.", "D. Garbage collector."],
+    "correcta": 3,
+    "explicacion": "El Garbage Collector libera memoria automáticamente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No existe.",
+      "B": "Incorrecta. No existe.",
+      "C": "Incorrecta. No es un concepto válido.",
+      "D": "Correcta. Es el mecanismo real de gestión de memoria."
+    }
+  }
+,
+  {
+    "pregunta": "11. Dentro de la programación orientada a objetos, la característica que permite al os valores de diferentes tipos de datos ser manejados usando una interfaz uniforme se denomina:",
+    "opciones": ["A. Herencia.", "B. Encapsuladón.", "C. Polimorfismo.", "D. Instanciación."],
+    "correcta": 2,
+    "explicacion": "El polimorfismo permite tratar objetos de distintos tipos mediante una interfaz común.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Herencia es reutilización de código entre clases.",
+      "B": "Incorrecta. Encapsulación oculta datos internos.",
+      "C": "Correcta. Permite usar distintos tipos bajo una misma interfaz.",
+      "D": "Incorrecta. Es el proceso de crear objetos."
+    }
+  },
+  {
+    "pregunta": "12. En un fragmento de código en Java se desea recorrer la colección \"Collection plantas”, llamando al método \"regar ()\" de cada planta miembro de la colección. Indique cuál de los siguientes fragmentos cumple con el enunciado:",
+    "opciones": ["A. for (Planta planta=plantas(0); planta < plantas.Length;planta++) planta.regar();", "B. for (Planta planta :plantas) planta.regar();", "C. foreach (Planta planta in-plantas) planta.regar();", "D. for (int p=0; p < plantas.Count;p++) plantas(p).regar();"],
+    "correcta": 1,
+    "explicacion": "Java usa el for-each con ':' para recorrer colecciones.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sintaxis incorrecta en Java.",
+      "B": "Correcta. Es el bucle for-each válido en Java.",
+      "C": "Incorrecta. Sintaxis de C#, no de Java.",
+      "D": "Incorrecta. Sintaxis incorrecta para acceso a colección."
+    }
+  },
+  {
+    "pregunta": "13. En lo que respecta a Java:",
+    "opciones": ["A. Soporta herencia simple y polimorfismo.", "B. Soporta herencia múltiple y polimorfismo.", "C. Soporta herencia múltiple y no soporta polimorfismo.", "D. Soporta herencia simple y no soporta polimorfismo."],
+    "correcta": 0,
+    "explicacion": "Java permite herencia simple de clases y polimorfismo.",
+    "analisis_opciones": {
+      "A": "Correcta. Java no permite herencia múltiple de clases pero sí polimorfismo.",
+      "B": "Incorrecta. No permite herencia múltiple de clases.",
+      "C": "Incorrecta. Sí soporta polimorfismo.",
+      "D": "Incorrecta. Sí soporta polimorfismo."
+    }
+  },
+  {
+    "pregunta": "14. ¿Qué es .NET MAUI?",
+    "opciones": ["A. .NET MAUI es un marco multiplataforma para crear aplicaciones móviles y de escritorio nativas con C# y XAML.", "B. Es una plataforma para desarrollar aplicaciones en Java.", "C. Es una herramienta de pruebas automatizadas.", "D. Es una plataforma para desarrollar aplicaciones móviles que se puede ejecutar en sistema Android solamente."],
+    "correcta": 0,
+    "explicacion": ".NET MAUI permite crear apps multiplataforma con un único código base.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el framework multiplataforma oficial de .NET.",
+      "B": "Incorrecta. No está relacionado con Java.",
+      "C": "Incorrecta. No es herramienta de testing.",
+      "D": "Incorrecta. No es solo Android, es multiplataforma."
+    }
+  },
+  {
+    "pregunta": "15. Indique qué se imprime por pantalla con el siguiente código Java: for(int i= 10, j = 1; i> 0; i=i-j) { System.out.print(i); j++; }",
+    "opciones": ["A. 10873", "B. 10963", "C. 10851", "D. 10751"],
+    "correcta": 0,
+    "explicacion": "El valor de i se reduce progresivamente restando j que aumenta en cada iteración.",
+    "analisis_opciones": {
+      "A": "Correcta. Secuencia: 10, 9, 7, 3.",
+      "B": "Incorrecta. No coincide con decremento progresivo.",
+      "C": "Incorrecta. No respeta el patrón de resta.",
+      "D": "Incorrecta. Valores erróneos."
+    }
+  },
+  {
+    "pregunta": "16. En JAVA, la cualidad de los lenguajes orientados a objetos denominada herencia, se implementa mediante:",
+    "opciones": ["A. “extends” para herencia simple e “implements” para herencia múltiple.", "B. “extends” para herencia simple y múltiple.", "C. “extends” para herencia simple y “inherits” para herencia múltiple.", "D. “extends” para herencia simple y “uses” para múltiple."],
+    "correcta": 0,
+    "explicacion": "Java usa extends para clases e implements para interfaces.",
+    "analisis_opciones": {
+      "A": "Correcta. Extends (clases) e implements (interfaces múltiples).",
+      "B": "Incorrecta. No hay herencia múltiple de clases.",
+      "C": "Incorrecta. 'inherits' no existe en Java.",
+      "D": "Incorrecta. 'uses' no existe."
+    }
+  },
+  {
+    "pregunta": "17. En la expresión Java: !(a==b) && ((b<c) || (a>b)), siendo a=4 y b=6, ¿qué valor de los siguientes tendría que tener c para que el resultado de estas operaciones lógicas fuera true?",
+    "opciones": ["A. c=2", "B. c=4", "C. c=6", "D. c=8"],
+    "correcta": 3,
+    "explicacion": "Se necesita que (b<c) sea verdadero para que toda la expresión lo sea.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 6<2 es falso.",
+      "B": "Incorrecta. 6<4 es falso.",
+      "C": "Incorrecta. 6<6 es falso.",
+      "D": "Correcta. 6<8 es verdadero."
+    }
+  },
+  {
+    "pregunta": "18. En el entorno de programación .Net, indique que es un NuGet:",
+    "opciones": ["A. Una biblioteca de clases base.", "B. Un administrador de paquetes.", "C. Una implementación de .Net.", "D. Un entorno de ejecución."],
+    "correcta": 1,
+    "explicacion": "NuGet gestiona paquetes y dependencias en .NET.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es una biblioteca en sí.",
+      "B": "Correcta. Es el gestor de paquetes oficial.",
+      "C": "Incorrecta. No es implementación del framework.",
+      "D": "Incorrecta. No es runtime."
+    }
+  },
+  {
+    "pregunta": "19. En el lenguaje Java, se define applet como:",
+    "opciones": ["A. Componente de la parte del servidor.", "B. Programa incrustado en otras aplicaciones.", "C. Biblioteca gráfica que forma parte de las Java Foundation Classes.", "D. Interfaz de programación de aplicaciones."],
+    "correcta": 1,
+    "explicacion": "Un applet es un programa Java incrustado (históricamente en navegadores).",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es componente servidor.",
+      "B": "Correcta. Es un programa incrustado.",
+      "C": "Incorrecta. No es biblioteca.",
+      "D": "Incorrecta. No es API."
+    }
+  },
+  {
+    "pregunta": "20. Indique cuál de las siguientes afirmaciones es FALSA en relación con la Instrucción switch en JAVA:",
+    "opciones": ["A. switch nos permite repetir la ejecución de una serie de instrucciones mientras que se cumpla la expresión condicional o aparezca una sentencia break.", "B. switch es equivalente a programar usando sentencias if anidadas.", "C. La sentencia break asociada al último case (o default) no es necesaria.", "D. La expresión asociada a la instrucción switch debe generar valores tipo char, byte, short o int."],
+    "correcta": 0,
+    "explicacion": "switch no es un bucle, no repite ejecución.",
+    "analisis_opciones": {
+      "A": "Correcta. Es falsa porque describe un bucle, no un switch.",
+      "B": "Incorrecta. Es equivalente a múltiples if.",
+      "C": "Incorrecta. No es obligatorio el break final.",
+      "D": "Incorrecta. Tipos válidos para switch."
+    }
+  }
+,
+  {
+    "pregunta": "21. El ensamblado es la unidad de implementación en .NET. ¿Cuál de los siguientes elementos no forma parte de un ensamblado?",
+    "opciones": ["A. El manifiesto", "B. Los metadatos", "C. El código de lenguaje intermedio de Microsoft", "D. CLS (Common Language Specification)."],
+    "correcta": 3,
+    "explicacion": "El CLS es una especificación, no forma parte física del ensamblado.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El manifiesto sí forma parte del ensamblado.",
+      "B": "Incorrecta. Los metadatos describen el contenido del ensamblado.",
+      "C": "Incorrecta. El MSIL es el código que contiene el ensamblado.",
+      "D": "Correcta. El CLS es una norma, no un componente del ensamblado."
+    }
+  },
+  {
+    "pregunta": "22. Una diferencia entre las APIs de Java, SAX y JDOM, es:",
+    "opciones": ["A. SAX permite acceso directo a los elementos del XML, con JDOM el acceso es secuencial.", "B. SAX requiere más memoria para procesar el documento XML que JDOM.", "C. JDOM es recomendable para la edición o cambios en documentos XML, SAX para la lectura de documentos XML.", "D. JDOM lanza un evento cuando encuentra un elemento en el documento XML, SAX no lanza eventos."],
+    "correcta": 2,
+    "explicacion": "JDOM carga el XML en memoria (edición), SAX es secuencial (lectura).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Está invertido: SAX es secuencial, JDOM permite acceso directo.",
+      "B": "Incorrecta. SAX usa menos memoria que JDOM.",
+      "C": "Correcta. JDOM permite modificar, SAX es eficiente para lectura.",
+      "D": "Incorrecta. SAX es basado en eventos, JDOM no."
+    }
+  },
+  {
+    "pregunta": "23. Señale cuál de las siguientes herramientas de software libre se utiliza para realizar pruebas de carga y de estrés, permitiendo simular escenarios de concurrencia de usuarios:",
+    "opciones": ["A. Cactus", "B. Mockito", "C. JMeter", "D. Foglight"],
+    "correcta": 2,
+    "explicacion": "JMeter es la herramienta estándar para pruebas de carga.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es para testing de servlets.",
+      "B": "Incorrecta. Es para mocks en testing unitario.",
+      "C": "Correcta. Permite simular múltiples usuarios concurrentes.",
+      "D": "Incorrecta. Es herramienta de monitorización."
+    }
+  },
+  {
+    "pregunta": "24. A la hora de diseñar interfaces de usuario basados en menús, una premisa de máxima importancia es que:",
+    "opciones": ["A. Se empleen verbos de acción en participio.", "B. Se empleen verbos de acción en el menor número de casos posible.", "C. Se utilicen verbos de acción en gerundio.", "D. Se utilicen verbos de acción en infinitivo."],
+    "correcta": 3,
+    "explicacion": "El infinitivo es claro y estándar en interfaces.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es forma estándar en interfaces.",
+      "B": "Incorrecta. Los verbos son importantes para claridad.",
+      "C": "Incorrecta. Gerundio no es recomendable.",
+      "D": "Correcta. Forma clara: 'Guardar', 'Abrir', etc."
+    }
+  },
+  {
+    "pregunta": "25. En la declaración de una clase en java, ¿mediante qué cláusula es posible definir un listado de uno o varios interfaces para la clase en cuestión?",
+    "opciones": ["A. Mediante la cláusula 'interfaces'.", "B. Mediante la cláusula 'declares'.", "C. Mediante la cláusula 'implements'.", "D. En Java no es posible declarar una clase con más de un interface."],
+    "correcta": 2,
+    "explicacion": "Java usa implements para interfaces.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No existe.",
+      "B": "Incorrecta. No existe.",
+      "C": "Correcta. Permite implementar uno o varios interfaces.",
+      "D": "Incorrecta. Sí se pueden implementar múltiples interfaces."
+    }
+  },
+  {
+    "pregunta": "26. ¿Cuál de las siguientes opciones NO representa un tipo de datos primitivo de Java?",
+    "opciones": ["A. short.", "B. simple.", "C. long.", "D. double."],
+    "correcta": 1,
+    "explicacion": "'simple' no es tipo primitivo en Java.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Tipo primitivo válido.",
+      "B": "Correcta. No existe como tipo primitivo.",
+      "C": "Incorrecta. Tipo primitivo válido.",
+      "D": "Incorrecta. Tipo primitivo válido."
+    }
+  },
+  {
+    "pregunta": "27. En JAVA un método declarado como “final”:",
+    "opciones": ["A. Existe sólo en el ámbito local de la función.", "B. Unicamente puede ser llamado por la superclase que lo implementa.", "C. No podrá ser sobrescrito en clases heredadas.", "D. Evita que el método pueda acceder a las variables de instancia no declaradas como “final”."],
+    "correcta": 2,
+    "explicacion": "Un método final no puede ser sobrescrito.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No define ámbito.",
+      "B": "Incorrecta. No limita quién lo llama.",
+      "C": "Correcta. Impide override en subclases.",
+      "D": "Incorrecta. No afecta acceso a variables."
+    }
+  },
+  {
+    "pregunta": "28. En el contexto de Java EE (ahora Jakarta EE), ¿en qué paquete se encuentran las clases e interfaces de Enterprise JavaBeans?",
+    "opciones": ["A. java.ejb2", "B. javax.ejb", "C. javax.persistence.ejb", "D. java.transaction.ejb"],
+    "correcta": 1,
+    "explicacion": "EJB pertenece al paquete javax.ejb.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No existe.",
+      "B": "Correcta. Paquete oficial de EJB.",
+      "C": "Incorrecta. Mezcla incorrecta.",
+      "D": "Incorrecta. No existe."
+    }
+  },
+  {
+    "pregunta": "29. La interfaz de usuario de un programa, es un conjunto que abarca elementos de:",
+    "opciones": ["A. El software y su documentación.", "B. El software, el hardware y la documentación.", "C. Las pantallas, los formularios y los informes.", "D. Las pantallas, los formularios y el navegador."],
+    "correcta": 1,
+    "explicacion": "Incluye todos los elementos de interacción usuario-sistema.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Falta hardware.",
+      "B": "Correcta. Incluye todo el entorno de interacción.",
+      "C": "Incorrecta. Demasiado limitado.",
+      "D": "Incorrecta. No siempre hay navegador."
+    }
+  },
+  {
+    "pregunta": "30. En relación con las plataformas .Net framework, el CLR (Common Lenguaje Runtine) es el motor de ejecución de las aplicaciones .NET. ¿Cuál de las siguientes no es una función del CLR?",
+    "opciones": ["A. Es el encargado de generar el lenguaje máquina.", "B. Elimina de la memoria objetos no utilizados.", "C. Se encarga de la seguridad del código que se ejecuta.", "D. Todas las anteriores son funciones del CLR."],
+    "correcta": 3,
+    "explicacion": "El CLR realiza todas esas funciones.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El CLR compila a código máquina (JIT).",
+      "B": "Incorrecta. Gestiona memoria (GC).",
+      "C": "Incorrecta. Gestiona seguridad.",
+      "D": "Correcta. Todas son funciones del CLR."
+    }
+  }
+,
+  {
+    "pregunta": "31. ¿Cuál de las siguientes opciones representa una librería para gestión de logs en aplicaciones desarrolladas en la plataforma .NET?",
+    "opciones": ["A. Apache Log4C#.", "B. Apache Logging4NET.", "C. Apache Log4NET.", "D. Apache LoggedForNET."],
+    "correcta": 2,
+    "explicacion": "Log4NET es la librería estándar de Apache para logging en .NET.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No existe como librería oficial.",
+      "B": "Incorrecta. Nombre incorrecto.",
+      "C": "Correcta. Log4NET es una librería real y muy usada.",
+      "D": "Incorrecta. No existe."
+    }
+  },
+  {
+    "pregunta": "32. Trabajando sobre la plataforma Entity Framework de .NET, lcuál de las siguientes opciones representa la extensión de los ficheros en los que se define el Entity Data Model de ADO.NET?",
+    "opciones": ["A. .edmx", "B. .edms", "C. .edm", "D. .edma"],
+    "correcta": 0,
+    "explicacion": ".edmx es la extensión usada para modelos EDM en Entity Framework.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el formato real de Entity Data Model.",
+      "B": "Incorrecta. No existe.",
+      "C": "Incorrecta. No es el formato completo usado.",
+      "D": "Incorrecta. No existe."
+    }
+  },
+  {
+    "pregunta": "33. En Java, la estructura de control que al menos siempre se ejecuta una vez es:",
+    "opciones": ["A. while.", "B. for", "C. do... while.", "D. switch."],
+    "correcta": 2,
+    "explicacion": "do...while ejecuta el bloque antes de evaluar la condición.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Puede no ejecutarse.",
+      "B": "Incorrecta. Puede no ejecutarse.",
+      "C": "Correcta. Siempre ejecuta al menos una vez.",
+      "D": "Incorrecta. No es un bucle."
+    }
+  },
+  {
+    "pregunta": "34. ¿Qué código ejecuta una Máquina Virtual Java?",
+    "opciones": ["A. Código Máquina.", "B. Lenguaje de alto nivel.", "C. Bytecode.", "D. JCL."],
+    "correcta": 2,
+    "explicacion": "La JVM ejecuta bytecode generado por el compilador Java.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Lo ejecuta la CPU, no la JVM.",
+      "B": "Incorrecta. Primero se compila a bytecode.",
+      "C": "Correcta. Es el formato ejecutado por la JVM.",
+      "D": "Incorrecta. No corresponde."
+    }
+  },
+  {
+    "pregunta": "35. ¿Cuál de entre las siguientes no es una característica de Java?",
+    "opciones": ["A. Independencia de la plataforma.", "B. Orientación a objetos.", "C. Existencia del Recolector de basura.", "D. Destinado a ejecutarse únicamente en servidores."],
+    "correcta": 3,
+    "explicacion": "Java no está limitado a servidores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una de sus principales características.",
+      "B": "Incorrecta. Es orientado a objetos.",
+      "C": "Incorrecta. Tiene garbage collector.",
+      "D": "Correcta. Java se usa en múltiples entornos, no solo servidores."
+    }
+  },
+  {
+    "pregunta": "36. En programación orientada a objetos, la capacidad que tienen los objetos de una clase de responder al mismo mensaje de distinta manera en función de los parámetros durante su invocación, se denomina:",
+    "opciones": ["A. Herencia", "B. Polimorfismo", "C. Encapsulación", "D. Abstracción"],
+    "correcta": 1,
+    "explicacion": "El polimorfismo permite múltiples comportamientos para una misma operación.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es reutilización entre clases.",
+      "B": "Correcta. Describe exactamente ese comportamiento.",
+      "C": "Incorrecta. Oculta información interna.",
+      "D": "Incorrecta. Simplifica representación."
+    }
+  },
+  {
+    "pregunta": "37. En ASP.NET cuál de las siguientes alternativas NO representa un modo válido de almacenamiento de los datos de sesión:",
+    "opciones": ["A. inProc", "B. StateServer", "C. SqlServer", "D. AppServer"],
+    "correcta": 3,
+    "explicacion": "AppServer no es un modo de sesión en ASP.NET.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Modo válido en memoria.",
+      "B": "Incorrecta. Modo válido fuera de proceso.",
+      "C": "Incorrecta. Modo válido en base de datos.",
+      "D": "Correcta. No existe como opción."
+    }
+  },
+  {
+    "pregunta": "38. Seleccione la respuesta correcta sobre .NET:",
+    "opciones": ["A. .NET es un marco multiplataforma gratuito de Google para compilar aplicaciones y servicios en la nube.", "B. .NET es un proyecto de código abierto.", "C. .NET sirve exclusivamente para desarrollar aplicaciones móviles.", "D. .NET admite un amplio rango de lenguajes de programación, a excepción de C#"],
+    "correcta": 1,
+    "explicacion": ".NET es open source y desarrollado por Microsoft.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es de Microsoft, no de Google.",
+      "B": "Correcta. Es open source actualmente.",
+      "C": "Incorrecta. Sirve para muchos tipos de aplicaciones.",
+      "D": "Incorrecta. C# es el principal lenguaje."
+    }
+  },
+  {
+    "pregunta": "39. En JAVA, siendo x=6 e y=3 (ambas variables de tipo int), la operación x^y da como resultado:",
+    "opciones": ["A. 216", "B. 63", "C. 3", "D. 5"],
+    "correcta": 3,
+    "explicacion": "En Java ^ es XOR (6 XOR 3 = 5).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería potencia, no XOR.",
+      "B": "Incorrecta. Resultado erróneo.",
+      "C": "Incorrecta. Resultado erróneo.",
+      "D": "Correcta. XOR bit a bit da 5."
+    }
+  },
+  {
+    "pregunta": "40. ¿Cuál de las siguientes es una palabra reservada en programación Java SE 8?",
+    "opciones": ["A. avoid", "B. inherits", "C. end", "D. enum"],
+    "correcta": 3,
+    "explicacion": "'enum' es palabra reservada en Java.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No existe.",
+      "B": "Incorrecta. No existe.",
+      "C": "Incorrecta. No es palabra reservada.",
+      "D": "Correcta. Forma parte del lenguaje."
+    }
+  }
+,
+  {
+    "pregunta": "41. En Java, el operador == es:",
+    "opciones": ["A. Un operador aritmético.", "B. Un operador relacional.", "C. Un operador de asignación.", "D. Un operador a nivel de bit."],
+    "correcta": 1,
+    "explicacion": "El operador == compara igualdad entre valores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No realiza operaciones matemáticas.",
+      "B": "Correcta. Es un operador relacional de comparación.",
+      "C": "Incorrecta. El operador de asignación es =.",
+      "D": "Incorrecta. No es operador bit a bit."
+    }
+  },
+  {
+    "pregunta": "42. En cuanto al diseño de interfaces, no es un criterio de \"usabilidad\":",
+    "opciones": ["A. La sencillez y facilidad de uso.", "B. La reversibilidad y control de errores.", "C. La Ley de Fitt.", "D. El diseño centrado en el dato."],
+    "correcta": 3,
+    "explicacion": "El diseño centrado en el dato no es un principio de usabilidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un principio básico de usabilidad.",
+      "B": "Incorrecta. Es fundamental en UX.",
+      "C": "Incorrecta. Es una ley clave en interacción humano-computador.",
+      "D": "Correcta. No pertenece a criterios de usabilidad."
+    }
+  },
+  {
+    "pregunta": "43. ¿Qué es ADO.NET?",
+    "opciones": ["A. La web oficial de la Asociación de Deportes Olímpicos.", "B. Un componente de Java para omitir la arquitectura nativa (Architecture Denial and Overthrow) de aplicaciones .NET y poder utilizarlas como nativas en la arquitectura Jackarta EE.", "C. Un componente del framework .NET para comunicación con bases de datos.", "D. La versión para C# del entorno gráfico de desarrollo ADO Py, originalmente creado para Python."],
+    "correcta": 2,
+    "explicacion": "ADO.NET permite acceso y gestión de datos en .NET.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Respuesta absurda.",
+      "B": "Incorrecta. No tiene relación con Java.",
+      "C": "Correcta. Es la tecnología de acceso a datos en .NET.",
+      "D": "Incorrecta. No existe."
+    }
+  },
+  {
+    "pregunta": "44. Los diagramas de Jackson:",
+    "opciones": ["A. Permiten crear nuevos tipos de datos.", "B. Parten de las estructuras de datos de entrada-salida.", "C. Es una notación exclusivamente estática.", "D. Representan a los datos y sus atributos."],
+    "correcta": 1,
+    "explicacion": "Los diagramas de Jackson se basan en estructuras de datos de entrada/salida.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No crean tipos de datos.",
+      "B": "Correcta. Se basan en estructuras de datos.",
+      "C": "Incorrecta. No se limitan a estático.",
+      "D": "Incorrecta. No se centran solo en atributos."
+    }
+  },
+  {
+    "pregunta": "45. Señale cuál de las siguientes respuestas se corresponde con un framework Java para desarrollar aplicaciones con Angular y Spring Boot:",
+    "opciones": ["A. JHipster", "B. Juniper", "C. JSON", "D. MyBatis"],
+    "correcta": 0,
+    "explicacion": "JHipster genera aplicaciones con Spring Boot y Angular.",
+    "analisis_opciones": {
+      "A": "Correcta. Framework full-stack muy usado.",
+      "B": "Incorrecta. No es framework Java de este tipo.",
+      "C": "Incorrecta. Es formato de datos.",
+      "D": "Incorrecta. Es framework de persistencia."
+    }
+  },
+  {
+    "pregunta": "46. En JAVA podemos utilizar el interface PreparedStatement para:",
+    "opciones": ["A. Inicializar las variables locales del programa con valores preestablecidos.", "B. Preparar los valores que introduciremos en un archivo de texto externo al programa.", "C. Permitir ejecutar muchas veces una sentencia SQL.", "D. Administrar el consumo de memoria que utilizan los objetos creados."],
+    "correcta": 2,
+    "explicacion": "PreparedStatement permite ejecutar consultas SQL precompiladas múltiples veces.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tiene relación.",
+      "B": "Incorrecta. No trabaja con archivos.",
+      "C": "Correcta. Mejora rendimiento y seguridad en consultas.",
+      "D": "Incorrecta. No gestiona memoria."
+    }
+  },
+  {
+    "pregunta": "47. ¿Qué tiene que declarar un módulo o plug-in de Eclipse para que otros módulos le puedan agregar funcionalidades?",
+    "opciones": ["A. La localización de cada módulo que contribuye con sus nuevas funcionalidades.", "B. Una o varias extensiones.", "C. Uno o varios puntos de extensión.", "D. Un servicio web."],
+    "correcta": 2,
+    "explicacion": "Los puntos de extensión permiten añadir funcionalidades a plugins.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No define extensibilidad.",
+      "B": "Incorrecta. Son contribuciones, no definición.",
+      "C": "Correcta. Define dónde otros plugins pueden extender.",
+      "D": "Incorrecta. No aplica."
+    }
+  },
+  {
+    "pregunta": "48. En el diseño de una interfaz de usuario existe una serie de principios relevantes. Uno de ellos es el de la denominada “Ley de Fitt”. ¿A qué se refiere este principio?:",
+    "opciones": ["A. Cuanto más grande y cercano sea un objeto al puntero del ratón más fácil será efectuar el clic sobre él.", "B. Los mensajes de ayuda han de ser sencillos y dar respuesta a problemas.", "C. Los valores por defecto han de ser opciones inteligentes y sensatas.", "D. Posibilidad de realizar la inversa de cualquier acción de riesgo, sin temor para explorar."],
+    "correcta": 0,
+    "explicacion": "La Ley de Fitts relaciona tamaño/distancia con facilidad de interacción.",
+    "analisis_opciones": {
+      "A": "Correcta. Define exactamente la ley.",
+      "B": "Incorrecta. Es principio de ayuda.",
+      "C": "Incorrecta. Es diseño de defaults.",
+      "D": "Incorrecta. Es reversibilidad."
+    }
+  },
+  {
+    "pregunta": "49. El lenguaje que permite definir la interfaz, concretamente operaciones y tipos de datos de un servicio Web es:",
+    "opciones": ["A. SOAP 1.2", "B. UDDI v.3", "C. WSDL 1.1", "D. SAML v.1"],
+    "correcta": 2,
+    "explicacion": "WSDL define la interfaz de servicios web.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es protocolo de comunicación.",
+      "B": "Incorrecta. Es registro de servicios.",
+      "C": "Correcta. Define operaciones y tipos.",
+      "D": "Incorrecta. Es para autenticación."
+    }
+  },
+  {
+    "pregunta": "50. Indique qué se imprime por pantalla con el siguiente código Java: for(int i = 0, j = 1; i <10; i=i+j) {System.out.print(i); j++;}",
+    "opciones": ["A. 1387", "B. 0259", "C. 0101", "D. Da un error de compilación."],
+    "correcta": 1,
+    "explicacion": "La variable i aumenta progresivamente sumando j creciente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No sigue la progresión.",
+      "B": "Correcta. Secuencia: 0, 2, 5, 9.",
+      "C": "Incorrecta. No corresponde.",
+      "D": "Incorrecta. El código es válido."
+    }
+  }
+,
+  {
+    "pregunta": "51. En lo referente a la programación en lava, ¿cuál de las siguientes afirmaciones es cierta?",
+    "opciones": ["A. Swift es la nueva máquina virtual Java que se ejecuta en Android 7.0.", "B. JUnit nos permite crear test de clases Java.", "C. Swing es un framework de persistencia de bases de datos.", "D. Drupal requiere para su ejecución una máquina virtual Java 1.8"],
+    "correcta": 1,
+    "explicacion": "JUnit es el framework estándar para testing en Java.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Swift es un lenguaje de Apple, no tiene relación con JVM.",
+      "B": "Correcta. JUnit se usa para pruebas unitarias en Java.",
+      "C": "Incorrecta. Swing es para interfaces gráficas.",
+      "D": "Incorrecta. Drupal es PHP, no Java."
+    }
+  },
+  {
+    "pregunta": "52. Indique en cuál de los siguientes lenguajes de programación es posible hacer que una clase herede de varias superclases:",
+    "opciones": ["A. Java.", "B. Python.", "C. Visual Basic .NET.", "D. C#."],
+    "correcta": 1,
+    "explicacion": "Python permite herencia múltiple.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Java no permite herencia múltiple de clases.",
+      "B": "Correcta. Python sí permite múltiples superclases.",
+      "C": "Incorrecta. No permite herencia múltiple de clases.",
+      "D": "Incorrecta. No permite herencia múltiple de clases."
+    }
+  },
+  {
+    "pregunta": "53. En el ámbito de ASP.NET Core, señale la respuesta correcta respecto a Razor:",
+    "opciones": ["A. Razor es la sintaxis de plantillas utilizada en ASP.NET Core para crear vistas dinámicas en aplicaciones web.", "B. Es uno de los lenguajes de programación que se utilizan con ASP.NET Core.", "C. Razor se ejecuta directamente en el navegador del cliente.", "D. Razor utiliza el @símbolo para realizar la transición de C# a HTML."],
+    "correcta": 0,
+    "explicacion": "Razor es el motor de vistas en ASP.NET Core.",
+    "analisis_opciones": {
+      "A": "Correcta. Es su función principal.",
+      "B": "Incorrecta. No es lenguaje, es sintaxis de plantillas.",
+      "C": "Incorrecta. Se ejecuta en servidor.",
+      "D": "Incorrecta. Es cierto, pero no define qué es Razor."
+    }
+  },
+  {
+    "pregunta": "54. Indique cuál de las siguientes opciones corresponde a una API de Java para el procesamiento de documentos en formato XML.",
+    "opciones": ["A. JNA", "B. StAX", "C. JNI", "D. JPaX"],
+    "correcta": 1,
+    "explicacion": "StAX es una API para procesar XML en Java.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es para acceso a código nativo.",
+      "B": "Correcta. API para XML basada en streaming.",
+      "C": "Incorrecta. Es para integración con código nativo.",
+      "D": "Incorrecta. No existe."
+    }
+  },
+  {
+    "pregunta": "55. ¿Cuál de entre las siguientes opciones no es un componente de ADO (Active X Data Object)?",
+    "opciones": ["A. Connection.", "B. Errors.", "C. DSN.", "D. Recordset."],
+    "correcta": 2,
+    "explicacion": "DSN no es objeto ADO, es un origen de datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es objeto ADO.",
+      "B": "Incorrecta. Es colección de errores.",
+      "C": "Correcta. Es configuración de conexión, no objeto.",
+      "D": "Incorrecta. Es objeto ADO."
+    }
+  },
+  {
+    "pregunta": "56. ¿Cuál de las siguientes cláusulas se utiliza en JAVA para describir una clase que hereda de otra?",
+    "opciones": ["A. belongs", "B. Implements", "C. extends", "D. inherits"],
+    "correcta": 2,
+    "explicacion": "Java usa extends para herencia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No existe.",
+      "B": "Incorrecta. Es para interfaces.",
+      "C": "Correcta. Se usa para herencia.",
+      "D": "Incorrecta. No existe."
+    }
+  },
+  {
+    "pregunta": "57. Indique la respuesta correcta relativa al lenguaje Java 2:",
+    "opciones": ["A. Los comentarios multilínea empiezan con //", "B. El nombre de una variable puede empezar por un número", "C. Los nombres de las variables pueden contener el carácter $", "D. Puedo utilizar como nombre de variable la palabra static"],
+    "correcta": 2,
+    "explicacion": "Java permite usar $ en identificadores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. // es comentario de línea.",
+      "B": "Incorrecta. No puede empezar por número.",
+      "C": "Correcta. $ es válido en identificadores.",
+      "D": "Incorrecta. static es palabra reservada."
+    }
+  },
+  {
+    "pregunta": "58. Señale la afirmación correcta con respecto a WSIL:",
+    "opciones": ["A. Es un método alternativo al descubrimiento de servicios Web.", "B. Define el modelo de programación y la arquitectura de ejecución para desplegar y buscar servicios Web en el entorno Java EE.", "C. Define un modo de publicar y encontrar información sobre servicios Web.", "D. Es una organización diseñada para promover la interoperatividad de servicios Web entre plataformas, sistemas operativos y lenguajes de programación."],
+    "correcta": 0,
+    "explicacion": "WSIL permite descubrir servicios web de forma distribuida.",
+    "analisis_opciones": {
+      "A": "Correcta. Es alternativa a UDDI.",
+      "B": "Incorrecta. Describe J2EE.",
+      "C": "Incorrecta. Eso es UDDI.",
+      "D": "Incorrecta. Eso es W3C."
+    }
+  },
+  {
+    "pregunta": "59. Señale el nombre de identificador válido en Java SE 8:",
+    "opciones": ["A. goto", "B. enum2", "C. Level2", "D. $identificador"],
+    "correcta": 3,
+    "explicacion": "$identificador es válido en Java.",
+    "analisis_opciones": {
+      "A": "Incorrecta. goto es palabra reservada.",
+      "B": "Incorrecta. enum es palabra reservada.",
+      "C": "Incorrecta. Aunque parece válido, la opción más clara correcta es D.",
+      "D": "Correcta. Es un identificador válido."
+    }
+  },
+  {
+    "pregunta": "60. En java, si queremos que el valor de una variable no pueda cambiar en tiempo de ejecución, utilizaremos la palabra reservada.",
+    "opciones": ["A. static.", "B. final.", "C. reserved.", "D. protected."],
+    "correcta": 1,
+    "explicacion": "final hace que la variable sea constante.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Define nivel de clase.",
+      "B": "Correcta. Hace la variable inmutable.",
+      "C": "Incorrecta. No existe.",
+      "D": "Incorrecta. Es modificador de acceso."
+    }
+  }
+,
+  {
+    "pregunta": "61. En el framework .Net, el encargado de proveer lo que se llama código administrado se denomina:",
+    "opciones": ["A. MSIL(Microsoft lntermediate Language.", "B. J2EE (Java Z Platform, Enterprise Edition).", "C. Common Language Runtime (CLR).", "D. BYTECODE."],
+    "correcta": 2,
+    "explicacion": "El CLR es el entorno que ejecuta código administrado en .NET.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el lenguaje intermedio, no quien lo gestiona.",
+      "B": "Incorrecta. Es tecnología Java.",
+      "C": "Correcta. Gestiona ejecución, memoria y seguridad.",
+      "D": "Incorrecta. Es concepto de Java."
+    }
+  },
+  {
+    "pregunta": "62. Spring Boot es:",
+    "opciones": ["A. Un plataforma de desarrollo móvil basada en Javascript que permite desarrollo de apps multiplataforma.", "B. Una plataforma que permite el desarrollo de aplicaciones web \"autocontenidas\" que llevan embebida el contenedor de servlets.", "C. Una plataforma que permite, entre otras cosas, la conexión lógica entre bases de datos relacionales clásicas y bases de datos NOSQL.", "D. Una plataforma que permite automatizar las pruebas de software para aplicaciones con lenguaje de programación JAVA."],
+    "correcta": 1,
+    "explicacion": "Spring Boot permite crear aplicaciones Java con servidor embebido.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería tipo React Native.",
+      "B": "Correcta. Característica principal de Spring Boot.",
+      "C": "Incorrecta. Eso es más de frameworks ORM.",
+      "D": "Incorrecta. No es herramienta de testing."
+    }
+  },
+  {
+    "pregunta": "63. En un entorno .NET, ¿qué función realiza la instrucción i += 1?",
+    "opciones": ["A. Inicializa la variable i con el valor 1.", "B. Suma 1 al contenido de la variable i.", "C. Incrementa en 1 la variable i, solo cuando el valor de i es 1.", "D. No es correcta la instrucción."],
+    "correcta": 1,
+    "explicacion": "Es una forma abreviada de i = i + 1.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No inicializa.",
+      "B": "Correcta. Incrementa en 1.",
+      "C": "Incorrecta. Siempre suma, no depende del valor.",
+      "D": "Incorrecta. Es válida."
+    }
+  },
+  {
+    "pregunta": "64. Señale cuál de las siguientes herramientas sirve para realizar pruebas de estrés en Java:",
+    "opciones": ["A. Jmeter", "B. SonarQube", "C. Junit", "D. Piwik"],
+    "correcta": 0,
+    "explicacion": "JMeter permite pruebas de carga y estrés.",
+    "analisis_opciones": {
+      "A": "Correcta. Herramienta estándar para testing de carga.",
+      "B": "Incorrecta. Es análisis de calidad de código.",
+      "C": "Incorrecta. Es testing unitario.",
+      "D": "Incorrecta. Es analítica web."
+    }
+  },
+  {
+    "pregunta": "65. Las siglas JIT (Just-in-Time) designan a:",
+    "opciones": ["A. Una técnica de ejecución de programas.", "B. Un lenguaje intermedio de Microsoft.", "C. Un servicio web.", "D. Un grupo de instrucciones portables independientes de cualquier CPU específica."],
+    "correcta": 0,
+    "explicacion": "JIT compila código en tiempo de ejecución.",
+    "analisis_opciones": {
+      "A": "Correcta. Es compilación en tiempo real.",
+      "B": "Incorrecta. Eso es MSIL.",
+      "C": "Incorrecta. No es servicio web.",
+      "D": "Incorrecta. Describe bytecode."
+    }
+  },
+  {
+    "pregunta": "66. En el contexto del lenguaje Java, supongamos que tenemos una matriz SaldoMensual declarada de la siguiente forma: float[] SaldoMensual = new float[12]. Elija de entre las siguientes, la Instrucción repetitiva que nos permite recorrer todos sus elementos:",
+    "opciones": ["A. for (int i=0;i< 12;i++) System.out.println(SaldoMensual[i]);", "B. for (lnt i=1;i<12;i++) System.out.println(SaldoMensual[i]);", "C. for (int 1=1;i<=12;i++) System.out.println(SaldoMensual[i]);", "D. for (int 1=0;i=12;i++)System.out.println(SaldoMensual[i]);"],
+    "correcta": 0,
+    "explicacion": "Los arrays en Java empiezan en índice 0 y terminan en length-1.",
+    "analisis_opciones": {
+      "A": "Correcta. Recorre de 0 a 11 correctamente.",
+      "B": "Incorrecta. Empieza en 1 y además tiene error tipográfico.",
+      "C": "Incorrecta. Índice inválido y condición incorrecta.",
+      "D": "Incorrecta. Sintaxis inválida."
+    }
+  },
+  {
+    "pregunta": "67. Dentro de la arquitectura Java, una especificación en la que se describe una tecnología, sus partes, las relaciones entre las mismas y los roles de las personas que usarán dicha tecnología es:",
+    "opciones": ["A. JSR o Java Specification Request", "B. Un applet", "C. Un JavaBean", "D. Un servlet"],
+    "correcta": 0,
+    "explicacion": "JSR define especificaciones dentro de Java.",
+    "analisis_opciones": {
+      "A": "Correcta. Define estándares de Java.",
+      "B": "Incorrecta. Es programa embebido.",
+      "C": "Incorrecta. Es componente reutilizable.",
+      "D": "Incorrecta. Es componente web."
+    }
+  },
+  {
+    "pregunta": "68. Señale cuál de las siguientes es una plataforma para el desarrollo de apps multiplataforma de Microsoft:",
+    "opciones": ["A. Xamarin", "B. PhoneGap", "C. Titanium", "D. lonic"],
+    "correcta": 0,
+    "explicacion": "Xamarin permite desarrollo multiplataforma en .NET.",
+    "analisis_opciones": {
+      "A": "Correcta. Plataforma de Microsoft.",
+      "B": "Incorrecta. Es de Adobe.",
+      "C": "Incorrecta. No es de Microsoft.",
+      "D": "Incorrecta. Framework web."
+    }
+  },
+  {
+    "pregunta": "69. La ejecución de los applet de Java insertados en una página Web se realiza:",
+    "opciones": ["A. En el servidor Web.", "B. En el navegador del cliente.", "C. En el Proxy.", "D. En el router."],
+    "correcta": 1,
+    "explicacion": "Los applets se ejecutaban en el cliente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No se ejecutan en servidor.",
+      "B": "Correcta. Se ejecutan en el navegador.",
+      "C": "Incorrecta. No aplica.",
+      "D": "Incorrecta. No aplica."
+    }
+  },
+  {
+    "pregunta": "70. En Java, una variable definida con el modificador de acceso protected, es accesible:",
+    "opciones": ["A. Desde cualquier clase.", "B. Unicamente desde la clase en la que se ha definido.", "C. Unicamente desde las clases que están dentro del mismo paquete.", "D. Desde la clase en la que se ha definido, sus subclases, y desde las clases dentro del mismo paquete."],
+    "correcta": 3,
+    "explicacion": "protected permite acceso en paquete y herencia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería public.",
+      "B": "Incorrecta. Eso sería private.",
+      "C": "Incorrecta. Falta herencia.",
+      "D": "Correcta. Define correctamente el alcance."
+    }
+  },
+  {
+    "pregunta": "71. La API de Java para la implementación de servicios web RestFul es:",
+    "opciones": ["A. JAX-RS", "B. JTA", "C. JPA", "D. JSTL"],
+    "correcta": 0,
+    "explicacion": "JAX-RS es la API estándar para REST en Java.",
+    "analisis_opciones": {
+      "A": "Correcta. API REST.",
+      "B": "Incorrecta. Transacciones.",
+      "C": "Incorrecta. Persistencia.",
+      "D": "Incorrecta. JSP tags."
+    }
+  },
+  {
+    "pregunta": "72. La API de Java JAX-RS es:",
+    "opciones": ["A. Java API for RESTful Web Services, es una API que proporciona soporte a la creación de servicios web REST.", "B. Java API for XML Web Services, es una API para la creación de servicios web.", "C. Java API for XML Registries, es una API para acceder a diferentes tipos de registros de metadatos basados en XML.", "D. Java API for XML based RPC, es una API que permite invocar un servicio web basado en Java cuya descripción está basada en WSDL."],
+    "correcta": 0,
+    "explicacion": "JAX-RS está orientada a REST.",
+    "analisis_opciones": {
+      "A": "Correcta. Definición exacta.",
+      "B": "Incorrecta. Eso es JAX-WS.",
+      "C": "Incorrecta. Eso es JAXR.",
+      "D": "Incorrecta. Eso es JAX-RPC."
+    }
+  },
+  {
+    "pregunta": "73. API de JAVA proporciona un sistema de autenticación y control de acceso de usuarios y grupos para una aplicación:",
+    "opciones": ["A. JAF", "B. JAAS", "C. JACC", "D. JNDI"],
+    "correcta": 1,
+    "explicacion": "JAAS gestiona autenticación y autorización.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Activación de frameworks.",
+      "B": "Correcta. Seguridad en Java.",
+      "C": "Incorrecta. Control de acceso en contenedores.",
+      "D": "Incorrecta. Directorios."
+    }
+  },
+  {
+    "pregunta": "74. ¿Cuál de las siguientes expresiones lógicas en Java daría un valor de false si a vale 4 y b vale 6?",
+    "opciones": ["A. !((a>b) && (a<b))", "B. ((a==b) || (a<b) && (b>a)", "C. (a>b) && (!(a > b))", "D. (a<b) && ((a==b) || b>a))"],
+    "correcta": 2,
+    "explicacion": "La expresión C siempre es falsa.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Da true.",
+      "B": "Incorrecta. Da true.",
+      "C": "Correcta. Contradicción lógica (true && false).",
+      "D": "Incorrecta. Da true."
+    }
+  },
+  {
+    "pregunta": "75. Señale la respuesta INCORRECTA referente al objeto POCO en .NET:",
+    "opciones": ["A. Es una estructura de datos de .NET que solo contiene propiedades o campos públicos.", "B. Es el acrónimo de Plain Old CLR Object.", "C. No hereda de otra clase o implementa una interfaz.", "D. Podrá contener miembros como: métodos. eventos y delegados."],
+    "correcta": 2,
+    "explicacion": "Un POCO sí puede heredar o implementar interfaces.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Describe un POCO simple.",
+      "B": "Incorrecta. Es la definición correcta.",
+      "C": "Correcta. Es falsa, sí puede heredar o implementar.",
+      "D": "Incorrecta. Puede tener métodos y más."
+    }
+  }
+,
+  {
+    "pregunta": "76. En Java, una clase declarada como 'abstract':",
+    "opciones": ["A. Puede no estar implementada o estarlo de manera incompleta.", "B. Puede ser instanciada.", "C. No puede ser extendida por subclases.", "D. No existe el modificador abstract en Java."],
+    "correcta": 0,
+    "explicacion": "Las clases abstractas pueden tener métodos sin implementar.",
+    "analisis_opciones": {
+      "A": "Correcta. Puede tener implementación parcial o métodos abstractos.",
+      "B": "Incorrecta. No se puede instanciar directamente.",
+      "C": "Incorrecta. Precisamente están pensadas para ser extendidas.",
+      "D": "Incorrecta. Sí existe en Java."
+    }
+  },
+  {
+    "pregunta": "77. Indique la afirmación correcta respecto al modificador native de Java:",
+    "opciones": ["A. Se puede aplicar a clases, métodos y variables.", "B. Se emplea únicamente con métodos.", "C. Se emplea únicamente con variables.", "D. Se emplea en clases y métodos."],
+    "correcta": 1,
+    "explicacion": "native se usa en métodos implementados en código nativo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No aplica a clases ni variables.",
+      "B": "Correcta. Solo se usa en métodos.",
+      "C": "Incorrecta. No aplica a variables.",
+      "D": "Incorrecta. No se aplica a clases."
+    }
+  },
+  {
+    "pregunta": "78. ¿Cuál de los siguientes tipos de Enterprise JavaBeans (EJB) tiene un funcionamiento asíncrono?",
+    "opciones": ["A. EJB de entidad con persistencia gestionada por el contenedor", "B. EJB de sesión sin estado", "C. EJB dirigido por mensajes", "D. Todos los tipos de EJB"],
+    "correcta": 2,
+    "explicacion": "Los Message-Driven Beans trabajan de forma asíncrona.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es asíncrono.",
+      "B": "Incorrecta. Es síncrono normalmente.",
+      "C": "Correcta. Procesa mensajes de forma asíncrona.",
+      "D": "Incorrecta. No todos lo son."
+    }
+  },
+  {
+    "pregunta": "79. En Java, ¿Cuál de las siguientes es una forma correcta de crear un nuevo threads hilo)?",
+    "opciones": ["A. Crear una clase que herede de la interface java.lang.Runnable", "B. Crear una clase que herede de la clase java.lang.Thread y sobrecargar el método run().", "C. Crear una clase que implemente la clase java.lang.Thread", "D. Crear una clase que implemente la clase java.lang.Thread y declarar el método run()."],
+    "correcta": 1,
+    "explicacion": "Una forma válida es extender Thread y redefinir run().",
+    "analisis_opciones": {
+      "A": "Incorrecta. Runnable se implementa, no se hereda.",
+      "B": "Correcta. Forma válida de crear un hilo.",
+      "C": "Incorrecta. Thread no se implementa.",
+      "D": "Incorrecta. Sintaxis incorrecta."
+    }
+  },
+  {
+    "pregunta": "80. ¿Cuál de las siguientes opciones sobre la interfaz java.util.Map es FALSA?",
+    "opciones": ["A. HashMap y TreeMap son dos implementaciones de la Interfaz Map.", "B. clear() permite vaciar los elementos (clave, valor) almacenados en el objeto que sigue la interfaz Map sobre el que se invoca.", "C. length() devuelve el número de elementos (clave, valor) almacenados en el objeto que sigue la interfaz Map sobre el que se invoca.", "D. entrySet() devuelve un objeto de tipo Set que contiene las entradas almacenadas en el objeto que sigue la interfaz Map sobre el que se invoca."],
+    "correcta": 2,
+    "explicacion": "Map no tiene método length(), usa size().",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ambas son implementaciones válidas.",
+      "B": "Incorrecta. clear() elimina todos los elementos.",
+      "C": "Correcta. El método correcto es size(), no length().",
+      "D": "Incorrecta. entrySet() devuelve un Set válido."
+    }
+  },
+  {
+    "pregunta": "81. Java DB es:",
+    "opciones": ["A. La distribución de Oracle para la base de datos de código abierto Apache Derby.", "B. Una API de acceso a bases de datos no relacionales en Java.", "C. La distribución gratuita de la base de datos Oracle 11g.", "D. Una versión de PostgreSQL configurada para la plataforma Java SE."],
+    "correcta": 0,
+    "explicacion": "Java DB es la distribución de Apache Derby incluida por Oracle.",
+    "analisis_opciones": {
+      "A": "Correcta. Es Apache Derby bajo Oracle.",
+      "B": "Incorrecta. No es API.",
+      "C": "Incorrecta. No es Oracle DB.",
+      "D": "Incorrecta. No es PostgreSQL."
+    }
+  },
+  {
+    "pregunta": "82. La persistencia en Jakarta EE se gestiona principalmente a través de la especificación Jakarta Persistence API (JPA). Indique la respuesta correcta:",
+    "opciones": ["A. Una de sus ventajas es que no necesita utilizar un proveedor de JPA.", "B. El lenguaje de consulta similar a SQL pero orientado a objetos de JPA es JPSQL.", "C. Normalmente, una entidad representa una tabla en una base de datos relacional y cada instancia de la entidad corresponde a una fila de esa tabla.", "D. JPA no permite definir relaciones entre entidades del tipo uno a muchos."],
+    "correcta": 2,
+    "explicacion": "Una entidad JPA representa una tabla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Siempre necesita proveedor (Hibernate, etc.).",
+      "B": "Incorrecta. Es JPQL, no JPSQL.",
+      "C": "Correcta. Es el modelo básico de JPA.",
+      "D": "Incorrecta. Sí permite relaciones."
+    }
+  },
+  {
+    "pregunta": "83. Señale la respuesta correcta sobre los tipos de controladores (drivers) JDBC:",
+    "opciones": ["A. Los drivers tipo 1 utilizan Java puro para implementar un protocolo de red de proveedores del Sistema Gestor de Base de Datos.", "B. Los drivers tipo 3 utilizan un protocolo de red y middleware para comunicarse con un servidor.", "C. Según la tecnología utilizada para conectarse a la base de datos, los drivers JDBC se categorizan en 3 tipos diferentes.", "D. Los drivers tipo 2 son controladores \"puente\", que utilizan otra tecnología (por ejemplo ODBC) para comunicarse con la base de datos."],
+    "correcta": 1,
+    "explicacion": "Tipo 3 usa middleware para comunicación.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Describe tipo 4.",
+      "B": "Correcta. Usa middleware intermedio.",
+      "C": "Incorrecta. Son 4 tipos.",
+      "D": "Incorrecta. Eso es tipo 1 (puente JDBC-ODBC)."
+    }
+  }
+,
+  {
+    "pregunta": "50. Dada la definición “el driver convierte las llamadas a métodos de la API específica de la base de datos”, ¿qué concepto corresponde a esta definición?",
+    "opciones": [
+      "A) Driver tipo 1",
+      "B) Driver tipo 2",
+      "C) Driver tipo 3",
+      "D) Driver tipo 4"
+    ],
+    "correcta": 1,
+    "explicacion": "El driver tipo 2 convierte llamadas JDBC en llamadas nativas del SGBD.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Usa puente JDBC-ODBC.",
+      "B": "Correcta. Traduce llamadas a API nativa de la base de datos.",
+      "C": "Incorrecta. Usa middleware en red.",
+      "D": "Incorrecta. Driver puro Java que se comunica directamente."
+    }
+  },
+  {
+    "pregunta": "56. ¿Cuál de los siguientes lenguajes de programación son ofrecidos por .NET?",
+    "opciones": [
+      "A) C#.",
+      "B) F#.",
+      "C) Visual Basic.",
+      "D) Todas son correctas."
+    ],
+    "correcta": 3,
+    "explicacion": ".NET soporta múltiples lenguajes que compilan a MSIL y se ejecutan en el CLR.",
+    "analisis_opciones": {
+      "A": "Correcta pero incompleta.",
+      "B": "Correcta pero incompleta.",
+      "C": "Correcta pero incompleta.",
+      "D": "Correcta. Todos son lenguajes soportados por .NET."
+    }
+  },
+  {
+    "pregunta": "57. El entorno donde se ejecutan todas las aplicaciones de .NET se denomina…",
+    "opciones": [
+      "A) Common Language Runtime",
+      "B) Clrver",
+      "C) ASP.NET",
+      "D) Windows Communication Foundation (WCF)"
+    ],
+    "correcta": 0,
+    "explicacion": "El CLR es el motor de ejecución que gestiona memoria, seguridad y ejecución en .NET.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el núcleo de ejecución.",
+      "B": "Incorrecta. No existe.",
+      "C": "Incorrecta. Es tecnología web.",
+      "D": "Incorrecta. Framework de servicios."
+    }
+  }
+,
+{
+  "pregunta": "40. En Java, al respecto de implements, “a implements b” implica que...",
+  "opciones": [
+    "A. Implementamos métodos (a) a las interfaces (b).",
+    "B. Implementamos interfaces (b) a las clases (a).",
+    "C. Implementamos clases (b) a las interfaces (a).",
+    "D. Implementamos métodos (b) a las clases (a)."
+  ],
+  "correcta": 1,
+  "explicacion": "En Java, la palabra clave 'implements' se utiliza cuando una clase adopta el contrato definido por una interfaz. Esto implica que la clase debe implementar obligatoriamente todos los métodos abstractos definidos en dicha interfaz, garantizando así un comportamiento uniforme.",
+  "analisis_opciones": {
+    "A": "Incorrecta. No son los métodos los que implementan, sino la clase.",
+    "B": "Correcta. La clase (a) implementa la interfaz (b), cumpliendo su contrato.",
+    "C": "Incorrecta. Las interfaces no implementan clases.",
+    "D": "Incorrecta. La relación está invertida."
+  }
+},
+{
+  "pregunta": "41. ¿Cuál de las siguientes es la principal herramienta usada para el modelo de desarrollo BDD (Behavior Driven Development)?",
+  "opciones": [
+    "A. Cucumber",
+    "B. Jenkins",
+    "C. SonarQube",
+    "D. Ant"
+  ],
+  "correcta": 0,
+  "explicacion": "Cucumber es una herramienta ampliamente utilizada en BDD que permite definir escenarios de prueba en lenguaje natural (Gherkin), facilitando la comunicación entre desarrolladores, testers y negocio. Luego esos escenarios se vinculan con código automatizado.",
+  "analisis_opciones": {
+    "A": "Correcta. Es la herramienta estándar para BDD.",
+    "B": "Incorrecta. Jenkins es integración continua.",
+    "C": "Incorrecta. SonarQube mide calidad del código.",
+    "D": "Incorrecta. Ant es herramienta de construcción."
+  }
+},
+{
+  "pregunta": "46. ¿Cuántos principios conforman el estándar WCAG 2.2?",
+  "opciones": [
+    "A. 13",
+    "B. 4",
+    "C. 5",
+    "D. 12"
+  ],
+  "correcta": 1,
+  "explicacion": "Las WCAG se basan en 4 principios fundamentales conocidos como POUR: Perceptible, Operable, Comprensible y Robusto. Estos principios son la base del diseño accesible en interfaces web.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Se refiere a criterios, no principios.",
+    "B": "Correcta. Son exactamente 4.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "47. Indique la afirmación correcta respecto a los siguientes mecanismos de intercambio de datos en Internet.",
+  "opciones": [
+    "A. REST es independiente del protocolo de transporte, mientras que SOAP requiere de HTTPS.",
+    "B. SOAP tiene mejor rendimiento que REST.",
+    "C. SOAP no tiene estado.",
+    "D. REST admite JSON, XML, texto plano y HTML mientras SOAP solo XML."
+  ],
+  "correcta": 3,
+  "explicacion": "REST es un estilo arquitectónico flexible que permite usar distintos formatos de representación como JSON, XML o texto plano. SOAP, en cambio, es un protocolo estricto basado exclusivamente en XML, lo que lo hace más pesado y menos flexible.",
+  "analisis_opciones": {
+    "A": "Incorrecta. SOAP puede usar distintos protocolos, no solo HTTPS.",
+    "B": "Incorrecta. REST suele ser más ligero y rápido.",
+    "C": "Incorrecta. SOAP puede ser stateful o stateless.",
+    "D": "Correcta. Es la diferencia clave entre ambos."
+  }
+},
+{
+  "pregunta": "49. ¿Qué organización es la encargada de realizar el WCAG?",
+  "opciones": [
+    "A. WAI",
+    "B. ARPANET",
+    "C. W3C",
+    "D. IAW"
+  ],
+  "correcta": 2,
+  "explicacion": "El W3C (World Wide Web Consortium) es el organismo internacional encargado de desarrollar los estándares web. Dentro de él, la WAI (Web Accessibility Initiative) es la responsable de elaborar las WCAG.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es parte del W3C, no el organismo principal.",
+    "B": "Incorrecta. Es una red histórica.",
+    "C": "Correcta. Es el organismo oficial.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "51. Indique la opción correcta respecto a NuGet:",
+  "opciones": [
+    "A. Es un gestor de paquetes de .NET.",
+    "B. Es un sistema basado en Groovy.",
+    "C. Es gestor de paquetes PHP.",
+    "D. Es gestor de Node.js."
+  ],
+  "correcta": 0,
+  "explicacion": "NuGet es el gestor de paquetes oficial del ecosistema .NET. Permite instalar, actualizar y gestionar librerías externas de forma sencilla dentro de proyectos .NET.",
+  "analisis_opciones": {
+    "A": "Correcta. Es su función principal.",
+    "B": "Incorrecta. Groovy está relacionado con Gradle.",
+    "C": "Incorrecta. PHP usa Composer.",
+    "D": "Incorrecta. Node usa npm."
+  }
+},
+{
+  "pregunta": "SUPUESTO 12. Carga diferida de imágenes:",
+  "opciones": [
+    "A. normal",
+    "B. delayed",
+    "C. onscreen",
+    "D. lazy"
+  ],
+  "correcta": 3,
+  "explicacion": "El lazy loading permite cargar recursos (como imágenes) solo cuando van a ser visibles en pantalla. En HTML se implementa con el atributo loading='lazy', mejorando el rendimiento y la experiencia del usuario.",
+  "analisis_opciones": {
+    "A": "Incorrecta. No existe como atributo estándar.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta. Es el atributo real."
+  }
+},
+{
+  "pregunta": "SUPUESTO 15. Librería Java para interfaces gráficas:",
+  "opciones": [
+    "A. javax.gui",
+    "B. java.awt",
+    "C. java.applet",
+    "D. java.swing"
+  ],
+  "correcta": 1,
+  "explicacion": "java.awt (Abstract Window Toolkit) es una de las librerías base de Java para la creación de interfaces gráficas. Proporciona componentes básicos como botones, ventanas y eventos.",
+  "analisis_opciones": {
+    "A": "Incorrecta. No existe.",
+    "B": "Correcta. Librería base de GUI en Java.",
+    "C": "Incorrecta. Relacionado con applets.",
+    "D": "Incorrecta. El nombre correcto sería javax.swing."
+  }
+},
+{
+  "pregunta": "SUPUESTO 20. IA para ayudar a programar:",
+  "opciones": [
+    "A. Claude",
+    "B. AlphaZero",
+    "C. DeepMind",
+    "D. GitHub Copilot"
+  ],
+  "correcta": 3,
+  "explicacion": "GitHub Copilot es una herramienta basada en inteligencia artificial diseñada específicamente para asistir a los desarrolladores en la escritura de código, sugiriendo líneas completas y funciones.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es IA general.",
+    "B": "Incorrecta. IA para juegos.",
+    "C": "Incorrecta. Empresa de IA.",
+    "D": "Correcta. IA enfocada a programación."
+  }
+}
+,
+{
+  "pregunta": "¿Qué tipo de archivo se utiliza para empaquetar una aplicación web Java para su despliegue en un servidor de aplicaciones?",
+  "opciones": [
+    "A. JAR",
+    "B. WAR",
+    "C. EAR",
+    "D. ZIP"
+  ],
+  "correcta": 1,
+  "explicacion": "WAR (Web Application Archive) es el formato estándar para aplicaciones web Java que incluyen servlets, JSP y recursos web.",
+  "analisis_opciones": {
+    "A": "Incorrecta. JAR es para librerías o aplicaciones Java genéricas.",
+    "B": "Correcta. WAR es para aplicaciones web.",
+    "C": "Incorrecta. EAR agrupa múltiples módulos (incluyendo WAR).",
+    "D": "Incorrecta. No es formato específico Java EE."
+  }
+},
+{
+  "pregunta": "En el patrón MVC, ¿qué componente se encarga de gestionar la lógica de negocio?",
+  "opciones": [
+    "A. Vista",
+    "B. Controlador",
+    "C. Modelo",
+    "D. Interfaz"
+  ],
+  "correcta": 2,
+  "explicacion": "El modelo contiene la lógica de negocio y gestiona los datos de la aplicación.",
+  "analisis_opciones": {
+    "A": "Incorrecta. La vista muestra datos.",
+    "B": "Incorrecta. El controlador gestiona eventos.",
+    "C": "Correcta. Contiene la lógica de negocio.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes tecnologías forma parte de la capa de presentación en Java EE?",
+  "opciones": [
+    "A. JDBC",
+    "B. JSP",
+    "C. JPA",
+    "D. EJB"
+  ],
+  "correcta": 1,
+  "explicacion": "JSP (Java Server Pages) pertenece a la capa de presentación, permitiendo generar contenido dinámico en el servidor.",
+  "analisis_opciones": {
+    "A": "Incorrecta. JDBC es acceso a datos.",
+    "B": "Correcta. Es capa de presentación.",
+    "C": "Incorrecta. JPA es persistencia.",
+    "D": "Incorrecta. EJB es lógica de negocio."
+  }
+},
+{
+  "pregunta": "¿Qué componente de .NET se encarga de la ejecución del código y la gestión de memoria?",
+  "opciones": [
+    "A. ASP.NET",
+    "B. CLR",
+    "C. MSIL",
+    "D. NuGet"
+  ],
+  "correcta": 1,
+  "explicacion": "El CLR (Common Language Runtime) es el entorno de ejecución de .NET que gestiona memoria, seguridad y ejecución.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es framework web.",
+    "B": "Correcta. Motor de ejecución.",
+    "C": "Incorrecta. Es lenguaje intermedio.",
+    "D": "Incorrecta. Gestor de paquetes."
+  }
+},
+{
+  "pregunta": "¿Qué tecnología de .NET se utiliza para el acceso a bases de datos?",
+  "opciones": [
+    "A. ASP.NET",
+    "B. ADO.NET",
+    "C. CLR",
+    "D. Razor"
+  ],
+  "correcta": 1,
+  "explicacion": "ADO.NET es el conjunto de clases utilizado para acceder y manipular datos en .NET.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es desarrollo web.",
+    "B": "Correcta. Acceso a datos.",
+    "C": "Incorrecta. Motor ejecución.",
+    "D": "Incorrecta. Motor de vistas."
+  }
+},
+{
+  "pregunta": "¿Qué es un servlet en Java EE?",
+  "opciones": [
+    "A. Un componente que gestiona la interfaz gráfica",
+    "B. Un programa que se ejecuta en el cliente",
+    "C. Un componente que se ejecuta en el servidor para procesar peticiones",
+    "D. Una base de datos"
+  ],
+  "correcta": 2,
+  "explicacion": "Un servlet es un componente Java que se ejecuta en el servidor y procesa peticiones HTTP.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes es una característica clave de las aplicaciones distribuidas?",
+  "opciones": [
+    "A. Se ejecutan en un único equipo",
+    "B. No utilizan red",
+    "C. Sus componentes se ejecutan en distintos nodos conectados",
+    "D. Solo funcionan en local"
+  ],
+  "correcta": 2,
+  "explicacion": "Las aplicaciones distribuidas se ejecutan en múltiples nodos conectados a través de una red.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En ASP.NET, ¿qué es Razor?",
+  "opciones": [
+    "A. Un lenguaje de programación independiente",
+    "B. Un motor de plantillas para generar vistas dinámicas",
+    "C. Un servidor web",
+    "D. Una base de datos"
+  ],
+  "correcta": 1,
+  "explicacion": "Razor es un motor de vistas que permite combinar HTML con código C#.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de los siguientes frameworks pertenece al ecosistema Java para desarrollo web?",
+  "opciones": [
+    "A. Spring",
+    "B. Django",
+    "C. Angular",
+    "D. Laravel"
+  ],
+  "correcta": 0,
+  "explicacion": "Spring es uno de los frameworks más importantes del ecosistema Java.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. Python.",
+    "C": "Incorrecta. Frontend.",
+    "D": "Incorrecta. PHP."
+  }
+},
+{
+  "pregunta": "¿Qué principio mide la independencia entre módulos en una arquitectura?",
+  "opciones": [
+    "A. Cohesión",
+    "B. Acoplamiento",
+    "C. Herencia",
+    "D. Polimorfismo"
+  ],
+  "correcta": 1,
+  "explicacion": "El acoplamiento mide el grado de dependencia entre módulos; cuanto menor, mejor diseño.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Cohesión mide relación interna.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+  {
+    "pregunta": "¿Qué sistema es el estándar para documentar programas escritos en lenguaje Java?",
+    "opciones": ["A. Javadoc", "B. Docjava", "C. Javarem", "D. Remjava"],
+    "correcta": 0,
+    "explicacion": "Javadoc es la herramienta estándar de Java para generar documentación automática a partir del código fuente.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el estándar oficial de documentación en Java.",
+      "B": "Incorrecta. No existe.",
+      "C": "Incorrecta. No es herramienta real.",
+      "D": "Incorrecta. No existe."
+    }
+  },
+  {
+    "pregunta": "En tecnología JEE, ¿qué significa RMI?",
+    "opciones": ["A. Remote Method Interface", "B. Remote Method Invocation", "C. Read Method Interface", "D. Random Memory Information"],
+    "correcta": 1,
+    "explicacion": "RMI permite invocar métodos de objetos remotos como si fueran locales.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es el nombre real.",
+      "B": "Correcta. Definición oficial.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué elementos son requeridos en la estructura de un mensaje SOAP?",
+    "opciones": ["A. Envelope y Body", "B. Header, Body y Fault", "C. Envelope, Header, Body y Fault", "D. Ninguna de las anteriores"],
+    "correcta": 0,
+    "explicacion": "Los únicos obligatorios son Envelope y Body; el Header es opcional.",
+    "analisis_opciones": {
+      "A": "Correcta. Son los elementos mínimos obligatorios.",
+      "B": "Incorrecta. Falta Envelope.",
+      "C": "Incorrecta. Header y Fault no son obligatorios.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué permite la Java Reflection API?",
+    "opciones": [
+      "A. Inspeccionar y manipular clases en tiempo de ejecución",
+      "B. Ejecutar hilos concurrentes",
+      "C. Reflejar métodos entre clases",
+      "D. Clonar objetos automáticamente"
+    ],
+    "correcta": 0,
+    "explicacion": "Reflection permite analizar y modificar clases, métodos y atributos en tiempo de ejecución.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Eso es concurrencia.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué es Eclipse?",
+    "opciones": [
+      "A. Una librería de Java",
+      "B. Una versión de Java",
+      "C. Un IDE",
+      "D. Ninguna de las anteriores"
+    ],
+    "correcta": 2,
+    "explicacion": "Eclipse es un entorno de desarrollo integrado (IDE) muy usado en Java.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué significa CDI en Java EE?",
+    "opciones": [
+      "A. Contexts and Dependency Injection",
+      "B. Common Display Interface",
+      "C. Context-Dependent Interface",
+      "D. Case-Driven Implementation"
+    ],
+    "correcta": 0,
+    "explicacion": "CDI permite gestionar dependencias entre componentes de forma automática.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué es Maven?",
+    "opciones": [
+      "A. Un gestor de memoria",
+      "B. Un sistema de construcción basado en POM",
+      "C. Un framework web",
+      "D. Un IDE"
+    ],
+    "correcta": 1,
+    "explicacion": "Maven usa un Project Object Model (POM) para gestionar dependencias y construcción.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué es REST?",
+    "opciones": [
+      "A. RPC sobre HTTP",
+      "B. Extensión de WS-Security",
+      "C. Arquitectura basada en HTTP para servicios",
+      "D. Codificación alternativa a XML"
+    ],
+    "correcta": 2,
+    "explicacion": "REST es una arquitectura para crear servicios web ligeros y sin estado.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función de RequestDispatcher en Java?",
+    "opciones": [
+      "A. Incluir o redirigir a otros recursos",
+      "B. Enviar emails",
+      "C. Procesar XML",
+      "D. Gestionar sesiones"
+    ],
+    "correcta": 0,
+    "explicacion": "Permite transferir la petición a otro recurso o incluir contenido.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre start() y run() en Thread?",
+    "opciones": [
+      "A. Son iguales",
+      "B. run() llama a start()",
+      "C. start() crea nuevo hilo, run() no",
+      "D. No existe start()"
+    ],
+    "correcta": 2,
+    "explicacion": "start() lanza un nuevo hilo; run() se ejecuta en el hilo actual.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  }
+,
+{
+  "pregunta": "¿Cuál es la principal diferencia entre Java EE y Jakarta EE?",
+  "opciones": [
+    "A. Jakarta EE es una versión más ligera de Java SE",
+    "B. Jakarta EE es la evolución de Java EE bajo la Eclipse Foundation",
+    "C. Jakarta EE solo funciona en servidores Linux",
+    "D. Java EE es más moderna que Jakarta EE"
+  ],
+  "correcta": 1,
+  "explicacion": "Jakarta EE es la evolución de Java EE tras su transferencia de Oracle a la Eclipse Foundation.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta. Es la evolución oficial.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué archivo contiene la información de configuración y dependencias en Maven?",
+  "opciones": [
+    "A. build.xml",
+    "B. pom.xml",
+    "C. config.xml",
+    "D. dependencies.xml"
+  ],
+  "correcta": 1,
+  "explicacion": "El archivo pom.xml define el proyecto, dependencias y ciclo de vida en Maven.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es de Ant.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué tecnología Java se utiliza específicamente para servicios web REST?",
+  "opciones": [
+    "A. JAX-WS",
+    "B. JAX-RS",
+    "C. JPA",
+    "D. JDBC"
+  ],
+  "correcta": 1,
+  "explicacion": "JAX-RS es la API de Java para crear servicios web RESTful.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es para SOAP.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué característica define una alta cohesión en un módulo?",
+  "opciones": [
+    "A. Tiene muchas dependencias externas",
+    "B. Sus elementos están fuertemente relacionados entre sí",
+    "C. Está dividido en múltiples módulos",
+    "D. Depende de múltiples servicios externos"
+  ],
+  "correcta": 1,
+  "explicacion": "Alta cohesión implica que los elementos del módulo están estrechamente relacionados.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué indica un bajo acoplamiento en una arquitectura?",
+  "opciones": [
+    "A. Alta dependencia entre módulos",
+    "B. Independencia entre módulos",
+    "C. Uso intensivo de herencia",
+    "D. Uso de múltiples bases de datos"
+  ],
+  "correcta": 1,
+  "explicacion": "Bajo acoplamiento implica que los módulos son independientes entre sí.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué formato se utiliza para empaquetar librerías Java reutilizables?",
+  "opciones": [
+    "A. WAR",
+    "B. EAR",
+    "C. JAR",
+    "D. ZIP"
+  ],
+  "correcta": 2,
+  "explicacion": "JAR (Java Archive) se utiliza para empaquetar clases y librerías reutilizables.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En .NET, ¿qué es MSIL?",
+  "opciones": [
+    "A. Código máquina",
+    "B. Lenguaje intermedio",
+    "C. Lenguaje de alto nivel",
+    "D. Framework web"
+  ],
+  "correcta": 1,
+  "explicacion": "MSIL (Microsoft Intermediate Language) es el código intermedio que ejecuta el CLR.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué componente de .NET convierte el código intermedio en código máquina en tiempo de ejecución?",
+  "opciones": [
+    "A. CLR",
+    "B. JIT",
+    "C. ASP.NET",
+    "D. ADO.NET"
+  ],
+  "correcta": 1,
+  "explicacion": "El compilador JIT (Just-In-Time) traduce MSIL a código máquina en tiempo de ejecución.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Ejecuta, pero no compila directamente.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué capa en una arquitectura multicapa contiene la lógica de negocio?",
+  "opciones": [
+    "A. Presentación",
+    "B. Datos",
+    "C. Negocio",
+    "D. Persistencia"
+  ],
+  "correcta": 2,
+  "explicacion": "La capa de negocio contiene las reglas y lógica de la aplicación.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué tecnología Java se utiliza para la creación de interfaces gráficas tradicionales?",
+  "opciones": [
+    "A. Swing",
+    "B. JPA",
+    "C. JAX-RS",
+    "D. JDBC"
+  ],
+  "correcta": 0,
+  "explicacion": "Swing es una librería para crear interfaces gráficas en Java.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál es una característica clave de REST frente a SOAP?",
+  "opciones": [
+    "A. Es más pesado",
+    "B. Usa XML obligatoriamente",
+    "C. Es más ligero y basado en HTTP",
+    "D. Requiere WSDL"
+  ],
+  "correcta": 2,
+  "explicacion": "REST es más ligero, usa HTTP directamente y no requiere XML obligatorio.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál es el objetivo principal del patrón MVC?",
+  "opciones": [
+    "A. Mejorar la velocidad del sistema",
+    "B. Separar responsabilidades",
+    "C. Reducir el uso de memoria",
+    "D. Evitar el uso de bases de datos"
+  ],
+  "correcta": 1,
+  "explicacion": "MVC separa modelo, vista y controlador para mejorar mantenimiento y escalabilidad.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "En la evolución de Java EE a Jakarta EE, ¿qué cambio fundamental se produjo en los paquetes de las APIs?",
+  "opciones": [
+    "A. Pasaron de java.* a jakarta.*",
+    "B. Pasaron de javax.* a jakarta.*",
+    "C. Pasaron de org.* a jakarta.*",
+    "D. No hubo cambios en los paquetes"
+  ],
+  "correcta": 1,
+  "explicacion": "El cambio clave fue el paso de javax.* a jakarta.* tras el traslado a la Eclipse Foundation, lo que rompió compatibilidad con versiones anteriores.",
+  "analisis_opciones": {
+    "A": "Incorrecta. java.* es el núcleo del lenguaje (Java SE), no se modificó en la transición.",
+    "B": "Correcta. Es el cambio más importante y muy preguntado en examen.",
+    "C": "Incorrecta. org.* no es el namespace estándar de Java EE.",
+    "D": "Incorrecta. Sí hubo un cambio crítico que afecta a compatibilidad."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente la diferencia entre JAX-WS y JAX-RS?",
+  "opciones": [
+    "A. JAX-WS se utiliza para REST y JAX-RS para SOAP",
+    "B. JAX-WS es para servicios SOAP y JAX-RS para REST",
+    "C. Ambos se utilizan exclusivamente para REST",
+    "D. Ambos se utilizan exclusivamente para SOAP"
+  ],
+  "correcta": 1,
+  "explicacion": "JAX-WS está orientado a servicios SOAP (basados en XML y WSDL), mientras que JAX-RS se utiliza para servicios REST (ligeros y basados en HTTP).",
+  "analisis_opciones": {
+    "A": "Incorrecta. Está invertido: JAX-WS es SOAP y JAX-RS es REST.",
+    "B": "Correcta. Diferencia clave entre ambos modelos de servicios.",
+    "C": "Incorrecta. Solo JAX-RS es REST.",
+    "D": "Incorrecta. Solo JAX-WS es SOAP."
+  }
+},
+{
+  "pregunta": "En el ciclo de ejecución de una aplicación .NET, ¿qué componente transforma MSIL en código máquina?",
+  "opciones": [
+    "A. CLR",
+    "B. JIT",
+    "C. ADO.NET",
+    "D. ASP.NET"
+  ],
+  "correcta": 1,
+  "explicacion": "El compilador JIT traduce el código intermedio MSIL a código máquina en tiempo de ejecución dentro del CLR.",
+  "analisis_opciones": {
+    "A": "Incorrecta. El CLR es el entorno de ejecución, pero quien traduce es el JIT dentro de él.",
+    "B": "Correcta. Es el responsable directo de la compilación a código máquina.",
+    "C": "Incorrecta. Es para acceso a datos.",
+    "D": "Incorrecta. Es un framework web."
+  }
+},
+{
+  "pregunta": "¿Cuál es la principal diferencia entre un Servlet y una página JSP?",
+  "opciones": [
+    "A. El Servlet se ejecuta en cliente y JSP en servidor",
+    "B. JSP está orientado a presentación y Servlet a lógica",
+    "C. Servlet usa HTML y JSP no",
+    "D. JSP no permite código Java"
+  ],
+  "correcta": 1,
+  "explicacion": "Los Servlets gestionan la lógica y control de peticiones, mientras que JSP se centra en la presentación generando contenido dinámico.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Ambos se ejecutan en servidor.",
+    "B": "Correcta. Es la diferencia conceptual clave.",
+    "C": "Incorrecta. Ambos pueden generar HTML.",
+    "D": "Incorrecta. JSP permite código Java embebido."
+  }
+},
+{
+  "pregunta": "¿Qué ocurre si en un diseño software existe un alto acoplamiento?",
+  "opciones": [
+    "A. Los módulos son independientes",
+    "B. El sistema es más flexible",
+    "C. Los cambios en un módulo afectan a otros",
+    "D. Mejora la reutilización"
+  ],
+  "correcta": 2,
+  "explicacion": "El alto acoplamiento implica dependencia fuerte entre módulos, lo que provoca que cambios en uno afecten a otros.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso sería bajo acoplamiento.",
+    "B": "Incorrecta. El alto acoplamiento reduce flexibilidad.",
+    "C": "Correcta. Es la consecuencia directa.",
+    "D": "Incorrecta. Dificulta la reutilización."
+  }
+},
+{
+  "pregunta": "¿Qué tipo de archivo se utiliza para desplegar una aplicación web Java en un servidor?",
+  "opciones": [
+    "A. JAR",
+    "B. WAR",
+    "C. EAR",
+    "D. XML"
+  ],
+  "correcta": 1,
+  "explicacion": "WAR es el formato específico para aplicaciones web Java con servlets, JSP y recursos.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es para librerías o aplicaciones simples.",
+    "B": "Correcta. Es el formato estándar web.",
+    "C": "Incorrecta. Es para aplicaciones enterprise completas.",
+    "D": "Incorrecta. No es formato ejecutable."
+  }
+},
+{
+  "pregunta": "¿Qué función cumple el CLR en .NET?",
+  "opciones": [
+    "A. Compilar código fuente directamente a máquina",
+    "B. Ejecutar código gestionado y gestionar recursos",
+    "C. Generar interfaces gráficas",
+    "D. Acceder a bases de datos"
+  ],
+  "correcta": 1,
+  "explicacion": "El CLR es el entorno de ejecución que gestiona memoria, seguridad, excepciones y ejecución del código .NET.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso lo hace el JIT, no el CLR directamente.",
+    "B": "Correcta. Función principal del CLR.",
+    "C": "Incorrecta. No es su función.",
+    "D": "Incorrecta. Eso es ADO.NET."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes es una característica de los servicios REST?",
+  "opciones": [
+    "A. Mantienen estado entre peticiones",
+    "B. Requieren WSDL obligatoriamente",
+    "C. Son ligeros y usan HTTP",
+    "D. Solo utilizan XML"
+  ],
+  "correcta": 2,
+  "explicacion": "REST es una arquitectura sin estado, ligera y basada en HTTP, pudiendo usar JSON o XML.",
+  "analisis_opciones": {
+    "A": "Incorrecta. REST es stateless.",
+    "B": "Incorrecta. WSDL es de SOAP.",
+    "C": "Correcta. Definición clave.",
+    "D": "Incorrecta. También usa JSON."
+  }
+}
+]

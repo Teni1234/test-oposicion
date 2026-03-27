@@ -1,0 +1,3016 @@
+[
+  {
+    "pregunta": "1. La firma electrónica asegura:",
+    "opciones": [
+      "A. Confidencialidad e integridad.",
+      "B. Confidencialidad y no repudio en origen.",
+      "C. Integridad y no repudio en origen.",
+      "D. Confidencialidad, integridad y no repudio en origen."
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. La firma electrónica no garantiza confidencialidad.",
+      "B": "Incorrecta. Tampoco garantiza confidencialidad.",
+      "C": "Correcta. Garantiza integridad y no repudio.",
+      "D": "Incorrecta. Incluye confidencialidad, que no es función de la firma."
+    }
+  },
+  {
+    "pregunta": "2. Entre los riesgos de las redes inalámbricas, el \"eavesdropping\" sucede cuando un individuo no autorizado:",
+    "opciones": [
+      "A. inyecta peticiones masivas de asociación a los AP (Access Point o puntos de acceso) dejándolos incapacitados para responder a las peticiones de los clientes legítimos.",
+      "B. se coloca en medio de la comunicación inalámbrica entre emisor y receptor, suplantando a una de las partes y haciendo creer a la otra que está hablando con el comunicante legítimo.",
+      "C. utiliza alguna herramienta (normalmente antenas de gran alcance) para capturar de forma pasiva el tráfico inalámbrico.",
+      "D. suplanta una dirección MAC autorizada para lograr el acceso a un AP que tenga configurada una lista de direcciones MAC permitidas."
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. Es un ataque DoS.",
+      "B": "Incorrecta. Es ataque Man-in-the-Middle.",
+      "C": "Correcta. Eavesdropping es escucha pasiva del tráfico.",
+      "D": "Incorrecta. Es spoofing de MAC."
+    }
+  },
+  {
+    "pregunta": "3. En los cuadros eléctricos de un CPD, los Interruptores diferenciales:",
+    "opciones": [
+      "A. Protegen la instalación frente a sobrecargas y cortocircuitos.",
+      "B. Protegen a las personas de electrocución por un eventual contacto a un equipo con un problema de aislamiento eléctrico.",
+      "C. Seleccionan la fase a la que se conecta la carga.",
+      "D. Permiten repartir la carga entre las fases."
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. Eso lo hacen magnetotérmicos.",
+      "B": "Correcta. Protegen a personas frente a fugas de corriente.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "4. Cuál de las siguientes opciones se refiere a un método que se utiliza para redirigir el tráfico dirigido a ciertas IPs por razones de seguridad, para analizar, o detectar comportamientos anómalos y prevenir ataques de malware:",
+    "opciones": [
+      "A. DNS spoofing",
+      "B. DNS sinkholing",
+      "C. DNS redirecting",
+      "D. DNS poisoning"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. Es suplantación DNS.",
+      "B": "Correcta. Sinkholing redirige tráfico para análisis.",
+      "C": "Incorrecta. No es término técnico estándar.",
+      "D": "Incorrecta. Es manipulación maliciosa DNS."
+    }
+  },
+  {
+    "pregunta": "5. En seguridad de la información y las comunicaciones, se define integridad como:",
+    "opciones": [
+      "A. Aseguramiento de que la información es accesible solamente para aquellas personas que está autorizadas.",
+      "B. Garantía de que los usuarios autorizados tienen acceso a la información cuando lo solicitan.",
+      "C. Garantía de que la información y sus métodos de proceso son exactos y completos y de que la información no ha sido modificada indebidamente.",
+      "D. Garantía de que el emisor de una información está identificado de manera única e inequívoca."
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. Es confidencialidad.",
+      "B": "Incorrecta. Es disponibilidad.",
+      "C": "Correcta. Define integridad.",
+      "D": "Incorrecta. Es autenticación."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál de las siguientes afirmaciones sobre la función hash es verdadera?",
+    "opciones": [
+      "A. Es una función de doble sentido que calcula a partir de una cadena de bits de longitud arbitraria, otra de longitud fija.",
+      "B. Se utiliza para garantizar la confidencialidad de un mensaje.",
+      "C. A partir del resumen obtenido con la función hash, puede reconstruirse el mensaje original.",
+      "D. Se utiliza para garantizar la integridad de un mensaje."
+    ],
+    "respuesta_correcta": "D",
+    "explicacion": {
+      "A": "Incorrecta. Es de un solo sentido.",
+      "B": "Incorrecta. No cifra.",
+      "C": "Incorrecta. No es reversible.",
+      "D": "Correcta. Se usa para integridad."
+    }
+  },
+  {
+    "pregunta": "7. En relación a las dimensiones de seguridad y sus posibles amenazas, indique la afirmación correcta:",
+    "opciones": [
+      "A. La confidencialidad se ve afectada por la modificación.",
+      "B. La confidencialidad se ve afectada por la fabricación.",
+      "C. La integridad se ve afectada por la intercepción.",
+      "D. La disponibilidad se ve afectada por la interrupción."
+    ],
+    "respuesta_correcta": "D",
+    "explicacion": {
+      "A": "Incorrecta. Modificación afecta a integridad.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta. Intercepción afecta confidencialidad.",
+      "D": "Correcta. Interrupción afecta disponibilidad."
+    }
+  },
+  {
+    "pregunta": "8. La seguridad en un sistema operativo:",
+    "opciones": [
+      "A. Es necesaria, pero no imprescindible.",
+      "B. Es imprescindible, pero basta implementar un único nivel de protección.",
+      "C. Es imprescindible, implementando varios niveles de protección.",
+      "D. El sistema operativo ya está suficientemente protegido, la seguridad debe implementarse sobre los datos."
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Seguridad en capas.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. Cómo se llama la causa potencial de un incidente que puede causar daños a un sistema de información o a una organización?",
+    "opciones": [
+      "A. Amenaza",
+      "B. Riesgo",
+      "C. Impacto",
+      "D. Vulnerabilidad"
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. Definición de amenaza.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. Cuál de los siguientes algoritmos de cifrado NO es un algoritmo de cifrado simétrico:",
+    "opciones": [
+      "A. RSA",
+      "B. DES",
+      "C. TDES",
+      "D. IDEA"
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. RSA es asimétrico.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "11. ¿Cuál de los siguientes NO es un algoritmo de cifrado?",
+    "opciones": [
+      "A. Triple DES",
+      "B. IDEA",
+      "C. RC4",
+      "D. MD5"
+    ],
+    "respuesta_correcta": "D",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Es función hash."
+    }
+  },
+  {
+    "pregunta": "12. La norma NFPA 2001 se refiere a:",
+    "opciones": [
+      "A. Sistemas de extinción de incendios con gases limpios.",
+      "B. Norma para la protección de equipos de computación/equipos procesadores de datos.",
+      "C. Ensayos de reacción al fuego de materiales de construcción. Clasificación de materiales.",
+      "D. Norma para el comportamiento de materiales."
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. Gases limpios (FM-200, etc.).",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "13. Según el estándar TIA 942, las CPD's se pueden certificar en :",
+    "opciones": [
+      "A. 3 tiers o niveles.",
+      "B. 4 tiers o niveles.",
+      "C. 5 tiers o niveles.",
+      "D. 6 tiers o niveles."
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Correcta. TIER I a IV.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "14. En un centro de proceso de datos (CPD) se dispone de una serie de medidas de seguridad físicas como el sistema de doble puerta (mantrap), con este sistema se pretende evitar principalmente:",
+    "opciones": [
+      "A. el aire frío.",
+      "B. el piggybacking",
+      "C. la humedad.",
+      "D. el eavesdropping."
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Evita entrada no autorizada tras otra persona.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "15. ¿Qué tipo de ataque lleva a cabo el virus Ryuk?",
+    "opciones": [
+      "A. Sniffing",
+      "B. Ransomware",
+      "C. Spoofing",
+      "D. Phishing"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Ryuk es ransomware.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "16. No es cierto que:",
+    "opciones": [
+      "A. Riesgo es la posibilidad de que se produzca un impacto dado en la organización.",
+      "B. Impacto es el evento que puede desencadenar un incidente en la organización.",
+      "C. Vulnerabilidad es la posibilidad de ocurrencia de materialización de una amenaza sobre un activo.",
+      "D. Una función o servicio de salvaguarda es una acción que reduce el riesgo."
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. Es correcta.",
+      "B": "Correcta. Impacto es consecuencia, no evento.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "17. Seleccione la respuesta INCORRECTA sobre la firma electrónica.",
+    "opciones": [
+      "A. Se llama Co-firma a la firma múltiple en la que todos los firmantes están al mismo nivel y en la que no importa el orden en el que se firma.",
+      "B. Cuando se firma en formato XAdES (XML Avanzado), el resultado es un fichero de texto XML.",
+      "C. En el formato XAdES se habla de firmas despegadas (detache, envolventes (enveloping) y envueltas (envelope según en qué sitio del propio fichero de firma se guarde el documento original.",
+      "D. El formato PAdES (Propietario Avanzado) es el formato propio utilizado por Microsoft Office, si bien existe una implementación abierta que se aplica en Open Office."
+    ],
+    "respuesta_correcta": "D",
+    "explicacion": {
+      "A": "Incorrecta. Es correcta.",
+      "B": "Incorrecta. Es correcta.",
+      "C": "Incorrecta. Es correcta.",
+      "D": "Correcta. PAdES es para PDF, no para Office."
+    }
+  },
+  {
+    "pregunta": "18. AppLocker es:",
+    "opciones": [
+      "A. Una característica de los sistemas Unix que permite definir los permisos que se conceden a una aplicación.",
+      "B. Un virus de tipo ransomware contraseña de descifrado.",
+      "C. Una característica disponible en algunos sistemas Windows que permite especificar los usuarios o grupos que pueden ejecutar determinadas aplicaciones.",
+      "D. Un software para el cifrado de medios de almacenamiento."
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Control de ejecución en Windows.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "19. ¿Cuál de los siguientes es un código malicioso para secuestrar datos, en el que el atacante encripta los datos de la víctima y exige un pago por la clave de descifrado?",
+    "opciones": [
+      "A. Purple",
+      "B. Pharming",
+      "C. Ransomware",
+      "D. Spoofing"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "20. Según la ANSI\\TIA-942 el porcentaje de disponibilidad de 99.982% en un CPD corresponde a:",
+    "opciones": [
+      "A. TIER I.",
+      "B. TIER II.",
+      "C. TIER III.",
+      "D. TIER IV."
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. TIER III ≈ 99.982%.",
+      "D": "Incorrecta. TIER IV es mayor (~99.995%)."
+    }
+  },
+  {
+    "pregunta": "21. ¿Cuál de los siguientes NO es un packet sniffer?",
+    "opciones": [
+      "A. TCPDUMP.",
+      "B. Ettercap.",
+      "C. Wireshark.",
+      "D. Packstat."
+    ],
+    "respuesta_correcta": "D",
+    "explicacion": {
+      "A": "Incorrecta. tcpdump es un sniffer clásico en consola.",
+      "B": "Incorrecta. Ettercap permite sniffing y ataques MITM.",
+      "C": "Incorrecta. Wireshark es el sniffer más conocido.",
+      "D": "Correcta. Packstat no es una herramienta real de sniffing."
+    }
+  },
+  {
+    "pregunta": "22. Tres de los atributos esenciales de la seguridad de la información son:",
+    "opciones": [
+      "A. Propiedad, oportunidad y estabilidad.",
+      "B. Confidencialidad, integridad y disponibilidad.",
+      "C. Propiedad, confidencialidad y versatilidad.",
+      "D. Integridad, auditabilidad y oportunidad."
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Triada CIA.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "23. Indique la respuesta correcta sobre tipos de ataque a un sistema de información:",
+    "opciones": [
+      "A. El sniffing es la generación de tráfico utilizando un origen falseado.",
+      "B. El spoofing es la captura del tráfico que circula por una red.",
+      "C. Denegacion de servicio distribuida (DDoS) es un ataque a varios objetivos desde un solo punto, con la finalidad de degradar total o parcialmente los servicios prestados por esos recursos a sus usuarios legítimos.",
+      "D. El barrido (“escaneo”) de puertos es un ataque que trata de obtener información básica acerca de qué servicios se ofrecen en un determinado sistema, así como otros detalles técnicos del mismo."
+    ],
+    "respuesta_correcta": "D",
+    "explicacion": {
+      "A": "Incorrecta. Eso es spoofing.",
+      "B": "Incorrecta. Eso es sniffing.",
+      "C": "Incorrecta. DDoS es desde múltiples orígenes a un objetivo.",
+      "D": "Correcta. El escaneo de puertos busca info de servicios."
+    }
+  },
+  {
+    "pregunta": "24. Ante un posible desastre, ¿Qué método de comunicación entre CPD's ofrece una respuesta más rápida y fiable?",
+    "opciones": [
+      "A. Copia síncrona.",
+      "B. Copia asíncrona.",
+      "C. Copia \"en caliente\".",
+      "D. Copia continua."
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. Réplica en tiempo real.",
+      "B": "Incorrecta. Hay desfase.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "25. Para valorar el nivel de disponibilidad y seguridad de un CPD, el estándar ANSI EIA/TIA 942 estableció:",
+    "opciones": [
+      "A. Cuatro niveles, siendo TIER I el de mayor disponibilidad y TIER IV el de menor.",
+      "B. Tres niveles, siendo TIER I el de mayor disponibilidad y TIER III el de menor.",
+      "C. Tres niveles, siendo TIER I el de menor disponibilidad y TIER III el de mayor.",
+      "D. Cuatro niveles, siendo TIER I el de menor disponibilidad y TIER IV el de mayor."
+    ],
+    "respuesta_correcta": "D",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. TIER I < TIER IV."
+    }
+  },
+  {
+    "pregunta": "26. ¿Cuál es el tamaño en bits del campo Next Header en una cabecera del protocolo AH de IPSEC?",
+    "opciones": [
+      "A. 8",
+      "B. 16",
+      "C. 24",
+      "D. 32"
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. Campo de 8 bits.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "27. La suite de cifrado HMAC-SHA256 fue introducida en:",
+    "opciones": [
+      "A. SSLv3",
+      "B. TLS 1.2",
+      "C. TLS 1.1",
+      "D. TLS 1.0"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Correcta. TLS 1.2 introduce SHA-256.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "28. Indique la respuesta correcta sobre el formato de firma digital CAdES:",
+    "opciones": [
+      "A. Es apropiado para firmar ficheros grandes, especialmente si la firma contiene el documento original.",
+      "B. Es el formato de firma que utiliza Microsoft Office.",
+      "C. El resultado es un fichero de texto XML. No es adecuado cuando el fichero original es muy grande.",
+      "D. Es el formato más adecuado cuando el documento original es un PDF."
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. CAdES es binario y eficiente.",
+      "B": "Incorrecta. Office usa otros formatos.",
+      "C": "Incorrecta. Eso es XAdES.",
+      "D": "Incorrecta. Eso es PAdES."
+    }
+  },
+  {
+    "pregunta": "29. ¿Porqué debe existir un antivirus en el PC y otro en la pasarela de acceso a Internet?",
+    "opciones": [
+      "A. No es necesario, bastaría con uno de los dos.",
+      "B. Porque hay programas que puede contener virus que lleguen al PC por una vía distinta de Internet.",
+      "C. Porque al tener el antivirus en la pasarela de acceso a Internet aseguramos que el antivirus está actualizado.",
+      "D. Porque los antivirus necesitan tener instalada una parte en local y otra en remoto."
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Defensa en profundidad.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "30. ¿En qué algoritmo se basa el estándar AES (Advanced Encryption Standard)?",
+    "opciones": [
+      "A. TDES (Triple Data Encryption Standard).",
+      "B. Rijndael.",
+      "C. Blowfish.",
+      "D. IDEA (International Data Encryption Algorithm) ."
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Correcta. AES = Rijndael.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "31. En seguridad informática, el término bluejacking se refiere a:",
+    "opciones": [
+      "A. A toda técnica ilegal que lleve consigo el adueñamiento o robo de algo (generalmente información) por parte de un atacante.",
+      "B. Al uso de técnicas de suplantación de identidad generalmente con usos maliciosos o de investigación.",
+      "C. Al uso de un tipo de ingeniería social caracterizado por intentar adquirir información confidencial de forma fraudulenta.",
+      "D. Una técnica consistente en enviar mensajes no solicitados entre dispositivos Bluetooth, como, por ejemplo teléfonos móviles, PDAs o portátiles."
+    ],
+    "respuesta_correcta": "D",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Bluetooth spam."
+    }
+  },
+  {
+    "pregunta": "32. ¿Con qué tipo de mecanismo de seguridad se corresponde un análisis forense?",
+    "opciones": [
+      "A. De recuperación.",
+      "B. De detección.",
+      "C. De prevención.",
+      "D. De disponibilidad."
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Detecta/analiza tras incidente.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "33. A la hora de diseñar un Centro de Proceso de Datos ¿cuál de entre las siguientes opciones no es adecuada para garantizar una correcta operación dentro de dicha ubicación?",
+    "opciones": [
+      "A. Los armarios deben estar apoyados en las paredes del Centro de Proceso de Datos para favorecer el espacio libre y el trabajo dentro del centro.",
+      "B. La temperatura no debe ser superior a 25aC y deben existir sensores de temperatura.",
+      "C. Debe existir suelo o techo técnico para llevar las acometidas de cableado eléctrico y de red.",
+      "D. La alimentación eléctrica del Centro de Proceso de Datos debe estar protegida por un sistema de Alimentación Ininterrumpida."
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. Mal diseño (flujo aire incorrecto).",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "34. A la técnica de fraude consistente en redirigir la página solicitada por el usuario a otra predeterminada por el atacante con el objetivo de hacerle creer que se encuentra en la original y actúe dentro de ella con total normalidad, se le denomina:",
+    "opciones": [
+      "A. Pharming.",
+      "B. Phishing.",
+      "C. Spoofing.",
+      "D. Spamming."
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. Redirección fraudulenta.",
+      "B": "Incorrecta. Engaño por email.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "35. ¿A qué ámbito de la seguridad afecta un ataque realizado con un sniffer?",
+    "opciones": [
+      "A. Integridad.",
+      "B. Disponibilidad.",
+      "C. Autenticación.",
+      "D. Confidencialidad."
+    ],
+    "respuesta_correcta": "D",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Espía información."
+    }
+  },
+  {
+    "pregunta": "36. Señale cuál de las siguientes descripciones se corresponde con la amenaza denominada \"Clickjacking\":",
+    "opciones": [
+      "A. Un usuario malicioso puede ejecutar comandos en el sistema operativo host.",
+      "B. Un usuario malicioso intenta acceder a partes del sistema de ficheros del servidor web a los que no debería tener acceso.",
+      "C. Un usuario malicioso secuestra las pulsaciones de ratón dirigidas a un sitio aparentemente inocente y las redirige a otro sitio, engañando a usuarios de Internet.",
+      "D. Inundación de peticiones no legitimas a un servidor de manera que se interrumpa el acceso a usuarios legítimos."
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Secuestro de clics.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "37. ¿Qué se entiende por “eavesdropping”?",
+    "opciones": [
+      "A. Es un ataque que tiene por objeto colapsar los recursos del sistema.",
+      "B. Es un ataque que tiene por objeto suplantar la identidad de otro usuario.",
+      "C. Es un ataque que tiene por objeto obtener información sin modificarla.",
+      "D. Es un ataque que tiene por objeto la integridad de la información."
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Escucha pasiva.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "38. La huella digital o resumen de un mensaje se obtiene aplicando una función, denominada hash, a ese mensaje. Una función hash tiene, entre otras, la siguiente propiedad:",
+    "opciones": [
+      "A. Dos mensajes iguales pueden producir huellas digitales diferentes.",
+      "B. Dos mensajes parecidos producen huellas digitales parecidas.",
+      "C. Dos huellas digitales idénticas pueden ser el resultado de dos mensajes iguales o de dos mensajes completamente diferentes.",
+      "D. Una función hash es reversible."
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Posibles colisiones.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "39. ¿Cuál de los siguientes tipos de certificado digital no existe?",
+    "opciones": [
+      "A. Certificado de persona física.",
+      "B. Certificado de probador de software.",
+      "C. Certificado SSL.",
+      "D. Certificado de firma de software."
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Correcta. No existe oficialmente.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "40. Kerberos es:",
+    "opciones": [
+      "A. Una pasarela de pagos de la AEAT.",
+      "B. Una aplicación cliente de firma electrónica.",
+      "C. Un protocolo de autenticación de red creado por el MIT.",
+      "D. Una distribución de Linux."
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Autenticación basada en tickets.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "41. Indique la respuesta correcta sobre el instrumento para medir la eficiencia de los CPD, conocido como variable PUE (Power Usage Effectiveness):",
+    "opciones": [
+      "A. Sirve para comparar el total de energía consumida por el CPD con la cantidad de energía que realmente consume el equipamiento de TI (tecnologías de la información).",
+      "B. Sirve para establecer un orden de mayor a menor consumo de energía de los equipos conectados en un CPD en base al estándar IEEE P1574.",
+      "C. Sirve para medir la eficiencia energética de un equipo concreto de entre todos los conectados en un CPD.",
+      "D. Sirve para comparar la energía consumida por el CPD con la cantidad de energía consumida por los equipos que no son TI (sistemas de refrigeración, etc.)."
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. PUE = Total energía / energía IT.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "42. La persona que busca la forma de usar o abusar del teléfono ajeno a su antojo es un:",
+    "opciones": [
+      "A. Cracker",
+      "B. Phonker",
+      "C. Phreaker",
+      "D. Lamer"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Phreaking = hacking telefónico.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "43. ¿Cuál de los siguientes sistemas de archivos facilita la encriptación de ficheros?",
+    "opciones": [
+      "A. EXT3.",
+      "B. NTFS.",
+      "C. FAT32.",
+      "D. EFS."
+    ],
+    "correcta": 1,
+    "explicacion": "NTFS permite el uso de EFS (Encrypting File System), que facilita la encriptación de archivos.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. NTFS soporta EFS para cifrado.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. EFS no es un sistema de archivos."
+    }
+  },
+  {
+    "pregunta": "44. El ataque informático denominado \"pharming\" consiste en:",
+    "opciones": [
+      "A. Capturar todas las pulsaciones de teclado para averiguar datos sensibles.",
+      "B. Realizar copias de sí mismo con el objetivo de colapsar un ordenador.",
+      "C. Mandar correos electrónicos con contenido falso para promover el envío de forma encadenada a otros usuarios.",
+      "D. Mediante la modificación en el DNS, enviar al usuario a una web falsa."
+    ],
+    "correcta": 3,
+    "explicacion": "El pharming redirige a sitios web falsos mediante manipulación del DNS.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "45. La herramienta que permite un acceso de privilegio continuo a una computadora, pero que mantiene su presencia activamente oculta al control de los administradores, al corromper el funcionamiento normal del sistema operativo o de otras aplicaciones, se denomina:",
+    "opciones": [
+      "A. Keylogger.",
+      "B. Phising.",
+      "C. HideProcess.",
+      "D. Rootkit."
+    ],
+    "correcta": 3,
+    "explicacion": "Un rootkit permite acceso privilegiado oculto en el sistema.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "46. Indique cuál de las siguientes herramientas se utilizaría en caso de querer garantizar la confidencialidad de la información:",
+    "opciones": [
+      "A. Firma electrónica.",
+      "B. Código CSV.",
+      "C. Función HASH.",
+      "D. Cifrado."
+    ],
+    "correcta": 3,
+    "explicacion": "La confidencialidad se consigue mediante cifrado.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "47. La creación de un señuelo atractivo para potenciales atacantes con el objetivo de aprender sus ataques y poder prevenirlos o defenderlos en el futuro se hace mediante un:",
+    "opciones": [
+      "A. IPS.",
+      "B. SIEM.",
+      "C. IDS.",
+      "D. Honeypot."
+    ],
+    "correcta": 3,
+    "explicacion": "Un honeypot es un sistema señuelo para estudiar ataques.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "48. ¿Cuál de los siguientes es un algoritmo de cifrado asimétrico?",
+    "opciones": [
+      "A. AES",
+      "B. Blowfish",
+      "C. ElGamal",
+      "D. TDES"
+    ],
+    "correcta": 2,
+    "explicacion": "ElGamal es un algoritmo de cifrado asimétrico.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "49. ¿Cuál de los siguientes algoritmos de cifrado es de clave pública?",
+    "opciones": [
+      "A. RSA",
+      "B. Blowfish",
+      "C. IDEA",
+      "D. Twofish"
+    ],
+    "correcta": 0,
+    "explicacion": "RSA es un algoritmo de clave pública.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "50. En un sistema de clave asimétrica, cuál es la clave que se usa para que A (emisor) firme digitalmente un mensaje que envía al destinatario B",
+    "opciones": [
+      "A. La clave pública de A.",
+      "B. El certificado digital.",
+      "C. La clave privada de A.",
+      "D. La clave privada de B."
+    ],
+    "correcta": 2,
+    "explicacion": "La firma digital se realiza con la clave privada del emisor.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "51. Seleccione la respuesta INCORRECTA sobre la firma electrónica:",
+    "opciones": [
+      "A. Se llama Co-firma a la firma múltiple en la que todos los firmantes están al mismo nivel y en la que no importa el orden en el que se firma.",
+      "B. Cuando se firma en formato XAdES (XML Avanzado), el resultado es un fichero de texto XML.",
+      "C. En el formato XAdES se habla de firmas despegadas (detached), envolventes (enveloping) y envueltas (enveloped) según en qué sitio del propio fichero de firma se guarde el documento original.",
+      "D. El formato PAdES (Propietario Avanzado) es el formato propio utilizado por Microsoft Office, si bien existe una implementación abierta que se aplica en Open Office."
+    ],
+    "correcta": 3,
+    "explicacion": "PAdES no es propietario de Microsoft Office, es un estándar para firmas en PDF.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Correcta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "52. Señale cuál de las siguientes afirmaciones es cierta, referente al algoritmo criptográfico IDEA:",
+    "opciones": [
+      "A. Opera con bloques de 256 bits.",
+      "B. Opera con bloques de 256 bytes.",
+      "C. Opera con bloques de 64 bits.",
+      "D. Opera con bloques de 64 bytes."
+    ],
+    "correcta": 2,
+    "explicacion": "IDEA trabaja con bloques de 64 bits.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "53. Según estándar ANSI/TIA 942, a qué TIER debe corresponderse un CPD para cumplir con un grado de disponibilidad del 99,741%?",
+    "opciones": [
+      "A. TIER 1",
+      "B. TIER 2",
+      "C. TIER 3",
+      "D. TIER 4"
+    ],
+    "correcta": 1,
+    "explicacion": "El TIER 2 ofrece una disponibilidad aproximada del 99,741%.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "54. Señale el algoritmo de clave asimétrica entre los siguientes:",
+    "opciones": [
+      "A. DSA",
+      "B. DES",
+      "C. Triple DES",
+      "D. AES"
+    ],
+    "correcta": 0,
+    "explicacion": "DSA es un algoritmo de firma digital basado en criptografía asimétrica.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "55. La utilización de técnicas biométricas para el control de acceso físico a las instalaciones informáticas forma parte de la llamada:",
+    "opciones": [
+      "A. Confidencialidad.",
+      "B. Seguridad perimetral.",
+      "C. Seguridad lógica.",
+      "D. Acción antivirus."
+    ],
+    "correcta": 1,
+    "explicacion": "La biometría aplicada al acceso físico forma parte de la seguridad perimetral.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "56. En el ámbito de la seguridad de los sistemas de Información, token físico de seguridad es:",
+    "opciones": [
+      "A. Una clave compartida por dos entidades emisor y receptor.",
+      "B. Un dispositivo electrónico que se le da a un usuario autorizado de un servicio computerizado para facilitar el proceso de autenticación.",
+      "C. Un tipo de impresora específico que controla los accesos de usuarios mediante una white list cuando la Impresora está conectada a la red.",
+      "D. Un tipo de impresora específico que controla los accesos de usuarios mediante una black list cuando la impresora está conectada a la red."
+    ],
+    "correcta": 1,
+    "explicacion": "Un token físico es un dispositivo que ayuda en la autenticación.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "57. ¿Cuál de los siguientes activos u objetos de una organización son los de mayor criticidad y los que debemos proteger en mayor medida ante posibles amenazas?",
+    "opciones": [
+      "A. Los datos.",
+      "B. Los programas de usuario y sistemas operativos.",
+      "C. Los ordenadores.",
+      "D. Los sistemas de comunicaciones."
+    ],
+    "correcta": 0,
+    "explicacion": "Los datos son el activo más crítico en una organización.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "58. En el ámbito de la seguridad informática, Hoax es un mensaje:",
+    "opciones": [
+      "A. Inofensivo, normalmente distribuido por correo electrónico, que alerta de un problema informático que realmente no existe para causar, mediante una serie de instrucciones, problemas en el sistema.",
+      "B. normalmente distribuido por correo electrónico, de un destino aparentemente de confianza con la intención de engañar al usuario para que facilite datos personales, bancarios, contraseñas...",
+      "C. distribuido por correo electrónico, que contiene un fichero adjunto que, una vez descargado y ejecutado se replica e infecta rápidamente la red, reenviándose a la lista de contactos de la víctima.",
+      "D. distribuido por correo electrónico, que contiene publicidad no solicitada."
+    ],
+    "correcta": 0,
+    "explicacion": "Un hoax es un bulo o mensaje falso sin malware real.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "59. ¿Qué es ECDSA?",
+    "opciones": [
+      "A. Un algoritmo de firma.",
+      "B. Un estándar estadounidense de cableado.",
+      "C. Un organismo regulador internacional.",
+      "D. Un protocolo de nivel de enlace."
+    ],
+    "correcta": 0,
+    "explicacion": "ECDSA es un algoritmo de firma digital basado en criptografía de curva elíptica.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "60. ITIL define un incidente como:",
+    "opciones": [
+      "A. Cualquier evento que no forma parte del desarrollo habitual del servicio y que causa, o puede causar una interrupción del mismo o una reducción de la calidad de dicho servicio.",
+      "B. Fallo sin un origen conocido que puede causar una interrupción del servicio o una reducción de la calidad de dicho servicio.",
+      "C. Fallo con un origen conocido que puede causar una interrupción del servicio o una reducción de la calidad de dicho servicio.",
+      "D. Petición de cambio que puede ser realizada para solventar el error."
+    ],
+    "correcta": 0,
+    "explicacion": "ITIL define incidente como cualquier interrupción o degradación del servicio.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "61. ¿Cuál de entre los siguientes es actualmente un método de control biométrico de acceso a un CPD?",
+    "opciones": [
+      "A. Tarjeta de acceso.",
+      "B. Identificación por huella dactilar.",
+      "C. Código de acceso.",
+      "D. Chip subcutáneo."
+    ],
+    "correcta": 1,
+    "explicacion": "La huella dactilar es un método biométrico.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "62. Para que pueda operar correctamente, un sistema de cifrado asimétrico necesita:",
+    "opciones": [
+      "A. Una clave pública y una clave privada.",
+      "B. El protocolo SET configurado ergódicamente.",
+      "C. El uso de la técnica SSL en la configuración de las comunicaciones.",
+      "D. Una tarjeta inteligente que almacene claves."
+    ],
+    "correcta": 0,
+    "explicacion": "El cifrado asimétrico utiliza un par de claves: pública y privada.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "63. ¿Cuál de entre los siguientes algoritmos de encriptación es simétrico?",
+    "opciones": [
+      "A. RSA",
+      "B. PGP",
+      "C. AES",
+      "D. Diffie-Hellman"
+    ],
+    "correcta": 2,
+    "explicacion": "AES es un algoritmo de cifrado simétrico ampliamente utilizado.",
+    "analisis_opciones": {
+      "a": "Incorrecta. RSA es un algoritmo asimétrico.",
+      "b": "Incorrecta. PGP es un sistema híbrido, no un algoritmo simétrico puro.",
+      "c": "Correcta. AES es cifrado simétrico.",
+      "d": "Incorrecta. Diffie-Hellman es un algoritmo de intercambio de claves."
+    }
+  },
+  {
+    "pregunta": "64. Indique, de las siguientes afirmaciones sobre algoritmos de cifrado, cuál es verdadera:",
+    "opciones": [
+      "A. TDEA es simétrico.",
+      "B. DSA es simétrico.",
+      "C. ECIES es simétrico.",
+      "D. AES es asimétrico."
+    ],
+    "correcta": 0,
+    "explicacion": "TDEA (Triple DES) es un algoritmo de cifrado simétrico.",
+    "analisis_opciones": {
+      "a": "Correcta. TDEA es simétrico.",
+      "b": "Incorrecta. DSA es asimétrico.",
+      "c": "Incorrecta. ECIES es asimétrico.",
+      "d": "Incorrecta. AES es simétrico."
+    }
+  },
+  {
+    "pregunta": "65. En un Sistema de Información que se desarrolla en un entorno distribuido, con usuarios locales y remotos, señale qué debe comprender la seguridad, además de “Confidencialidad, Integridad y Disponibilidad”:",
+    "opciones": [
+      "A. Accesibilidad a la información en todo momento.",
+      "B. Control de la información para que siempre sea exacta, autorizada y completa.",
+      "C. Privacidad, para que los datos sólo sean manejados por los usuarios autorizados",
+      "D. Autenticidad y no repudio."
+    ],
+    "correcta": 3,
+    "explicacion": "Además del triángulo CIA, se incluyen autenticidad y no repudio.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Ya está implícita en disponibilidad.",
+      "b": "Incorrecta. Describe integridad.",
+      "c": "Incorrecta. Describe confidencialidad.",
+      "d": "Correcta. Amplía el modelo clásico."
+    }
+  },
+  {
+    "pregunta": "66. De los protocolos que forman IPSec, ¿cuál proporciona confidencialidad?",
+    "opciones": [
+      "A. SiDP",
+      "B. ESP",
+      "C. KIE",
+      "D. AH"
+    ],
+    "correcta": 1,
+    "explicacion": "ESP proporciona cifrado y confidencialidad en IPSec.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No es un protocolo válido de IPSec.",
+      "b": "Correcta. ESP cifra los datos.",
+      "c": "Incorrecta. No corresponde a IPSec.",
+      "d": "Incorrecta. AH no cifra, solo autentica."
+    }
+  },
+  {
+    "pregunta": "67. ¿Qué elemento tiene el mayor consumo eléctrico en un CPD?",
+    "opciones": [
+      "A. Los sistemas de alimentación ininterrumpida (SAI).",
+      "B. Los humidificadores.",
+      "C. Los equipos de aire acondicionado.",
+      "D. La distribución eléctrica."
+    ],
+    "correcta": 2,
+    "explicacion": "La climatización (aire acondicionado) es lo que más consume en un CPD.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Consume bastante pero no es el mayor.",
+      "b": "Incorrecta. Consumo menor.",
+      "c": "Correcta. Refrigeración = mayor consumo.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "68. Queremos utilizar RSA para asegurar la confidencialidad entre 4 personas. ¿Cuántas claves necesita conocer cada usuario?",
+    "opciones": [
+      "A. 2.",
+      "B. 4.",
+      "C. 6.",
+      "D. 8."
+    ],
+    "correcta": 0,
+    "explicacion": "Cada usuario necesita su clave privada y su clave pública.",
+    "analisis_opciones": {
+      "a": "Correcta. 1 pública + 1 privada.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "69. La configuración de Firewalls, como una de las funciones del Administrador Red, se engloba dentro de la categoría de:",
+    "opciones": [
+      "A. Configuración de servicios y aplicaciones Internet.",
+      "B. Seguridad de Red.",
+      "C. Configuración de nodos y recursos de red.",
+      "D. Administración de usuarios."
+    ],
+    "correcta": 1,
+    "explicacion": "Los firewalls son elementos clave de seguridad de red.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "70. Indique cuál de las afirmaciones sobre la clasificación de los centros de datos (CPDs) del UPTIME INSTITUTE es VERDADERA:",
+    "opciones": [
+      "A. Los CPD se clasifican de TIER I(menor tolerancia a fallos) a TIER V (mayor tolerancia a fallos}.",
+      "B. Un CPD TIER I requiere elementos de energía y refrigeración redundantes, pero no de cableado.",
+      "C. Un CPD TIER IV es tolerante a fallos.",
+      "D. Un CPD TIER V requiere un centro de respaldo."
+    ],
+    "correcta": 2,
+    "explicacion": "TIER IV es el máximo nivel y es tolerante a fallos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Solo hay hasta TIER IV.",
+      "b": "Incorrecta. TIER I no tiene redundancia.",
+      "c": "Correcta.",
+      "d": "Incorrecta. No existe TIER V."
+    }
+  },
+  {
+    "pregunta": "71. Un ataque de \"phishing\" consiste en un ataque:",
+    "opciones": [
+      "A. De fuerza bruta para adivinar la contraseña de acceso a un sistema.",
+      "B. En el que se suplanta la identidad de una entidad de confianza para solicitar a la víctima datos personales que le permitan realizar un fraude.",
+      "C. De acoso a una persona realizada en redes sociales o Internet utilizando información personal.",
+      "D. De denegación de servicio realizado desde una botnet (red de ordenadores zombies)."
+    ],
+    "correcta": 1,
+    "explicacion": "El phishing consiste en suplantación de identidad para robar datos.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "72. En el ámbito de la seguridad, ¿qué se conoce como IP Splicing-Hijacking?",
+    "opciones": [
+      "A. Secuestro de sesión: El atacante espera a que la víctima se identifique ante el sistema y tras ello le suplanta como usuario.",
+      "B. Secuestro de navegación: El atacante por medio de un troyano suplanta el navegador por otro ejecutable que redirecciona los contenidos.",
+      "C. Secuestro de sistema: Es una variante de Spoofing que suplanta a un usuario para realizar saltos de sistemas en sistemas y realizar ataques de forma anónima o haciéndose pasar por otro.",
+      "D. Secuestro de IP: El atacante genera paquetes de Internet con una dirección de red secuestrada en el campo From, pero que es aceptada por el destinatario del paquete."
+    ],
+    "correcta": 3,
+    "explicacion": "IP hijacking implica suplantar una dirección IP.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "73. Indique la afirmación INCORRECTA de las siguientes relacionadas con la seguridad informática:",
+    "opciones": [
+      "A. Activo: componente o funcionalidad de un sistema de información susceptible de ser atacado deliberada o accidentalmente con consecuencias para la organización.",
+      "B. Ataque: evento que puede originar un incidente produciendo daños materiales o pérdidas inmateriales.",
+      "C. Vulnerabilidad: posibilidad de ocurrencia, es decir, de materialización de una amenaza sobre un activo.",
+      "D. Impacto: consecuencia de la materialización de una amenaza."
+    ],
+    "correcta": 2,
+    "explicacion": "La vulnerabilidad es una debilidad, no la probabilidad de ocurrencia.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Define riesgo/probabilidad, no vulnerabilidad.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "74. El Plan de Contingencias de un Centro de Proceso de Datos contiene:",
+    "opciones": [
+      "A. Las políticas de seguridad corporativa.",
+      "B. El estudio y análisis de los riesgos posibles.",
+      "C. Las medidas preventivas para reducir los posibles riesgos.",
+      "D. Las medidas de corrección a aplicar una vez que se ha producido el incidente."
+    ],
+    "correcta": 3,
+    "explicacion": "El plan de contingencia actúa tras el incidente.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "75. En relación a MAC spoofing indique la afirmación correcta:",
+    "opciones": [
+      "A. Consiste en la suplantación de una dirección MAC.",
+      "B. Puede hacerse con el comando ipconfig de Unix.",
+      "C. Windows no permite hacer MAC spoofing.",
+      "D. Sólo lo permite la distribución Kali Linux."
+    ],
+    "correcta": 0,
+    "explicacion": "MAC spoofing es la suplantación de dirección MAC.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "76. Cuando en una transmisión de información no se puede garantizar que el contenido que se recibe no se haya alterado en el tránsito, decimos que no podemos garantizar la…",
+    "opciones": [
+      "A. Confidencialidad",
+      "B. Integridad",
+      "C. Autenticidad",
+      "D. Disponibilidad"
+    ],
+    "correcta": 1,
+    "explicacion": "La integridad asegura que los datos no se modifican.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "77. Indique, de las siguientes, cuál NO es una característica de los sistemas de clave pública:",
+    "opciones": [
+      "A. También son denominados de clave asimétrica.",
+      "B. Dada la clave pública es posible obtener la privada.",
+      "C. Se utilizan dos claves por participante, una pública y una privada.",
+      "D. Cualquier información cifrada con una de las claves, únicamente puede ser descifrada por la otra clave."
+    ],
+    "correcta": 1,
+    "explicacion": "No es posible obtener la clave privada a partir de la pública.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. Es falso.",
+      "c": "Correcta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "78. La posibilidad de incluir código en javascript que nos permite modificar el uso original de los botones de facebook en las redes sociales es lo que se conoce como:",
+    "opciones": [
+      "A. Clickjacking.",
+      "B. Phishing.",
+      "C. Tabnabbing.",
+      "D. Sniffer."
+    ],
+    "correcta": 0,
+    "explicacion": "El clickjacking engaña al usuario para que haga clic en elementos ocultos o manipulados.",
+    "analisis_opciones": {
+      "a": "Correcta. Manipula la interacción del usuario mediante interfaces engañosas.",
+      "b": "Incorrecta. Es suplantación para robo de datos.",
+      "c": "Incorrecta. Es manipulación de pestañas del navegador.",
+      "d": "Incorrecta. Es captura de tráfico de red."
+    }
+  },
+  {
+    "pregunta": "79. Los protocolos AAA se descomponen en tres procesos entrelazados. Señale la respuesta correcta:",
+    "opciones": [
+      "A. Autenticación, Autorización, Aislamiento.",
+      "B. Autenticación, Autorización, Seguridad.",
+      "C. Autenticación, Autorización, Control.",
+      "D. Autenticación, Autorización, Contabilización."
+    ],
+    "correcta": 3,
+    "explicacion": "AAA = Authentication, Authorization, Accounting (Contabilización).",
+    "analisis_opciones": {
+      "a": "Incorrecta. No es el tercer componente.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "80. ¿Cuál de las siguientes opciones incluye únicamente algoritmos de cifrado asimétrico?",
+    "opciones": [
+      "A. RSA y Diffie-Hellman.",
+      "B. RC-5 y Twofish.",
+      "C. DSA y AES.",
+      "D. DES e IDEA."
+    ],
+    "correcta": 0,
+    "explicacion": "RSA y Diffie-Hellman son algoritmos asimétricos.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. Son simétricos.",
+      "c": "Incorrecta. AES es simétrico.",
+      "d": "Incorrecta. Son simétricos."
+    }
+  },
+  {
+    "pregunta": "81. Queremos que un mensaje llegue de un punto a otro asegurándonos de que es el mismo en origen que en destino. ¿A qué nos estamos refiriendo?",
+    "opciones": [
+      "A. Confidencialidad.",
+      "B. Autenticidad.",
+      "C. Integridad.",
+      "D. No repudio."
+    ],
+    "correcta": 2,
+    "explicacion": "La integridad garantiza que los datos no han sido modificados.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es ocultar el contenido.",
+      "b": "Incorrecta. Es verificar identidad.",
+      "c": "Correcta.",
+      "d": "Incorrecta. Es evitar negación del envío."
+    }
+  },
+  {
+    "pregunta": "82. ¿Cuál de los siguientes ataques consiste en suplantar a una entidad legítima por medio de llamadas telefónicas?",
+    "opciones": [
+      "A. Pharming.",
+      "B. Smishing.",
+      "C. Vishing.",
+      "D. Whaling."
+    ],
+    "correcta": 2,
+    "explicacion": "Vishing es phishing por voz (llamadas telefónicas).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Redirección DNS.",
+      "b": "Incorrecta. SMS.",
+      "c": "Correcta.",
+      "d": "Incorrecta. Phishing dirigido a altos cargos."
+    }
+  },
+  {
+    "pregunta": "83. En el ámbito de la seguridad de los sistemas informáticos, los sistemas \"honeypots\" son sistemas:",
+    "opciones": [
+      "A. aparentemente vulnerables (reales o simulados) cuya intención es atraer a los atacantes.",
+      "B. que analizan los eventos que se producen en un equipo (host) concreto para determinar si está sufriendo un ataque de los denominados \"honey malware\".",
+      "C. que monitorizan todo el tráfico de una porción de la red.",
+      "D. que realizan principalmente las mismas funciones que un proxy pero con posibilidad de analizar los ataques denominados \"honey malware\"."
+    ],
+    "correcta": 0,
+    "explicacion": "Un honeypot es un sistema señuelo para atraer atacantes.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. Describe IDS.",
+      "c": "Incorrecta. Describe sniffer o IDS de red.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "84. ¿Qué se consigue cuando en un router se aplica el denominado filtro ‘anti spoofing’?",
+    "opciones": [
+      "A. Que no se acepten conexiones TCP entrantes.",
+      "B. Que no pasen paquetes con dirección de origen falsa.",
+      "C. Que no pasen paquetes con dirección de destino falsa.",
+      "D. Que no pase tráfico UDP."
+    ],
+    "correcta": 1,
+    "explicacion": "El anti-spoofing bloquea direcciones de origen falsificadas.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "85. ¿Cuál de los siguientes estándares persigue evitar las vulnerabilidades de seguridad en las redes inalámbricas?",
+    "opciones": [
+      "A. 802.11i",
+      "B. 802.1",
+      "C. 802.3",
+      "D. 802.11a"
+    ],
+    "correcta": 0,
+    "explicacion": "802.11i introduce mejoras de seguridad (WPA2).",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta. Ethernet.",
+      "d": "Incorrecta. Estándar WiFi sin foco en seguridad."
+    }
+  },
+  {
+    "pregunta": "86. En relación a los riesgos de seguridad en aplicaciones, según OWASP, ¿qué tipo de fallo ocurre cuando datos no confiables son enviados a un intérprete como parte de un comando o consulta?",
+    "opciones": [
+      "A. Secuencia de comandos en sitios cruzados (XSS).",
+      "B. Exposición de datos sensibles.",
+      "C. Redirecciones y reenvíos no validados.",
+      "D. Inyección."
+    ],
+    "correcta": 3,
+    "explicacion": "Es un ataque de inyección (ej. SQL Injection).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es XSS.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "87. La vulnerabilidad conocida como heartbleed afecta a:",
+    "opciones": [
+      "A. el servidor de páginas web Apache Webserver.",
+      "B. el intérprete de tipo shell en Unix llamado Bash.",
+      "C. al software criptográfico OpenSSL.",
+      "D. servidores de bases de datos Microsoft SQL Server."
+    ],
+    "correcta": 2,
+    "explicacion": "Heartbleed afecta a OpenSSL.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta. Eso es Shellshock.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "88. Cuando utilizamos nuestra firma digital mediante una tarjeta criptográfica:",
+    "opciones": [
+      "A. El certificado se instala en el navegador y se desinstala al extraer la tarjeta de lector.",
+      "B. La tarjeta criptográfica realiza parte de las operaciones de cifrado y descifrado, las claves nunca salen de la tarjeta.",
+      "C. El certificado digital está almacenado en el sitio web de la Autoridad de Certificación, y la tarjeta sólo realiza las operaciones de cifrado y descifrado.",
+      "D. La operativa es similar a cuando se utiliza un pendrive o un disco USB, con la seguridad añadida que ofrece el tener que teclear el PIN de la tarjeta."
+    ],
+    "correcta": 1,
+    "explicacion": "Las claves privadas permanecen dentro de la tarjeta criptográfica.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "89. Indique cuál de las siguientes herramientas es un Desktop Service o un Gestor de Atención al Usuario CAU:",
+    "opciones": [
+      "A. BMC REMEDY",
+      "B. MS OUTLOOK",
+      "C. VISIO",
+      "D. SUBVERSION"
+    ],
+    "correcta": 0,
+    "explicacion": "BMC Remedy es una herramienta de gestión de servicios IT (CAU).",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "90. Señale cuál de los siguientes NO es un algoritmo asimétrico",
+    "opciones": [
+      "A. RSA",
+      "B. GOST",
+      "C. ECDSA",
+      "D. ElGamal"
+    ],
+    "correcta": 1,
+    "explicacion": "GOST es un algoritmo simétrico en este contexto.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es asimétrico.",
+      "b": "Correcta. Es simétrico.",
+      "c": "Incorrecta. Es asimétrico.",
+      "d": "Incorrecta. Es asimétrico."
+    }
+  },
+  {
+    "pregunta": "91. ¿Cómo se denomina la vulnerabilidad web consistente en la ejecución de un comando malicioso de acceso o modificación de una base de datos como parte de una petición?",
+    "opciones": [
+      "A. CRLF injection",
+      "B. RFI",
+      "C. SQL injection",
+      "D. Cross Site Scripting"
+    ],
+    "correcta": 2,
+    "explicacion": "La SQL Injection permite ejecutar consultas maliciosas contra una base de datos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. CRLF injection manipula cabeceras HTTP.",
+      "b": "Incorrecta. RFI incluye archivos remotos.",
+      "c": "Correcta. Permite manipular bases de datos mediante consultas maliciosas.",
+      "d": "Incorrecta. XSS ejecuta scripts en el navegador."
+    }
+  },
+  {
+    "pregunta": "92. Cuando una entidad no autorizada inserta objetos falsificados en el sistema (virus), esto se llama:",
+    "opciones": [
+      "A. Interrupción.",
+      "B. Modificación.",
+      "C. Fabricación.",
+      "D. Intercepción."
+    ],
+    "correcta": 2,
+    "explicacion": "La fabricación implica introducir información o elementos falsos en el sistema.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Interrupción afecta a la disponibilidad.",
+      "b": "Incorrecta. Modificación altera datos existentes.",
+      "c": "Correcta. Inserta elementos falsos (ej. virus).",
+      "d": "Incorrecta. Intercepción implica acceso no autorizado a información."
+    }
+  },
+  {
+    "pregunta": "93. Dentro de un centro de datos el área de explotación tiene como objetivo principal:",
+    "opciones": [
+      "A. Analizar y desarrollar las aplicaciones y pruebas.",
+      "B. Definir la configuración de los equipos Hardware y Software.",
+      "C. La preparación de los datos y la ejecución de los programas.",
+      "D. Determinar los medios de recogida de información."
+    ],
+    "correcta": 2,
+    "explicacion": "El área de explotación se encarga de la operación diaria: ejecución de programas y tratamiento de datos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Corresponde a desarrollo.",
+      "b": "Incorrecta. Corresponde a sistemas.",
+      "c": "Correcta. Es la función principal de explotación.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "94. ¿Indique la afirmación FALSA con respecto al proceso de firma digital?",
+    "opciones": [
+      "A. La aplicación o dispositivo digital utilizados para la firma digital crea un resumen del documento a firmar utilizando una función hash.",
+      "B. La aplicación cifra el documento a firmar asegurando la confidencialidad.",
+      "C. La aplicación cifra el resumen del documento a firmar obteniendo a su vez otro documento electrónico que corresponde con la firma electrónica.",
+      "D. Para cifrar el resumen, la aplicación utiliza la clave privada."
+    ],
+    "correcta": 1,
+    "explicacion": "La firma digital no cifra el documento completo, solo el hash. No garantiza confidencialidad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es correcto: se genera un hash.",
+      "b": "Correcta. Es falsa: la firma no cifra el documento completo.",
+      "c": "Incorrecta. Así funciona la firma digital.",
+      "d": "Incorrecta. Se usa la clave privada."
+    }
+  },
+  {
+    "pregunta": "95. Con respecto a los ataques a las redes de comunicaciones, ¿cuál de las siguientes afirmaciones es cierta?",
+    "opciones": [
+      "A. Los ataques causados cuando se copia una cantidad de datos sobre un área que no es lo suficientemente grande para contenerlos son llamados hoax.",
+      "B. Para evitar puertas traseras o back doors hay que tener los antivirus y parches actualizados.",
+      "C. Los ataques mediante sniffing se basan en la suplantación de identidad.",
+      "D. Ninguna de las anteriores es cierta."
+    ],
+    "correcta": 1,
+    "explicacion": "Mantener sistemas actualizados ayuda a prevenir backdoors y vulnerabilidades.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Describe buffer overflow, no hoax.",
+      "b": "Correcta. Actualizaciones ayudan a prevenir vulnerabilidades.",
+      "c": "Incorrecta. Sniffing es captura de tráfico, no suplantación.",
+      "d": "Incorrecta. Sí hay una correcta."
+    }
+  },
+  {
+    "pregunta": "96. ¿Cuál de los siguientes NO es uno de los perfiles definidos para XADES (XML Advanced Electronic Signatures)?",
+    "opciones": [
+      "A. XADES-A.",
+      "B. XADES-T.",
+      "C. XADES-X-L.",
+      "D. XADES-R."
+    ],
+    "correcta": 3,
+    "explicacion": "XAdES-R no existe como perfil estándar.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Sí existe.",
+      "b": "Incorrecta. Sí existe.",
+      "c": "Incorrecta. Sí existe.",
+      "d": "Correcta. No es un perfil válido."
+    }
+  },
+  {
+    "pregunta": "265. ¿Cuál es la unidad máxima de transferencia (MTU) estándar para una trama Ethernet convencional y a partir de qué tamaño empezamos a considerar una trama como 'Jumbo Frame'?",
+    "opciones": [
+      "a) Estándar 1500 bytes; Jumbo Frame > 1500 bytes (típicamente 9000).",
+      "b) Estándar 512 bytes; Jumbo Frame > 1024 bytes.",
+      "c) Estándar 1000 bytes; Jumbo Frame > 2000 bytes.",
+      "d) Estándar 64 bytes; Jumbo Frame > 1518 bytes."
+    ],
+    "correcta": 0,
+    "explicacion": "La MTU estándar de Ethernet es de 1500 bytes de carga útil. Los Jumbo Frames permiten transportar hasta 9000 bytes, reduciendo la sobrecarga de cabeceras y el uso de CPU en transferencias masivas de datos en redes Gigabit o superiores.",
+    "analisis_opciones": {
+      "a": "Correcta. Son los valores estándar de la industria.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. 64 bytes es el tamaño mínimo de una trama, no la MTU."
+    }
+  },
+  {
+    "pregunta": "266. El protocolo CSMA/CD es el método de acceso al medio tradicional de Ethernet. ¿Qué ocurre exactamente cuando una estación detecta una colisión mientras está transmitiendo?",
+    "opciones": [
+      "a) Ignora la colisión y sigue enviando los datos.",
+      "b) Envía una señal de atasco (Jam signal) para que todos sepan que hubo una colisión y luego espera un tiempo aleatorio (Backoff).",
+      "c) Se desconecta de la red permanentemente.",
+      "d) Solicita permiso al nodo central para volver a intentar."
+    ],
+    "correcta": 1,
+    "explicacion": "CSMA/CD (Collision Detection) requiere que la estación deje de transmitir inmediatamente, envíe el 'jam signal' para limpiar el canal y aplique el algoritmo de retroceso exponencial binario.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Los datos estarían corruptos.",
+      "b": "Correcta. Es el procedimiento operativo estándar de 802.3.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. Ethernet es un sistema distribuido, no hay nodo central de control."
+    }
+  },
+  {
+    "pregunta": "267. En una red con múltiples switches, ¿cuál es la función del protocolo IEEE 802.1aq, también conocido como SPB (Shortest Path Bridging)?",
+    "opciones": [
+      "a) Sustituir al Spanning Tree (STP) para permitir el uso de todos los caminos disponibles sin bucles y con menor tiempo de convergencia.",
+      "b) Asignar direcciones IP automáticamente.",
+      "c) Alimentar a los switches mediante el cable de red.",
+      "d) Cifrar las tramas de nivel 2."
+    ],
+    "correcta": 0,
+    "explicacion": "SPB es una evolución moderna que permite redes de malla (mesh) en nivel 2 mucho más eficientes que el antiguo STP, permitiendo el balanceo de carga y rutas más cortas activas simultáneamente.",
+    "analisis_opciones": {
+      "a": "Correcta. Es el estándar para simplificar el diseño de redes en centros de datos.",
+      "b": "Incorrecta. Eso es DHCP.",
+      "c": "Incorrecta. Eso es PoE.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "268. ¿Qué técnica permite agrupar varios enlaces físicos entre dos switches para que funcionen como un único enlace lógico de mayor ancho de banda y con tolerancia a fallos?",
+    "opciones": [
+      "a) Trunking (etiquetado).",
+      "b) Link Aggregation (LACP / IEEE 802.3ad).",
+      "c) VTP (VLAN Trunking Protocol).",
+      "d) Port Mirroring."
+    ],
+    "correcta": 1,
+    "explicacion": "El Link Aggregation (EtherChannel en Cisco) permite sumar la velocidad de varios cables. No confundir con el 'Trunking' de VLANs (802.1Q), que es para transportar múltiples redes por un cable.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Trunking se asocia a llevar varias VLANs.",
+      "b": "Correcta. Agregación de enlaces físicos.",
+      "c": "Incorrecta. Es un protocolo de gestión de VLANs.",
+      "d": "Incorrecta. Es para monitorización."
+    }
+  },
+  {
+    "pregunta": "269. Dentro del formato de una trama Ethernet II, ¿qué campo se utiliza para que el receptor pueda identificar qué protocolo de capa superior (IP, ARP, IPv6) debe procesar los datos?",
+    "opciones": [
+      "a) Preámbulo.",
+      "b) EtherType.",
+      "c) FCS (Frame Check Sequence).",
+      "d) Dirección MAC de origen."
+    ],
+    "correcta": 1,
+    "explicacion": "El campo EtherType (2 bytes) es el 'indicador' que permite la multiplexación de protocolos de red sobre la misma infraestructura de enlace.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Sirve para sincronizar el reloj del receptor.",
+      "b": "Correcta. Identifica el protocolo del nivel superior.",
+      "c": "Incorrecta. Es el código para detectar errores.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "270. ¿Cuál es el tamaño mínimo de una trama Ethernet para que el mecanismo CSMA/CD pueda detectar colisiones de forma fiable en un segmento de 10/100 Mbps?",
+    "opciones": [
+      "a) 32 bytes.",
+      "b) 64 bytes.",
+      "c) 128 bytes.",
+      "d) 1518 bytes."
+    ],
+    "correcta": 1,
+    "explicacion": "Si una trama es demasiado corta, podría terminar de enviarse antes de que la señal de colisión vuelva al emisor. Por eso, las tramas menores de 64 bytes se rellenan (padding).",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Es el límite crítico para la detección de colisiones.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. Es el tamaño máximo estándar."
+    }
+  },
+  {
+    "pregunta": "271. Respecto a la evolución de las velocidades de Ethernet, ¿qué estándar define 10 Gigabit Ethernet sobre cable de par trenzado (Cat 6a/7) hasta 100 metros?",
+    "opciones": [
+      "a) 802.3j.",
+      "b) 802.3ab.",
+      "c) 802.3an.",
+      "d) 802.3ba."
+    ],
+    "correcta": 2,
+    "explicacion": "802.3an es el estándar para 10GBASE-T. Es el que permite las velocidades de 10 Gbps usando conectores RJ-45 tradicionales.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta. Es Gigabit Ethernet (1000Base-T).",
+      "c": "Correcta. Define los 10 Gbps en cobre.",
+      "d": "Incorrecta. Define los 40G y 100G."
+    }
+  },
+  {
+    "pregunta": "272. En el protocolo STP (802.1D), ¿cómo se llama el switch principal de la red que actúa como punto de referencia para calcular todos los caminos libres de bucles?",
+    "opciones": [
+      "a) Master Switch.",
+      "b) Root Bridge (Puente Raíz).",
+      "c) Gateway Bridge.",
+      "d) Designated Port."
+    ],
+    "correcta": 1,
+    "explicacion": "El Root Bridge es el 'jefe' de la topología lógica. Se elige basándose en la prioridad más baja y, en caso de empate, la dirección MAC más baja.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Es el nodo central del árbol de expansión.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. Es un tipo de puerto, no el switch."
+    }
+  },
+  {
+    "pregunta": "1. ¿Cuál de los siguientes conceptos se define como la probabilidad de que una amenaza explote una vulnerabilidad causando un impacto?",
+    "opciones": [
+      "A. Amenaza.",
+      "B. Riesgo.",
+      "C. Vulnerabilidad.",
+      "D. Impacto."
+    ],
+    "correcta": 1,
+    "explicacion": "El riesgo combina la probabilidad de que una amenaza explote una vulnerabilidad y el impacto que genera.",
+    "analisis_opciones": {
+      "a": "Incorrecta. La amenaza es el agente que puede causar daño.",
+      "b": "Correcta. El riesgo incluye probabilidad e impacto.",
+      "c": "Incorrecta. Es una debilidad del sistema.",
+      "d": "Incorrecta. Es la consecuencia del daño."
+    }
+  },
+  {
+    "pregunta": "2. ¿Qué dimensión de la seguridad garantiza que la información no sea accesible por personas no autorizadas?",
+    "opciones": [
+      "A. Integridad.",
+      "B. Disponibilidad.",
+      "C. Confidencialidad.",
+      "D. Trazabilidad."
+    ],
+    "correcta": 2,
+    "explicacion": "La confidencialidad evita accesos no autorizados a la información.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Se refiere a que no se modifique.",
+      "b": "Incorrecta. Se refiere a que esté disponible.",
+      "c": "Correcta. Protege contra accesos no autorizados.",
+      "d": "Incorrecta. Permite rastrear acciones."
+    }
+  },
+  {
+    "pregunta": "3. ¿Cuál de las siguientes opciones describe correctamente la integridad de la información?",
+    "opciones": [
+      "A. Garantiza que la información esté disponible en todo momento.",
+      "B. Garantiza que la información no ha sido modificada de forma no autorizada.",
+      "C. Garantiza que la información solo sea accesible por usuarios autorizados.",
+      "D. Garantiza que el emisor no pueda negar el envío."
+    ],
+    "correcta": 1,
+    "explicacion": "La integridad asegura que los datos no se alteren.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es disponibilidad.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Es confidencialidad.",
+      "d": "Incorrecta. Es no repudio."
+    }
+  },
+  {
+    "pregunta": "4. ¿Qué tipo de ataque consiste en insertar información falsa en un sistema?",
+    "opciones": [
+      "A. Intercepción.",
+      "B. Interrupción.",
+      "C. Modificación.",
+      "D. Fabricación."
+    ],
+    "correcta": 3,
+    "explicacion": "La fabricación implica introducir datos falsos en el sistema.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Acceso no autorizado.",
+      "b": "Incorrecta. Interrupción del servicio.",
+      "c": "Incorrecta. Alteración de datos existentes.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál de las siguientes dimensiones de seguridad se encarga de garantizar que un usuario es quien dice ser?",
+    "opciones": [
+      "A. Autenticidad.",
+      "B. Integridad.",
+      "C. Disponibilidad.",
+      "D. Confidencialidad."
+    ],
+    "correcta": 0,
+    "explicacion": "La autenticidad verifica la identidad del usuario.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál de los siguientes mecanismos se utiliza principalmente para garantizar la integridad de los datos?",
+    "opciones": [
+      "A. Cifrado.",
+      "B. Hash.",
+      "C. Firewall.",
+      "D. VPN."
+    ],
+    "correcta": 1,
+    "explicacion": "Las funciones hash permiten verificar que los datos no han sido modificados.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es confidencialidad.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Qué propiedad de seguridad asegura que un usuario no pueda negar una acción realizada?",
+    "opciones": [
+      "A. Disponibilidad.",
+      "B. Confidencialidad.",
+      "C. No repudio.",
+      "D. Integridad."
+    ],
+    "correcta": 2,
+    "explicacion": "El no repudio impide que un usuario niegue haber realizado una acción.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Cuál de los siguientes conceptos corresponde a una debilidad que puede ser explotada?",
+    "opciones": [
+      "A. Amenaza.",
+      "B. Vulnerabilidad.",
+      "C. Impacto.",
+      "D. Riesgo."
+    ],
+    "correcta": 1,
+    "explicacion": "La vulnerabilidad es una debilidad del sistema.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "1. ¿Cuál es la principal diferencia entre criptografía simétrica y asimétrica?",
+    "opciones": [
+      "A. La simétrica utiliza dos claves y la asimétrica una.",
+      "B. La simétrica utiliza una única clave y la asimétrica un par de claves.",
+      "C. La simétrica es más segura que la asimétrica.",
+      "D. La asimétrica solo se utiliza para cifrado de archivos."
+    ],
+    "correcta": 1,
+    "explicacion": "La criptografía simétrica usa una única clave compartida, mientras que la asimétrica usa un par de claves (pública y privada).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Está al revés.",
+      "b": "Correcta.",
+      "c": "Incorrecta. No es cuestión de seguridad sino de uso.",
+      "d": "Incorrecta. Se usa en muchos ámbitos (firma, intercambio de claves...)."
+    }
+  },
+  {
+    "pregunta": "2. ¿Cuál de los siguientes algoritmos es de cifrado simétrico?",
+    "opciones": [
+      "A. RSA.",
+      "B. AES.",
+      "C. DSA.",
+      "D. ElGamal."
+    ],
+    "correcta": 1,
+    "explicacion": "AES es un algoritmo de cifrado simétrico por bloques.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es asimétrico.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Es firma digital (asimétrico).",
+      "d": "Incorrecta. Es asimétrico."
+    }
+  },
+  {
+    "pregunta": "3. ¿Cuál de los siguientes algoritmos es de cifrado asimétrico?",
+    "opciones": [
+      "A. DES.",
+      "B. Blowfish.",
+      "C. RSA.",
+      "D. RC4."
+    ],
+    "correcta": 2,
+    "explicacion": "RSA es un algoritmo de clave pública (asimétrico).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es simétrico.",
+      "b": "Incorrecta. Es simétrico.",
+      "c": "Correcta.",
+      "d": "Incorrecta. Es de flujo y simétrico."
+    }
+  },
+  {
+    "pregunta": "4. ¿Cuál de los siguientes algoritmos es de cifrado por bloques?",
+    "opciones": [
+      "A. RC4.",
+      "B. AES.",
+      "C. ChaCha20.",
+      "D. One-Time Pad."
+    ],
+    "correcta": 1,
+    "explicacion": "AES es un algoritmo de cifrado por bloques.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es de flujo.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Es de flujo.",
+      "d": "Incorrecta. Es de flujo."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál de los siguientes algoritmos es de cifrado de flujo?",
+    "opciones": [
+      "A. AES.",
+      "B. DES.",
+      "C. RC4.",
+      "D. IDEA."
+    ],
+    "correcta": 2,
+    "explicacion": "RC4 es un algoritmo de cifrado de flujo.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es de bloque.",
+      "b": "Incorrecta. Es de bloque.",
+      "c": "Correcta.",
+      "d": "Incorrecta. Es de bloque."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál es la función principal de una función hash?",
+    "opciones": [
+      "A. Cifrar datos para mantener su confidencialidad.",
+      "B. Generar una clave pública.",
+      "C. Garantizar la integridad de los datos.",
+      "D. Autenticar usuarios."
+    ],
+    "correcta": 2,
+    "explicacion": "Las funciones hash se utilizan para verificar la integridad de los datos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso es cifrado.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Cuál de las siguientes afirmaciones sobre las funciones hash es correcta?",
+    "opciones": [
+      "A. Permiten recuperar el mensaje original.",
+      "B. Son reversibles.",
+      "C. Generan un resumen único del mensaje.",
+      "D. Se utilizan para cifrado simétrico."
+    ],
+    "correcta": 2,
+    "explicacion": "Las funciones hash generan un resumen (digest) único y no reversible.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No se puede recuperar el original.",
+      "b": "Incorrecta. No son reversibles.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Cuál de los siguientes algoritmos se utiliza principalmente para firma digital?",
+    "opciones": [
+      "A. AES.",
+      "B. DSA.",
+      "C. RC4.",
+      "D. DES."
+    ],
+    "correcta": 1,
+    "explicacion": "DSA es un algoritmo de firma digital.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es cifrado simétrico.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Cuál de los siguientes algoritmos se utiliza para el intercambio de claves?",
+    "opciones": [
+      "A. AES.",
+      "B. Diffie-Hellman.",
+      "C. DES.",
+      "D. Blowfish."
+    ],
+    "correcta": 1,
+    "explicacion": "Diffie-Hellman permite el intercambio seguro de claves.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. ¿Cuál de las siguientes afirmaciones es correcta sobre la criptografía asimétrica?",
+    "opciones": [
+      "A. Es más rápida que la simétrica.",
+      "B. Utiliza una única clave.",
+      "C. Utiliza una clave pública y una privada.",
+      "D. Solo se utiliza en redes inalámbricas."
+    ],
+    "correcta": 2,
+    "explicacion": "La criptografía asimétrica utiliza un par de claves: pública y privada.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es más lenta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "1. ¿Dónde se sitúa el protocolo SSL/TLS dentro del modelo de comunicaciones?",
+    "opciones": [
+      "A. En la capa de red.",
+      "B. Entre la capa de transporte y la de aplicación.",
+      "C. En la capa física.",
+      "D. En la capa de enlace."
+    ],
+    "correcta": 1,
+    "explicacion": "TLS se sitúa entre transporte (TCP) y aplicación (HTTP, SMTP, etc.).",
+    "analisis_opciones": {
+      "a": "Incorrecta. No es capa de red.",
+      "b": "Correcta. Es su ubicación real.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "2. ¿Cuál de los siguientes protocolos de SSL/TLS se encarga de negociar los parámetros de seguridad?",
+    "opciones": [
+      "A. Record.",
+      "B. Handshake.",
+      "C. Alert.",
+      "D. Change Cipher Spec."
+    ],
+    "correcta": 1,
+    "explicacion": "El Handshake establece claves, algoritmos y parámetros de seguridad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Transporta datos.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Gestiona errores.",
+      "d": "Incorrecta. Indica cambio de cifrado."
+    }
+  },
+  {
+    "pregunta": "3. ¿Qué función tiene el protocolo Change Cipher Spec en TLS?",
+    "opciones": [
+      "A. Notificar errores.",
+      "B. Cambiar a los algoritmos de cifrado negociados.",
+      "C. Intercambiar claves.",
+      "D. Transportar datos cifrados."
+    ],
+    "correcta": 1,
+    "explicacion": "Indica que se van a usar los parámetros de seguridad negociados.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "4. ¿Cuál de los siguientes protocolos de TLS se encarga de transportar los datos cifrados?",
+    "opciones": [
+      "A. Handshake.",
+      "B. Alert.",
+      "C. Record.",
+      "D. Change Cipher Spec."
+    ],
+    "correcta": 2,
+    "explicacion": "Record es el protocolo que encapsula y cifra los datos.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál de los siguientes ataques explota vulnerabilidades en la compresión de TLS?",
+    "opciones": [
+      "A. POODLE.",
+      "B. BEAST.",
+      "C. CRIME.",
+      "D. Heartbleed."
+    ],
+    "correcta": 2,
+    "explicacion": "CRIME explota la compresión en TLS para obtener información sensible.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Afecta a SSLv3.",
+      "b": "Incorrecta. Ataque sobre CBC.",
+      "c": "Correcta.",
+      "d": "Incorrecta. Bug de OpenSSL."
+    }
+  },
+  {
+    "pregunta": "6. ¿Qué ataque está relacionado con la vulnerabilidad de SSLv3?",
+    "opciones": [
+      "A. BREACH.",
+      "B. POODLE.",
+      "C. BEAST.",
+      "D. CRIME."
+    ],
+    "correcta": 1,
+    "explicacion": "POODLE explota vulnerabilidades de SSLv3.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Relacionado con HTTP.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Qué vulnerabilidad afecta al software OpenSSL y permite leer memoria del servidor?",
+    "opciones": [
+      "A. BEAST.",
+      "B. CRIME.",
+      "C. Heartbleed.",
+      "D. BREACH."
+    ],
+    "correcta": 2,
+    "explicacion": "Heartbleed es un fallo en OpenSSL que permite leer memoria.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Qué significa AAA en el ámbito de la seguridad?",
+    "opciones": [
+      "A. Autenticación, Autorización, Acceso.",
+      "B. Autenticación, Autorización, Contabilización.",
+      "C. Acceso, Auditoría, Autorización.",
+      "D. Autenticación, Administración, Acceso."
+    ],
+    "correcta": 1,
+    "explicacion": "AAA = Authentication, Authorization, Accounting.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Cuál de los siguientes protocolos de IPSec proporciona confidencialidad?",
+    "opciones": [
+      "A. AH.",
+      "B. ESP.",
+      "C. IKE.",
+      "D. SSL."
+    ],
+    "correcta": 1,
+    "explicacion": "ESP proporciona cifrado y confidencialidad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Solo autenticación.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Gestión de claves.",
+      "d": "Incorrecta. No es IPSec."
+    }
+  },
+  {
+    "pregunta": "10. ¿Qué protocolo de IPSec se encarga de la autenticación e integridad pero no del cifrado?",
+    "opciones": [
+      "A. ESP.",
+      "B. AH.",
+      "C. IKE.",
+      "D. TLS."
+    ],
+    "correcta": 1,
+    "explicacion": "AH proporciona autenticación e integridad, pero no confidencialidad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Sí cifra.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "11. ¿Cuál es la función principal de IKE en IPSec?",
+    "opciones": [
+      "A. Cifrar los datos.",
+      "B. Autenticar paquetes.",
+      "C. Intercambiar claves y negociar parámetros de seguridad.",
+      "D. Encapsular paquetes."
+    ],
+    "correcta": 2,
+    "explicacion": "IKE gestiona el intercambio de claves y la negociación.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "12. ¿Cuál es la principal diferencia entre modo transporte y modo túnel en IPSec?",
+    "opciones": [
+      "A. El modo transporte cifra todo el paquete.",
+      "B. El modo túnel solo cifra la cabecera.",
+      "C. El modo túnel encapsula todo el paquete IP original.",
+      "D. No hay diferencia."
+    ],
+    "correcta": 2,
+    "explicacion": "El modo túnel encapsula todo el paquete IP original.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "13. ¿Qué modo de IPSec se utiliza habitualmente en VPNs?",
+    "opciones": [
+      "A. Modo transporte.",
+      "B. Modo túnel.",
+      "C. Modo híbrido.",
+      "D. Modo seguro."
+    ],
+    "correcta": 1,
+    "explicacion": "El modo túnel es típico en VPNs.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "1. ¿Cuál es la principal finalidad de la firma electrónica?",
+    "opciones": [
+      "A. Garantizar la confidencialidad.",
+      "B. Garantizar autenticidad, integridad y no repudio.",
+      "C. Garantizar disponibilidad.",
+      "D. Garantizar anonimato."
+    ],
+    "correcta": 1,
+    "explicacion": "La firma electrónica asegura autenticidad, integridad y no repudio.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso lo hace el cifrado.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "2. ¿Qué elemento se firma realmente en un proceso de firma digital?",
+    "opciones": [
+      "A. El documento completo.",
+      "B. La clave pública.",
+      "C. El hash del documento.",
+      "D. El certificado digital."
+    ],
+    "correcta": 2,
+    "explicacion": "Se firma el resumen (hash), no el documento completo.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "3. ¿Qué estándar de firma electrónica se utiliza para documentos XML?",
+    "opciones": [
+      "A. PAdES.",
+      "B. CAdES.",
+      "C. XAdES.",
+      "D. PKCS."
+    ],
+    "correcta": 2,
+    "explicacion": "XAdES está basado en XML.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es para PDF.",
+      "b": "Incorrecta. Es CMS.",
+      "c": "Correcta.",
+      "d": "Incorrecta. Es un conjunto de estándares."
+    }
+  },
+  {
+    "pregunta": "4. ¿Qué estándar de firma electrónica se utiliza para documentos PDF?",
+    "opciones": [
+      "A. XAdES.",
+      "B. CAdES.",
+      "C. PAdES.",
+      "D. PKCS#7."
+    ],
+    "correcta": 2,
+    "explicacion": "PAdES es el estándar para firmas en PDF.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "5. ¿Qué estándar de firma electrónica se basa en CMS (Cryptographic Message Syntax)?",
+    "opciones": [
+      "A. XAdES.",
+      "B. CAdES.",
+      "C. PAdES.",
+      "D. OCSP."
+    ],
+    "correcta": 1,
+    "explicacion": "CAdES está basado en CMS (PKCS#7).",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "6. ¿Qué es PKCS en el ámbito de la criptografía?",
+    "opciones": [
+      "A. Un algoritmo de cifrado.",
+      "B. Un conjunto de estándares de criptografía.",
+      "C. Un protocolo de red.",
+      "D. Un tipo de certificado digital."
+    ],
+    "correcta": 1,
+    "explicacion": "PKCS es un conjunto de estándares definidos para criptografía.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Qué significa PKI?",
+    "opciones": [
+      "A. Public Key Infrastructure.",
+      "B. Private Key Integration.",
+      "C. Public Key Internet.",
+      "D. Protocol Key Interface."
+    ],
+    "correcta": 0,
+    "explicacion": "PKI es la infraestructura de clave pública.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Cuál es la función principal de una Autoridad de Certificación (CA) en una PKI?",
+    "opciones": [
+      "A. Cifrar datos.",
+      "B. Emitir certificados digitales.",
+      "C. Generar claves privadas.",
+      "D. Monitorizar redes."
+    ],
+    "correcta": 1,
+    "explicacion": "La CA emite certificados digitales que vinculan identidad y clave pública.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Qué protocolo permite verificar en tiempo real el estado de un certificado digital?",
+    "opciones": [
+      "A. SSL.",
+      "B. OCSP.",
+      "C. FTP.",
+      "D. IPsec."
+    ],
+    "correcta": 1,
+    "explicacion": "OCSP permite consultar si un certificado está revocado.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. ¿Qué diferencia principal existe entre OCSP y las CRL?",
+    "opciones": [
+      "A. OCSP es offline y CRL online.",
+      "B. OCSP permite consulta en tiempo real, CRL es una lista descargada.",
+      "C. CRL es más segura que OCSP.",
+      "D. No hay diferencia."
+    ],
+    "correcta": 1,
+    "explicacion": "OCSP consulta en tiempo real, mientras que CRL es una lista periódica.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "11. ¿Qué clave se utiliza para firmar digitalmente un documento?",
+    "opciones": [
+      "A. Clave pública del emisor.",
+      "B. Clave privada del emisor.",
+      "C. Clave pública del receptor.",
+      "D. Clave privada del receptor."
+    ],
+    "correcta": 1,
+    "explicacion": "La firma se realiza con la clave privada del emisor.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "12. ¿Qué permite verificar la clave pública en una firma digital?",
+    "opciones": [
+      "A. Cifrar el documento.",
+      "B. Verificar la firma del emisor.",
+      "C. Generar el hash.",
+      "D. Revocar certificados."
+    ],
+    "correcta": 1,
+    "explicacion": "La clave pública se usa para verificar la firma.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "1. ¿Qué es un SLA (Service Level Agreement)?",
+    "opciones": [
+      "A. Un protocolo de red.",
+      "B. Un acuerdo que define niveles de servicio entre proveedor y cliente.",
+      "C. Un tipo de software de monitorización.",
+      "D. Un sistema de cifrado."
+    ],
+    "correcta": 1,
+    "explicacion": "Un SLA define los niveles de servicio (tiempos de respuesta, disponibilidad, etc.).",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "2. ¿Cuál de los siguientes elementos suele definirse en un SLA?",
+    "opciones": [
+      "A. Algoritmos de cifrado.",
+      "B. Tiempos de respuesta y resolución.",
+      "C. Direcciones IP.",
+      "D. Versiones de software."
+    ],
+    "correcta": 1,
+    "explicacion": "El SLA define métricas como tiempos de respuesta y resolución.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "3. ¿Cuál de las siguientes herramientas es un sistema de gestión de incidencias?",
+    "opciones": [
+      "A. JIRA.",
+      "B. Wireshark.",
+      "C. Apache.",
+      "D. MySQL."
+    ],
+    "correcta": 0,
+    "explicacion": "JIRA es una herramienta ampliamente utilizada para gestión de incidencias y proyectos.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. Es análisis de red.",
+      "c": "Incorrecta. Es servidor web.",
+      "d": "Incorrecta. Es base de datos."
+    }
+  },
+  {
+    "pregunta": "4. ¿Cuál de las siguientes herramientas está orientada a la gestión de servicios IT (ITSM)?",
+    "opciones": [
+      "A. Zendesk.",
+      "B. Photoshop.",
+      "C. Excel.",
+      "D. Notepad."
+    ],
+    "correcta": 0,
+    "explicacion": "Zendesk es una plataforma de atención al cliente y gestión de incidencias.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál de las siguientes herramientas es utilizada para la gestión de incidencias en entornos IT?",
+    "opciones": [
+      "A. Integria IMS.",
+      "B. VLC.",
+      "C. Firefox.",
+      "D. Docker."
+    ],
+    "correcta": 0,
+    "explicacion": "Integria IMS es una herramienta de gestión ITSM.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "6. ¿Qué herramienta de las siguientes pertenece al ámbito de gestión de incidencias?",
+    "opciones": [
+      "A. FootPrints Service.",
+      "B. Git.",
+      "C. Linux.",
+      "D. VMware."
+    ],
+    "correcta": 0,
+    "explicacion": "FootPrints es una herramienta ITSM para gestión de incidencias.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Qué tecnología permite el control remoto de un equipo mostrando el escritorio del usuario?",
+    "opciones": [
+      "A. FTP.",
+      "B. VNC.",
+      "C. DNS.",
+      "D. DHCP."
+    ],
+    "correcta": 1,
+    "explicacion": "VNC permite control remoto visual del escritorio.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Cuál de los siguientes protocolos es utilizado por RDP?",
+    "opciones": [
+      "A. TCP.",
+      "B. UDP.",
+      "C. HTTP.",
+      "D. ICMP."
+    ],
+    "correcta": 0,
+    "explicacion": "RDP utiliza principalmente TCP (puerto 3389).",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Qué herramienta permite acceso remoto a equipos de forma sencilla y multiplataforma?",
+    "opciones": [
+      "A. TeamViewer.",
+      "B. Excel.",
+      "C. PowerPoint.",
+      "D. Outlook."
+    ],
+    "correcta": 0,
+    "explicacion": "TeamViewer permite acceso remoto fácil y multiplataforma.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. ¿Cuál es una característica principal de RDP frente a VNC?",
+    "opciones": [
+      "A. RDP transmite imágenes únicamente.",
+      "B. VNC es más eficiente que RDP.",
+      "C. RDP transmite órdenes de interfaz, no solo imagen.",
+      "D. No hay diferencia."
+    ],
+    "correcta": 2,
+    "explicacion": "RDP es más eficiente porque transmite comandos gráficos, no solo imágenes.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "11. ¿Qué puerto utiliza por defecto RDP?",
+    "opciones": [
+      "A. 21.",
+      "B. 80.",
+      "C. 3389.",
+      "D. 443."
+    ],
+    "correcta": 2,
+    "explicacion": "RDP utiliza el puerto TCP 3389.",
+    "analisis_opciones": {
+      "a": "Incorrecta. FTP.",
+      "b": "Incorrecta. HTTP.",
+      "c": "Correcta.",
+      "d": "Incorrecta. HTTPS."
+    }
+  },
+  {
+    "pregunta": "12. ¿Cuál de las siguientes afirmaciones es correcta sobre el control remoto?",
+    "opciones": [
+      "A. Solo funciona en redes locales.",
+      "B. Permite administrar equipos a distancia.",
+      "C. Solo se usa en servidores.",
+      "D. No requiere conexión de red."
+    ],
+    "correcta": 1,
+    "explicacion": "El control remoto permite gestionar equipos a distancia.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "1. ¿Qué estándar define las directrices para el diseño de centros de datos en cuanto a infraestructura de telecomunicaciones?",
+    "opciones": [
+      "A. ISO 27001.",
+      "B. ANSI/TIA-942.",
+      "C. IEEE 802.11.",
+      "D. ITIL."
+    ],
+    "correcta": 1,
+    "explicacion": "ANSI/TIA-942 define el diseño de infraestructuras de CPD.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es de seguridad de la información.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Es WiFi.",
+      "d": "Incorrecta. Es gestión de servicios."
+    }
+  },
+  {
+    "pregunta": "2. ¿Qué organización es responsable de la clasificación TIER de centros de datos?",
+    "opciones": [
+      "A. ISO.",
+      "B. IEEE.",
+      "C. Uptime Institute.",
+      "D. ITU."
+    ],
+    "correcta": 2,
+    "explicacion": "El Uptime Institute define los niveles TIER.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "3. ¿Qué nivel TIER ofrece mayor tolerancia a fallos?",
+    "opciones": [
+      "A. TIER I.",
+      "B. TIER II.",
+      "C. TIER III.",
+      "D. TIER IV."
+    ],
+    "correcta": 3,
+    "explicacion": "TIER IV es el nivel más alto, con tolerancia a fallos.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "4. ¿Cuál es la disponibilidad aproximada de un CPD TIER II?",
+    "opciones": [
+      "A. 99,671%.",
+      "B. 99,741%.",
+      "C. 99,982%.",
+      "D. 99,995%."
+    ],
+    "correcta": 1,
+    "explicacion": "TIER II ≈ 99,741% de disponibilidad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es TIER I.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Es TIER III.",
+      "d": "Incorrecta. Es TIER IV."
+    }
+  },
+  {
+    "pregunta": "5. Según ANSI/TIA-942, ¿cuál de los siguientes NO es un subsistema del CPD?",
+    "opciones": [
+      "A. Telecomunicaciones.",
+      "B. Arquitectura.",
+      "C. Software de aplicaciones.",
+      "D. Eléctrico."
+    ],
+    "correcta": 2,
+    "explicacion": "Los subsistemas son telecomunicaciones, arquitectura, eléctrico y mecánico.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta. No es un subsistema de infraestructura.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "6. ¿Qué mide el indicador PUE (Power Usage Effectiveness)?",
+    "opciones": [
+      "A. La eficiencia energética del CPD.",
+      "B. El número de servidores.",
+      "C. La velocidad de red.",
+      "D. El nivel de seguridad."
+    ],
+    "correcta": 0,
+    "explicacion": "PUE mide la eficiencia energética del CPD.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Qué indica un valor de PUE cercano a 1?",
+    "opciones": [
+      "A. Baja eficiencia.",
+      "B. Alta eficiencia.",
+      "C. Fallo del sistema.",
+      "D. Alto consumo energético."
+    ],
+    "correcta": 1,
+    "explicacion": "Un PUE cercano a 1 indica máxima eficiencia.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Qué es el freecooling en un CPD?",
+    "opciones": [
+      "A. Un sistema de cifrado.",
+      "B. Una técnica de refrigeración que aprovecha el aire exterior.",
+      "C. Un tipo de servidor.",
+      "D. Un sistema de backup."
+    ],
+    "correcta": 1,
+    "explicacion": "El freecooling utiliza aire exterior para refrigerar.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Qué es un SAI en un CPD?",
+    "opciones": [
+      "A. Un sistema de almacenamiento.",
+      "B. Un sistema de alimentación ininterrumpida.",
+      "C. Un sistema de refrigeración.",
+      "D. Un sistema de red."
+    ],
+    "correcta": 1,
+    "explicacion": "SAI proporciona energía en caso de fallo eléctrico.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. ¿Qué es DCIM en un CPD?",
+    "opciones": [
+      "A. Un protocolo de red.",
+      "B. Un sistema de gestión de infraestructura del CPD.",
+      "C. Un tipo de servidor.",
+      "D. Un estándar de seguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "DCIM permite monitorizar y gestionar recursos del CPD.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "1. ¿Qué estándar define las directrices para el diseño de centros de datos en cuanto a infraestructura de telecomunicaciones?",
+    "opciones": [
+      "A. ISO 27001.",
+      "B. ANSI/TIA-942.",
+      "C. IEEE 802.11.",
+      "D. ITIL."
+    ],
+    "correcta": 1,
+    "explicacion": "ANSI/TIA-942 define el diseño de infraestructuras de CPD.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es de seguridad de la información.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Es WiFi.",
+      "d": "Incorrecta. Es gestión de servicios."
+    }
+  },
+  {
+    "pregunta": "2. ¿Qué organización es responsable de la clasificación TIER de centros de datos?",
+    "opciones": [
+      "A. ISO.",
+      "B. IEEE.",
+      "C. Uptime Institute.",
+      "D. ITU."
+    ],
+    "correcta": 2,
+    "explicacion": "El Uptime Institute define los niveles TIER.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "3. ¿Qué nivel TIER ofrece mayor tolerancia a fallos?",
+    "opciones": [
+      "A. TIER I.",
+      "B. TIER II.",
+      "C. TIER III.",
+      "D. TIER IV."
+    ],
+    "correcta": 3,
+    "explicacion": "TIER IV es el nivel más alto, con tolerancia a fallos.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "4. ¿Cuál es la disponibilidad aproximada de un CPD TIER II?",
+    "opciones": [
+      "A. 99,671%.",
+      "B. 99,741%.",
+      "C. 99,982%.",
+      "D. 99,995%."
+    ],
+    "correcta": 1,
+    "explicacion": "TIER II ≈ 99,741% de disponibilidad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es TIER I.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Es TIER III.",
+      "d": "Incorrecta. Es TIER IV."
+    }
+  },
+  {
+    "pregunta": "5. Según ANSI/TIA-942, ¿cuál de los siguientes NO es un subsistema del CPD?",
+    "opciones": [
+      "A. Telecomunicaciones.",
+      "B. Arquitectura.",
+      "C. Software de aplicaciones.",
+      "D. Eléctrico."
+    ],
+    "correcta": 2,
+    "explicacion": "Los subsistemas son telecomunicaciones, arquitectura, eléctrico y mecánico.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta. No es un subsistema de infraestructura.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "6. ¿Qué mide el indicador PUE (Power Usage Effectiveness)?",
+    "opciones": [
+      "A. La eficiencia energética del CPD.",
+      "B. El número de servidores.",
+      "C. La velocidad de red.",
+      "D. El nivel de seguridad."
+    ],
+    "correcta": 0,
+    "explicacion": "PUE mide la eficiencia energética del CPD.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Qué indica un valor de PUE cercano a 1?",
+    "opciones": [
+      "A. Baja eficiencia.",
+      "B. Alta eficiencia.",
+      "C. Fallo del sistema.",
+      "D. Alto consumo energético."
+    ],
+    "correcta": 1,
+    "explicacion": "Un PUE cercano a 1 indica máxima eficiencia.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Qué es el freecooling en un CPD?",
+    "opciones": [
+      "A. Un sistema de cifrado.",
+      "B. Una técnica de refrigeración que aprovecha el aire exterior.",
+      "C. Un tipo de servidor.",
+      "D. Un sistema de backup."
+    ],
+    "correcta": 1,
+    "explicacion": "El freecooling utiliza aire exterior para refrigerar.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Qué es un SAI en un CPD?",
+    "opciones": [
+      "A. Un sistema de almacenamiento.",
+      "B. Un sistema de alimentación ininterrumpida.",
+      "C. Un sistema de refrigeración.",
+      "D. Un sistema de red."
+    ],
+    "correcta": 1,
+    "explicacion": "SAI proporciona energía en caso de fallo eléctrico.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. ¿Qué es DCIM en un CPD?",
+    "opciones": [
+      "A. Un protocolo de red.",
+      "B. Un sistema de gestión de infraestructura del CPD.",
+      "C. Un tipo de servidor.",
+      "D. Un estándar de seguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "DCIM permite monitorizar y gestionar recursos del CPD.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+

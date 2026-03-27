@@ -1,0 +1,1507 @@
+[
+  {
+    "pregunta": "1. Cómo se denomina la extensión de SMTP, estandarizada en la RFC 2645, que permite que el correo electrónico sea transmitido a receptores que se conectan de forma intermitente después de que hayan sido autenticados:",
+    "opciones": [
+      "A. SMTP Service Extension for Secure SMTP.",
+      "B. Message Submission for Mail (MSM).",
+      "C. SMTP Service Extension for Authentication.",
+      "D. On-Demand Mail Relay (ODMR)."
+    ],
+    "correcta": 3,
+    "explicacion": "ODMR (On-Demand Mail Relay) permite a clientes que no están siempre conectados recibir correo bajo demanda tras autenticarse.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No corresponde a esa extensión.",
+      "B": "Incorrecta. No es un estándar real en este contexto.",
+      "C": "Incorrecta. Se refiere a autenticación, no a entrega bajo demanda.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "2. Indique cuál NO es uno de los beneficios de la arquitectura de microservicios:",
+    "opciones": [
+      "A. Permite un escalado flexible.",
+      "B. Admite la integración y la entrega continuas.",
+      "C. El enfoque de diseño único, sin posibilidad de elegir la tecnología.",
+      "D. Mejora la resistencia a los errores, permitiendo degradar una funcionalidad sin bloquear toda la aplicación."
+    ],
+    "correcta": 2,
+    "explicacion": "Los microservicios permiten elegir tecnologías distintas (polyglot), no un único enfoque.",
+    "analisis_opciones": {
+      "A": "Correcta como beneficio.",
+      "B": "Correcta como beneficio.",
+      "C": "Incorrecta (es la que NO es beneficio).",
+      "D": "Correcta como beneficio."
+    }
+  },
+  {
+    "pregunta": "3. En Linux, ¿qué es LXC?",
+    "opciones": [
+      "A. Es una tecnología de virtualización en el nivel de sistema operativo para Linux.",
+      "B. Corresponde con las siglas Linux Exchange Container.",
+      "C. Es una de las últimas versiones de Linux Mint.",
+      "D. LXC es una tecnología basada en Docker for Linux."
+    ],
+    "correcta": 0,
+    "explicacion": "LXC (Linux Containers) permite virtualización a nivel de sistema operativo.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "4. El protocolo IMAP4/SSL usa por defecto el puerto:",
+    "opciones": [
+      "A. 993 (UDP)",
+      "B. 995 (UDP)",
+      "C. 993 (TCP)",
+      "D. 995 (TCP)"
+    ],
+    "correcta": 2,
+    "explicacion": "IMAP4 seguro usa el puerto 993 sobre TCP.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta. Es POP3 SSL."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál de los siguientes productos NO es un cliente de correo?",
+    "opciones": [
+      "A. Mozilla Thunderbird.",
+      "B. Microsoft Share Point.",
+      "C. Lotus Notes.",
+      "D. Apple Mail."
+    ],
+    "correcta": 1,
+    "explicacion": "SharePoint es una plataforma de colaboración, no un cliente de correo.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "6. Indique la afirmación verdadera sobre los protocolos de correo electrónico:",
+    "opciones": [
+      "A. SMTP se emplea para gestionar el correo saliente.",
+      "B. IMAP descarga los mensajes a tu ordenador.",
+      "C. SMTP descarga los mensajes a tu ordenador.",
+      "D. IMAP se emplea para gestionar el correo saliente."
+    ],
+    "correcta": 0,
+    "explicacion": "SMTP se usa para envío de correo; IMAP y POP para recepción.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. IMAP no descarga necesariamente.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. De entre las siguientes, ¿cuál es una plataforma de contenedores?",
+    "opciones": [
+      "A. OpenShift",
+      "B. Bickbucket",
+      "C. AMQ",
+      "D. MDM"
+    ],
+    "correcta": 0,
+    "explicacion": "OpenShift es una plataforma de contenedores basada en Kubernetes.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Cuál de las siguientes opciones sobre el protocolo Exchange ActiveSync es FALSA?",
+    "opciones": [
+      "A. Está basado en los protocolos HTTP y XML.",
+      "B. Consigue un mayor rendimiento gracias al empleo de JSON para la reducción del peso de los mensajes",
+      "C. Permite configuración para usar SSL entre cliente y servidor.",
+      "D. Permite ejecutar una acción de Remote wipe (limpieza remota) para la eliminación del contenido relacionado con el servidor Exchange alojado en un dispositivo móvil."
+    ],
+    "correcta": 1,
+    "explicacion": "Exchange ActiveSync usa XML, no JSON.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (respuesta correcta).",
+      "C": "Correcta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Cuál de los siguientes es un servidor de correo en distribuciones Linux?",
+    "opciones": [
+      "A. aptana",
+      "B. squid",
+      "C. postfix",
+      "D. ansible"
+    ],
+    "correcta": 2,
+    "explicacion": "Postfix es un servidor de correo (MTA).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta (proxy).",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. ¿Cuál es una diferencia esencial entre los protocolos de correo POP3 e IMAP'",
+    "opciones": [
+      "A. POP3 deja los correos en el servidor, e IMAP los descarga al cliente.",
+      "B. IMAP deja los correos en el servidor, y POP3 los descarga al cliente.",
+      "C. IMAP es un sistema propietario y POP3 no lo es.",
+      "D. POP3 es compatible con SMTP, e IMAP no."
+    ],
+    "correcta": 1,
+    "explicacion": "IMAP mantiene correos en servidor; POP3 los descarga normalmente.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "11. El código devuelto por un servidor SMTP para indicar que la transmisión del mensaje ha finalizado es:",
+    "opciones": [
+      "A. 250",
+      "B. 220",
+      "C. 450",
+      "D. 200"
+    ],
+    "correcta": 0,
+    "explicacion": "250 indica acción completada correctamente.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (inicio conexión).",
+      "C": "Incorrecta (error temporal).",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "12. Protocolo de sincronización, basado en HTTP y XML, que permite que dispositivos móviles obtengan acceso a la información de una organización (emails, calendario, etc.) alojada en servidor/es Microsoft Exchange, y permite acceso a éstos cuando trabajan sin conexión:",
+    "opciones": [
+      "A. Exchange Axis",
+      "B. Exchange zMail ·",
+      "C. iPOP",
+      "D. Exchange ActiveSync"
+    ],
+    "correcta": 3,
+    "explicacion": "Exchange ActiveSync permite sincronización móvil con Exchange.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "13. SPF (Sender Policy Framework:) es:",
+    "opciones": [
+      "A. Una protección contra los ataques de phising en la organización.",
+      "B. Una protección contra ataques por ingeniería social.",
+      "C. Una protección contra los virus y bombas lógicas.",
+      "D. Una protección contra la falsificación de direcciones en el envió de correo electrónico."
+    ],
+    "correcta": 3,
+    "explicacion": "SPF evita spoofing indicando qué servidores pueden enviar correo por un dominio.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "14. Señale la respuesta correcta acerca del concepto de Kubernetes:",
+    "opciones": [
+      "A. Hace deployment de código fuente y compila tu aplicación.",
+      "B. Dictamina las soluciones de registros, monitoreo o alerta que se deben usar.",
+      "C. No provee ni adopta un sistema exhaustivo de mantenimiento, administración o corrección automática de errores.",
+      "D. Limita el tipo de aplicaciones que soporta."
+    ],
+    "correcta": 2,
+    "explicacion": "Kubernetes orquesta contenedores pero no impone herramientas externas.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "15. ¿Cuál de las siguientes órdenes del protocolo SMTP (Simple Mail Transfer Protocol) se utiliza para indicar el destinatario del mensaje?",
+    "opciones": [
+      "A. SENT TO",
+      "B. DESTINATION TO",
+      "C. RCPT TO",
+      "D. MAIL TO"
+    ],
+    "correcta": 2,
+    "explicacion": "RCPT TO define el destinatario en SMTP.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "16. Considerando que tanto en el punto de origen como en el punto de destino disponemos de un ordenador de usuario con un cliente de correo electrónico instalado y un servidor de correo electrónico, ¿qué papel juegan los protocolos SMTP, POP3 e IMAP durante el envío de uno de estos correos electrónicos?",
+    "opciones": [
+      "A. SMTP se usa desde el ordenador del usuario de origen al servidor de correo electrónico en el origen. POP3 o IMAP se usan entre el servidor de correo en el origen y el servidor de correo en el destino. SMTP se usa de nuevo entre el servidor de correo de destino y el destinatario, para enviarle el mensaje cuando se conecte.",
+      "B. POP3 se usa desde el ordenador del usuario de origen al servidor de correo electrónico en el origen. IMAP se usa entre el servidor de correo en el origen y el servidor de correo en el destino. SMTP se usa entre el servidor de correo de destino y el destinatario, para enviarle el mensaje cuando se conecte.",
+      "C. SMTP se usa desde el ordenador del usuario de origen al servidor de correo electrónico en el origen, así como desde el servidor de origen al servidor de destino. POP3 o IMAP se usan desde el servidor de correo en el destino hasta el ordenador del destinatario, para enviarle el mensaje cuando se conecte.",
+      "D. POP3 o IMAP se usan desde el ordenador del usuario de origen al servidor de correo electrónico en el origen, así como desde el servidor de origen al servidor de destino. SMTP se usa desde el servidor de correo en el destino hasta el ordenador del destinatario, para enviarle el mensaje cuando se conecte."
+    ],
+    "correcta": 2,
+    "explicacion": "SMTP envía; POP/IMAP reciben.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "17. Un sistema anti spam para detectar el correo basura, utiliza un método heurístico para distinguir los correos basura de los correos con contenido útil:",
+    "opciones": [
+      "A. Siempre es capaz de distinguir unos de otros correctamente.",
+      "B. Utiliza un sistema de puntuación en función de algunos parámetros, como listas de palabras, de direcciones de correo, etc., y en función de la puntuación asignada a un correo se clasifica como spam o no.",
+      "C. El usuario tiene que \"entrenar\" al sistema para decirle que correos son spam y cuáles no, por lo que no son fiables hasta que llevan un tiempo en funcionamiento.",
+      "D. El administrador de seguridad de la organización es el que decide qué correos son spam y cuáles no."
+    ],
+    "correcta": 1,
+    "explicacion": "Los filtros heurísticos usan puntuaciones basadas en patrones.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "18. Señale la respuesta correcta, Microsoft Exchange Server es un:",
+    "opciones": [
+      "A. servidor de correo electrónico al que puede accederse mediante un navegador web y es compatible con aplicaciones cliente como Microsoft Outlook.",
+      "B. gestor de base de datos relacional que utiliza ADO.NET para exponer servicios de acceso a datos para programadores de .NET Framework .",
+      "C. sistema operativo que utiliza el sistema de archivos distribuido Apache Hadoop (HDFS) para aprovechar el modelo de programación Map - Reduce.",
+      "D. producto que permite la monitorización del rendimiento de los servidores de una organización y la distribución remota de software."
+    ],
+    "correcta": 0,
+    "explicacion": "Exchange es servidor de correo y colaboración.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "19. ¿Cuál es una ventaja del uso del protocolo IMAP en lugar de POP3?",
+    "opciones": [
+      "A. Permite visualizar los correos directamente en el servidor sin descargarlos.",
+      "B. Es más sencillo que POP3.",
+      "C. No requiere autenticación.",
+      "D. Descarga los correos automáticamente del servidor."
+    ],
+    "correcta": 0,
+    "explicacion": "IMAP permite gestionar correos en servidor sin descargarlos.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "20. Los registros SPF (Sender Policy Framework) son los registros que:",
+    "opciones": [
+      "A. Permiten almacenar los eventos registrados por los filtros anti-spam.",
+      "B. Permiten configurar ciertas reglas en el IDS (Intruslon Detection System) para evitar ataques de DoS (Denial of Service).",
+      "C. Almacenan los eventos detectados del acceso a ciertas aplicaciones de correo electrónico.",
+      "D. Indican los servidores de correo autorizados a enviar transporte a un dominio determinado."
+    ],
+    "correcta": 3,
+    "explicacion": "SPF define qué servidores pueden enviar correo en nombre de un dominio.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  }
+,
+  {
+    "pregunta": "21. ¿Cuál de los siguientes No es un protocolo de correo electrónico?",
+    "opciones": [
+      "A. SNMP",
+      "B. POP",
+      "C. IMAP",
+      "D. SMTP"
+    ],
+    "correcta": 0,
+    "explicacion": "SNMP (Simple Network Management Protocol) es un protocolo de gestión de red, no de correo electrónico.",
+    "analisis_opciones": {
+      "A": "Correcta. SNMP se usa para monitorización y gestión de dispositivos de red.",
+      "B": "Incorrecta. POP sí es protocolo de correo (recepción).",
+      "C": "Incorrecta. IMAP es protocolo de acceso al correo.",
+      "D": "Incorrecta. SMTP es protocolo de envío."
+    }
+  },
+  {
+    "pregunta": "22. Según la RFC 5321 referida al Simple Mail Transfer Protocol, una implementación mínima de este protocolo debe contar con la siguiente lista de comandos implementada en todos los receptores para cumplir con la especificación:",
+    "opciones": [
+      "A. EHLO, MAIL, SEND, DATA, RESET, NACK, BYE, VRFY",
+      "B. HALO, HELO, MAIL, RCPT, MSG, RESET, NOOP, QUIT, VRFY",
+      "C. EHLO, HELO, SEND, RCPT, MSG, RSET, ACK, QUIT, VRFY",
+      "D. EHLO, HELO, MAIL, RCPT, DATA, RSET, NOOP, QUIT, VRFY"
+    ],
+    "correcta": 3,
+    "explicacion": "Los comandos básicos SMTP según RFC 5321 incluyen HELO/EHLO, MAIL, RCPT, DATA, RSET, NOOP, QUIT y VRFY.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Incluye comandos inexistentes como NACK o BYE.",
+      "B": "Incorrecta. HALO y MSG no existen.",
+      "C": "Incorrecta. ACK y MSG no forman parte del estándar.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "23. Indique cuál de los siguientes NO es un protocolo de acceso al correo electrónico:",
+    "opciones": [
+      "A. IMAP.",
+      "B. POP3.",
+      "C. SNTP.",
+      "D. SMTP."
+    ],
+    "correcta": 2,
+    "explicacion": "SNTP es un protocolo de sincronización de tiempo, no relacionado con el acceso al correo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. IMAP es acceso.",
+      "B": "Incorrecta. POP3 es acceso.",
+      "C": "Correcta.",
+      "D": "Incorrecta. SMTP es envío, no acceso."
+    }
+  },
+  {
+    "pregunta": "24. El protocolo que protege contra la falsificación de direcciones en el envío de correo electrónico identificando a los servidores de correo SMTP autorizados para el transporte de los mensajes a través de los registros de nombres de dominio (DNS) es:",
+    "opciones": [
+      "A. POP",
+      "B. SPF",
+      "C. OSPF",
+      "D. IMAP"
+    ],
+    "correcta": 1,
+    "explicacion": "SPF permite validar que un servidor está autorizado a enviar correos en nombre de un dominio.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta. Es protocolo de routing.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "25. El término \"kubernetes\" está relacionado con:",
+    "opciones": [
+      "A. Redes de Nueva Generación.",
+      "B. Gestión de Contenedores.",
+      "C. Multiple Input Multiple Output.",
+      "D. Gestión de LUNs en cabinas."
+    ],
+    "correcta": 1,
+    "explicacion": "Kubernetes es una plataforma de orquestación de contenedores.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "26. ¿Cuál es el puerto publicado por la lANA para el servicio Quick Mail Transfer Protocol (qmtp)?",
+    "opciones": [
+      "A. 698",
+      "B. 214",
+      "C. 456",
+      "D. 209"
+    ],
+    "correcta": 1,
+    "explicacion": "QMTP utiliza el puerto 209 asignado por IANA.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "27. De los siguientes protocolos, ¿cuál permite descargar las cabeceras del correo al ordenador y que el mensaje siga albergándose en el servidor de correo, independientemente del cliente de correo utilizado?",
+    "opciones": [
+      "A. POP3.",
+      "B. IMAP.",
+      "C. MAPJ.",
+      "D. SMTP."
+    ],
+    "correcta": 1,
+    "explicacion": "IMAP permite trabajar con correos en servidor y descargar solo cabeceras.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "28. El protocolo SMTP es acrónimo de:",
+    "opciones": [
+      "A. Secure Mail Transfer Protocol.",
+      "B. Secure Mail Transaction Protocol.",
+      "C. Simple Mail Transfer Protocol.",
+      "D. Simple Managemet Trace Protocol."
+    ],
+    "correcta": 2,
+    "explicacion": "SMTP significa Simple Mail Transfer Protocol.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "29. Seleccione entre los protocolos siguientes aquel que se emplea en el envío de correos electrónicos entre servidores de correo:",
+    "opciones": [
+      "A. POP3",
+      "B. SMTP",
+      "C. IMAP",
+      "D. MX"
+    ],
+    "correcta": 1,
+    "explicacion": "SMTP se usa para transferencia entre servidores.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta (registro DNS)."
+    }
+  },
+  {
+    "pregunta": "30. Cuál de los siguientes son los objetos básicos de Kubernetes:",
+    "opciones": [
+      "A. Pod, State, Volume, Namespace.",
+      "B. Pod, Service, Volume, Namespace.",
+      "C. Job, Service, Volume, Namespace.",
+      "D. Job, Pod, Volume, Deployment."
+    ],
+    "correcta": 1,
+    "explicacion": "Los objetos básicos incluyen Pod, Service, Volume y Namespace.",
+    "analisis_opciones": {
+      "A": "Incorrecta (State no es objeto estándar).",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "31. ¿En qué campo del objeto de Kubernetes hay que incluir los valores que permiten identificar unívocamente al objeto?",
+    "opciones": [
+      "A. Kind",
+      "B. Spec",
+      "C. apiVersion",
+      "D. metadata"
+    ],
+    "correcta": 3,
+    "explicacion": "metadata incluye nombre, labels y UID del objeto.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "32. Según RFC 5321, una transacción SMTP se compone de estos comandos:",
+    "opciones": [
+      "A. HELO, RCPT FROM y MSG.",
+      "B. MAIL FROM, RCPT TO y DATA.",
+      "C. MAIL FROM, MAIL TO Y SEND.",
+      "D. HELLO, MAIL FROM Y DATA."
+    ],
+    "correcta": 1,
+    "explicacion": "Secuencia SMTP básica: MAIL FROM → RCPT TO → DATA.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "33. ¿Cuál de los siguientes es un protocolo de intercambio de mensajes de correo?",
+    "opciones": [
+      "A. SMTP.",
+      "B. SNMB.",
+      "C. Samba.",
+      "D. IP."
+    ],
+    "correcta": 0,
+    "explicacion": "SMTP es el protocolo estándar de envío de correo.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "34. En el protocolo de correo electrónico POP3, el comando que permite obtener información acerca del número de mensajes del servidor y lo que ocupan en total en bytes es:",
+    "opciones": [
+      "A. STAT",
+      "B. RGET",
+      "C. RETR",
+      "D. PASS"
+    ],
+    "correcta": 0,
+    "explicacion": "STAT devuelve número de mensajes y tamaño total.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta (descarga mensaje).",
+      "D": "Incorrecta (password)."
+    }
+  },
+  {
+    "pregunta": "35. ¿Cuál es el puerto por defecto usado por IMAP sobre TLS?",
+    "opciones": [
+      "A. 990",
+      "B. 991",
+      "C. 995",
+      "D. 993"
+    ],
+    "correcta": 3,
+    "explicacion": "IMAP seguro usa 993.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta (POP3 SSL).",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "36. Señale cuáles de las siguientes son tecnologías relacionadas con la contenerización y la gestión de contenedores:",
+    "opciones": [
+      "A. Docker, Containerd y Podman.",
+      "B. Docker, CRI-O y nginx.",
+      "C. Podman, Kubernetes y Ubuntu.",
+      "D. Docker, Kubernetes y Debian."
+    ],
+    "correcta": 0,
+    "explicacion": "Docker, Containerd y Podman son tecnologías de contenedores.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (nginx no es contenedor).",
+      "C": "Incorrecta (Ubuntu es SO).",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "37. Señale la afirmación correcta, el servidor de correo electrónico corporativo según recomendaciones del CCN-CERT debe estar:",
+    "opciones": [
+      "A. ubicado en la red interna de la organización.",
+      "B. ubicado en una zona desmilitarizada.",
+      "C. ubicado en la red externa.",
+      "D. aislado y sin conexión con ninguna red."
+    ],
+    "correcta": 1,
+    "explicacion": "Se recomienda ubicarlo en DMZ para seguridad.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "38. Un usuario A accede mediante un programa cliente de correo a su buzón de correo. Sus mensajes permanecen en el buzón central aunque desde el cliente puede borrarlos, moverlos o responderlos. Sin embargo, otro usuario B descarga sus mensajes a su cliente, de modo que ya no siguen en el buzón central sino simplemente en el de su cliente local. Para esto, están utilizando los protocolos:",
+    "opciones": [
+      "A. Ambos utilizan SMTP.",
+      "B. IMAP y POP, respectivamente.",
+      "C. IMAP y MTA, respectivamente.",
+      "D. NTP e IMAP, respectivamente."
+    ],
+    "correcta": 1,
+    "explicacion": "IMAP mantiene en servidor, POP descarga.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "39. ¿A qué se corresponden las siglas del protocolo IMAP? .",
+    "opciones": [
+      "A. Internet Mail Access Protocol",
+      "B. Internet Mail Auth Protocol.",
+      "C. Internet Message Auth Protocol.",
+      "D. Internet Message Access Protocol."
+    ],
+    "correcta": 3,
+    "explicacion": "IMAP = Internet Message Access Protocol.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "40. De los siguientes protocolos, ¿cuál es usado para el envío de correos electrónicos seguros?",
+    "opciones": [
+      "A. LVM",
+      "B. VRRP",
+      "C. Gluster",
+      "D. S/MIME"
+    ],
+    "correcta": 3,
+    "explicacion": "S/MIME proporciona cifrado y firma en email.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "41. En las arquitecturas de microservicios las funcionalidades se implementan mediante la composición de distintos microservicios. Existen dos estrategias para gestionar esta composición, que son:",
+    "opciones": [
+      "A. Coreografía y orquestación.",
+      "B. Coreografía y coordinación.",
+      "C. Coordinación y orquestación.",
+      "D. Gestión y orquestación."
+    ],
+    "correcta": 0,
+    "explicacion": "Coreografía y orquestación son los dos modelos de coordinación.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "42. Si un usuario de Outlook borra de su ordenador el fichero .pst, ¿qué ocurre?",
+    "opciones": [
+      "A. No se abre Outlook.",
+      "B. Se pierde la agenda.",
+      "C. Se pierden las Carpetas Personales.",
+      "D. Se pierden los contados."
+    ],
+    "correcta": 2,
+    "explicacion": "El .pst contiene datos locales: correos, carpetas, etc.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "43. El standard S/MIME se utiliza para:",
+    "opciones": [
+      "A. Creación de redes virtuales.",
+      "B. Firma digital.",
+      "C. Conectar dispositivos por infrarrojos.",
+      "D. Correo electrónico seguro."
+    ],
+    "correcta": 3,
+    "explicacion": "S/MIME permite cifrado y firma en email (correo seguro).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Parcial (firma sí, pero incompleta).",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "44. Indique el puerto que utiliza el protocolo Post Office Protocol - version 3:",
+    "opciones": [
+      "A. 143",
+      "B. 110",
+      "C. 220",
+      "D. 109"
+    ],
+    "correcta": 1,
+    "explicacion": "POP3 usa el puerto 110 (995 si es SSL).",
+    "analisis_opciones": {
+      "A": "Incorrecta (IMAP).",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "429. ¿En qué archivo del sistema Linux se localiza el hash de las contraseñas de los usuarios, donde habitualmente se coloca un carácter como '!' para bloquear el acceso de forma rudimentaria?",
+    "opciones": [
+      "a) /etc/shadow",
+      "b) /var/log/secure",
+      "c) /etc/passwd",
+      "d) /etc/sudoers"
+    ],
+    "correcta": 0,
+    "explicacion": "El archivo /etc/shadow es el que almacena los hashes de forma segura. Colocar un '!' al principio del hash invalida la contraseña y bloquea el acceso al usuario.",
+    "analisis_opciones": {
+      "a": "Correcta. Es el archivo de seguridad de contraseñas por excelencia.",
+      "b": "Incorrecta. Es un archivo de registro (log) de intentos de acceso.",
+      "c": "Incorrecta. Contiene datos públicos del usuario, no los hashes modernos.",
+      "d": "Incorrecta. Define qué usuarios pueden usar privilegios de root."
+    }
+  },
+  {
+    "pregunta": "430. Usted desea que el archivo 'permisos.txt' NO pueda ser leído, modificado o ejecutado por ningún usuario excepto el propietario. ¿Qué comando utilizaría?",
+    "opciones": [
+      "a) chmod 700 permisos.txt",
+      "b) chmod 007 permisos.txt",
+      "c) chmod goa-a permisos.txt",
+      "d) umask/ga-wrx permisos.txt"
+    ],
+    "correcta": 0,
+    "explicacion": "El código 700 da todos los permisos (lectura, escritura, ejecución) al dueño (7) y ningún permiso (0) al grupo y al resto del mundo.",
+    "analisis_opciones": {
+      "a": "Correcta. Otorga rwx solo al propietario.",
+      "b": "Incorrecta. Daría permisos solo a 'otros'.",
+      "c": "Incorrecta. Sintaxis errónea.",
+      "d": "Incorrecta. El umask no se aplica así a archivos ya existentes."
+    }
+  },
+  {
+    "pregunta": "431. ¿Qué comando de Linux permite examinar específicamente los intentos de inicio de sesión INFRUCTUOSOS (fallidos) registrados en el sistema?",
+    "opciones": [
+      "a) last -u",
+      "b) lastb",
+      "c) vi /var/log/wtmp",
+      "d) show failed-login"
+    ],
+    "correcta": 1,
+    "explicacion": "El comando 'lastb' lee el archivo /var/log/btmp y muestra los intentos de acceso fallidos, siendo una herramienta clave para detectar ataques de fuerza bruta.",
+    "analisis_opciones": {
+      "a": "Incorrecta. 'last' muestra los inicios de sesión exitosos.",
+      "b": "Correcta. Específico para 'bad logins'.",
+      "c": "Incorrecta. wtmp guarda los exitosos y es binario, no se debe leer con vi.",
+      "d": "Incorrecta. No es un comando estándar de Linux."
+    }
+  },
+  {
+    "pregunta": "432. Le solicitan una solución del CCN-CERT especializada en la visualización de activos de una red corporativa para realizar labores de ciberinvestigación. ¿Cuál elegiría?",
+    "opciones": [
+      "a) ADA",
+      "b) ELENA",
+      "c) CLARA",
+      "d) EMMA"
+    ],
+    "correcta": 3,
+    "explicacion": "EMMA es la solución del CCN-CERT diseñada para la visualización de activos y el análisis de la superficie de exposición de una red.",
+    "analisis_opciones": {
+      "a": "Incorrecta. ADA es para análisis de cumplimiento de seguridad en entornos Windows.",
+      "b": "Incorrecta. ELENA es para la gestión de evidencias forenses.",
+      "c": "Incorrecta. CLARA es para auditoría de cumplimiento en Linux.",
+      "d": "Correcta. Es la herramienta de visibilidad y control de activos de red."
+    }
+  },
+  {
+    "pregunta": "433. ¿Qué comando de Windows permite eliminar todas las reglas del firewall relacionadas con un servicio específico denominado 'Hackenslash'?",
+    "opciones": [
+      "a) netsh advfirewall firewall delete rule name=all service=Hackenslash",
+      "b) netsh advfirewall set rule name=Hackenslash permission=ALLOW",
+      "c) netsh advfirewall firewall delete rule name=all program=Hackenslash",
+      "d) netsh advfirewall firewall flush rule name=Hackenslash"
+    ],
+    "correcta": 0,
+    "explicacion": "El comando 'netsh advfirewall firewall delete rule' permite filtrar por nombre para eliminar las reglas existentes en el firewall avanzado de Windows.",
+    "analisis_opciones": {
+      "a": "Correcta. Sintaxis para eliminación masiva por nombre.",
+      "b": "Incorrecta. Esto modificaría una regla, no la borraría.",
+      "c": "Incorrecta. Busca por el ejecutable del programa, no por el nombre lógico de la regla.",
+      "d": "Incorrecta. 'flush' no es un subcomando válido aquí."
+    }
+  },
+  {
+    "pregunta": "434. En la gestión de dispositivos en Windows, ¿qué herramienta de línea de comandos se utiliza para abrir el Visor de Eventos y analizar los logs del sistema?",
+    "opciones": [
+      "a) eventvwr",
+      "b) regedit",
+      "c) mmc logs",
+      "d) taskmgr"
+    ],
+    "correcta": 0,
+    "explicacion": "eventvwr (Event Viewer) es el ejecutable que abre la consola de administración de registros de Windows.",
+    "analisis_opciones": {
+      "a": "Correcta. Comando estándar de diagnóstico.",
+      "b": "Incorrecta. Abre el editor del registro.",
+      "c": "Incorrecta. mmc abre la consola vacía, requiere cargar el complemento manualmente.",
+      "d": "Incorrecta. Abre el administrador de tareas."
+    }
+  },
+  {
+    "pregunta": "435. ¿Cuál es el puerto UDP destinado por defecto al protocolo TFTP (Trivial File Transfer Protocol) en la monitorización y gestión de red?",
+    "opciones": [
+      "a) 20/tcp",
+      "b) 25/tcp",
+      "c) 69/udp",
+      "d) 161/udp"
+    ],
+    "correcta": 2,
+    "explicacion": "TFTP es un protocolo muy simple que utiliza el puerto 69 sobre UDP. Es muy común para cargar configuraciones o firmwares en dispositivos de red.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Puerto de datos de FTP.",
+      "b": "Incorrecta. Puerto de SMTP.",
+      "c": "Correcta. Puerto estándar de TFTP.",
+      "d": "Incorrecta. Puerto de escucha de agentes SNMP."
+    }
+  },
+  {
+    "pregunta": "436. En relación al sistema de archivos NTFS de Windows, ¿qué función permite que un archivo se guarde en el disco ocupando menos espacio físico del que realmente tiene?",
+    "opciones": [
+      "a) Indexación.",
+      "b) Cuotas de disco.",
+      "c) Compresión.",
+      "d) Journaling."
+    ],
+    "correcta": 2,
+    "explicacion": "NTFS soporta compresión nativa transparente, permitiendo reducir el tamaño de archivos y carpetas directamente desde el sistema de archivos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es para agilizar las búsquedas.",
+      "b": "Incorrecta. Es para limitar el espacio que usa cada usuario.",
+      "c": "Correcta. Característica nativa de ahorro de espacio.",
+      "d": "Incorrecta. Es para la integridad de datos ante fallos."
+    }
+  },
+  {
+    "pregunta": "429. ¿En qué archivo del sistema Linux se localiza el hash de las contraseñas de los usuarios, donde habitualmente se coloca un carácter como '!' para bloquear el acceso de forma rudimentaria?",
+    "opciones": [
+      "a) /etc/shadow",
+      "b) /var/log/secure",
+      "c) /etc/passwd",
+      "d) /etc/sudoers"
+    ],
+    "correcta": 0,
+    "explicacion": "El archivo /etc/shadow es el que almacena los hashes de forma segura. Colocar un '!' al principio del hash invalida la contraseña y bloquea el acceso al usuario.",
+    "analisis_opciones": {
+      "a": "Correcta. Es el archivo de seguridad de contraseñas por excelencia.",
+      "b": "Incorrecta. Es un archivo de registro (log) de intentos de acceso.",
+      "c": "Incorrecta. Contiene datos públicos del usuario, no los hashes modernos.",
+      "d": "Incorrecta. Define qué usuarios pueden usar privilegios de root."
+    }
+  },
+  {
+    "pregunta": "430. Usted desea que el archivo 'permisos.txt' NO pueda ser leído, modificado o ejecutado por ningún usuario excepto el propietario. ¿Qué comando utilizaría?",
+    "opciones": [
+      "a) chmod 700 permisos.txt",
+      "b) chmod 007 permisos.txt",
+      "c) chmod goa-a permisos.txt",
+      "d) umask/ga-wrx permisos.txt"
+    ],
+    "correcta": 0,
+    "explicacion": "El código 700 da todos los permisos (lectura, escritura, ejecución) al dueño (7) y ningún permiso (0) al grupo y al resto del mundo.",
+    "analisis_opciones": {
+      "a": "Correcta. Otorga rwx solo al propietario.",
+      "b": "Incorrecta. Daría permisos solo a 'otros'.",
+      "c": "Incorrecta. Sintaxis errónea.",
+      "d": "Incorrecta. El umask no se aplica así a archivos ya existentes."
+    }
+  },
+  {
+    "pregunta": "431. ¿Qué comando de Linux permite examinar específicamente los intentos de inicio de sesión INFRUCTUOSOS (fallidos) registrados en el sistema?",
+    "opciones": [
+      "a) last -u",
+      "b) lastb",
+      "c) vi /var/log/wtmp",
+      "d) show failed-login"
+    ],
+    "correcta": 1,
+    "explicacion": "El comando 'lastb' lee el archivo /var/log/btmp y muestra los intentos de acceso fallidos, siendo una herramienta clave para detectar ataques de fuerza bruta.",
+    "analisis_opciones": {
+      "a": "Incorrecta. 'last' muestra los inicios de sesión exitosos.",
+      "b": "Correcta. Específico para 'bad logins'.",
+      "c": "Incorrecta. wtmp guarda los exitosos y es binario, no se debe leer con vi.",
+      "d": "Incorrecta. No es un comando estándar de Linux."
+    }
+  },
+  {
+    "pregunta": "432. Le solicitan una solución del CCN-CERT especializada en la visualización de activos de una red corporativa para realizar labores de ciberinvestigación. ¿Cuál elegiría?",
+    "opciones": [
+      "a) ADA",
+      "b) ELENA",
+      "c) CLARA",
+      "d) EMMA"
+    ],
+    "correcta": 3,
+    "explicacion": "EMMA es la solución del CCN-CERT diseñada para la visualización de activos y el análisis de la superficie de exposición de una red.",
+    "analisis_opciones": {
+      "a": "Incorrecta. ADA es para análisis de cumplimiento de seguridad en entornos Windows.",
+      "b": "Incorrecta. ELENA es para la gestión de evidencias forenses.",
+      "c": "Incorrecta. CLARA es para auditoría de cumplimiento en Linux.",
+      "d": "Correcta. Es la herramienta de visibilidad y control de activos de red."
+    }
+  },
+  {
+    "pregunta": "433. ¿Qué comando de Windows permite eliminar todas las reglas del firewall relacionadas con un servicio específico denominado 'Hackenslash'?",
+    "opciones": [
+      "a) netsh advfirewall firewall delete rule name=all service=Hackenslash",
+      "b) netsh advfirewall set rule name=Hackenslash permission=ALLOW",
+      "c) netsh advfirewall firewall delete rule name=all program=Hackenslash",
+      "d) netsh advfirewall firewall flush rule name=Hackenslash"
+    ],
+    "correcta": 0,
+    "explicacion": "El comando 'netsh advfirewall firewall delete rule' permite filtrar por nombre para eliminar las reglas existentes en el firewall avanzado de Windows.",
+    "analisis_opciones": {
+      "a": "Correcta. Sintaxis para eliminación masiva por nombre.",
+      "b": "Incorrecta. Esto modificaría una regla, no la borraría.",
+      "c": "Incorrecta. Busca por el ejecutable del programa, no por el nombre lógico de la regla.",
+      "d": "Incorrecta. 'flush' no es un subcomando válido aquí."
+    }
+  },
+  {
+    "pregunta": "434. En la gestión de dispositivos en Windows, ¿qué herramienta de línea de comandos se utiliza para abrir el Visor de Eventos y analizar los logs del sistema?",
+    "opciones": [
+      "a) eventvwr",
+      "b) regedit",
+      "c) mmc logs",
+      "d) taskmgr"
+    ],
+    "correcta": 0,
+    "explicacion": "eventvwr (Event Viewer) es el ejecutable que abre la consola de administración de registros de Windows.",
+    "analisis_opciones": {
+      "a": "Correcta. Comando estándar de diagnóstico.",
+      "b": "Incorrecta. Abre el editor del registro.",
+      "c": "Incorrecta. mmc abre la consola vacía, requiere cargar el complemento manualmente.",
+      "d": "Incorrecta. Abre el administrador de tareas."
+    }
+  },
+  {
+    "pregunta": "435. ¿Cuál es el puerto UDP destinado por defecto al protocolo TFTP (Trivial File Transfer Protocol) en la monitorización y gestión de red?",
+    "opciones": [
+      "a) 20/tcp",
+      "b) 25/tcp",
+      "c) 69/udp",
+      "d) 161/udp"
+    ],
+    "correcta": 2,
+    "explicacion": "TFTP es un protocolo muy simple que utiliza el puerto 69 sobre UDP. Es muy común para cargar configuraciones o firmwares en dispositivos de red.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Puerto de datos de FTP.",
+      "b": "Incorrecta. Puerto de SMTP.",
+      "c": "Correcta. Puerto estándar de TFTP.",
+      "d": "Incorrecta. Puerto de escucha de agentes SNMP."
+    }
+  },
+  {
+    "pregunta": "436. En relación al sistema de archivos NTFS de Windows, ¿qué función permite que un archivo se guarde en el disco ocupando menos espacio físico del que realmente tiene?",
+    "opciones": [
+      "a) Indexación.",
+      "b) Cuotas de disco.",
+      "c) Compresión.",
+      "d) Journaling."
+    ],
+    "correcta": 2,
+    "explicacion": "NTFS soporta compresión nativa transparente, permitiendo reducir el tamaño de archivos y carpetas directamente desde el sistema de archivos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es para agilizar las búsquedas.",
+      "b": "Incorrecta. Es para limitar el espacio que usa cada usuario.",
+      "c": "Correcta. Característica nativa de ahorro de espacio.",
+      "d": "Incorrecta. Es para la integridad de datos ante fallos."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando se utiliza en ESMTP en lugar de HELO?",
+    "opciones": [
+      "A. HELLO",
+      "B. EHLO",
+      "C. START",
+      "D. INIT"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. HELLO no es un comando válido en SMTP.",
+      "B": "Correcta. EHLO se utiliza en ESMTP para iniciar la comunicación y soportar extensiones.",
+      "C": "Incorrecta. No es un comando SMTP.",
+      "D": "Incorrecta. No pertenece a SMTP."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es el puerto estándar de SMTP para transferencia entre servidores?",
+    "opciones": [
+      "A. 587",
+      "B. 465",
+      "C. 25",
+      "D. 110"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. 587 se usa para envío autenticado (submission).",
+      "B": "Incorrecta. 465 se usa para SMTP sobre SSL.",
+      "C": "Correcta. El puerto 25 es el estándar para SMTP entre servidores.",
+      "D": "Incorrecta. 110 es POP3."
+    }
+  },
+  {
+    "pregunta": "¿Qué puerto utiliza SMTP con SSL (SMTPS)?",
+    "opciones": [
+      "A. 25",
+      "B. 110",
+      "C. 465",
+      "D. 143"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. Es SMTP estándar.",
+      "B": "Incorrecta. Es POP3.",
+      "C": "Correcta. 465 es SMTP sobre SSL.",
+      "D": "Incorrecta. Es IMAP."
+    }
+  },
+  {
+    "pregunta": "¿Qué puerto se utiliza habitualmente para el envío de correo autenticado (submission)?",
+    "opciones": [
+      "A. 25",
+      "B. 587",
+      "C. 995",
+      "D. 143"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. Es para transferencia entre servidores.",
+      "B": "Correcta. 587 es el puerto de envío autenticado (MSA).",
+      "C": "Incorrecta. Es POP3 con SSL.",
+      "D": "Incorrecta. Es IMAP."
+    }
+  },
+  {
+    "pregunta": "¿Qué protocolo utiliza el puerto 110?",
+    "opciones": [
+      "A. SMTP",
+      "B. IMAP",
+      "C. POP3",
+      "D. FTP"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. SMTP usa 25, 465 o 587.",
+      "B": "Incorrecta. IMAP usa 143.",
+      "C": "Correcta. POP3 usa el puerto 110.",
+      "D": "Incorrecta. FTP usa 21."
+    }
+  },
+  {
+    "pregunta": "¿Qué puerto utiliza POP3 sobre SSL?",
+    "opciones": [
+      "A. 110",
+      "B. 143",
+      "C. 995",
+      "D. 993"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. Es POP3 sin cifrar.",
+      "B": "Incorrecta. Es IMAP.",
+      "C": "Correcta. 995 es POP3 seguro.",
+      "D": "Incorrecta. Es IMAP SSL."
+    }
+  },
+  {
+    "pregunta": "¿Qué puerto utiliza IMAP4 por defecto?",
+    "opciones": [
+      "A. 110",
+      "B. 25",
+      "C. 143",
+      "D. 993"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. Es POP3.",
+      "B": "Incorrecta. Es SMTP.",
+      "C": "Correcta. IMAP usa el puerto 143.",
+      "D": "Incorrecta. Es IMAP con SSL."
+    }
+  },
+  {
+    "pregunta": "¿Qué puerto utiliza IMAP sobre SSL?",
+    "opciones": [
+      "A. 993",
+      "B. 995",
+      "C. 143",
+      "D. 25"
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. 993 es IMAP con SSL.",
+      "B": "Incorrecta. Es POP3 SSL.",
+      "C": "Incorrecta. Es IMAP sin cifrar.",
+      "D": "Incorrecta. Es SMTP."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando SMTP indica el remitente del mensaje?",
+    "opciones": [
+      "A. RCPT TO",
+      "B. DATA",
+      "C. MAIL FROM",
+      "D. SEND"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. Indica el destinatario.",
+      "B": "Incorrecta. Indica el contenido del mensaje.",
+      "C": "Correcta. MAIL FROM define el remitente.",
+      "D": "Incorrecta. No es el principal para remitente."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando SMTP se utiliza para indicar el destinatario?",
+    "opciones": [
+      "A. MAIL FROM",
+      "B. RCPT TO",
+      "C. DATA",
+      "D. HELO"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. Indica el remitente.",
+      "B": "Correcta. RCPT TO indica el destinatario.",
+      "C": "Incorrecta. Es el contenido del mensaje.",
+      "D": "Incorrecta. Es inicio de sesión."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando SMTP inicia el envío del contenido del mensaje?",
+    "opciones": [
+      "A. START",
+      "B. DATA",
+      "C. SEND",
+      "D. BODY"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. No es comando estándar.",
+      "B": "Correcta. DATA indica que empieza el contenido del mensaje.",
+      "C": "Incorrecta. No es el principal en SMTP moderno.",
+      "D": "Incorrecta. No existe como comando SMTP."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es una diferencia clave entre POP3 e IMAP?",
+    "opciones": [
+      "A. POP3 deja los correos en el servidor",
+      "B. IMAP descarga y elimina los correos",
+      "C. IMAP permite gestionar correos en el servidor",
+      "D. POP3 permite múltiples clientes simultáneos"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. POP3 normalmente descarga y elimina.",
+      "B": "Incorrecta. Eso lo hace POP3.",
+      "C": "Correcta. IMAP trabaja sobre el servidor (carpetas, estados, etc.).",
+      "D": "Incorrecta. IMAP es el que permite múltiples accesos."
+    }
+  },
+  {
+    "pregunta": "¿Qué mecanismo permite verificar que un servidor está autorizado a enviar correos en nombre de un dominio?",
+    "opciones": [
+      "A. DKIM",
+      "B. SPF",
+      "C. DMARC",
+      "D. TLS"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. DKIM firma el mensaje para garantizar integridad y autenticidad, pero no valida el servidor remitente.",
+      "B": "Correcta. SPF define qué servidores pueden enviar correos en nombre de un dominio mediante registros DNS.",
+      "C": "Incorrecta. DMARC se basa en SPF y DKIM, pero no sustituye su función.",
+      "D": "Incorrecta. TLS cifra la comunicación, no autentica el dominio."
+    }
+  },
+  {
+    "pregunta": "¿Qué tecnología utiliza firmas digitales para garantizar la integridad del mensaje?",
+    "opciones": [
+      "A. SPF",
+      "B. DKIM",
+      "C. DMARC",
+      "D. POP3"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. SPF valida servidores, no firma mensajes.",
+      "B": "Correcta. DKIM utiliza firmas digitales para asegurar que el mensaje no ha sido modificado.",
+      "C": "Incorrecta. DMARC define políticas, no firma mensajes directamente.",
+      "D": "Incorrecta. POP3 es un protocolo de recepción."
+    }
+  },
+  {
+    "pregunta": "¿Qué protocolo permite definir políticas sobre qué hacer si fallan SPF o DKIM?",
+    "opciones": [
+      "A. DKIM",
+      "B. SPF",
+      "C. DMARC",
+      "D. SMTP"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. DKIM solo firma mensajes.",
+      "B": "Incorrecta. SPF solo valida servidores.",
+      "C": "Correcta. DMARC permite definir políticas (rechazar, cuarentena, etc.).",
+      "D": "Incorrecta. SMTP es un protocolo de envío."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es el principal objetivo de SPF?",
+    "opciones": [
+      "A. Cifrar el contenido del correo",
+      "B. Evitar la falsificación del remitente",
+      "C. Firmar digitalmente el mensaje",
+      "D. Gestionar buzones"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. Eso lo hace TLS u otros mecanismos de cifrado.",
+      "B": "Correcta. SPF evita la suplantación indicando qué servidores están autorizados.",
+      "C": "Incorrecta. Eso es DKIM.",
+      "D": "Incorrecta. No tiene relación."
+    }
+  },
+  {
+    "pregunta": "¿Qué técnica ayuda a proteger contra ataques de phishing y spoofing combinando SPF y DKIM?",
+    "opciones": [
+      "A. TLS",
+      "B. DMARC",
+      "C. MIME",
+      "D. IMAP"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. TLS cifra la comunicación.",
+      "B": "Correcta. DMARC combina SPF y DKIM y define políticas de seguridad.",
+      "C": "Incorrecta. MIME gestiona formatos de mensajes.",
+      "D": "Incorrecta. IMAP es protocolo de acceso al correo."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una amenaza común en el correo electrónico?",
+    "opciones": [
+      "A. Phishing",
+      "B. Fragmentación IP",
+      "C. DHCP spoofing",
+      "D. NAT traversal"
+    ],
+    "respuesta_correcta": "A",
+    "explicacion": {
+      "A": "Correcta. El phishing es una de las principales amenazas en correo electrónico.",
+      "B": "Incorrecta. No es específica del correo.",
+      "C": "Incorrecta. Es un ataque de red.",
+      "D": "Incorrecta. No es una amenaza de correo."
+    }
+  },
+  {
+    "pregunta": "¿Qué mecanismo utiliza registros DNS para indicar servidores autorizados?",
+    "opciones": [
+      "A. DKIM",
+      "B. DMARC",
+      "C. SPF",
+      "D. SSL"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. DKIM usa claves públicas en DNS, pero su función es firmar.",
+      "B": "Incorrecta. DMARC usa DNS para políticas, pero depende de SPF/DKIM.",
+      "C": "Correcta. SPF define servidores autorizados mediante registros DNS.",
+      "D": "Incorrecta. SSL cifra comunicaciones."
+    }
+  },
+  {
+    "pregunta": "¿Qué tecnología garantiza que el contenido del mensaje no ha sido alterado?",
+    "opciones": [
+      "A. SPF",
+      "B. DKIM",
+      "C. POP3",
+      "D. SMTP"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. SPF valida origen.",
+      "B": "Correcta. DKIM asegura integridad mediante firma digital.",
+      "C": "Incorrecta. Es protocolo de recepción.",
+      "D": "Incorrecta. Es protocolo de envío."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la principal diferencia entre los comandos 'kubectl create' y 'kubectl apply'?",
+    "opciones": [
+      "A. create actualiza recursos existentes y apply los elimina",
+      "B. create crea recursos desde cero y apply crea o actualiza recursos",
+      "C. apply solo funciona con pods",
+      "D. create solo funciona en Kubernetes local"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. No es su función.",
+      "B": "Correcta. create solo crea recursos, mientras que apply crea o actualiza si ya existen.",
+      "C": "Incorrecta. apply funciona con cualquier recurso.",
+      "D": "Incorrecta. Ambos funcionan en cualquier cluster."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando se utiliza para listar los pods en Kubernetes?",
+    "opciones": [
+      "A. kubectl list pods",
+      "B. kubectl get pods",
+      "C. kubectl show pods",
+      "D. kubectl describe pods"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. No existe.",
+      "B": "Correcta. 'kubectl get pods' lista los pods.",
+      "C": "Incorrecta. No es válido.",
+      "D": "Incorrecta. describe muestra detalles, no lista."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando muestra información detallada de un pod?",
+    "opciones": [
+      "A. kubectl get pod",
+      "B. kubectl info pod",
+      "C. kubectl describe pod",
+      "D. kubectl logs pod"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. Solo lista.",
+      "B": "Incorrecta. No existe.",
+      "C": "Correcta. describe muestra información detallada.",
+      "D": "Incorrecta. logs muestra logs."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando permite ver los logs de un pod?",
+    "opciones": [
+      "A. kubectl describe pod",
+      "B. kubectl logs",
+      "C. kubectl get logs",
+      "D. kubectl show logs"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. Muestra configuración.",
+      "B": "Correcta. logs muestra la salida del contenedor.",
+      "C": "Incorrecta. No existe.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando se utiliza para ejecutar un comando dentro de un pod?",
+    "opciones": [
+      "A. kubectl run",
+      "B. kubectl exec",
+      "C. kubectl start",
+      "D. kubectl attach"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. Crea pods.",
+      "B": "Correcta. exec ejecuta comandos dentro del contenedor.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. attach conecta, pero no ejecuta nuevos comandos."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando crea un pod directamente desde línea de comandos?",
+    "opciones": [
+      "A. kubectl create pod",
+      "B. kubectl run",
+      "C. kubectl apply pod",
+      "D. kubectl start pod"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. No es la forma habitual.",
+      "B": "Correcta. run permite crear pods desde CLI.",
+      "C": "Incorrecta. apply usa YAML.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de Kubernetes?",
+    "opciones": [
+      "A. Crear contenedores",
+      "B. Orquestar contenedores",
+      "C. Virtualizar hardware",
+      "D. Gestionar bases de datos"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. Eso lo hace Docker.",
+      "B": "Correcta. Kubernetes orquesta contenedores.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué herramienta es responsable de crear contenedores?",
+    "opciones": [
+      "A. Kubernetes",
+      "B. Docker",
+      "C. Ansible",
+      "D. Terraform"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta. Orquesta.",
+      "B": "Correcta. Docker crea y ejecuta contenedores.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando se utiliza para eliminar un recurso en Kubernetes?",
+    "opciones": [
+      "A. kubectl remove",
+      "B. kubectl delete",
+      "C. kubectl erase",
+      "D. kubectl clear"
+    ],
+    "respuesta_correcta": "B",
+    "explicacion": {
+      "A": "Incorrecta.",
+      "B": "Correcta. delete elimina recursos.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia principal entre contenedores y máquinas virtuales?",
+    "opciones": [
+      "A. Los contenedores incluyen sistema operativo completo",
+      "B. Las máquinas virtuales comparten kernel",
+      "C. Los contenedores comparten el kernel del host",
+      "D. No hay diferencia"
+    ],
+    "respuesta_correcta": "C",
+    "explicacion": {
+      "A": "Incorrecta. Eso es VM.",
+      "B": "Incorrecta. Eso es contenedores.",
+      "C": "Correcta. Los contenedores comparten kernel.",
+      "D": "Incorrecta."
+    }
+  }
+]
+
+
+
+

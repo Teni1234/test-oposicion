@@ -1,0 +1,1799 @@
+[
+  {
+    "pregunta": "1. ¿A cuál de los principios descritos en la WCAG 2.0 esté vinculada la pauta 3.3.Entrada de datos asistida?",
+    "opciones": [
+      "A. Robusto",
+      "B. Operable",
+      "C. Perceptible",
+      "D. Comprensible"
+    ],
+    "correcta": 3,
+    "explicacion": "La pauta 3.3 (Entrada de datos asistida) pertenece al Principio 3: Comprensible. Su objetivo es ayudar a los usuarios a evitar y corregir errores al introducir información.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El principio Robusto trata sobre la compatibilidad con tecnologías de apoyo.",
+      "B": "Incorrecta. Operable se refiere a que los componentes de la interfaz se puedan manejar.",
+      "C": "Incorrecta. Perceptible se refiere a que la información sea presentada de forma que los usuarios puedan verla u oírla.",
+      "D": "Correcta. La asistencia en la entrada de datos garantiza que el usuario comprenda cómo interactuar con el formulario."
+    }
+  },
+  {
+    "pregunta": "2. En el contexto de la accesibilidad de los contenidos web, señale la respuesta FALSA:",
+    "opciones": [
+      "A. La norma UNE 139803:2012 anula y sustituye la UNE 139803:2004.",
+      "B. La norma que establece los requisitos de accesibilidad para los contenidos web es la UNE 139803:2012.",
+      "C. La norma UNE 139803:2012 no es aplicable al software utilizado para acceder a los contenidos web.",
+      "D. La UNE 139803:2012 se basa en las Pautas de Accesibilidad para el Contenido Web (WCAG) en su versión 1.0."
+    ],
+    "correcta": 3,
+    "explicacion": "La afirmación D es falsa porque la norma UNE 139803:2012 se basa en las WCAG 2.0, no en la versión 1.0 (la cual quedó obsoleta hace años).",
+    "analisis_opciones": {
+      "A": "Verdadera. La versión de 2012 reemplazó a la original de 2004.",
+      "B": "Verdadera. Es la norma técnica de referencia en España para accesibilidad web.",
+      "C": "Verdadera. Se aplica al contenido, no al software de acceso (como navegadores), que se rige por las UAAG.",
+      "D": "Falsa. Se fundamenta íntegramente en las WCAG 2.0 de la W3C."
+    }
+  },
+  {
+    "pregunta": "3. En relación con las normas WAI (Web Accessibility Initiative), Existen tres niveles de conformidad o adecuación con las directrices, hablamos de nivel \"Doble-A\" cuando:",
+    "opciones": [
+      "A. Se satisfacen todos los controles de Prioridad 1.",
+      "B. Se satisfacen todos los controles de Prioridad 2.",
+      "C. Se satisfacen todos los controles de Prioridad 1 y 2.",
+      "D. Se satisfacen todos los controles de Prioridad 1, 2 y 3."
+    ],
+    "correcta": 2,
+    "explicacion": "Los niveles son acumulativos. Para alcanzar el nivel AA (Doble-A), es obligatorio cumplir con todos los criterios de Prioridad 1 (Nivel A) y Prioridad 2 (Nivel AA).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esto correspondería al nivel A (Sencilla A).",
+      "B": "Incorrecta. No basta con cumplir la prioridad 2, hay que cumplir también la 1.",
+      "C": "Correcta. El cumplimiento conjunto de P1 y P2 define el nivel AA.",
+      "D": "Incorrecta. Esto correspondería al nivel AAA (Triple-A)."
+    }
+  },
+  {
+    "pregunta": "4. Cuál de las siguientes NO es una herramienta para evaluación de la accesibilidad de páginas web:",
+    "opciones": [
+      "A. TAW.",
+      "B. Bobby.",
+      "C. Hera",
+      "D. Magpie."
+    ],
+    "correcta": 3,
+    "explicacion": "Magpie es una herramienta creada por el NCAM para añadir subtítulos y descripciones de audio a contenidos multimedia, no es un evaluador de accesibilidad web general.",
+    "analisis_opciones": {
+      "A": "Incorrecta. TAW es la herramienta de referencia en español.",
+      "B": "Incorrecta. Bobby fue una de las herramientas de evaluación más antiguas y famosas.",
+      "C": "Incorrecta. Hera es una herramienta de revisión asistida desarrollada por el Sidar.",
+      "D": "Correcta. No es un evaluador de páginas, sino un autor de subtítulos/audiodescripciones."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál es una pauta de la Iniciativa de accesibilidad a la Web del World Wide Web Consortium (W3C/WAI)?",
+    "opciones": [
+      "A. En los enlaces de hipertexto usar texto sencillo y fácil de comprender cuando se lea fuera de contexto, como por ejemplo \"pincha aquí\".",
+      "B. Utilizar marcos (frames) que simplifiquen la página.",
+      "C. Provea alternativas equivalentes para contenido visual y auditivo.",
+      "D. Evitar en imágenes y animaciones atributos como \"alt\" que puede confundir con su texto alternativo."
+    ],
+    "correcta": 2,
+    "explicacion": "Una de las pautas fundamentales (Pauta 1.1) es proporcionar alternativas textuales para cualquier contenido no textual (imágenes, audios), facilitando su conversión a otros formatos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. \"Pincha aquí\" es una mala práctica; los enlaces deben ser descriptivos.",
+      "B": "Incorrecta. El uso de marcos suele dificultar la accesibilidad y navegación.",
+      "C": "Correcta. Es un pilar básico de las WCAG.",
+      "D": "Incorrecta. El atributo 'alt' es precisamente donde se coloca el texto alternativo."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál de las siguientes es una recomendación de prioridad 3 según WCAG 1.0?",
+    "opciones": [
+      "A. Siempre facilite una descripción textual de cada elemento no textual.",
+      "B. Use hojas de estilo para controlar presentación y maquetación.",
+      "C. Evite elementos móviles en las páginas.",
+      "D. Especifique el lenguaje en que está escrito un documento."
+    ],
+    "correcta": 3,
+    "explicacion": "Especificar el lenguaje principal del documento (atributo lang) se consideraba Prioridad 3 en las WCAG 1.0 (aunque en las 2.0 pasó a ser Nivel A/Prioridad 1).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esto es Prioridad 1 (imprescindible).",
+      "B": "Incorrecta. Esto es Prioridad 2 (debería hacerse).",
+      "C": "Incorrecta. El control de elementos móviles es Prioridad 2.",
+      "D": "Correcta. En la versión 1.0 era una recomendación de nivel 3."
+    }
+  },
+  {
+    "pregunta": "7. Con respecto a las solicitudes de información accesible y quejas, el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público establece que:",
+    "opciones": [
+      "A. Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de veinte días naturales.",
+      "B. Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de veinte días hábiles.",
+      "C. Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de diez días naturales.",
+      "D. Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de diez días hábiles."
+    ],
+    "correcta": 1,
+    "explicacion": "Según el artículo 12 del RD 1112/2018, el plazo máximo para responder a la persona interesada es de veinte días hábiles.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El plazo se cuenta en días hábiles, no naturales.",
+      "B": "Correcta. Es el plazo legal establecido por el Real Decreto.",
+      "C": "Incorrecta. El plazo de 10 días se refiere a la posible ampliación si hay complejidad, pero la base son 20.",
+      "D": "Incorrecta. El número de días correcto es 20."
+    }
+  },
+  {
+    "pregunta": "8. Uno de los expertos más reconocidos en usabilidad web, Jakob Nielsen, estableció 10 principios clave que todo diseñador web debe tener en cuenta. ¿Cuál de los siguientes NO es uno de ellos?",
+    "opciones": [
+      "A. Visibilidad del estado del sistema.",
+      "B. Control y libertad del usuario.",
+      "C. Reconocimiento después que recuerdo.",
+      "D. Ayuda y documentación."
+    ],
+    "correcta": 2,
+    "explicacion": "El principio correcto de Nielsen es 'Reconocimiento antes que recuerdo'. El sistema debe minimizar la carga de memoria del usuario haciendo que los objetos y opciones estén visibles.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sí es un principio (el sistema siempre debe informar de lo que pasa).",
+      "B": "Incorrecta. Sí es un principio (debe haber una 'salida de emergencia' fácil).",
+      "C": "Correcta. Es la falsa porque los términos están invertidos.",
+      "D": "Incorrecta. Sí es un principio (aunque es mejor que el sistema se use sin ayuda)."
+    }
+  },
+  {
+    "pregunta": "9. La Web Accesibility Initiative indica una serie de componentes esenciales en la accesibilidad web, y define una serie de guías, ¿cuál de entre las siguientes corresponde a la generación de contenidos accesibles?",
+    "opciones": [
+      "A. ATAG (Authoring Tool Accesibility Guideline).",
+      "B. WCAG (Web Content Accesibility Guideline).",
+      "C. WMAG (Web Management Acesibility Guideline).",
+      "D. UAAG (User Agent Accesibility Guideline)."
+    ],
+    "correcta": 1,
+    "explicacion": "Las WCAG (Web Content Accessibility Guidelines) se centran específicamente en el contenido de la web para hacerlo accesible.",
+    "analisis_opciones": {
+      "A": "Incorrecta. ATAG se refiere a las herramientas de autor (editores como WordPress).",
+      "B": "Correcta. Son las pautas para el contenido propiamente dicho.",
+      "C": "Incorrecta. No existen unas guías llamadas WMAG en el estándar W3C.",
+      "D": "Incorrecta. UAAG se refiere a los agentes de usuario (navegadores y lectores de pantalla)."
+    }
+  },
+  {
+    "pregunta": "10. Según el WCAG 2.1, ¿qué pauta de las siguientes pertenece al principio Comprensible?",
+    "opciones": [
+      "A. Adaptable",
+      "B. Navegable",
+      "C. Predecible/Previsible",
+      "D. Distinguible"
+    ],
+    "correcta": 2,
+    "explicacion": "Dentro del principio 'Comprensible', se busca que la web aparezca y opere de manera previsible (Pauta 3.2).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Adaptable pertenece al principio Perceptible.",
+      "B": "Incorrecta. Navegable pertenece al principio Operable.",
+      "C": "Correcta. Ayuda a que el usuario no se confunda con cambios inesperados.",
+      "D": "Incorrecta. Distinguible pertenece al principio Perceptible."
+    }
+  }
+,
+  {
+    "pregunta": "11. En las pautas de accesibilidad para el contenido web 2.0 se han identificado 4 niveles de orientación, señale la respuesta correcta que enumera estos niveles desde lo más general a lo más particular:",
+    "opciones": [
+      "A. Principios, pautas, criterios de conformidad, técnicas suficientes y recomendables.",
+      "B. Principios, criterios de conformidad, pautas, técnicas suficientes y recomendables.",
+      "C. Principios, pautas, técnicas suficientes y recomendables, criterios de conformidad.",
+      "D. Principios, criterios de conformidad, técnicas suficientes y recomendables, pautas."
+    ],
+    "correcta": 0,
+    "explicacion": "La estructura jerárquica de las WCAG 2.0 es: 1. Principios (capa superior), 2. Pautas (objetivos), 3. Criterios de conformidad (lo que se testea) y 4. Técnicas (ejemplos de implementación).",
+    "analisis_opciones": {
+      "A": "Correcta. Sigue el orden lógico de abstracción a concreción.",
+      "B": "Incorrecta. Intercambia pautas con criterios.",
+      "C": "Incorrecta. Las técnicas son el nivel más bajo/particular.",
+      "D": "Incorrecta. Orden erróneo."
+    }
+  },
+  {
+    "pregunta": "12. Las Pautas de Accesibilidad para el Contenido Web 2.0 (WCAG 2.0) definen niveles para proporcionar orientación sobre cómo crear contenidos accesibles. ¿Cuál de las siguientes respuestas enumera los niveles de orientación?",
+    "opciones": [
+      "A. Principios, técnicas suficientes y recomendables, pautas y criterios de conformidad.",
+      "B. Principios, técnicas suficientes y recomendables y pautas.",
+      "C. Principios, técnicas suficientes y recomendables, pautas y niveles de conformidad.",
+      "D. Principios, pautas y criterios de conformidad."
+    ],
+    "correcta": 0,
+    "explicacion": "Aunque se presenten en diferente orden en la opción, los cuatro niveles definidos por W3C para orientar el diseño son: Principios, Pautas, Criterios de conformidad y Técnicas (Suficientes y Recomendables).",
+    "analisis_opciones": {
+      "A": "Correcta. Incluye los cuatro elementos fundamentales de la documentación.",
+      "B": "Incorrecta. Faltan los criterios de conformidad.",
+      "C": "Incorrecta. Los 'niveles de conformidad' (A, AA, AAA) son el resultado de cumplir criterios, no un nivel de orientación en sí.",
+      "D": "Incorrecta. Faltan las técnicas."
+    }
+  },
+  {
+    "pregunta": "13. ¿Cuál de las siguientes opciones representa una aplicación de código abierto para sistema operativo Microsoft Windows que proporciona un lector de pantalla para personas ciegas o con baja visión?",
+    "opciones": [
+      "A. NVDA",
+      "B. Orca",
+      "C. Voice Over",
+      "D. Cortana"
+    ],
+    "correcta": 0,
+    "explicacion": "NVDA (NonVisual Desktop Access) es el lector de pantalla de código abierto de referencia para Windows.",
+    "analisis_opciones": {
+      "A": "Correcta. Es gratuito, open source y para Windows.",
+      "B": "Incorrecta. Orca es el lector de pantalla para entornos Linux/GNOME.",
+      "C": "Incorrecta. VoiceOver es el lector de pantalla integrado en sistemas Apple (macOS/iOS).",
+      "D": "Incorrecta. Cortana es un asistente virtual, no una tecnología de apoyo para accesibilidad visual."
+    }
+  },
+  {
+    "pregunta": "14. Al grado de eficacia, eficiencia y satisfacción con la que usuarios específicos pueden lograr objetivos específicos, en contextos de uso específicos se denomina:",
+    "opciones": [
+      "A. Accesibilidad.",
+      "B. Usabilidad.",
+      "C. Trazabilidad.",
+      "D. Semántica del diseño."
+    ],
+    "correcta": 1,
+    "explicacion": "Esta es la definición literal de usabilidad recogida en la norma ISO 9241-11.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La accesibilidad se centra en la posibilidad de acceso, no en la eficiencia/satisfacción de un objetivo.",
+      "B": "Correcta. Se basa en los tres pilares: eficacia, eficiencia y satisfacción.",
+      "C": "Incorrecta. La trazabilidad es la capacidad de seguir el rastro de un elemento.",
+      "D": "Incorrecta. Término no relacionado con la definición de ISO."
+    }
+  },
+  {
+    "pregunta": "15. Las Web Content Accessibility Guidelines (WCAG) 2.0 se estructuran en 12 directrices en base a los principios:",
+    "opciones": [
+      "A. Portable, interoperable y entendible.",
+      "B. Usable, portable y legible.",
+      "C. Perceptible, operable, comprensible y robusto.",
+      "D. Ninguno de los anteriores son principios para las directrices de las WCAG 2.0"
+    ],
+    "correcta": 2,
+    "explicacion": "Las WCAG 2.0 introdujeron los 4 principios conocidos por el acrónimo P.O.C.R. (Perceptible, Operable, Comprensible, Robusto).",
+    "analisis_opciones": {
+      "A": "Incorrecta. No son principios WCAG.",
+      "B": "Incorrecta. Términos erróneos.",
+      "C": "Correcta. Son los pilares sobre los que se asientan las 12 pautas (13 en la versión 2.1).",
+      "D": "Incorrecta. La C es válida."
+    }
+  },
+  {
+    "pregunta": "16. Según el estándar internacional ISO 9241-11 el grado en que un producto puede ser utilizado por los usuarios para lograr sus propósitos con efectividad, eficiencia y satisfacción en un determinado contexto de uso es lo que se conoce como:",
+    "opciones": [
+      "A. Usabilidad",
+      "B. Accesibilidad",
+      "C. Interfaz de usuario",
+      "D. Abstracción"
+    ],
+    "correcta": 0,
+    "explicacion": "Pregunta recurrente que refuerza la definición de la ISO 9241-11 para la usabilidad.",
+    "analisis_opciones": {
+      "A": "Correcta. Se centra en el éxito de la tarea por parte del usuario.",
+      "B": "Incorrecta. Definición distinta según ISO.",
+      "C": "Incorrecta. Es el medio, no el grado de efectividad.",
+      "D": "Incorrecta. Concepto ajeno."
+    }
+  },
+  {
+    "pregunta": "17. Las Web Content Accessibility Guidelines 2.0 son unas directrices desarrolladas en el marco de:",
+    "opciones": [
+      "A. La iniciativa WAI del W3C",
+      "B. La iniciativa WAI de OASIS",
+      "C. El grupo UAAG de la ISO",
+      "D. El grupo AUWG de ANSI"
+    ],
+    "correcta": 0,
+    "explicacion": "Las WCAG son creadas por la WAI (Web Accessibility Initiative), que es parte del W3C (World Wide Web Consortium).",
+    "analisis_opciones": {
+      "A": "Correcta. Es el organismo internacional rector de la web.",
+      "B": "Incorrecta. OASIS es otro organismo de estándares, pero no de las WCAG.",
+      "C": "Incorrecta. UAAG es un tipo de pauta, no un grupo de la ISO.",
+      "D": "Incorrecta. Organismo americano que no lidera las WCAG."
+    }
+  },
+  {
+    "pregunta": "18. El grupo de métodos basados en evaluadores expertos que inspeccionan o examinan aspectos relacionados con la usabilidad de una interfaz de usuario se conoce como:",
+    "opciones": [
+      "A. Evaluación heurística.",
+      "B. Test de usabilidad.",
+      "C. Lay-Out de la Interfaz.",
+      "D. Evaluación diagnóstica."
+    ],
+    "correcta": 0,
+    "explicacion": "La evaluación heurística es realizada por expertos basándose en principios (heurísticas) preestablecidos, a diferencia de los tests con usuarios reales.",
+    "analisis_opciones": {
+      "A": "Correcta. Método de inspección por expertos (como las heurísticas de Nielsen).",
+      "B": "Incorrecta. Se realiza con usuarios finales, no necesariamente expertos.",
+      "C": "Incorrecta. Se refiere a la disposición visual de los elementos.",
+      "D": "Incorrecta. Término genérico de medicina o educación."
+    }
+  },
+  {
+    "pregunta": "19. El estándar de accesibilidad para productos y servicios TIC que aplica a las Administraciones Públicas españolas es:",
+    "opciones": [
+      "A. UNE-EN 301549:2019",
+      "B. UNE-EN 301341:2019",
+      "C. UNE-EN 301876:2019",
+      "D. UNE-EN 301803:2019"
+    ],
+    "correcta": 0,
+    "explicacion": "La norma UNE-EN 301549 es la transposición de la norma europea homónima, obligatoria para el sector público según el RD 1112/2018.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el estándar actual de referencia (especialmente tras sus actualizaciones de 2020/21).",
+      "B": "Incorrecta. Código inexistente en este contexto.",
+      "C": "Incorrecta. Código inexistente en este contexto.",
+      "D": "Incorrecta. Código inexistente en este contexto."
+    }
+  },
+  {
+    "pregunta": "20. En el contexto de la accesibilidad web, en la recomendación WCAG 2.0 se hace referencia a cuatro principios generales que engloban aspectos generales aplicables a todos los contenidos. ¿Cuáles son esos principios?",
+    "opciones": [
+      "A. Perceptible, operable, comprensible y robusto.",
+      "B. Perceptible, abstraible, comprensible y operable.",
+      "C. Perceptible, robusto, inferible y operable.",
+      "D. Perceptible, inferible, comprensible y operable."
+    ],
+    "correcta": 0,
+    "explicacion": "Nuevamente se pregunta por el acrónimo P.O.C.R. (en inglés P.O.U.R: Perceivable, Operable, Understandable, Robust).",
+    "analisis_opciones": {
+      "A": "Correcta. Los cuatro pilares de las WCAG 2.0 y 2.1.",
+      "B": "Incorrecta. Incluye 'abstraible', que no es un principio.",
+      "C": "Incorrecta. Incluye 'inferible', que no es un principio.",
+      "D": "Incorrecta. Repite 'inferible'."
+    }
+  }
+,
+  {
+    "pregunta": "21. La aplicación JAWS es:",
+    "opciones": [
+      "A. Una herramienta para medir el tráfico de un página web.",
+      "B. Un snifferde red.",
+      "C. Un lector de pantalla para invidentes.",
+      "D. Una herramienta de realización de pruebas automáticas."
+    ],
+    "correcta": 2,
+    "explicacion": "JAWS (Job Access With Speech) es uno de los lectores de pantalla comerciales más utilizados en el mundo para el sistema operativo Windows.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería una herramienta de analítica.",
+      "B": "Incorrecta. Un sniffer analiza paquetes de datos en una red (ej. Wireshark).",
+      "C": "Correcta. Convierte el contenido de la pantalla en voz o salida braille.",
+      "D": "Incorrecta. Aunque ayuda en pruebas de accesibilidad, no es una herramienta de automatización de tests."
+    }
+  },
+  {
+    "pregunta": "22. ¿Cuál es el organismo en Internet que ha realizado las Guías para la Accesibilidad de Contenidos Web, WCAG, dentro de la iniciativa para la Accesibilidad de las webs WAI?",
+    "opciones": [
+      "A. IETF.",
+      "B. IANA.",
+      "C. W3C.",
+      "D. RIPE."
+    ],
+    "correcta": 2,
+    "explicacion": "El World Wide Web Consortium (W3C) es el organismo internacional que desarrolla estándares para la Web, incluyendo las guías de accesibilidad a través de su iniciativa WAI.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El IETF se encarga de los protocolos de Internet (como TCP/IP).",
+      "B": "Incorrecta. IANA gestiona la asignación de IPs y nombres de dominio raíz.",
+      "C": "Correcta. Es el ente regulador de los estándares web.",
+      "D": "Incorrecta. RIPE es el registro regional de Internet para Europa."
+    }
+  },
+  {
+    "pregunta": "23. ¿Cuál de los siguientes lectores de pantalla viene integrado en el Sistema Operativo Windows?",
+    "opciones": [
+      "A. Window Eyes",
+      "B. Narrator",
+      "C. Blindows",
+      "D. JAWS (Job Access With Speech)"
+    ],
+    "correcta": 1,
+    "explicacion": "Narrator (Narrador) es el lector de pantalla nativo que Microsoft incluye en todas las versiones modernas de Windows.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Era un software comercial (ya descontinuado).",
+      "B": "Correcta. Es la herramienta de accesibilidad integrada de serie.",
+      "C": "Incorrecta. Nombre no reconocido como estándar.",
+      "D": "Incorrecta. Es un software de terceros y requiere licencia de pago."
+    }
+  },
+  {
+    "pregunta": "24. Un licornio es una tecnología de apoyo (ayuda técnica) empleada por:",
+    "opciones": [
+      "A. Los usuarios ciegos.",
+      "B. Los usuarios con discapacidad motriz.",
+      "C. Los usuarios sordos.",
+      "D. No es una tecnología de apoyo (ayuda técnica)."
+    ],
+    "correcta": 1,
+    "explicacion": "El licornio es un puntero que se sujeta a la cabeza mediante un casco o banda, permitiendo a personas con movilidad reducida en los brazos pulsar teclas o manejar pantallas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Los usuarios ciegos usan lectores o braille.",
+      "B": "Correcta. Es un hardware de asistencia motriz (entrada de datos).",
+      "C": "Incorrecta. No asiste en la audición.",
+      "D": "Incorrecta. Es una ayuda técnica clásica en ergonomía y accesibilidad."
+    }
+  },
+  {
+    "pregunta": "25. ¿Cuál de las siguientes herramientas es un lector de pantallas para las personas invidentes?",
+    "opciones": [
+      "A. Jaws.",
+      "B. Lynx.",
+      "C. Hera.",
+      "D. Web Accessibility Toolbar."
+    ],
+    "correcta": 0,
+    "explicacion": "De las opciones, solo JAWS es un lector de pantalla propiamente dicho.",
+    "analisis_opciones": {
+      "A": "Correcta. Software comercial de salida de voz.",
+      "B": "Incorrecta. Lynx es un navegador web en modo texto (muy útil para accesibilidad, pero no es un lector de pantalla).",
+      "C": "Incorrecta. Hera es una herramienta de revisión/evaluación de accesibilidad.",
+      "D": "Incorrecta. Es una extensión para el navegador que ayuda a los desarrolladores a testear pautas."
+    }
+  },
+  {
+    "pregunta": "26. Señale la respuesta correcta referente al término ATAG:",
+    "opciones": [
+      "A. Son Pautas de Accesibilidad que explican cómo hacer que el contenido web sea más accesible para las personas con discapacidades.",
+      "B. Es una Suite que define una forma de hacer que el contenido web y las aplicaciones web sean más accesibles para las personas con discapacidades.",
+      "C. Son Pautas de Accesibilidad que explican cómo hacer que los agentes de usuario sean accesibles para las personas con discapacidades.",
+      "D. Son un conjunto de normas que deben cumplir las herramientas de autor para ser accesibles y generar contenidos también accesibles."
+    ],
+    "correcta": 3,
+    "explicacion": "ATAG (Authoring Tool Accessibility Guidelines) se aplica a las herramientas con las que se crea la web (CMS, editores de código, redes sociales) para que el autor pueda trabajar y el resultado sea accesible.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Definición de WCAG.",
+      "B": "Incorrecta. Definición de WAI-ARIA.",
+      "C": "Incorrecta. Definición de UAAG.",
+      "D": "Correcta. Se enfoca en el 'autor' y su 'herramienta'."
+    }
+  },
+  {
+    "pregunta": "27. ¿Cuál de los siguientes criterios de conformidad es de nivel AAA según WCAG 2.0?",
+    "opciones": [
+      "A. Contenido no textual.",
+      "B. Idioma de las partes.",
+      "C. Etiquetas o instrucciones. ·",
+      "D. Pronunciación."
+    ],
+    "correcta": 3,
+    "explicacion": "La pauta 3.1.6 (Pronunciación) requiere que se proporcione el modo de pronunciar palabras si su sentido es ambiguo, y es un nivel de exigencia AAA (el más alto).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es Nivel A (imprescindible).",
+      "B": "Incorrecta. Es Nivel AA.",
+      "C": "Incorrecta. Es Nivel A.",
+      "D": "Correcta. Es un criterio específico del nivel de excelencia AAA."
+    }
+  },
+  {
+    "pregunta": "28. ¿Qué es WCAG?",
+    "opciones": [
+      "A. Unas pautas de accesibilidad de contenidos web promovidas por el W3C.",
+      "B. Una librería de Java EE para la creación de aplicaciones web creada por Oracle.",
+      "C. Un componente del ecosistema Hadoop para el manejo de Big Data.",
+      "D. Un framework javascript especialmente indicado para trabajar con bases de datos no relacionales."
+    ],
+    "correcta": 0,
+    "explicacion": "WCAG responde a 'Web Content Accessibility Guidelines', el estándar global para que la web sea accesible.",
+    "analisis_opciones": {
+      "A": "Correcta. Promovido por la W3C.",
+      "B": "Incorrecta. No es una librería de Java.",
+      "C": "Incorrecta. No tiene relación con Big Data.",
+      "D": "Incorrecta. No es un framework JS."
+    }
+  },
+  {
+    "pregunta": "29. Según las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1, ¿cuál es el objetivo de que un contenido sea Distinguible?",
+    "opciones": [
+      "A. Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura.",
+      "B. Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo.",
+      "C. Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple.",
+      "D. Proporcionar alternativas para los medios tempodependientes."
+    ],
+    "correcta": 1,
+    "explicacion": "La pauta 1.4 (Distinguible) pertenece al principio Perceptible y su meta es que el contenido destaque correctamente de su fondo (contraste, uso de color, volumen de audio).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esto describe la pauta 1.3 (Adaptable).",
+      "B": "Correcta. Definición literal de la pauta 1.4.",
+      "C": "Incorrecta. Esto describe la pauta 1.1 (Alternativas textuales).",
+      "D": "Incorrecta. Esto describe la pauta 1.2 (Medios de comunicación basados en el tiempo)."
+    }
+  },
+  {
+    "pregunta": "30. En relación con el Real Decreto 1112/2018, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público, indique qué respuesta es INCORRECTA:",
+    "opciones": [
+      "A. Las entidades obligadas deberán ofrecer un mecanismo de comunicación para presentar sugerencias y quejas.",
+      "B. La primera revisión de accesibilidad deberá haberse realizado en el caso de los sitios web antes de dos años desde la entrada en vigor de este real decreto.",
+      "C. La primera revisión de accesibilidad deberá haberse realizado en el caso de las aplicaciones móviles, antes de dos años desde la entrada en vigor de este real decreto.",
+      "D. La entidad obligada deberá responder a la persona interesada sobre las solicitudes de información accesible y quejas, en el plazo de veinte días hábiles."
+    ],
+    "correcta": 1,
+    "explicacion": "La opción B es incorrecta porque para los sitios web publicados ANTES de la entrada en vigor, el plazo era de 2 años, pero para sitios NUEVOS era de solo 1 año (20 de septiembre de 2019). No era un plazo fijo de 2 años para todos los casos de forma genérica.",
+    "analisis_opciones": {
+      "A": "Correcta. Es obligatorio tener un canal de comunicación accesible.",
+      "B": "Falsa. El calendario de aplicación variaba según la fecha de publicación del sitio.",
+      "C": "Correcta. Para las apps móviles el plazo se fijó en junio de 2021.",
+      "D": "Correcta. Como vimos antes, son 20 días hábiles."
+    }
+  }
+,
+  {
+    "pregunta": "31. El principio de la accesibilidad web que exige que los componentes y la navegación de la interfaz de usuario se puedan utilizar por cualquier persona usuaria es:",
+    "opciones": [
+      "A. La perceptibilidad.",
+      "B. La comprensibilidad.",
+      "C. La robustez.",
+      "D. La operabilidad."
+    ],
+    "correcta": 3,
+    "explicacion": "El principio de Operabilidad (Principio 2) se centra en que el usuario pueda interactuar con la interfaz y navegar por ella (por ejemplo, mediante el teclado).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Perceptibilidad es que el usuario pueda 'percibir' la información.",
+      "B": "Incorrecta. Comprensibilidad es que el usuario entienda la información.",
+      "C": "Incorrecta. Robustez es que el contenido sea compatible con diversas tecnologías.",
+      "D": "Correcta. La navegación y el uso de componentes definen la operabilidad."
+    }
+  },
+  {
+    "pregunta": "32. Según las “Técnicas Esenciales para las Directrices de Accesibilidad para el Contenido Web 1.0”, proveer de un texto equivalente a una imagen es de:",
+    "opciones": [
+      "A. Prioridad 1.",
+      "B. Prioridad 2.",
+      "C. Prioridad 3.",
+      "D. Prioridad 4."
+    ],
+    "correcta": 0,
+    "explicacion": "En las WCAG 1.0, el texto alternativo para elementos no textuales es Prioridad 1, ya que su incumplimiento impide el acceso al contenido a ciertos grupos de usuarios.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el requisito más básico y crítico.",
+      "B": "Incorrecta. Prioridad 2 son puntos que 'deberían' cumplirse.",
+      "C": "Incorrecta. Prioridad 3 son puntos que 'podrían' cumplirse.",
+      "D": "Incorrecta. No existe la prioridad 4 en las WCAG."
+    }
+  },
+  {
+    "pregunta": "33. En relación con la accesibilidad, ¿cuál de las siguientes es una herramienta para comprobar la accesibilidad?",
+    "opciones": [
+      "A. ab",
+      "B. puppet",
+      "C. Examinator",
+      "D. Instant Run"
+    ],
+    "correcta": 2,
+    "explicacion": "Examinator es una herramienta online que puntúa la accesibilidad de una página web basándose en las pautas WCAG.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 'ab' (Apache Benchmark) es para medir el rendimiento de servidores.",
+      "B": "Incorrecta. Puppet es una herramienta de gestión de configuración de software.",
+      "C": "Correcta. Es un evaluador específico de accesibilidad.",
+      "D": "Incorrecta. Es una función de Android Studio para desplegar cambios rápido."
+    }
+  },
+  {
+    "pregunta": "34. En el ámbito de la accesibilidad web, las siglas WAI hacen referencia a:",
+    "opciones": [
+      "A. Web Accessibility Integration.",
+      "B. Web Accessibility Initiative.",
+      "C. Web Accessibility Indicator.",
+      "D. Web Accessibility Interconnection."
+    ],
+    "correcta": 1,
+    "explicacion": "WAI (Web Accessibility Initiative) es la iniciativa del W3C encargada de desarrollar las pautas de accesibilidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Siglas inventadas.",
+      "B": "Correcta. Es el nombre oficial del grupo de trabajo.",
+      "C": "Incorrecta. Siglas inventadas.",
+      "D": "Incorrecta. Siglas inventadas."
+    }
+  },
+  {
+    "pregunta": "35. El objetivo de la accesibilidad Web es:",
+    "opciones": [
+      "A. La disminución de los costes de asistencia y ayuda al usuario.",
+      "B. Reducción de los tiempos de aprendizaje.",
+      "C. Facilitar el acceso a la información de las personas con discapacidad.",
+      "D. Optimización de los costes de diseño y mantenimiento."
+    ],
+    "correcta": 2,
+    "explicacion": "Aunque la accesibilidad tiene beneficios secundarios en costes y aprendizaje, su objetivo primordial es la inclusión: permitir que personas con discapacidad accedan a la web en igualdad de condiciones.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un beneficio colateral de la usabilidad.",
+      "B": "Incorrecta. Es un objetivo de la usabilidad.",
+      "C": "Correcta. Es la definición de propósito de la accesibilidad.",
+      "D": "Incorrecta. Es un beneficio de una buena arquitectura, no el objetivo de la accesibilidad."
+    }
+  },
+  {
+    "pregunta": "36. WCAG consiste en una guía de recomendaciones para realizar webs:",
+    "opciones": [
+      "A. Más interactivas.",
+      "B. Más seguras.",
+      "C. Más ligeras.",
+      "D. Más accesibles."
+    ],
+    "correcta": 3,
+    "explicacion": "Las Web Content Accessibility Guidelines están diseñadas específicamente para estandarizar la creación de sitios accesibles.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La interactividad suele estar ligada a estándares como HTML5 o JS.",
+      "B": "Incorrecta. La seguridad se rige por otros estándares (ej. OWASP).",
+      "C": "Incorrecta. El rendimiento (WPO) se encarga de la ligereza.",
+      "D": "Correcta. Es su función principal."
+    }
+  },
+  {
+    "pregunta": "37. ¿Cuál de las siguientes es una pauta (guideline) incluida en WCAG 2.0 de W3C, sobre el contenido web?",
+    "opciones": [
+      "A. Contenido aceptable: no incluya contenidos inapropiados o no aptos para entornos familiares",
+      "B. Accesible por teclado: haga que toda la funcionalidad esté disponible por teclado.",
+      "C. Tiempo de carga reducido: reduzca el tiempo de carga de la página para mantener la atención.",
+      "D. Neutralidad comercial: en lo posible, no mencione marcas comerciales ni muestre logotipos."
+    ],
+    "correcta": 1,
+    "explicacion": "La Pauta 2.1 (Accesible por teclado) es una de las 12 directrices fundamentales de las WCAG 2.0.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es una pauta técnica de la WAI.",
+      "B": "Correcta. Crucial para usuarios que no pueden usar ratón.",
+      "C": "Incorrecta. Es una buena práctica de usabilidad, pero no una pauta WCAG.",
+      "D": "Incorrecta. No existe tal restricción en accesibilidad."
+    }
+  },
+  {
+    "pregunta": "38. Según el artículo 5 del RD1494/2007, por el que se aprueba el reglamento sobre las condiciones básicas para el acceso de las personas con discapacidad a los servicios relacionados con la sociedad de la información, las páginas web de las Administraciones:",
+    "opciones": [
+      "A. Deberán cumplir con el nivel 1 de las normas UNE139803:2004 antes del 31 de Diciembre de 2008.",
+      "B. Deberán cumplir con los niveles 1 y 2 de las normas UNE139803:2004 antes del 31 de Diciembre de 2008.",
+      "C. Deberán cumplir con los niveles 1,2 y 3 de las normas UNE139803:2004 antes del 31 de Diciembre de 2009.",
+      "D. Deberán cumplir con los niveles 1,2 y 3 de las normas UNE139803:2004 antes del 31 de Diciembre de 2010."
+    ],
+    "correcta": 1,
+    "explicacion": "El RD 1494/2007 estableció que el sector público debía cumplir el nivel de prioridad 1 y 2 de la norma UNE 139803:2004 antes de finalizar 2008. (Ojo: esta norma ha sido superada por el RD 1112/2018 y la UNE de 2012/2019, pero suele caer en exámenes sobre evolución histórica).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Exigía niveles 1 y 2.",
+      "B": "Correcta. Es el plazo y nivel histórico marcado por dicho RD.",
+      "C": "Incorrecta. Fecha y niveles erróneos.",
+      "D": "Incorrecta. Fecha y niveles erróneos."
+    }
+  },
+  {
+    "pregunta": "39. Las pautas de accesibilidad para herramientas de autor en WAI-W3C se conocen como:",
+    "opciones": [
+      "A. UAAG.",
+      "B. ATAG.",
+      "C. WCAG.",
+      "D. WGML."
+    ],
+    "correcta": 1,
+    "explicacion": "ATAG significa Authoring Tool Accessibility Guidelines (Pautas de accesibilidad para herramientas de autor).",
+    "analisis_opciones": {
+      "A": "Incorrecta. UAAG es para agentes de usuario (navegadores).",
+      "B": "Correcta. Se refiere a editores y CMS.",
+      "C": "Incorrecta. WCAG es para el contenido.",
+      "D": "Incorrecta. Siglas no existentes en este contexto."
+    }
+  },
+  {
+    "pregunta": "40. La Organización Internacional para la Estandarización (ISO) define usabilidad como:",
+    "opciones": [
+      "A. La capacidad de lograr un efecto deseado o esperado.",
+      "B. La facilidad con la que algo puede ser usado, visitado o accedido en general por todas las personas, especialmente por aquellas que poseen algún tipo de discapacidad.",
+      "C. La eficiencia y satisfacción con la que un producto permite alcanzar objetivos específicos a usuarios específicos en un contexto de uso específico.",
+      "D. La capacidad administrativa de producir el máximo de resultados con el mínimo de recursos, el mínimo de energía y en el mínimo de tiempo posible."
+    ],
+    "correcta": 2,
+    "explicacion": "La definición de la ISO 9241-11 se basa en tres componentes: Eficacia, Eficiencia y Satisfacción.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa es la definición de eficacia.",
+      "B": "Incorrecta. Esa es una definición común de accesibilidad.",
+      "C": "Correcta. Definición canónica de la ISO.",
+      "D": "Incorrecta. Esa es la definición de productividad o eficiencia administrativa."
+    }
+  }
+,
+  {
+    "pregunta": "41. Señale cual NO es una pauta del Principio Perceptible de WCAG 2.1:",
+    "opciones": [
+      "A. Alternativas textuales: Proporcione alternativas textuales para todo contenido no textual...",
+      "B. Distinguible: Haga más fácil para los usuarios ver y oír el contenido...",
+      "C. Contenido multimedia dependiente del tiempo: Proporcione alternativas para contenidos multimedia...",
+      "D. Ataques epilépticos: No diseñar contenido que pueda causar ataques epilépticos."
+    ],
+    "correcta": 3,
+    "explicacion": "La pauta sobre 'Ataques epilépticos' (Pauta 2.3) pertenece al Principio 2: Operable, no al principio Perceptible.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la pauta 1.1 del principio Perceptible.",
+      "B": "Incorrecta. Es la pauta 1.4 del principio Perceptible.",
+      "C": "Incorrecta. Es la pauta 1.2 del principio Perceptible.",
+      "D": "Correcta. Esta pauta busca que el contenido sea seguro de operar, por tanto es del Principio 2."
+    }
+  },
+  {
+    "pregunta": "42. En el contexto de la Iniciativa de Accesibilidad en la Web (WAI), ¿cuál de las siguientes afirmaciones sobre ARIA es verdadera?",
+    "opciones": [
+      "A. Es una herramienta comercial utilizada mayoritariamente en España para validar el nivel de accesibilidad de una página web.",
+      "B. Es un estándar que permite la navegación a través de una web mediante sonidos.",
+      "C. Es una especificación que define cómo hacer accesibles aplicaciones web enriquecidas.",
+      "D. Es el nivel de accesibilidad más alto de acuerdo con la especificación WCAG 2.0."
+    ],
+    "correcta": 2,
+    "explicacion": "WAI-ARIA (Accessible Rich Internet Applications) es una especificación técnica que añade atributos a HTML para que aplicaciones dinámicas (con JS) sean entendibles por lectores de pantalla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es una herramienta de validación, es una especificación de desarrollo.",
+      "B": "Incorrecta. No es para navegación por sonido, es para semántica de componentes.",
+      "C": "Correcta. Ayuda a definir widgets complejos (menús, pestañas) de forma accesible.",
+      "D": "Incorrecta. El nivel más alto es el AAA."
+    }
+  },
+  {
+    "pregunta": "43. Indique cuántos son los principios generales de usabilidad Web definidos por Jakob Nielsen:",
+    "opciones": [
+      "A. 7",
+      "B. 4",
+      "C. 10",
+      "D. 8"
+    ],
+    "correcta": 2,
+    "explicacion": "Jakob Nielsen definió 10 heurísticas (principios generales) para el diseño de interfaces de usuario.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Número erróneo.",
+      "B": "Incorrecta. 4 son los principios WCAG.",
+      "C": "Correcta. Son las famosas '10 Heurísticas de Nielsen'.",
+      "D": "Incorrecta. Número erróneo."
+    }
+  },
+  {
+    "pregunta": "44. Según las Técnicas Esenciales para las Directrices de Accesibilidad para el Contenido Web 1.0, organizar el documento de forma que pueda ser leído sin hojas de estilo es de:",
+    "opciones": [
+      "A. Prioridad 1.",
+      "B. Prioridad 2.",
+      "C. Prioridad 3.",
+      "D. Prioridad 4."
+    ],
+    "correcta": 0,
+    "explicacion": "En las WCAG 1.0, era Prioridad 1 asegurar que el documento mantuviera el sentido y la estructura sin necesidad de aplicar el diseño visual (CSS).",
+    "analisis_opciones": {
+      "A": "Correcta. Es un requisito de acceso básico.",
+      "B": "Incorrecta. Los niveles inferiores no aplican aquí.",
+      "C": "Incorrecta. Los niveles inferiores no aplican aquí.",
+      "D": "Incorrecta. No existe Prioridad 4."
+    }
+  },
+  {
+    "pregunta": "45. En relación a la accesibilidad universal, señale la afirmación VERDADERA:",
+    "opciones": [
+      "A. la accesibilidad universal está estandarizada a través de la ISO 20000.",
+      "B. la aplicación de la accesibilidad universal en el ámbito de las telecomunicaciones y sociedad de la Información está regulada por ley.",
+      "C. El Esquema Nacional de Interoperabilidad (ENI) desarrolla una Norma Técnica de Interoperabilidad de Accesibilidad Universal.",
+      "D. El PMBOK, del Project Management Institute, es una guía metodológica para implantar la accesibilidad universal en proyectos de Tecnologías de la Información."
+    ],
+    "correcta": 1,
+    "explicacion": "En España, la accesibilidad está regulada por leyes como la LIONDAU (ahora integrada en el Texto Refundido de la Ley General de derechos de las personas con discapacidad).",
+    "analisis_opciones": {
+      "A": "Incorrecta. La ISO 20000 es sobre Gestión de Servicios de TI.",
+      "B": "Correcta. Existe un marco jurídico sólido que obliga a su cumplimiento.",
+      "C": "Incorrecta. El ENI tiene muchas normas técnicas (NTI), pero la de accesibilidad es una materia transversal regulada por su propio RD (1112/2018).",
+      "D": "Incorrecta. El PMBOK es una guía de gestión de proyectos, no de accesibilidad."
+    }
+  },
+  {
+    "pregunta": "46. ¿Cuál de las siguientes pautas de accesibilidad web es obligatorio respetar para que un sistema cumpla el nivel A de la especificación WCAG?:",
+    "opciones": [
+      "A. Asegúrese de que toda la información transmitida a través de los colores también esté disponible sin color.",
+      "B. Utilice hojas de estilo para controlar la maquetación y la presentación.",
+      "C. Proporcione metadatos para añadir información semántica a las páginas y sitios.",
+      "D. Identifique claramente el objetivo de cada vínculo."
+    ],
+    "correcta": 0,
+    "explicacion": "El uso del color (Pauta 1.4.1) es un criterio de nivel A. Es fundamental no transmitir información relevante solo mediante el color para personas daltónicas.",
+    "analisis_opciones": {
+      "A": "Correcta. Es un criterio de nivel A (mínimo obligatorio).",
+      "B": "Incorrecta. Es una buena práctica (AA en WCAG 1.0) pero no un criterio de nivel A estricto en la 2.0/2.1.",
+      "C": "Incorrecta. Los metadatos son recomendaciones generales.",
+      "D": "Incorrecta. La identificación de vínculos puede variar de nivel según el contexto (AAA para propósitos fuera de contexto)."
+    }
+  },
+  {
+    "pregunta": "47. ¿Qué afirmación es cierta acerca del estándar ISO/IEC 40500:2012?",
+    "opciones": [
+      "A. Es equivalente a la norma norteamericana ANSI/TIA-942-A.",
+      "B. Establece guías y pautas relativas a calidad de software.",
+      "C. Establece guías relativas a la seguridad del softwared)",
+      "D. Recoge las pautas de accesibilidad web WCAG 2.0."
+    ],
+    "correcta": 3,
+    "explicacion": "La ISO/IEC 40500 adoptó íntegramente las WCAG 2.0 del W3C como un estándar internacional ISO oficial.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La TIA-942 es sobre Centros de Datos.",
+      "B": "Incorrecta. Calidad de software es ISO 25000 (SQuaRE).",
+      "C": "Incorrecta. Seguridad es ISO 27001.",
+      "D": "Correcta. Es la 'traducción' de WCAG 2.0 a norma ISO."
+    }
+  },
+  {
+    "pregunta": "48. ¿Cuál de las siguientes herramientas NO se utiliza para realizar una evaluación automática de accesibilidad web?",
+    "opciones": [
+      "A. SortSite.",
+      "B. Wave.",
+      "C. Achecker.",
+      "D. WebCT."
+    ],
+    "correcta": 3,
+    "explicacion": "WebCT era un sistema de gestión de aprendizaje (LMS), similar a Moodle, no una herramienta de evaluación de accesibilidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una herramienta de pago muy completa para revisar sitios web.",
+      "B": "Incorrecta. WAVE es una de las herramientas gratuitas más populares (extensión de Chrome/Firefox).",
+      "C": "Incorrecta. Achecker es un evaluador clásico de accesibilidad.",
+      "D": "Correcta. Es una plataforma educativa, no de testeo técnico."
+    }
+  }
+,
+  {
+    "pregunta": "49. Según la Ley 51/2003, ¿cuál es la condición que deben cumplir los entornos y servicios para ser comprensibles, utilizables y practicables por todas las personas de la forma más autónoma posible?",
+    "opciones": [
+      "A. Usabilidad proactiva.",
+      "B. Accesibilidad universal.",
+      "C. Diseño para pocos.",
+      "D. Interfaz adaptable."
+    ],
+    "correcta": 1,
+    "explicacion": "El Artículo 2 de la Ley 51/2003 define la accesibilidad universal como la condición necesaria para que entornos, productos y servicios sean utilizables por todos en condiciones de seguridad y comodidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La usabilidad es un concepto relacionado pero no es el término legal definido en este artículo[cite: 345].",
+      "B": "Correcta. Es la definición literal recogida en la normativa española[cite: 17].",
+      "C": "Incorrecta. El concepto es 'diseño para todos', lo opuesto a esta opción.",
+      "D": "Incorrecta. La adaptabilidad es una pauta técnica, no la definición legal del principio[cite: 133]."
+    }
+  },
+  {
+    "pregunta": "50. ¿Qué tipo de limitación de acceso se asocia específicamente a dificultades de aprendizaje como la dislexia o la discalculia según los apuntes?",
+    "opciones": [
+      "A. Limitaciones auditivas.",
+      "B. Limitaciones motrices.",
+      "C. Limitaciones cognitivas.",
+      "D. Limitaciones visuales de grado medio."
+    ],
+    "correcta": 2,
+    "explicacion": "Las limitaciones cognitivas incluyen dificultades de aprendizaje como dislexia y discalculia, afectando también a la memoria y la atención[cite: 26].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Estas se refieren a la sordera o deficiencias auditivas[cite: 24].",
+      "B": "Incorrecta. Estas implican dificultad para usar las manos o lentitud muscular[cite: 25].",
+      "C": "Correcta. Clasificación directa para problemas de aprendizaje y habilidades lógicas[cite: 26].",
+      "D": "Incorrecta. Las visuales se refieren a baja visión, ceguera o daltonismo[cite: 23]."
+    }
+  },
+  {
+    "pregunta": "51. En la evolución de los estándares en España, ¿qué norma tomó como punto de partida inicial las WCAG 1.0?",
+    "opciones": [
+      "A. UNE 139803:2012.",
+      "B. ISO/IEC 40500:2012.",
+      "C. UNE 139803:2004.",
+      "D. UNE-EN 301 549."
+    ],
+    "correcta": 2,
+    "explicacion": "La norma UNE 139803:2004 se creó tomando como base las WCAG 1.0 para poder referenciarlas en la legislación española[cite: 35, 36].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esta versión se basa ya en las WCAG 2.0[cite: 46, 47].",
+      "B": "Incorrecta. Este es el estándar internacional equivalente a las WCAG 2.0[cite: 54].",
+      "C": "Correcta. Fue la primera norma de AENOR basada en las pautas de 1999[cite: 34, 35, 36].",
+      "D": "Incorrecta. Es la norma europea que armoniza requisitos TIC más allá de la web[cite: 56, 57]."
+    }
+  }
+,
+  {
+    "pregunta": "52. Según el RD 1494/2007, ¿qué nivel de accesibilidad deben cumplir como mínimo las páginas web de las Administraciones Públicas?",
+    "opciones": [
+      "A. Prioridad 1 de la norma UNE 139803:2004.",
+      "B. Prioridades 1 y 2 de la norma UNE 139803:2004.",
+      "C. Prioridades 1, 2 y 3 de la norma UNE 139803:2004.",
+      "D. Únicamente las pautas WCAG 2.1 nivel AAA."
+    ],
+    "correcta": 1,
+    "explicacion": "El artículo 5 del RD 1494/2007 establece la obligatoriedad de cumplir las prioridades 1 y 2 de la norma UNE 139803:2004 (equivalente al nivel AA).",
+    "analisis_opciones": {
+      "A": "Incorrecta. El nivel 1 (A) es insuficiente para la administración según este RD.",
+      "B": "Correcta. Es el estándar legal mínimo exigido históricamente para el sector público.",
+      "C": "Incorrecta. La prioridad 3 (AAA) es recomendable pero no obligatoria por ley.",
+      "D": "Incorrecta. El RD 1494/2007 es anterior a la existencia de las WCAG 2.1."
+    }
+  },
+  {
+    "pregunta": "53. En relación a la equivalencia entre normas, si un portal web cumple con las Prioridades 1 y 2 de la norma UNE 139803:2004, ¿con qué nivel de conformidad de las WCAG 1.0 se corresponde?",
+    "opciones": [
+      "A. Nivel A (Sencilla-A).",
+      "B. Nivel AA (Doble-A).",
+      "C. Nivel AAA (Triple-A).",
+      "D. No existe equivalencia directa entre ambas normas."
+    ],
+    "correcta": 1,
+    "explicacion": "Tus apuntes indican explícitamente que cumplir Prioridad 1 y 2 de la UNE 139803:2004 equivale a obtener el nivel de conformidad Doble-A (AA) de las WCAG 1.0.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El nivel A solo requeriría la Prioridad 1.",
+      "B": "Correcta. Es la equivalencia técnica exacta mencionada en el temario.",
+      "C": "Incorrecta. El nivel AAA requeriría cumplir también la Prioridad 3.",
+      "D": "Incorrecta. La norma UNE se redactó precisamente para ser el espejo de las WCAG."
+    }
+  },
+  {
+    "pregunta": "54. ¿Cuál fue el principal cambio filosófico de las WCAG 2.0 respecto a las 1.0 según los apuntes del tema?",
+    "opciones": [
+      "A. Se centraron exclusivamente en el código HTML.",
+      "B. Se diseñaron para ser independientes de la tecnología y más abstractas.",
+      "C. Eliminaron los niveles de prioridad para usar solo 'pautas'.",
+      "D. Se centraron solo en la discapacidad visual, ignorando la motriz."
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia de las 1.0 (muy ligadas a HTML), las WCAG 2.0 son abstractas y aplicables a cualquier tecnología (PDF, Flash, etc.), basándose en principios y no en etiquetas específicas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso era una limitación de la versión 1.0.",
+      "B": "Correcta. Es la característica fundamental de su diseño 'independiente de la tecnología'.",
+      "C": "Incorrecta. Mantuvieron y refinaron los niveles A, AA y AAA.",
+      "D": "Incorrecta. Al contrario, ampliaron el espectro de discapacidades cubiertas."
+    }
+  },
+  {
+    "pregunta": "55. Bajo el principio 'Perceptible' de las WCAG, la pauta que exige proporcionar alternativas para medios tempodependientes se identifica con el número:",
+    "opciones": [
+      "A. Pauta 1.1",
+      "B. Pauta 1.2",
+      "C. Pauta 2.1",
+      "D. Pauta 3.1"
+    ],
+    "correcta": 1,
+    "explicacion": "La pauta 1.1 es para contenido no textual (imágenes), mientras que la 1.2 se dedica específicamente a los medios tempodependientes (video, audio).",
+    "analisis_opciones": {
+      "A": "Incorrecta. La 1.1 es para alternativas textuales generales.",
+      "B": "Correcta. Es la pauta específica para contenido multimedia.",
+      "C": "Incorrecta. Empieza por 2, por lo que pertenece al principio 'Operable'.",
+      "D": "Incorrecta. Empieza por 3, por lo que pertenece al principio 'Comprensible'."
+    }
+  }
+,
+  {
+    "pregunta": "56. De acuerdo con las WCAG 2.1, ¿cuál es el requisito de contraste mínimo para los componentes de la interfaz de usuario y los objetos gráficos (Contraste no textual)?",
+    "opciones": [
+      "A. 3:1",
+      "B. 4.5:1",
+      "C. 7:1",
+      "D. 2:1"
+    ],
+    "correcta": 0,
+    "explicacion": "La versión 2.1 introdujo el criterio 1.4.11 para objetos gráficos y componentes (como bordes de botones o iconos), fijando el ratio mínimo en 3:1 para asegurar su visibilidad.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el valor específico para elementos no textuales en el nivel AA.",
+      "B": "Incorrecta. Este es el ratio para texto normal.",
+      "C": "Incorrecta. Este es el ratio para nivel de contraste mejorado (AAA).",
+      "D": "Incorrecta. Valor insuficiente según las pautas."
+    }
+  },
+  {
+    "pregunta": "57. En el contexto del RD 1112/2018, ¿qué se entiende por 'carga desproporcionada'?",
+    "opciones": [
+      "A. El exceso de tráfico en un sitio web que impide la navegación.",
+      "B. La imposibilidad técnica de que un lector de pantalla procese archivos pesados.",
+      "C. Una exención temporal cuando los costes financieros y organizativos superan los beneficios para las personas con discapacidad.",
+      "D. La obligación de las empresas privadas de cumplir el nivel AAA sin subvención."
+    ],
+    "correcta": 2,
+    "explicacion": "Es una cláusula legal que permite a las entidades no cumplir ciertos requisitos de accesibilidad si demuestran que el esfuerzo requerido es excesivo tras una evaluación formal.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es un problema de rendimiento de red.",
+      "B": "Incorrecta. No es una limitación de hardware.",
+      "C": "Correcta. Es el concepto jurídico y administrativo recogido en el Real Decreto.",
+      "D": "Incorrecta. El RD 1112 afecta principalmente al sector público."
+    }
+  },
+  {
+    "pregunta": "58. Las WCAG 2.2 introducen nuevos criterios. ¿Cuál de los siguientes es un criterio de esta versión enfocado en facilitar el uso de elementos táctiles?",
+    "opciones": [
+      "A. Reflow (Reflujo).",
+      "B. Target Size (Minimum).",
+      "C. Orientation.",
+      "D. Keyboard (No Exception)."
+    ],
+    "correcta": 1,
+    "explicacion": "El criterio 'Target Size (Minimum)' exige que los elementos interactivos tengan un tamaño suficiente para que se puedan pulsar sin errores en pantallas táctiles.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Introducido en la 2.1.",
+      "B": "Correcta. Es una de las novedades clave de la versión 2.2 para movilidad.",
+      "C": "Incorrecta. Introducido en la 2.1.",
+      "D": "Incorrecta. Concepto base desde la 2.0."
+    }
+  },
+  {
+    "pregunta": "59. ¿Qué herramienta de validación se caracteriza por ser una revisión asistida que guía al evaluador en los puntos que no pueden ser automáticos?",
+    "opciones": [
+      "A. TAW.",
+      "B. W3C Validator.",
+      "C. HERA.",
+      "D. SortSite."
+    ],
+    "correcta": 2,
+    "explicacion": "HERA destaca por ser una herramienta de revisión asistida que ayuda al revisor a comprobar manualmente los puntos que un software no puede detectar solo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. TAW es predominantemente automático.",
+      "B": "Incorrecta. Valida sintaxis HTML/CSS, no accesibilidad.",
+      "C": "Correcta. Es la herramienta de referencia del Sidar para revisiones expertas.",
+      "D": "Incorrecta. Es una herramienta de pago orientada a la automatización masiva."
+    }
+  },
+  {
+    "pregunta": "60. En el diseño de aplicaciones web seguras, ¿qué método HTTP se recomienda para el envío de información sensible por parte del cliente?",
+    "opciones": [
+      "A. GET.",
+      "B. POST.",
+      "C. HEAD.",
+      "D. OPTIONS."
+    ],
+    "correcta": 1,
+    "explicacion": "El método POST envía los datos en el cuerpo del mensaje, evitando que aparezcan en la URL, el historial del navegador o los logs del servidor.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Expone los datos en la barra de direcciones.",
+      "B": "Correcta. Es el estándar para envíos seguros y transacciones.",
+      "C": "Incorrecta. Solo pide cabeceras.",
+      "D": "Incorrecta. Se usa para consultar métodos permitidos."
+    }
+  },
+  {
+    "pregunta": "61. Dentro de la seguridad en el desarrollo, ¿qué principio asegura que los mensajes de error no revelen información interna del sistema?",
+    "opciones": [
+      "A. Cifrado en reposo.",
+      "B. Gestión de errores y excepciones segura.",
+      "C. Validación por lista negra.",
+      "D. Autenticación multifactor."
+    ],
+    "correcta": 1,
+    "explicacion": "La gestión segura de errores implica mostrar mensajes genéricos al usuario para no dar pistas a atacantes sobre la estructura de la base de datos o rutas del servidor.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se refiere al almacenamiento físico.",
+      "B": "Correcta. Evita la 'fuga de información' técnica en la interfaz.",
+      "C": "Incorrecta. Es una técnica de filtrado de entrada.",
+      "D": "Incorrecta. Es un control de acceso."
+    }
+  },
+  {
+    "pregunta": "62. Según el temario, ¿qué tecnología de apoyo utiliza una persona con discapacidad visual para 'leer' una pantalla mediante el tacto?",
+    "opciones": [
+      "A. Magnificador de pantalla.",
+      "B. Línea Braille.",
+      "C. Teclado adaptado.",
+      "D. Pulsador de soplado."
+    ],
+    "correcta": 1,
+    "explicacion": "La Línea Braille es un dispositivo que traduce el texto de la pantalla a celdas braille físicas dinámicas que el usuario recorre con los dedos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es visual, no táctil.",
+      "B": "Correcta. Tecnología de salida táctil por excelencia.",
+      "C": "Incorrecta. Es una tecnología de entrada.",
+      "D": "Incorrecta. Tecnología de apoyo motriz."
+    }
+  },
+  {
+    "pregunta": "63. La pauta 2.4 de las WCAG se denomina 'Navegable'. ¿Cuál es uno de sus criterios fundamentales?",
+    "opciones": [
+      "A. Proporcionar un título claro a cada página.",
+      "B. Permitir que el usuario cambie el color de fondo.",
+      "C. Evitar que la sesión caduque.",
+      "D. Utilizar fuentes de tamaño grande."
+    ],
+    "correcta": 0,
+    "explicacion": "La pauta 2.4 busca ayudar a los usuarios a navegar y situarse. El título de la página (2.4.1) es el primer paso para saber dónde se encuentra el usuario.",
+    "analisis_opciones": {
+      "A": "Correcta. Es un criterio básico de navegabilidad.",
+      "B": "Incorrecta. Es adaptabilidad.",
+      "C": "Incorrecta. Es la pauta 2.2 (Tiempo suficiente).",
+      "D": "Incorrecta. Es un criterio de diseño/distinguible."
+    }
+  },
+  {
+    "pregunta": "64. ¿Qué estándar internacional de la ISO es equivalente a las pautas WCAG 2.0?",
+    "opciones": [
+      "A. ISO 27001.",
+      "B. ISO 9001.",
+      "C. ISO/IEC 40500.",
+      "D. ISO 14001."
+    ],
+    "correcta": 2,
+    "explicacion": "La ISO/IEC 40500:2012 adoptó las WCAG 2.0 como estándar internacional para darles validez formal en procesos de normalización global.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Seguridad de la información.",
+      "B": "Incorrecta. Gestión de la calidad.",
+      "C": "Correcta. Es la denominación ISO de las WCAG 2.0.",
+      "D": "Incorrecta. Gestión ambiental."
+    }
+  },
+  {
+    "pregunta": "65. ¿Cómo se denomina a la técnica de limpiar los datos introducidos por el usuario para evitar ataques como XSS o inyección SQL?",
+    "opciones": [
+      "A. Salting.",
+      "B. Ofuscación.",
+      "C. Sanitización o filtrado de entradas.",
+      "D. Tokenización."
+    ],
+    "correcta": 2,
+    "explicacion": "La sanitización consiste en procesar las entradas del usuario para neutralizar caracteres peligrosos antes de que lleguen a la base de datos o al navegador.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se usa en contraseñas.",
+      "B": "Incorrecta. Se usa para ocultar la lógica del código.",
+      "C": "Correcta. Es el primer paso fundamental del desarrollo seguro.",
+      "D": "Incorrecta. Sustituye datos por tokens aleatorios."
+    }
+  }
+,
+  {
+    "pregunta": "66. En el contexto de la seguridad en puestos de usuario final, ¿qué medida se considera fundamental para garantizar la confidencialidad cuando el empleado abandona momentáneamente su puesto?",
+    "opciones": [
+      "A. Apagar el router de la oficina.",
+      "B. Activar el bloqueo de sesión protegido por contraseña.",
+      "C. Desconectar el cable de red (RJ45).",
+      "D. Tapar el monitor con una funda opaca."
+    ],
+    "correcta": 1,
+    "explicacion": "El bloqueo de sesión es la medida básica de seguridad lógica para evitar accesos no autorizados a la información mientras el usuario legítimo no está presente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Afectaría a toda la oficina y no protege el acceso local al equipo.",
+      "B": "Correcta. Es la práctica estándar de seguridad en el puesto de trabajo.",
+      "C": "Incorrecta. Los datos locales seguirían siendo accesibles.",
+      "D": "Incorrecta. No impide que alguien use el teclado o ratón para extraer información."
+    }
+  },
+  {
+    "pregunta": "67. ¿Qué principio de seguridad busca que la información solo sea accesible por aquellas personas o sistemas autorizados?",
+    "opciones": [
+      "A. Disponibilidad.",
+      "B. Integridad.",
+      "C. Confidencialidad.",
+      "D. No repudio."
+    ],
+    "correcta": 2,
+    "explicacion": "La confidencialidad es el pilar de la seguridad que garantiza que la información no se divulgue a personas, entidades o procesos no autorizados.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se refiere a que la información esté accesible cuando se necesite.",
+      "B": "Incorrecta. Se refiere a que la información no sea modificada sin permiso.",
+      "C": "Correcta. Es la definición exacta del principio.",
+      "D": "Incorrecta. Se refiere a que no se pueda negar la autoría de un mensaje o acción."
+    }
+  },
+  {
+    "pregunta": "68. Según los apuntes, el uso de filtros de privacidad para pantallas es una medida destinada principalmente a combatir:",
+    "opciones": [
+      "A. El malware de tipo spyware.",
+      "B. El 'shoulder surfing' (mirar por encima del hombro).",
+      "C. La radiación electromagnética del monitor.",
+      "D. El cansancio visual del usuario."
+    ],
+    "correcta": 1,
+    "explicacion": "Los filtros de privacidad limitan el ángulo de visión de la pantalla, evitando que personas situadas a los lados puedan ver el contenido (ataque de ingeniería social visual).",
+    "analisis_opciones": {
+      "A": "Incorrecta. El spyware es software malicioso interno.",
+      "B": "Correcta. Es una medida de seguridad física contra observadores no autorizados.",
+      "C": "Incorrecta. No es su función principal de seguridad.",
+      "D": "Incorrecta. Es un beneficio ergonómico, pero no una medida de seguridad de la información."
+    }
+  },
+  {
+    "pregunta": "69. En cuanto a la disponibilidad en el puesto de usuario, ¿cuál de los siguientes elementos garantiza que el trabajo no se pierda ante un corte de suministro eléctrico de corta duración?",
+    "opciones": [
+      "A. El sistema de copia de seguridad (Backup).",
+      "B. El SAI (Sistema de Alimentación Ininterrumpida).",
+      "C. El Firewall de Windows.",
+      "D. El cifrado de disco BitLocker."
+    ],
+    "correcta": 1,
+    "explicacion": "El SAI proporciona energía mediante baterías cuando falla la red eléctrica, permitiendo mantener la disponibilidad y cerrar procesos de forma segura.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sirve para recuperar datos tras una pérdida, no para evitar la caída del sistema en vivo.",
+      "B": "Correcta. Es la tecnología específica para mantener la continuidad eléctrica.",
+      "C": "Incorrecta. Es una medida de seguridad de red.",
+      "D": "Incorrecta. Protege la confidencialidad de los datos almacenados."
+    }
+  },
+  {
+    "pregunta": "70. ¿Cómo se denomina a la política que obliga a los empleados a no dejar documentos con información sensible sobre sus escritorios al finalizar la jornada?",
+    "opciones": [
+      "A. Política de escritorio limpio (Clean Desk).",
+      "B. Política de oficina abierta.",
+      "C. Gestión de residuos segura.",
+      "D. Control de acceso físico periférico."
+    ],
+    "correcta": 0,
+    "explicacion": "La política de 'mesas limpias' busca minimizar el riesgo de acceso no autorizado a información en soporte papel o soportes de almacenamiento extraíbles.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el término estándar en auditorías de seguridad (ISO 27001).",
+      "B": "Incorrecta. Es un concepto de arquitectura de interiores.",
+      "C": "Incorrecta. Se refiere a la destrucción de documentos (trituradoras).",
+      "D": "Incorrecta. Se refiere a perímetros y cerraduras."
+    }
+  },
+  {
+    "pregunta": "71. Para asegurar la disponibilidad de la información ante un fallo de hardware en el disco local, la medida más efectiva es:",
+    "opciones": [
+      "A. El uso de contraseñas robustas.",
+      "B. La realización periódica de copias de seguridad (backups) en soportes externos o nube.",
+      "C. La instalación de un antivirus actualizado.",
+      "D. El uso de protocolos HTTPS."
+    ],
+    "correcta": 1,
+    "explicacion": "El backup garantiza que, ante un fallo físico del dispositivo de almacenamiento, la información pueda ser restaurada en otro equipo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Protege el acceso, no la integridad física de los datos.",
+      "B": "Correcta. Es la salvaguarda principal para la disponibilidad.",
+      "C": "Incorrecta. Protege contra malware.",
+      "D": "Incorrecta. Protege la información en tránsito."
+    }
+  },
+  {
+    "pregunta": "72. ¿Cuál de las siguientes es una amenaza a la confidencialidad basada en el olvido de información en dispositivos multifunción (impresoras/escáneres)?",
+    "opciones": [
+      "A. Denegación de servicio (DoS).",
+      "B. Impresión de documentos no recogidos.",
+      "C. Ataque de fuerza bruta.",
+      "D. Inyección de código."
+    ],
+    "correcta": 1,
+    "explicacion": "Dejar documentos sensibles en la bandeja de salida de la impresora es una vulnerabilidad crítica de confidencialidad en oficinas compartidas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Afecta a la disponibilidad.",
+      "B": "Correcta. Es un riesgo físico muy común en puestos de usuario final.",
+      "C": "Incorrecta. Es un ataque contra credenciales digitales.",
+      "D": "Incorrecta. Es un ataque contra aplicaciones web."
+    }
+  },
+  {
+    "pregunta": "73. El cifrado de dispositivos de almacenamiento extraíbles (como pendrives) es una medida orientada a:",
+    "opciones": [
+      "A. Aumentar la velocidad de transferencia.",
+      "B. Garantizar la confidencialidad en caso de pérdida o robo del dispositivo.",
+      "C. Prevenir la entrada de virus en el ordenador.",
+      "D. Mejorar la capacidad de almacenamiento del dispositivo."
+    ],
+    "correcta": 1,
+    "explicacion": "Si un pendrive cifrado se pierde, la información que contiene no podrá ser leída por terceros sin la clave de descifrado.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Al contrario, suele ralentizarla ligeramente por el proceso de cómputo.",
+      "B": "Correcta. Es la medida de protección de datos en movilidad por excelencia.",
+      "C": "Incorrecta. No evita la ejecución de malware.",
+      "D": "Incorrecta. El cifrado no comprime los datos."
+    }
+  },
+  {
+    "pregunta": "74. En la gestión de puestos de usuario, ¿qué significa el término 'Principio de Mínimo Privilegio'?",
+    "opciones": [
+      "A. Que los usuarios solo deben tener los permisos necesarios para realizar su trabajo.",
+      "B. Que los usuarios no deben tener acceso a Internet.",
+      "C. Que todos los usuarios deben ser administradores del equipo para evitar bloqueos.",
+      "D. Que la información debe estar disponible solo en horario laboral."
+    ],
+    "correcta": 0,
+    "explicacion": "Este principio limita el daño potencial de un error o un ataque al restringir los permisos de cada usuario estrictamente a lo que requiere su función.",
+    "analisis_opciones": {
+      "A": "Correcta. Es una regla de oro de la seguridad lógica.",
+      "B": "Incorrecta. Restricción excesiva y no relacionada con el principio.",
+      "C": "Incorrecta. Es lo opuesto al principio y un riesgo grave de seguridad.",
+      "D": "Incorrecta. Eso es una política de disponibilidad temporal."
+    }
+  },
+  {
+    "pregunta": "75. ¿Qué tecnología permite asegurar la disponibilidad de la conexión a red en un puesto de usuario si falla el cableado principal?",
+    "opciones": [
+      "A. VPN (Virtual Private Network).",
+      "B. Redundancia de enlaces o conmutación por error (Failover).",
+      "C. Cifrado WPA3.",
+      "D. Proxy inverso."
+    ],
+    "correcta": 1,
+    "explicacion": "La redundancia asegura que si un camino de comunicación falla, existe una alternativa automática para mantener la disponibilidad del servicio.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sirve para crear túneles seguros sobre redes inseguras.",
+      "B": "Correcta. Es el concepto técnico para evitar puntos únicos de fallo.",
+      "C": "Incorrecta. Es un estándar de seguridad para redes inalámbricas.",
+      "D": "Incorrecta. Se sitúa delante de los servidores, no en el puesto de usuario final."
+    }
+  }
+,
+  {
+    "pregunta": "76. Dentro de los principios básicos de usabilidad y accesibilidad (P.O.C.R.), ¿cuál de ellos se asegura de que el contenido sea lo suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de agentes de usuario, incluyendo tecnologías de apoyo?",
+    "opciones": [
+      "A. Perceptible.",
+      "B. Operable.",
+      "C. Comprensible.",
+      "D. Robustez."
+    ],
+    "correcta": 3,
+    "explicacion": "El principio de Robustez (la 'R' de POCR) garantiza la compatibilidad con tecnologías actuales y futuras, permitiendo que productos como lectores de pantalla entiendan el código sin errores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Perceptible se refiere a que la información se pueda ver u oír.",
+      "B": "Incorrecta. Operable se refiere a que la interfaz se pueda manejar (teclado, ratón).",
+      "C": "Incorrecta. Comprensible se refiere a que el usuario entienda la información y el manejo.",
+      "D": "Correcta. Es la definición técnica del cuarto principio de las WCAG."
+    }
+  },
+  {
+    "pregunta": "77. Según el apartado de herramientas del Tema 8, ¿cuál de las siguientes es una extensión de navegador muy utilizada por desarrolladores para analizar la accesibilidad en tiempo real mediante menús de inspección?",
+    "opciones": [
+      "A. HERA.",
+      "B. Web Developer.",
+      "C. TAW.",
+      "D. AIS (Accessibility Inspection Suite)."
+    ],
+    "correcta": 1,
+    "explicacion": "Web Developer es una extensión (Toolbar) que permite deshabilitar estilos, ver textos alternativos y analizar la estructura de la página directamente en el navegador.",
+    "analisis_opciones": {
+      "A": "Incorrecta. HERA es una herramienta web de revisión asistida (no extensión de barra).",
+      "B": "Correcta. Mencionado en tu temario como herramienta clave de inspección.",
+      "C": "Incorrecta. TAW es un motor de análisis automático, aunque tiene versión local.",
+      "D": "Incorrecta. AIS es un conjunto de herramientas, pero Web Developer es la barra de herramientas específica citada."
+    }
+  },
+  {
+    "pregunta": "78. En el sistema de prioridades de las WCAG 1.0 (mencionado en el punto 4 del 'A destacar'), un punto de verificación de Prioridad 1 se define como aquel que:",
+    "opciones": [
+      "A. El desarrollador DEBERÍA satisfacerlo, de lo contrario algunos grupos encontrarán dificultades.",
+      "B. El desarrollador PUEDE satisfacerlo para mejorar la accesibilidad.",
+      "C. El desarrollador TIENE QUE satisfacerlo, de lo contrario uno o más grupos de usuarios encontrarán imposible acceder a la información.",
+      "D. Solo es obligatorio para páginas de la Administración General del Estado."
+    ],
+    "correcta": 2,
+    "explicacion": "Los puntos de Prioridad 1 son requisitos 'imprescindibles' (Must). Si no se cumplen, se crea una barrera infranqueable para ciertos usuarios.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esta es la definición de Prioridad 2 (Should).",
+      "B": "Incorrecta. Esta es la definición de Prioridad 3 (May).",
+      "C": "Correcta. Define la obligación absoluta de cumplimiento para el Nivel A.",
+      "D": "Incorrecta. Las prioridades son técnicas, no dependen del tipo de organismo."
+    }
+  },
+  {
+    "pregunta": "79. ¿Qué herramienta de validación de las citadas en tu temario permite realizar un análisis automático de accesibilidad siguiendo las pautas WCAG 1.0, 2.0 y 2.1, siendo de las más veteranas en España?",
+    "opciones": [
+      "A. Checky.",
+      "B. TAW.",
+      "C. Web Developer.",
+      "D. HERA."
+    ],
+    "correcta": 1,
+    "explicacion": "TAW (Test de Accesibilidad Web) es la herramienta automática por excelencia citada en el punto 3 de tu lista de destacados.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Checky es un agente de validación que unifica varios servicios, pero menos centrado en WCAG profundo.",
+      "B": "Correcta. Es la herramienta de validación automática estándar en el temario.",
+      "C": "Incorrecta. Es una herramienta de inspección manual/visual.",
+      "D": "Incorrecta. Es para revisión asistida/manual."
+    }
+  },
+  {
+    "pregunta": "80. El concepto de 'Diseño Universal' mencionado en el punto 1 del temario a destacar, se caracteriza principalmente por:",
+    "opciones": [
+      "A. Crear una versión de la web específica para personas con discapacidad y otra para el resto.",
+      "B. Diseñar productos y entornos para que sean utilizables por todas las personas, en la mayor medida posible, sin necesidad de adaptación ni diseño especializado.",
+      "C. Obligar al uso de lectores de pantalla en todos los dispositivos.",
+      "D. Centrarse únicamente en que el diseño sea estético y moderno."
+    ],
+    "correcta": 1,
+    "explicacion": "El Diseño Universal (o Diseño para Todos) busca la inclusión desde el origen, evitando soluciones 'parche' o versiones separadas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es lo opuesto al diseño universal; se busca una única versión para todos.",
+      "B": "Correcta. Es la definición oficial del concepto.",
+      "C": "Incorrecta. El diseño universal facilita su uso, pero no obliga a usar tecnologías específicas.",
+      "D": "Incorrecta. La estética es secundaria frente a la funcionalidad para todos."
+    }
+  }
+,
+  {
+    "pregunta": "81. ¿En qué fecha fueron publicadas oficialmente las WCAG 2.2 como Recomendación del W3C?",
+    "opciones": [
+      "A. 1 de enero de 2023.",
+      "B. 5 de octubre de 2023.",
+      "C. 12 de mayo de 2022.",
+      "D. 20 de septiembre de 2023."
+    ],
+    "correcta": 1,
+    "explicacion": "Las WCAG 2.2 alcanzaron el estatus de Recomendación oficial el 5 de octubre de 2023, según indica el temario.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Fecha no relacionada.",
+      "B": "Correcta. Es la fecha exacta de publicación del estándar.",
+      "C": "Incorrecta. Fecha no relacionada.",
+      "D": "Incorrecta. Es una fecha cercana pero errónea."
+    }
+  },
+  {
+    "pregunta": "82. Según tus apuntes, ¿cuál es la situación actual de las guías de la Administración General del Estado (AGE) respecto a las WCAG 2.2?",
+    "opciones": [
+      "A. Ya están totalmente adaptadas al nuevo estándar 2.2.",
+      "B. Se han saltado las 2.2 para ir directamente a las 3.0.",
+      "C. No hay guías adaptadas aún, por lo que se sigue usando formalmente el estándar WCAG 2.1.",
+      "D. La AGE ha prohibido el uso de las WCAG 2.2 por ser demasiado complejas."
+    ],
+    "correcta": 2,
+    "explicacion": "El temario especifica que a fecha de su elaboración no hay guías adaptadas en la AGE, por lo que se mantiene el uso de las 2.1 que sí tienen guías desarrolladas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El texto dice explícitamente que no lo están.",
+      "B": "Incorrecta. Las WCAG 3.0 están en desarrollo pero no son el estándar actual.",
+      "C": "Correcta. Refleja la realidad administrativa descrita en el documento.",
+      "D": "Incorrecta. No hay prohibición, solo falta de adaptación administrativa."
+    }
+  },
+  {
+    "pregunta": "83. ¿Cuántos criterios de conformidad nuevos se añaden específicamente en la versión WCAG 2.2?",
+    "opciones": [
+      "A. 5 criterios.",
+      "B. 12 criterios.",
+      "C. 9 criterios.",
+      "D. 13 criterios."
+    ],
+    "correcta": 2,
+    "explicacion": "Las WCAG 2.2 añaden un total de 9 criterios nuevos repartidos entre los niveles A, AA y AAA.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Número insuficiente.",
+      "B": "Incorrecta. Número excesivo.",
+      "C": "Correcta. Dato numérico clave del nuevo estándar.",
+      "D": "Incorrecta. No coincide con el temario."
+    }
+  },
+  {
+    "pregunta": "84. El criterio 2.5.8 'Target Size (Minimum)' de las WCAG 2.2, ¿qué tamaño mínimo establece para los objetivos táctiles por norma general?",
+    "opciones": [
+      "A. 44x44 píxeles CSS.",
+      "B. 24x24 píxeles CSS.",
+      "C. 16x16 píxeles CSS.",
+      "D. 32x32 píxeles CSS."
+    ],
+    "correcta": 1,
+    "explicacion": "Este criterio de nivel AA establece que los objetivos táctiles deben tener al menos 24x24 píxeles CSS para evitar pulsaciones accidentales.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 44x44 es el tamaño recomendado en WCAG 2.1 (AAA) o por Apple/Google, pero la norma 2.2 marca 24x24 como mínimo AA.",
+      "B": "Correcta. Es la cifra exacta que aparece en el punto 5 de las novedades.",
+      "C": "Incorrecta. Demasiado pequeño.",
+      "D": "Incorrecta. No es la cifra del estándar."
+    }
+  },
+  {
+    "pregunta": "85. ¿Cuál de los siguientes criterios nuevos tiene como objetivo evitar que se pida al usuario la misma información varias veces en un mismo proceso?",
+    "opciones": [
+      "A. 3.2.6 Consistent Help.",
+      "B. 3.3.7 Redundant Entry.",
+      "C. 3.3.8 Accessible Authentication.",
+      "D. 2.4.11 Focus Not Obscured."
+    ],
+    "correcta": 1,
+    "explicacion": "El criterio 3.3.7 (Entrada redundante) de nivel A busca reducir la carga cognitiva evitando repetir datos ya introducidos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Trata sobre la ubicación de la ayuda.",
+      "B": "Correcta. Definición directa del criterio.",
+      "C": "Incorrecta. Trata sobre métodos de acceso sin pruebas de memoria.",
+      "D": "Incorrecta. Trata sobre la visibilidad del foco del teclado."
+    }
+  },
+  {
+    "pregunta": "86. El criterio 3.3.8 'Accessible Authentication (Minimum)' prohíbe, en su nivel AA, que la autenticación requiera:",
+    "opciones": [
+      "A. El uso de correos electrónicos.",
+      "B. Pruebas de memoria o resolución de puzzles visuales inaccesibles.",
+      "C. El uso de contraseñas de más de 8 caracteres.",
+      "D. La autenticación en dos pasos (2FA)."
+    ],
+    "correcta": 1,
+    "explicacion": "Busca facilitar el acceso a personas con discapacidades cognitivas eliminando barreras como recordar contraseñas complejas o resolver CAPTCHAs basados en puzzles.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El correo es un método válido.",
+      "B": "Correcta. Es el núcleo de la mejora en accesibilidad cognitiva de la 2.2.",
+      "C": "Incorrecta. No limita la longitud de la contraseña.",
+      "D": "Incorrecta. El 2FA es compatible si el método es accesible."
+    }
+  },
+  {
+    "pregunta": "87. ¿Qué nivel de conformidad tiene asignado el nuevo criterio 2.4.11 'Focus Not Obscured (Minimum)'?",
+    "opciones": [
+      "A. Nivel A.",
+      "B. Nivel AA.",
+      "C. Nivel AAA.",
+      "D. No tiene nivel asignado todavía."
+    ],
+    "correcta": 1,
+    "explicacion": "El criterio que exige que el foco no quede oculto por elementos superpuestos (como banners o cabeceras fijas) es de nivel AA.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El nivel A es para requisitos más básicos.",
+      "B": "Correcta. Es la clasificación que aparece en el punto 1 de novedades.",
+      "C": "Incorrecta. El nivel AAA es para la versión 'Enhanced' (totalmente visible).",
+      "D": "Incorrecta. Todos los criterios de las WCAG tienen nivel."
+    }
+  },
+  {
+    "pregunta": "88. Si una función web requiere 'arrastrar' (Dragging Movements), ¿qué exige el nuevo criterio 2.5.7 de las WCAG 2.2?",
+    "opciones": [
+      "A. Que se elimine esa función por ser inaccesible.",
+      "B. Que funcione solo en dispositivos Apple.",
+      "C. Que exista una alternativa que no requiera arrastrar (como pulsar o hacer clic).",
+      "D. Que el usuario reciba un aviso sonoro al arrastrar."
+    ],
+    "correcta": 2,
+    "explicacion": "El criterio 2.5.7 (AA) busca ayudar a personas con limitaciones motrices que no pueden mantener una pulsación mientras mueven el cursor.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No prohíbe la función, pide una alternativa.",
+      "B": "Incorrecta. La accesibilidad es universal.",
+      "C": "Correcta. Garantiza que la acción se pueda completar de forma sencilla.",
+      "D": "Incorrecta. No es un requisito de este criterio."
+    }
+  },
+  {
+    "pregunta": "89. ¿Cuál es uno de los objetivos principales de la actualización de las WCAG 2.2 respecto a los usuarios?",
+    "opciones": [
+      "A. Obligar al uso de Realidad Virtual.",
+      "B. Mejorar la accesibilidad para personas con discapacidades cognitivas y baja visión.",
+      "C. Eliminar el uso de texto en las páginas web.",
+      "D. Hacer que las páginas carguen en menos de 1 segundo."
+    ],
+    "correcta": 1,
+    "explicacion": "El estándar 2.2 pone el foco en la carga cognitiva, la baja visión y los usuarios de dispositivos táctiles.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es un objetivo de las WCAG.",
+      "B": "Correcta. Es el objetivo declarado en la sección 'Datos versión 2.2'.",
+      "C": "Incorrecta. El texto es la base de la accesibilidad.",
+      "D": "Incorrecta. Eso es WPO (rendimiento), no accesibilidad puramente."
+    }
+  },
+  {
+    "pregunta": "90. El criterio 3.2.6 'Consistent Help' (Ayuda consistente) es de nivel:",
+    "opciones": [
+      "A. Nivel A.",
+      "B. Nivel AA.",
+      "C. Nivel AAA.",
+      "D. Prioridad 1 según UNE 139803."
+    ],
+    "correcta": 0,
+    "explicacion": "Este criterio, que exige que los mecanismos de ayuda estén siempre en el mismo sitio, es de nivel A (el más básico).",
+    "analisis_opciones": {
+      "A": "Correcta. Según el listado de tus apuntes (punto 6).",
+      "B": "Incorrecta. Es un nivel de exigencia superior.",
+      "C": "Incorrecta. Es el nivel de excelencia.",
+      "D": "Incorrecta. La UNE de 2004 no contempla este criterio de 2023."
+    }
+  }
+,
+  {
+    "pregunta": "116. Las pautas ATAG (Authoring Tool Accessibility Guidelines) se dividen en dos partes principales. Según su estructura, ¿a qué se refiere la Parte A?",
+    "opciones": [
+      "A. A que la herramienta de autor debe ayudar a generar contenido accesible.",
+      "B. A que la interfaz de la propia herramienta de autor debe ser accesible para el usuario que la utiliza.",
+      "C. A que los navegadores deben interpretar correctamente el código.",
+      "D. A la normativa legal española de 2023."
+    ],
+    "correcta": 1,
+    "explicacion": "ATAG tiene dos objetivos: la Parte A busca que la herramienta sea usable por personas con discapacidad, y la Parte B busca que la herramienta ayude a crear contenido accesible.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa es la definición de la Parte B.",
+      "B": "Correcta. Se centra en la accesibilidad de la 'propia herramienta' (ej. que un ciego pueda usar WordPress).",
+      "C": "Incorrecta. Eso es competencia de las UAAG.",
+      "D": "Incorrecta. ATAG es un estándar internacional del W3C."
+    }
+  },
+  {
+    "pregunta": "117. En relación con el punto 3 de tus destacados, ¿cuál es la relación jerárquica correcta entre el W3C y la WAI?",
+    "opciones": [
+      "A. La WAI es un organismo independiente que supervisa al W3C.",
+      "B. El W3C es un grupo de trabajo dentro de la iniciativa WAI.",
+      "C. La WAI (Web Accessibility Initiative) es una iniciativa o rama del W3C encargada específicamente de la accesibilidad.",
+      "D. No tienen ninguna relación, son organismos competidores."
+    ],
+    "correcta": 2,
+    "explicacion": "El World Wide Web Consortium (W3C) es la organización madre, y la WAI es su departamento especializado en accesibilidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es al revés.",
+      "B": "Incorrecta. El W3C es la organización global.",
+      "C": "Correcta. Es la estructura oficial del consorcio.",
+      "D": "Incorrecta. Trabajan de forma totalmente integrada."
+    }
+  },
+  {
+    "pregunta": "118. Las pautas UAAG exigen que el 'Agente de Usuario' permita al usuario controlar ciertos aspectos. ¿Cuál de los siguientes es un ejemplo de cumplimiento de UAAG?",
+    "opciones": [
+      "A. Que el navegador permita detener animaciones o parpadeos molestos.",
+      "B. Que el diseñador use etiquetas <alt> en las fotos.",
+      "C. Que la base de datos esté cifrada.",
+      "D. Que el CMS ayude a elegir colores con buen contraste."
+    ],
+    "correcta": 0,
+    "explicacion": "UAAG se aplica al software que usamos para navegar. Si el navegador permite al usuario frenar un parpadeo, está cumpliendo una pauta de agente de usuario.",
+    "analisis_opciones": {
+      "A": "Correcta. Es un control directo sobre la herramienta de navegación.",
+      "B": "Incorrecta. Eso es cumplimiento de WCAG por parte del editor.",
+      "C": "Incorrecta. Es seguridad de datos.",
+      "D": "Incorrecta. Eso es cumplimiento de ATAG."
+    }
+  },
+  {
+    "pregunta": "119. Según el punto 4 de tus destacados, si un punto de verificación es de Prioridad 3 (Nivel AAA), ¿cuál es su definición técnica?",
+    "opciones": [
+      "A. El desarrollador TIENE QUE satisfacerlo.",
+      "B. El desarrollador DEBERÍA satisfacerlo.",
+      "C. El desarrollador PUEDE satisfacerlo, de lo contrario algunos usuarios encontrarán dificultades para acceder a la información.",
+      "D. Es un punto de verificación opcional que no afecta a la accesibilidad."
+    ],
+    "correcta": 2,
+    "explicacion": "La Prioridad 3 se describe con el condicional 'puede' (may). Su cumplimiento mejora la experiencia, pero su falta no impide el acceso básico.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Definición de Prioridad 1.",
+      "B": "Incorrecta. Definición de Prioridad 2.",
+      "C": "Correcta. Es el nivel de conformidad más alto y opcional por ley.",
+      "D": "Incorrecta. Sí afecta a la accesibilidad, aunque no sea crítico."
+    }
+  },
+  {
+    "pregunta": "120. ¿Qué característica del 'Diseño Universal' lo diferencia del 'Diseño Accesible' tradicional?",
+    "opciones": [
+      "A. El diseño universal es más barato.",
+      "B. El diseño accesible suele basarse en adaptaciones para un colectivo concreto, mientras que el universal busca una solución única para todos.",
+      "C. El diseño universal solo se aplica a dispositivos móviles.",
+      "D. No hay diferencia, son sinónimos exactos."
+    ],
+    "correcta": 1,
+    "explicacion": "Mientras que la accesibilidad a veces implica 'añadir' algo para un grupo (ej. una rampa), el diseño universal busca que el 'todo' sea usable por todos sin añadidos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tiene por qué ser más barato, es una cuestión de enfoque.",
+      "B": "Correcta. Es la distinción filosófica clave entre ambos conceptos.",
+      "C": "Incorrecta. Se aplica a todo entorno y producto.",
+      "D": "Incorrecta. Son conceptos hermanos pero con matices distintos."
+    }
+  }
+,
+  {
+    "pregunta": "121. Según el estándar ISO/IEC 25010, ¿cómo se define la usabilidad en el marco de la calidad del producto software?",
+    "opciones": [
+      "A. La capacidad del producto para ser entendido, aprendido, usado y resultar atractivo para el usuario.",
+      "B. La eficacia, eficiencia y satisfacción en un contexto de uso específico.",
+      "C. La ausencia de errores en el código fuente.",
+      "D. La rapidez con la que se descarga una página web."
+    ],
+    "correcta": 0,
+    "explicacion": "Mientras que la ISO 9241 se centra en el proceso (eficacia/eficiencia), la ISO 25010 (que sustituye a la ISO 9126) define la usabilidad como una capacidad intrínseca del software para ser atractivo y fácil de aprender.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la definición específica de la ISO 25010.",
+      "B": "Incorrecta. Esa es la definición de la ISO 9241.",
+      "C": "Incorrecta. Eso es fiabilidad o mantenibilidad.",
+      "D": "Incorrecta. Eso es eficiencia de desempeño."
+    }
+  },
+  {
+    "pregunta": "122. En las pautas WCAG, ¿cuál de los siguientes es un criterio de conformidad de nivel A relativo a los formularios?",
+    "opciones": [
+      "A. Sugerencias ante errores.",
+      "B. Etiquetas (Labels) o instrucciones.",
+      "C. Prevención de errores (datos legales/financieros).",
+      "D. Identificación de la finalidad de la entrada."
+    ],
+    "correcta": 1,
+    "explicacion": "El criterio 3.3.2 (Etiquetas o instrucciones) es de nivel A. Otros como 'Sugerencias ante errores' (3.3.3) son de nivel AA.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es nivel AA.",
+      "B": "Correcta. Es requisito mínimo (Nivel A) que los campos tengan etiquetas claras.",
+      "C": "Incorrecta. Es nivel AA.",
+      "D": "Incorrecta. Es nivel AA (introducido en la 2.1)."
+    }
+  },
+  {
+    "pregunta": "123. ¿Qué principio de diseño universal establece que el diseño debe comunicar la información necesaria de forma eficaz al usuario, independientemente de las condiciones ambientales o sus capacidades sensoriales?",
+    "opciones": [
+      "A. Uso equitativo.",
+      "B. Información perceptible.",
+      "C. Tolerancia al error.",
+      "D. Bajo esfuerzo físico."
+    ],
+    "correcta": 1,
+    "explicacion": "Es el cuarto principio del Diseño Universal (The Center for Universal Design), que se centra en la legibilidad y claridad de la información.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Significa que sea útil para personas con diversas capacidades.",
+      "B": "Correcta. Se centra en la transmisión de la información.",
+      "C": "Incorrecta. Se centra en minimizar riesgos.",
+      "D": "Incorrecta. Se centra en la comodidad de uso."
+    }
+  },
+  {
+    "pregunta": "124. ¿Cuál es el elemento HTML correcto para definir el idioma principal de una página web y cumplir así con el nivel A de accesibilidad?",
+    "opciones": [
+      "A. <meta lang=\"es\">",
+      "B. <html lang=\"es\">",
+      "C. <body language=\"es\">",
+      "D. <header lang=\"es\">"
+    ],
+    "correcta": 1,
+    "explicacion": "Para cumplir el criterio 3.1.1 (Idioma de la página), es obligatorio declarar el atributo 'lang' en la etiqueta raíz <html>.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es una metaetiqueta estándar para el idioma.",
+      "B": "Correcta. Es la forma técnica de cumplir el nivel A.",
+      "C": "Incorrecta. No es el lugar donde se define el idioma global.",
+      "D": "Incorrecta. Solo definiría el idioma de la cabecera."
+    }
+  },
+  {
+    "pregunta": "125. Según las WCAG, ¿qué pauta del principio ROBUSTO se encarga de maximizar la compatibilidad con agentes de usuario actuales y futuros?",
+    "opciones": [
+      "A. Pauta 4.1 Compatible.",
+      "B. Pauta 1.1 Alternativas textuales.",
+      "C. Pauta 2.4 Navegable.",
+      "D. Pauta 3.2 Predecible."
+    ],
+    "correcta": 0,
+    "explicacion": "El principio Robusto solo tiene una pauta: la 4.1 (Compatible), que incluye criterios como el procesamiento (parsing) correcto del código.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la pauta única de este principio.",
+      "B": "Incorrecta. Pertenece a Perceptible.",
+      "C": "Incorrecta. Pertenece a Operable.",
+      "D": "Incorrecta. Pertenece a Comprensible."
+    }
+  },
+  {
+    "pregunta": "126. ¿Cuál es la herramienta de W3C que define cómo hacer accesibles las aplicaciones web enriquecidas y el contenido dinámico (como menús desplegables o alertas)?",
+    "opciones": [
+      "A. HTML5.",
+      "B. WAI-ARIA.",
+      "C. XML-Security.",
+      "D. JSON-LD."
+    ],
+    "correcta": 1,
+    "explicacion": "WAI-ARIA proporciona un marco de atributos (roles, estados y propiedades) para que las tecnologías de apoyo entiendan elementos dinámicos que no tienen semántica nativa en HTML.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el lenguaje estructural.",
+      "B": "Correcta. Es el estándar para contenido dinámico accesible.",
+      "C": "Incorrecta. Es un estándar de seguridad.",
+      "D": "Incorrecta. Es para datos estructurados y SEO."
+    }
+  },
+  {
+    "pregunta": "127. En relación con el punto 4 de tus destacados, ¿cuál de los siguientes es un criterio de nivel AAA relativo al lenguaje?",
+    "opciones": [
+      "A. Idioma de la página (Nivel A).",
+      "B. Idioma de las partes (Nivel AA).",
+      "C. Palabras inusuales o jerga (Nivel AAA).",
+      "D. Etiquetas o instrucciones (Nivel A)."
+    ],
+    "correcta": 2,
+    "explicacion": "El criterio 3.1.3 (Palabras inusuales) exige proporcionar una definición de palabras usadas de forma ambigua o poco común, y es de nivel AAA.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es nivel A (mínimo).",
+      "B": "Incorrecta. Es nivel AA.",
+      "C": "Correcta. Es un nivel de excelencia en comprensibilidad.",
+      "D": "Incorrecta. Es nivel A."
+    }
+  },
+  {
+    "pregunta": "128. Según los principios de diseño universal, ¿cuál permite que el diseño pueda ser usado de manera eficaz y cómoda con el mínimo esfuerzo físico y fatiga?",
+    "opciones": [
+      "A. Uso equitativo.",
+      "B. Bajo esfuerzo físico.",
+      "C. Tamaño y espacio para el acceso y uso.",
+      "D. Flexibilidad en el uso."
+    ],
+    "correcta": 1,
+    "explicacion": "Es el sexto principio de diseño universal, vital para personas con discapacidades motrices o de edad avanzada.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se refiere a la igualdad de uso.",
+      "B": "Correcta. Definición directa del principio.",
+      "C": "Incorrecta. Se refiere a las dimensiones físicas del entorno.",
+      "D": "Incorrecta. Se refiere a adaptarse a distintas preferencias."
+    }
+  },
+  {
+    "pregunta": "129. El Reglamento español sobre condiciones básicas de accesibilidad (RD 1494/2007) obliga al cumplimiento de los criterios de accesibilidad en las páginas web de:",
+    "opciones": [
+      "A. Solo la Administración General del Estado.",
+      "B. Las Administraciones Públicas y las empresas que gestionen servicios públicos.",
+      "C. Todas las empresas privadas de España.",
+      "D. Solo las ONG que reciban subvenciones."
+    ],
+    "correcta": 1,
+    "explicacion": "La ley española extiende la obligación no solo a la administración, sino a entidades que prestan servicios al público en nombre de esta.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es demasiado restrictivo.",
+      "B": "Correcta. Es el ámbito de aplicación legal en España.",
+      "C": "Incorrecta. Solo aplica a empresas privadas en ciertos sectores (banca, transportes) si superan cierto tamaño.",
+      "D": "Incorrecta. Ámbito incorrecto."
+    }
+  },
+  {
+    "pregunta": "130. ¿Qué nombre recibe la técnica de usabilidad que consiste en que el sistema avise al usuario antes de que se produzca una acción irreversible (como borrar datos)?",
+    "opciones": [
+      "A. Eficacia de navegación.",
+      "B. Prevención de errores.",
+      "C. Estética del diseño.",
+      "D. Reconocimiento de marca."
+    ],
+    "correcta": 1,
+    "explicacion": "La prevención de errores es una de las 10 heurísticas de Nielsen y también un criterio clave de accesibilidad (3.3.4).",
+    "analisis_opciones": {
+      "A": "Incorrecta. No se refiere a la seguridad de la acción.",
+      "B": "Correcta. Es el principio de diseño centrado en el usuario para evitar fallos catastróficos.",
+      "C": "Incorrecta. La estética es visual.",
+      "D": "Incorrecta. No tiene relación con la interacción."
+    }
+  }
+]

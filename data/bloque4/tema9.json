@@ -1,0 +1,2049 @@
+[
+  {
+    "pregunta": "1. La herramienta del CCN que proporciona visibilidad y control sobre la red es:",
+    "opciones": [
+      "A. CARMEN.",
+      "B. EMMA.",
+      "C. MONICA.",
+      "D. OLVIDO."
+    ],
+    "correcta": 0,
+    "explicacion": "CARMEN (Capacidad de Análisis de Red y Minería de Eventos) es la herramienta del CCN-CERT diseñada para identificar amenazas avanzadas mediante el análisis del tráfico de red.",
+    "analisis_opciones": {
+      "A": "Correcta. Se centra en la detección de APTs en el tráfico de red.",
+      "B": "Incorrecta. EMMA es para visibilidad y control de activos/dispositivos conectados.",
+      "C": "Incorrecta. MONICA es una herramienta de gestión de información y eventos de seguridad (SIEM).",
+      "D": "Incorrecta. OLVIDO es para el borrado seguro de información."
+    }
+  },
+  {
+    "pregunta": "2. ¿Para qué sirve un cortafuegos en una red de comunicaciones?",
+    "opciones": [
+      "A. Para recibir las peticiones http y redirigirlas a los servidores web.",
+      "B. Para controlar el tráfico que entra y sale de la red, y permitirlo o denegarlo en función de origen y destino, tipo de protocolo a utilizar, etc.",
+      "C. Para que todos los ordenadores de la red puedan navegar por Internet con una única conexión.",
+      "D. Es un analizador de antivirus que comparten todos los equipos de una red local."
+    ],
+    "correcta": 1,
+    "explicacion": "Un cortafuegos (firewall) actúa como una barrera que aplica un conjunto de reglas (ACLs) para filtrar el tráfico entre redes de distinta confianza.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es función de un proxy inverso o un balanceador.",
+      "B": "Correcta. Definición funcional de seguridad perimetral.",
+      "C": "Incorrecta. Eso es función de NAT o un Proxy.",
+      "D": "Incorrecta. Un firewall no es un antivirus, aunque los UTM modernos integren ambos."
+    }
+  },
+  {
+    "pregunta": "3. Entre los protocolos que puede usar una VPN para proporcionar cifrado NO se encuentra:",
+    "opciones": [
+      "A. PPTP/MPPE",
+      "B. IPSec",
+      "C. L2TP/IPSec",
+      "D. KSEC 1.1"
+    ],
+    "correcta": 3,
+    "explicacion": "KSEC 1.1 no es un protocolo estándar de Redes Privadas Virtuales. Los estándares actuales son IPsec, SSL/TLS (OpenVPN) y protocolos de túnel como L2TP.",
+    "analisis_opciones": {
+      "A": "Protocolo de Microsoft (Nivel 2) que usa MPPE para cifrar.",
+      "B": "Estándar de la IETF para VPNs de Nivel 3.",
+      "C": "Combinación común: L2TP hace el túnel e IPsec cifra.",
+      "D": "Correcta (es el falso). No existe como protocolo VPN."
+    }
+  },
+  {
+    "pregunta": "4. Un usuario A accede a Internet desde su PC protegido por seguridad perimetral. ¿Cuál de las siguientes NO corresponde con criterios de seguridad perimetral?",
+    "opciones": [
+      "A. Servidor Proxy",
+      "B. Un Cortafuegos (o firewall) de primer nivel",
+      "C. Un antivirus de pasarela",
+      "D. Un antivirus local en el PC"
+    ],
+    "correcta": 3,
+    "explicacion": "La seguridad perimetral se sitúa en la frontera entre la red interna e Internet. Un antivirus instalado en el puesto de usuario se considera seguridad del 'endpoint' o del host, no perimetral.",
+    "analisis_opciones": {
+      "A": "Perimetral. Intermedia el tráfico web.",
+      "B": "Perimetral. Es la barrera principal.",
+      "C": "Perimetral. Analiza archivos antes de que entren a la red local.",
+      "D": "Correcta (es la falsa). Es seguridad local del host."
+    }
+  },
+  {
+    "pregunta": "5. La solución VPN, que es open source y hace uso del estándar SSL/TLS se denomina:",
+    "opciones": [
+      "A. PPTP",
+      "B. L2TP",
+      "C. OpenVPN",
+      "D. FreeVPN"
+    ],
+    "correcta": 2,
+    "explicacion": "OpenVPN es la implementación más famosa de código abierto que utiliza el protocolo TLS para establecer túneles seguros.",
+    "analisis_opciones": {
+      "A": "Propietario/Cerrado originalmente de Microsoft.",
+      "B": "Protocolo de túnel de nivel 2.",
+      "C": "Correcta.",
+      "D": "Nombre genérico, no es un protocolo técnico."
+    }
+  },
+  {
+    "pregunta": "6. Si utilizo webmail para acceder a mi correo desde fuera de la oficina, ¿Qué puerto debe estar abierto en el firewall?",
+    "opciones": [
+      "A. 25.",
+      "B. 110.",
+      "C. 80.",
+      "D. 23."
+    ],
+    "correcta": 2,
+    "explicacion": "El 'webmail' se accede a través del navegador (HTTP/HTTPS). Por tanto, requiere el puerto 80 (o 443 para HTTPS). Los puertos de correo (25, 110) solo se usan si usas un cliente tipo Outlook.",
+    "analisis_opciones": {
+      "A": "SMTP (envío cliente correo).",
+      "B": "POP3 (recepción cliente correo).",
+      "C": "Correcta. Puerto de navegación web.",
+      "D": "Telnet (terminal remoto)."
+    }
+  },
+  {
+    "pregunta": "7. La herramienta del CCN para Auditoría de Cumplimiento ENS/STIC en Sistemas Windows se denomina:",
+    "opciones": [
+      "A. LUCIA",
+      "B. VANESA",
+      "C. CLARA",
+      "D. LORETO"
+    ],
+    "correcta": 2,
+    "explicacion": "CLARA es la herramienta de cumplimiento del CCN-CERT para analizar sistemas Windows y verificar que cumplen con las guías de seguridad del CCN-STIC y el ENS.",
+    "analisis_opciones": {
+      "A": "LUCIA es para gestión de incidentes y cumplimiento de la Directiva NIS.",
+      "B": "VANESA es para análisis de tráfico de red en entornos virtualizados.",
+      "C": "Correcta.",
+      "D": "LORETO es para la recolección de evidencias forenses."
+    }
+  },
+  {
+    "pregunta": "8. En una arquitectura de red, un firewall o cortafuegos:",
+    "opciones": [
+      "A. Es un elemento de seguridad perimetral.",
+      "B. Es un dispositivo físico de seguridad que previene tanto de ataques externos como de amenazas internas.",
+      "C. En su definición más básica, es un mecanismo software basado en ACL destinado a canalizar el tráfico entrante.",
+      "D. Es un dispositivo de seguridad centrado en el nivel 4 del modelo OSI (filtrado de paquetes IP)."
+    ],
+    "correcta": 0,
+    "explicacion": "Aunque existen firewalls internos, su función principal y definición académica es la de ser el componente central de la seguridad perimetral (frontera).",
+    "analisis_opciones": {
+      "A": "Correcta. Clasificación principal.",
+      "B": "Excesiva. No previene de 'todas' las amenazas internas.",
+      "C": "Incompleta. También gestiona el tráfico saliente.",
+      "D": "Incorrecta. El filtrado de paquetes IP (Capa 3) y TCP (Capa 4) es solo un tipo de firewall."
+    }
+  },
+  {
+    "pregunta": "9. ¿Cuál de los siguientes NO es un cortafuegos (firewall)?",
+    "opciones": [
+      "A. Noax.",
+      "B. Firestarter.",
+      "C. ZoneAlarm.",
+      "D. lpfw."
+    ],
+    "correcta": 0,
+    "explicacion": "Noax no es un software de cortafuegos conocido. Firestarter es un GUI para iptables en Linux, ZoneAlarm es un clásico firewall personal de Windows y lpfw es un firewall para Linux.",
+    "analisis_opciones": {
+      "A": "Correcta (es el que no es).",
+      "B": "Firewall Linux.",
+      "C": "Firewall Windows.",
+      "D": "Leopard Flower Firewall (Linux)."
+    }
+  },
+  {
+    "pregunta": "10. De las siguientes utilidades, una es un firewall para sistemas Linux, seleccionar cuál es:",
+    "opciones": [
+      "A. IP-Tables.",
+      "B. Squid.",
+      "C. Quizz.",
+      "D. Snort."
+    ],
+    "correcta": 0,
+    "explicacion": "iptables es la herramienta estándar del kernel de Linux (a través de Netfilter) para el filtrado de paquetes y NAT.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Es un Servidor Proxy / Caché.",
+      "C": "Inexistente.",
+      "D": "Es un IDS/IPS (detección de intrusos)."
+    }
+  },
+  {
+    "pregunta": "11. En cuanto a las conexiones de acceso remoto, ¿cuál NO sería una recomendación para mitigar el riesgo?",
+    "opciones": [
+      "A. Los privilegios de acceso remoto serán los mismos que cuando se trabaja en local.",
+      "B. El canal de comunicación debe ser cifrado y terminar en un firewall.",
+      "C. La conexión debe solicitar un segundo factor de autenticación.",
+      "D. Los datos de la conexión deben quedar registrados."
+    ],
+    "correcta": 0,
+    "explicacion": "Principio de Mínimo Privilegio: El acceso remoto debe estar más restringido que el local debido al mayor riesgo de compromiso de la sesión fuera del perímetro controlado.",
+    "analisis_opciones": {
+      "A": "Correcta (es la mala). Se deben restringir privilegios en remoto.",
+      "B": "Correcta (buena práctica).",
+      "C": "Correcta (buena práctica - MFA).",
+      "D": "Correcta (buena práctica - Auditoría)."
+    }
+  },
+  {
+    "pregunta": "12. En entornos de redes, el término que engloba el concepto de 'oficina pequeña /oficina doméstica' se denomina:",
+    "opciones": [
+      "A. DMZ",
+      "B. MultiDMZ",
+      "C. SOHO",
+      "D. Dual-Homed-Host"
+    ],
+    "correcta": 2,
+    "explicacion": "SOHO son las siglas de 'Small Office / Home Office'. Se refiere a equipos de red (como routers) diseñados para un número bajo de usuarios.",
+    "analisis_opciones": {
+      "A": "Zona Desmilitarizada (segmento para servidores públicos).",
+      "C": "Correcta.",
+      "D": "Host con dos tarjetas de red conectadas a redes distintas."
+    }
+  },
+  {
+    "pregunta": "13. ¿Cuál de las siguientes opciones es cierta con respecto a los protocolos IPSec, PPTP y OpenVPN?",
+    "opciones": [
+      "A. IPSec utiliza dos protocolos de seguridad (AH y ESK) y un protocolo de gestión de claves (IKE).",
+      "B. El protocolo OpenVPN no es compatible con IPSec, IKE, PPTP y L2TP.",
+      "C. El protocolo PPTP es el que ofrece un nivel de encriptación más fuerte.",
+      "D. Los tres protocolos protegen las comunicaciones a nivel 2 de la pila OSI"
+    ],
+    "correcta": 1,
+    "explicacion": "OpenVPN es una solución independiente basada en SSL/TLS y no utiliza el framework de IPsec ni los antiguos protocolos de túnel de nivel 2 para su funcionamiento.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Usa AH y ESP (no ESK).",
+      "B": "Correcta. Es una arquitectura distinta.",
+      "C": "Incorrecta. PPTP es considerado obsoleto e inseguro.",
+      "D": "Incorrecta. IPsec es nivel 3; OpenVPN es nivel 4/7."
+    }
+  },
+  {
+    "pregunta": "14. De los siguientes protocolos de seguridad, indique cuál es el más empleado por las VPN de nivel de transporte:",
+    "opciones": [
+      "A. TLS",
+      "B. SSH",
+      "C. IPSec",
+      "D. MACsec"
+    ],
+    "correcta": 0,
+    "explicacion": "Las VPNs de nivel de transporte (o capa superior) utilizan TLS (Transport Layer Security) para crear el túnel seguro, muy común en accesos basados en navegador (Web VPN).",
+    "analisis_opciones": {
+      "A": "Correcta. Sucesora de SSL.",
+      "B": "Cifra el terminal, pero no es el estándar para VPNs de transporte masivas.",
+      "C": "Es el estándar de nivel de RED (Capa 3).",
+      "D": "Cifra a nivel de Enlace (Capa 2)."
+    }
+  },
+  {
+    "pregunta": "15. ¿Cuál de las siguientes afirmaciones es correcta?",
+    "opciones": [
+      "A. L2TP se refiere a Layer 2 Tunneling Protocol.",
+      "B. IKEv2 se refiere a Internet Key Extended Protocol Version 2.",
+      "C. ESP se refiere a Enhanced Security Payload.",
+      "D. SSTP se refiere a Secure System Transport Protocol."
+    ],
+    "correcta": 0,
+    "explicacion": "L2TP es el protocolo de túnel de nivel 2 que suele combinarse con IPsec para proporcionar seguridad.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Es Internet Key Exchange.",
+      "C": "Incorrecta. Es Encapsulating Security Payload.",
+      "D": "Incorrecta. Es Secure Socket Tunneling Protocol."
+    }
+  },
+  {
+    "pregunta": "16. En relación con las VPN de nivel de enlace, ¿cuál de los siguientes protocolos NO se utiliza para la implementación de dicha VPN?",
+    "opciones": [
+      "A. PPTP (Point-to-Point Tunneling Protocol).",
+      "B. L2F (Layer Two Forwarding).",
+      "C. L2TP (Layer Two Tunneling Protocol).",
+      "D. P2TP (Point two Tunneling Protocol).",
+      "E. Todas las anteriores son de nivel de enlace."
+    ],
+    "correcta": 3,
+    "explicacion": "P2TP no existe. Los protocolos clásicos de nivel 2 para VPN son PPTP (Microsoft), L2F (Cisco) y la unión de ambos, L2TP.",
+    "analisis_opciones": {
+      "A": "Nivel 2.",
+      "B": "Nivel 2.",
+      "C": "Nivel 2.",
+      "D": "Correcta (es el inexistente)."
+    }
+  },
+  {
+    "pregunta": "17. Señale la afirmación verdadera:",
+    "opciones": [
+      "A. Los XML-Firewall analizan mensajes XML, por lo que son indicados para arquitecturas basadas en servicios web.",
+      "B. Los SQL-Firewall protegen de ataques transmitidos a través de código SQL como el 'SQL injection'.",
+      "C. Los Java-Firewall permiten incluir reglas para ejecución segura de applets.",
+      "D. Los SIG-Firewall permiten el intercambio seguro de datos georreferenciados."
+    ],
+    "correcta": 0,
+    "explicacion": "Un XML Firewall es un dispositivo o software especializado en validar y filtrar el contenido de los mensajes SOAP/XML para evitar ataques de inyección o denegación de servicio en Web Services.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. SQL Injection se previene en la aplicación o mediante WAF (Web Application Firewall), no existe un 'SQL-Firewall' como categoría estándar de red.",
+      "C": "Incorrecta. Eso lo gestiona el Sandbox de la JVM.",
+      "D": "Incorrecta. Término inventado."
+    }
+  },
+  {
+    "pregunta": "18. La herramienta del CCN-CERT dedicada al análisis automatizado de ficheros que puedan tener un comportamiento malicioso se llama:",
+    "opciones": [
+      "A. ANA",
+      "B. MARTA",
+      "C. REYES",
+      "D. GLORIA"
+    ],
+    "correcta": 1,
+    "explicacion": "MARTA es el sistema de análisis avanzado de ficheros (Sandbox) del CCN-CERT para detectar malware mediante ejecución controlada.",
+    "analisis_opciones": {
+      "A": "ANA es para automatización de la gobernanza ENS.",
+      "B": "Correcta.",
+      "C": "REYES es para la compartición de ciberinteligencia (IOCs).",
+      "D": "GLORIA es para la gestión de logs (SIEM)."
+    }
+  },
+  {
+    "pregunta": "19. Señale la respuesta INCORRECTA con respecto al ataque KRACK:",
+    "opciones": [
+      "A. Son las siglas de 'Key Reinstallation Attack'.",
+      "B. El objetivo del ataque es el proceso de negociación del protocolo WPA2.",
+      "C. Distinta clave de cifrado es utilizada con valores NONCE que ya han sido utilizados en pasado.",
+      "D. Esta vulnerabilidad afecta únicamente al protocolo WPA2."
+    ],
+    "correcta": 3,
+    "explicacion": "KRACK es una debilidad en el estándar WPA2, pero el concepto de ataque de reinstalación de claves también puede afectar a otras implementaciones del protocolo 802.11.",
+    "analisis_opciones": {
+      "A": "Verdadera.",
+      "B": "Verdadera. Ataca el 4-way handshake.",
+      "C": "Verdadera. Fuerza al cliente a reutilizar números que deberían ser únicos.",
+      "D": "Incorrecta (falsa). Aunque es famoso por WPA2, afecta al estándar de seguridad inalámbrica en general."
+    }
+  },
+  {
+    "pregunta": "20. A algunos proxy se les conoce como transparentes porque:",
+    "opciones": [
+      "A. Permiten guardar las páginas web más visitadas.",
+      "B. Es un proxy solo software.",
+      "C. Combina el proxy con NAT de manera que las conexiones son enrutadas sin configuración por parte del cliente.",
+      "D. No realizan la función de filtrado."
+    ],
+    "correcta": 2,
+    "explicacion": "Un proxy transparente intercepta el tráfico de red de forma automática a nivel de gateway, por lo que el usuario no tiene que configurar nada en las opciones de su navegador.",
+    "analisis_opciones": {
+      "A": "Eso es un proxy caché.",
+      "C": "Correcta. Intercepción automática.",
+      "D": "Falso. Pueden filtrar perfectamente."
+    }
+  },
+  {
+    "pregunta": "21. La gestión unificada de amenazas (UTM) se refiere a un:",
+    "opciones": [
+      "A. Grupo de expertos en seguridad.",
+      "B. Mecanismo para evaluar amenazas.",
+      "C. Dispositivo de seguridad que proporciona integradas diferentes soluciones perimetrales.",
+      "D. Conjunto de salvaguardas dentro de un plan general."
+    ],
+    "correcta": 2,
+    "explicacion": "Un UTM (Unified Threat Management) combina Firewall, Antivirus de pasarela, IPS, Filtro de contenido y VPN en un solo equipo de hardware.",
+    "analisis_opciones": {
+      "C": "Correcta. 'Todo en uno'."
+    }
+  },
+  {
+    "pregunta": "22. ¿Cuál de las siguientes herramientas se utiliza para la detección y prevención de intrusiones (HIDS)?",
+    "opciones": [
+      "A. OSSEC",
+      "B. GIT",
+      "C. Sonar",
+      "D. Checkstyle"
+    ],
+    "correcta": 0,
+    "explicacion": "OSSEC es el HIDS (Host-based Intrusion Detection System) open source más extendido para monitorizar logs y cambios en archivos locales.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Control de versiones.",
+      "C": "Análisis de calidad de código.",
+      "D": "Formato de código Java."
+    }
+  },
+  {
+    "pregunta": "23. Según el RFC 4026, una VPN, ¿en qué capas del modelo de referencia OSI se puede establecer?",
+    "opciones": [
+      "A. Capa 1 y capa 2.",
+      "B. Capa 2 y capa 3.",
+      "C. Capa 3 y capa 4.",
+      "D. Capa 5 y capa 6."
+    ],
+    "correcta": 1,
+    "explicacion": "Las VPNs se clasifican fundamentalmente en VPNs de Capa 2 (enlace de datos) y VPNs de Capa 3 (red, como IPsec).",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "24. Un Cortafuegos o Firewall es:",
+    "opciones": [
+      "A. Una aplicación que hace de intermediario entre los usuarios e Internet.",
+      "B. Una aplicación (o un dispositivo hardware) que se utiliza para proteger la red interna (red local).",
+      "C. Una pieza de hardware o software que conecta dos o más redes.",
+      "D. El punto de unión entre varias redes."
+    ],
+    "correcta": 1,
+    "explicacion": "La función esencial es la protección de la red interna frente a amenazas provenientes de la externa.",
+    "analisis_opciones": {
+      "A": "Eso se aproxima más a la definición de un Proxy.",
+      "B": "Correcta. Centrada en la seguridad de la intranet.",
+      "C": "Eso es un Router (que puede tener firewall, pero no es la definición única).",
+      "D": "Eso es un Gateway."
+    }
+  },
+  {
+    "pregunta": "25. ¿Cuál es una herramienta de ticketing para la gestión de incidentes de seguridad en el ámbito del ENS?",
+    "opciones": [
+      "A. ATENEA.",
+      "B. MONICA.",
+      "C. LUCIA.",
+      "D. INES."
+    ],
+    "correcta": 2,
+    "explicacion": "LUCÍA es la herramienta del CCN para la notificación y gestión federada de incidentes de ciberseguridad.",
+    "analisis_opciones": {
+      "A": "ATENEA es para formación y retos (hacking ético).",
+      "C": "Correcta.",
+      "D": "INES es para el Informe Nacional del Estado de Seguridad (recolecta datos de cumplimiento)."
+    }
+  },
+  {
+    "pregunta": "26. ¿Cuál de las siguientes herramientas del CCN-CERT se utiliza para la detección de amenazas complejas en el puesto del usuario?",
+    "opciones": [
+      "A. MARIA",
+      "B. CLAUDIA",
+      "C. GLORIA",
+      "D. ANA"
+    ],
+    "correcta": 1,
+    "explicacion": "CLAUDIA es la solución EDR (Endpoint Detection and Response) del CCN para monitorizar y detener amenazas avanzadas en los ordenadores de los usuarios.",
+    "analisis_opciones": {
+      "B": "Correcta.",
+      "C": "GLORIA es un SIEM para análisis de logs.",
+      "D": "ANA es para auditoría ENS."
+    }
+  },
+  {
+    "pregunta": "27. ¿Cuál de los siguientes es un protocolo de tunneling?",
+    "opciones": [
+      "A. MLTP: Multi Level Tunneling Protocol",
+      "B. SSL: Secure Sockets Layer",
+      "C. L2PP: Layer 2 Private Protocol",
+      "D. GRE: Generic Routing Encapsulation"
+    ],
+    "correcta": 3,
+    "explicacion": "GRE es un protocolo de túnel de nivel 3 que puede encapsular una gran variedad de protocolos de red dentro de túneles virtuales punto a punto.",
+    "analisis_opciones": {
+      "A": "Inexistente.",
+      "B": "Es un protocolo de cifrado/seguridad, no de túnel puro.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "28. ¿Cuál de las siguientes Guías de Seguridad CCN-STIC trata sobre la 'Seguridad en Redes Privadas Virtuales'?",
+    "opciones": [
+      "A. 837",
+      "B. 814",
+      "C. 836",
+      "D. 812"
+    ],
+    "correcta": 2,
+    "explicacion": "La Guía CCN-STIC 836 es el documento de referencia para la implementación segura de VPNs en la administración.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "29. Si nos referimos a una VPN, no es cierto que:",
+    "opciones": [
+      "A. La tecnología de túnel encripta y encapsula protocolos sobre IP.",
+      "B. Un túnel indica una ruta fija y delimitada entre dos extremos que se comunican vía Internet.",
+      "C. Se aprovecha el bajo coste de Internet añadiendo encriptación fuerte.",
+      "D. El protocolo estándar para soporte de túneles, encriptación y autenticación es IPSec."
+    ],
+    "correcta": 1,
+    "explicacion": "Un túnel es una conexión LÓGICA. La ruta física que siguen los paquetes a través de Internet es variable y depende del enrutamiento dinámico, no es 'fija'.",
+    "analisis_opciones": {
+      "A": "Verdadera. Definición técnica.",
+      "B": "Incorrecta (falsa). La ruta física por los routers de Internet no es fija.",
+      "C": "Verdadera. Es la ventaja económica de la VPN.",
+      "D": "Verdadera. Estándar IETF."
+    }
+  },
+  {
+    "pregunta": "30. ¿Cuál de las siguientes es una herramienta de control remoto de puestos de trabajo?",
+    "opciones": [
+      "A. Discoverer.",
+      "B. Analysis services.",
+      "C. Carbon Copy.",
+      "D. Brocade."
+    ],
+    "correcta": 2,
+    "explicacion": "Carbon Copy es una de las soluciones clásicas (junto a VNC o TeamViewer) para tomar el control de la pantalla y teclado de un equipo remoto.",
+    "analisis_opciones": {
+      "C": "Correcta.",
+      "D": "Fabricante de hardware de red (SAN/Fibre Channel)."
+    }
+  },
+  {
+    "pregunta": "31. ¿Cuál de las siguientes herramientas se utiliza para la realización de pruebas de seguridad?",
+    "opciones": [
+      "A. HP LoadRunner",
+      "B. IBM AppScan",
+      "C. JAWS",
+      "D. ACTF aDesigner"
+    ],
+    "correcta": 1,
+    "explicacion": "IBM AppScan es una suite de herramientas para el análisis dinámico y estático de vulnerabilidades en aplicaciones.",
+    "analisis_opciones": {
+      "A": "Pruebas de rendimiento/carga.",
+      "B": "Correcta.",
+      "C": "Lector de pantalla para accesibilidad.",
+      "D": "Simulador de visión para accesibilidad."
+    }
+  },
+  {
+    "pregunta": "32. De entre las siguientes afirmaciones relacionadas con el uso de cortafuegos, seleccione la correcta:",
+    "opciones": [
+      "A. Los cortafuegos stateless guardan información de las sesiones.",
+      "B. Un cortafuegos DPI permite una inspección profunda del contenido completo del paquete.",
+      "C. Los cortafuegos stateful no guardan información de las sesiones.",
+      "D. Los cortafuegos de próxima generación no incorporan funciones de NAT ni VPN."
+    ],
+    "correcta": 1,
+    "explicacion": "DPI (Deep Packet Inspection) analiza no solo la cabecera (IP/Puerto) sino también los datos (carga útil) del paquete para detectar malware o patrones.",
+    "analisis_opciones": {
+      "A": "Falso. Stateless significa que no tienen memoria (estado).",
+      "B": "Correcta.",
+      "C": "Falso. Stateful guardan el estado de la conexión.",
+      "D": "Falso. Los NGFW incorporan todo eso y más (IPS, control de aplicaciones)."
+    }
+  },
+  {
+    "pregunta": "33. Los Cortafuegos de filtrado de paquetes, ¿en cuál capa TCP/IP actúan?",
+    "opciones": [
+      "A. Capa IP.",
+      "B. Capa de Aplicación.",
+      "C. Capa de Sesión.",
+      "D. Capa de Transporte."
+    ],
+    "correcta": 0,
+    "explicacion": "El filtrado de paquetes básico (Packet Filtering) trabaja analizando las cabeceras de Nivel 3, es decir, las direcciones IP de origen y destino.",
+    "analisis_opciones": {
+      "A": "Correcta. Nivel de Red.",
+      "B": "Serían Gateways de Aplicación o Proxies.",
+      "D": "Actúan en Transporte si filtran por puerto (TCP/UDP)."
+    }
+  },
+  {
+    "pregunta": "34. La herramienta del CCN-CERT que permite realizar análisis estático de código dañino a través de múltiples motores antivirus es:",
+    "opciones": [
+      "A. ADA",
+      "B. PILAR",
+      "C. CLARA",
+      "D. REYES"
+    ],
+    "correcta": 2,
+    "explicacion": "Nota: CLARA se centra en auditoría de cumplimiento. La herramienta mencionada que usa múltiples motores antivirus es habitualmente 'MARTA' o una integración dentro de 'LUCIA'. Si el test de tu academia marca CLARA, se refiere a su capacidad de chequeo de malware local.",
+    "analisis_opciones": {
+      "A": "ADA es para cumplimiento ENS.",
+      "B": "PILAR es para análisis de riesgos (MAGERIT).",
+      "C": "Correcta según este contexto de academia.",
+      "D": "REYES es Ciberinteligencia."
+    }
+  },
+  {
+    "pregunta": "35. De entre los siguientes, ¿qué protocolo es utilizado para implantar Redes Privadas Virtuales?",
+    "opciones": [
+      "A. ARP",
+      "B. IPSEC",
+      "C. RARP",
+      "D. TCP"
+    ],
+    "correcta": 1,
+    "explicacion": "IPsec es el estándar más robusto y utilizado para VPNs de sitio a sitio y de acceso remoto.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "36. El nombre de la herramienta creada por el CCN para la gestión de incidentes de ciberseguridad es:",
+    "opciones": [
+      "A. Carmen",
+      "B. Lucía",
+      "C. Clara",
+      "D. Marta"
+    ],
+    "correcta": 1,
+    "explicacion": "LUCÍA es la herramienta central para el ticketing y gestión de incidentes.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "37. ¿Cuál es la misión principal de un SOC (Security Operations Center) dentro de una organización?",
+    "opciones": [
+      "A. Instalar el hardware y el cableado de red de las oficinas.",
+      "B. Monitorizar, detectar, analizar y responder ante incidentes de ciberseguridad de forma centralizada.",
+      "C. Desarrollar las aplicaciones de gestión de recursos humanos.",
+      "D. Gestionar exclusivamente las copias de seguridad de los servidores."
+    ],
+    "correcta": 1,
+    "explicacion": "Un SOC es una unidad centralizada que se encarga de la seguridad operativa, utilizando personas, procesos y tecnología para vigilar la postura de seguridad de la entidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es soporte de sistemas/comunicaciones.",
+      "B": "Correcta. Son las funciones fundamentales de un SOC.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Es una tarea de administración de sistemas, no el foco del SOC."
+    }
+  },
+  {
+    "pregunta": "38. En el contexto de la AGE, ¿qué significan las siglas COC?",
+    "opciones": [
+      "A. Centro de Operaciones de Comunicaciones.",
+      "B. Centro de Operaciones de Ciberseguridad.",
+      "C. Comité de Ordenación de Cifrado.",
+      "D. Central de Operaciones de Contingencia."
+    ],
+    "correcta": 1,
+    "explicacion": "En la Administración General del Estado, a los SOC se les denomina habitualmente COCs (Centros de Operaciones de Ciberseguridad).",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "39. El servicio de 'Monitorización' en un SOC se encarga principalmente de:",
+    "opciones": [
+      "A. Escribir el código de las aplicaciones.",
+      "B. La recolección y análisis de eventos de seguridad (logs) en tiempo real para identificar patrones sospechosos.",
+      "C. Reparar los ordenadores que no encienden.",
+      "D. Comprar las licencias de los antivirus."
+    ],
+    "correcta": 1,
+    "explicacion": "La monitorización es la fase de vigilancia continua donde se observan los sistemas para identificar cualquier desviación del comportamiento normal.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "40. ¿Cuál es el componente tecnológico principal (cerebro) de un SOC para la correlación de eventos?",
+    "opciones": [
+      "A. Un Firewall de nueva generación.",
+      "B. Un SIEM (Security Information and Event Management).",
+      "C. Un servidor de correo seguro.",
+      "D. Un sistema de almacenamiento NAS."
+    ],
+    "correcta": 1,
+    "explicacion": "El SIEM es la herramienta que centraliza los logs de toda la red, los correlaciona y genera alertas cuando detecta una posible intrusión.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "41. ¿A qué se refiere el servicio de 'Cumplimiento' dentro de las funciones de un SOC?",
+    "opciones": [
+      "A. A que los empleados lleguen a su hora al trabajo.",
+      "B. A asegurar que la organización cumple con las normativas legales y estándares de seguridad (como el ENS o RGPD).",
+      "C. A que el hardware cumpla el periodo de garantía.",
+      "D. A finalizar los proyectos en la fecha acordada."
+    ],
+    "correcta": 1,
+    "explicacion": "El SOC ayuda a auditar y demostrar que se están siguiendo los controles de seguridad exigidos por leyes como el Esquema Nacional de Seguridad.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "42. Dentro de un SOC, la fase de 'Respuesta' ante un incidente incluye:",
+    "opciones": [
+      "A. Ignorar la alerta si ocurre fuera de horario.",
+      "B. Acciones de contención, erradicación de la amenaza y recuperación de los servicios afectados.",
+      "C. Desinstalar todos los programas del servidor afectado.",
+      "D. Llamar a la policía inmediatamente sin analizar el caso."
+    ],
+    "correcta": 1,
+    "explicacion": "La respuesta es la actuación operativa una vez confirmado un incidente para minimizar el daño y restaurar la normalidad.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "43. El SOC de la AGE es un servicio centralizado que presta la Secretaría General de Administración Digital (SGAD) en colaboración con:",
+    "opciones": [
+      "A. El Ministerio de Cultura.",
+      "B. El Centro Criptológico Nacional (CCN-CERT).",
+      "C. Empresas de mensajería privada.",
+      "D. Universidades públicas exclusivamente."
+    ],
+    "correcta": 1,
+    "explicacion": "El SOC de la AGE se apoya tecnológicamente y operativamente en las capacidades del CCN-CERT para proteger los ministerios y organismos públicos.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "44. ¿Qué es el 'Triaje' en la operación diaria de un SOC?",
+    "opciones": [
+      "A. La compra de tres servidores nuevos.",
+      "B. El proceso de clasificar y priorizar las alertas entrantes para determinar su gravedad y urgencia.",
+      "C. El borrado de los correos de spam.",
+      "D. La limpieza física de los racks del CPD."
+    ],
+    "correcta": 1,
+    "explicacion": "Dado el alto volumen de alertas, el triaje es vital para que los analistas se centren primero en lo más crítico.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "45. El término 'Cyber Threat Intelligence' (CTI) en un SOC se refiere a:",
+    "opciones": [
+      "A. La capacidad de los analistas de hablar varios idiomas.",
+      "B. La obtención y análisis de información sobre amenazas externas (adversarios, métodos, indicadores de compromiso) para anticiparse a ataques.",
+      "C. El uso de procesadores de última generación.",
+      "D. El espionaje a otras empresas del sector."
+    ],
+    "correcta": 1,
+    "explicacion": "La inteligencia de amenazas permite al SOC saber 'quién está atacando ahí fuera' y preparar las defensas antes de ser el blanco.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "46. ¿Qué diferencia principal existe entre un SOC y un NOC (Network Operations Center)?",
+    "opciones": [
+      "A. No hay diferencia, son lo mismo.",
+      "B. El NOC se centra en la disponibilidad y rendimiento de la red; el SOC se centra en la seguridad y las amenazas.",
+      "C. El SOC es para empresas pequeñas y el NOC para grandes.",
+      "D. El NOC solo funciona de día y el SOC 24x7."
+    ],
+    "correcta": 1,
+    "explicacion": "Si un router se apaga, es problema del NOC. Si alguien intenta entrar sin permiso en ese router, es problema del SOC.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "47. Un servicio de 'Prevención' en un SOC incluye actividades como:",
+    "opciones": [
+      "A. Formatear los equipos cada mes por si acaso.",
+      "B. Gestión de vulnerabilidades, parcheado de sistemas y concienciación de usuarios.",
+      "C. Prohibir el uso de Internet en toda la oficina.",
+      "D. Contratar un seguro de incendios."
+    ],
+    "correcta": 1,
+    "explicacion": "La prevención busca reducir la superficie de ataque para que los incidentes no lleguen a producirse.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "48. En la estructura de un SOC, un analista de 'Nivel 1' (L1) se encarga de:",
+    "opciones": [
+      "A. Dirigir toda la organización.",
+      "B. La monitorización inicial, el filtrado de falsos positivos y la escalada de incidentes complejos.",
+      "C. Realizar ingeniería inversa de malware avanzado.",
+      "D. Redactar las leyes de ciberseguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "El L1 es la primera línea de defensa; los casos que no puede resolver los escala al L2 o L3.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "49. ¿Cuál de estos es un beneficio de los COCs (SOC de la AGE) para los organismos públicos?",
+    "opciones": [
+      "A. Permite que cada organismo ignore el ENS.",
+      "B. Economía de escala, compartición de inteligencia y respuesta coordinada ante ataques nacionales.",
+      "C. Regalar ordenadores nuevos a los funcionarios.",
+      "D. Eliminar la necesidad de usar contraseñas."
+    ],
+    "correcta": 1,
+    "explicacion": "Al centralizar el servicio, organismos pequeños con poco presupuesto pueden disfrutar de una seguridad de alto nivel proporcionada por la AGE.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "50. ¿Qué significa que un SOC sea '24/7/365'?",
+    "opciones": [
+      "A. Que tiene 24 servidores y 7 switches.",
+      "B. Que opera de forma ininterrumpida todas las horas de todos los días del año.",
+      "C. Que el presupuesto es de 24.736,5 euros.",
+      "D. Que solo atiende a 24 ministerios."
+    ],
+    "correcta": 1,
+    "explicacion": "Los atacantes no descansan los festivos, por lo que la vigilancia de seguridad debe ser constante.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "51. El concepto de 'Threat Hunting' (Caza de Amenazas) en un SOC maduro consiste en:",
+    "opciones": [
+      "A. Esperar a que el SIEM lance una alerta.",
+      "B. Buscar proactivamente amenazas que podrían haber evadido las detecciones automáticas existentes.",
+      "C. Instalar trampas físicas en el edificio.",
+      "D. Despedir a los empleados sospechosos."
+    ],
+    "correcta": 1,
+    "explicacion": "Es una búsqueda activa y manual basada en hipótesis, no una respuesta reactiva a una alerta configurada.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "52. ¿Qué es un 'Playbook' en la operativa de un SOC?",
+    "opciones": [
+      "A. Una consola de videojuegos para los descansos.",
+      "B. Un conjunto de procedimientos estandarizados que guían a los analistas sobre cómo responder a un tipo específico de incidente.",
+      "C. Un libro con las fotos de todos los hackers conocidos.",
+      "D. El manual de instrucciones del aire acondicionado."
+    ],
+    "correcta": 1,
+    "explicacion": "Aseguran que la respuesta sea consistente y rápida, sin importar qué analista esté de guardia.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "53. La métrica 'MTTD' (Mean Time To Detect) mide:",
+    "opciones": [
+      "A. El tiempo medio que tarda un analista en desayunar.",
+      "B. El tiempo medio que transcurre desde que se produce una intrusión hasta que el SOC la detecta.",
+      "C. El coste medio de cada ordenador.",
+      "D. El número de ataques por segundo."
+    ],
+    "correcta": 1,
+    "explicacion": "Es un KPI crítico: cuanto menor sea el MTTD, menos tiempo tendrá el atacante para hacer daño.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "54. El SOC de la AGE se enmarca dentro del:",
+    "opciones": [
+      "A. Plan de Recuperación, Transformación y Resiliencia (España Digital 2026).",
+      "B. Ministerio de Agricultura.",
+      "C. Boletín Oficial del Estado únicamente.",
+      "D. Programa de fiestas de la localidad."
+    ],
+    "correcta": 0,
+    "explicacion": "La creación y refuerzo de los COCs es una medida estratégica del Gobierno para la digitalización segura de las administraciones.",
+    "analisis_opciones": {
+      "A": "Correcta."
+    }
+  },
+  {
+    "pregunta": "55. Un analista de 'Nivel 3' (L3) en un SOC suele ser experto en:",
+    "opciones": [
+      "A. Atender el teléfono de información.",
+      "B. Análisis forense avanzado, ingeniería inversa de malware y resolución de incidentes críticos.",
+      "C. Cambiar el tóner de las impresoras.",
+      "D. Gestionar las redes sociales del departamento."
+    ],
+    "correcta": 1,
+    "explicacion": "Es el perfil más técnico y especializado del centro de operaciones.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "56. ¿Qué función cumple el 'Log Management' en la infraestructura de un SOC?",
+    "opciones": [
+      "A. Borrar los logs para ahorrar espacio rápidamente.",
+      "B. Recolectar, normalizar y almacenar los registros de actividad para su análisis y cumplimiento legal.",
+      "C. Imprimir los logs en papel todos los días.",
+      "D. Cifrar los logs para que nadie, ni el SOC, los pueda leer."
+    ],
+    "correcta": 1,
+    "explicacion": "Sin una buena gestión de logs, el SIEM no tiene datos sobre los que trabajar.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "57. En la respuesta a incidentes, la 'Erradicación' consiste en:",
+    "opciones": [
+      "A. Apagar Internet en todo el país.",
+      "B. Eliminar por completo los componentes de la amenaza (malware, cuentas comprometidas) de los sistemas afectados.",
+      "C. Pedir perdón al atacante.",
+      "D. Cambiar el nombre de la empresa."
+    ],
+    "correcta": 1,
+    "explicacion": "Es el paso posterior a la contención; una vez 'acorralado' el virus, hay que eliminarlo.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "58. La plataforma 'LUCIA' del CCN-CERT se integra con los SOCs de la AGE para:",
+    "opciones": [
+      "A. Ver películas de ciberseguridad.",
+      "B. La gestión de incidentes y el intercambio de información de forma estandarizada.",
+      "C. Sustituir a todos los trabajadores del SOC.",
+      "D. Controlar el aire acondicionado del CPD."
+    ],
+    "correcta": 1,
+    "explicacion": "LUCIA permite que el SOC de un ministerio se comunique de forma eficaz con el CCN-CERT.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "59. ¿A qué se refiere el término 'Falso Positivo' en un SOC?",
+    "opciones": [
+      "A. A un ataque que ha tenido éxito.",
+      "B. A una alerta de seguridad que se dispara ante una actividad que en realidad es legítima e inofensiva.",
+      "C. A un analista que miente sobre su trabajo.",
+      "D. A un virus que no hace nada."
+    ],
+    "correcta": 1,
+    "explicacion": "Reducir los falsos positivos es uno de los mayores retos para evitar la 'fatiga de alertas' de los analistas.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "60. El servicio de 'Vulnerability Management' (Gestión de Vulnerabilidades) permite al SOC:",
+    "opciones": [
+      "A. Crear virus nuevos para probar la red.",
+      "B. Identificar y priorizar las debilidades de seguridad en los activos antes de que sean explotadas.",
+      "C. Hacer una lista de los empleados menos productivos.",
+      "D. Comprar servidores usados."
+    ],
+    "correcta": 1,
+    "explicacion": "Suele implicar escaneos periódicos para detectar software sin actualizar o malas configuraciones.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "61. En el SOC de la AGE, los datos sobre el estado de seguridad se reportan a través de la herramienta:",
+    "opciones": [
+      "A. CLARA.",
+      "B. INES (Informe Nacional del Estado de Seguridad).",
+      "C. PILAR.",
+      "D. CARMEN."
+    ],
+    "correcta": 1,
+    "explicacion": "INES es la herramienta específica para recolectar anualmente los datos de seguridad de todas las administraciones públicas y generar el informe estatal.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "62. ¿Cuál es la función principal de la nueva herramienta HODIO desarrollada por el CCN-CERT?",
+    "opciones": [
+      "A. Realizar auditorías de bases de datos SQL.",
+      "B. Proporcionar un entorno seguro de comunicaciones y gestión de dispositivos móviles (MDM/EMM) para la Administración.",
+      "C. Analizar el tráfico de red en busca de ataques de denegación de servicio.",
+      "D. Gestionar las altas y bajas de usuarios en el Directorio Activo."
+    ],
+    "correcta": 1,
+    "explicacion": "HODIO es la solución más reciente del CCN para garantizar la seguridad en movilidad, permitiendo gestionar dispositivos móviles de forma segura y controlada dentro del Esquema Nacional de Seguridad.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Es la respuesta VIP para la herramienta más nueva.",
+      "C": "Incorrecta. Esa es función de CARMEN.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "63. La herramienta EMMA del CCN-CERT se define como:",
+    "opciones": [
+      "A. Un sistema de análisis de malware en la nube.",
+      "B. Una solución para la visibilidad y el control de los activos conectados a la red (NAC - Network Access Control).",
+      "C. Una plataforma de formación para empleados públicos.",
+      "D. Un generador de firmas digitales."
+    ],
+    "correcta": 1,
+    "explicacion": "EMMA permite saber qué hay conectado a la red en todo momento, facilitando el inventario automático y el control de acceso de dispositivos no autorizados.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa es MARTA.",
+      "B": "Correcta. EMMA = Visibilidad y Control de Activos.",
+      "C": "Incorrecta. Esa es ATENEA.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "64. ¿Qué herramienta del CCN se utiliza específicamente para el análisis de la seguridad en entornos de virtualización y despliegue de máquinas virtuales?",
+    "opciones": [
+      "A. CLAUDIA.",
+      "B. VANESA.",
+      "C. ELENA.",
+      "D. REYES."
+    ],
+    "correcta": 1,
+    "explicacion": "VANESA es la herramienta dedicada a la seguridad en infraestructuras virtualizadas, permitiendo analizar el tráfico y la configuración de los hipervisores.",
+    "analisis_opciones": {
+      "B": "Correcta. VANESA = Virtualización.",
+      "A": "CLAUDIA es EDR para puestos de usuario.",
+      "C": "Incorrecta.",
+      "D": "REYES es para ciberinteligencia."
+    }
+  },
+  {
+    "pregunta": "65. La herramienta ANA (Automatización y Normalización de Auditorías) tiene como objetivo:",
+    "opciones": [
+      "A. Detectar virus en el correo electrónico.",
+      "B. Facilitar la automatización de la gobernanza y la auditoría del cumplimiento del Esquema Nacional de Seguridad (ENS).",
+      "C. Cifrar los discos duros de los portátiles.",
+      "D. Analizar el código fuente de las aplicaciones web."
+    ],
+    "correcta": 1,
+    "explicacion": "ANA ayuda a las organizaciones a gestionar su cumplimiento normativo y preparar las auditorías del ENS de forma automatizada.",
+    "analisis_opciones": {
+      "B": "Correcta. ANA = Gobernanza y Cumplimiento.",
+      "D": "Eso es análisis estático de código, función de otras herramientas."
+    }
+  },
+  {
+    "pregunta": "66. ¿Cuál es la diferencia principal entre las herramientas CLARA y CLAUDIA?",
+    "opciones": [
+      "A. CLARA es para Linux y CLAUDIA para Windows.",
+      "B. CLARA es para auditoría de cumplimiento (configuración) y CLAUDIA es un EDR para detección y respuesta ante amenazas en tiempo real.",
+      "C. CLARA cifra datos y CLAUDIA los borra.",
+      "D. Son la misma herramienta con distinto nombre según el ministerio."
+    ],
+    "correcta": 1,
+    "explicacion": "CLARA comprueba si el sistema está bien configurado según las guías. CLAUDIA vigila qué procesos se están ejecutando para detener un ataque activo.",
+    "analisis_opciones": {
+      "B": "Correcta. Auditoría vs Respuesta (EDR).",
+      "C": "Incorrecta. El borrado seguro es OLVIDO."
+    }
+  },
+  {
+    "pregunta": "67. La plataforma REYES (Repositorio de Intercambio de Información de Ciberseguridad) se utiliza para:",
+    "opciones": [
+      "A. Almacenar copias de seguridad de la AGE.",
+      "B. Centralizar y compartir indicadores de compromiso (IoC) y ciberinteligencia entre organismos.",
+      "C. Gestionar las claves criptográficas de los ministros.",
+      "D. Publicar las leyes de ciberseguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "REYES permite que si un ministerio detecta una IP maliciosa, todos los demás reciban esa información al instante para bloquearla.",
+    "analisis_opciones": {
+      "B": "Correcta. Ciberinteligencia colaborativa.",
+      "D": "Eso se hace en el portal del CCN o el BOE."
+    }
+  },
+  {
+    "pregunta": "68. ¿Qué herramienta del CCN-CERT está orientada a la protección de dispositivos frente al robo de información mediante el borrado seguro de datos?",
+    "opciones": [
+      "A. LUCIA.",
+      "B. OLVIDO.",
+      "C. AMPARO.",
+      "D. PILAR."
+    ],
+    "correcta": 1,
+    "explicacion": "OLVIDO asegura que la información borrada de un medio de almacenamiento no pueda ser recuperada mediante técnicas forenses.",
+    "analisis_opciones": {
+      "B": "Correcta. OLVIDO = Borrado seguro.",
+      "C": "AMPARO es para la seguridad de la información en el puesto de trabajo (guías).",
+      "D": "PILAR es análisis de riesgos."
+    }
+  },
+  {
+    "pregunta": "69. La herramienta PILAR es ampliamente conocida en la Administración por ser la implementación oficial de:",
+    "opciones": [
+      "A. La metodología MAGERIT de análisis y gestión de riesgos.",
+      "B. El protocolo de comunicaciones seguras de la OTAN.",
+      "C. El sistema de firma electrónica centralizada.",
+      "D. La base de datos de vulnerabilidades CVE."
+    ],
+    "correcta": 0,
+    "explicacion": "PILAR es la herramienta de referencia para realizar el análisis de riesgos siguiendo la metodología MAGERIT, obligatoria para el cumplimiento del ENS.",
+    "analisis_opciones": {
+      "A": "Correcta. PILAR = MAGERIT.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "70. ¿Cuál es la función de la herramienta INÉS dentro del ecosistema del CCN?",
+    "opciones": [
+      "A. Bloquear correos de phishing.",
+      "B. Recoger datos para elaborar el Informe Nacional del Estado de Seguridad.",
+      "C. Analizar el tráfico cifrado SSL.",
+      "D. Gestionar las identidades digitales de los ciudadanos."
+    ],
+    "correcta": 1,
+    "explicacion": "INÉS es la plataforma donde todos los organismos públicos cargan sus datos de seguridad anualmente para que el CCN analice el nivel de ciberseguridad del país.",
+    "analisis_opciones": {
+      "B": "Correcta. INÉS = Informe Nacional.",
+      "D": "Eso es Cl@ve o DNIe."
+    }
+  },
+  {
+    "pregunta": "71. La herramienta LORETO del CCN-CERT está especializada en:",
+    "opciones": [
+      "A. Formación online.",
+      "B. Recolección de evidencias y preservación forense de sistemas.",
+      "C. Auditoría de redes Wi-Fi.",
+      "D. Cifrado de correos electrónicos."
+    ],
+    "correcta": 1,
+    "explicacion": "LORETO ayuda a los equipos de respuesta a incidentes a recoger pruebas de un ataque de forma que sean válidas legalmente.",
+    "analisis_opciones": {
+      "B": "Correcta. LORETO = Forense.",
+      "A": "Eso es ATENEA/VANESA (en su parte de laboratorios)."
+    }
+  },
+  {
+    "pregunta": "72. ¿Qué herramienta se encarga de la monitorización y gestión de registros (logs) y eventos de seguridad para actuar como un SIEM nacional?",
+    "opciones": [
+      "A. CARMEN.",
+      "B. GLORIA.",
+      "C. MARTA.",
+      "D. ELENA."
+    ],
+    "correcta": 1,
+    "explicacion": "GLORIA (Gestión de LOGs, Respuesta e Inteligencia de Alertas) es la plataforma SIEM que agrega y correlaciona eventos de múltiples organismos.",
+    "analisis_opciones": {
+      "B": "Correcta. GLORIA = SIEM / Gestión de Logs.",
+      "A": "CARMEN analiza tráfico de red, no logs de sistema.",
+      "C": "MARTA analiza ficheros maliciosos."
+    }
+  },
+  {
+    "pregunta": "73. La herramienta ATENEA es conocida en el ámbito de la formación por ser:",
+    "opciones": [
+      "A. Un manual en PDF.",
+      "B. Una plataforma de desafíos y retos (CTF - Capture The Flag) para mejorar las habilidades de los técnicos.",
+      "C. Un sistema de videoconferencias seguras.",
+      "D. Una base de datos de legislación."
+    ],
+    "correcta": 1,
+    "explicacion": "ATENEA es una plataforma gamificada donde los técnicos pueden practicar técnicas de defensa y ataque en entornos controlados.",
+    "analisis_opciones": {
+      "B": "Correcta. ATENEA = Formación / Retos."
+    }
+  },
+  {
+    "pregunta": "74. ¿Qué herramienta del CCN permite realizar un análisis de seguridad de aplicaciones móviles (apps) para Android e iOS?",
+    "opciones": [
+      "A. MARTA.",
+      "B. IRIA.",
+      "C. ALICIA.",
+      "D. CLAUDIA."
+    ],
+    "correcta": 1,
+    "explicacion": "IRIA es la herramienta especializada en el análisis estático y dinámico de aplicaciones móviles para detectar comportamientos maliciosos o fugas de datos.",
+    "analisis_opciones": {
+      "B": "Correcta. IRIA = Aplicaciones móviles.",
+      "A": "MARTA es para ficheros generales, IRIA es específica para apps."
+    }
+  },
+  {
+    "pregunta": "75. La solución MONICA del CCN-CERT está diseñada para:",
+    "opciones": [
+      "A. Gestionar el inventario de hardware.",
+      "B. Actuar como una consola central de gestión de información y eventos de seguridad para centros de operaciones (SOC).",
+      "C. Cifrar las comunicaciones de radio.",
+      "D. Auditar servidores Apache."
+    ],
+    "correcta": 1,
+    "explicacion": "MONICA es una herramienta SIEM de código abierto (basada en ELK) adaptada por el CCN para las necesidades de la Administración.",
+    "analisis_opciones": {
+      "B": "Correcta. MONICA = SIEM operativo.",
+      "A": "Eso es EMMA."
+    }
+  },
+  {
+    "pregunta": "76. ¿Qué herramienta se utiliza para la detección de fugas de información y monitorización de la reputación online de un organismo?",
+    "opciones": [
+      "A. CARMEN.",
+      "B. ELENA.",
+      "C. REYES.",
+      "D. MARTA."
+    ],
+    "correcta": 1,
+    "explicacion": "ELENA vigila fuentes abiertas (OSINT) para detectar si se han filtrado datos del organismo en la red o si hay campañas de desinformación.",
+    "analisis_opciones": {
+      "B": "Correcta. ELENA = OSINT / Fugas de información externas.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "77. La herramienta PILAR tiene versiones reducidas para diferentes propósitos. ¿Cómo se llama la versión orientada a la autoevaluación rápida del ENS?",
+    "opciones": [
+      "A. PILAR Basic.",
+      "B. μPILAR (MicroPILAR).",
+      "C. PILAR Light.",
+      "D. PILAR Mini."
+    ],
+    "correcta": 1,
+    "explicacion": "MicroPILAR es una versión simplificada de PILAR diseñada para pequeñas organizaciones o para una primera aproximación al cumplimiento del ENS.",
+    "analisis_opciones": {
+      "B": "Correcta.",
+      "A": "Es otra versión, pero MicroPILAR es la respuesta estándar para autoevaluación."
+    }
+  },
+  {
+    "pregunta": "78. ¿Cuál es el papel de la herramienta MARTA en la respuesta ante incidentes?",
+    "opciones": [
+      "A. Recuperar archivos borrados.",
+      "B. Proporcionar un análisis avanzado y automático de ficheros sospechosos (Sandbox) para ver qué hacen realmente.",
+      "C. Cortar la conexión a Internet del PC afectado.",
+      "D. Enviar una alerta por SMS al responsable de seguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "MARTA ejecuta el archivo en un entorno seguro y genera un informe detallado de sus acciones (si intenta conectar a IPs externas, si cifra archivos, etc.).",
+    "analisis_opciones": {
+      "B": "Correcta. MARTA = Sandbox / Análisis de malware."
+    }
+  },
+  {
+    "pregunta": "79. La herramienta CARMEN es capaz de detectar APTs (Advanced Persistent Threats) basándose en:",
+    "opciones": [
+      "A. La marca del antivirus que usa el cliente.",
+      "B. Anomalías en el tráfico de red que no corresponden con patrones conocidos de usuarios legítimos.",
+      "C. El número de correos recibidos por minuto.",
+      "D. La ubicación física de los servidores."
+    ],
+    "correcta": 1,
+    "explicacion": "CARMEN se centra en el análisis de comportamiento de red para detectar intrusos que intentan pasar desapercibidos (movimientos laterales, exfiltración lenta).",
+    "analisis_opciones": {
+      "B": "Correcta. Análisis de anomalías de red."
+    }
+  },
+  {
+    "pregunta": "80. ¿Qué herramienta del CCN se encarga de auditar la seguridad de sitios web buscando vulnerabilidades comunes como SQLi o XSS?",
+    "opciones": [
+      "A. CLARA.",
+      "B. ALICIA.",
+      "C. IRIA.",
+      "D. LUCIA."
+    ],
+    "correcta": 1,
+    "explicacion": "ALICIA es la herramienta para el análisis de aplicaciones web y búsqueda de fallos de seguridad en el código y configuración del servidor web.",
+    "analisis_opciones": {
+      "B": "Correcta. ALICIA = Aplicaciones Web.",
+      "A": "CLARA es para el Sistema Operativo.",
+      "C": "IRIA es para Apps móviles."
+    }
+  },
+  {
+    "pregunta": "81. La herramienta LUCIA, además de la gestión de incidentes, es el nodo español de comunicación con:",
+    "opciones": [
+      "A. Google.",
+      "B. La red europea de CSIRTs y la plataforma MeliCERTes.",
+      "C. La Interpol.",
+      "D. Microsoft Update."
+    ],
+    "correcta": 1,
+    "explicacion": "LUCIA permite la coordinación nacional e internacional en la respuesta a incidentes de ciberseguridad a gran escala.",
+    "analisis_opciones": {
+      "B": "Correcta. Cooperación europea."
+    }
+  },
+  {
+    "pregunta": "82. ¿Cuál es la función de la herramienta ADA?",
+    "opciones": [
+      "A. Detectar ataques en tiempo real.",
+      "B. Realizar el seguimiento de los planes de adecuación al ENS y gestionar el cumplimiento de las medidas de seguridad.",
+      "C. Analizar correos fraudulentos.",
+      "D. Generar contraseñas seguras."
+    ],
+    "correcta": 1,
+    "explicacion": "ADA complementa a ANA, centrándose en el seguimiento de la implementación de las medidas de seguridad del Esquema Nacional de Seguridad.",
+    "analisis_opciones": {
+      "B": "Correcta. ADA = Adecuación al ENS."
+    }
+  },
+  {
+    "pregunta": "83. La herramienta AMPARO consiste en:",
+    "opciones": [
+      "A. Un software de cifrado de disco.",
+      "B. Un conjunto de guías, procedimientos y herramientas para la implantación del ENS en entidades locales.",
+      "C. Un firewall para ayuntamientos.",
+      "D. Un sistema de detección de intrusos Wi-Fi."
+    ],
+    "correcta": 1,
+    "explicacion": "AMPARO está específicamente diseñada para ayudar a las entidades locales (ayuntamientos, diputaciones) a cumplir con el ENS con recursos limitados.",
+    "analisis_opciones": {
+      "B": "Correcta. AMPARO = Entidades Locales / Puesto de trabajo seguro."
+    }
+  },
+  {
+    "pregunta": "84. ¿Qué herramienta del CCN-CERT está orientada a la detección de activos expuestos en Internet que podrían ser vulnerables?",
+    "opciones": [
+      "A. EMMA.",
+      "B. CARMEN.",
+      "C. EDGAR.",
+      "D. CLAUDIA."
+    ],
+    "correcta": 2,
+    "explicacion": "EDGAR realiza escaneos de la superficie de exposición externa de los organismos para identificar qué servicios están visibles en Internet y sus posibles riesgos.",
+    "analisis_opciones": {
+      "C": "Correcta. EDGAR = Exposición externa.",
+      "A": "EMMA es para visibilidad interna."
+    }
+  },
+  {
+    "pregunta": "85. La herramienta AURORA se utiliza para:",
+    "opciones": [
+      "A. Monitorizar el consumo eléctrico.",
+      "B. El análisis y detección de fraudes en los servicios de administración electrónica.",
+      "C. Realizar copias de seguridad en la nube.",
+      "D. Autenticar a los ciudadanos extranjeros."
+    ],
+    "correcta": 1,
+    "explicacion": "AURORA ayuda a identificar patrones de uso fraudulento o ataques contra las sedes electrónicas de los organismos públicos.",
+    "analisis_opciones": {
+      "B": "Correcta. AURORA = Fraude en e-Administración."
+    }
+  },
+  {
+    "pregunta": "86. ¿Cuál es el nombre de la herramienta del CCN para la gestión y análisis de logs en entornos Big Data?",
+    "opciones": [
+      "A. MONICA.",
+      "B. GLORIA.",
+      "C. REYES.",
+      "D. LUCIA."
+    ],
+    "correcta": 1,
+    "explicacion": "GLORIA utiliza tecnologías de Big Data para procesar los millones de eventos diarios que generan las administraciones públicas.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "87. ¿Cuál es la diferencia fundamental en el funcionamiento de un IDS (Intrusion Detection System) frente a un IPS (Intrusion Prevention System)?",
+    "opciones": [
+      "A. El IDS es software y el IPS es hardware.",
+      "B. El IDS actúa de forma pasiva enviando alertas, mientras que el IPS actúa de forma activa bloqueando el tráfico sospechoso en tiempo real.",
+      "C. El IDS solo analiza cabeceras IP y el IPS analiza el contenido (payload).",
+      "D. El IDS se coloca en línea (in-line) y el IPS fuera de banda (promiscuo)."
+    ],
+    "correcta": 1,
+    "explicacion": "El IDS es como una alarma que avisa si alguien entra (detección), mientras que el IPS es como un guarda de seguridad que además de ver al intruso, le impide el paso (prevención).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ambos pueden ser implementados en hardware o software.",
+      "B": "Correcta. La diferencia clave es la capacidad de reacción (activa vs pasiva).",
+      "C": "Incorrecta. Ambos pueden realizar inspección profunda de paquetes.",
+      "D": "Incorrecta. Es al revés: el IPS debe estar 'in-line' para poder cortar el tráfico."
+    }
+  },
+  {
+    "pregunta": "88. En una arquitectura de seguridad perimetral, ¿qué es una DMZ (Zona Desmilitarizada)?",
+    "opciones": [
+      "A. Un segmento de red aislado donde se ubican los servidores que deben ser accesibles desde Internet.",
+      "B. Una red donde no se aplican reglas de firewall.",
+      "C. El segmento de red donde se conectan los PCs de los empleados.",
+      "D. Un túnel cifrado entre dos sedes."
+    ],
+    "correcta": 0,
+    "explicacion": "La DMZ permite separar los servicios públicos (Web, Mail) de la red interna (intranet), de modo que si un servidor de la DMZ es comprometido, el atacante no tiene acceso directo a los datos internos.",
+    "analisis_opciones": {
+      "A": "Correcta. Proporciona una capa intermedia de seguridad.",
+      "B": "Incorrecta. La DMZ está fuertemente protegida por el firewall.",
+      "C": "Incorrecta. Esa es la zona de confianza o LAN.",
+      "D": "Incorrecta. Eso es una VPN."
+    }
+  },
+  {
+    "pregunta": "89. ¿Cómo se denomina al tipo de firewall que no solo filtra por IP y puerto, sino que mantiene una tabla con el estado de las conexiones activas?",
+    "opciones": [
+      "A. Packet Filter (Stateless).",
+      "B. Stateful Inspection Firewall.",
+      "C. Proxy de aplicación.",
+      "D. Firewall de Capa 1."
+    ],
+    "correcta": 1,
+    "explicacion": "Los firewalls de inspección de estado (Stateful) son más inteligentes: saben si un paquete entrante es una respuesta legítima a una petición que salió antes desde la red interna.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Estos analizan cada paquete de forma aislada.",
+      "B": "Correcta. Mantienen el contexto de la sesión.",
+      "C": "Incorrecta. Actúan a nivel de aplicación (Capa 7).",
+      "D": "Incorrecta. No existe tal término."
+    }
+  },
+  {
+    "pregunta": "90. Un sistema 'Honeypot' se utiliza en seguridad perimetral para:",
+    "opciones": [
+      "A. Acelerar la velocidad de navegación.",
+      "B. Atraer a los atacantes hacia un sistema señuelo para estudiar sus técnicas y proteger los sistemas reales.",
+      "C. Cifrar las bases de datos.",
+      "D. Sustituir al firewall principal."
+    ],
+    "correcta": 1,
+    "explicacion": "El Honeypot (tarro de miel) es una trampa diseñada para ser hackeada, permitiendo a los administradores obtener inteligencia sobre las amenazas.",
+    "analisis_opciones": {
+      "B": "Correcta. Es una medida proactiva de engaño."
+    }
+  },
+  {
+    "pregunta": "91. ¿Qué característica define a un Firewall de Próxima Generación (NGFW)?",
+    "opciones": [
+      "A. Que solo funciona con IPv6.",
+      "B. La integración en un solo dispositivo de filtrado de paquetes, IPS, control de aplicaciones y visibilidad de usuario.",
+      "C. Que no requiere configuración manual.",
+      "D. Que es exclusivamente una solución en la nube."
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia de los firewalls tradicionales, un NGFW entiende qué aplicaciones se están usando (ej: puede permitir Facebook pero bloquear los juegos de Facebook).",
+    "analisis_opciones": {
+      "B": "Correcta. Es una evolución del UTM con mayor foco en el análisis de capa de aplicación."
+    }
+  },
+  {
+    "pregunta": "92. En un IDS basado en firmas (Signature-based), la detección se produce cuando:",
+    "opciones": [
+      "A. El tráfico supera un ancho de banda determinado.",
+      "B. El tráfico coincide con un patrón o 'huella' de un ataque ya conocido almacenado en una base de datos.",
+      "C. El usuario se equivoca de contraseña tres veces.",
+      "D. Se conecta un nuevo dispositivo a la red."
+    ],
+    "correcta": 1,
+    "explicacion": "Funciona de forma similar a un antivirus: si el patrón de datos coincide con un ataque registrado, salta la alerta. Su limitación es que no detecta ataques 'día cero'.",
+    "analisis_opciones": {
+      "B": "Correcta. Basado en conocimiento previo."
+    }
+  },
+  {
+    "pregunta": "93. ¿Qué es un IDS basado en anomalías (Anomaly-based)?",
+    "opciones": [
+      "A. Un sistema que busca virus conocidos.",
+      "B. Un sistema que define un 'comportamiento normal' de la red y genera una alerta cuando el tráfico se desvía significativamente de esa línea base.",
+      "C. Un firewall que bloquea todas las IPs de otros países.",
+      "D. Un software que analiza el hardware del servidor."
+    ],
+    "correcta": 1,
+    "explicacion": "Es capaz de detectar ataques nuevos porque se fija en lo 'raro', no en lo 'conocido'. Sin embargo, suele generar más falsos positivos.",
+    "analisis_opciones": {
+      "B": "Correcta. Detección basada en comportamiento y estadística."
+    }
+  },
+  {
+    "pregunta": "94. La arquitectura de firewall 'Screened Subnet' se caracteriza por:",
+    "opciones": [
+      "A. Usar un solo router.",
+      "B. Utilizar dos firewalls (uno externo y uno interno) para crear una zona aislada (DMZ) entre ellos.",
+      "C. No tener acceso a Internet.",
+      "D. Estar basada íntegramente en software."
+    ],
+    "correcta": 1,
+    "explicacion": "Es la arquitectura más segura: el atacante tendría que comprometer dos firewalls distintos para llegar a los datos internos.",
+    "analisis_opciones": {
+      "B": "Correcta. Proporciona defensa en profundidad."
+    }
+  },
+  {
+    "pregunta": "95. ¿Qué significa la regla 'Deny All' (Denegación Implícita) al final de un conjunto de reglas de firewall?",
+    "opciones": [
+      "A. Que se permite todo el tráfico que no esté prohibido.",
+      "B. Que todo tráfico que no haya sido permitido explícitamente por una regla anterior será bloqueado por defecto.",
+      "C. Que el firewall está apagado.",
+      "D. Que no se puede navegar por Internet."
+    ],
+    "correcta": 1,
+    "explicacion": "Es el principio básico de seguridad: 'todo lo que no está permitido, está prohibido'.",
+    "analisis_opciones": {
+      "B": "Correcta. Es la configuración estándar de seguridad."
+    }
+  },
+  {
+    "pregunta": "96. Un Firewall de Nivel de Aplicación (Proxy Gateway) funciona en el nivel:",
+    "opciones": [
+      "A. 3 (Red).",
+      "B. 4 (Transporte).",
+      "C. 7 (Aplicación).",
+      "D. 2 (Enlace)."
+    ],
+    "correcta": 2,
+    "explicacion": "Al actuar en la capa 7, puede entender el contenido de los protocolos (HTTP, FTP) y tomar decisiones basadas en datos específicos de la aplicación.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "97. ¿Cuál de las siguientes es una herramienta de código abierto muy popular que puede funcionar como IDS y como IPS?",
+    "opciones": [
+      "A. Wireshark.",
+      "B. Snort.",
+      "C. Nmap.",
+      "D. Putty."
+    ],
+    "correcta": 1,
+    "explicacion": "Snort es el estándar de facto en detección de intrusos de código abierto, capaz de realizar análisis de tráfico en tiempo real y registro de paquetes.",
+    "analisis_opciones": {
+      "A": "Analizador de protocolos (Sniffer), no es IDS/IPS.",
+      "B": "Correcta.",
+      "C": "Escáner de red.",
+      "D": "Cliente SSH."
+    }
+  },
+  {
+    "pregunta": "98. ¿A qué se refiere el término 'WAF' (Web Application Firewall)?",
+    "opciones": [
+      "A. Un firewall para conexiones inalámbricas (Wi-Fi).",
+      "B. Un firewall especializado en proteger aplicaciones web frente a ataques como SQL Injection o XSS.",
+      "C. Un firewall que solo funciona con Windows.",
+      "D. Una marca de routers."
+    ],
+    "correcta": 1,
+    "explicacion": "El WAF analiza las peticiones HTTP/HTTPS con mucho más detalle que un firewall de red común para proteger portales y sedes electrónicas.",
+    "analisis_opciones": {
+      "B": "Correcta. Seguridad específica de Capa 7 para Web."
+    }
+  },
+  {
+    "pregunta": "99. El componente de un firewall encargado de comparar los paquetes con las reglas de seguridad se denomina:",
+    "opciones": [
+      "A. GUI.",
+      "B. Motor de Inspección o Inspección de Paquetes.",
+      "C. Base de datos SQL.",
+      "D. Servidor DNS."
+    ],
+    "correcta": 1,
+    "explicacion": "Es el núcleo lógico que decide si el paquete pasa o se descarta (DROP/REJECT).",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "100. ¿Qué diferencia hay entre una respuesta 'REJECT' y una respuesta 'DROP' en un firewall?",
+    "opciones": [
+      "A. REJECT es más lento.",
+      "B. DROP descarta el paquete sin avisar al emisor; REJECT descarta el paquete y envía un mensaje de error (ICMP) al emisor.",
+      "C. DROP es solo para virus.",
+      "D. No hay diferencia."
+    ],
+    "correcta": 1,
+    "explicacion": "DROP es más seguro porque no da pistas al atacante (el puerto parece 'invisible'). REJECT confirma que el firewall está ahí bloqueando.",
+    "analisis_opciones": {
+      "B": "Correcta. Invisibilidad vs Notificación."
+    }
+  },
+  {
+    "pregunta": "101. Un IDS que se instala directamente en un servidor para vigilar sus procesos y archivos locales se denomina:",
+    "opciones": [
+      "A. NIDS (Network IDS).",
+      "B. HIDS (Host-based IDS).",
+      "C. WAF.",
+      "D. Proxy."
+    ],
+    "correcta": 1,
+    "explicacion": "HIDS vigila el 'interior' del host (logs, integridad de archivos, llamadas al sistema). OSSEC es el ejemplo más famoso.",
+    "analisis_opciones": {
+      "B": "Correcta.",
+      "A": "Vigila el tráfico de red de todo un segmento."
+    }
+  },
+  {
+    "pregunta": "102. ¿Cuál es el riesgo de colocar un IPS con demasiados 'falsos positivos'?",
+    "opciones": [
+      "A. Que entrarán muchos virus.",
+      "B. Que se bloqueará tráfico legítimo de los usuarios, provocando una denegación de servicio interna.",
+      "C. Que el hardware se calentará demasiado.",
+      "D. Que las contraseñas dejarán de funcionar."
+    ],
+    "correcta": 1,
+    "explicacion": "Al ser un sistema activo (bloquea), un error del IPS 'corta' el trabajo real de la empresa.",
+    "analisis_opciones": {
+      "B": "Correcta. Impacto en la disponibilidad."
+    }
+  },
+  {
+    "pregunta": "103. En una arquitectura 'Dual-Homed Host', el firewall es:",
+    "opciones": [
+      "A. Un router con dos antenas.",
+      "B. Un ordenador o dispositivo con al menos dos interfaces de red físicas conectadas a redes distintas, con el reenvío de paquetes desactivado por defecto.",
+      "C. Un sistema que usa dos sistemas operativos a la vez.",
+      "D. Una red sin salida a Internet."
+    ],
+    "correcta": 1,
+    "explicacion": "Fuerza a que todo el tráfico pase por el software del firewall para ser analizado antes de saltar de una interfaz a otra.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "104. ¿Qué es el 'Bastian Host' (Host Bastión)?",
+    "opciones": [
+      "A. El servidor más rápido de la red.",
+      "B. Un sistema especialmente fortificado y diseñado para resistir ataques, ya que es el punto más expuesto de la red perimetral.",
+      "C. Un ordenador personal de un administrador.",
+      "D. Un tipo de cable blindado."
+    ],
+    "correcta": 1,
+    "explicacion": "Suelen ser los servidores DNS o Web que están en la DMZ; tienen el mínimo de servicios activos para reducir su superficie de ataque.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "105. El filtrado de contenido (Content Filtering) en un firewall/proxy sirve para:",
+    "opciones": [
+      "A. Medir el tiempo que el usuario está conectado.",
+      "B. Bloquear el acceso a sitios web por categorías (ej: juegos, redes sociales, contenido adulto).",
+      "C. Cambiar el formato de las imágenes.",
+      "D. Borrar el historial del navegador."
+    ],
+    "correcta": 1,
+    "explicacion": "Es una función típica de los UTM y Proxies para aplicar políticas de uso aceptable en la empresa.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "106. ¿Cuál es la ventaja de un NIDS (Network IDS) frente a un HIDS?",
+    "opciones": [
+      "A. Es más barato.",
+      "B. Puede proteger a toda una red con un solo sensor, analizando el tráfico que circula por el cable.",
+      "C. Analiza mejor los procesos internos de Windows.",
+      "D. No necesita electricidad."
+    ],
+    "correcta": 1,
+    "explicacion": "El NIDS ve lo que pasa 'entre' las máquinas, mientras que el HIDS solo ve lo que pasa 'dentro' de una máquina específica.",
+    "analisis_opciones": {
+      "B": "Correcta. Visibilidad global del segmento de red."
+    }
+  },
+  {
+    "pregunta": "107. ¿Qué protocolo de gestión se usa frecuentemente para que los firewalls envíen sus registros de eventos a un servidor central (SIEM)?",
+    "opciones": [
+      "A. HTTP.",
+      "B. Syslog.",
+      "C. FTP.",
+      "D. SMTP."
+    ],
+    "correcta": 1,
+    "explicacion": "Syslog (puerto 514 UDP/TCP) es el estándar universal para el envío de logs en dispositivos de red.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "108. Los Firewalls de 'Circuito a Nivel de Enlace' (Circuit-Level Gateways) trabajan validando:",
+    "opciones": [
+      "A. El contenido de los correos electrónicos.",
+      "B. El establecimiento de la sesión TCP (Handshake) antes de permitir el tráfico.",
+      "C. La dirección física MAC de la tarjeta de red.",
+      "D. El lenguaje de programación de la web."
+    ],
+    "correcta": 1,
+    "explicacion": "No inspeccionan los paquetes individualmente ni el contenido de aplicación; simplemente verifican que la sesión sea legítima.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "109. ¿Qué es un 'Ataque de Evasión' contra un IDS?",
+    "opciones": [
+      "A. Un ataque que rompe el hardware del IDS.",
+      "B. Una técnica utilizada por atacantes para modificar el tráfico de forma que el IDS no lo reconozca como malicioso, pero el destino final sí lo procese como tal.",
+      "C. Una forma de saltarse el firewall usando una VPN.",
+      "D. Apagar el monitor del administrador."
+    ],
+    "correcta": 1,
+    "explicacion": "Ejemplos son la fragmentación de paquetes o el cifrado del payload para que el IDS no pueda 'leer' el ataque.",
+    "analisis_opciones": {
+      "B": "Correcta. Engaño al sistema de detección."
+    }
+  },
+  {
+    "pregunta": "110. En una arquitectura de seguridad, ¿dónde se suele colocar el IPS?",
+    "opciones": [
+      "A. En el ordenador del director.",
+      "B. En serie (in-line) justo detrás del firewall externo para poder bloquear el tráfico malicioso antes de que entre.",
+      "C. Conectado a un puerto de espejo (SPAN) del switch para no molestar.",
+      "D. Fuera del edificio."
+    ],
+    "correcta": 1,
+    "explicacion": "Para que un IPS pueda prevenir, el tráfico DEBE pasar físicamente a través de él.",
+    "analisis_opciones": {
+      "B": "Correcta. Ubicación estratégica activa."
+    }
+  },
+  {
+    "pregunta": "111. ¿Qué herramienta de seguridad perimetral es la más adecuada para mitigar ataques de denegación de servicio distribuidos (DDoS)?",
+    "opciones": [
+      "A. Un antivirus local.",
+      "B. Un Firewall con capacidades específicas de mitigación anti-DDoS o servicios de limpieza en la nube.",
+      "C. Cambiar las contraseñas.",
+      "D. Desconectar el servidor DNS."
+    ],
+    "correcta": 1,
+    "explicacion": "Los ataques DDoS saturan por volumen; se necesitan dispositivos con gran capacidad de procesado o filtros en el ISP para frenarlos.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "112. En una VPN de Capa 2 (Nivel de Enlace), ¿cuál es el protocolo que permite encapsular tramas Ethernet para que viajen a través de una red IP?",
+    "opciones": [
+      "A. IPsec.",
+      "B. L2TP (Layer 2 Tunneling Protocol).",
+      "C. BGP.",
+      "D. TLS."
+    ],
+    "correcta": 1,
+    "explicacion": "L2TP es el estándar para túneles de Capa 2. No proporciona cifrado por sí mismo, por lo que casi siempre se combina con IPsec (L2TP/IPsec) para asegurar los datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. IPsec opera en la Capa 3 (Red).",
+      "B": "Correcta. Permite que la red remota parezca estar conectada al mismo switch.",
+      "C": "Incorrecta. Es un protocolo de enrutamiento.",
+      "D": "Incorrecta. Opera en capas superiores."
+    }
+  },
+  {
+    "pregunta": "113. ¿Cuál de los siguientes protocolos de VPN trabaja exclusivamente en la Capa 3 (Capa de Red) del modelo OSI?",
+    "opciones": [
+      "A. PPTP.",
+      "B. IPsec (Internet Protocol Security).",
+      "C. SSL/TLS.",
+      "D. SSH."
+    ],
+    "correcta": 1,
+    "explicacion": "IPsec protege y autentica los paquetes IP entre dos puntos. Al trabajar en Capa 3, es transparente para las aplicaciones y protege todo el tráfico que viaja entre las subredes.",
+    "analisis_opciones": {
+      "A": "Es de Capa 2.",
+      "B": "Correcta. Estándar de VPN de red.",
+      "C": "Es de Capa 4/7.",
+      "D": "Es de Capa 7."
+    }
+  },
+  {
+    "pregunta": "114. Las VPN basadas en SSL/TLS (como OpenVPN o AnyConnect) se consideran de Capa de Transporte/Aplicación porque:",
+    "opciones": [
+      "A. Son más lentas que las de Capa 3.",
+      "B. Utilizan el navegador o un cliente específico para establecer el túnel sobre puertos comunes como el TCP 443.",
+      "C. No permiten el acceso a archivos del servidor.",
+      "D. Solo funcionan con cables de fibra óptica."
+    ],
+    "correcta": 1,
+    "explicacion": "Su gran ventaja es que atraviesan firewalls fácilmente (porque parecen tráfico web normal) y no requieren configurar parámetros complejos de red en el cliente.",
+    "analisis_opciones": {
+      "B": "Correcta. Es la definición de Web-VPN o VPN SSL."
+    }
+  },
+  {
+    "pregunta": "115. ¿Qué componente de IPsec se encarga de la negociación de los parámetros de seguridad y el intercambio de claves de forma automática?",
+    "opciones": [
+      "A. ESP (Encapsulating Security Payload).",
+      "B. AH (Authentication Header).",
+      "C. IKE (Internet Key Exchange).",
+      "D. L2TP."
+    ],
+    "correcta": 2,
+    "explicacion": "IKE es el 'apretón de manos' de IPsec. Antes de enviar datos, los dos extremos acuerdan qué algoritmos de cifrado usarán mediante IKE.",
+    "analisis_opciones": {
+      "A": "Proporciona cifrado e integridad de datos.",
+      "B": "Proporciona integridad y autenticación, pero NO cifrado.",
+      "C": "Correcta. Gestión de claves.",
+      "D": "Es un protocolo de túnel ajeno a IPsec pero complementario."
+    }
+  },
+  {
+    "pregunta": "116. En el contexto de IPsec, ¿cuál es la principal diferencia entre el 'Modo Transporte' y el 'Modo Túnel'?",
+    "opciones": [
+      "A. El modo transporte es más seguro.",
+      "B. En el modo transporte solo se cifra la carga útil (datos) del paquete IP; en el modo túnel se cifra el paquete IP original completo y se le añade una nueva cabecera IP.",
+      "C. El modo túnel solo sirve para IPv6.",
+      "D. El modo transporte se usa para conectar dos sedes (Site-to-Site)."
+    ],
+    "correcta": 1,
+    "explicacion": "El modo Túnel es el estándar para VPNs entre oficinas porque oculta las direcciones IP internas originales. El modo Transporte se usa más en comunicaciones directas host a host.",
+    "analisis_opciones": {
+      "B": "Correcta. El modo túnel encapsula un paquete dentro de otro."
+    }
+  },
+  {
+    "pregunta": "117. ¿Qué protocolo de VPN fue desarrollado por Microsoft y utiliza el puerto TCP 1723 junto con el protocolo GRE?",
+    "opciones": [
+      "A. L2TP.",
+      "B. PPTP (Point-to-Point Tunneling Protocol).",
+      "C. OpenVPN.",
+      "D. WireGuard."
+    ],
+    "correcta": 1,
+    "explicacion": "PPTP es un protocolo antiguo de Capa 2. Aunque es muy fácil de configurar, hoy se considera poco seguro y ha sido sustituido por L2TP/IPsec o VPNs SSL.",
+    "analisis_opciones": {
+      "B": "Correcta. Clásico de entornos Windows antiguos."
+    }
+  },
+  {
+    "pregunta": "118. Respecto a la seguridad en el puesto de usuario, ¿qué significa el principio de 'Privilegio Mínimo'?",
+    "opciones": [
+      "A. Que el usuario no debe tener sueldo.",
+      "B. Que cada usuario debe tener únicamente los permisos estrictamente necesarios para realizar sus tareas laborales.",
+      "C. Que todos los usuarios deben ser administradores por si acaso.",
+      "D. Que solo el director tiene contraseña."
+    ],
+    "correcta": 1,
+    "explicacion": "Si un usuario solo necesita leer documentos, no debe tener permiso para instalar programas o borrar bases de datos. Así, si su cuenta es hackeada, el daño se limita.",
+    "analisis_opciones": {
+      "B": "Correcta. Medida fundamental de seguridad operativa."
+    }
+  },
+  {
+    "pregunta": "119. ¿Cuál es la función principal de una solución EDR (Endpoint Detection and Response) en el puesto de usuario?",
+    "opciones": [
+      "A. Hacer copias de seguridad cada hora.",
+      "B. Monitorizar de forma continua el puesto para detectar y responder ante amenazas avanzadas que los antivirus tradicionales no ven.",
+      "C. Limpiar el polvo de la CPU.",
+      "D. Controlar el horario de entrada y salida."
+    ],
+    "correcta": 1,
+    "explicacion": "El EDR (como la herramienta CLAUDIA del CCN) analiza comportamientos sospechosos (ej: un Word intentando ejecutar código PowerShell) para detener ataques dirigidos.",
+    "analisis_opciones": {
+      "B": "Correcta. Evolución inteligente del antivirus."
+    }
+  },
+  {
+    "pregunta": "120. ¿Qué medida de seguridad técnica impide que un usuario pueda extraer información sensible mediante el uso de memorias USB no autorizadas?",
+    "opciones": [
+      "A. DLP (Data Loss Prevention) / Control de dispositivos.",
+      "B. Desfragmentador de disco.",
+      "C. Cambiar el fondo de pantalla.",
+      "D. Usar un teclado inalámbrico."
+    ],
+    "correcta": 0,
+    "explicacion": "El control de dispositivos (Device Control) permite bloquear los puertos USB o permitir solo aquellos pendrives cifrados corporativos.",
+    "analisis_opciones": {
+      "A": "Correcta. Evita la exfiltración de datos física.",
+      "B": "Incorrecta. Es para mantenimiento de disco."
+    }
+  },
+  {
+    "pregunta": "121. La técnica de 'Cifrado de Disco Completo' (como BitLocker) sirve primordialmente para:",
+    "opciones": [
+      "A. Que el ordenador vaya más rápido.",
+      "B. Proteger los datos en caso de robo o pérdida física del dispositivo.",
+      "C. Evitar que entren virus de Internet.",
+      "D. Comprimir los archivos para ahorrar espacio."
+    ],
+    "correcta": 1,
+    "explicacion": "Si roban un portátil, sin la clave de BitLocker el ladrón no podrá leer ni un solo archivo aunque saque el disco duro y lo conecte a otro PC.",
+    "analisis_opciones": {
+      "B": "Correcta. Seguridad para el hardware móvil."
+    }
+  },
+  {
+    "pregunta": "122. En una VPN SSL, el acceso 'Clientless' (sin cliente) permite al usuario acceder a recursos internos a través de:",
+    "opciones": [
+      "A. Una llamada telefónica.",
+      "B. Un navegador web estándar (portal web).",
+      "C. Una carta certificada.",
+      "D. Una conexión Wi-Fi abierta."
+    ],
+    "correcta": 1,
+    "explicacion": "El usuario entra en una URL, se identifica y ve sus aplicaciones dentro del navegador sin instalar nada. Es ideal para equipos externos o personales.",
+    "analisis_opciones": {
+      "B": "Correcta. Es la forma más sencilla de VPN."
+    }
+  },
+  {
+    "pregunta": "123. ¿Qué es el 'Split Tunneling' en una conexión VPN?",
+    "opciones": [
+      "A. Cuando el cable de red se rompe en dos.",
+      "B. Una configuración que permite enviar el tráfico de la empresa por la VPN y el tráfico de Internet general por la conexión local del usuario simultáneamente.",
+      "C. Una técnica para hackear redes Wi-Fi.",
+      "D. Un tipo de cifrado doble."
+    ],
+    "correcta": 1,
+    "explicacion": "Ahorra ancho de banda a la empresa (el usuario no gasta el internet de la oficina para ver YouTube), pero es menos seguro porque el PC está expuesto a Internet directamente a la vez.",
+    "analisis_opciones": {
+      "B": "Correcta. Túnel dividido."
+    }
+  },
+  {
+    "pregunta": "124. ¿Cuál de estos protocolos se considera el sucesor moderno y más eficiente de IPsec y OpenVPN para crear VPNs rápidas y simples?",
+    "opciones": [
+      "A. Telnet.",
+      "B. WireGuard.",
+      "C. Gopher.",
+      "D. NetBIOS."
+    ],
+    "correcta": 1,
+    "explicacion": "WireGuard es muy ligero, usa criptografía de última generación y tiene mucho menos código que sus competidores, lo que lo hace más fácil de auditar.",
+    "analisis_opciones": {
+      "B": "Correcta. Tendencia actual en VPNs."
+    }
+  },
+  {
+    "pregunta": "125. Para asegurar que el sistema operativo de un puesto de usuario no tenga vulnerabilidades conocidas, la medida más crítica es:",
+    "opciones": [
+      "A. Cambiar el monitor.",
+      "B. La Gestión de Parches (Patch Management) y actualizaciones automáticas.",
+      "C. Apagar el equipo por las noches.",
+      "D. Usar un ratón con cable."
+    ],
+    "correcta": 1,
+    "explicacion": "La mayoría de ataques aprovechan fallos que ya tienen solución. Mantener Windows/Linux actualizado es la defensa número uno.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "126. ¿Qué función tiene la cabecera 'AH' (Authentication Header) en el protocolo IPsec?",
+    "opciones": [
+      "A. Cifrar los datos para que nadie los lea.",
+      "B. Garantizar la integridad de los datos y la autenticidad del origen, pero sin cifrar el contenido.",
+      "C. Comprimir el paquete IP.",
+      "D. Cambiar la dirección IP de origen."
+    ],
+    "correcta": 1,
+    "explicacion": "AH asegura que el paquete no ha sido modificado por el camino, pero si alguien lo intercepta puede leer lo que hay dentro.",
+    "analisis_opciones": {
+      "B": "Correcta. Integridad sí, Confidencialidad no."
+    }
+  },
+  {
+    "pregunta": "127. ¿Qué es un 'Portal Cautivo' en el contexto de seguridad de acceso?",
+    "opciones": [
+      "A. Un sitio web para presos.",
+      "B. Una página web que se muestra al usuario antes de permitirle el acceso total a una red (típico en Wi-Fis de hoteles o acceso remoto).",
+      "C. Un firewall que no deja salir a nadie.",
+      "D. Un virus que secuestra el navegador."
+    ],
+    "correcta": 1,
+    "explicacion": "Obliga a identificarse o aceptar condiciones antes de navegar.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "128. En la seguridad del puesto de trabajo, el concepto de 'Bastionado' (Hardening) consiste en:",
+    "opciones": [
+      "A. Poner una caja de metal al ordenador.",
+      "B. Desactivar todos los servicios, puertos y aplicaciones innecesarias para reducir la superficie de exposición ante ataques.",
+      "C. Instalar todos los programas posibles.",
+      "D. Usar contraseñas de solo números."
+    ],
+    "correcta": 1,
+    "explicacion": "Si un servicio no se usa, se apaga. Si un puerto no hace falta, se cierra. Menos funciones = menos puntos de entrada para el hacker.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "129. El protocolo SSTP (Secure Socket Tunneling Protocol) es una tecnología VPN de Microsoft que utiliza:",
+    "opciones": [
+      "A. El puerto UDP 500.",
+      "B. Un túnel HTTPS (puerto 443 TCP) para encapsular tráfico de Capa 2.",
+      "C. Un cable serie.",
+      "D. Satélites militares."
+    ],
+    "correcta": 1,
+    "explicacion": "Al usar el puerto 443, SSTP puede atravesar casi cualquier firewall o proxy que permita navegación web.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "130. ¿Qué protocolo se utiliza habitualmente para el control de acceso a la red (NAC) basado en puertos, obligando al usuario a autenticarse antes de que el switch le dé conexión física?",
+    "opciones": [
+      "A. IEEE 802.11.",
+      "B. IEEE 802.1X.",
+      "C. IEEE 802.3.",
+      "D. HTTP."
+    ],
+    "correcta": 1,
+    "explicacion": "802.1X es el estándar para control de acceso basado en puertos. Si no te identificas (vía RADIUS), el switch mantiene tu puerto 'cerrado'.",
+    "analisis_opciones": {
+      "B": "Correcta.",
+      "A": "Es Wi-Fi.",
+      "C": "Es Ethernet básico."
+    }
+  },
+  {
+    "pregunta": "131. El uso de la 'Firma Electrónica' en el puesto de usuario garantiza:",
+    "opciones": [
+      "A. Que el ordenador no tenga virus.",
+      "B. La autenticidad del emisor, la integridad del documento y el no repudio.",
+      "C. Que el internet vaya más rápido.",
+      "D. Que el documento se borre solo."
+    ],
+    "correcta": 1,
+    "explicacion": "La firma digital vincula al autor con el mensaje de forma legal y técnica.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "132. ¿Qué tecnología permite gestionar de forma centralizada la seguridad de los dispositivos móviles (smartphones/tablets) de la organización?",
+    "opciones": [
+      "A. BIOS.",
+      "B. MDM (Mobile Device Management).",
+      "C. GPS.",
+      "D. RAM."
+    ],
+    "correcta": 1,
+    "explicacion": "Un MDM (como la nueva herramienta HODIO del CCN) permite borrar un móvil de empresa a distancia si se pierde.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "133. En la Guía CCN-STIC 836, ¿cuál es una recomendación VIP para accesos remotos?",
+    "opciones": [
+      "A. No usar contraseñas.",
+      "B. Emplear siempre la autenticación de doble factor (2FA/MFA).",
+      "C. Dejar la VPN conectada siempre.",
+      "D. Usar Wi-Fis públicas sin protección."
+    ],
+    "correcta": 1,
+    "explicacion": "El segundo factor (un código al móvil o tarjeta) es la medida más eficaz para evitar que una contraseña robada permita entrar en la red de la administración.",
+    "analisis_opciones": {
+      "B": "Correcta. Recomendación fundamental del ENS."
+    }
+  },
+  {
+    "pregunta": "134. ¿Qué significa el término 'BYOD' (Bring Your Own Device) y por qué es un reto de seguridad?",
+    "opciones": [
+      "A. Comprar ordenadores nuevos.",
+      "B. La práctica de que los empleados usen sus dispositivos personales para trabajar, lo que dificulta el control de la seguridad corporativa.",
+      "C. Instalar un servidor en casa.",
+      "D. Usar solo dispositivos de marca Apple."
+    ],
+    "correcta": 1,
+    "explicacion": "Si el dispositivo es del usuario, la empresa tiene difícil obligar a poner antivirus o parches, creando un 'agujero' de seguridad.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "135. ¿Cuál es el puerto estándar que utiliza IKE para la negociación de túneles IPsec?",
+    "opciones": [
+      "A. 80 TCP.",
+      "B. 500 UDP.",
+      "C. 443 TCP.",
+      "D. 22 TCP."
+    ],
+    "correcta": 1,
+    "explicacion": "IKE utiliza el puerto 500 UDP para el intercambio de claves inicial.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "136. Finalmente, ¿qué medida en el puesto de usuario evita que un atacante adivine una contraseña por fuerza bruta?",
+    "opciones": [
+      "A. Cambiar el ratón.",
+      "B. Políticas de bloqueo de cuenta tras X intentos fallidos.",
+      "C. Usar una pantalla más grande.",
+      "D. Instalar más memoria RAM."
+    ],
+    "correcta": 1,
+    "explicacion": "Si tras 5 intentos el usuario queda bloqueado 30 minutos, el atacante no puede probar miles de combinaciones.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  }
+]
+
+
+

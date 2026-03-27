@@ -1,0 +1,1588 @@
+[
+  {
+    "pregunta": "323. ¿Desde línea de comandos, en Windows 11, con los privilegios adecuados, cómo podemos cambiar la contraseña de un usuario llamado 'pepe'?",
+    "opciones": [
+      "a) net user --change pepe",
+      "b) net user --passwd pepe",
+      "c) net user pepe",
+      "d) net user pepe *"
+    ],
+    "correcta": 3,
+    "explicacion": "El comando 'net user' es la herramienta clásica de consola en Windows para gestionar cuentas. Al añadir el asterisco (*), el sistema solicita la nueva contraseña de forma segura (sin mostrar los caracteres).",
+    "analisis_opciones": {
+      "a": "Incorrecta. El flag --change no existe en el comando net user.",
+      "b": "Incorrecta. El flag --passwd no es sintaxis de Windows.",
+      "c": "Incorrecta. Este comando solo muestra la información del usuario pepe.",
+      "d": "Correcta. Es la sintaxis estándar para cambiar contraseñas desde CMD/PowerShell."
+    }
+  },
+  {
+    "pregunta": "324. En un entorno Windows ¿Qué comando utilizaríamos para gestionar las particiones de un disco duro?",
+    "opciones": [
+      "a) fdisk.",
+      "b) format.",
+      "c) msconfig.",
+      "d) diskpart."
+    ],
+    "correcta": 3,
+    "explicacion": "Aunque la pregunta original de tu lista no incluía 'diskpart' (posible error de transcripción), en Windows moderno se usa 'diskpart' para gestionar particiones. 'fdisk' era de sistemas MS-DOS/9x.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Obsoleto en versiones actuales de Windows NT/10/11.",
+      "b": "Incorrecta. Sirve para dar formato a una partición, no para gestionarlas (crear/borrar).",
+      "c": "Incorrecta. Configuración de inicio del sistema.",
+      "d": "Correcta. Es el comando actual de línea de comandos para gestión de discos."
+    }
+  },
+  {
+    "pregunta": "325. En Tecnologías de la Información, se habla del modo promiscuo en el contexto:",
+    "opciones": [
+      "a) Ejecución de operaciones sobre bases de datos desde Java.",
+      "b) Servidores all-purpose o multipropósito.",
+      "c) Comunicaciones con certificado electrónico.",
+      "d) Entornos de redes compartidas."
+    ],
+    "correcta": 3,
+    "explicacion": "El modo promiscuo permite a una tarjeta de red (NIC) capturar todo el tráfico que circula por el segmento de red, no solo el dirigido a su propia dirección MAC.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta. Es el modo necesario para sniffers y analizadores de tráfico."
+    }
+  },
+  {
+    "pregunta": "326. ¿Para qué sirve el protocolo SNMP?",
+    "opciones": [
+      "a) Para el envío de correos electrónicos.",
+      "b) Para comunicar información de gestión de la red entre las estaciones de gestión y los agentes.",
+      "c) Para el establecimiento de seguridad entre dos terminales.",
+      "d) Para envío de ficheros entre un servidor y un cliente."
+    ],
+    "correcta": 1,
+    "explicacion": "SNMP (Simple Network Management Protocol) es el estándar para monitorizar y gestionar dispositivos (routers, switches, servidores) en una red TCP/IP.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso es SMTP.",
+      "b": "Correcta. Define la comunicación Gestor-Agente.",
+      "c": "Incorrecta. Podría referirse a IPsec o TLS.",
+      "d": "Incorrecta. Eso es FTP o TFTP."
+    }
+  },
+  {
+    "pregunta": "327. La herramienta gratuita y de código libre para controlar el tráfico de red y cuyo principal objetivo es rastrear eventos de seguridad que pueden indicar un ataque o intrusión es:",
+    "opciones": [
+      "a) LAPs",
+      "b) Yara",
+      "c) Spring",
+      "d) Suricata"
+    ],
+    "correcta": 3,
+    "explicacion": "Suricata es un IDS/IPS (Sistema de Detección/Prevención de Intrusiones) de código abierto muy potente y actual.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Gestión de contraseñas de administrador local en Windows.",
+      "b": "Incorrecta. Herramienta para identificar malware basada en patrones.",
+      "c": "Incorrecta. Framework de desarrollo Java.",
+      "d": "Correcta. Es un monitor de red orientado a seguridad."
+    }
+  },
+  {
+    "pregunta": "328. ¿Cuál es el comando usado por el administrador SNMP que se utiliza para recuperar datos voluminosos de una tabla MIB grande?",
+    "opciones": [
+      "a) GET",
+      "b) GET BULK",
+      "c) GET NEXT",
+      "d) GET RESPONSE"
+    ],
+    "correcta": 1,
+    "explicacion": "Introducido en SNMPv2, GET-BULK permite solicitar grandes cantidades de datos en una sola respuesta, minimizando los intercambios de red.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Recupera un solo valor.",
+      "b": "Correcta. Optimiza la transferencia de tablas grandes.",
+      "c": "Incorrecta. Recupera el siguiente objeto en el árbol.",
+      "d": "Incorrecta. Es el tipo de mensaje de respuesta del agente."
+    }
+  },
+  {
+    "pregunta": "329. En lo concerniente a la administración de Redes de Área Local, es cierto que la función de contabilidad (Accounting):",
+    "opciones": [
+      "a) Provee de datos concernientes al uso de la red como el tiempo de conexión y terminación.",
+      "b) Se ocupa de la detección de fallos y diagnóstico del problema.",
+      "c) Comprende la planificación, la programación de eventos e instalaciones.",
+      "d) Comprende la identificación y autentificación del usuario."
+    ],
+    "correcta": 0,
+    "explicacion": "Dentro de FCAPS, la 'A' de Accounting (Contabilidad) registra el uso de recursos para fines de facturación o estadísticas de utilización.",
+    "analisis_opciones": {
+      "a": "Correcta. Registra métricas de uso.",
+      "b": "Incorrecta. Eso es Fault Management (F).",
+      "c": "Incorrecta. Eso es Configuration Management (C).",
+      "d": "Incorrecta. Es parte de la seguridad (Security Management - S)."
+    }
+  },
+  {
+    "pregunta": "330. ¿Cuál es la última versión estándar del protocolo de administración de red SNMP?",
+    "opciones": [
+      "a) SNMP v2",
+      "b) SNMP v3",
+      "c) SNMP v4",
+      "d) SNMP v5"
+    ],
+    "correcta": 1,
+    "explicacion": "SNMPv3 es la versión actual y recomendada, ya que añade cifrado y autenticación fuerte.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Versión antigua insegura.",
+      "b": "Correcta. Es el estándar vigente definido por la IETF.",
+      "c": "Incorrecta. No existe como estándar.",
+      "d": "Incorrecta. No existe."
+    }
+  },
+  {
+    "pregunta": "331. Señale cuál de las siguientes NO es una Protocol Data Unit (PDU) del protocolo SNMP v2/v3:",
+    "opciones": [
+      "a) GETREQUEST PDU",
+      "b) SETRESPONSE PDU",
+      "c) RESPONSE PDU",
+      "d) INFORMREQUEST PDU"
+    ],
+    "correcta": 1,
+    "explicacion": "En SNMPv2/v3, la PDU de respuesta es simplemente 'RESPONSE PDU' (se usa tanto para responder a GET como a SET). 'SETRESPONSE' no es el nombre técnico correcto.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es válida.",
+      "b": "Correcta. No existe con ese nombre exacto.",
+      "c": "Incorrecta. Es la PDU de respuesta genérica.",
+      "d": "Incorrecta. Es la PDU para notificaciones que requieren confirmación."
+    }
+  },
+  {
+    "pregunta": "332. Si trabajamos con sistemas Windows y se ha configurado la obtención automática de direcciones IP (DHCP), ¿cómo podemos saber la IP concreta asignada?",
+    "opciones": [
+      "a) Solo con privilegios de administrador.",
+      "b) Accediendo a la configuración TCP/IP por interfaz gráfica.",
+      "c) A través de la consola cmd con el comando ipconfig.",
+      "d) A través de la consola cmd con el comando tracert /ip."
+    ],
+    "correcta": 2,
+    "explicacion": "ipconfig es el comando básico de red en Windows para visualizar la configuración de las interfaces.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Un usuario normal puede ejecutar ipconfig básico.",
+      "b": "Incorrecta. La interfaz gráfica suele mostrar 'DHCP habilitado', pero no siempre el dato actual tan rápido como la consola.",
+      "c": "Correcta. Proporciona la IP, máscara y puerta de enlace.",
+      "d": "Incorrecta. tracert sirve para seguir la ruta de saltos hacia un destino."
+    }
+  },
+  {
+    "pregunta": "333. De entre los siguientes, ¿cuál es un protocolo de gestión de redes?",
+    "opciones": [
+      "a) OCSP",
+      "b) SNMP",
+      "c) SMTP",
+      "d) RFID"
+    ],
+    "correcta": 1,
+    "explicacion": "SNMP es el protocolo específico para la gestión de dispositivos de red.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Protocolo de estado de certificados digitales.",
+      "b": "Correcta. Simple Network Management Protocol.",
+      "c": "Incorrecta. Protocolo de correo electrónico.",
+      "d": "Incorrecta. Tecnología de identificación por radiofrecuencia."
+    }
+  },
+  {
+    "pregunta": "334. ¿Cómo sería la forma apropiada de agrupar los usuarios de una red de área local en el repositorio central de cara a una gestión eficiente?",
+    "opciones": [
+      "a) Según su antigüedad.",
+      "b) Según su departamento.",
+      "c) Según su categoría.",
+      "d) Según su jornada."
+    ],
+    "correcta": 1,
+    "explicacion": "Agrupar por departamento (funcionalidad) permite aplicar políticas de grupo (GPO) y permisos de archivos de forma lógica y coherente.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Facilita la administración basada en roles y necesidades de acceso.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "335. SNMP (Simple Network Management Protocol), maneja los siguientes tipos de datos:",
+    "opciones": [
+      "a) Datos simples.",
+      "b) Datos simples y datos estructurados.",
+      "c) Datos simples, datos estructurados y datos etiquetados.",
+      "d) Datos encadenados."
+    ],
+    "correcta": 2,
+    "explicacion": "Basado en ASN.1, SNMP maneja tipos simples (enteros, strings) y estructurados (tablas/secuencias), además de estar etiquetados por su OID.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Incompleta.",
+      "b": "Incorrecta. Incompleta.",
+      "c": "Correcta. Refleja la complejidad de la MIB.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "336. ¿Qué comando se debe ejecutar para mostrar un listado de los servicios en ejecución en un ordenador con Windows 10?",
+    "opciones": [
+      "a) Net view services",
+      "b) Net start process",
+      "c) Net start",
+      "d) Net start all"
+    ],
+    "correcta": 2,
+    "explicacion": "El comando 'net start' ejecutado sin argumentos devuelve una lista de todos los servicios que están iniciados en ese momento.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Net view es para recursos de red compartidos.",
+      "b": "Incorrecta.",
+      "c": "Correcta. Comando rápido de consola para verificar servicios.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "337. ¿Cuál de los siguientes acrónimos NO se corresponde con un protocolo de gestión de dispositivos?",
+    "opciones": [
+      "a) CMIP.",
+      "b) SNMP.",
+      "c) SMS.",
+      "d) CMOT."
+    ],
+    "correcta": 2,
+    "explicacion": "SMS (Short Message Service) es para telefonía móvil. CMIP, SNMP y CMOT (CMIP over TCP) son protocolos de gestión de red.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Estándar OSI de gestión.",
+      "b": "Incorrecta. Estándar TCP/IP de gestión.",
+      "c": "Correcta. Es el protocolo de mensajes de texto.",
+      "d": "Incorrecta. Implementación de CMIP sobre TCP/IP."
+    }
+  },
+  {
+    "pregunta": "338. De los siguientes protocolos, ¿cuál se utiliza para administrar dispositivos de una red?",
+    "opciones": [
+      "a) SMTP",
+      "b) DNS",
+      "c) FTP",
+      "d) CMIP"
+    ],
+    "correcta": 3,
+    "explicacion": "CMIP (Common Management Information Protocol) es el equivalente de la pila OSI al SNMP de TCP/IP para administración de red.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Correo.",
+      "b": "Incorrecta. Resolución de nombres.",
+      "c": "Incorrecta. Transferencia de ficheros.",
+      "d": "Correcta. Protocolo de gestión."
+    }
+  },
+  {
+    "pregunta": "339. Para gestionar los dispositivos de una LAN es necesario disponer de herramientas de gestión de red. Indique cuál NO es una característica de estas herramientas:",
+    "opciones": [
+      "a) Análisis de tráfico.",
+      "b) Monitorización de elementos de red, con avisos y alertas.",
+      "c) Gestión remota de elementos de electrónica de red.",
+      "d) Directorio corporativo de usuarios."
+    ],
+    "correcta": 3,
+    "explicacion": "El directorio corporativo (LDAP/AD) es una herramienta de administración de identidades, no una herramienta de gestión de red (tráfico/electrónica).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es fundamental.",
+      "b": "Incorrecta. Es fundamental.",
+      "c": "Incorrecta. Es fundamental.",
+      "d": "Correcta. Es una herramienta de gestión de usuarios."
+    }
+  },
+  {
+    "pregunta": "340. SNMP es un protocolo de gestión de dispositivos de red que significa:",
+    "opciones": [
+      "a) Standard Network Manipulation Protocol.",
+      "b) Simple Network Manipulation Protocol.",
+      "c) Standard Network Management Protocol.",
+      "d) Simple Network Management Protocol."
+    ],
+    "correcta": 3,
+    "explicacion": "Definición oficial de las siglas SNMP.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta. Simple Network Management Protocol."
+    }
+  },
+  {
+    "pregunta": "341. ¿Cuál de las siguientes operaciones es de SNMPv2?",
+    "opciones": [
+      "a) Getbulk.",
+      "b) Get",
+      "c) Trap.",
+      "d) Set."
+    ],
+    "correcta": 0,
+    "explicacion": "Get-Bulk fue la gran novedad de SNMPv2 para mejorar la eficiencia en la recuperación de tablas.",
+    "analisis_opciones": {
+      "a": "Correcta. Operación específica de v2 y v3.",
+      "b": "Incorrecta. Ya existía en v1.",
+      "c": "Incorrecta. Ya existía en v1.",
+      "d": "Incorrecta. Ya existía en v1."
+    }
+  },
+  {
+    "pregunta": "342. ¿A qué capa del modelo TCP / IP pertenece el protocolo SNMP?",
+    "opciones": [
+      "a) Aplicación.",
+      "b) Transporte.",
+      "c) Sesión.",
+      "d) Interred."
+    ],
+    "correcta": 0,
+    "explicacion": "SNMP es un protocolo de nivel 7 (OSI) o capa de aplicación (TCP/IP), que utiliza UDP como transporte.",
+    "analisis_opciones": {
+      "a": "Correcta. Se sitúa en la capa superior de la pila.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "343. Indique cuál de las siguientes herramientas de monitorización de red se puede usar en sistemas Windows, Linux y OS X:",
+    "opciones": [
+      "a) Invigilator Net Guard.",
+      "b) Citrix Online Services.",
+      "c) Mozilla.",
+      "d) Wireshark."
+    ],
+    "correcta": 3,
+    "explicacion": "Wireshark es el analizador de protocolos (sniffer) multiplataforma más famoso del mundo.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta. Es un navegador web.",
+      "d": "Correcta. Es libre y compatible con todos los sistemas indicados."
+    }
+  },
+  {
+    "pregunta": "344. El protocolo de gestión de red SNMP:",
+    "opciones": [
+      "a) Solo permite monitorizar dispositivos, no gestionarlos.",
+      "b) Un TRAP SNMP es una comunicación asíncrona por la que un agente notifica un evento significativo.",
+      "c) Incorpora en su versión 1 el encriptado de la información.",
+      "d) Utiliza únicamente como protocolo de transporte TCP."
+    ],
+    "correcta": 1,
+    "explicacion": "Un TRAP es un aviso que envía el dispositivo al gestor sin que este se lo haya pedido (ej. un puerto que cae).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Permite modificar estados mediante SET.",
+      "b": "Correcta. Definición de TRAP.",
+      "c": "Incorrecta. v1 no tiene cifrado.",
+      "d": "Incorrecta. Utiliza principalmente UDP (puertos 161 y 162)."
+    }
+  },
+  {
+    "pregunta": "345. En relación al protocolo Simple Network Management Protocol (SNMP), señale la afirmación VERDADERA:",
+    "opciones": [
+      "a) La última versión definida es la versión 5.",
+      "b) Fue estandarizado por la ITU-T.",
+      "c) La versión 3 del protocolo permite el uso de AES.",
+      "d) Los puertos comúnmente utilizados son el 20 y el 21."
+    ],
+    "correcta": 2,
+    "explicacion": "SNMPv3 introdujo el modelo de seguridad USM que permite cifrado fuerte como AES y autenticación con HMAC-SHA.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es la v3.",
+      "b": "Incorrecta. Es de la IETF.",
+      "c": "Correcta. Soporta cifrado moderno para la gestión segura.",
+      "d": "Incorrecta. Esos son de FTP. SNMP usa 161/162."
+    }
+  },
+  {
+    "pregunta": "346. ¿Cuál de entre los siguientes es un protocolo específico de gestión de redes?",
+    "opciones": [
+      "a) SMTP.",
+      "b) SNMP.",
+      "c) FTP.",
+      "d) http."
+    ],
+    "correcta": 1,
+    "explicacion": "SNMP es el protocolo de gestión.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "347. Nagios se basa en el protocolo:",
+    "opciones": [
+      "a) SMTP",
+      "b) SNTP",
+      "c) SNMP",
+      "d) NTP"
+    ],
+    "correcta": 2,
+    "explicacion": "Aunque Nagios puede usar agentes propios (NRPE), su método estándar de recolección de métricas de red es SNMP.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta. Es el protocolo base para monitorización en Nagios.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "348. Señale en qué versión de SNMP se añade por primera vez la instrucción GetBulk:",
+    "opciones": [
+      "a) SNMP v0.",
+      "b) SNMP v1.",
+      "c) SNMP v2.",
+      "d) SNMP v3."
+    ],
+    "correcta": 2,
+    "explicacion": "SNMPv2c introdujo Get-Bulk para mejorar la recuperación de datos masivos.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta. Es una de sus mejoras principales respecto a v1.",
+      "d": "Incorrecta. En v3 ya existe, pero se introdujo en v2."
+    }
+  },
+  {
+    "pregunta": "349. Indique cuál de los siguientes es un protocolo orientado a la gestión de los dispositivos de una red:",
+    "opciones": [
+      "a) SMTP",
+      "b) SNMP",
+      "c) HTTP",
+      "d) IGMPv3"
+    ],
+    "correcta": 1,
+    "explicacion": "SNMP es el protocolo de gestión.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "350. De entre los siguientes, ¿qué software permite la monitorización de las infraestructuras de TI en una organización?",
+    "opciones": [
+      "a) Watch Now.",
+      "b) Perfect Viewer.",
+      "c) Nagios.",
+      "d) DAT Network Monitor."
+    ],
+    "correcta": 2,
+    "explicacion": "Nagios es una de las herramientas de monitorización de infraestructuras más extendidas.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta. Monitoriza servidores, servicios y redes.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "351. Dentro del protocolo SNMP v3, ¿cómo se denomina a los mensajes no solicitados por el administrador SNMP que remiten los agentes cuando ocurre algún evento inesperado?",
+    "opciones": [
+      "a) SetNextRequest",
+      "b) InformationMessage",
+      "c) Trap",
+      "d) SetResponse"
+    ],
+    "correcta": 2,
+    "explicacion": "Los TRAPs son alertas que el agente envía por propia iniciativa al gestor.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta. Definición de trap.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "352. ¿Cuál de las siguientes es una herramienta de monitorización de red?",
+    "opciones": [
+      "a) Xen.",
+      "b) OpenView.",
+      "c) OpenVZ.",
+      "d) VirtualBox."
+    ],
+    "correcta": 1,
+    "explicacion": "HP OpenView (ahora parte de Micro Focus) es una plataforma clásica de monitorización de red empresarial.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es un hipervisor.",
+      "b": "Correcta. Software de gestión de red.",
+      "c": "Incorrecta. Virtualización a nivel de SO.",
+      "d": "Incorrecta. Hipervisor de escritorio."
+    }
+  },
+  {
+    "pregunta": "353. Indique qué afirmación en relación al protocolo LDAP es VERDADERA:",
+    "opciones": [
+      "a) Es para acceder a un directorio X.500 que precisa la pila OSI.",
+      "b) La estructura interna del directorio X.500 está definida mediante LDAP.",
+      "c) Requiere siempre que el cliente se autentique antes de acceder.",
+      "d) El protocolo LDAP está descrito usando ASN.1."
+    ],
+    "correcta": 3,
+    "explicacion": "Al igual que SNMP, LDAP utiliza la sintaxis ASN.1 para definir sus estructuras y mensajes.",
+    "analisis_opciones": {
+      "a": "Incorrecta. LDAP es 'Lightweight' porque corre sobre TCP/IP directamente.",
+      "b": "Incorrecta. X.500 se define por DAP (OSI).",
+      "c": "Incorrecta. Existe el acceso anónimo (Anonymous Bind).",
+      "d": "Correcta. Utiliza la notación abstracta ASN.1."
+    }
+  },
+  {
+    "pregunta": "354. Indique cuál de los siguientes protocolos es un protocolo de gestión de red:",
+    "opciones": [
+      "a) CMIP",
+      "b) OSPF",
+      "c) IKE",
+      "d) SOCKS"
+    ],
+    "correcta": 0,
+    "explicacion": "CMIP es el protocolo de gestión del modelo OSI.",
+    "analisis_opciones": {
+      "a": "Correcta. Common Management Information Protocol.",
+      "b": "Incorrecta. Protocolo de enrutamiento.",
+      "c": "Incorrecta. Intercambio de claves en seguridad.",
+      "d": "Incorrecta. Protocolo proxy."
+    }
+  },
+  {
+    "pregunta": "355. Señale la afirmación FALSA con respecto al protocolo SNMP:",
+    "opciones": [
+      "a) Todo sistema gestionado debe contar con al menos un NMS.",
+      "b) El software de administración que reside en cada dispositivo se llama agente.",
+      "c) La MIB contiene información jerárquica en forma de árbol.",
+      "d) SNMPv2 mejora SNMP al incorporar servicios de autenticación y privacidad basados en usuario."
+    ],
+    "correcta": 3,
+    "explicacion": "Es falso porque la seguridad basada en usuario y privacidad (cifrado) se introdujo realmente en SNMPv3. SNMPv2c seguía basándose en comunidades de texto plano.",
+    "analisis_opciones": {
+      "a": "Correcta. Necesita una estación que centralice la gestión.",
+      "b": "Correcta. Definición de agente.",
+      "c": "Correcta. Estructura de la MIB.",
+      "d": "Incorrecta (es la falsa). Esas mejoras son de la versión 3."
+    }
+  },
+  {
+    "pregunta": "356. Nagios es:",
+    "opciones": [
+      "a) Un sistema de monitorización de infraestructuras de TI.",
+      "b) Un sistema de autenticación de usuarios de Windows.",
+      "c) Una herramienta de control de versiones.",
+      "d) Un sistema de intercambio de ficheros P2P."
+    ],
+    "correcta": 0,
+    "explicacion": "Nagios es la herramienta de monitorización de código abierto por excelencia.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "357. ¿En qué consiste una ACL?",
+    "opciones": [
+      "a) Access Control List: qué usuarios pueden acceder a un objeto y con qué permisos.",
+      "b) Available Current Libraries: bibliotecas autorizadas en OpenBSD.",
+      "c) Asynchronous Control Link: descriptor de fichero en Windows.",
+      "d) Accessibility Conformance Label: sello de calidad IETF."
+    ],
+    "correcta": 0,
+    "explicacion": "Una ACL es una lista de control de acceso que define permisos de seguridad sobre archivos, carpetas u objetos de red.",
+    "analisis_opciones": {
+      "a": "Correcta. Definición fundamental de seguridad.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "371. En un servidor Linux, un administrador desea bloquear el acceso a un usuario sin borrar su cuenta. ¿Qué cambio en el archivo /etc/shadow indicaría visualmente que la contraseña está bloqueada?",
+    "opciones": [
+      "a) El campo de la contraseña contiene el valor 'DISABLED'.",
+      "b) El campo de la contraseña comienza con un símbolo de exclamación (!) o un asterisco (*).",
+      "c) El UID del usuario se cambia a 0.",
+      "d) Se elimina la línea completa del usuario en el archivo."
+    ],
+    "correcta": 1,
+    "explicacion": "Al usar comandos como 'passwd -l' (lock), el sistema añade un carácter especial (habitualmente '!') delante del hash de la contraseña en /etc/shadow, haciendo que el hash sea inválido para el login.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No se usa una palabra clave, se usa un prefijo en el hash.",
+      "b": "Correcta. Es el método estándar de bloqueo por software en sistemas shadow.",
+      "c": "Incorrecta. Eso daría privilegios de root al usuario.",
+      "d": "Incorrecta. Eso borraría la cuenta, no la bloquearía."
+    }
+  },
+  {
+    "pregunta": "372. ¿Qué componente del Directorio Activo de Windows permite aplicar una misma configuración de seguridad (como longitud mínima de contraseña) a un grupo de usuarios de forma centralizada?",
+    "opciones": [
+      "a) Esquema del Directorio Activo.",
+      "b) Catálogo Global.",
+      "c) GPO (Group Policy Object).",
+      "d) FSMO (Flexible Single Master Operations)."
+    ],
+    "correcta": 2,
+    "explicacion": "Las GPO (Directivas de Grupo) son las herramientas de Windows para gestionar la configuración de usuarios y equipos en un dominio.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Define los tipos de objetos y atributos que pueden existir.",
+      "b": "Incorrecta. Es un índice de todos los objetos del bosque.",
+      "c": "Correcta. Es el mecanismo de aplicación de políticas y restricciones.",
+      "d": "Incorrecta. Son roles específicos de los controladores de dominio."
+    }
+  },
+  {
+    "pregunta": "373. En la arquitectura de autenticación de Linux, ¿qué significan las siglas PAM?",
+    "opciones": [
+      "a) Password Authentication Manager.",
+      "b) Pluggable Authentication Modules.",
+      "c) Primary Access Method.",
+      "d) Programmable Authentication Module."
+    ],
+    "correcta": 1,
+    "explicacion": "PAM es una infraestructura flexible que permite a los programas autenticar usuarios mediante diferentes módulos (contraseña, biometría, token) sin tener que cambiar el código del programa.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Nombre inventado.",
+      "b": "Correcta. Define la modularidad del sistema de autenticación.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "374. Al consultar el archivo /etc/passwd en un sistema UNIX, encontramos la siguiente línea: 'usuario:x:1001:1001:,,,:/home/usuario:/bin/bash'. ¿Qué indica la 'x' en el segundo campo?",
+    "opciones": [
+      "a) Que el usuario no tiene contraseña.",
+      "b) Que la contraseña está cifrada y almacenada en /etc/shadow.",
+      "c) Que la cuenta está bloqueada.",
+      "d) Que el usuario tiene privilegios de ejecución (X)."
+    ],
+    "correcta": 1,
+    "explicacion": "Antiguamente la contraseña cifrada iba en el segundo campo de /etc/passwd. Hoy, la 'x' indica que el sistema debe ir a buscar el hash al archivo protegido /etc/shadow.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Si estuviera vacío, no pediría contraseña.",
+      "b": "Correcta. Indica el uso de 'shadow passwords'.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "375. ¿Cuál es el nombre del archivo en Windows que almacena las cuentas de usuario locales y sus hashes de contraseña cuando el equipo NO pertenece a un dominio?",
+    "opciones": [
+      "a) NTDS.dit",
+      "b) /etc/shadow",
+      "c) SAM (Security Account Manager).",
+      "d) KDC (Key Distribution Center)."
+    ],
+    "correcta": 2,
+    "explicacion": "La base de datos SAM es un archivo del registro de Windows que gestiona la seguridad local del equipo.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es la base de datos del Directorio Activo (Dominio).",
+      "b": "Incorrecta. Es el archivo equivalente en Linux.",
+      "c": "Correcta. Base de datos local de seguridad en Windows.",
+      "d": "Incorrecta. Es un componente de Kerberos."
+    }
+  },
+  {
+    "pregunta": "376. En un sistema Linux configurado con PAM, ¿en qué directorio se encuentran habitualmente los archivos de configuración de los módulos de autenticación para cada servicio (ssh, login, sudo)?",
+    "opciones": [
+      "a) /etc/pam.d/",
+      "b) /var/lib/pam/",
+      "c) /usr/bin/pam/",
+      "d) /etc/security/pam/"
+    ],
+    "correcta": 0,
+    "explicacion": "El directorio /etc/pam.d/ contiene archivos con el mismo nombre que el servicio que se desea proteger, definiendo las reglas de autenticación.",
+    "analisis_opciones": {
+      "a": "Correcta. Ubicación estándar de configuración modular de PAM.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. En /etc/security suelen estar los archivos de configuración de los módulos específicos (como limits.conf)."
+    }
+  },
+  {
+    "pregunta": "377. Dentro de un dominio de Directorio Activo, ¿cuál es el protocolo de autenticación por defecto que sustituyó al antiguo NTLM?",
+    "opciones": [
+      "a) LDAP.",
+      "b) Kerberos.",
+      "c) RADIUS.",
+      "d) SAML."
+    ],
+    "correcta": 1,
+    "explicacion": "Kerberos (basado en tickets) es el protocolo de autenticación principal de los dominios Windows desde Windows 2000.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es el protocolo para consultar y modificar el directorio, no para autenticar directamente (aunque puede usarse bind).",
+      "b": "Correcta. Utiliza el puerto 88 y se basa en el KDC.",
+      "c": "Incorrecta. Usado para acceso remoto y dispositivos de red.",
+      "d": "Incorrecta. Usado para Single Sign-On en aplicaciones web."
+    }
+  },
+  {
+    "pregunta": "378. ¿Cuál es el UID (User Identifier) reservado para el superusuario root en cualquier sistema compatible con POSIX/UNIX?",
+    "opciones": [
+      "a) 1000",
+      "b) 1",
+      "c) 0",
+      "d) 500"
+    ],
+    "correcta": 2,
+    "explicacion": "El UID 0 identifica siempre al administrador total del sistema, independientemente del nombre que tenga la cuenta.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Suele ser el UID del primer usuario normal creado en muchas distros.",
+      "b": "Incorrecta.",
+      "c": "Correcta. El sistema operativo comprueba el UID 0 para saltarse las restricciones de permisos.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "379. En la gestión de usuarios de Windows, ¿qué diferencia principal hay entre un 'Grupo de Seguridad' y un 'Grupo de Distribución'?",
+    "opciones": [
+      "a) El de distribución permite asignar permisos a carpetas.",
+      "b) El de seguridad solo sirve para enviar correos electrónicos.",
+      "c) El de seguridad permite asignar permisos y derechos, el de distribución solo se usa para listas de correo.",
+      "d) No hay ninguna diferencia técnica."
+    ],
+    "correcta": 2,
+    "explicacion": "Los grupos de seguridad tienen un SID y pueden aparecer en las ACLs de archivos; los de distribución no sirven para dar permisos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es al revés.",
+      "b": "Incorrecta. Es al revés.",
+      "c": "Correcta. Es la distinción fundamental en Active Directory.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "380. Un administrador de Linux edita el archivo /etc/passwd y cambia la shell de un usuario a '/sbin/nologin'. ¿Cuál es el objetivo?",
+    "opciones": [
+      "a) Darle permisos de administrador.",
+      "b) Permitirle el acceso solo por SSH.",
+      "c) Impedir que el usuario inicie una sesión interactiva en el sistema.",
+      "d) Obligarle a cambiar su contraseña en el siguiente inicio."
+    ],
+    "correcta": 2,
+    "explicacion": "Al asignar una shell 'no interactiva', el usuario puede usar servicios (como subir archivos por SFTP o recibir correos) pero no puede abrir una terminal en el servidor.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta. SSH también requiere una shell válida para entrar.",
+      "c": "Correcta. Es una medida de seguridad para cuentas de servicio.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "381. ¿Qué herramienta de software libre es necesaria en sistemas Linux para permitir que un servidor actúe como controlador de dominio y comparta archivos e impresoras mediante el protocolo SMB/CIFS con clientes Windows?",
+    "opciones": [
+      "a) NFS Server.",
+      "b) Samba.",
+      "c) CUPS.",
+      "d) BIND."
+    ],
+    "correcta": 1,
+    "explicacion": "Samba es la suite de programas que permite la interoperabilidad entre sistemas Unix/Linux y redes Windows, implementando el protocolo SMB.",
+    "analisis_opciones": {
+      "a": "Incorrecta. NFS es para compartir archivos entre sistemas Unix/Linux.",
+      "b": "Correcta. Es la pieza clave para redes híbridas Windows-Linux.",
+      "c": "Incorrecta. Es el sistema de impresión.",
+      "d": "Incorrecta. Es el servidor de DNS."
+    }
+  },
+  {
+    "pregunta": "382. Dentro de la gestión SNMP, ¿qué estándar se utiliza para definir las reglas de sintaxis y los tipos de datos permitidos para construir la MIB?",
+    "opciones": [
+      "a) SMI (Structure of Management Information).",
+      "b) RMON (Remote Monitoring).",
+      "c) ASN.1.",
+      "d) OID."
+    ],
+    "correcta": 0,
+    "explicacion": "SMI es el estándar que define cómo se deben estructurar los objetos de gestión. Utiliza un subconjunto de ASN.1 para la definición formal.",
+    "analisis_opciones": {
+      "a": "Correcta. Es el 'lenguaje' de definición de la estructura de gestión.",
+      "b": "Incorrecta. Es una extensión de la MIB para monitorización remota.",
+      "c": "Incorrecta. Es la notación general, pero SMI es el estándar específico de red.",
+      "d": "Incorrecta. Es el identificador del objeto, no el estándar de estructura."
+    }
+  },
+  {
+    "pregunta": "383. Usted necesita saber qué programas han ejecutado los usuarios en su servidor Linux, cuántos recursos han consumido y cuánto tiempo han estado activos. ¿Qué demonios debería tener activos?",
+    "opciones": [
+      "a) w y uptime.",
+      "b) psacct o acct.",
+      "c) top y htop.",
+      "d) logrotate."
+    ],
+    "correcta": 1,
+    "explicacion": "psacct (o acct) funciona en segundo plano monitorizando la actividad global de cada usuario y guardando un registro de cada comando ejecutado.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Solo dicen quién está logado ahora y desde cuándo.",
+      "b": "Correcta. Es la herramienta de auditoría de actividad de usuarios.",
+      "c": "Incorrecta. Muestran procesos actuales, no el historial de uso por usuario.",
+      "d": "Incorrecta. Gestiona la rotación de archivos log."
+    }
+  },
+  {
+    "pregunta": "384. ¿Cuál es el puerto UDP que utiliza por defecto un agente SNMP para recibir peticiones de la estación de gestión (NMS)?",
+    "opciones": [
+      "a) 161",
+      "b) 162",
+      "c) 443",
+      "d) 514"
+    ],
+    "correcta": 0,
+    "explicacion": "El puerto 161 es el puerto de escucha de los agentes. El 162 se reserva para que el NMS reciba los Traps.",
+    "analisis_opciones": {
+      "a": "Correcta. Puerto estándar de escucha del agente.",
+      "b": "Incorrecta. Es el puerto para el destino de los Traps.",
+      "c": "Incorrecta. HTTPS.",
+      "d": "Incorrecta. Syslog."
+    }
+  },
+  {
+    "pregunta": "385. En la gestión de dispositivos Linux, ¿cómo se denomina habitualmente al primer disco duro SATA o SCSI detectado por el sistema?",
+    "opciones": [
+      "a) /dev/hda",
+      "b) /dev/sda",
+      "c) /dev/vda",
+      "d) /dev/drive1"
+    ],
+    "correcta": 1,
+    "explicacion": "Los discos modernos y SCSI se nombran como 'sd' (SCSI Disk) seguido de una letra. El primero es 'sda'.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Era la nomenclatura para discos IDE antiguos.",
+      "b": "Correcta. Estándar actual para discos SATA/SCSI/USB.",
+      "c": "Incorrecta. Se usa para discos virtuales en entornos KVM/Virtio.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "386. ¿Qué comando de red en Linux muestra una lista actualizada de la utilización del ancho de banda por host (origen y destino), siendo comparable a lo que hace 'top' con la CPU?",
+    "opciones": [
+      "a) ifconfig.",
+      "b) netstat.",
+      "c) iftop.",
+      "d) route."
+    ],
+    "correcta": 2,
+    "explicacion": "iftop escucha el tráfico de red en una interfaz y muestra una tabla de uso de ancho de banda por pares de hosts.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Configura interfaces.",
+      "b": "Incorrecta. Muestra conexiones y estadísticas, pero no flujos por host en tiempo real.",
+      "c": "Correcta. Es el monitor de ancho de banda 'tipo top'.",
+      "d": "Incorrecta. Gestiona tablas de rutas."
+    }
+  },
+  {
+    "pregunta": "387. Dentro del modelo FCAPS, ¿en qué área se engloba la gestión de los archivos de configuración y el inventario de elementos de la red?",
+    "opciones": [
+      "a) F (Fault).",
+      "b) C (Configuration).",
+      "c) A (Accounting).",
+      "d) P (Performance)."
+    ],
+    "correcta": 1,
+    "explicacion": "La gestión de configuración se encarga de mantener la información sobre los dispositivos, sus versiones de software y parámetros.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Gestión de fallos.",
+      "b": "Correcta. Incluye el aprovisionamiento y mantenimiento de la configuración.",
+      "c": "Incorrecta. Facturación/Uso.",
+      "d": "Incorrecta. Rendimiento."
+    }
+  },
+  {
+    "pregunta": "388. ¿Qué es un 'MIB Browser'?",
+    "opciones": [
+      "a) Un virus que ataca dispositivos SNMP.",
+      "b) Una aplicación que permite navegar visualmente por el árbol jerárquico de objetos de un dispositivo gestionado.",
+      "c) Un sistema de archivos distribuido.",
+      "d) El navegador web oficial de Microsoft para redes locales."
+    ],
+    "correcta": 1,
+    "explicacion": "Un MIB Browser permite al administrador ver qué valores (OIDs) ofrece un agente y realizar consultas GET/SET de forma gráfica.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Facilita la exploración de los parámetros gestionables de un dispositivo.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "389. ¿Qué comando de Windows permite ver el identificador de seguridad (SID) del usuario actual y los grupos a los que pertenece?",
+    "opciones": [
+      "a) whoami /all",
+      "b) net user current",
+      "c) ipconfig /sid",
+      "d) sidshow"
+    ],
+    "correcta": 0,
+    "explicacion": "El comando 'whoami' con el flag '/all' muestra toda la información de seguridad del token del usuario, incluyendo el SID, esencial para depurar permisos.",
+    "analisis_opciones": {
+      "a": "Correcta. Muestra usuario, grupos y privilegios.",
+      "b": "Incorrecta. 'net user' muestra datos del usuario, pero no el SID de sesión de forma detallada.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "390. En relación a la monitorización, ¿qué herramienta de consola en Linux ofrece estadísticas detalladas de red, incluyendo protocolos TCP, UDP, ICMP y carga de la interfaz en tiempo real?",
+    "opciones": [
+      "a) iptraf.",
+      "b) ping.",
+      "c) traceroute.",
+      "d) nslookup."
+    ],
+    "correcta": 0,
+    "explicacion": "iptraf (o iptraf-ng) es un monitor de tráfico de red basado en ncurses que genera diversas estadísticas de red.",
+    "analisis_opciones": {
+      "a": "Correcta. Monitor de red interactivo muy completo.",
+      "b": "Incorrecta. Prueba conectividad básica.",
+      "c": "Incorrecta. Muestra la ruta de paquetes.",
+      "d": "Incorrecta. Consulta el DNS."
+    }
+  },
+  {
+    "pregunta": "391. En un entorno heterogéneo con servidores Linux y clientes Windows, ¿qué software es el estándar para que los usuarios de Windows puedan mapear unidades de red y usar impresoras compartidas por el servidor Linux?",
+    "opciones": [
+      "a) NFS (Network File System).",
+      "b) Samba.",
+      "c) WinBind.",
+      "d) AppleTalk."
+    ],
+    "correcta": 1,
+    "explicacion": "Samba es la suite que implementa el protocolo SMB/CIFS en Linux, permitiendo que un equipo Linux se comporte como un servidor de archivos o controlador de dominio Windows.",
+    "analisis_opciones": {
+      "a": "Incorrecta. NFS es el estándar para compartir archivos entre sistemas nativos Unix/Linux.",
+      "b": "Correcta. Es la herramienta de interoperabilidad por excelencia.",
+      "c": "Incorrecta. Es un componente de Samba para resolver usuarios, pero no el servicio completo.",
+      "d": "Incorrecta. Es un protocolo antiguo de Apple."
+    }
+  },
+  {
+    "pregunta": "392. ¿Cuál es el sistema de archivos nativo de Windows (desde NT) que permite asignar permisos de seguridad detallados (ACLs) a nivel de archivo y carpeta, además de soportar cuotas de disco?",
+    "opciones": [
+      "a) FAT32.",
+      "b) exFAT.",
+      "c) NTFS.",
+      "d) Ext4."
+    ],
+    "correcta": 2,
+    "explicacion": "NTFS (New Technology File System) introdujo la seguridad local y la capacidad de recuperación mediante transacciones (journaling) en el ecosistema Windows.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No soporta permisos de seguridad local.",
+      "b": "Incorrecta. Optimizado para memorias flash, pero con seguridad limitada.",
+      "c": "Correcta. Es el estándar de archivos para servidores y PCs Windows.",
+      "d": "Incorrecta. Es el sistema de archivos estándar de Linux."
+    }
+  },
+  {
+    "pregunta": "393. Usted está administrando un servidor de impresión en Linux mediante CUPS. ¿Qué puerto y protocolo utiliza habitualmente la interfaz web de administración de CUPS?",
+    "opciones": [
+      "a) Puerto 80 (HTTP).",
+      "b) Puerto 631 (IPP).",
+      "c) Puerto 445 (SMB).",
+      "d) Puerto 515 (LPD)."
+    ],
+    "correcta": 1,
+    "explicacion": "CUPS utiliza el protocolo IPP (Internet Printing Protocol) y su interfaz web de gestión está disponible por defecto en el puerto 631.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Es el puerto registrado para IPP y gestión de CUPS.",
+      "c": "Incorrecta. Es el puerto de Microsoft-DS (Samba).",
+      "d": "Incorrecta. Es el puerto del antiguo sistema LPD."
+    }
+  },
+  {
+    "pregunta": "394. En el protocolo NFS, ¿cómo se denomina la acción de poner un directorio local a disposición de otros clientes de la red?",
+    "opciones": [
+      "a) Sharing.",
+      "b) Mapping.",
+      "c) Exporting.",
+      "d) Mounting."
+    ],
+    "correcta": 2,
+    "explicacion": "En NFS, el servidor 'exporta' (export) directorios a través del archivo /etc/exports. Los clientes, por su parte, los 'montan' (mount).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es la terminología típica de Windows/SMB.",
+      "b": "Incorrecta. Es la acción del cliente en Windows.",
+      "c": "Correcta. Es la terminología técnica de NFS.",
+      "d": "Incorrecta. Es la acción que realiza el cliente para acceder."
+    }
+  },
+  {
+    "pregunta": "395. ¿Qué versión del protocolo SMB es la mínima recomendada actualmente por seguridad, dado que las anteriores (SMBv1) son vulnerables a ataques como WannaCry?",
+    "opciones": [
+      "a) SMBv1.0.",
+      "b) SMBv2.1.",
+      "c) SMBv3.0 o superior.",
+      "d) CIFS."
+    ],
+    "correcta": 2,
+    "explicacion": "SMBv3 introdujo el cifrado de extremo a extremo y mejoras críticas de seguridad. SMBv1 está totalmente desaconsejado.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Muy inseguro (usa dialectos antiguos).",
+      "b": "Incorrecta. Aunque mejor que v1, carece de las protecciones modernas de v3.",
+      "c": "Correcta. Es el estándar de seguridad actual en Windows Server.",
+      "d": "Incorrecta. Es básicamente otro nombre para SMBv1."
+    }
+  },
+  {
+    "pregunta": "396. En un sistema NTFS, si copiamos un archivo de una carpeta a otra dentro de la MISMA partición, el archivo:",
+    "opciones": [
+      "a) Mantiene sus permisos originales.",
+      "b) Hereda los permisos de la carpeta de destino.",
+      "c) Pierde todos los permisos.",
+      "d) Se vuelve de solo lectura."
+    ],
+    "correcta": 1,
+    "explicacion": "Regla de oro de NTFS: Al COPIAR (o mover entre particiones distintas), el archivo siempre hereda los permisos del destino. Solo al MOVER dentro de la misma partición mantiene sus permisos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso solo pasa al 'Mover' en la misma unidad.",
+      "b": "Correcta. La copia crea un nuevo objeto que hereda del padre (destino).",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "397. ¿Cuál es el archivo principal de configuración de Samba en la mayoría de distribuciones Linux donde se definen los recursos compartidos?",
+    "opciones": [
+      "a) /etc/samba/samba.conf",
+      "b) /etc/samba/smb.conf",
+      "c) /etc/exports",
+      "d) /etc/fstab"
+    ],
+    "correcta": 1,
+    "explicacion": "El archivo smb.conf es el corazón de Samba; en él se definen las secciones [global], [homes] y los recursos específicos.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Ubicación estándar del archivo de configuración.",
+      "c": "Incorrecta. Es para NFS.",
+      "d": "Incorrecta. Es para el montaje automático de sistemas de archivos."
+    }
+  },
+  {
+    "pregunta": "398. ¿Qué ventaja ofrece el sistema de impresión CUPS al utilizar filtros y el formato PPD (PostScript Printer Description)?",
+    "opciones": [
+      "a) Permite imprimir sin necesidad de electricidad.",
+      "b) Permite que una impresora funcione aunque no tenga drivers específicos para Linux mediante una descripción genérica.",
+      "c) Solo permite imprimir archivos de texto plano.",
+      "d) Reduce el tamaño del papel automáticamente."
+    ],
+    "correcta": 1,
+    "explicacion": "Los archivos PPD describen las capacidades de la impresora a CUPS, permitiendo una gran compatibilidad con miles de modelos.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Es la base de la modularidad y compatibilidad de CUPS.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "399. Al configurar NFS en Linux, ¿qué opción en /etc/exports permite que el usuario root del cliente mantenga sus privilegios de root en el servidor (algo generalmente desaconsejado por seguridad)?",
+    "opciones": [
+      "a) root_squash.",
+      "b) no_root_squash.",
+      "c) all_squash.",
+      "d) rw_root."
+    ],
+    "correcta": 1,
+    "explicacion": "Por defecto, NFS aplica 'root_squash' (mapea root a un usuario anónimo). 'no_root_squash' desactiva esta protección.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es la opción de seguridad por defecto (aplasta al root).",
+      "b": "Correcta. Permite que el root remoto actúe como root local.",
+      "c": "Incorrecta. Mapea a TODOS los usuarios a anónimo.",
+      "d": "Incorrecta. Sintaxis no válida."
+    }
+  },
+  {
+    "pregunta": "400. En un sistema de archivos, ¿qué significa que sea 'Journaling' (como NTFS o Ext4)?",
+    "opciones": [
+      "a) Que permite guardar fotos en formato .jpg.",
+      "b) Que lleva un registro (diario) de los cambios pendientes para evitar la corrupción de datos ante un apagado brusco.",
+      "c) Que es un sistema de archivos solo para lectura.",
+      "d) Que comprime los archivos automáticamente."
+    ],
+    "correcta": 1,
+    "explicacion": "El journaling registra las operaciones antes de comprometerlas en el disco, permitiendo una recuperación rápida sin necesidad de escanear todo el disco (chkdsk/fsck) tras un fallo.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Es la característica de fiabilidad de los sistemas modernos.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. NTFS puede comprimir, pero eso no es el journaling."
+    }
+  },
+  {
+    "pregunta": "401. Dentro del modelo de gestión de red FCAPS de la ISO, ¿qué área funcional se ocupa de la monitorización de la utilización de enlaces, tiempos de respuesta y tasas de error para garantizar los niveles de servicio?",
+    "opciones": [
+      "a) Fault Management.",
+      "b) Configuration Management.",
+      "c) Performance Management.",
+      "d) Accounting Management."
+    ],
+    "correcta": 2,
+    "explicacion": "La 'P' de Performance (Rendimiento) se centra en la eficiencia de la red, analizando métricas como el throughput y la latencia para optimizar el comportamiento de los recursos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Se centra en la detección y resolución de errores/caídas.",
+      "b": "Incorrecta. Se centra en el inventario y estado de los dispositivos.",
+      "c": "Correcta. Es el área encargada de las estadísticas y calidad de servicio (QoS).",
+      "d": "Incorrecta. Se centra en el registro de uso para costes."
+    }
+  },
+  {
+    "pregunta": "402. En la arquitectura de gestión de red, ¿cómo se denomina al dispositivo físico o software que actúa como punto central de monitorización y desde el cual el administrador lanza las consultas?",
+    "opciones": [
+      "a) Agente de gestión.",
+      "b) NMS (Network Management System).",
+      "c) MIB.",
+      "d) Proxy SNMP."
+    ],
+    "correcta": 1,
+    "explicacion": "La NMS (o Estación de Gestión) es el servidor o consola donde reside la aplicación de gestión que interactúa con los agentes de los dispositivos remotos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es el software que corre 'dentro' del dispositivo gestionado.",
+      "b": "Correcta. Es la entidad directora en el modelo gestor-agente.",
+      "c": "Incorrecta. Es la base de datos de objetos, no el sistema de gestión.",
+      "d": "Incorrecta. Es un intermediario para dispositivos que no soportan SNMP nativo."
+    }
+  },
+  {
+    "pregunta": "403. ¿Qué ventaja principal aporta el uso de RMON (Remote Monitoring) frente al uso de SNMP estándar en un segmento de red local?",
+    "opciones": [
+      "a) Permite monitorizar dispositivos sin dirección IP.",
+      "b) Reduce el tráfico de gestión al permitir que un intermediario analice el tráfico localmente y solo envíe estadísticas al NMS.",
+      "c) Sustituye por completo la necesidad de tener una MIB.",
+      "d) Es el único protocolo que funciona en redes de fibra óptica."
+    ],
+    "correcta": 1,
+    "explicacion": "RMON permite que un monitor (sonda) recoja datos de todo el segmento de red (capa 2) y los procese, evitando que el NMS tenga que estar haciendo polling constante a cada equipo.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Mejora la escalabilidad al descentralizar la monitorización.",
+      "c": "Incorrecta. RMON se define mediante grupos de objetos en una MIB específica.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "404. Respecto al lenguaje SMI (Structure of Management Information), ¿cuál es su función primordial en la gestión SNMP?",
+    "opciones": [
+      "a) Cifrar los paquetes de datos para evitar interceptaciones.",
+      "b) Definir las reglas para nombrar los objetos y los tipos de datos permitidos en la MIB.",
+      "c) Establecer la conexión TCP entre el gestor y el agente.",
+      "d) Traducir las direcciones MAC en direcciones IP."
+    ],
+    "correcta": 1,
+    "explicacion": "SMI proporciona el esquema lógico (basado en ASN.1) para asegurar que tanto el gestor como el agente entiendan qué tipo de datos están intercambiando (Entero, Counter, Gauge, etc.).",
+    "analisis_opciones": {
+      "a": "Incorrecta. De eso se encarga USM en SNMPv3.",
+      "b": "Correcta. Es la normativa de sintaxis para los objetos de gestión.",
+      "c": "Incorrecta. SNMP usa habitualmente UDP.",
+      "d": "Incorrecta. Eso lo hace el protocolo ARP."
+    }
+  },
+  {
+    "pregunta": "405. El protocolo CMIP (Common Management Information Protocol) pertenece a la pila de protocolos de:",
+    "opciones": [
+      "a) IETF (TCP/IP).",
+      "b) OSI (ISO).",
+      "c) IEEE.",
+      "d) ITU-T (X.25)."
+    ],
+    "correcta": 1,
+    "explicacion": "CMIP es el protocolo de gestión diseñado para el modelo de interconexión de sistemas abiertos (OSI). Es mucho más complejo y potente que SNMP, pero menos extendido.",
+    "analisis_opciones": {
+      "a": "Incorrecta. TCP/IP usa SNMP.",
+      "b": "Correcta. Es el estándar de gestión nativo de la arquitectura OSI.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "406. ¿En qué consiste el protocolo CMOT (CMIP Over TCP)?",
+    "opciones": [
+      "a) Una versión de SNMP que utiliza TCP en lugar de UDP.",
+      "b) Una implementación que permite ejecutar los servicios de gestión de OSI (CMIP) sobre la pila de protocolos TCP/IP.",
+      "c) Un sistema de archivos en red de alta velocidad.",
+      "d) Un protocolo de enrutamiento para redes mixtas."
+    ],
+    "correcta": 1,
+    "explicacion": "CMOT fue una solución de transición que permitía usar la potencia de gestión de CMIP aprovechando la infraestructura de red TCP/IP ya existente.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Es el puente entre el modelo de gestión OSI y el transporte Internet.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "407. En SNMPv3, ¿cuál es el nivel de seguridad más alto que se puede configurar para la comunicación entre NMS y Agente?",
+    "opciones": [
+      "a) noAuthNoPriv.",
+      "b) authNoPriv.",
+      "c) authPriv.",
+      "d) Community String."
+    ],
+    "correcta": 2,
+    "explicacion": "El modo 'authPriv' (Autenticación y Privacidad) garantiza que el mensaje sea auténtico (mediante hashes como SHA/MD5) y que el contenido viaje cifrado (mediante AES/DES).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Sin autenticación ni cifrado (similar a v1/v2).",
+      "b": "Incorrecta. Autentica al usuario pero los datos viajan en claro.",
+      "c": "Correcta. Máximo nivel de protección (Cifrado + Autenticación).",
+      "d": "Incorrecta. Es el método de las versiones v1/v2, no de v3."
+    }
+  },
+  {
+    "pregunta": "408. Un administrador ejecuta el comando 'snmpset' contra un router. ¿Qué está intentando hacer?",
+    "opciones": [
+      "a) Visualizar el tráfico de una interfaz.",
+      "b) Modificar un parámetro de configuración, como por ejemplo el nombre del dispositivo (sysName).",
+      "c) Reiniciar el servidor de logs.",
+      "d) Consultar la tabla de rutas sin cambiar nada."
+    ],
+    "correcta": 1,
+    "explicacion": "La operación SET permite al gestor escribir valores en los objetos de la MIB del agente que tengan permisos de lectura/escritura.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso se hace con GET.",
+      "b": "Correcta. Es la operación de escritura de SNMP.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. Eso requiere un GET o GET-NEXT."
+    }
+  },
+  {
+    "pregunta": "409. ¿Cuál es la diferencia fundamental entre un mensaje TRAP y un mensaje INFORM en SNMP?",
+    "opciones": [
+      "a) El TRAP es más seguro.",
+      "b) El TRAP no requiere confirmación por parte del NMS, mientras que el INFORM sí obliga al gestor a confirmar la recepción.",
+      "c) El INFORM solo existe en SNMPv1.",
+      "d) El TRAP lo envía el gestor y el INFORM el agente."
+    ],
+    "correcta": 1,
+    "explicacion": "INFORM (introducido en v2) es una notificación 'fiable'. Si el agente no recibe el ACK del NMS, reintenta el envío. El TRAP se envía una vez y no se confirma.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Es la distinción clave de fiabilidad en las notificaciones.",
+      "c": "Incorrecta. Aparece en v2 y se mantiene en v3.",
+      "d": "Incorrecta. Ambos son enviados por el agente hacia el gestor."
+    }
+  },
+  {
+    "pregunta": "410. ¿Qué área de FCAPS se encarga de limitar el acceso a los recursos de gestión mediante contraseñas y listas de control de acceso (ACL)?",
+    "opciones": [
+      "a) Configuration Management.",
+      "b) Performance Management.",
+      "c) Security Management.",
+      "d) Fault Management."
+    ],
+    "correcta": 2,
+    "explicacion": "La 'S' de Security (Seguridad) protege la red contra accesos no autorizados y garantiza la integridad de la información de gestión.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Correcta. Gestiona la autenticación, autorización y auditoría.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "411. ¿Qué tecnología, desarrollada originalmente por Cisco, permite recolectar información sobre el tráfico IP que entra o sale de una interfaz, facilitando el análisis de flujos (origen, destino, puertos) sin capturar el contenido del paquete?",
+    "opciones": [
+      "a) SNMP.",
+      "b) NetFlow.",
+      "c) Port Mirroring.",
+      "d) Syslog."
+    ],
+    "correcta": 1,
+    "explicacion": "NetFlow se basa en el concepto de 'flujo'. No analiza el contenido (payload) sino las estadísticas de las conversaciones, lo que lo hace ideal para planificar capacidad y detectar anomalías de tráfico masivo.",
+    "analisis_opciones": {
+      "a": "Incorrecta. SNMP sirve para gestión general, no está optimizado para análisis de flujos masivos.",
+      "b": "Correcta. Es el estándar de la industria para contadores de tráfico y flujos.",
+      "c": "Incorrecta. El mirroring duplica todo el tráfico hacia un puerto para su análisis completo.",
+      "d": "Incorrecta. Es para registro de eventos de sistema."
+    }
+  },
+  {
+    "pregunta": "412. ¿Cuál de las siguientes herramientas de monitorización comercial y de código abierto es famosa por su capacidad de autodescubrimiento y por ofrecer una solución 'todo en uno' (redes, servidores, nube) sin necesidad de tantos plugins externos como Nagios?",
+    "opciones": [
+      "a) Wireshark.",
+      "b) Zabbix.",
+      "c) MRTG.",
+      "d) Tcpdump."
+    ],
+    "correcta": 1,
+    "explicacion": "Zabbix es un monitor de infraestructura completo que incluye de serie capacidades que en otras herramientas requieren extensiones, destacando su escalabilidad y su interfaz web integrada.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es un analizador de protocolos (sniffer).",
+      "b": "Correcta. Es una de las herramientas de infraestructura más potentes del mercado.",
+      "c": "Incorrecta. Herramienta antigua basada en SNMP para generar gráficas de tráfico.",
+      "d": "Incorrecta. Herramienta de línea de comandos para captura de paquetes."
+    }
+  },
+  {
+    "pregunta": "413. En sistemas Linux, usted desea comprobar el espacio libre y el uso de las particiones de disco en un formato que sea fácil de leer para un humano (en GB o MB). ¿Qué comando utilizaría?",
+    "opciones": [
+      "a) du -sh",
+      "b) df -h",
+      "c) free -m",
+      "d) iostat"
+    ],
+    "correcta": 1,
+    "explicacion": "El comando 'df' (disk free) con el modificador '-h' (human-readable) muestra el uso del sistema de archivos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. 'du' (disk usage) mide el tamaño de directorios o archivos específicos.",
+      "b": "Correcta. Comando estándar para ver el estado de los discos/particiones.",
+      "c": "Incorrecta. Muestra el uso de la memoria RAM.",
+      "d": "Incorrecta. Muestra estadísticas de entrada/salida de la CPU y discos."
+    }
+  },
+  {
+    "pregunta": "414. ¿Qué comando de red permite ver todas las conexiones activas, los puertos de escucha y la tabla de rutas en un sistema local?",
+    "opciones": [
+      "a) route -n",
+      "b) netstat",
+      "c) ip link show",
+      "d) traceroute"
+    ],
+    "correcta": 1,
+    "explicacion": "Netstat es la herramienta clásica de diagnóstico de red. Aunque está siendo sustituida por el comando 'ss', sigue siendo fundamental en los exámenes por su capacidad de mostrar estadísticas de interfaz y conexiones.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Solo muestra la tabla de rutas.",
+      "b": "Correcta. Proporciona una visión global de la actividad de red del equipo.",
+      "c": "Incorrecta. Solo muestra el estado físico de las interfaces.",
+      "d": "Incorrecta. Traza el camino hacia un host externo."
+    }
+  },
+  {
+    "pregunta": "415. De entre las siguientes, ¿qué herramienta es un analizador de protocolos 'offline' y gráfico que permite realizar una inspección profunda de cada capa de un paquete capturado previamente?",
+    "opciones": [
+      "a) Nagios.",
+      "b) Pandora FMS.",
+      "c) Wireshark.",
+      "d) Nmap."
+    ],
+    "correcta": 2,
+    "explicacion": "Wireshark permite abrir archivos de captura (.pcap) y diseccionar cada protocolo (HTTP, DNS, TCP) para analizar errores o brechas de seguridad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es un monitor de servicios/estados.",
+      "b": "Incorrecta. Es una solución de monitorización integral (española).",
+      "c": "Correcta. Es el analizador de tráfico (sniffer) gráfico por excelencia.",
+      "d": "Incorrecta. Es un escáner de puertos y auditoría de red."
+    }
+  },
+  {
+    "pregunta": "416. ¿Qué comando de monitorización en Linux se utiliza para ver el uso de la memoria RAM y del espacio de intercambio (swap) de forma rápida?",
+    "opciones": [
+      "a) memshow",
+      "b) free",
+      "c) top",
+      "d) vmstat"
+    ],
+    "correcta": 1,
+    "explicacion": "El comando 'free' muestra el total, la utilizada y la libre de la memoria física y swap del sistema.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No existe.",
+      "b": "Correcta. Es el comando específico para memoria.",
+      "c": "Incorrecta. Muestra memoria pero mezclada con procesos y CPU.",
+      "d": "Incorrecta. Muestra estadísticas de memoria virtual, pero es menos directo que 'free'."
+    }
+  },
+  {
+    "pregunta": "417. En la monitorización de servicios, ¿qué herramienta destaca por su sistema de 'objetos' (hosts, services, contact groups) y su capacidad de ejecutar scripts externos (plugins) para comprobar cualquier cosa?",
+    "opciones": [
+      "a) Nagios.",
+      "b) Wireshark.",
+      "c) Tcpdump.",
+      "d) Netcat."
+    ],
+    "correcta": 0,
+    "explicacion": "Nagios revolucionó la monitorización al separar el motor de las pruebas de estado (plugins), permitiendo una flexibilidad casi infinita.",
+    "analisis_opciones": {
+      "a": "Correcta. Es el referente en monitorización de servicios mediante plugins.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. Es la 'navaja suiza' de TCP/IP, pero no un sistema de monitorización."
+    }
+  },
+  {
+    "pregunta": "418. ¿Qué comando de Linux nos permitiría ver qué archivos tiene abiertos un proceso determinado o un usuario específico?",
+    "opciones": [
+      "a) ps -aux",
+      "b) lsof",
+      "c) fuser",
+      "d) ls -l"
+    ],
+    "correcta": 1,
+    "explicacion": "lsof (List Open Files) es vital para saber qué archivos, sockets o librerías está utilizando un proceso.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Muestra procesos, no sus archivos abiertos.",
+      "b": "Correcta. Indispensable para depurar bloqueos de archivos.",
+      "c": "Incorrecta. Identifica procesos que usan un archivo o socket, pero al revés que lsof.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "419. ¿Cuál es la función del comando 'uptime' en un servidor de red?",
+    "opciones": [
+      "a) Reiniciar el sistema de forma segura.",
+      "b) Mostrar cuánto tiempo lleva encendido el sistema y la carga media (load average).",
+      "c) Actualizar la hora mediante el protocolo NTP.",
+      "d) Mostrar los usuarios que han iniciado sesión recientemente."
+    ],
+    "correcta": 1,
+    "explicacion": "Uptime indica el tiempo de actividad y el 'load average' de los últimos 1, 5 y 15 minutos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso lo hace reboot o shutdown.",
+      "b": "Correcta. Proporciona una visión rápida del estado de carga del servidor.",
+      "c": "Incorrecta. Eso lo hace ntpdate o chrony.",
+      "d": "Incorrecta. Eso lo hace el comando 'last'."
+    }
+  },
+  {
+    "pregunta": "420. ¿Qué herramienta de red se usa desde la consola para capturar paquetes en tiempo real y filtrarlos (usando sintaxis BPF) para ver qué está pasando por una interfaz sin entorno gráfico?",
+    "opciones": [
+      "a) Wireshark.",
+      "b) Snort.",
+      "c) Tcpdump.",
+      "d) Nmap."
+    ],
+    "correcta": 2,
+    "explicacion": "Tcpdump es la versión de línea de comandos del sniffer. Es esencial en servidores donde no hay interfaz gráfica.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es la versión gráfica.",
+      "b": "Incorrecta. Es un sistema de detección de intrusos (IDS).",
+      "c": "Correcta. Es el estándar de captura de tráfico por consola.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "421. A cada objeto de la MIB se le asocia un identificador único especificado en lenguaje ASN.1, ¿cómo se denomina dicho identificador?",
+    "opciones": [
+      "a) Object Identifier (OID).",
+      "b) Hash.",
+      "c) Clave primaria.",
+      "d) Etiqueta SNMP."
+    ],
+    "correcta": 0,
+    "explicacion": "El OID es una secuencia de números separados por puntos (ej. .1.3.6.1...) que identifica de forma inequívoca la posición de un objeto en el árbol jerárquico de la MIB.",
+    "analisis_opciones": {
+      "a": "Correcta. Es la dirección lógica del objeto de gestión.",
+      "b": "Incorrecta. Es un algoritmo de resumen.",
+      "c": "Incorrecta. Concepto de bases de datos relacionales.",
+      "d": "Incorrecta. No es terminología técnica estándar."
+    }
+  },
+  {
+    "pregunta": "422. ¿Con qué comando de Linux se puede comprobar y reparar la integridad de un sistema de ficheros ext3 o ext4?",
+    "opciones": [
+      "a) fix.ext3",
+      "b) e2fsck",
+      "c) chkdsk",
+      "d) melt"
+    ],
+    "correcta": 1,
+    "explicacion": "e2fsck (ext2/ext3/ext4 file system check) es la utilidad de mantenimiento para verificar la salud de los sistemas de archivos de la familia ext.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Es el equivalente a fsck para estos sistemas específicos.",
+      "c": "Incorrecta. Es el comando equivalente en sistemas Windows.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "423. El comando de Linux que permite conocer la ruta completa del archivo ejecutable que se lanzaría al escribir un comando en la shell es:",
+    "opciones": [
+      "a) which",
+      "b) apropos",
+      "c) catch",
+      "d) tee"
+    ],
+    "correcta": 0,
+    "explicacion": "El comando 'which' busca en las rutas definidas en la variable de entorno $PATH y devuelve la ubicación exacta del binario (ej. /usr/bin/ls).",
+    "analisis_opciones": {
+      "a": "Correcta. Localiza ejecutables en el sistema.",
+      "b": "Incorrecta. Busca en las descripciones de las páginas del manual (man).",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. Lee de la entrada estándar y escribe en la salida y en archivos simultáneamente."
+    }
+  },
+  {
+    "pregunta": "424. Indique la afirmación CORRECTA referente a un segmento 'Keep-Alive' según la RFC 1122:",
+    "opciones": [
+      "a) Se envía aleatoriamente para saturar la red.",
+      "b) Si el segmento se envía y no recibe respuesta, siempre se corta la conexión inmediatamente.",
+      "c) Se envía para comprobar si la conexión con otro dispositivo TCP sigue activa tras un periodo de inactividad.",
+      "d) Es un protocolo de nivel de aplicación."
+    ],
+    "correcta": 2,
+    "explicacion": "Keep-alive es un mecanismo de la capa de transporte (TCP) para verificar que el otro extremo sigue ahí aunque no haya datos que enviar, evitando mantener conexiones 'zombis'.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta. Suele haber un número de reintentos antes del cierre definitivo.",
+      "c": "Correcta. Sirve para mantenimiento de sesiones persistentes.",
+      "d": "Incorrecta. Es una característica del protocolo TCP (Capa de Transporte)."
+    }
+  },
+  {
+    "pregunta": "425. Dentro del protocolo SNMP, ¿cuál es el puerto UDP que utiliza la estación de gestión (NMS) para recibir los avisos asíncronos (Traps) de los agentes?",
+    "opciones": [
+      "a) 161",
+      "b) 162",
+      "c) 514",
+      "d) 1161"
+    ],
+    "correcta": 1,
+    "explicacion": "Mientras que el agente escucha en el 161, la estación de gestión escucha en el 162 para recibir las alertas (Traps/Informs).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Puerto de escucha del agente.",
+      "b": "Correcta. Puerto de destino para las notificaciones.",
+      "c": "Incorrecta. Puerto de Syslog.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "426. ¿Qué comando en Linux se utiliza para cambiar la propiedad de un archivo o directorio a un nuevo usuario y/o grupo?",
+    "opciones": [
+      "a) chmod",
+      "b) chown",
+      "c) chgrp",
+      "d) umask"
+    ],
+    "correcta": 1,
+    "explicacion": "chown (change owner) permite cambiar tanto el usuario propietario como el grupo (usando la sintaxis usuario:grupo).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Cambia los permisos (rwx), no el dueño.",
+      "b": "Correcta. Es el comando de gestión de propiedad de archivos.",
+      "c": "Incorrecta. Solo cambia el grupo.",
+      "d": "Incorrecta. Define los permisos por defecto al crear nuevos archivos."
+    }
+  },
+  {
+    "pregunta": "427. ¿Cómo se denomina al intermediario en SNMP que permite gestionar dispositivos que no hablan el protocolo nativamente o que se encuentran tras un firewall?",
+    "opciones": [
+      "a) NMS.",
+      "b) Agente Proxy.",
+      "c) MIB Browser.",
+      "d) Community Controller."
+    ],
+    "correcta": 1,
+    "explicacion": "Un proxy SNMP recibe peticiones en nombre de otros dispositivos y las traduce o reenvía, actuando como puente de gestión.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es el gestor central.",
+      "b": "Correcta. Es la figura de intermediación técnica.",
+      "c": "Incorrecta. Es una herramienta de visualización.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "428. En la monitorización de sistemas, ¿qué herramienta de código abierto se especializa en generar gráficas de rendimiento a partir de datos recolectados por SNMP, almacenándolos en archivos .rrd?",
+    "opciones": [
+      "a) Wireshark.",
+      "b) MRTG (Multi Router Traffic Grapher).",
+      "c) Snort.",
+      "d) Nmap."
+    ],
+    "correcta": 1,
+    "explicacion": "MRTG es una de las herramientas históricas más usadas para graficar el tráfico de interfaces de red mediante SNMP.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Es el monitor gráfico destacado en los tests de 'varias fuentes'.",
+      "c": "Incorrecta. Es un IDS (Detección de intrusos).",
+      "d": "Incorrecta. Es un escáner de red."
+    }
+  }
+]
+
+
+
+
+

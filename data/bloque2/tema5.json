@@ -1,0 +1,1252 @@
+[{
+    "pregunta": "1. ¿Cuál de los siguientes proyectos de Apache relacionados con Hadoop provee de servicios de serialización de datos?",
+    "opciones": [
+      "a) Flume",
+      "b) Chukwa",
+      "c) Avro",
+      "d) Jaql"
+    ],
+    "correcta": 2,
+    "explicacion": "Apache Avro es un sistema de serialización de datos que proporciona estructuras de datos ricas, un formato de datos binario compacto y rápido, y una integración sencilla con lenguajes dinámicos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Flume se utiliza para recolectar y mover grandes cantidades de datos de logs.",
+      "B": "Incorrecta. Chukwa es un sistema de recolección de datos para monitorear sistemas distribuidos.",
+      "C": "Correcta. Es el estándar de serialización en el ecosistema Hadoop.",
+      "D": "Incorrecta. Jaql es un lenguaje de consulta funcional para JSON."
+    }
+  },
+  {
+    "pregunta": "2. ¿Cuál de los siguientes NO es un ORM (Mapeador Objeto-Relacional)?",
+    "opciones": [
+      "a) ADO.NET Entity Framework",
+      "b) Ruby Hibernation",
+      "c) NHibernate",
+      "d) Hibernate"
+    ],
+    "correcta": 1,
+    "explicacion": "Hibernate es para Java y NHibernate para .NET. 'Ruby Hibernation' es un nombre inventado; el ORM más conocido en Ruby es ActiveRecord.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el ORM oficial de Microsoft para .NET.",
+      "B": "Correcta. No existe un proyecto relevante con ese nombre.",
+      "C": "Incorrecta. Es el port de Hibernate para la plataforma .NET.",
+      "D": "Incorrecta. Es el ORM más popular del mundo Java."
+    }
+  },
+  {
+    "pregunta": "3. En relación al gestor de base de datos ORACLE, señale la correcta:",
+    "opciones": [
+      "a) Un tablespace es una unidad lógica de almacenamiento.",
+      "b) Un datafile (archivo de datos) puede pertenecer a varios tablespace",
+      "c) Un segmento es la unidad mínima de almacenamiento físico.",
+      "d) Una extensión es una agrupación de índices multinivel."
+    ],
+    "correcta": 0,
+    "explicacion": "En la arquitectura de Oracle, un Tablespace es la unidad lógica de almacenamiento de mayor nivel, compuesta por uno o más archivos físicos (datafiles).",
+    "analisis_opciones": {
+      "A": "Correcta. Define la estructura lógica superior.",
+      "B": "Incorrecta. Un datafile solo pertenece a un único tablespace.",
+      "C": "Incorrecta. La unidad mínima de almacenamiento físico es el bloque (data block).",
+      "D": "Incorrecta. Una extensión es un conjunto de bloques de datos contiguos."
+    }
+  },
+  {
+    "pregunta": "4. En un Sistema de Gestión de Bases de Datos, la gestión de la concurrencia:",
+    "opciones": [
+      "a) Se refiere a la capacidad de asignar almacenamiento secundario.",
+      "b) Se refiere al control de la interacción entre transacciones activas para evitar la inconsistencia de la base de datos.",
+      "c) Se refiere a la capacidad del sistema para retroceder a un estado coherente de los datos.",
+      "d) Se refiere a los mecanismos para mantener la independencia entre los niveles lógico y físico del sistema."
+    ],
+    "correcta": 1,
+    "explicacion": "El control de concurrencia garantiza que las transacciones que se ejecutan simultáneamente no interfieran entre sí, manteniendo la integridad de los datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es gestión de archivos y almacenamiento.",
+      "B": "Correcta. Evita problemas como la 'lectura sucia' o la 'actualización perdida'.",
+      "C": "Incorrecta. Eso es la recuperación (Recovery).",
+      "D": "Incorrecta. Eso es la independencia de datos."
+    }
+  },
+  {
+    "pregunta": "5. En el entorno de una base de datos, ¿qué se entiende por redundancia?",
+    "opciones": [
+      "a) Existe información contradictoria",
+      "b) Existe información incongruente",
+      "c) La información no es uniforme",
+      "d) Existe información repetida"
+    ],
+    "correcta": 3,
+    "explicacion": "La redundancia consiste en el almacenamiento de los mismos datos varias veces en distintos lugares de la base de datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es inconsistencia.",
+      "B": "Incorrecta. También se refiere a la inconsistencia.",
+      "C": "Incorrecta. No es el término técnico para redundancia.",
+      "D": "Correcta. Es la duplicidad de datos."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál de las siguientes opciones NO es una Base de Datos NoSQL?",
+    "opciones": [
+      "a) Riak.",
+      "b) DynamoDB.",
+      "c) Aurora.",
+      "d) Redis."
+    ],
+    "correcta": 2,
+    "explicacion": "Amazon Aurora es un motor de base de datos relacional compatible con MySQL y PostgreSQL diseñado para la nube de AWS.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Riak es una base de datos NoSQL de clave-valor.",
+      "B": "Incorrecta. DynamoDB es el servicio NoSQL de Amazon.",
+      "C": "Correcta. Es una base de datos Relacional (SGBDR).",
+      "D": "Incorrecta. Redis es NoSQL de clave-valor (en memoria)."
+    }
+  },
+  {
+    "pregunta": "7. Señale las propiedades que han de tener las transacciones de los sistemas gestores de bases de datos (SGBD):",
+    "opciones": [
+      "a) Atomicidad, consistencia, cohesión y persistencia.",
+      "b) Atomicidad, consistencia, polimorfismo y persistencia.",
+      "c) Atomicidad, consistencia, aislamiento y persistencia.",
+      "d) Atomicidad, encapsulación, herencia y persistencia."
+    ],
+    "correcta": 2,
+    "explicacion": "Se refiere al acrónimo ACID: Atomicidad, Consistencia (Consistency), Aislamiento (Isolation) y Durabilidad/Persistencia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Cohesión no forma parte de ACID.",
+      "B": "Incorrecta. Polimorfismo es un concepto de POO.",
+      "C": "Correcta. Son las cuatro propiedades clásicas.",
+      "D": "Incorrecta. Son pilares de la Programación Orientada a Objetos."
+    }
+  },
+  {
+    "pregunta": "8. Un DBMS debe disponer, al menos de:",
+    "opciones": [
+      "a) ADL, SQL y DDM.",
+      "b) DDL, ADM y PCI.",
+      "c) DDL y DML.",
+      "d) Ninguno es correcto."
+    ],
+    "correcta": 2,
+    "explicacion": "Un SGBD requiere un Lenguaje de Definición de Datos (DDL) para la estructura y un Lenguaje de Manipulación de Datos (DML) para los datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Siglas no estándar.",
+      "B": "Incorrecta. Siglas no estándar.",
+      "C": "Correcta. Son los lenguajes mínimos de interacción.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. Cypher es:",
+    "opciones": [
+      "a) Un lenguaje de consulta sobre bases de datos Neo4j.",
+      "b) Una base de datos de tipo clave-valor.",
+      "c) Una base de datos orientada a documentos.",
+      "d) Una base de datos orientada a grafos."
+    ],
+    "correcta": 0,
+    "explicacion": "Cypher es el lenguaje de consulta declarativo de Neo4j, similar a SQL pero diseñado para trabajar con nodos y relaciones en grafos.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el lenguaje específico para grafos en Neo4j.",
+      "B": "Incorrecta. No es una base de datos clave-valor.",
+      "C": "Incorrecta. No es una base de datos documental.",
+      "D": "Incorrecta. Neo4j es la base de datos de grafos, Cypher es su lenguaje."
+    }
+  },
+  {
+    "pregunta": "10. Señale, de entre los siguientes, cual es un gestor de base de datos relacional:",
+    "opciones": [
+      "a) PostgreSQL.",
+      "b) Datawarehouse.",
+      "c) Snowflake.",
+      "d) CouchDB."
+    ],
+    "correcta": 0,
+    "explicacion": "PostgreSQL es un sistema de gestión de bases de datos relacionales objeto-relacional de código abierto.",
+    "analisis_opciones": {
+      "A": "Correcta. Es un SGBDR clásico.",
+      "B": "Incorrecta. Es un concepto (almacén de datos), no un gestor específico.",
+      "C": "Incorrecta. Es un servicio de almacenamiento de datos en la nube (Data Warehouse).",
+      "D": "Incorrecta. Es una base de datos NoSQL documental."
+    }
+  },
+  {
+    "pregunta": "11. Indique cuál de los siguientes NO es un gestor de bases de datos relacional:",
+    "opciones": [
+      "a) MaxDB",
+      "b) PostgreSQL",
+      "c) JSON",
+      "d) MySQL"
+    ],
+    "correcta": 2,
+    "explicacion": "JSON es un formato de texto sencillo para el intercambio de datos, no es un sistema gestor de bases de datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. MaxDB es un SGBDR de SAP.",
+      "B": "Incorrecta. Es relacional.",
+      "C": "Correcta. Es un formato de datos.",
+      "D": "Incorrecta. Es relacional."
+    }
+  },
+  {
+    "pregunta": "12. En un sistema gestor de bases de datos construido sobre el modelo relacional, se denomina dominio:",
+    "opciones": [
+      "a) Al número de tuplas que tenga una relación.",
+      "b) Al número de atributos que tenga la relación.",
+      "c) Al rango de valores que puede tener un atributo dado.",
+      "d) Al producto del número de tuplas y atributos de una relación."
+    ],
+    "correcta": 2,
+    "explicacion": "El dominio es el conjunto de valores atómicos del mismo tipo que puede tomar un atributo determinado.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es la cardinalidad.",
+      "B": "Incorrecta. Eso es el grado.",
+      "C": "Correcta. Define el conjunto de valores legales para un atributo.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "13. Al lenguaje que interactúa con el sistema gestor de base de datos y permite recuperar, insertar, eliminar y modificar la información existente se le denomina:",
+    "opciones": [
+      "a) De manipulación de datos.",
+      "b) De definición de datos.",
+      "c) De control de datos.",
+      "d) De carga de datos."
+    ],
+    "correcta": 0,
+    "explicacion": "El DML (Data Manipulation Language) es el encargado de las operaciones sobre los datos (SELECT, INSERT, UPDATE, DELETE).",
+    "analisis_opciones": {
+      "A": "Correcta. Es el lenguaje para operar con el contenido.",
+      "B": "Incorrecta. El DDL sirve para definir la estructura (tablas, índices).",
+      "C": "Incorrecta. El DCL gestiona permisos (GRANT, REVOKE).",
+      "D": "Incorrecta. No es una categoría formal de lenguajes de BD."
+    }
+  },
+  {
+    "pregunta": "14. En relación a los sistemas de gestión de bases de datos relacionales, la unidad de información que está asociada a un dominio del que toma sus valores es:",
+    "opciones": [
+      "a) El atributo.",
+      "b) La relación.",
+      "c) El grado.",
+      "d) La cardinalidad."
+    ],
+    "correcta": 0,
+    "explicacion": "Un atributo representa una propiedad o columna de la relación y sus valores deben pertenecer al dominio definido para él.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el componente que toma valores del dominio.",
+      "B": "Incorrecta. Es el conjunto de atributos (la tabla).",
+      "C": "Incorrecta. Es el número total de atributos.",
+      "D": "Incorrecta. Es el número total de tuplas."
+    }
+  },
+  {
+    "pregunta": "15. ¿Cuál de los siguientes sistemas de bases de datos es orientado a objetos?",
+    "opciones": [
+      "a) MYSQL",
+      "b) SQLITE",
+      "c) ZOPE",
+      "d) MARIADB"
+    ],
+    "correcta": 2,
+    "explicacion": "Zope Object Database (ZODB) es una base de datos orientada a objetos para almacenar objetos Python de forma nativa.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es relacional.",
+      "B": "Incorrecta. Es relacional embebida.",
+      "C": "Correcta. Es un ejemplo clásico de BDOO.",
+      "D": "Incorrecta. Es relacional (fork de MySQL)."
+    }
+  },
+  {
+    "pregunta": "16. La ejecución de una transacción en un SGDB debe cumplir, entre otras, las características de:",
+    "opciones": [
+      "a) Consistencia y herencia.",
+      "b) Atomicidad y herencia.",
+      "c) Atomicidad y consistencia.",
+      "d) Abstracción y polimorfismo."
+    ],
+    "correcta": 2,
+    "explicacion": "Atomicidad y consistencia son dos de los cuatro pilares (ACID) que deben cumplir las transacciones.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La herencia es de objetos.",
+      "B": "Incorrecta. La herencia es de objetos.",
+      "C": "Correcta. Ambas pertenecen a las propiedades ACID.",
+      "D": "Incorrecta. Son conceptos de POO."
+    }
+  },
+  {
+    "pregunta": "17. ¿Cuál de los siguientes ejemplos no es un Sistema de Gestión de Bases de Datos Relacional?",
+    "opciones": [
+      "a) Oracle.",
+      "b) Informix.",
+      "c) DB2",
+      "d) Knosys."
+    ],
+    "correcta": 3,
+    "explicacion": "Knosys es un gestor documental/textual de información, no un sistema relacional basado en tablas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un SGBDR.",
+      "B": "Incorrecta. Es un SGBDR.",
+      "C": "Incorrecta. Es un SGBDR de IBM.",
+      "D": "Correcta. No es relacional."
+    }
+  },
+  {
+    "pregunta": "18. Las bases de datos relacionales ofrecen propiedades ACID. Dicho acrónimo se refiere a:",
+    "opciones": [
+      "a) Atomicidad, Consistencia, Aislamiento y Durabilidad.",
+      "b) Atomicidad, Coherencia, Integridad y Distribución.",
+      "c) Disponibilidad, Coherencia, Intensidad y Durabilidad.",
+      "d) Atomicidad, Consistencia, Aislamiento y Disponibilidad."
+    ],
+    "correcta": 0,
+    "explicacion": "ACID son las siglas en inglés de Atomicity, Consistency, Isolation y Durability.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la traducción estándar.",
+      "B": "Incorrecta. Coherencia no es el término técnico de la C (es Consistencia).",
+      "C": "Incorrecta. Términos erróneos.",
+      "D": "Incorrecta. La D es de Durabilidad, no de Disponibilidad (que es la A de BASE)."
+    }
+  },
+  {
+    "pregunta": "19. Entre las características obligatorias de un sistema gestor de bases de datos orientadas a objetos, NO se encuentra:",
+    "opciones": [
+      "a) Debe permitir construir objetos complejos.",
+      "b) El conjunto de tipos de datos debe ser fijo, consiguiendo así mayor eficiencia en las búsquedas.",
+      "c) Todos los objetos deben tener un identificador que sea independiente de los valores de sus atributos.",
+      "d) El esquema de una BDOO incluye únicamente un conjunto de clases (o de tipos).",
+      "e) Nota: Todas las anteriores son características según el manifiesto."
+    ],
+    "correcta": 1,
+    "explicacion": "Precisamente una de las ventajas de las BDOO es la extensibilidad; no tienen un conjunto fijo de tipos, sino que permiten definir tipos nuevos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es obligatoria.",
+      "B": "Correcta. Es falso, los tipos son extensibles.",
+      "C": "Incorrecta. Es obligatoria (OID).",
+      "D": "Incorrecta. Es una característica del esquema."
+    }
+  },
+  {
+    "pregunta": "20. ¿Cuál es la característica diferenciadora de las claves foráneas en una base de datos relacional?",
+    "opciones": [
+      "a) Un atributo que no tiene relación con otras tablas.",
+      "b) Un atributo que referencia la clave primaria de otra tabla.",
+      "c) Un atributo que puede tener valores duplicados.",
+      "d) Un atributo que se utiliza solo para consultas."
+    ],
+    "correcta": 1,
+    "explicacion": "La clave foránea (Foreign Key) establece un vínculo entre dos tablas mediante la referencia a una clave primaria.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sirven precisamente para relacionar.",
+      "B": "Correcta. Es su función principal.",
+      "C": "Incorrecta. Pueden tenerlos, pero no es su característica definitoria.",
+      "D": "Incorrecta. Garantizan la integridad referencial."
+    }
+  },
+  {
+    "pregunta": "21. ¿Qué es el lenguaje OQL en el contexto de las bases de datos orientadas a objetos?",
+    "opciones": [
+      "a) OQL no es un lenguaje en el contexto de las bases de datos orientadas a objetos.",
+      "b) Un lenguaje de definición de datos.",
+      "c) Un lenguaje de consulta de datos.",
+      "d) Un lenguaje de manipulación de datos."
+    ],
+    "correcta": 2,
+    "explicacion": "OQL (Object Query Language) es el estándar de consulta propuesto por el ODMG, similar al SQL pero adaptado a objetos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un lenguaje clave en este ámbito.",
+      "B": "Incorrecta. El de definición es ODL.",
+      "C": "Correcta. Sirve para consultar objetos.",
+      "D": "Incorrecta. La manipulación se suele hacer mediante el propio lenguaje anfitrión (bindings)."
+    }
+  },
+  {
+    "pregunta": "22. ¿Cuál de las siguientes no es una característica obligatoria de un sistema de gestión de base datos orientado a objetos según el manifiesto Malcolm Atkinson?",
+    "opciones": [
+      "a) Deben soportarse objetos complejos.",
+      "b) Debe soportarse la herencia múltiple.",
+      "c) Debe soportarse la encapsulación.",
+      "d) Los tipos o clases deben ser capaces de heredar de sus ancestros."
+    ],
+    "correcta": 1,
+    "explicacion": "El manifiesto exige herencia, pero no especifica que deba ser obligatoriamente 'herencia múltiple'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es obligatoria.",
+      "B": "Correcta. Es una opción de diseño, no una obligación del manifiesto.",
+      "C": "Incorrecta. Es obligatoria.",
+      "D": "Incorrecta. Es la definición de herencia simple."
+    }
+  },
+  {
+    "pregunta": "23. ¿Cuál de los siguientes es un Sistema de Gestión de Bases de Datos Orientadas a Objetos (SGDBOO)?",
+    "opciones": [
+      "a) Cézanne.",
+      "b) Picasso.",
+      "c) Matisse.",
+      "d) Rembrandt."
+    ],
+    "correcta": 2,
+    "explicacion": "Matisse es un sistema comercial de base de datos de objetos nativa.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Nombre artístico.",
+      "B": "Incorrecta. Nombre artístico.",
+      "C": "Correcta. SGBDOO real.",
+      "D": "Incorrecta. Nombre artístico."
+    }
+  },{
+    "pregunta": "21. En relación a las sentencias utilizadas en SQL y su tipología, indique la afirmación INCORRECTA:",
+    "opciones": [
+      "a) Las sentencias de tipo DML se utilizan para manipulación de datos e incluye instrucciones como SELECT, INSERT y DELETE.",
+      "b) Las sentencias de control de datos permiten la gestión de privilegios a los usuarios mediante GRANT o REVOKE.",
+      "c) Las sentencias de tipo DCL permiten la definición de estructuras de datos mediante CREATE TABLE y DROP TABLE.",
+      "d) Las sentencias de control de transacciones incluyen las instrucciones COMMIT y ROLLBACK."
+    ],
+    "correcta": 2,
+    "explicacion": "La afirmación es incorrecta porque CREATE y DROP pertenecen al DDL (Lenguaje de Definición de Datos), no al DCL (Lenguaje de Control de Datos), que es el que gestiona permisos.",
+    "analisis_opciones": {
+      "A": "Correcta. El DML se encarga de las operaciones con los registros.",
+      "B": "Correcta. DCL se encarga de la seguridad y permisos.",
+      "C": "Incorrecta. Mezcla la sigla DCL con comandos que son DDL.",
+      "D": "Correcta. El TCL gestiona la integridad de las transacciones."
+    }
+  },
+  {
+    "pregunta": "35. En el marco de las bases de datos, ¿Qué nivel de aislamiento evita la anomalía conocida como 'lectura fantasma'?",
+    "opciones": [
+      "a) Serializable",
+      "b) Lecturas repetibles",
+      "c) Lecturas comprometidas",
+      "d) Lecturas no comprometidas"
+    ],
+    "correcta": 0,
+    "explicacion": "El nivel 'Serializable' es el más estricto y el único que garantiza la protección contra las lecturas fantasma, asegurando que las transacciones parezcan ejecutarse de forma aislada.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el nivel máximo de aislamiento.",
+      "B": "Incorrecta. Evita lecturas no repetibles, pero permite fantasmas.",
+      "C": "Incorrecta. Solo evita lecturas sucias.",
+      "D": "Incorrecta. Es el nivel más bajo, permite todas las anomalías."
+    }
+  },
+  {
+    "pregunta": "5. (Supuesto I) No se desea cambiar el motor de la base de datos, ¿cuál utilizará MySQL por defecto?",
+    "opciones": [
+      "a) MyPal",
+      "b) InnoDB",
+      "c) MyISAM",
+      "d) MySQLEngine"
+    ],
+    "correcta": 1,
+    "explicacion": "A partir de la versión 5.5 de MySQL, InnoDB se convirtió en el motor de almacenamiento (storage engine) predeterminado debido a su soporte para transacciones ACID y claves foráneas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Nombre inexistente.",
+      "B": "Correcta. Es el motor estándar actual.",
+      "C": "Incorrecta. Era el motor por defecto en versiones muy antiguas, pero no soporta transacciones.",
+      "D": "Incorrecta. Nombre ficticio."
+    }
+  },
+  {
+    "pregunta": "9. (Supuesto I) Desea eliminar todos los datos de la tabla ANDER, pero no la propia definición de la tabla, ¿qué sentencia le permitirá realizar dicha acción?",
+    "opciones": [
+      "a) DROP TABLE ANDER;",
+      "b) No existe comando en SQL que arregle esta situación.",
+      "c) TRUNCATE TABLE ANDER;",
+      "d) DELETE TABLE ANDER;"
+    ],
+    "correcta": 2,
+    "explicacion": "TRUNCATE elimina todos los registros de una tabla de forma eficiente (DDL) manteniendo la estructura, a diferencia de DELETE que es DML y procesa fila por fila.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Elimina tanto los datos como la definición de la tabla.",
+      "B": "Incorrecta. El comando existe.",
+      "C": "Correcta. Vacía la tabla rápidamente conservando su estructura.",
+      "D": "Incorrecta. La sintaxis correcta sería 'DELETE FROM ANDER', pero TRUNCATE es más específico para vaciar."
+    }
+  },
+  {
+    "pregunta": "19. (Supuesto I) Si desea eliminar una vista, usará...",
+    "opciones": [
+      "a) No se puede eliminar, dado que posee el principio de constancia",
+      "b) DROP DATABASE;",
+      "c) DROP VIEW;",
+      "d) DELETE VIEW;"
+    ],
+    "correcta": 2,
+    "explicacion": "Para eliminar objetos de la estructura de la base de datos (como tablas, índices o vistas), se utiliza el comando DROP seguido del tipo de objeto.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las vistas se pueden borrar como cualquier otro objeto.",
+      "B": "Incorrecta. Borra la base de datos completa.",
+      "C": "Correcta. Sintaxis estándar DDL para eliminar vistas.",
+      "D": "Incorrecta. DELETE se usa para registros, no para estructuras."
+    }
+  },
+  {
+    "pregunta": "20. (Supuesto I) ¿Mediante qué comandos distintos podrá, respectivamente, crear un punto de guardado y volver a ese punto de guardado?",
+    "opciones": [
+      "a) Save y Back",
+      "b) Savedata y Rolldata",
+      "c) Savepoint y Rollback",
+      "d) Savedatapointrule y Rollbackdatapointrule"
+    ],
+    "correcta": 2,
+    "explicacion": "En el control de transacciones (TCL), SAVEPOINT crea una marca dentro de la transacción y ROLLBACK TO permite regresar a ella si algo falla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Comandos no estándar en SQL.",
+      "B": "Incorrecta. Comandos ficticios.",
+      "C": "Correcta. Son los comandos técnicos adecuados.",
+      "D": "Incorrecta. Nombres excesivamente largos e inexistentes."
+    }
+  },
+  {
+    "pregunta": "21. (Reserva Supuesto I) A la hora de contar filas que cumplan ciertas condiciones se usa el comando 'COUNT'. ¿Tendría en cuenta los resultados considerados 'nulos'?",
+    "opciones": [
+      "a) Siempre los tiene en cuenta.",
+      "b) Nunca los tiene en cuenta.",
+      "c) No, salvo si se utiliza COUNT(*)",
+      "d) Sí, salvo si se utiliza COUNT(*)"
+    ],
+    "correcta": 2,
+    "explicacion": "COUNT(columna) ignora los valores NULL de esa columna específica. Solo COUNT(*) contabiliza todas las filas incluyendo las que tengan nulos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Depende de la sintaxis.",
+      "B": "Incorrecta. COUNT(*) sí los cuenta.",
+      "C": "Correcta. COUNT(*) es la excepción que cuenta todo el registro.",
+      "D": "Incorrecta. Es justo al revés."
+    }
+  },{
+    "pregunta": "¿Qué tipo de base de datos NoSQL es Cassandra?",
+    "opciones": [
+      "a) Orientada a documentos.",
+      "b) Orientada a objetos.",
+      "c) Orientada a familias de columnas (tabular).",
+      "d) Clave-valor."
+    ],
+    "correcta": 2,
+    "explicacion": "Apache Cassandra es una base de datos NoSQL distribuida y masivamente escalable diseñada para manejar grandes cantidades de datos a través de servidores comerciales, basándose en un modelo de familias de columnas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ejemplo de esto sería MongoDB.",
+      "B": "Incorrecta. Estas siguen el modelo de objetos nativo.",
+      "C": "Correcta. Es su arquitectura principal para Big Data.",
+      "D": "Incorrecta. Ejemplo de esto sería Redis."
+    }
+  },
+  {
+    "pregunta": "Dentro del ecosistema Hadoop, ¿para qué se utiliza la herramienta Sqoop?",
+    "opciones": [
+      "a) Para monitorizar el estado de los nodos del clúster.",
+      "b) Para transferir datos de forma eficiente entre Hadoop y bases de datos relacionales (SGBDR).",
+      "c) Para ejecutar consultas SQL directamente sobre HDFS.",
+      "d) Para la serialización de datos binarios."
+    ],
+    "correcta": 1,
+    "explicacion": "Sqoop (SQL-to-Hadoop) es una herramienta diseñada para importar datos desde bases de datos relacionales como MySQL u Oracle hacia Hadoop, y viceversa.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso suele hacerlo herramientas como Ambari o Ganglia.",
+      "B": "Correcta. Es el puente entre el mundo relacional y el Big Data.",
+      "C": "Incorrecta. Eso es función de Hive o Impala.",
+      "D": "Incorrecta. Eso es función de Avro."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de Apache Zookeeper en un entorno de Big Data?",
+    "opciones": [
+      "a) Almacenamiento de archivos de gran tamaño.",
+      "b) Coordinación y gestión de la configuración de servicios distribuidos.",
+      "c) Procesamiento de flujos de datos en tiempo real.",
+      "d) Interfaz de visualización de datos."
+    ],
+    "correcta": 1,
+    "explicacion": "Zookeeper actúa como un servicio centralizado para mantener la información de configuración, proporcionar sincronización distribuida y servicios de grupo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso lo hace HDFS.",
+      "B": "Correcta. Es el 'director de orquesta' para evitar fallos de coordinación en el clúster.",
+      "C": "Incorrecta. Eso lo hace Apache Storm o Spark Streaming.",
+      "D": "Incorrecta. Eso lo hacen herramientas de BI."
+    }
+  },
+  {
+    "pregunta": "En el modelo relacional, ¿qué es una 'clave candidata'?",
+    "opciones": [
+      "a) Cualquier clave que ha sido elegida como clave primaria.",
+      "b) Un conjunto de atributos que identifican unívocamente a cada tupla, de los cuales se elegirá la clave primaria.",
+      "c) Una clave que hace referencia a una tabla externa.",
+      "d) Una clave que permite valores nulos."
+    ],
+    "correcta": 1,
+    "explicacion": "Una clave candidata es un superclave mínima; es decir, no tiene subconjuntos que también sean claves. De entre todas las candidatas, el diseñador elige la clave primaria.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La elegida es la primaria, las demás pasan a ser claves alternativas.",
+      "B": "Correcta. Define el conjunto de opciones para la identificación única.",
+      "C": "Incorrecta. Eso es una clave foránea.",
+      "D": "Incorrecta. Las claves que identifican tuplas no deben tener valores nulos (integridad de entidad)."
+    }
+  },
+  {
+    "pregunta": "¿Qué herramienta de Hadoop se utiliza como un sistema de almacenamiento de datos (Data Warehouse) que proporciona una interfaz similar a SQL denominada HiveQL?",
+    "opciones": [
+      "a) Pig",
+      "b) HBase",
+      "c) Hive",
+      "d) Oozie"
+    ],
+    "correcta": 2,
+    "explicacion": "Apache Hive facilita la lectura, escritura y gestión de grandes conjuntos de datos que residen en almacenamiento distribuido mediante consultas tipo SQL.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Pig usa un lenguaje de scripting llamado Pig Latin.",
+      "B": "Incorrecta. HBase es una base de datos NoSQL tabular sobre HDFS.",
+      "C": "Correcta. Es el estándar para consultas SQL en el ecosistema Hadoop.",
+      "D": "Incorrecta. Es un gestor de flujos de trabajo."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la principal característica del modelo de datos de MongoDB?",
+    "opciones": [
+      "a) Almacena los datos en formato de grafos.",
+      "b) Utiliza documentos tipo BSON (JSON binario).",
+      "c) No permite la creación de índices.",
+      "d) Solo permite almacenar texto plano."
+    ],
+    "correcta": 1,
+    "explicacion": "MongoDB es una base de datos orientada a documentos que guarda la información en documentos flexibles similares a JSON llamados BSON.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ejemplo: Neo4j.",
+      "B": "Correcta. Su estructura permite anidamiento y esquemas dinámicos.",
+      "C": "Incorrecta. Soporta índices de forma muy eficiente.",
+      "D": "Incorrecta. Puede almacenar múltiples tipos de datos complejos."
+    }
+  },
+  {
+    "pregunta": "En Big Data, el concepto de 'Veracidad' se refiere a:",
+    "opciones": [
+      "a) La velocidad de procesamiento de los datos.",
+      "b) La fiabilidad y calidad de los datos recolectados.",
+      "c) La diversidad de fuentes de información.",
+      "d) El volumen total de bytes almacenados."
+    ],
+    "correcta": 1,
+    "explicacion": "La veracidad es una de las 'V' del Big Data y trata sobre la incertidumbre de los datos y la necesidad de asegurar su limpieza y precisión.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es la Velocidad.",
+      "B": "Correcta. Es vital para que el análisis posterior sea útil.",
+      "C": "Incorrecta. Eso es la Variedad.",
+      "D": "Incorrecta. Eso es el Volumen."
+    }
+  },
+  {
+    "pregunta": "¿Qué lenguaje de programación es el nativo y principal para desarrollar aplicaciones sobre Apache Spark?",
+    "opciones": [
+      "a) Java",
+      "b) Python",
+      "c) Scala",
+      "d) R"
+    ],
+    "correcta": 2,
+    "explicacion": "Aunque Spark tiene APIs para varios lenguajes, está escrito en Scala y es su lenguaje de desarrollo preferencial por rendimiento.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Soportado, pero más verboso.",
+      "B": "Incorrecta. Muy popular (PySpark), pero no es el lenguaje base.",
+      "C": "Correcta. Es el lenguaje con el que se construyó Spark.",
+      "D": "Incorrecta. Usado principalmente para análisis estadístico."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es el puerto por defecto que utiliza MongoDB?",
+    "opciones": [
+      "a) 3306",
+      "b) 5432",
+      "c) 27017",
+      "d) 6379"
+    ],
+    "correcta": 2,
+    "explicacion": "El puerto 27017 es el puerto estándar asignado para las conexiones a las instancias de MongoDB.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el puerto de MySQL.",
+      "B": "Incorrecta. Es el puerto de PostgreSQL.",
+      "C": "Correcta. Puerto oficial de MongoDB.",
+      "D": "Incorrecta. Es el puerto de Redis."
+    }
+  },
+  {
+    "pregunta": "En Hadoop, ¿para qué sirve Apache Pig?",
+    "opciones": [
+      "a) Para la administración de seguridad del clúster.",
+      "b) Para el análisis de datos mediante un lenguaje de alto nivel llamado Pig Latin.",
+      "c) Para la compresión de bloques en HDFS.",
+      "d) Para la transferencia de archivos mediante FTP."
+    ],
+    "correcta": 1,
+    "explicacion": "Pig es una plataforma para analizar grandes conjuntos de datos que consiste en un lenguaje de alto nivel para expresar programas de análisis.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso lo hace Apache Ranger o Kerberos.",
+      "B": "Correcta. Simplifica la programación de tareas complejas de MapReduce.",
+      "C": "Incorrecta. No es su función principal.",
+      "D": "Incorrecta. No es una herramienta de transferencia de archivos."
+    }
+  },{
+    "pregunta": "¿Qué componente del ecosistema Hadoop es un servicio de registro de metadatos para Apache Hive y otros servicios?",
+    "opciones": [
+      "a) HCatalog",
+      "b) Ambari",
+      "c) Mahout",
+      "d) Knox"
+    ],
+    "correcta": 0,
+    "explicacion": "HCatalog es un servicio de gestión de tablas y almacenamiento para Hadoop que expone los metadatos de Hive a otras herramientas como Pig o MapReduce.",
+    "analisis_opciones": {
+      "A": "Correcta. Permite la interoperabilidad de metadatos entre herramientas.",
+      "B": "Incorrecta. Se utiliza para la gestión, monitorización y aprovisionamiento del clúster.",
+      "C": "Incorrecta. Es una librería de aprendizaje automático (Machine Learning).",
+      "D": "Incorrecta. Proporciona seguridad y un punto único de acceso (Gateway) a las APIs de Hadoop."
+    }
+  },
+  {
+    "pregunta": "En el contexto de SGBD, ¿qué significa la propiedad de 'Aislamiento' (Isolation) dentro del acrónimo ACID?",
+    "opciones": [
+      "a) Los datos están protegidos contra accesos no autorizados.",
+      "b) Una transacción no debe verse afectada por otras transacciones que se ejecuten simultáneamente.",
+      "c) Los datos se guardan en servidores físicamente aislados para mayor seguridad.",
+      "d) El sistema puede funcionar de forma aislada sin conexión a red."
+    ],
+    "correcta": 1,
+    "explicacion": "El aislamiento garantiza que el estado intermedio de una transacción sea invisible para otras transacciones, evitando interferencias y manteniendo la integridad." ,
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es seguridad o control de acceso.",
+      "B": "Correcta. Es la definición técnica de la 'I' de ACID.",
+      "C": "Incorrecta. No tiene relación con la ubicación física.",
+      "D": "Incorrecta. No tiene relación con la conectividad."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una base de datos NoSQL orientada a grafos?",
+    "opciones": [
+      "a) CouchDB",
+      "b) Neo4j",
+      "c) HBase",
+      "d) Memcached"
+    ],
+    "correcta": 1,
+    "explicacion": "Neo4j es el sistema de gestión de bases de datos orientada a grafos más popular, utilizando nodos, relaciones y propiedades para representar los datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es orientada a documentos.",
+      "B": "Correcta. Especializada en datos altamente interconectados.",
+      "C": "Incorrecta. Es orientada a familias de columnas.",
+      "D": "Incorrecta. Es un sistema de caché de objetos en memoria de tipo clave-valor."
+    }
+  },
+  {
+    "pregunta": "Dentro del ecosistema Hadoop, ¿cuál es el propósito de Apache Oozie?",
+    "opciones": [
+      "a) Almacenar datos en memoria para acceso rápido.",
+      "b) Programar y gestionar flujos de trabajo (workflows) de tareas de Hadoop.",
+      "c) Actuar como servidor web para visualizar el HDFS.",
+      "d) Cifrar los datos almacenados en los DataNodes."
+    ],
+    "correcta": 1,
+    "explicacion": "Oozie es un sistema de coordinación de flujo de trabajo para gestionar trabajos de Apache Hadoop (MapReduce, Pig, Hive, Sqoop).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería más propio de Spark o Redis.",
+      "B": "Correcta. Permite encadenar tareas y programar su ejecución.",
+      "C": "Incorrecta. No es un servidor de visualización.",
+      "D": "Incorrecta. No es una herramienta de cifrado de disco."
+    }
+  },
+  {
+    "pregunta": "¿A qué se refiere el término 'Sharding' en el entorno de las bases de datos NoSQL?",
+    "opciones": [
+      "a) A la creación de copias de seguridad incrementales.",
+      "b) A la partición horizontal de los datos para distribuirlos en varios servidores.",
+      "c) Al proceso de normalización para eliminar redundancias.",
+      "d) A la encriptación de las claves primarias."
+    ],
+    "correcta": 1,
+    "explicacion": "El Sharding es un método para distribuir datos a través de múltiples máquinas, permitiendo la escalabilidad horizontal en sistemas como MongoDB o Cassandra.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tiene relación con el backup.",
+      "B": "Correcta. Es la técnica clave para el crecimiento masivo de datos.",
+      "C": "Incorrecta. La normalización es propia del modelo relacional.",
+      "D": "Incorrecta. No es una técnica de cifrado."
+    }
+  },
+  {
+    "pregunta": "¿Qué lenguaje se utiliza en Apache Spark para consultas estructuradas de datos?",
+    "opciones": [
+      "a) SparkSQL",
+      "b) HiveQL",
+      "c) Pig Latin",
+      "d) Jaql"
+    ],
+    "correcta": 0,
+    "explicacion": "SparkSQL es el módulo de Spark para el procesamiento de datos estructurados, permitiendo ejecutar consultas SQL sobre los RDDs o DataFrames.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el componente SQL nativo de Spark.",
+      "B": "Incorrecta. Es el lenguaje de Apache Hive.",
+      "C": "Incorrecta. Es el lenguaje de Apache Pig.",
+      "D": "Incorrecta. Lenguaje desarrollado por IBM para JSON."
+    }
+  },
+  {
+    "pregunta": "En el modelo relacional, ¿qué condición debe cumplir una relación para estar en Primera Forma Normal (1FN)?",
+    "opciones": [
+      "a) No tener dependencias transitivas.",
+      "b) Que todos los atributos sean atómicos y no existan grupos repetitivos.",
+      "c) Que todos los atributos que no son clave dependan por completo de la clave primaria.",
+      "d) Que posea al menos una clave foránea."
+    ],
+    "correcta": 1,
+    "explicacion": "La 1FN exige que cada campo contenga un solo valor y que no haya columnas que almacenen listas o conjuntos de valores similares.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso corresponde a la 3FN.",
+      "B": "Correcta. Es el requisito básico de atomicidad estructural.",
+      "C": "Incorrecta. Eso corresponde a la 2FN.",
+      "D": "Incorrecta. No es un requisito de la 1FN."
+    }
+  },
+  {
+    "pregunta": "¿Qué herramienta del ecosistema Hadoop se utiliza para la serialización de datos y el intercambio de mensajes en formato binario?",
+    "opciones": [
+      "a) Flume",
+      "b) Avro",
+      "c) Chukwa",
+      "d) Sqoop"
+    ],
+    "correcta": 1,
+    "explicacion": "Apache Avro es un sistema de serialización de datos que permite definir esquemas en JSON y serializar los datos en un formato binario eficiente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se usa para recolección de logs.",
+      "B": "Correcta. Especializada en serialización rica y compacta.",
+      "C": "Incorrecta. Sistema de monitorización.",
+      "D": "Incorrecta. Transferencia entre RDBMS y Hadoop."
+    }
+  },
+  {
+    "pregunta": "En un sistema distribuido, según el teorema CAP, ¿qué tres propiedades NO pueden garantizarse simultáneamente al 100%?",
+    "opciones": [
+      "a) Consistencia, Disponibilidad y Tolerancia a particiones.",
+      "b) Capacidad, Agilidad y Persistencia.",
+      "c) Consistencia, Atomicidad y Portabilidad.",
+      "d) Conectividad, Aislamiento y Precisión."
+    ],
+    "correcta": 0,
+    "explicacion": "El teorema CAP establece que un sistema distribuido solo puede satisfacer dos de las tres propiedades: Consistencia (Consistency), Disponibilidad (Availability) y Tolerancia a particiones (Partition tolerance).",
+    "analisis_opciones": {
+      "A": "Correcta. Es el principio fundamental de las BBDD distribuidas.",
+      "B": "Incorrecta. No son los términos del teorema.",
+      "C": "Incorrecta. Mezcla términos de ACID con otros.",
+      "D": "Incorrecta. No son los términos del teorema."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de NoSQL es Redis?",
+    "opciones": [
+      "a) Documental",
+      "b) Clave-valor",
+      "c) Grafos",
+      "d) Multimodelo"
+    ],
+    "correcta": 1,
+    "explicacion": "Redis es el ejemplo más representativo de base de datos NoSQL de tipo clave-valor, funcionando principalmente en memoria RAM para máxima velocidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Como MongoDB.",
+      "B": "Correcta. Almacena pares simples o estructuras de datos bajo una clave.",
+      "C": "Incorrecta. Como Neo4j.",
+      "D": "Incorrecta. Aunque ha evolucionado, su categoría base es clave-valor."
+    }
+  },{
+    "pregunta": "¿Qué proceso de fondo de Oracle (background process) se encarga de escribir los bloques de datos modificados desde la memoria (Database Buffer Cache) a los archivos de datos físicos en el disco?",
+    "opciones": [
+      "a) LGWR (Log Writer)",
+      "b) DBWn (Database Writer)",
+      "c) CKPT (Checkpoint)",
+      "d) SMON (System Monitor)"
+    ],
+    "correcta": 1,
+    "explicacion": "El proceso DBWn es el responsable de la escritura física de los datos. No escribe en cada commit, sino cuando se llena el buffer o ocurre un checkpoint para optimizar el rendimiento.",
+    "analisis_opciones": {
+      "A": "Incorrecta. LGWR escribe el Redo Log (transacciones), no los datos.",
+      "B": "Correcta. Gestiona la persistencia de los bloques de datos en los .dbf.",
+      "C": "Incorrecta. CKPT actualiza las cabeceras de los archivos y avisa a DBWn, pero no escribe los datos él mismo.",
+      "D": "Incorrecta. SMON se encarga de la recuperación de la instancia tras un fallo."
+    }
+  },
+  {
+    "pregunta": "En el ecosistema Hadoop, ¿cuál es la función de 'ZooKeeper'?",
+    "opciones": [
+      "a) Almacenar archivos de configuración en formato JSON.",
+      "b) Proporcionar servicios de coordinación, configuración y sincronización para aplicaciones distribuidas.",
+      "c) Ejecutar tareas de aprendizaje automático sobre HDFS.",
+      "d) Actuar como interfaz gráfica para el NameNode."
+    ],
+    "correcta": 1,
+    "explicacion": "ZooKeeper es un servicio centralizado que mantiene información de configuración y proporciona sincronización distribuida, vital para evitar fallos de coordinación en clústeres grandes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Aunque maneja configuraciones, su fin es la coordinación, no ser un simple almacén.",
+      "B": "Correcta. Es el 'coordinador' de los servicios distribuidos.",
+      "C": "Incorrecta. Eso es tarea de Mahout o Spark MLlib.",
+      "D": "Incorrecta. No es una herramienta de visualización."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de base de datos NoSQL utiliza un modelo de datos basado en el lenguaje Cypher para realizar consultas sobre relaciones complejas?",
+    "opciones": [
+      "a) MongoDB",
+      "b) Redis",
+      "c) Neo4j",
+      "d) Cassandra"
+    ],
+    "correcta": 2,
+    "explicacion": "Neo4j es la base de datos de grafos más popular y utiliza Cypher, un lenguaje optimizado para navegar por nodos y aristas de forma eficiente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es documental y usa lenguaje tipo JSON.",
+      "B": "Incorrecta. Es clave-valor y funciona principalmente en memoria.",
+      "C": "Correcta. Es la base de datos de grafos por excelencia.",
+      "D": "Incorrecta. Es de familia de columnas y usa CQL (Cassandra Query Language)."
+    }
+  },
+  {
+    "pregunta": "En el contexto de Big Data, ¿a qué se refiere la característica de la 'Variedad'?",
+    "opciones": [
+      "a) A la diversidad de formatos de datos: estructurados, semiestructurados y no estructurados.",
+      "b) Al número de diferentes bases de datos relacionales conectadas al clúster.",
+      "c) A la posibilidad de cambiar de proveedor de nube sin pérdida de datos.",
+      "d) A la cantidad de usuarios diferentes que acceden al sistema simultáneamente."
+    ],
+    "correcta": 0,
+    "explicacion": "La variedad es una de las 'V' del Big Data e indica que los datos ya no son solo tablas, sino también audios, vídeos, textos de redes sociales y logs.",
+    "analisis_opciones": {
+      "A": "Correcta. Define la heterogeneidad de las fuentes de datos modernas.",
+      "B": "Incorrecta. No se limita a bases de datos relacionales.",
+      "C": "Incorrecta. Eso se conoce como portabilidad.",
+      "D": "Incorrecta. Eso se refiere a la concurrencia o escalabilidad."
+    }
+  },
+  {
+    "pregunta": "¿Qué herramienta de Hadoop se utiliza específicamente para mover datos entre HDFS y bases de datos relacionales como MySQL u Oracle?",
+    "opciones": [
+      "a) Flume",
+      "b) Sqoop",
+      "c) Oozie",
+      "d) Ambari"
+    ],
+    "correcta": 1,
+    "explicacion": "Sqoop (SQL to Hadoop) es la herramienta de 'import/export' que permite integrar el mundo relacional con el ecosistema de Big Data.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Flume es para ingesta de datos en streaming o logs.",
+      "B": "Correcta. Es el puente entre SQL y Hadoop.",
+      "C": "Incorrecta. Oozie es un planificador de flujos de trabajo (workflows).",
+      "D": "Incorrecta. Ambari es para la gestión y monitorización del clúster."
+    }
+  },{
+    "pregunta": "¿Qué nombre recibe la propiedad de un SGBD que permite modificar el esquema físico (como cambiar un índice) sin que sea necesario cambiar el esquema lógico (conceptual)?",
+    "opciones": [
+      "a) Independencia de datos lógica",
+      "b) Independencia de datos física",
+      "c) Transparencia de red",
+      "d) Integridad referencial"
+    ],
+    "correcta": 1,
+    "explicacion": "La independencia física permite realizar cambios en las estructuras de almacenamiento o en los métodos de acceso sin afectar a la definición global de los datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La independencia lógica es la capacidad de cambiar el esquema conceptual sin afectar a las vistas de los usuarios.",
+      "B": "Correcta. Es la separación entre el nivel interno y el conceptual.",
+      "C": "Incorrecta. Se refiere a la capacidad de ocultar la ubicación de los datos en sistemas distribuidos.",
+      "D": "Incorrecta. Es una regla de consistencia entre tablas, no una propiedad de arquitectura."
+    }
+  },
+  {
+    "pregunta": "En el Diccionario de Datos de un SGBD, ¿qué información NO se almacena habitualmente como metadato?",
+    "opciones": [
+      "a) Los nombres y tipos de datos de las columnas de las tablas.",
+      "b) Las restricciones de integridad como las claves primarias.",
+      "c) Los valores reales de los registros insertados por los usuarios.",
+      "d) Los privilegios y permisos de acceso de los usuarios del sistema."
+    ],
+    "correcta": 2,
+    "explicacion": "El diccionario de datos guarda la estructura (metadatos), no el contenido. Los datos de los usuarios se guardan en los archivos de datos, no en el diccionario.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esta definición de estructura es metadato puro.",
+      "B": "Incorrecta. Las reglas de integridad son parte del esquema lógico.",
+      "C": "Correcta. Los datos de las filas son el contenido, no la descripción del contenido.",
+      "D": "Incorrecta. La seguridad y los perfiles son metadatos administrativos esenciales."
+    }
+  },
+  {
+    "pregunta": "Dentro del procesador de consultas de un SGBD, ¿cuál es la función del 'Pre-compilador'?",
+    "opciones": [
+      "a) Traducir sentencias DML insertadas en un programa de aplicación a llamadas a procedimientos normales.",
+      "b) Ejecutar las sentencias SQL directamente contra el motor de almacenamiento.",
+      "c) Crear los índices necesarios antes de realizar una búsqueda.",
+      "d) Verificar que el usuario tiene permisos de lectura sobre la tabla."
+    ],
+    "correcta": 0,
+    "explicacion": "El pre-compilador se encarga de extraer las sentencias de SQL embebido en lenguajes de alto nivel (como Java o C) para que puedan ser procesadas por el gestor.",
+    "analisis_opciones": {
+      "A": "Correcta. Separa el código de programación del código de base de datos.",
+      "B": "Incorrecta. Eso lo hace el gestor de ejecución de consultas.",
+      "C": "Incorrecta. Los índices se crean mediante DDL.",
+      "D": "Incorrecta. El control de autorizaciones suele ser tarea del gestor de datos."
+    }
+  },
+  {
+    "pregunta": "En la gestión de memoria de un SGBD, ¿cómo se denomina el área de memoria RAM que almacena temporalmente las páginas de datos leídas del disco?",
+    "opciones": [
+      "a) Data Dictionary Cache",
+      "b) Log Buffer",
+      "c) Database Buffer Cache",
+      "d) Shared Pool"
+    ],
+    "correcta": 2,
+    "explicacion": "El Buffer Cache es fundamental para el rendimiento, ya que permite que los procesos lean y escriban datos en memoria mucho más rápido que en el disco físico.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Almacena metadatos sobre la estructura, no los datos de las tablas.",
+      "B": "Incorrecta. Almacena información sobre las transacciones para recuperarlas (Redo Log).",
+      "C": "Correcta. Es el almacén temporal de bloques de datos del usuario.",
+      "D": "Incorrecta. Es un término de Oracle que incluye el diccionario y el cache de librerías."
+    }
+  },{
+    "pregunta": "¿Qué característica define la 'Persistencia' en una Base de Datos Orientada a Objetos (BDOO)?",
+    "opciones": [
+      "a) La capacidad de un objeto de sobrevivir a la ejecución del programa que lo creó.",
+      "b) La obligatoriedad de que todos los objetos sean inmutables.",
+      "c) El almacenamiento de los objetos exclusivamente en la memoria RAM.",
+      "d) La duplicación de los objetos en tablas relacionales para seguridad."
+    ],
+    "correcta": 0,
+    "explicacion": "La persistencia permite que el estado de un objeto se conserve en un almacenamiento secundario (disco) más allá de la duración de la sesión o el proceso que lo generó.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la esencia de cualquier base de datos: que los datos no se pierdan al cerrar el programa.",
+      "B": "Incorrecta. Los objetos pueden cambiar de estado (valores de atributos) a lo largo del tiempo.",
+      "C": "Incorrecta. Esto sería una base de datos volátil o de solo memoria.",
+      "D": "Incorrecta. Esto describe el funcionamiento de un ORM, no de una BDOO nativa."
+    }
+  },
+  {
+    "pregunta": "En el estándar ODMG, ¿cómo se denomina al constructor de tipos que permite almacenar una colección de elementos donde NO importa el orden y SE PERMITEN duplicados?",
+    "opciones": [
+      "a) Set",
+      "b) List",
+      "c) Bag (Multiset)",
+      "d) Array"
+    ],
+    "correcta": 2,
+    "explicacion": "El tipo 'Bag' (bolsa) o 'Multiset' es una colección no ordenada que admite elementos repetidos, a diferencia del 'Set' que no admite duplicados.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El Set es una colección no ordenada pero sin duplicados.",
+      "B": "Incorrecta. La List es una colección ordenada que admite duplicados.",
+      "C": "Correcta. Es el término técnico para colecciones con duplicados no ordenadas.",
+      "D": "Incorrecta. El Array es una colección de tamaño fijo y con ordenación por índice."
+    }
+  },
+  {
+    "pregunta": "En una BDOO, ¿cuál es el propósito de la propiedad de 'Encapsulación'?",
+    "opciones": [
+      "a) Permitir que cualquier usuario modifique el código interno de los métodos.",
+      "b) Ocultar los detalles de la implementación y el estado del objeto, permitiendo el acceso solo a través de una interfaz definida.",
+      "c) Comprimir los objetos para que ocupen menos espacio en el disco duro.",
+      "d) Agrupar varios objetos diferentes en una única tabla relacional."
+    ],
+    "correcta": 1,
+    "explicacion": "La encapsulación asegura que los datos (atributos) y las operaciones (métodos) estén protegidos, exponiendo solo lo necesario para interactuar con el objeto.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Precisamente la encapsulación impide el acceso directo no controlado.",
+      "B": "Correcta. Define la separación entre el 'qué hace' el objeto y 'cómo lo hace'.",
+      "C": "Incorrecta. No tiene relación con algoritmos de compresión de datos.",
+      "D": "Incorrecta. Esto no define la encapsulación en el modelo de objetos."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de relación se establece cuando un objeto contiene a otro objeto como parte de sus atributos (relación de agregación)?",
+    "opciones": [
+      "a) Es-un (Is-a)",
+      "b) Tiene-un (Has-a / Part-of)",
+      "c) Muchos a muchos",
+      "d) Herencia múltiple"
+    ],
+    "correcta": 1,
+    "explicacion": "La agregación o composición en objetos describe que una clase compleja está formada por otras clases más simples (ejemplo: un Coche 'tiene un' Motor).",
+    "analisis_opciones": {
+      "A": "Incorrecta. 'Es-un' define una relación de herencia (ejemplo: un Perro 'es un' Animal).",
+      "B": "Correcta. Define la estructura de objetos complejos o compuestos.",
+      "C": "Incorrecta. Es un término del modelo relacional para cardinalidad, no una estructura de objeto.",
+      "D": "Incorrecta. Se refiere a una clase que hereda de varias clases padre."
+    }
+  },{
+    "pregunta": "¿Qué componente del SGBD es responsable de asegurar que se mantengan las propiedades ACID, gestionando el bloqueo de datos para evitar conflictos entre usuarios?",
+    "opciones": [
+      "a) Optimizador de consultas",
+      "b) Gestor de transacciones",
+      "c) Motor de almacenamiento",
+      "d) Procesador de DDL"
+    ],
+    "correcta": 1,
+    "explicacion": "El gestor de transacciones coordina la ejecución de las operaciones para que sean atómicas y aisladas, utilizando mecanismos de bloqueo (locks) cuando varios usuarios acceden al mismo recurso.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Su función es buscar el plan de ejecución más rápido para una consulta.",
+      "B": "Correcta. Es el encargado de la integridad transaccional y el control de concurrencia.",
+      "C": "Incorrecta. Se encarga de la lectura y escritura de bajo nivel en los dispositivos de almacenamiento.",
+      "D": "Incorrecta. Se encarga de procesar las sentencias que definen la estructura (CREATE, ALTER)."
+    }
+  },
+  {
+    "pregunta": "En un motor de almacenamiento, ¿qué diferencia existe entre un índice 'Clustered' (Agrupado) y uno 'Non-Clustered' (No Agrupado)?",
+    "opciones": [
+      "a) El índice agrupado solo puede existir en bases de datos NoSQL.",
+      "b) El índice agrupado determina el orden físico en el que se almacenan los datos en el disco.",
+      "c) El índice no agrupado es obligatorio para todas las tablas relacionales.",
+      "d) No hay diferencia técnica, son términos comerciales de Oracle."
+    ],
+    "correcta": 1,
+    "explicacion": "Un índice 'Clustered' ordena los registros de la tabla físicamente en el disco según la clave del índice; por ello, solo puede haber uno por tabla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un concepto fundamental de los SGBD relacionales.",
+      "B": "Correcta. Define la disposición física de las filas en las páginas de datos.",
+      "C": "Incorrecta. Ningún índice es estrictamente 'obligatorio', aunque son altamente recomendables para el rendimiento.",
+      "D": "Incorrecta. Son conceptos de arquitectura de almacenamiento estándar en la industria."
+    }
+  },
+  {
+    "pregunta": "Dentro del catálogo de un SGBD, ¿qué información utiliza el 'Optimizador basado en costes' para decidir el mejor plan de ejecución?",
+    "opciones": [
+      "a) El nombre de usuario que ejecuta la consulta.",
+      "b) Estadísticas sobre el tamaño de las tablas, número de filas y distribución de los datos en los índices.",
+      "c) El lenguaje de programación utilizado en el front-end.",
+      "d) La cantidad de espacio libre en el disco duro."
+    ],
+    "correcta": 1,
+    "explicacion": "El optimizador de costes (CBO) utiliza metadatos estadísticos para calcular cuántas operaciones de E/S y CPU requerirá cada posible plan de ejecución, eligiendo el de menor 'coste'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El optimizador es agnóstico al nombre del usuario, salvo por temas de permisos.",
+      "B": "Correcta. Las estadísticas son vitales para que el optimizador tome decisiones informadas.",
+      "C": "Incorrecta. El optimizador trabaja exclusivamente a nivel de motor de base de datos.",
+      "D": "Incorrecta. Se basa en la estructura y volumen de los datos, no en el espacio total del disco."
+    }
+  },
+  {
+    "pregunta": "¿Qué estructura de almacenamiento se utiliza habitualmente en las bases de datos para implementar índices que permitan búsquedas rápidas por rangos y valores exactos?",
+    "opciones": [
+      "a) Listas enlazadas",
+      "b) Árboles B+ (B-Plus Trees)",
+      "c) Tablas Hash",
+      "d) Pilas FIFO"
+    ],
+    "correcta": 1,
+    "explicacion": "Los árboles B+ son la estructura estándar para índices porque mantienen los datos ordenados y permiten búsquedas, inserciones y eliminaciones en tiempo logarítmico, además de ser eficientes para rangos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No son eficientes para búsquedas en grandes volúmenes de datos.",
+      "B": "Correcta. Es la estructura de datos predominante en los índices de SGBD relacionales.",
+      "C": "Incorrecta. Son excelentes para valores exactos, pero no sirven para búsquedas por rangos.",
+      "D": "Incorrecta. Son estructuras de gestión de memoria, no de almacenamiento persistente indexado."
+    }
+  },{
+    "pregunta": "¿Qué herramienta del ecosistema Hadoop está diseñada para la transferencia de datos masiva entre el sistema de archivos HDFS y bases de datos relacionales como MySQL u Oracle?",
+    "opciones": [
+      "a) Apache Flume",
+      "b) Apache Sqoop",
+      "c) Apache Storm",
+      "d) Apache Kafka"
+    ],
+    "correcta": 1,
+    "explicacion": "Sqoop (SQL-to-Hadoop) es la utilidad estándar para importar y exportar datos entre el mundo relacional y el almacenamiento distribuido de Hadoop.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Flume se especializa en recolectar flujos de datos y logs en tiempo real.",
+      "B": "Correcta. Es el puente entre SQL y HDFS.",
+      "C": "Incorrecta. Storm es un motor de computación distribuida en tiempo real.",
+      "D": "Incorrecta. Kafka es una plataforma de streaming de eventos y mensajería distribuida."
+    }
+  },
+  {
+    "pregunta": "Dentro de las bases de datos NoSQL, ¿cuál de las siguientes es un ejemplo destacado de base de datos 'Orientada a Documentos' que utiliza internamente el formato BSON?",
+    "opciones": [
+      "a) Cassandra",
+      "b) Redis",
+      "c) MongoDB",
+      "d) Riak"
+    ],
+    "correcta": 2,
+    "explicacion": "MongoDB almacena los datos en documentos flexibles similares a JSON, pero en un formato binario optimizado llamado BSON (Binary JSON).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Cassandra es orientada a familias de columnas.",
+      "B": "Incorrecta. Redis es una base de datos de clave-valor ultrarrápida.",
+      "C": "Correcta. Es la referencia principal en bases de datos documentales.",
+      "D": "Incorrecta. Riak es otro ejemplo de base de datos de clave-valor."
+    }
+  },
+  {
+    "pregunta": "¿Qué componente de Hadoop actúa como planificador de flujos de trabajo (workflows), permitiendo encadenar y programar tareas de MapReduce, Pig o Hive?",
+    "opciones": [
+      "a) Apache Oozie",
+      "b) Apache Mahout",
+      "c) Apache Zookeeper",
+      "d) Apache Avro"
+    ],
+    "correcta": 0,
+    "explicacion": "Oozie es un sistema de coordinación que gestiona la ejecución de trabajos complejos de Hadoop en el orden y momento indicados.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el 'director de tareas' del ecosistema.",
+      "B": "Incorrecta. Mahout es una librería para algoritmos de Machine Learning.",
+      "C": "Incorrecta. Zookeeper ofrece servicios de coordinación y sincronización de nodos.",
+      "D": "Incorrecta. Avro es un sistema de serialización de datos binarios."
+    }
+  },
+  {
+    "pregunta": "En Big Data, el concepto de 'Veracidad' se refiere fundamentalmente a:",
+    "opciones": [
+      "a) La cantidad total de terabytes almacenados.",
+      "b) La velocidad con la que se generan los nuevos datos.",
+      "c) La incertidumbre y calidad de los datos recolectados.",
+      "d) La diversidad de fuentes de información disponibles."
+    ],
+    "correcta": 2,
+    "explicacion": "La veracidad trata sobre la fiabilidad de los datos, asegurando que el análisis se base en información limpia y precisa.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es el Volumen.",
+      "B": "Incorrecta. Eso es la Velocidad.",
+      "C": "Correcta. Es la 'V' que lucha contra el ruido y los datos erróneos.",
+      "D": "Incorrecta. Eso es la Variedad."
+    }
+  },
+  {
+    "pregunta": "¿Qué herramienta de seguridad en Hadoop funciona como un Gateway para proporcionar un punto único de acceso perimetral a las APIs del clúster?",
+    "opciones": [
+      "a) Apache Ambari",
+      "b) Apache Knox",
+      "c) Apache Pig",
+      "d) Apache HBase"
+    ],
+    "correcta": 1,
+    "explicacion": "Knox simplifica la seguridad de Hadoop al centralizar el acceso y permitir la integración con sistemas de identidad corporativos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ambari es para la gestión y monitorización visual del clúster.",
+      "B": "Correcta. Es el guardián perimetral de las APIs.",
+      "C": "Incorrecta. Pig es una plataforma para el análisis de datos de alto nivel.",
+      "D": "Incorrecta. HBase es una base de datos NoSQL tabular sobre HDFS."
+    }
+  },{
+    "pregunta": "¿Qué elemento tecnológico de Blockchain garantiza que la información contenida en un bloque sea prácticamente imposible de alterar sin cambiar todos los bloques posteriores?",
+    "opciones": [
+      "a) El tamaño del bloque",
+      "b) El Hash encadenado del bloque anterior",
+      "c) La dirección IP del nodo minero",
+      "d) El nombre del protocolo de red"
+    ],
+    "correcta": 1,
+    "explicacion": "Cada bloque contiene el 'Hash' (huella digital) del bloque anterior, lo que crea un sello de seguridad matemático que vincula toda la cadena de forma inmutable.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El tamaño limita la cantidad de transacciones, pero no la seguridad de la cadena.",
+      "B": "Correcta. Es el pegamento criptográfico que asegura la integridad de la historia.",
+      "C": "Incorrecta. La IP identifica al nodo, pero no protege el contenido de los datos.",
+      "D": "Incorrecta. No influye en la seguridad criptográfica de los bloques."
+    }
+  },
+  {
+    "pregunta": "¿Cómo se denomina al mecanismo por el cual los nodos de una red Blockchain se ponen de acuerdo para validar una nueva transacción sin necesidad de una autoridad central?",
+    "opciones": [
+      "a) Algoritmo de Compresión",
+      "b) Protocolo de Consenso",
+      "c) Sistema de Indexación",
+      "d) Gestión de Replicación Local"
+    ],
+    "correcta": 1,
+    "explicacion": "El consenso (como Proof of Work o Proof of Stake) permite que una red descentralizada confíe en la validez de los datos de forma colectiva.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La compresión reduce el tamaño, no valida transacciones.",
+      "B": "Correcta. Es la pieza clave para eliminar intermediarios bancarios o gubernamentales.",
+      "C": "Incorrecta. Se usa para búsquedas rápidas, no para validación de red.",
+      "D": "Incorrecta. La replicación copia datos, pero el consenso es el que decide qué datos se copian."
+    }
+  }
+
+]

@@ -1,0 +1,1888 @@
+[
+  {
+    "pregunta": "1. ¿Cuál de las siguientes normas se relaciona con SQL?",
+    "opciones": [
+      "A. IEEE 1394.",
+      "B. ISO 9100.",
+      "C. ISO/IEC 9075.",
+      "D. IEEE 754."
+    ],
+    "correcta": 2,
+    "explicacion": "La norma ISO/IEC 9075 es el estándar internacional para el lenguaje SQL.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Interfaz de bus serie (FireWire).",
+      "B": "Incorrecta. Norma de calidad para la industria aeroespacial.",
+      "C": "Correcta. Estándar ISO que define el lenguaje de consulta estructurado SQL.",
+      "D": "Incorrecta. Estándar para aritmética de coma flotante."
+    }
+  },
+  {
+    "pregunta": "2. En relación al lenguaje SQL, ¿cuál de las siguientes afirmaciones es verdadera?",
+    "opciones": [
+      "A. CREATE es una sentencia de Lenguaje de Manipulación de Datos (DML).",
+      "B. INSERT es una sentencia de Lenguaje de Definición de Datos (DDL).",
+      "C. GRANT es una sentencia de Lenguaje de Control de Datos (DCL).",
+      "D. ALTER es una sentencia de Lenguaje de Control de Datos (DCL)."
+    ],
+    "correcta": 2,
+    "explicacion": "GRANT y REVOKE son las sentencias clave del DCL para gestionar permisos y seguridad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. CREATE es DDL (Definición).",
+      "B": "Incorrecta. INSERT es DML (Manipulación).",
+      "C": "Correcta. El DCL controla el acceso a los datos.",
+      "D": "Incorrecta. ALTER es DDL (Definición)."
+    }
+  },
+  {
+    "pregunta": "3. El lenguaje de consulta estructurado (SQL) posee una serie de operadores de agregación, cuál de los siguientes NO es uno de ellos:",
+    "opciones": [
+      "A. LIKE.",
+      "B. AVG.",
+      "C. MIN.",
+      "D. COUNT."
+    ],
+    "correcta": 0,
+    "explicacion": "LIKE es un operador de comparación de patrones de texto, no una función que agregue o agrupe valores.",
+    "analisis_opciones": {
+      "A": "Correcta (en cuanto a que NO es de agregación).",
+      "B": "Incorrecta. AVG calcula el promedio (agregación).",
+      "C": "Incorrecta. MIN obtiene el valor mínimo (agregación).",
+      "D": "Incorrecta. COUNT cuenta registros (agregación)."
+    }
+  },
+  {
+    "pregunta": "4. Indicar qué resultado se puede esperar de esta consulta SQL sobre una tabla 'COCHES_VENTA' que mantiene el inventario de automóviles en un pequeño concesionario: SELECT Modelo, Color, COUNT(Bastidor) AS Num FROM COCHES_VENTA GROUP BY Modelo, Color HAVING COUNT(Bastidor) <= 1",
+    "opciones": [
+      "A. Le indica al dueño del concesionario que quizá debe plantearse adquirir más existencias de un cierto modelo y color de automóvil.",
+      "B. Le indica al dueño del concesionario todos los modelos distintos del concesionario. Es decir, un inventario organizado por modelos.",
+      "C. Le indica al dueño del concesionario todos los modelos distintos del concesionario. Es decir, un inventario organizado por modelos y color.",
+      "D. Le indica al dueño todos los modelos cuyo número de Bastidor es menor o Igual a 1."
+    ],
+    "correcta": 0,
+    "explicacion": "Al agrupar por modelo y color y filtrar por aquellos cuya cuenta sea 1 o menos, el dueño identifica qué combinaciones están a punto de agotarse.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la interpretación lógica de stock bajo en el negocio.",
+      "B": "Incorrecta. No es un inventario general, hay un filtro de cantidad.",
+      "C": "Incorrecta. No muestra todos los modelos, solo los de cantidad <= 1.",
+      "D": "Incorrecta. Se cuenta la cantidad de registros, no el valor numérico del bastidor."
+    }
+  },
+  {
+    "pregunta": "5. En SQL, un cursor es:",
+    "opciones": [
+      "A. El interfaz para poder realizar consultas SQL interactivas.",
+      "B. Un apuntador que sirve para recorrer siempre todos los registros de la base de datos, ordenados en función de su clave primaria.",
+      "C. Un apuntador que sirve para recorrer los registros de un conjunto.",
+      "D. El medio para poder realizar las inserciones de nuevos registros en una base de datos (INSERT AS CURSOR …)."
+    ],
+    "correcta": 2,
+    "explicacion": "Un cursor es un objeto que permite procesar fila por fila los registros devueltos por una consulta SELECT.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Puede recorrer subconjuntos y no requiere clave primaria.",
+      "C": "Correcta. Es un mecanismo de recorrido secuencial.",
+      "D": "Incorrecta. No existe la sintaxis 'INSERT AS CURSOR'."
+    }
+  },
+  {
+    "pregunta": "6. En una Base de Datos relacional se quiere añadir una nueva columna en una tabla ya existente. ¿Qué sentencia SQL habría que utilizar?",
+    "opciones": [
+      "A. add column",
+      "B. alter table",
+      "C. insert column",
+      "D. modify table"
+    ],
+    "correcta": 1,
+    "explicacion": "ALTER TABLE es la sentencia DDL para realizar cambios estructurales en tablas ya creadas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la cláusula interna de ALTER TABLE.",
+      "B": "Correcta. Es la sentencia principal.",
+      "C": "Incorrecta. Sentencia inexistente.",
+      "D": "Incorrecta. Sentencia inexistente en SQL estándar."
+    }
+  },
+  {
+    "pregunta": "7. Indique qué sentencia ANSI SQL utilizaría para deshacer una transacción:",
+    "opciones": [
+      "A. ROLLBACK",
+      "B. BACKSTEP",
+      "C. REVOKE",
+      "D. UNDO"
+    ],
+    "correcta": 0,
+    "explicacion": "ROLLBACK es el comando del Lenguaje de Control de Transacciones (TCL) que anula los cambios no confirmados.",
+    "analisis_opciones": {
+      "A": "Correcta. Restaura el estado previo al inicio de la transacción.",
+      "B": "Incorrecta. No existe en SQL.",
+      "C": "Incorrecta. Es DCL para quitar permisos.",
+      "D": "Incorrecta. No es un comando estándar de transacción."
+    }
+  },
+  {
+    "pregunta": "8. El lenguaje de consulta SQL utiliza el comando “GRANT” para:",
+    "opciones": [
+      "A. Eliminar una tabla de datos.",
+      "B. Dar derechos de acceso a un usuario sobre un objeto de la base de datos.",
+      "C. Comparar lógicamente la condición “mayor que” en dos variables.",
+      "D. Crear una vista."
+    ],
+    "correcta": 1,
+    "explicacion": "GRANT se utiliza dentro del DCL para asignar permisos específicos a usuarios sobre tablas, vistas o procedimientos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es DROP.",
+      "B": "Correcta. Función principal de GRANT.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Eso es CREATE VIEW."
+    }
+  },
+  {
+    "pregunta": "9. Teniendo una base de datos relacional, con una tabla \"Empleados\" con campos {Id, Nombre, Puesto, Salario,....}, indique cuál sería una forma válida de comenzar la creación de un Trigger en ANSI SQL, si lo que se quiere validar es un cambio de valor del campo \"Salario\":",
+    "opciones": [
+      "A. CREATE TRIGGER Validar_salario BEFORE UPDATE OF Salario OF TABLE Empleados",
+      "B. CREATE NEW TRIGGER BEFORE UPDATE OF Salario ON Empleados",
+      "C. CREATE TRIGGER Validar_salario IN Empleados BEFORE UPDATE OF Salario",
+      "D. CREATE TRIGGER Validar_salario BEFORE UPDATE OF Salario ON Empleados"
+    ],
+    "correcta": 3,
+    "explicacion": "La sintaxis estándar es: CREATE TRIGGER [nombre] [momento] [evento] OF [columna] ON [tabla].",
+    "analisis_opciones": {
+      "A": "Incorrecta. 'OF TABLE' no es parte de la sintaxis estándar.",
+      "B": "Incorrecta. 'CREATE NEW TRIGGER' no es correcto.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Sigue el formato ANSI SQL."
+    }
+  },
+  {
+    "pregunta": "10. Con la claúsula ORDER BY de SQL, si nos encontramos con la siguiente consulta: SELECT * FROM Empleados ORDER BY Provincia DESC, Municipio; ¿Cuál es el resultado que se obtendría?",
+    "opciones": [
+      "A. ·Un listado de empleados orden do de manera ascendente por la columna Provincia y, dentro de cada provincia ordenado de manera ascendente por la columna Municipio.",
+      "B. Un listado de empleados ordenado de manera descendente por la columna Provincia y, dentro de cada provincia ordenado de manera ascendente por la columna Municipio.",
+      "C. Un listado de empleados ordenado de manera ascendente por la columna Provincia y, dentro de cada provincia ordenado de manera descendente por la columna Municipio.",
+      "D. Da ERROR, la sintaxis correcta es SELECT * FROM Empleados ORDER BY Provincia, Municipio DESC; el criterio de ordenación (ASC o DESC) debe ser el mismo para todas las columnas del ORDER BY y encontrarse al final de la cláusula."
+    ],
+    "correcta": 1,
+    "explicacion": "Provincia se ordena en descendente (DESC). Municipio, al no especificar nada, toma el valor por defecto que es ascendente (ASC).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Provincia es DESC.",
+      "B": "Correcta. Refleja fielmente el orden de la consulta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Se pueden mezclar órdenes en una misma cláusula."
+    }
+  },
+  {
+    "pregunta": "11. Dado un procedimiento almacenado en SQL Server con la cabecera CREATE PROCEDURE getEmployees @LastName varchar(50), @FirstName nvarchar(50) ¿Cuál NO sería una instrucción válida para ejecutar dicho procedimiento?",
+    "opciones": [
+      "A. EXECUTE getEmployees @FirstName = N'Pilar', @LastName = N'Rojas';",
+      "B. EXEC getEmployees @LastName = N'Rojas', @FirstName = N'Pilar';",
+      "C. EXECUTE getEmployees N'Rojas', N'Pilar';",
+      "D. EXEC getEmployees @LastName = N'Rojas', N'Pilar';"
+    ],
+    "correcta": 3,
+    "explicacion": "Al llamar a un procedimiento, si se utiliza el nombre de un parámetro (@param = ...), no se puede volver a pasar parámetros por posición simple en la misma llamada.",
+    "analisis_opciones": {
+      "A": "Válida. Parámetros por nombre en cualquier orden.",
+      "B": "Válida. Parámetros por nombre.",
+      "C": "Válida. Parámetros por posición en el orden definido.",
+      "D": "INCORRECTA. Mezcla parámetros nominales y posicionales, lo cual falla en SQL Server."
+    }
+  },
+  {
+    "pregunta": "12. ¿Cuál es el propósito del lenguaje DDL en una base de datos?",
+    "opciones": [
+      "A. Acceso a la base de datos de lectura pero no de escritura.",
+      "B. Acceder a la base de datos para leer, escribir o modificar la información.",
+      "C. Recuperar y eliminar una base de datos.",
+      "D. Definir la estructura lógica de una base de datos."
+    ],
+    "correcta": 3,
+    "explicacion": "El DDL (Data Definition Language) se encarga de definir los metadatos y la estructura (esquema) de la base de datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Eso es DML.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Definición de la estructura de tablas, índices, etc."
+    }
+  },
+  {
+    "pregunta": "13. En ANSI SQL. De entre los siguientes, ¿qué privilegio NO es posible asignar utilizando el comando GRANT?",
+    "opciones": [
+      "A. EXECUTE",
+      "B. UPDATE",
+      "C. RESOURCES",
+      "D. REFERENCES"
+    ],
+    "correcta": 2,
+    "explicacion": "RESOURCES no es un privilegio de objeto estándar en ANSI SQL; suele ser un rol o cuota en motores específicos como Oracle, pero no una acción granular.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se puede asignar para procedimientos.",
+      "B": "Incorrecta. Se puede asignar para tablas.",
+      "C": "Correcta (en cuanto a que NO es estándar).",
+      "D": "Incorrecta. Se puede asignar para integridad referencial."
+    }
+  },
+  {
+    "pregunta": "14. ¿Cuál de las siguientes cláusulas LIKE de SQL permite obtener todos los nombres que empiezan por PAL?",
+    "opciones": [
+      "A. LIKE 'PAL&'",
+      "B. LIKE 'PAL$'",
+      "C. LIKE 'PAL*'",
+      "D. LIKE 'PAL%'"
+    ],
+    "correcta": 3,
+    "explicacion": "En el estándar ANSI SQL, el signo de porcentaje (%) es el comodín que sustituye a cero o más caracteres.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta. Comodín en MS Access, no en ANSI.",
+      "D": "Correcta. Sintaxis estándar."
+    }
+  },
+  {
+    "pregunta": "15. Según el estándar ANSI SQL 92, cuál es el tamaño por defecto de un tipo de datos VARCHAR:",
+    "opciones": [
+      "A. 255 caracteres.",
+      "B. 255 bits.",
+      "C. El estándar no especifica un tamaño por defecto.",
+      "D. 8 bits."
+    ],
+    "correcta": 2,
+    "explicacion": "El estándar define el tipo de dato VARCHAR(n), pero no establece una longitud predeterminada si el usuario no la indica.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Valor común en implementaciones, pero no por estándar.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "16. La sentencia SQL: SELECT t3.a, t2.b FROM (SELECT a, d FROM t3 WHERE c IS NULL) t1 JOIN t2 ON t1.d = t2.d",
+    "opciones": [
+      "A. No es una sentencia SQL válida.",
+      "B. Es equivalente a la sentencia: select t3.a,t2.b from t3,t2 where t3.c is null and t3.d = t2.d;",
+      "C. Requiere de la existencia previa de las tablas t1, t2 y t3.",
+      "D. Requiere de la existencia previa de las tablas t1 y t3."
+    ],
+    "correcta": 1,
+    "explicacion": "La consulta utiliza una tabla derivada (t1) que es un subconjunto de t3. La unión resultante con t2 es lógicamente idéntica a un JOIN directo con filtro.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es sintaxis SQL avanzada válida.",
+      "B": "Correcta. Produce el mismo resultado lógico.",
+      "C": "Incorrecta. t1 no es una tabla física.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "17. La sentencia SQL que permite borrar todos los registros de una tabla, sin borrar la tabla, es:",
+    "opciones": [
+      "A. DROP.",
+      "B. ERASE.",
+      "C. REVOKE.",
+      "D. TRUNCATE."
+    ],
+    "correcta": 3,
+    "explicacion": "TRUNCATE es un comando DDL que vacía los datos de una tabla de forma eficiente manteniendo la estructura.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Elimina la tabla completa.",
+      "B": "Incorrecta. No existe en SQL.",
+      "C": "Incorrecta. Quita privilegios.",
+      "D": "Correcta. Borrado rápido de registros."
+    }
+  },
+  {
+    "pregunta": "18. ¿Cuál de las siguientes sentencias forma parte del Lenguaje de Definición de Datos (DDL) de SQL?",
+    "opciones": [
+      "A. INSERT",
+      "B. UPDATE",
+      "C. ALTER",
+      "D. COMMIT"
+    ],
+    "correcta": 2,
+    "explicacion": "ALTER TABLE se utiliza para modificar la definición de la estructura de una tabla.",
+    "analisis_opciones": {
+      "A": "Incorrecta (DML).",
+      "B": "Incorrecta (DML).",
+      "C": "Correcta. Comando DDL.",
+      "D": "Incorrecta (TCL)."
+    }
+  },
+  {
+    "pregunta": "19. En SQL, ¿cuál es la sentencia correcta para actualizar la columna 'City' de la tabla 'Customers' con el valor 'PARIS'?",
+    "opciones": [
+      "A. UPDATE_TABLE SET TABLE='Customers' AND City='PARIS'",
+      "B. UPDATE City='PARIS' WHERE TABLE='Customers'",
+      "C. UPDATE Customers SET City='PARIS'",
+      "D. CREATE NEW VALUE('PARIS') FOR City ON TABLE(Customers) REWRITE"
+    ],
+    "correcta": 2,
+    "explicacion": "La sintaxis estándar DML es UPDATE [tabla] SET [columna] = [valor].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sintaxis inventada.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Sintaxis estándar.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "20. ¿Qué sentencia de las siguientes pertenece a la categoría de DDL?",
+    "opciones": [
+      "A. CREATE",
+      "B. UPDATE",
+      "C. SELECT",
+      "D. DELETE"
+    ],
+    "correcta": 0,
+    "explicacion": "CREATE se utiliza para crear nuevos objetos (tablas, índices, etc.) en el esquema.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (DML).",
+      "C": "Incorrecta (DQL).",
+      "D": "Incorrecta (DML)."
+    }
+  },
+  {
+    "pregunta": "21. En la arquitectura ANSI SQL la capacidad de modificar el esquema interno sin tener que alterar el esquema conceptual (o los externos) es lo que se conoce como:",
+    "opciones": [
+      "A. Independencia física.",
+      "B. Independencia Lógica.",
+      "C. Integridad de la entidad.",
+      "D. lntegridad referencial."
+    ],
+    "correcta": 0,
+    "explicacion": "La independencia física permite cambiar el almacenamiento físico de los datos sin afectar al esquema conceptual.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Sería cambiar el esquema conceptual sin afectar al externo.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  }
+,
+  {
+    "pregunta": "22. Señale la respuesta INCORRECTA referente a los disparadores o triggers de una base de datos:",
+    "opciones": [
+      "A. Son procedimientos que se ejecutan o activan cada vez que ocurre un evento determinado sobre una tabla determinada.",
+      "B. Los eventos que se pueden asociar a la ejecución de un trigger son: INSERT, UPDATE, DELETE.",
+      "C. Puede decidirse que se activen antes o después de un evento determinado.",
+      "D. Un error durante la ejecución de cualquier trigger no cancela automáticamente la operación que lo disparó, la cancelación hay que programarla."
+    ],
+    "correcta": 3,
+    "explicacion": "En el estándar ANSI SQL y en la mayoría de SGBD, si un trigger falla, la transacción se revierte (rollback) y la operación original se cancela automáticamente.",
+    "analisis_opciones": {
+      "A": "Verdadera. Definición básica de trigger.",
+      "B": "Verdadera. Son los eventos DML estándar.",
+      "C": "Verdadera. Pueden ser BEFORE o AFTER.",
+      "D": "INCORRECTA. La cancelación es automática por integridad transaccional."
+    }
+  },
+  {
+    "pregunta": "23. Referente al comando DROP de SQL, es correcto decir:",
+    "opciones": [
+      "A. Es un comando DCL.",
+      "B. Puede ser ejecutado por disparadores (triggers).",
+      "C. Se utiliza para eliminar la estructura de una tabla junto con cualquier dato almacenado en ella.",
+      "D. Utiliza WHERE para condiciones de filtrado."
+    ],
+    "correcta": 2,
+    "explicacion": "DROP es una sentencia DDL que elimina tanto la definición del objeto en el diccionario de datos como todo su contenido.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es DDL.",
+      "B": "Incorrecta. Los triggers ejecutan DML, no suelen ejecutar DDL por seguridad e integridad.",
+      "C": "Correcta.",
+      "D": "Incorrecta. No admite cláusula WHERE."
+    }
+  },
+  {
+    "pregunta": "24. En SQL-92, para especificar una condición que debe cumplir un grupo de agregación, usamos:",
+    "opciones": [
+      "A. GROUP BY",
+      "B. COUNT",
+      "C. SELECT",
+      "D. HAVING"
+    ],
+    "correcta": 3,
+    "explicacion": "HAVING es la cláusula diseñada específicamente para filtrar los resultados de las funciones de agregado tras un GROUP BY.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sirve para agrupar, no para filtrar el resultado del grupo.",
+      "B": "Incorrecta. Es una función de conteo.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "25. ¿Cuál es la función de la operación ALTER en SQL?",
+    "opciones": [
+      "A. Cambiar la estructura de un objeto.",
+      "B. Cambiar los datos de un objeto.",
+      "C. Elimina un objeto de la base de datos.",
+      "D. Elimina todos los objetos de la base de datos."
+    ],
+    "correcta": 0,
+    "explicacion": "ALTER es un comando DDL que modifica la definición de objetos existentes (añadir columnas, cambiar tipos, etc.).",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Eso es UPDATE.",
+      "C": "Incorrecta. Eso es DROP.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "26. Entre las operaciones básicas del Lenguaje de Manipulación de Datos de SQL, se encuentran:",
+    "opciones": [
+      "A. Drop y Delete.",
+      "B. Insert y Delete.",
+      "C. Create y Drop.",
+      "D. Create y Revoke."
+    ],
+    "correcta": 1,
+    "explicacion": "El DML se ocupa de los datos: INSERT, UPDATE y DELETE son sus operaciones principales.",
+    "analisis_opciones": {
+      "A": "Incorrecta. DROP es DDL.",
+      "B": "Correcta. Ambas manipulan registros.",
+      "C": "Incorrecta. Ambas son DDL.",
+      "D": "Incorrecta. Create es DDL y Revoke es DCL."
+    }
+  },
+  {
+    "pregunta": "27. Señale la respuesta correcta sobre la normalización de bases de datos en Métrica v3:",
+    "opciones": [
+      "A. Un atributo tiene dependencia funcional completa de otro si, y sólo si, depende de él a través de otro atributo.",
+      "B. Una entidad está en 1FN si tiene grupos repetitivos, es decir, un atributo puede tomar varios valores de un dominio simple.",
+      "C. Una entidad está en 2FN si está en 1FN y todos los atributos que no forman parte de las claves candidatas tienen dependencia funcional completa respecto de éstas.",
+      "D. Una relación en 3FN estará también en 2FN, pero no en 1FN."
+    ],
+    "correcta": 2,
+    "explicacion": "La 2FN requiere que no existan dependencias funcionales parciales respecto a la clave primaria.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es dependencia transitiva.",
+      "B": "Incorrecta. La 1FN prohíbe grupos repetitivos.",
+      "C": "Correcta. Definición de Segunda Forma Normal.",
+      "D": "Incorrecta. La normalización es acumulativa (3 implica 2 y 1)."
+    }
+  },
+  {
+    "pregunta": "28. La sentencia SQL `select a.c1, b.c2 from (select c1 from c where c3 is mt null) a, b´",
+    "opciones": [
+      "A. No es una sentencia SQL válida porque no se puede incluir una sentencia `select´ en la cláusula from.",
+      "B. Precisa de la existencia previa de las tablas `a´, `b´ y `c´.",
+      "C. Generará la tabla temporal `a´, que habrá que borrar tras la ejecución de la sentencia.",
+      "D. Devuelve el mismo resultado que la sentencia `select c.c1, b.c2 from c, b where c.c3 is not null´."
+    ],
+    "correcta": 3,
+    "explicacion": "La consulta usa una tabla derivada con el alias 'a'. Lógicamente equivale a cruzar la tabla 'c' filtrada con la tabla 'b' (producto cartesiano con filtro).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una subconsulta en el FROM válida.",
+      "B": "Incorrecta. 'a' es solo un alias temporal.",
+      "C": "Incorrecta. La gestión de memoria es interna del SGBD.",
+      "D": "Correcta. Son lógicamente equivalentes."
+    }
+  },
+  {
+    "pregunta": "29. En relación con el estándar ANSI SQL, señale la respuesta correcta:",
+    "opciones": [
+      "A. El operador EXISTS evalúa verdadero si el conjunto resultante es vacío, mientras que NOT EXISTS evalúa verdadero si el conjunto resultante es no vacío.",
+      "B. La cláusula ORDER BY permite presentar las filas resultado de una consulta de forma ordenada, pero no se ordenan en disco.",
+      "C. La cláusula HAVING indica qué filas deben agruparse sobre un valor común de las columnas especificadas, mientras que GROUP BY impone condiciones a los grupos.",
+      "D. La palabra clave NOT DISTINCT es usada para que el sistema cuente el mismo registro más de una vez en los resultados si sale repetido."
+    ],
+    "correcta": 1,
+    "explicacion": "ORDER BY es solo para la presentación de los resultados. El orden físico en el disco depende de los índices o de la organización interna de la tabla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es exactamente al revés.",
+      "B": "Correcta. Distinción entre orden de salida y orden físico.",
+      "C": "Incorrecta. Las funciones están invertidas en la explicación.",
+      "D": "Incorrecta. Se usa ALL o simplemente no se usa DISTINCT."
+    }
+  },
+  {
+    "pregunta": "30. En el standard SQL, si hablamos de operadores de fechas, el operador\"+\", según las especificaciones Open Database Connectivity (ODB de Microsoft:",
+    "opciones": [
+      "A. Nos devuelve el número de días entre dos fechas.",
+      "B. Nos concatena, manteniendo espacios en blanco.",
+      "C. Añade un número de días a una fecha para producir una nueva fecha.",
+      "D. Ninguna respuesta es cierta."
+    ],
+    "correcta": 2,
+    "explicacion": "Según el estándar ODBC, la operación 'fecha + entero' resulta en una nueva fecha desplazada ese número de días.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "31. ¿Qué es la Inyección SQL (SQL Injection)?",
+    "opciones": [
+      "A. Consiste en insertar código SQL \"invasor\" dentro de otro código SQL para alterar su funcionamiento normal.",
+      "B. Es el método nativo de acceso a bases de datos en PHP.",
+      "C. Consiste en utilizar condiciones ciertas en la cláusula Where del tipo \"Or 1=1\".",
+      "D. Es un ataque de fuerza bruta que consiste en utilizar código SQL específico que prueba todas las combinaciones posibles para una contraseña."
+    ],
+    "correcta": 0,
+    "explicacion": "Es una vulnerabilidad de seguridad que ocurre cuando se filtran comandos SQL no deseados a través de campos de entrada de usuario.",
+    "analisis_opciones": {
+      "A": "Correcta. Definición conceptual precisa.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta. Esa es una técnica específica, no la definición del ataque.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "32. El estándar ANSI-SQL especifica estos tipos de cláusulas JOIN:",
+    "opciones": [
+      "A. JOIN, LEFT/RIGHT [INNER], COMPLETE Y CROSS.",
+      "B. INNER, LEFT/RIGHT / FULL [OUTER], y CROSS.",
+      "C. INNER, LEFT/RIGHT / BOTH [OUTER], y ACROSS.",
+      "D. INSIDE, OUTSIDE Y LEFT/RIGHT /FULL [OUTER]."
+    ],
+    "correcta": 1,
+    "explicacion": "El estándar define el JOIN interno (INNER), los externos (LEFT, RIGHT y FULL OUTER) y el cruzado (CROSS).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Terminología estándar ANSI.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "33. En SQL-92, ¿cuál de las siguientes opciones representa la secuencia de parámetros en el orden correcto en que deberían aparecer en una sentencia?",
+    "opciones": [
+      "A. SELECT- FROM- WHERE- ORDER BY- GROUP BY- HAVING",
+      "B. SELECT- FROM- WHERE- GROUP BY- HAVING- ORDER BY",
+      "C. SELECT- FROM- WHERE - GROUP BY- ORDER BY- HAVING",
+      "D. SELECT- FROM- WHERE - ORDER BY- HAVING- GROUP BY"
+    ],
+    "correcta": 1,
+    "explicacion": "La sintaxis obligatoria sigue el orden: Selección, Origen, Filtro, Agrupación, Filtro de grupo y Ordenación final.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "34. ¿Cuál de las siguientes sentencias SQL devuelve el número de nombres (sólo Nombre, sin Incluir apellidos) diferentes que hay en la tabla?",
+    "opciones": [
+      "A. SELECT DISTINCT (Nombre) FROM Clientes",
+      "B. SELECT SUM(UNIQUE(Nombre)) FROM Clientes",
+      "C. SELECT COUNT(DISTINCT(Nombre)) FROM Clientes",
+      "D. SELECT SUM(DISTINCT (Nombre)) FROM Clientes"
+    ],
+    "correcta": 2,
+    "explicacion": "Para obtener una cifra numérica de valores únicos se debe combinar la función COUNT con el modificador DISTINCT.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Devuelve los nombres, no cuántos hay.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta. SUM no opera sobre cadenas de texto."
+    }
+  },
+  {
+    "pregunta": "35. Señale la opción INCORRECTA con respecto de las restricciones de integridad (CONSTRAINTS) en SQL2:",
+    "opciones": [
+      "A. Pueden definirse en la creación de la tabla.",
+      "B. Pueden definirse después de que la tabla haya sido creada.",
+      "C. Se definen mediante la sentencia CREATE RESTRICTION.",
+      "D. FOREIGN KEY y NOT NULL son dos tipos de restricciones."
+    ],
+    "correcta": 2,
+    "explicacion": "No existe la sentencia 'CREATE RESTRICTION'. Las restricciones se crean con CREATE TABLE o se añaden con ALTER TABLE ADD CONSTRAINT.",
+    "analisis_opciones": {
+      "A": "Verdadera.",
+      "B": "Verdadera.",
+      "C": "INCORRECTA. Sentencia inexistente en el estándar.",
+      "D": "Verdadera."
+    }
+  },
+  {
+    "pregunta": "36. Señale la afirmación correcta:",
+    "opciones": [
+      "A. DML permiten definir el esquema de la base de datos.",
+      "B. DCL permiten controlar el acceso a los datos.",
+      "C. DDL permiten controlar el acceso a los datos.",
+      "D. DCL permiten definir el esquema de la base de datos."
+    ],
+    "correcta": 1,
+    "explicacion": "El DCL (Data Control Language) tiene como fin gestionar la seguridad y los permisos de acceso.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es DDL.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "37. EMPLEADO(EMP_ID, NOMBRE, CATEGORIA, SUELDO). Categoría y sueldo medio de aquellas categorías cuyo sueldo medio es inferior al sueldo medio de todos los empleados:",
+    "opciones": [
+      "A. SELECT CATEGORIA, AVG(SUELDO) FROM EMPLEADO GROUP BY CATEGORIA HAVING AVG(SUELDO) < (SELECT AVG(SUELDO) FROM EMPLEADO)",
+      "B. SELECT CATEGORIA, AVG(SUELDO) FROM EMPLEADO HAVING CATEGORIA GROUP BY AVG(SUELDO)<(SELECT AVG(SUELDO) FROM EMPLEADO)",
+      "C. SELECT CATEGORIA, AVG(SUELDO) FROM EMPLEADO WHERE SUELDO < AVG(SUELDO) GROUP BY CATEGORIA",
+      "D. SELECT CATEGORIA, AVG(SUELDO) FROM EMPLEADO WHERE AVG(SUELDO)<(SELECT SUELDO FROM EMPLEADO)"
+    ],
+    "correcta": 0,
+    "explicacion": "Se requiere GROUP BY para la categoría y HAVING para filtrar el resultado de la agregación comparándolo con una subconsulta del promedio total.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Orden de cláusulas erróneo.",
+      "C": "Incorrecta. AVG no puede ir en el WHERE.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "38. ¿Cuál de los siguientes campos NO puede tener valores nulos en una tabla de una base de datos relacional?",
+    "opciones": [
+      "A. Un campo que forma parte de una clave ajena.",
+      "B. Un campo que forma parte de una clave primaria.",
+      "C. Un campo que forma parte de un índice.",
+      "D. Todos los campos de una tabla pueden tener valores nulos."
+    ],
+    "correcta": 1,
+    "explicacion": "La integridad de entidad exige que ningún atributo que forme parte de la clave primaria sea nulo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Pueden ser nulos en ciertos casos.",
+      "B": "Correcta. Prohibido por regla de integridad.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "39. La sintaxis estándar de ANSI SQL que nos permite borrar una vista es:",
+    "opciones": [
+      "A. ERASE VIEW",
+      "B. DELETE VIEW",
+      "C. CLEAR VIEW",
+      "D. DROP VIEW"
+    ],
+    "correcta": 3,
+    "explicacion": "Al ser la vista un objeto del esquema, se usa el comando DROP.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. DELETE es para filas.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "40. De entre las siguientes, señale cuál es una ventaja de las instantáneas de Base de Datos (snapshot) en SQLSERVER:",
+    "opciones": [
+      "A. Ofrecen una interfaz gráfica que facilita la normalización.",
+      "B. Facilitan la automatización de catálogos mediante archivos CSV.",
+      "C. Permiten crear instantáneas de un momento temporal determinado permitiendo la generación de informes.",
+      "D. Optimizan la indexación en archivos XES."
+    ],
+    "correcta": 2,
+    "explicacion": "Una snapshot es una vista estática y de solo lectura de la base de datos en un instante de tiempo específico, útil para reportes sin afectar la DB viva.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  }
+,
+  {
+    "pregunta": "41. Relacionado con las bases de datos, cuál es el significado del término CRUD:",
+    "opciones": [
+      "A. Create, Rename, Used and Delete.",
+      "B. Create, Read, Used and Drop.",
+      "C. Create, Read, Update and Delete.",
+      "D. Create, Reload, Update and Delete."
+    ],
+    "correcta": 2,
+    "explicacion": "CRUD es el acrónimo de las cuatro funciones básicas de la gestión de datos persistentes: Crear, Leer, Actualizar y Borrar.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Definición estándar.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "42. ¿Cuál de las siguientes operaciones NO es una operación de agregación en SQL?",
+    "opciones": [
+      "A. AVG",
+      "B. COUNT",
+      "C. DISTINCT",
+      "D. SUM"
+    ],
+    "correcta": 2,
+    "explicacion": "AVG, COUNT y SUM son funciones que operan sobre un conjunto de filas para devolver un único valor. DISTINCT es un modificador que elimina duplicados, pero no es una función de agregación en sí misma.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es de agregación.",
+      "B": "Incorrecta. Es de agregación.",
+      "C": "Correcta (como NO agregación).",
+      "D": "Incorrecta. Es de agregación."
+    }
+  },
+  {
+    "pregunta": "43. Señale qué paquete R en SQL Server Machine Learning Services permite realizar transformaciones y manipulaciones de datos, resúmenes estadísticos, visualizaciones y muchas formas de modelado:",
+    "opciones": [
+      "A. Revoscalepy",
+      "B. Microsoftml",
+      "C. Revoscaler",
+      "D. SqlRutils"
+    ],
+    "correcta": 2,
+    "explicacion": "RevoScaleR es el paquete de R proporcionado por Microsoft para el análisis de datos a gran escala y alto rendimiento en SQL Server.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es para Python.",
+      "B": "Incorrecta. Enfocado a algoritmos de Machine Learning.",
+      "C": "Correcta. Paquete principal de R para estas tareas.",
+      "D": "Incorrecta. Ayuda a generar procedimientos almacenados desde R."
+    }
+  },
+  {
+    "pregunta": "44. En SQL, la cláusula having:",
+    "opciones": [
+      "A. se utiliza específicamente para realizar cálculos con campos tipo Datetime.",
+      "B. se usa habitualmente en combinación con la cláusula \"group by\".",
+      "C. El uso de having impide usar la cláusula where en la misma sentencia.",
+      "D. Es un comando que se incluye dentro del llamado Lenguaje de Definición de Datos."
+    ],
+    "correcta": 1,
+    "explicacion": "HAVING se utiliza para filtrar los resultados después de que se ha realizado una agrupación con GROUP BY.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Es su uso estándar para filtrar agregados.",
+      "C": "Incorrecta. Pueden coexistir perfectamente.",
+      "D": "Incorrecta. Pertenece al DQL (consultas)."
+    }
+  },
+  {
+    "pregunta": "45. Para borrar una base de datos en mysql, ¿cuál de las siguientes sentencias se usaría?:",
+    "opciones": [
+      "A. drop database [if exists] base_de_datos",
+      "B. erase database [if exists] base_de_datos",
+      "C. delete database [if exist:s] base_de_datos",
+      "D. quit database [if exist:s] base_de_datos"
+    ],
+    "correcta": 0,
+    "explicacion": "DROP DATABASE es la sentencia DDL estándar para eliminar una base de datos completa.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Erase no es comando SQL.",
+      "C": "Incorrecta. Delete es para registros.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "46. ¿Cuál de entre los siguientes comandos SQL se utiliza para añadir uno o más registros a una tabla?",
+    "opciones": [
+      "A. CREATE",
+      "B. INSERT",
+      "C. UPDATE",
+      "D. ADD"
+    ],
+    "correcta": 1,
+    "explicacion": "INSERT es el comando DML encargado de añadir nuevas filas de datos a una tabla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Crea estructuras.",
+      "B": "Correcta.",
+      "C": "Incorrecta. Modifica existentes.",
+      "D": "Incorrecta. Se usa dentro de ALTER."
+    }
+  },
+  {
+    "pregunta": "47. En relación a las sentencias utilizadas en SQL y su tipología, indique la afirmación INCORRECTA:",
+    "opciones": [
+      "A. Las sentencias de tipo DML se utilizan para manipulación de datos e incluyen instrucciones como SELECT, INSERT o DELETE.",
+      "B. Las sentencias de control de datos permiten la gestión de privilegios a los usuarios mediante GRANT o REVOKE",
+      "C. Las sentencias de tipo DCL permiten la definición de estructuras de datos mediante CREATE TABLE O DROP TABLE.",
+      "D. Las sentencias de control de transacciones incluyen las instrucciones COMMIT y ROLLBACK."
+    ],
+    "correcta": 2,
+    "explicacion": "CREATE TABLE y DROP TABLE pertenecen al DDL (Data Definition Language), no al DCL.",
+    "analisis_opciones": {
+      "A": "Verdadera (aunque SELECT a veces se aisla como DQL).",
+      "B": "Verdadera. Definición de DCL.",
+      "C": "INCORRECTA. Mezcla DDL con las siglas de DCL.",
+      "D": "Verdadera. Definición de TCL."
+    }
+  },
+  {
+    "pregunta": "48. La sentencia TRUNCATE del lenguaje SQL pertenece al:",
+    "opciones": [
+      "A. DDL (Data Definition Language).",
+      "B. DCL (Data Control Language).",
+      "C. DCL (Data Control User).",
+      "D. DML (Data Management Language)."
+    ],
+    "correcta": 0,
+    "explicacion": "TRUNCATE se considera DDL porque modifica la estructura de almacenamiento (reinicia punteros/contadores) y no admite WHERE.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "49. Señale la respuesta INCORRECTA referente a los eventos en SQL:",
+    "opciones": [
+      "A. Es una tarea que se ejecuta de forma automática en un momento temporal previamente programado.",
+      "B. Se definen como CREATE EVENT nombre_evento.",
+      "C. La temporalidad de los eventos se indica en la cláusula ON SCHEDULE.",
+      "D. Una vez que el evento se ha ejecutado hay que eliminarlo manualmente."
+    ],
+    "correcta": 3,
+    "explicacion": "Los eventos pueden configurarse para que se eliminen automáticamente tras su ejecución (cláusula ON COMPLETION PRESERVE o NOT PRESERVE).",
+    "analisis_opciones": {
+      "A": "Verdadera.",
+      "B": "Verdadera.",
+      "C": "Verdadera.",
+      "D": "INCORRECTA. Se puede automatizar su borrado."
+    }
+  },
+  {
+    "pregunta": "50. En SQL, ¿cómo se pueden eliminar los datos en una tabla, pero no la propia definición de la tabla?",
+    "opciones": [
+      "A. DROP TABLE",
+      "B. DELETE",
+      "C. REMOVE",
+      "D. ERASE"
+    ],
+    "correcta": 1,
+    "explicacion": "DELETE elimina los registros (datos) manteniendo la estructura de la tabla intacta.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Borra tabla y datos.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "51. Cuando un servidor de base de datos recibe mensajes con solicitudes SQL por parte del cliente y éste procesa los registros que le son devueltos ¿qué modelo de arquitectura cliente/servidor está implementado?.",
+    "opciones": [
+      "A. 2 capas implementado con sql remoto.",
+      "B. 2 capas implementado con procedimientos almacenados.",
+      "C. 3 capas implementado con sql remoto.",
+      "D. 3 capas implementado con procedimientos almacenados."
+    ],
+    "correcta": 0,
+    "explicacion": "Si el cliente envía SQL directamente y recibe los registros (filas), es una arquitectura clásica de 2 capas donde el cliente asume la lógica de tratamiento del dato crudo.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "52. La cláusula HAVING de SQL, se utiliza para:",
+    "opciones": [
+      "A. Devolver los registros ordenados de una tabla.",
+      "B. Especificar una condición de búsqueda para un grupo o agregado.",
+      "C. Agrupar varios atributos para formar una clave.",
+      "D. Obtener en una sentencia SELECT grupos de tuplas en lugar de tuplas individuales."
+    ],
+    "correcta": 1,
+    "explicacion": "HAVING aplica condiciones de filtrado sobre los resultados de las funciones de agregado.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Eso es GROUP BY."
+    }
+  },
+  {
+    "pregunta": "53. ¿Qué cláusula incluida en la sentencia SQL de creación de una tabla indica que todas sus filas deben tener un valor distinto para esa columna o columnas, que deben ser no nulas y no pueden ser clave principal?",
+    "opciones": [
+      "A. Primary Key.",
+      "B. Foreign Key.",
+      "C. Check.",
+      "D. Unique."
+    ],
+    "correcta": 3,
+    "explicacion": "UNIQUE garantiza que no haya duplicados. Para que además sean no nulas se debe añadir NOT NULL, pero la restricción de unicidad es la que marca la diferencia con el resto salvo la PK.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La PK es solo una por tabla.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta. Valida rangos o valores.",
+      "D": "Correcta. Permite unicidad fuera de la PK."
+    }
+  },
+  {
+    "pregunta": "54. ¿Cuál de las siguientes sentencias utilizaríamos para permitir al USUARIO1 actualizar la columna SALARIO de la tabla EMPLEADOS sin permitirle dar de alta nuevos empleados?",
+    "opciones": [
+      "A. GRANT EMPLEADOS ON SELECT, UPDATE(SALARIO) TO USUARIO1",
+      "B. GRANT ALL ON SELECT, UPDATE TO USUARIO1",
+      "C. GRANT AL.L ON EMPLEADOS TO USUARIO1",
+      "D. GRANT SELECT, UPDATE(SALARIO) ON EMPLEADOS TO USUARIO1"
+    ],
+    "correcta": 3,
+    "explicacion": "La sintaxis correcta de GRANT permite especificar columnas en el UPDATE para restringir el acceso.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Orden erróneo.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta. Daría todos los permisos (incluido INSERT).",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "55. El cálculo relacional como lenguaje de interrogación de bases de datos:",
+    "opciones": [
+      "A. Toma su nombre del cálculo de predicados, que es una rama de la lógica.",
+      "B. Es un lenguaje procedural o procedimental.",
+      "C. Proporciona una serie de operaciones que se usan para indicar al sistema cómo construir la relación.",
+      "D. Es un lenguaje gráfico."
+    ],
+    "correcta": 0,
+    "explicacion": "El cálculo relacional es un lenguaje declarativo basado en la lógica de predicados de primer orden.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Es declarativo.",
+      "C": "Incorrecta. Eso es el álgebra relacional.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "56. ¿Cuál de los siguientes términos se relaciona directamente con el control de integridad en SQL?",
+    "opciones": [
+      "A. ROLLBACK",
+      "B. GRANT",
+      "C. CREATE INDEX",
+      "D. REVOKE"
+    ],
+    "correcta": 0,
+    "explicacion": "ROLLBACK garantiza la integridad de la base de datos al asegurar que las transacciones fallidas no dejen datos inconsistentes.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (Seguridad).",
+      "C": "Incorrecta (Rendimiento).",
+      "D": "Incorrecta (Seguridad)."
+    }
+  },
+  {
+    "pregunta": "57. ¿Cuál de las siguientes formas de trabajar con una base de datos relacional, usando un lenguaje de consulta del tipo SQL, no es correcta?",
+    "opciones": [
+      "A. Interactivamente, invocando directamente las sentencias SQL.",
+      "B. Por medio de SQL embebido.",
+      "C. Por módulos, agrupando sentencias SQL en módulos.",
+      "D. Mapeadamente, transformando las sentencias SQL en comandos del sistema operativo."
+    ],
+    "correcta": 3,
+    "explicacion": "SQL no se transforma en comandos del SO; se comunica con un motor de base de datos a través de una API o controlador.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Correcta.",
+      "C": "Correcta.",
+      "D": "INCORRECTA."
+    }
+  },
+  {
+    "pregunta": "58. ¿Cuál de las siguientes afirmaciones es correcta en relación a una subconsulta en SQL?:",
+    "opciones": [
+      "A. Debe contener la orden ORDER BY.",
+      "B. Su resultado no se visualiza.",
+      "C. Una subconsulta ya no puede contener otra subconsulta.",
+      "D. No puede contener más de una columna."
+    ],
+    "correcta": 1,
+    "explicacion": "El resultado de una subconsulta se utiliza internamente para resolver la consulta principal; no se devuelve al usuario directamente como conjunto de salida.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Normalmente está prohibido dentro de subconsultas.",
+      "B": "Correcta.",
+      "C": "Incorrecta. Pueden anidarse.",
+      "D": "Incorrecta. Puede devolver varias (ej. con EXISTS)."
+    }
+  },
+  {
+    "pregunta": "59. Dada una tabla T1(A, B, C) y T2(C, D, E), la sentencia: Select A, B, C, D from T1, T2 where T1.C=T2.C",
+    "opciones": [
+      "A. Devuelve las filas de T1 y T2 en las que coincide el campo C.",
+      "B. No devuelve ninguna fila, al estar mal construida la sentencia select.",
+      "C. Devuelve todas las filas de T1 y T2.",
+      "D. Devuelve las filas en las que coincide el campo C, excepto si es nulo."
+    ],
+    "correcta": 1,
+    "explicacion": "La sentencia es ambigua. Al existir la columna 'C' en ambas tablas y no estar calificada en el SELECT (Select A, B, **C**, D...), el motor de la base de datos dará un error de ambigüedad.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Fallo por ambigüedad de columna.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "60. En cuanto al lenguaje de interrogación de bases de datos SQL:",
+    "opciones": [
+      "A. es un estándar de facto y su base es el álgebra relacional.",
+      "B. es para consultas estructuradas, relacionales, jerárquicas o en red.",
+      "C. se utiliza otro lenguaje para la definición/creación.",
+      "D. no está implementado en Microsoft Access."
+    ],
+    "correcta": 0,
+    "explicacion": "SQL es el estándar de la industria y se fundamenta matemáticamente en el modelo relacional (álgebra y cálculo).",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Es solo para relacionales.",
+      "C": "Incorrecta. SQL incluye DDL.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "61. Qué sentencia de las siguientes nunca altera el contenido de la base de datos:",
+    "opciones": [
+      "A. SELECT ... FROM PEDIDOS, STOCK WHERE ...",
+      "B. UPDATE STOCK SET ...",
+      "C. COMMIT",
+      "D. DROP DATABASE ..."
+    ],
+    "correcta": 0,
+    "explicacion": "SELECT es una operación de consulta pura (lectura) que no modifica los datos ni la estructura.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (Modifica datos).",
+      "C": "Incorrecta (Confirma cambios).",
+      "D": "Incorrecta (Borra todo)."
+    }
+  },
+  {
+    "pregunta": "62. Indique con qué nivel de aislamiento del estándar ANSI/ISO SQL-92 se evita el fenómeno de lectura fantasma:",
+    "opciones": [
+      "A. Lectura repetible.",
+      "B. Serializable.",
+      "C. Lecturas comprometidas.",
+      "D. Lecturas no comprometidas."
+    ],
+    "correcta": 1,
+    "explicacion": "SERIALIZABLE es el nivel de aislamiento más alto y el único que garantiza la ausencia de lecturas fantasma.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Solo evita lecturas sucias y no repetibles.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "63. Seleccione la consulta que nos devuelve el número de coches comprado de cada marca en cada municipio:",
+    "opciones": [
+      "A. Select count(1), C.MARCA, B.MUNICIPIO from COMPRAS A, PERSONA B, COCHE C where B.IDPERSONA=A.IDPERSONA AND C.IDCOCHE=A.IDCOCHE GROUP BY C.MARCA, B.MUNICIPIO",
+      "B. Select count(*), C.MARCA, B.MUNICIPIO from COMPRAS A, PERSONA B, COCHE C where B.IDPERSONA=A.IDPERSONA AND C.IDCOCHE=A.IDCOCHE GROUP BY C.MARCA",
+      "C. Select count(1), C.MARCA, B.MUNICIPIO from COMPRAS A, PERSONA B, COCHE C where B.IDPERSONA=A.IDPERSONA AND C.IDCOCHE=A.IDCOCHE",
+      "D. Select SUM(1), C.MARCA, B.MUNICIPIO from COMPRAS A, PERSONA B, COCHE C where B.IDPERSONA=A.IDPERSONA AND C.IDCOCHE=A.IDCOCHE GROUP BY C.MARCA AND GROUP BY B.MUNICIPIO"
+    ],
+    "correcta": 0,
+    "explicacion": "Para agrupar por marca y municipio, ambas columnas deben aparecer en la cláusula GROUP BY.",
+    "analisis_opciones": {
+      "A": "Correcta. Sintaxis y lógica perfecta.",
+      "B": "Incorrecta. Municipio falta en el GROUP BY.",
+      "C": "Incorrecta. Falta GROUP BY.",
+      "D": "Incorrecta. Sintaxis errónea de GROUP BY."
+    }
+  },
+  {
+    "pregunta": "64. Referente a los comandos DML del lenguaje SQL, señale la respuesta correcta:",
+    "opciones": [
+      "A. DML es acrónimo de Data Manager Language.",
+      "B. Permiten crear nuevas bases de datos.",
+      "C. El comando TRUNCATE es un comando DML.",
+      "D. El comando SELECT es un comando DML."
+    ],
+    "correcta": 3,
+    "explicacion": "SELECT se clasifica generalmente dentro del DML (o DQL como subgrupo), mientras que TRUNCATE es DDL.",
+    "analisis_opciones": {
+      "A": "Incorrecta (Manipulation).",
+      "B": "Incorrecta (DDL).",
+      "C": "Incorrecta (DDL).",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "65. Partiendo de la siguiente consulta en Oracle: \"SELECT ... WHERE ... GROUP BY ... HAVING ... ORDER BY ...\" ¿Cuál de las siguientes cláusulas se ejecutaría primero?",
+    "opciones": [
+      "A. GROUP BY.",
+      "B. WHERE.",
+      "C. ORDER BY.",
+      "D. HAVING."
+    ],
+    "correcta": 1,
+    "explicacion": "El orden lógico de ejecución es: FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY.",
+    "analisis_opciones": {
+      "A": "Incorrecta (va después del WHERE).",
+      "B": "Correcta. Es el primer filtro aplicado.",
+      "C": "Incorrecta (es la última).",
+      "D": "Incorrecta (después del agrupamiento)."
+    }
+  },
+  {
+    "pregunta": "66. ¿Cuál de las siguientes sentencias SQL es correcta?",
+    "opciones": [
+      "A. DROP TABLE t WHERE a=1.",
+      "B. TRUNCATE TABLE t WHERE a=1.",
+      "C. DELETE FROM t.",
+      "D. DELETE FROM t1, t2 WHERE t1.a=t2.a."
+    ],
+    "correcta": 2,
+    "explicacion": "DELETE FROM tabla es la sintaxis correcta para borrar todos los registros de una tabla.",
+    "analisis_opciones": {
+      "A": "Incorrecta (no admite WHERE).",
+      "B": "Incorrecta (no admite WHERE).",
+      "C": "Correcta.",
+      "D": "Incorrecta. DELETE solo borra de una tabla a la vez."
+    }
+  },
+  {
+    "pregunta": "67. Obtener número de personas en cada lugar, cuando haya más de 10 personas en el mismo:",
+    "opciones": [
+      "A. SELECT lugar, Count(*) AS numPersonas FROM Personal GROUP BY lugar HAVING Count(*)>10 .",
+      "B. SELECT lugar, Count(*)>10 AS numPersonas FROM Personal GROUP BY lugar.",
+      "C. SELECT lugar, Count(*) AS num Personas FROM Personal WHERE Count()>10 GROUP BY lugar .",
+      "D. SELECT lugar, Count(*) AS num Personas FROM Personal WHERE Count(lugar)>10."
+    ],
+    "correcta": 0,
+    "explicacion": "Los filtros sobre funciones de agregado (COUNT) deben ir siempre en el HAVING.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta (el WHERE no admite agregados).",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "68. Señale la respuesta incorrecta. En el lenguaje de consulta SQL, es una función de agregado:",
+    "opciones": [
+      "A. MAX",
+      "B. COUNT",
+      "C. BETWEEN",
+      "D. AVG"
+    ],
+    "correcta": 2,
+    "explicacion": "BETWEEN es un operador de rango, no una función de agregación.",
+    "analisis_opciones": {
+      "A": "Incorrecta (es función).",
+      "B": "Incorrecta (es función).",
+      "C": "Correcta (como NO función).",
+      "D": "Incorrecta (es función)."
+    }
+  },
+  {
+    "pregunta": "69. Con respecto a las sentencias del lenguaje SQL, indique la respuesta INCORRECTA:",
+    "opciones": [
+      "A. Sentencia DELETE sirve para borrar objetos como base de datos, tablas o índices.",
+      "B. La sentencia INSERT agrega uno o más registros.",
+      "C. La sentencia UPDATE modifica valores existentes.",
+      "D. La sentencia GRANT se utiliza para dar permisos."
+    ],
+    "correcta": 0,
+    "explicacion": "DELETE borra filas (datos). Para borrar objetos estructurales se usa DROP.",
+    "analisis_opciones": {
+      "A": "INCORRECTA. Confusión entre DELETE y DROP.",
+      "B": "Verdadera.",
+      "C": "Verdadera.",
+      "D": "Verdadera."
+    }
+  },
+  {
+    "pregunta": "70. En el estándar ANSI SQL, la cláusula HAVING:",
+    "opciones": [
+      "A. Elimina los registros duplicados.",
+      "B. Permite emparejar filas de distintas tablas.",
+      "C. Es equivalente a la cláusula WHERE en caso de usar OUTER JOIN.",
+      "D. Permite incluir condiciones en las consultas a los grupos definidos."
+    ],
+    "correcta": 3,
+    "explicacion": "HAVING filtra grupos basándose en condiciones de agregación.",
+    "analisis_opciones": {
+      "A": "Incorrecta (eso es DISTINCT).",
+      "B": "Incorrecta (eso es JOIN).",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "71. Señale la afirmación verdadera en relación a la norma ISO/IEC 9075-14:",
+    "opciones": [
+      "A. Se refiere a procedimientos almacenados persistentes.",
+      "B. No incluye bases para el trabajo con objetos.",
+      "C. Hace referencia a SQL Multimedia.",
+      "D. Contiene especificaciones en relación a XML (SQL/XML)."
+    ],
+    "correcta": 3,
+    "explicacion": "La parte 14 del estándar SQL (9075-14) define cómo interactúa SQL con XML.",
+    "analisis_opciones": {
+      "A": "Incorrecta (es la parte 4).",
+      "B": "Incorrecta.",
+      "C": "Incorrecta (es la norma 13249).",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "72. La sentencia SQL-92 que nos permite generar una vista de una tabla es:",
+    "opciones": [
+      "A. DEFINE VIEW",
+      "B. DROP VIEW",
+      "C. CREATE VIEW",
+      "D. NEW VIEW"
+    ],
+    "correcta": 2,
+    "explicacion": "CREATE VIEW es la sentencia DDL para crear vistas lógicas.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta (borra).",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "73. ¿Qué operador permite buscar según un patrón determinado en una columna?",
+    "opciones": [
+      "A. LIKE",
+      "B. IN",
+      "C. BETWEEN",
+      "D. HAVING"
+    ],
+    "correcta": 0,
+    "explicacion": "LIKE junto con los comodines % y _ permite la búsqueda de patrones.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (conjuntos).",
+      "C": "Incorrecta (rangos).",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "74. Establecer un punto de recuperación dentro de una transacción en Oracle:",
+    "opciones": [
+      "A. Utilizar la sentencia SAVEPOINT.",
+      "B. Utilizar la sentencia ROLLBACK.",
+      "C. Usar los comandos GRANT.",
+      "D. Utilizar la sentencia RECOVERPOINT."
+    ],
+    "correcta": 0,
+    "explicacion": "SAVEPOINT crea una marca a la cual se puede volver sin anular toda la transacción.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta (anula).",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "75. ¿Cuál de las siguientes opciones es equivalente a la operación JOIN?",
+    "opciones": [
+      "A. LEFT JOIN",
+      "B. FULL JOIN",
+      "C. INNER JOIN",
+      "D. OUTER JOIN"
+    ],
+    "correcta": 2,
+    "explicacion": "Si se escribe JOIN a secas, el estándar ANSI asume que se trata de un INNER JOIN.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Valor por defecto.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "76. El comando GRANT es:",
+    "opciones": [
+      "A. Un comando DDL.",
+      "B. Un comando DML.",
+      "C. Un comando DCL.",
+      "D. Un comando TCL."
+    ],
+    "correcta": 2,
+    "explicacion": "Controla el acceso (permisos), por tanto es DCL.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "77. Funciones de agrupamiento permitidas:",
+    "opciones": [
+      "A. AVG y SUM.",
+      "B. COUNT, MAX y GROUP BY.",
+      "C. HAVING y MAX.",
+      "D. UNION y COUNT."
+    ],
+    "correcta": 0,
+    "explicacion": "AVG y SUM son funciones; GROUP BY, HAVING y UNION son cláusulas u operadores de conjuntos.",
+    "analisis_opciones": {
+      "A": "Correcta. Ambas son funciones de agregación.",
+      "B": "Incorrecta (GROUP BY no es función).",
+      "C": "Incorrecta (HAVING no es función).",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "78. Consultar, introducir, modificar y borrar datos (respectivamente):",
+    "opciones": [
+      "A. SELECT, APPEND, UPDATE, DELETE.",
+      "B. SELECT, INSERT, UPDATE, ERASE.",
+      "C. SELECT, APPEND, UPDATE, ERASE.",
+      "D. SELECT, INSERT, UPDATE, DELETE."
+    ],
+    "correcta": 3,
+    "explicacion": "Comandos estándar DML en el orden solicitado.",
+    "analisis_opciones": {
+      "A": "Incorrecta (APPEND no es estándar).",
+      "B": "Incorrecta (ERASE no es comando).",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "79. ¿Qué es el Machine Learning Services para SQL Server?",
+    "opciones": [
+      "A. Tecnología para copia y distribución de datos.",
+      "B. Capacidad de ejecutar scripts de Python y R con datos relacionales.",
+      "C. Producto de calidad basado en conocimiento.",
+      "D. Servicio principal de almacenamiento."
+    ],
+    "correcta": 1,
+    "explicacion": "Permite el análisis avanzado integrado en el motor de base de datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta (eso es replicación).",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "80. Con respecto a los lenguajes de interrogación de base de datos podemos decir que:",
+    "opciones": [
+      "A. QUEL está basado en el álgebra relacional.",
+      "B. QUEL está basado en el cálculo relacional de dominios.",
+      "C. QBE está basado en el cálculo relacional de tuplas.",
+      "D. QBE está basado en el cálculo relacional de dominios."
+    ],
+    "correcta": 3,
+    "explicacion": "QBE (Query By Example) se fundamenta en el cálculo relacional de dominios.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta (es de tuplas).",
+      "C": "Incorrecta (QBE es dominio).",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "81. La sentencia REVOKE del lenguaje SQL pertenece al:",
+    "opciones": [
+      "A. DDL (Data Definition Lenguage)",
+      "B. DCL (Data Control Lenguage)",
+      "C. DML (Data Management Lenguage)",
+      "D. DCU (Data Control User)"
+    ],
+    "correcta": 1,
+    "explicacion": "REVOKE se utiliza para retirar privilegios de acceso.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  }
+,
+
+  {
+    "pregunta": "6. La información que indica a un ordenador una acción elemental que ha de realizar recibe el nombre de:",
+    "opciones": [
+      "a) Dato.",
+      "b) Valor.",
+      "c) Instrucción.",
+      "d) Estructura."
+    ],
+    "correcta": 2,
+    "explicacion": "Una instrucción es la unidad mínima de información que indica al hardware la operación elemental a ejecutar[cite: 807, 811].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es la información procesada, no la acción[cite: 808].",
+      "b)": "Incorrecta[cite: 809].",
+      "c)": "Correcta. Definición técnica de instrucción[cite: 811].",
+      "d)": "Incorrecta[cite: 812]."
+    }
+  },
+  {
+    "pregunta": "7. El conjunto ordenado de operaciones necesarias para resolver un problema recibe el nombre de:",
+    "opciones": [
+      "a) Algoritmo.",
+      "b) Planificación.",
+      "c) Estructura.",
+      "d) Programa."
+    ],
+    "correcta": 0,
+    "explicacion": "Un algoritmo es la secuencia lógica y ordenada de pasos para resolver un problema determinado[cite: 813, 814].",
+    "analisis_opciones": {
+      "a)": "Correcta[cite: 814].",
+      "b)": "Incorrecta[cite: 815].",
+      "c)": "Incorrecta[cite: 817].",
+      "d)": "Incorrecta. El programa es la implementación del algoritmo en un lenguaje[cite: 818]."
+    }
+  },
+  {
+    "pregunta": "10. ¿Cuál de las siguientes de la traducción de un lenguaje de programación con respecto al análisis sintáctico es correcta?",
+    "opciones": [
+      "a) Detecta variables no declaradas.",
+      "b) Detecta tipos incompatibles.",
+      "c) Detecta el uso de caracteres ilegales.",
+      "d) Detecta tokens faltantes y expresiones mal organizadas."
+    ],
+    "correcta": 3,
+    "explicacion": "El análisis sintáctico verifica que la estructura de las sentencias cumpla las reglas del lenguaje (tokens y orden)[cite: 1044, 1050].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es parte del análisis semántico[cite: 1047].",
+      "b)": "Incorrecta. Es parte del análisis semántico[cite: 1048].",
+      "c)": "Incorrecta. Es parte del análisis léxico[cite: 1049].",
+      "d)": "Correcta. Función principal del analizador sintáctico."
+    }
+  },
+  {
+    "pregunta": "13. Para la programación de un calendario de exámenes o de un sorteo de tribunales, en el que simplemente sabemos cientos de restricciones y normas, el mejor método teórico de programación sería:",
+    "opciones": [
+      "a) Programación estructurada.",
+      "b) Programación declarativa.",
+      "c) Programación modular.",
+      "d) Programación orientada a objetos."
+    ],
+    "correcta": 1,
+    "explicacion": "La programación declarativa (como la lógica) es ideal para problemas basados en restricciones y hechos[cite: 1063, 1066].",
+    "analisis_opciones": {
+      "a)": "Incorrecta[cite: 1065].",
+      "b)": "Correcta. Se enfoca en el 'qué' mediante reglas[cite: 1066].",
+      "c)": "Incorrecta[cite: 1067].",
+      "d)": "Incorrecta[cite: 1068]."
+    }
+  },
+  {
+    "pregunta": "15. ¿Cuál de las siguientes premisas se refiere a ventajas de un lenguaje interpretado?",
+    "opciones": [
+      "a) Facilidad en la depuración",
+      "b) Gerencia de memoria automática",
+      "c) Tipos dinámicos",
+      "d) Todas las anteriores"
+    ],
+    "correcta": 3,
+    "explicacion": "Los lenguajes interpretados suelen ofrecer mayor flexibilidad y herramientas integradas para el desarrollo rápido[cite: 1074, 1114].",
+    "analisis_opciones": {
+      "a)": "Verdadera[cite: 1076].",
+      "b)": "Verdadera[cite: 1077].",
+      "c)": "Verdadera[cite: 1078].",
+      "d)": "Correcta. Todas son ventajas típicas[cite: 1114]."
+    }
+  },
+  {
+    "pregunta": "30. Una pila es una estructura de datos que utiliza un algoritmo de tipo:",
+    "opciones": [
+      "a) FIFO (First in, First out).",
+      "b) FILO (First in, Last out).",
+      "c) LIFO (Last in, First out).",
+      "d) LILO (Last in, Last out)."
+    ],
+    "correcta": 2,
+    "explicacion": "Una pila es LIFO: el último elemento en entrar es el primero en ser extraído[cite: 1389, 1395].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es el modelo de las Colas[cite: 1391].",
+      "b)": "Incorrecta[cite: 1393].",
+      "c)": "Correcta[cite: 1395].",
+      "d)": "Incorrecta[cite: 1397]."
+    }
+  },
+  {
+    "pregunta": "36. Si realizamos un recorrido POSORDEN en un árbol binario y el conjunto obtenido es {A,F,E,U,N,O,P}, el nodo raíz es:",
+    "opciones": [
+      "a) P",
+      "b) A",
+      "c) U",
+      "d) C"
+    ],
+    "correcta": 0,
+    "explicacion": "En el recorrido posorden (Izquierda-Derecha-Raíz), el último elemento del conjunto es siempre la raíz del árbol.",
+    "analisis_opciones": {
+      "a)": "Correcta. P es el último elemento[cite: 1444].",
+      "b)": "Incorrecta. Es el primer elemento[cite: 1445].",
+      "c)": "Incorrecta[cite: 1447].",
+      "d)": "Incorrecta[cite: 1449]."
+    }
+  }
+    
+  ,
+  {
+    "pregunta": "36. Una base de datos SQL es un sistema de base de datos...",
+    "opciones": [
+      "a) Relacional.",
+      "b) No relacional.",
+      "c) De clave-valor.",
+      "d) Que usa el lenguaje SQL, independientemente del carácter relacional de la base de datos."
+    ],
+    "correcta": 0,
+    "explicacion": "SQL (Structured Query Language) es el lenguaje estándar diseñado para la gestión y recuperación de información en sistemas de gestión de bases de datos relacionales[cite: 2288, 2290].",
+    "analisis_opciones": {
+      "a)": "Correcta. El modelo relacional es la base de SQL[cite: 2290].",
+      "b)": "Incorrecta. Estas suelen usar NoSQL[cite: 2292].",
+      "c)": "Incorrecta. Es un tipo de NoSQL[cite: 2294].",
+      "d)": "Incorrecta. El estándar ANSI SQL está intrínsecamente ligado al modelo relacional[cite: 2296]."
+    }
+  },
+  {
+    "pregunta": "37. En el contexto de las bases de datos, \"CRUD\" es...",
+    "opciones": [
+      "a) Las siglas de \"Common Readable Usage Distribution\", por el que se establece un mecanismo de permisos para usuarios.",
+      "b) Un tipo de base de datos no relacional en el que se ejecutan rutinas comunes para comparar datos mediante vectores y árboles binarios dirigidos.",
+      "c) El acrónimo de las cuatro operaciones elementales para crear y gestionar elementos de bases de datos relacionales y no relacionales.",
+      "d) El acrónimo de los cuatro procedimientos por los que se normalizan los datos de bases de datos clave-valor, garantizando que estén, al menos, en 3FN."
+    ],
+    "correcta": 2,
+    "explicacion": "CRUD representa las operaciones básicas de persistencia: Create (Crear), Read (Leer), Update (Actualizar) y Delete (Borrar)[cite: 2299, 2304].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Definición inventada[cite: 2302].",
+      "b)": "Incorrecta[cite: 2303].",
+      "c)": "Correcta. Se aplica a la gestión general de datos[cite: 2304].",
+      "d)": "Incorrecta. La normalización (3FN) es un proceso de diseño, no el CRUD[cite: 2305]."
+    }
+  }
+,
+
+  {
+    "pregunta": "35. En el marco de las bases de datos, ¿Qué nivel de aislamiento evita la anomalía conocida como \"lectura fantasma\"?",
+    "opciones": [
+      "a) Serializable",
+      "b) Lecturas repetibles",
+      "c) Lecturas comprometidas",
+      "d) Lecturas no comprometidas"
+    ],
+    "correcta": 0,
+    "explicacion": "El nivel de aislamiento SERIALIZABLE es el más restrictivo y el único que garantiza que no se produzcan lecturas fantasma al bloquear el rango de registros afectado.",
+    "analisis_opciones": {
+      "a)": "Correcta. Es el nivel máximo de aislamiento.",
+      "b)": "Incorrecta. Evita lecturas no repetibles pero permite fantasmas.",
+      "c)": "Incorrecta. Solo evita lecturas sucias.",
+      "d)": "Incorrecta. Es el nivel mínimo."
+    }
+  },
+  {
+    "pregunta": "38. En ciertas bases de datos, ACID son las siglas que se refieren al pilar fundamental que asegura la consistencia y confiabilidad de la información almacenada. La I de ACID corresponde al concepto de:",
+    "opciones": [
+      "a) Independence (Independencia).",
+      "b) Isolation (Aislamiento).",
+      "c) Integrity (Integridad).",
+      "d) Inhibition (Inhibición)."
+    ],
+    "correcta": 1,
+    "explicacion": "ACID es el acrónimo de Atomicidad, Consistencia, Isolation (Aislamiento) y Durabilidad, propiedades fundamentales de las transacciones.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. Garantiza que las operaciones concurrentes sean invisibles entre sí hasta que terminen.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "42. En ANSI SQL, ¿Sobre cuál sentencia NO pueden crearse disparadores (triggers)?",
+    "opciones": [
+      "a) UPDATE",
+      "b) INSERT",
+      "c) SELECT",
+      "d) DELETE"
+    ],
+    "correcta": 2,
+    "explicacion": "Los disparadores o triggers se asocian a eventos que modifican los datos (DML). SELECT es una operación de consulta y no genera un evento de disparo.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Permite triggers.",
+      "b)": "Incorrecta. Permite triggers.",
+      "c)": "Correcta. No se pueden crear triggers sobre sentencias de interrogación (DQL).",
+      "d)": "Incorrecta. Permite triggers."
+    }
+  },
+  {
+    "pregunta": "21. En el lenguaje SQL, a la hora de contar filas que cumplan ciertas condiciones, se usa el comando \"COUNT\". Al respecto del funcionamiento de dicho comando, ¿Tendría en cuenta los resultados considerados \"nulos\"?",
+    "opciones": [
+      "a) Siempre los tiene en cuenta.",
+      "b) Nunca los tiene en cuenta.",
+      "c) No, salvo si se utiliza COUNT(*)",
+      "d) Si, salvo si se utiliza COUNT(*)"
+    ],
+    "correcta": 2,
+    "explicacion": "La función COUNT(columna) ignora los valores NULL, mientras que COUNT(*) cuenta todas las filas incluyendo las que tengan valores nulos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Incorrecta.",
+      "c)": "Correcta. Es la distinción técnica del estándar ANSI.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "12. En el sistema de bases de datos, se percatan que, debido a algún tipo de error, el usuario Mateo no tiene asignados permisos de lectura y escritura sobre la tabla Recursos. De los siguientes comandos, indica cuál arreglaría dicha situación:",
+    "opciones": [
+      "a) ALTER Mateo IN Recursos +SELECT +INSERT;",
+      "b) ASSIGN USER Mateo TABLE Recursos SELECT INSERT;",
+      "c) GRANT SELECT, INSERT ON Recursos TO Mateo;",
+      "d) ADD USER(Mateo) PERMISSIONS(SELECT, INSERT) TABLE(Recursos);"
+    ],
+    "correcta": 2,
+    "explicacion": "GRANT es la sentencia del lenguaje de control de datos (DCL) utilizada para otorgar privilegios específicos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Incorrecta.",
+      "c)": "Correcta. Sigue la sintaxis estándar GRANT [permisos] ON [objeto] TO [usuario].",
+      "d)": "Incorrecta."
+    }
+  }
+,
+
+  
+
+  {
+    "pregunta": "16. ¿Qué puerto usa SQLServer para funcionar?",
+    "opciones": [
+      "a) 3306.",
+      "b) 1433.",
+      "c) 66.",
+      "d) 5321."
+    ],
+    "correcta": 1,
+    "explicacion": "El puerto TCP 1433 es el puerto estándar por defecto para las conexiones a una instancia de Microsoft SQL Server[cite: 8475].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es el puerto de MySQL[cite: 8473].",
+      "b)": "Correcta. Estándar para SQL Server[cite: 8475].",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "20. Usted descubre que el usuario Reyna tiene acceso a la base de datos de MySQL de la empresa. Considerando que el host es illo, le solicitan eliminar dicho usuario ya que no pertenece a la empresa.",
+    "opciones": [
+      "a) DELETE USER FROM illo LOGIN 'Reyna'*;",
+      "b) REVOKE USER Reyna:illo;",
+      "c) DROP USER 'Reyna'@'illo';",
+      "d) ALTER USER Name=Reyna Host=illo Action=PURGE"
+    ],
+    "correcta": 2,
+    "explicacion": "En MySQL, la sentencia DDL para eliminar una cuenta de usuario y sus privilegios de forma permanente es DROP USER seguida del nombre del usuario y el host[cite: 8770].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. DELETE es para filas, no para usuarios.",
+      "b)": "Incorrecta. REVOKE quita permisos pero no elimina al usuario.",
+      "c)": "Correcta. Sintaxis estándar de administración en MySQL[cite: 8770].",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "35. Aquel conjunto de datos donde se pueden realizar inserciones al final, y eliminaciones tanto al inicio como al final de los mismos se corresponde con...",
+    "opciones": [
+      "a) Bicola exopermitida.",
+      "b) Bicola endorestringuida.",
+      "c) Bicola de doble salida.",
+      "d) Bicola de entrada restringuida."
+    ],
+    "correcta": 3,
+    "explicacion": "Una bicola (cola doblemente terminada) de entrada restringida es aquella que solo permite inserciones por un extremo (el final), pero permite extracciones por ambos (inicio y final)[cite: 9153].",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Incorrecta.",
+      "c)": "Incorrecta.",
+      "d)": "Correcta. Se ajusta a la definición de la restricción de inserción[cite: 9153]."
+    }
+  },
+  {
+    "pregunta": "84. En el modelo entidad-relación extendido, al conjunto nominado de valores homogéneos con existencia propia con independencia de cualquier otro elemento, relación o atributo es conocido como:",
+    "opciones": [
+      "a) Entidad",
+      "b) Objeto",
+      "c) Dominio",
+      "d) Correspondencia"
+    ],
+    "correcta": 2,
+    "explicacion": "El dominio define el conjunto de valores válidos que puede tomar un atributo, existiendo de forma independiente a la relación en la que se use[cite: 7792].",
+    "analisis_opciones": {
+      "a)": "Incorrecta. La entidad representa un objeto del mundo real.",
+      "b)": "Incorrecta.",
+      "c)": "Correcta. Definición técnica de dominio en el modelo de datos[cite: 7792].",
+      "d)": "Incorrecta."
+    }
+  }
+,
+
+  {
+    "pregunta": "1. En el contexto de los lenguajes de interrogación de bases de datos, ¿en qué modelo se fundamenta el lenguaje QBE (Query By Example)?",
+    "opciones": [
+      "a) Cálculo relacional de tuplas.",
+      "b) Álgebra relacional pura.",
+      "c) Cálculo relacional de dominios.",
+      "d) Lógica de predicados de segundo orden."
+    ],
+    "correcta": 2,
+    "explicacion": "QBE se caracteriza por trabajar sobre dominios, a diferencia de QUEL que se basa en tuplas.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Ese es el fundamento de QUEL.",
+      "b)": "Incorrecta.",
+      "c)": "Correcta. Es la base teórica de QBE.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "2. Al realizar una operación UNION entre dos sentencias SELECT en ANSI SQL, ¿cuál es el comportamiento por defecto respecto a las filas duplicadas?",
+    "opciones": [
+      "a) Se mantienen todas las filas duplicadas.",
+      "b) Se eliminan automáticamente las filas duplicadas del conjunto resultado.",
+      "c) El sistema devuelve un error si existen duplicados.",
+      "d) Solo se eliminan si se añade la cláusula DISTINCT al final."
+    ],
+    "correcta": 1,
+    "explicacion": "Por defecto, UNION elimina duplicados para devolver un conjunto de valores únicos. Para mantenerlos, se debe usar UNION ALL.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso sería UNION ALL.",
+      "b)": "Correcta. Es el comportamiento estándar de la operación UNION.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta. El operador UNION ya implica un comportamiento de unicidad por defecto."
+    }
+  },
+  {
+    "pregunta": "3. Según el estándar ANSI SQL, ¿cuál es la sentencia correcta para eliminar un índice llamado 'idx_empleado'?",
+    "opciones": [
+      "a) DELETE INDEX idx_empleado;",
+      "b) DROP INDEX idx_empleado;",
+      "c) ALTER TABLE Empleados DROP INDEX idx_empleado;",
+      "d) REMOVE INDEX idx_empleado;"
+    ],
+    "correcta": 1,
+    "explicacion": "Al ser un objeto del esquema (DDL), se utiliza la sentencia DROP INDEX para eliminarlo del catálogo.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. DELETE es DML, para registros.",
+      "b)": "Correcta. Sintaxis estándar DDL para eliminar el objeto índice.",
+      "c)": "Incorrecta. Aunque algunos motores la usan, el estándar DDL prefiere el DROP directo.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "4. ¿Qué cláusula se debe añadir al crear una vista para asegurar que cualquier modificación (INSERT o UPDATE) realizada a través de ella cumpla con las condiciones especificadas en el WHERE de la propia vista?",
+    "opciones": [
+      "a) WITH CONSTRAINT.",
+      "b) WITH CHECK OPTION.",
+      "c) AS MANDATORY.",
+      "d) FOR ENFORCEMENT."
+    ],
+    "correcta": 1,
+    "explicacion": "WITH CHECK OPTION es la cláusula de integridad que impide que se inserten o actualicen filas que la vista no podría 'ver' después de la operación.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. Garantiza la integridad de los datos a través de la interfaz de la vista.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "5. En la definición de un procedimiento almacenado, ¿qué tipo de parámetro permite tanto recibir un valor del programa llamante como devolver un valor modificado al finalizar la ejecución?",
+    "opciones": [
+      "a) IN.",
+      "b) OUT.",
+      "c) INOUT.",
+      "d) OUTPUT."
+    ],
+    "correcta": 2,
+    "explicacion": "Los parámetros INOUT son bidireccionales, permitiendo la entrada y salida de datos en la misma variable.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Solo entrada.",
+      "b)": "Incorrecta. Solo salida.",
+      "c)": "Correcta. Combina ambas funciones.",
+      "d)": "Incorrecta. Es una palabra clave específica de T-SQL, pero el tipo estándar es INOUT."
+    }
+  },
+  {
+    "pregunta": "6. De acuerdo con el estándar ANSI SQL y la gestión de eventos, ¿qué cláusula se utiliza para definir la frecuencia o el momento exacto en que una tarea programada debe ejecutarse?",
+    "opciones": [
+      "a) AT TIME.",
+      "b) ON SCHEDULE.",
+      "c) EVERY MOMENT.",
+      "d) DO EXECUTION."
+    ],
+    "correcta": 1,
+    "explicacion": "La cláusula ON SCHEDULE define la planificación temporal (una sola vez o periódica) de la ejecución del evento.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. Define la temporalidad según el estándar para eventos.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. ¿Qué diferencia principal existe entre un disparador (trigger) de fila (FOR EACH ROW) y uno de sentencia en SQL?",
+    "opciones": [
+      "a) El de fila solo funciona en INSERT y el de sentencia en DELETE.",
+      "b) El de fila se ejecuta una vez por cada registro afectado y el de sentencia una única vez por toda la operación.",
+      "c) El de sentencia es más lento que el de fila.",
+      "d) No existe el disparador de sentencia en ANSI SQL."
+    ],
+    "correcta": 1,
+    "explicacion": "La diferencia radica en la granularidad: el de fila se activa tantas veces como filas cambien; el de sentencia se dispara una única vez por comando.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Ambos pueden usarse en cualquier evento DML.",
+      "b)": "Correcta. Es la distinción fundamental de granularidad.",
+      "c)": "Incorrecta. Normalmente el de sentencia es más eficiente para validaciones globales.",
+      "d)": "Incorrecta. Ambos tipos están contemplados en el estándar."
+    }
+  }
+,
+
+  {
+    "pregunta": "8. Según el estándar ANSI SQL, ¿cuál es la sentencia utilizada para retirar un permiso previamente concedido a un usuario?",
+    "opciones": [
+      "a) DROP PRIVILEGE.",
+      "b) DELETE GRANT.",
+      "c) REVOKE.",
+      "d) REMOVE ACCESS."
+    ],
+    "correcta": 2,
+    "explicacion": "REVOKE es la sentencia del subconjunto DCL (Data Control Language) que se utiliza para retirar privilegios específicos otorgados con GRANT.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. DROP se usa para eliminar objetos del esquema.",
+      "b)": "Incorrecta.",
+      "c)": "Correcta. Es el comando opuesto a GRANT.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. Para crear un nuevo usuario en la base de datos que se conectará desde cualquier host en un sistema como MySQL, ¿cuál es la sintaxis básica correcta?",
+    "opciones": [
+      "a) ADD USER 'nombre'@'%';",
+      "b) CREATE USER 'nombre'@'%';",
+      "c) INSERT INTO USERS (Name) VALUES ('nombre');",
+      "d) GRANT USER 'nombre' TO HOST '%';"
+    ],
+    "correcta": 1,
+    "explicacion": "CREATE USER es la sentencia estándar DDL/Administrativa para dar de alta nuevas cuentas de usuario.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. El símbolo '%' indica que puede conectarse desde cualquier dirección IP.",
+      "c)": "Incorrecta. Aunque los usuarios se guardan en tablas internas, no se deben usar INSERT directos.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. Según tu temario, ¿qué tipo de bloqueo se adquiere automáticamente al ejecutar una sentencia DDL como ALTER TABLE para evitar que otras conexiones accedan a los metadatos de la tabla?",
+    "opciones": [
+      "a) Bloqueo Compartido (S).",
+      "b) Bloqueo Exclusivo (X).",
+      "c) Bloqueo de Esquema (SCHEMA).",
+      "d) Bloqueo de Actualización Masiva (BU)."
+    ],
+    "correcta": 2,
+    "explicacion": "Los bloqueos de esquema garantizan que nadie haga referencia a la tabla ni a sus metadatos mientras se está modificando su estructura.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Se usa para operaciones de lectura (SELECT).",
+      "b)": "Incorrecta. Se usa para INSERT, UPDATE y DELETE.",
+      "c)": "Correcta. Definición específica para cambios estructurales.",
+      "d)": "Incorrecta. Se usa para inserciones masivas de datos."
+    }
+  },
+  {
+    "pregunta": "11. En la gestión de concurrencia, ¿qué sucede si una transacción intenta obtener un Bloqueo Exclusivo (X) sobre un recurso que ya tiene un Bloqueo Compartido (S)?",
+    "opciones": [
+      "a) El bloqueo X se concede inmediatamente.",
+      "b) El bloqueo S se convierte automáticamente en X.",
+      "c) La transacción debe esperar a que el bloqueo S sea liberado.",
+      "d) El sistema operativo cancela ambas transacciones para evitar interbloqueos."
+    ],
+    "correcta": 2,
+    "explicacion": "Si existe un bloqueo compartido (S), ninguna otra transacción puede obtener un bloqueo exclusivo (X) sobre ese mismo recurso hasta que el primero se libere.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Son incompatibles.",
+      "b)": "Incorrecta.",
+      "c)": "Correcta. Es el principio básico de exclusión mutua en bloqueos.",
+      "d)": "Incorrecta."
+    }
+  }
+]

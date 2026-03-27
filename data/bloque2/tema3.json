@@ -1,0 +1,2272 @@
+[
+  {
+    "pregunta": "1. Señale la afirmación correcta en relación a la organización secuencial indexada:",
+    "opciones": [
+      "A. El acceso a registros siempre se hará consultando previamente la tabla de índices, y posteriormente el registro referenciado.",
+      "B. En la organización secuencial indexada, se crea una la zona de overflow o desbordamiento para almacenar los registros corruptos.",
+      "C. En la organización secuencial indexada no es posible efectuar reorganizaciones.",
+      "D. En el caso de eliminaciones, la eliminación del registro se efectúa de forma inmediata, modificándose las posiciones de entrada al fichero."
+    ],
+    "correcta": 0,
+    "explicacion": "En la organización secuencial indexada, el acceso se realiza apoyándose en una tabla de índices que guarda las referencias a la ubicación real de los datos, lo que permite un acceso tanto secuencial como directo.",
+    "analisis_opciones": {
+      "A": "Correcta. El índice funciona como el índice de un libro para ir directo al registro.",
+      "B": "Incorrecta. La zona de overflow no es para registros corruptos, sino para nuevos registros insertados cuando el área principal está llena.",
+      "C": "Incorrecta. Sí es posible y necesario reorganizar para integrar los registros de la zona de overflow en el área principal.",
+      "D": "Incorrecta. Normalmente las eliminaciones son lógicas (se marca el registro como borrado) y se eliminan físicamente en una reorganización posterior."
+    }
+  },
+  {
+    "pregunta": "2. A una pila (stack) que contiene los elementos A, F, G (siendo A el más antiguo y G el más reciente), se le añade B. Si inmediatamente se extrae un elemento, ¿cuál será?",
+    "opciones": [
+      "A. A",
+      "B. F",
+      "C. B",
+      "D. G"
+    ],
+    "correcta": 2,
+    "explicacion": "Una pila es una estructura de datos tipo LIFO (Last In, First Out). El último elemento en entrar es el primero en salir. Al añadir B al final, B será el primero en ser extraído.",
+    "analisis_opciones": {
+      "A": "Incorrecta. A sería el primero en salir si fuera una cola (FIFO).",
+      "B": "Incorrecta. F está en el medio.",
+      "C": "Correcta. B es el último insertado, por tanto, el primero en salir por la política LIFO.",
+      "D": "Incorrecta. G era el más reciente antes de insertar B, ahora es el penúltimo."
+    }
+  },
+  {
+    "pregunta": "3. Cuál es la respuesta correcta con respecto al formato de imagen JPG:",
+    "opciones": [
+      "A. Es un estándar internacional.",
+      "B. Es editable, cada vez que guardamos un JPEG nuevo, la imagen va ganando calidad.",
+      "C. Los archivos almacenados en este formato tienden a ser archivos pesados de gran tamaño.",
+      "D. Se trata de un formato de imagen que permite transparencias."
+    ],
+    "correcta": 0,
+    "explicacion": "JPEG (Joint Photographic Experts Group) es un estándar internacional (ISO/IEC 10918-1) muy utilizado para comprimir imágenes fotográficas.",
+    "analisis_opciones": {
+      "A": "Correcta. Fue creado por el comité Joint Photographic Experts Group como estándar ISO/IEC.",
+      "B": "Incorrecta. JPEG usa compresión con pérdida; cada vez que se guarda y recomprime, la imagen pierde calidad, no la gana.",
+      "C": "Incorrecta. Al usar compresión con pérdida, los archivos son muy ligeros, no pesados.",
+      "D": "Incorrecta. JPEG no soporta canales alfa (transparencias). Formatos como PNG o GIF sí lo hacen."
+    }
+  },
+  {
+    "pregunta": "4. En Windows, en una unidad con el sistema de archivos exFAT, el tamaño máximo de volumen recomendado es de:",
+    "opciones": [
+      "A. 256 TB",
+      "B. 512 TB",
+      "C. 1 PB",
+      "D. 1 EB"
+    ],
+    "correcta": 1,
+    "explicacion": "El tamaño máximo recomendado por Microsoft para un volumen exFAT en Windows es de 512 Terabytes, aunque teóricamente el límite de diseño es de 64 Zettabytes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el tamaño máximo de volumen de NTFS en Windows 10 (antes de las actualizaciones más recientes que lo elevaron).",
+      "B": "Correcta. Límite recomendado oficialmente por Microsoft para exFAT.",
+      "C": "Incorrecta. Un Petabyte es superior al límite recomendado.",
+      "D": "Incorrecta. Un Exabyte es excesivamente superior al límite práctico actual."
+    }
+  },
+  {
+    "pregunta": "5. Señale la respuesta correcta referente al tipo abstracto de datos (TAD) Cola:",
+    "opciones": [
+      "A. Basada en el principio LIFO (last-in, first-out).",
+      "B. Es un tipo especial de lista en la que se pueden insertar y eliminar por cualquier extremo.",
+      "C. Cada nodo tiene dos enlaces, uno al nodo siguiente, y otro al anterior.",
+      "D. Se pude implementar usando una estructura dinámica."
+    ],
+    "correcta": 3,
+    "explicacion": "Una cola (Queue) es una estructura basada en el principio FIFO (First In, First Out). Los datos se insertan por el final y se extraen por el principio. Se puede implementar de forma estática (arrays) o dinámica (punteros/listas enlazadas).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese es el principio de una Pila (Stack).",
+      "B": "Incorrecta. Eso describiría a una Bicola (Deque).",
+      "C": "Incorrecta. Esa es la característica de una Lista Doblemente Enlazada.",
+      "D": "Correcta. Mediante punteros o referencias, permitiendo crecer de forma indefinida según la memoria disponible."
+    }
+  },
+  {
+    "pregunta": "6. Si un árbol binario lo recorremos siguiendo el orden siguiente: raíz, subárbol izquierdo, subárbol derecho, ¿cuál de los siguientes tipos de recorrido estamos utilizando?",
+    "opciones": [
+      "A. Preorden",
+      "B. Inorden",
+      "C. Postorden",
+      "D. Reorden"
+    ],
+    "correcta": 0,
+    "explicacion": "Los tres recorridos básicos en profundidad se definen por cuándo se visita la raíz. Si la raíz es lo primero (antes de sus hijos), es Preorden.",
+    "analisis_opciones": {
+      "A": "Correcta. Visitar raíz, luego el hijo izquierdo y finalmente el hijo derecho.",
+      "B": "Incorrecta. El inorden es: izquierdo, raíz, derecho.",
+      "C": "Incorrecta. El postorden es: izquierdo, derecho, raíz.",
+      "D": "Incorrecta. Término inventado."
+    }
+  },
+  {
+    "pregunta": "7. La estructura de datos que permite inserciones por un extremo y borrados por los dos es una:",
+    "opciones": [
+      "A. Cola de salida restringida.",
+      "B. Bicola de entrada restringida.",
+      "C. Lista de entrada restringida.",
+      "D. Ese tipo de estructura no existe."
+    ],
+    "correcta": 1,
+    "explicacion": "Una Bicola (Deque: Double Ended Queue) permite inserciones y eliminaciones en ambos extremos. Si se restringe la entrada a un solo extremo pero permite borrar por los dos, es una bicola de entrada restringida.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Una cola de salida restringida permitiría inserciones por ambos extremos pero borrados solo por uno.",
+      "B": "Correcta. Inserciones por un solo lado (entrada restringida), borrados por ambos lados.",
+      "C": "Incorrecta. No es el término técnico habitual en estructuras TAD.",
+      "D": "Incorrecta. Sí existen como variantes de las bicolas."
+    }
+  },
+  {
+    "pregunta": "8. Una tabla hash, cuando se da una colisión al insertar un elemento (compuesto de clave y valor), significa que:",
+    "opciones": [
+      "A. El valor obtenido al aplicar la función resumen a la clave del elemento coincide con otro ya almacenado.",
+      "B. Se ha llegado al límite de tamaño que se usó para dimensionar la tabla, y se ha sobreescrito un elemento.",
+      "C. Ese mismo elemento (tanto su clave como su valor) ya existía previamente en la tabla.",
+      "D. El valor del elemento ya se encuentra almacenado por lo que sería redundante almacenar el nuevo."
+    ],
+    "correcta": 0,
+    "explicacion": "En una tabla hash, la función hash calcula un índice a partir de la clave. Una colisión ocurre cuando dos claves distintas producen el mismo índice hash, intentando ocupar la misma posición (cubo o bucket) en la tabla.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la definición exacta de colisión hash: h(k1) = h(k2) siendo k1 != k2.",
+      "B": "Incorrecta. Eso sería un problema de factor de carga o llenado de la tabla, no necesariamente una colisión por la función resumen.",
+      "C": "Incorrecta. Eso sería una inserción duplicada, no una colisión matemática de la función.",
+      "D": "Incorrecta. Las colisiones se refieren a las claves (índices resultantes), no a los valores en sí."
+    }
+  },
+  {
+    "pregunta": "9. Si un árbol binario recorrido en \"preorden\" es 1-2-3-4-5 y recorrido en \"inorden\" es 3-2-4-1-5, señale cómo será el orden de visitas recorrido en \"postorden\":",
+    "opciones": [
+      "A. 1-2-5-3-4.",
+      "B. 1-2-4-3-5.",
+      "C. 3-2-4-5-1.",
+      "D. 3-4-2-5-1."
+    ],
+    "correcta": 3,
+    "explicacion": "Analizando: Preorden da la raíz (1). Inorden divide el árbol usando la raíz: a la izquierda está (3,2,4) y a la derecha (5). El postorden visita primero los subárboles y por último la raíz, por tanto el postorden debe acabar en 1. La única opción que termina en 1 de forma lógica para los subárboles es la D.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Termina en 4, cuando el postorden debe terminar en la raíz global (1).",
+      "B": "Incorrecta. Termina en 5.",
+      "C": "Incorrecta. La estructura interna del subárbol izquierdo no cuadra con el postorden esperado.",
+      "D": "Correcta. Sigue la regla del postorden: hijo izq, hijo der, raíz. Izquierdo de 2 es 3, derecho de 2 es 4. Queda 3-4-2 para el subárbol izquierdo. Derecho global es 5. Raíz global 1. -> 3-4-2-5-1."
+    }
+  },
+  {
+    "pregunta": "10. Las listas “simplemente enlazadas” son estructuras de datos que se caracterizan porque:",
+    "opciones": [
+      "A. Cada elemento sabe qué elemento le precede en la lista pero no cuál le sucede.",
+      "B. Cada elemento sabe qué elemento le sucede en la lista pero no cuál le precede.",
+      "C. Cada elemento conoce cuáles son sus elementos antecesor y predecesor en la lista.",
+      "D. Cada elemento tiene un enlace a cada uno de los elementos de la lista."
+    ],
+    "correcta": 1,
+    "explicacion": "Una lista simplemente enlazada está formada por nodos donde cada nodo contiene un valor y un único puntero que apunta al siguiente nodo en la secuencia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa no es la estructura habitual, las listas avanzan hacia adelante.",
+      "B": "Correcta. Solo tienen un puntero 'siguiente' (next).",
+      "C": "Incorrecta. Eso describe a una lista 'doblemente enlazada'.",
+      "D": "Incorrecta. Eso requeriría n-1 punteros por nodo, algo muy ineficiente y que no describe una lista, sino más bien un grafo completo."
+    }
+  },
+  {
+    "pregunta": "11. Un fichero es un conjunto homogéneo y organizado de información referente a un mismo tema. En relación a los ficheros, señale la afirmación correcta:",
+    "opciones": [
+      "A. Un fichero está compuesto por una sucesión de campos que almacenan distintos tipos de información, no existiendo ninguna relación entre unos campos y otros.",
+      "B. Los ficheros contienen registros, que a su vez están formados por una serie de campos, cada uno de los cuales contiene un tipo de información sobre dicho registro.",
+      "C. Los ficheros están formados por registros. Cada registro contiene la información en un formato propio e independiente del resto de registros, no existiendo ninguna estructura común a todos los registros.",
+      "D. Cuando un fichero se compone de registros, se dice que se trata de un fichero indexado."
+    ],
+    "correcta": 1,
+    "explicacion": "La jerarquía clásica de datos es: Fichero -> Registro -> Campo. Todos los registros de un mismo fichero suelen compartir la misma estructura de campos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Los campos están relacionados conformando una entidad lógica (el registro).",
+      "B": "Correcta. Define perfectamente la organización clásica de archivos de datos.",
+      "C": "Incorrecta. Los registros en un fichero homogéneo comparten la misma estructura o formato.",
+      "D": "Incorrecta. Cualquier fichero estructurado se compone de registros, no por ello tiene que estar indexado (puede ser secuencial)."
+    }
+  },
+  {
+    "pregunta": "12. Con respecto a la resolución de colisiones que se pueden producir cuando se utilizan tablas de dispersión (tablas hash):",
+    "opciones": [
+      "A. Hay dos métodos principales para la resolución de colisiones: hashing lineal y hashing cuadrático.",
+      "B. Un criterio para decidir qué método de resolución utilizar es el factor de carga, que se define como el cociente del número de índices y el tamaño de la tabla.",
+      "C. Los métodos principales para la resolución de colisiones:hashing abierto hashing cerrado.",
+      "D. El método de hashing lineal permite resolver la colisión mediante la búsqueda en ubicaciones alternativas en la misma tabla."
+    ],
+    "correcta": 2,
+    "explicacion": "Los dos grandes grupos teóricos para resolver colisiones en tablas hash son el Hashing Abierto (encadenamiento separado usando listas) y el Hashing Cerrado (direccionamiento abierto, buscando huecos en la propia tabla).",
+    "analisis_opciones": {
+      "A": "Incorrecta. El sonde lineal y cuadrático son técnicas dentro de una misma familia (Hashing Cerrado / Direccionamiento Abierto).",
+      "B": "Incorrecta. El factor de carga es el número de elementos insertados entre el tamaño de la tabla.",
+      "C": "Correcta. Son las dos categorías principales de resolución.",
+      "D": "Incorrecta. El 'sondeo lineal' (linear probing) permite buscar ubicaciones alternativas, pero es una técnica específica, no la categorización principal pedida respecto al 'hashing lineal' ambiguo."
+    }
+  },
+  {
+    "pregunta": "13. ¿Cuántas pasadas como máximo hay que realizar a un array para ordenarlo mediante el método de la burbuja (slendo N el número de elementos del array)?",
+    "opciones": [
+      "A. N-1",
+      "B. N",
+      "C. N/2",
+      "D. N + 1"
+    ],
+    "correcta": 0,
+    "explicacion": "En el peor de los casos (array ordenado de forma inversa), el algoritmo de la burbuja necesita realizar N-1 pasadas completas para mover el elemento más pequeño desde el final hasta el principio.",
+    "analisis_opciones": {
+      "A": "Correcta. El número máximo de pasadas es siempre una unidad menor al número de elementos.",
+      "B": "Incorrecta. Matemáticamente no es necesario evaluar la última pasada ya que el último elemento quedará automáticamente ordenado.",
+      "C": "Incorrecta. Sería el coste si pudiéramos asegurar que la mitad de los elementos ya están en su sitio, lo cual no es el caso peor.",
+      "D": "Incorrecta. Es un valor matemáticamente excesivo para este algoritmo."
+    }
+  },
+  {
+    "pregunta": "14. Cuál de los siguientes sistemas de archivos, especialmente diseñado para optimizar dispositivos con memorias SSD, es el sucesor de HFS+",
+    "opciones": [
+      "A. NTF",
+      "B. APFS",
+      "C. Ext4",
+      "D. exFAT"
+    ],
+    "correcta": 1,
+    "explicacion": "APFS (Apple File System) fue presentado en 2017 para reemplazar a HFS+ (Mac OS Extended), centrándose especialmente en la optimización para almacenamiento en estado sólido (SSD y Flash) y cifrado robusto.",
+    "analisis_opciones": {
+      "A": "Incorrecta. (Probablemente error tipográfico por NTFS), que es el sistema de Microsoft.",
+      "B": "Correcta. Sucesor directo de HFS+ en ecosistemas macOS e iOS.",
+      "C": "Incorrecta. Sistema de archivos de Linux, evolución de ext3.",
+      "D": "Incorrecta. Formato de Microsoft optimizado para memorias extraíbles, no un reemplazo de HFS+."
+    }
+  },
+  {
+    "pregunta": "15. La principal desventaja de ext2 (second extended filesystem o \"segundo sistema de archivos extendido\") del sistema de archivos de Linux es que:",
+    "opciones": [
+      "A. El espacio está dividido en Bloques.",
+      "B. No provee las características de journaling.",
+      "C. Cada bloque contiene un superbloque grupo.",
+      "D. El grupo descriptor almacena el valor del bloque de mapa de bits"
+    ],
+    "correcta": 1,
+    "explicacion": "La evolución de ext2 a ext3 se basó principalmente en la introducción del 'journaling' (registro por diario), una característica vital para evitar la corrupción de datos ante cortes de energía repentinos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa es una característica general de casi todos los sistemas de archivos.",
+      "B": "Correcta. La falta de journaling (registro de transacciones) es su gran debilidad frente a fallos del sistema.",
+      "C": "Incorrecta. No es su principal desventaja funcional.",
+      "D": "Incorrecta. Detalles técnicos de su estructura que no suponen una desventaja."
+    }
+  },
+  {
+    "pregunta": "16. Dentro de las estructuras de datos, podemos definir una lista encadenada como:",
+    "opciones": [
+      "A. Una tabla donde todos sus elementos están ordenados.",
+      "B. Un conjunto de registros referentes a la misma entidad, y por ello encadenados en un mismo fichero o base de datos.",
+      "C. Un conjunto variable de elementos donde el orden los mismos se establece mediante punteros.",
+      "D. Una tabla índice utilizada para acceder de forma directa a los registros de una tabla general."
+    ],
+    "correcta": 2,
+    "explicacion": "A diferencia de los vectores (arrays) donde el orden es secuencial en memoria, las listas enlazadas determinan el orden lógico de sus elementos guardando punteros (referencias) al siguiente elemento.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las listas no tienen por qué estar ordenadas por su contenido, y no son tablas estáticas.",
+      "B": "Incorrecta. Describe un archivo físico, no una estructura de datos abstracta de programación.",
+      "C": "Correcta. Refleja su naturaleza dinámica y el uso de punteros para la secuencialidad.",
+      "D": "Incorrecta. Describe un índice de base de datos o fichero indexado."
+    }
+  },
+  {
+    "pregunta": "17. Señale qué afirmación es correcta en relación con las listas encadenadas:",
+    "opciones": [
+      "A. Enlazan el último elemento de la lista con el primero.",
+      "B. Tienen dos punteros, uno señala al elemento siguiente y otro apunta al precedente.",
+      "C. Utilizan eficazmente la memoria, ya que no necesitan ocupar posiciones secuenciales de la misma.",
+      "D. Los elementos de este tipo de lista se procesan en el mismo orden en que se reciben, el primero en entrar es el primero en salir."
+    ],
+    "correcta": 2,
+    "explicacion": "Las listas enlazadas asignan memoria dinámicamente nodo por nodo. No requieren bloques contiguos de RAM, lo que evita la fragmentación y optimiza el uso del espacio disperso.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso describiría únicamente a las listas circulares.",
+      "B": "Incorrecta. Eso describiría únicamente a las listas doblemente enlazadas.",
+      "C": "Correcta. Ventaja clave frente a los vectores/arrays de tamaño estático y secuencial.",
+      "D": "Incorrecta. Eso define a una Cola (FIFO), una lista puede procesarse de múltiples formas."
+    }
+  },
+  {
+    "pregunta": "18. En relación con el tipo abstracto de dato Arbol, seleccione la respuesta correcta, el grado de un árbol es:",
+    "opciones": [
+      "A. El mayor grado de los nodos que contiene.",
+      "B. El número de hijos del nodo raíz.",
+      "C. El número de nodos hermanos del primer descendiente del árbol.",
+      "D. La mayor profundidad de cualquier nodo."
+    ],
+    "correcta": 0,
+    "explicacion": "En la teoría de grafos y árboles, el grado de un nodo es el número de hijos que tiene. El grado global de un árbol es el máximo grado encontrado entre todos sus nodos.",
+    "analisis_opciones": {
+      "A": "Correcta. Si un nodo tiene 3 hijos y el resto 2, el grado del árbol es 3.",
+      "B": "Incorrecta. La raíz podría tener solo un hijo, pero un nodo interno tener 5. El grado sería 5.",
+      "C": "Incorrecta. No es una definición válida en estructuras de datos.",
+      "D": "Incorrecta. Eso define la 'Altura' o 'Profundidad' del árbol, no su grado."
+    }
+  },
+  {
+    "pregunta": "19. Señale la técnica de compresión con pérdida:",
+    "opciones": [
+      "A. Portable Network Graphics (PNG).",
+      "B. Lempel-Ziv-Welch (LZW).",
+      "C. Joint Photographic Experts Group (JPEG).",
+      "D. Free Lossless Audio Codec (FLAC)."
+    ],
+    "correcta": 2,
+    "explicacion": "JPEG utiliza la Transformada Discreta del Coseno y cuantización para descartar información visual menos perceptible al ojo humano, lo que lo hace un método destructivo (con pérdida).",
+    "analisis_opciones": {
+      "A": "Incorrecta. PNG es un formato de imagen comprimido SIN pérdida.",
+      "B": "Incorrecta. LZW es un algoritmo de diccionario (usado en GIF y TIFF) SIN pérdida.",
+      "C": "Correcta. JPEG elimina datos permanentemente para reducir el peso de la imagen.",
+      "D": "Incorrecta. FLAC, como indica su nombre (Lossless), es compresión de audio SIN pérdida."
+    }
+  },
+  {
+    "pregunta": "20. En relación a las estructuras de datos, señale la INCORRECTA:",
+    "opciones": [
+      "A. Las cadenas son estructuras de datos contiguas.",
+      "B. Los vectores no son estructuras de datos contiguas.",
+      "C. Un array bidimensional es una matriz.",
+      "D. Una cola es una estructura FIFO (first in, first out)."
+    ],
+    "correcta": 1,
+    "explicacion": "Los vectores (arrays o arreglos estáticos) son el ejemplo clásico de estructura de datos en memoria contigua, ya que sus elementos se almacenan uno tras otro en posiciones secuenciales de RAM.",
+    "analisis_opciones": {
+      "A": "Verdadera. Las cadenas (strings) se almacenan típicamente como arrays de caracteres contiguos.",
+      "B": "Falsa (Correcta a marcar). Los vectores SÍ son estructuras de datos contiguas en memoria.",
+      "C": "Verdadera. Una matriz es conceptualmente un arreglo de dos dimensiones (filas y columnas).",
+      "D": "Verdadera. En una cola el primero en llegar es el primero en ser atendido (FIFO)."
+    }
+  },
+  {
+    "pregunta": "21. ¿Cómo se llaman las estructuras de datos en las que la posición de cada elemento depende de su contenido?",
+    "opciones": [
+      "A. Listas densas.",
+      "B. Listas ordenadas.",
+      "C. Listas enlazadas.",
+      "D. Listas apiladas."
+    ],
+    "correcta": 1,
+    "explicacion": "En una lista ordenada, el lugar donde se inserta un nuevo elemento está determinado por el valor del propio elemento (para mantener un orden ascendente o descendente), no por el momento de inserción.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es una terminología estándar para esta definición.",
+      "B": "Correcta. Su posición lógica viene forzada por su valor o contenido para preservar la ordenación.",
+      "C": "Incorrecta. En una lista enlazada normal, la inserción puede hacerse al principio o al final independientemente del contenido.",
+      "D": "Incorrecta. No es una terminología estándar."
+    }
+  },
+  {
+    "pregunta": "22. La codificación de Huffman se utiliza como:",
+    "opciones": [
+      "A. Algoritmo de detección de errores.",
+      "B. Algoritmo de compresión de datos.",
+      "C. Algoritmo de detección y corrección de errores.",
+      "D. Algoritmo de muestreo de señales."
+    ],
+    "correcta": 1,
+    "explicacion": "Huffman es un algoritmo de compresión sin pérdida que asigna códigos binarios de longitud variable a los símbolos de entrada, usando códigos más cortos para los símbolos más frecuentes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No añade redundancia para comprobar integridad (como CRC o paridad).",
+      "B": "Correcta. Es una base fundamental de la compresión moderna (ZIP, MP3, JPEG).",
+      "C": "Incorrecta. No sirve para corregir errores en transmisión (como Hamming).",
+      "D": "Incorrecta. No tiene relación con el procesamiento de señales digitales (DSP)."
+    }
+  },
+  {
+    "pregunta": "23. Con respecto a los árboles 2-3-4, señale la respuesta correcta:",
+    "opciones": [
+      "A. Cumple las propiedades del árbol binario de búsqueda.",
+      "B. Las hojas pueden estar a distinto nivel.",
+      "C. Los nodos pueden tener 2, 3 o 4 hijos (2-nodo, 3-nodo o 4-nodo).",
+      "D. Las reestructuraciones se realizan desde las hojas hacia la raíz."
+    ],
+    "correcta": 2,
+    "explicacion": "Un árbol 2-3-4 es un árbol de búsqueda balanceado en el que cada nodo interno puede tener 2, 3 o 4 hijos (y almacenar 1, 2 o 3 claves respectivamente).",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es binario, ya que permite más de dos hijos por nodo.",
+      "B": "Incorrecta. Es un árbol perfectamente balanceado, por lo que todas las hojas están siempre en el mismo nivel.",
+      "C": "Correcta. Su propio nombre indica el número permitido de hijos por nodo.",
+      "D": "Incorrecta. A diferencia de otros árboles como los B, los 2-3-4 suelen aplicar divisiones preventivas al descender (top-down), no hacia arriba."
+    }
+  },
+  {
+    "pregunta": "24. El método del intercambio directo o algoritmo de la burbuja, es un algoritmo clásico de:",
+    "opciones": [
+      "A. ordenación que recorre un vector de elementos e intercambia en cada recorrido un elemento con su sucesor si no están en orden.",
+      "B. ordenación que recorre un vector de elementos hasta encontrar el menor de todos e intercambiarlo con el que está en la primera posición. Luego el segundo más pequeño, y así sucesivamente hasta ordenar todo.",
+      "C. búsqueda que compara secuencialmente el elemento deseado con los valores contenidos en las posiciones 1..n del vector de elementos hasta que lo encuentre.",
+      "D. búsqueda que compara secuencialmente el elemento deseado con los valores contenidos en las posiciones 1..n del vector de elementos hasta que lo encuentre, requisito indispensable es que el vector esté previamente ordenado."
+    ],
+    "correcta": 0,
+    "explicacion": "El algoritmo de la burbuja (Bubble Sort) funciona revisando cada elemento de la lista que va a ser ordenada con el siguiente, intercambiándolos de posición si están en el orden equivocado.",
+    "analisis_opciones": {
+      "A": "Correcta. Describe el mecanismo exacto de los intercambios adyacentes (burbujeo) que le dan nombre.",
+      "B": "Incorrecta. Eso describe el algoritmo de Ordenación por Selección (Selection Sort).",
+      "C": "Incorrecta. Eso describe un algoritmo de Búsqueda Secuencial o Lineal.",
+      "D": "Incorrecta. Eso hace referencia al requisito de la Búsqueda Binaria, aunque el proceso descrito sigue siendo secuencial."
+    }
+  },
+  {
+    "pregunta": "25. Señale la respuesta FALSA respecto a los métodos de acceso a un archivo:",
+    "opciones": [
+      "A. En el acceso secuencial, la información en el archivo se procesa en orden, un registro tras otro.",
+      "B. La lectura de un fichero usando acceso secuencial puede ser más rápida que usando acceso directo.",
+      "C. En el acceso directo, el número de bloque que el usuario proporciona al sistema operativo suele ser un índice respecto al inicio del archivo.",
+      "D. En el acceso directo, es necesario planificar las lecturas según orden creciente de número de bloque."
+    ],
+    "correcta": 3,
+    "explicacion": "La principal característica del acceso directo (o aleatorio) es que permite leer o escribir en cualquier bloque del archivo en cualquier momento, sin necesidad de seguir un orden preestablecido.",
+    "analisis_opciones": {
+      "A": "Verdadera. Es la definición básica de acceso secuencial.",
+      "B": "Verdadera. Si se va a procesar todo el fichero de principio a fin de forma masiva, el acceso secuencial evita los tiempos de búsqueda (seeking) del disco entre lecturas aleatorias.",
+      "C": "Verdadera. El acceso se calcula como un desplazamiento (offset) desde el byte 0 del archivo.",
+      "D": "Falsa (Correcta a marcar). Obligar a planificar en orden creciente destruiría el propósito de flexibilidad del acceso directo."
+    }
+  },
+  {
+    "pregunta": "26. ¿Cuál de las sigulentes extensiones de ficheros pertenece a un fichero de tipo hoja de cálculo?",
+    "opciones": [
+      "A. odt",
+      "B. doc",
+      "C. ods",
+      "D. rtf"
+    ],
+    "correcta": 2,
+    "explicacion": "La extensión .ods (OpenDocument Spreadsheet) es el formato estándar abierto para hojas de cálculo, popularizado por suites como LibreOffice Calc o Apache OpenOffice.",
+    "analisis_opciones": {
+      "A": "Incorrecta. ODT es para documentos de texto (OpenDocument Text).",
+      "B": "Incorrecta. DOC es para documentos de texto antiguos de Microsoft Word.",
+      "C": "Correcta. Es el estándar ODF para hojas de cálculo.",
+      "D": "Incorrecta. RTF (Rich Text Format) es un formato de texto enriquecido."
+    }
+  },
+  {
+    "pregunta": "27. Los ficheros en los que los registros se escriben sobre el soporte de almacenamiento en posiciones de memoria físicamente contiguas y en el mismo orden el que se introducen, sin espacio libre entre ellas, tiene una organización:",
+    "opciones": [
+      "A. Indexada.",
+      "B. Aleatoria.",
+      "C. Secuencial.",
+      "D. Directa."
+    ],
+    "correcta": 2,
+    "explicacion": "En la organización secuencial pura, los datos se graban uno detrás de otro en el soporte físico conforme van llegando, como en una cinta magnética clásica.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La indexada suele guardar bloques con espacios y tablas separadas.",
+      "B": "Incorrecta. La aleatoria calcula posiciones dispersas basadas en algoritmos (hashing).",
+      "C": "Correcta. Refleja el almacenamiento físico contiguo dictado por el orden de llegada.",
+      "D": "Incorrecta. El acceso directo permite esparcir los registros."
+    }
+  },
+  {
+    "pregunta": "28. Indique cuál de las siguientes afirmaciones acerca de los algoritmos es correcta:",
+    "opciones": [
+      "A. Todo algoritmo tiene asociada una única implementación del mismo.",
+      "B. La complejidad algorítmica representa la cantidad de recursos que necesita un algoritmo para resolver un problema.",
+      "C. La complejidad de un algoritmo solamente se puede medir en el caso medio.",
+      "D. La complejidad de un algoritmo solamente se puede medir en el mejor caso."
+    ],
+    "correcta": 1,
+    "explicacion": "La complejidad (o coste) de un algoritmo mide los recursos teóricos que este consumirá en términos de Tiempo de ejecución (CPU) o Espacio en memoria (RAM) en función del tamaño de los datos de entrada (N).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Un mismo algoritmo (ej. la burbuja) puede implementarse de infinitas formas dependiendo del lenguaje de programación.",
+      "B": "Correcta. Es la definición formal en Ciencias de la Computación.",
+      "C": "Incorrecta. Se suele medir en el peor de los casos (Notación O grande), mejor caso y caso medio.",
+      "D": "Incorrecta. Generalmente la medida más útil y buscada es la del peor de los casos para garantizar límites de rendimiento."
+    }
+  },
+  {
+    "pregunta": "29. Indicar qué característica se puede asociar al algoritmo de la burbuja:",
+    "opciones": [
+      "A. Algoritmo de búsqueda de complejidad cuadrática.",
+      "B. Algoritmo de ordenación de complejidad lineal.",
+      "C. Algoritmo de ordenación de complejidad cuadrática.",
+      "D. Algoritmo de búsqueda de complejidad logarítmica."
+    ],
+    "correcta": 2,
+    "explicacion": "El algoritmo de la burbuja es de ordenación y utiliza dos bucles anidados para repasar el array entero múltiples veces. Esto le da un coste asintótico en el peor y caso medio de O(n^2), es decir, complejidad cuadrática.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es de búsqueda, es de ordenación.",
+      "B": "Incorrecta. Su complejidad no es lineal O(n) salvo que el array ya esté ordenado (mejor caso).",
+      "C": "Correcta. Identifica su función (ordenación) y su coste (cuadrático).",
+      "D": "Incorrecta. Eso describiría a la búsqueda binaria."
+    }
+  },
+  {
+    "pregunta": "30. Entre los métodos para la compresión de imágenes con pérdidas se encuentra:",
+    "opciones": [
+      "A. Codificación en planos de bits (como RLE).",
+      "B. Codificación de longitud variable (como Huffman).",
+      "C. Algoritmos de diccionario adaptables (como LZW).",
+      "D. Codificación por transformación (como TDC)."
+    ],
+    "correcta": 3,
+    "explicacion": "La Transformada Discreta del Coseno (TDC / DCT) es el núcleo matemático del estándar JPEG. Extrae las frecuencias visuales de la imagen para descartar las menos perceptibles, introduciendo así pérdida de datos para lograr alta compresión.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Run-Length Encoding (RLE) es un método sin pérdidas (ej. usado en BMP).",
+      "B": "Incorrecta. Huffman es un método estadístico sin pérdidas.",
+      "C": "Incorrecta. Lempel-Ziv-Welch (LZW) es un diccionario sin pérdidas (ej. usado en GIF).",
+      "D": "Correcta. La transformación de dominio espacial a frecuencial permite descartar datos conscientemente (pérdida)."
+    }
+  },
+  {
+    "pregunta": "31. Con respecto a JSON, señale la correcta:",
+    "opciones": [
+      "A. Es un tipo de gramática XML.",
+      "B. Es una API de Java.",
+      "C. Es un conjunto de librerías de Javacript.",
+      "D. Es un formato de intercambio de datos."
+    ],
+    "correcta": 3,
+    "explicacion": "JSON (JavaScript Object Notation) es un formato de texto ligero, estructurado en pares clave-valor, diseñado específicamente para el intercambio de datos entre sistemas, siendo fácil de leer para humanos y máquinas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. JSON no está basado en etiquetas ni pertenece a la familia XML.",
+      "B": "Incorrecta. Es independiente de Java.",
+      "C": "Incorrecta. Aunque su sintaxis se deriva de JavaScript, no es una librería de código ejecutable.",
+      "D": "Correcta. Es el estándar de facto actual para intercambio de datos en servicios web (REST)."
+    }
+  },
+  {
+    "pregunta": "32. AV1 es un:",
+    "opciones": [
+      "A. Nuevo sistema de realidad aumentada.",
+      "B. Nuevo sistema operativo para la IoT.",
+      "C. Nuevo códec de vídeo.",
+      "D. Nuevo estándar de seguridad para WiFi 6."
+    ],
+    "correcta": 2,
+    "explicacion": "AOMedia Video 1 (AV1) es un formato de codificación de video abierto y libre de derechos de autor, desarrollado por la Alliance for Open Media para transmisiones de video en internet (como alternativa a HEVC/H.265).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Nada que ver con AR/VR.",
+      "B": "Incorrecta. Sistemas para IoT serían como FreeRTOS o RIOT.",
+      "C": "Correcta. Es un códec de compresión de video muy avanzado.",
+      "D": "Incorrecta. Los estándares de Wi-Fi serían WPA3 o similares."
+    }
+  },
+  {
+    "pregunta": "33. Los algoritmos que se caracterizan por resolver un problema mediante iteraciones, seleccionando en cada iteración la solución localmente óptima se denominan algoritmos:",
+    "opciones": [
+      "A. voraces (greedy algorithms)",
+      "B. de vuelta atrás (backtracking).",
+      "C. divide y vencerás (divide and conquer).",
+      "D. recursivos."
+    ],
+    "correcta": 0,
+    "explicacion": "Los algoritmos ávidos o voraces toman la mejor decisión disponible en el momento actual (óptimo local) con la esperanza de que estas elecciones conduzcan a una solución óptima global al final (ej. el problema del cambio de monedas).",
+    "analisis_opciones": {
+      "A": "Correcta. Refleja la estrategia de 'tomar lo mejor ahora sin mirar atrás'.",
+      "B": "Incorrecta. El backtracking explora todas las posibilidades y retrocede si se llega a un callejón sin salida.",
+      "C": "Incorrecta. Consiste en dividir el problema en subproblemas más pequeños e independientes.",
+      "D": "Incorrecta. La recursividad es una técnica de programación donde una función se llama a sí misma, no un paradigma de decisión iterativa."
+    }
+  },
+  {
+    "pregunta": "34. El tipo de estructura de datos en la que el modo de acceso a sus elementos es de tipo LIFO se denomina:",
+    "opciones": [
+      "A. Pila.",
+      "B. Cola.",
+      "C. Arbol.",
+      "D. Array."
+    ],
+    "correcta": 0,
+    "explicacion": "LIFO significa Last-In, First-Out (Último en entrar, primero en salir). Es el comportamiento análogo a una pila de platos en un restaurante, donde el último plato que dejas arriba es el primero que coges después.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la definición de manual del Tipo Abstracto de Datos Pila (Stack).",
+      "B": "Incorrecta. La cola usa el método FIFO (First-In, First-Out).",
+      "C": "Incorrecta. Los árboles tienen accesos jerárquicos o no lineales.",
+      "D": "Incorrecta. Los arrays permiten acceso aleatorio o directo a cualquier posición por su índice."
+    }
+  },
+  {
+    "pregunta": "35. Señale la respuesta correcta sobre el sistema de archivos ReFS:",
+    "opciones": [
+      "A. Es el nuevo sistema de archivos de Mac OS.",
+      "B. Longitud máxima del nombre del archivo es 512 caracteres.",
+      "C. El tamaño máximo de archivo es 18 EB (exabytes).",
+      "D. Su nombre significa Sistema de Archivos Repetible."
+    ],
+    "correcta": 2,
+    "explicacion": "Resilient File System (ReFS) es un sistema de archivos de Microsoft introducido en Windows Server 2012, diseñado para maximizar la disponibilidad y manejar enormes volúmenes de datos en servidores. Admite volúmenes y archivos de tamaños masivos (en teoría hasta 16 Exabytes o más dependiendo de la versión de clúster).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es propiedad de Microsoft, el de macOS es APFS.",
+      "B": "Incorrecta. El límite de nombre en Windows suele mantenerse en 255 caracteres (aprox).",
+      "C": "Correcta. El límite teórico de tamaño es astronómico, rondando los 16-18 Exabytes (2^64 bytes).",
+      "D": "Incorrecta. Significa Resilient File System (Sistema de Archivos Resiliente)."
+    }
+  },
+  {
+    "pregunta": "36. Es un algoritmo de la teoría de grafos para encontrar un árbol recubridor mínimo en un grafo conexo y ponderado:",
+    "opciones": [
+      "A. Quicksort",
+      "B. Kruskal",
+      "C. QR",
+      "D. Rijndael"
+    ],
+    "correcta": 1,
+    "explicacion": "El algoritmo de Kruskal es un método voraz en teoría de grafos que busca las aristas de menor peso para conectar todos los vértices sin formar ciclos, obteniendo el Árbol de Expansión Mínima.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un algoritmo de ordenación de arrays.",
+      "B": "Correcta. Junto al algoritmo de Prim, es el método clásico para este fin en grafos.",
+      "C": "Incorrecta. Es un tipo de código de barras 2D.",
+      "D": "Incorrecta. Es el nombre original del algoritmo de cifrado AES."
+    }
+  },
+  {
+    "pregunta": "37. El grado de un árbol es:",
+    "opciones": [
+      "A. El número total de nodos del mismo",
+      "B. El número de hijos de un nodo.",
+      "C. El número más alto de nodos finales de un arco.",
+      "D. Máximo grado de todos los nodos del árbol."
+    ],
+    "correcta": 3,
+    "explicacion": "Se repite el concepto de la pregunta 18. El grado de un nodo es su número de hijos, y el grado de todo el árbol es el máximo grado alcanzado por cualquiera de sus nodos internos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese es el 'peso' o tamaño del árbol.",
+      "B": "Incorrecta. Eso es el grado de UN nodo en concreto, no del árbol.",
+      "C": "Incorrecta. No es una definición teórica correcta.",
+      "D": "Correcta. Refleja la definición oficial de la propiedad global del árbol."
+    }
+  },
+  {
+    "pregunta": "38. En cuanto a los formatos de impresión PostScript y PDF (Portable Document Format):",
+    "opciones": [
+      "A. PDF está parcialmente basado en PostScript.",
+      "B. PostScript está parcialmente basado en PDF.",
+      "C. PDF y Post5cript no guardan relación alguna.",
+      "D. Ambos son nombres comerciales de un mismo formato."
+    ],
+    "correcta": 0,
+    "explicacion": "Adobe desarrolló el formato PDF basando su núcleo de imagen vectorial en el lenguaje de descripción de página PostScript (que crearon años antes), simplificándolo y eliminando elementos de programación dinámica para hacerlo seguro y predecible.",
+    "analisis_opciones": {
+      "A": "Correcta. PDF hereda el modelo de imagen subyacente de PostScript.",
+      "B": "Incorrecta. PostScript (1982) es mucho más antiguo que PDF (1993).",
+      "C": "Incorrecta. Ambos son de Adobe y están íntimamente relacionados en las artes gráficas.",
+      "D": "Incorrecta. Son tecnologías distintas; uno es un lenguaje de programación y otro un formato de documento fijo."
+    }
+  },
+  {
+    "pregunta": "39. En un fichero con organización secuencial-indexada:",
+    "opciones": [
+      "A. Existe un área de \"overflow\" donde se graban los registros que no tienen sitio en el área de datos.",
+      "B. Se permite el modo de acceso secuencial, pero no el acceso directo.",
+      "C. Sólo se permite el proceso \"por lotes\".",
+      "D. No se pueden actualizar los registros en el mismo fichero."
+    ],
+    "correcta": 0,
+    "explicacion": "Como los archivos secuenciales-indexados almacenan los registros físicamente ordenados en el área principal, cuando se inserta un nuevo registro y no hay hueco secuencial, este se guarda en un 'Área de Desbordamiento' (overflow area) hasta la siguiente reorganización.",
+    "analisis_opciones": {
+      "A": "Correcta. Es una característica física obligatoria para soportar inserciones dinámicas.",
+      "B": "Incorrecta. Su gran ventaja es que permite ambos tipos de acceso.",
+      "C": "Incorrecta. El acceso directo permite el proceso en línea/tiempo real, no solo lotes.",
+      "D": "Incorrecta. La actualización es posible, aunque puede provocar fragmentación si el registro cambia de tamaño."
+    }
+  },
+  {
+    "pregunta": "40. El tamaño máximo de archivo que puede gestionar un sistema FAT 16 es:",
+    "opciones": [
+      "A. 4 GB.",
+      "B. 2 GB.",
+      "C. 1 GB.",
+      "D. 8 GB."
+    ],
+    "correcta": 1,
+    "explicacion": "Por diseño interno, el tamaño máximo de un único archivo en el antiguo sistema FAT16 de MS-DOS está limitado a 2 Gigabytes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 4 GB es el límite máximo de archivo para el sistema FAT32.",
+      "B": "Correcta. Es el límite histórico y técnico para FAT16.",
+      "C": "Incorrecta. El límite es mayor.",
+      "D": "Incorrecta. Es inalcanzable para la estructura de punteros de archivo de FAT16."
+    }
+  },
+  {
+    "pregunta": "41. En teoría de grafos, el algoritmo para la determinación del camino más corto, dado un vértice origen, hacia el resto de los vértices en un grafo que tiene pesos en cada arista se denomina:",
+    "opciones": [
+      "A. Algoritmo de Kruskal.",
+      "B. Algoritmo de Prim.",
+      "C. Algoritmo de Dijkstra.",
+      "D. Algoritmo de Floyd-Warshall."
+    ],
+    "correcta": 2,
+    "explicacion": "El algoritmo de Dijkstra calcula la ruta más eficiente (con menor coste acumulado) desde un nodo inicial concreto hasta todos los demás nodos de un grafo ponderado.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Busca el árbol de expansión mínima, no la ruta más corta desde un origen.",
+      "B": "Incorrecta. También busca el árbol de expansión mínima.",
+      "C": "Correcta. Es el estándar clásico para problemas de enrutamiento (como OSPF en redes).",
+      "D": "Incorrecta. Floyd-Warshall encuentra el camino más corto entre TODOS los pares de nodos, no desde un único origen."
+    }
+  },
+  {
+    "pregunta": "42. Si el resultado al recorrer un árbol binario en preorden es el siguiente: (7, 8, 2, 1, 5, 6, 9, 0), indique cuál es la raíz del árbol:",
+    "opciones": [
+      "A. 7",
+      "B. 1",
+      "C. 0",
+      "D. 5"
+    ],
+    "correcta": 0,
+    "explicacion": "La característica definitoria del recorrido en Preorden (Raíz - Izquierdo - Derecho) es que SIEMPRE el primer elemento que se visita (y que aparece impreso en la lista) es la raíz global del árbol.",
+    "analisis_opciones": {
+      "A": "Correcta. Al ser preorden, el primer valor (7) es invariablemente la raíz.",
+      "B": "Incorrecta. Está en el interior del árbol.",
+      "C": "Incorrecta. Sería el último nodo visitado (probablemente la hoja más a la derecha).",
+      "D": "Incorrecta. Está en el interior del árbol."
+    }
+  },
+  {
+    "pregunta": "43. En cuanto a las características del formato de imagen JPEG original, señale la opción correcta:",
+    "opciones": [
+      "A. Realiza una compresión sin pérdidas.",
+      "B. Ofrece flexibilidad para ajustar el grado de compresión de la imagen.",
+      "C. No soporta millones de colores.",
+      "D. Soporta fondos transparentes."
+    ],
+    "correcta": 1,
+    "explicacion": "JPEG permite al usuario elegir al guardar la imagen qué porcentaje de 'calidad/compresión' desea aplicar (típicamente del 1 al 100). A más compresión, menor tamaño pero peor calidad visual.",
+    "analisis_opciones": {
+      "A": "Incorrecta. JPEG es famoso precisamente por ser un formato 'con pérdida' (lossy).",
+      "B": "Correcta. Es su gran virtud frente a otros formatos, poder equilibrar el tamaño y la calidad.",
+      "C": "Incorrecta. Soporta color verdadero (24 bits = 16,7 millones de colores).",
+      "D": "Incorrecta. No tiene soporte nativo para canal alfa (transparencia), siempre pone fondo plano."
+    }
+  },
+  {
+    "pregunta": "44. Señale cuál NO es una característica de un fichero secuencial-indexado:",
+    "opciones": [
+      "A. El acceso a la información puede ser secuencial o directo.",
+      "B. La información con esta estructura puede estar grabada en cualquier tipo de soporte.",
+      "C. Al tiempo que se graban los datos, el sistema genera un área de índices.",
+      "D. Ocupa más espacio que los ficheros secuenciales."
+    ],
+    "correcta": 1,
+    "explicacion": "Para que el acceso directo mediado por un índice funcione (saltar aleatoriamente por el archivo), el soporte físico debe permitir el acceso directo o aleatorio (como un disco duro). Una cinta magnética clásica no soporta organización secuencial indexada de forma nativa/eficiente.",
+    "analisis_opciones": {
+      "A": "Verdadera. Es su principal ventaja combinada.",
+      "B": "Falsa (Correcta a marcar). No sirve en soportes puramente secuenciales (cintas).",
+      "C": "Verdadera. Debe crear la tabla con las claves para saber dónde ha guardado físicamente los datos.",
+      "D": "Verdadera. Inevitablemente requiere más espacio para almacenar el bloque de datos y además la tabla de índices separada."
+    }
+  },
+  {
+    "pregunta": "45. En cuanto a la compresión de imágenes en formato JPEG, señale la opción verdadera:",
+    "opciones": [
+      "A. Se crea una tabla de 256 colores a partir de una de 16 millones. Si la imagen tiene menos de 256 colores, se puede almacenar la imagen sin comprimir.",
+      "B. Sobre bloques de NxN pixeles, se elimina información redundante y se aplica la Transformada Discreta dei Coseno (DCT).",
+      "C. JPEG no es flexible a la hora de ajustar el grado de compresión.",
+      "D. No existen variantes del estándar JPEG que compriman la imagen sin pérdida de datos."
+    ],
+    "correcta": 1,
+    "explicacion": "El algoritmo JPEG trocea la imagen en pequeños bloques cuadrados (típicamente 8x8 píxeles), convierte el espacio de color a luminancia/crominancia y luego aplica la DCT a cada bloque para separar las frecuencias espaciales.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa es la técnica de colores indexados utilizada por el formato GIF.",
+      "B": "Correcta. Describe exactamente el proceso matemático que utiliza el núcleo del formato JPEG.",
+      "C": "Incorrecta. Como vimos antes, es muy flexible permitiendo ajustar la tasa del 1% al 100%.",
+      "D": "Incorrecta. Sí existen (como JPEG-LS o JPEG 2000 en modo lossless), aunque no sean tan comunes."
+    }
+  },
+  {
+    "pregunta": "46. ¿Qué formato de fichero es de gráficos vectoriales?",
+    "opciones": [
+      "A. SVG",
+      "B. EXIF",
+      "C. HEIF",
+      "D. JPEG"
+    ],
+    "correcta": 0,
+    "explicacion": "Scalable Vector Graphics (SVG) es el estándar web del W3C para gráficos bidimensionales vectoriales, basados en código XML y no en mapas de bits.",
+    "analisis_opciones": {
+      "A": "Correcta. En lugar de píxeles, guarda fórmulas matemáticas para trazar formas sin perder calidad al ampliar.",
+      "B": "Incorrecta. EXIF es un formato para guardar metadatos fotográficos dentro de imágenes.",
+      "C": "Incorrecta. HEIF es un contenedor de imágenes de alta eficiencia basado en compresión de vídeo (Apple/iOS).",
+      "D": "Incorrecta. Es un mapa de bits rasterizado."
+    }
+  },
+  {
+    "pregunta": "47. En relación a la teoría de grafos, indique la afirmación correcta:",
+    "opciones": [
+      "A. El grado de un nodo es el número de aristas que inciden a ese nodo.",
+      "B. Un grafo es conectado si cada nodo del grafo es adyacente a todos los demás.",
+      "C. Un grafo es completo si no tiene bucles ni aristas múltiples.",
+      "D. Un grafo es dirigido si la arista está definida por un par no ordenado."
+    ],
+    "correcta": 0,
+    "explicacion": "En la terminología básica de grafos, el grado o valencia de un vértice/nodo es la cantidad de enlaces (aristas) que se conectan directamente a él.",
+    "analisis_opciones": {
+      "A": "Correcta. En grafos dirigidos se divide en grado de entrada y grado de salida.",
+      "B": "Incorrecta. Eso sería un grafo 'Completo'. Un grafo 'Conexo' solo exige que exista al menos un camino posible entre cualquier par de nodos.",
+      "C": "Incorrecta. Un grafo completo requiere que haya una arista directa conectando CADA par de nodos distinto.",
+      "D": "Incorrecta. Un grafo dirigido requiere que la arista sea un par ORDENADO (tiene dirección/flecha)."
+    }
+  },
+  {
+    "pregunta": "48. En el contexto de las estructuras de datos, seleccione la respuesta correcta, un árbol es una estructura:",
+    "opciones": [
+      "A. dinámica cuyo recorrido sólo se puede realizar en profundidad.",
+      "B. estática cuyo recorrido se puede realizar en amplitud y en profundidad.",
+      "C. estática cuyo recorrido sólo se puede realizar en amplitud.",
+      "D. dinámica cuyo recorrido se puede realizar en amplitud y en profundidad."
+    ],
+    "correcta": 3,
+    "explicacion": "Un árbol (como estructura TAD abstracta) es dinámico porque puede crecer o decrecer agregando y eliminando nodos en tiempo de ejecución. Además, puede explorarse bajando rama por rama (profundidad) o nivel por nivel (amplitud).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Limita erróneamente los recorridos solo a DFS.",
+      "B": "Incorrecta. Dice que es estático, lo cual choca con su implementación habitual mediante punteros.",
+      "C": "Incorrecta. Falla en ambos conceptos.",
+      "D": "Correcta. Permite Búsqueda en Profundidad (DFS: pre/in/postorden) y Búsqueda en Amplitud (BFS: por niveles)."
+    }
+  },
+  {
+    "pregunta": "49. Un algoritmo de ordenación cuyo funcionamiento se basa en la elección de un elemento llamado pivote es:",
+    "opciones": [
+      "A. Selección directa",
+      "B. Bubble sort.",
+      "C. Quicksort.",
+      "D. Backtracking."
+    ],
+    "correcta": 2,
+    "explicacion": "Quicksort (Ordenación rápida) es el algoritmo más famoso del paradigma 'Divide y Vencerás'. Su paso fundamental consiste en elegir un valor del array como 'Pivote' y mover los menores a su izquierda y los mayores a su derecha, repitiendo recursivamente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Busca el menor valor y lo pone al principio, sin pivotes.",
+      "B": "Incorrecta. Compara e intercambia elementos adyacentes constantemente.",
+      "C": "Correcta. La técnica de partición en torno a un pivote es su característica técnica definitoria.",
+      "D": "Incorrecta. Es una técnica de diseño general de algoritmos de búsqueda/resolución, no de ordenación."
+    }
+  },
+  {
+    "pregunta": "50. El formato de archivo electrónico para Sistemas de Información Geográfica denominado Shapefile (SHP) es un:",
+    "opciones": [
+      "A. Fichero que contiene formas geométricas (puntos, líneas o polígonos).",
+      "B. Fichero que contiene una base de datos referenciados espacialmente.",
+      "C. Conjunto de ficheros que contienen formas geométricas junto con una base de datos (dBASE) referenciados espacialmente.",
+      "D. Conjunto de ficheros utilizado para representar datos referenciados espacialmente. Está desaconsejado ya que ha quedado obsoleto debido al uso de bases de datos dBASE."
+    ],
+    "correcta": 2,
+    "explicacion": "Aunque comúnmente se le llama 'archivo Shapefile', en realidad es un formato vectorial propietario de Esri compuesto por varios ficheros enlazados. Obligatoriamente necesita tres: .shp (geometría), .shx (índice espacial) y .dbf (base de datos de atributos).",
+    "analisis_opciones": {
+      "A": "Incompleta. Un archivo .shp suelto no funciona como formato GIS completo sin la base de datos asociada.",
+      "B": "Incompleta. Faltaría la definición de las formas.",
+      "C": "Correcta. Aclara que es un conjunto obligatorio de ficheros que mezcla vector espacial y atributos dBASE.",
+      "D": "Incorrecta. No está desaconsejado ni obsoleto, sigue siendo un estándar de facto en GIS a nivel mundial."
+    }
+  },
+  {
+    "pregunta": "51. Señale la respuesta INCORRECTA acerca de los tipos abstractos de datos (TAD):",
+    "opciones": [
+      "A. Es una colección de propiedades y operaciones que se definen mediante una especificación que es independiente de cualquier representación.",
+      "B. Nos permiten diseñar nuestros propios tipos para encapsular lógica algorítmica y proveer abstracción a las capas de software de más alto nivel.",
+      "C. Se pueden escribir usando lenguaje natural, usando pseudo-código o incluso algún lenguaje de programación.",
+      "D. En JAVA, una estructura de datos (interface) debe implementar todas las operaciones definidas en su TAD (class)."
+    ],
+    "correcta": 3,
+    "explicacion": "Conceptualmente y en programación orientada a objetos (POO), la herencia funciona al revés: el TAD es la interfaz (la especificación abstracta de qué debe hacer), y la estructura de datos concreta es la clase que implementa ese cómo hacerlo.",
+    "analisis_opciones": {
+      "A": "Verdadera. Define el qué hace (comportamiento) sin importar el cómo se programa (implementación).",
+      "B": "Verdadera. Es la base de la encapsulación en el diseño de software modular.",
+      "C": "Verdadera. Como es un modelo matemático/teórico, admite cualquier notación descriptiva.",
+      "D": "Falsa (Correcta a marcar). Mezcla los términos en Java; la clase implementa la interfaz, no la interfaz implementa la clase."
+    }
+  },
+  {
+    "pregunta": "52. El algoritmo de ordenación que consiste en comparar pares de elementos adyacentes e intercambiarlos entre sí, si no están en orden, hasta que todo el conjunto de elementos se encuentre ordenado, es conocido como:",
+    "opciones": [
+      "A. Selección",
+      "B. Burbuja",
+      "C. Inserción",
+      "D. Quicksort"
+    ],
+    "correcta": 1,
+    "explicacion": "Es la definición clásica del método de intercambio directo (Bubble Sort). Los valores más altos 'burbujean' hacia las últimas posiciones del array en cada pasada a base de comparar vecinos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La selección busca el mínimo global en cada pasada para llevarlo al inicio.",
+      "B": "Correcta. Definición textual del método.",
+      "C": "Incorrecta. La inserción toma un elemento y lo desplaza a su posición correcta en el sub-array ya ordenado de la izquierda.",
+      "D": "Incorrecta. Usa divide y vencerás con pivotes."
+    }
+  },
+  {
+    "pregunta": "53. Señale en qué estructura de datos se basan los directorios tipo LDAP o similares:",
+    "opciones": [
+      "A. Listas.",
+      "B. Arrays.",
+      "C. Arboles.",
+      "D. Colecciones."
+    ],
+    "correcta": 2,
+    "explicacion": "LDAP (Lightweight Directory Access Protocol) organiza la información jerárquicamente en un 'Árbol de Información de Directorio' (DIT), comenzando desde una raíz global (ej. dc=com) y descendiendo por ramas (ou=usuarios) hasta las hojas (cn=Juan).",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tienen una jerarquía natural multidimensional.",
+      "B": "Incorrecta. Son estructuras planas e inflexibles para bases de identidades.",
+      "C": "Correcta. Es la base fundamental para sistemas como Active Directory o cualquier LDAP.",
+      "D": "Incorrecta. Las colecciones son términos abstractos de POO, no la estructura lógica subyacente."
+    }
+  },
+  {
+    "pregunta": "54. Señale cuál es una técnica de compresión con pérdida:",
+    "opciones": [
+      "A. Lempel-Ziv-Welch (LZW).",
+      "B. Codificación de Huffman.",
+      "C. Codificación por Longitud de Series (RLE).",
+      "D. Joint Photographic Experts Group (JPEG)."
+    ],
+    "correcta": 3,
+    "explicacion": "Otra pregunta de academia idéntica a la 19. JPEG es de los pocos algoritmos destructivos (con pérdida o 'lossy') usados masivamente, a diferencia de los de diccionario o estadísticos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. LZW es un diccionario adaptativo sin pérdida.",
+      "B": "Incorrecta. Huffman cambia el código por uno de distinta longitud sin perder el dato.",
+      "C": "Incorrecta. RLE cambia \"AAAA\" por \"4A\", por lo que es reversible matemáticamente sin pérdida.",
+      "D": "Correcta. Elimina información imperceptible."
+    }
+  },
+  {
+    "pregunta": "55. OpenDocument V.1.0 (ODF) fue aprobado por las organizaciones ISO e IEC como estándar internacional:",
+    "opciones": [
+      "A. ISO/IEC 14977:1996",
+      "B. ISO/IEC 40210:2011",
+      "C. ISO/IEC 26300:2006",
+      "D. ISO/IEC 18372:2004"
+    ],
+    "correcta": 2,
+    "explicacion": "El formato abierto de documentos ODF, originario de la suite OpenOffice, fue aceptado y publicado como la norma oficial ISO/IEC 26300 en el año 2006.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese ISO define el formato EBNF (Extended Backus-Naur form) para sintaxis.",
+      "B": "Incorrecta. Ese ISO define un formato de arquitectura para sistemas biométricos.",
+      "C": "Correcta. Es el número oficial del estándar OpenDocument Format.",
+      "D": "Incorrecta. Estándar inventado/distractor."
+    }
+  },
+  {
+    "pregunta": "56. ¿Cuál de los siguientes tipos abstractos de datos NO tienen un orden definido?",
+    "opciones": [
+      "A. Pila.",
+      "B. Lista.",
+      "C. Diccionario.",
+      "D. Mapa."
+    ],
+    "correcta": 2,
+    "explicacion": "En las estructuras clásicas, un diccionario (o tabla hash) asocia una clave única a un valor. La posición de almacenamiento de los elementos es caótica/impredecible porque depende del resultado de una función matemática dispersa (hash), por lo que no mantienen un orden secuencial.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las pilas conservan un orden temporal estricto (último en entrar, primero en salir).",
+      "B": "Incorrecta. Las listas garantizan que el elemento 1 va antes que el elemento 2.",
+      "C": "Correcta. (Aunque algunos mapas también usan hash, tradicionalmente la literatura asocia el 'Diccionario' puro a la estructura no secuencial clave-valor).",
+      "D": "Incorrecta. Muchos mapas modernos o árboles de mapas garantizan iteración ordenada por clave, aunque dependiendo del lenguaje diccionario/mapa se usan como sinónimos. En tests, el Diccionario clásico Hash carece de orden."
+    }
+  },
+  {
+    "pregunta": "57. Cuál de las siguientes afirmaciones NO es correcta:",
+    "opciones": [
+      "A. El primer y el último nodo de una lista doblemente enlazada son accesibles inmediatamente.",
+      "B. En una lista doblemente enlazada el doble enlace de los nodos permite recorrer la lista en cualquier dirección.",
+      "C. En una lista simple enlazada cada nodo tiene un único campo de enlace.",
+      "D. En una lista simple enlazada el primer y el último nodo están unidos juntos."
+    ],
+    "correcta": 3,
+    "explicacion": "La afirmación de que el último nodo se une con el primero describe una 'Lista Circular'. En una lista simplemente enlazada normal, el último nodo de la lista tiene su enlace apuntando a un valor Nulo (Null) indicando el final.",
+    "analisis_opciones": {
+      "A": "Verdadera. Las implementaciones eficientes guardan punteros separados 'Head' (cabeza) y 'Tail' (cola).",
+      "B": "Verdadera. Al tener punteros 'Next' y 'Prev', puedes ir hacia adelante y hacia atrás.",
+      "C": "Verdadera. Solo apuntan al siguiente elemento.",
+      "D": "Falsa (Correcta a marcar). Eso es propio de las listas circulares."
+    }
+  },
+  {
+    "pregunta": "58. Señale la respuesta correcta referente al tipo abstracto de datos (TAD) Pila:",
+    "opciones": [
+      "A. Basada en el principio FIFO (first-in, first-out).",
+      "B. Se puede implementar usando arrays.",
+      "C. No se puede implementar usando una estructura dinámica.",
+      "D. Las operaciones de apilar (push) y desapilar (pop) se realizan en cualquier posición."
+    ],
+    "correcta": 1,
+    "explicacion": "Una pila es una estructura teórica que se puede materializar en código tanto de forma estática (usando un Array o Vector de tamaño fijo donde un contador indica la cima) como de forma dinámica (usando punteros/listas).",
+    "analisis_opciones": {
+      "A": "Incorrecta. La pila se basa en el principio LIFO.",
+      "B": "Correcta. Es una de sus implementaciones más habituales en C o Java.",
+      "C": "Incorrecta. Sí se puede, de hecho es lo ideal usando listas enlazadas para no limitar el tamaño.",
+      "D": "Incorrecta. Las operaciones Push y Pop están obligadas a actuar única y exclusivamente sobre el elemento superior o 'Cima' (Top)."
+    }
+  },
+  {
+    "pregunta": "59. Con respecto a los estándares PDF, señale que afirmación NO es correcta:",
+    "opciones": [
+      "A. PDF/UA Es el estándar global para la accesibilidad de PDF.",
+      "B. PDF/A proporciona las especificaciones para crear, ver e imprimir documentos digitales para conservarlos a largo plazo.",
+      "C. PDF/E proporciona especificaciones para crear, ver e imprimir documentos utilizados en flujos de trabajo de ingeniería.",
+      "D. PDF/I proporciona especificaciones para crear, ver e imprimir páginas finales listas para imprimir o listas para la prensa."
+    ],
+    "correcta": 3,
+    "explicacion": "La familia de normas ISO para PDF tiene versiones especializadas: A (Archive), E (Engineering), UA (Universal Accessibility), pero para la imprenta profesional y artes gráficas (Press) el estándar se denomina PDF/X (Exchange), no PDF/I.",
+    "analisis_opciones": {
+      "A": "Verdadera. UA garantiza que lectores de pantalla puedan leer el documento.",
+      "B": "Verdadera. A es para archivo histórico (incrusta todas las fuentes obligatoriamente).",
+      "C": "Verdadera. E (Engineering) permite contenido dinámico 3D y animaciones técnicas.",
+      "D": "Falsa (Correcta a marcar). El estándar de imprenta es PDF/X."
+    }
+  },
+  {
+    "pregunta": "60. ¿Cuál de las siguientes afirmaciones es falsa en relación con la organización de ficheros de tipo secuencial?",
+    "opciones": [
+      "A. Aprovecha al máximo el soporte al no dejar huecos entre los registros.",
+      "B. Su uso es aconsejable para ficheros con un bajo índice de utilización e inestables.",
+      "C. No se pueden insertar registros entre los que ya están grabados.",
+      "D. Se pueden grabar registros en cualquier tipo de soporte, tanto secuencial como direccionable."
+    ],
+    "correcta": 1,
+    "explicacion": "Los ficheros secuenciales son terribles si el archivo es inestable (cambia mucho, inserta o borra) porque obligan a copiar todo el fichero entero en un nuevo archivo físico para añadir un solo registro intermedio. Son ideales para históricos de lectura masiva.",
+    "analisis_opciones": {
+      "A": "Verdadera. Todo se guarda de forma compacta y continua.",
+      "B": "Falsa (Correcta a marcar). Son ineficientes para datos inestables.",
+      "C": "Verdadera. Para insertar hay que regrabar desde el inicio el archivo completo.",
+      "D": "Verdadera. Puedes simular un fichero secuencial en un disco duro (direccionable) o en una cinta (secuencial física)."
+    }
+  },
+  {
+    "pregunta": "61. Dado un árbol binario no vacío, ¿cómo se denomina el recorrido que primero recorre el sub-árbol izquierdo, luego la raíz y, por último, el sub-árbol derecho?",
+    "opciones": [
+      "A. Recorrido INORDEN.",
+      "B. Recorrido PREORDEN.",
+      "C. Recorrido EXORDEN.",
+      "D. Recorrido POSORDEN."
+    ],
+    "correcta": 0,
+    "explicacion": "El prefijo in/pre/post se refiere al momento en el que se lee el nodo 'raíz' respecto a sus dos hijos. En el IN-orden, la raíz se sitúa EN EL MEDIO de los dos subárboles.",
+    "analisis_opciones": {
+      "A": "Correcta. Izquierda -> Raíz -> Derecha. Muy usado porque en árboles de búsqueda imprime los valores ordenados.",
+      "B": "Incorrecta. Raíz -> Izquierda -> Derecha.",
+      "C": "Incorrecta. Tipo inventado.",
+      "D": "Incorrecta. Izquierda -> Derecha -> Raíz."
+    }
+  },
+  {
+    "pregunta": "62. ¿Cuál de las siguientes afirmaciones sobre el sistema de gestión de archivos NTFS es correcta?",
+    "opciones": [
+      "A. NTFS es propio y exclusivo de Unix.",
+      "B. NTFS es propio y exclusivo de Windows.",
+      "C. NTFS es software de fuente abierta, licencia GNU.",
+      "D. NTFS es el predecesor del sistema de gestión de archivos FAT."
+    ],
+    "correcta": 1,
+    "explicacion": "NTFS (New Technology File System) fue introducido por Microsoft en 1993 con Windows NT 3.1 como un sistema robusto, con journaling y permisos avanzados, propietario y cerrado de su ecosistema.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Unix/Linux usan sistemas ext, btrfs, ZFS, etc.",
+      "B": "Correcta. Es la tecnología base patentada por Microsoft.",
+      "C": "Incorrecta. Es código propietario y privativo (closed source).",
+      "D": "Incorrecta. Al contrario, fue el sucesor tecnológico y profesional de los sistemas FAT."
+    }
+  },
+  {
+    "pregunta": "63. Indique cuál de los siguientes algoritmos utilizan urnas para depositar en ellas los registros en el proceso de ordenación:",
+    "opciones": [
+      "A. Radix sort",
+      "B. Fusión",
+      "C. Burbuja",
+      "D. Quicksort"
+    ],
+    "correcta": 0,
+    "explicacion": "Radix Sort (o Bucket Sort/Ordenación por casilleros) es un algoritmo especial que no compara valores entre sí. Distribuye los números en 'urnas' o 'cubos' (buckets) basándose en cada dígito individual (unidades, luego decenas, etc.) para terminar ordenando en tiempo lineal.",
+    "analisis_opciones": {
+      "A": "Correcta. Su mecánica principal es repartir los datos en 10 urnas (0 al 9) en múltiples pasadas.",
+      "B": "Incorrecta. Merge Sort divide el array en mitades, las ordena y las vuelve a fundir.",
+      "C": "Incorrecta. Compara parejas vecinas.",
+      "D": "Incorrecta. Usa un pivote para mover datos de un lado a otro del array."
+    }
+  },
+  {
+    "pregunta": "64. El formato de archivo OGG Media (OGM) es un formato:",
+    "opciones": [
+      "A. propietario de audio.",
+      "B. libre de imagen.",
+      "C. propietario de audio y video.",
+      "D. libre de audio y video."
+    ],
+    "correcta": 3,
+    "explicacion": "La fundación Xiph.Org creó la familia de formatos Ogg como alternativas libres de patentes (open source) a formatos propietarios como MP3 o MP4. Sirve como contenedor multimedia para pistas de video, audio y subtítulos libres.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es 100% libre de regalías.",
+      "B": "Incorrecta. Es para contenido multimedia (vídeo/audio), no imagen fija.",
+      "C": "Incorrecta. Es open source, no privativo.",
+      "D": "Correcta. Contenedor multimedia de código abierto."
+    }
+  },
+  {
+    "pregunta": "65. ¿Cuál es el grado de un árbol binario lleno de 15 nodos?",
+    "opciones": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "correcta": 1,
+    "explicacion": "Por la propia definición teórica, el grado de un árbol BINARIO es siempre como máximo 2 (cada nodo tiene 0, 1 o 2 hijos). El hecho de que esté 'lleno' o tenga 15 nodos no cambia la regla principal de su naturaleza binaria.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Si es binario, permite dos ramas.",
+      "B": "Correcta. El número de hijos máximo (grado) de un árbol binario es por definición matemática 2.",
+      "C": "Incorrecta. Eso sería un árbol ternario.",
+      "D": "Incorrecta. Supera el límite de ramificación binaria."
+    }
+  },
+  {
+    "pregunta": "66. En un fichero en el que la información se encuentra Indexada, optimizaremos:",
+    "opciones": [
+      "A. La inserción de nuevos registros.",
+      "B. El borrado de un grupo de registros.",
+      "C. El backup a realizar del fichero.",
+      "D. La consulta de registros concretos."
+    ],
+    "correcta": 3,
+    "explicacion": "El único propósito de crear un índice (como en un libro o una base de datos) es poder encontrar información instantáneamente sin tener que leer el documento entero desde el principio.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Al contrario, las inserciones penalizan el rendimiento porque además de guardar el dato hay que actualizar la tabla del índice.",
+      "B": "Incorrecta. Lo mismo ocurre con los borrados; obligan a recalcular el índice.",
+      "C": "Incorrecta. Hacer una copia de seguridad será igual o más lento por el tamaño extra del índice.",
+      "D": "Correcta. Las operaciones de búsqueda y recuperación (SELECT) se vuelven ultrarrápidas."
+    }
+  },
+  {
+    "pregunta": "67. La estructura de datos conocida como Pila:",
+    "opciones": [
+      "A. Es una estructura de datos en la que los nodos se organizan de modo que cada uno apunta al siguiente, y el último no apunta a nada.",
+      "B. Es una estructura de datos de tipo LIFO que permite almacenar y recuperar datos.",
+      "C. Es una estructura de datos de tipo FIFO que permite almacenar y recuperar datos.",
+      "D. Es una estructura de datos que consiste en un conjunto o agrupación de variables del mismo tipo cuyo acceso se realiza por índices."
+    ],
+    "correcta": 1,
+    "explicacion": "Tercera pregunta de tu test que insiste en la definición. Pila (Stack) = LIFO (Last-In, First-Out).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa es la definición de la implementación física de una Lista Enlazada simple, no el concepto abstracto de Pila.",
+      "B": "Correcta. Es la definición teórica fundamental del TAD Pila.",
+      "C": "Incorrecta. El tipo FIFO define a las Colas.",
+      "D": "Incorrecta. Eso define a los arrays (vectores)."
+    }
+  },
+  {
+    "pregunta": "68. Al tiempo que tarda un algoritmo en ejecutarse se le denomina:",
+    "opciones": [
+      "A. Definición.",
+      "B. Coste.",
+      "C. Finitud.",
+      "D. Precisión."
+    ],
+    "correcta": 1,
+    "explicacion": "En el análisis de algoritmos, el 'Coste' (ya sea temporal o espacial) es la medida técnica de los recursos que consume. El 'Coste computacional temporal' es lo mismo que el tiempo de ejecución en función de la entrada N.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Tiene que ver con que las instrucciones no sean ambiguas.",
+      "B": "Correcta. Se analiza mediante la notación asintótica (O-Grande) para ver su eficiencia y coste.",
+      "C": "Incorrecta. La finitud es la obligación de que el algoritmo termine en algún momento.",
+      "D": "Incorrecta. Es una medida de la exactitud matemática del resultado."
+    }
+  },
+  {
+    "pregunta": "69. Dado un tipo Enumerado, la función predefinida que permite conocer la posición de un valor en la lista de valores es:",
+    "opciones": [
+      "A. VAL.",
+      "B. ODD.",
+      "C. ORD.",
+      "D. HIGH."
+    ],
+    "correcta": 2,
+    "explicacion": "En lenguajes de programación clásicos como Pascal/Delphi, un tipo de dato Ordinal (como los enumerados o caracteres) tiene una función incorporada 'Ord(x)' que devuelve su posición numérica (índice entero) en la estructura.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Val(x) se usa típicamente para convertir de String a número.",
+      "B": "Incorrecta. Odd(x) devuelve un booleano verdadero si el número es impar.",
+      "C": "Correcta. Devuelve el número de Orden que tiene el elemento enumerado (comenzando por 0).",
+      "D": "Incorrecta. High(x) devuelve el valor más alto del tipo."
+    }
+  },
+  {
+    "pregunta": "70. Se denomina TxF:",
+    "opciones": [
+      "A. Al sistema de archivos NTFS",
+      "B. Al sistema de archivos FAT32",
+      "C. Al sistema de archivos NTFS transaccional.",
+      "D. Al sistema de archivos NFS"
+    ],
+    "correcta": 2,
+    "explicacion": "TxF (Transactional NTFS) es una API introducida en Windows Vista que permitía tratar las operaciones de archivos como 'transacciones' ACID de base de datos (se completa todo, o se deshace todo en caso de fallo o cuelgue del PC). Microsoft la tiene actualmente obsoleta.",
+    "analisis_opciones": {
+      "A": "Incorrecta. NTFS es el sistema base general, TxF era una extensión transaccional muy concreta.",
+      "B": "Incorrecta. Sistema antiguo sin capacidades avanzadas.",
+      "C": "Correcta. Define específicamente a la funcionalidad Transactional NTFS.",
+      "D": "Incorrecta. NFS es Network File System (Unix/Linux)."
+    }
+  },
+  {
+    "pregunta": "71. Cuál de los siguientes sistemas de archivos NO fue creado para Windows:",
+    "opciones": [
+      "A. NTFS",
+      "B. FAT16",
+      "C. FAT32",
+      "D. Ext2"
+    ],
+    "correcta": 3,
+    "explicacion": "El Second Extended Filesystem (ext2) fue diseñado y desarrollado en 1993 por Rémy Card como sistema de archivos predeterminado para el naciente sistema operativo Linux.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Creado por Microsoft para Windows NT.",
+      "B": "Incorrecta. Creado por Microsoft para MS-DOS/Windows antiguos.",
+      "C": "Incorrecta. Evolución de Microsoft usada en Windows 95/98.",
+      "D": "Correcta. Es un formato histórico del mundo Linux, incompatible nativamente con Windows."
+    }
+  },
+  {
+    "pregunta": "72. ¿Qué tipo de organización de fichero tiene como principal inconveniente que puede provocar colisiones de las claves de direccionamiento?",
+    "opciones": [
+      "A. Organización indexada.",
+      "B. Organización direccionada dispersa.",
+      "C. Organización direccionada directa.",
+      "D. Organización secuencial."
+    ],
+    "correcta": 1,
+    "explicacion": "La organización direccionada dispersa (o Hashing/Aleatoria) calcula matemáticamente dónde guardar un dato pasando su clave por una función. El gran problema de esta maravilla matemática es que dos claves diferentes (ej. Ana y Juan) produzcan el mismo lugar de destino, generando una colisión.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Los índices son tablas separadas que crecen y se reordenan, no colisionan.",
+      "B": "Correcta. El direccionamiento por Hashing asume siempre el riesgo de la colisión.",
+      "C": "Incorrecta. El acceso directo usa la clave como número de posición exacto e inamovible.",
+      "D": "Incorrecta. Simplemente se pone el dato al final de la cola."
+    }
+  },
+  {
+    "pregunta": "73. Un recorrido en in-orden de un árbol binario consiste en:",
+    "opciones": [
+      "A. Recorrer primero el subárbol izquierdo en in-orden, después visitar el nodo raíz y finalmente, recorrer el subárbol derecho en in-orden.",
+      "B. Recorrer primero el subárbol izquierdo en post-orden, después recorrer el subárbol derecho en post-orden y finalmente, visitar el nodo raíz.",
+      "C. Visitar primero el nodo raíz, después recorrer en pre-orden el subárbol izquierdo y finalmente, recorrer en pre-orden el subárbol derecho.",
+      "D. Visitar primero los nodos del primer nivel, después los del siguiente nivel y así sucesivamente."
+    ],
+    "correcta": 0,
+    "explicacion": "Recorrido Inorden: hijo Izquierdo - Raíz - hijo Derecho. Es recursivo, por lo que los subárboles también se deben resolver siguiendo el mismo algoritmo inorden.",
+    "analisis_opciones": {
+      "A": "Correcta. Define la secuencia teórica del inorden aplicándolo recursivamente.",
+      "B": "Incorrecta. Mezcla recorridos; define la técnica de post-orden.",
+      "C": "Incorrecta. Define la técnica general del pre-orden.",
+      "D": "Incorrecta. Eso es una búsqueda en amplitud (BFS) o recorrido por niveles."
+    }
+  },
+  {
+    "pregunta": "74. ¿Cuál de los siguientes formatos se utiliza para el almacenamiento de gráficos vectoriales?",
+    "opciones": [
+      "A. WFS",
+      "B. WMV",
+      "C. APE",
+      "D. SWF"
+    ],
+    "correcta": 3,
+    "explicacion": "SWF (Small Web Format o ShockWave Flash) es un formato de archivo creado por Macromedia (ahora Adobe) para entregar animaciones vectoriales, juegos y contenido interactivo por la web, antes de ser obsoleto por HTML5.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Web Feature Service; es un protocolo GIS, no un formato gráfico estándar.",
+      "B": "Incorrecta. Windows Media Video; contenedor de vídeo.",
+      "C": "Incorrecta. Monkey's Audio; es un formato de audio sin pérdidas.",
+      "D": "Correcta. Famoso contenedor de gráficos y animaciones vectoriales Flash."
+    }
+  },
+  {
+    "pregunta": "75. Si un árbol binario recorrido en “preorden” es a-b-d-c-e-f y recorrido en “inorden” es b-d-a-e-c-f, ¿cómo será el orden de visitas recorrido en “postorden”?:",
+    "opciones": [
+      "A. d-b-a-e-f-c.",
+      "B. f-d-b-e-c-a.",
+      "C. a-d-c-d-e-f.",
+      "D. d-b-e-f-c-a."
+    ],
+    "correcta": 3,
+    "explicacion": "El Preorden nos dice que la Raíz global es 'a'. El Inorden divide en izquierdo (b-d) y derecho (e-c-f). El Postorden (izq-der-raíz) siempre visitará el nodo más profundo y a la izquierda primero (en este caso d), y siempre terminará en la Raíz global (a).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Termina en c, que no es la raíz.",
+      "B": "Incorrecta. Resuelve mal el subárbol izquierdo (f es del derecho).",
+      "C": "Incorrecta. El primer elemento de un postorden jamás será la raíz global.",
+      "D": "Correcta. Termina en 'a' (raíz). Primero resuelve el subárbol izquierdo (d, luego b), luego el derecho en su propio postorden (e, luego f, luego c), y finalmente la raíz (a)."
+    }
+  },
+  {
+    "pregunta": "76. De entre los siguientes formatos de archivo, señale cuál NO se utiliza para realizar exportaciones o importaciones de datos:",
+    "opciones": [
+      "A. .CSV",
+      "B. .swf",
+      "C. .pfx",
+      "D. .xml"
+    ],
+    "correcta": 1,
+    "explicacion": "Los datos estructurados para bases de datos se suelen mover en formatos simples de texto. Un archivo .swf es un ejecutable compilado de animación y código (Flash) que no está diseñado para albergar datos estáticos de importación.",
+    "analisis_opciones": {
+      "A": "Incorrecta. CSV (valores separados por comas) es el rey de la importación de bases y excels.",
+      "B": "Correcta. Archivo Flash multimedia, sin utilidad en el mundo del trasvase de datos estructurados.",
+      "C": "Incorrecta. PFX es un archivo empaquetado para exportar/importar de forma segura Certificados Digitales y claves privadas en Windows.",
+      "D": "Incorrecta. XML es uno de los lenguajes principales de intercambio de información (Estructura jerárquica)."
+    }
+  },
+  {
+    "pregunta": "100. (JE OPENINF 15) El máximo de los niveles de todos los elementos de un árbol se dice que es su:",
+    "opciones": [
+      "a) Longitud de camino externo.",
+      "b) Grado.",
+      "c) Altura.",
+      "d) Longitud de camino interno."
+    ],
+    "correcta": 2,
+    "explicacion": "En teoría de árboles, el nivel máximo o la distancia máxima desde la raíz hasta la hoja más profunda determina la 'Altura' (o profundidad) del árbol.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la suma de las longitudes de los caminos desde la raíz a todos los nodos externos (hojas nulas).",
+      "B": "Incorrecta. El grado es el máximo número de hijos que tiene un nodo.",
+      "C": "Correcta. Se corresponde con el nivel máximo alcanzado en la estructura.",
+      "D": "Incorrecta. Es la suma de las longitudes a todos los nodos internos."
+    }
+  },
+  {
+    "pregunta": "101. (JE OPENINF 15) Un árbol está equilibrado:",
+    "opciones": [
+      "a) Si, y sólo si, para cada uno de sus nodos ocurre que las alturas de sus dos subárboles difieren como mucho en 1.",
+      "b) Si, para cada nodo, el número de nodos en el subárbol izquierdo, y el número de nodos en el subárbol derecho, difieren como mucho en una unidad.",
+      "c) Si, para cada nodo, el número de nodos en el subárbol izquierdo, y el número de nodos en el subárbol derecho, es el mismo.",
+      "d) Si, y sólo si, para algunos de sus nodos ocurre que las alturas de sus dos subárboles difieren como mucho en 1."
+    ],
+    "correcta": 0,
+    "explicacion": "Esta es la definición clásica de un árbol AVL (árbol binario de búsqueda auto-balanceable). Un árbol está perfectamente equilibrado en altura si para absolutamente todos sus nodos, la diferencia de altura entre su rama izquierda y derecha es 0, 1 o -1 (factor de equilibrio).",
+    "analisis_opciones": {
+      "A": "Correcta. Definición canónica de equilibrio de alturas (condición AVL).",
+      "B": "Incorrecta. El equilibrio se mide por las alturas (niveles), no por la cantidad total de nodos en cada lado.",
+      "C": "Incorrecta. Exigir la misma cantidad de nodos sería un árbol perfectamente lleno, una condición demasiado estricta.",
+      "D": "Incorrecta. Debe cumplirse 'para cada uno de sus nodos', no solo para 'algunos'."
+    }
+  },
+  {
+    "pregunta": "103. (JE OPENINF 15) Considerando la secuencia 43 56 13 41 99 19 02 68, ¿cuántas pasadas necesitarías, utilizando el método de ordenación de mezcla directa, para obtener la secuencia ordenada (de menor a mayor)?",
+    "opciones": [
+      "a) 2",
+      "b) 3",
+      "c) 4",
+      "d) 5"
+    ],
+    "correcta": 1,
+    "explicacion": "El método de mezcla directa (Merge Sort) divide repetidamente la secuencia a la mitad hasta tener elementos individuales, y luego los va fusionando. Para N elementos, el número de pasadas (niveles del árbol de división/fusión) es el logaritmo en base 2 de N. Como N=8, log2(8) = 3 pasadas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Con 2 pasadas solo ordenaríamos 4 elementos.",
+      "B": "Correcta. Resultado de aplicar el logaritmo en base 2 de 8 elementos.",
+      "C": "Incorrecta. Sería para 16 elementos.",
+      "D": "Incorrecta. Sería para 32 elementos."
+    }
+  },
+  {
+    "pregunta": "104. (JE OPENINF 15) ¿Cuál es el número de comparaciones que necesitamos para ordenar un array de N elementos, por el método de selección directa?",
+    "opciones": [
+      "a) N(N-1)/2",
+      "b) N2-1/2",
+      "c) N2",
+      "d) N/2"
+    ],
+    "correcta": 0,
+    "explicacion": "El algoritmo de selección directa realiza N-1 comparaciones en la primera pasada, N-2 en la segunda, y así sucesivamente hasta 1. La suma de esta progresión aritmética (1 + 2 + ... + N-1) es exactamente N(N-1)/2, lo que le da una complejidad cuadrática.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la fórmula matemática exacta del número de comparaciones, independientemente de si el array está ordenado o no.",
+      "B": "Incorrecta. Fórmula errónea.",
+      "C": "Incorrecta. N^2 es la notación asintótica (O-grande), pero no el número exacto de comparaciones.",
+      "D": "Incorrecta. Demasiado bajo, correspondería a un algoritmo sub-lineal en comparaciones."
+    }
+  },
+  {
+    "pregunta": "105. (JE OPENINF 15) ¿Cómo se denomina la técnica para recuperación por claves secundarias que en lugar de listar los atributos de un registro dado, listamos los registros que tienen un atributo dado?",
+    "opciones": [
+      "a) Ficheros invertidos.",
+      "b) Código sobreimpuesto.",
+      "c) Desmenuzamiento combinatorio.",
+      "d) Tries generalizados."
+    ],
+    "correcta": 0,
+    "explicacion": "Un fichero invertido (o índice invertido) le da la vuelta a la lógica normal: en lugar de ir de 'Registro -> Atributos', va de 'Atributo -> Lista de Registros que lo contienen'. Es la técnica base que utilizan los motores de búsqueda (como Google) para encontrar palabras clave.",
+    "analisis_opciones": {
+      "A": "Correcta. Concepto clásico en Organización de Ficheros.",
+      "B": "Incorrecta. Técnica de recuperación probabilística distinta al índice invertido.",
+      "C": "Incorrecta. Término distractor.",
+      "D": "Incorrecta. Los Tries son árboles de búsqueda digital, útiles para strings, pero no definen la técnica descrita."
+    }
+  },
+  {
+    "pregunta": "176. (GSI PI 11) ¿De qué orden de complejidad es la búsqueda dicotómica en una tabla ordenada?",
+    "opciones": [
+      "a) Logarítmica.",
+      "b) Lineal.",
+      "c) Exponencial.",
+      "d) Cuadrática."
+    ],
+    "correcta": 0,
+    "explicacion": "La búsqueda dicotómica (o búsqueda binaria) divide el espacio de búsqueda a la mitad en cada paso. Esto reduce drásticamente el tiempo necesario, dándole una complejidad asintótica de O(log N).",
+    "analisis_opciones": {
+      "A": "Correcta. O(log N) es la complejidad logarítmica.",
+      "B": "Incorrecta. Lineal O(N) sería la búsqueda secuencial ordinaria.",
+      "C": "Incorrecta. Exponencial O(2^N) sería un algoritmo sumamente ineficiente.",
+      "D": "Incorrecta. Cuadrática O(N^2) suele ser para algoritmos de ordenación simples, no de búsqueda."
+    }
+  },{
+    "pregunta": "31. ¿Qué significan las siglas .odp y para qué tipo de ficheros se utiliza?",
+    "opciones": [
+      "a) odp (Open data preservation) se utiliza para el guardado definitivo de documentos de texto.",
+      "b) odp (Open document presentation) se utiliza para presentación de diapositivas.",
+      "c) odp (Official database protocol) es el estándar ISO para guardar tablas de bases de datos relacionales.",
+      "d) odp (Offline digital privileges) se utiliza en archivos de configuración de permisos sin conexión en sistemas Solaris."
+    ],
+    "correcta": 1,
+    "explicacion": "El formato .odp (OpenDocument Presentation) es el estándar abierto internacional para crear y guardar presentaciones de diapositivas (el equivalente libre al .ppt o .pptx de PowerPoint)[cite: 958, 962].",
+    "analisis_opciones": {
+      "A": "Incorrecta. El formato para documentos de texto en este estándar es .odt (OpenDocument Text)[cite: 960].",
+      "B": "Correcta. Define correctamente las siglas y su utilidad[cite: 962].",
+      "C": "Incorrecta. Para bases de datos en este estándar se utiliza .odb (OpenDocument Database)[cite: 964].",
+      "D": "Incorrecta. Distractor sin sentido técnico real[cite: 965]."
+    }
+  },
+  {
+    "pregunta": "36. Si nosotros realizamos un recorrido POSORDEN en un árbol binario y el conjunto ordenado de nodos obtenido es el conjunto C={A,F,E,U,N,O,P}, podemos afirmar que el nodo raíz es:",
+    "opciones": [
+      "a) P",
+      "b) A",
+      "c) U",
+      "d) C"
+    ],
+    "correcta": 0,
+    "explicacion": "El recorrido en postorden o posorden (Izquierda - Derecha - Raíz) se caracteriza por visitar y procesar los hijos antes que el padre. Por este motivo algorítmico, el ÚLTIMO nodo que se visita y se imprime en toda la secuencia siempre es la raíz principal del árbol[cite: 1001, 1003].",
+    "analisis_opciones": {
+      "A": "Correcta. Al ser el último elemento impreso en la secuencia del postorden, 'P' es obligatoriamente la raíz[cite: 1001, 1003].",
+      "B": "Incorrecta. 'A' es el primer nodo visitado, que correspondería a la hoja más profunda por la izquierda[cite: 1004].",
+      "C": "Incorrecta. 'U' es un nodo intermedio, probablemente una sub-raíz[cite: 1006].",
+      "D": "Incorrecta. 'C' es el nombre que el enunciado le da al conjunto, no es un nodo de la secuencia[cite: 1001, 1008]."
+    }
+  },
+  {
+    "pregunta": "42. ¿Qué descripción NO es correcta, en relación con los backups o copias de respaldo?",
+    "opciones": [
+      "a) Las copias de respaldo completas implican una copia de todos los ficheros y bases de datos.",
+      "b) Las copias de respaldo diferenciales copian los datos modificados desde la última copia diferencial.",
+      "c) La restauración de una copia de respaldo diferencial suele ser más rápida que una copia de respaldo incremental.",
+      "d) La ventaja de las copias de respaldo completas es que se tiene la seguridad de tener una imagen completa en el momento de la salvaguarda."
+    ],
+    "correcta": 1,
+    "explicacion": "El error conceptual está en la definición de la copia diferencial. Una copia diferencial copia TODOS los datos que han sido modificados desde la última copia COMPLETA (Full backup), no desde la última diferencial. La que copia lo modificado desde el último backup (sea del tipo que sea) es la copia INCREMENTAL[cite: 1058, 1062].",
+    "analisis_opciones": {
+      "A": "Verdadera. Es la definición exacta de un Full Backup[cite: 1060].",
+      "B": "Falsa (Correcta a marcar). Define el comportamiento de una incremental, no de una diferencial[cite: 1062].",
+      "C": "Verdadera. Para restaurar una diferencial solo necesitas la última completa y la última diferencial (2 cintas). Para la incremental necesitas la completa y TODAS las incrementales diarias secuencialmente, lo que es mucho más lento[cite: 1064].",
+      "D": "Verdadera. Es el método más seguro y robusto para restaurar rápidamente, aunque el más costoso en tiempo y espacio[cite: 1066]."
+    }
+  },
+  {
+    "pregunta": "63. ¿Cuál es el método HTTP que nos permite obtener un recurso en específico de un servidor?",
+    "opciones": [
+      "a) REQUEST",
+      "b) HEAD",
+      "c) OPEN",
+      "d) GET"
+    ],
+    "correcta": 3,
+    "explicacion": "En el protocolo HTTP, los métodos indican la acción que se desea realizar sobre el recurso identificado. El método GET (obtener) es el estándar utilizado para solicitar y recuperar una representación de un recurso específico sin modificarlo[cite: 1252, 1259].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Request es un término genérico para 'petición', pero no es un verbo/método HTTP estándar[cite: 1253].",
+      "B": "Incorrecta. El método HEAD pide una respuesta idéntica a GET, pero sin el cuerpo de la respuesta (solo descarga las cabeceras/headers) para ahorrar ancho de banda[cite: 1255].",
+      "C": "Incorrecta. OPEN no es un método del estándar HTTP[cite: 1257].",
+      "D": "Correcta. Es el verbo principal para lectura de datos en la web y APIs REST[cite: 1259]."
+    }
+  },{
+    "pregunta": "30. Recorrer un árbol binario perfecto mediante INORDEN...",
+    "opciones": [
+      "a) Implica recorrerlo por amplitud.",
+      "b) Implica recorrerlo comenzando por la rama izquierda, recorriendo ésta en INORDEN, luego la rama derecha, recorriendo ésta por INORDEN, y acabar por la raíz.",
+      "c) Implica recorrerlo por profundidad.",
+      "d) Al ser un árbol binario perfecto, el resultado de recorrerlo por INORDEN es el mismo que otros métodos de recorrido por amplitud, como Djikstra o Rijndael."
+    ],
+    "correcta": 2,
+    "explicacion": "El recorrido Inorden (Izquierda - Raíz - Derecha) es, por definición, un algoritmo de búsqueda o recorrido en profundidad (Depth-First Search o DFS) para árboles estructurados.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Los recorridos por amplitud (BFS) se hacen por niveles, no en Inorden.",
+      "B": "Incorrecta. Esa es la descripción exacta del recorrido en Postorden (Izquierda - Derecha - Raíz).",
+      "C": "Correcta. Tanto Preorden, Inorden como Postorden son variantes de los métodos de recorrido en profundidad.",
+      "D": "Incorrecta. Dijkstra es para caminos mínimos en grafos y Rijndael es un algoritmo de cifrado (AES), no tienen nada que ver con recorrer árboles en amplitud."
+    }
+  },
+  {
+    "pregunta": "31. ¿Cuál de los siguientes algoritmos de ordenación tiene una complejidad definida por O (n log n)?",
+    "opciones": [
+      "a) Bubblesort.",
+      "b) Binsort.",
+      "c) Mergesort.",
+      "d) Insertion sort."
+    ],
+    "correcta": 2,
+    "explicacion": "El algoritmo Mergesort (Ordenación por mezcla) utiliza el paradigma 'divide y vencerás', dividiendo el array repetidamente a la mitad (log n) y luego fusionando las partes ordenadas (n), lo que garantiza siempre una complejidad de O(n log n).",
+    "analisis_opciones": {
+      "A": "Incorrecta. La ordenación de burbuja tiene una complejidad cuadrática O(n^2).",
+      "B": "Incorrecta. Binsort (o Bucket sort) puede alcanzar orden lineal O(n) bajo ciertas condiciones ideales.",
+      "C": "Correcta. Es uno de los algoritmos más eficientes y estables con coste asintótico O(n log n) en todos sus casos.",
+      "D": "Incorrecta. La ordenación por inserción tiene una complejidad cuadrática O(n^2) en su caso medio y peor."
+    }
+  },
+  {
+    "pregunta": "42. Indica cuál es la respuesta correcta, en relación con las estrategias de copia de seguridad.",
+    "opciones": [
+      "a) Un sistema de copias de respaldo incremental no partirá de una copia de seguridad completa.",
+      "b) Cada copia diferencial contiene únicamente los archivos que no han cambiado respecto a la anterior copia.",
+      "c) Una copia de respaldo incremental puede hacerse partiendo de una copia completa, una copia diferencial o una copia incremental anterior.",
+      "d) Para recuperar toda la información en un sistema de copias de respaldo completo, son precisas la información de la copia completa actual y la inmediatamente anterior."
+    ],
+    "correcta": 2,
+    "explicacion": "La copia de seguridad incremental respalda únicamente los datos que han sido modificados desde la ÚLTIMA copia de seguridad realizada, sin importar si esa última copia fue completa, diferencial u otra incremental.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Todo ciclo de copias (incremental o diferencial) debe partir obligatoriamente de una copia completa inicial o base.",
+      "B": "Incorrecta. La copia diferencial respalda los datos que SÍ han cambiado respecto a la última copia COMPLETA, no la anterior.",
+      "C": "Correcta. La incremental simplemente busca cualquier respaldo previo inmediato para copiar solo lo nuevo desde ese punto.",
+      "D": "Incorrecta. En un sistema de copia completa, basta con restaurar la copia completa más reciente; no se necesita la anterior en absoluto."
+    }
+  },
+  {
+    "pregunta": "58. En un sistema RAID 5, es correcto afirmar que",
+    "opciones": [
+      "a) Dedica un disco duro para los bits de paridad.",
+      "b) No tiene número de discos mínimos requeridos para ser implementado.",
+      "c) Realiza striping a nivel de bloque.",
+      "d) Como método de redundancia, utiliza mirroring."
+    ],
+    "correcta": 2,
+    "explicacion": "El sistema RAID 5 divide la información (striping) a nivel de bloques, distribuyéndolos entre todos los discos del conjunto, y además distribuye también la paridad entre todos ellos para tolerar fallos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El nivel que dedica un disco exclusivo para la paridad es el RAID 4 (o RAID 3 a nivel de byte). El RAID 5 distribuye la paridad.",
+      "B": "Incorrecta. Requiere un mínimo de 3 discos obligatoriamente para funcionar.",
+      "C": "Correcta. Realiza la división de datos en bloques a través de los discos del arreglo.",
+      "D": "Incorrecta. El mirroring (espejo) es propio del RAID 1 o RAID 10, no del RAID 5."
+    }
+  },{
+    "pregunta": "21. En relación con las estructuras de datos, indica cuál es la afirmación correcta.",
+    "opciones": [
+      "a) Una estructura de datos dinámica no puede ser lineal debido a la distribución cambiante (dinámica) de sus datos.",
+      "b) Todos los grafos pueden describirse como árboles.",
+      "c) Una estructura de datos estática define su tamaño de memoria en el tiempo de ejecución, y este es fijo (estático).",
+      "d) Una estructura de datos dinámica define su tamaño de memoria en el tiempo de ejecución, y este es variable (dinámico)."
+    ],
+    "correcta": 3,
+    "explicacion": "La principal diferencia teórica es la asignación de memoria. Las estructuras estáticas (como los arrays) reservan la memoria en tiempo de compilación. Las estructuras dinámicas (como listas o árboles) piden memoria al sistema en tiempo de ejecución conforme la van necesitando.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Una lista enlazada es el ejemplo perfecto de una estructura que es dinámica y a la vez lineal.",
+      "B": "Incorrecta. Es al revés: todos los árboles son grafos (grafos conexos sin ciclos), pero no todos los grafos cumplen las reglas para ser árboles.",
+      "C": "Incorrecta. Las estructuras estáticas definen su tamaño en tiempo de compilación, no de ejecución.",
+      "D": "Correcta. Se adaptan a las necesidades de almacenamiento durante la propia ejecución del programa."
+    }
+  },
+  {
+    "pregunta": "83. ¿Cuál de estas descripciones sobre formatos de ficheros de hojas de cálculo es INCORRECTA?",
+    "opciones": [
+      "a) \".xlsmx\" permite macros.",
+      "b) \".xlm\" permite macros.",
+      "c) \".xls\" permite macros.",
+      "d) \".xlsx\" no permite macros."
+    ],
+    "correcta": 0,
+    "explicacion": "En el estándar moderno de Microsoft Office basado en XML (Open XML), la extensión específica diseñada para habilitar y contener macros es '.xlsm'. La extensión '.xlsmx' no existe.",
+    "analisis_opciones": {
+      "A": "Falsa (Correcta a marcar). La extensión es incorrecta, sobra la 'x' final.",
+      "B": "Verdadera. .xlm era el antiguo formato específico de macros de Excel 4.0.",
+      "C": "Verdadera. El antiguo formato binario .xls permitía incluir macros en su interior de forma nativa sin cambiar de extensión.",
+      "D": "Verdadera. El formato estándar .xlsx está expresamente diseñado (por seguridad) para no poder ejecutar código de macros."
+    }
+  },
+  {
+    "pregunta": "5. En nuestra organización se está planteando la posibilidad de usar RAID 6, debido a que ofrece mayor seguridad. Si usamos el número mínimo de discos posibles, todos iguales en capacidad, ¿Cuál es el tamaño mínimo que deberá tener cada uno para poder guardar 20 TB?",
+    "opciones": [
+      "a) 5 TB",
+      "b) 10 TB",
+      "c) 20 TB",
+      "d) 25 TB"
+    ],
+    "correcta": 1,
+    "explicacion": "Un RAID 6 requiere un mínimo de 4 discos. El sistema 'sacrifica' la capacidad equivalente a 2 discos enteros para guardar la doble paridad. La fórmula de capacidad útil es (N-2) * Capacidad_Disco. Si necesitamos 20 TB útiles con 4 discos: (4-2) * C = 20 TB. Despejando, C = 10 TB por disco.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Si ponemos 4 discos de 5 TB, la capacidad útil sería de solo 10 TB (5x2).",
+      "B": "Correcta. 4 discos de 10 TB = 40 TB brutos. Se restan 20 TB para paridad y nos quedan los 20 TB útiles solicitados.",
+      "C": "Incorrecta. Esto nos daría 40 TB útiles.",
+      "D": "Incorrecta. Esto nos daría 50 TB útiles."
+    }
+  },
+  {
+    "pregunta": "20. Se le pide consejo para realizar ajustes en la política de seguridad, en especial, ante incidentes con posibles pérdidas de datos. Se le indica que una de las prioridades es \"mejorar el RPO\", uno de los puntos débiles de su departamento. Indica la afirmación correcta:",
+    "opciones": [
+      "a) RPO (Recovery Point Objective) indica el tiempo transcurrido entre la última copia de seguridad y el momento en el que se pierden los datos. Se requiere aumentar el RPO.",
+      "b) RPO (Recovery Point Objective) indica el tiempo transcurrido entre la última copia de seguridad y cuando ésta se restaura tras un incidente donde se pierden los datos y, por consiguiente, el sistema vuelve a funcionar. Se requiere reducir el RPO.",
+      "c) RPO (Recovery Point Objective) indica el tiempo transcurrido entre la última copia de seguridad y cuando ésta se restaura tras un incidente donde se pierden los datos y, por consiguiente, el sistema vuelve a funcionar. Se requiere aumentar el RPO.",
+      "d) RPO (Recovery Point Objective) indica el tiempo transcurrido entre la última copia de seguridad y el momento en el que se pierden los datos. Se requiere reducir el RPO."
+    ],
+    "correcta": 3,
+    "explicacion": "En las políticas de Backup, el RPO (Recovery Point Objective) marca el volumen de datos máximo que estamos dispuestos a perder, medido en tiempo (ej. 'copias cada 4 horas'). Mejorar el RPO significa hacerlo más estricto, es decir, reducir ese tiempo para perder menos datos en caso de desastre.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Aumentar el RPO significaría hacer copias más espaciadas y, por tanto, perder más datos.",
+      "B": "Incorrecta. Esa definición (el tiempo que se tarda en volver a funcionar) corresponde al RTO (Recovery Time Objective).",
+      "C": "Incorrecta. Define el RTO y además propone aumentarlo, lo que empeoraría la disponibilidad del servicio.",
+      "D": "Correcta. Define con exactitud el RPO (el 'agujero' temporal de datos perdidos) y acierta al indicar que para mejorarlo hay que reducirlo."
+    }
+  },{
+    "pregunta": "28. En relación con los sistemas RAID, podemos decir que...",
+    "opciones": [
+      "a) Si se estropea un disco en RAID 0 se pierden todos los datos.",
+      "b) Son necesarios 2 discos como mínimo en RAID 2.",
+      "c) Son necesarios 6 discos como mínimo en RAID 6.",
+      "d) En RAID 5 se utiliza un sistema de paridad distribuida doble para los datos almacenados."
+    ],
+    "correcta": 0,
+    "explicacion": "RAID 0 (Striping o División de datos) agrupa varios discos para sumar sus capacidades y ganar velocidad, pero carece totalmente de tolerancia a fallos. Si un solo disco físico se rompe, el volumen lógico se corrompe por completo y los datos se pierden.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el gran riesgo del RAID 0; no hay redundancia.",
+      "B": "Incorrecta. RAID 2 utiliza códigos de Hamming y requiere una configuración más compleja (ej. 3 discos de datos y 4 de paridad), siendo el mínimo teórico superior a 2.",
+      "C": "Incorrecta. El mínimo estricto para montar un RAID 6 son 4 discos (2 para datos, 2 para doble paridad).",
+      "D": "Incorrecta. RAID 5 usa paridad distribuida SIMPLE. La doble paridad es exclusiva del RAID 6."
+    }
+  },
+  {
+    "pregunta": "31. Indica cuál de las siguientes características corresponde a USB4.",
+    "opciones": [
+      "a) Se conecta a los equipos usando un sistema de Daisy Chain.",
+      "b) Utiliza conectores USB-C de 20 pines.",
+      "c) Permite el tunelado de DisplayPort y de PCI Express.",
+      "d) Se basa en la especificación de protocolo de Thunderbolt 2."
+    ],
+    "correcta": 2,
+    "explicacion": "Una de las grandes revoluciones de USB4 es su capacidad de 'tunelar' (encapsular) distintos protocolos simultáneamente sobre el mismo cable, como PCIe para tarjetas gráficas externas y DisplayPort para monitores de alta resolución.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La conexión en cadena (Daisy Chain) es nativa de Thunderbolt. USB4 basa su topología principal en árboles mediante concentradores (Hubs).",
+      "B": "Incorrecta. Utiliza obligatoriamente conectores Tipo-C estándar de 24 pines.",
+      "C": "Correcta. El tunelado múltiple es su característica arquitectónica definitoria.",
+      "D": "Incorrecta. Se basa en la especificación de Thunderbolt 3, que Intel donó al USB-IF."
+    }
+  },
+  {
+    "pregunta": "33. Tras aplicar un recorrido preorden en un árbol binario lleno obtenemos el conjunto X= {A, B, C, D, E, F}. Podemos afirmar, en relación con el nodo raíz, que:",
+    "opciones": [
+      "a) Es A, y su profundidad es 0.",
+      "b) Es A, y no podemos determinar ni su altura ni profundidad.",
+      "c) No podemos determinar ni el nodo raíz, ni su altura ni profundidad.",
+      "d) Es A, y su altura es 0."
+    ],
+    "correcta": 0,
+    "explicacion": "La regla de oro del recorrido en Preorden (Raíz, Izquierdo, Derecho) es que el primer elemento visitado es invariablemente la raíz principal del árbol. Además, por definición en teoría de grafos, el nivel o profundidad de la raíz de cualquier árbol es siempre 0.",
+    "analisis_opciones": {
+      "A": "Correcta. Identifica la raíz por ser el primer elemento del Preorden y establece correctamente su profundidad teórica.",
+      "B": "Incorrecta. Sí podemos determinar su profundidad (es un hecho teórico absoluto que es 0).",
+      "C": "Incorrecta. La raíz es perfectamente determinable ('A').",
+      "D": "Incorrecta. La altura de la raíz es la altura total del árbol, y dado que hay 6 nodos, la altura no puede ser 0."
+    }
+  },
+  {
+    "pregunta": "34. Un disco duro con GPT (GUID Partition Table) puede contener...",
+    "opciones": [
+      "a) Hasta 128 particiones primarias.",
+      "b) Hasta 64 particiones lógicas.",
+      "c) Una partición extendida que puede contener hasta 255 particiones lógicas.",
+      "d) Puede contener una partición primaria o lógica."
+    ],
+    "correcta": 0,
+    "explicacion": "El estándar GPT vino a sustituir al obsoleto MBR (Master Boot Record), eliminando la limitación de 4 particiones primarias y la necesidad de crear particiones 'extendidas' o 'lógicas'. En implementaciones comunes como Windows, GPT permite hasta 128 particiones primarias nativas.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el límite estándar en los sistemas operativos de Microsoft bajo GPT.",
+      "B": "Incorrecta. El concepto de 'partición lógica' es una herencia parcheada del sistema MBR, no aplicable a GPT.",
+      "C": "Incorrecta. De nuevo, las particiones extendidas no existen nativamente en el esquema GPT.",
+      "D": "Incorrecta. El límite es muy superior."
+    }
+  },
+  {
+    "pregunta": "56. El acrónimo “XOP” significa…",
+    "opciones": [
+      "a) XHTML Online Packet.",
+      "b) XML-binary Optimized Packaging.",
+      "c) eXtensive Operative Plattform.",
+      "d) XSD Ordinary Package."
+    ],
+    "correcta": 1,
+    "explicacion": "XOP (XML-binary Optimized Packaging) es una recomendación oficial del W3C. Se diseñó para empaquetar de forma eficiente datos binarios (como imágenes, audio o archivos codificados en base64) dentro de mensajes XML, muy utilizado en servicios web (SOAP).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Término distractor inventado.",
+      "B": "Correcta. Empaquetado optimizado de binarios para XML.",
+      "C": "Incorrecta. Término distractor inventado.",
+      "D": "Incorrecta. Aunque XSD (XML Schema Definition) es real, el resto del acrónimo es inventado."
+    }
+  },{
+    "pregunta": "9. Le proporcionan ocho discos duros de 100 GB cada uno. Quiere implantar un RAID 6. Por lo tanto, es correcto afirmar...",
+    "opciones": [
+      "a) Que dispondrá de mirroring.",
+      "b) Que dispondrá de 600 GB de espacio para sus datos.",
+      "c) Que podrá recuperar sus datos en caso de pérdida porque RAID 6 no dispone de mirroring.",
+      "d) Que la paridad distribuida de la configuración permite la recuperación de los datos en caso de que un disco o un número par de los mismos se estropee."
+    ],
+    "correcta": 1,
+    "explicacion": "En un sistema RAID 6, se utiliza la paridad doble distribuida, lo que requiere sacrificar la capacidad equivalente a dos discos enteros del conjunto. Con 8 discos de 100 GB, la capacidad útil se calcula como (N-2) * Capacidad = (8-2) * 100 GB = 600 GB.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El RAID 6 usa paridad distribuida doble, no espejado (mirroring, propio de RAID 1 o 10).",
+      "B": "Correcta. El cálculo (8-2) * 100 GB da exactamente 600 GB de espacio útil.",
+      "C": "Incorrecta. La recuperación de datos no se debe a la ausencia de mirroring, sino a la presencia de la doble paridad.",
+      "D": "Incorrecta. El RAID 6 solo tolera el fallo simultáneo de hasta 2 discos, no de 'cualquier número par' (como podrían ser 4 o 6)."
+    }
+  },
+  {
+    "pregunta": "18. Le piden implementar un sistema de backup que ocupe el menor espacio posible a la larga. El más adecuado para la característica que le exigen sería un…",
+    "opciones": [
+      "a) Sistema de backup incremental.",
+      "b) Sistema de backup diferencial.",
+      "c) Sistema de backup completo.",
+      "d) Sistema de backup decremental."
+    ],
+    "correcta": 0,
+    "explicacion": "El backup incremental solo guarda los datos que han sido modificados desde la última copia de seguridad (sea completa o incremental). Al no arrastrar datos redundantes de días anteriores, es el método que menos espacio de almacenamiento consume diariamente.",
+    "analisis_opciones": {
+      "A": "Correcta. Minimiza el espacio consumido ya que solo guarda las diferencias exactas desde la última copia.",
+      "B": "Incorrecta. El diferencial crece cada día porque acumula todos los cambios desde el último backup completo, ocupando más espacio a la larga.",
+      "C": "Incorrecta. Es el que más espacio ocupa, ya que duplica toda la información cada vez que se ejecuta.",
+      "D": "Incorrecta. El término 'decremental' no es un estándar técnico clásico en las políticas de copias de seguridad de este nivel."
+    }
+  },{
+    "pregunta": "19. Le han pedido que efectúe un RAID 10 con 3 discos duros de 6 GB cada uno y otros 3 discos con 4 GB. ¿Cuál será el espacio de almacenamiento efectivo del sistema?",
+    "opciones": [
+      "a) 15 GB.",
+      "b) 24 GB.",
+      "c) 12 GB.",
+      "d) 18 GB."
+    ],
+    "correcta": 2,
+    "explicacion": "Regla de oro de los sistemas RAID: cuando se mezclan discos de diferentes capacidades, la controladora siempre limita (trunca) todos los discos al tamaño del disco más pequeño para garantizar la simetría. Por tanto, los 6 discos funcionarán como si fueran de 4 GB (24 GB brutos). Al ser un RAID 10 (espejo y división), la capacidad efectiva es exactamente la mitad del bruto total: 12 GB.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Matemáticamente no cuadra con la estructura de pérdida del 50% por el espejo.",
+      "B": "Incorrecta. 24 GB sería la capacidad bruta si todos funcionaran a 4 GB, pero en RAID 10 se pierde la mitad por el 'mirroring'.",
+      "C": "Correcta. 6 discos tratados como de 4 GB = 24 GB brutos. Dividido a la mitad por el espejo del RAID 10 = 12 GB útiles.",
+      "D": "Incorrecta. Sería el resultado de ignorar la limitación del disco más pequeño y hacer la media, lo cual es técnicamente imposible en un RAID tradicional."
+    }
+  },{
+    "pregunta": "1. Indique la respuesta que no es correcta acerca de los ficheros:",
+    "opciones": [
+      "a) Un fichero es un conjunto de información relacionada entre sí, que recibe un único nombre simbólico, mediante el cual puede ser identificado y manipulado.",
+      "b) Los ficheros se suelen organizar en directorios.",
+      "c) Desde el punto de vista físico, los ficheros se dividen en sectores en el caso de almacenarse en disco, o en bloques si se almacenan en cintas.",
+      "d) No puede haber dos ficheros con el mismo nombre en un mismo sistema."
+    ],
+    "correcta": 3,
+    "explicacion": "Es totalmente posible tener dos ficheros con exactamente el mismo nombre dentro de un mismo sistema, siempre y cuando se encuentren almacenados en ubicaciones o directorios (rutas) diferentes[cite: 6427, 6431, 6597].",
+    "analisis_opciones": {
+      "A": "Verdadera. Es la definición teórica fundamental de un fichero o archivo[cite: 6428].",
+      "B": "Verdadera. Se estructuran jerárquicamente en carpetas o directorios[cite: 6429].",
+      "C": "Verdadera. A nivel físico (hardware), el almacenamiento se gestiona por sectores (discos) o bloques (cintas)[cite: 6430].",
+      "D": "Falsa (Correcta a marcar). Solo está prohibido que compartan nombre si están en la misma carpeta exacta[cite: 6431, 6597]."
+    }
+  },
+  {
+    "pregunta": "3. Se denomina Array:",
+    "opciones": [
+      "a) A la variable que almacena la dirección de memoria de otra variable.",
+      "b) Al tamaño de memoria definido en tiempo de ejecución.",
+      "c) A la secuencia contigua de un número fijo de elementos del mismo tipo.",
+      "d) Ninguna es correcta."
+    ],
+    "correcta": 2,
+    "explicacion": "Un Array (vector o matriz) es una estructura de datos estática que agrupa elementos homogéneos (del mismo tipo) y los almacena en posiciones de memoria físicas consecutivas o contiguas[cite: 6437, 6440, 6600].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es la definición exacta de un 'Puntero'[cite: 6438].",
+      "B": "Incorrecta. El array estático define su tamaño en tiempo de compilación, no de ejecución[cite: 6439].",
+      "C": "Correcta. Recoge las dos características clave del array: contigüidad en memoria y homogeneidad de tipos[cite: 6440].",
+      "D": "Incorrecta. La opción C es válida[cite: 6440]."
+    }
+  },
+  {
+    "pregunta": "8. En una lista enlazada es necesario almacenar:",
+    "opciones": [
+      "a) La posición del último elemento de la lista.",
+      "b) La posición de memoria del primer elemento de la lista.",
+      "c) La posición del primero y del último elemento de la lista.",
+      "d) Ninguna es correcta."
+    ],
+    "correcta": 1,
+    "explicacion": "Para no 'perder' una lista enlazada en la memoria, el sistema solo necesita almacenar obligatoriamente un puntero a la 'cabeza' (head) de la lista, es decir, la dirección del primer elemento. A partir de él, se puede recorrer toda la cadena[cite: 6468, 6471, 6609].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Conocer solo el final no permite recorrer la lista hacia atrás si es simplemente enlazada[cite: 6469].",
+      "B": "Correcta. Es el único puntero estrictamente vital para conservar el acceso a la estructura[cite: 6471].",
+      "C": "Incorrecta. Aunque algunas implementaciones guardan la 'cola' (tail) por eficiencia, no es teóricamente necesario[cite: 6473].",
+      "D": "Incorrecta. La opción B es la respuesta técnica estándar[cite: 6471, 6609]."
+    }
+  },
+  {
+    "pregunta": "03. Un índice de agrupamiento (Clustered Index) es:",
+    "opciones": [
+      "a) Aquel índice de un solo nivel que se define sobre un fichero desordenado.",
+      "b) Un índice multinivel.",
+      "c) Aquel índice que se define sobre un campo clave de un fichero ordenado.",
+      "d) Aquel índice que se define sobre un campo no clave de un fichero ordenado por dicho campo."
+    ],
+    "correcta": 3,
+    "explicacion": "En bases de datos y ficheros, un índice de agrupamiento (clustering index) se define sobre un campo que determina el orden físico de los registros en el disco, pero que no necesariamente es la clave primaria (campo no clave que admite duplicados)[cite: 6664, 6669, 6847].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Un índice sobre un fichero físicamente desordenado se denomina índice secundario[cite: 6666].",
+      "B": "Incorrecta. Define la jerarquía del índice (como un Árbol B), no su relación con el orden de los datos[cite: 6667].",
+      "C": "Incorrecta. Si es sobre el campo clave único, se denomina 'Índice Primario'[cite: 6668].",
+      "D": "Correcta. Define el índice de agrupamiento (ej: ordenar físicamente la tabla por 'Código Postal', que se repite)[cite: 6669]."
+    }
+  },
+  {
+    "pregunta": "05. Señale una diferencia correcta entre el sistema de archivos FAT y NTFS.",
+    "opciones": [
+      "a) El tamaño del cluster es inferior en NTFS.",
+      "b) El tamaño del cluster es superior en NTFS.",
+      "c) El tamaño máximo de un fichero es inferior en NTFS.",
+      "d) Una partición NTFS puede ser accedida por un sistema MS/DOS y una partición FAT no."
+    ],
+    "correcta": 0,
+    "explicacion": "Una de las grandes ventajas que introdujo NTFS frente a FAT (especialmente FAT16/FAT32 para discos grandes) fue reducir el tamaño del clúster por defecto (típicamente 4KB). Esto reduce enormemente el espacio desperdiciado (fragmentación interna) al guardar archivos pequeños[cite: 6677, 6679, 6849].",
+    "analisis_opciones": {
+      "A": "Correcta. NTFS gestiona clústeres más pequeños y eficientes en volúmenes grandes[cite: 6679].",
+      "B": "Incorrecta. FAT suele requerir clústeres enormes (ej. 32KB) al formatear discos grandes[cite: 6680].",
+      "C": "Incorrecta. NTFS soporta ficheros masivos (hasta 16 TB), FAT32 está limitado a 4 GB por fichero[cite: 6682].",
+      "D": "Incorrecta. Es al revés: MS-DOS nativo puede leer FAT, pero no reconoce la estructura de NTFS[cite: 6683]."
+    }
+  },
+  {
+    "pregunta": "07. Un índice denso es:",
+    "opciones": [
+      "a) Aquel que es usado para claves no primarias.",
+      "b) Aquel que apunta a un único registro del fichero de datos.",
+      "c) Aquel que apunta a un grupo de registros del fichero de datos.",
+      "d) Ninguna de las respuestas anteriores es correcta."
+    ],
+    "correcta": 1,
+    "explicacion": "Un índice denso contiene una entrada (un puntero) en la tabla del índice por cada uno de los registros existentes en el archivo de datos. Por tanto, cada entrada apunta directamente a un único registro[cite: 6691, 6694, 6851].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Puede usarse tanto para claves primarias como secundarias[cite: 6693].",
+      "B": "Correcta. Garantiza una relación 1 a 1 entre entrada del índice y registro[cite: 6694].",
+      "C": "Incorrecta. Eso describiría a un índice 'ralo' o disperso (sparse index), que apunta a bloques o páginas de registros[cite: 6695].",
+      "D": "Incorrecta. La opción B es correcta[cite: 6694]."
+    }
+  },
+  {
+    "pregunta": "11. Supongamos que tenemos una tabla en la que vamos a realizar continuas y diversas búsquedas y en la que se van a producir constantes actualizaciones, ¿por cuál de los siguientes diseños de organización de ficheros optaríamos?",
+    "opciones": [
+      "a) Secuencial",
+      "b) Hash",
+      "c) árbol B+",
+      "d) ISAM"
+    ],
+    "correcta": 2,
+    "explicacion": "El Árbol B+ (B-Tree+) es el estándar de facto en las bases de datos relacionales modernas. Es una estructura dinámica que se auto-balancea, manteniendo una altísima eficiencia tanto para búsquedas rápidas como para soportar constantes inserciones y borrados sin degradarse[cite: 6714, 6718, 6855].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Terrible para actualizaciones y búsquedas aleatorias[cite: 6716].",
+      "B": "Incorrecta. Muy rápido para búsquedas exactas, pero se degrada con las colisiones en actualizaciones masivas y es inútil para búsquedas por rangos[cite: 6717].",
+      "C": "Correcta. Es el rey del rendimiento sostenido en bases de datos (dinámico y ordenado)[cite: 6718].",
+      "D": "Incorrecta. ISAM es un método estático; se degrada rápidamente con muchas inserciones por el uso excesivo de áreas de overflow[cite: 6719]."
+    }
+  },
+  {
+    "pregunta": "13. Comparando el sistema de archivos Ext4 frente a Ext3, señale la opción correcta:",
+    "opciones": [
+      "a) Ext4 soporta sistemas de ficheros de hasta 1024 TB frente a los 16 TB de Ext3.",
+      "b) La migración de un sistema de ficheros Ext3 a uno Ext4 requiere reformatear el sistema de archivos afectado.",
+      "c) Ext4 soporta ficheros de hasta 16 TB frente a los 2 TB de Ext3.",
+      "d) Ext4 introduce la capacidad de journaling (registro por diario), no presente en Ext3."
+    ],
+    "correcta": 2,
+    "explicacion": "Una de las grandes mejoras arquitectónicas de ext4 en Linux fue elevar radicalmente los límites máximos. Ext4 permite un tamaño máximo de archivo individual de 16 Terabytes, mientras que ext3 estaba limitado a 2 Terabytes[cite: 6727, 6732, 6857].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ext4 soporta volúmenes de hasta 1 Exabyte (1.048.576 TB)[cite: 6730].",
+      "B": "Incorrecta. Ext4 es retrocompatible; se puede montar un sistema ext3 como ext4 y actualizarlo sin formatear[cite: 6731].",
+      "C": "Correcta. Refleja fielmente el incremento del límite de tamaño de archivo individual[cite: 6732].",
+      "D": "Incorrecta. El journaling fue precisamente la gran novedad introducida en ext3 frente a ext2[cite: 6733]."
+    }
+  },
+  {
+    "pregunta": "15. Para ordenar archivos que no caben en memoria, ¿qué técnica de clasificación de datos de las siguientes podemos utilizar?",
+    "opciones": [
+      "a) Clasificación por Inserción.",
+      "b) Clasificación por Mezcla Directa.",
+      "c) Clasificación por Selección.",
+      "d) Clasificación por Agitación."
+    ],
+    "correcta": 1,
+    "explicacion": "Cuando los datos son tan masivos que no caben en la memoria RAM (Ordenación Externa), se utilizan técnicas basadas en 'Divide y Vencerás' y uso de ficheros/cintas auxiliares. La Clasificación por Mezcla Directa (External Merge Sort) es el algoritmo estándar para este propósito[cite: 6741, 6745, 6859].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un algoritmo de ordenación interna (requiere RAM completa)[cite: 6744].",
+      "B": "Correcta. Ordena trozos en RAM, los guarda en disco y luego los va 'mezclando' (fusionando) progresivamente[cite: 6745].",
+      "C": "Incorrecta. Algoritmo de ordenación interna (RAM)[cite: 6746].",
+      "D": "Incorrecta. Algoritmo de ordenación interna (Cocktail sort)[cite: 6747]."
+    }
+  },
+  {
+    "pregunta": "08. El máximo número de nodos en un nivel i de un árbol binario, para i≥1, es:",
+    "opciones": [
+      "a) 2^(i-1)",
+      "b) 2",
+      "c) 2i-1",
+      "d) 2-1"
+    ],
+    "correcta": 0,
+    "explicacion": "En un árbol binario, cada nivel duplica la capacidad del nivel anterior. Si el nivel 1 es la raíz (1 nodo, que es 2^0), el nivel 2 tiene 2 nodos (2^1), el nivel 3 tiene 4 nodos (2^2)... Por tanto, la fórmula matemática para calcular los nodos de un nivel 'i' cualquiera es 2 elevado a la (i-1)[cite: 7083, 7085, 7312].",
+    "analisis_opciones": {
+      "A": "Correcta. Fórmula exacta. Ej: Nivel 3 -> 2^(3-1) = 2^2 = 4 nodos como máximo[cite: 7085].",
+      "B": "Incorrecta. Es el número máximo de hijos, no de nodos por nivel[cite: 7086].",
+      "C": "Incorrecta. Fallo de transcripción aritmética de la potencia[cite: 7087].",
+      "D": "Incorrecta. Fórmula incorrecta[cite: 7088]."
+    }
+  },
+  {
+    "pregunta": "11. ¿Cómo se denomina la estructura de datos en la que los elementos se añaden y quitan por el mismo extremo?",
+    "opciones": [
+      "a) Cola.",
+      "b) Registro.",
+      "c) Pila.",
+      "d) Vector."
+    ],
+    "correcta": 2,
+    "explicacion": "Una Pila (Stack) bloquea uno de sus extremos. Las operaciones de apilar (Push) y desapilar (Pop) ocurren única y exclusivamente en el mismo extremo visible, llamado la 'cima' o 'top' de la pila, confiriéndole su naturaleza LIFO[cite: 7102, 7106, 7313].",
+    "analisis_opciones": {
+      "A": "Incorrecta. En una cola se añade por el final y se quita por el frente (distintos extremos)[cite: 7105].",
+      "B": "Incorrecta. No es una colección secuencial dinámica[cite: 7107].",
+      "C": "Correcta. Definición canónica operativa de la Pila[cite: 7106].",
+      "D": "Incorrecta. En un vector se puede añadir o acceder por cualquier índice[cite: 7108]."
+    }
+  },
+  {
+    "pregunta": "12. ¿Cómo se denomina el tipo de datos estructurado formado por una colección finita de elementos, no necesariamente homogéneos?",
+    "opciones": [
+      "a) Campo.",
+      "b) Registro.",
+      "c) Fichero.",
+      "d) Lista."
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia de un Array o una Lista (que agrupan elementos del mismo tipo, homogéneos), un Registro (o struct) es una estructura de datos que permite encapsular variables de distintos tipos bajo un mismo nombre lógico (ej. nombre: texto, edad: entero)[cite: 7109, 7113, 7314].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Un campo es un dato simple individual dentro de un registro[cite: 7112].",
+      "B": "Correcta. Estructura de datos estática y heterogénea por excelencia[cite: 7113].",
+      "C": "Incorrecta. Es una agrupación física masiva de registros[cite: 7114].",
+      "D": "Incorrecta. Una lista tradicional (TAD) asume elementos homogéneos[cite: 7115]."
+    }
+  },
+  {
+    "pregunta": "23. ¿Cuál es el número máximo de niveles que puede tener un árbol binario que tiene 5 nodos?",
+    "opciones": [
+      "a) 3.",
+      "b) 4.",
+      "c) 5.",
+      "d) 2."
+    ],
+    "correcta": 2,
+    "explicacion": "El peor caso posible (máximo número de niveles) para cualquier árbol es que esté completamente desbalanceado y degenere en una lista lineal enlazada (un hijo por cada padre en una sola dirección). En este caso degenerado extremo, si hay 5 nodos, habrá 5 niveles[cite: 7175, 7179, 7325].",
+    "analisis_opciones": {
+      "A": "Incorrecta. 3 niveles sería el mínimo si el árbol estuviera perfectamente balanceado y lleno[cite: 7177].",
+      "B": "Incorrecta. No es el máximo posible[cite: 7178].",
+      "C": "Correcta. Árbol degenerado (cada nodo tiene solo un hijo), N nodos = N niveles[cite: 7179].",
+      "D": "Incorrecta. Imposible almacenar 5 nodos en 2 niveles de un árbol binario (máx. 3 nodos en 2 niveles)[cite: 7180]."
+    }
+  },
+  {
+    "pregunta": "29. Señale la afirmación INCORRECTA en relación a los árboles de búsqueda AVL:",
+    "opciones": [
+      "a) Son un tipo de árbol de búsqueda binario.",
+      "b) Para cada uno de los nodos, la diferencia de altura entre sus dos subárboles no puede ser superior a uno.",
+      "c) Los árboles AVL menos profundos son los árboles de Fibonacci.",
+      "d) Un árbol de Fibonacci es el árbol AVL más desbalanceado permitido."
+    ],
+    "correcta": 2,
+    "explicacion": "Un árbol de Fibonacci se construye aprovechando al límite la tolerancia de balanceo de un árbol AVL (diferencia de altura de 1 en cada subárbol). Al estirar al máximo esta tolerancia matemática, se obtienen los árboles AVL MÁS profundos posibles para un número de nodos dado, no los menos profundos[cite: 7212, 7215, 7331].",
+    "analisis_opciones": {
+      "A": "Verdadera. Son la primera estructura de árbol binario de búsqueda auto-balanceable ideada[cite: 7213].",
+      "B": "Verdadera. Es su regla definitoria fundamental (Factor de equilibrio -1, 0, +1)[cite: 7214].",
+      "C": "Falsa (Correcta a marcar). Son los MÁS profundos (peor caso) dentro del estándar AVL[cite: 7215].",
+      "D": "Verdadera. Aprovecha al límite la norma del desbalanceo permitido en cada rama[cite: 7216]."
+    }
+  },
+  {
+    "pregunta": "33. Existen multitud de tipos abstractos de datos que permiten almacenar información. Indique cuál de los siguientes tiene por definición almacenar una colección no ordenada de elementos distintos y todos del mismo tipo:",
+    "opciones": [
+      "a) TAD Lista.",
+      "b) TAD Árbol.",
+      "c) TAD Bolsa.",
+      "d) TAD Conjunto."
+    ],
+    "correcta": 3,
+    "explicacion": "En la teoría de Tipos Abstractos de Datos, un 'Conjunto' (Set) hereda las propiedades matemáticas de la teoría de conjuntos: sus elementos no mantienen un orden secuencial específico y, lo más importante, no admite la existencia de elementos duplicados (distintos)[cite: 7238, 7245, 7336].",
+    "analisis_opciones": {
+      "A": "Incorrecta. La lista tiene un orden secuencial (primero, segundo...) y admite duplicados[cite: 7242].",
+      "B": "Incorrecta. El árbol tiene una jerarquía y también puede admitir duplicados[cite: 7244].",
+      "C": "Incorrecta. La 'Bolsa' (Bag o Multiset) es como un conjunto, pero SÍ permite almacenar elementos repetidos[cite: 7243].",
+      "D": "Correcta. Definición canónica del TAD Conjunto (no ordenado, sin duplicados)[cite: 7245]."
+    }
+  },
+  {
+    "pregunta": "41. Al ejecutarse un código de forma recursiva, en el espacio de memoria reservado para la pila se van almacenando informaciones por cada llamada, ¿cuál de las siguientes informaciones NO es imprescindible que almacene la pila para la ejecución de la recursividad?",
+    "opciones": [
+      "a) Los argumentos de la función o rutina.",
+      "b) Las variables locales del subprograma.",
+      "c) La dirección de retorno.",
+      "d) El número de orden de la iteración."
+    ],
+    "correcta": 3,
+    "explicacion": "Cuando una función se llama a sí misma (recursividad), el sistema utiliza la Pila de Ejecución (Call Stack) para crear un 'Registro de Activación' por cada llamada. Este registro vital guarda dónde debe volver el código, los parámetros pasados y sus variables locales. No necesita almacenar un contador o número de iteración, de hecho, la recursividad pura carece de iteradores explícitos[cite: 7288, 7294, 7344].",
+    "analisis_opciones": {
+      "A": "Verdadera. Necesita saber qué datos se le han pasado en esa llamada específica[cite: 7291].",
+      "B": "Verdadera. Para preservar el estado local independiente en cada nivel de recursión[cite: 7292].",
+      "C": "Verdadera. Imprescindible para que la CPU sepa a qué línea de código volver al terminar la llamada actual[cite: 7293].",
+      "D": "Falsa (Correcta a marcar). No es un dato del procesador, un bucle for/while usa iteradores, la recursividad se basa en condiciones de salida[cite: 7294]."
+    }
+  },{
+    "pregunta": "21. En un programa, se define una función o método \"ordenar()\". En su ejecución, esta función puede realizar una llamada a \"ordenar()\", se dice entonces que dicha función es:",
+    "opciones": [
+      "a) Recurrente.",
+      "b) Iterativa.",
+      "c) Periódica.",
+      "d) Recursiva."
+    ],
+    "correcta": 3,
+    "explicacion": "La recursividad es un concepto fundamental en la programación y el diseño de algoritmos, en el cual una función o procedimiento se llama a sí misma dentro de su propio código para resolver subproblemas más pequeños del mismo tipo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Aunque el término existe matemáticamente, en programación el concepto técnico es 'recursiva'.",
+      "B": "Incorrecta. Un proceso iterativo se basa en bucles de control (for, while), no en funciones que se llaman a sí mismas.",
+      "C": "Incorrecta. No es un término de diseño de algoritmos para este comportamiento.",
+      "D": "Correcta. Es la definición técnica exacta de una función recursiva."
+    }
+  },
+  {
+    "pregunta": "27. ¿Cuál de entre los siguientes responde a las caracteristicas de un tipo de datos estructurado, dinámico y no lineal?",
+    "opciones": [
+      "a) Cola",
+      "b) Pila",
+      "c) Árbol",
+      "d) Lista"
+    ],
+    "correcta": 2,
+    "explicacion": "Los Tipos Abstractos de Datos (TAD) se dividen en lineales (los elementos siguen una secuencia de uno detrás de otro) y no lineales (la estructura se bifurca o ramifica). Los árboles y los grafos son el principal ejemplo de TAD dinámico y no lineal.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La cola es dinámica pero estrictamente lineal.",
+      "B": "Incorrecta. La pila es dinámica pero lineal.",
+      "C": "Correcta. Crece de forma dinámica (solicitando memoria en ejecución mediante punteros) y su estructura se ramifica en jerarquías (no lineal).",
+      "D": "Incorrecta. Las listas enlazadas son un tipo lineal."
+    }
+  },
+  {
+    "pregunta": "42. En los lenguajes de programación, ¿cuál de las siguientes afirmaciones es correcta?",
+    "opciones": [
+      "a) La modificación de un programa fuente es más sencilla en el compilado que en el intérprete.",
+      "b) El programa objeto que produce un programa interpretado es más pequeño que el que produce un programa compilado.",
+      "c) Las ejecuciones sucesivas de un programa compilado no necesitan traducciones del programa fuente.",
+      "d) Un programa interpretado es más rápido que uno compilado."
+    ],
+    "correcta": 2,
+    "explicacion": "Un compilador traduce todo el código fuente de una vez a código máquina (o código objeto) creando un archivo ejecutable. Una vez compilado y creado este ejecutable, se puede lanzar tantas veces como se quiera sin necesitar el código original ni volver a traducirlo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. En un lenguaje interpretado (como Python) es más rápido modificar y probar porque no requiere el paso previo de recompilar todo el proyecto de nuevo.",
+      "B": "Incorrecta. Un programa interpretado no genera un 'programa objeto' o ejecutable persistente.",
+      "C": "Correcta. El ejecutable compilado ya está en lenguaje máquina y es totalmente independiente del código fuente.",
+      "D": "Incorrecta. Generalmente, un programa compilado es más rápido porque ya está traducido, mientras que el intérprete debe traducir el código línea por línea en tiempo real."
+    }
+  },
+  {
+    "pregunta": "43. ¿Cual es el significado el termino acoplamiento cuando se habla de los módulos de un determinado programa? ¿Cual es el valor deseado de dicho acoplamiento?",
+    "opciones": [
+      "a) Grado de interdependencia entre los distintos módulos de un programa. Debe ser alto.",
+      "b) Grado de interdependencia entre los distintos módulos de un programa. Debe ser bajo.",
+      "c) Relación funcional entre las distintas sentencias que componen un módulo. Debe ser alto.",
+      "d) Relación funcional entre las distintas sentencias que componen un módulo. Debe ser bajo."
+    ],
+    "correcta": 1,
+    "explicacion": "En la ingeniería del software y algoritmos, el 'Acoplamiento' mide cuánto depende un módulo de otro. Una buena arquitectura exige que el acoplamiento sea BAJO (módulos independientes) y la 'Cohesión' sea ALTA (las funciones dentro del módulo están muy relacionadas entre sí).",
+    "analisis_opciones": {
+      "A": "Incorrecta. El acoplamiento no debe ser alto; si un módulo depende mucho de otro, un mínimo cambio en uno provocará errores en el otro.",
+      "B": "Correcta. Define correctamente el Acoplamiento e indica con acierto que el diseño ideal exige que sea bajo.",
+      "C": "Incorrecta. Esta es la definición del término Cohesión (y su valor deseado sí que es alto).",
+      "D": "Incorrecta. Es la definición de Cohesión, pero el valor deseado es erróneo."
+    }
+  },
+  {
+    "pregunta": "44. La instrucción de bucle que al menos se ejecuta siempre una vez es:",
+    "opciones": [
+      "a) REPEAT/UNTIL.",
+      "b) WHILE.",
+      "c) FOR.",
+      "d) IF."
+    ],
+    "correcta": 0,
+    "explicacion": "En el diseño de algoritmos, el bucle REPEAT-UNTIL (conocido como do-while en algunos lenguajes como C o Java) evalúa su condición de salida al FINAL de la iteración. Esto garantiza físicamente que el bloque de código de su interior se ejecutará, como mínimo, una vez antes de comprobar si debe repetir.",
+    "analisis_opciones": {
+      "A": "Correcta. Asegura al menos una ejecución porque la condición lógica se evalúa al final.",
+      "B": "Incorrecta. El bucle WHILE evalúa la condición al principio; si es falsa en el momento cero, no se ejecuta nunca.",
+      "C": "Incorrecta. El bucle FOR también comprueba los límites al principio y puede ser omitido.",
+      "D": "Incorrecta. IF es una estructura condicional de salto, no de repetición (bucle)."
+    }
+  },
+  {
+    "pregunta": "46. Al subprograma que tiene uno o varios parámetros de entrada, suficientes y necesarios para determinar un solo parámetro exclusivamente de salida se le denomina:",
+    "opciones": [
+      "a) Subrutina.",
+      "b) Procedimiento.",
+      "c) Bucle.",
+      "d) Función."
+    ],
+    "correcta": 3,
+    "explicacion": "En la teoría clásica de programación modular, una 'Función' hereda su concepto directamente de las matemáticas: toma unos valores de entrada (argumentos), opera con ellos de forma aislada y devuelve un único resultado de salida (valor de retorno).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Subrutina es un término genérico para nombrar a cualquier bloque de código.",
+      "B": "Incorrecta. Un Procedimiento (procedure) ejecuta acciones y altera el estado, pero tradicionalmente no devuelve un valor de salida directo por sí mismo.",
+      "C": "Incorrecta. Un bucle es una estructura de control de flujo repetitivo.",
+      "D": "Correcta. Es la definición técnica estricta de una función modular."
+    }
+  },{
+    "pregunta": "1. Según el esquema de sistemas de archivos, ¿qué característica define principalmente a Ceph?",
+    "opciones": [
+      "a) Es un sistema de archivos para un solo nodo basado en B-trees.",
+      "b) Es un sistema de archivos distribuido libre diseñado para Big Data, sin ningún punto único de fallo.",
+      "c) Es un sistema de archivos propietario de Microsoft para clústeres de bases de datos.",
+      "d) Es el sucesor directo de NTFS para sistemas Windows de escritorio."
+    ],
+    "correcta": 1,
+    "explicacion": "Ceph está diseñado para ser POSIX-compatible y completamente distribuido, lo que significa que los datos se replican libre de errores y el sistema es altamente tolerante a fallos, ideal para grandes volúmenes de datos[cite: 11, 13].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa descripción encaja más con Btrfs[cite: 11].",
+      "B": "Correcta. Es su definición técnica clave en el esquema[cite: 11, 13].",
+      "C": "Incorrecta. Es un sistema libre, no propietario[cite: 11, 13].",
+      "D": "Incorrecta. ReFS es el sistema avanzado de Microsoft, no Ceph[cite: 11]."
+    }
+  },
+  {
+    "pregunta": "2. En un árbol binario, si un nodo se encuentra en el nivel 4, ¿cuál es su profundidad exacta?",
+    "opciones": [
+      "a) 4",
+      "b) 5",
+      "c) 3",
+      "d) No se puede determinar."
+    ],
+    "correcta": 2,
+    "explicacion": "En la teoría de árboles de tu temario, la raíz está en el nivel 1 pero tiene profundidad 0. Por tanto, la profundidad de cualquier nodo es siempre su Nivel - 1[cite: 11, 13]. Para el nivel 4, la profundidad es 3.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El nivel y la profundidad difieren en una unidad[cite: 11, 13].",
+      "B": "Incorrecta. Valor superior al nivel.",
+      "C": "Correcta. Aplicación directa de la definición teórica: Profundidad = Nivel - 1[cite: 11, 13].",
+      "D": "Incorrecta. Es un cálculo matemático estándar."
+    }
+  },
+  {
+    "pregunta": "3. ¿Qué sistema de archivos de los siguientes utiliza la técnica COW (Copy-On-Write) y se basa en estructuras B-tree?",
+    "opciones": [
+      "a) ext4",
+      "b) Btrfs",
+      "c) XFS",
+      "d) FAT32"
+    ],
+    "correcta": 1,
+    "explicacion": "Btrfs (B-tree FS) es un sistema de archivos para Linux que utiliza la tecnología Copy-on-write, lo que permite realizar instantáneas (snapshots) de forma muy eficiente[cite: 11].",
+    "analisis_opciones": {
+      "A": "Incorrecta. ext4 no es un sistema COW nativo[cite: 11].",
+      "B": "Correcta. Su nombre y diseño se basan en B-trees y la funcionalidad COW[cite: 11].",
+      "C": "Incorrecta. XFS destaca por manejo de archivos grandes pero no es el sistema COW por excelencia del esquema[cite: 11].",
+      "D": "Incorrecta. Sistema antiguo sin estas capacidades[cite: 11]."
+    }
+  },
+  {
+    "pregunta": "4. En relación a la complejidad algorítmica, ¿qué significa que un algoritmo sea de orden O(1)?",
+    "opciones": [
+      "a) Que tarda un segundo en ejecutarse.",
+      "b) Que su tiempo de ejecución es constante e independiente del número de datos (N).",
+      "c) Que solo realiza una iteración sobre los datos.",
+      "d) Que es el algoritmo más rápido posible para búsqueda binaria."
+    ],
+    "correcta": 1,
+    "explicacion": "La complejidad constante O(1) indica que el coste del algoritmo no varía aunque aumentemos el volumen de información procesada, como ocurre al acceder a un elemento de un array por su índice[cite: 10, 13].",
+    "analisis_opciones": {
+      "A": "Incorrecta. O(1) no mide tiempo real en segundos, sino crecimiento de recursos[cite: 13].",
+      "B": "Correcta. Definición técnica de coste constante[cite: 10, 13].",
+      "C": "Incorrecta. Eso sería complejidad lineal O(N)[cite: 13].",
+      "D": "Incorrecta. La búsqueda binaria es logarítmica O(log N)[cite: 13]."
+    }
+  },
+  {
+    "pregunta": "5. Sobre el sistema de archivos Lustre, ¿qué componente es el encargado de almacenar los metadatos (nombres de archivos, permisos, etc.)?",
+    "opciones": [
+      "a) OSS (Object Storage Server).",
+      "b) OST (Object Storage Target).",
+      "c) MDS (MetaData Server).",
+      "d) DSS (Distributed Storage Server)."
+    ],
+    "correcta": 2,
+    "explicacion": "Lustre es un sistema de archivos distribuido que separa los datos de los metadatos. El MDS (MetaData Server) gestiona la estructura del sistema de archivos, mientras que los datos reales están en los OSS[cite: 10].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Gestiona el almacenamiento de los objetos de datos[cite: 10].",
+      "B": "Incorrecta. Es el dispositivo de almacenamiento real vinculado al OSS[cite: 10].",
+      "C": "Correcta. Sus siglas identifican su función: Servidor de Metadatos[cite: 10].",
+      "D": "Incorrecta. Término no principal en la arquitectura estándar de Lustre[cite: 10]."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál es el grado de un nodo que es una 'hoja' en cualquier tipo de árbol?",
+    "opciones": [
+      "a) 1",
+      "b) 2",
+      "c) 0",
+      "d) Depende de si el árbol es binario o no."
+    ],
+    "correcta": 2,
+    "explicacion": "Por definición técnica en tu temario, un nodo hoja (o nodo terminal) es aquel que no tiene descendientes o hijos. Al no tener hijos, su grado es 0[cite: 11, 13].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Un grado 1 implica que tiene un hijo.",
+      "B": "Incorrecta. Un grado 2 implica que tiene dos hijos.",
+      "C": "Correcta. Definición universal de nodo hoja[cite: 11, 13].",
+      "D": "Incorrecta. La definición de hoja no cambia según el grado del árbol[cite: 13]."
+    }
+  },
+  {
+    "pregunta": "7. El sistema de archivos VMFS (de VMware) está específicamente optimizado para:",
+    "opciones": [
+      "a) Almacenar archivos de texto pequeños en Linux.",
+      "b) Albergar máquinas virtuales y soportar clustering a nivel de sistema de archivos.",
+      "c) Dispositivos móviles con memoria NAND Flash.",
+      "d) Sustituir a ext4 en servidores Red Hat."
+    ],
+    "correcta": 1,
+    "explicacion": "VMFS es un sistema de archivos de alto rendimiento diseñado para entornos virtuales, permitiendo que múltiples servidores accedan al mismo almacenamiento simultáneamente[cite: 11].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Uso demasiado genérico y poco eficiente para VMFS[cite: 11].",
+      "B": "Correcta. Definición del esquema de sistemas de archivos[cite: 11].",
+      "C": "Incorrecta. Para memorias flash se usa F2FS o exFAT[cite: 11].",
+      "D": "Incorrecta. Es un sistema para hipervisores, no una distribución general de Linux[cite: 11]."
+    }
+  },
+  {
+    "pregunta": "8. ¿Qué estructura de datos dinámica se define como 'un grafo conectado que no contiene ciclos'?",
+    "opciones": [
+      "a) Lista doblemente enlazada.",
+      "b) Árbol.",
+      "c) Matriz dispersa.",
+      "d) Bicola de entrada restringida."
+    ],
+    "correcta": 1,
+    "explicacion": "Esta es la definición matemática formal de un árbol en el contexto de estructuras de datos y teoría de grafos: debe haber un camino entre cualquier par de nodos (conectado) y no pueden existir bucles[cite: 13].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una estructura lineal, no se define típicamente por la ausencia de ciclos en grafos[cite: 13].",
+      "B": "Correcta. Definición canónica[cite: 13].",
+      "C": "Incorrecta. Es una forma de optimizar memoria en tablas[cite: 13].",
+      "D": "Incorrecta. Es una variante de cola lineal[cite: 13]."
+    }
+  },
+  {
+    "pregunta": "9. Según los apuntes, ¿cuál es la principal diferencia entre una 'Lista Densa' y una 'Lista Enlazada'?",
+    "opciones": [
+      "a) La lista densa usa punteros y la enlazada no.",
+      "b) En la lista densa los elementos son heterogéneos.",
+      "c) En la lista densa los elementos están en posiciones físicas contiguas de memoria.",
+      "d) No hay diferencia, son sinónimos."
+    ],
+    "correcta": 2,
+    "explicacion": "Una lista densa (o contigua) se implementa sobre un array, ocupando memoria secuencial, mientras que la lista enlazada utiliza punteros para conectar nodos que pueden estar dispersos en la RAM[cite: 11, 13].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es justo al revés[cite: 13].",
+      "B": "Incorrecta. Ambas suelen ser de tipos homogéneos[cite: 13].",
+      "C": "Correcta. La contigüidad física es lo que define a la 'densidad' de la lista[cite: 11, 13].",
+      "D": "Incorrecta. Son implementaciones opuestas de una lista[cite: 13]."
+    }
+  },
+  {
+    "pregunta": "10. El sistema de archivos F2FS (Flash-Friendly File System) fue desarrollado originalmente por:",
+    "opciones": [
+      "a) Microsoft.",
+      "b) Apple.",
+      "c) Samsung.",
+      "d) Oracle."
+    ],
+    "correcta": 2,
+    "explicacion": "F2FS fue creado por Samsung para optimizar el rendimiento y la vida útil de los dispositivos de almacenamiento basados en memorias flash NAND, como los SSD y tarjetas SD[cite: 11].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Microsoft desarrolló exFAT[cite: 11].",
+      "B": "Incorrecta. Apple desarrolló APFS[cite: 11].",
+      "C": "Correcta. Según el esquema de sistemas de archivos[cite: 11].",
+      "D": "Incorrecta. Oracle desarrolló Btrfs y ZFS[cite: 11]."
+    }
+  }
+
+]

@@ -1003,5 +1003,957 @@
       "C": "Incorrecta. Es la capacidad de reproducir colores (bits por píxel).",
       "D": "Incorrecta. Existen PNG, BMP, WEBP, etc."
     }
+  },
+  {
+    "pregunta": "De los siguientes sistemas RAID, ¿cuál NO se considera redundante?",
+    "opciones": [
+      "A. RAID 0.",
+      "B. RAID 1.",
+      "C. RAID 2.",
+      "D. RAID 1+0."
+    ],
+    "correcta": 0,
+    "explicacion": "El RAID 0 (Striping) divide los datos entre los discos para ganar velocidad, pero si falla un disco, se pierde toda la información. No ofrece ninguna redundancia ni seguridad.",
+    "analisis_opciones": {
+      "A": "Correcta. Al no tener paridad ni espejo, no tolera fallos.",
+      "B": "Incorrecta. RAID 1 es un espejo (mirroring) exacto, tolera la pérdida de un disco.",
+      "C": "Incorrecta. RAID 2 utiliza código de Hamming a nivel de bit para corregir errores (redundancia).",
+      "D": "Incorrecta. Es una combinación de espejos (1) divididos en bandas (0), por lo que es altamente redundante."
+    }
+  },
+  {
+    "pregunta": "Si disponemos de 2 discos en RAID 0, el primero es una unidad de 10 GB y la segunda unidad tiene una capacidad 27 GB, se creará una unidad lógica resultante de:",
+    "opciones": [
+      "A. 37 GB.",
+      "B. 40 GB.",
+      "C. 20 GB.",
+      "D. 47 GB."
+    ],
+    "correcta": 2,
+    "explicacion": "En un RAID 0, el controlador toma como referencia la capacidad del disco más pequeño y la multiplica por el número de discos. En este caso, coge 10 GB de cada disco (10 GB x 2 = 20 GB). El espacio sobrante del disco de 27 GB se desperdicia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la suma simple de los dos discos (JBOD), pero no un RAID 0.",
+      "B": "Incorrecta. Supondría que el disco base es de 20 GB (20 x 2).",
+      "C": "Correcta. Tamaño del disco menor (10 GB) multiplicado por el total de discos (2).",
+      "D": "Incorrecta. Es un distractor matemático sin base técnica."
+    }
+  },
+  {
+    "pregunta": "En relación con los sistemas RAID señale la respuesta INCORRECTA:",
+    "opciones": [
+      "A. El RAID 1+0 exige un mínimo de 4 discos.",
+      "B. RAID 6 amplía el RAID 5 agregando un bloque de paridad.",
+      "C. RAID 5 necesitará un mínimo de 3 discos para ser implementado.",
+      "D. Un RAID 4 distribuye la información a nivel de bloques con dos discos de paridad dedicados."
+    ],
+    "correcta": 3,
+    "explicacion": "El RAID 4 utiliza un único disco dedicado exclusivamente para la paridad. Es el RAID 6 el que utiliza dos discos de paridad (paridad doble).",
+    "analisis_opciones": {
+      "A": "Verdadera. Necesita al menos dos discos para el RAID 1 y dos para dividirlos (RAID 0).",
+      "B": "Verdadera. RAID 6 sobrevive a la pérdida de dos discos gracias a esa doble paridad.",
+      "C": "Verdadera. Es el requisito estándar del RAID 5.",
+      "D": "Falsa (Correcta a marcar). RAID 4 solo tiene UN disco de paridad dedicado."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de monitor utiliza transistores electrónicos para modificar la luz emitida?",
+    "opciones": [
+      "A. CRT.",
+      "B. LCD TFT.",
+      "C. LED.",
+      "D. OLED."
+    ],
+    "correcta": 1,
+    "explicacion": "TFT significa 'Thin-Film Transistor' (Transistor de Película Fina). Se utiliza en las pantallas LCD de matriz activa para controlar individualmente la luz de cada píxel.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El tubo de rayos catódicos (CRT) usa un cañón de electrones y fósforo.",
+      "B": "Correcta. Las pantallas TFT usan transistores para alinear los cristales líquidos.",
+      "C": "Incorrecta. LED es la forma de retroiluminar el panel, pero el control lo hace el LCD TFT.",
+      "D": "Incorrecta. OLED emite su propia luz orgánicamente sin necesidad de transistores de filtro traseros."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes periféricos es de almacenamiento de acceso secuencial?",
+    "opciones": [
+      "A. Disco duro externo.",
+      "B. Cinta magnética.",
+      "C. DVD.",
+      "D. Escáner."
+    ],
+    "correcta": 1,
+    "explicacion": "El acceso secuencial significa que para leer un dato que está al final, tienes que pasar físicamente por todos los datos anteriores (como en los casetes antiguos).",
+    "analisis_opciones": {
+      "A": "Incorrecta. El disco duro usa acceso directo (Direct Access).",
+      "B": "Correcta. Las cintas magnéticas (como LTO o DAT) son puramente secuenciales.",
+      "C": "Incorrecta. El DVD utiliza acceso directo mediante el láser.",
+      "D": "Incorrecta. El escáner es un periférico de entrada, no de almacenamiento."
+    }
+  },
+  {
+    "pregunta": "Referente al tipo de acceso a la memoria principal y a un disco duro, indique la afirmación correcta:",
+    "opciones": [
+      "A. Memoria es aleatorio; disco es secuencial.",
+      "B. Memoria es directo; disco es secuencial.",
+      "C. Memoria es aleatorio; disco es directo.",
+      "D. Ambos son de acceso aleatorio."
+    ],
+    "correcta": 2,
+    "explicacion": "La RAM es de acceso 'Aleatorio' (cuesta el mismo tiempo acceder a cualquier punto). El disco duro es de acceso 'Directo' (el cabezal va directamente a la pista, pero luego hay una pequeña búsqueda secuencial en el sector).",
+    "analisis_opciones": {
+      "A": "Incorrecta. El disco duro no es estrictamente secuencial como una cinta.",
+      "B": "Incorrecta. Invierte el tipo de acceso de la memoria y erra en el del disco.",
+      "C": "Correcta. Distingue perfectamente entre RAM (Aleatorio) y HDD (Directo).",
+      "D": "Incorrecta. El disco duro tiene partes mecánicas, por lo que el tiempo de acceso varía, no es aleatorio puro."
+    }
+  },
+  {
+    "pregunta": "¿Qué capacidad de almacenamiento tendría un disco duro con 50 sectores por pista, 750 pistas por cabeza y 18 cabezas?",
+    "opciones": [
+      "A. 345,6 Mbytes.",
+      "B. 675 Kbytes.",
+      "C. 560 Mbytes.",
+      "D. 25,6 Mbytes."
+    ],
+    "correcta": 0,
+    "explicacion": "Cálculo: Sectores (50) × Pistas (750) × Cabezas (18) = 675.000 sectores en total. Como cada sector estándar almacena 512 bytes, multiplicamos: 675.000 × 512 = 345.600.000 bytes. Al convertirlo comercialmente (base decimal), equivale a 345,6 MB.",
+    "analisis_opciones": {
+      "A": "Correcta. Resultado de la fórmula Cilindros x Cabezas x Sectores x 512 bytes.",
+      "B": "Incorrecta. Sería el resultado si los sectores guardaran 1 byte en lugar de 512.",
+      "C": "Incorrecta. Fallo en la aplicación de la fórmula.",
+      "D": "Incorrecta. Distractor matemático."
+    }
+  },
+  {
+    "pregunta": "Sobre las soluciones de almacenamiento compartido se puede afirmar que:",
+    "opciones": [
+      "A. Las soluciones SAN están basadas en tecnología Fiber Channel encapsulando SCSI para permitir acceso a bloques.",
+      "B. Las soluciones NAS se basan en un dispositivo TCP/IP que sirve ficheros mediante NFS y CIFS.",
+      "C. La A y la B son verdaderas.",
+      "D. La A y la B son falsas."
+    ],
+    "correcta": 2,
+    "explicacion": "Pregunta vital para entender redes de almacenamiento. SAN (Storage Area Network) trabaja a bajo nivel (por bloques) usando FC o iSCSI. NAS (Network Attached Storage) trabaja a alto nivel (por ficheros) usando la red Ethernet normal.",
+    "analisis_opciones": {
+      "A": "Verdadera. Describe el funcionamiento técnico de una SAN.",
+      "B": "Verdadera. Describe cómo un NAS reparte los archivos en red.",
+      "C": "Correcta. Ambas definiciones son canónicas e impecables.",
+      "D": "Incorrecta. Ambas afirmaciones son técnicamente precisas."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de puerto físico se utiliza en el ordenador para la conexión de dispositivos por puerto paralelo (LPT)?",
+    "opciones": [
+      "A. Puerto de 4 pines hembra.",
+      "B. Puerto de 9 pines macho.",
+      "C. Puerto de 25 pines hembra.",
+      "D. Puerto de 25 pines macho."
+    ],
+    "correcta": 2,
+    "explicacion": "El puerto paralelo clásico (conocido como LPT1 y usado para impresoras antiguas) utiliza un conector físico llamado DB-25 en su versión hembra en el lado del ordenador.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No corresponde a estándares clásicos.",
+      "B": "Incorrecta. El conector DB-9 macho es el clásico Puerto Serie (COM).",
+      "C": "Correcta. El conector DB-25 hembra es el estándar del puerto paralelo.",
+      "D": "Incorrecta. El conector DB-25 macho se usaba históricamente para puertos serie grandes (COM)."
+    }
+  },
+  {
+    "pregunta": "¿Qué significa la característica DMA en la interconexión de componentes?",
+    "opciones": [
+      "A. Dispositivos de memoria aleatoria.",
+      "B. Acceso directo a memoria.",
+      "C. Memoria aleatoria directa.",
+      "D. Dispositivo de manejo aleatorio."
+    ],
+    "correcta": 1,
+    "explicacion": "DMA (Direct Memory Access) es un hardware específico que permite a los periféricos transferir datos a la memoria RAM sin sobrecargar ni interrumpir a la CPU principal.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Traducción libre sin sentido técnico.",
+      "B": "Correcta. Traducción literal y funcional de Direct Memory Access.",
+      "C": "Incorrecta. Orden erróneo de los términos.",
+      "D": "Incorrecta. Acrónimo inventado para confundir."
+    }
+  },
+  {
+    "pregunta": "En una cabina de discos, ¿qué es un HOT SPARE?",
+    "opciones": [
+      "A. Cabina donde se ubican los discos.",
+      "B. Disco en espera de reemplazo por fallo.",
+      "C. Sistema de ventilación de las unidades de disco.",
+      "D. Último disco de la cadena de dispositivos de almacenamiento."
+    ],
+    "correcta": 1,
+    "explicacion": "Un 'Hot Spare' (repuesto en caliente) es un disco duro conectado y encendido pero vacío. El sistema RAID no lo usa hasta que otro disco se rompe, momento en el que el sistema vuelca los datos en él automáticamente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. A la cabina se le llama Enclosure o Storage Array.",
+      "B": "Correcta. Es el disco 'suplente' listo para entrar en acción.",
+      "C": "Incorrecta. Confusión intencionada por la palabra 'Hot' (caliente).",
+      "D": "Incorrecta. El orden no importa, es su función de repuesto lo que lo define."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es el significado de las siglas UDF en almacenamiento óptico?",
+    "opciones": [
+      "A. Universal Disk Format.",
+      "B. Universal Dispersed Frequency.",
+      "C. Union Device Free.",
+      "D. User Datagram Free."
+    ],
+    "correcta": 0,
+    "explicacion": "El formato Universal Disk Format (UDF) es un sistema de archivos independiente del sistema operativo usado habitualmente en la grabación de discos CD, DVD y Blu-Ray.",
+    "analisis_opciones": {
+      "A": "Correcta. Formato de disco universal aprobado por ISO/IEC.",
+      "B": "Incorrecta. Término técnico de telecomunicaciones falso.",
+      "C": "Incorrecta. Traducción inventada.",
+      "D": "Incorrecta. Mezcla el protocolo UDP con palabras aleatorias."
+    }
+  },
+  {
+    "pregunta": "En el mecanismo de entrada/salida controlado por sondeo (Polling):",
+    "opciones": [
+      "A. La CPU se desentiende del control de la transferencia.",
+      "B. La sincronización se hace mediante hardware; el dispositivo avisa a la CPU.",
+      "C. La CPU realiza por software tanto la sincronización como la transferencia.",
+      "D. Se programan los controladores del dispositivo y el hardware se encarga de todo."
+    ],
+    "correcta": 2,
+    "explicacion": "En el sistema por sondeo o 'polling', la CPU tiene que estar preguntando constantemente al periférico por software ('¿Estás listo? ¿Estás listo?'), lo que desperdicia muchísimos recursos del procesador.",
+    "analisis_opciones": {
+      "A": "Incorrecta. En el sondeo la CPU hace todo el trabajo, no se desentiende.",
+      "B": "Incorrecta. Eso sería entrada/salida por 'Interrupciones', donde el dispositivo avisa.",
+      "C": "Correcta. La CPU acapara el control ejecutando un bucle de comprobación.",
+      "D": "Incorrecta. Eso define el funcionamiento del acceso DMA."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de puerto transmite la información bit a bit de forma asíncrona?",
+    "opciones": [
+      "A. Puerto serie.",
+      "B. Puerto paralelo unidireccional.",
+      "C. Puerto paralelo bidireccional.",
+      "D. Son correctas la B y la C."
+    ],
+    "correcta": 0,
+    "explicacion": "El puerto serie envía los bits uno detrás de otro por el mismo cable (como una fila india) y de forma asíncrona (usando bits de inicio y parada en lugar de una señal de reloj común).",
+    "analisis_opciones": {
+      "A": "Correcta. Es la definición exacta de la comunicación serie antigua.",
+      "B": "Incorrecta. Un puerto paralelo transmite varios bits simultáneamente por canales distintos.",
+      "C": "Incorrecta. El puerto paralelo transmite bloques de bits en paralelo.",
+      "D": "Incorrecta. Ambas corresponden a transmisión paralela, no serie."
+    }
+  },
+  {
+    "pregunta": "¿Qué cinta magnética es utilizada principalmente en la grabación de audio de muy alta calidad y backup informático?",
+    "opciones": [
+      "A. DAT.",
+      "B. DLT.",
+      "C. LTO.",
+      "D. VXA."
+    ],
+    "correcta": 0,
+    "explicacion": "DAT (Digital Audio Tape) fue un formato desarrollado por Sony originalmente para grabar sonido digital sin compresión, que luego la informática adoptó para hacer copias de seguridad de datos (DDS).",
+    "analisis_opciones": {
+      "A": "Correcta. Nació para audio profesional antes de pasar a la informática.",
+      "B": "Incorrecta. DLT (Digital Linear Tape) siempre fue un formato exclusivo de datos.",
+      "C": "Incorrecta. LTO es el estándar empresarial actual, pero nunca fue de audio.",
+      "D": "Incorrecta. VXA es un formato propietario de datos de Exabyte Corporation."
+    }
+  },
+  {
+    "pregunta": "¿Qué capacidad nativa ofrece un cartucho de tecnología LTO-6 (Linear Tape-Open) Ultrium?",
+    "opciones": [
+      "A. 800 GB.",
+      "B. 1,5 TB.",
+      "C. 2,5 TB.",
+      "D. 6,25 TB."
+    ],
+    "correcta": 2,
+    "explicacion": "La capacidad nativa (sin compresión) de LTO-6 es de 2,5 TB por cartucho. Si se cuenta la capacidad comprimida (típica relación 2.5:1), llegaría a los 6,25 TB.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 800 GB es la capacidad nativa de LTO-4.",
+      "B": "Incorrecta. 1,5 TB es la capacidad nativa de LTO-5.",
+      "C": "Correcta. Según el estándar de evolución de cintas LTO.",
+      "D": "Incorrecta. Representaría la capacidad máxima comprimida, no la nativa."
+    }
+  },
+  {
+    "pregunta": "En el proceso de instalación de periféricos, ¿qué son técnicamente las interrupciones (IRQ)?",
+    "opciones": [
+      "A. Errores de hardware que detienen el proceso de ejecución.",
+      "B. Cortes en la comunicación física entre la controladora y la CPU.",
+      "C. Líneas por las que los dispositivos avisan a la CPU para solicitar una operación.",
+      "D. Procesos de comunicación incompletos entre el procesador y el periférico."
+    ],
+    "correcta": 2,
+    "explicacion": "Las IRQ (Interrupt ReQuest) son señales de hardware que permiten a los periféricos solicitar atención inmediata de la CPU para realizar tareas específicas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las interrupciones no son errores, sino un método normal de gestión de Entrada/Salida.",
+      "B": "Incorrecta. No son cortes físicos, sino señales de control lógicas a través del bus.",
+      "C": "Correcta. Define perfectamente el mecanismo de aviso del periférico hacia el procesador.",
+      "D": "Incorrecta. Una interrupción no implica que un proceso esté incompleto."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre el software OCR (Optical Character Recognition) es la más completa?",
+    "opciones": [
+      "A. Controla exclusivamente los periféricos de impresión.",
+      "B. Divide una imagen escaneada separando texto de imágenes.",
+      "C. Transforma una imagen escaneada en un fichero de texto editable.",
+      "D. Son correctas la B y la C."
+    ],
+    "correcta": 3,
+    "explicacion": "El OCR no solo 'lee' el texto para hacerlo editable, sino que primero debe analizar la composición de la página (layout) para distinguir qué bloques son texto y cuáles son gráficos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tiene relación con el control de impresoras.",
+      "B": "Incompleta. Es una fase necesaria pero no el fin último del software.",
+      "C": "Incompleta. Es el resultado final, pero omite el proceso de división previo.",
+      "D": "Correcta. Engloba tanto la segmentación de la imagen como la conversión a texto editable."
+    }
+  },
+  {
+    "pregunta": "¿Qué cantidad de memoria de vídeo mínima se precisa para una resolución de 1024x1024 puntos con color True Color (24 bits)?",
+    "opciones": [
+      "A. 1 MB.",
+      "B. 2 MB.",
+      "C. 3 MB.",
+      "D. 4 MB."
+    ],
+    "correcta": 2,
+    "explicacion": "Cálculo: 1024 x 1024 píxeles = 1.048.576 píxeles. True Color usa 3 bytes (24 bits) por píxel. 1.048.576 x 3 = 3.145.728 bytes, lo que equivale exactamente a 3 MB.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Solo alcanzaría para resoluciones menores o con menos profundidad de color.",
+      "B": "Incorrecta. Insuficiente para esta resolución en 24 bits.",
+      "C": "Correcta. Es el resultado del cálculo matemático basado en la profundidad de bit.",
+      "D": "Incorrecta. Es superior a lo mínimo necesario solicitado."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes unidades de magnitud de almacenamiento de información es mayor?",
+    "opciones": [
+      "A. Petabyte (PB).",
+      "B. Terabyte (TB).",
+      "C. Yottabyte (YB).",
+      "D. Zettabyte (ZB)."
+    ],
+    "correcta": 2,
+    "explicacion": "El orden ascendente es Tera (10^12), Peta (10^15), Exa (10^18), Zetta (10^21) y Yotta (10^24).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es inferior a Zetta y Yotta.",
+      "B": "Incorrecta. Es la unidad base de esta lista.",
+      "C": "Correcta. Es actualmente la unidad más alta definida por el SI antes de las nuevas incorporaciones.",
+      "D": "Incorrecta. Es la unidad inmediatamente anterior al Yottabyte."
+    }
+  },
+  {
+    "pregunta": "¿Qué caracteriza fundamentalmente a la partición activa de un disco duro?",
+    "opciones": [
+      "A. Debe ser una partición primaria y se utiliza para arrancar el sistema.",
+      "B. Se pueden marcar como activas hasta cuatro particiones primarias a la vez.",
+      "C. Siempre se le debe asignar la letra de unidad 'C:'.",
+      "D. El sistema operativo nunca se puede instalar en ella por seguridad."
+    ],
+    "correcta": 0,
+    "explicacion": "La partición activa es aquella partición primaria que contiene el gestor de arranque (bootloader) que el BIOS/UEFI cargará al encender el equipo.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el requisito indispensable para el inicio del ordenador.",
+      "B": "Incorrecta. Solo puede haber una única partición activa por disco físico.",
+      "C": "Incorrecta. La letra es una asignación lógica del sistema operativo y puede variar.",
+      "D": "Incorrecta. Al contrario, es el lugar habitual donde se instala el SO."
+    }
+  },
+  {
+    "pregunta": "¿Qué nombre recibe el mecanismo por el cual el brazo de un disco duro se desplaza desde el centro hasta el borde exterior para leer diferentes pistas?",
+    "opciones": [
+      "A. Giro rotacional.",
+      "B. Posicionamiento (Seeking).",
+      "C. Swapping.",
+      "D. Interleaving."
+    ],
+    "correcta": 1,
+    "explicacion": "El proceso físico de mover el cabezal radialmente sobre el plato para buscar una pista se llama búsqueda o 'Seeking'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El giro lo realiza el motor del eje (spindle) a velocidad constante.",
+      "B": "Correcta. Define el movimiento del actuador para situar las cabezas sobre el cilindro deseado.",
+      "C": "Incorrecta. Es un término de gestión de memoria virtual en el SO.",
+      "D": "Incorrecta. El entrelazado es un método para organizar sectores y mejorar la tasa de transferencia."
+    }
+  },
+  {
+    "pregunta": "En un disco SSD, ¿cómo se denomina a la unidad mínima sobre la que se puede realizar una operación de lectura o escritura?",
+    "opciones": [
+      "A. Sector.",
+      "B. Bloque.",
+      "C. Página.",
+      "D. Celda."
+    ],
+    "correcta": 2,
+    "explicacion": "En la memoria Flash NAND de los SSD, los datos se leen y escriben en 'Páginas' (típicamente de 4KB o 8KB). Sin embargo, solo se pueden borrar en 'Bloques' (conjunto de páginas).",
+    "analisis_opciones": {
+      "A": "Incorrecta. El sector es la unidad mínima física en discos magnéticos (HDD).",
+      "B": "Incorrecta. Un bloque en SSD es la unidad mínima de BORRADO, no de escritura.",
+      "C": "Correcta. Es la unidad básica de direccionamiento para lectura/escritura en chips Flash.",
+      "D": "Incorrecta. La celda es el elemento físico que almacena los bits (SLC, MLC, TLC)."
+    }
+  },
+  {
+    "pregunta": "Sobre el RAID 6, ¿cuál es su principal ventaja comparativa frente al RAID 5?",
+    "opciones": [
+      "A. Es mucho más rápido al no calcular paridad.",
+      "B. Permite la pérdida de hasta dos discos simultáneos sin pérdida de datos.",
+      "C. Solo requiere un mínimo de 2 discos para funcionar.",
+      "D. Utiliza el método de 'mirroring' puro."
+    ],
+    "correcta": 1,
+    "explicacion": "El RAID 6 utiliza doble paridad distribuida, lo que le permite sobrevivir al fallo de 2 unidades del conjunto, a diferencia del RAID 5 que solo aguanta 1 fallo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es más lento que el RAID 5 porque debe calcular y escribir dos bloques de paridad.",
+      "B": "Correcta. Es su característica definitoria de alta disponibilidad.",
+      "C": "Incorrecta. El RAID 6 requiere un mínimo de 4 discos.",
+      "D": "Incorrecta. El mirroring es propio del RAID 1."
+    }
+  },
+  {
+    "pregunta": "¿Qué técnica de almacenamiento permite mover automáticamente los datos entre diferentes tipos de disco (SSD, SAS, SATA) según la frecuencia de acceso?",
+    "opciones": [
+      "A. Deduplicación.",
+      "B. Auto-Tiering (Almacenamiento jerárquico).",
+      "C. Thin Provisioning.",
+      "D. Snapshot."
+    ],
+    "correcta": 1,
+    "explicacion": "El Auto-Tiering optimiza costes moviendo los datos 'calientes' (muy usados) a SSD y los 'fríos' (poco usados) a discos mecánicos lentos de gran capacidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Elimina copias duplicadas de datos para ahorrar espacio.",
+      "B": "Correcta. Es la gestión inteligente de capas de almacenamiento.",
+      "C": "Incorrecta. Permite asignar virtualmente más espacio de disco del que realmente hay físicamente.",
+      "D": "Incorrecta. Es una captura del estado del sistema en un momento dado."
+    }
+  },
+  {
+    "pregunta": "En las políticas de respaldo, la rotación 'Abuelo-Padre-Hijo' se basa típicamente en copias:",
+    "opciones": [
+      "A. Mensuales, semanales y diarias.",
+      "B. Solo copias completas cada 12 horas.",
+      "C. Copias en espejo constante en la nube.",
+      "D. Cintas de un solo uso."
+    ],
+    "correcta": 0,
+    "explicacion": "Es el esquema de rotación de medios más común: el Hijo es la copia diaria, el Padre la semanal y el Abuelo la mensual.",
+    "analisis_opciones": {
+      "A": "Correcta. Define la jerarquía temporal de la política de backup.",
+      "B": "Incorrecta. Sería demasiado costoso y no define una rotación de larga duración.",
+      "C": "Incorrecta. Eso es replicación o mirroring, no un esquema de rotación.",
+      "D": "Incorrecta. La rotación busca precisamente la reutilización programada de medios."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la principal característica de una Storage Area Network (SAN)?",
+    "opciones": [
+      "A. Se conecta a la red LAN compartiendo archivos mediante protocolo HTTP.",
+      "B. El servidor ve el almacenamiento como si fuera un disco local (nivel de bloque).",
+      "C. Es un disco duro externo conectado por USB al servidor.",
+      "D. Solo permite la conexión de un único servidor a la vez."
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia del NAS (que trabaja con ficheros), la SAN trabaja a nivel de bloque. El servidor 'cree' que el almacenamiento remoto es un disco duro físico conectado internamente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso describe a un servidor de archivos o un NAS básico.",
+      "B": "Correcta. Es la esencia del almacenamiento por bloques en red de alta velocidad.",
+      "C": "Incorrecta. Eso es DAS (Direct Attached Storage).",
+      "D": "Incorrecta. La SAN está diseñada para que múltiples servidores compartan el mismo almacenamiento masivo."
+    }
+  },
+  {
+    "pregunta": "¿Qué ocurre en una copia de seguridad Diferencial?",
+    "opciones": [
+      "A. Se copian todos los datos del sistema cada vez.",
+      "B. Se copian los datos modificados desde la última copia completa.",
+      "C. Se copian los datos modificados desde la última copia incremental.",
+      "D. Se borran los datos del disco original tras la copia."
+    ],
+    "correcta": 1,
+    "explicacion": "La copia diferencial siempre toma como referencia la última completa. Su tamaño crece cada día hasta que se vuelve a realizar otra copia completa.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa es la definición de copia completa.",
+      "B": "Correcta. Referencia siempre a la última completa.",
+      "C": "Incorrecta. Esa es la definición de copia incremental (referencia al último backup sea cual sea).",
+      "D": "Incorrecta. Eso sería un movimiento o archivado de datos, no un backup estándar."
+    }
+  },
+  {
+    "pregunta": "En un disco duro físico, el parámetro 'ZBR' (Zone Bit Recording) consiste en:",
+    "opciones": [
+      "A. Grabar más sectores en las pistas exteriores que en las interiores.",
+      "B. Usar una sola zona magnética para todo el disco.",
+      "C. Cifrar los sectores de arranque automáticamente.",
+      "D. Detener el giro del disco para ahorrar energía."
+    ],
+    "correcta": 0,
+    "explicacion": "Como las pistas exteriores son físicamente más largas, el ZBR permite meter más sectores en ellas, aprovechando mejor la superficie del plato.",
+    "analisis_opciones": {
+      "A": "Correcta. Optimiza la densidad de grabación según el radio de la pista.",
+      "B": "Incorrecta. El disco está dividido en miles de pistas y sectores.",
+      "C": "Incorrecta. No tiene relación con la seguridad de los datos.",
+      "D": "Incorrecta. Es una técnica de grabación, no de ahorro de energía."
+    }
+  },
+  {
+    "pregunta": "¿Qué lenguaje de descripción de página (PDL) se caracteriza por ser independiente de la resolución del dispositivo y tratar los elementos como objetos matemáticos?",
+    "opciones": [
+      "A. PCL (Printer Control Language).",
+      "B. PostScript.",
+      "C. GDI.",
+      "D. ASCII."
+    ],
+    "correcta": 1,
+    "explicacion": "PostScript, desarrollado por Adobe, es un lenguaje de programación completo que describe la página de forma vectorial, lo que permite imprimir con la máxima calidad que soporte la impresora.",
+    "analisis_opciones": {
+      "A": "Incorrecta. PCL (de HP) es un lenguaje orientado a comandos más dependiente del hardware de la impresora.",
+      "B": "Correcta. Es el estándar para autoedición profesional por su independencia del dispositivo.",
+      "C": "Incorrecta. GDI no es un lenguaje de descripción de página, sino una interfaz de Windows donde el PC procesa la imagen.",
+      "D": "Incorrecta. Es un código de caracteres simple, no un lenguaje de descripción de gráficos."
+    }
+  },
+  {
+    "pregunta": "¿Qué tecnología de reconocimiento se utiliza específicamente para procesar de forma automática exámenes tipo test o boletos de lotería?",
+    "opciones": [
+      "A. OCR (Reconocimiento Óptico de Caracteres).",
+      "B. OMR (Reconocimiento Óptico de Marcas).",
+      "C. MICR (Reconocimiento de caracteres de tinta magnética).",
+      "D. IMR (Reconocimiento Inteligente de Imágenes)."
+    ],
+    "correcta": 1,
+    "explicacion": "El OMR detecta la presencia o ausencia de una marca negra en posiciones predeterminadas del papel.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El OCR identifica caracteres alfabéticos y numéricos.",
+      "B": "Correcta. Es el sistema más rápido para corregir cuestionarios de respuesta múltiple.",
+      "C": "Incorrecta. El MICR se usa principalmente en cheques bancarios para leer números con tinta magnética.",
+      "D": "Incorrecta. El IMR se utiliza para reconocer formas o imágenes complejas, no marcas simples."
+    }
+  },
+  {
+    "pregunta": "En el almacenamiento SSD, ¿qué tecnología permite almacenar 3 bits de información en una sola celda física?",
+    "opciones": [
+      "A. SLC (Single Level Cell).",
+      "B. MLC (Multi Level Cell).",
+      "C. TLC (Triple Level Cell).",
+      "D. QLC (Quad Level Cell)."
+    ],
+    "correcta": 2,
+    "explicacion": "La tecnología TLC permite mayor densidad de almacenamiento a menor coste, aunque tiene menor vida útil que SLC o MLC.",
+    "analisis_opciones": {
+      "A": "Incorrecta. SLC solo guarda 1 bit por celda; es la más rápida y duradera.",
+      "B": "Incorrecta. MLC guarda 2 bits por celda.",
+      "C": "Correcta. Como indica su nombre (Triple), almacena 3 bits.",
+      "D": "Incorrecta. QLC guarda 4 bits por celda."
+    }
+  },
+  {
+    "pregunta": "¿En qué consiste la técnica de 'Deduplicación de datos' en sistemas de backup empresarial?",
+    "opciones": [
+      "A. En hacer dos copias de seguridad iguales por si una falla.",
+      "B. En eliminar los bloques de datos repetidos para ahorrar espacio de almacenamiento.",
+      "C. En cifrar los datos para que nadie pueda leerlos.",
+      "D. En comprimir los archivos usando el formato ZIP."
+    ],
+    "correcta": 1,
+    "explicacion": "La deduplicación identifica trozos de datos que ya han sido guardados previamente y solo almacena un puntero a la copia original.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería redundancia o mirroring, no deduplicación.",
+      "B": "Correcta. Es vital en copias de seguridad para reducir drásticamente el consumo de disco o cinta.",
+      "C": "Incorrecta. El cifrado es una medida de seguridad, no de optimización de espacio.",
+      "D": "Incorrecta. La compresión actúa sobre un solo archivo; la deduplicación actúa sobre todo el conjunto de datos del sistema."
+    }
+  },
+  {
+    "pregunta": "Sobre el RAID 10 (o RAID 1+0), es correcto afirmar que:",
+    "opciones": [
+      "A. Es una división de espejos que requiere un mínimo de 4 discos.",
+      "B. Es un espejo de divisiones que requiere un mínimo de 2 discos.",
+      "C. Utiliza paridad distribuida como el RAID 5.",
+      "D. Si falla un solo disco, se pierde toda la información del array."
+    ],
+    "correcta": 0,
+    "explicacion": "El RAID 10 combina la seguridad del espejo (RAID 1) con la velocidad de la división (RAID 0).",
+    "analisis_opciones": {
+      "A": "Correcta. Proporciona alto rendimiento y alta tolerancia a fallos, pero es costoso.",
+      "B": "Incorrecta. El RAID 10 siempre requiere un número par de discos, siendo el mínimo 4.",
+      "C": "Incorrecta. El RAID 10 no utiliza cálculos de paridad, solo espejos.",
+      "D": "Incorrecta. Puede sobrevivir al fallo de varios discos, siempre que no fallen ambos discos de una misma pareja en espejo."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de pantalla táctil se basa en el cambio de corriente eléctrica al tocarla con un elemento conductor como el dedo, y no permite el uso de lápices de plástico comunes?",
+    "opciones": [
+      "A. Pantallas Resistivas.",
+      "B. Pantallas Capacitivas.",
+      "C. Pantallas de Infrarrojos.",
+      "D. Pantallas de Ondas Acústicas."
+    ],
+    "correcta": 1,
+    "explicacion": "Las pantallas capacitivas son las que usan los smartphones modernos; detectan la distorsión del campo electrostático de la pantalla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las resistivas se basan en la presión física y funcionan con cualquier objeto (dedo, puntero, guantes).",
+      "B": "Correcta. Son más precisas y permiten multitouch, pero requieren contacto conductor.",
+      "C": "Incorrecta. Usan emisores y receptores de luz en los bordes para detectar el corte del rayo.",
+      "D": "Incorrecta. Utilizan ondas de ultrasonido que viajan por el panel."
+    }
+  },
+  {
+    "pregunta": "En relación a las cintas magnéticas LTO, ¿qué es la característica 'WORM'?",
+    "opciones": [
+      "A. Un virus que borra los datos de la cinta.",
+      "B. Una capacidad que impide que los datos grabados sean borrados o sobreescritos.",
+      "C. Un sistema de limpieza automática del cabezal.",
+      "D. Un método para duplicar la velocidad de transferencia."
+    ],
+    "correcta": 1,
+    "explicacion": "WORM (Write Once, Read Many) garantiza la integridad de los datos para cumplimiento legal, impidiendo cualquier alteración tras la primera grabación.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un término técnico de almacenamiento, no de malware.",
+      "B": "Correcta. Es fundamental para archivos históricos y evidencias legales.",
+      "C": "Incorrecta. La limpieza se hace con cartuchos específicos de limpieza.",
+      "D": "Incorrecta. La velocidad depende de la generación LTO, no de esta función."
+    }
+  },
+  {
+    "pregunta": "¿Cómo se denomina al periférico de entrada fotosensible que permite interactuar con la pantalla detectando el haz de electrones del monitor (CRT)?",
+    "opciones": [
+      "A. Ratón óptico.",
+      "B. Lápiz óptico.",
+      "C. Stylus capacitivo.",
+      "D. Tableta digitalizadora."
+    ],
+    "correcta": 1,
+    "explicacion": "El lápiz óptico contiene un receptor de luz que detecta el paso del haz de electrones por un punto concreto de la pantalla CRT para enviar la coordenada a la CPU.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El ratón óptico detecta el movimiento mediante un sensor sobre una superficie plana, no en la pantalla.",
+      "B": "Correcta. Es la definición clásica de este periférico de entrada incluido en tu temario.",
+      "C": "Incorrecta. Un stylus capacitivo funciona por contacto eléctrico en pantallas modernas, no por luz.",
+      "D": "Incorrecta. La tableta es una superficie externa, no un dispositivo que apunta directamente a la pantalla."
+    }
+  },
+  {
+    "pregunta": "¿Qué periférico de entrada es el más adecuado para trabajos de diseño técnico y CAD, permitiendo una precisión muy superior a la del ratón convencional?",
+    "opciones": [
+      "A. Trackball.",
+      "B. Pantalla táctil resistiva.",
+      "C. Tableta digitalizadora.",
+      "D. Escáner cenital."
+    ],
+    "correcta": 2,
+    "explicacion": "Las tabletas digitalizadoras (o tabletas gráficas) utilizan un lápiz especial que permite capturar el movimiento con alta resolución, ideal para dibujos técnicos y artísticos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El trackball es una variante del ratón que ahorra espacio, pero no tiene la precisión de un lápiz para dibujo.",
+      "B": "Incorrecta. La pantalla resistiva es menos precisa y requiere presión física.",
+      "C": "Correcta. Es el estándar para digitalización de planos y diseño profesional.",
+      "D": "Incorrecta. El escáner es para entrada de imágenes ya existentes, no para creación de trazados nuevos."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de un Plotter (Trazador gráfico) dentro de los periféricos de salida?",
+    "opciones": [
+      "A. Imprimir facturas a gran velocidad.",
+      "B. Realizar impresiones de gran formato y dibujos lineales de alta precisión.",
+      "C. Escanear planos de arquitectura.",
+      "D. Proyectar la imagen del ordenador en una pared."
+    ],
+    "correcta": 1,
+    "explicacion": "El plotter está especializado en la salida de gráficos vectoriales (planos, mapas, carteles) en soportes de gran tamaño.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Para facturas se usarían impresoras matriciales o láser de oficina.",
+      "B": "Correcta. Define la utilidad del plotter en entornos de ingeniería y diseño gráfico.",
+      "C": "Incorrecta. Eso es función de un escáner de gran formato.",
+      "D": "Incorrecta. Eso es un proyector de vídeo o cañón."
+    }
+  },
+  {
+    "pregunta": "En cuanto a los métodos de impresión, ¿qué caracteriza a las impresoras de 'Cera Térmica'?",
+    "opciones": [
+      "A. Usan un tambor fotosensible y polvo seco.",
+      "B. Utilizan una cinta con paneles de cera de colores que se derriten sobre el papel.",
+      "C. Golpean el papel con un martillo metálico.",
+      "D. Funcionan únicamente con papel autocopiativo."
+    ],
+    "correcta": 1,
+    "explicacion": "Las impresoras de cera térmica transfieren el color mediante un cabezal térmico que funde la cera de una cinta sobre un papel tratado o transparencias.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa es la descripción de una impresora láser.",
+      "B": "Correcta. Es el método técnico de transferencia de cera fundida.",
+      "C": "Incorrecta. Eso describe a las impresoras de impacto.",
+      "D": "Incorrecta. Ese papel es específico para matriciales de impacto."
+    }
+  },
+  {
+    "pregunta": "¿Qué nombre recibe el sistema de archivos utilizado habitualmente en las unidades de memoria Flash y tarjetas SD para optimizar su rendimiento?",
+    "opciones": [
+      "A. NTFS.",
+      "B. ext4.",
+      "C. exFAT (Extended File Allocation Table).",
+      "D. ZFS."
+    ],
+    "correcta": 2,
+    "explicacion": "exFAT es el sistema de archivos diseñado por Microsoft específicamente para memorias flash, siendo más ligero que NTFS y superando la limitación de archivos de 4GB de FAT32.",
+    "analisis_opciones": {
+      "A": "Incorrecta. NTFS es el estándar de Windows para discos duros, pero genera demasiadas escrituras para memorias flash.",
+      "B": "Incorrecta. Es el sistema estándar de Linux.",
+      "C": "Correcta. Es el estándar recomendado para SDXC y memorias flash modernas.",
+      "D": "Incorrecta. Es un sistema de archivos avanzado de alta integridad para servidores y NAS."
+    }
+  },
+  {
+    "pregunta": "Dentro de la tecnología de escaneado, ¿en qué consiste el Reconocimiento Inteligente de Caracteres (ICR)?",
+    "opciones": [
+      "A. En leer códigos de barras de alta densidad.",
+      "B. En una evolución del OCR capaz de interpretar texto manuscrito.",
+      "C. En detectar marcas de lápiz en cuestionarios.",
+      "D. En convertir imágenes en archivos vectoriales."
+    ],
+    "correcta": 1,
+    "explicacion": "El ICR es una versión avanzada del OCR que utiliza redes neuronales para interpretar letras escritas a mano (no solo de imprenta).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es OBR (Optical Barcode Recognition).",
+      "B": "Correcta. Es la definición específica de ICR según tu temario.",
+      "C": "Incorrecta. Eso es OMR (Optical Mark Recognition).",
+      "D": "Incorrecta. Eso es vectorización o trazado de imagen."
+    }
+  },
+  {
+    "pregunta": "En las impresoras láser, ¿qué elemento es el encargado de cargar eléctricamente el tambor fotosensible antes de que actúe el láser?",
+    "opciones": [
+      "A. El fusor.",
+      "B. El hilo de corona (o rodillo de carga).",
+      "C. El tóner.",
+      "D. El inversor."
+    ],
+    "correcta": 1,
+    "explicacion": "El hilo de corona aplica una carga electrostática uniforme al tambor para que el láser pueda 'dibujar' la imagen sobre él mediante descarga.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El fusor aplica calor al final para pegar el polvo al papel.",
+      "B": "Correcta. Es la pieza que inicia el proceso electrostático.",
+      "C": "Incorrecta. El tóner es el consumible (polvo negro).",
+      "D": "Incorrecta. No es una pieza del proceso de impresión láser."
+    }
+  },
+  {
+    "pregunta": "En la gestión de copias de seguridad, ¿qué ventaja ofrece el 'Synthetic Full Backup' (Copia completa sintética)?",
+    "opciones": [
+      "A. No ocupa espacio en el disco duro.",
+      "B. Crea una copia completa a partir de backups incrementales previos sin sobrecargar la red.",
+      "C. Es una copia que solo se guarda en la memoria RAM.",
+      "D. Solo funciona con cintas magnéticas de tipo LTO-1."
+    ],
+    "correcta": 1,
+    "explicacion": "En lugar de transferir todos los datos del servidor al backup, el sistema construye la 'foto completa' usando los datos que ya tiene de las copias anteriores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ocupa el mismo espacio que una copia completa real.",
+      "B": "Correcta. Ahorra ancho de banda de red y tiempo de proceso en el servidor origen.",
+      "C": "Incorrecta. Es un proceso de almacenamiento persistente.",
+      "D": "Incorrecta. Es una tecnología de software independiente del medio físico."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de panel LCD se caracteriza por ofrecer los mejores ángulos de visión (hasta 178º) y la representación de color más fiel, siendo el estándar para diseño gráfico?",
+    "opciones": [
+      "A. Panel TN (Twisted Nematic).",
+      "B. Panel VA (Vertical Alignment).",
+      "C. Panel IPS (In-Plane Switching).",
+      "D. Panel CRT."
+    ],
+    "correcta": 2,
+    "explicacion": "Los paneles IPS alinean los cristales líquidos de forma horizontal, lo que evita las distorsiones de color al mirar la pantalla desde los lados.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Los paneles TN son los más rápidos pero tienen ángulos de visión muy pobres y colores mediocres.",
+      "B": "Incorrecta. Los paneles VA son un punto medio; destacan por sus negros profundos y contraste, pero no superan al IPS en color.",
+      "C": "Correcta. Es la tecnología líder en fidelidad de imagen y ángulos de visión.",
+      "D": "Incorrecta. El CRT no es un tipo de panel LCD, sino la tecnología antigua de tubos de rayos catódicos."
+    }
+  },
+  {
+    "pregunta": "¿En qué tecnología de visualización cada píxel genera su propia luz (autoemisivo), permitiendo negros puros al apagarse por completo?",
+    "opciones": [
+      "A. LED.",
+      "B. OLED (Organic Light-Emitting Diode).",
+      "C. LCD TFT.",
+      "D. Plasma."
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia del LCD/LED que requiere una fuente de luz trasera (backlight), en el OLED los materiales orgánicos se iluminan individualmente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Los monitores LED son en realidad paneles LCD con retroiluminación de diodos LED.",
+      "B": "Correcta. Es la tecnología que permite contraste infinito y pantallas extremadamente delgadas.",
+      "C": "Incorrecta. El LCD TFT requiere siempre de una fuente de luz externa que pase a través de los cristales líquidos.",
+      "D": "Incorrecta. Aunque el plasma también era autoemisivo, es una tecnología obsoleta no destacada como principal en tu temario actual."
+    }
+  },
+  {
+    "pregunta": "¿Qué parámetro de un monitor define la capacidad de la pantalla para mostrar imágenes en movimiento de forma fluida, midiéndose en Hercios (Hz)?",
+    "opciones": [
+      "A. Tiempo de respuesta.",
+      "B. Tasa de refresco (Refresh Rate).",
+      "C. Relación de aspecto.",
+      "D. Luminancia."
+    ],
+    "correcta": 1,
+    "explicacion": "La tasa de refresco indica cuántas veces por segundo se actualiza la imagen en pantalla. 60Hz significa 60 actualizaciones por segundo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El tiempo de respuesta (medido en ms) es lo que tarda un píxel en cambiar de color.",
+      "B": "Correcta. Es el factor clave para la fluidez visual.",
+      "C": "Incorrecta. La relación de aspecto es la proporción entre el ancho y el alto (ej. 16:9).",
+      "D": "Incorrecta. La luminancia mide la intensidad de luz o brillo de la pantalla (Candelas/m2)."
+    }
+  },
+  {
+    "pregunta": "La tecnología de paneles 'AMOLED', muy común en dispositivos móviles de gama alta, es una variante de:",
+    "opciones": [
+      "A. Pantallas de Cristal Líquido (LCD).",
+      "B. Tubos de vacío.",
+      "C. Pantallas OLED con matriz activa.",
+      "D. Papel electrónico (e-Ink)."
+    ],
+    "correcta": 2,
+    "explicacion": "AMOLED significa Active-Matrix Organic Light-Emitting Diode, añadiendo una capa de transistores (TFT) para controlar cada píxel OLED.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No utiliza cristales líquidos ni retroiluminación.",
+      "B": "Incorrecta. Pertenece a la era pre-transistor.",
+      "C": "Correcta. Combina los beneficios del OLED con el control individual de píxeles de matriz activa.",
+      "D": "Incorrecta. El e-Ink es para lectores de libros y no emite luz propia de la misma forma."
+    }
+  },
+  {
+    "pregunta": "¿Qué nombre recibe el método utilizado en discos duros para organizar los sectores de forma no contigua y dar tiempo a la controladora para procesar los datos antes de que pase el siguiente sector?",
+    "opciones": [
+      "A. Interleaving (Entrelazado).",
+      "B. ZBR (Zone Bit Recording).",
+      "C. Swapping.",
+      "D. Fragmentación."
+    ],
+    "correcta": 0,
+    "explicacion": "El entrelazado permite que el disco no tenga que dar una vuelta completa para leer el sector lógico siguiente si la controladora es más lenta que el giro del disco.",
+    "analisis_opciones": {
+      "A": "Correcta. Optimiza la lectura secuencial en hardware antiguo o específico.",
+      "B": "Incorrecta. El ZBR varía el número de sectores por pista para aprovechar el espacio exterior.",
+      "C": "Incorrecta. Es un proceso de gestión de memoria virtual del sistema operativo.",
+      "D": "Incorrecta. La fragmentación es un estado ineficiente de almacenamiento de archivos a nivel lógico."
+    }
+  },
+  {
+    "pregunta": "En la tecnología de memoria Flash, ¿cuál es la principal diferencia entre el tipo NOR y el tipo NAND?",
+    "opciones": [
+      "A. NOR es más barata y NAND más cara.",
+      "B. NOR permite acceso aleatorio (ejecución de código) y NAND acceso por bloques (almacenamiento masivo).",
+      "C. NAND no es volátil y NOR sí lo es.",
+      "D. Solo la memoria NAND se puede borrar eléctricamente."
+    ],
+    "correcta": 1,
+    "explicacion": "La memoria NOR es ideal para almacenar el firmware (BIOS) porque permite leer datos de forma aleatoria, mientras que la NAND es la que usan los USB y SSD por su alta densidad de almacenamiento.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La NAND es significativamente más barata de producir por bit.",
+      "B": "Correcta. Define el uso funcional de ambas arquitecturas según tu temario.",
+      "C": "Incorrecta. Ambas son tipos de memoria EEPROM no volátil.",
+      "D": "Incorrecta. Ambas son memorias Flash, por lo que ambas son borrables eléctricamente."
+    }
+  },
+  {
+    "pregunta": "¿Cómo se denomina al comando que permite al sistema operativo informar a un SSD qué bloques de datos ya no se consideran en uso para que puedan ser borrados físicamente?",
+    "opciones": [
+      "A. Defrag.",
+      "B. SMART.",
+      "C. TRIM.",
+      "D. Over-provisioning."
+    ],
+    "correcta": 2,
+    "explicacion": "El comando TRIM es vital para mantener la velocidad del SSD, ya que evita que el disco tenga que realizar ciclos de lectura-borrado-escritura innecesarios en bloques vacíos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La desfragmentación es perjudicial para la vida útil de los SSD.",
+      "B": "Incorrecta. SMART es un sistema de monitorización para predecir fallos en el disco.",
+      "C": "Correcta. Es la función específica de optimización para unidades de estado sólido.",
+      "D": "Incorrecta. Es la reserva de espacio físico adicional para mejorar la durabilidad del SSD."
+    }
+  },
+  {
+    "pregunta": "En cuanto al almacenamiento de imágenes, ¿cuál de los siguientes formatos se considera 'sin pérdida' (lossless) y soporta transparencia y animaciones?",
+    "opciones": [
+      "A. JPEG.",
+      "B. GIF.",
+      "C. PNG.",
+      "D. TIFF."
+    ],
+    "correcta": 1,
+    "explicacion": "El formato GIF utiliza compresión LZW (sin pérdida de información original) y es el único de la lista que soporta animaciones simples de forma nativa.",
+    "analisis_opciones": {
+      "A": "Incorrecta. JPEG es un formato con pérdida (lossy) que descarta información para reducir tamaño.",
+      "B": "Correcta. Cumple los requisitos de ser 'sin pérdida' (dentro de su paleta de 256 colores) y soportar animación.",
+      "C": "Incorrecta. PNG no soporta animaciones (para eso está APNG).",
+      "D": "Incorrecta. TIFF es para alta calidad profesional pero no soporta animaciones ni es común para web."
+    }
+  },
+  {
+    "pregunta": "¿Cómo se denomina el parámetro de un ratón que indica la cantidad de veces que este informa de su posición al ordenador por segundo?",
+    "opciones": [
+      "A. DPI (Dots Per Inch).",
+      "B. Polling Rate (Tasa de sondeo).",
+      "C. Aceleración.",
+      "D. Velocidad de seguimiento."
+    ],
+    "correcta": 1,
+    "explicacion": "El Polling Rate se mide en Hercios (Hz); un ratón con 1000Hz informa de su posición cada 1 milisegundo al sistema.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El DPI mide la sensibilidad o precisión del movimiento físico, no la frecuencia de reporte.",
+      "B": "Correcta. Define la frecuencia de comunicación entre el periférico y el SO.",
+      "C": "Incorrecta. Es la relación entre la velocidad física del ratón y el movimiento del cursor.",
+      "D": "Incorrecta. Mide la velocidad máxima que el sensor puede registrar sin fallar."
+    }
+  },
+  {
+    "pregunta": "¿Qué tecnología de almacenamiento utiliza un láser para calentar un punto del disco por encima de su 'Temperatura de Curie' y un campo magnético para cambiar su polaridad?",
+    "opciones": [
+      "A. Discos Ópticos (CD/DVD).",
+      "B. Discos Magneto-Ópticos.",
+      "C. Discos Duros (HDD).",
+      "D. Cintas LTO."
+    ],
+    "correcta": 1,
+    "explicacion": "Los discos magneto-ópticos combinan ambas tecnologías para permitir la reescritura de datos con gran estabilidad y durabilidad térmica.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Usan solo luz láser para alterar una capa química o física (pits y lands).",
+      "B": "Correcta. Utilizan el calor del láser para permitir el cambio magnético de los datos.",
+      "C": "Incorrecta. Usan exclusivamente campos electromagnéticos a temperatura ambiente.",
+      "D": "Incorrecta. Es una tecnología puramente magnética de acceso secuencial."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la capacidad máxima estándar de un disco Blu-Ray de doble capa (BD-DL)?",
+    "opciones": [
+      "A. 25 GB.",
+      "B. 50 GB.",
+      "C. 100 GB.",
+      "D. 128 GB."
+    ],
+    "correcta": 1,
+    "explicacion": "Mientras que un Blu-Ray de capa simple tiene 25 GB, el de doble capa (Double Layer) alcanza los 50 GB.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la capacidad de un Blu-Ray de capa sencilla.",
+      "B": "Correcta. Es el estándar para películas de alta definición y juegos.",
+      "C": "Incorrecta. Corresponde a los discos BDXL de tres capas.",
+      "D": "Incorrecta. Es la capacidad máxima teórica de los discos BDXL de cuatro capas."
+    }
+  },
+  {
+    "pregunta": "En el esquema de rotación de backups 'Torre de Hanói', ¿cuál es el objetivo principal?",
+    "opciones": [
+      "A. Tener una copia idéntica en cada disco cada día.",
+      "B. Optimizar el uso de soportes permitiendo recuperar datos de diferentes antigüedades con pocos medios físicos.",
+      "C. Borrar los datos más antiguos automáticamente cada 24 horas.",
+      "D. Duplicar la velocidad de la copia de seguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "La Torre de Hanói es un método exponencial que permite mantener un historial largo de versiones usando un número reducido de cintas o discos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería un mirroring simple y muy ineficiente en medios.",
+      "B": "Correcta. Es un equilibrio matemático entre seguridad e inversión en hardware.",
+      "C": "Incorrecta. Al contrario, busca preservar versiones antiguas de forma inteligente.",
+      "D": "Incorrecta. No influye en el rendimiento de la transferencia, solo en la gestión de los medios."
+    }
   }
 ]

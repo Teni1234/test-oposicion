@@ -1,0 +1,1723 @@
+[
+  {
+    "pregunta": "1. En PHP 7, dado el siguiente array: $monedas = array(\"bitcoin\", \"ada\", \"ripple\"), ¿qué sentencia permite mostrar el número de elementos que tiene?",
+    "opciones": ["A. echo str_len($monedas);", "B. echo count($monedas);", "C. echo size($monedas);", "D. echo length($monedas);"],
+    "correcta": 1,
+    "explicacion": "En PHP, la función count() devuelve el número de elementos de un array[cite: 13].",
+    "analisis_opciones": {
+      "A": "Incorrecta. strlen es para strings.",
+      "B": "Correcta. Función estándar de PHP[cite: 13].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "2. Cuando para suministrar un valor a una subrutina de un programa, le indicamos la dirección de memoria donde se encuentra dicho valor, decimos que es un paso de parámetro de tipo:",
+    "opciones": ["A. Por valor.", "B. Por referencia.", "C. Absoluto.", "D. Estático."],
+    "correcta": 1,
+    "explicacion": "Al pasar la dirección de memoria, se está pasando una referencia al objeto original[cite: 2].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Pasa una copia del valor.",
+      "B": "Correcta. Pasa la dirección de memoria[cite: 2].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "3. ¿Cuál de los siguientes es un lenguaje declarativo?",
+    "opciones": ["A. Pascal", "B. SQL", "C. C", "D. Ada"],
+    "correcta": 1,
+    "explicacion": "SQL se basa en el paradigma declarativo, donde se define el resultado deseado y no los pasos para obtenerlo[cite: 3, 23].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es imperativo[cite: 2].",
+      "B": "Correcta. Lenguaje de consulta declarativo[cite: 3].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "4. En lenguaje C, dentro de un programa, los comentarios se introducen entre los caracteres:",
+    "opciones": ["A. # y # .", "B. /* y */ .", "C. (* y *) .", "D. { y } ."],
+    "correcta": 1,
+    "explicacion": "C utiliza los delimitadores /* y */ para comentarios de bloque[cite: 4].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Estándar de C[cite: 4].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál de las siguientes afirmaciones es FALSA respecto al tipo de datos \"enumeración\"?",
+    "opciones": ["A. El espacio ocupado en memoria por una variable enumeración es independiente del número de valores posibles.", "B. La representación interna suele hacerse mediante tipos enteros.", "C. Una función puede devolver una variable de tipo enumeración.", "D. Visual Basic .NET permite los tipos enumeración."],
+    "correcta": 0,
+    "explicacion": "Esta pregunta es de 'Falsa'. El espacio depende del tipo subyacente (ej. int), pero la afirmación A es la que se marca como falsa en este contexto de diseño[cite: 5].",
+    "analisis_opciones": {
+      "A": "Falsa. Marcada como respuesta correcta por ser la afirmación incorrecta[cite: 5].",
+      "B": "Verdadera.",
+      "C": "Verdadera.",
+      "D": "Verdadera."
+    }
+  },
+  {
+    "pregunta": "6. En C++, si en una clase declaramos una función, que no es miembro de ella, como friend (amiga), ¿qué conseguimos?",
+    "opciones": ["A. Es una manera de conseguir el polimorfismo de funciones.", "B. La sobrecarga de esa función.", "C. Que esa función acceda a la parte privada de la clase donde se declara.", "D. Que esa función acceda a la parte pública de la clase donde se declara."],
+    "correcta": 2,
+    "explicacion": "Las funciones friend pueden acceder a los miembros private y protected de la clase[cite: 6].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Rompe el encapsulamiento para esa función específica[cite: 6].",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "7. Hablando de lenguajes de programación, una de las más interesantes capacidades de ciertos lenguajes es poder realizar llamadas recursivas. Esto consiste en que:",
+    "opciones": ["A. Un programa puede utilizar recursivamente distintos tipos de variables, es decir, siempre que sea necesario.", "B. Si una entidad es lo bastante importante en el mundo real modelado como para requerir una representación explícita en una base de datos, tal entidad deberá ser definitivamente susceptible de identificación definida y sin ambiguedad.", "C. Un programa puede llamarse a sí mismo.", "D. El programa contendrá relaciones referenciales entre los valores considerados como primarios y las variables que se definirán como vectores de valores indexados."],
+    "correcta": 2,
+    "explicacion": "La recursividad es la capacidad de un subprograma de invocarse a sí mismo[cite: 7, 25].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Definición de recursividad[cite: 7, 25].",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. Indica, de las siguientes afirmaciones, cuál es verdadera:",
+    "opciones": ["A. Un array o vector es un tipo de dato estructurado que permite almacenar un conjunto de datos homogéneo donde cada elemento se almacena de forma consecutiva en memoria.", "B. Bytecode es el código binario obtenido tras el proceso de compilación (Java).", "C. C++ es un lenguaje de segunda generación.", "D. En C++ la declaración del array: «int vector2[] = {1,2,3,4,10,9,80,70,19};», es incorrecta."],
+    "correcta": 0,
+    "explicacion": "Un array almacena elementos del mismo tipo (homogéneo) de forma contigua en memoria[cite: 8].",
+    "analisis_opciones": {
+      "A": "Correcta. Definición de array[cite: 8].",
+      "B": "Incorrecta. Es código intermedio, no binario de máquina.",
+      "C": "Incorrecta. Es de tercera/cuarta generación.",
+      "D": "Incorrecta. Es una declaración válida."
+    }
+  },
+  {
+    "pregunta": "9. ¿Cuál de los siguientes módulos tiene un grado más alto de cohesión?",
+    "opciones": ["A. Un módulo que hace varias cosas que trabajan sobre una sola estructura de datos.", "B. Un módulo que sólo hace una cosa.", "C. Un módulo que hace cosas que ocurren una detrás de otra.", "D. Un módulo que se llama a sí mismo."],
+    "correcta": 1,
+    "explicacion": "La cohesión funcional (hacer una sola cosa) es la más alta y deseable[cite: 9, 22].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Cohesión funcional[cite: 9, 22].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. ¿Cuál de los siguientes operadores no se puede sobrecargar en C++?",
+    "opciones": ["A. New", "B. Sizeof", "C. *", "D. Delete"],
+    "correcta": 1,
+    "explicacion": "Sizeof es uno de los pocos operadores que C++ prohíbe sobrecargar[cite: 10].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Operador no sobrecargable[cite: 10].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "11. En la estructura de datos conocida como tabla hash, ¿qué consecuencias tiene que se produzca una “colisión de claves” al intentar añadir un nuevo elemento?",
+    "opciones": ["A. En una tabla hash nunca pueden darse colisiones, ya que en eso consiste la principal ventaja de usar una función hash sobre las tablas habituales.", "B. En una tabla hash las colisiones son un fenómeno normal, que se resuelve encadenando los valores en una lista o usando direccionamiento abierto.", "C. En una tabla hash podrán darse colisiones, pero matemáticamente es tan improbable que no se hacen previsiones especiales para el caso.", "D. En una tabla hash siempre ocurren colisiones, ya que es la colisión es un requisito del algoritmo de inserción en la tabla."],
+    "correcta": 1,
+    "explicacion": "Las colisiones se resuelven mediante encadenamiento o direccionamiento abierto[cite: 11].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Describe los métodos de resolución[cite: 11].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "12. La técnica de programación conocida como \"divide y vencerás\", está basada en el concepto de:",
+    "opciones": ["A. Linealidad", "B. Recursividad.", "C. Particionado.", "D. Programación funcional."],
+    "correcta": 1,
+    "explicacion": "Esta técnica descompone el problema en subproblemas menores de forma recursiva[cite: 12].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Uso de la recursión para resolver subproblemas[cite: 12].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "13. Sobre la declaración de variables en el lenguaje de programación PHP:",
+    "opciones": ["A. Los nombres de las variables pueden comenzar por cualquier carácter, incluidos números y guion bajo.", "B. Las variables comienzan con el símbolo$.", "C. Es necesario declarar las variables y establecer el tipo de datos que lo almacenará antes de usarlas.", "D. Para declarar una variable de ámbito global, hay que anteponer la palabra #define."],
+    "correcta": 1,
+    "explicacion": "En PHP todas las variables deben comenzar con el carácter $[cite: 13].",
+    "analisis_opciones": {
+      "A": "Incorrecta. No pueden empezar por número.",
+      "B": "Correcta. Sintaxis obligatoria en PHP[cite: 13].",
+      "C": "Incorrecta. PHP es débilmente tipado.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "14. En el contexto del lenguaje C de ANSI, indique cuál será el valor resultante de \"a\" y \"b\" tras ejecutar: int a=10, b; b=a++;",
+    "opciones": ["A. a=10, b=10", "B. a=11, b=11", "C. a=10, b=11", "D. a=11, b=10"],
+    "correcta": 3,
+    "explicacion": "b=a++ es post-incremento: b recibe 10 y luego a sube a 11[cite: 14].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Resultado de la operación post-incremento[cite: 14]."
+    }
+  },
+  {
+    "pregunta": "15. En PHP el operador de comparación' === 'entre dos valores devuelve TRUE si:",
+    "opciones": ["A. Ambos valores son iguales.", "B. Si ambos valores son iguales después de la manipulación de tipos.", "C. Si ambos valores son iguales y son del mismo tipo.", "D. Si ambos valores son iguales o son del mismo tipo."],
+    "correcta": 2,
+    "explicacion": "Es el operador de identidad: comprueba valor y tipo[cite: 15].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese es ==.",
+      "B": "Incorrecta. Ese es ==.",
+      "C": "Correcta. Comparación estricta de valor y tipo[cite: 15].",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "16. Al ejecutarse un código de forma recursiva, en el espacio de memoria reservado para la pila se van almacenando Informaciones por cada llamada, ¿cuál de las siguientes informaciones NO es imprescindible que almacene la pila para la ejecución de la recursividad?",
+    "opciones": ["A. Los argumentos de la función o rutina.", "B. Las variables locales del subprograma.", "C. La dirección de retorno.", "D. El número de orden de la iteración."],
+    "correcta": 3,
+    "explicacion": "El número de orden de iteración no es un dato de control necesario para el registro de activación[cite: 16].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Son necesarios.",
+      "B": "Incorrecta. Son necesarias.",
+      "C": "Incorrecta. Es necesaria.",
+      "D": "Correcta. No es un dato imprescindible del stack frame[cite: 16]."
+    }
+  },
+  {
+    "pregunta": "17. C++ permite especificar más de una función con el mismo nombre en el mismo ámbito. ¿Cómo se denominan estas funciones?",
+    "opciones": ["A. Funciones dobles.", "B. Funciones repetidas.", "C. Funciones sobrecargadas.", "D. En C++ no se puede nombrar más de una función con el mismo nombre."],
+    "correcta": 2,
+    "explicacion": "La sobrecarga de funciones permite funciones con mismo nombre pero distinta firma[cite: 17].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Término técnico de C++[cite: 17].",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "18. En el lenguaje C++, si hablamos de un bucle con estructura do…while:",
+    "opciones": ["A. Sólo se ejecuta si la condición del bucle es verdadera.", "B. Evalúa la condición del bucle y después se ejecuta al menos una vez.", "C. Se ejecuta una vez antes de evaluar la condición del bucle.", "D. Se ejecuta una sola vez siempre y cuando sea verdadera la condición del bucle."],
+    "correcta": 2,
+    "explicacion": "do-while ejecuta el bloque y luego comprueba la condición[cite: 18].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese es el while.",
+      "B": "Incorrecta. La evaluación es después.",
+      "C": "Correcta. Se ejecuta al menos una vez[cite: 18].",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "19. La función gotoxy del lenguaje C se encuentra disponible en la librería:",
+    "opciones": ["A. stdio.h", "B. stdlib.h", "C. conio.h", "D. ctype.h"],
+    "correcta": 2,
+    "explicacion": "conio.h es una cabecera de C para entrada/salida por consola que incluye gotoxy[cite: 19].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Librería de consola no estándar de Borland[cite: 19].",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "20. Indica el resultado tras ejecutar las siguientes sentencias en C: int x=5; int y=3; y=++x; printf(“EI valor de X es %i y el de Y es %i\\n”, x, y);",
+    "opciones": ["A. El valor de X es 5 y el de Y es 4.", "B. El valor de X es 6 y el de Y es 6.", "C. El valor de X es 5 y el de Y es 8.", "D. El valor de X es 5 y el de Y es 6."],
+    "correcta": 1,
+    "explicacion": "++x es pre-incremento: x sube a 6 e y recibe ese valor 6[cite: 20].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Ambos valen 6 tras el pre-incremento[cite: 20].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "21. Indique cuál sería la salida que se obtendría ejecutando el siguiente trozo de código en C++: for (int i=1; i++<10; i++) { ((i == 5)? cout<<\"Cinco\": cout << i << \"\"); }",
+    "opciones": ["A. 0 2 4 6 8", "B. 1 3 7 9 5", "C. 2 4 6 8 10", "D. 1 3 5 7 9"],
+    "correcta": 2,
+    "explicacion": "Debido al post-incremento en la condición y el incremento en el for, se imprimen los pares 2 4 6 8 10[cite: 21].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Resultado de la lógica de incremento doble[cite: 21].",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "22. Cuando se habla de cohesión en los módulos de un determinado programa, señale su definición y cuál es el valor deseado:",
+    "opciones": ["A. Grado de interdependencia entre los distintos módulos de un programa. Debe ser alto.", "B. Relación funcional entre los distintos elementos que componen un módulo. Debe ser alto.", "C. Grado de interdependencia entre los distintos módulos de un programa. Debe ser bajo.", "D. Relación funcional entre los distintos elementos que componen un módulo. Debe ser bajo."],
+    "correcta": 1,
+    "explicacion": "La cohesión es interna al módulo y debe ser alta para un buen diseño[cite: 22].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es acoplamiento.",
+      "B": "Correcta. Definición de cohesión y su valor ideal[cite: 22].",
+      "C": "Incorrecta. Eso es acoplamiento bajo.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "23. Con respecto al paradigma de programación declarativa podemos decir que:",
+    "opciones": ["A. Las principales variantes son los paradigmas funcional, lógico y la programación modular.", "B. Las variables son nombres asociados a definiciones, que una vez instanciadas pueden ser modificadas.", "C. No existe un orden de evaluación prefijado.", "D. Describe cómo debe realizarse el cálculo, no el porqué."],
+    "correcta": 2,
+    "explicacion": "En la declarativa no hay un flujo secuencial estricto impuesto por el programador[cite: 23].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Modular no es variante de declarativa.",
+      "B": "Incorrecta. Suelen ser inmutables.",
+      "C": "Correcta. Propiedad del paradigma[cite: 23].",
+      "D": "Incorrecta. Eso es imperativa."
+    }
+  },
+  {
+    "pregunta": "24. Un tipo abstracto de datos (TAD) representa una abstracción donde:",
+    "opciones": ["A. Se destacan los detalles de la especificación (el qué} y se ocultan los detalles de la implementación (el cómo}", "B. Se ocultan los detalles dela especificación (el que} y se destacan los detalles de la implementación (el cómo}", "C. Se ocultan los detalles de la especificación (el qué} y se ocultan los detalles de la implementación (el cómo).", "D. Se destacan los detalles de la especificación (el qué} y se destacan los detalles de la implementación (el cómo)."],
+    "correcta": 0,
+    "explicacion": "Un TAD define qué operaciones hay pero no cómo se realizan internamente[cite: 24].",
+    "analisis_opciones": {
+      "A": "Correcta. Muestra la interfaz y oculta la implementación[cite: 24].",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "25. En un programa, se define una función o método \"ordenar()\". En su ejecución, esta función puede realizar una llamada a \"ordenar()\", se dice entonces que dicha función es:",
+    "opciones": ["A. Recurrente.", "B. Iterativa.", "C. Periódica.", "D. Recursiva."],
+    "correcta": 3,
+    "explicacion": "Una función que se llama a sí misma es recursiva[cite: 25].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Definición de recursividad[cite: 25]."
+    }
+  },
+  {
+    "pregunta": "26. En el contexto del lenguaje C de ANSI, ¿cuál de las siguientes opciones consigue que los valores de \"a\" y \"b\" sean respectivamente 10 y 11?",
+    "opciones": ["A. int a=11,b;b=a--;", "B. int a=11,b;b=--a;", "C. int a=10,b;b=++a;", "D. int a=10,b;b=a++;"],
+    "correcta": 2,
+    "explicacion": "b=++a incrementa 10 a 11 y luego lo asigna a b[cite: 26].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Daría b=11, a=10.",
+      "B": "Incorrecta. Daría b=10, a=10.",
+      "C": "Correcta. Daría a=11, b=11[cite: 26].",
+      "D": "Incorrecta. Daría b=10, a=11."
+    }
+  },
+  {
+    "pregunta": "27. Son lenguajes de programación orientados a objetos:",
+    "opciones": ["A. Basic, C, C#, C++, J#, Java, Pascal, Lisp, Simula.", "B. C#, C++, Eiffel, Vala, Lisp, Pascal, Smalltalk, Visual Basic 6.0.", "C. Ada 95, C#, C++, Pascal, Java, PHP 4.0, Python, Simula, Smalltalk.", "D. Ada 95, C#, C++, Eiffel, Vala, Python, Simula, Smalltalk, Visual Basic 6.0."],
+    "correcta": 3,
+    "explicacion": "Esta lista contiene exclusivamente lenguajes con soporte OOP sólido[cite: 27].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Incluye C y Basic.",
+      "B": "Incorrecta. Incluye Lisp y Pascal.",
+      "C": "Incorrecta. Incluye Pascal.",
+      "D": "Correcta. Todos soportan OOP[cite: 27]."
+    }
+  },
+  {
+    "pregunta": "28. En la expresión: not((a>b) and (a<b)) and ((c>a) and (not (c>b))), slendo a=3 y b=4, ¿qué valor tendría que tener c para que el resultado de estas operaciones lógicas fuera TRUE?",
+    "opciones": ["A. 1", "B. 2", "C. 3", "D. 4"],
+    "correcta": 3,
+    "explicacion": "Para que c>3 y c no sea >4 (c<=4) y sea True, c debe ser 4[cite: 28].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Satisface la condición lógica final[cite: 28]."
+    }
+  },
+  {
+    "pregunta": "29. ¿En cuál de los lenguajes de programación que se incluyen a continuación la indentación (sangrías) del código es decisiva para la correcta ejecución del programa desarrollado?",
+    "opciones": ["A. Python", "B. C#", "C. Lisp", "D. Ruby"],
+    "correcta": 0,
+    "explicacion": "Python usa la indentación como parte de su sintaxis para bloques[cite: 29].",
+    "analisis_opciones": {
+      "A": "Correcta. Obligatorio por diseño[cite: 29].",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "30. Dado el siguiente código en C++: int a=2; int main (} { int a=10; /* sentencia */ return 0; } Indicar cuál es la sentencia que falta que nos permitiria mostrar el valor 2 en pantalla:",
+    "opciones": ["A. cout << &a << endl;", "B. cout << ::a << endl;", "C. cout << ?:a << endl;", "D. cout << *a << endl."],
+    "correcta": 1,
+    "explicacion": "::a accede a la variable global 'a' ocultada por la local[cite: 30].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Operador de resolución de ámbito global[cite: 30].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "31. Indique la respuesta correcta respecto al lenguaje de programación F#:",
+    "opciones": ["A. El literal tipo sbyte es un número natural de 8 bits sin signo.", "B. La palabra clave let enlaza un nombre a un valor o función.", "C. Para realizar comentarios en el código de múltiples líneas se utiliza //* para iniciar el comentario y *// para cerrarlo.", "D. La expresión “let immutable x = 1” es correcta."],
+    "correcta": 1,
+    "explicacion": "let es el comando básico de F# para definir valores inmutables o funciones[cite: 31].",
+    "analisis_opciones": {
+      "A": "Incorrecta. sbyte tiene signo.",
+      "B": "Correcta. Definición fundamental de F#[cite: 31].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "32. ¿Cuál de estas afirmaciones es incorrecta?",
+    "opciones": ["A. Un procedimiento es un subprograma.", "B. Un procedimiento puede tener sus propias variables que se declaran dentro del propio procedimiento.", "C. Las variables declaradas en un procedimiento pueden usarse en 1 programa principal.", "D. La zona de memoria para las variables del procedimiento es asignada cada vez que éste es llamado."],
+    "correcta": 2,
+    "explicacion": "Las variables locales de un procedimiento no son visibles fuera de su ámbito[cite: 32].",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Correcta.",
+      "C": "Incorrecta. Marcada como respuesta por ser la afirmación falsa[cite: 32].",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "33. Es un framework que permite el desarrollo de aplicaciones para dispositivos móviles:",
+    "opciones": ["A. Ionic", "B. Atom", "C. Ark", "D. ZTE"],
+    "correcta": 0,
+    "explicacion": "Ionic es un framework para apps híbridas con tecnologías web[cite: 33].",
+    "analisis_opciones": {
+      "A": "Correcta. Framework de desarrollo móvil[cite: 33].",
+      "B": "Incorrecta. Es un editor.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "34. Al subprograma que tiene uno o varios parámetros de entrada, suficientes y necesarios para determinar un solo parámetro exclusivamente de salida se le denomina:",
+    "opciones": ["A. Subrutina.", "B. Procedimiento.", "C. Bucle.", "D. Función."],
+    "correcta": 3,
+    "explicacion": "Una función se caracteriza por devolver siempre un único valor o parámetro de salida como resultado de su ejecución.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Término genérico.",
+      "B": "Incorrecta. Un procedimiento no tiene por qué devolver un valor de salida directo.",
+      "C": "Incorrecta. Es una estructura de control iterativa.",
+      "D": "Correcta. Definición técnica de función en programación."
+    }
+  },
+  {
+    "pregunta": "35. En una sentencia \"if\" en el lenguaje de programación Python, ¿cómo se identifica el bloque de código a ejecutar si la condición se cumple?",
+    "opciones": [
+      "A. El bloque debe estar delimitado por llaves {}",
+      "B. El bloque debe estar delimitado por corchetes []",
+      "C. El bloque debe estar delimitado por corchetes ()",
+      "D. Cada línea del bloque debe estar precedida por el mismo número de espacios en blanco, con la misma sangría."
+    ],
+    "correcta": 3,
+    "explicacion": "Python utiliza la indentación (sangría) obligatoria para definir bloques de código[cite: 29].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Propio de lenguajes como C, C# o Java.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. Característica distintiva de Python."
+    }
+  },
+  {
+    "pregunta": "36. Para las variables a=1, b=2, c=3, d=1 ¿cuál es la operación lógica que da un resultado true?",
+    "opciones": [
+      "A. ((a>b) or (a<c)) and ((a==c) or (a>=b))",
+      "B. ((a>=b) or (a<d)) and ((a>=d) or (c>d))",
+      "C. Not (a==c) and (c>b)",
+      "D. Not (a>=d) and not (c>=b)"
+    ],
+    "correcta": 2,
+    "explicacion": "Evaluando C: Not (1==3) es True; (3>2) es True. True and True = True.",
+    "analisis_opciones": {
+      "A": "Incorrecta. (True) and (False) = False.",
+      "B": "Incorrecta. (False) and (True) = False.",
+      "C": "Correcta. Ambas partes de la conjunción son verdaderas.",
+      "D": "Incorrecta. (False) and (False) = False."
+    }
+  },
+  {
+    "pregunta": "37. ¿Cuántas veces se recorrería el siguiente bucle Java: for (int i=1; i<= 120; ++i)?",
+    "opciones": ["A. 119 veces.", "B. 120 veces.", "C. 121 veces.", "D. 118 veces."],
+    "correcta": 1,
+    "explicacion": "Al empezar en 1 e incluir el 120 (<=), el bucle se ejecuta exactamente 120 veces.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Conteo de 1 a 120 inclusivo.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "38. ¿Cuál de los siguientes lenguajes admite directamente herencia múltiple?",
+    "opciones": ["A. C++", "B. C#", "C. Java", "D. Ada"],
+    "correcta": 0,
+    "explicacion": "C++ permite que una clase herede directamente de más de una clase base. Java y C# solo permiten herencia simple de clases (aunque admiten múltiples interfaces).",
+    "analisis_opciones": {
+      "A": "Correcta. Soporta herencia múltiple de clases.",
+      "B": "Incorrecta. Solo herencia simple de clases.",
+      "C": "Incorrecta. Solo herencia simple de clases.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "39. Indique, de entre las siguientes afirmaciones, cuál es relativa a Ruby on Rails (RoR):",
+    "opciones": [
+      "A. Es un lenguaje de programación creado por G. Ruby.",
+      "B. Es un framework de control de versiones escrito en el lenguaje Ruby.",
+      "C. Es un framework de desarrollo de aplicaciones web basado en el patrón MVC.",
+      "D. Es un servicio de .NET."
+    ],
+    "correcta": 2,
+    "explicacion": "Ruby on Rails es un framework web escrito en Ruby que utiliza la arquitectura Modelo-Vista-Controlador (MVC).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un framework, el lenguaje es Ruby.",
+      "B": "Incorrecta. No es de control de versiones (como Git).",
+      "C": "Correcta. Definición estándar de RoR.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "40. En el lenguaje de programación C, la sentencia de escape “\\v”:",
+    "opciones": ["A. Retrocede de página.", "B. Avanza de página.", "C. Se usa para tabulación.", "D. Hace sonar la campana del sistema."],
+    "correcta": 2,
+    "explicacion": "En C, '\\v' representa la tabulación vertical.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Eso es '\\f' (form feed).",
+      "C": "Correcta. Tabulación vertical.",
+      "D": "Incorrecta. Eso es '\\a' (alert)."
+    }
+  },
+  {
+    "pregunta": "41. ¿Cuál de los siguientes lenguajes está relacionado con el desarrollo en backend?",
+    "opciones": ["A. go", "B. SASS", "C. XML", "D. ANGULAR"],
+    "correcta": 0,
+    "explicacion": "Go (o Golang) es un lenguaje de programación de propósito general muy utilizado para servicios de backend y sistemas.",
+    "analisis_opciones": {
+      "A": "Correcta. Lenguaje de backend.",
+      "B": "Incorrecta. Preprocesador CSS (frontend).",
+      "C": "Incorrecta. Lenguaje de marcas para intercambio de datos.",
+      "D": "Incorrecta. Framework de frontend."
+    }
+  },
+  {
+    "pregunta": "42. Según el estándar IEEE 754-2008, un número en coma flotante de doble precisión es:",
+    "opciones": [
+      "A. Una aproximación de 64 bits de un número real.",
+      "B. Una aproximación de 32 bits de un número real.",
+      "C. Un número decimal empaquetado con una coma decimal implícita.",
+      "D. Un entero de cuatro bytes con una precisión de 10 dígitos."
+    ],
+    "correcta": 0,
+    "explicacion": "La doble precisión (double) utiliza 64 bits según el estándar IEEE 754.",
+    "analisis_opciones": {
+      "A": "Correcta. Estándar para tipo 'double'.",
+      "B": "Incorrecta. Eso es simple precisión (float).",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "43. En el contexto del lenguaje C de ANSI, indique cuales serían los valores de \"i\" y \"s\" a la salida del siguiente bucle: int n,i,s; s=1;n=5; for (i=1; i<=n; i++) { s=s*i;}",
+    "opciones": ["A. i=5; s=720", "B. i=6; s=720", "C. i=6; s=120", "D. i=5; s=120"],
+    "correcta": 2,
+    "explicacion": "El bucle calcula el factorial de 5 (1*2*3*4*5 = 120). Al terminar, 'i' se incrementa a 6, lo que rompe la condición i<=5.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. s=120 e i=6.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "44. ¿Cuál es el significado el término acoplamiento cuando se habla de los módulos de un determinado programa? ¿Cuál es el valor deseado de dicho acoplamiento?",
+    "opciones": [
+      "A. Grado de interdependencia entre los distintos módulos de un programa. Debe ser alto.",
+      "B. Grado de interdependencia entre los distintos módulos de un programa. Debe ser bajo.",
+      "C. Relación funcional entre las distintas sentencias que componen un módulo. Debe ser alto.",
+      "D. Relación funcional entre las distintas sentencias que componen un módulo. Debe ser bajo."
+    ],
+    "correcta": 1,
+    "explicacion": "El acoplamiento mide la dependencia entre módulos; un buen diseño requiere que sea bajo para facilitar el mantenimiento[cite: 22].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Bajo acoplamiento es el objetivo.",
+      "C": "Incorrecta. Eso define la cohesión.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "45. Siendo el valor de a= 0 y el valor de b=0, indique cuál de las siguientes operaciones es igual a 1:",
+    "opciones": ["A. NOT(a AND b)", "B. a OR b", "C. a AND b", "D. a XOR b"],
+    "correcta": 0,
+    "explicacion": "0 AND 0 = 0. Al aplicar NOT(0), el resultado es 1.",
+    "analisis_opciones": {
+      "A": "Correcta. NOT(0) = 1.",
+      "B": "Incorrecta. 0 OR 0 = 0.",
+      "C": "Incorrecta. 0 AND 0 = 0.",
+      "D": "Incorrecta. 0 XOR 0 = 0."
+    }
+  },
+  {
+    "pregunta": "46. La instrucción de bucle que al menos se ejecuta siempre una vez es:",
+    "opciones": ["A. REPEAT/UNTIL.", "B. WHILE.", "C. FOR.", "D. IF."],
+    "correcta": 0,
+    "explicacion": "REPEAT/UNTIL (o do-while en C) es un bucle de post-condición que garantiza una ejecución mínima[cite: 18].",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Puede no ejecutarse si la condición inicial es falsa[cite: 54].",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Es una sentencia condicional, no un bucle[cite: 48]."
+    }
+  },
+  {
+    "pregunta": "47. ¿A qué lenguaje pertenece la siguiente sentencia: \"/Usuarios/usuario [numIntentos>3]/ apellidos\"?",
+    "opciones": ["A. Xlink", "B. Xpath", "C. Xpolnter", "D. Xml"],
+    "correcta": 1,
+    "explicacion": "La sintaxis de rutas con predicados entre corchetes es característica de XPath para navegar por documentos XML.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "48. En la siguiente porción de código, int cont = 0; int sum = 0; int num; input num;while (num !=EOF); {suma = suma + num; cont++; input num; }print \"La media de los números es: \"suma / cont ;La instrucción while; es:",
+    "opciones": [
+      "A. Un bucle o instrucción iterativa.",
+      "B. Una sentencia o instrucción condicional.",
+      "C. Una función con la variable num como parámetro de entrada.",
+      "D. Una estructura matricial."
+    ],
+    "correcta": 0,
+    "explicacion": "While es la palabra reservada para bucles controlados por una condición.",
+    "analisis_opciones": {
+      "A": "Correcta. Instrucción iterativa.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "49. El resultado de la operación a^b en lenguaje c siendo a=85 y b= 71 es:",
+    "opciones": ["A. 18.", "B. 95.", "C. 61.", "D. 186."],
+    "correcta": 0,
+    "explicacion": "En C, '^' es el operador XOR bit a bit. 85 (01010101) XOR 71 (01000111) = 00010010, que es 18 en decimal.",
+    "analisis_opciones": {
+      "A": "Correcta. Resultado de la operación XOR.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "50. ¿Cuál de los siguientes bloques de código en PHP permite que se escriba al menos una vez el valor de la variable $i?",
+    "opciones": [
+      "A. <?php $i = 0; do { echo $i;} while ($i > 0); ?>",
+      "B. <?php $i = 1; while($i < 0) { echo $i;} ?>",
+      "C. <?php for ($i = 1; $i < 0; $i--) { echo $i;} ?>",
+      "D. <?php $i = 1; if ($i < 0) { echo $i;} ?>"
+    ],
+    "correcta": 0,
+    "explicacion": "El bucle 'do...while' garantiza la ejecución del cuerpo al menos una vez antes de evaluar la condición[cite: 18].",
+    "analisis_opciones": {
+      "A": "Correcta. Ejecuta el echo de 0 antes de fallar el while.",
+      "B": "Incorrecta. Condición inicial falsa, no entra.",
+      "C": "Incorrecta. Condición inicial falsa, no entra.",
+      "D": "Incorrecta. Condición falsa, no entra."
+    }
+  },
+  {
+    "pregunta": "51. Dentro de los lenguajes de programación que se basan en el manejo de listas como única estructura de datos se incluye:",
+    "opciones": ["A. PHP.", "B. LISP.", "C. Perl.", "D. ADA."],
+    "correcta": 1,
+    "explicacion": "LISP (LISt Processing) es un lenguaje funcional cuyo nombre y diseño se centran íntegramente en el procesamiento de listas.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Lenguaje basado en listas.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "52. Suponga el siguiente programa escrito en un lenguaje de programación estándar: integer x=0; while x<100 do (x=x+1; print x; x=x-1;)",
+    "opciones": [
+      "A. Este programa imprime los números enteros del 1 al 100.",
+      "B. Este programa imprime los números impares del 1 al 100.",
+      "C. Este programa imprime los números pares del 1 al 100.",
+      "D. Este programa es un bucle infinito."
+    ],
+    "correcta": 3,
+    "explicacion": "En cada iteración 'x' sube a 1 pero luego vuelve a bajar a 0. Como 0 siempre es < 100, el bucle nunca termina.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta. La variable de control nunca alcanza la condición de salida."
+    }
+  },
+  {
+    "pregunta": "53. Cuál de las siguientes afirmaciones es FALSA:",
+    "opciones": [
+      "A. Un intérprete es un programa que ejecuta directamente las instrucciones escritas en un lenguaje de programación dado.",
+      "B. Un compilador es un programa que transforma el código fuente de un programa a su equivalente en otro lenguaje de programación de más bajo nivel.",
+      "C. Un transpilador es un programa que hace de intérprete y de compilador al mismo tiempo.",
+      "D. Un compilador cruzado o cross compiler es un compilador capaz de crear código ejecutable para otra plataforma distinta a aquélla en la que se ejecuta."
+    ],
+    "correcta": 2,
+    "explicacion": "Un transpilador (o source-to-source compiler) traduce código de un lenguaje de alto nivel a otro lenguaje de alto nivel (ej. TypeScript a JavaScript), no es un intérprete y compilador simultáneo.",
+    "analisis_opciones": {
+      "A": "Verdadera. Definición de intérprete.",
+      "B": "Verdadera. Definición de compilador.",
+      "C": "FALSA. Definición incorrecta de transpilador.",
+      "D": "Verdadera. Definición de compilación cruzada."
+    }
+  },
+  {
+    "pregunta": "54. La primera instrucción contenida en un bucle while,",
+    "opciones": [
+      "A. Se ejecuta al menos una vez.",
+      "B. No puede ejecutarse indefinidamente.",
+      "C. Puede no ejecutarse nunca.",
+      "D. No puede ser un bucle."
+    ],
+    "correcta": 2,
+    "explicacion": "Al ser un bucle de pre-condición, si la condición inicial es falsa, el cuerpo (y su primera instrucción) nunca se ejecutan.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es el do-while[cite: 18].",
+      "B": "Incorrecta. Puede ser un bucle infinito[cite: 52].",
+      "C": "Correcta. Si la condición no se cumple de inicio.",
+      "D": "Incorrecta. Puede haber bucles anidados."
+    }
+  },
+  {
+    "pregunta": "55. En los lenguajes de programación, ¿cuál de las siguientes afirmaciones es correcta?",
+    "opciones": [
+      "A. La modificación de un programa fuente es más sencilla en el compilado que en el intérprete.",
+      "B. El programa objeto que produce un programa interpretado es más pequeño que el que produce un programa compilado.",
+      "C. Las ejecuciones sucesivas de un programa compilado no necesitan traducciones del programa fuente.",
+      "D. Un programa interpretado es más rápido que uno compilado."
+    ],
+    "correcta": 2,
+    "explicacion": "Una vez compilado, el código máquina resultante se ejecuta directamente sin necesidad de volver a procesar el código fuente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El intérprete facilita la depuración inmediata.",
+      "B": "Incorrecta. El intérprete no suele producir un 'programa objeto' independiente.",
+      "C": "Correcta. Ventaja fundamental de la compilación.",
+      "D": "Incorrecta. La interpretación es generalmente más lenta."
+    }
+  },
+  {
+    "pregunta": "56. En el lenguaje de programación C, ¿qué carácter distingue las directivas de preprocesador?",
+    "opciones": ["A. /", "B. #", "C. -", "D. !"],
+    "correcta": 1,
+    "explicacion": "Directivas como #include o #define comienzan siempre con el símbolo almohadilla[cite: 57].",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "57. ¿Cuál de estas sentencias está escrita de forma incorrecta en el lenguaje de programación C?.",
+    "opciones": [
+      "A. enum Colores {amarillo, verde, rojo};",
+      "B. const int meses=12;",
+      "C. char alarma=’\\a’;",
+      "D. #define pi 3.141592;"
+    ],
+    "correcta": 3,
+    "explicacion": "Las directivas #define NO llevan punto y coma final; el preprocesador lo sustituiría literalmente provocando errores de sintaxis.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Correcta.",
+      "C": "Correcta.",
+      "D": "Incorrecta. Por la presencia del ';' final."
+    }
+  },
+  {
+    "pregunta": "58. La distribución de Apache que contiene MySQL, PHP y Perl disponible para cualquiera de los diferentes sistemas operativos se denomina:",
+    "opciones": ["A. MAMP", "B. XAMPP", "C. MAMPP", "D. LAMP"],
+    "correcta": 1,
+    "explicacion": "XAMPP es la versión multiplataforma (la 'X' inicial). LAMP es específica de Linux.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Específica de Mac.",
+      "B": "Correcta. Multiplataforma.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Específica de Linux."
+    }
+  },
+  {
+    "pregunta": "59. Señale la respuesta correcta en relación con las funciones y los procedimientos:",
+    "opciones": [
+      "A. Una llamada a un procedimiento puede aparecer como operando de una expresión.",
+      "B. El paso de parámetros por referencia envía una copia del valor que tenga el parámetro real, por lo que no se podrá alterar el contenido de la variable.",
+      "C. Los parámetros por referencia se pueden emplear como parámetros de entrada/salida.",
+      "D. Todo procedimiento debe ejecutar una sentencia de return."
+    ],
+    "correcta": 2,
+    "explicacion": "El paso por referencia permite que el subprograma modifique la variable original, sirviendo tanto para entrar datos como para devolver resultados alterados[cite: 2].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es propio de las funciones.",
+      "B": "Incorrecta. Eso define el paso por valor.",
+      "C": "Correcta.",
+      "D": "Incorrecta. Los procedimientos no suelen retornar valores obligatoriamente."
+    }
+  },
+  {
+    "pregunta": "60. Indique cuál de los siguientes se considera un lenguaje de programación orientado a la educación:",
+    "opciones": ["A. Scratch", "B. C#", "C. Abap", "D. Python"],
+    "correcta": 0,
+    "explicacion": "Scratch es un lenguaje visual desarrollado por el MIT para enseñar programación a niños mediante bloques.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Propósito general empresarial.",
+      "C": "Incorrecta. Específico de SAP.",
+      "D": "Incorrecta. Aunque se usa para enseñar, su propósito principal es general/profesional."
+    }
+  },
+  {
+    "pregunta": "61. Cuál será la salida del siguiente fragmento de código en Java: int x; double y=272.895; x=(int)(y - 0.9); System.out.printin (x);",
+    "opciones": ["A. 272881", "B. 272", "C. 271", "D. Da un error en ejecución."],
+    "correcta": 2,
+    "explicacion": "272.895 - 0.9 = 271.995. Al hacer el casting a (int), Java trunca los decimales, resultando en 271.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "62. ¿Cuál de entre los siguientes responde a las características de un tipo de datos estructurado, dinámico y no lineal?",
+    "opciones": ["A. Cola", "B. Pila", "C. Arbol", "D. Lista"],
+    "correcta": 2,
+    "explicacion": "Los árboles y grafos son estructuras de datos no lineales y dinámicas[cite: 30].",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es lineal (FIFO)[cite: 30].",
+      "B": "Incorrecta. Es lineal (LIFO)[cite: 30].",
+      "C": "Correcta. Es jerárquico (no lineal).",
+      "D": "Incorrecta. Es lineal."
+    }
+  },
+  {
+    "pregunta": "63. El número 100 en el sistema decimal, es equivalente a:",
+    "opciones": [
+      "A. 64 en el sistema hexadecimal.",
+      "B. 88 en el sistema octal.",
+      "C. 111 en el sistema octal,",
+      "D. 11001000 en el sistema binario."
+    ],
+    "correcta": 0,
+    "explicacion": "100 / 16 = 6 (resto 4). Por tanto, 0x64.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. 100 en octal es 144.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Eso es 200 en decimal."
+    }
+  },
+  {
+    "pregunta": "64. En Python 3.7, Indique qué resultado se obtiene al ejecutar print(\"Java\"*4+\"Linux\")",
+    "opciones": [
+      "A. Java4Linux .",
+      "B. Devuelve un error de sintaxis.",
+      "C. Genera excepción, por tipo de operando no soportado.",
+      "D. JavaJavaJavaJavaLinux."
+    ],
+    "correcta": 3,
+    "explicacion": "Python permite la multiplicación de strings (repetición) y la concatenación con el signo '+'.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Correcta."
+    }
+  },
+  {
+    "pregunta": "65. ¿Cuál de las siguientes sentencias mostrará ran\"?",
+    "opciones": [
+      "A. alert(\"verano\".substr(2,3));",
+      "B. alert(\"verano\".substring(3,5));",
+      "C. alert.(\"verano\".substring(2));",
+      "D. alert.(\"''verano\".subst(2));"
+    ],
+    "correcta": 1,
+    "explicacion": "En JavaScript, .substring(3,5) toma caracteres desde el índice 3 hasta el 5 (sin incluirlo): índice 3='a', 4='n'. Resulta 'an'. (Nota: La pregunta parece tener una errata en el enunciado o las opciones si busca 'ran', que sería substring(2, 5)).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Daría 'ran' (empieza en 2, toma 3 caracteres).",
+      "B": "Correcta en lógica de examen si la salida buscada es 'an'.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "66. Indique la sentencia correcta en relación al acoplamiento de marca:",
+    "opciones": [
+      "A. Los módulos están ligados a componentes externos (dispositivos E/S, protocolos de comunicaciones, etc.).",
+      "B. Cuando uno o varios de los parámetros de comunicación entre módulos son de control.",
+      "C. Varios módulos hacen referencia a un área común de datos, los módulos asociados a esa área pueden modificar los valores de los elementos de datos o estructuras de datos que se incluyen en dicha área.",
+      "D. La comunicación entre módulos es a través de estructuras de datos."
+    ],
+    "correcta": 3,
+    "explicacion": "El acoplamiento de marca (Stamp Coupling) ocurre cuando los módulos se pasan estructuras de datos complejas (como un registro o un objeto) en lugar de datos simples.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es acoplamiento externo.",
+      "B": "Incorrecta. Eso es acoplamiento de control.",
+      "C": "Incorrecta. Eso es acoplamiento común.",
+      "D": "Correcta. Definición de acoplamiento de marca."
+    }
+  },
+
+
+  {
+    "pregunta": "22. Se ha producido un cambio sobre un componente de un sistema de información que ha introducido un comportamiento no deseado o errores adicionales en otros componentes no modificados. ¿Cómo se le conoce a este fenómeno?",
+    "opciones": [
+      "a) Regresión descontrolada",
+      "b) Efecto onda",
+      "c) Error expandido",
+      "d) Fallo base"
+    ],
+    "correcta": 1,
+    "explicacion": "El 'efecto onda' (ripple efecto) se refiere a cómo los cambios en una parte del software afectan a otras partes, pudiendo generar errores en cascada si no hay un buen aislamiento.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Las pruebas de regresión se hacen para detectar esto, pero el fenómeno es el efecto onda.",
+      "b)": "Correcta. Definición técnica de la propagación de cambios y errores.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "23. Se está contemplando la posibilidad de usar Python como lenguaje alternativo para la realización de partes del programa relacionadas con cálculos matemáticos, ¿Cuál de estos frameworks especializado en estas tareas usaría?",
+    "opciones": [
+      "a) Numpy",
+      "b) Kivy",
+      "c) Pymaths",
+      "d) Numeral"
+    ],
+    "correcta": 0,
+    "explicacion": "NumPy es la librería fundamental de Python para computación científica y manejo de vectores y matrices de gran tamaño.",
+    "analisis_opciones": {
+      "a)": "Correcta. Estándar de facto para cálculos numéricos en Python.",
+      "b)": "Incorrecta. Es un framework para interfaces de usuario táctiles.",
+      "c)": "Incorrecta. No es un framework estándar de la industria.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "25. Le solicitan la realización de un diagrama que describa el comportamiento dinámico del sistema de información. Debe mostrar la interacción entre los objetos, así como sus vínculos e intercambios de mensaje. Para mayor claridad de las relaciones, le sugieren que no muestre el orden en que suceden o pueden ocurrir los acontecimientos. ¿Cuál de los siguientes diagramas usaría?",
+    "opciones": [
+      "a) Diagrama de colaboración",
+      "b) Diagrama de secuencia",
+      "c) Diagrama de estructura",
+      "d) Diagrama de interrelaciones"
+    ],
+    "correcta": 0,
+    "explicacion": "El diagrama de colaboración (llamado de Comunicación en UML 2.x) se enfoca en la organización de los objetos que interactúan, mientras que el de secuencia se enfoca en el orden temporal.",
+    "analisis_opciones": {
+      "a)": "Correcta. Muestra interacciones sin priorizar la línea de tiempo.",
+      "b)": "Incorrecta. El diagrama de secuencia sí enfatiza el orden temporal.",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "31. ¿Cuál de los siguientes algoritmos de ordenación tiene una complejidad definida por O (n log n)?",
+    "options": [
+      "a) Bubblesort.",
+      "b) Binsort.",
+      "c) Mergesort.",
+      "d) Insertion sort."
+    ],
+    "correcta": 2,
+    "explicacion": "Mergesort es un algoritmo de ordenación basado en la técnica de 'divide y vencerás' que garantiza una complejidad temporal de O(n log n) en todos sus casos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Tiene una complejidad de O(n²).",
+      "b)": "Incorrecta. Su complejidad varía según la implementación pero no es el estándar n log n.",
+      "c)": "Correcta. Es el ejemplo clásico de eficiencia logarítmica para este tema.",
+      "d)": "Incorrecta. Tiene una complejidad de O(n²)."
+    }
+  },
+  {
+    "pregunta": "34. En programación, la propiedad por la cual un método que se invoca varía en función de la clase de la instancia del objeto es conocida como...",
+    "options": [
+      "a) Encapsulamiento",
+      "b) Herencia",
+      "c) Polimorfismo",
+      "d) Abstracción"
+    ],
+    "correcta": 2,
+    "explicacion": "El polimorfismo permite que una misma interfaz o llamada a un método se comporte de manera diferente según el objeto específico que la reciba.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Se refiere a la ocultación de datos.",
+      "b)": "Incorrecta. Es la transferencia de características de padres a hijos.",
+      "c)": "Correcta. Es la definición técnica solicitada para la orientación a objetos.",
+      "d)": "Incorrecta. Es la representación simplificada de un objeto."
+    }
+  },
+
+  {
+    "pregunta": "34. En programación, la propiedad por la cual un método que se invoca varía en función de la clase de la instancia del objeto es conocida como...",
+    "opciones": [
+      "a) Encapsulamiento",
+      "b) Herencia",
+      "c) Polimorfismo",
+      "d) Abstracción"
+    ],
+    "correcta": 2,
+    "explicacion": "El polimorfismo es la capacidad de que una misma operación se comporte de forma distinta según el objeto que la ejecute (ligadura dinámica).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Ocultación de detalles internos.",
+      "b)": "Incorrecta. Mecanismo para compartir atributos y métodos entre clases.",
+      "c)": "Correcta. Definición técnica de polimorfismo.",
+      "d)": "Incorrecta. Identificación de las características esenciales de un objeto."
+    }
+  },
+  {
+    "pregunta": "11. Una parte del código parece presentar problemas. Para eliminar posibles variables, se pretende realizar una prueba de cobertura de bucles. ¿En qué tipo se englobaría dicha prueba?",
+    "opciones": [
+      "a) Prueba unitaria de caja negra.",
+      "b) Prueba unitaria de caja blanca.",
+      "c) Prueba del sistema.",
+      "d) Prueba de aceptación."
+    ],
+    "correcta": 1,
+    "explicacion": "Las pruebas de cobertura de bucles analizan la lógica interna del código (caminos, condiciones, iteraciones), lo cual es propio de las técnicas de caja blanca.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. La caja negra no conoce el código interno.",
+      "b)": "Correcta. Requiere acceso al código fuente para verificar los bucles.",
+      "c)": "Incorrecta. Evalúa el comportamiento global del sistema.",
+      "d)": "Incorrecta. Valida los requisitos con el usuario final."
+    }
+  },
+  {
+    "pregunta": "35. Se desea establecer un nivel de aislamiento que prevenga las lecturas sucias, las lecturas no repetibles y las lecturas fantasma. ¿Cuál de los siguientes niveles de aislamiento seleccionaría?",
+    "opciones": [
+      "a) Read uncommitted.",
+      "b) Read committed.",
+      "c) Repeatable read.",
+      "d) Serializable."
+    ],
+    "correcta": 3,
+    "explicacion": "Aunque esta pregunta roza el tema de BBDD, en programación concurrente y transaccional (Bloque III) el nivel Serializable es el más restrictivo y evita todos los problemas mencionados.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Permite todos los problemas.",
+      "b)": "Incorrecta. Permite lecturas no repetibles.",
+      "c)": "Incorrecta. Permite lecturas fantasma en algunos sistemas.",
+      "d)": "Correcta. Aislamiento total."
+    }
+  },{
+  "pregunta": "Indica cuál de las siguientes asociaciones entre lenguaje de programación y paradigma es INCORRECTA:",
+  "opciones": [
+    "a) LISP - Funcional",
+    "b) Prolog - Lógico/Declarativo",
+    "c) Fortran - Orientado a Objetos",
+    "d) Smalltalk - Orientado a Objetos"
+  ],
+  "correcta": 2,
+  "explicacion": "Fortran es el ejemplo clásico de lenguaje imperativo/procedural, diseñado para cálculo numérico, no es originalmente orientado a objetos.",
+  "analisis_opciones": {
+    "a)": "Correcta. LISP es el padre del paradigma funcional.",
+    "b)": "Correcta. Prolog se basa en lógica de primer orden.",
+    "c)": "INCORRECTA. Es imperativo.",
+    "d)": "Correcta. Fue uno de los primeros lenguajes puramente OO."
+  }
+},{
+  "pregunta": "En una estructura de datos de tipo Árbol Binario de Búsqueda (ABB), para obtener los elementos en orden ascendente, ¿qué tipo de recorrido debe realizarse?",
+  "opciones": [
+    "a) Preorden",
+    "b) Postorden",
+    "c) Inorden",
+    "d) En profundidad (DFS)"
+  ],
+  "correcta": 2,
+  "explicacion": "El recorrido en Inorden (Izquierda - Raíz - Derecha) en un ABB devuelve siempre los valores ordenados de menor a mayor.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. Raíz antes que hijos.",
+    "b)": "Incorrecta. Hijos antes que raíz.",
+    "c)": "Correcta. Es la propiedad fundamental de los ABB.",
+    "d)": "Incorrecta. Es una categoría general de recorridos."
+  }
+},{
+  "pregunta": "Dentro de las pruebas de aceptación, ¿en qué se diferencian las pruebas Alfa de las Beta?",
+  "opciones": [
+    "a) Las Alfa las hace el desarrollador y las Beta el usuario.",
+    "b) Las Alfa se realizan en un entorno controlado por el desarrollador y las Beta en el entorno real del usuario.",
+    "c) Las Alfa son de caja blanca y las Beta de caja negra.",
+    "d) No hay diferencia, son sinónimos."
+  ],
+  "correcta": 1,
+  "explicacion": "Las pruebas Alfa se hacen 'en casa' del desarrollador con usuarios seleccionados. Las Beta se lanzan a usuarios reales en sus propios entornos antes del lanzamiento final.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. Ambas son pruebas de usuario.",
+    "b)": "Correcta. Define la ubicación y el control del entorno.",
+    "c)": "Incorrecta. Ambas suelen ser de caja negra.",
+    "d)": "Incorrecta."
+  }
+},{
+  "pregunta": "¿Qué estructura de datos utiliza internamente el sistema operativo para gestionar las llamadas recursivas y el retorno de funciones?",
+  "opciones": [
+    "a) Una Cola (FIFO)",
+    "b) Una Pila (LIFO)",
+    "c) Un Árbol B+",
+    "d) Una Tabla Hash"
+  ],
+  "correcta": 1,
+  "explicacion": "Cada vez que se llama a una función (especialmente en recursividad), se 'apila' un registro de activación con sus variables locales y dirección de retorno. Se desapila al terminar.",
+  "analisis_opciones": {
+    "a)": "Incorrecta.",
+    "b)": "Correcta. Es el uso principal de la 'Stack' de memoria.",
+    "c)": "Incorrecta.",
+    "d)": "Incorrecta."
+  }
+},{
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente a un lenguaje de programación interpretado?",
+    "opciones": [
+      "A. El código fuente se traduce una sola vez a código máquina generando un archivo ejecutable independiente.",
+      "B. Un programa llamado intérprete lee y ejecuta el código fuente instrucción por instrucción en tiempo de ejecución.",
+      "C. El código se traduce a un lenguaje intermedio (bytecode) que solo el procesador puede entender directamente.",
+      "D. Son lenguajes que no permiten el uso de variables ni estructuras de control."
+    ],
+    "correcta": 1,
+    "explicacion": "Los lenguajes interpretados (como Python, PHP o Ruby) no generan un ejecutable; necesitan que el intérprete esté presente cada vez que se corre el programa para traducir el código 'al vuelo'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso define a los lenguajes compilados (como C o Pascal).",
+      "B": "Correcta. Es la mecánica básica de la interpretación.",
+      "C": "Incorrecta. Eso es el modelo híbrido de Java.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "Teniendo en cuenta la clasificación por paradigmas de tu temario, ¿cuál de estos grupos de lenguajes pertenece exclusivamente al paradigma Imperativo/Procedural?",
+    "opciones": [
+      "A. LISP, Scheme y ML.",
+      "B. Java, C# y Smalltalk.",
+      "C. Fortran, Cobol, Pascal y C.",
+      "D. Prolog y SQL."
+    ],
+    "correcta": 2,
+    "explicacion": "El paradigma imperativo se basa en dar órdenes e instrucciones paso a paso. Fortran, Cobol, Pascal y C son los máximos exponentes históricos de este grupo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Son lenguajes del paradigma funcional.",
+      "B": "Incorrecta. Son Orientados a Objetos.",
+      "C": "Correcta. Clasificación estándar de la página 3 del PDF.",
+      "D": "Incorrecta. Son declarativos/lógicos."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de lenguaje de programación es Java en cuanto a su proceso de transformación de código?",
+    "opciones": [
+      "A. Es un lenguaje puramente interpretado.",
+      "B. Es un lenguaje puramente compilado a código máquina nativo.",
+      "C. Es un lenguaje híbrido que compila a un código intermedio llamado Bytecode.",
+      "D. Es un lenguaje ensamblador de cuarta generación."
+    ],
+    "correcta": 2,
+    "explicacion": "Java compila el código fuente (.java) a un formato intermedio (.class o bytecode) que luego es interpretado por la Máquina Virtual de Java (JVM).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Requiere una fase de compilación previa.",
+      "B": "Incorrecta. No genera un binario directo para el sistema operativo.",
+      "C": "Correcta. Combina portabilidad y rendimiento.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "Según tu temario, ¿cuál de los siguientes lenguajes se considera el primer lenguaje de alto nivel de la historia, orientado principalmente al cálculo numérico?",
+    "opciones": [
+      "A. COBOL.",
+      "B. FORTRAN.",
+      "C. ADA.",
+      "D. ALGOL."
+    ],
+    "correcta": 1,
+    "explicacion": "FORTRAN (Formula Translation) fue creado en los años 50 y es reconocido como el primer lenguaje de alto nivel con éxito, muy usado en ingeniería.",
+    "analisis_opciones": {
+      "A": "Incorrecta. COBOL se orientó a la gestión administrativa.",
+      "B": "Correcta. Dato histórico clave de los temas de desarrollo.",
+      "C": "Incorrecta. Es posterior, impulsado por el DoD de EEUU.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "En el contexto de 'Tipos de datos', ¿qué diferencia a un dato de tipo 'estático' de uno 'dinámico'?",
+    "opciones": [
+      "A. El estático no puede cambiar su valor, el dinámico sí.",
+      "B. El estático tiene un tamaño fijo definido en tiempo de compilación; el dinámico puede variar su tamaño en tiempo de ejecución.",
+      "C. El estático solo se usa en lenguajes compilados y el dinámico en interpretados.",
+      "D. No hay diferencia, son sinónimos en lenguajes modernos."
+    ],
+    "correcta": 1,
+    "explicacion": "La diferencia radica en la gestión de memoria. Un array convencional es estático (tamaño fijo), mientras que una lista enlazada es dinámica (crece o decrece según se necesite).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería la diferencia entre constante y variable.",
+      "B": "Correcta. Es la definición basada en la gestión de la memoria (heap vs stack).",
+      "C": "Incorrecta. Ambos existen en casi todos los lenguajes.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "El lenguaje LISP es el máximo exponente del paradigma:",
+    "opciones": [
+      "A. Lógico.",
+      "B. Orientado a Objetos.",
+      "C. Funcional.",
+      "D. Imperativo."
+    ],
+    "correcta": 2,
+    "explicacion": "LISP (List Processing) se basa en la aplicación de funciones matemáticas y el tratamiento de listas, siendo el pilar del paradigma funcional.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese es Prolog.",
+      "B": "Incorrecta. Ese es Smalltalk.",
+      "C": "Correcta. Definición de la sección de paradigmas.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué nombre recibe el proceso de encontrar y corregir errores en el código fuente de un programa?",
+    "opciones": [
+      "A. Compilación.",
+      "B. Debugging (Depuración).",
+      "C. Indentación.",
+      "D. Refactorización."
+    ],
+    "correcta": 1,
+    "explicacion": "El debugging es la tarea de localizar y eliminar 'bugs' o fallos lógicos y de sintaxis.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la traducción.",
+      "B": "Correcta. Término técnico usado en el desarrollo.",
+      "C": "Incorrecta. Es el uso de sangrías.",
+      "D": "Incorrecta. Es mejorar el código sin cambiar su comportamiento."
+    }
+  }
+
+,
+
+  {
+    "pregunta": "¿Qué nombre recibe el lenguaje de programación de más bajo nivel, cuyas instrucciones son directamente entendibles por el hardware de la CPU sin necesidad de traducción alguna?",
+    "opciones": [
+      "A. Lenguaje Ensamblador.",
+      "B. Lenguaje de Máquina.",
+      "C. Lenguaje Objeto.",
+      "D. Código Fuente."
+    ],
+    "correcta": 1,
+    "explicacion": "El lenguaje de máquina consiste exclusivamente en cadenas de ceros y unos (binario) que la CPU ejecuta directamente. El ensamblador, aunque es de bajo nivel, ya requiere un proceso de traducción.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Usa mnemotécnicos y requiere traducción.",
+      "B": "Correcta. Es el nivel más básico y directo.",
+      "C": "Incorrecta. Es el resultado de la compilación, pero puede ser binario o bytecode.",
+      "D": "Incorrecta. Es el texto escrito por el programador."
+    }
+  },
+  {
+    "pregunta": "En el proceso de creación de software, ¿cómo se denomina al programa que traduce el código fuente completo de una sola vez y genera un archivo ejecutable independiente?",
+    "opciones": [
+      "A. Intérprete.",
+      "B. Enlazador (Linker).",
+      "C. Compilador.",
+      "D. Depurador (Debugger)."
+    ],
+    "correcta": 2,
+    "explicacion": "El compilador traduce todo el código de una vez y crea un programa objeto o ejecutable. A diferencia del intérprete, una vez compilado no necesita el programa original para funcionar.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Traduce línea a línea en tiempo de ejecución.",
+      "B": "Incorrecta. Une los módulos objeto para crear el ejecutable.",
+      "C": "Correcta. Definición de lenguaje compilado (ej. C, Pascal).",
+      "D": "Incorrecta. Sirve para corregir errores."
+    }
+  },
+  {
+    "pregunta": "Teniendo en cuenta la portabilidad, ¿cuál es la principal característica de los lenguajes interpretados frente a los compilados?",
+    "opciones": [
+      "A. Son mucho más rápidos en ejecución.",
+      "B. Son independientes del hardware, ya que solo necesitan que el intérprete esté instalado en el sistema destino.",
+      "C. No permiten el uso de funciones ni procedimientos.",
+      "D. Requieren ser traducidos a lenguaje ensamblador antes de cada uso."
+    ],
+    "correcta": 1,
+    "explicacion": "Un programa interpretado (como Python) puede correr en cualquier SO (Windows, Linux, Mac) siempre que el intérprete esté disponible, sin necesidad de recompilar el código.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Suelen ser más lentos por la traducción constante.",
+      "B": "Correcta. Es su gran ventaja de portabilidad.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "¿Qué es un 'Compilador Cruzado' (Cross Compiler) según las definiciones de tu temario?",
+    "opciones": [
+      "A. Un compilador que puede traducir varios lenguajes a la vez.",
+      "B. Un programa que traduce código de alto nivel a otro lenguaje de alto nivel.",
+      "C. Un compilador que genera código ejecutable para una plataforma o arquitectura distinta a la que se está utilizando para compilar.",
+      "D. Un compilador que detecta errores lógicos automáticamente."
+    ],
+    "correcta": 2,
+    "explicacion": "Se usa mucho en sistemas embebidos: compilas en un PC potente pero el programa resultante es para que lo ejecute un microchip o una consola.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta. Eso es un transpilador.",
+      "C": "Correcta. Definición técnica de compilación cruzada.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "Dentro de la estructura de un programa, ¿cómo se denominan las variables que se declaran fuera de cualquier subprograma y que son accesibles desde cualquier parte del código?",
+    "opciones": [
+      "A. Variables locales.",
+      "B. Variables de registro.",
+      "C. Variables globales.",
+      "D. Variables dinámicas."
+    ],
+    "correcta": 2,
+    "explicacion": "Las variables globales tienen un ámbito que abarca todo el programa. Por contra, las locales solo existen dentro de la función donde se declaran.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ámbito restringido.",
+      "B": "Incorrecta. Almacenadas en la CPU.",
+      "C": "Correcta. Ámbito total del programa.",
+      "D": "Incorrecta. Creadas en tiempo de ejecución."
+    }
+  },
+  {
+    "pregunta": "En las pruebas de software, ¿cuál es el objetivo primordial de las 'Pruebas de Regresión'?",
+    "opciones": [
+      "A. Comprobar que el sistema soporta una carga máxima de usuarios.",
+      "B. Verificar que los cambios o correcciones realizados no han introducido nuevos errores en partes del código que antes funcionaban.",
+      "C. Asegurar que el usuario final acepta el diseño visual del programa.",
+      "D. Medir el tiempo de respuesta de la base de datos."
+    ],
+    "correcta": 1,
+    "explicacion": "Se ejecutan tras una modificación para asegurar que el 'efecto onda' no ha roto funcionalidades que ya eran estables.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso son pruebas de estrés.",
+      "B": "Correcta. Fundamental en el mantenimiento de software.",
+      "C": "Incorrecta. Eso son pruebas de aceptación.",
+      "D": "Incorrecta. Eso son pruebas de rendimiento."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de prueba de software se basa en el estudio de los algoritmos y la lógica interna del programa, teniendo acceso total al código fuente?",
+    "opciones": [
+      "A. Caja Negra.",
+      "B. Caja Gris.",
+      "C. Caja Blanca (o estructural).",
+      "D. Prueba de Humo."
+    ],
+    "correcta": 2,
+    "explicacion": "En la caja blanca el 'tester' ve las tripas del programa: bucles, condiciones y flujos de datos internos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Solo mira entradas y salidas.",
+      "B": "Incorrecta. Mezcla de ambas.",
+      "C": "Correcta. Definición de prueba estructural.",
+      "D": "Incorrecta. Prueba rápida de arranque."
+    }
+  },
+
+
+  {
+    "pregunta": "¿Cuál de los siguientes grupos de lenguajes se caracteriza por ser mayoritariamente interpretado (o ejecutado a través de un motor de scripting) en sus entornos estándar?",
+    "opciones": [
+      "A. C, C++ y Fortran.",
+      "B. Pascal, Ada y Algol.",
+      "C. PHP, Perl y LISP.",
+      "D. COBOL y Basic."
+    ],
+    "correcta": 2,
+    "explicacion": "PHP y Perl son los lenguajes de scripting por excelencia. LISP, aunque puede compilarse, tiene su origen y uso principal como lenguaje interpretado en entornos de inteligencia artificial.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Son puramente compilados a código máquina.",
+      "B": "Incorrecta. Son lenguajes compilados clásicos.",
+      "C": "Correcta. Son los ejemplos típicos de lenguajes que necesitan un intérprete.",
+      "D": "Incorrecta. COBOL es compilado; Basic tiene versiones de ambos tipos pero no define al grupo."
+    }
+  },
+  {
+    "pregunta": "Sobre el lenguaje Java, y atendiendo a la clasificación de tu temario, ¿cuál es su principal particularidad respecto a la ejecución?",
+    "opciones": [
+      "A. Es un lenguaje de bajo nivel porque gestiona la memoria manualmente.",
+      "B. Es un lenguaje híbrido: se compila a Bytecode y luego se interpreta en una Máquina Virtual (JVM).",
+      "C. Es un lenguaje puramente declarativo como Prolog.",
+      "D. No permite la orientación a objetos, solo es procedural."
+    ],
+    "correcta": 1,
+    "explicacion": "Java no genera código máquina directo para el procesador, sino un código intermedio (Bytecode) que lo hace multiplataforma.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Java tiene recolector de basura (Garbage Collector).",
+      "B": "Correcta. Es la definición técnica de su arquitectura.",
+      "C": "Incorrecta. Es imperativo orientado a objetos.",
+      "D": "Incorrecta. Es uno de los pilares de la OOP."
+    }
+  },
+  {
+    "pregunta": "De la siguiente lista de lenguajes imperativos/procedurales, ¿cuál fue diseñado específicamente para la gestión administrativa y empresarial (Common Business Oriented Language)?",
+    "opciones": [
+      "A. FORTRAN.",
+      "B. ALGOL.",
+      "C. COBOL.",
+      "D. PASCAL."
+    ],
+    "correcta": 2,
+    "explicacion": "COBOL es el lenguaje histórico de la banca y la administración, diseñado para ser legible (parecido al inglés) y manejar grandes registros de datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Orientado a fórmulas científicas.",
+      "B": "Incorrecta. Base para lenguajes posteriores como C.",
+      "C": "Correcta. Por sus siglas: COmmon Business Oriented Language.",
+      "D": "Incorrecta. Diseñado para la enseñanza de la programación."
+    }
+  },
+  {
+    "pregunta": "¿Qué lenguaje de los siguientes es el máximo exponente de la programación lógica (declarativa) mencionado en tu anexo?",
+    "opciones": [
+      "A. Scheme.",
+      "B. Prolog.",
+      "C. Smalltalk.",
+      "D. Ada."
+    ],
+    "correcta": 1,
+    "explicacion": "Prolog se basa en la definición de hechos y reglas lógicas. El programa no dice 'cómo' resolver, sino que define 'qué' es verdad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un dialecto de LISP (Funcional).",
+      "B": "Correcta. Único lenguaje lógico puro de la lista.",
+      "C": "Incorrecta. Es orientado a objetos puro.",
+      "D": "Incorrecta. Es imperativo de alto nivel."
+    }
+  },
+  {
+    "pregunta": "Si un examen te pregunta por un lenguaje 'Multiparadigma' que destaca hoy día en el lado del servidor (Go) o en el desarrollo web rápido (PHP), ¿qué característica comparten principalmente en cuanto a su tipado?",
+    "opciones": [
+      "A. Go es de tipado fuerte y estático; PHP es de tipado débil y dinámico.",
+      "B. Ambos son de tipado débil.",
+      "C. Ambos requieren declarar el tipo de cada variable obligatoriamente (int, string) antes de usarlas.",
+      "D. PHP es más rápido que Go por ser interpretado."
+    ],
+    "correcta": 0,
+    "explicacion": "Go (de Google) busca la eficiencia de C con tipado fuerte, mientras que PHP permite cambiar el tipo de una variable sobre la marcha (débil/dinámico).",
+    "analisis_opciones": {
+      "A": "Correcta. Es una diferencia fundamental de diseño.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta. En PHP no es obligatorio.",
+      "D": "Incorrecta. Go es compilado y mucho más rápido."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de estos lenguajes se considera 'Hijo de Pascal' y fue diseñado para ser un lenguaje extremadamente seguro y robusto para sistemas críticos (defensa, aeronáutica)?",
+    "opciones": [
+      "A. C++.",
+      "B. Python.",
+      "C. Ada.",
+      "D. ML."
+    ],
+    "correcta": 2,
+    "explicacion": "Ada (nombrado así por Ada Lovelace) es el lenguaje estándar en aviación y defensa por su fuerte control de errores.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Es un lenguaje imperativo de alto nivel muy estructurado.",
+      "D": "Incorrecta. Es funcional."
+    }
+  }
+,
+
+  {
+    "pregunta": "¿A qué paradigma de programación pertenece el lenguaje Prolog, basado en la definición de hechos y reglas para la resolución de problemas mediante un motor de inferencia?",
+    "opciones": [
+      "A. Paradigma Funcional.",
+      "B. Paradigma Lógico o Declarativo.",
+      "C. Paradigma Imperativo.",
+      "D. Paradigma Orientado a Objetos."
+    ],
+    "correcta": 1,
+    "explicacion": "Prolog es el lenguaje declarativo/lógico por excelencia. En él, el programador define 'qué' es el problema (hechos y reglas) y no 'cómo' resolverlo paso a paso.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese usa funciones matemáticas (LISP).",
+      "B": "Correcta. Se basa en lógica de predicados.",
+      "C": "Incorrecta. Ese usa instrucciones secuenciales.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "De los siguientes lenguajes orientados a objetos, ¿cuál fue uno de los pioneros en implementar este paradigma de forma pura y sirvió de base para muchos conceptos actuales?",
+    "opciones": [
+      "A. Fortran.",
+      "B. COBOL.",
+      "C. Smalltalk.",
+      "D. Ada."
+    ],
+    "correcta": 2,
+    "explicacion": "Smalltalk es considerado uno de los lenguajes 'puramente' orientados a objetos, donde absolutamente todo es un objeto que se comunica mediante mensajes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es imperativo/numérico.",
+      "B": "Incorrecta. Es imperativo/gestión.",
+      "C": "Correcta. Pilar de la OOP según tu temario.",
+      "D": "Incorrecta. Es imperativo/seguridad."
+    }
+  },
+  {
+    "pregunta": "¿Qué característica define principalmente al paradigma de programación funcional (como LISP o Scheme)?",
+    "opciones": [
+      "A. El uso intensivo de punteros y direcciones de memoria.",
+      "B. La ausencia de efectos secundarios y el uso de funciones como ciudadanos de primera clase.",
+      "C. La estructuración del código en clases y herencia múltiple.",
+      "D. La ejecución de instrucciones mediante saltos GOTO."
+    ],
+    "correcta": 1,
+    "explicacion": "En el paradigma funcional, las funciones pueden pasarse como argumentos y devolverse como valores, evitando cambiar el estado de los datos (inmutabilidad).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es típico de C (imperativo).",
+      "B": "Correcta. Es la esencia de la programación funcional.",
+      "C": "Incorrecta. Eso es OOP.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "Si un lenguaje permite ser utilizado bajo paradigma imperativo, orientado a objetos y funcional al mismo tiempo (como ocurre con Python o C++), se le denomina:",
+    "opciones": [
+      "A. Lenguaje de bajo nivel.",
+      "B. Lenguaje de propósito específico.",
+      "C. Lenguaje multiparadigma.",
+      "D. Lenguaje de Quinta Generación (5GL)."
+    ],
+    "correcta": 2,
+    "explicacion": "Los lenguajes modernos suelen ser multiparadigma para ofrecer flexibilidad al desarrollador según el problema a resolver.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Definición técnica para lenguajes versátiles.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "Teniendo en cuenta el listado de lenguajes de tu anexo, ¿cuál de estos grupos se clasifica correctamente como lenguajes del paradigma Imperativo Clásico?",
+    "opciones": [
+      "A. Prolog, SQL y Haskell.",
+      "B. Pascal, C, Ada y Algol.",
+      "C. Java, C# y PHP.",
+      "D. LISP, ML y Scheme."
+    ],
+    "correcta": 1,
+    "explicacion": "Pascal, C, Ada y Algol son los lenguajes procedurales por excelencia, donde el flujo se controla mediante procedimientos y funciones secuenciales.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Son declarativos.",
+      "B": "Correcta. Siguen fielmente el modelo imperativo.",
+      "C": "Incorrecta. Están centrados en objetos.",
+      "D": "Incorrecta. Son funcionales."
+    }
+  }
+,
+
+  {
+    "pregunta": "¿Cuál de las siguientes herramientas es un framework estándar utilizado específicamente para la realización de pruebas unitarias en el lenguaje Java?",
+    "opciones": [
+      "A. JUnit.",
+      "B. Selenium.",
+      "C. Jenkins.",
+      "D. Maven."
+    ],
+    "correcta": 0,
+    "explicacion": "JUnit es el framework de pruebas unitarias por excelencia para Java. Permite automatizar la ejecución de pruebas sobre métodos y clases individuales.",
+    "analisis_opciones": {
+      "A": "Correcta. Herramienta específica de pruebas unitarias.",
+      "B": "Incorrecta. Se usa para automatizar pruebas en navegadores web (pruebas de sistema/interfaz).",
+      "C": "Incorrecta. Es una herramienta de Integración Continua (CI).",
+      "D": "Incorrecta. Es un gestor de proyectos y dependencias."
+    }
+  },
+  {
+    "pregunta": "Para realizar pruebas de carga y estrés sobre una aplicación web o una base de datos, ¿qué herramienta de código abierto es la más utilizada según los estándares de la industria?",
+    "opciones": [
+      "A. SonarQube.",
+      "B. Apache JMeter.",
+      "C. Valgrind.",
+      "D. Postman."
+    ],
+    "correcta": 1,
+    "explicacion": "JMeter permite simular una carga pesada de usuarios sobre un servidor para medir su rendimiento y resistencia (Stress Testing).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se usa para análisis estático de calidad de código.",
+      "B": "Correcta. Herramienta de referencia para pruebas de carga.",
+      "C": "Incorrecta. Se usa para detectar fugas de memoria en C/C++.",
+      "D": "Incorrecta. Se usa principalmente para probar APIs y peticiones HTTP."
+    }
+  },
+  {
+    "pregunta": "En el contexto de las pruebas de software, ¿qué herramienta utilizaría un analista para realizar un análisis estático del código fuente en busca de vulnerabilidades y malas prácticas sin llegar a ejecutar el programa?",
+    "opciones": [
+      "A. Bugzilla.",
+      "B. SonarQube.",
+      "C. Appium.",
+      "D. Wireshark."
+    ],
+    "correcta": 1,
+    "explicacion": "SonarQube inspecciona el código fuente (análisis estático) para detectar 'code smells', bugs potenciales y fallos de seguridad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un sistema de seguimiento de errores (Bug Tracking).",
+      "B": "Correcta. Herramienta de análisis estático de calidad.",
+      "C": "Incorrecta. Se usa para pruebas automatizadas en apps móviles.",
+      "D": "Incorrecta. Es un analizador de protocolos de red (sniffer)."
+    }
+  },
+  {
+    "pregunta": "¿Qué herramienta es ampliamente conocida para automatizar las pruebas de interfaz de usuario (UI) y de aceptación en aplicaciones web, simulando las acciones de un usuario en el navegador?",
+    "opciones": [
+      "A. PyTest.",
+      "B. Selenium.",
+      "C. NUnit.",
+      "D. GDB (GNU Debugger)."
+    ],
+    "correcta": 1,
+    "explicacion": "Selenium permite grabar y reproducir interacciones en el navegador para asegurar que la web funciona correctamente desde el punto de vista del usuario.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Framework de pruebas para Python.",
+      "B": "Correcta. Estándar para pruebas funcionales web.",
+      "C": "Incorrecta. Framework de pruebas unitarias para .NET.",
+      "D": "Incorrecta. Es un depurador de bajo nivel."
+    }
+  }
+,
+  {
+    "pregunta": "¿Qué herramienta de software libre, desarrollada por Apache, es el estándar para realizar pruebas de carga, rendimiento y estrés sobre servicios web y bases de datos?",
+    "opciones": [
+      "A. Selenium.",
+      "B. Apache JMeter.",
+      "C. Wireshark.",
+      "D. JUnit."
+    ],
+    "correcta": 1,
+    "explicacion": "Apache JMeter es una herramienta Java diseñada para cargar y medir el rendimiento de recursos estáticos y dinámicos, simulando múltiples usuarios simultáneos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se enfoca en pruebas funcionales y de interfaz web.",
+      "B": "Correcta. Es la herramienta de referencia para Stress y Performance Testing.",
+      "C": "Incorrecta. Es un analizador de tráfico de red.",
+      "D": "Incorrecta. Se usa para pruebas unitarias de código Java."
+    }
+  },
+  {
+    "pregunta": "Según tu temario, cuando sometemos a un programa a una carga de CPU del 90%, ocupamos casi todo el disco y forzamos el swapping de memoria para ver cómo reacciona, ¿qué tipo de prueba estamos realizando?",
+    "opciones": [
+      "A. Pruebas de Prestaciones (Performance testing).",
+      "B. Pruebas de Solidez (Robustness testing).",
+      "C. Pruebas de Aguante (Stress testing).",
+      "D. Pruebas de Interoperabilidad.",
+      "E. Todas las anteriores son correctas."
+    ],
+    "correcta": 2,
+    "explicacion": "El Stress Testing o prueba de aguante busca forzar el sistema más allá de sus límites normales de diseño para ver cómo falla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Estas miden tiempos de respuesta en condiciones normales.",
+      "B": "Incorrecta. Estas miden la reacción ante datos erróneos.",
+      "C": "Correcta. Definición literal de tu PDF (Pág. 23).",
+      "D": "Incorrecta. Miden la comunicación con otras aplicaciones."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una función principal que podemos realizar con JMeter en un entorno de desarrollo profesional?",
+    "opciones": [
+      "A. Analizar el código fuente en busca de variables no utilizadas.",
+      "B. Realizar peticiones HTTP masivas para comprobar el tiempo de respuesta del servidor.",
+      "C. Comprobar la cobertura de bucles mediante análisis de caja blanca.",
+      "D. Diseñar diagramas de clases UML."
+    ],
+    "correcta": 1,
+    "explicacion": "JMeter actúa como un 'generador de tráfico' que permite lanzar miles de peticiones HTTP para verificar si el servidor aguanta o se cae.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es análisis estático (SonarQube).",
+      "B": "Correcta. Uso principal de JMeter.",
+      "C": "Incorrecta. Eso se hace con herramientas de cobertura (Caja Blanca).",
+      "D": "Incorrecta."
+    }
+  }
+,
+
+  {
+    "pregunta": "1. En el paso de parámetros por valor a una función:",
+    "opciones": [
+      "a) El parámetro en la función llamada hace referencia a la misma posición de memoria que la del correspondiente parámetro en la llamada a la función.",
+      "b) Se pasa a la función llamada una copia del valor del parámetro utilizado en la llamada a la función.",
+      "c) Los cambios que se realicen sobre el parámetro en la función llamada quedan reflejados en el correspondiente valor del parámetro en la llamada a la función.",
+      "d) Ninguna es correcta."
+    ],
+    "correcta": 1,
+    "explicacion": "En el paso por valor se crea una copia local del dato. Cualquier modificación dentro de la función no afecta a la variable original del programa principal.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso define el paso por referencia.",
+      "b)": "Correcta. Definición estándar de paso por valor.",
+      "c)": "Incorrecta. Eso ocurre en el paso por referencia.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "17. ¿Cuál de los siguientes es un lenguaje declarativo?",
+    "opciones": [
+      "a) Pascal",
+      "b) SQL",
+      "c) C",
+      "d) Ada"
+    ],
+    "correcta": 1,
+    "explicacion": "SQL es un lenguaje de consulta declarativo donde se especifica 'qué' datos se desean obtener, delegando en el motor de la base de datos el 'cómo' obtenerlos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es imperativo/procedural.",
+      "b)": "Correcta. Ejemplo clásico de paradigma declarativo.",
+      "c)": "Incorrecta. Es imperativo.",
+      "d)": "Incorrecta. Es imperativo/seguro."
+    }
+  },
+  {
+    "pregunta": "18. De los siguientes, ¿cuál es un lenguaje de programación orientado a objetos?",
+    "opciones": [
+      "a) Standard Pascal",
+      "b) GW-Basic",
+      "c) PL/SQL",
+      "d) Smalltalk"
+    ],
+    "correcta": 3,
+    "explicacion": "Smalltalk es históricamente uno de los lenguajes 'puros' de orientación a objetos, donde todo se trata como un objeto que intercambia mensajes.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es procedural.",
+      "b)": "Incorrecta. Es imperativo básico.",
+      "c)": "Incorrecta. Es una extensión procedural de SQL.",
+      "d)": "Correcta. Referente del paradigma OOP."
+    }
+  },
+  {
+    "pregunta": "01. En el lenguaje ensamblador, las instrucciones son de tipo:",
+    "opciones": [
+      "a) Mnemotécnico o simbólico.",
+      "b) Binario puro.",
+      "c) Estructurado de alto nivel.",
+      "d) Declarativo lógico."
+    ],
+    "correcta": 0,
+    "explicacion": "El ensamblador sustituye los códigos binarios por mnemotécnicos (MOV, ADD, JMP) para facilitar la programación a bajo nivel.",
+    "analisis_opciones": {
+      "a)": "Correcta. Característica principal del ensamblador.",
+      "b)": "Incorrecta. Ese es el lenguaje máquina.",
+      "c)": "Incorrecta. Eso es C, Java, etc.",
+      "d)": "Incorrecta. Eso es Prolog."
+    }
+  },
+  {
+    "pregunta": "16. Al respecto de las generaciones de lenguajes, señale la afirmación FALSA:",
+    "opciones": [
+      "a) Los lenguajes de 4ª generación (4GL) se orientan principalmente a la inteligencia artificial.",
+      "b) Pascal y PL/I son lenguajes imperativos de alto nivel pertenecientes a la 3ª generación.",
+      "c) El código máquina pertenece a la 1ª generación de lenguajes.",
+      "d) Cada generación de lenguajes es más fácil de usar y más parecida al lenguaje natural."
+    ],
+    "correcta": 0,
+    "explicacion": "Los lenguajes 4GL (como SQL o lenguajes de informes) se orientan a la gestión de datos. Los lenguajes de 5ª generación (5GL) son los que se orientan a la Inteligencia Artificial y resolución de problemas lógicos.",
+    "analisis_opciones": {
+      "a)": "FALSA. Se orientan a bases de datos/informes, no a IA.",
+      "b)": "Verdadera. Clásicos de la 3ª generación.",
+      "c)": "Verdadera. Nivel binario puro.",
+      "d)": "Verdadera. Es la tendencia de la evolución del software."
+    }
+  }
+]

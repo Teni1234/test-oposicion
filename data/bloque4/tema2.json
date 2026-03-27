@@ -1,0 +1,2273 @@
+[
+  {
+    "pregunta": "201. Para garantizar la atomicidad de las operaciones en bases de datos, se utilizan las operaciones commit y rollback, pero determinadas sentencias SQL no necesitan hacerlo explícitamente, entre estas sentencias se encuentra:",
+    "opciones": [
+      "a) REVOKE",
+      "b) SELECT",
+      "c) DROP",
+      "d) DELETE"
+    ],
+    "correcta": 2,
+    "explicacion": "Las sentencias de Definición de Datos (DDL) como DROP, CREATE o ALTER ejecutan un COMMIT implícito en la mayoría de SGBD (como Oracle). Esto significa que la base de datos consolida el cambio automáticamente sin esperar una orden manual.",
+    "analisis_opciones": {
+      "A": "Incorrecta. REVOKE es una sentencia de control (DCL) y, aunque en algunos sistemas confirma, la norma técnica destaca siempre a las DDL.",
+      "B": "Incorrecta. SELECT es una consulta de solo lectura; no modifica datos, por lo que no existe el concepto de commit o rollback para ella.",
+      "C": "Correcta. Al ser una sentencia DDL, se autoconfirma al finalizar su ejecución.",
+      "D": "Incorrecta. DELETE es una sentencia de manipulación (DML) y requiere un COMMIT explícito del usuario para que los cambios sean permanentes."
+    }
+  },
+  {
+    "pregunta": "202. Respecto a la virtualización de máquinas, indique la opción FALSA:",
+    "opciones": [
+      "a) Facilita el despliegue de entornos.",
+      "b) Requiere aumentar la inversión en hardware específico para la virtualización.",
+      "c) Posibilita la ejecución de varios sistemas operativos en una única máquina física.",
+      "d) Permite un aprovechamiento mayor de la capacidad del hardware."
+    ],
+    "correcta": 1,
+    "explicacion": "La virtualización busca la consolidación de servidores, lo que permite reducir (no aumentar) la inversión en hardware físico al ejecutar múltiples máquinas virtuales sobre un único servidor potente.",
+    "analisis_opciones": {
+      "A": "Correcta. El uso de plantillas y clonación acelera drásticamente la creación de nuevos servidores.",
+      "B": "Falsa. Es la opción a marcar, ya que la virtualización optimiza el hardware existente y reduce la necesidad de comprar nuevas máquinas físicas.",
+      "C": "Correcta. Es la definición básica de la tecnología de virtualización.",
+      "D": "Correcta. Evita que los procesadores y la memoria de los servidores físicos estén infrautilizados (ociosos)."
+    }
+  },
+  {
+    "pregunta": "203. Seleccione, de entre los siguientes niveles de array de discos RAID, aquel que emplee códigos Hamming para la corrección de errores en disco:",
+    "opciones": [
+      "a) RAID 1",
+      "b) RAID 2",
+      "c) RAID 4",
+      "d) RAID 5"
+    ],
+    "correcta": 1,
+    "explicacion": "El RAID 2 es un nivel que utiliza el código de Hamming para la detección y corrección de errores (ECC). Es poco común en la práctica actual debido a su complejidad y coste.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Utiliza duplicación (espejo) simple.",
+      "B": "Correcta. Es el único nivel RAID que implementa específicamente el algoritmo de Hamming a nivel de bit.",
+      "C": "Incorrecta. Utiliza paridad concentrada en un disco dedicado.",
+      "D": "Incorrecta. Utiliza paridad distribuida entre todos los discos del conjunto."
+    }
+  },
+  {
+    "pregunta": "204. ¿Cuál es el propósito de un registro de transacciones (transaction log) en un Sistema de Gestión de Bases de Datos?",
+    "opciones": [
+      "a) Es la historia de las operaciones realizadas para garantizar ACID incluso ante caídas del sistema o fallos de hardware.",
+      "b) Es el informe detallado de tiempos de procesado en modo profiling.",
+      "c) Es un registro para detectar brechas de seguridad y accesos no autorizados.",
+      "d) Es un modo para registrar las respuestas enviadas por un programa en concreto."
+    ],
+    "correcta": 0,
+    "explicacion": "El registro de transacciones es un fichero crítico donde se anotan todos los cambios antes de aplicarlos. Permite recuperar la base de datos tras un fallo (propiedad de Durabilidad de ACID).",
+    "analisis_opciones": {
+      "A": "Correcta. Permite rehacer (REDO) o deshacer (UNDO) operaciones para mantener la integridad tras una caída.",
+      "B": "Incorrecta. Eso es una traza de rendimiento o de evaluación.",
+      "C": "Incorrecta. Eso sería un registro de auditoría (audit trail).",
+      "D": "Incorrecta. Eso es una traza de depuración o de depuración de aplicaciones."
+    }
+  },
+  {
+    "pregunta": "205. En relación con los sistemas RAID señale la respuesta INCORRECTA:",
+    "opciones": [
+      "a) El RAID 1+0 exige un mínimo de 4 discos.",
+      "b) RAID 6 amplía el RAID 5 agregando un bloque de paridad.",
+      "c) RAID 5 necesitará un mínimo de 3 discos para ser implementado.",
+      "d) Un RAID 4 distribuye la información a nivel de bloques con dos discos de paridad dedicados."
+    ],
+    "correcta": 3,
+    "explicacion": "El RAID 4 utiliza un único disco de paridad dedicado para todo el conjunto de discos. El nivel que utiliza dos discos de paridad (o doble paridad) es el RAID 6.",
+    "analisis_opciones": {
+      "A": "Correcta. Requiere dos parejas (mínimo 4) para hacer el espejo y luego el fraccionamiento.",
+      "B": "Correcta. El RAID 6 mejora la tolerancia de RAID 5 al permitir que fallen dos discos a la vez.",
+      "C": "Correcta. Necesita al menos 2 discos para datos y 1 para la paridad rotativa.",
+      "D": "Incorrecta. RAID 4 solo tiene un disco de paridad. La descripción corresponde erróneamente a RAID 6."
+    }
+  },
+  {
+    "pregunta": "206. Una de las principales funciones del administrador de bases de datos es responsabilizarse de la integridad de los datos. ¿Cuál de entre los siguientes no es un fallo de integridad?",
+    "opciones": [
+      "a) Tablas con claves primarias cuyos valores no son únicos para cada fila.",
+      "b) Tablas con valores inválidos o nulos.",
+      "c) Eliminar una fila de la tabla hijo sin comprobar si existía una fila con la clave ajena en el padre.",
+      "d) Eliminar una fila de la tabla padre sin comprobar si existía una fila con la clave ajena en el hijo."
+    ],
+    "correcta": 2,
+    "explicacion": "La integridad referencial garantiza que no existan 'hijos huérfanos'. Borrar a un hijo es inofensivo para el padre, pero borrar al padre sin comprobar si tiene hijos dejaría a estos últimos sin referencia válida.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un fallo de integridad de entidad (la PK debe ser única).",
+      "B": "Incorrecta. Es un fallo de integridad de dominio o de obligatoriedad.",
+      "C": "Correcta. Esta acción no rompe ninguna regla de integridad referencial estándar.",
+      "D": "Incorrecta. Es un fallo clásico de integridad referencial."
+    }
+  },
+  {
+    "pregunta": "207. Indique cuál es la afirmación correcta en relación a la instalación de SQL Server en Windows 2000:",
+    "opciones": [
+      "a) Se asigna, normalmente, un usuario distinto a los servicios SQL Server y SQL Server Agent, respectivamente.",
+      "b) Se instala como un servicio y por tanto es necesario asignar un usuario para que inicie ese servicio.",
+      "c) La cuenta que creemos en el dominio para el SQL Server no es necesario que sea Miembro del grupo local administradores.",
+      "d) La cuenta que creemos en el dominio para el SQL Server tendrá Desactivado el atributo 'La contraseña no caduca nunca'."
+    ],
+    "correcta": 1,
+    "explicacion": "En entornos Windows, SQL Server se ejecuta como un servicio del sistema. Para funcionar correctamente dentro del esquema de seguridad de red, debe tener asignada una cuenta de usuario con los privilegios adecuados.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es la norma general o el requisito principal de instalación.",
+      "B": "Correcta. Es el requisito técnico fundamental para que el motor trabaje en un contexto de seguridad definido.",
+      "C": "Incorrecta. Normalmente requiere privilegios administrativos para gestionar archivos y recursos del sistema.",
+      "D": "Incorrecta. Al ser una cuenta de servicio, la contraseña NO debe caducar para evitar caídas del servicio inesperadas."
+    }
+  },
+  {
+    "pregunta": "208. Señale la respuesta INCORRECTA con respecto a los sistemas RAID:",
+    "opciones": [
+      "a) RAID 3 precisa al menos tres discos.",
+      "b) RAID 0 es tolerante a fallos.",
+      "c) RAID 1 duplica la información en discos espejo.",
+      "d) RAID 5 distribuye la información de paridad."
+    ],
+    "correcta": 1,
+    "explicacion": "El RAID 0 (Striping) no ofrece redundancia. Si falla un solo disco del conjunto, se pierde toda la información almacenada.",
+    "analisis_opciones": {
+      "A": "Correcta. Requiere al menos 3 discos para separar datos y paridad.",
+      "B": "Incorrecta. Es la respuesta a marcar; el RAID 0 tiene CERO tolerancia a fallos.",
+      "C": "Correcta. Es la definición de Mirroring (Espejo).",
+      "D": "Correcta. Es la característica principal que lo diferencia de RAID 4."
+    }
+  },
+  {
+    "pregunta": "209. En relación con los sistemas RAID, ¿en qué configuración la información se fracciona por bloques y se almacena de forma alternativa en todos los discos sin paridad?",
+    "opciones": [
+      "a) RAID 0",
+      "b) RAID 2",
+      "c) RAID 3",
+      "d) RAID 5"
+    ],
+    "correcta": 0,
+    "explicacion": "El RAID 0 distribuye los datos equitativamente entre los discos (fraccionamiento) para ganar velocidad, pero prescinde de cualquier método de paridad o copia.",
+    "analisis_opciones": {
+      "A": "Correcta. Define perfectamente el nivel 0.",
+      "B": "Incorrecta. Utiliza códigos Hamming.",
+      "C": "Incorrecta. Se fracciona a nivel de bytes, no de bloques.",
+      "D": "Incorrecta. Este nivel sí utiliza paridad distribuida."
+    }
+  },
+  {
+    "pregunta": "210. En el contexto de la virtualización, ¿qué hipervisor se comportaría como un programa más ejecutándose sobre el sistema operativo de la máquina real?",
+    "opciones": [
+      "a) Hipervisor tipo 2.",
+      "b) Hipervisor nativo.",
+      "c) Hipervisor unhosted.",
+      "d) Hipervisor bare-metal"
+    ],
+    "correcta": 0,
+    "explicacion": "Los hipervisores de Tipo 2 (Hosted) se instalan como una aplicación sobre un Sistema Operativo anfitrión (ej. VirtualBox sobre Windows). Los Tipo 1 van directos al hardware.",
+    "analisis_opciones": {
+      "a": "Correcta. Se ejecuta dentro de un SO host.",
+      "b": "Incorrecta. Es sinónimo de Tipo 1 o Bare-metal.",
+      "c": "Incorrecta. Término no técnico.",
+      "d": "Incorrecta. Es el hipervisor que se instala directamente sobre el hardware físico."
+    }
+  }
+,
+  {
+    "pregunta": "211. De las siguientes, ¿cuál es una solución de virtualización?",
+    "opciones": [
+      "a) RoundcubeVM",
+      "b) PowerVM",
+      "c) Mattermost",
+      "d) SlackVM"
+    ],
+    "correcta": 1,
+    "explicacion": "PowerVM es la solución de virtualización de servidores de IBM para sus arquitecturas de procesadores POWER. Permite consolidar cargas de trabajo de AIX, IBM i y Linux.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Roundcube es un cliente de correo electrónico vía web (webmail).",
+      "B": "Correcta. Es un hipervisor de grado empresarial para sistemas IBM Power.",
+      "C": "Incorrecta. Mattermost es una plataforma de mensajería y colaboración en equipo de código abierto.",
+      "D": "Incorrecta. Nombre ficticio que intenta confundir con la aplicación Slack."
+    }
+  },
+  {
+    "pregunta": "212. ¿Cuál de los siguientes NO es un tipo de backup?",
+    "opciones": [
+      "a) Compartimental",
+      "b) Incremental",
+      "c) Diferencial",
+      "d) Completa"
+    ],
+    "correcta": 0,
+    "explicacion": "Los tipos estándar y reconocidos de copias de seguridad en administración de sistemas son la completa (Full), la incremental y la diferencial.",
+    "analisis_opciones": {
+      "a": "Correcta. El término 'Compartimental' no existe en la terminología técnica de estrategias de backup.",
+      "b": "Incorrecta. Copia los archivos creados o modificados desde el último backup de cualquier tipo.",
+      "c": "Incorrecta. Copia los archivos creados o modificados desde el último backup completo.",
+      "d": "Incorrecta. Realiza una copia total de todos los datos seleccionados."
+    }
+  },
+  {
+    "pregunta": "213. ¿Cuál de las siguientes configuraciones RAID crea una copia espejo de datos en dos o más discos?",
+    "opciones": [
+      "a) RAID 0",
+      "b) RAID 1",
+      "c) RAID 2",
+      "d) RAID 3"
+    ],
+    "correcta": 1,
+    "explicacion": "El RAID 1, también conocido como Mirroring o Espejado, escribe los mismos datos en dos discos simultáneamente. Si uno falla, el otro mantiene la disponibilidad total de la información.",
+    "analisis_opciones": {
+      "a": "Incorrecta. RAID 0 es fraccionamiento (striping) para rendimiento, sin redundancia.",
+      "b": "Correcta. Es la definición clásica de redundancia por duplicación.",
+      "c": "Incorrecta. Usa códigos Hamming a nivel de bit.",
+      "d": "Incorrecta. Usa paridad a nivel de byte con un disco de paridad dedicado."
+    }
+  },
+  {
+    "pregunta": "214. Como administrador de base de datos, ¿Cuál de las siguientes políticas no es correcta?",
+    "opciones": [
+      "a) Añadir relaciones entre entidades para hacer más directo el acceso.",
+      "b) Definir un índice sobre un campo que ya está indexado.",
+      "c) Dividir entidades.",
+      "d) No permitir encriptar campos de la base de datos."
+    ],
+    "correcta": 1,
+    "explicacion": "Crear un índice sobre un campo que ya tiene uno es una redundancia ineficiente. Penaliza las operaciones de escritura (Insert, Update, Delete) y consume almacenamiento innecesario sin aportar beneficios de consulta.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Puede ser una técnica de optimización de diseño o normalización.",
+      "b": "Correcta. Es una práctica de administración errónea por redundancia técnica.",
+      "c": "Incorrecta. Es una técnica de particionamiento o normalización válida.",
+      "d": "Incorrecta. Es una política de seguridad, aunque restrictiva, no es un error técnico de administración de índices."
+    }
+  },
+  {
+    "pregunta": "215. Con respecto a los dispositivos de copia de seguridad, señale la opción correcta:",
+    "opciones": [
+      "a) Para realizar un backup no es posible utilizar una partición de un disco, hay que utilizar la unidad entera.",
+      "b) Los discos ópticos WORM, de única grabación y muchas lecturas, están suplantando a los CD's.",
+      "c) Las cintas de audio digital (DAT) de 4mm tienen capacidad para grabar varios gigabytes de información en un único cartucho.",
+      "d) El Disco Versátil Digital (DVD) es un dispositivo de acceso secuencial."
+    ],
+    "correcta": 2,
+    "explicacion": "Las cintas DAT (Digital Audio Tape), bajo el estándar DDS (Digital Data Storage), son medios magnéticos de 4mm que permiten almacenar varios gigas de datos, siendo muy comunes en backups históricos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Un backup puede realizarse sobre particiones, volúmenes lógicos o carpetas.",
+      "b": "Incorrecta. Ambas son tecnologías ópticas que han perdido relevancia frente a discos SSD y almacenamiento en nube.",
+      "c": "Correcta. Describe la capacidad técnica real de estos dispositivos de cinta.",
+      "d": "Incorrecta. El DVD es un dispositivo de acceso aleatorio o directo."
+    }
+  },
+  {
+    "pregunta": "216. En tecnologías de almacenamiento, el término SAS se corresponde con:",
+    "opciones": [
+      "a) Serial Attached State.",
+      "b) Solid Attached SCSI.",
+      "c) Serial Attached SCSI",
+      "d) Solid advanced SCSI"
+    ],
+    "correcta": 2,
+    "explicacion": "SAS (Serial Attached SCSI) es una tecnología de interfaz de bus de computadora diseñada para transferir datos desde y hacia dispositivos de almacenamiento, sucediendo al SCSI paralelo.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Nombre inexistente.",
+      "b": "Incorrecta. Confunde el término Serial con Solid.",
+      "c": "Correcta. Es la denominación técnica oficial del estándar.",
+      "d": "Incorrecta. Nombre inexistente."
+    }
+  },
+  {
+    "pregunta": "217. En la obtención del modelo físico de datos, ¿a qué nos referimos cuando hablamos de tiempo de respuesta?",
+    "opciones": [
+      "a) Número de transacciones procesadas por unidad de tiempo.",
+      "b) Tiempo que se tarda en transferir páginas de memoria a disco.",
+      "c) Tiempo que se tarda en efectuar una transacción.",
+      "d) Frecuencia con que se efectúa una transacción."
+    ],
+    "correcta": 2,
+    "explicacion": "El tiempo de respuesta es el tiempo transcurrido entre que un usuario envía una solicitud al SGBD y este devuelve el resultado de la operación.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso define el rendimiento o 'throughput'.",
+      "b": "Incorrecta. Se refiere a la latencia de disco o tiempos de paginación.",
+      "c": "Correcta. Define la velocidad de ejecución de una operación individual.",
+      "d": "Incorrecta. Define la tasa de llegada de peticiones."
+    }
+  },
+  {
+    "pregunta": "218. Señale la respuesta correcta en relación a las copias de seguridad:",
+    "opciones": [
+      "a) Los backups utilizan poca capacidad de almacenamiento.",
+      "b) Los backups son manuales, los snapshots son programables.",
+      "c) Los backups pueden almacenarse en localizaciones y medios distintos.",
+      "d) Los backups son una representación instantánea del estado de un sistema en un momento específico."
+    ],
+    "correcta": 2,
+    "explicacion": "Una de las reglas de oro del backup es la externalización: permitir guardar la información en medios diferentes (cinta, disco externo, nube) y lugares distintos para asegurar la recuperación tras un desastre físico.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Suelen requerir gran capacidad al duplicar datos existentes.",
+      "b": "Incorrecta. Ambos procesos pueden y deben ser automatizados/programables.",
+      "c": "Correcta. Es su principal ventaja de seguridad frente a fallos locales.",
+      "d": "Incorrecta. Esa es la definición técnica de un Snapshot (instantánea)."
+    }
+  },
+  {
+    "pregunta": "219. De entre los siguientes, ¿qué nivel de RAID utiliza el denominado 'disk mirroring' como mecanismo de tolerancia a fallos?",
+    "opciones": [
+      "a) RAID 0",
+      "b) RAID 1",
+      "c) RAID 5",
+      "d) RAID 6"
+    ],
+    "correcta": 1,
+    "explicacion": "El Mirroring (Espejado) es el mecanismo de copia bit a bit en tiempo real de un disco a otro, característico del nivel RAID 1.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No tiene tolerancia a fallos.",
+      "b": "Correcta. Implementa la redundancia mediante espejado de discos.",
+      "c": "Incorrecta. Utiliza paridad distribuida.",
+      "d": "Incorrecta. Utiliza doble paridad distribuida."
+    }
+  },
+  {
+    "pregunta": "220. El Administrador de la Base de Datos (DBA) es la persona:",
+    "opciones": [
+      "a) Que toma las decisiones estratégicas y de política con respecto a la información.",
+      "b) Que proporciona el apoyo técnico necesario para poner en práctica las decisiones estratégicas con respecto a la información.",
+      "c) Que escribe sus preguntas en un lenguaje de consultas de base de datos.",
+      "d) Que escribe sus aplicaciones especializadas que no encajan en el procesamiento tradicional."
+    ],
+    "correcta": 1,
+    "explicacion": "El DBA es un perfil técnico. Mientras que la dirección o el Administrador de Datos definen 'qué' información es estratégica, el DBA implementa 'cómo' se almacena, protege y mantiene técnicamente.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Corresponde al Administrador de Datos (gestión política).",
+      "b": "Correcta. Define el rol técnico operativo del administrador del SGBD.",
+      "c": "Incorrecta. Describe a un usuario final o analista.",
+      "d": "Incorrecta. Describe a un programador de sistemas o aplicaciones."
+    }
+  }
+,
+  {
+    "pregunta": "221. Señale la opción FALSA respecto a la virtualización del escritorio (VDI):",
+    "opciones": [
+      "a) Optimiza la aceleración de los gráficos, mejorando la experiencia del usuario.",
+      "b) Existen distintos tipos de fabricantes que ofrecen soluciones VDI orientados a ofrecer una experiencia completa.",
+      "c) El acceso a los escritorios virtuales se puede hacer desde múltiples plataformas y dispositivos.",
+      "d) Requiere acceder desde un hardware potente para poder ejecutarlo."
+    ],
+    "correcta": 3,
+    "explicacion": "La virtualización de escritorio (VDI) traslada el procesamiento al servidor. El hardware del cliente puede ser un 'thin client' (cliente ligero) con recursos mínimos, ya que solo necesita capacidad para mostrar la imagen remota.",
+    "analisis_opciones": {
+      "a": "Correcta. Las tecnologías actuales usan vGPU para optimizar la experiencia gráfica remota.",
+      "b": "Correcta. Fabricantes como VMware (Horizon) o Citrix (Virtual Apps and Desktops) son líderes.",
+      "c": "Correcta. Se puede acceder desde móviles, tablets o PCs antiguos.",
+      "d": "Incorrecta (respuesta). Es la opción falsa; el objetivo de VDI es precisamente liberar al cliente de la carga de hardware."
+    }
+  },
+  {
+    "pregunta": "222. La virtualización de ordenadores consiste en:",
+    "opciones": [
+      "a) Simular N máquinas virtuales sobre una real, multiplicando por N la CPU y la memoria total.",
+      "b) Que al hacer login el usuario, se cargue automáticamente el último ordenador virtual que usó.",
+      "c) Simular varias máquinas virtuales en una real, a costa de compartir los recursos.",
+      "d) Ejecutar programas de una arquitectura de procesador diferente a la nativa, emulándolo."
+    ],
+    "correcta": 2,
+    "explicacion": "La virtualización permite la consolidación: varios sistemas operativos independientes comparten el hardware físico de un único servidor (CPU, RAM, red) mediante la gestión de un hipervisor.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Los recursos físicos no se multiplican, se reparten.",
+      "b": "Incorrecta. Eso es una funcionalidad de persistencia de sesión, no la definición de virtualización.",
+      "c": "Correcta. Define el concepto de compartición de recursos físicos.",
+      "d": "Incorrecta. Eso define específicamente la emulación, que es un tipo de virtualización pero no su definición general."
+    }
+  },
+  {
+    "pregunta": "223. El nivel más bajo de aislamiento para transacciones es:",
+    "opciones": [
+      "a) Lectura repetible.",
+      "b) Lectura comprometida.",
+      "c) Lectura no comprometida.",
+      "d) Secuenciable."
+    ],
+    "correcta": 2,
+    "explicacion": "El aislamiento 'Lectura no comprometida' (Read Uncommitted) permite leer datos que han sido modificados por otra transacción pero aún no se han confirmado (Commit), lo que provoca el fenómeno de 'lecturas sucias'.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Nivel intermedio (Repeatable Read).",
+      "b": "Incorrecta. Nivel estándar (Read Committed).",
+      "c": "Correcta. Es el nivel de aislamiento más laxo.",
+      "d": "Incorrecta. Es el nivel de aislamiento más alto y restrictivo."
+    }
+  },
+  {
+    "pregunta": "224. En el contexto de la administración del almacenamiento, ¿qué es el “Thin Provisioning”?",
+    "opciones": [
+      "a) Es un mecanismo de despliegue de discos en red para clientes ligeros.",
+      "b) Es un método de virtualización de almacenamiento que permite que el espacio se asigne de forma justa y puntual.",
+      "c) Es una tecnología que permite agregar discos físicos en caliente a las cabinas de la SAN.",
+      "d) Es un método por el que se asigna todo el espacio virtualizado disponible y se va reduciendo (shrinking)."
+    ],
+    "correcta": 1,
+    "explicacion": "El Thin Provisioning (aprovisionamiento ligero) optimiza el almacenamiento al asignar espacio a un sistema bajo demanda (según se escribe) en lugar de reservar todo el espacio solicitado desde el inicio.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No tiene que ver con clientes ligeros, sino con la gestión de cabinas.",
+      "b": "Correcta. Permite simular más espacio del que realmente hay disponible físicamente.",
+      "c": "Incorrecta. Eso se llama Hot-swapping o expansión dinámica.",
+      "d": "Incorrecta. Es justo al revés; se asigna poco y se crece."
+    }
+  },
+  {
+    "pregunta": "225. Los posibles estados de una base de datos contenida en un DAG (Database Availability Group) de Microsoft Exchange 2013 son:",
+    "opciones": [
+      "a) activa y pasiva.",
+      "b) online y standby.",
+      "c) las bases de datos en un DAG siempre están activas.",
+      "d) activa y reserva."
+    ],
+    "correcta": 0,
+    "explicacion": "Un DAG utiliza la replicación continua. En un momento dado, una copia de la base de datos está 'Activa' (da servicio) y el resto de copias en otros servidores están 'Pasivas' (recibiendo logs).",
+    "analisis_opciones": {
+      "a": "Correcta. Es la terminología específica de Exchange.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta. No pueden dar servicio de escritura simultáneamente.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "226. La Guía CCN-STIC-461 recomienda cambiar el nombre del usuario administrador de la base de datos MySQL, ¿cuál es el comando para una versión superior a la 5.0.2?",
+    "opciones": [
+      "a) CHANGE USER root TO nuevo_user",
+      "b) REVOKE USER root TO nuevo_user",
+      "c) RENAME USER root TO nuevo_user",
+      "d) No existe la opción de renombrar un usuario."
+    ],
+    "correcta": 2,
+    "explicacion": "El comando RENAME USER permite modificar el nombre de una cuenta de usuario existente en el catálogo de seguridad de MySQL.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No es sintaxis válida.",
+      "b": "Incorrecta. REVOKE quita permisos, no renombra.",
+      "c": "Correcta. Comando estándar para gestión de usuarios.",
+      "d": "Incorrecta. Sí existe."
+    }
+  },
+  {
+    "pregunta": "227. Cuando una transacción devuelve un conjunto de filas que satisfacen una condición de búsqueda pero alguna de esas filas no existía cuando se inició la transacción, hablamos de:",
+    "opciones": [
+      "a) Lectura no repetible.",
+      "b) Lectura fantasma.",
+      "c) Lectura sucia.",
+      "d) Lectura arbitraria."
+    ],
+    "correcta": 1,
+    "explicacion": "La 'Lectura Fantasma' (Phantom Read) ocurre cuando una transacción ejecuta la misma consulta dos veces y obtiene una fila extra 'fantasma' que ha sido insertada y confirmada por otra transacción intermedia.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso es cuando un valor de una fila existente cambia.",
+      "b": "Correcta. Define el fenómeno de aparición de nuevos registros.",
+      "c": "Incorrecta. Eso es leer datos no confirmados.",
+      "d": "Incorrecta. Término no técnico."
+    }
+  },
+  {
+    "pregunta": "228. En un gestor de base de datos relacional, ¿qué función realiza el comando COMMIT?",
+    "opciones": [
+      "a) Deshace los cambios realizados por una transacción.",
+      "b) Deja pendientes los cambios realizados por una transacción.",
+      "c) Confirma los cambios realizados por una transacción.",
+      "d) Realiza la autenticación contra la base de datos."
+    ],
+    "correcta": 2,
+    "explicacion": "COMMIT es la sentencia que finaliza con éxito una transacción, haciendo que todos los cambios realizados en ella sean permanentes y visibles para el resto de usuarios.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso lo hace ROLLBACK.",
+      "b": "Incorrecta.",
+      "c": "Correcta. Consolida los cambios.",
+      "d": "Incorrecta. Eso lo hace CONNECT."
+    }
+  },
+  {
+    "pregunta": "229. Señale la respuesta correcta referente a los sistemas de almacenamiento SAN y NAS:",
+    "opciones": [
+      "a) SAN es más económico y fácil de configurar.",
+      "b) SAN es el acrónimo de Storage Attached Network.",
+      "c) NAS es un dispositivo de almacenamiento compartido basado en archivos.",
+      "d) NAS es el acrónimo de Network Area Storage."
+    ],
+    "correcta": 2,
+    "explicacion": "NAS (Network Attached Storage) funciona a nivel de archivos (CIFS/NFS), mientras que SAN (Storage Area Network) funciona a nivel de bloques.",
+    "analisis_opciones": {
+      "a": "Incorrecta. SAN es mucho más complejo y caro (fibra canal).",
+      "b": "Incorrecta. Es Storage Area Network.",
+      "c": "Correcta. Es almacenamiento accesible por red a nivel de sistema de ficheros.",
+      "d": "Incorrecta. Es Network Attached Storage."
+    }
+  },
+  {
+    "pregunta": "230. En SQL*Plus de ORACLE, son comandos para formatos de informes:",
+    "opciones": [
+      "a) CONNECT, COPY Y DISCONNECT.",
+      "b) COLUMN, CLEAR Y BREAK.",
+      "c) COMPUTE, TITLE Y PROMPT.",
+      "d) DEFINE, UNDEFINE Y PROMPT."
+    ],
+    "correcta": 1,
+    "explicacion": "Los comandos COLUMN (formatear columnas), CLEAR (limpiar formatos) y BREAK (crear cortes lógicos en el reporte) son herramientas nativas de SQL*Plus para la presentación de datos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Son de sesión y utilidad.",
+      "b": "Correcta. Orientados exclusivamente a la visualización de resultados.",
+      "c": "Incorrecta. COMPUTE es para cálculos, pero COLUMN es más fundamental en formato.",
+      "d": "Incorrecta. Son para variables de sustitución."
+    }
+  }
+,
+  {
+    "pregunta": "231. De los siguientes sistemas RAID, ¿cuál NO se considera redundante?",
+    "opciones": [
+      "a) RAID 0.",
+      "b) RAID 1.",
+      "c) RAID 2.",
+      "d) RAID 1+0."
+    ],
+    "correcta": 0,
+    "explicacion": "El RAID 0 (Data Striping) distribuye los datos entre varios discos para ganar velocidad, pero carece de cualquier mecanismo de paridad o duplicación. Si un disco falla, el conjunto queda inutilizable.",
+    "analisis_opciones": {
+      "a": "Correcta. Es el único nivel de la lista que no ofrece tolerancia a fallos.",
+      "b": "Incorrecta. Es redundante por espejado (mirroring).",
+      "c": "Incorrecta. Es redundante mediante códigos Hamming.",
+      "d": "Incorrecta. Es redundante al combinar espejado y fraccionamiento."
+    }
+  },
+  {
+    "pregunta": "232. ¿Cómo se denomina en Oracle a la agrupación de bloques de datos contiguos?",
+    "opciones": [
+      "a) Extensiones.",
+      "b) Segmentos.",
+      "c) Tablespaces.",
+      "d) Indices."
+    ],
+    "correcta": 0,
+    "explicacion": "En la jerarquía lógica de Oracle, la unidad mínima es el Bloque; un conjunto de bloques lógicamente contiguos forma una Extensión (Extent). Es la unidad mínima de asignación de espacio.",
+    "analisis_opciones": {
+      "a": "Correcta. Define exactamente la unidad lógica compuesta por bloques contiguos.",
+      "b": "Incorrecta. Un segmento es un conjunto de extensiones (ej. una tabla completa).",
+      "c": "Incorrecta. Es el contenedor lógico superior que agrupa segmentos.",
+      "d": "Incorrecta. Es un objeto de base de datos para optimizar búsquedas."
+    }
+  },
+  {
+    "pregunta": "233. Si disponemos de 2 discos en RAID 0, el primero es una unidad de 10 GB y la segunda unidad tiene una capacidad de 27 GB, se creará una unidad lógica resultante de:",
+    "opciones": [
+      "a) 37 GB.",
+      "b) 40 GB.",
+      "c) 20 GB.",
+      "d) 47 GB."
+    ],
+    "correcta": 2,
+    "explicacion": "En un RAID 0, el tamaño de la unidad lógica resultante está limitado por el disco más pequeño multiplicado por el número de discos ($10\text{ GB} \times 2 = 20\text{ GB}$). El espacio sobrante del disco mayor se pierde para el array.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Esto sería la suma total (como en un JBOD), no un RAID 0 estándar.",
+      "b": "Incorrecta.",
+      "c": "Correcta. Se utiliza el mínimo común para mantener el fraccionamiento simétrico.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "234. En relación a los sistemas RAID, indique qué configuración permite acceso independiente con paridad distribuida:",
+    "opciones": [
+      "a) RAID 1",
+      "b) RAID 3",
+      "c) RAID 4",
+      "d) RAID 5"
+    ],
+    "correcta": 3,
+    "explicacion": "El RAID 5 distribuye los datos y la paridad a lo que permite lecturas independientes y simultáneas de múltiples discos, eliminando el cuello de botella del disco de paridad dedicado de RAID 4.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No utiliza paridad, sino duplicación completa.",
+      "b": "Incorrecta. Utiliza acceso síncrono (todos los discos giran a la vez) con paridad a nivel de byte.",
+      "c": "Incorrecta. Utiliza paridad dedicada en un solo disco, lo que limita el acceso independiente en escrituras.",
+      "d": "Correcta. Es la definición técnica de paridad distribuida y acceso independiente."
+    }
+  },
+  {
+    "pregunta": "235. Una de las funciones de un administrador de bases de datos (DBA) es:",
+    "opciones": [
+      "a) Es responsable de asegurar que el SGBD funciona con el rendimiento adecuado.",
+      "b) Conectar las aplicaciones con la base de datos.",
+      "c) Diseño conceptual de la base de datos.",
+      "d) Responsable de codificar todas las consultas SQL necesarias en las aplicaciones."
+    ],
+    "correcta": 0,
+    "explicacion": "El DBA tiene entre sus responsabilidades críticas el 'tuning' o ajuste de rendimiento para garantizar que los tiempos de respuesta y el uso de recursos sean óptimos.",
+    "analisis_opciones": {
+      "a": "Correcta. La monitorización y optimización del rendimiento es una función nuclear del DBA.",
+      "b": "Incorrecta. Esto suele ser labor del desarrollador o del middleware.",
+      "c": "Incorrecta. El diseño conceptual suele recaer en el Analista o el Administrador de Datos (AD).",
+      "d": "Incorrecta. Los desarrolladores escriben el SQL; el DBA los audita u optimiza si es necesario."
+    }
+  },
+  {
+    "pregunta": "236. En PostgreSQL, una vez conectado al terminal interactivo psql, ¿qué opción se puede ejecutar para obtener las bases de datos disponibles?",
+    "opciones": [
+      "a) Show databases.",
+      "b) /list.",
+      "c) select databases from dual.",
+      "d) psql_show_db."
+    ],
+    "correcta": 1,
+    "explicacion": "En el terminal `psql`, los metacomandos empiezan por barra invertida. `\\list` (o el alias `\\l`) muestra el catálogo de bases de datos del servidor.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Este es un comando estándar de MySQL, no de PostgreSQL.",
+      "b": "Correcta. Es el metacomando específico de PostgreSQL.",
+      "c": "Incorrecta. `DUAL` es una tabla virtual específica de Oracle.",
+      "d": "Incorrecta. Comando ficticio."
+    }
+  },
+  {
+    "pregunta": "237. De entre las siguientes, ¿qué sentencia permite a los administradores de bases de datos conceder privilegios a cuentas de usuarios?",
+    "opciones": [
+      "a) assign",
+      "b) donate",
+      "c) grant",
+      "d) privilege"
+    ],
+    "correcta": 2,
+    "explicacion": "La sentencia `GRANT` forma parte del Lenguaje de Control de Datos (DCL) y se utiliza para otorgar permisos sobre objetos (tablas, vistas) a usuarios o roles.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No es una sentencia SQL estándar de control.",
+      "b": "Incorrecta.",
+      "c": "Correcta. Es el estándar ANSI SQL para otorgar permisos.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "238. En un entorno transaccional, los registros intervinientes en una transacción se liberan:",
+    "opciones": [
+      "a) Cuando otra transacción los intenta bloquear para actualizarlos.",
+      "b) Cuando acaba la rutina que los actualiza.",
+      "c) Sólo cuando la actualización tiene lugar en varias Bases de Datos.",
+      "d) Cuando la aplicación indica que la transacción ha terminado."
+    ],
+    "correcta": 3,
+    "explicacion": "Los bloqueos (locks) adquiridos durante una transacción se mantienen hasta que la transacción finaliza formalmente mediante un `COMMIT` o un `ROLLBACK`.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Esto causaría un error de bloqueo o una espera (wait).",
+      "b": "Incorrecta. Pueden seguir bloqueados si no se ha confirmado la transacción global.",
+      "c": "Incorrecta. Se liberan siempre que termine la transacción, sea local o distribuida.",
+      "d": "Correcta. La transacción termina cuando la aplicación envía la señal de fin de unidad de trabajo."
+    }
+  },
+  {
+    "pregunta": "239. Una copia de seguridad (backup) diferencial:",
+    "opciones": [
+      "a) Realiza una copia fiel donde un archivo eliminado en origen se elimina en la copia.",
+      "b) Copia todos los datos modificados desde que se hizo el último backup completo.",
+      "c) Realiza una copia sólo de los datos modificados desde el último backup (completo o incremental).",
+      "d) Realiza una copia integral de todos los contenidos."
+    ],
+    "correcta": 1,
+    "explicacion": "El backup diferencial es acumulativo respecto al último backup completo. Si el lunes se hace un completo y el martes se modifica el fichero A, el diferencial del miércoles copiará el fichero A y cualquier otro cambio ocurrido desde el lunes.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso es una sincronización tipo 'Mirror'.",
+      "b": "Correcta. Define perfectamente el carácter acumulativo frente al backup completo.",
+      "c": "Incorrecta. Esa es la definición de backup incremental.",
+      "d": "Incorrecta. Esa es la definición de backup completo."
+    }
+  },
+  {
+    "pregunta": "240. Un administrador de una base de datos (DBA):",
+    "opciones": [
+      "a) Administra valores de dichos datos y los procesa.",
+      "b) Administra la actividad de dichos datos y los protege.",
+      "c) No necesita revisar los estándares de la BD pues lo hacen los usuarios.",
+      "d) No necesita restringir el acceso pues lo hace el sistema operativo."
+    ],
+    "correcta": 1,
+    "explicacion": "El DBA gestiona el 'continente' y la seguridad de los datos. Su función no es procesar el dato en sí (eso es negocio), sino asegurar que la actividad sobre ellos sea fluida y segura.",
+    "analisis_opciones": {
+      "a": "Incorrecta. El procesado de valores es función de los usuarios o analistas.",
+      "b": "Correcta. La monitorización (actividad) y la seguridad/backup (protección) son sus pilares.",
+      "c": "Incorrecta. Es el responsable máximo de mantener los estándares del diccionario de datos.",
+      "d": "Incorrecta. El SGBD tiene su propia capa de seguridad independiente del SO."
+    }
+  }
+,
+  {
+    "pregunta": "241. Cuál de las siguientes no es una función de un Administrador de Bases de Datos (DBA):",
+    "opciones": [
+      "a) Planificación, diseño e implementación de los sistemas de bases de datos.",
+      "b) Establecer la comunicación con los usuarios.",
+      "c) Establecer normas y procedimientos.",
+      "d) Definir la información a almacenar en las bases de datos."
+    ],
+    "correcta": 3,
+    "explicacion": "La definición de 'qué' información debe almacenarse (el valor de negocio) es una decisión estratégica del Administrador de Datos (AD). El DBA se encarga de 'cómo' se implementa técnicamente esa decisión.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es una función técnica nuclear del DBA.",
+      "b": "Incorrecta. Debe coordinarse con usuarios para entender requisitos de rendimiento y acceso.",
+      "c": "Incorrecta. Define estándares de nombres, seguridad y backups.",
+      "d": "Correcta. Esta función de gestión de la información corresponde al perfil AD, no al técnico DBA."
+    }
+  },
+  {
+    "pregunta": "242. La capacidad nativa de la tecnología LTO (Linear Tape-Open) Ultrium es, por cada generación:",
+    "opciones": [
+      "a) LTO-3: 200 GB, LTO-4: 400 GB, LTO-5: 800 GB, LTO-6: 1,5 TB.",
+      "b) LTO-3: 400 GB, LTO-4: 800 GB, LTO-5: 1,5 TB, LTO-6: 2,5 TB.",
+      "c) LTO-3: 100 GB, LTO-4: 200 GB, LTO-5: 400 GB, LTO-6: 800 GB.",
+      "d) LTO-3: 1600 GB, LTO-4: 3200 GB, LTO-5: 6400 GB, LTO-6: 12800 GB."
+    ],
+    "correcta": 1,
+    "explicacion": "El estándar LTO define capacidades nativas (sin compresión) que se duplican o aumentan significativamente en cada generación. La serie LTO-3 a LTO-6 sigue el patrón 400GB, 800GB, 1.5TB y 2.5TB respectivamente.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Capacidades inferiores a las reales.",
+      "b": "Correcta. Refleja fielmente el estándar LTO Ultrium.",
+      "c": "Incorrecta. Valores demasiado bajos.",
+      "d": "Incorrecta. Valores excesivos que corresponden a generaciones mucho más modernas (LTO-8/9)."
+    }
+  },
+  {
+    "pregunta": "243. La regla 3-2-1 de las copias de seguridad consiste en:",
+    "opciones": [
+      "a) Conservar 3 copias de los datos, en 2 medios diferentes con 1 copia almacenada en un lugar externo.",
+      "b) Conservar 3 copias de los datos, en 2 medios iguales con 1 copia almacenada en un lugar externo.",
+      "c) Conservar 3 copias de los datos, en 2 medios iguales con 1 copia almacenada en un lugar interno.",
+      "d) Conservar 3 copias de los datos, en 2 medios diferentes con 1 copia almacenada en un lugar interno."
+    ],
+    "correcta": 0,
+    "explicacion": "Es la estrategia de oro del backup: 3 copias totales, en al menos 2 soportes distintos (ej. disco y cinta) y 1 de ellas 'off-site' (fuera de la oficina) para recuperación ante catástrofes físicas.",
+    "analisis_opciones": {
+      "a": "Correcta. Define la redundancia, diversidad de medios y externalización.",
+      "b": "Incorrecta. Si los medios son iguales, corren el mismo riesgo de fallo por defecto de fabricación o tipo de soporte.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta. Si todas las copias están en el mismo edificio, un incendio o inundación las destruiría todas."
+    }
+  },
+  {
+    "pregunta": "244. En el sistema Oracle, indique cuál de las siguientes afirmaciones es FALSA en relación al comando EXPLAIN PLAN:",
+    "opciones": [
+      "a) Permite determinar si en la ejecución de una consulta SELECT se utiliza un índice.",
+      "b) Permite determinar el rendimiento del comando INSERT.",
+      "c) Permite determinar el rendimiento del comando DROP TABLE.",
+      "d) Permite determinar el rendimiento de una consulta DELETE."
+    ],
+    "correcta": 2,
+    "explicacion": "EXPLAIN PLAN muestra el plan de ejecución del optimizador para sentencias DML (SELECT, INSERT, UPDATE, DELETE). Sin embargo, NO se utiliza para sentencias DDL como DROP TABLE, ya que estas no tienen planes de ejecución complejos que optimizar.",
+    "analisis_opciones": {
+      "a": "Correcta. Es su uso más habitual para diagnosticar consultas lentas.",
+      "b": "Correcta. Muestra cómo se insertan los datos.",
+      "c": "Falsa. Es la opción a marcar; el comando no aplica a operaciones estructurales directas de eliminación de tablas.",
+      "d": "Correcta. Muestra el camino de acceso para encontrar las filas a borrar."
+    }
+  },
+  {
+    "pregunta": "245. En relación a la virtualización de escritorio, ¿qué opción NO es correcta?:",
+    "opciones": [
+      "a) Implementa el escritorio como un servicio.",
+      "b) Permite el acceso a un escritorio alojado en un servicio remoto a través de una red.",
+      "c) Es una copia del escritorio que incluye el SO, aplicaciones y datos.",
+      "d) VDI en modo no persistente cada usuario tiene su propia imagen de escritorio que mantiene su configuración cerrada la sesión."
+    ],
+    "correcta": 3,
+    "explicacion": "En el modo 'No Persistente' (o stateless), cualquier cambio realizado por el usuario durante la sesión se descarta al cerrarla, devolviendo el escritorio a su estado original de plantilla. La configuración guardada es propia del modo 'Persistente'.",
+    "analisis_opciones": {
+      "a": "Correcta. Se conoce como DaaS (Desktop as a Service).",
+      "b": "Correcta. Es la base de la movilidad en VDI.",
+      "c": "Correcta. Define el encapsulamiento de la máquina virtual.",
+      "d": "Incorrecta. Describe erróneamente el modo no persistente; este no guarda cambios."
+    }
+  },
+  {
+    "pregunta": "246. ¿Cuántos discos son necesarios como mínimo para construir un sistema RAID 1?",
+    "opciones": [
+      "a) RAID 1 se puede construir sin discos físicos.",
+      "b) 4 discos.",
+      "c) 2 discos.",
+      "d) 1 disco."
+    ],
+    "correcta": 2,
+    "explicacion": "El RAID 1 requiere un mínimo de 2 discos para poder realizar el espejado (mirroring) de la información de uno hacia el otro de forma síncrona.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Requiere almacenamiento físico redundante.",
+      "b": "Incorrecta. Es el mínimo para RAID 1+0 o RAID 6.",
+      "c": "Correcta. Un disco para datos y otro para la copia exacta.",
+      "d": "Incorrecta. Con un disco no hay redundancia posible."
+    }
+  },
+  {
+    "pregunta": "247. Referente a la Infraestructura Convergente (CI), señale la respuesta correcta:",
+    "opciones": [
+      "a) Es una solución que requiere de una gestión compleja y poco optimizada.",
+      "b) Es una solución definida por hardware que combina cómputo, redes y almacenamiento en un paquete preconfigurado singular.",
+      "c) Es una solución difícil de escalar.",
+      "d) Aumenta en gran medida los costos asociados con la energía y refrigeración."
+    ],
+    "correcta": 1,
+    "explicacion": "La Infraestructura Convergente agrupa los 4 componentes básicos del Datacenter (Cómputo, Almacenamiento, Redes y Virtualización) en una solución pre-integrada por un único fabricante para simplificar la gestión y despliegue.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Precisamente busca simplificar la gestión.",
+      "b": "Correcta. Es la definición técnica de CI.",
+      "c": "Incorrecta. Se escala añadiendo módulos o nodos de forma predecible.",
+      "d": "Incorrecta. Mejora la eficiencia energética al consolidar recursos en un chasis común."
+    }
+  },
+  {
+    "pregunta": "248. Indique cuál de las siguientes es una de las funciones del Administrador de bases de datos (DBA):",
+    "opciones": [
+      "a) Desarrollar los nuevos Sistemas de Información.",
+      "b) Introducir y modificar los datos.",
+      "c) Diseñar las Bases de Datos para ser usadas por los distintos Sistemas.",
+      "d) Decidir la estructura de almacenamiento, la estrategia de acceso, y definir una estrategia de respaldo."
+    ],
+    "correcta": 3,
+    "explicacion": "Las tres funciones descritas (almacenamiento, acceso y respaldo) definen la responsabilidad técnica del DBA sobre la plataforma de datos para garantizar integridad y disponibilidad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es función del equipo de desarrollo.",
+      "b": "Incorrecta. Es función del usuario final o procesos de carga.",
+      "c": "Incorrecta. El diseño lógico/conceptual suele ser del Analista/AD; el DBA hace el diseño físico.",
+      "d": "Correcta. Recoge las tareas de administración técnica puras."
+    }
+  },{
+  "pregunta": "248. Un Sistema de Gestión de Bases de Datos es un conjunto coordinado de programas, procedimientos y lenguajes que proporcionan los medios necesarios para describir y manipular los datos de una organización. Indique cuál de las siguientes es una de las funciones del Administrador de bases de datos (DBA):",
+  "opciones": [
+    "a) Desarrollar los nuevos Sistemas de Información que gestionan los datos de la organización.",
+    "b) Introducir y modificar los datos.",
+    "c) Diseñar las Bases de Datos para ser usadas por los distintos Sistemas de Información.",
+    "d) Decidir la estructura de almacenamiento, la estrategia de acceso, y definir una estrategia de respaldo y recuperación."
+  ],
+  "correcta": 3,
+  "explicacion": "El Administrador de Bases de Datos (DBA) es el perfil técnico responsable de la integridad, el rendimiento y la seguridad del SGBD. Sus funciones principales incluyen definir cómo se guardan físicamente los datos (estructuras de almacenamiento), cómo se accede a ellos eficientemente y, sobre todo, garantizar que no se pierdan mediante políticas de backup y recovery.",
+  "analisis_opciones": {
+    "a": "Incorrecta. El desarrollo de sistemas de información es competencia de los analistas y programadores de aplicaciones.",
+    "b": "Incorrecta. La introducción y modificación de datos de negocio es responsabilidad de los usuarios finales o de procesos automáticos de carga.",
+    "c": "Incorrecta. El diseño (especialmente el conceptual y lógico) suele ser responsabilidad del Administrador de Datos (AD) o del Analista; el DBA se centra más en el diseño físico.",
+    "d": "Correcta. Define las responsabilidades técnicas operativas que garantizan la disponibilidad y persistencia de la información."
+  }
+}
+,
+  {
+    "pregunta": "249. Dentro de los lenguajes de un SGBD, ¿qué categoría de sentencias se utiliza para recuperar datos sin modificarlos?",
+    "opciones": [
+      "a) DDL (Data Definition Language).",
+      "b) DML (Data Manipulation Language).",
+      "c) DCL (Data Control Language).",
+      "d) DAL (Data Access Language)."
+    ],
+    "correcta": 1,
+    "explicacion": "Aunque a veces se habla de DQL (Query), la sentencia SELECT se clasifica generalmente dentro del DML (Manipulación) porque trabaja con el contenido de las tablas.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Define estructuras (CREATE, DROP).",
+      "b": "Correcta. Incluye SELECT, INSERT, UPDATE y DELETE.",
+      "c": "Incorrecta. Gestiona permisos (GRANT, REVOKE).",
+      "d": "Incorrecta. No es una categoría estándar en SQL."
+    }
+  },
+  {
+    "pregunta": "250. La propiedad de las transacciones (ACID) que garantiza que los cambios de una transacción no son visibles para otras hasta que se confirma (Commit) es:",
+    "opciones": [
+      "a) Atomicidad.",
+      "b) Consistencia.",
+      "c) Aislamiento (Isolation).",
+      "d) Durabilidad."
+    ],
+    "correcta": 2,
+    "explicacion": "El aislamiento asegura que las operaciones concurrentes se ejecuten de forma que parezcan secuenciales, evitando que una transacción lea datos intermedios de otra.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es el principio de 'todo o nada'.",
+      "b": "Incorrecta. Asegura que la BD pase de un estado válido a otro.",
+      "c": "Correcta. Define la visibilidad de los cambios entre transacciones.",
+      "d": "Incorrecta. Asegura que los datos persistan tras un fallo."
+    }
+  },
+  {
+    "pregunta": "251. ¿Cuál de las siguientes sentencias SQL se utiliza para eliminar la estructura completa de una tabla, incluyendo sus datos e índices?",
+    "opciones": [
+      "a) DELETE TABLE",
+      "b) TRUNCATE TABLE",
+      "c) DROP TABLE",
+      "d) REMOVE TABLE"
+    ],
+    "correcta": 2,
+    "explicacion": "DROP es una sentencia DDL que elimina el objeto de la base de datos de forma definitiva del diccionario de datos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. DELETE borra filas, pero mantiene la tabla.",
+      "b": "Incorrecta. TRUNCATE borra el contenido, pero mantiene la estructura.",
+      "c": "Correcta. Elimina la definición y el contenido.",
+      "d": "Incorrecta. No es una palabra clave estándar en SQL."
+    }
+  },
+  {
+    "pregunta": "252. En el modelo relacional de SGBD, ¿qué puerto utiliza por defecto el motor de base de datos de código abierto MySQL?",
+    "opciones": [
+      "a) 1521",
+      "b) 1433",
+      "c) 3306",
+      "d) 5432"
+    ],
+    "correcta": 2,
+    "explicacion": "El puerto 3306 es el estándar para las conexiones a MySQL y MariaDB.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es el puerto de Oracle.",
+      "b": "Incorrecta. Es el puerto de SQL Server.",
+      "c": "Correcta. Puerto asignado por IANA a MySQL.",
+      "d": "Incorrecta. Es el puerto de PostgreSQL."
+    }
+  },
+  {
+    "pregunta": "253. ¿Qué propiedad ACID garantiza que las reglas de integridad (como claves primarias o tipos de datos) se cumplan antes y después de la transacción?",
+    "opciones": [
+      "a) Atomicidad.",
+      "b) Consistencia.",
+      "c) Aislamiento.",
+      "d) Durabilidad."
+    ],
+    "correcta": 1,
+    "explicacion": "La consistencia asegura que el sistema siempre esté en un estado íntegro según las restricciones definidas en el esquema.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Se refiere a la indivisibilidad de la transacción.",
+      "b": "Correcta. Es la salvaguarda de la integridad de los datos.",
+      "c": "Incorrecta. Se refiere a la concurrencia.",
+      "d": "Incorrecta. Se refiere a la persistencia."
+    }
+  },
+  {
+    "pregunta": "254. Una base de datos que almacena datos en forma de documentos JSON o XML y no utiliza esquemas fijos se clasifica como:",
+    "opciones": [
+      "a) Relacional (RDBMS).",
+      "b) Jerárquica.",
+      "c) Orientada a objetos / NoSQL.",
+      "d) Basada en red."
+    ],
+    "correcta": 2,
+    "explicacion": "Las bases de datos NoSQL (como MongoDB) suelen orientarse a objetos o documentos, ofreciendo flexibilidad frente al esquema rígido de las relacionales.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Utiliza tablas y relaciones estrictas.",
+      "b": "Incorrecta. Basada en estructuras tipo árbol.",
+      "c": "Correcta. Es la tendencia actual para Big Data y esquemas flexibles.",
+      "d": "Incorrecta. Basada en registros y punteros complejos."
+    }
+  },
+  {
+    "pregunta": "255. ¿Cuál de las siguientes es una sentencia típica del lenguaje DCL (Data Control Language)?",
+    "opciones": [
+      "a) COMMENT",
+      "b) RENAME",
+      "c) GRANT",
+      "d) UPDATE"
+    ],
+    "correcta": 2,
+    "explicacion": "GRANT permite al administrador conceder privilegios específicos sobre objetos a otros usuarios.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es DDL (añade comentarios al diccionario).",
+      "b": "Incorrecta. Es DDL (renombra objetos).",
+      "c": "Correcta. Es una de las dos sentencias básicas de DCL junto con REVOKE.",
+      "d": "Incorrecta. Es DML (modifica filas)."
+    }
+  },
+  {
+    "pregunta": "256. El concepto de 'Redo Log' está íntimamente relacionado con qué propiedad de las transacciones:",
+    "opciones": [
+      "a) Atomicidad.",
+      "b) Consistencia.",
+      "c) Aislamiento.",
+      "d) Durabilidad."
+    ],
+    "correcta": 3,
+    "explicacion": "El Redo Log registra los cambios para poder 'rehacerlos' si el servidor se apaga bruscamente, garantizando que el dato no se pierda (Durabilidad).",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Correcta. Asegura la permanencia ante fallos físicos."
+    }
+  },
+  {
+    "pregunta": "257. ¿A qué lenguaje pertenece la sentencia TRUNCATE en la mayoría de implementaciones de SQL?",
+    "opciones": [
+      "a) DML",
+      "b) DDL",
+      "c) DCL",
+      "d) TCL"
+    ],
+    "correcta": 1,
+    "explicacion": "Aunque parezca manipulación (borra datos), es DDL porque modifica la estructura de almacenamiento reiniciando el espacio asignado a la tabla.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Aunque borra contenido, no es DML puro (no admite WHERE).",
+      "b": "Correcta. Se considera una operación de esquema por su impacto en el almacenamiento.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "258. En el contexto de SGBD, ¿qué puerto utiliza por defecto PostgreSQL?",
+    "opciones": [
+      "a) 1521",
+      "b) 1433",
+      "c) 3306",
+      "d) 5432"
+    ],
+    "correcta": 3,
+    "explicacion": "El puerto 5432 es el asignado oficialmente a las instancias de PostgreSQL.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Oracle.",
+      "b": "Incorrecta. SQL Server.",
+      "c": "Incorrecta. MySQL.",
+      "d": "Correcta. Puerto estándar de Postgres."
+    }
+  }
+,
+  {
+    "pregunta": "259. En la arquitectura de Oracle, ¿cómo se denomina al área de memoria compartida que contiene datos y estructuras de control para la instancia?",
+    "opciones": [
+      "a) PGA (Program Global Area).",
+      "b) SGA (System Global Area).",
+      "c) UGA (User Global Area).",
+      "d) Library Cache."
+    ],
+    "correcta": 1,
+    "explicacion": "La SGA es la región de memoria compartida por todos los procesos de la instancia de Oracle. Incluye componentes como el Database Buffer Cache y el Shared Pool.",
+    "analisis_opciones": {
+      "a": "Incorrecta. La PGA es memoria privada para cada proceso de servidor.",
+      "b": "Correcta. Es el componente central de memoria compartida.",
+      "c": "Incorrecta. Es memoria específica de la sesión del usuario.",
+      "d": "Incorrecta. Es solo un componente interno del Shared Pool dentro de la SGA."
+    }
+  },
+  {
+    "pregunta": "260. ¿Cuál es la jerarquía lógica de almacenamiento en Oracle de menor a mayor complejidad?",
+    "opciones": [
+      "a) Bloque < Extensión < Segmento < Tablespace.",
+      "b) Bloque < Segmento < Extensión < Tablespace.",
+      "c) Extensión < Bloque < Segmento < Tablespace.",
+      "d) Tablespace < Segmento < Extensión < Bloque."
+    ],
+    "correcta": 0,
+    "explicacion": "Varios bloques forman una extensión, varias extensiones forman un segmento (como una tabla) y uno o más segmentos se agrupan en un tablespace.",
+    "analisis_opciones": {
+      "a": "Correcta. Refleja la estructura lógica incremental de Oracle.",
+      "b": "Incorrecta. El segmento es superior a la extensión.",
+      "c": "Incorrecta. El bloque es siempre la unidad mínima.",
+      "d": "Incorrecta. Está en orden descendente."
+    }
+  },
+  {
+    "pregunta": "261. ¿Qué proceso de fondo (Background Process) de Oracle es el encargado de escribir los bloques de datos modificados desde la memoria (SGA) a los archivos físicos (Datafiles)?",
+    "opciones": [
+      "a) LGWR (Log Writer).",
+      "b) CKPT (Checkpoint).",
+      "c) DBWn (Database Writer).",
+      "d) SMON (System Monitor)."
+    ],
+    "correcta": 2,
+    "explicacion": "El proceso DBWn (Database Writer) escribe los 'dirty buffers' (bloques modificados) del Buffer Cache a los Datafiles (.dbf) en disco.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Escribe el Redo Log Buffer a los archivos de Redo Log.",
+      "b": "Incorrecta. Actualiza el encabezado de los archivos para marcar un punto de control.",
+      "c": "Correcta. Es el responsable de la escritura física de datos de usuario.",
+      "d": "Incorrecta. Realiza la recuperación de la instancia tras un fallo."
+    }
+  },
+  {
+    "pregunta": "262. En la administración de cuentas de Oracle, ¿qué comando se utiliza para obligar a un usuario a cambiar su contraseña en el primer inicio de sesión?",
+    "opciones": [
+      "a) ALTER USER usuario PASSWORD EXPIRE;",
+      "b) MODIFY USER usuario CHANGE PASSWORD;",
+      "c) ALTER USER usuario ACCOUNT LOCK;",
+      "d) UPDATE USER usuario SET NEW_PASSWORD = TRUE;"
+    ],
+    "correcta": 0,
+    "explicacion": "La cláusula PASSWORD EXPIRE marca la contraseña como caducada inmediatamente, forzando al usuario a elegir una nueva al conectar por SQL*Plus o cualquier herramienta.",
+    "analisis_opciones": {
+      "a": "Correcta. Es la sintaxis estándar de administración de perfiles.",
+      "b": "Incorrecta. Sintaxis no válida en Oracle.",
+      "c": "Incorrecta. Bloquea la cuenta, impidiendo el acceso.",
+      "d": "Incorrecta. Sintaxis de manipulación de tablas, no de administración de usuarios."
+    }
+  },
+  {
+    "pregunta": "263. ¿Qué archivo físico de Oracle es crítico porque contiene la estructura de la base de datos, el nombre de la misma y la ubicación de los datafiles y redo logs?",
+    "opciones": [
+      "a) Password file.",
+      "b) Control file.",
+      "c) Parameter file (PFILE).",
+      "d) Archive log."
+    ],
+    "correcta": 1,
+    "explicacion": "El Control File (.ctl) es un archivo binario pequeño pero vital; sin él, la base de datos no puede pasar del estado 'NOMOUNT' al estado 'MOUNT'.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Solo sirve para autenticar administradores (SYSDBA).",
+      "b": "Correcta. Es el 'cerebro' que conoce la ubicación de todos los demás archivos.",
+      "c": "Incorrecta. Contiene parámetros de configuración de la instancia (como tamaño de SGA).",
+      "d": "Incorrecta. Es una copia de seguridad de un Redo Log lleno."
+    }
+  },
+  {
+    "pregunta": "264. Respecto a la herramienta RMAN (Recovery Manager) de Oracle, ¿cuál es una de sus principales ventajas sobre los backups tradicionales del SO?",
+    "opciones": [
+      "a) No permite comprimir las copias de seguridad.",
+      "b) Solo funciona con la base de datos apagada (Cold Backup).",
+      "c) Es capaz de detectar bloques corruptos durante el proceso de copia.",
+      "d) Requiere que el usuario escriba scripts en lenguaje C++."
+    ],
+    "correcta": 2,
+    "explicacion": "RMAN interactúa directamente con el motor de Oracle, lo que le permite validar la integridad física de cada bloque mientras realiza el backup.",
+    "analisis_opciones": {
+      "a": "Incorrecta. RMAN destaca por su alta capacidad de compresión y optimización.",
+      "b": "Incorrecta. Su gran ventaja es el backup en caliente (Hot Backup) sin bloquear tablas.",
+      "c": "Correcta. Garantiza que la copia es válida y no tiene errores físicos.",
+      "d": "Incorrecta. Utiliza su propio lenguaje de comandos sencillo."
+    }
+  },
+  {
+    "pregunta": "265. ¿Qué componente de la memoria SGA de Oracle almacena los planes de ejecución de las sentencias SQL para que puedan ser reutilizados?",
+    "opciones": [
+      "a) Database Buffer Cache.",
+      "b) Java Pool.",
+      "c) Shared Pool.",
+      "d) Redo Log Buffer."
+    ],
+    "correcta": 2,
+    "explicacion": "El Shared Pool contiene la 'Library Cache', donde se guardan los códigos SQL parseados y sus planes de ejecución para evitar el sobrecoste de volver a calcularlos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Almacena bloques de datos leídos del disco.",
+      "b": "Incorrecta. Usado para servicios Java internos.",
+      "c": "Correcta. Gestiona la caché de sentencias y el diccionario de datos.",
+      "d": "Incorrecta. Almacena temporalmente los cambios antes de escribirlos en disco."
+    }
+  },
+  {
+    "pregunta": "266. En Oracle, un 'Segmento' se define físicamente como:",
+    "opciones": [
+      "a) El conjunto de todos los Datafiles de la base de datos.",
+      "b) El espacio asignado a un objeto específico (como una tabla o un índice) dentro de un Tablespace.",
+      "c) El archivo de parámetros de inicio.",
+      "d) Una porción de memoria privada para el usuario."
+    ],
+    "correcta": 1,
+    "explicacion": "Todo objeto que ocupa espacio (tabla, índice, partición) tiene un segmento propio. Si una tabla crece, se le asignan nuevas extensiones a su segmento.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso es la base de datos física completa.",
+      "b": "Correcta. Es la representación física del objeto lógico.",
+      "c": "Incorrecta. Eso es el SPFILE.",
+      "d": "Incorrecta. Eso es la PGA."
+    }
+  },
+  {
+    "pregunta": "267. ¿Qué comando de SQL*Plus se utiliza para ver la estructura de una tabla (nombres de columnas, tipos y si admiten nulos)?",
+    "opciones": [
+      "a) SHOW TABLE tabla;",
+      "b) LIST tabla;",
+      "c) DESCRIBE tabla;",
+      "d) STRUCTURE tabla;"
+    ],
+    "correcta": 2,
+    "explicacion": "DESCRIBE (o DESC) es un comando de la herramienta SQL*Plus que consulta el diccionario de datos para mostrar la definición de la tabla.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Incorrecta. LIST muestra el contenido del buffer de SQL*Plus.",
+      "c": "Correcta. Comando básico de inspección.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "268. ¿Qué modo de funcionamiento de Oracle permite realizar copias de seguridad en caliente (Hot Backups) registrando todos los cambios en archivos externos antes de sobrescribir los Redo Logs?",
+    "opciones": [
+      "a) NOARCHIVELOG mode.",
+      "b) ARCHIVELOG mode.",
+      "c) FLASHBACK mode.",
+      "d) STANDBY mode."
+    ],
+    "correcta": 1,
+    "explicacion": "En modo ARCHIVELOG, el proceso ARCn copia los Redo Logs llenos a un destino de archivo, permitiendo recuperar la base de datos hasta el momento exacto del fallo.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No guarda los registros antiguos; si falla el disco, solo recuperas hasta el último backup completo.",
+      "b": "Correcta. Es requisito para la alta disponibilidad y backups sin parada.",
+      "c": "Incorrecta. Es una funcionalidad para 'rebobinar' errores lógicos.",
+      "d": "Incorrecta. Se usa para bases de datos de réplica."
+    }
+  }
+,
+  {
+    "pregunta": "269. En el contexto de Microsoft SQL Server, ¿qué puerto utiliza por defecto la instancia principal para comunicaciones TCP/IP?",
+    "opciones": [
+      "a) 1521.",
+      "b) 3306.",
+      "c) 1433.",
+      "d) 5432."
+    ],
+    "correcta": 2,
+    "explicacion": "El puerto 1433 es el estándar asignado a la instancia predeterminada de SQL Server para conexiones de red externas.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es el puerto de Oracle.",
+      "b": "Incorrecta. Es el puerto de MySQL.",
+      "c": "Correcta. Dato clave de administración en entornos Windows.",
+      "d": "Incorrecta. Es el puerto de PostgreSQL."
+    }
+  },
+  {
+    "pregunta": "270. ¿Cuál es el nombre de la herramienta gráfica principal de administración de Microsoft SQL Server utilizada para configurar, gestionar y administrar todos los componentes del motor?",
+    "opciones": [
+      "a) SQL Server Enterprise Manager.",
+      "b) SQL Server Management Studio (SSMS).",
+      "c) SQL Plus.",
+      "d) SQL Server Configuration Tool."
+    ],
+    "correcta": 1,
+    "explicacion": "SSMS es el entorno integrado de Microsoft para gestionar cualquier infraestructura de SQL Server, desde SQL Database hasta Data Warehouse.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Era el nombre en versiones muy antiguas (2000 y anteriores).",
+      "b": "Correcta. Es la herramienta estándar actual.",
+      "c": "Incorrecta. Es la herramienta de línea de comandos de Oracle.",
+      "d": "Incorrecta. Nombre genérico."
+    }
+  },
+  {
+    "pregunta": "271. En SQL Server, ¿qué base de datos del sistema actúa como plantilla para todas las nuevas bases de datos creadas en la instancia?",
+    "opciones": [
+      "a) master.",
+      "b) msdb.",
+      "c) model.",
+      "d) tempdb."
+    ],
+    "correcta": 2,
+    "explicacion": "Cualquier objeto (tabla, procedimiento) que se cree en la base de datos 'model' aparecerá automáticamente en todas las bases de datos que se creen a partir de ese momento.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Almacena la configuración de nivel de sistema y las cuentas.",
+      "b": "Incorrecta. Utilizada por el Agente SQL para alertas y trabajos (jobs).",
+      "c": "Correcta. Es el prototipo de la instancia.",
+      "d": "Incorrecta. Almacena objetos temporales y resultados intermedios."
+    }
+  },
+  {
+    "pregunta": "272. Respecto a la virtualización, ¿cómo se denomina al hipervisor que se instala directamente sobre el hardware físico (bare-metal) sin necesidad de un sistema operativo previo?",
+    "opciones": [
+      "a) Hipervisor Tipo 1.",
+      "b) Hipervisor Tipo 2.",
+      "c) Hipervisor Hosted.",
+      "d) Contenedor de aplicaciones."
+    ],
+    "correcta": 0,
+    "explicacion": "Los hipervisores Tipo 1 (Nativos) actúan como el propio sistema operativo de control del hardware, optimizando el rendimiento de las máquinas virtuales (ej. VMware ESXi o Proxmox).",
+    "analisis_opciones": {
+      "a": "Correcta. Va directo al 'hierro'.",
+      "b": "Incorrecta. Requiere un SO anfitrión (ej. VirtualBox sobre Windows).",
+      "c": "Incorrecta. Es sinónimo de Tipo 2.",
+      "d": "Incorrecta. Es una virtualización a nivel de SO, no de hardware completo."
+    }
+  },
+  {
+    "pregunta": "273. ¿Cuál de las siguientes es una solución de virtualización de escritorio (VDI) propiedad de Citrix?",
+    "opciones": [
+      "a) Horizon.",
+      "b) Virtual Apps and Desktops (antes XenDesktop).",
+      "c) Hyper-V.",
+      "d) vSphere."
+    ],
+    "correcta": 1,
+    "explicacion": "Citrix es uno de los líderes en VDI, ofreciendo acceso remoto a escritorios y aplicaciones de forma centralizada.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es la solución VDI de VMware.",
+      "b": "Correcta. Es el producto estrella de Citrix para escritorios virtuales.",
+      "c": "Incorrecta. Es el hipervisor de Microsoft.",
+      "d": "Incorrecta. Es la plataforma de virtualización de centros de datos de VMware."
+    }
+  },
+  {
+    "pregunta": "274. En la virtualización mediante contenedores (como Docker), ¿cuál es la principal diferencia respecto a las máquinas virtuales (VM) tradicionales?",
+    "opciones": [
+      "a) Los contenedores incluyen un kernel de sistema operativo completo cada uno.",
+      "b) Los contenedores comparten el kernel del sistema operativo anfitrión.",
+      "c) Los contenedores son más pesados y lentos que las VM.",
+      "d) Los contenedores no pueden conectarse a la red."
+    ],
+    "correcta": 1,
+    "explicacion": "Al compartir el kernel del SO host, los contenedores son mucho más ligeros y rápidos de arrancar que las VM, que necesitan emular un hardware y SO completo.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso es lo que hace una Máquina Virtual.",
+      "b": "Correcta. Es la clave de la eficiencia de los contenedores.",
+      "c": "Incorrecta. Son mucho más ligeros.",
+      "d": "Incorrecta. Tienen su propia pila de red virtualizada."
+    }
+  },
+  {
+    "pregunta": "275. ¿Qué tecnología de virtualización de Microsoft viene integrada como rol en las versiones de Windows Server?",
+    "opciones": [
+      "a) VMware Workstation.",
+      "b) KVM.",
+      "c) Hyper-V.",
+      "d) Xen."
+    ],
+    "correcta": 2,
+    "explicacion": "Hyper-V es el hipervisor nativo (Tipo 1) de Microsoft que permite crear y gestionar máquinas virtuales en Windows.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es un hipervisor Tipo 2 de VMware.",
+      "b": "Incorrecta. Es el hipervisor nativo de Linux.",
+      "c": "Correcta. Es la solución nativa de Microsoft.",
+      "d": "Incorrecta. Es un hipervisor de código abierto popular en Linux."
+    }
+  },
+  {
+    "pregunta": "276. El término 'VDI No Persistente' se refiere a un escritorio virtual donde:",
+    "opciones": [
+      "a) El usuario puede instalar cualquier programa y se guarda para siempre.",
+      "b) Los cambios realizados por el usuario se descartan al cerrar la sesión.",
+      "c) El hardware del servidor no es potente.",
+      "d) Solo se puede acceder desde la red local."
+    ],
+    "correcta": 1,
+    "explicacion": "En el VDI No Persistente, el escritorio vuelve a su estado original (plantilla) tras cada reinicio, lo que facilita enormemente el mantenimiento y la seguridad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso sería un VDI Persistente.",
+      "b": "Correcta. Garantiza que todos los usuarios tengan siempre un entorno limpio.",
+      "c": "Incorrecta. El servidor sigue necesitando potencia para gestionar las sesiones.",
+      "d": "Incorrecta. Es accesible de forma remota."
+    }
+  },
+  {
+    "pregunta": "277. ¿Cuál de los siguientes es un hipervisor de Tipo 2 (Hosted) muy utilizado para pruebas y desarrollo personal?",
+    "opciones": [
+      "a) VMware ESXi.",
+      "b) Oracle VM VirtualBox.",
+      "c) Microsoft Hyper-V Server.",
+      "d) Citrix Hypervisor."
+    ],
+    "correcta": 1,
+    "explicacion": "VirtualBox se instala como una aplicación sobre Windows, Linux o Mac, lo que lo clasifica como Tipo 2.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es Tipo 1 (Bare-metal).",
+      "b": "Correcta. Es el ejemplo clásico de hipervisor alojado.",
+      "c": "Incorrecta. Es Tipo 1.",
+      "d": "Incorrecta. Es Tipo 1."
+    }
+  },
+  {
+    "pregunta": "278. ¿Qué producto de virtualización de IBM se utiliza específicamente para crear particiones lógicas (LPAR) en servidores con procesadores POWER?",
+    "opciones": [
+      "a) vSphere.",
+      "b) PowerVM.",
+      "c) Hyper-V.",
+      "d) Virtual PC."
+    ],
+    "correcta": 1,
+    "explicacion": "PowerVM es la tecnología de virtualización de nivel industrial de IBM para sus sistemas de gama alta, permitiendo una gran consolidación de servidores.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es de VMware.",
+      "b": "Correcta. Específico para arquitectura POWER de IBM.",
+      "c": "Incorrecta. Es de Microsoft.",
+      "d": "Incorrecta. Antiguo producto de Microsoft para Windows XP."
+    }
+  }
+,
+  {
+    "pregunta": "279. ¿Cuál de los siguientes SGBD es de código abierto (Open Source) y destaca por su robustez y cumplimiento de estándares SQL?",
+    "opciones": [
+      "a) Oracle Database.",
+      "b) Microsoft SQL Server.",
+      "c) PostgreSQL.",
+      "d) IBM DB2."
+    ],
+    "correcta": 2,
+    "explicacion": "PostgreSQL es el SGBD relacional de código abierto más avanzado. Oracle, SQL Server y DB2 son soluciones propietarias (de pago).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Propietario de Oracle Corp.",
+      "b": "Incorrecta. Propietario de Microsoft.",
+      "c": "Correcta. Licencia tipo BSD, libre y comunitario.",
+      "d": "Incorrecta. Propietario de IBM."
+    }
+  },
+  {
+    "pregunta": "280. ¿Qué herramienta de Oracle se utiliza específicamente para la carga masiva de datos desde ficheros externos (como CSV o TXT) a las tablas de la base de datos?",
+    "opciones": [
+      "a) SQL*Loader.",
+      "b) RMAN.",
+      "c) SQL*Plus.",
+      "d) Net Manager."
+    ],
+    "correcta": 0,
+    "explicacion": "SQL*Loader es la utilidad de Oracle diseñada para mover grandes volúmenes de datos desde archivos planos a la base de datos de forma muy eficiente.",
+    "analisis_opciones": {
+      "a": "Correcta. Utiliza un archivo de control (.ctl) para definir la carga.",
+      "b": "Incorrecta. Es para copias de seguridad (Backup).",
+      "c": "Incorrecta. Es la consola para lanzar comandos SQL.",
+      "d": "Incorrecta. Es para configurar la red y el Listener."
+    }
+  },
+  {
+    "pregunta": "281. En el ecosistema de virtualización de VMware, ¿qué nombre recibe el hipervisor de Tipo 1 (Bare-metal)?",
+    "opciones": [
+      "a) VMware Workstation.",
+      "b) VMware Fusion.",
+      "c) VMware ESXi.",
+      "d) VMware Player."
+    ],
+    "correcta": 2,
+    "explicacion": "ESXi es el hipervisor nativo que se instala directamente en el servidor. Workstation y Player son de Tipo 2 (se instalan sobre Windows/Linux).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es para escritorio (Tipo 2).",
+      "b": "Incorrecta. Es para Mac (Tipo 2).",
+      "c": "Correcta. Es el estándar en centros de datos.",
+      "d": "Incorrecta. Versión básica de escritorio (Tipo 2)."
+    }
+  },
+  {
+    "pregunta": "282. ¿Cuál de las siguientes es una solución de virtualización de código abierto basada en el kernel de Linux?",
+    "opciones": [
+      "a) Hyper-V.",
+      "b) KVM (Kernel-based Virtual Machine).",
+      "c) PowerVM.",
+      "d) z/VM."
+    ],
+    "correcta": 1,
+    "explicacion": "KVM convierte el kernel de Linux en un hipervisor de Tipo 1. Es la base de soluciones como Proxmox o Red Hat Virtualization.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es de Microsoft.",
+      "b": "Correcta. Tecnología Open Source integrada en Linux.",
+      "c": "Incorrecta. Es de IBM para procesadores POWER.",
+      "d": "Incorrecta. Es de IBM para Mainframes (z/Architecture)."
+    }
+  },
+  {
+    "pregunta": "283. ¿Qué herramienta de Microsoft SQL Server permite automatizar tareas mediante la creación de 'Jobs' (trabajos) programados?",
+    "opciones": [
+      "a) SQL Server Profiler.",
+      "b) SQL Server Agent.",
+      "c) Database Engine Tuning Advisor.",
+      "d) Integration Services (SSIS)."
+    ],
+    "correcta": 1,
+    "explicacion": "El SQL Server Agent es el servicio encargado de ejecutar tareas programadas, como backups nocturnos o mantenimiento de índices.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Sirve para monitorizar y trazar eventos.",
+      "b": "Correcta. Es el programador de tareas del sistema.",
+      "c": "Incorrecta. Da recomendaciones para mejorar el rendimiento.",
+      "d": "Incorrecta. Es para mover y transformar datos (ETL)."
+    }
+  },
+  {
+    "pregunta": "284. ¿Cuál de las siguientes es una forja o repositorio de contenedores (Container Registry) muy utilizada en el mundo de la virtualización de aplicaciones?",
+    "opciones": [
+      "a) Docker Hub.",
+      "b) VirtualBox Store.",
+      "c) Hyper-V Library.",
+      "d) SQL Repository."
+    ],
+    "correcta": 0,
+    "explicacion": "Docker Hub es el registro público donde se almacenan y descargan las 'imágenes' de contenedores listas para ser ejecutadas.",
+    "analisis_opciones": {
+      "a": "Correcta. Centro neurálgico del ecosistema de contenedores.",
+      "b": "Incorrecta. No existe como tal.",
+      "c": "Incorrecta. No existe como tal.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "285. ¿Qué SGBD relacional es propiedad de Oracle Corporation pero se mantiene como software libre bajo licencia GPL?",
+    "opciones": [
+      "a) Oracle Express Edition.",
+      "b) MySQL.",
+      "c) MariaDB.",
+      "d) SQLite."
+    ],
+    "correcta": 1,
+    "explicacion": "MySQL fue comprado por Sun Microsystems y luego por Oracle. MariaDB es un 'fork' (bifurcación) creado por la comunidad para evitar el control de Oracle.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es una versión gratuita pero propietaria de Oracle.",
+      "b": "Correcta. Oracle es el dueño actual de la marca y el desarrollo principal.",
+      "c": "Incorrecta. Es independiente de Oracle.",
+      "d": "Incorrecta. Es una base de datos embebida de dominio público."
+    }
+  },
+  {
+    "pregunta": "286. En la virtualización de escritorios (VDI), ¿cómo se llama el componente encargado de asignar una máquina virtual libre a un usuario cuando este intenta conectar?",
+    "opciones": [
+      "a) Hipervisor.",
+      "b) Connection Broker (Agente de conexiones).",
+      "c) Gateway.",
+      "d) Active Directory."
+    ],
+    "correcta": 1,
+    "explicacion": "El Connection Broker es el 'semáforo' o gestor que sabe qué escritorios están encendidos, cuáles ocupados y dirige al usuario al que le corresponde.",
+    "analisis_opciones": {
+      "a": "Incorrecta. El hipervisor solo ejecuta la máquina, no gestiona la sesión del usuario.",
+      "b": "Correcta. Pieza clave en arquitecturas VDI como Citrix o VMware Horizon.",
+      "c": "Incorrecta. Gestiona el acceso seguro desde el exterior.",
+      "d": "Incorrecta. Gestiona la identidad, no la asignación de máquinas virtuales."
+    }
+  },
+  {
+    "pregunta": "287. ¿Cuál de los siguientes es un sistema de gestión de bases de datos relacional de IBM diseñado para grandes sistemas (Mainframes) y entornos distribuidos?",
+    "opciones": [
+      "a) Informix.",
+      "b) DB2.",
+      "c) Sybase.",
+      "d) Teradata."
+    ],
+    "correcta": 1,
+    "explicacion": "DB2 es el buque insignia de IBM en bases de datos relacionales, compitiendo directamente con Oracle y SQL Server.",
+    "analisis_opciones": {
+      "a": "Incorrecta. También es de IBM, pero orientado a sistemas embebidos y baja administración.",
+      "b": "Correcta. Estándar en banca y grandes corporaciones.",
+      "c": "Incorrecta. Propiedad de SAP.",
+      "d": "Incorrecta. Especializado en Data Warehouse masivo."
+    }
+  },
+  {
+    "pregunta": "288. ¿Qué herramienta de código abierto se utiliza para gestionar clústeres de contenedores a gran escala, automatizando su despliegue y escalado?",
+    "opciones": [
+      "a) Docker Compose.",
+      "b) Kubernetes (K8s).",
+      "c) VirtualBox Manager.",
+      "d) VMware vCenter."
+    ],
+    "correcta": 1,
+    "explicacion": "Kubernetes es el orquestador de contenedores más popular del mercado, originalmente creado por Google.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Sirve para definir varios contenedores en una sola máquina, no para clústeres masivos.",
+      "b": "Correcta. Es el estándar de orquestación de contenedores.",
+      "c": "Incorrecta. Gestión local de máquinas virtuales.",
+      "d": "Incorrecta. Gestión de infraestructuras VMware, no nativo de contenedores (aunque los soporta ahora)."
+    }
+  },
+  {
+    "pregunta": "269. En el contexto de Microsoft SQL Server, ¿qué puerto utiliza por defecto la instancia principal para comunicaciones TCP/IP?",
+    "opciones": [
+      "a) 1521.",
+      "b) 3306.",
+      "c) 1433.",
+      "d) 5432."
+    ],
+    "correcta": 2,
+    "explicacion": "El puerto 1433 es el estándar asignado a la instancia predeterminada de SQL Server para conexiones de red externas.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es el puerto de Oracle.",
+      "b": "Incorrecta. Es el puerto de MySQL.",
+      "c": "Correcta. Dato clave de administración en entornos Windows.",
+      "d": "Incorrecta. Es el puerto de PostgreSQL."
+    }
+  },
+  {
+    "pregunta": "270. ¿Cuál es el nombre de la herramienta gráfica principal de administración de Microsoft SQL Server utilizada para configurar, gestionar y administrar todos los componentes del motor?",
+    "opciones": [
+      "a) SQL Server Enterprise Manager.",
+      "b) SQL Server Management Studio (SSMS).",
+      "c) SQL Plus.",
+      "d) SQL Server Configuration Tool."
+    ],
+    "correcta": 1,
+    "explicacion": "SSMS es el entorno integrado de Microsoft para gestionar cualquier infraestructura de SQL Server, desde SQL Database hasta Data Warehouse.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Era el nombre en versiones muy antiguas (2000 y anteriores).",
+      "b": "Correcta. Es la herramienta estándar actual.",
+      "c": "Incorrecta. Es la herramienta de línea de comandos de Oracle.",
+      "d": "Incorrecta. Nombre genérico."
+    }
+  },
+  {
+    "pregunta": "271. En SQL Server, ¿qué base de datos del sistema actúa como plantilla para todas las nuevas bases de datos creadas en la instancia?",
+    "opciones": [
+      "a) master.",
+      "b) msdb.",
+      "c) model.",
+      "d) tempdb."
+    ],
+    "correcta": 2,
+    "explicacion": "Cualquier objeto (tabla, procedimiento) que se cree en la base de datos 'model' aparecerá automáticamente en todas las bases de datos que se creen a partir de ese momento.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Almacena la configuración de nivel de sistema y las cuentas.",
+      "b": "Incorrecta. Utilizada por el Agente SQL para alertas y trabajos (jobs).",
+      "c": "Correcta. Es el prototipo de la instancia.",
+      "d": "Incorrecta. Almacena objetos temporales y resultados intermedios."
+    }
+  },
+  {
+    "pregunta": "272. Respecto a la virtualización, ¿cómo se denomina al hipervisor que se instala directamente sobre el hardware físico (bare-metal) sin necesidad de un sistema operativo previo?",
+    "opciones": [
+      "a) Hipervisor Tipo 1.",
+      "b) Hipervisor Tipo 2.",
+      "c) Hipervisor Hosted.",
+      "d) Contenedor de aplicaciones."
+    ],
+    "correcta": 0,
+    "explicacion": "Los hipervisores Tipo 1 (Nativos) actúan como el propio sistema operativo de control del hardware, optimizando el rendimiento de las máquinas virtuales (ej. VMware ESXi o Proxmox).",
+    "analisis_opciones": {
+      "a": "Correcta. Va directo al 'hierro'.",
+      "b": "Incorrecta. Requiere un SO anfitrión (ej. VirtualBox sobre Windows).",
+      "c": "Incorrecta. Es sinónimo de Tipo 2.",
+      "d": "Incorrecta. Es una virtualización a nivel de SO, no de hardware completo."
+    }
+  },
+  {
+    "pregunta": "273. ¿Cuál de las siguientes es una solución de virtualización de escritorio (VDI) propiedad de Citrix?",
+    "opciones": [
+      "a) Horizon.",
+      "b) Virtual Apps and Desktops (antes XenDesktop).",
+      "c) Hyper-V.",
+      "d) vSphere."
+    ],
+    "correcta": 1,
+    "explicacion": "Citrix es uno de los líderes en VDI, ofreciendo acceso remoto a escritorios y aplicaciones de forma centralizada.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es la solución VDI de VMware.",
+      "b": "Correcta. Es el producto estrella de Citrix para escritorios virtuales.",
+      "c": "Incorrecta. Es el hipervisor de Microsoft.",
+      "d": "Incorrecta. Es la plataforma de virtualización de centros de datos de VMware."
+    }
+  },
+  {
+    "pregunta": "274. En la virtualización mediante contenedores (como Docker), ¿cuál es la principal diferencia respecto a las máquinas virtuales (VM) tradicionales?",
+    "opciones": [
+      "a) Los contenedores incluyen un kernel de sistema operativo completo cada uno.",
+      "b) Los contenedores comparten el kernel del sistema operativo anfitrión.",
+      "c) Los contenedores son más pesados y lentos que las VM.",
+      "d) Los contenedores no pueden conectarse a la red."
+    ],
+    "correcta": 1,
+    "explicacion": "Al compartir el kernel del SO host, los contenedores son mucho más ligeros y rápidos de arrancar que las VM, que necesitan emular un hardware y SO completo.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso es lo que hace una Máquina Virtual.",
+      "b": "Correcta. Es la clave de la eficiencia de los contenedores.",
+      "c": "Incorrecta. Son mucho más ligeros.",
+      "d": "Incorrecta. Tienen su propia pila de red virtualizada."
+    }
+  },
+  {
+    "pregunta": "275. ¿Qué tecnología de virtualización de Microsoft viene integrada como rol en las versiones de Windows Server?",
+    "opciones": [
+      "a) VMware Workstation.",
+      "b) KVM.",
+      "c) Hyper-V.",
+      "d) Xen."
+    ],
+    "correcta": 2,
+    "explicacion": "Hyper-V es el hipervisor nativo (Tipo 1) de Microsoft que permite crear y gestionar máquinas virtuales en Windows.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es un hipervisor Tipo 2 de VMware.",
+      "b": "Incorrecta. Es el hipervisor nativo de Linux.",
+      "c": "Correcta. Es la solución nativa de Microsoft.",
+      "d": "Incorrecta. Es un hipervisor de código abierto popular en Linux."
+    }
+  },
+  {
+    "pregunta": "276. El término 'VDI No Persistente' se refiere a un escritorio virtual donde:",
+    "opciones": [
+      "a) El usuario puede instalar cualquier programa y se guarda para siempre.",
+      "b) Los cambios realizados por el usuario se descartan al cerrar la sesión.",
+      "c) El hardware del servidor no es potente.",
+      "d) Solo se puede acceder desde la red local."
+    ],
+    "correcta": 1,
+    "explicacion": "En el VDI No Persistente, el escritorio vuelve a su estado original (plantilla) tras cada reinicio, lo que facilita enormemente el mantenimiento y la seguridad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso sería un VDI Persistente.",
+      "b": "Correcta. Garantiza que todos los usuarios tengan siempre un entorno limpio.",
+      "c": "Incorrecta. El servidor sigue necesitando potencia para gestionar las sesiones.",
+      "d": "Incorrecta. Es accesible de forma remota."
+    }
+  },
+  {
+    "pregunta": "277. ¿Cuál de los siguientes es un hipervisor de Tipo 2 (Hosted) muy utilizado para pruebas y desarrollo personal?",
+    "opciones": [
+      "a) VMware ESXi.",
+      "b) Oracle VM VirtualBox.",
+      "c) Microsoft Hyper-V Server.",
+      "d) Citrix Hypervisor."
+    ],
+    "correcta": 1,
+    "explicacion": "VirtualBox se instala como una aplicación sobre Windows, Linux o Mac, lo que lo clasifica como Tipo 2.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es Tipo 1 (Bare-metal).",
+      "b": "Correcta. Es el ejemplo clásico de hipervisor alojado.",
+      "c": "Incorrecta. Es Tipo 1.",
+      "d": "Incorrecta. Es Tipo 1."
+    }
+  },
+  {
+    "pregunta": "278. ¿Qué producto de virtualización de IBM se utiliza específicamente para crear particiones lógicas (LPAR) en servidores con procesadores POWER?",
+    "opciones": [
+      "a) vSphere.",
+      "b) PowerVM.",
+      "c) Hyper-V.",
+      "d) Virtual PC."
+    ],
+    "correcta": 1,
+    "explicacion": "PowerVM es la tecnología de virtualización de nivel industrial de IBM para sus sistemas de gama alta, permitiendo una gran consolidación de servidores.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es de VMware.",
+      "b": "Correcta. Específico para arquitectura POWER de IBM.",
+      "c": "Incorrecta. Es de Microsoft.",
+      "d": "Incorrecta. Antiguo producto de Microsoft para Windows XP."
+    }
+  },
+  {
+    "pregunta": "289. En relación a las sentencias utilizadas en SQL y su tipología, indique la afirmación INCORRECTA:",
+    "opciones": [
+      "a) Las sentencias de tipo DML se utilizan para manipulación de datos e incluye instrucciones como SELECT, INSERT y DELETE.",
+      "b) Las sentencias de control de datos permiten la gestión de privilegios a los usuarios mediante GRANT o REVOKE.",
+      "c) Las sentencias de tipo DCL permiten la definición de estructuras de datos mediante CREATE TABLE y DROP TABLE.",
+      "d) Las sentencias de control de transacciones incluyen las instrucciones COMMIT y ROLLBACK."
+    ],
+    "correcta": 2,
+    "explicacion": "Existe una confusión de siglas en la opción C. Las sentencias para definir estructuras (CREATE, DROP) pertenecen al lenguaje DDL (Data Definition Language), no al DCL (Data Control Language), que es para permisos[cite: 222, 226].",
+    "analisis_opciones": {
+      "a": "Correcta. El DML se encarga efectivamente de la manipulación de los registros[cite: 222, 223].",
+      "b": "Correcta. El DCL gestiona la seguridad y acceso mediante privilegios[cite: 225].",
+      "c": "Incorrecta. Mezcla la definición de DDL con las siglas de DCL[cite: 226].",
+      "d": "Correcta. COMMIT y ROLLBACK son los pilares del control transaccional (TCL)[cite: 228]."
+    }
+  },
+  {
+    "pregunta": "290. En el marco de las bases de datos, ¿qué nivel de aislamiento evita la anomalía conocida como 'lectura fantasma'?",
+    "opciones": [
+      "a) Serializable",
+      "b) Lecturas repetibles",
+      "c) Lecturas comprometidas",
+      "d) Lecturas no comprometidas"
+    ],
+    "correcta": 0,
+    "explicacion": "El nivel 'Serializable' es el más alto de aislamiento y es el único que garantiza la protección total contra lecturas fantasma, asegurando que el resultado sea el mismo que si las transacciones se ejecutaran secuencialmente[cite: 348, 350].",
+    "analisis_opciones": {
+      "a": "Correcta. Es el nivel máximo de aislamiento requerido para evitar 'phantoms'[cite: 350].",
+      "b": "Incorrecta. Evita lecturas no repetibles, pero puede sufrir de lecturas fantasma[cite: 352].",
+      "c": "Incorrecta. Nivel estándar que evita lecturas sucias pero permite no repetibles y fantasmas[cite: 354].",
+      "d": "Incorrecta. El nivel más bajo, permite todas las anomalías[cite: 355]."
+    }
+  },
+  {
+    "pregunta": "291. Si se dispone de 5 discos duros de 4 TB y se decide configurarlos en RAID 6, ¿qué capacidad neta de almacenamiento se obtendrá?",
+    "opciones": [
+      "a) 8 TB",
+      "b) 12 TB",
+      "c) 16 TB",
+      "d) 20 TB"
+    ],
+    "correcta": 1,
+    "explicacion": "El RAID 6 utiliza una doble paridad distribuida, lo que significa que el espacio equivalente a 2 discos se reserva para redundancia. La fórmula es $(n-2) \times \text{capacidad}$. En este caso: $(5-2) \times 4 \text{ TB} = 12 \text{ TB}$[cite: 613, 616].",
+    "analisis_opciones": {
+      "a": "Incorrecta. Correspondería a reservar 3 discos para paridad[cite: 614].",
+      "b": "Correcta. Resulta de restar 2 discos de paridad al total de 5[cite: 616].",
+      "c": "Incorrecta. Correspondería a un RAID 5 (reserva solo 1 disco)[cite: 618].",
+      "d": "Incorrecta. Correspondería a un RAID 0 (sin paridad, suma total)[cite: 619]."
+    }
+  },
+  {
+    "pregunta": "292. ¿Cómo se busca una imagen en Docker Hub denominada 'http' utilizando la interfaz de línea de comandos?",
+    "opciones": [
+      "a) docker search http",
+      "b) docker find http.",
+      "c) docker list http.",
+      "d) docker show http."
+    ],
+    "correcta": 0,
+    "explicacion": "El comando estándar de Docker para buscar imágenes en el registro público (Docker Hub) es 'search'[cite: 621, 623].",
+    "analisis_opciones": {
+      "a": "Correcta. Es la sintaxis oficial de Docker[cite: 623].",
+      "b": "Incorrecta. 'find' no es un comando nativo de Docker[cite: 625].",
+      "c": "Incorrecta. 'list' se usa para contenedores (ls) o imágenes locales[cite: 627].",
+      "d": "Incorrecta. 'show' no existe; existe 'inspect' para detalles técnicos[cite: 629]."
+    }
+  },
+  {
+    "pregunta": "293. Se quiere incluir una base de datos local en una aplicación para móviles Android. ¿Cuál de las siguientes sería la más adecuada?",
+    "opciones": [
+      "a) SQLite",
+      "b) Oracle Pocket.",
+      "c) SQL Server compact.",
+      "d) MySQL micro Edition"
+    ],
+    "correcta": 0,
+    "explicacion": "SQLite es el motor de base de datos relacional estándar e integrado de forma nativa en Android para almacenamiento local persistente[cite: 801, 805].",
+    "analisis_opciones": {
+      "a": "Correcta. Es la opción ligera y estándar para desarrollo móvil[cite: 805].",
+      "b": "Incorrecta. No es una solución estándar para Android[cite: 807].",
+      "c": "Incorrecta. Orientada históricamente a Windows CE/Mobile[cite: 809].",
+      "d": "Incorrecta. No existe una edición oficial con ese nombre para móviles[cite: 811]."
+    }
+  },
+  {
+    "pregunta": "294. ¿Cuál de las siguientes bases de datos podría haber sido una alternativa si NO queremos utilizar una base de datos relacional (NoSQL)?",
+    "opciones": [
+      "a) Aurora",
+      "b) MaxDB",
+      "c) Apache Derby",
+      "d) Cassandra"
+    ],
+    "correcta": 3,
+    "explicacion": "Apache Cassandra es un SGBD NoSQL de tipo columna ancha, diseñado para manejar grandes cantidades de datos distribuidos[cite: 841, 849].",
+    "analisis_opciones": {
+      "a": "Incorrecta. Amazon Aurora es una base de datos relacional compatible con MySQL/PostgreSQL[cite: 843].",
+      "b": "Incorrecta. MaxDB es un SGBD relacional de SAP[cite: 845].",
+      "c": "Incorrecta. Apache Derby es un SGBD relacional escrito en Java[cite: 847].",
+      "d": "Correcta. Es el ejemplo clásico de base de datos NoSQL distribuida[cite: 849]."
+    }
+  },
+  {
+    "pregunta": "295. Desea eliminar todos los datos de la tabla ANDER, pero no la propia definición de la tabla, ¿qué sentencia le permitirá realizar dicha acción?",
+    "opciones": [
+      "a) DROP TABLE ANDER;",
+      "b) No existe comando en SQL que arregle esta situación.",
+      "c) TRUNCATE TABLE ANDER;",
+      "d) DELETE TABLE ANDER;"
+    ],
+    "correcta": 2,
+    "explicacion": "TRUNCATE elimina todos los registros de una tabla de forma rápida y eficiente, vaciándola por completo pero manteniendo su estructura intacta para futuros usos[cite: 900, 907].",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eliminaría tanto los datos como la estructura de la tabla[cite: 903].",
+      "b": "Incorrecta. TRUNCATE y DELETE son las opciones estándar[cite: 905].",
+      "c": "Correcta. Es el comando óptimo para vaciar una tabla[cite: 907].",
+      "d": "Incorrecta. La sintaxis correcta es 'DELETE FROM ANDER', pero TRUNCATE es más adecuado para vaciado total[cite: 909]."
+    }
+  },
+  {
+    "pregunta": "296. ¿Cuál de los siguientes sistemas de control de versiones NO es de código abierto?",
+    "opciones": [
+      "a) Perforce",
+      "b) Bazaar",
+      "c) Mercurial.",
+      "d) Darcs"
+    ],
+    "correcta": 0,
+    "explicacion": "Perforce (Helix Core) es un software comercial y propietario. Bazaar, Mercurial y Darcs son proyectos de código abierto[cite: 958, 960].",
+    "analisis_opciones": {
+      "a": "Correcta. Es una solución propietaria de pago[cite: 960].",
+      "b": "Incorrecta. Es software libre del proyecto GNU[cite: 962].",
+      "c": "Incorrecta. Es un sistema distribuido de código abierto[cite: 964].",
+      "d": "Incorrecta. Sistema distribuido basado en parches de código abierto[cite: 966]."
+    }
+  },
+  {
+    "pregunta": "297. ¿Mediante qué comandos distintos podrá, respectivamente, crear un punto de guardado y volver a ese punto de guardado en SQL?",
+    "opciones": [
+      "a) Save y Back",
+      "b) Savedata y Rolldata",
+      "c) Savepoint y Rollback",
+      "d) Savedatapointrule y Rollbackdatapointrule"
+    ],
+    "correcta": 2,
+    "explicacion": "SAVEPOINT define un marcador dentro de una transacción. ROLLBACK TO [savepoint_name] permite deshacer los cambios solo hasta ese punto específico[cite: 1002, 1006].",
+    "analisis_opciones": {
+      "a": "Incorrecta. Términos no estándar[cite: 1004].",
+      "b": "Incorrecta. Términos inventados[cite: 1005].",
+      "c": "Correcta. Es la sintaxis estándar de control de transacciones[cite: 1006].",
+      "d": "Incorrecta. Términos inexistentes[cite: 1008]."
+    }
+  },
+  {
+    "pregunta": "298. En el lenguaje SQL, a la hora de contar filas con 'COUNT', ¿tendría en cuenta los resultados considerados nulos (NULL)?",
+    "opciones": [
+      "a) Siempre los tiene en cuenta.",
+      "b) Nunca los tiene en cuenta.",
+      "c) No, salvo si se utiliza COUNT(*)",
+      "d) Sí, salvo si se utiliza COUNT(*)"
+    ],
+    "correcta": 2,
+    "explicacion": "COUNT(columna) ignora los valores nulos. Solo COUNT(*) cuenta todas las filas de la tabla independientemente de si contienen nulos o no[cite: 1012, 1020].",
+    "analisis_opciones": {
+      "a": "Incorrecta. Depende de si se especifica columna o asterisco[cite: 1016].",
+      "b": "Incorrecta. COUNT(*) sí los incluye[cite: 1018].",
+      "c": "Correcta. El asterisco es el único que fuerza el conteo de nulos[cite: 1020].",
+      "d": "Incorrecta. Es justo al revés[cite: 1021]."
+    }
+  }
+,
+  {
+    "pregunta": "299. ¿Cuál de las siguientes NO es una de las llamadas doce reglas de Codd para sistemas de gestión de bases de datos relacionales?",
+    "opciones": [
+      "a) Independencia física de los datos.",
+      "b) Independencia de distribución.",
+      "c) Independencia de actualización.",
+      "d) Independencia de integridad."
+    ],
+    "correcta": 2,
+    "explicacion": "Las reglas de Codd (de la 0 a la 12) definen qué es un SGBD relacional puro. La 'Independencia de actualización' no existe como tal; las reglas clave son la 8 (Independencia física) y la 9 (Independencia lógica).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es la Regla 8: el esquema físico puede cambiar sin afectar al lógico.",
+      "b": "Incorrecta. Es la Regla 11: la BD debe funcionar igual si está distribuida.",
+      "c": "Correcta. Es la regla falsa/inventada en este examen.",
+      "d": "Incorrecta. Es la Regla 10: las restricciones deben almacenarse en el catálogo."
+    }
+  },
+  {
+    "pregunta": "300. ¿Qué palabra reservada en el lenguaje SQL se utiliza específicamente para definir una condición sobre un grupo de registros?",
+    "opciones": [
+      "a) GROUP BY.",
+      "b) HAVING.",
+      "c) WHERE.",
+      "d) ORDER BY."
+    ],
+    "correcta": 1,
+    "explicacion": "Mientras que WHERE filtra filas individuales antes de agrupar, HAVING filtra los grupos resultantes tras aplicar una función de agregado (como SUM o COUNT).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Se usa para agrupar, no para poner la condición del filtro.",
+      "b": "Correcta. Es la cláusula de filtrado para grupos.",
+      "c": "Incorrecta. Filtra filas individuales (antes del agrupamiento).",
+      "d": "Incorrecta. Se utiliza para ordenar los resultados."
+    }
+  },
+  {
+    "pregunta": "301. En el contexto de la virtualización, el programa Oracle VM VirtualBox se clasifica como:",
+    "opciones": [
+      "a) Programa de virtualización de contenedores.",
+      "b) Programa de virtualización de sesiones de escritorio.",
+      "c) Hipervisor de máquinas virtuales de tipo 2 (Hosted).",
+      "d) Hipervisor de máquinas virtuales de tipo 1 (Bare-metal)."
+    ],
+    "correcta": 2,
+    "explicacion": "VirtualBox requiere un sistema operativo anfitrión (Host) instalado previamente (Windows, Linux, etc.) para ejecutarse, lo que lo define como un hipervisor de Tipo 2.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso sería Docker o Podman.",
+      "b": "Incorrecta. VDI es una solución completa de infraestructura, no solo la aplicación.",
+      "c": "Correcta. Definición técnica según su arquitectura de ejecución.",
+      "d": "Incorrecta. Los de tipo 1 van directos al hardware (ej. ESXi o Hyper-V Server)."
+    }
+  },
+  {
+    "pregunta": "302. En relación con la virtualización mediante Docker, ¿cuál es la definición correcta de un 'Contenedor'?",
+    "opciones": [
+      "a) Una imagen es una instancia de un contenedor.",
+      "b) Un contenedor es una instancia de una imagen.",
+      "c) Un contenedor es una versión de una imagen determinada por un tag.",
+      "d) Es el nombre que recibe el programa en el Docker Hub."
+    ],
+    "correcta": 1,
+    "explicacion": "En Docker, la imagen es el archivo estático (plantilla) y el contenedor es el proceso vivo, ejecutable y aislado que se crea a partir de esa imagen.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es justo al revés.",
+      "b": "Correcta. El contenedor es la ejecución real de la plantilla (imagen).",
+      "c": "Incorrecta. El tag identifica versiones de la imagen, no al contenedor.",
+      "d": "Incorrecta. Eso es una imagen en el registro público."
+    }
+  },
+  {
+    "pregunta": "303. ¿A qué se refieren las siglas 'aaS' en el ámbito de la computación moderna y la virtualización?",
+    "opciones": [
+      "a) A un algoritmo asimétrico basado en logaritmo discreto.",
+      "b) Al modelo de negocio en el que un recurso informático se comercializa como un servicio.",
+      "c) A la capacidad de autenticar a un usuario de forma automática.",
+      "d) A una auditoría autónoma de seguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "aaS (As a Service) define la entrega de recursos (SaaS, PaaS, IaaS) bajo demanda a través de la red, facilitado habitualmente por tecnologías de virtualización.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Confusión con algoritmos de cifrado.",
+      "b": "Correcta. Es el paradigma de 'Todo como servicio'.",
+      "c": "Incorrecta. Término inexistente.",
+      "d": "Incorrecta. Término inexistente."
+    }
+  },
+  {
+    "pregunta": "304. Si desea eliminar una 'Vista' (View) en un SGBD relacional, ¿qué sentencia SQL debe utilizar?",
+    "opciones": [
+      "a) No se puede eliminar, dado que posee el principio de constancia.",
+      "b) DROP DATABASE;",
+      "c) DROP VIEW;",
+      "d) DELETE VIEW;"
+    ],
+    "correcta": 2,
+    "explicacion": "Al ser una vista un objeto del esquema (definición estructural), se utiliza la sentencia DDL 'DROP' seguida del tipo de objeto.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Las vistas son objetos dinámicos totalmente eliminables.",
+      "b": "Incorrecta. Borraría la base de datos completa.",
+      "c": "Correcta. Es la sintaxis estándar para eliminar la definición de la vista.",
+      "d": "Incorrecta. DELETE es para filas de datos, no para estructuras."
+    }
+  },
+  {
+    "pregunta": "305. Atendiendo a las reglas de Codd sobre bases de datos relacionales, señale la afirmación INCORRECTA:",
+    "opciones": [
+      "a) Debe cumplir la regla de independencia física de los datos.",
+      "b) Debe cumplir la regla de dependencia lógica de los datos.",
+      "c) Tiene que tener un catálogo dinámico en línea, basado en el modelo relacional.",
+      "d) Debe permitir la inserción, actualización y borrado de alto nivel."
+    ],
+    "correcta": 1,
+    "explicacion": "La Regla 9 de Codd establece la 'Independencia lógica de los datos' (no dependencia), lo que permite modificar el esquema lógico sin alterar las aplicaciones que lo consultan.",
+    "analisis_opciones": {
+      "a": "Correcta. Es la Regla 8.",
+      "b": "Falsa. Debe ser 'independencia', no 'dependencia'.",
+      "c": "Correcta. Es la Regla 4 (Catálogo dinámico).",
+      "d": "Correcta. Es la Regla 7 (Inserción, actualización y borrado de alto nivel)."
+    }
+  },
+  {
+    "pregunta": "306. ¿Cuál es el comando SQL que permite otorgar privilegios específicos a los usuarios sobre una base de datos relacional?",
+    "opciones": [
+      "a) GRANT",
+      "b) REVOKE",
+      "c) PERMIT",
+      "d) ALLOW"
+    ],
+    "correcta": 0,
+    "explicacion": "GRANT es la sentencia del lenguaje DCL que permite asignar permisos de lectura, escritura o administración a un usuario o rol.",
+    "analisis_opciones": {
+      "a": "Correcta. Sentencia estándar de control de acceso.",
+      "b": "Incorrecta. Se usa para retirar privilegios.",
+      "c": "Incorrecta. No es una palabra clave SQL.",
+      "d": "Incorrecta. No es una palabra clave SQL."
+    }
+  },
+  {
+    "pregunta": "307. ¿Cuál de los siguientes programas NO es una solución de virtualización?",
+    "opciones": [
+      "a) Microsoft Hyper-V",
+      "b) Xen",
+      "c) RHEV (Red Hat Enterprise Virtualization)",
+      "d) Icinga"
+    ],
+    "correcta": 3,
+    "explicacion": "Icinga es una herramienta de monitorización de sistemas y redes (basada en Nagios). Las otras tres opciones son hipervisores o plataformas de virtualización consolidadas.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es el hipervisor nativo de Microsoft.",
+      "b": "Incorrecta. Es un hipervisor de código abierto muy usado en Linux.",
+      "c": "Incorrecta. Es la plataforma de virtualización empresarial de Red Hat.",
+      "d": "Correcta. Es una herramienta de monitorización, no de virtualización."
+    }
+  },
+  {
+    "pregunta": "308. En una base de datos Oracle, ¿qué proceso de fondo (background process) se encarga de la recuperación de la instancia en el momento del arranque tras un fallo previo?",
+    "opciones": [
+      "a) PMON (Process Monitor)",
+      "b) SMON (System Monitor)",
+      "c) DBWn (Database Writer)",
+      "d) LGWR (Log Writer)"
+    ],
+    "correcta": 1,
+    "explicacion": "SMON es el encargado de realizar la recuperación de la instancia al inicio (instance recovery) si la base de datos no se cerró correctamente, aplicando los redo logs.",
+    "analisis_opciones": {
+      "a": "Incorrecta. PMON limpia los procesos de usuario que han fallado.",
+      "b": "Correcta. Es el monitor del sistema encargado de la coherencia en el arranque.",
+      "c": "Incorrecta. Escribe datos de la memoria al disco.",
+      "d": "Incorrecta. Escribe el registro de transacciones al disco."
+    }
+  },
+  {
+    "pregunta": "309. ¿Cuál es el nombre que recibe la técnica de inyección de código SQL que utiliza la entrada de datos de un usuario para saltarse una validación de login mediante el uso de operadores lógicos (ej. \"\" OR \"\"=\"\")?",
+    "opciones": [
+      "a) SQL Injection",
+      "b) XML Injection",
+      "c) SQL Bomb",
+      "d) Cross-Site Scripting (XSS)"
+    ],
+    "correcta": 0,
+    "explicacion": "Se trata de un ataque de inyección SQL clásico que manipula la consulta original para que siempre devuelva un valor verdadero, permitiendo el acceso sin credenciales válidas.",
+    "analisis_opciones": {
+      "a": "Correcta. Es la técnica descrita en los supuestos de examen.",
+      "b": "Incorrecta. Se refiere a manipulación de archivos XML.",
+      "c": "Incorrecta. Término inexistente o poco común frente a 'Injection'.",
+      "d": "Incorrecta. Se basa en inyectar scripts en el navegador del cliente."
+    }
+  },
+  {
+    "pregunta": "310. En el contexto de Docker y Kubernetes, ¿qué herramienta se utiliza habitualmente para la automatización de la infraestructura y gestión de configuraciones de los nodos?",
+    "opciones": [
+      "a) Salt (SaltStack)",
+      "b) Docker Hub",
+      "c) Kubernetes Dashboard",
+      "d) Etcd"
+    ],
+    "correcta": 0,
+    "explicacion": "Salt es una herramienta de gestión de configuración y ejecución remota muy común en entornos de CPD virtualizados para mantener el estado de los servidores.",
+    "analisis_opciones": {
+      "a": "Correcta. Es el motor de orquestación de configuración mencionado en los supuestos.",
+      "b": "Incorrecta. Es un repositorio de imágenes, no gestiona la configuración del nodo.",
+      "c": "Incorrecta. Es una interfaz gráfica de usuario para K8s.",
+      "d": "Incorrecta. Es el almacén de datos clave-valor de Kubernetes."
+    }
+  },
+  {
+    "pregunta": "311. ¿Qué comando de Docker se utiliza para ver la lista de contenedores que se están ejecutando actualmente en el sistema?",
+    "opciones": [
+      "a) docker run",
+      "b) docker images",
+      "c) docker ps",
+      "d) docker pull"
+    ],
+    "correcta": 2,
+    "explicacion": "El comando 'ps' (proccess status) muestra los contenedores activos. Si se añade el flag '-a', muestra también los que están detenidos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Crea y arranca un nuevo contenedor.",
+      "b": "Incorrecta. Lista las imágenes descargadas localmente.",
+      "c": "Correcta. Es el comando estándar de visualización de procesos/contenedores.",
+      "d": "Incorrecta. Descarga una imagen desde un registro."
+    }
+  },
+  {
+    "pregunta": "312. Dentro de la arquitectura de Microsoft SQL Server, ¿qué herramienta se utiliza para capturar y monitorizar eventos del motor de base de datos para su posterior análisis?",
+    "opciones": [
+      "a) SQL Server Profiler",
+      "b) SQL Server Agent",
+      "c) SQL Server Management Studio",
+      "d) Database Engine Tuning Advisor"
+    ],
+    "correcta": 0,
+    "explicacion": "SQL Server Profiler es la interfaz para crear y gestionar trazas (traces) que permiten ver exactamente qué sentencias se están ejecutando y su rendimiento.",
+    "analisis_opciones": {
+      "a": "Correcta. Es la herramienta de traza y monitorización de eventos.",
+      "b": "Incorrecta. Es para programar tareas (jobs).",
+      "c": "Incorrecta. Es el entorno de gestión general.",
+      "d": "Incorrecta. Es para recibir recomendaciones de índices."
+    }
+  },
+  {
+    "pregunta": "313. Un hipervisor de Tipo 1 (Bare-metal) se caracteriza principalmente por:",
+    "opciones": [
+      "a) Ejecutarse como una aplicación sobre Windows o Linux.",
+      "b) Requerir un sistema operativo anfitrión para gestionar el hardware.",
+      "c) Ejecutarse directamente sobre el hardware físico del equipo.",
+      "d) Ser exclusivo para la virtualización de aplicaciones móviles."
+    ],
+    "correcta": 2,
+    "explicacion": "Los hipervisores de Tipo 1 no tienen un sistema operativo por debajo; ellos mismos gestionan los recursos de CPU, memoria y red para las máquinas virtuales.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso es un hipervisor de Tipo 2.",
+      "b": "Incorrecta. Eso describe el modelo 'Hosted'.",
+      "c": "Correcta. Es la definición de Bare-metal.",
+      "d": "Incorrecta. Se usan principalmente en servidores de centros de datos."
+    }
+  },
+  {
+    "pregunta": "314. En el modelo ACID de bases de datos, ¿qué propiedad asegura que una transacción sea tratada como una unidad atómica, de modo que si una parte falla, no se aplica nada?",
+    "opciones": [
+      "a) Consistencia",
+      "b) Aislamiento",
+      "c) Durabilidad",
+      "d) Atomicidad"
+    ],
+    "correcta": 3,
+    "explicacion": "La Atomicidad es la propiedad de 'todo o nada', garantizando que el sistema no quede en un estado parcial si ocurre un error.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Se refiere al cumplimiento de reglas de integridad.",
+      "b": "Incorrecta. Se refiere a la visibilidad entre transacciones concurrentes.",
+      "c": "Incorrecta. Se refiere a la persistencia tras un fallo.",
+      "d": "Correcta. Es la definición literal de la propiedad."
+    }
+  },
+  {
+    "pregunta": "315. ¿Cuál de las siguientes tareas NO se considera una función propia del Administrador de Base de Datos (DBA) según los estándares de gestión?",
+    "opciones": [
+      "a) Garantizar la seguridad de las bases de datos.",
+      "b) Crear y parametrizar las bases de datos.",
+      "c) Monitorizar los servidores de bases de datos.",
+      "d) Garantizar la calidad de los datos."
+    ],
+    "correcta": 3,
+    "explicacion": "El DBA gestiona la infraestructura y disponibilidad (seguridad, parámetros, monitorización). La 'calidad de los datos' (que el dato sea correcto o útil para el negocio) es responsabilidad de los propietarios de los datos o analistas de datos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es una tarea crítica del DBA.",
+      "b": "Incorrecta. Es la base de su trabajo técnico.",
+      "c": "Incorrecta. Debe vigilar el rendimiento y la salud del motor.",
+      "d": "Correcta. Es la opción a marcar; el DBA cuida el 'recipiente', no el contenido intelectual."
+    }
+  },
+  {
+    "pregunta": "316. En relación con la escalabilidad en entornos virtualizados y de SGBD, ¿qué es la escalabilidad horizontal?",
+    "opciones": [
+      "a) La facilidad para añadir o suprimir estaciones similares para aumentar el rendimiento o capacidad.",
+      "b) La facilidad para migrar a servidores con mayores prestaciones de CPU y RAM.",
+      "c) La capacidad de una aplicación para añadir nuevas funcionalidades sin cambiar el código.",
+      "d) La migración de una base de datos relacional a una NoSQL."
+    ],
+    "correcta": 0,
+    "explicacion": "Escalar horizontalmente (Scale-out) significa añadir más nodos o máquinas iguales al conjunto para repartir la carga. Escalar verticalmente (Scale-up) sería hacer más potente la máquina existente.",
+    "analisis_opciones": {
+      "a": "Correcta. Define el crecimiento mediante la adición de unidades paralelas.",
+      "b": "Incorrecta. Eso define la escalabilidad vertical.",
+      "c": "Incorrecta. Eso es extensibilidad de software.",
+      "d": "Incorrecta. Eso es un cambio de arquitectura de datos."
+    }
+  },
+  {
+    "pregunta": "317. ¿Dónde localiza la unidad de control la posición de memoria en la que está almacenada la instrucción que corresponde ejecutar?",
+    "opciones": [
+      "a) En el registro de estado.",
+      "b) En el contador de periodos.",
+      "c) En el contador de programas (Program Counter).",
+      "d) En el banco de registros."
+    ],
+    "correcta": 2,
+    "explicacion": "El Contador de Programas (PC) es el registro de la CPU que contiene la dirección de memoria de la próxima instrucción a ejecutar. Es fundamental para el ciclo de instrucción en cualquier sistema físico o virtualizado.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Contiene indicadores (flags) de operaciones anteriores.",
+      "b": "Incorrecta. No es un término estándar de arquitectura de CPU.",
+      "c": "Correcta. Apunta a la siguiente instrucción.",
+      "d": "Incorrecta. Es el conjunto de registros de uso general."
+    }
+  },
+  {
+    "pregunta": "318. Según el estándar ANSI SQL, ¿cuál de los siguientes comandos es necesario para modificar los datos existentes en una fila de una tabla?",
+    "opciones": [
+      "a) CHANGE",
+      "b) MODIFY",
+      "c) UPDATE",
+      "d) ALTER"
+    ],
+    "correcta": 2,
+    "explicacion": "UPDATE es la sentencia DML estándar para modificar valores de columnas en registros que ya existen en una tabla.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No es una sentencia SQL estándar para manipulación de filas.",
+      "b": "Incorrecta. Suele usarse dentro de ALTER TABLE en algunos SGBD para cambiar columnas, no datos.",
+      "c": "Correcta. Es el comando DML específico para este fin.",
+      "d": "Incorrecta. Es una sentencia DDL para cambiar la estructura de la tabla."
+    }
+  },
+  {
+    "pregunta": "319. En el contexto de la alta disponibilidad en bases de datos, ¿qué se entiende por un sistema 'Cluster Active-Passive'?",
+    "opciones": [
+      "a) Ambos servidores procesan peticiones simultáneamente.",
+      "b) Un servidor da servicio mientras el otro está en espera y solo toma el control si el primero falla.",
+      "c) Los datos se reparten entre los dos servidores para ganar velocidad.",
+      "d) El servidor pasivo solo se usa para realizar copias de seguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "En un clúster Activo-Pasivo (Failover Cluster), solo un nodo trabaja. El segundo está 'caliente' esperando un fallo del primero para realizar el failover.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso sería Activo-Activo.",
+      "b": "Correcta. Define la redundancia clásica de alta disponibilidad.",
+      "c": "Incorrecta. Eso describe el particionamiento o sharding.",
+      "d": "Incorrecta. Aunque puede usarse para eso, su fin principal es la disponibilidad del servicio."
+    }
+  },
+  {
+    "pregunta": "320. ¿Qué lenguaje de SGBD se encarga de las operaciones de confirmación y retroceso de las transacciones (COMMIT y ROLLBACK)?",
+    "opciones": [
+      "a) DDL",
+      "b) DML",
+      "c) DCL",
+      "d) TCL (Transaction Control Language)"
+    ],
+    "correcta": 3,
+    "explicacion": "Aunque a menudo se agrupan con DML, las sentencias que gestionan el éxito o fracaso de la unidad de trabajo se clasifican específicamente como TCL.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Definición de estructuras.",
+      "b": "Incorrecta. Manipulación de datos.",
+      "c": "Incorrecta. Control de acceso.",
+      "d": "Correcta. Control de transacciones."
+    }
+  },
+  {
+    "pregunta": "321. En virtualización, ¿qué nombre recibe la técnica que permite mover una máquina virtual de un servidor físico a otro sin necesidad de apagarla ni interrumpir el servicio?",
+    "opciones": [
+      "a) Snapshoting.",
+      "b) Live Migration (o vMotion en VMware).",
+      "c) Cloning.",
+      "d) Cold Migration."
+    ],
+    "correcta": 1,
+    "explicacion": "La migración en vivo permite trasladar el estado de la memoria y el procesamiento de una VM entre hosts físicos de forma transparente para el usuario.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es capturar el estado en un momento dado.",
+      "b": "Correcta. Es una de las capacidades estrella de la virtualización empresarial.",
+      "c": "Incorrecta. Es crear una copia idéntica.",
+      "d": "Incorrecta. Requiere que la máquina esté apagada."
+    }
+  },
+  {
+    "pregunta": "322. ¿Cuál es la unidad mínima de información que puede procesar un SGBD relacional en una consulta de selección?",
+    "opciones": [
+      "a) El bit.",
+      "b) El campo o columna.",
+      "c) La fila o registro.",
+      "d) El carácter."
+    ],
+    "correcta": 1,
+    "explicacion": "Aunque el SGBD lee bloques de disco, a nivel lógico de lenguaje SQL, la unidad mínima con significado que podemos pedir o filtrar es el valor de un campo específico (columna) de una fila.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es la unidad física, no lógica de BD.",
+      "b": "Correcta. Es el dato atómico del modelo relacional.",
+      "c": "Incorrecta. La fila es un conjunto de campos.",
+      "d": "Incorrecta."
+    }
+  }
+]
+
+

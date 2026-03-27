@@ -1,0 +1,2017 @@
+[
+{
+  "pregunta": "En el lenguaje XML, ¿cuál de las siguientes sentencias sería correcta para añadir comentarios?",
+  "opciones": [
+    "A. <-- Aquí va el comentario /-->",
+    "B. < Aquí va el comentario !>",
+    "C. <!-- Aquí va el comentario -->",
+    "D. <--! Aquí va el comentario -->"
+  ],
+  "correcta": 2,
+  "explicacion": "En XML los comentarios se escriben exactamente como <!-- comentario -->, igual que en HTML.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Sintaxis mal formada.",
+    "B": "Incorrecta. No es sintaxis XML válida.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Orden incorrecto."
+  }
+},
+{
+  "pregunta": "Una hoja de estilo XSLT especifica la presentación de (señale la respuesta correcta):",
+  "opciones": [
+    "A. Una clase de documentos XML, ya que describe cómo una instancia de la clase se transforma en un documento XML, el cual usa un vocabulario de formato como (X)HTML, XSL-FO,…",
+    "B. Un lenguaje de expresión para referir partes de un documento XML.",
+    "C. Un vocabulario XML para especificar una semántica de formato.",
+    "D. Un lenguaje estandarizado flexible y capaz de interrogar un amplio abanico de repositorios de información XML, incluyendo tanto bases de datos como documentos."
+  ],
+  "correcta": 0,
+  "explicacion": "XSLT sirve para transformar documentos XML en otros formatos como HTML, XML o XSL-FO.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. Eso es XPath.",
+    "C": "Incorrecta. Eso es XSL-FO.",
+    "D": "Incorrecta. Eso es XQuery."
+  }
+},
+{
+  "pregunta": "Si quiero aplicar un estilo a todos los elementos con atributo class=\"titulo\" en varias páginas HTML, definiré en la hoja de estilos CSS3 asociada el selector:",
+  "opciones": [
+    "A. #titulo",
+    "B. :titulo",
+    "C. .titulo",
+    "D. titulo"
+  ],
+  "correcta": 2,
+  "explicacion": "El selector de clase en CSS se representa con punto (.).",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es selector ID.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Es selector de etiqueta."
+  }
+},
+{
+  "pregunta": "Respecto de la arquitectura de aplicaciones con tres capas, ¿cuál de las siguientes afirmaciones es correcta?",
+  "opciones": [
+    "A. Las funciones de la aplicación se dividen en lógica de presentación y en lógica de negocio.",
+    "B. Este modelo implica que cada capa vaya alojada en un servidor diferente.",
+    "C. Cuando se actualiza una capa siempre es necesario recompilar el resto de capas.",
+    "D. La capa de la lógica de negocio es la responsable de tratar los datos."
+  ],
+  "correcta": 3,
+  "explicacion": "La lógica de negocio procesa datos y reglas del sistema.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Falta capa de datos.",
+    "B": "Incorrecta. No es obligatorio.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "En un DTD nos encontramos con un elemento definido como: <!ELEMENT libro (titulo, autor+, precio?, materia*) >. De esta definición se pueden inferir algunas afirmaciones, señale la INCORRECTA:",
+  "opciones": [
+    "A. Todo libro deberá tener al menos una materia.",
+    "B. Todo libro podrá o no tener un precio.",
+    "C. Todo libro deberá tener al menos un autor.",
+    "D. Todo libro tendrá necesariamente un título."
+  ],
+  "correcta": 0,
+  "explicacion": "materia* significa 0 o más, no obligatorio.",
+  "analisis_opciones": {
+    "A": "Incorrecta (es la que pide el enunciado).",
+    "B": "Correcta.",
+    "C": "Correcta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "Indique cuáles de las siguientes etiquetas NO fueron introducidas como novedad en HTML5.",
+  "opciones": [
+    "A. <footer> y <details>",
+    "B. <header> y <nav>",
+    "C. <details> y <mark>",
+    "D. <caption> y <nav>"
+  ],
+  "correcta": 3,
+  "explicacion": "<caption> ya existía antes de HTML5.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes opciones debemos elegir si queremos representar en JavaScript la condición de que el valor o tipo de la variable 'x' sea distinto del número 9 (en valor o tipo)?",
+  "opciones": [
+    "A. (x <> 9)",
+    "B. (x <=> 9)",
+    "C. (x != 9)",
+    "D. (x !==9)"
+  ],
+  "correcta": 3,
+  "explicacion": "!== compara valor y tipo.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta. Solo valor.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes opciones representa una de las nuevas etiquetas introducidas por HTML5?",
+  "opciones": [
+    "A. <progress>",
+    "B. <socialmedia>",
+    "C. <blog>",
+    "D. <navigation>"
+  ],
+  "correcta": 0,
+  "explicacion": "<progress> es etiqueta HTML5 real.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En el contexto informático, se define “proxy” como:",
+  "opciones": [
+    "A. Un nodo en una red informática que sirve de punto de acceso a otra red.",
+    "B. Un programa o dispositivo que realiza una acción en representación de otro.",
+    "C. Programa intermedio que actúa como un repetidor ciego entre dos conexiones.",
+    "D. Dispositivo de hardware para interconexión de redes de las computadoras que opera en la capa tres (nivel de red) del modelo OSI."
+  ],
+  "correcta": 1,
+  "explicacion": "Un proxy actúa como intermediario.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En cuanto a la Java API for XML Processing (JAXP):",
+  "opciones": [
+    "A. Permite procesar documentos XML tanto a través del modelo SAX, DOM y XSLT.",
+    "B. Trabaja únicamente con el modelo DOM y SAX.",
+    "C. No existe tal librería en el lenguaje Java.",
+    "D. No tiene una implementación propia para el parser y obligatoriamente debe utilizar el parser del modelo DOM."
+  ],
+  "correcta": 0,
+  "explicacion": "JAXP soporta SAX, DOM y XSLT.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes sentencias es correcta?",
+  "opciones": [
+    "A. Javascript es un lenguaje orientado a objetos.",
+    "B. HTML es un lenguaje de programación utilizado para hacer páginas web.",
+    "C. DHTML permite que HTML sea dinámico mediante la incorporación de XML.",
+    "D. HTTPS usa SSL para asegurar conexiones seguras."
+  ],
+  "correcta": 3,
+  "explicacion": "HTTPS usa SSL/TLS.",
+  "analisis_opciones": {
+    "A": "Trampa típica.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "En JavaScript, ¿cómo se escribe una sentencia condicional para comprobar que la variable \"x\" es distinta de 2?",
+  "opciones": [
+    "A. if x <> 2",
+    "B. if (x != 2)",
+    "C. ix <> 2",
+    "D. if x != 2"
+  ],
+  "correcta": 1,
+  "explicacion": "Sintaxis correcta: if (condición).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué hará el siguiente código de JavaScript console.log(10 === ‘10’)?",
+  "opciones": [
+    "A. Imprimirá true.",
+    "B. Imprimirá false.",
+    "C. Dará error.",
+    "D. Imprimirá ‘1010’."
+  ],
+  "correcta": 1,
+  "explicacion": "Comparación estricta → false.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes opciones es un preprocesador CSS?",
+  "opciones": [
+    "A. LESS",
+    "B. Grunt",
+    "C. Veeam",
+    "D. Mercurial"
+  ],
+  "correcta": 0,
+  "explicacion": "LESS es preprocesador CSS.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "Señale la respuesta INCORRECTA con respecto al lenguaje XML:",
+  "opciones": [
+    "A. Un documento XML puede ser creado en un editor de texto básico.",
+    "B. XML es un lenguaje útil en la descripción del significado de los datos.",
+    "C. En la definición de elementos, las mayúsculas se distinguen de las minúsculas.",
+    "D. Un.documento xml.puede tener tantos elementos raíz como sea preciso."
+  ],
+  "correcta": 3,
+  "explicacion": "XML solo permite un elemento raíz.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Correcta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de estos elementos permiten definir la presentación y estilos de una página web?",
+  "opciones": [
+    "A. CSS",
+    "B. XSS",
+    "C. CSI",
+    "D. OSS/BSS"
+  ],
+  "correcta": 0,
+  "explicacion": "CSS define estilos.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "21. ¿Cuál es la etiqueta HTML para insertar una imagen?",
+  "opciones": [
+    "A. <td>",
+    "B. <body>",
+    "C. <img>",
+    "D. <H1>"
+  ],
+  "correcta": 2,
+  "explicacion": "La etiqueta <img> se utiliza para insertar imágenes en HTML.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es para tablas.",
+    "B": "Incorrecta. Es el cuerpo del documento.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Es encabezado."
+  }
+},
+{
+  "pregunta": "22. ¿Cuál de los siguientes lenguajes NO se utiliza para la creación de páginas web?",
+  "opciones": [
+    "A. Javascript.",
+    "B. PHP.",
+    "C. Java.",
+    "D. Joomla."
+  ],
+  "correcta": 3,
+  "explicacion": "Joomla es un CMS, no un lenguaje.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "23. Indique la afirmación correcta sobre la directiva <META> en HTML",
+  "opciones": [
+    "A. Se emplea para especificar un directorio base para las referencias (direcciones URL) relativas al documento.",
+    "B. Tiene dos usos: contenedor de metainformación sobre el documento, o contenedor de información adicional, incluidos comandos.",
+    "C. Hace que el navegador visualice como un elemento más un texto y una entrada de datos.",
+    "D. Hace que el navegador visualice como un apartado especial en la ventana de visualización un texto y una entrada de datos."
+  ],
+  "correcta": 1,
+  "explicacion": "<meta> define metadatos del documento HTML.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso es <base>.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "24. En el ámbito de las tecnologías XML, se define XSL como:",
+  "opciones": [
+    "A. Un lenguaje para acceder a partes de un documento XML.",
+    "B. Un lenguaje que facilita la extracción de datos desde documentos XML.",
+    "C. Un lenguaje extensible de hojas de estilo.",
+    "D. Un lenguaje que permite insertar elementos en documentos XML para crear enlaces entre recursos XML."
+  ],
+  "correcta": 2,
+  "explicacion": "XSL es el lenguaje de hojas de estilo para XML.",
+  "analisis_opciones": {
+    "A": "Incorrecta. XPath.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "25. En CSS3, ¿cuál de las siguientes unidades de medida NO es relativa?",
+  "opciones": [
+    "A. Q",
+    "B. vw",
+    "C. ex",
+    "D. ch"
+  ],
+  "correcta": 0,
+  "explicacion": "Q es unidad absoluta (1/4 mm).",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "26. En el contexto de HTML5, si queremos ocultar una parte de la pantalla hasta que un usuario haya hecho \"log in\", utilizaremos:",
+  "opciones": [
+    "A. El atributo hidden.",
+    "B. El atributo style del elemento como \"non visible\".",
+    "C. La etiqueta aside.",
+    "D. La etiqueta iframe."
+  ],
+  "correcta": 0,
+  "explicacion": "El atributo hidden oculta elementos.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "27. ¿Cuál de los siguientes NO es un framework para javascript?",
+  "opciones": [
+    "A. Angular",
+    "B. Bootstrap",
+    "C. React",
+    "D. JDBC"
+  ],
+  "correcta": 3,
+  "explicacion": "JDBC es API de Java.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta (es framework CSS).",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "28. Señale la respuesta INCORRECTA con respecto al lenguaje KML (Keyhole Markup Language):",
+  "opciones": [
+    "A. Es un lenguaje basado en HTML enfocado a la visualización de datos geográficos.",
+    "B. Ha sido adoptado como estándar por el OGC (Open Geospatial Consortium).",
+    "C. Utiliza una estructura basada en etiquetas con elementos anidados.",
+    "D. La versión comprimida de un archivo KML tendrá un formato KMZ."
+  ],
+  "correcta": 0,
+  "explicacion": "KML está basado en XML, no HTML.",
+  "analisis_opciones": {
+    "A": "Incorrecta (es la respuesta).",
+    "B": "Correcta.",
+    "C": "Correcta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "29. ¿Cuál de las siguientes es una diferencia entre HTML y XHTML?",
+  "opciones": [
+    "A. HTML exige que las etiquetas se escriban en minúscula, mientras que XHTML no.",
+    "B. XHTML permite que haya elementos no vacíos sin cerrar, mientras que HTML no.",
+    "C. En HTML es obligatorio que los valores de los atributos vayan entre comillas, mientras que en XHTML no.",
+    "D. En XHTML es obligatoria la presencia del elemento <head>."
+  ],
+  "correcta": 3,
+  "explicacion": "XHTML es más estricto y exige estructura completa.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "30. Si en código HTML escribimos <a href:=\"europa.htm\">Mapa de Europa<a>, ¿qué se visualiza en la pantalla?",
+  "opciones": [
+    "A. El título \"EUROPA\" en mayúsculas.",
+    "B. Las letras \"Mapa de Europa\" como hipervínculo a la página europa.htm.",
+    "C. La imagen de un mapa de Europa como hipervínculo de la página europa.htm.",
+    "D. Las letras \"Mapa de Europa\" y a continuación las letras \"europa\" como hipervínculo a la página europa.htm."
+  ],
+  "correcta": 1,
+  "explicacion": "Se crea un enlace con texto.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "31. En un XML, ¿cuál de las siguientes es una llamada correcta a un DTD externo?",
+  "opciones": [
+    "A. <!SYSTEM nombre DOCTYPE archivodtd.dtd !>",
+    "B. <!DOCTYPE nombre SYSTEM \"archivodtd.dtd\" />",
+    "C. <!SYSTEM nombre DOCTYPE archlvodtd.dtd />",
+    "D. <!DOCTYPE nombre SYSTEM \"archivodtd.dtd\">"
+  ],
+  "correcta": 3,
+  "explicacion": "Sintaxis correcta DOCTYPE SYSTEM.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "32. Las siglas UI y UX hacen referencia a:",
+  "opciones": [
+    "A. Interfaz de usuario (User Interface) y experiencia de usuario (User eXperience).",
+    "B. Innovación para usuarios (User Innovation) y ejemplos de usuario (User eXamples).",
+    "C. Indice de Unicode (Unicode Index) y pericia en Unicode (Unicode eXpertise).",
+    "D. Interfaz unidireccional (Unidirectional Interface) y experiencia unidireccional (Unidirectional eXperience)."
+  ],
+  "correcta": 0,
+  "explicacion": "UI = interfaz, UX = experiencia.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "33. En HTML5, ¿cuál es la forma correcta de representar acrónimos, siglas o abreviaturas?",
+  "opciones": [
+    "A. <acronym title=\"Administración General del Estado\">AGE</acronym>",
+    "B. <abbr title=\"Administración General del Estado\">AGE</abbr>, ya que <acronym> se ha declarado obsoleto.",
+    "C. Con el tag <acronym> o con el tag <abbr>, son equivalentes.",
+    "D. <span title=\"Administración General del Estado\">AGE</span>"
+  ],
+  "correcta": 1,
+  "explicacion": "<acronym> está obsoleto.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "34. Señale a qué se corresponde la siguiente definición \"técnica de desarrollo web para crear aplicaciones que se ejecutan en el cliente, mientras se mantiene la comunicación asíncrona con el servidor en segundo plano\":",
+  "opciones": [
+    "A. AJAX.",
+    "B. HTML.",
+    "C. XHTML.",
+    "D. Servlets."
+  ],
+  "correcta": 0,
+  "explicacion": "AJAX permite comunicación asíncrona.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "35. ¿Qué etiqueta de HTML sirve para crear una lista de números?",
+  "opciones": [
+    "A. <dl>",
+    "B. <li>",
+    "C. <ol>",
+    "D. <dt>"
+  ],
+  "correcta": 2,
+  "explicacion": "<ol> lista ordenada.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "36. ¿Qué define la etiqueta <u> en html?",
+  "opciones": [
+    "A. Texto uniforme.",
+    "B. Encabezado de un documento.",
+    "C. Indica el comienzo de un título.",
+    "D. Texto subrayado."
+  ],
+  "correcta": 3,
+  "explicacion": "<u> subraya texto.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "37. ¿Cuál de las siguientes afirmaciones relativas al lenguaje XHTML es INCORRECTA?",
+  "opciones": [
+    "A. Los documentos deben estar bien formados.",
+    "B. Todos los valores de los atributos deben ir entre comillas, excepto aquellos que sean numéricos.",
+    "C. Los elementos que no estén vacíos necesitan etiquetas de cierre.",
+    "D. Los nombres de atributos y elementos deben ir en minúscula."
+  ],
+  "correcta": 1,
+  "explicacion": "En XHTML TODOS los atributos deben ir entre comillas.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta (respuesta).",
+    "C": "Correcta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "38. Uno de los valores posibles que puede tener el atributo keytype de la etiqueta keygen en HTML5 es:",
+  "opciones": [
+    "A. handshake",
+    "B. ltr",
+    "C. ec",
+    "D. down"
+  ],
+  "correcta": 2,
+  "explicacion": "ec es valor válido.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "39. Señale la respuesta correcta en lo relativo a XML:",
+  "opciones": [
+    "A. El atributo \"standalone\" es obligatorio.",
+    "B. El atributo \"encoding\" es opcional, si se omite se entiende que la codificación de caracteres es UNICODE.",
+    "C. Fue desarrollado a través de Apache Software Foundation.",
+    "D. Un XML bien formado implica que ese XML va a ser válido."
+  ],
+  "correcta": 1,
+  "explicacion": "encoding es opcional y por defecto Unicode.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "40. ¿Cuál de las siguientes es una nueva etiqueta introducida en HTML5?",
+  "opciones": [
+    "A. <dialog>",
+    "B. <noscript>",
+    "C. <abbr>",
+    "D. <del>"
+  ],
+  "correcta": 0,
+  "explicacion": "<dialog> es HTML5.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "41. En HTML el atributo cellpadding indica:",
+  "opciones": [
+    "A. El espacio entre el borde de la celda y su contenido",
+    "B. El número de columnas que se expande una celda.",
+    "C. El número de filas que se expande un celda",
+    "D. El espacio entre celdas."
+  ],
+  "correcta": 0,
+  "explicacion": "cellpadding = espacio interno.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta (eso es cellspacing)."
+  }
+},
+{
+  "pregunta": "42. El método del objeto Window de Javascript que codifica un string en base-64:",
+  "opciones": [
+    "A. atob",
+    "B. btoa",
+    "C. unescape",
+    "D. code"
+  ],
+  "correcta": 1,
+  "explicacion": "btoa codifica, atob decodifica.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "43. ¿Cuál es el motor web desarrollado por The Mozilla Foundation?",
+  "opciones": [
+    "A. Webkit",
+    "B. Firefox",
+    "C. Gecko",
+    "D. Edge"
+  ],
+  "correcta": 2,
+  "explicacion": "Gecko es el motor de Firefox.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "44. ¿Cuál de los siguientes elementos cumple la sintaxis de XML?",
+  "opciones": [
+    "A. <24horas>servicio basico</24horas>",
+    "B. <codigo postal>28071</codigo postal>",
+    "C. <Direccion_1>Mayor</direccion_1>",
+    "D. <_ciudad/>"
+  ],
+  "correcta": 2,
+  "explicacion": "Debe empezar por letra y respetar mayúsculas.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "45. Señale la etiqueta HTML5 que se usa para todo aquél contenido tangencial al contenido principal de la página web:",
+  "opciones": [
+    "A. <nav>",
+    "B. <section>",
+    "C. <aside>",
+    "D. <article>"
+  ],
+  "correcta": 2,
+  "explicacion": "<aside> contenido secundario.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "46. ¿Cuál de estas afirmaciones es correcta?:",
+  "opciones": [
+    "A. HTML cumple XML.",
+    "B. XML cumple SGML.",
+    "C. XHTML no cumple XML.",
+    "D. HTML no cumple SGML."
+  ],
+  "correcta": 1,
+  "explicacion": "XML es un subconjunto de SGML.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "47. Cuál es una de las restricciones básicas que introduce XHTML referente a la sintaxis de sus etiquetas:",
+  "opciones": [
+    "A. Los nombres de las etiquetas y de los atributos se pueden escribir en letras mayúsculas o minúsculas.",
+    "B. Los elementos anidados no tienen que cerrarse ordenadamente.",
+    "C. Los atributos se pueden minimizar.",
+    "D. Para elementos vacíos, se requieren etiquetas finales."
+  ],
+  "correcta": 3,
+  "explicacion": "XHTML exige cierre correcto de etiquetas, incluso en elementos vacíos.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "48. ¿Cuál de las siguientes etiquetas presentes en HTML4 NO existe en HTML5?:",
+  "opciones": [
+    "A. <frame>",
+    "B. <object>",
+    "C. <form>",
+    "D. <label>"
+  ],
+  "correcta": 0,
+  "explicacion": "<frame> fue eliminado en HTML5.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "49. En el contexto de aplicaciones web, \"Ajax\" es un conjunto de técnicas. Señale la opción correcta:",
+  "opciones": [
+    "A. Se utiliza Java (o raramente VisuaiBaSle.NET o C#) como lógica en el navegador.",
+    "B. La comunicación con el servidor se hace con XMLHttpRequest o \"IFrame Call”, entre otras técnicas.",
+    "C. Se usa XBRL o SGML para el intercambio dinámico de datos entre cliente y servidor.",
+    "D. Para la presentación, se utiliza Eiffel o Smalltalk para poder manipular el DOM."
+  ],
+  "correcta": 1,
+  "explicacion": "AJAX usa XMLHttpRequest para comunicación asíncrona.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "50. ¿Qué evento de HTML utilizaría para producir un efecto al situar el puntero del ratón sobre un elemento?",
+  "opciones": [
+    "A. onclick.",
+    "B. onmouseover.",
+    "C. onmousedown.",
+    "D. onmouseout."
+  ],
+  "correcta": 1,
+  "explicacion": "onmouseover detecta cuando el cursor pasa por encima.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "51. El protocolo HTTP tiene un código de estado para indicar que el contenido solicitado ha sido trasladado de forma permanente a otra ubicación, ¿cuál de los siguientes valores representa ese estado?",
+  "opciones": [
+    "A. 301",
+    "B. 302",
+    "C. 303",
+    "D. 304"
+  ],
+  "correcta": 0,
+  "explicacion": "301 = redirección permanente.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta (temporal).",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "52. En HTML5 cuál es la forma correcta de escribir la etiqueta que permite referenciar mapas de imagen en el cliente:",
+  "opciones": [
+    "A. <map src=\"imagen.jpg\" alt=\"Mi imagen con mapa seleccionable\"/>",
+    "B. <map src=\"imagen.jpg\" alt=\"Mi imagen con mapa seleccionable\" area=\"#Mapa\"/>",
+    "C. <img src=\"imagen.jpg\" alt=\"Mi imagen con mapa seleccionable\" map=\"#Mapa\" />",
+    "D. <img src=\"imagen.jpg\" alt=\"Mi imagen con mapa seleccionable\" usemap=\"#Mapa\" />"
+  ],
+  "correcta": 3,
+  "explicacion": "usemap enlaza imagen con mapa.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "53. En una hoja de estilos CSS3, el estilo definido en el selector div + p se aplicaría a todos los elementos:",
+  "opciones": [
+    "A. <p> situados dentro de elementos <div>.",
+    "B. <p> situados justo después de un elemento <div>.",
+    "C. <div> y todos los elementos <p>.",
+    "D. <p> cuyo padre sea un elemento <div>"
+  ],
+  "correcta": 1,
+  "explicacion": "Selector adyacente (+).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "54. ¿Qué término está relacionado con XML-binary Optimized Packaging (XOP)?",
+  "opciones": [
+    "A. Reconstituted XML Infoset",
+    "B. XOP Header",
+    "C. XOP Package",
+    "D. Optimized Document"
+  ],
+  "correcta": 0,
+  "explicacion": "XOP trabaja con XML Infoset.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "55. Señale cuál de las siguientes etiquetas ha sido eliminada en HTML5:",
+  "opciones": [
+    "A. <big>",
+    "B. <div>",
+    "C. <article>",
+    "D. <a>"
+  ],
+  "correcta": 0,
+  "explicacion": "<big> está obsoleta.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "56. Señale cuál es un estándar OASIS que define los mecanismos para establecer y compartir contextos de seguridad, y para obtener claves de contextos de seguridad:",
+  "opciones": [
+    "A. WS-Addressing",
+    "B. WS-Federation",
+    "C. WS-SecureConversation",
+    "D. WS-Policy"
+  ],
+  "correcta": 2,
+  "explicacion": "WS-SecureConversation gestiona contextos de seguridad.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "57. Sobre la etiqueta <aside> de HTML5 :",
+  "opciones": [
+    "A. Necesita obligatoriamente llevar el atributo right o left.",
+    "B. Obsoleta en HTML5, marcada como deprecated.",
+    "C. También estaba soportada en HTML 4.01.",
+    "D. Se usa para el contenido tangencial al contenido principal de la página."
+  ],
+  "correcta": 3,
+  "explicacion": "<aside> contenido secundario.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "58. La tecnología XSL se utiliza para ...",
+  "opciones": [
+    "A. Crear hojas de cálculo en Microsoft Excel.",
+    "B. Definir el estándar que aumenta el ancho de banda sobre hilos de cobre entre el suscriptor y la compañía telefónica.",
+    "C. Permitir crear y mostrar los documentos XML en un formato que podemos definir a medida en hojas de estilos.",
+    "D. Establecer la prioridad de ejecución.de los procesos en un sistema multitarea."
+  ],
+  "correcta": 2,
+  "explicacion": "XSL define presentación de XML.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "59. Indique la afirmación correcta sobre los documentos XML:",
+  "opciones": [
+    "A. Un documento XML 'válido' es equivalente a que esté 'bien formado'.",
+    "B. Estar 'bien formado' es un requisito básico, mientras que ser 'válido' es una condición más fuerte.",
+    "C. Se dice que un documento XML es 'válido' cuando se corresponde con el esquema al que hace referencia, y que está 'bien formado' cuando se relaciona con un DTD.",
+    "D. Estar 'bien formado' se refiere a que cumple las especificaciones de un esquema, mientras que ser 'válido' se refiere a su sintaxis."
+  ],
+  "correcta": 1,
+  "explicacion": "Bien formado = sintaxis; válido = cumple DTD/XSD.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "60. Señale la respuesta correcta:",
+  "opciones": [
+    "A. Xcode es un IDE que contiene herramientas destinadas exclusivamente al desarrollo software para iOS.",
+    "B. Xcode Cloud no existe.",
+    "C. SwiftUI es un framework que facilita la creación de aplicaciones para cualquier dispositivo Apple.",
+    "D. iOS SDK permite el desarrollo de aplicaciones para macOS, iOS, watchOS y tvOS."
+  ],
+  "correcta": 2,
+  "explicacion": "SwiftUI es multiplataforma Apple.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "61. ¿Cómo se especifica en HTML5 un target por defecto para todos los enlaces de una página, que abra el contenido de los mismos en una nueva ventana/pestaña del navegador una vez seleccionados?",
+  "opciones": [
+    "A. <base target=\"_parent\"/>",
+    "B. <base target=\"_top\"/>",
+    "C. <base target=\"_self\"/>",
+    "D. <base target=\"_blank\"/>"
+  ],
+  "correcta": 3,
+  "explicacion": "base target=\"_blank\" abre enlaces en nueva pestaña.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Correcta."
+  }
+}
+,
+{
+  "pregunta": "62. ¿Qué es BPEL?",
+  "opciones": [
+    "A. Lenguaje basado en XML diseñado para el control centralizado de la invocación de diferentes servicios Web.",
+    "B. Una implementación libre de SOAP.",
+    "C. Arquitectura de software que define la utilización de servicios para dar soporte a los requerimientos de software del usuario.",
+    "D. Formato XML usado para describir la interfaz pública a los servicios Web."
+  ],
+  "correcta": 0,
+  "explicacion": "BPEL (Business Process Execution Language) es un lenguaje basado en XML utilizado para orquestar y coordinar la ejecución de servicios web, permitiendo definir procesos de negocio que integran múltiples servicios.",
+  "analisis_opciones": {
+    "A": "Correcta. Define exactamente el propósito de BPEL.",
+    "B": "Incorrecta. No es una implementación de SOAP.",
+    "C": "Incorrecta. Esto describe SOA.",
+    "D": "Incorrecta. Esto describe WSDL."
+  }
+},
+{
+  "pregunta": "63. Indique la afirmación verdadera, ECMAScript 7 (también llamado ECMAScript 2016) añade:",
+  "opciones": [
+    "A. Try/catch.",
+    "B. Soporte para JSON.",
+    "C. Operador exponencial (**).",
+    "D. Expresiones regulares."
+  ],
+  "correcta": 2,
+  "explicacion": "ECMAScript 2016 introdujo el operador exponencial (**), que permite realizar potencias de forma directa (por ejemplo 2**3 = 8).",
+  "analisis_opciones": {
+    "A": "Incorrecta. Ya existía antes.",
+    "B": "Incorrecta. JSON es anterior.",
+    "C": "Correcta.",
+    "D": "Incorrecta. Ya existían previamente."
+  }
+},
+{
+  "pregunta": "64. El lenguaje de programación Javascript se caracteriza por:",
+  "opciones": [
+    "A. Ser fuertemente tipado.",
+    "B. No estar basado en objetos.",
+    "C. Estar basado en prototipos.",
+    "D. Tener una sintaxis parecida al lenguaje XML."
+  ],
+  "correcta": 2,
+  "explicacion": "JavaScript es un lenguaje orientado a objetos basado en prototipos, no en clases tradicionales como Java.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es débilmente tipado.",
+    "B": "Incorrecta. Sí está basado en objetos.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "65. El código JavaScript se ejecuta en:",
+  "opciones": [
+    "A. El Navegador Web del Cliente.",
+    "B. En el Navegador Web del Servidor.",
+    "C. En un Applet de Cliente.",
+    "D. En un Programa en el Cliente."
+  ],
+  "correcta": 0,
+  "explicacion": "JavaScript tradicionalmente se ejecuta en el navegador del cliente, permitiendo interacción dinámica con la página web.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "66. En el lenguaje Xpath, utilizado en XSL, ¿qué obtenemos al aplicar la ruta de ubicación @name?",
+  "opciones": [
+    "A. La selección del nodo denominado \"name\".",
+    "B. La selección del atributo \"name\" del nodo actual.",
+    "C. La selección del nodo padre relativo al nodo \"name\".",
+    "D. La selección del atributo \"name\" del nodo padre al nodo actual."
+  ],
+  "correcta": 1,
+  "explicacion": "En XPath, el símbolo @ se utiliza para seleccionar atributos, por lo que @name selecciona el atributo 'name' del nodo actual.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso sería un nodo.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "67. ¿Cuál de las opciones representa el equivalente en JSON al siguiente código ,en XML?<empleados> <empleado> <nombre>Juan</ nombre> <apellido>Español</ apellido> </empleado> <empleado> <nombre>Juana</nombre> <apellido>Española</apellido> </empleado></ empleados>",
+  "opciones": [
+    "A. {\"empleados\":{\"empleado\": [{\"nombre\" :\"Juan\",\"apellido\":\"Español\"},{\"nombre\" :\"Juana\",\"apellido\":\"Española\"}]}}",
+    "B. [\"empleados\":[\"empleado\" :{[\"nombre\":\"Juan\",\"apellido\" :\"Español\"],[\"nombre\":\"Juana\",8apellido\":\"Española\"]}]]",
+    "C. e) : {\"empleados\":{\"empleado\":{\"nombre\":\"Juan\", \"apellido\" :rrEspañol\"},{\"nombre\": \"Juana\",\"apellido\":\"Española\"}}}",
+    "D. {empleados {\"empleado\":[{\"nombre\":\"Juan\",\"apellido\": \"Español\"},{\"nombre\" :\"Juana\",\"apellido\": \"Española\"}]}}"
+  ],
+  "correcta": 0,
+  "explicacion": "La opción A representa correctamente una estructura JSON con un objeto 'empleados' que contiene un array de 'empleado'.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. Sintaxis inválida.",
+    "C": "Incorrecta. Formato incorrecto.",
+    "D": "Incorrecta. Falta comillas en clave principal."
+  }
+},
+{
+  "pregunta": "68. Señale la respuesta correcta en relación a las tecnologías y herramientas de desarrollo front-end:",
+  "opciones": [
+    "A. Sass, Less y Stylus, son preprocesadores de CSS.",
+    "B. Postman es una herramienta que sirve para probar la parte de front-end, no permitiendo validar los servicios REST.",
+    "C. Node js fue construido con el motor de java jre 1.9",
+    "D. Bootstrap es una herramienta de desarrollo que permite realizar test de los servicios REST, aislando al programador del front-end."
+  ],
+  "correcta": 0,
+  "explicacion": "Sass, Less y Stylus son preprocesadores CSS que permiten escribir CSS más avanzado con variables, funciones y lógica.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. Postman es para APIs REST.",
+    "C": "Incorrecta. Node usa V8 (JavaScript).",
+    "D": "Incorrecta. Bootstrap es framework CSS."
+  }
+},
+{
+  "pregunta": "69. ¿Cuál de las siguientes afirmaciones sobre etiquetas de HTML es falsa?",
+  "opciones": [
+    "A. La etiqueta <td> identifica una fila en una tabla.",
+    "B. La etiqueta <br> indica un salto de línea forzado.",
+    "C. La etiqueta <div> identifica un área especial en una página.",
+    "D. La etiqueta <li> es utilizada para el manejo de listas."
+  ],
+  "correcta": 0,
+  "explicacion": "<td> representa una celda de tabla, no una fila (eso es <tr>).",
+  "analisis_opciones": {
+    "A": "Incorrecta (respuesta).",
+    "B": "Correcta.",
+    "C": "Correcta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "70. Señale cuál NO es una opción a la hora de desarrollar una aplicación móvil:",
+  "opciones": [
+    "A. Desarrollo de aplicaciones nativas.",
+    "B. Desarrollo de aplicaciones web progresivas.",
+    "C. Desarrollo de aplicaciones híbridas.",
+    "D. Desarrollo de aplicaciones web graduales."
+  ],
+  "correcta": 3,
+  "explicacion": "Las aplicaciones web graduales no existen como categoría estándar.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Correcta.",
+    "C": "Correcta.",
+    "D": "Incorrecta (respuesta)."
+  }
+},
+{
+  "pregunta": "71. De los siguientes, ¿cuál es un preprocesador de CSS?",
+  "opciones": [
+    "A. kotlin",
+    "B. Stylus",
+    "C. Babel",
+    "D. Flexbox"
+  ],
+  "correcta": 1,
+  "explicacion": "Stylus es un preprocesador CSS.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "72. Indique cuál de las siguientes característica de JavaScript es INCORRECTA:",
+  "opciones": [
+    "A. Es imperativo y dinámico.",
+    "B. Proporciona funciones de segunda clase.",
+    "C. Es débilmente tipado.",
+    "D. Está basado en prototipos."
+  ],
+  "correcta": 1,
+  "explicacion": "JavaScript tiene funciones de primera clase, no de segunda.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta (respuesta).",
+    "C": "Correcta.",
+    "D": "Correcta."
+  }
+},
+{
+  "pregunta": "73. Referente al modelo DOM (Modelo de Objeto de Documentos) de procesamiento de documentos XML indicar la sentencia correcta:",
+  "opciones": [
+    "A. Genera un árbol a partir del documento XML",
+    "B. Procesa los documentos en serie, convirtiendo los elementos de un documento XML en una serie de eventos.",
+    "C. El procesamiento con DOM es más rápido con respecto a SAX (Simple API for XML) por su modo de acceso",
+    "D. El modelo DOM requiere mucha menos memoria que SAX."
+  ],
+  "correcta": 0,
+  "explicacion": "DOM construye un árbol en memoria del documento XML.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta (eso es SAX).",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "74. ¿Qué métodos HTTP soporta una API REST?",
+  "opciones": [
+    "A. Get, post, put, delete.",
+    "B. Insert, update, select,delete.",
+    "C. Add, create, remove, modify.",
+    "D. Send, receive."
+  ],
+  "correcta": 0,
+  "explicacion": "REST usa métodos HTTP estándar: GET, POST, PUT, DELETE.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas fue introducida en HTML5 para representar contenido independiente dentro de un documento?",
+  "opciones": [
+    "A. <section>",
+    "B. <article>",
+    "C. <div>",
+    "D. <span>"
+  ],
+  "correcta": 1,
+  "explicacion": "<article> se usa para contenido independiente (noticias, posts, etc.) que puede reutilizarse o distribuirse de forma autónoma.",
+  "analisis_opciones": {
+    "A": "Incorrecta. <section> agrupa contenido temático.",
+    "B": "Correcta.",
+    "C": "Incorrecta. <div> es genérica.",
+    "D": "Incorrecta. <span> es inline."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas HTML5 se utiliza para contenido tangencial o complementario al principal?",
+  "opciones": [
+    "A. <aside>",
+    "B. <footer>",
+    "C. <nav>",
+    "D. <main>"
+  ],
+  "correcta": 0,
+  "explicacion": "<aside> se usa para contenido relacionado pero no principal (ej: barra lateral).",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. Es pie de página.",
+    "C": "Incorrecta. Es navegación.",
+    "D": "Incorrecta. Es contenido principal."
+  }
+},
+{
+  "pregunta": "¿Qué etiqueta HTML5 representa el contenido principal de un documento?",
+  "opciones": [
+    "A. <body>",
+    "B. <section>",
+    "C. <main>",
+    "D. <article>"
+  ],
+  "correcta": 2,
+  "explicacion": "<main> define el contenido principal único del documento.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Contiene todo.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas HTML5 se utiliza para representar progreso de una tarea?",
+  "opciones": [
+    "A. <meter>",
+    "B. <progress>",
+    "C. <status>",
+    "D. <range>"
+  ],
+  "correcta": 1,
+  "explicacion": "<progress> representa el progreso de una tarea en curso.",
+  "analisis_opciones": {
+    "A": "Incorrecta. <meter> mide valores dentro de un rango.",
+    "B": "Correcta.",
+    "C": "Incorrecta. No existe.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas HTML5 se utiliza para representar una escala o medida dentro de un rango conocido?",
+  "opciones": [
+    "A. <progress>",
+    "B. <range>",
+    "C. <meter>",
+    "D. <scale>"
+  ],
+  "correcta": 2,
+  "explicacion": "<meter> representa valores dentro de un rango conocido (ej: nivel de batería).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas HTML5 permite mostrar u ocultar contenido desplegable por el usuario?",
+  "opciones": [
+    "A. <details>",
+    "B. <dialog>",
+    "C. <section>",
+    "D. <summary>"
+  ],
+  "correcta": 0,
+  "explicacion": "<details> crea contenido desplegable, normalmente acompañado de <summary>.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta (es complemento, no contenedor principal)."
+  }
+},
+{
+  "pregunta": "¿Qué etiqueta HTML5 se utiliza para definir un cuadro de diálogo o ventana emergente?",
+  "opciones": [
+    "A. <popup>",
+    "B. <dialog>",
+    "C. <window>",
+    "D. <modal>"
+  ],
+  "correcta": 1,
+  "explicacion": "<dialog> se usa para diálogos modales o ventanas emergentes.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas HTML5 se utiliza para resaltar texto relevante?",
+  "opciones": [
+    "A. <strong>",
+    "B. <em>",
+    "C. <mark>",
+    "D. <highlight>"
+  ],
+  "correcta": 2,
+  "explicacion": "<mark> resalta texto como si estuviera subrayado con rotulador.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas fue introducida en HTML5 para representar contenido independiente dentro de un documento?",
+  "opciones": [
+    "A. <section>",
+    "B. <article>",
+    "C. <div>",
+    "D. <span>"
+  ],
+  "correcta": 1,
+  "explicacion": "<article> se usa para contenido independiente (noticias, posts, etc.) que puede reutilizarse o distribuirse de forma autónoma.",
+  "analisis_opciones": {
+    "A": "Incorrecta. <section> agrupa contenido temático.",
+    "B": "Correcta.",
+    "C": "Incorrecta. <div> es genérica.",
+    "D": "Incorrecta. <span> es inline."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas HTML5 se utiliza para contenido tangencial o complementario al principal?",
+  "opciones": [
+    "A. <aside>",
+    "B. <footer>",
+    "C. <nav>",
+    "D. <main>"
+  ],
+  "correcta": 0,
+  "explicacion": "<aside> se usa para contenido relacionado pero no principal (ej: barra lateral).",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta. Es pie de página.",
+    "C": "Incorrecta. Es navegación.",
+    "D": "Incorrecta. Es contenido principal."
+  }
+},
+{
+  "pregunta": "¿Qué etiqueta HTML5 representa el contenido principal de un documento?",
+  "opciones": [
+    "A. <body>",
+    "B. <section>",
+    "C. <main>",
+    "D. <article>"
+  ],
+  "correcta": 2,
+  "explicacion": "<main> define el contenido principal único del documento.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Contiene todo.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas HTML5 se utiliza para representar progreso de una tarea?",
+  "opciones": [
+    "A. <meter>",
+    "B. <progress>",
+    "C. <status>",
+    "D. <range>"
+  ],
+  "correcta": 1,
+  "explicacion": "<progress> representa el progreso de una tarea en curso.",
+  "analisis_opciones": {
+    "A": "Incorrecta. <meter> mide valores dentro de un rango.",
+    "B": "Correcta.",
+    "C": "Incorrecta. No existe.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas HTML5 se utiliza para representar una escala o medida dentro de un rango conocido?",
+  "opciones": [
+    "A. <progress>",
+    "B. <range>",
+    "C. <meter>",
+    "D. <scale>"
+  ],
+  "correcta": 2,
+  "explicacion": "<meter> representa valores dentro de un rango conocido (ej: nivel de batería).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas HTML5 permite mostrar u ocultar contenido desplegable por el usuario?",
+  "opciones": [
+    "A. <details>",
+    "B. <dialog>",
+    "C. <section>",
+    "D. <summary>"
+  ],
+  "correcta": 0,
+  "explicacion": "<details> crea contenido desplegable, normalmente acompañado de <summary>.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta (es complemento, no contenedor principal)."
+  }
+},
+{
+  "pregunta": "¿Qué etiqueta HTML5 se utiliza para definir un cuadro de diálogo o ventana emergente?",
+  "opciones": [
+    "A. <popup>",
+    "B. <dialog>",
+    "C. <window>",
+    "D. <modal>"
+  ],
+  "correcta": 1,
+  "explicacion": "<dialog> se usa para diálogos modales o ventanas emergentes.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes etiquetas HTML5 se utiliza para resaltar texto relevante?",
+  "opciones": [
+    "A. <strong>",
+    "B. <em>",
+    "C. <mark>",
+    "D. <highlight>"
+  ],
+  "correcta": 2,
+  "explicacion": "<mark> resalta texto como si estuviera subrayado con rotulador.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "¿Qué API de HTML5 permite dibujar gráficos dinámicos en una página web mediante scripting?",
+  "opciones": [
+    "A. WebGL",
+    "B. Canvas",
+    "C. SVG",
+    "D. GraphicsAPI"
+  ],
+  "correcta": 1,
+  "explicacion": "La API Canvas permite dibujar gráficos dinámicos (líneas, formas, animaciones) mediante JavaScript.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es para gráficos 3D más avanzados.",
+    "B": "Correcta.",
+    "C": "Incorrecta. SVG es vectorial pero no API de dibujo directa.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes APIs de HTML5 permite almacenar datos de forma persistente en el navegador?",
+  "opciones": [
+    "A. SessionStorage",
+    "B. LocalStorage",
+    "C. Cookies",
+    "D. CacheStorage"
+  ],
+  "correcta": 1,
+  "explicacion": "LocalStorage permite almacenar datos sin fecha de expiración en el navegador.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Se borra al cerrar sesión.",
+    "B": "Correcta.",
+    "C": "Incorrecta. No es API HTML5 propiamente.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál es la diferencia principal entre localStorage y sessionStorage en HTML5?",
+  "opciones": [
+    "A. localStorage almacena datos solo durante la sesión.",
+    "B. sessionStorage almacena datos de forma permanente.",
+    "C. localStorage persiste tras cerrar el navegador, sessionStorage no.",
+    "D. No existe diferencia."
+  ],
+  "correcta": 2,
+  "explicacion": "localStorage es persistente, mientras que sessionStorage se borra al cerrar la pestaña o navegador.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué API de HTML5 permite obtener la ubicación geográfica del usuario?",
+  "opciones": [
+    "A. Navigator API",
+    "B. Location API",
+    "C. Geolocation API",
+    "D. Position API"
+  ],
+  "correcta": 2,
+  "explicacion": "Geolocation API permite obtener la ubicación del usuario mediante el navegador.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes APIs de HTML5 permite ejecutar tareas en segundo plano sin bloquear la interfaz?",
+  "opciones": [
+    "A. Web Workers",
+    "B. Threads API",
+    "C. Async API",
+    "D. Background API"
+  ],
+  "correcta": 0,
+  "explicacion": "Web Workers permite ejecutar scripts en segundo plano sin bloquear la UI.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué API de HTML5 permite reproducir audio sin plugins externos?",
+  "opciones": [
+    "A. <sound>",
+    "B. <media>",
+    "C. <audio>",
+    "D. AudioAPI"
+  ],
+  "correcta": 2,
+  "explicacion": "La etiqueta <audio> permite reproducir sonido directamente en HTML5.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué API de HTML5 permite reproducir vídeo sin necesidad de plugins como Flash?",
+  "opciones": [
+    "A. <movie>",
+    "B. <media>",
+    "C. <video>",
+    "D. VideoAPI"
+  ],
+  "correcta": 2,
+  "explicacion": "<video> permite reproducir contenido multimedia sin plugins.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué API de HTML5 permite el almacenamiento de datos estructurados en el cliente de forma más compleja que localStorage?",
+  "opciones": [
+    "A. WebSQL",
+    "B. IndexedDB",
+    "C. LocalDB",
+    "D. CacheDB"
+  ],
+  "correcta": 1,
+  "explicacion": "IndexedDB permite almacenamiento estructurado tipo base de datos en el navegador.",
+  "analisis_opciones": {
+    "A": "Incorrecta (obsoleta).",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "¿Qué significa que un documento XML esté bien formado?",
+  "opciones": [
+    "A. Que cumple un DTD o XML Schema.",
+    "B. Que cumple las reglas de sintaxis de XML.",
+    "C. Que contiene al menos un elemento raíz y atributos.",
+    "D. Que ha sido validado por un parser SAX."
+  ],
+  "correcta": 1,
+  "explicacion": "Un XML bien formado cumple las reglas básicas de sintaxis: etiquetas correctamente anidadas, un único elemento raíz, etc.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso es válido.",
+    "B": "Correcta.",
+    "C": "Incorrecta. No es definición completa.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué significa que un documento XML sea válido?",
+  "opciones": [
+    "A. Que cumple las reglas de sintaxis XML.",
+    "B. Que contiene múltiples elementos raíz.",
+    "C. Que cumple un DTD o XML Schema.",
+    "D. Que está codificado en UTF-8."
+  ],
+  "correcta": 2,
+  "explicacion": "Un XML válido cumple además de estar bien formado, las reglas definidas en un DTD o XSD.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso es bien formado.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál es la diferencia entre XML bien formado y válido?",
+  "opciones": [
+    "A. Son equivalentes.",
+    "B. Bien formado implica válido.",
+    "C. Válido implica bien formado.",
+    "D. No hay relación entre ambos."
+  ],
+  "correcta": 2,
+  "explicacion": "Todo XML válido es bien formado, pero no todo XML bien formado es válido.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "En XML, ¿cuál de las siguientes afirmaciones es correcta sobre el elemento raíz?",
+  "opciones": [
+    "A. Puede haber varios elementos raíz.",
+    "B. Es opcional.",
+    "C. Debe existir uno y solo uno.",
+    "D. Solo es necesario en XML válido."
+  ],
+  "correcta": 2,
+  "explicacion": "Todo XML bien formado debe tener un único elemento raíz.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué define un DTD en XML?",
+  "opciones": [
+    "A. El estilo visual del documento.",
+    "B. La estructura y reglas del documento XML.",
+    "C. La codificación del documento.",
+    "D. La ejecución del documento."
+  ],
+  "correcta": 1,
+  "explicacion": "DTD define la estructura, elementos y relaciones de un XML.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál es una ventaja de XML Schema (XSD) frente a DTD?",
+  "opciones": [
+    "A. No utiliza XML.",
+    "B. Permite definir tipos de datos.",
+    "C. Es más simple.",
+    "D. No permite validación."
+  ],
+  "correcta": 1,
+  "explicacion": "XSD permite definir tipos de datos (int, string, etc.), cosa que DTD no.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué lenguaje se utiliza para transformar documentos XML?",
+  "opciones": [
+    "A. XPath",
+    "B. XSLT",
+    "C. XQuery",
+    "D. DTD"
+  ],
+  "correcta": 1,
+  "explicacion": "XSLT permite transformar XML a otros formatos como HTML o XML.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué es XPath?",
+  "opciones": [
+    "A. Lenguaje para transformar XML.",
+    "B. Lenguaje para consultar y seleccionar nodos en XML.",
+    "C. Lenguaje de estilos.",
+    "D. Un tipo de DTD."
+  ],
+  "correcta": 1,
+  "explicacion": "XPath se usa para navegar y seleccionar nodos en XML.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué selecciona la expresión XPath //libro?",
+  "opciones": [
+    "A. Solo el nodo raíz libro.",
+    "B. Todos los nodos libro en el documento.",
+    "C. El atributo libro.",
+    "D. El nodo padre libro."
+  ],
+  "correcta": 1,
+  "explicacion": "// selecciona nodos en cualquier nivel del documento.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué selecciona la expresión XPath /libros/libro?",
+  "opciones": [
+    "A. Todos los nodos libro en cualquier nivel.",
+    "B. Solo nodos libro que son hijos directos de libros.",
+    "C. Atributos libro.",
+    "D. Nodos padre."
+  ],
+  "correcta": 1,
+  "explicacion": "/ indica ruta absoluta desde la raíz.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "¿Cuál es la diferencia entre == y === en JavaScript?",
+  "opciones": [
+    "A. No hay diferencia.",
+    "B. == compara valor y tipo, === solo valor.",
+    "C. == compara solo valor, === compara valor y tipo.",
+    "D. === es obsoleto."
+  ],
+  "correcta": 2,
+  "explicacion": "== compara valores con conversión de tipos (coerción), mientras que === compara valor y tipo sin conversión.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué devuelve la expresión JavaScript 0 == false?",
+  "opciones": [
+    "A. false",
+    "B. true",
+    "C. undefined",
+    "D. error"
+  ],
+  "correcta": 1,
+  "explicacion": "== realiza conversión de tipos, por lo que 0 se convierte a false → resultado true.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué devuelve la expresión JavaScript 0 === false?",
+  "opciones": [
+    "A. true",
+    "B. false",
+    "C. undefined",
+    "D. error"
+  ],
+  "correcta": 1,
+  "explicacion": "=== no convierte tipos → number vs boolean → false.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué devuelve la expresión JavaScript null == undefined?",
+  "opciones": [
+    "A. false",
+    "B. true",
+    "C. error",
+    "D. undefined"
+  ],
+  "correcta": 1,
+  "explicacion": "null y undefined son iguales con == por coerción.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué devuelve la expresión JavaScript null === undefined?",
+  "opciones": [
+    "A. true",
+    "B. false",
+    "C. error",
+    "D. undefined"
+  ],
+  "correcta": 1,
+  "explicacion": "=== compara tipo → null ≠ undefined.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué devuelve la expresión JavaScript '5' + 2?",
+  "opciones": [
+    "A. 7",
+    "B. '7'",
+    "C. '52'",
+    "D. error"
+  ],
+  "correcta": 2,
+  "explicacion": "El operador + concatena si hay string → '5' + 2 = '52'.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué devuelve la expresión JavaScript '5' - 2?",
+  "opciones": [
+    "A. 3",
+    "B. '3'",
+    "C. '52'",
+    "D. error"
+  ],
+  "correcta": 0,
+  "explicacion": "El operador - fuerza conversión numérica → 5 - 2 = 3.",
+  "analisis_opciones": {
+    "A": "Correcta.",
+    "B": "Incorrecta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué devuelve typeof null en JavaScript?",
+  "opciones": [
+    "A. 'null'",
+    "B. 'object'",
+    "C. 'undefined'",
+    "D. error"
+  ],
+  "correcta": 1,
+  "explicacion": "typeof null devuelve 'object' (bug histórico de JS).",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre JavaScript es correcta?",
+  "opciones": [
+    "A. Es fuertemente tipado.",
+    "B. Es compilado exclusivamente.",
+    "C. Es interpretado y débilmente tipado.",
+    "D. No permite funciones como variables."
+  ],
+  "correcta": 2,
+  "explicacion": "JavaScript es interpretado y débilmente tipado.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué significa que JavaScript sea un lenguaje basado en prototipos?",
+  "opciones": [
+    "A. No permite objetos.",
+    "B. Usa clases tradicionales como Java.",
+    "C. Los objetos heredan directamente de otros objetos.",
+    "D. Solo usa funciones."
+  ],
+  "correcta": 2,
+  "explicacion": "JS usa herencia basada en prototipos, no en clases tradicionales.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Incorrecta.",
+    "C": "Correcta.",
+    "D": "Incorrecta."
+  }
+}
+,
+{
+  "pregunta": "¿Qué es XQuery en el contexto de XML?",
+  "opciones": [
+    "A. Un lenguaje para transformar XML.",
+    "B. Un lenguaje de consulta para datos XML.",
+    "C. Un lenguaje de estilos.",
+    "D. Un tipo de DTD."
+  ],
+  "correcta": 1,
+  "explicacion": "XQuery es un lenguaje diseñado para consultar y manipular datos XML.",
+  "analisis_opciones": {
+    "A": "Incorrecta (eso es XSLT).",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Qué significa la expresión FLWOR en XQuery?",
+  "opciones": [
+    "A. Find, Link, Write, Order, Return",
+    "B. For, Let, Where, Order by, Return",
+    "C. Fetch, Load, Write, Output, Return",
+    "D. Filter, Link, Wrap, Order, Return"
+  ],
+  "correcta": 1,
+  "explicacion": "FLWOR es la estructura principal de XQuery: For, Let, Where, Order by, Return.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál es la principal diferencia entre XPath y XQuery?",
+  "opciones": [
+    "A. XPath transforma XML y XQuery no.",
+    "B. XPath consulta XML de forma simple y XQuery permite consultas complejas.",
+    "C. XPath es más potente que XQuery.",
+    "D. No hay diferencia."
+  ],
+  "correcta": 1,
+  "explicacion": "XPath se usa para seleccionar nodos, mientras que XQuery permite consultas complejas y manipulación de datos.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+},
+{
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre XQuery es correcta?",
+  "opciones": [
+    "A. Es un lenguaje basado en JSON.",
+    "B. Permite consultar datos XML de forma similar a SQL.",
+    "C. Sustituye completamente a XML.",
+    "D. Solo sirve para validar documentos XML."
+  ],
+  "correcta": 1,
+  "explicacion": "XQuery es comparable a SQL pero aplicado a XML.",
+  "analisis_opciones": {
+    "A": "Incorrecta.",
+    "B": "Correcta.",
+    "C": "Incorrecta.",
+    "D": "Incorrecta."
+  }
+}
+]

@@ -6,8 +6,8 @@ const penalizacionPorError = 0.5;
 const temasPorBloque = {
     bloque1: ["tema1","tema2", "tema3","tema4","tema5","tema6","tema7","tema8","tema9"], 
     bloque2: ["tema1","tema2", "tema3","tema4","tema5"],
-    bloque3: ["tema1"],
-    bloque4: ["tema1"]
+    bloque3: ["tema1","tema2", "tema3","tema4","tema5","tema6","tema7","tema8","tema9"],
+    bloque4: ["tema1","tema2", "tema3","tema4","tema5","tema6","tema7","tema8","tema9"]
 };
 
 let preguntas = [];
