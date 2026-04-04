@@ -3817,8 +3817,1766 @@
     "analisis_opciones": {
       "B": "Correcta."
     }
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente la jerarquía de los identificadores de recursos en Internet?",
+    "opciones": [
+      "A. Toda URI es necesariamente una URL.",
+      "B. Las URN son localizadores que indican el protocolo de acceso.",
+      "C. URI es el término genérico que engloba tanto a las URL como a las URN.",
+      "D. Las URL y las URN no tienen ninguna relación entre sí."
+    ],
+    "correcta": 2,
+    "explicacion": "La URI (Uniform Resource Identifier) es el concepto global. Una URL identifica por ubicación (dónde está) y una URN identifica por nombre (qué es). Por tanto, toda URL es una URI, pero no al revés.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "En la URL 'https://admin:1234@www.opoestudio.es:8443/temario/tema1.pdf', ¿qué parte de la dirección se identifica técnicamente como el 'Host'?",
+    "opciones": [
+      "A. admin:1234.",
+      "B. www.opoestudio.es.",
+      "C. 8443.",
+      "D. /temario/tema1.pdf."
+    ],
+    "correcta": 1,
+    "explicacion": "El Host es el nombre de dominio o dirección IP del servidor al que queremos acceder. En una URL completa, se sitúa entre el símbolo '@' (si hay credenciales) y los dos puntos del puerto o la barra de la ruta.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "Dentro de la estructura de un nombre de dominio, ¿cómo se clasifica el sufijo '.es' según la jerarquía de Internet?",
+    "opciones": [
+      "A. gTLD (Dominio de Nivel Superior Genérico).",
+      "B. SLD (Dominio de Segundo Nivel).",
+      "C. ccTLD (Dominio de Nivel Superior Geográfico).",
+      "D. FQDN (Nombre de Dominio Totalmente Cualificado)."
+    ],
+    "correcta": 2,
+    "explicacion": "Los ccTLD (country code Top Level Domain) son dominios de primer nivel que constan de solo dos letras y están reservados para países o territorios dependientes.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "Identifique el error sintáctico en la siguiente dirección de recurso: 'mailto://usuario@dominio.com'",
+    "opciones": [
+      "A. Falta el nombre del servidor después de la arroba.",
+      "B. El símbolo '@' es exclusivo de protocolos de transferencia como HTTP.",
+      "C. El esquema 'mailto:' no debe llevar las dos barras inclinadas (//).",
+      "D. No se ha especificado el puerto de conexión (25)."
+    ],
+    "correcta": 2,
+    "explicacion": "A diferencia de esquemas como http o ftp, el estándar para 'mailto:' especifica que se escribe seguido directamente de la dirección de correo, sin utilizar la doble barra inclinada.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "En una URL que contiene una cadena de consulta (query string), ¿qué carácter se utiliza específicamente para separar múltiples variables o parámetros entre sí?",
+    "opciones": [
+      "A. El signo de interrogación (?).",
+      "B. El símbolo de ampersand (&).",
+      "C. El símbolo de almohadilla (#).",
+      "D. El punto y coma (;)."
+    ],
+    "correcta": 1,
+    "explicacion": "Mientras que el '?' se usa una sola vez para iniciar la cadena de parámetros, el '&' actúa como separador obligatorio cuando queremos enviar más de un par variable=valor al servidor.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },{
+    "pregunta": "Dada la URI 'sftp://operador:claverara123@ftp.seguridad.es:2022/backups/datos.sql?compress=zip&encrypt=aes#resumen', ¿cuál es el puerto de conexión y qué función cumple el símbolo '&'?",
+    "opciones": [
+      "A. Puerto 22 (estándar de SFTP); actúa como separador entre el host y la ruta.",
+      "B. Puerto 2022; se utiliza para separar múltiples variables dentro de la cadena de consulta.",
+      "C. Puerto 2022; indica el inicio de un marcador o ancla dentro del recurso.",
+      "D. Puerto 20 (transferencia de datos); sirve para separar el nombre de usuario de la contraseña."
+    ],
+    "correcta": 1,
+    "explicacion": "Aunque el puerto por defecto de SFTP/SSH es el 22, si la URL especifica ':2022', ese es el puerto que manda. El símbolo '&' se utiliza exclusivamente para concatenar o separar varias variables (en este caso 'compress' y 'encrypt') después de que el '?' haya iniciado la consulta.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "¿Qué tipo de dominio representa el sufijo '.es' en la dirección 'www.lamoncloa.gob.es'?",
+    "opciones": [
+      "A. gTLD (Dominio de Nivel Superior Genérico).",
+      "B. SLD (Dominio de Segundo Nivel).",
+      "C. ccTLD (Dominio de Nivel Superior Geográfico).",
+      "D. FQDN (Nombre de Dominio Totalmente Cualificado)."
+    ],
+    "correcta": 2,
+    "explicacion": "Los dominios de nivel superior que constan de solo dos letras (como .es, .fr o .it) se denominan ccTLD (country code TLD) y están vinculados a un país o territorio.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "En la URL 'http://www.test.es/archivo.php?id=10#final', ¿cuál es la función del carácter '#'?",
+    "opciones": [
+      "A. Indicar el inicio de los parámetros de consulta.",
+      "B. Separar las diferentes variables enviadas al servidor.",
+      "C. Identificar un fragmento o marcador (ancla) dentro del recurso.",
+      "D. Especificar un puerto de conexión no estándar."
+    ],
+    "correcta": 2,
+    "explicacion": "El símbolo '#' introduce un fragmento o 'anchor'. Es una referencia interna que permite al navegador desplazarse a una posición específica dentro de la página cargada.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "¿Qué organismo es el responsable principal de las 'Recomendaciones' que estandarizan lenguajes como HTML y CSS?",
+    "opciones": [
+      "A. IETF (Internet Engineering Task Force).",
+      "B. IEEE (Institute of Electrical and Electronics Engineers).",
+      "C. W3C (World Wide Web Consortium).",
+      "D. ISO (Organización Internacional de Normalización)."
+    ],
+    "correcta": 2,
+    "explicacion": "El W3C, fundado por Tim Berners-Lee, se encarga de estandarizar las tecnologías de la Web (HTML, CSS, XML), mientras que el IETF se ocupa de los protocolos de red (IP, TCP).",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "¿Qué puertos utiliza el protocolo FTP por defecto para su funcionamiento según el estándar original?",
+    "opciones": [
+      "A. Puerto 21 para datos y puerto 20 para control.",
+      "B. Puerto 20 para datos y puerto 21 para control.",
+      "C. Puerto 22 para control y un puerto aleatorio para datos.",
+      "D. Puerto 80 para control y puerto 8080 para datos."
+    ],
+    "correcta": 1,
+    "explicacion": "FTP utiliza dos canales sobre TCP: el puerto 21 se dedica exclusivamente al canal de control (comandos) y el puerto 20 se utiliza para el canal de datos en modo activo.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "En el funcionamiento de FTP, ¿cuál es la principal diferencia técnica del Modo Pasivo respecto al Modo Activo?",
+    "opciones": [
+      "A. El servidor inicia la conexión de datos desde su puerto 20 hacia el cliente.",
+      "B. El cliente envía el comando PORT para indicar su puerto abierto.",
+      "C. El cliente es quien inicia la conexión de datos hacia un puerto aleatorio facilitado por el servidor.",
+      "D. Solo se utiliza para transmisiones cifradas mediante SSL/TLS."
+    ],
+    "correcta": 2,
+    "explicacion": "En el modo pasivo (comando PASV), el cliente inicia la conexión hacia el servidor. Esto soluciona los problemas de los firewalls en el lado del cliente que bloquean conexiones entrantes no solicitadas.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "¿Qué RFC introdujo las extensiones necesarias para que el protocolo FTP fuera compatible con redes IPv6 y entornos NAT?",
+    "opciones": [
+      "A. RFC 959.",
+      "B. RFC 2428.",
+      "C. RFC 791.",
+      "D. RFC 2616."
+    ],
+    "correcta": 1,
+    "explicacion": "Mientras que el RFC 959 define el FTP original, el RFC 2428 (de 1998) introdujo los comandos EPRT y EPSV para dar soporte a IPv6 y mejorar el comportamiento con NAT.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "Sobre la seguridad en FTP, ¿cuál de las siguientes afirmaciones es correcta respecto al envío de credenciales?",
+    "opciones": [
+      "A. Los comandos USER y PASS se envían cifrados mediante un hash MD5 por defecto.",
+      "B. El protocolo FTP estándar envía el usuario y la contraseña en texto plano.",
+      "C. SFTP es una extensión de FTP que utiliza SSL para proteger la sesión.",
+      "D. El acceso anónimo requiere obligatoriamente una contraseña compleja."
+    ],
+    "correcta": 1,
+    "explicacion": "El protocolo FTP original no cifra las comunicaciones. El nombre de usuario (USER) y la contraseña (PASS) viajan de forma legible, lo que lo hace vulnerable a ataques de rastreo (sniffing).",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "En el modo de funcionamiento Pasivo Extendido (EPSV), ¿qué puerto del servidor se utiliza típicamente para la transferencia de archivos?",
+    "opciones": [
+      "A. Siempre el puerto 20.",
+      "B. El puerto 21, el mismo que el de control.",
+      "C. Un puerto aleatorio superior al 1024.",
+      "D. El puerto 443 para garantizar la integridad."
+    ],
+    "correcta": 2,
+    "explicacion": "Tanto en el modo pasivo como en el pasivo extendido, el servidor abre un puerto efímero (aleatorio) por encima del 1024 y se lo comunica al cliente para que este realice la conexión de datos.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "En una transferencia FTP, ¿cuál es el riesgo de enviar un archivo de imagen (.jpg) utilizando el modo de transferencia ASCII?",
+    "opciones": [
+      "A. El archivo tardará más en enviarse debido a la compresión.",
+      "B. El archivo se corromperá porque el protocolo intentará traducir los saltos de línea en datos binarios.",
+      "C. El archivo se enviará correctamente, ya que el modo ASCII es universal.",
+      "D. El servidor rechazará la conexión por falta de permisos de imagen."
+    ],
+    "correcta": 1,
+    "explicacion": "El modo ASCII está diseñado para archivos de texto y realiza conversiones de caracteres de control (como saltos de línea). Si se aplica a un archivo binario (como una imagen), modificará los bytes internos y dejará el archivo inservible.",
+    "analisis_opciones": {
+      "B": "Correcta."
+    }
+  },
+  {
+    "pregunta": "¿Qué modo de transferencia FTP es el más adecuado para enviar un archivo ejecutable (.exe) o un archivo comprimido (.zip)?",
+    "opciones": [
+      "A. Modo ASCII.",
+      "B. Modo Pasivo Extendido.",
+      "C. Modo Binario (o Image).",
+      "D. Modo de Texto Plano."
+    ],
+    "correcta": 2,
+    "explicacion": "El modo Binario transfiere los archivos bit a bit, sin realizar ninguna modificación en el contenido. Es el modo obligatorio para cualquier archivo que no sea texto plano, como programas, imágenes o archivos comprimidos.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "¿Qué organismo, dependiente del Departamento de Comercio de EE. UU., emite estándares obligatorios para las compras del gobierno federal (FIPS), exceptuando las del Departamento de Defensa?",
+    "opciones": [
+      "A. ANSI.",
+      "B. IEEE.",
+      "C. NIST (National Institute of Standards and Technology).",
+      "D. IANA."
+    ],
+    "correcta": 2,
+    "explicacion": "El NIST es el encargado de los estándares federales en EE. UU. y es mundialmente conocido por definir estándares de cifrado (como AES) y marcos de ciberseguridad.",
+    "analisis_opciones": {
+      "A": "ANSI es el instituto nacional de estándares de EE. UU., pero es una organización privada sin fines de lucro.",
+      "B": "IEEE es una asociación profesional de ingenieros, no una agencia gubernamental.",
+      "C": "Correcta. Es la agencia del Departamento de Comercio que dicta las normas federales (FIPS).",
+      "D": "IANA se encarga de la asignación de números de Internet (IPs, puertos), no de estándares gubernamentales generales."
+    }
+  },
+  {
+    "pregunta": "Durante una sesión FTP, un usuario necesita cambiar la carpeta de trabajo en SU PROPIO ORDENADOR (cliente). ¿Qué comando debe ejecutar?",
+    "opciones": [
+      "A. CD.",
+      "B. PWD.",
+      "C. LCD (Local Change Directory).",
+      "D. MKD."
+    ],
+    "correcta": 2,
+    "explicacion": "En FTP existen comandos para el sistema remoto y para el local. El comando CD cambia el directorio en el servidor, mientras que LCD lo hace en la máquina local del usuario.",
+    "analisis_opciones": {
+      "A": "CD cambia el directorio en el servidor (remoto).",
+      "B": "PWD muestra la ruta actual en el servidor.",
+      "C": "Correcta. La 'L' inicial indica 'Local'.",
+      "D": "MKD se utiliza para crear un nuevo directorio en el servidor."
+    }
+  },
+  {
+    "pregunta": "En el funcionamiento del protocolo FTP, ¿qué sucede cuando el cliente envía el comando 'PASV' al servidor?",
+    "opciones": [
+      "A. El servidor abre el puerto 20 para enviar los datos al cliente.",
+      "B. El cliente se prepara para recibir una conexión entrante en un puerto aleatorio.",
+      "C. El servidor indica un puerto aleatorio al que el cliente debe conectarse para el canal de datos.",
+      "D. La sesión se cierra de forma segura encriptando los datos con SSH."
+    ],
+    "correcta": 2,
+    "explicacion": "El modo pasivo (PASV) se diseñó para evitar problemas con firewalls en el lado del cliente. Al activarlo, el servidor 'se queda esperando' en un puerto aleatorio a que el cliente sea quien inicie la conexión de datos.",
+    "analisis_opciones": {
+      "A": "El puerto 20 se usa en el modo ACTIVO, donde el servidor inicia la conexión.",
+      "B": "Eso ocurriría en el modo ACTIVO (comando PORT).",
+      "C": "Correcta. El servidor facilita el puerto y el cliente toma la iniciativa.",
+      "D": "El comando PASV no gestiona el cifrado, solo la forma de establecer la conexión."
+    }
+  },
+  {
+    "pregunta": "Si deseamos descargar múltiples archivos que cumplan un patrón (por ejemplo, todos los .zip) de forma automática y sin que el cliente nos pida confirmación por cada uno, ¿qué secuencia de comandos sería la más eficiente?",
+    "opciones": [
+      "A. ASCII y luego MGET *.zip.",
+      "B. PROMPT y luego MGET *.zip.",
+      "C. BINARY y luego GET *.zip.",
+      "D. USER y luego PASS."
+    ],
+    "correcta": 1,
+    "explicacion": "El comando PROMPT desactiva el modo interactivo, permitiendo que MGET descargue todos los archivos del patrón sin preguntar al usuario uno por uno.",
+    "analisis_opciones": {
+      "A": "ASCII corrompería los archivos .zip al tratarlos como texto plano.",
+      "B": "Correcta. PROMPT quita la interactividad y MGET descarga múltiples archivos.",
+      "C": "GET no admite comodines (*) para descargar varios archivos a la vez; se requiere MGET.",
+      "D": "USER y PASS son solo para iniciar sesión, no para descargar archivos."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de la organización IANA en la gobernanza actual de Internet?",
+    "opciones": [
+      "A. Desarrollar el lenguaje HTML y las hojas de estilo CSS.",
+      "B. Supervisar la asignación global de direcciones IP, números de sistemas autónomos y puertos.",
+      "C. Fabricar los cables de fibra óptica que forman el Backbone de Internet.",
+      "D. Actuar como un tribunal internacional para delitos informáticos."
+    ],
+    "correcta": 1,
+    "explicacion": "La IANA es la 'contable' de Internet. Gestiona la zona raíz del DNS y reparte los bloques de direcciones IP a los registros regionales (RIR).",
+    "analisis_opciones": {
+      "A": "Esa es la función del W3C (World Wide Web Consortium).",
+      "B": "Correcta. Es la autoridad técnica de los números asignados.",
+      "C": "El Backbone es propiedad de empresas privadas (Tier 1), no de la IANA.",
+      "D": "La IANA no tiene funciones legales ni judiciales."
+    }
+  },
+  {
+    "pregunta": "¿Qué par de comandos se utilizan exclusivamente para la transferencia de múltiples archivos utilizando patrones de coincidencia (wildcards)?",
+    "opciones": [
+      "A. GET y PUT.",
+      "B. MGET y MPUT.",
+      "C. LS y DIR.",
+      "D. ASCII y BINARY."
+    ],
+    "correcta": 1,
+    "explicacion": "La 'M' inicial en MGET y MPUT proviene de 'Multiple'. Permiten descargar o subir varios archivos de una vez usando asteriscos (*) o interrogaciones (?).",
+    "analisis_opciones": {
+      "A": "GET y PUT solo sirven para un único archivo por vez.",
+      "B": "Correcta. Son los comandos para transferencias múltiples.",
+      "C": "LS y DIR sirven para listar directorios, no para transferir archivos.",
+      "D": "Establecen el modo de transferencia, pero no transfieren los archivos per se."
+    }
+  },
+  {
+    "pregunta": "Deseamos ver una lista detallada en el servidor que incluya el tamaño de los archivos y su fecha de modificación. ¿Qué comando es el más adecuado?",
+    "opciones": [
+      "A. LS.",
+      "B. PWD.",
+      "C. DIR.",
+      "D. HELP."
+    ],
+    "correcta": 2,
+    "explicacion": "Aunque ambos listan, LS suele dar una salida simple (solo nombres), mientras que DIR proporciona la información detallada del sistema de archivos remoto.",
+    "analisis_opciones": {
+      "A": "LS ofrece una lista abreviada, normalmente solo nombres de archivos.",
+      "B": "PWD muestra la ruta actual, no el contenido de la carpeta.",
+      "C": "Correcta. Ofrece el listado detallado (formato largo).",
+      "D": "HELP muestra la ayuda de los comandos disponibles."
+    }
+  },
+  {
+    "pregunta": "Para cambiar el directorio de trabajo en la máquina LOCAL (el ordenador del propio usuario) sin afectar al servidor, utilizaremos:",
+    "opciones": [
+      "A. CD.",
+      "B. LCD.",
+      "C. MKD.",
+      "D. OPEN."
+    ],
+    "correcta": 1,
+    "explicacion": "LCD significa 'Local Change Directory'. Es vital para situarnos en la carpeta de nuestro PC donde queremos que se descarguen los archivos o desde donde los queremos subir.",
+    "analisis_opciones": {
+      "A": "CD cambia el directorio en el servidor remoto.",
+      "B": "Correcta. La 'L' es la clave de 'Local'.",
+      "C": "MKD crea un directorio nuevo en el servidor.",
+      "D": "OPEN inicia la conexión con un servidor remoto."
+    }
+  },
+  {
+    "pregunta": "Si un servidor FTP está detrás de un cortafuegos que bloquea las conexiones entrantes al cliente, ¿qué comando deberíamos usar para establecer el canal de datos?",
+    "opciones": [
+      "A. ACTIVE.",
+      "B. PASSIVE.",
+      "C. PROMPT.",
+      "D. BINARY."
+    ],
+    "correcta": 1,
+    "explicacion": "El modo PASSIVE (PASV) hace que el cliente inicie la conexión de datos, evitando que el firewall del cliente bloquee la conexión que intentaría hacer el servidor en modo activo.",
+    "analisis_opciones": {
+      "A": "ACTIVE obliga al servidor a conectar con el cliente (suele fallar con NAT/Firewalls).",
+      "B": "Correcta. Es el modo recomendado para redes con seguridad o routers (NAT).",
+      "C": "PROMPT sirve para activar/desactiva confirmaciones en MGET/MPUT.",
+      "D": "BINARY define el tipo de archivo (imagen), no el modo de conexión."
+    }
+  },
+  {
+    "pregunta": "¿Qué secuencia de comandos se utiliza para identificarse ante el servidor una vez establecida la conexión con OPEN?",
+    "opciones": [
+      "A. LOGIN y PASSWORD.",
+      "B. USER y luego PASS.",
+      "C. DIR y luego CD.",
+      "D. GET y luego PUT."
+    ],
+    "correcta": 1,
+    "explicacion": "USER envía el nombre de cuenta y PASS envía la contraseña asociada para iniciar la sesión.",
+    "analisis_opciones": {
+      "A": "LOGIN no es un comando estándar de protocolo (se usa USER).",
+      "B": "Correcta. Es la secuencia estándar de autenticación.",
+      "C": "Estos comandos se usan después de haber iniciado sesión.",
+      "D": "Son comandos de transferencia de archivos."
+    }
+  },
+  {
+    "pregunta": "Para realizar labores de mantenimiento en el servidor, como borrar un archivo, borrar una carpeta vacía o renombrar un elemento, usaremos respectivamente:",
+    "opciones": [
+      "A. DELETE, MKD, RENAME.",
+      "B. RMD, DELETE, RENAME.",
+      "C. DELETE, RMD, RENAME.",
+      "D. QUIT, MKD, CD."
+    ],
+    "correcta": 2,
+    "explicacion": "DELETE elimina archivos, RMD (Remove Directory) elimina carpetas vacías y RENAME cambia nombres.",
+    "analisis_opciones": {
+      "A": "MKD crea directorios, no los borra.",
+      "B": "El orden es incorrecto (RMD es para directorios).",
+      "C": "Correcta. Sigue el orden solicitado: archivo, directorio, renombre.",
+      "D": "QUIT cierra la sesión."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función del comando PROMPT cuando trabajamos con transferencias múltiples (MGET/MPUT)?",
+    "opciones": [
+      "A. Cambia el puerto de control del 21 al 20.",
+      "B. Establece el modo de transferencia a ASCII.",
+      "C. Activa o desactiva la solicitud de confirmación por cada archivo individual.",
+      "D. Muestra el tiempo estimado de descarga."
+    ],
+    "correcta": 2,
+    "explicacion": "Por defecto, FTP pregunta '¿Desea descargar X?' por cada archivo. PROMPT desactiva ese modo interactivo para que la descarga sea automática y masiva.",
+    "analisis_opciones": {
+      "A": "Los puertos no se cambian con PROMPT.",
+      "B": "Eso lo hace el comando ASCII.",
+      "C": "Correcta. Es un interruptor (on/off) para la confirmación del usuario.",
+      "D": "FTP estándar no suele dar tiempos estimados con comandos básicos."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes clientes FTP es conocido por ser de código abierto, multiplataforma (Windows, macOS, Linux) y disponer de una interfaz gráfica (GUI) muy popular?",
+    "opciones": [
+      "A. lftp.",
+      "B. FileZilla.",
+      "C. WinSCP.",
+      "D. FTP clásico."
+    ],
+    "correcta": 1,
+    "explicacion": "FileZilla es el cliente gráfico por excelencia. Su principal ventaja es que es gratuito, de código abierto y funciona en prácticamente cualquier sistema operativo.",
+    "analisis_opciones": {
+      "A": "lftp es un cliente avanzado pero funciona mediante línea de comandos (CLI).",
+      "B": "Correcta. Es gráfico, gratuito y multiplataforma.",
+      "C": "WinSCP es excelente, pero está limitado principalmente a entornos Windows.",
+      "D": "El FTP clásico es CLI y no tiene interfaz gráfica."
+    }
+  },
+  {
+    "pregunta": "Si un administrador de sistemas trabaja exclusivamente en Windows y necesita una integración profunda con PuTTY y funciones de scripting, ¿qué cliente FTP/SFTP es el más adecuado?",
+    "opciones": [
+      "A. Transmit.",
+      "B. Cyberduck.",
+      "C. WinSCP.",
+      "D. lftp."
+    ],
+    "correcta": 2,
+    "explicacion": "WinSCP es un cliente gráfico para Windows que destaca por su capacidad de automatización mediante scripts y su perfecta integración con el ecosistema de herramientas de PuTTY.",
+    "analisis_opciones": {
+      "A": "Transmit es un cliente exclusivo para macOS.",
+      "B": "Cyberduck es gráfico, pero no está tan enfocado a la integración con PuTTY como WinSCP.",
+      "C": "Correcta. Es el estándar para usuarios avanzados en Windows.",
+      "D": "lftp es para entornos Unix/Linux."
+    }
+  },
+  {
+    "pregunta": "¿Qué cliente de transferencia de archivos destaca por ser una herramienta de línea de comandos (CLI) avanzada en entornos Unix/Linux, muy utilizada para la creación de scripts?",
+    "opciones": [
+      "A. CuteFTP.",
+      "B. FileZilla.",
+      "C. Core FTP.",
+      "D. lftp."
+    ],
+    "correcta": 3,
+    "explicacion": "lftp es el 'peso pesado' de la terminal en Linux. A diferencia de otros, permite realizar operaciones complejas, espejos de sitios y multitarea, todo sin necesidad de ratón.",
+    "analisis_opciones": {
+      "A": "CuteFTP es un software comercial con interfaz gráfica.",
+      "B": "FileZilla es exclusivamente gráfico.",
+      "C": "Core FTP es un cliente gráfico para Windows.",
+      "D": "Correcta. Es el cliente CLI avanzado por excelencia en sistemas tipo Unix."
+    }
+  },
+  {
+    "pregunta": "Sobre el 'FTP clásico' que viene integrado en la mayoría de los sistemas operativos por línea de comandos, ¿cuál es su principal carencia en entornos modernos?",
+    "opciones": [
+      "A. No permite subir archivos (solo descargar).",
+      "B. Es un cliente de pago bajo suscripción.",
+      "C. Carece de soporte para cifrado (envía todo en texto plano).",
+      "D. Solo funciona si el servidor es Windows."
+    ],
+    "correcta": 2,
+    "explicacion": "El cliente FTP original (clásico) es muy simple y básico. Su gran problema es la seguridad, ya que no soporta de forma nativa cifrado como SSL o SSH.",
+    "analisis_opciones": {
+      "A": "Permite tanto subir (PUT) como descargar (GET).",
+      "B": "Es gratuito y viene integrado en el sistema.",
+      "C": "Correcta. Es inseguro para redes abiertas como Internet.",
+      "D": "Es universal y funciona contra cualquier servidor FTP estándar."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes clientes se recomienda específicamente para usuarios de macOS que buscan una integración optimizada con el sistema y están dispuestos a utilizar una opción de pago?",
+    "opciones": [
+      "A. Transmit.",
+      "B. WinSCP.",
+      "C. CuteFTP.",
+      "D. Core FTP."
+    ],
+    "correcta": 0,
+    "explicacion": "Transmit es considerado el mejor cliente FTP para el ecosistema Apple por su diseño y optimización, aunque a diferencia de FileZilla, es una herramienta comercial de pago.",
+    "analisis_opciones": {
+      "A": "Correcta. Muy optimizado para Mac.",
+      "B": "WinSCP no tiene versión nativa para macOS.",
+      "C": "CuteFTP está orientado a Windows.",
+      "D": "Core FTP es exclusivo de Windows."
+    }
+  },
+  {
+    "pregunta": "Si un usuario necesita un cliente gráfico que, además de FTP, sea compatible con diversos servicios de almacenamiento en la nube (Cloud) y funcione tanto en macOS como en Windows, ¿cuál debería elegir?",
+    "opciones": [
+      "A. lftp.",
+      "B. Cyberduck.",
+      "C. FTP clásico.",
+      "D. CuteFTP."
+    ],
+    "correcta": 1,
+    "explicacion": "Cyberduck es un cliente gráfico muy versátil que permite conectar no solo a servidores FTP/SFTP, sino también a Amazon S3, Google Drive, Dropbox, etc.",
+    "analisis_opciones": {
+      "A": "lftp es CLI, no tiene la versatilidad de nube gráfica de Cyberduck.",
+      "B": "Correcta. Es el 'puente' perfecto entre FTP y la Nube.",
+      "C": "El FTP clásico solo entiende el protocolo FTP simple.",
+      "D": "CuteFTP es más empresarial y centrado en Windows."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es el puerto por defecto y el protocolo de transporte que utiliza SFTP (SSH File Transfer Protocol)?",
+    "opciones": [
+      "A. Puerto 21 sobre TCP.",
+      "B. Puerto 22 sobre UDP.",
+      "C. Puerto 22 sobre TCP.",
+      "D. Puerto 20 sobre SCTP."
+    ],
+    "correcta": 2,
+    "explicacion": "SFTP funciona como un subsistema del protocolo SSH, el cual utiliza por defecto el puerto 22 y el protocolo de transporte orientado a conexión TCP.",
+    "analisis_opciones": {
+      "A": "El puerto 21 es el canal de control del FTP estándar.",
+      "B": "SSH y SFTP requieren la fiabilidad de TCP, no usan UDP.",
+      "C": "Correcta. Puerto 22/TCP, el mismo que SSH.",
+      "D": "El puerto 20 es el canal de datos del FTP en modo activo."
+    }
+  },
+  {
+    "pregunta": "Desde el punto de vista arquitectónico, ¿cuál es la principal diferencia entre SFTP y el FTP tradicional respecto a sus conexiones?",
+    "opciones": [
+      "A. SFTP utiliza dos conexiones independientes (control y datos) al igual que FTP.",
+      "B. SFTP utiliza una única conexión segura para todo el intercambio.",
+      "C. SFTP no permite la manipulación remota de archivos, solo la subida.",
+      "D. SFTP requiere abrir un rango de puertos aleatorios superior al 1024."
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia de FTP, que separa el control (21) de los datos (20), SFTP lo gestiona todo a través de un único túnel cifrado de SSH, lo que facilita enormemente la gestión en firewalls.",
+    "analisis_opciones": {
+      "A": "Esta es la característica del FTP clásico, no del SFTP.",
+      "B": "Correcta. Una sola conexión segura lo maneja todo.",
+      "C": "SFTP sí permite renombrar, borrar y listar archivos remotamente.",
+      "D": "Eso es propio del modo pasivo de FTP, no es necesario en SFTP."
+    }
+  },
+  {
+    "pregunta": "En un examen de redes, nos piden distinguir entre SFTP y FTPS. ¿Cuál es la afirmación correcta?",
+    "opciones": [
+      "A. Son el mismo protocolo con distintos nombres.",
+      "B. FTPS es un subsistema de SSH, mientras que SFTP usa certificados SSL.",
+      "C. SFTP es parte integral de SSH, mientras que FTPS es FTP protegido con SSL/TLS.",
+      "D. SFTP no soporta autenticación mediante clave pública."
+    ],
+    "correcta": 2,
+    "explicacion": "SFTP es un protocolo completamente nuevo que corre sobre SSH (RFC 4253). FTPS es el FTP de siempre al que se le añade una capa de seguridad SSL/TLS.",
+    "analisis_opciones": {
+      "A": "Falso. Son protocolos técnica y arquitectónicamente diferentes.",
+      "B": "Es justo al revés.",
+      "C": "Correcta. Es la distinción técnica fundamental.",
+      "D": "SFTP sí soporta (y es ideal para) autenticación de clave pública."
+    }
+  },
+  {
+    "pregunta": "¿Qué ventaja ofrece el uso de SFTP en entornos automatizados o scripts frente al FTP clásico?",
+    "opciones": [
+      "A. Es mucho más rápido al no utilizar cifrado.",
+      "B. Permite la autenticación mediante clave pública (sin necesidad de introducir contraseña manualmente).",
+      "C. Es compatible con el protocolo Gopher.",
+      "D. No requiere una capa de transporte TCP."
+    ],
+    "correcta": 1,
+    "explicacion": "Al integrarse con SSH, SFTP permite el uso de llaves (claves públicas/privadas), lo que permite que los scripts se conecten de forma segura sin exponer contraseñas en texto plano.",
+    "analisis_opciones": {
+      "A": "Falso. El cifrado añade una pequeña carga, pero es obligatorio.",
+      "B": "Correcta. Es una de sus características estrella para la automatización.",
+      "C": "Gopher es un protocolo antiguo sin relación con SFTP.",
+      "D": "SFTP requiere obligatoriamente TCP."
+    }
+  },
+  {
+    "pregunta": "Según la jerarquía del modelo TCP/IP, ¿en qué capa se sitúa el protocolo SFTP?",
+    "opciones": [
+      "A. Capa de Red.",
+      "B. Capa de Acceso al Medio.",
+      "C. Capa de Aplicación.",
+      "D. Capa de Internet."
+    ],
+    "correcta": 2,
+    "explicacion": "Al igual que HTTP, FTP o DNS, el protocolo SFTP ofrece servicios directamente al usuario y a sus aplicaciones, por lo que pertenece a la capa de Aplicación.",
+    "analisis_opciones": {
+      "A": "En la capa de Red (o Internet) están protocolos como IP o ICMP.",
+      "B": "Esta capa gestiona el hardware y los frames (como Ethernet).",
+      "C": "Correcta. Es un protocolo de nivel superior.",
+      "D": "Es sinónimo de capa de Red en el modelo TCP/IP."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es el puerto estándar utilizado por el protocolo FTPS en su modo IMPLÍCITO para establecer el canal de control seguro?",
+    "opciones": [
+      "A. Puerto 21.",
+      "B. Puerto 22.",
+      "C. Puerto 990.",
+      "D. Puerto 443."
+    ],
+    "correcta": 2,
+    "explicacion": "En el modo implícito, el servidor FTPS espera una conexión cifrada directamente desde el inicio en el puerto 990. El puerto 21 se reserva para el modo explícito.",
+    "analisis_opciones": {
+      "A": "El puerto 21 se usa en el modo explícito para negociar la seguridad.",
+      "B": "El puerto 22 es para SSH/SFTP, no para FTPS.",
+      "C": "Correcta. Puerto específico para FTPS implícito.",
+      "D": "El puerto 443 es para tráfico web seguro (HTTPS)."
+    }
+  },
+  {
+    "pregunta": "En el modo FTPS EXPLÍCITO, ¿qué comando debe enviar el cliente para solicitar al servidor el inicio de la negociación TLS/SSL?",
+    "opciones": [
+      "A. STARTTLS.",
+      "B. AUTH TLS.",
+      "C. SECURE ON.",
+      "D. PASV."
+    ],
+    "correcta": 1,
+    "explicacion": "El comando 'AUTH TLS' (o AUTH SSL) es el estándar definido en el RFC 4217 para que una sesión FTP normal pase a ser una sesión segura en el modo explícito.",
+    "analisis_opciones": {
+      "A": "STARTTLS se usa en protocolos de correo como SMTP, no en FTP.",
+      "B": "Correcta. Es el comando de autenticación de seguridad de FTPS.",
+      "C": "No es un comando estándar del protocolo FTP.",
+      "D": "PASV activa el modo pasivo de transferencia de datos, no tiene que ver con el cifrado."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es una de las principales DESVENTAJAS técnicas del protocolo FTPS frente a SFTP?",
+    "opciones": [
+      "A. FTPS es menos seguro que SFTP.",
+      "B. FTPS no permite el uso de certificados digitales.",
+      "C. FTPS es más difícil de configurar en cortafuegos (firewalls) debido al uso de múltiples puertos dinámicos.",
+      "D. FTPS solo funciona en sistemas operativos Windows."
+    ],
+    "correcta": 2,
+    "explicacion": "Debido a que FTPS hereda la arquitectura de FTP (múltiples conexiones de control y datos) y cifra el canal de control, los firewalls tienen dificultades para gestionar los puertos dinámicos necesarios para los datos.",
+    "analisis_opciones": {
+      "A": "Ambos ofrecen niveles de seguridad similares basados en cifrado fuerte.",
+      "B": "Falso. FTPS se basa precisamente en certificados SSL/TLS.",
+      "C": "Correcta. La gestión de puertos es su mayor debilidad técnica.",
+      "D": "FTPS es multiplataforma y funciona en Linux, Windows y macOS."
+    }
+  },
+  {
+    "pregunta": "¿Qué registro DNS se utiliza específicamente para asociar un nombre de dominio con una dirección IPv4?",
+    "opciones": ["A. AAAA.", "B. A.", "C. PTR.", "D. CNAME."],
+    "correcta": 1,
+    "explicacion": "El registro A (Address) es el más común y traduce nombres de host a direcciones IPv4 de 32 bits.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "Si un servidor web utiliza exclusivamente el protocolo IPv6, ¿qué tipo de registro DNS debe configurarse?",
+    "opciones": ["A. A.", "B. PTR.", "C. AAAA.", "D. SOA."],
+    "correcta": 2,
+    "explicacion": "El registro AAAA (cuádruple A) mapea nombres de host a direcciones IPv6 de 128 bits.",
+    "analisis_opciones": {"C": "Correcta."}
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de un registro CNAME (Canonical Name)?",
+    "opciones": ["A. Definir el servidor de correo.", "B. Crear un alias de un nombre de dominio ya existente.", "C. Traducir una IP a un nombre.", "D. Firmar digitalmente una zona."],
+    "correcta": 1,
+    "explicacion": "Un CNAME permite que varios nombres apunten al mismo host canónico, facilitando la gestión de alias como 'www'.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué registro indica al resto de Internet qué servidores se encargan de recibir el correo electrónico de un dominio?",
+    "opciones": ["A. MX.", "B. NS.", "C. SRV.", "D. TXT."],
+    "correcta": 0,
+    "explicacion": "MX (Mail Exchange) especifica los servidores de correo y su prioridad dentro de un dominio.",
+    "analisis_opciones": {"A": "Correcta."}
+  },
+  {
+    "pregunta": "Para delegar la autoridad de una zona DNS a servidores específicos, ¿qué registro es obligatorio utilizar?",
+    "opciones": ["A. SOA.", "B. NS.", "C. A.", "D. PTR."],
+    "correcta": 1,
+    "explicacion": "El registro NS (Name Server) identifica los servidores de nombres que son autoritativos para esa zona específica.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "Actualmente, ¿dónde se suelen almacenar las políticas SPF (Sender Policy Framework) para evitar el spoofing de correo?",
+    "opciones": ["A. En un registro SPF dedicado.", "B. En un registro MX.", "C. En un registro TXT.", "D. En un registro SRV."],
+    "correcta": 2,
+    "explicacion": "Aunque existió un tipo SPF, hoy en día se estandariza el uso de registros TXT para contener estas políticas de seguridad.",
+    "analisis_opciones": {"C": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué registro permite realizar una 'resolución inversa', es decir, obtener un nombre a partir de una dirección IP?",
+    "opciones": ["A. A.", "B. CNAME.", "C. PTR.", "D. LOC."],
+    "correcta": 2,
+    "explicacion": "PTR (Pointer) apunta de una dirección IP (en el dominio in-addr.arpa) a un nombre de host.",
+    "analisis_opciones": {"C": "Correcta."}
+  },
+  {
+    "pregunta": "¿Cuál es el primer registro que debe aparecer en cualquier archivo de zona DNS para definir sus parámetros técnicos y autoridad?",
+    "opciones": ["A. NS.", "B. SOA.", "C. TXT.", "D. A."],
+    "correcta": 1,
+    "explicacion": "SOA (Start of Authority) contiene información vital como el número de serie de la zona y tiempos de refresco.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "Para localizar un servicio específico que no usa un puerto estándar, indicando además su prioridad, peso y puerto, usaremos:",
+    "opciones": ["A. MX.", "B. SRV.", "C. NAPTR.", "D. URI."],
+    "correcta": 1,
+    "explicacion": "SRV (Service Locator) permite definir la ubicación de servicios como SIP o protocolos de mensajería específicos.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué registro permite a un propietario de dominio especificar qué Entidades de Certificación (CA) pueden emitir certificados SSL para su dominio?",
+    "opciones": ["A. CAA.", "B. DNSKEY.", "C. DS.", "D. TXT."],
+    "correcta": 0,
+    "explicacion": "CAA (Certification Authority Authorization) mejora la seguridad evitando que CAs no autorizadas emitan certificados para el dominio.",
+    "analisis_opciones": {"A": "Correcta."}
+  },
+  {
+    "pregunta": "En servicios de telefonía IP o ENUM, ¿qué registro se utiliza para definir reglas de reescritura de expresiones regulares?",
+    "opciones": ["A. SRV.", "B. NAPTR.", "C. DNAME.", "D. APL."],
+    "correcta": 1,
+    "explicacion": "NAPTR (Naming Authority Pointer) permite mapear números de teléfono a URIs u otros registros DNS mediante reglas complejas.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "Dentro del esquema DNSSEC, ¿qué registro contiene la clave pública necesaria para verificar las firmas de la zona?",
+    "opciones": ["A. RRSIG.", "B. DS.", "C. DNSKEY.", "D. TSIG."],
+    "correcta": 2,
+    "explicacion": "DNSKEY almacena las claves públicas (ZSK o KSK) que se utilizan para validar las firmas digitales RRSIG.",
+    "analisis_opciones": {"C": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué registro DNSSEC contiene la firma criptográfica real de un conjunto de registros de recursos?",
+    "opciones": ["A. DNSKEY.", "B. DS.", "C. RRSIG.", "D. NSEC3."],
+    "correcta": 2,
+    "explicacion": "RRSIG (Resource Record Signature) es la firma digital que garantiza la autenticidad e integridad de los datos de la zona.",
+    "analisis_opciones": {"C": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué registro actúa como vínculo de confianza entre una zona padre y una zona hija en DNSSEC?",
+    "opciones": ["A. NS.", "B. DS.", "C. TA.", "D. TKEY."],
+    "correcta": 1,
+    "explicacion": "DS (Delegation Signer) contiene el hash de la DNSKEY de la zona hija y se guarda en la zona padre para crear la cadena de confianza.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "Para demostrar de forma segura que un registro solicitado NO existe en una zona con DNSSEC, se utiliza:",
+    "opciones": ["A. NSEC.", "B. PTR.", "C. SOA.", "D. RRSIG."],
+    "correcta": 0,
+    "explicacion": "NSEC (Next Secure) enlaza registros existentes para 'probar' que no hay nada entre ellos, evitando ataques de denegación de existencia.",
+    "analisis_opciones": {"A": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué registro DNS permite incluir coordenadas de latitud, longitud y altitud asociadas a un host?",
+    "opciones": ["A. HINFO.", "B. LOC.", "C. RP.", "D. APL."],
+    "correcta": 1,
+    "explicacion": "El registro LOC (Location) se utiliza para geolocalizar físicamente los nodos de una red.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué registro DNS, hoy en desuso por privacidad, describe el hardware y el sistema operativo de un host?",
+    "opciones": ["A. TXT.", "B. HINFO.", "C. RP.", "D. NSAP."],
+    "correcta": 1,
+    "explicacion": "HINFO (Host Information) proporciona detalles técnicos del equipo, aunque se evita por seguridad.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "Para indicar la persona responsable o el contacto técnico de un dominio mediante su correo electrónico (mapeado a DNS), se usa:",
+    "opciones": ["A. SOA.", "B. RP.", "C. TXT.", "D. MX."],
+    "correcta": 1,
+    "explicacion": "RP (Responsible Person) especifica el buzón del responsable del dominio de forma estructurada.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "¿Cuál es la función del registro legado SPF (Tipo 99) antes de que se migrara su uso a registros TXT?",
+    "opciones": ["A. Definir el servidor de correo.", "B. Establecer políticas de envío de correo para evitar falsificaciones.", "C. Firmar zonas DNS.", "D. Listar prefijos de red."],
+    "correcta": 1,
+    "explicacion": "Originalmente el RFC 4408 definió un registro específico SPF, pero el RFC 7208 lo declaró obsoleto en favor del registro TXT.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "En redes basadas en el modelo OSI e ISO, ¿qué registro se utiliza para almacenar direcciones NSAP?",
+    "opciones": ["A. NSAP.", "B. APL.", "C. URI.", "D. TKEY."],
+    "correcta": 0,
+    "explicacion": "El registro NSAP permite mapear nombres de dominio a direcciones de red del modelo OSI.",
+    "analisis_opciones": {"A": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué registro permite listar una serie de prefijos de direcciones IP y su negación o aceptación para un host?",
+    "opciones": ["A. SPF.", "B. APL.", "C. PTR.", "D. DS."],
+    "correcta": 1,
+    "explicacion": "APL (Address Prefix List) es un registro capaz de listar rangos de direcciones (IPv4/IPv6) en formato CIDR.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "Para asociar directamente un nombre de host con un identificador de recurso uniforme sin usar SRV, se utiliza:",
+    "opciones": ["A. CNAME.", "B. URI.", "C. NAPTR.", "D. DNAME."],
+    "correcta": 1,
+    "explicacion": "El registro URI permite una asociación directa y simple entre un nombre DNS y una URI/URL.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "Si queremos crear un alias para todo un árbol de nombres (un dominio completo y sus subdominios), usaremos:",
+    "opciones": ["A. CNAME.", "B. DNAME.", "C. NS.", "D. AAAA."],
+    "correcta": 1,
+    "explicacion": "DNAME (Delegation Name) es como un CNAME 'masivo' que redirige un dominio y todos sus descendientes.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué mejora introduce NSEC3 respecto al registro NSEC original en DNSSEC?",
+    "opciones": ["A. Es más rápido de procesar.", "B. Evita el 'zone walking' (enumeración de zona) mediante el uso de hashes.", "C. Permite firmas de 2048 bits.", "D. Es compatible con IPv4 solamente."],
+    "correcta": 1,
+    "explicacion": "NSEC3 aplica funciones hash a los nombres para que un atacante no pueda deducir todos los registros existentes en una zona.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "El registro que sirve como punto de anclaje inicial de confianza para validar cadenas DNSSEC es el:",
+    "opciones": ["A. DS.", "B. TA.", "C. DNSKEY.", "D. TSIG."],
+    "correcta": 1,
+    "explicacion": "TA (Trust Anchor) es el punto de partida (normalmente la raíz '.') para la validación de toda la cadena de confianza.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué registro se utiliza para intercambiar claves de sesión temporales entre un cliente y un servidor DNS?",
+    "opciones": ["A. TSIG.", "B. TKEY.", "C. DNSKEY.", "D. RRSIG."],
+    "correcta": 1,
+    "explicacion": "TKEY (Transaction Key) permite establecer claves secretas compartidas dinámicamente para su uso posterior con TSIG.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "Para asegurar que una transacción entre dos servidores DNS (como una transferencia de zona) es auténtica usando una clave compartida, se usa:",
+    "opciones": ["A. DNSSEC.", "B. TSIG.", "C. DS.", "D. SOA."],
+    "correcta": 1,
+    "explicacion": "TSIG (Transaction Signature) utiliza criptografía de clave simétrica para autenticar mensajes entre servidores específicos.",
+    "analisis_opciones": {"B": "Correcta."}
+  },
+  {
+    "pregunta": "¿Qué registro DNS proporciona un 'checksum' o digest de todo el archivo de zona para verificar su integridad global?",
+    "opciones": ["A. ZONEMD.", "B. SOA.", "C. RRSIG.", "D. NSEC3."],
+    "correcta": 0,
+    "explicacion": "ZONEMD (Zone Message Digest) permite verificar que el contenido completo de la zona no ha sido alterado durante su transporte.",
+    "analisis_opciones": {"A": "Correcta."}
+  },
+  {
+    "pregunta": "Al ejecutar nslookup, recibimos el mensaje 'Respuesta no autoritativa'. ¿Qué significa técnicamente?",
+    "opciones": [
+      "A. Que el servidor DNS consultado es el dueño legal de ese dominio.",
+      "B. Que el dominio no existe o está mal escrito.",
+      "C. Que el servidor DNS ha respondido basándose en su memoria caché o consultando a otros servidores, pero no es el servidor maestro de esa zona.",
+      "D. Que la conexión ha sido interceptada por un atacante (Man-in-the-Middle)."
+    ],
+    "correcta": 2,
+    "explicacion": "Una respuesta no autoritativa ocurre cuando el servidor DNS consultado no posee el archivo de zona original del dominio, sino que devuelve una copia obtenida previamente o mediante recursión.",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "En el resultado de un nslookup, si observamos un nombre distinto bajo el apartado 'Nombre' y el dominio buscado aparece en 'Aliases', ¿de qué tipo de registro DNS estamos hablando?",
+    "opciones": [
+      "A. Registro A.",
+      "B. Registro MX.",
+      "C. Registro CNAME (Canonical Name).",
+      "D. Registro PTR."
+    ],
+    "correcta": 2,
+    "explicacion": "El registro CNAME permite crear alias. En el ejemplo del usuario, 'www.marca.com' es un alias que apunta al nombre canónico del proveedor de servicios de red (Fastly).",
+    "analisis_opciones": {
+      "C": "Correcta."
+    }
+  },
+  {
+    "pregunta": "¿Qué significa técnicamente que el protocolo HTTP sea un protocolo 'sin estado' (stateless)?",
+    "opciones": [
+      "A. Que no puede transferir archivos de gran tamaño.",
+      "B. Que el servidor no guarda información entre solicitudes consecutivas del mismo cliente.",
+      "C. Que las conexiones siempre se cierran inmediatamente tras recibir la respuesta.",
+      "D. Que es obligatorio el uso de HTTPS para poder navegar."
+    ],
+    "correcta": 1,
+    "explicacion": "HTTP no recuerda peticiones anteriores. Para 'recordar' que un usuario está logueado, se necesitan mecanismos externos como cookies o tokens JWT.",
+    "analisis_opciones": {
+      "A": "Falso. HTTP es independiente del contenido y tamaño.",
+      "B": "Correcta. Cada petición es independiente para el protocolo.",
+      "C": "No necesariamente; desde HTTP/1.1 existen las conexiones persistentes (keep-alive).",
+      "D": "HTTPS es una capa de seguridad, no tiene que ver con el estado."
+    }
+  },
+  {
+    "pregunta": "Respecto a las versiones del protocolo, ¿cuál es una de las principales diferencias de HTTP/2 y HTTP/3 frente a HTTP/1.1?",
+    "opciones": [
+      "A. HTTP/2 y 3 utilizan un formato binario en lugar de texto legible.",
+      "B. HTTP/2 y 3 solo funcionan por el puerto 80.",
+      "C. HTTP/1.1 es el único que soporta el método POST.",
+      "D. Las versiones modernas han eliminado el uso de encabezados (headers)."
+    ],
+    "correcta": 0,
+    "explicacion": "Mientras que HTTP/1.1 transmite los datos como texto plano, las versiones 2 y 3 utilizan tramas binarias, lo que permite mejoras como la multiplexación.",
+    "analisis_opciones": {
+      "A": "Correcta. El cambio a binario es una mejora de rendimiento clave.",
+      "B": "Falso. Suelen ir sobre el 443 (seguros).",
+      "C": "Falso. Los métodos estándar se mantienen en todas las versiones.",
+      "D": "Falso. Los headers son fundamentales en todas las versiones para enviar metadatos."
+    }
+  },
+  {
+    "pregunta": "En la versión HTTP/3, ¿qué protocolo de la capa de transporte se utiliza para mejorar la velocidad y reducir la latencia?",
+    "opciones": [
+      "A. TCP.",
+      "B. SCTP.",
+      "C. QUIC (basado en UDP).",
+      "D. IPX/SPX."
+    ],
+    "correcta": 2,
+    "explicacion": "HTTP/3 abandona TCP en favor de QUIC, un protocolo que corre sobre UDP para evitar los retardos del establecimiento de conexión de TCP y mejorar el rendimiento en redes inestables.",
+    "analisis_opciones": {
+      "A": "TCP es el transporte de HTTP/1.1 y HTTP/2.",
+      "B": "SCTP no se utiliza de forma estándar para tráfico web.",
+      "C": "Correcta. Es la gran novedad tecnológica de HTTP/3.",
+      "D": "Es un protocolo antiguo de Novell ya en desuso."
+    }
+  },
+  {
+    "pregunta": "¿Qué característica permite a HTTP/2 y HTTP/3 enviar múltiples solicitudes y respuestas de forma simultánea a través de una única conexión TCP/QUIC?",
+    "opciones": [
+      "A. Persistencia simple.",
+      "B. Almacenamiento en caché.",
+      "C. Multiplexación.",
+      "D. Encapsulamiento."
+    ],
+    "correcta": 2,
+    "explicacion": "La multiplexación soluciona el problema del 'bloqueo en cabeza de línea', permitiendo que varios recursos viajen al mismo tiempo sin tener que esperar a que termine el anterior.",
+    "analisis_opciones": {
+      "A": "La persistencia permite reusar la conexión, pero no enviar cosas a la vez.",
+      "B": "La caché evita pedir el recurso, pero no ayuda al envío simultáneo.",
+      "C": "Correcta. Es la capacidad de mezclar flujos de datos en una sola conexión.",
+      "D": "El encapsulamiento es el proceso general de las capas OSI/TCP-IP."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes encabezados (headers) de HTTP se utiliza específicamente para gestionar el almacenamiento temporal de las respuestas en el navegador?",
+    "opciones": [
+      "A. Content-Type.",
+      "B. Authorization.",
+      "C. Cache-Control.",
+      "D. User-Agent."
+    ],
+    "correcta": 2,
+    "explicacion": "Cache-Control es el encabezado principal para definir si un recurso se puede guardar, por cuánto tiempo y quién puede hacerlo.",
+    "analisis_opciones": {
+      "A": "Define el tipo de archivo (ej. image/png).",
+      "B": "Se usa para enviar credenciales o tokens.",
+      "C": "Correcta. Es el director de orquesta de la caché.",
+      "D": "Identifica al navegador y sistema operativo del cliente."
+    }
+  },
+  {
+    "pregunta": "Desde qué versión del protocolo HTTP las conexiones son persistentes por defecto (Keep-Alive), evitando abrir una nueva conexión para cada objeto de la web?",
+    "opciones": [
+      "A. HTTP/1.0.",
+      "B. HTTP/1.1.",
+      "C. HTTP/0.9.",
+      "D. Solo desde HTTP/2."
+    ],
+    "correcta": 1,
+    "explicacion": "Fue HTTP/1.1 la versión que introdujo la persistencia por defecto, lo que supuso una revolución en la velocidad de carga de las páginas web.",
+    "analisis_opciones": {
+      "A": "En la 1.0 las conexiones se cerraban tras cada respuesta por defecto.",
+      "B": "Correcta. Introdujo el encabezado Connection: keep-alive por defecto.",
+      "C": "La versión 0.9 era extremadamente simple y solo permitía el método GET.",
+      "D": "HTTP/2 mejora esto con multiplexación, pero la persistencia ya venía de antes."
+    }
+  },
+  {
+    "pregunta": "¿Qué afirmación describe correctamente el modelo cliente-servidor en HTTP?",
+    "opciones": [
+      "A. El servidor inicia la comunicación enviando datos al cliente de forma espontánea.",
+      "B. Tanto el cliente como el servidor pueden iniciar la comunicación indistintamente.",
+      "C. El cliente siempre inicia la comunicación solicitando un recurso.",
+      "D. El servidor solicita recursos al navegador para poder renderizar la página."
+    ],
+    "correcta": 2,
+    "explicacion": "HTTP es un protocolo de solicitud-respuesta donde el cliente (User Agent) siempre es el encargado de abrir la conexión y realizar la petición inicial.",
+    "analisis_opciones": {
+      "A": "Incorrecto, el servidor no envía datos si no hay una petición previa.",
+      "B": "Incorrecto, los roles están definidos y la iniciativa es del cliente.",
+      "C": "Correcto. El cliente es quien solicita y el servidor quien responde.",
+      "D": "Incorrecto, es el proceso inverso."
+    }
+  },
+  {
+    "pregunta": "Debido a que HTTP es un protocolo 'stateless' (sin estado), ¿qué mecanismo se utiliza para que el servidor reconozca a un usuario en peticiones sucesivas?",
+    "opciones": [
+      "A. El protocolo TCP mantiene la memoria del usuario por defecto.",
+      "B. Uso de mecanismos adicionales como Cookies o tokens JWT.",
+      "C. El encabezado Host guarda el historial de navegación.",
+      "D. HTTP/1.1 guarda automáticamente el estado en el servidor."
+    ],
+    "correcta": 1,
+    "explicacion": "Al ser 'stateless', HTTP no recuerda nada entre peticiones; por ello, se usan cookies o tokens enviados en los encabezados para mantener la sesión.",
+    "analisis_opciones": {
+      "A": "TCP solo se encarga del transporte, no de la lógica de usuario.",
+      "B": "Correcto. Son los métodos estándar para 'añadir memoria' al protocolo.",
+      "C": "El encabezado Host solo indica el dominio al que se dirige la petición.",
+      "D": "Ninguna versión de HTTP guarda estado por sí misma."
+    }
+  },
+  {
+    "pregunta": "En una API REST, ¿cuál es la diferencia principal entre los métodos PUT y PATCH?",
+    "opciones": [
+      "A. PUT crea un recurso y PATCH lo borra.",
+      "B. PUT se usa para consultas y PATCH para actualizaciones totales.",
+      "C. PUT reemplaza el recurso completo, mientras que PATCH aplica modificaciones parciales.",
+      "D. No hay diferencia, son sinónimos en el estándar HTTP."
+    ],
+    "correcta": 2,
+    "explicacion": "PUT es para sustituir un recurso por otro nuevo. PATCH se diseñó para cambiar solo atributos específicos sin enviar todo el objeto.",
+    "analisis_opciones": {
+      "A": "Incorrecto, ninguno de los dos se usa para borrar (eso es DELETE).",
+      "B": "Incorrecto, para consultas se usa GET.",
+      "C": "Correcto. PATCH es más eficiente para actualizaciones pequeñas.",
+      "D": "Incorrecto, tienen semánticas y comportamientos de idempotencia distintos."
+    }
+  },
+  {
+    "pregunta": "¿Para qué sirve el mecanismo CORS (Cross-Origin Resource Sharing) en el contexto de HTTP?",
+    "opciones": [
+      "A. Para permitir que un servidor indique qué otros dominios tienen permiso para acceder a sus recursos.",
+      "B. Para comprimir las cabeceras de las peticiones en HTTP/2.",
+      "C. Para cifrar los datos transmitidos entre el cliente y el servidor.",
+      "D. Para convertir un servidor web en un servidor de archivos editable."
+    ],
+    "correcta": 0,
+    "explicacion": "CORS es una característica de seguridad que utiliza encabezados HTTP para permitir que scripts en un navegador accedan a recursos de un dominio diferente al que originó la página.",
+    "analisis_opciones": {
+      "A": "Correcto. Gestiona permisos de acceso entre distintos orígenes.",
+      "B": "Incorrecto, eso es el algoritmo HPACK.",
+      "C": "Incorrecto, de eso se encarga TLS/HTTPS.",
+      "D": "Incorrecto, eso describe mejor a WebDAV."
+    }
+  },
+  {
+    "pregunta": "¿Qué extensión del protocolo HTTP permite gestionar archivos y directorios de forma remota, permitiendo crear, mover o editar carpetas?",
+    "opciones": [
+      "A. HTTPS.",
+      "B. WebDAV.",
+      "C. Keep-Alive.",
+      "D. QUIC."
+    ],
+    "correcta": 1,
+    "explicacion": "WebDAV (Web Distributed Authoring and Versioning) es un conjunto de extensiones de HTTP que permiten a los usuarios colaborar en la edición y gestión de archivos en servidores remotos.",
+    "analisis_opciones": {
+      "A": "HTTPS es la versión segura de HTTP, no una extensión de gestión de archivos.",
+      "B": "Correcto. Añade métodos como MKCOL o MOVE.",
+      "C": "Es una característica de persistencia de conexión.",
+      "D": "Es el protocolo de transporte de HTTP/3."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función del encabezado 'Content-Type' en una respuesta HTTP?",
+    "opciones": [
+      "A. Indicar el tamaño del archivo en bytes.",
+      "B. Definir el tiempo que el recurso debe estar en caché.",
+      "C. Informar al cliente sobre el formato del recurso (JSON, HTML, imagen, etc.).",
+      "D. Enviar las credenciales de autenticación del servidor."
+    ],
+    "correcta": 2,
+    "explicacion": "Gracias a este encabezado, el navegador sabe si debe renderizar una página HTML, mostrar una imagen o descargar un archivo binario.",
+    "analisis_opciones": {
+      "A": "Incorrecto, esa es la función de Content-Length.",
+      "B": "Incorrecto, eso es Cache-Control.",
+      "C": "Correcto. Define el tipo MIME del contenido.",
+      "D": "Incorrecto, las credenciales suelen ir en Authorization o cabeceras de seguridad."
+    }
+  },
+  {
+    "pregunta": "Sobre la seguridad en la web, ¿qué diferencia fundamental hay entre HTTP y HTTPS?",
+    "opciones": [
+      "A. HTTP usa el puerto 443 y HTTPS el puerto 80.",
+      "B. HTTPS aplica una capa de cifrado TLS/SSL sobre el protocolo HTTP.",
+      "C. HTTP es binario y HTTPS es siempre en texto plano.",
+      "D. HTTPS no permite el uso de cookies por seguridad."
+    ],
+    "correcta": 1,
+    "explicacion": "HTTPS es simplemente HTTP operando sobre una conexión cifrada por TLS, garantizando privacidad e integridad de los datos.",
+    "analisis_opciones": {
+      "A": "Incorrecto, los puertos están al revés.",
+      "B": "Correcto. Es la base de la seguridad web actual.",
+      "C": "Incorrecto, el formato binario depende de la versión (HTTP/2 o 3), no de si es seguro.",
+      "D": "Incorrecto, las cookies funcionan igual en ambos, aunque en HTTPS son más seguras."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la principal mejora de HTTP/2 respecto a HTTP/1.1 para evitar que un recurso lento bloquee a los demás?",
+    "opciones": [
+      "A. El uso de múltiples conexiones TCP en paralelo.",
+      "B. La Multiplexación, que permite enviar varios flujos de datos sobre una única conexión.",
+      "C. El cambio de puerto del 80 al 443.",
+      "D. La eliminación de las cabeceras en las peticiones."
+    ],
+    "correcta": 1,
+    "explicacion": "HTTP/2 permite que múltiples peticiones y respuestas viajen al mismo tiempo por la misma conexión TCP, eliminando el problema del 'bloqueo de cabecera de línea' de la versión 1.1.",
+    "analisis_opciones": {
+      "A": "Incorrecto, HTTP/2 precisamente busca usar una sola conexión para ser más eficiente.",
+      "B": "Correcto. Es la característica estrella de HTTP/2.",
+      "C": "Incorrecto, el cambio de puerto es por HTTPS, no por la versión del protocolo.",
+      "D": "Las cabeceras no se eliminan, se comprimen."
+    }
+  },
+  {
+    "pregunta": "¿Qué protocolo de transporte utiliza HTTP/3 para reducir la latencia y evitar los problemas de TCP?",
+    "opciones": [
+      "A. UDP (a través de QUIC).",
+      "B. Un TCP mejorado llamado TCP-v2.",
+      "C. FTP seguro.",
+      "D. IP Directo sin capa de transporte."
+    ],
+    "correcta": 0,
+    "explicacion": "HTTP/3 abandona TCP y utiliza QUIC, que corre sobre UDP. Esto permite conexiones más rápidas y evita que la pérdida de un paquete bloquee todos los flujos de datos.",
+    "analisis_opciones": {
+      "A": "Correcto. QUIC es la base de la revolución de HTTP/3.",
+      "B": "Incorrecto, TCP se considera demasiado rígido para las necesidades de HTTP/3.",
+      "C": "Incorrecto, FTP es un protocolo de transferencia de archivos diferente.",
+      "D": "Incorrecto, siempre se necesita una capa de transporte."
+    }
+  },
+  {
+    "pregunta": "En HTTP/2, ¿cómo se logra reducir el tamaño de los metadatos que se envían en cada petición?",
+    "opciones": [
+      "A. Eliminando las cookies de las cabeceras.",
+      "B. Mediante el algoritmo HPACK de compresión de cabeceras.",
+      "C. Pasando toda la información a la URL.",
+      "D. Usando cifrado de 256 bits obligatoriamente."
+    ],
+    "correcta": 1,
+    "explicacion": "HPACK comprime las cabeceras y evita enviar información repetida que no ha cambiado desde la última petición, ahorrando mucho ancho de banda.",
+    "analisis_opciones": {
+      "A": "Incorrecto, las cookies siguen siendo necesarias para el estado.",
+      "B": "Correcto. HPACK es el estándar de compresión en HTTP/2.",
+      "C": "Incorrecto, eso haría las URLs larguísimas e ineficientes.",
+      "D": "Incorrecto, el cifrado es por seguridad, no por compresión."
+    }
+  },
+  {
+    "pregunta": "¿Qué significa que un formato de mensaje sea 'Binario' en HTTP/2 y HTTP/3 frente al 'Texto' de HTTP/1.1?",
+    "opciones": [
+      "A. Que solo se pueden enviar números, no letras.",
+      "B. Que los mensajes son más fáciles de leer para los humanos en un editor de texto.",
+      "C. Que el protocolo es más eficiente, compacto y menos propenso a errores de interpretación por las máquinas.",
+      "D. Que los datos se borran automáticamente tras ser leídos."
+    ],
+    "correcta": 2,
+    "explicacion": "Al ser binario, el protocolo deja de ser 'legible' para humanos a simple vista, pero se vuelve extremadamente rápido de procesar para los computadores.",
+    "analisis_opciones": {
+      "A": "Incorrecto, se puede enviar cualquier tipo de dato.",
+      "B": "Incorrecto, es justo al revés; el texto era lo fácil de leer.",
+      "C": "Correcto. Es una de las bases del rendimiento moderno.",
+      "D": "Incorrecto, no tiene nada que ver con la persistencia de los datos."
+    }
+  },
+  {
+    "pregunta": "Respecto al soporte para caché, ¿qué función tiene el encabezado 'ETag'?",
+    "opciones": [
+      "A. Sirve para ponerle una etiqueta de nombre al servidor.",
+      "B. Es un identificador único para una versión específica de un recurso que permite saber si este ha cambiado.",
+      "C. Es un método de autenticación para administradores.",
+      "D. Indica al navegador que nunca debe guardar el archivo en caché."
+    ],
+    "correcta": 1,
+    "explicacion": "El ETag es como una 'huella digital' del archivo. Si el archivo cambia, el ETag cambia. El navegador lo usa para preguntar: '¿Sigue siendo este el ETag actual?'. Si sí, no lo descarga de nuevo.",
+    "analisis_opciones": {
+      "A": "Incorrecto, no es para nombrar servidores.",
+      "B": "Correcto. Permite una validación de caché muy precisa.",
+      "C": "Incorrecto, para eso está 'Authorization'.",
+      "D": "Incorrecto, para eso se suele usar 'Cache-Control: no-store'."
+    }
+  },
+  {
+    "pregunta": "¿En qué consiste la técnica 'Server Push' introducida en HTTP/2?",
+    "opciones": [
+      "A. El servidor puede enviar recursos al cliente antes de que este los solicite explícitamente.",
+      "B. El servidor obliga al cliente a cerrar la pestaña del navegador.",
+      "C. Es una forma de enviar correos electrónicos masivos desde el servidor.",
+      "D. El cliente 'empuja' sus archivos locales hacia el servidor sin permiso."
+    ],
+    "correcta": 0,
+    "explicacion": "Si el servidor sabe que vas a necesitar el CSS y el JS para ver el HTML que acabas de pedir, te los envía de una vez para ganar tiempo.",
+    "analisis_opciones": {
+      "A": "Correcto. Se anticipa a las necesidades del navegador.",
+      "B": "Incorrecto, eso sería un comportamiento malicioso.",
+      "C": "Incorrecto, no tiene relación con el email.",
+      "D": "Incorrecto, el flujo de 'push' es del servidor hacia el cliente."
+    }
+  },
+  {
+    "pregunta": "¿Qué encabezado es obligatorio en HTTP/1.1 para que el servidor sepa a qué dominio específico nos dirigimos dentro de una misma IP?",
+    "opciones": [
+      "A. User-Agent.",
+      "B. Host.",
+      "C. Accept.",
+      "D. Location."
+    ],
+    "correcta": 1,
+    "explicacion": "El encabezado 'Host' permite el 'Virtual Hosting', es decir, que un mismo servidor con una sola IP pueda alojar cientos de dominios distintos.",
+    "analisis_opciones": {
+      "A": "Incorrecto, identifica el navegador, no el dominio.",
+      "B": "Correcto. Sin él, el servidor no sabría qué web mostrarte.",
+      "C": "Incorrecto, indica formatos aceptados.",
+      "D": "Incorrecto, se usa para redirecciones en la respuesta."
+    }
+  },
+  {
+    "pregunta": "Si un servidor te responde con un código 301 (Movido permanentemente), ¿en qué encabezado buscará el navegador la nueva dirección a la que debe ir?",
+    "opciones": [
+      "A. Set-Cookie.",
+      "B. Referer.",
+      "C. Location.",
+      "D. Content-Type."
+    ],
+    "correcta": 2,
+    "explicacion": "El encabezado 'Location' contiene la URL de destino en caso de redirecciones o cuando se crea un nuevo recurso.",
+    "analisis_opciones": {
+      "A": "Incorrecto, sirve para guardar datos de sesión.",
+      "B": "Incorrecto, indica de qué página venimos.",
+      "C": "Correcto. Es el mapa que guía al navegador tras una redirección.",
+      "D": "Incorrecto, indica el tipo de archivo enviado."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función del encabezado 'User-Agent'?",
+    "opciones": [
+      "A. Indicar el nombre del usuario logueado en la web.",
+      "B. Proporcionar información sobre el navegador, sistema operativo y dispositivo del cliente.",
+      "C. Establecer cuánto tiempo debe guardarse el archivo en caché.",
+      "D. Enviar el token de seguridad para entrar en una zona privada."
+    ],
+    "correcta": 1,
+    "explicacion": "Gracias al 'User-Agent', el servidor puede saber si estás en un iPhone o en un PC para enviarte la versión de la web que mejor se adapte.",
+    "analisis_opciones": {
+      "A": "Incorrecto, no contiene nombres de personas reales.",
+      "B": "Correcto. Es la 'matrícula' de tu dispositivo/navegador.",
+      "C": "Incorrecto, eso es Cache-Control.",
+      "D": "Incorrecto, eso es Authorization."
+    }
+  },
+  {
+    "pregunta": "Diferencia entre 'Accept' y 'Content-Type':",
+    "opciones": [
+      "A. No hay diferencia, se usan para lo mismo.",
+      "B. Accept indica qué formatos puede leer el cliente; Content-Type indica qué formato tiene el cuerpo del mensaje que se está enviando.",
+      "C. Accept es para seguridad y Content-Type para velocidad.",
+      "D. Accept solo se usa en HTTP/3 y Content-Type en todas las versiones."
+    ],
+    "correcta": 1,
+    "explicacion": "Accept es una declaración de intenciones del cliente ('Acepto JSON'). Content-Type es un hecho ('Te estoy enviando un HTML').",
+    "analisis_opciones": {
+      "A": "Incorrecto, sus funciones son opuestas en el flujo.",
+      "B": "Correcto. Uno pide y el otro describe lo que hay dentro.",
+      "C": "Incorrecto, no tienen relación con seguridad o velocidad directamente.",
+      "D": "Incorrecto, ambos existen desde las primeras versiones de HTTP."
+    }
+  },
+  {
+    "pregunta": "¿Qué encabezado utiliza el servidor para ordenar al navegador que guarde una pieza de información para futuras visitas?",
+    "opciones": [
+      "A. Authorization.",
+      "B. Cache-Control.",
+      "C. Set-Cookie.",
+      "D. Host."
+    ],
+    "correcta": 2,
+    "explicacion": "Cuando el servidor envía 'Set-Cookie', el navegador guarda ese valor y lo devolverá automáticamente en la siguiente petición al mismo dominio.",
+    "analisis_opciones": {
+      "A": "Incorrecto, el cliente lo usa para identificarse.",
+      "B": "Incorrecto, gestiona el almacenamiento de archivos, no de sesiones.",
+      "C": "Correcto. Es el origen de la persistencia de sesión.",
+      "D": "Incorrecto, indica el nombre del dominio solicitado."
+    }
+  },
+  {
+    "pregunta": "Si un servidor responde con el código 101 (Switching Protocols), ¿qué está ocurriendo?",
+    "opciones": [
+      "A. El servidor ha fallado y está cambiando de hardware.",
+      "B. El servidor acepta la petición del cliente para cambiar el protocolo (por ejemplo, a WebSockets).",
+      "C. El servidor indica que la conexión se ha perdido definitivamente.",
+      "D. El cliente debe reintentar la petición usando HTTPS obligatoriamente."
+    ],
+    "correcta": 1,
+    "explicacion": "El código 101 se usa cuando el cliente solicita un cambio de protocolo mediante el encabezado 'Upgrade' y el servidor accede a ello.",
+    "analisis_opciones": {
+      "A": "Incorrecto, no tiene que ver con fallos físicos.",
+      "B": "Correcto. Es común en la transición de HTTP a WebSockets.",
+      "C": "Incorrecto, los códigos 1xx son informativos, no de error.",
+      "D": "Incorrecto, aunque HTTPS es un protocolo, el 101 tiene un uso más técnico de negociación."
+    }
+  },
+  {
+    "pregunta": "En el contexto de WebDAV, ¿qué significa el código de estado 102 (Processing)?",
+    "opciones": [
+      "A. Que el archivo ya se ha descargado completamente.",
+      "B. Que el servidor ha terminado y espera una nueva petición.",
+      "C. Que el servidor ha recibido la petición completa pero aún está procesándola y no tiene una respuesta final.",
+      "D. Que la petición ha sido cancelada por exceso de tiempo."
+    ],
+    "correcta": 2,
+    "explicacion": "Se utiliza en operaciones largas para evitar que el cliente piense que la conexión se ha cortado por tiempo de espera (timeout).",
+    "analisis_opciones": {
+      "A": "Incorrecto, el 102 es previo a la respuesta final.",
+      "B": "Incorrecto, el servidor sigue trabajando.",
+      "C": "Correcto. Indica actividad en curso.",
+      "D": "Incorrecto, eso sería un error 408."
+    }
+  },
+  {
+    "pregunta": "¿Qué código de estado utilizaría un servidor para indicar que un recurso se ha creado con éxito tras una petición POST?",
+    "opciones": [
+      "A. 200 OK.",
+      "B. 201 Created.",
+      "C. 204 No Content.",
+      "D. 206 Partial Content."
+    ],
+    "correcta": 1,
+    "explicacion": "Mientras que 200 es un éxito genérico, el 201 es específico para la creación de nuevos recursos, devolviendo normalmente la URI del nuevo objeto.",
+    "analisis_opciones": {
+      "A": "Incorrecto, es para éxito general, no necesariamente creación.",
+      "B": "Correcto. Es el estándar tras un POST exitoso.",
+      "C": "Incorrecto, se usa cuando no hay cuerpo en la respuesta.",
+      "D": "Incorrecto, se usa para descargas parciales."
+    }
+  },
+  {
+    "pregunta": "Si estás realizando una descarga por partes (como en un gestor de descargas), ¿qué código de éxito debe devolver el servidor?",
+    "opciones": [
+      "A. 200 OK.",
+      "B. 202 Accepted.",
+      "C. 206 Partial Content.",
+      "D. 226 IM Used."
+    ],
+    "correcta": 2,
+    "explicacion": "El código 206 indica que el servidor está enviando solo una parte del recurso debido a un encabezado 'Range' enviado por el cliente.",
+    "analisis_opciones": {
+      "A": "Incorrecto, 200 enviaría el archivo completo.",
+      "B": "Incorrecto, es para peticiones que se procesarán más tarde.",
+      "C": "Correcto. Es vital para la reanudación de descargas.",
+      "D": "Incorrecto, se usa en manipulaciones de instancia (Delta encoding)."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia principal entre una redirección 301 y una 302?",
+    "opciones": [
+      "A. La 301 es temporal y la 302 es permanente.",
+      "B. La 301 es para errores y la 302 para éxitos.",
+      "C. La 301 indica un movimiento permanente (el SEO se transfiere), mientras que la 302 es temporal.",
+      "D. No hay diferencia, los navegadores las tratan igual."
+    ],
+    "correcta": 2,
+    "explicacion": "El 301 (Moved Permanently) le dice a los buscadores que actualicen sus índices para siempre. El 302 (Found/Temporary) indica que el cambio es solo por un tiempo.",
+    "analisis_opciones": {
+      "A": "Incorrecto, es exactamente al revés.",
+      "B": "Incorrecto, ambas son de la familia de redirecciones.",
+      "C": "Correcto. Es una distinción clave para el posicionamiento web.",
+      "D": "Incorrecto, su impacto en el caché y SEO es opuesto."
+    }
+  },
+  {
+    "pregunta": "¿Qué código de estado recibe un cliente cuando solicita un recurso que no ha cambiado desde la última vez que lo guardó en su caché?",
+    "opciones": [
+      "A. 200 OK.",
+      "B. 304 Not Modified.",
+      "C. 403 Forbidden.",
+      "D. 404 Not Found."
+    ],
+    "correcta": 1,
+    "explicacion": "El 304 le ahorra ancho de banda al servidor diciéndole al cliente: 'Usa la copia que ya tienes, porque el archivo es idéntico'.",
+    "analisis_opciones": {
+      "A": "Incorrecto, 200 volvería a enviar el archivo completo.",
+      "B": "Correcto. Es la base de la eficiencia de la caché HTTP.",
+      "C": "Incorrecto, eso es para denegación de acceso.",
+      "D": "Incorrecto, eso es para recursos inexistentes."
+    }
+  },
+  {
+    "pregunta": "Un usuario intenta acceder a una carpeta privada sin haberse logueado. ¿Qué código debería devolver el servidor?",
+    "opciones": [
+      "A. 400 Bad Request.",
+      "B. 401 Unauthorized.",
+      "C. 403 Forbidden.",
+      "D. 405 Method Not Allowed."
+    ],
+    "correcta": 1,
+    "explicacion": "El 401 indica que falta la autenticación. El 403 se reservaría para cuando el usuario sí está logueado pero no tiene permisos para ese archivo concreto.",
+    "analisis_opciones": {
+      "A": "Incorrecto, es para errores de sintaxis en la petición.",
+      "B": "Correcto. Es la llamada a que el usuario se identifique.",
+      "C": "Incorrecto, aunque se parece, el 401 es más preciso si falta el login.",
+      "D": "Incorrecto, es para cuando usas, por ejemplo, POST en una URL que solo acepta GET."
+    }
+  },
+  {
+    "pregunta": "Si un servidor está saturado o en mantenimiento y no puede atender peticiones en ese momento, ¿qué código debe devolver?",
+    "opciones": [
+      "A. 500 Internal Server Error.",
+      "B. 502 Bad Gateway.",
+      "C. 503 Service Unavailable.",
+      "D. 504 Gateway Timeout."
+    ],
+    "correcta": 2,
+    "explicacion": "El 503 indica una condición temporal de falta de disponibilidad, a menudo acompañada de un encabezado 'Retry-After'.",
+    "analisis_opciones": {
+      "A": "Incorrecto, es un error de código genérico e inesperado.",
+      "B": "Incorrecto, es un fallo de comunicación entre servidores intermedios.",
+      "C": "Correcto. Es el estado estándar para mantenimientos.",
+      "D": "Incorrecto, es un error de tiempo de espera entre servidores."
+    }
+  },
+  {
+    "pregunta": "¿Qué código de error es específico para indicar que se ha detectado un bucle infinito en una redirección o proceso (WebDAV)?",
+    "opciones": [
+      "A. 500 Internal Server Error.",
+      "B. 507 Insufficient Storage.",
+      "C. 508 Loop Detected.",
+      "D. 510 Not Extended."
+    ],
+    "correcta": 2,
+    "explicacion": "El código 508 se usa para interrumpir procesos que han entrado en una recursión infinita, evitando el consumo total de recursos.",
+    "analisis_opciones": {
+      "A": "Incorrecto, demasiado genérico.",
+      "B": "Incorrecto, es para falta de espacio en disco.",
+      "C": "Correcto. Identifica bucles de redirección o procesamiento.",
+      "D": "Incorrecto, es para extensiones de protocolo no soportadas."
+    }
+  },
+  {
+    "pregunta": "En entornos de Microsoft Internet Explorer antiguos, ¿qué significaba el código no estándar 122?",
+    "opciones": [
+      "A. El servidor está apagado.",
+      "B. La URI de la petición es demasiado larga (Request-URI Too Long).",
+      "C. El usuario no tiene Windows instalado.",
+      "D. Error de conexión con el proxy de Microsoft."
+    ],
+    "correcta": 1,
+    "explicacion": "Es un código específico que usaba IE cuando la URL superaba los límites de caracteres permitidos por el navegador/servidor.",
+    "analisis_opciones": {
+      "A": "Incorrecto, eso sería un error de red.",
+      "B": "Correcto. Aunque el estándar suele usar el 414, IE usó el 122.",
+      "C": "Incorrecto, es una respuesta técnica del protocolo.",
+      "D": "Incorrecto, no tiene que ver con el proxy."
+    }
+  },
+  {
+    "pregunta": "¿Qué código de estado indica que la petición ha sido completada y ha resultado en la creación de un nuevo recurso (como un nuevo Digitama)?",
+    "opciones": [
+      "A. 200 OK.",
+      "B. 201 Created.",
+      "C. 202 Accepted.",
+      "D. 204 No Content."
+    ],
+    "correcta": 1,
+    "explicacion": "El 201 indica que algo nuevo ha 'nacido' en el servidor. Piénsalo como un nuevo Digihuevo apareciendo en la Ciudad del Inicio.",
+    "analisis_opciones": {
+      "A": "Éxito genérico (Agumon), pero no especifica creación.",
+      "B": "Correcto. Es el código para nuevos recursos creados.",
+      "C": "La petición se aceptó pero aún se está 'cocinando'.",
+      "D": "La acción fue un éxito pero no hay nada que mostrar (Bakemon)."
+    }
+  },
+  {
+    "pregunta": "Recibes un código 203 (Non-Authoritative Information). Según la regla de Gennai, ¿qué significa esto?",
+    "opciones": [
+      "A. Que la información es falsa y el servidor miente.",
+      "B. Que el servidor es la fuente original y definitiva de los datos.",
+      "C. Que la información ha sido modificada por un intermediario (proxy) y no viene directamente de la fuente original.",
+      "D. Que el usuario no tiene permisos para ver esos datos."
+    ],
+    "correcta": 2,
+    "explicacion": "Como Gennai, el servidor actúa como un mensajero u holograma. Te da la info, pero te avisa de que él no es el dueño original de los datos.",
+    "analisis_opciones": {
+      "A": "Incorrecto, la información suele ser válida pero 'de segunda mano'.",
+      "B": "Incorrecto, eso sería un 200 OK estándar.",
+      "C": "Correcto. Indica que la respuesta ha sido alterada por un proxy o similar.",
+      "D": "Incorrecto, eso sería un error 401 o 403."
+    }
+  },
+  {
+    "pregunta": "Si un servidor responde con un 204 (No Content), ¿qué verá el usuario en su navegador?",
+    "opciones": [
+      "A. Una página en blanco con un error de sistema.",
+      "B. Nada nuevo; la página actual no cambia porque el cuerpo de la respuesta está vacío.",
+      "C. Un mensaje de 'Archivo no encontrado'.",
+      "D. Un formulario para reiniciar sus datos."
+    ],
+    "correcta": 1,
+    "explicacion": "Es el código 'Bakemon' (invisible). La petición tuvo éxito, pero el servidor no tiene nada que enviarte de vuelta.",
+    "analisis_opciones": {
+      "A": "Incorrecto, no es un error.",
+      "B": "Correcto. Útil para acciones que no requieren feedback visual inmediato.",
+      "C": "Incorrecto, eso sería un 404.",
+      "D": "Incorrecto, para eso se usa el código 205 (Reset Content)."
+    }
+  },
+  {
+    "pregunta": "¿Qué código se utiliza en protocolos como WebDAV cuando hay múltiples estados que reportar (como una horda de Keramons)?",
+    "opciones": [
+      "A. 200 OK.",
+      "B. 206 Partial Content.",
+      "C. 207 Multi-Status.",
+      "D. 208 Already Reported."
+    ],
+    "correcta": 2,
+    "explicacion": "El 207 envía un cuerpo XML con varios códigos de estado internos, uno por cada recurso afectado, igual que una multiplicación de Keramons.",
+    "analisis_opciones": {
+      "A": "Demasiado simple para múltiples resultados.",
+      "B": "Solo para partes de un mismo archivo (MetalGreymon).",
+      "C": "Correcto. Gestiona múltiples respuestas en una sola.",
+      "D": "Indica que algo ya se reportó en un 207 anterior (Tentomon)."
+    }
+  },
+  {
+    "pregunta": "El código 226 (IM Used) se refiere a cambios aplicados a una instancia. ¿Con qué concepto de Digimon lo asociamos?",
+    "opciones": [
+      "A. Con un Digimon que muere y vuelve a ser huevo.",
+      "B. Con la Digievolución Armadura (usar un cambio/delta sobre una base).",
+      "C. Con un Digimon invisible que no se puede tocar.",
+      "D. Con una horda de Digimon atacando a la vez."
+    ],
+    "correcta": 1,
+    "explicacion": "El código 226 indica que el servidor ha aplicado una manipulación de instancia (delta). Es como el Digimental: coges la base y le aplicas solo el cambio necesario.",
+    "analisis_opciones": {
+      "A": "Incorrecto, eso sería el 205 (Reset).",
+      "B": "Correcto. Es una transformación basada en diferencias (delta encoding).",
+      "C": "Incorrecto, ese es el 204 (Bakemon).",
+      "D": "Incorrecto, ese es el 207 (Multi-Status)."
+    }
+  },
+  {
+    "pregunta": "¿Qué protocolo está diseñado específicamente para dispositivos IoT sencillos (sensores de baja potencia) y permite una traducción fácil a HTTP?",
+    "opciones": [
+      "A. MQTT.",
+      "B. CoAP (Constrained Application Protocol).",
+      "C. REST.",
+      "D. HTTP/3."
+    ],
+    "correcta": 1,
+    "explicacion": "CoAP es como el 'hermano pequeño' de HTTP para dispositivos con poca energía. Es muy simple, tiene baja sobrecarga y soporta multicast.",
+    "analisis_opciones": {
+      "A": "MQTT es para mensajería M2M y telemetría, no se traduce tan directo a HTTP.",
+      "B": "Correcto. Su diseño permite integrarse con la web de forma sencilla.",
+      "C": "REST no es un protocolo, sino una arquitectura de diseño.",
+      "D": "HTTP/3 es demasiado pesado para un sensor diminuto de baja potencia."
+    }
+  },
+  {
+    "pregunta": "Sobre la arquitectura REST (Representational State Transfer), ¿cuál es su principal característica frente a los Servicios Web tradicionales?",
+    "opciones": [
+      "A. Es mucho más pesada y difícil de implementar.",
+      "B. Solo funciona con el protocolo MQTT.",
+      "C. Es una arquitectura más ligera para el diseño de APIs en sistemas distribuidos.",
+      "D. Requiere obligatoriamente el uso de cables de fibra óptica."
+    ],
+    "correcta": 2,
+    "explicacion": "REST es el estándar moderno para APIs porque es ligero y sencillo. Es la 'guía de estilo' que siguen la mayoría de las comunicaciones web hoy en día.",
+    "analisis_opciones": {
+      "A": "Al contrario, su éxito se debe a ser más ligera que alternativas como SOAP.",
+      "B": "Incorrecto, REST suele viajar sobre HTTP.",
+      "C": "Correcto. Es la base de los sistemas distribuidos modernos.",
+      "D": "No tiene relación con el medio físico de transmisión."
+    }
+  },
+  {
+    "pregunta": "¿Para qué tipo de comunicaciones se utiliza principalmente el protocolo abierto MQTT?",
+    "opciones": [
+      "A. Para la transmisión de video en streaming de alta definición.",
+      "B. Para comunicaciones M2M (Machine to Machine) y transferencia de datos de telemetría.",
+      "C. Para el renderizado de páginas HTML complejas.",
+      "D. Para sustituir al protocolo DNS en redes locales."
+    ],
+    "correcta": 1,
+    "explicacion": "MQTT es el rey de la telemetría. Es ideal para que 'máquinas hablen con máquinas' (M2M) enviando datos cortos de estado o sensores.",
+    "analisis_opciones": {
+      "A": "Incorrecto, MQTT no es eficiente para archivos de gran tamaño como video.",
+      "B": "Correcto. Es un estándar abierto muy usado en la industria IoT.",
+      "C": "Incorrecto, de eso se encarga HTTP.",
+      "D": "Incorrecto, no tiene funciones de resolución de nombres."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de estos protocolos IoT ofrece la funcionalidad específica de 'Multicast'?",
+    "opciones": [
+      "A. HTTP/1.1.",
+      "B. REST.",
+      "C. CoAP.",
+      "D. MQTT."
+    ],
+    "correcta": 2,
+    "explicacion": "CoAP permite enviar un mensaje a múltiples dispositivos a la vez (Multicast), algo vital en redes de sensores donde quieres despertar o avisar a todo un grupo simultáneamente.",
+    "analisis_opciones": {
+      "A": "HTTP es principalmente Unicast (de uno a uno).",
+      "B": "REST es una arquitectura, no define el método de transporte.",
+      "C": "Correcto. Es una de sus ventajas competitivas en IoT.",
+      "D": "MQTT usa un modelo de Publicación/Suscripción, que es distinto al Multicast puro."
+    }
+  }
+
+,
+  {
+    "pregunta": "¿Qué protocolo IoT utiliza un modelo de 'Publicación/Suscripción' (pub/sub) y es ideal para telemetría en sensores remotos por su bajo consumo?",
+    "opciones": [
+      "A. HTTP.",
+      "B. MQTT.",
+      "C. Modbus TCP.",
+      "D. 6LoWPAN."
+    ],
+    "correcta": 1,
+    "explicacion": "MQTT es el estándar para mensajería ligera. A diferencia del modelo petición-respuesta de HTTP, aquí los dispositivos se suscriben a 'temas', lo que ahorra mucha energía.",
+    "analisis_opciones": {
+      "A": "Incorrecto, HTTP es demasiado pesado para sensores remotos con batería.",
+      "B": "Correcto. Es el rey de la telemetría ligera.",
+      "C": "Incorrecto, Modbus es más común en cables industriales (PLC).",
+      "D": "Incorrecto, 6LoWPAN se encarga de llevar IPv6 a las redes de bajo consumo."
+    }
+  },
+  {
+    "pregunta": "Si necesitas conectar sensores en un entorno industrial con fiabilidad garantizada y una arquitectura orientada a 'broker', ¿qué protocolo empresarial sería el más adecuado?",
+    "opciones": [
+      "A. Bluetooth LE.",
+      "B. Sigfox.",
+      "C. AMQP (Advanced Message Queuing Protocol).",
+      "D. CoAP."
+    ],
+    "correcta": 2,
+    "explicacion": "AMQP es como el 'mensajero con traje y corbata'. Es robusto, seguro y garantiza que el mensaje llegue, muy usado en entornos empresariales e industriales complejos.",
+    "analisis_opciones": {
+      "A": "Incorrecto, Bluetooth es para distancias cortas y dispositivos cercanos.",
+      "B": "Incorrecto, Sigfox es para envíos de datos mínimos a larguísima distancia.",
+      "C": "Correcto. Destaca por su fiabilidad y robustez.",
+      "D": "Incorrecto, CoAP es más para dispositivos simples y comunicación directa tipo REST."
+    }
+  },
+  {
+    "pregunta": "Para una red de sensores en una ciudad inteligente que necesita cubrir varios kilómetros de distancia con un consumo de energía ultra bajo, ¿qué tecnología LPWAN elegirías?",
+    "opciones": [
+      "A. Zigbee.",
+      "B. LoRaWAN.",
+      "C. Thread.",
+      "D. Bluetooth LE."
+    ],
+    "correcta": 1,
+    "explicacion": "LoRaWAN es el 'mensajero de larga distancia'. Permite coberturas de kilómetros con muy poco tráfico de datos, ideal para agricultura o ciudades inteligentes.",
+    "analisis_opciones": {
+      "A": "Incorrecto, Zigbee es de corto alcance (máximo 100m).",
+      "B": "Correcto. Es la base de las redes LPWAN de largo alcance.",
+      "C": "Incorrecto, Thread es para redes mesh domésticas.",
+      "D": "Incorrecto, Bluetooth es para conexión personal de corto alcance."
+    }
+  },
+  {
+    "pregunta": "¿Qué tecnología permite llevar direccionamiento IPv6 completo a redes inalámbricas de bajo consumo, permitiendo que cada sensor tenga su propia IP?",
+    "opciones": [
+      "A. 6LoWPAN.",
+      "B. NB-IoT.",
+      "C. OPC UA.",
+      "D. DDS."
+    ],
+    "correcta": 0,
+    "explicacion": "6LoWPAN es el 'traductor'. Hace que el protocolo IPv6 sea lo suficientemente pequeño para que quepa en redes de baja potencia, dando identidad IP a cada sensor.",
+    "analisis_opciones": {
+      "A": "Correcto. Permite la integración directa de sensores en Internet usando IP.",
+      "B": "Incorrecto, NB-IoT usa la red móvil (LTE).",
+      "C": "Incorrecto, es para interoperabilidad industrial.",
+      "D": "Incorrecto, DDS es para datos en tiempo real y baja latencia."
+    }
+  },
+  {
+    "pregunta": "En un sistema de robótica avanzada que requiere una latencia extremadamente baja y distribución de datos en tiempo real, ¿qué protocolo de aplicación es el estándar?",
+    "opciones": [
+      "A. HTTP.",
+      "B. Zigbee.",
+      "C. DDS (Data Distribution Service).",
+      "D. AMQP."
+    ],
+    "correcta": 2,
+    "explicacion": "DDS es para cuando el tiempo es crítico. Se usa en defensa, robótica e industria pesada porque garantiza que los datos lleguen casi instantáneamente.",
+    "analisis_opciones": {
+      "A": "Incorrecto, HTTP tiene demasiada latencia para tiempo real crítico.",
+      "B": "Incorrecto, es una tecnología de red de bajo consumo, no un protocolo de alta velocidad.",
+      "C": "Correcto. Es el motor de los sistemas de tiempo real.",
+      "D": "Incorrecto, AMQP prioriza la fiabilidad sobre la latencia mínima."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia principal entre NB-IoT y LTE-M dentro de las tecnologías de IoT móvil?",
+    "opciones": [
+      "A. NB-IoT es para video y LTE-M para texto.",
+      "B. NB-IoT ofrece mayor cobertura y menor coste, mientras que LTE-M soporta movilidad y voz.",
+      "C. LTE-M no utiliza redes celulares y NB-IoT sí.",
+      "D. NB-IoT solo funciona con Bluetooth."
+    ],
+    "correcta": 1,
+    "explicacion": "Ambos van sobre redes móviles, pero NB-IoT es para sensores estáticos de muy bajo consumo y LTE-M permite que el dispositivo se mueva (movilidad) e incluso envíe voz.",
+    "analisis_opciones": {
+      "A": "Incorrecto, ninguna es apta para streaming de video pesado.",
+      "B": "Correcto. Son los dos sabores del IoT sobre redes móviles (LTE).",
+      "C": "Incorrecto, ambas son tecnologías celulares.",
+      "D": "Incorrecto, son protocolos de red amplia, no de corto alcance."
+    }
+  },
+  {
+    "pregunta": "Si estás configurando una casa inteligente con bombillas y sensores en una 'red de malla' (mesh) basada en el estándar IEEE 802.15.4, ¿qué protocolo estás usando probablemente?",
+    "opciones": [
+      "A. Sigfox.",
+      "B. Zigbee.",
+      "C. HTTP.",
+      "D. LoRaWAN."
+    ],
+    "correcta": 1,
+    "explicacion": "Zigbee es el rey del hogar inteligente. Crea una malla donde cada dispositivo ayuda a pasar el mensaje al siguiente, cubriendo toda la casa con poco consumo.",
+    "analisis_opciones": {
+      "A": "Incorrecto, Sigfox es para redes externas de muy baja velocidad.",
+      "B": "Correcto. Es el estándar para redes mesh domésticas de bajo consumo.",
+      "C": "Incorrecto, HTTP es comunicación directa cliente-servidor.",
+      "D": "Incorrecto, LoRaWAN es para exteriores y largas distancias."
+    }
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

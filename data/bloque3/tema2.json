@@ -1719,5 +1719,348 @@
       "c)": "Verdadera. Nivel binario puro.",
       "d)": "Verdadera. Es la tendencia de la evolución del software."
     }
+  },
+  {
+    "pregunta": "1. Dado el siguiente código en C++: 'int a=2; int main() { int a=10; /* sentencia */ return 0; }', ¿qué sentencia permite mostrar el valor 2?",
+    "opciones": [
+      "A. cout << &a << endl;",
+      "B. cout << ::a << endl;",
+      "C. cout << ?:a << endl;",
+      "D. cout << *a << endl;"
+    ],
+    "correcta": 1,
+    "explicacion": "El operador de resolución de ámbito (::) permite acceder a una variable global cuando existe una local con el mismo nombre.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Muestra la dirección de memoria.",
+      "B": "Correcta. Accede al ámbito global.",
+      "C": "Incorrecta. Sintaxis inexistente.",
+      "D": "Incorrecta. Se usa para desreferenciar punteros."
+    }
+  },
+  {
+    "pregunta": "2. ¿Qué valores tomará la variable 'i' en el bucle Python 'for i in range(1, 4):'?",
+    "opciones": [
+      "A. 1, 2, 3, 4",
+      "B. 1, 2, 3",
+      "C. 0, 1, 2, 3",
+      "D. 1, 4"
+    ],
+    "correcta": 1,
+    "explicacion": "En Python, range(inicio, fin) incluye el inicio pero excluye el valor de fin.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El 4 no se incluye.",
+      "B": "Correcta. Valores del 1 al 3.",
+      "C": "Incorrecta. Empieza en 1, no en 0.",
+      "D": "Incorrecta. No toma solo los extremos."
+    }
+  },
+  {
+    "pregunta": "3. En un bucle 'for (int i = 0; i < 3; i++)', ¿en qué momento se ejecuta el incremento 'i++'?",
+    "opciones": [
+      "A. Antes de comprobar la condición.",
+      "B. Al inicio de la primera vuelta.",
+      "C. Al finalizar el cuerpo del bucle en cada vuelta.",
+      "D. Solo cuando el bucle termina definitivamente."
+    ],
+    "correcta": 2,
+    "explicacion": "El incremento es el último paso de cada iteración, ocurriendo justo antes de volver a evaluar la condición.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La condición se evalúa antes.",
+      "B": "Incorrecta. En la primera vuelta se usa el valor inicial.",
+      "C": "Correcta. Se ejecuta tras completar la 'faena' del cuerpo.",
+      "D": "Incorrecta. Ocurre en cada vuelta."
+    }
+  },
+  {
+    "pregunta": "4. En PHP, ¿qué función se utiliza para obtener el número total de elementos de un array?",
+    "opciones": [
+      "A. count()",
+      "B. size()",
+      "C. length()",
+      "D. count_elements()"
+    ],
+    "correcta": 0,
+    "explicacion": "La función count() es la estándar en PHP para contar elementos de arrays u objetos contables.",
+    "analisis_opciones": {
+      "A": "Correcta. Función nativa de PHP.",
+      "B": "Incorrecta. No existe como función nativa de arrays.",
+      "C": "Incorrecta. Típica de JavaScript o Java.",
+      "D": "Incorrecta. No es el nombre de la función nativa."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál es la principal característica de un lenguaje interpretado frente a uno compilado?",
+    "opciones": [
+      "A. Es más rápido en ejecución.",
+      "B. No necesita el código fuente para ejecutarse.",
+      "C. Traduce y ejecuta el código línea a línea en tiempo real.",
+      "D. Genera siempre un archivo .exe independiente."
+    ],
+    "correcta": 2,
+    "explicacion": "Los intérpretes procesan el código fuente directamente durante la ejecución sin crear un binario previo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Suele ser más lento que el compilado.",
+      "B": "Incorrecta. El intérprete requiere leer el fuente.",
+      "C": "Correcta. Definición de interpretación.",
+      "D": "Incorrecta. Eso es propio de la compilación."
+    }
+  },
+  {
+    "pregunta": "6. En C++, ¿qué diferencia hay entre 'cout << a' y 'cin >> a'?",
+    "opciones": [
+      "A. No hay diferencia, ambos escriben en pantalla.",
+      "B. cout es para entrada y cin para salida.",
+      "C. cout envía datos a la consola y cin recibe datos del teclado.",
+      "D. cin se usa solo para archivos de texto."
+    ],
+    "correcta": 2,
+    "explicacion": "cout (Console Out) es el flujo de salida y cin (Console In) es el flujo de entrada.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Tienen funciones opuestas.",
+      "B": "Incorrecta. Es justo al revés.",
+      "C": "Correcta. Define correctamente los flujos de E/S.",
+      "D": "Incorrecta. cin es para entrada estándar (teclado)."
+    }
+  },
+  {
+    "pregunta": "7. En el paso de parámetros por referencia:",
+    "opciones": [
+      "A. Se envía una copia del valor y la variable original no cambia.",
+      "B. Se envía la dirección de memoria y los cambios afectan a la variable original.",
+      "C. Solo se pueden pasar números enteros.",
+      "D. La función no puede devolver ningún valor."
+    ],
+    "correcta": 1,
+    "explicacion": "La referencia permite al subprograma trabajar directamente sobre el espacio de memoria de la variable original.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es el paso por valor.",
+      "B": "Correcta. Los cambios son persistentes fuera de la función.",
+      "C": "Incorrecta. Se puede usar con cualquier tipo de dato.",
+      "D": "Incorrecta. El retorno es independiente del paso de parámetros."
+    }
+  },
+  {
+    "pregunta": "8. En Python, ¿para qué sirve el método 'lista.count(x)'?",
+    "opciones": [
+      "A. Para saber el tamaño total de la lista.",
+      "B. Para borrar todos los elementos llamados x.",
+      "C. Para contar cuántas veces aparece el valor x en la lista.",
+      "D. Para ordenar la lista de forma ascendente."
+    ],
+    "correcta": 2,
+    "explicacion": "A diferencia de PHP, en Python .count() busca ocurrencias de un elemento específico.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Para eso se usa len().",
+      "B": "Incorrecta. No realiza borrados.",
+      "C": "Correcta. Cuenta repeticiones de un valor.",
+      "D": "Incorrecta. Para eso se usa sort()."
+    }
+  },
+  {
+    "pregunta": "9. ¿Qué indica el símbolo '&' delante de una variable en C++ (ej. &a)?",
+    "opciones": [
+      "A. El valor de la variable multiplicado por dos.",
+      "B. La dirección de memoria donde se aloja la variable.",
+      "C. Que la variable es de tipo texto.",
+      "D. Que la variable es global."
+    ],
+    "correcta": 1,
+    "explicacion": "El operador ampersand (&) es el operador de dirección en C++.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es un operador aritmético de ese tipo.",
+      "B": "Correcta. Devuelve la posición en memoria.",
+      "C": "Incorrecta. No define tipos de datos.",
+      "D": "Incorrecta. El ámbito no se define con este símbolo."
+    }
+  },
+  {
+    "pregunta": "10. Tras ejecutar 'for (int i = 0; i < 3; i++) { }', ¿cuál es el valor de 'i' al salir del bucle?",
+    "opciones": [
+      "A. 2",
+      "B. 3",
+      "C. 0",
+      "D. 4"
+    ],
+    "correcta": 1,
+    "explicacion": "El bucle se rompe cuando la condición 'i < 3' es falsa, lo cual ocurre cuando 'i' alcanza el valor 3.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Con 2 la condición sigue siendo verdadera.",
+      "B": "Correcta. Es el primer valor que hace falsa la condición.",
+      "C": "Incorrecta. Es el valor inicial.",
+      "D": "Incorrecta. El bucle se detiene antes."
+    }
+  },
+  {
+    "pregunta": "11. En PHP, ¿cuál es el operador utilizado para concatenar dos cadenas de texto (strings)?",
+    "opciones": [
+      "A. El símbolo suma (+)",
+      "B. El símbolo punto (.)",
+      "C. El símbolo ampersand (&)",
+      "D. El símbolo flecha (->)"
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia de Java o JS, PHP utiliza el punto para unir cadenas. El símbolo '+' se reserva exclusivamente para operaciones aritméticas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. En PHP sumaría los valores numéricos de las cadenas.",
+      "B": "Correcta. Es el operador de concatenación.",
+      "C": "Incorrecta. Se usa para referencias o bits.",
+      "D": "Incorrecta. Se usa para acceder a métodos de objetos."
+    }
+  },
+  {
+    "pregunta": "12. ¿Cómo se añade un nuevo elemento al final de un array llamado '$datos' en PHP?",
+    "opciones": [
+      "A. $datos.push(valor);",
+      "B. $datos[] = valor;",
+      "C. add($datos, valor);",
+      "D. append($datos, valor);"
+    ],
+    "correcta": 1,
+    "explicacion": "La sintaxis de corchetes vacíos es la forma más rápida y común de añadir un elemento al final de un array en PHP.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sintaxis propia de JavaScript.",
+      "B": "Correcta. Forma nativa y eficiente de PHP.",
+      "C": "Incorrecta. No es una función estándar de PHP.",
+      "D": "Incorrecta. No es una función estándar de PHP."
+    }
+  },
+  {
+    "pregunta": "13. En el lenguaje C, ¿qué valor se considera lógicamente como FALSO en una sentencia 'if'?",
+    "opciones": [
+      "A. Cualquier número negativo.",
+      "B. El número 0.",
+      "C. El número 1.",
+      "D. Cualquier número distinto de 0."
+    ],
+    "correcta": 1,
+    "explicacion": "En C, la lógica booleana se basa en enteros: el 0 es falso y cualquier valor distinto de 0 se evalúa como verdadero.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Los negativos se consideran verdaderos.",
+      "B": "Correcta. Es el único valor que representa 'false'.",
+      "C": "Incorrecta. El 1 es el valor estándar para 'true'.",
+      "D": "Incorrecta. Eso representa el valor verdadero."
+    }
+  },
+  {
+    "pregunta": "14. Para imprimir un número entero por pantalla en C, ¿qué código de formato se utiliza dentro de printf()?",
+    "opciones": [
+      "A. %s",
+      "B. %f",
+      "C. %d",
+      "D. %a"
+    ],
+    "correcta": 2,
+    "explicacion": "%d se utiliza para números enteros decimales. %s es para strings y %f para flotantes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se usa para cadenas (strings).",
+      "B": "Incorrecta. Se usa para números con decimales (float).",
+      "C": "Correcta. Es el estándar para enteros.",
+      "D": "Incorrecta. No es un código de formato común para tipos básicos."
+    }
+  },
+  {
+    "pregunta": "15. ¿Cuál es la forma correcta de declarar un array de 5 enteros en C?",
+    "opciones": [
+      "A. int lista = new int[5];",
+      "B. Array lista[5];",
+      "C. int lista[5];",
+      "D. lista = {1, 2, 3, 4, 5};"
+    ],
+    "correcta": 2,
+    "explicacion": "En C, los arrays se declaran indicando el tipo, el nombre y el tamaño entre corchetes, sin usar la palabra clave 'new'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa es la sintaxis de Java.",
+      "B": "Incorrecta. 'Array' no es una palabra clave para declarar tipos en C.",
+      "C": "Correcta. Sintaxis estándar de C.",
+      "D": "Incorrecta. Falta el tipo de dato y la declaración del tamaño."
+    }
+  },
+  {
+    "pregunta": "16. En Java, ¿qué devuelve la instrucción '\"PROGRAMACION\".substring(0, 4);'?",
+    "opciones": [
+      "A. PROG",
+      "B. PROGR",
+      "C. ROGR",
+      "D. P"
+    ],
+    "correcta": 0,
+    "explicacion": "El método substring(inicio, fin) toma los caracteres desde el índice 'inicio' hasta 'fin - 1'. El carácter en la posición 4 (R) queda fuera.",
+    "analisis_opciones": {
+      "A": "Correcta. Índices 0, 1, 2 y 3.",
+      "B": "Incorrecta. Incluiría el índice 4.",
+      "C": "Incorrecta. Empieza en el índice equivocado.",
+      "D": "Incorrecta. Solo toma un carácter."
+    }
+  },
+  {
+    "pregunta": "17. Para obtener el número de elementos de un ArrayList en Java, se utiliza el método:",
+    "opciones": [
+      "A. length",
+      "B. count()",
+      "C. size()",
+      "D. length()"
+    ],
+    "correcta": 2,
+    "explicacion": "En las colecciones de Java (como ArrayList), el método estándar para obtener el tamaño es size().",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se usa para arrays básicos sin paréntesis.",
+      "B": "Incorrecta. count() es típico de PHP o Python, no de Java Collections.",
+      "C": "Correcta. Método oficial de la interfaz List.",
+      "D": "Incorrecta. Se usa para la clase String."
+    }
+  },
+  {
+    "pregunta": "18. ¿Qué valor devuelve el método 'indexOf' si la subcadena buscada no existe en el String?",
+    "opciones": [
+      "A. 0",
+      "B. null",
+      "C. -1",
+      "D. False"
+    ],
+    "correcta": 2,
+    "explicacion": "Java devuelve -1 para indicar que la búsqueda ha fallado, ya que el 0 es una posición válida (la primera).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Indicaría que se encontró al principio.",
+      "B": "Incorrecta. El método devuelve un tipo primitivo int.",
+      "C": "Correcta. Valor estándar de 'no encontrado'.",
+      "D": "Incorrecta. El método devuelve un entero, no un booleano."
+    }
+  },
+  {
+    "pregunta": "19. ¿Cuál es el resultado de aplicar el método 'split(\",\")' al String \"A,B,C\"?",
+    "opciones": [
+      "A. Un String de longitud 5.",
+      "B. Un objeto de tipo List.",
+      "C. Un array de Strings con 3 elementos.",
+      "D. Un error de ejecución."
+    ],
+    "correcta": 2,
+    "explicacion": "El método split() divide la cadena según el delimitador y devuelve un array de objetos String (String[]).",
+    "analisis_opciones": {
+      "A": "Incorrecta. El tamaño del array resultante es 3.",
+      "B": "Incorrecta. Devuelve un array nativo, no un ArrayList.",
+      "C": "Correcta. Contendría 'A', 'B' y 'C'.",
+      "D": "Incorrecta. Es una operación válida."
+    }
+  },
+  {
+    "pregunta": "20. Dado un array básico 'int[] numeros = new int[10];', ¿cómo se obtiene su tamaño?",
+    "opciones": [
+      "A. numeros.length()",
+      "B. numeros.size()",
+      "C. numeros.count",
+      "D. numeros.length"
+    ],
+    "correcta": 3,
+    "explicacion": "En arrays nativos de Java, 'length' es un atributo o propiedad, por lo que no lleva paréntesis.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El paréntesis es solo para Strings.",
+      "B": "Incorrecta. size() es para colecciones (List, Set).",
+      "C": "Incorrecta. count no existe en arrays nativos.",
+      "D": "Correcta. Acceso directo a la propiedad de longitud."
+    }
   }
 ]
+
+
+

@@ -95,3 +95,25 @@ small { color: #a4b0be; font-size: 0.75rem; }
     .test-box { padding: 25px; }
     #pregunta { font-size: 1.3rem; }
 }
+/* Nuevas clases para marcar aciertos y fallos con buen contraste */
+.opcion-correcta {
+    background-color: #2ed573 !important; /* Verde intenso */
+    color: white !important;
+    border-color: #26af5a !important;
+}
+
+.opcion-erronea {
+    background-color: #ff4757 !important; /* Rojo intenso */
+    color: white !important;
+    border-color: #d63031 !important;
+}
+
+/* Forzar que el texto de adentro también sea blanco */
+.opcion-correcta span, .opcion-erronea span {
+    color: white !important;
+}
+.opcion-correcta { background-color: #2ed573 !important; color: white !important; }
+.opcion-erronea { background-color: #ff4757 !important; color: white !important; }
+.opcion-correcta span, .opcion-erronea span { color: white !important; }
+/* Asegura que el botón naranja se vea bien */
+#btn-rescatar-fallos { display: none; background-color: #ff9f43; color: #2f3542; padding: 12px; font-weight: bold; border-radius: 8px; width: 100%; cursor: pointer; border: none; margin-top: 10px; }

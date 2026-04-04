@@ -403,7 +403,7 @@
     "analisis_opciones": {
       "A": "Incorrecta.",
       "B": "Incorrecta.",
-      "C": "Correcta. A:0 (impar) y B:1 (impar).",
+      "C": "Correcta. A:0 (impar) y B:0 (impar).",
       "D": "Incorrecta."
     }
   },
@@ -1635,20 +1635,6 @@
     }
   },
   {
-    "pregunta": "108. Protocolo usa Dijkstra:",
-    "opciones": [
-      "A. RIP.",
-      "B. OSPF.",
-      "C. BGP.",
-      "D. EIGRP."
-    ],
-    "correcta": 1,
-    "explicacion": "OSPF=Link State=Dijkstra.",
-    "analisis_opciones": {
-      "B": "Correcta."
-    }
-  },
-  {
     "pregunta": "109. Hosts útiles máscara .240:",
     "opciones": [
       "A. 16",
@@ -2234,6 +2220,873 @@
     "explicacion": "Utiliza Multicast de ICMPv6 para encontrar vecinos.",
     "analisis_opciones": {
       "B": "Correcta."
+    }
+  },{
+    "pregunta": "1. Si tenemos la dirección IP 100.100.14.35 con máscara 255.240.0.0, ¿cuál es su dirección de red exacta?",
+    "opciones": [
+      "A. 100.100.0.0",
+      "B. 100.0.0.0",
+      "C. 100.96.0.0",
+      "D. 100.64.0.0"
+    ],
+    "correcta": 2,
+    "explicacion": "Al aplicar la máscara 240 (11110000) al segundo octeto (100: 01100100), los 4 bits de red resultantes son 01100000, que equivale a 96. Por tanto, la red es 100.96.0.0.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 100 no es múltiplo de 16 (paso de red para /12).",
+      "B": "Incorrecta.",
+      "C": "Correcta. El salto de subred es de 16 en 16 en el segundo octeto.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "2. ¿Qué operación de resolución de direcciones realiza exactamente el protocolo ARP?",
+    "opciones": [
+      "A. Obtiene la IP a partir de una dirección MAC.",
+      "B. Obtiene la dirección IP a partir del nombre de host.",
+      "C. Obtiene la dirección física (MAC) a partir de una dirección lógica (IP).",
+      "D. Obtiene el puerto TCP a partir de la dirección IP."
+    ],
+    "correcta": 2,
+    "explicacion": "ARP (Address Resolution Protocol) traduce direcciones de la capa de red (IP) a direcciones de la capa de enlace (MAC) para permitir la entrega local.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es RARP (Reverse ARP).",
+      "B": "Incorrecta. Eso es DNS.",
+      "C": "Correcta. Definición estándar de ARP.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "3. En el contexto de IPv6, ¿cuál de las siguientes afirmaciones sobre su cabecera es VERDADERA?",
+    "opciones": [
+      "A. Tiene una longitud variable como en IPv4.",
+      "B. Desaparece el campo Checksum de la cabecera IP.",
+      "C. El campo Payload Length incluye el tamaño de la cabecera fija.",
+      "D. Utiliza direcciones de 32 bytes de longitud."
+    ],
+    "correcta": 1,
+    "explicacion": "IPv6 simplifica la cabecera eliminando el Checksum (delegándolo a capas superiores) y fijando su tamaño en 40 bytes para mejorar el rendimiento de los routers.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es de longitud fija (40 bytes).",
+      "B": "Correcta. Es uno de los cambios principales respecto a IPv4.",
+      "C": "Incorrecta. Solo mide la carga útil y cabeceras de extensión.",
+      "D": "Incorrecta. Son 16 bytes (128 bits)."
+    }
+  },
+  {
+    "pregunta": "4. ¿A qué capa del modelo OSI pertenece el protocolo RPC (Remote Procedure Call)?",
+    "opciones": [
+      "A. Red.",
+      "B. Transporte.",
+      "C. Sesión.",
+      "D. Presentación."
+    ],
+    "correcta": 2,
+    "explicacion": "RPC se encarga de establecer, gestionar y finalizar las comunicaciones entre aplicaciones remotas, situándose en la capa de sesión (Capa 5).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Gestiona el diálogo entre procesos remotos.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "5. Sobre la red de clase A 127.0.0.0, ¿cuál es su comportamiento estándar según el modelo OSI?",
+    "opciones": [
+      "A. Es una red ordinaria asignable a hosts externos.",
+      "B. Los paquetes dirigidos a esta red se devuelven al remitente sin bajar a los niveles inferiores de la pila de protocolos.",
+      "C. Solo la dirección 127.0.0.1 es especial, el resto son públicas.",
+      "D. Requiere obligatoriamente un gateway para procesar el loopback."
+    ],
+    "correcta": 1,
+    "explicacion": "Toda la red 127.0.0.0/8 está reservada para loopback; el software de red procesa estos paquetes internamente sin enviarlos al hardware de red físico.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Se procesa íntegramente en la pila de software local.",
+      "C": "Incorrecta. Toda la clase A está reservada.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál es el valor del campo 'Next Header' en IPv6 si el paquete transporta un segmento UDP?",
+    "opciones": [
+      "A. 6",
+      "B. 17",
+      "C. 58",
+      "D. 43"
+    ],
+    "correcta": 1,
+    "explicacion": "El valor 17 identifica al protocolo UDP, mientras que el 6 identifica a TCP.",
+    "analisis_opciones": {
+      "A": "Incorrecta (TCP).",
+      "B": "Correcta.",
+      "C": "Incorrecta (ICMPv6).",
+      "D": "Incorrecta (Routing Header)."
+    }
+  },
+  {
+    "pregunta": "7. En una dirección IPv4 de Clase A, ¿cuántos bits se utilizan para identificar la red?",
+    "opciones": [
+      "A. 7 bits.",
+      "B. 8 bits.",
+      "C. 14 bits.",
+      "D. 24 bits."
+    ],
+    "correcta": 0,
+    "explicacion": "Aunque el primer octeto define la red, el primer bit es obligatoriamente '0', dejando 7 bits efectivos para identificar las 128 redes de clase A (0-127).",
+    "analisis_opciones": {
+      "A": "Correcta. 7 bits de red + 1 bit de clase (0).",
+      "B": "Incorrecta. 8 bits es el tamaño del campo, pero no todos identifican la red.",
+      "C": "Incorrecta (Clase B).",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "8. ¿Qué protocolo de enrutamiento utiliza el algoritmo Dijkstra para calcular el trayecto más corto?",
+    "opciones": [
+      "A. RIP.",
+      "B. BGP.",
+      "C. OSPF.",
+      "D. IGRP."
+    ],
+    "correcta": 2,
+    "explicacion": "OSPF (Open Shortest Path First) es un protocolo de estado de enlace que emplea el algoritmo de Dijkstra (SPF) para construir la tabla de rutas.",
+    "analisis_opciones": {
+      "A": "Incorrecta (Vector distancia/Bellman-Ford).",
+      "B": "Incorrecta (Vector ruta).",
+      "C": "Correcta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Cuál es la wildcard de la red 123.128.0.0 con máscara 255.240.0.0?",
+    "opciones": [
+      "A. 0.15.255.255",
+      "B. 0.31.255.255",
+      "C. 0.63.255.255",
+      "D. 0.240.255.255"
+    ],
+    "correcta": 0,
+    "explicacion": "La wildcard se calcula restando la máscara a 255.255.255.255. (255-240 = 15), resultando 0.15.255.255.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. En relación a RIPv2, ¿qué mecanismo se utiliza para evitar bucles de enrutamiento y reducir tiempos de convergencia?",
+    "opciones": [
+      "A. Algoritmo Dijkstra.",
+      "B. Split Horizon (Horizonte dividido).",
+      "C. Hello packets cada 10 segundos.",
+      "D. Uso de TCP puerto 520."
+    ],
+    "correcta": 1,
+    "explicacion": "Split Horizon evita que un router anuncie una ruta por la misma interfaz por la que la aprendió, previniendo bucles infinitos.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta.",
+      "C": "Incorrecta (RIP usa 30 segundos).",
+      "D": "Incorrecta (Usa UDP)."
+    }
+  },{
+    "pregunta": "1. ¿Cuál es la principal diferencia entre los protocolos de enrutamiento RIPv1 y RIPv2?",
+    "opciones": [
+      "a) RIPv1 es de estado de enlace y RIPv2 es de vector distancia.",
+      "b) RIPv2 soporta VLSM (máscaras de subred de longitud variable) al enviar la máscara en las actualizaciones, mientras que RIPv1 no.",
+      "c) RIPv1 utiliza el algoritmo de Dijkstra y RIPv2 el de Bellman-Ford.",
+      "d) RIPv2 tiene un límite de 30 saltos, mientras que RIPv1 solo permite 15."
+    ],
+    "correcta": 1,
+    "explicacion": "RIPv2 es un protocolo 'classless' que permite el uso de subredes con distintas máscaras, a diferencia de RIPv1 que es 'classful'.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Ambos son de vector distancia.",
+      "b)": "Correcta. Es la mejora fundamental de la versión 2.",
+      "c)": "Incorrecta. Ambos usan Bellman-Ford.",
+      "d)": "Incorrecta. Ambos tienen el límite en 15 saltos (16 es infinito)."
+    }
+  },
+  {
+    "pregunta": "2. En el protocolo OSPF, ¿qué función cumple el algoritmo Shortest Path First (SPF) o Dijkstra?",
+    "opciones": [
+      "a) Intercambiar tablas de rutas completas cada 30 segundos.",
+      "b) Calcular el árbol de caminos más cortos desde un nodo raíz hacia todos los destinos de la red.",
+      "c) Asignar direcciones IP dinámicamente a los hosts de la red.",
+      "d) Traducir direcciones MAC a direcciones IP en redes locales."
+    ],
+    "correcta": 1,
+    "explicacion": "OSPF utiliza Dijkstra para procesar la base de datos de estado de enlace (LSDB) y encontrar la ruta óptima.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso lo hace RIP.",
+      "b)": "Correcta. Es la base del funcionamiento de los protocolos de estado de enlace.",
+      "c)": "Incorrecta. Eso es DHCP.",
+      "d)": "Incorrecta. Eso sería RARP."
+    }
+  },
+  {
+    "pregunta": "3. El protocolo IGMP (Internet Group Management Protocol) se utiliza fundamentalmente para:",
+    "opciones": [
+      "a) La gestión de errores en la entrega de datagramas IP.",
+      "b) Que los hosts informen a sus routers locales de su intención de recibir tráfico de un grupo multicast determinado.",
+      "c) El intercambio de rutas entre diferentes Sistemas Autónomos (AS).",
+      "d) La configuración automática de direcciones IPv6 mediante NDP."
+    ],
+    "correcta": 1,
+    "explicacion": "IGMP es el estándar para IPv4 que permite a los equipos unirse a grupos de multidifusión.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es ICMP.",
+      "b)": "Correcta. Gestiona la pertenencia a grupos multicast en el segmento local.",
+      "c)": "Incorrecta. Eso es BGP.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "4. ¿Cuál es el protocolo equivalente a IGMP en entornos IPv6 para la gestión de grupos de multidifusión?",
+    "opciones": [
+      "a) ICMPv4.",
+      "b) NDP (Neighbor Discovery Protocol).",
+      "c) MLD (Multicast Listener Discovery).",
+      "d) RSVP."
+    ],
+    "correcta": 2,
+    "explicacion": "MLD cumple en IPv6 la misma función que IGMP en IPv4, basándose en mensajes de ICMPv6.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Incorrecta. NDP sustituye a ARP, no a IGMP.",
+      "c)": "Correcta. MLDv1 y MLDv2 son los estándares para IPv6.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "5. Dentro de las funciones de NDP (Neighbor Discovery Protocol) en IPv6, ¿qué mensaje sustituye a la funcionalidad del antiguo protocolo ARP de IPv4?",
+    "opciones": [
+      "a) Router Advertisement.",
+      "b) Neighbor Solicitation y Neighbor Advertisement.",
+      "c) Redirect.",
+      "d) Group Membership Query."
+    ],
+    "correcta": 1,
+    "explicacion": "IPv6 no utiliza ARP; en su lugar, usa mensajes Neighbor Solicitation para descubrir la MAC de un vecino.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es para descubrir routers.",
+      "b)": "Correcta. Realizan la resolución de direcciones L3 a L2.",
+      "c)": "Incorrecta. Informa de rutas mejores.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "6. ¿Qué puerto y protocolo de transporte utiliza por defecto RIPv2 para sus actualizaciones?",
+    "opciones": [
+      "a) TCP, puerto 520.",
+      "b) UDP, puerto 520.",
+      "c) UDP, puerto 521.",
+      "d) No usa capa de transporte, va directo sobre IP."
+    ],
+    "correcta": 1,
+    "explicacion": "RIP utiliza el puerto UDP 520; su versión para IPv6 (RIPng) utiliza el 521.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. RIP no es fiable, usa UDP.",
+      "b)": "Correcta. Puerto estándar para actualizaciones RIP.",
+      "c)": "Incorrecta. Es para RIPng.",
+      "d)": "Incorrecta. OSPF sí va directo sobre IP, pero RIP no."
+    }
+  },
+  {
+    "pregunta": "7. En OSPF, ¿qué significa que un protocolo sea de 'Estado de Enlace' (Link-State)?",
+    "opciones": [
+      "a) Que solo envía información a sus vecinos directos.",
+      "b) Que cada router posee una visión completa y actualizada de la topología de toda el área.",
+      "c) Que el número de saltos es la única métrica para elegir la ruta.",
+      "d) Que las actualizaciones se envían periódicamente cada 30 segundos independientemente de si hay cambios."
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia de vector-distancia, los Link-State mantienen una base de datos topológica (LSDB) idéntica en todos los routers del área.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es propio de vector distancia.",
+      "b)": "Correcta. Todos conocen 'el mapa' de la red.",
+      "c)": "Incorrecta. OSPF usa el 'coste' basado en el ancho de banda.",
+      "d)": "Incorrecta. Envía actualizaciones cuando hay cambios (LSA)."
+    }
+  },
+  {
+    "pregunta": "8. ¿Cuál es el valor del campo 'Protocolo' en la cabecera IPv4 cuando el datagrama transporta un paquete OSPF?",
+    "opciones": [
+      "a) 1 (ICMP).",
+      "b) 6 (TCP).",
+      "c) 17 (UDP).",
+      "d) 89 (OSPF).",
+      "e) 88 (EIGRP)."
+    ],
+    "correcta": 3,
+    "explicacion": "OSPF se encapsula directamente sobre IP sin usar TCP ni UDP, utilizando el número de protocolo 89.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Incorrecta.",
+      "c)": "Incorrecta. (RIP sí usa UDP 17).",
+      "d)": "Correcta."
+    }
+  },
+  {
+    "pregunta": "9. ¿Qué protocolo de enrutamiento es considerado un EGP (Exterior Gateway Protocol) y es el estándar de facto para la interconexión de Sistemas Autónomos en Internet?",
+    "opciones": [
+      "a) OSPF.",
+      "b) IS-IS.",
+      "c) BGP (Border Gateway Protocol).",
+      "d) RIPv2."
+    ],
+    "correcta": 2,
+    "explicacion": "BGP es un protocolo de vector de ruta (path-vector) utilizado para intercambiar información de rutas entre ISPs.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es un IGP (Interior).",
+      "b)": "Incorrecta. Es un IGP.",
+      "c)": "Correcta. Es el protocolo que mueve Internet.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "10. El protocolo RSVP (Resource Reservation Protocol) se clasifica como:",
+    "opciones": [
+      "a) Un protocolo de enrutamiento de estado de enlace.",
+      "b) Un protocolo de configuración de reserva de recursos para garantizar QoS (Calidad de Servicio).",
+      "c) Un protocolo de resolución de nombres en redes locales.",
+      "d) Un protocolo de transporte de archivos pesados."
+    ],
+    "correcta": 1,
+    "explicacion": "RSVP permite a las aplicaciones solicitar reservas de ancho de banda específicas a lo largo de una ruta.",
+    "analisis_opciones": {
+      "a)": "Incorrecta.",
+      "b)": "Correcta. Es fundamental en IntServ (Servicios Integrados).",
+      "c)": "Incorrecta.",
+      "d)": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "1. Le asignan la red 10.0.0.25 con la máscara 255.255.255.240 ¿Cuántos bits tiene la máscara de red?",
+    "opciones": [
+      "a) 24",
+      "b) 26",
+      "c) 25",
+      "d) 28"
+    ],
+    "correcta": 3,
+    "explicacion": "255.255.255 equivale a 24 bits. El último octeto .240 equivale a 4 bits (11110000). Total: 28 bits.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Es la máscara /24.",
+      "b)": "Incorrecto. Es la máscara /26 (.192).",
+      "c)": "Incorrecto. Es la máscara /25 (.128).",
+      "d)": "Correcto. 240 en el último octeto es un /28."
+    }
+  },
+  {
+    "pregunta": "2. También le preguntan a qué Clase pertenece la red 172.30.25.1/20.",
+    "opciones": [
+      "a) Clase C",
+      "b) Clase B",
+      "c) Clase A",
+      "d) Clase D"
+    ],
+    "correcta": 1,
+    "explicacion": "El primer octeto es 172. El rango de Clase B es de 128 a 191.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Empieza en 192.",
+      "b)": "Correcto. 172 está en el rango 128-191.",
+      "c)": "Incorrecto. Llega hasta el 126.",
+      "d)": "Incorrecto. Es para Multicast (224-239)."
+    }
+  },
+  {
+    "pregunta": "3. Direccionamiento 10.0.0.25/20. ¿Cuál es el número máximo de hosts disponible?",
+    "opciones": [
+      "a) 4096",
+      "b) 4094",
+      "c) 2046",
+      "d) 2048"
+    ],
+    "correcta": 1,
+    "explicacion": "Fórmula: 2^(32-máscara) - 2. Para /20 son 12 bits de host. 2^12 = 4096. Menos 2 = 4094.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Son las direcciones totales, no los hosts útiles.",
+      "b)": "Correcto. Se resta la dirección de red y la de broadcast.",
+      "c)": "Incorrecto. Es para un /21.",
+      "d)": "Incorrecto. Es el total para un /21."
+    }
+  },
+  {
+    "pregunta": "4. Dado el direccionamiento 10.0.0.25/28, ¿cuál es el rango de hosts disponibles?",
+    "opciones": [
+      "a) 10.0.0.16 - 10.0.0.31",
+      "b) 10.0.0.17 - 10.0.0.30",
+      "c) 10.0.0.1 - 10.0.0.15",
+      "d) 10.0.0.1 - 10.0.0.30"
+    ],
+    "correcta": 1,
+    "explicacion": "Salto de 16 (2^4). Bloques: 0-15, 16-31. El .25 está en el bloque 16. Red .16, Broadcast .31. Útiles .17 a .30.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Incluye red y broadcast.",
+      "b)": "Correcto. Son las IPs útiles dentro del segundo bloque de 16.",
+      "c)": "Incorrecto. Primer bloque de la red.",
+      "d)": "Incorrecto. Rango mal calculado."
+    }
+  },
+  {
+    "pregunta": "5. Se trata de la red 10.1.248.0/21. ¿Cuál es la dirección de broadcast?",
+    "opciones": [
+      "a) 10.255.255.255",
+      "b) 10.1.255.255",
+      "c) 10.1.254.255",
+      "d) 10.1.248.255"
+    ],
+    "correcta": 1,
+    "explicacion": "/21 es salto de 8 en el 3er octeto. 248 + 8 = 256. El bloque termina en 255.255.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Broadcast de la clase A completa.",
+      "b)": "Correcto. Al ser el último salto del octeto, llega al máximo.",
+      "c)": "Incorrecto. Error de cálculo.",
+      "d)": "Incorrecto. Eso sería si fuera un /24."
+    }
+  },
+  {
+    "pregunta": "6. Tercera subred de 10.253.113.0/28. ¿Dirección de broadcast?",
+    "opciones": [
+      "a) 10.253.113.37",
+      "b) 10.253.113.27",
+      "c) 10.253.113.47",
+      "d) 10.253.113.46"
+    ],
+    "correcta": 2,
+    "explicacion": "Salto de 16. 1ª: .0-.15. 2ª: .16-.31. 3ª: .32-.47. El broadcast es .47.",
+    "analisis_opciones": {
+      "a)": "Incorrecto.",
+      "b)": "Incorrecto.",
+      "c)": "Correcto. Es el final de la tercera parcela de 16.",
+      "d)": "Incorrecto. Última útil de la tercera subred."
+    }
+  },
+  {
+    "pregunta": "7. ¿Mecanismo de túneles automáticos de IPv4 para conectar IPv6?",
+    "opciones": [
+      "a) poxmox",
+      "b) taredo",
+      "c) 6to4",
+      "d) nuxeo"
+    ],
+    "correcta": 2,
+    "explicacion": "6to4 es el estándar para transmitir paquetes IPv6 sobre redes IPv4.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Proxmox es para virtualización.",
+      "b)": "Incorrecto. Teredo existe, pero 6to4 es el mecanismo de túneles citado.",
+      "c)": "Correcto. Facilita la transición de protocolos.",
+      "d)": "Incorrecto. Es un software de gestión documental."
+    }
+  },
+  {
+    "pregunta": "8. Protocolo de enrutamiento de estado de enlace adecuado:",
+    "opciones": [
+      "a) OSPF",
+      "b) RIP",
+      "c) RIPv2",
+      "d) SPF"
+    ],
+    "correcta": 0,
+    "explicacion": "OSPF es el protocolo Link-State por excelencia.",
+    "analisis_opciones": {
+      "a)": "Correcto.",
+      "b)": "Incorrecto. Es Vector Distancia.",
+      "c)": "Incorrecto. Es Vector Distancia mejorado.",
+      "d)": "Incorrecto. Es el algoritmo de OSPF, no el protocolo."
+    }
+  },
+  {
+    "pregunta": "9. Protocolo de redundancia para routers de acceso a internet:",
+    "opciones": [
+      "a) RARP",
+      "b) VRRP",
+      "c) LACPR",
+      "d) SQUID"
+    ],
+    "correcta": 1,
+    "explicacion": "VRRP permite que varios routers compartan una IP virtual de puerta de enlace.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Para obtener IP desde MAC.",
+      "b)": "Correcto. Virtual Router Redundancy Protocol.",
+      "c)": "Incorrecto. Mezcla de LACP y otra sigla.",
+      "d)": "Incorrecto. Es un servidor Proxy."
+    }
+  },
+  {
+    "pregunta": "10. Protocolo propietario de Cisco para balanceo de carga:",
+    "opciones": [
+      "a) Exim",
+      "b) POSTFIX",
+      "c) GLBP",
+      "d) L2TP"
+    ],
+    "correcta": 2,
+    "explicacion": "GLBP es único de Cisco y permite balanceo además de redundancia.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Correo electrónico.",
+      "b)": "Incorrecto. Correo electrónico.",
+      "c)": "Correcto. Gateway Load Balancing Protocol.",
+      "d)": "Incorrecto. Túnel VPN."
+    }
+  },
+  {
+    "pregunta": "11. ¿Cuál es un protocolo de enrutamiento interno dinámico válido?",
+    "opciones": [
+      "a) IP",
+      "b) ICMP",
+      "c) RIP",
+      "d) BGP"
+    ],
+    "correcta": 2,
+    "explicacion": "RIP es un IGP (Interior Gateway Protocol).",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Es el protocolo de red base.",
+      "b)": "Incorrecto. Es para control de errores (ping).",
+      "c)": "Correcto. Protocolo dinámico interno.",
+      "d)": "Incorrecto. Es un protocolo Externo (EGP)."
+    }
+  },
+  {
+    "pregunta": "12. Protocolo para automatizar la asignación de direcciones IP:",
+    "opciones": [
+      "a) DNS",
+      "b) SMTP",
+      "c) SNMP",
+      "d) DHCP"
+    ],
+    "correcta": 3,
+    "explicacion": "DHCP asigna IPs dinámicamente a los clientes.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Nombres de dominio.",
+      "b)": "Incorrecto. Envío de correo.",
+      "c)": "Incorrecto. Monitorización de red.",
+      "d)": "Correcto. Dynamic Host Configuration Protocol."
+    }
+  },
+  {
+    "pregunta": "13. Teniendo 50 servidores, ¿cuál dirección de red es adecuada?",
+    "opciones": [
+      "a) 10.200.10.0/27",
+      "b) 10.200.10.32/27",
+      "c) 10.200.10.0/26",
+      "d) 10.200.10.0/28"
+    ],
+    "correcta": 2,
+    "explicacion": "Para 50 servidores necesitamos una red de al menos 64 direcciones. /26 ofrece 62 hosts.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Solo 30 hosts.",
+      "b)": "Incorrecto. Solo 30 hosts.",
+      "c)": "Correcto. Cubre los 50 servidores (sobran 12).",
+      "d)": "Incorrecto. Solo 14 hosts."
+    }
+  },
+  {
+    "pregunta": "14. ¿Cuál de las siguientes subredes NO sería suficiente para 10 direcciones?",
+    "opciones": [
+      "a) 210.11.211.0/28",
+      "b) 210.11.211.192/28",
+      "c) 210.11.211.32/27",
+      "d) 210.11.211.64/29"
+    ],
+    "correcta": 3,
+    "explicacion": "Un /29 ofrece 2^3 - 2 = 6 hosts. No llega a 10.",
+    "analisis_opciones": {
+      "a)": "Suficiente (14 hosts).",
+      "b)": "Suficiente (14 hosts).",
+      "c)": "Suficiente (30 hosts).",
+      "d)": "Correcta (No es suficiente, solo da 6)."
+    }
+  },
+  {
+    "pregunta": "15. Rango 10.200.10.128/28. ¿Cuál NO pertenece?",
+    "opciones": [
+      "a) 10.200.10.130",
+      "b) 10.200.10.135",
+      "c) 10.200.10.140",
+      "d) 10.200.10.145"
+    ],
+    "correcta": 3,
+    "explicacion": "Salto de 16. Bloque: 128 a 143. El 145 está fuera (en el siguiente bloque).",
+    "analisis_opciones": {
+      "a)": "Pertenece.",
+      "b)": "Pertenece.",
+      "c)": "Pertenece.",
+      "d)": "Correcta (Está fuera del rango)."
+    }
+  },
+  {
+    "pregunta": "16. En IPv6, las direcciones FF00::/8 son:",
+    "opciones": [
+      "a) Anycast",
+      "b) Multicast",
+      "c) Unicast",
+      "d) Loopback"
+    ],
+    "correcta": 1,
+    "explicacion": "Las direcciones que empiezan por FF son siempre Multicast en IPv6.",
+    "analisis_opciones": {
+      "a)": "Incorrecto.",
+      "b)": "Correcto.",
+      "c)": "Incorrecto.",
+      "d)": "Incorrecto. Es ::1/128."
+    }
+  },
+  {
+    "pregunta": "17. IPv6: fe80::a00::27FF::fee9::ffac. ¿Afirmación correcta?",
+    "opciones": [
+      "a) La dirección IPv6 mostrada es errónea",
+      "b) La dirección IPv6 es una dirección de red multicast",
+      "c) Si se tiene una IPv6, no podrá tener configurada una IPv4",
+      "d) El ámbito no es de enlace"
+    ],
+    "correcta": 0,
+    "explicacion": "No se puede usar el doble dos puntos '::' más de una vez en la misma dirección.",
+    "analisis_opciones": {
+      "a)": "Correcto. Sintaxis inválida.",
+      "b)": "Incorrecto. Empieza por fe80 (Link-Local).",
+      "c)": "Incorrecto. Existe el Dual Stack.",
+      "d)": "Incorrecto."
+    }
+  },
+  {
+    "pregunta": "18. ¿Protocolo que utiliza el algoritmo de Dijkstra?",
+    "opciones": [
+      "a) RIPv2",
+      "b) RIPv1",
+      "c) OSPF",
+      "d) BGP"
+    ],
+    "correcta": 2,
+    "explicacion": "OSPF calcula el camino más corto usando Dijkstra.",
+    "analisis_opciones": {
+      "a)": "Incorrecto. Bellman-Ford.",
+      "b)": "Incorrecto. Bellman-Ford.",
+      "c)": "Correcto.",
+      "d)": "Incorrecto. Path Vector."
+    }
+  },
+  {
+    "pregunta": "19. Rango útil para host 192.168.168.188 con máscara .192 (/26):",
+    "opciones": [
+      "a) 192.168.168.129 a 192.168.168.190",
+      "b) 192.168.168.129 a 192.168.168.192",
+      "c) 192.168.168.127 a 192.168.168.190",
+      "d) 192.168.168.128 a 192.168.168.192"
+    ],
+    "correcta": 0,
+    "explicacion": "Salto de 64. Bloques: 0, 64, 128, 192. El .188 está en el bloque 128. Red .128, Broadcast .191.",
+    "analisis_opciones": {
+      "a)": "Correcto. Del .129 al .190.",
+      "b)": "Incorrecto. Incluye red vecina.",
+      "c)": "Incorrecto.",
+      "d)": "Incorrecto."
+    }
+  },
+  {
+    "pregunta": "20. Broadcast para 172.167.0.0 con máscara 255.255.240.0 (/20):",
+    "opciones": [
+      "a) 172.167.16.254",
+      "b) 172.167.255.255",
+      "c) 172.167.0.255",
+      "d) 172.167.15.255"
+    ],
+    "correcta": 3,
+    "explicacion": "Máscara /20 = Salto de 16 en 3er octeto. Bloque: 0-15. Broadcast: 15.255.",
+    "analisis_opciones": {
+      "a)": "Incorrecto.",
+      "b)": "Incorrecto.",
+      "c)": "Incorrecto.",
+      "d)": "Correcto."
+    }
+  },
+  {
+    "pregunta": "B1. Tienes la IP 10.0.15.5 /22. ¿A qué dirección de red pertenece?",
+    "opciones": [
+      "a) 10.0.15.0",
+      "b) 10.0.12.0",
+      "c) 10.0.16.0",
+      "d) 10.0.0.0"
+    ],
+    "correcta": 1,
+    "explicacion": "Un /22 tiene un salto de 4 en el 3er octeto. La tabla es: 0, 4, 8, 12, 16... El 15 cae en el bloque que empieza en 12.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. El .15 no es múltiplo de 4, no puede ser red.",
+      "b)": "Correcta. Es el múltiplo de 4 inmediatamente inferior a 15.",
+      "c)": "Incorrecta. Esa es la siguiente red.",
+      "d)": "Incorrecta. Esa red termina en el 3.255."
+    }
+  },
+  {
+    "pregunta": "B2. En una red 192.168.1.0/26, ¿cuál es la ÚLTIMA IP que le puedes poner a un ordenador en la segunda subred?",
+    "opciones": [
+      "a) 192.168.1.63",
+      "b) 192.168.1.126",
+      "c) 192.168.1.127",
+      "d) 192.168.1.65"
+    ],
+    "correcta": 1,
+    "explicacion": "Salto de 64. 1ª red: 0-63. 2ª red: 64-127. El broadcast es 127, así que la última útil es 126.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Ese es el broadcast de la primera red.",
+      "b)": "Correcta. Una antes del broadcast (.127) de la segunda red.",
+      "c)": "Incorrecta. Ese es el broadcast (no asignable).",
+      "d)": "Incorrecta. Esa es la primera útil de la segunda red."
+    }
+  },
+  {
+    "pregunta": "B3. ¿Qué ocurre si intentas configurar la IP 172.16.31.255 con máscara 255.255.240.0?",
+    "opciones": [
+      "a) Funciona perfectamente, es una IP de host.",
+      "b) El sistema da error porque es la dirección de red.",
+      "c) El sistema da error porque es la dirección de broadcast.",
+      "d) Funciona, pero solo para servidores."
+    ],
+    "correcta": 2,
+    "explicacion": "Máscara .240.0 es un /20 (salto de 16). La red es 172.16.16.0 y termina en 172.16.31.255. ¡Es el broadcast!",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Termina en .255 y es el final del salto de 16.",
+      "b)": "Incorrecta. La red es la .16.0.",
+      "c)": "Correcta. Es el último número del bloque 16-31.",
+      "d)": "Incorrecto. Ningún host puede usar el broadcast."
+    }
+  },
+  {
+    "pregunta": "B4. Estás configurando IPv6 y ves la dirección 2001:0db8::ff00:0042::8a2e. ¿Por qué no funciona?",
+    "opciones": [
+      "a) Porque las letras solo llegan hasta la 'f'.",
+      "b) Porque tiene más de 4 bloques.",
+      "c) Porque usa el doble colón (::) dos veces.",
+      "d) Porque le falta el prefijo /64."
+    ],
+    "correcta": 2,
+    "explicacion": "Regla de oro de IPv6: el '::' solo se usa UNA vez para evitar ambigüedad en el tamaño de los bloques de ceros.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Las letras son hexadecimales (0-9, a-f), están bien.",
+      "b)": "Incorrecta. IPv6 tiene 8 bloques de 16 bits.",
+      "c)": "Correcta. Es el error de sintaxis más común.",
+      "d)": "Incorrecta. El prefijo no es obligatorio para que la IP sea válida."
+    }
+  },
+  {
+    "pregunta": "B5. ¿Cuál es la diferencia fundamental entre OSPF y RIP al elegir una ruta?",
+    "opciones": [
+      "a) OSPF cuenta saltos y RIP mide el ancho de banda.",
+      "b) RIP cuenta saltos y OSPF usa el 'coste' basado en ancho de banda.",
+      "c) OSPF es solo para routers Cisco y RIP es para todos.",
+      "d) RIP es más rápido en redes grandes."
+    ],
+    "correcta": 1,
+    "explicacion": "RIP es 'tonto': elige el camino con menos routers. OSPF es 'listo': elige el camino más rápido (ancho de banda).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es justo al revés.",
+      "b)": "Correcta. OSPF prefiere un camino de 3 gigabits que uno de 2 megabits.",
+      "c)": "Incorrecta. Ambos son estándares abiertos.",
+      "d)": "Incorrecta. RIP tarda mucho más en converger (actualizarse)."
+    }
+  }
+,
+  {
+    "pregunta": "B6. Un administrador necesita que dos routers compartan una IP virtual para dar redundancia, pero quiere usar un estándar abierto (no propietario). ¿Qué protocolo debe configurar?",
+    "opciones": [
+      "a) HSRP (Hot Standby Router Protocol)",
+      "b) VRRP (Virtual Router Redundancy Protocol)",
+      "c) GLBP (Gateway Load Balancing Protocol)",
+      "d) LACP (Link Aggregation Control Protocol)"
+    ],
+    "correcta": 1,
+    "explicacion": "VRRP es el estándar de la industria (IEEE), mientras que HSRP y GLBP son exclusivos de Cisco.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es de Cisco.",
+      "b)": "Correcta. Es el protocolo estándar para redundancia de primer salto.",
+      "c)": "Incorrecta. Es de Cisco y además hace balanceo.",
+      "d)": "Incorrecta. Sirve para agrupar cables físicos, no para redundancia de IP virtual."
+    }
+  },
+  {
+    "pregunta": "B7. ¿Qué protocolo utiliza el algoritmo SPF (Shortest Path First) y se basa en el estado de enlace?",
+    "opciones": [
+      "a) RIP (Routing Information Protocol)",
+      "b) BGP (Border Gateway Protocol)",
+      "c) OSPF (Open Shortest Path First)",
+      "d) SNMP (Simple Network Management Protocol)"
+    ],
+    "correcta": 2,
+    "explicacion": "OSPF utiliza el algoritmo de Dijkstra (SPF) para calcular la ruta más corta basándose en el coste del enlace.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Usa Vector Distancia (Bellman-Ford).",
+      "b)": "Incorrecta. Usa Vector Camino (Path Vector).",
+      "c)": "Correcta. Su propio nombre indica que usa SPF.",
+      "d)": "Incorrecta. Es un protocolo de gestión, no de enrutamiento."
+    }
+  },
+  {
+    "pregunta": "B8. En el protocolo RIP (Routing Information Protocol), ¿qué sucede cuando un destino alcanza una métrica de 16 saltos?",
+    "opciones": [
+      "a) Se considera la ruta preferida.",
+      "b) Se activa el balanceo de carga.",
+      "c) La red se marca como inalcanzable (infinito).",
+      "d) Se envía un mensaje de ping automáticamente."
+    ],
+    "correcta": 2,
+    "explicacion": "RIP tiene un límite de 15 saltos para evitar bucles. El salto 16 representa el infinito (red caída).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es el peor escenario posible.",
+      "b)": "Incorrecta. RIP no balancea por número de saltos infinito.",
+      "c)": "Correcta. Es el mecanismo de 'envenenamiento de ruta'.",
+      "d)": "Incorrecta. El ping es ICMP, no tiene que ver con la métrica de RIP."
+    }
+  },
+  {
+    "pregunta": "B9. ¿Qué protocolo se utiliza para monitorizar el estado de los dispositivos de red (CPU, tráfico, errores) de forma remota?",
+    "opciones": [
+      "a) SMTP (Simple Mail Transfer Protocol)",
+      "b) SNMP (Simple Network Management Protocol)",
+      "c) ICMP (Internet Control Message Protocol)",
+      "d) ARP (Address Resolution Protocol)"
+    ],
+    "correcta": 1,
+    "explicacion": "SNMP permite a los administradores gestionar y monitorizar nodos de red desde una consola central.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es para enviar correos electrónicos.",
+      "b)": "Correcta. Protocolo estándar de gestión de red.",
+      "c)": "Incorrecta. Es para mensajes de control y error (como el ping).",
+      "d)": "Incorrecta. Resuelve IPs a direcciones MAC."
+    }
+  },
+  {
+    "pregunta": "B10. Estás configurando una red IPv6. ¿Cuál de los siguientes prefijos indica una dirección de Multicast?",
+    "opciones": [
+      "a) FE80::/10",
+      "b) 2000::/3",
+      "c) FF00::/8",
+      "d) ::1/128"
+    ],
+    "correcta": 2,
+    "explicacion": "En IPv6, todas las direcciones de multicast comienzan con el prefijo FF.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es Link-Local (solo enlace local).",
+      "b)": "Incorrecta. Es Unicast Global (Internet).",
+      "c)": "Correcta. Prefijo estándar para grupos multicast.",
+      "d)": "Incorrecta. Es la dirección de Loopback (el propio equipo)."
+    }
+  },
+  {
+    "pregunta": "B11. ¿Cuál es la función principal de BGP (Border Gateway Protocol)?",
+    "opciones": [
+      "a) Asignar IPs automáticamente en una red local.",
+      "b) Enrutar tráfico entre Sistemas Autónomos (Internet).",
+      "c) Traducir nombres de dominio a IPs.",
+      "d) Cifrar el tráfico de una VPN."
+    ],
+    "correcta": 1,
+    "explicacion": "BGP es un protocolo EGP (Exterior Gateway Protocol) que conecta las grandes redes que forman Internet.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es DHCP.",
+      "b)": "Correcta. Es el pegamento que une los diferentes ISP del mundo.",
+      "c)": "Incorrecta. Eso es DNS.",
+      "d)": "Incorrecta. Eso sería IPsec o similar."
     }
   }
 ]

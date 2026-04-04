@@ -1546,22 +1546,6 @@
       "D": "Incorrecta. La cardinalidad describe la participación en la relación, no es un elemento base al nivel del dominio[cite: 1]."
     }
   },{
-    "pregunta": "63. ¿Cuál es el método HTTP que nos permite obtener un recurso en específico de un servidor?",
-    "opciones": [
-      "a) REQUEST",
-      "b) HEAD",
-      "c) OPEN",
-      "d) GET"
-    ],
-    "correcta": 3,
-    "explicacion": "El método GET se utiliza para solicitar la representación de un recurso específico. Las peticiones que usan GET solo deben recuperar datos.",
-    "analisis_opciones": {
-      "A": "Incorrecta. No es un método estándar de HTTP.",
-      "B": "Incorrecta. Pide las cabeceras de respuesta, pero no el cuerpo del recurso.",
-      "C": "Incorrecta. No es un método de petición HTTP.",
-      "D": "Correcta. Es el método estándar de recuperación de información."
-    }
-  },{
     "pregunta": "37. En relación con las bases de datos relacionales, indica la respuesta INCORRECTA en relación con las características que debe presentar, atendiendo a las reglas de Codd:",
     "opciones": [
       "a) Debe cumplir la regla de independencia física de los datos.",
@@ -1593,23 +1577,6 @@
       "B": "Correcta. Puerto estándar de MySQL[cite: 1721].",
       "C": "Incorrecta. No es el puerto estándar[cite: 1722].",
       "D": "Incorrecta. No es el puerto estándar[cite: 1724]."
-    }
-  },
-  {
-    "pregunta": "63. ¿Cuál es el método HTTP que nos permite obtener un recurso en específico de un servidor?",
-    "opciones": [
-      "a) REQUEST",
-      "b) HEAD",
-      "c) OPEN",
-      "d) GET"
-    ],
-    "correcta": 3,
-    "explicacion": "El método GET se utiliza para solicitar la recuperación de un recurso específico desde un servidor[cite: 1636, 1643].",
-    "analisis_opciones": {
-      "A": "Incorrecta[cite: 1637].",
-      "B": "Incorrecta. Se usa para obtener solo las cabeceras[cite: 1639].",
-      "C": "Incorrecta[cite: 1641].",
-      "D": "Correcta. Método estándar de consulta de recursos[cite: 1643]."
     }
   },{
     "pregunta": "36. Una base de datos SQL es un sistema de base de datos...",
@@ -2129,6 +2096,764 @@
       "C": "Incorrecta. Mezcla la Regla 10 y la 11.",
       "D": "Incorrecta. Esa es la Regla 7."
     }
+  },
+  {
+    "pregunta": "En el modelo relacional, si una tabla tiene 5 columnas y 100 filas, decimos que su grado y su cardinalidad son, respectivamente:",
+    "opciones": [
+      "a) 100 y 5.",
+      "b) 5 y 100.",
+      "c) 5 y 5.",
+      "d) 100 y 100."
+    ],
+    "correcta": 1,
+    "explicacion": "El Grado es el número de atributos (columnas) y la Cardinalidad es el número de tuplas (filas).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Está al revés.",
+      "B": "Correcta. Grado (5 columnas) y Cardinalidad (100 filas).",
+      "C": "Incorrecta. Mezcla ambos conceptos.",
+      "D": "Incorrecta. Mezcla ambos conceptos."
+    }
+  },
+  {
+    "pregunta": "Según la Regla 8 de Codd (Independencia física de los datos), ¿qué cambio NO debería obligar a modificar las aplicaciones?",
+    "text": "a) Cambiar el nombre de una tabla.",
+    "opciones": [
+      "a) Cambiar el nombre de una tabla.",
+      "b) Dividir una tabla en dos para normalizarla.",
+      "c) Cambiar el método de acceso de un archivo en disco o el soporte físico.",
+      "d) Añadir una nueva columna a la tabla."
+    ],
+    "correcta": 2,
+    "explicacion": "La independencia física protege a la aplicación de cambios en el almacenamiento (discos, índices, métodos de acceso).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es un cambio lógico.",
+      "B": "Incorrecta. Eso es un cambio lógico (Regla 9).",
+      "C": "Correcta. Define la independencia física frente al almacenamiento.",
+      "D": "Incorrecta. Eso es un cambio lógico."
+    }
+  },
+  {
+    "pregunta": "Disponemos de una tabla con clave primaria (DNI, Cod_Curso). El atributo 'Nombre_Alumno' depende solo del 'DNI'. ¿En qué estado de normalización se encuentra?",
+    "opciones": [
+      "a) No cumple ni la 1FN.",
+      "b) Cumple la 1FN pero no la 2FN.",
+      "c) Cumple la 2FN pero no la 3FN.",
+      "d) Está en 3FN."
+    ],
+    "correcta": 1,
+    "explicacion": "Al existir una dependencia parcial (Nombre depende de un trozo de la clave), la tabla falla en la 2FN.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se asume que los datos son atómicos.",
+      "B": "Correcta. La dependencia parcial impide llegar a la 2FN.",
+      "C": "Incorrecta. Para ser 2FN la dependencia debe ser completa.",
+      "D": "Incorrecta. Falla en el escalón anterior."
+    }
+  },
+  {
+    "pregunta": "Respecto al valor NULL en una base de datos relacional, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "opciones": [
+      "a) Es equivalente al valor numérico 0.",
+      "b) Es equivalente a un espacio en blanco o cadena vacía.",
+      "c) Representa un valor desconocido o la ausencia de información.",
+      "d) Se permite su uso en cualquier atributo que forme parte de la clave primaria."
+    ],
+    "correcta": 2,
+    "explicacion": "NULL no es un valor, es una marca que indica que el dato no existe o se desconoce. La integridad de entidad prohíbe NULL en la PK.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El 0 es un valor conocido.",
+      "B": "Incorrecta. La cadena vacía tiene longitud, NULL no.",
+      "C": "Correcta. Es la definición semántica de NULL.",
+      "D": "Incorrecta. La clave primaria jamás puede ser NULL."
+    }
+  },
+  {
+    "pregunta": "Según METRICA v3, el número máximo de ocurrencias de cada tipo de entidad que pueden intervenir en una relación se denomina:",
+    "opciones": [
+      "a) Cardinalidad máxima.",
+      "b) Tipo de correspondencia.",
+      "c) Grado de la relación.",
+      "d) Dominio de participación."
+    ],
+    "correcta": 1,
+    "explicacion": "Métrica v3 distingue entre la cardinalidad (el intervalo) y el tipo de correspondencia (el número máximo global: 1:1, 1:N, N:M).",
+    "analisis_opciones": {
+      "A": "Incorrecta. La cardinalidad máxima es parte del intervalo de una entidad específica.",
+      "B": "Correcta. Es la definición exacta de la metodología para el máximo de cada entidad.",
+      "C": "Incorrecta. El grado cuenta entidades o atributos.",
+      "D": "Incorrecta. Término inexistente."
+    }
+  },
+  {
+    "pregunta": "En el contexto de las dependencias funcionales, si decimos que 'A determina funcionalmente a B' (A -> B), esto implica que:",
+    "opciones": [
+      "a) A cada valor de A le pueden corresponder varios valores de B.",
+      "b) A cada valor de A le corresponde un único valor de B.",
+      "c) Si cambia el valor de B, obligatoriamente cambia A.",
+      "d) B es la clave primaria de la relación."
+    ],
+    "correcta": 1,
+    "explicacion": "La dependencia funcional es una relación 1:1 desde el determinante hacia el dependiente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería una dependencia multivaluada.",
+      "B": "Correcta. Definición matemática de dependencia funcional.",
+      "C": "Incorrecta. La relación no es obligatoriamente bidireccional.",
+      "D": "Incorrecta. A es el determinante, no B."
+    }
+  },
+  {
+    "pregunta": "Si un atributo no clave depende de otro atributo no clave, y este último depende de la clave primaria, estamos ante una:",
+    "opciones": [
+      "a) Dependencia parcial.",
+      "b) Dependencia transitiva.",
+      "c) Dependencia completa.",
+      "d) Dependencia trivial."
+    ],
+    "correcta": 1,
+    "explicacion": "La dependencia transitiva es el 'puente' que rompe la 3FN (A -> B -> C).",
+    "analisis_opciones": {
+      "A": "Incorrecta. La parcial es respecto a una clave compuesta.",
+      "B": "Correcta. Define el salto indirecto hacia la clave.",
+      "C": "Incorrecta. Es lo opuesto a lo buscado.",
+      "D": "Incorrecta. Término que no aplica aquí."
+    }
+  },
+  {
+    "pregunta": "¿Qué nombre recibe en METRICA v3 cada ejemplar específico de una entidad que se almacena en la base de datos?",
+    "opciones": [
+      "a) Atributo.",
+      "b) Tipo de entidad.",
+      "c) Ocurrencia.",
+      "d) Dominio."
+    ],
+    "correcta": 2,
+    "explicacion": "La ocurrencia es el registro o instancia real (la fila con datos) de una entidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una propiedad de la entidad.",
+      "B": "Incorrecta. Es la definición abstracta (el molde).",
+      "C": "Correcta. Término técnico para el ejemplar real.",
+      "D": "Incorrecta. Es el conjunto de valores permitidos."
+    }
+  },
+  {
+    "pregunta": "Para representar una relación N:M (Muchos a Muchos) entre Alumnos y Asignaturas cumpliendo la 3FN, ¿qué estructura es necesaria?",
+    "opciones": [
+      "a) Incluir el ID_Asignatura como una lista en la tabla Alumnos.",
+      "b) Crear una tabla intermedia (puente) que relacione los IDs de ambos.",
+      "c) Incluir el ID_Alumno en la tabla Asignaturas.",
+      "d) Duplicar los datos de los alumnos por cada asignatura que cursen."
+    ],
+    "correcta": 1,
+    "explicacion": "Las relaciones N:M siempre requieren una tabla intermedia para evitar redundancia y cumplir la 1FN y 2FN.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Rompe la 1FN (Atomaticidad).",
+      "B": "Correcta. Es la solución estándar para relaciones N:M.",
+      "C": "Incorrecta. No resuelve el problema del 'Muchos'.",
+      "D": "Incorrecta. Crea redundancia masiva."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre las dependencias funcionales es FALSA?",
+    "opciones": [
+      "a) Son propiedades inherentes a la semántica de los datos.",
+      "b) Son invariantes en el tiempo.",
+      "c) Permiten representar todas las restricciones de integridad posibles.",
+      "d) Se utilizan para alcanzar los niveles de normalización."
+    ],
+    "correcta": 2,
+    "explicacion": "Las dependencias funcionales son potentes, pero hay restricciones (como las de dominio o las referenciales) que no cubren.",
+    "analisis_opciones": {
+      "A": "Verdadera. Nacen del significado de los datos.",
+      "B": "Verdadera. Son reglas de negocio fijas.",
+      "C": "Falsa (Correcta para marcar). No cubren todas las restricciones.",
+      "D": "Verdadera. Son la base de la 2FN y 3FN."
+    }
+  },{
+  "pregunta": "¿Cuál es el objetivo primordial de la teoría de la normalización dentro del diseño de bases de datos relacionales?",
+  "opciones": [
+    "a) Incrementar la redundancia de los datos para mejorar la velocidad de las consultas de lectura.",
+    "b) La eliminación de dependencias entre atributos que originen anomalías en la actualización y proporcionar una estructura más regular.",
+    "c) Establecer los métodos de acceso físico y la indexación en el nivel interno de la arquitectura de la base de datos.",
+    "d) Reducir el grado de las relaciones mediante la combinación de entidades independientes en una sola tabla."
+  ],
+  "correcta": 1,
+  "explicacion": "La normalización busca depurar el diseño lógico para evitar errores al actualizar datos (anomalías) y organizar las tablas de forma coherente, sirviendo de soporte fundamental al modelo relacional.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Ese es un objetivo de la desnormalización; la normalización busca minimizar la redundancia.",
+    "B": "Correcta. Recoge los dos pilares: evitar anomalías en los datos y mejorar la estructura de las tablas.",
+    "C": "Incorrecta. La normalización es una tarea de diseño lógico, no de implementación física.",
+    "D": "Incorrecta. Al normalizar, el número de tablas suele aumentar para separar correctamente los conceptos."
+  }
+},
+  {
+    "pregunta": "112. Un error común es afirmar que la normalización siempre mejora el rendimiento de la base de datos. ¿Cuál es la realidad técnica al respecto?",
+    "opciones": [
+      "a) La normalización siempre acelera las consultas al reducir el tamaño de las filas.",
+      "b) La normalización puede penalizar la velocidad de lectura, ya que fragmentar los datos obliga al sistema a realizar más operaciones JOIN (uniones).",
+      "c) La normalización solo afecta a la velocidad de inserción, no a la de lectura.",
+      "d) El rendimiento no tiene ninguna relación con la estructura lógica de las tablas."
+    ],
+    "correcta": 1,
+    "explicacion": "Aunque la normalización elimina redundancia, el precio a pagar es que para obtener una información completa hay que consultar varias tablas y unirlas, lo que consume más recursos de CPU que leer una sola tabla 'plana'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el mito más común.",
+      "B": "Correcta. Explica el coste real de rendimiento (los JOINs).",
+      "C": "Incorrecta. Afecta a ambas; suele mejorar la inserción pero puede ralentizar la lectura.",
+      "D": "Incorrecta. La estructura lógica es crítica para el rendimiento."
+    }
+  },
+  {
+    "pregunta": "113. ¿Por qué se considera que la normalización es una técnica de DISEÑO LÓGICO y no de diseño físico?",
+    "opciones": [
+      "a) Porque se ocupa de los índices y del particionamiento del disco duro.",
+      "b) Porque se basa en el hardware específico donde se instalará el SGBD.",
+      "c) Porque analiza las relaciones semánticas y dependencias entre datos, independientemente de cómo se almacenen en los bits del disco.",
+      "d) Porque el diseño lógico es el único nivel donde existen las claves primarias."
+    ],
+    "correcta": 2,
+    "explicacion": "La normalización trata sobre 'qué' datos dependen de otros según su significado (lógica). El diseño físico (índices, archivos, hardware) es un paso posterior que no cambia la forma normal de la tabla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es diseño físico.",
+      "B": "Incorrecta. La normalización es universal para cualquier hardware.",
+      "C": "Correcta. Se centra en la semántica y la estructura de la información.",
+      "D": "Incorrecta. Las claves existen en el modelo conceptual, lógico e interno."
+    }
+  },
+  {
+    "pregunta": "114. ¿Qué efecto estructural tiene habitualmente el proceso de normalización sobre el esquema de una base de datos?",
+    "opciones": [
+      "a) Tiende a disminuir el número total de tablas para simplificar el modelo.",
+      "b) Mantiene el mismo número de tablas pero reduce el número de registros.",
+      "c) Suele aumentar el número de tablas al descomponer entidades complejas en otras más simples y especializadas.",
+      "d) Elimina todas las relaciones para que cada tabla sea independiente."
+    ],
+    "correcta": 2,
+    "explicacion": "Normalizar implica 'romper' tablas con muchos atributos (anchas) en varias tablas con menos atributos (estrechas) relacionadas entre sí, lo que incrementa el número total de objetos en el esquema.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese sería un proceso de consolidación o desnormalización.",
+      "B": "Incorrecta. No afecta al número de registros, sino a cómo se distribuyen sus datos.",
+      "C": "Correcta. La descomposición es la herramienta básica de la normalización.",
+      "D": "Incorrecta. Sin relaciones no existiría el modelo relacional."
+    }
+  }
+  ,
+  {
+    "pregunta": "115. En la teoría de bases de datos, ¿qué significa formalmente la expresión $X \rightarrow Y$?",
+    "opciones": [
+      "a) Que el atributo X depende de los valores que tome el atributo Y.",
+      "b) Que a cada valor de X le corresponde un único valor de Y.",
+      "c) Que X e Y son claves primarias de la misma tabla.",
+      "d) Que el valor de Y siempre es mayor que el valor de X."
+    ],
+    "correcta": 1,
+    "explicacion": "La dependencia funcional $X \rightarrow Y$ establece que el valor de X determina de forma única el valor de Y. X es el determinante e Y es el atributo dependiente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es justo al revés; Y es el que depende de X.",
+      "B": "Correcta. Es la definición exacta de dependencia funcional.",
+      "C": "Incorrecta. Aunque las claves primarias son determinantes, la expresión no implica que ambas lo sean.",
+      "D": "Incorrecta. No tiene nada que ver con el valor matemático, sino con la correspondencia de datos."
+    }
+  },
+  {
+    "pregunta": "116. Si en una tabla de 'Vehículos' el número de bastidor determina el modelo del coche, ¿cuál es el término técnico para el número de bastidor?",
+    "opciones": [
+      "a) Determinante o implicante.",
+      "b) Atributo implicado o dependiente.",
+      "c) Dependencia transitiva.",
+      "d) Grupo repetitivo."
+    ],
+    "correcta": 0,
+    "explicacion": "En la relación $Bastidor \rightarrow Modelo$, el Bastidor es el que 'determina' el valor del Modelo, por lo que actúa como determinante o implicante.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el atributo que está a la izquierda de la flecha ($X$).",
+      "B": "Incorrecta. Ese sería el 'Modelo'.",
+      "C": "Incorrecta. La transitividad requiere un tercer atributo intermedio.",
+      "D": "Incorrecta. No tiene relación con el concepto de dependencia funcional."
+    }
+  },
+  {
+    "pregunta": "117. ¿Cuándo se dice que un atributo Y tiene una dependencia funcional COMPLETA respecto de un atributo compuesto X?",
+    "opciones": [
+      "a) Cuando Y depende de al menos uno de los atributos que forman X.",
+      "b) Cuando Y depende de X en su totalidad y no depende de ningún subconjunto de atributos que formen parte de X.",
+      "c) Cuando X depende de Y de forma transitiva a través de una clave ajena.",
+      "d) Cuando X e Y tienen el mismo número de registros en la tabla."
+    ],
+    "correcta": 1,
+    "explicacion": "La dependencia completa exige que el atributo dependiente necesite la clave compuesta entera para ser identificado, sin que baste con una parte de ella.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso definiría una dependencia parcial.",
+      "B": "Correcta. Es la definición técnica de dependencia funcional completa.",
+      "C": "Incorrecta. Eso se refiere a la 3FN y las transitividades.",
+      "D": "Incorrecta. No tiene sentido técnico en este contexto."
+    }
+  },
+  {
+    "pregunta": "118. En el proceso de normalización, ¿qué tipo de dependencia funcional se intenta eliminar para que una tabla pase de 1FN a 2FN?",
+    "opciones": [
+      "a) La dependencia funcional completa.",
+      "b) La dependencia funcional parcial.",
+      "c) La dependencia multivaluada.",
+      "d) La dependencia de unión."
+    ],
+    "correcta": 1,
+    "explicacion": "El objetivo de la 2FN es asegurar que todos los atributos no clave dependan de forma COMPLETA de la clave primaria, eliminando así las dependencias PARCIALES.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La completa es la que queremos mantener, no eliminar.",
+      "B": "Correcta. Las dependencias parciales son las que violan la 2FN.",
+      "C": "Incorrecta. Eso es propio de la 4FN.",
+      "D": "Incorrecta. Eso es propio de la 5FN."
+    }
+  }
+  ,
+  {
+    "pregunta": "119. Según la teoría de la normalización, ¿cuándo se dice que un atributo Z depende transitivamente de otro X?",
+    "opciones": [
+      "a) Cuando Z depende de X solo si X es una clave compuesta.",
+      "b) Cuando Z depende de X a través de un atributo intermedio Y ($X \rightarrow Y$ e $Y \rightarrow Z$).",
+      "c) Cuando X y Z son el mismo atributo con distinto nombre.",
+      "d) Cuando Z no tiene ninguna relación con los atributos de la clave primaria."
+    ],
+    "correcta": 1,
+    "explicacion": "La dependencia transitiva ocurre cuando un atributo no clave depende de otro atributo que tampoco es clave, formando una cadena de implicaciones desde la clave primaria.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso describe las dependencias parciales/completas.",
+      "B": "Correcta. Es la definición técnica de 'carambola' o puente entre atributos.",
+      "C": "Incorrecta. Eso sería un sinónimo o alias, no una dependencia.",
+      "D": "Incorrecta. Si no hubiera relación, no habría dependencia de ningún tipo."
+    }
+  },
+  {
+    "pregunta": "120. ¿Qué forma normal tiene como requisito principal la ELIMINACIÓN de las dependencias transitivas?",
+    "opciones": [
+      "a) Primera Forma Normal (1FN).",
+      "b) Segunda Forma Normal (2FN).",
+      "c) Tercera Forma Normal (3FN).",
+      "d) Forma Normal de Boyce-Codd (FNBC)."
+    ],
+    "correcta": 2,
+    "explicacion": "Una tabla está en 3FN si ya está en 2FN y se han eliminado todas las dependencias transitivas entre atributos no clave.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La 1FN se encarga de la atomicidad y grupos repetitivos.",
+      "B": "Incorrecta. La 2FN se encarga de las dependencias parciales.",
+      "C": "Correcta. Es el objetivo central del paso a la 3FN.",
+      "D": "Incorrecta. La FNBC es un paso más allá que analiza los determinantes."
+    }
+  },
+  {
+    "pregunta": "121. Según Métrica v3, ¿cómo se denomina a la estructura genérica de un conjunto de entidades que comparten las mismas características?",
+    "opciones": [
+      "a) Ocurrencia de entidad.",
+      "b) Tipo de entidad.",
+      "c) Relación fuerte.",
+      "d) Dominio de entidad."
+    ],
+    "correcta": 1,
+    "explicacion": "El 'Tipo de Entidad' es la definición abstracta o molde, mientras que la 'ocurrencia' es cada uno de los ejemplares específicos guardados.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La ocurrencia es el caso individual (la fila).",
+      "B": "Correcta. Es la definición técnica de la estructura genérica.",
+      "C": "Incorrecta. Las relaciones vinculan entidades, no las definen.",
+      "D": "Incorrecta. El dominio se refiere a los valores de los atributos."
+    }
+  },
+  {
+    "pregunta": "122. Dentro del modelo E/R de Métrica v3, una entidad cuya existencia depende de la presencia de otra entidad se denomina:",
+    "opciones": [
+      "a) Entidad regular.",
+      "b) Entidad abstracta.",
+      "c) Entidad débil.",
+      "d) Entidad subordinada."
+    ],
+    "correcta": 2,
+    "explicacion": "Las entidades débiles son aquellas que no pueden existir de forma independiente; su ciclo de vida está ligado a una entidad regular.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las regulares existen por sí mismas.",
+      "B": "Incorrecta. La abstracción es una característica del objeto, no de su dependencia.",
+      "C": "Correcta. Término estándar para entidades dependientes.",
+      "D": "Incorrecta. Aunque semánticamente parece correcto, el término técnico es 'débil'."
+    }
+  },
+  {
+    "pregunta": "123. ¿Cuál de las siguientes NO es una de las tres reglas que debe cumplir una entidad según Métrica v3?",
+    "opciones": [
+      "a) Tener existencia propia.",
+      "b) Cada ocurrencia debe poder distinguirse de las demás.",
+      "c) Todas las ocurrencias deben tener los mismos atributos.",
+      "d) El número de atributos debe ser siempre superior al número de relaciones."
+    ],
+    "correcta": 3,
+    "explicacion": "Métrica v3 exige existencia, distinción (unicidad) y homogeneidad de atributos. No establece ninguna norma sobre la cantidad de atributos frente a las relaciones.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es la primera regla de Métrica v3.",
+      "B": "Incorrecta. Es la segunda regla (principio de identidad).",
+      "C": "Incorrecta. Es la tercera regla (homogeneidad estructural).",
+      "D": "Correcta. Es una afirmación inventada que no figura en la metodología."
+    }
+  },
+  {
+    "pregunta": "124. Según Métrica v3, ¿cuándo se dice que una relación débil es de 'Dependencia en Identificación'?",
+    "opciones": [
+      "a) Cuando la entidad débil puede identificarse mediante sus propios atributos.",
+      "b) Cuando la entidad débil necesita el identificador de la entidad regular para poder ser identificada unívocamente.",
+      "c) Cuando la entidad regular depende de la existencia de la entidad débil.",
+      "d) Cuando la relación entre ambas entidades es obligatoria en ambos sentidos."
+    ],
+    "correcta": 1,
+    "explicacion": "En la dependencia en identificación, la entidad débil no tiene una clave primaria propia suficiente; necesita 'pedir prestada' la clave de la entidad fuerte para completarse.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería una dependencia solo en existencia.",
+      "B": "Correcta. Es la definición exacta de identificación compartida.",
+      "C": "Incorrecta. Es siempre la débil la que depende de la regular.",
+      "D": "Incorrecta. La obligatoriedad es un tema de cardinalidad, no de identificación."
+    }
+  },
+  {
+    "pregunta": "125. En el modelo E/R extendido de Métrica v3, una relación en la que la existencia del vínculo entre dos entidades impide que existan otros vínculos definidos se denomina:",
+    "opciones": [
+      "a) Relación reflexiva.",
+      "b) Relación de inclusión.",
+      "c) Relación exclusiva.",
+      "d) Relación de grado superior."
+    ],
+    "correcta": 2,
+    "explicacion": "Las relaciones exclusivas establecen una restricción de negocio donde elegir un camino de relación anula la posibilidad de elegir los otros para esa misma ocurrencia.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La reflexiva es de una entidad consigo misma.",
+      "B": "Incorrecta. La inclusión exige que exista una relación para que se dé otra.",
+      "C": "Correcta. Define la exclusión mutua entre relaciones.",
+      "D": "Incorrecta. El grado se refiere al número de entidades que participan."
+    }
+  },
+  {
+    "pregunta": "126. ¿Cómo define Métrica v3 el concepto de 'Tipo de Correspondencia'?",
+    "opciones": [
+      "a) Como el número mínimo de ocurrencias que participan en la relación.",
+      "b) Como el número máximo de ocurrencias de cada entidad que pueden intervenir en una ocurrencia de la relación.",
+      "c) Como la participación obligatoria u opcional de las entidades.",
+      "d) Como el nombre unívoco que distingue a la relación en el modelo."
+    ],
+    "correcta": 1,
+    "explicacion": "El tipo de correspondencia se fija exclusivamente en el límite máximo (1:1, 1:N, M:N) para categorizar la relación.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El mínimo lo define la cardinalidad (obligatoria/opcional).",
+      "B": "Correcta. Definición técnica de correspondencia máxima.",
+      "C": "Incorrecta. Eso es parte de la cardinalidad de participación.",
+      "D": "Incorrecta. Eso es simplemente el identificador de la relación."
+    }
+  },
+  {
+    "pregunta": "127. Según la cardinalidad, una relación es 'Opcional' cuando:",
+    "opciones": [
+      "a) Para toda ocurrencia existe al menos una ocurrencia del tipo asociado.",
+      "b) Para una ocurrencia puede existir o no (cero o varias) una ocurrencia del tipo asociado.",
+      "c) Los atributos de la relación pueden ser nulos.",
+      "d) La entidad es de tipo débil."
+    ],
+    "correcta": 1,
+    "explicacion": "La opcionalidad significa que el límite mínimo de la cardinalidad es cero; la relación no es obligatoria para que la entidad exista.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso define una relación obligatoria.",
+      "B": "Correcta. Refleja la posibilidad de existencia sin vínculo (mínimo 0).",
+      "C": "Incorrecta. No tiene que ver con los atributos nulos, sino con el vínculo.",
+      "D": "Incorrecta. Una entidad débil suele tener relaciones obligatorias, no opcionales."
+    }
+  },
+  {
+    "pregunta": "128. Según Métrica v3, ¿cómo se denomina el proceso de abstraer un tipo de entidad de nivel superior a partir de varios tipos de entidad de nivel inferior?",
+    "opciones": [
+      "a) Especialización.",
+      "b) Generalización.",
+      "c) Agregación.",
+      "d) Asociación."
+    ],
+    "correcta": 1,
+    "explicacion": "La generalización es un proceso ascendente (bottom-up) donde se identifican características comunes en subtipos para crear un supertipo que los agrupe.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La especialización es el proceso inverso (descendente).",
+      "B": "Correcta. Definición de abstracción hacia niveles superiores.",
+      "C": "Incorrecta. La agregación trata una relación como una entidad.",
+      "D": "Incorrecta. La asociación vincula dominios independientes."
+    }
+  },
+  {
+    "pregunta": "129. En el contexto de las jerarquías de Métrica v3, una 'Categoría' se define como:",
+    "opciones": [
+      "a) Un supertipo que se descompone en varios subtipos disjuntos.",
+      "b) Un subtipo que aparece como resultado de la unión de varios tipos de entidad (supertipos).",
+      "c) Una relación que asocia entidades de dominios independientes.",
+      "d) Un atributo derivado que debe ser eliminado por redundancia."
+    ],
+    "correcta": 1,
+    "explicacion": "La categoría permite que un solo subtipo herede de varios supertipos posibles (unión), como el caso de un 'Propietario' que puede ser 'Persona' o 'Empresa'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso describe una especialización estándar.",
+      "B": "Correcta. Es la definición técnica de subtipo unión.",
+      "C": "Incorrecta. Eso define la asociación.",
+      "D": "Incorrecta. No tiene relación con los atributos redundantes."
+    }
+  },
+  {
+    "pregunta": "130. ¿Qué técnica se utiliza en Métrica v3 para modelar una situación en la que es necesario relacionar un tipo de relación con un tipo de entidad?",
+    "opciones": [
+      "a) Desagregación.",
+      "b) Categorización múltiple.",
+      "c) Agregación.",
+      "d) Normalización de grado superior."
+    ],
+    "correcta": 2,
+    "explicacion": "Dado que el modelo E/R no permite relaciones entre relaciones, la agregación permite tratar un conjunto de entidades y su relación como una nueva entidad compuesta.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el proceso inverso.",
+      "B": "Incorrecta. Término inexistente en la metodología.",
+      "C": "Correcta. Solución estándar para el problema de 'relación de relación'.",
+      "D": "Incorrecta. La normalización es para el modelo lógico, no para el E/R."
+    }
+  },
+  {
+    "pregunta": "131. Respecto a la redundancia en el modelo E/R de Métrica v3, ¿qué debe hacerse con un atributo que se deriva de otros mediante un cálculo?",
+    "opciones": [
+      "a) Debe mantenerse siempre para mejorar el rendimiento de las consultas.",
+      "b) Debe eliminarse del modelo o marcarse explícitamente como redundante.",
+      "c) Debe convertirse obligatoriamente en una clave foránea.",
+      "d) Debe dar lugar a una nueva entidad débil."
+    ],
+    "correcta": 1,
+    "explicacion": "Métrica v3 busca la limpieza del modelo conceptual, exigiendo la eliminación o el marcado de elementos derivados para evitar incoherencias.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es una decisión de diseño físico, no conceptual.",
+      "B": "Correcta. Es la norma de Métrica v3 para mantener la integridad del modelo.",
+      "C": "Incorrecta. Las claves foráneas no tienen que ver con cálculos de atributos.",
+      "D": "Incorrecta. No justifica la creación de una entidad."
+    }
+  },{
+  "pregunta": "132. En el contexto de las jerarquías de un modelo Entidad/Relación, ¿qué función cumple el 'Atributo Discriminante'?",
+  "opciones": [
+    "a) Es el atributo que se utiliza como clave primaria en todos los subtipos.",
+    "b) Es el atributo del supertipo cuyos valores permiten distinguir a qué subtipo pertenece cada ocurrencia.",
+    "c) Es un atributo redundante que debe ser eliminado durante la normalización.",
+    "d) Es el identificador que vincula una entidad débil con una entidad regular."
+  ],
+  "correcta": 1,
+  "explicacion": "El discriminante es la propiedad que define la pertenencia a un subtipo específico dentro de una generalización o especialización.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Aunque los subtipos heredan la clave, el discriminante no tiene por qué ser la clave primaria.",
+    "B": "Correcta. Define la lógica de clasificación de la jerarquía.",
+    "C": "Incorrecta. No es redundante; es necesario para la semántica del modelo.",
+    "D": "Incorrecta. Eso describe el discriminante de una entidad débil (o clave parcial), pero en jerarquías su función es clasificar subtipos."
+  }
+},
+  {
+    "pregunta": "135. Según la notación de Métrica v3, ¿qué representa una doble línea entre el supertipo y el triángulo de la jerarquía?",
+    "opciones": [
+      "a) Que la jerarquía es parcial.",
+      "b) Que la jerarquía es total (cobertura total).",
+      "c) Que los subtipos son disjuntos.",
+      "d) Que se trata de una categoría o unión."
+    ],
+    "correcta": 1,
+    "explicacion": "La doble línea indica obligatoriedad: toda ocurrencia del supertipo debe pertenecer al menos a uno de los subtipos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La parcial se representa con línea simple.",
+      "B": "Correcta. Es la representación de jerarquía total.",
+      "C": "Incorrecta. Eso se indica con la letra 'd' dentro del triángulo.",
+      "D": "Incorrecta. Eso se indica con la letra 'U' y el triángulo invertido."
+    }
+  },
+  {
+    "pregunta": "136. En Métrica v3, el símbolo 'U' dentro de un triángulo invertido que conecta varios supertipos con un único subtipo representa:",
+    "opciones": [
+      "a) Una especialización disjunta.",
+      "b) Una generalización solapada.",
+      "c) Una Categoría o tipo unión.",
+      "d) Una agregación de entidades."
+    ],
+    "correcta": 2,
+    "explicacion": "La Categoría (U) se usa cuando un subtipo hereda de una unión de varios supertipos de distinta naturaleza (como Persona y Empresa).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Incorrecta.",
+      "C": "Correcta. Definición de subtipo unión.",
+      "D": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "137. Según las reglas de transformación de Métrica v3, en una relación 1:N, ¿en qué dirección se propaga el identificador?",
+    "opciones": [
+      "a) De la entidad de cardinalidad N a la entidad de cardinalidad 1.",
+      "b) De la entidad de cardinalidad 1 a la entidad de cardinalidad N.",
+      "c) Se crea una tabla intermedia con las claves de ambas entidades.",
+      "d) No se propaga nada, se mantienen independientes."
+    ],
+    "correcta": 1,
+    "explicacion": "En las relaciones 1:N, la clave primaria del lado '1' se añade como atributo en el lado 'N' para establecer el vínculo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso rompería la estructura de la tabla.",
+      "B": "Correcta. Es la regla básica de propagación de claves.",
+      "C": "Incorrecta. Eso solo se hace en relaciones M:N.",
+      "D": "Incorrecta. Sin propagación no habría relación entre las tablas."
+    }
+  },
+  {
+    "pregunta": "138. En la transformación de una relación 1:N de asociación, ¿qué rol cumple la clave propagada en la tabla de destino?",
+    "opciones": [
+      "a) Se convierte en la nueva Clave Primaria (PK).",
+      "b) Se convierte en una Clave Ajena (FK).",
+      "c) Se convierte en un atributo discriminante.",
+      "d) Se marca como atributo redundante y se elimina."
+    ],
+    "correcta": 1,
+    "explicacion": "En una asociación entre entidades regulares, la clave que viene de fuera actúa simplemente como referencia o Clave Ajena (Foreign Key).",
+    "analisis_opciones": {
+      "A": "Incorrecta. La tabla de destino ya tiene su propia PK.",
+      "B": "Correcta. Sirve para relacionar registros sin sustituir la identidad propia.",
+      "C": "Incorrecta. El discriminante es para jerarquías.",
+      "D": "Incorrecta. Es un dato esencial para el vínculo."
+    }
+  },
+  {
+    "pregunta": "139. Si transformamos una relación de dependencia 1:N (entidad fuerte y débil), ¿cómo se forma la Clave Primaria de la tabla resultante de la entidad débil?",
+    "opciones": [
+      "a) Solo con el identificador propio de la entidad débil.",
+      "b) Solo con el identificador de la entidad regular (fuerte).",
+      "c) Mediante la concatenación de los identificadores de ambas entidades.",
+      "d) Métrica v3 prohíbe que las entidades débiles tengan clave primaria."
+    ],
+    "correcta": 2,
+    "explicacion": "Al ser una entidad dependiente (en identificación), necesita unir su propio discriminador con la clave de su 'entidad madre' para ser única.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No sería suficiente para distinguir registros de distintos padres.",
+      "B": "Incorrecta. No distinguiría los diferentes hijos de un mismo padre.",
+      "C": "Correcta. Es la regla de formación de claves compuestas en entidades débiles.",
+      "D": "Incorrecta. Todas las tablas deben tener una PK."
+    }
+  },
+  {
+    "pregunta": "140. Según Métrica v3, ¿cómo debe tratarse la transformación de una relación con tipo de correspondencia 1:1?",
+    "opciones": [
+      "a) Como un caso particular de las relaciones 1:N, pudiendo propagar la clave en ambas direcciones.",
+      "b) Obligatoriamente creando una tabla intermedia para evitar nulos.",
+      "c) Propagando siempre la clave de la entidad más débil a la más fuerte.",
+      "d) Fusionando ambas entidades en una sola tabla de forma obligatoria."
+    ],
+    "correcta": 0,
+    "explicacion": "Métrica v3 considera el 1:1 como una variante del 1:N donde la propagación es flexible, pero requiere un análisis para elegir la dirección más eficiente.",
+    "analisis_opciones": {
+      "A": "Correcta. Es la definición técnica de la metodología.",
+      "B": "Incorrecta. La tabla intermedia es para relaciones M:N.",
+      "C": "Incorrecta. No existe tal norma fija; depende del análisis de nulos.",
+      "D": "Incorrecta. Se pueden mantener separadas según la semántica."
+    }
+  },
+  {
+    "pregunta": "141. ¿Cuál es el criterio principal de Métrica v3 al transformar relaciones 1:1 para decidir la dirección de la propagación de la clave?",
+    "opciones": [
+      "a) Minimizar el número de atributos de la base de datos.",
+      "b) Recoger la mayor semántica posible y evitar la aparición de valores nulos.",
+      "c) Asegurar que la clave siempre vaya a la entidad con menos registros.",
+      "d) Utilizar siempre la concatenación de ambos identificadores."
+    ],
+    "correcta": 1,
+    "explicacion": "El objetivo es que el diseño sea limpio (semántica) y eficiente (sin huecos NULL que desperdicien espacio o lógica).",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Son los dos pilares que menciona el texto.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta. Eso es para entidades débiles."
+    }
+  },
+  {
+    "pregunta": "142. Respecto a la transformación de las relaciones de agregación, Métrica v3 establece que:",
+    "opciones": [
+      "a) Se transforman mediante una tabla de unión M:N.",
+      "b) Se transforman del mismo modo que las relaciones 1:N.",
+      "c) Requieren obligatoriamente el uso de una categoría (U).",
+      "d) No son transformables al modelo relacional."
+    ],
+    "correcta": 1,
+    "explicacion": "La agregación, al ser una entidad compuesta, sigue la lógica de propagación estándar de las relaciones uno a muchos.",
+    "analisis_opciones": {
+      "A": "Incorrecta.",
+      "B": "Correcta. Simplifica la transformación siguiendo la regla del 1:N.",
+      "C": "Incorrecta.",
+      "D": "Incorrecta."
+    }
+  },{
+  "pregunta": "143. Según las reglas de transformación de Métrica v3, ¿cómo se debe tratar una relación con un tipo de correspondencia Muchos a Muchos (M:N)?",
+  "opciones": [
+    "a) Propagando el identificador de la entidad con más registros a la de menos.",
+    "b) Fusionando ambas entidades en una única tabla para evitar redundancias.",
+    "c) Creando una nueva tabla cuya clave primaria sea la concatenación de los identificadores de las entidades que relaciona.",
+    "d) Transformándola obligatoriamente en una relación 1:1."
+  ],
+  "correcta": 2,
+  "explicacion": "Las relaciones M:N no permiten la propagación simple; requieren una tabla intermedia que gestione los vínculos entre ambas entidades mediante sus claves primarias.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Eso solo se hace en las 1:N.",
+    "B": "Incorrecta. Eso perdería la independencia de las entidades.",
+    "C": "Correcta. Es la regla estándar para resolver el Muchos a Muchos.",
+    "D": "Incorrecta. El tipo de correspondencia no se puede cambiar arbitrariamente."
+  }
+},
+  {
+    "pregunta": "144. En la transformación de jerarquías, la opción de crear una tabla para el supertipo y una para cada subtipo (Opción A) es más aconsejable cuando:",
+    "opciones": [
+      "a) Los subtipos tienen pocos atributos y son muy parecidos entre sí.",
+      "b) Se busca la máxima eficiencia en el acceso a los datos eliminando JOINs.",
+      "c) Los subtipos tienen muchos atributos distintos y se desea conservar la semántica original.",
+      "d) La jerarquía es siempre de tipo solapada (O)."
+    ],
+    "correcta": 2,
+    "explicacion": "La Opción A mantiene la estructura lógica del modelo E/R, siendo ideal cuando la especialización es profunda y compleja.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Para eso es mejor la Opción C.",
+      "B": "Incorrecta. Para eso es mejor la Opción B.",
+      "C": "Correcta. Es la solución que mejor refleja el modelo conceptual.",
+      "D": "Incorrecta. Se puede aplicar a cualquier tipo de jerarquía."
+    }
+  },
+  {
+    "pregunta": "145. ¿Cuál es la principal ventaja de la Opción B (crear una tabla para cada subtipo con los atributos comunes repetidos)?",
+    "opciones": [
+      "a) Mejora la eficiencia en los accesos al evitar uniones (JOINs) entre el supertipo y el subtipo.",
+      "b) Reduce el espacio ocupado en disco al no repetir atributos.",
+      "c) Facilita la integridad referencial al centralizar los datos en el supertipo.",
+      "d) Es la única opción válida para jerarquías parciales."
+    ],
+    "correcta": 0,
+    "explicacion": "Al tener todos los datos (comunes y específicos) en la misma tabla del subtipo, las consultas son mucho más directas y rápidas.",
+    "analisis_opciones": {
+      "A": "Correcta. Es una solución orientada al rendimiento de lectura.",
+      "B": "Incorrecta. Al revés, puede ocupar más al repetir campos comunes.",
+      "C": "Incorrecta. La integridad es más difícil de gestionar sin una tabla padre única.",
+      "D": "Incorrecta. Es válida para cualquier jerarquía."
+    }
+  },
+  {
+    "pregunta": "146. Si aplicamos la Opción C (una sola tabla para toda la jerarquía), ¿qué requisito establece Métrica v3 si la jerarquía es TOTAL?",
+    "opciones": [
+      "a) Que todos los atributos de los subtipos sean obligatorios (NOT NULL).",
+      "b) Que el atributo discriminante no pueda tomar valores nulos.",
+      "c) Que la tabla no tenga clave primaria.",
+      "d) Que se deban crear índices para cada subtipo por separado."
+    ],
+    "correcta": 1,
+    "explicacion": "Si la jerarquía es total, cada registro debe pertenecer obligatoriamente a un subtipo; por tanto, el campo que indica el tipo (discriminante) debe estar relleno siempre.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Los atributos específicos de otros subtipos seguirán siendo NULL.",
+      "B": "Correcta. Es la restricción lógica para garantizar la totalidad de la jerarquía.",
+      "C": "Incorrecta. Toda tabla requiere una PK.",
+      "D": "Incorrecta. Es una recomendación de diseño físico, no una regla de transformación lógica."
+    }
   }
 ]
+
+
+
+
+
+
+
+
+
+
 

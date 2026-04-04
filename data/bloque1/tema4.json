@@ -774,7 +774,7 @@
   {
     "pregunta": "¿Qué mayoría requiere el nombramiento del Presidente del CTBG?",
     "opciones": ["Simple.", "Absoluta.", "Voto favorable de la Comisión parlamentaria correspondiente.", "Unanimidad."],
-    "correcta": 2,
+    "correcta": 1,
     "explicacion": "Art. 37 Ley 19/2013: Previa comparecencia ante la Comisión del Congreso."
   },
   {

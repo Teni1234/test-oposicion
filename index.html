@@ -21,19 +21,17 @@
         .caja-repaso.fallo { border-left-color: #ff4757; }
         .caja-repaso.blanco { border-left-color: #a4b0be; }
 
-        /* Estilo mejorado para la lista de temas con scroll */
         #contenedor-temas { 
             background: var(--sidebar-input-bg); 
             border: 1px solid var(--sidebar-border); 
             border-radius: 8px; 
             padding: 10px; 
-            max-height: 250px; /* Un poco más de espacio */
+            max-height: 250px; 
             overflow-y: auto; 
             margin-bottom: 20px; 
             color: var(--sidebar-text-sec); 
         }
 
-        /* Badge de conteo automático */
         .badge-conteo {
             font-size: 0.7rem;
             color: #ffffff;
@@ -65,7 +63,7 @@
 
         <label>Temas</label>
         <div id="contenedor-temas">
-            <p style="font-size: 0.8rem; text-align: center; padding: 10px;">Selecciona un bloque para ver los temas disponibles y su número de preguntas.</p>
+            <p style="font-size: 0.8rem; text-align: center; padding: 10px;">Selecciona un bloque para ver los temas disponibles.</p>
         </div>
 
         <div style="display: flex; gap: 10px; margin-bottom: 15px;">
@@ -95,6 +93,8 @@
 
         <button onclick="iniciar()" style="background: #3742fa; margin-top: 25px;">▶ EMPEZAR TEST</button>
         <button onclick="mostrarDashboard()" style="background: #2ed573; margin-top: 10px; color: #2f3542; font-weight: bold;">📊 VER MI PROGRESO</button>
+        
+        <button id="btn-rescatar-fallos" onclick="iniciarTestFallos()" style="display:none; background-color: #ff9f43; margin-top: 10px; color: #2f3542; font-weight: bold;">🚀 REPASAR FALLOS GUARDADOS</button>
         
         <div id="resultado" style="margin-top: 25px; font-weight: bold; text-align: center;"></div>
     </div>
@@ -144,7 +144,6 @@
 <script src="app.js?v=20"></script>
 
 <script>
-    // Registro de PWA
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('./sw.js').catch(err => console.log('Error sw:', err));

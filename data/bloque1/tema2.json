@@ -738,5 +738,183 @@
     ],
     "correcta": 1,
     "explicacion": "LO 3/1981, Art. 15.3: Las decisiones sobre la admisión o inadmisión de las quejas presentadas no serán susceptibles de recurso."
+  },{
+  "pregunta": "T2-2. Según el artículo 66.2 de la Constitución Española, ¿cuál de las siguientes NO es una función expresa de las Cortes Generales?",
+  "opciones": [
+    "a) Ejercer la potestad legislativa del Estado.",
+    "b) Elaborar los Presupuestos Generales del Estado.",
+    "c) Controlar la acción del Gobierno.",
+    "d) Aprobar los Presupuestos Generales del Estado."
+  ],
+  "correcta": 1,
+  "explicacion": "El Artículo 66.2 dice que las Cortes 'aprueban' los presupuestos. La 'elaboración' le corresponde al Gobierno (Art. 134.1).",
+  "analisis_opciones": {
+    "a)": "Incorrecta. Es su función principal.",
+    "b)": "Correcta. Esta es la trampa: las Cortes aprueban, el Gobierno elabora.",
+    "c)": "Incorrecta. Es una función constitucional básica de las Cortes.",
+    "d)": "Incorrecta. Es una de las funciones citadas literalmente en el 66.2."
   }
+},{
+  "pregunta": "T2-4. Según la LOREG, ¿cuántos Diputados se eligen actualmente y cuál es el mínimo inicial asignado a cada circunscripción provincial?",
+  "opciones": [
+    "a) 300 diputados y un mínimo de 1 por provincia.",
+    "b) 400 diputados y un mínimo de 3 por provincia.",
+    "c) 350 diputados y un mínimo de 2 por provincia.",
+    "d) 350 diputados y un mínimo de 1 por provincia."
+  ],
+  "correcta": 2,
+  "explicacion": "La LOREG fija en 350 el número de Diputados y asigna un mínimo inicial de 2 por provincia (Ceuta y Melilla tienen 1 cada una).",
+  "analisis_opciones": {
+    "a)": "Incorrecta. 300 es el mínimo constitucional, no el legal actual.",
+    "b)": "Incorrecta. 400 es el máximo constitucional.",
+    "c)": "Correcta. Son las cifras exactas marcadas por la ley electoral vigente.",
+    "d)": "Incorrecta. El mínimo de 1 es solo para Ceuta y Melilla, no para las provincias."
+  }
+},{
+  "pregunta": "T2-5. Según el artículo 68.6 de la Constitución, ¿cuál es el plazo máximo para que el Congreso electo sea convocado tras la celebración de las elecciones?",
+  "opciones": [
+    "a) Dentro de los 15 días siguientes.",
+    "b) Entre los 30 y los 60 días siguientes.",
+    "c) Dentro de los 25 días siguientes.",
+    "d) A los 4 años de la terminación del mandato."
+  ],
+  "correcta": 2,
+  "explicacion": "El Artículo 68.6 establece que el Congreso electo deberá ser convocado dentro de los veinticinco días siguientes a la celebración de las elecciones.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. 15 días es la duración máxima de la campaña electoral (LOREG).",
+    "b)": "Incorrecta. Ese es el plazo para celebrar las elecciones tras el fin del mandato.",
+    "c)": "Correcta. Es el plazo constitucional para la sesión constitutiva.",
+    "d)": "Incorrecta. Esa es la duración del mandato parlamentario."
+  }
+},{
+  "pregunta": "T2-6. ¿A qué órgano corresponde específicamente la declaración del estado de sitio según el artículo 116 de la Constitución?",
+  "opciones": [
+    "a) Al Gobierno mediante Real Decreto.",
+    "b) A las Cortes Generales por mayoría absoluta.",
+    "c) Al Congreso de los Diputados por mayoría absoluta.",
+    "d) Al Rey a propuesta del Presidente del Gobierno."
+  ],
+  "correcta": 2,
+  "explicacion": "El estado de sitio será declarado por la mayoría absoluta del Congreso de los Diputados, a propuesta exclusiva del Gobierno.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. El Gobierno declara alarma y excepción, pero no el de sitio.",
+    "b)": "Incorrecta. No son las dos cámaras, es solo el Congreso.",
+    "c)": "Correcta. Es una función exclusiva y específica de la Cámara Baja.",
+    "d)": "Incorrecta. El Rey no tiene potestad para declarar estados de emergencia."
+  }
+},{
+  "pregunta": "T2-14. ¿Qué órgano judicial es competente para conocer las causas penales contra Diputados y Senadores?",
+  "opciones": [
+    "a) La Sala de lo Civil del Tribunal Supremo.",
+    "b) El Tribunal Constitucional.",
+    "c) La Sala de lo Penal del Tribunal Supremo.",
+    "d) El Tribunal Superior de Justicia de su Comunidad Autónoma."
+  ],
+  "correcta": 2,
+  "explicacion": "El Artículo 71.3 establece que en las causas contra Diputados y Senadores será competente la Sala de lo Penal del Tribunal Supremo.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. La Sala de lo Civil no juzga delitos penales.",
+    "b)": "Incorrecta. El TC no juzga delitos, solo la constitucionalidad de las normas.",
+    "c)": "Correcta. Es el órgano y la sala específicos que marca la Constitución.",
+    "d)": "Incorrecta. El TSJ es para diputados autonómicos, no para los de las Cortes Generales."
+  }
+},{
+  "pregunta": "T2-15. Según el artículo 72.2 de la Constitución, ¿quién presidirá las sesiones conjuntas de las Cámaras de las Cortes Generales?",
+  "opciones": [
+    "a) El Rey.",
+    "b) El Presidente del Senado.",
+    "c) El Presidente del Congreso.",
+    "d) Alternativamente, el Presidente del Congreso y el del Senado."
+  ],
+  "correcta": 2,
+  "explicacion": "El Artículo 72.2 establece claramente que 'las sesiones conjuntas serán presididas por el Presidente del Congreso'.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. El Rey no preside las cámaras, aunque las abra solemnemente.",
+    "b)": "Incorrecta. El Presidente del Senado solo preside su cámara.",
+    "c)": "Correcta. Es la respuesta literal de la Constitución.",
+    "d)": "Incorrecta. No existe rotación en la presidencia de las sesiones conjuntas."
+  }
+},{
+  "pregunta": "T2-17. Según el artículo 75.3 de la Constitución, ¿cuál de las siguientes materias PUEDE ser delegada para su aprobación en una Comisión Legislativa Permanente?",
+  "opciones": [
+    "a) La reforma constitucional.",
+    "b) Los Presupuestos Generales del Estado.",
+    "c) Una Ley de Bases.",
+    "d) Una Ley Ordinaria sobre seguridad vial."
+  ],
+  "correcta": 3,
+  "explicacion": "El Artículo 75.3 excluye expresamente de la delegación la reforma constitucional, las cuestiones internacionales, leyes orgánicas, leyes de bases y los Presupuestos. Por tanto, una ley ordinaria sí es delegable.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. Es una de las excepciones prohibidas por el 75.3.",
+    "b)": "Incorrecta. Los presupuestos siempre los vota el Pleno.",
+    "c)": "Incorrecta. Las Leyes de Bases no pueden delegarse en comisión.",
+    "d)": "Correcta. Al no estar en la lista de excepciones, se puede delegar su aprobación."
+  }
+},{
+  "pregunta": "T2-18. Según el artículo 76.1 de la Constitución, ¿qué valor tienen las conclusiones de una Comisión de Investigación para los Tribunales?",
+  "opciones": [
+    "a) Son vinculantes para los Jueces y Tribunales.",
+    "b) Tienen valor de sentencia firme.",
+    "c) No serán vinculantes para los Tribunales ni afectarán a las resoluciones judiciales.",
+    "d) Deben ser ratificadas por el Tribunal Supremo para tener validez."
+  ],
+  "correcta": 2,
+  "explicacion": "El Artículo 76.1 establece claramente que las conclusiones de estas comisiones 'no serán vinculantes para los Tribunales, ni afectarán a las resoluciones judiciales'.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. La función legislativa y la judicial están separadas.",
+    "b)": "Incorrecta. Solo los jueces dictan sentencias.",
+    "c)": "Correcta. Es la independencia judicial marcada por la Constitución.",
+    "d)": "Incorrecta. No necesitan ratificación, simplemente no tienen efectos jurídicos en los procesos penales."
+  }
+},{
+  "pregunta": "T2-19. Según el artículo 78.1 de la Constitución, ¿cuál es el número mínimo de miembros que debe tener la Diputación Permanente en cada Cámara?",
+  "opciones": [
+    "a) 15 miembros.",
+    "b) 21 miembros.",
+    "c) 25 miembros.",
+    "d) No hay un número mínimo, depende de la importancia numérica de los grupos.",
+    "e) 350 miembros."
+  ],
+  "correcta": 1,
+  "explicacion": "El Artículo 78.1 establece literalmente que en cada Cámara habrá una Diputación Permanente compuesta por un mínimo de veintiún miembros.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. Es un número inferior al legal.",
+    "b)": "Correcta. Es el número mínimo constitucional para que sea representativa.",
+    "c)": "Incorrecta. Es un número superior al mínimo exigido.",
+    "d)": "Incorrecta. Aunque la composición es proporcional, el mínimo de 21 es fijo.",
+    "e)": "Incorrecta. Ese es el total de diputados del Congreso."
+  }
+},{
+  "pregunta": "T2-20. En caso de que transcurran dos meses desde la primera votación de investidura sin que ningún candidato sea elegido Presidente del Gobierno (Art. 99), ¿quién debe refrendar el Real Decreto de disolución de las Cámaras que expida el Rey?",
+  "opciones": [
+    "a) El Presidente del Gobierno en funciones.",
+    "b) El Presidente del Senado.",
+    "c) El Presidente del Congreso de los Diputados.",
+    "d) El Presidente del Tribunal Constitucional."
+  ],
+  "correcta": 2,
+  "explicacion": "Es la excepción recogida en el Título IV y mencionada en tus apuntes: en la disolución por el Art. 99, el refrendo corresponde al Presidente del Congreso.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. Normalmente es él, pero no en este caso de bloqueo.",
+    "b)": "Incorrecta. El Presidente del Senado nunca refrenda la disolución.",
+    "c)": "Correcta. Es una función específica del Presidente del Congreso en situaciones de bloqueo de investidura.",
+    "d)": "Incorrecta. El TC no tiene funciones de refrendo regio."
+  }
+},{
+  "pregunta": "T2-23. ¿Quién NO tiene potestad para solicitar la celebración de una sesión extraordinaria de las Cámaras según el artículo 73.2 de la Constitución?",
+  "opciones": [
+    "a) El Gobierno.",
+    "b) El Rey.",
+    "c) La Diputación Permanente.",
+    "d) La mayoría absoluta de los miembros de cualquiera de las Cámaras."
+  ],
+  "correcta": 1,
+  "explicacion": "El Artículo 73.2 establece que las sesiones extraordinarias serán convocadas a petición del Gobierno, de la Diputación Permanente o de la mayoría absoluta de los miembros de cualquiera de las Cámaras. El Rey no tiene esta potestad.",
+  "analisis_opciones": {
+    "a)": "Incorrecta. El Gobierno puede solicitarla.",
+    "b)": "Correcta. El Rey convoca la sesión constitutiva, pero no solicita sesiones extraordinarias.",
+    "c)": "Incorrecta. La Diputación Permanente es uno de los órganos legitimados.",
+    "d)": "Incorrecta. Es el requisito de quórum necesario para que los parlamentarios la soliciten."
+  }
+}
 ]

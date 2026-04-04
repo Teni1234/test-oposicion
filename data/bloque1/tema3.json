@@ -1109,5 +1109,226 @@
     ],
     "correcta": 1,
     "explicacion": "Art. 102 CE."
+  },
+  {
+    "pregunta": "¿Quiénes integran formalmente el Gobierno según el Art. 98 CE?",
+    "opciones": [
+      "Presidente, Vicepresidentes, Ministros y Secretarios de Estado.",
+      "Presidente, Vicepresidentes (en su caso), Ministros y demás miembros por ley.",
+      "Presidente, Ministros y Subsecretarios.",
+      "Únicamente el Presidente y los Ministros con cartera."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 98.1 CE."
+  },
+  {
+    "pregunta": "¿Quién nombra formalmente a los Ministros del Gobierno?",
+    "opciones": [
+      "El Presidente del Gobierno por Real Decreto.",
+      "El Rey, a propuesta del Presidente del Gobierno.",
+      "El Consejo de Ministros.",
+      "El Presidente del Congreso de los Diputados."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 100 CE."
+  },
+  {
+    "pregunta": "¿Tiempo entre la primera y segunda votación de investidura?",
+    "opciones": [
+      "24 horas.",
+      "48 horas.",
+      "72 horas.",
+      "5 días."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 99.3 CE."
+  },
+  {
+    "pregunta": "¿Qué órgano realiza el archivo y custodia de las actas del Consejo de Ministros?",
+    "opciones": [
+      "SGT del Ministerio de la Presidencia.",
+      "Ministro de la Presidencia.",
+      "El Secretariado del Gobierno.",
+      "La Comisión General de Secretarios y Subsecretarios."
+    ],
+    "correcta": 2,
+    "explicacion": "Ley 50/1997."
+  },
+  {
+    "pregunta": "Sobre las Comisiones Delegadas del Gobierno es cierto que:",
+    "opciones": [
+      "Se crean por Ley Orgánica.",
+      "Los Secretarios de Estado pueden formar parte de ellas.",
+      "Sus deliberaciones son públicas.",
+      "No agotan la vía administrativa."
+    ],
+    "correcta": 1,
+    "explicacion": "Ley 50/1997."
+  },
+  {
+    "pregunta": "¿Cuál es la función de la Comisión General de Secretarios y Subsecretarios?",
+    "opciones": [
+      "Aprobar Decretos-Leyes.",
+      "Nombrar a los Directores Generales.",
+      "Preparar las sesiones del Consejo de Ministros.",
+      "Resolver conflictos entre Ministerios."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 8 Ley 50/1997."
+  },
+  {
+    "pregunta": "¿Qué facultad mantiene el Gobierno mientras está en funciones?",
+    "opciones": [
+      "Aprobar el proyecto de Ley de Presupuestos.",
+      "Presentar proyectos de ley al Congreso.",
+      "Gestionar el despacho ordinario de asuntos públicos.",
+      "Proponer la convocatoria de un referéndum."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 21 Ley 50/1997."
+  },
+  {
+    "pregunta": "La acusación por traición del Gobierno requiere la aprobación de:",
+    "opciones": [
+      "Mayoría simple del Congreso.",
+      "Mayoría absoluta del Congreso.",
+      "2/3 partes de las Cortes.",
+      "Unanimidad de la Mesa."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 102.2 CE."
+  },
+  {
+    "pregunta": "¿Ante qué sala del TS se exige la responsabilidad criminal del Gobierno?",
+    "opciones": [
+      "Sala de lo Civil.",
+      "Sala de lo Contencioso-Administrativo.",
+      "Sala de lo Penal (Segunda).",
+      "Sala de lo Social."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 102.1 CE."
+  },
+  {
+    "pregunta": "Según la responsabilidad política solidaria del Gobierno:",
+    "opciones": [
+      "El Congreso puede cesar a un Ministro individual.",
+      "Si el Presidente dimite, los Ministros continúan.",
+      "Responde de su gestión conjuntamente ante el Congreso.",
+      "Responde individualmente ante el Senado."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 108 CE."
+  },
+  {
+    "pregunta": "¿Qué carácter tiene la existencia de las Secretarías de Estado en los Ministerios?",
+    "opciones": [
+      "Obligatorio en todos los casos.",
+      "Necesario si hay más de dos Subsecretarías.",
+      "Potestativo.",
+      "Solo obligatorio en el Ministerio de la Presidencia."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 58.1 LRJSP: 'En los Ministerios pueden existir...'"
+  },
+  {
+    "pregunta": "¿Quién refrenda el nombramiento del Presidente del Gobierno tras la investidura?",
+    "opciones": [
+      "El Presidente saliente.",
+      "El Presidente del Congreso.",
+      "El Ministro de la Presidencia.",
+      "El Rey."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 64.1 CE y Art. 99 CE."
+  },
+  {
+    "pregunta": "¿Puede un Secretario de Estado ser miembro del Congreso o del Senado?",
+    "opciones": [
+      "No, es incompatible con cualquier cargo electivo.",
+      "Sí, pueden ostentar la condición de parlamentarios.",
+      "Solo si renuncian a su sueldo de Secretario de Estado.",
+      "Solo en el caso del Secretario de Estado de Relaciones con las Cortes."
+    ],
+    "correcta": 1,
+    "explicacion": "Ley 50/1997: Pueden ostentar la condición de parlamentarios."
+  },
+  {
+    "pregunta": "¿Quién propone la creación de las Comisiones Delegadas del Gobierno?",
+    "opciones": [
+      "El Ministro de la Presidencia.",
+      "El Rey.",
+      "El Presidente del Gobierno.",
+      "El Consejo de Ministros directamente."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 6.2 Ley 50/1997: Por RD del Consejo de Ministros, a propuesta del Presidente."
+  },
+  {
+    "pregunta": "¿Cuándo empieza a contar el plazo de dos meses para la disolución de las Cortes si no hay investidura?",
+    "opciones": [
+      "Desde el día de las Elecciones Generales.",
+      "Desde que el Rey propone al primer candidato.",
+      "Desde la primera votación de investidura.",
+      "Desde que se constituyen las Cámaras."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 99.5 CE."
+  },
+  {
+    "pregunta": "Sobre los Gabinetes (asesores), ¿cuál de estas afirmaciones es cierta?",
+    "opciones": [
+      "Pueden adoptar actos administrativos oficiales.",
+      "Sus miembros no cesan cuando cesa su Ministro.",
+      "Realizan tareas de confianza y asesoramiento.",
+      "Son siempre funcionarios de carrera de nivel 30."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 10 Ley 50/1997: Tareas de confianza, no pueden adoptar actos administrativos."
+  },
+  {
+    "pregunta": "¿Quién decide la suplencia de los Ministros para el despacho ordinario?",
+    "opciones": [
+      "El Rey por Real Decreto.",
+      "El propio Ministro que va a ser suplido.",
+      "El Presidente del Gobierno.",
+      "El Vicepresidente Primero."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 13 Ley 50/1997: Se determina por RD del Presidente del Gobierno."
+  },
+  {
+    "pregunta": "¿Quién preside la Comisión General de Secretarios de Estado y Subsecretarios?",
+    "opciones": [
+      "El Presidente del Gobierno.",
+      "Un Vicepresidente o, en su defecto, el Ministro de la Presidencia.",
+      "El Secretario de Estado de Administración Pública.",
+      "El Ministro más antiguo."
+    ],
+    "correcta": 1,
+    "explicacion": "Art. 8.2 Ley 50/1997."
+  },
+  {
+    "pregunta": "La disolución de las Cortes (Art. 115) se propone bajo la exclusiva responsabilidad de:",
+    "opciones": [
+      "El Consejo de Ministros.",
+      "El Rey.",
+      "El Presidente del Gobierno.",
+      "El Presidente del Congreso y del Senado conjuntamente."
+    ],
+    "correcta": 2,
+    "explicacion": "Art. 115 CE: 'previa deliberación del Consejo de Ministros, y bajo su exclusiva responsabilidad'."
+  },
+  {
+    "pregunta": "¿A quién corresponde la Secretaría de la Comisión General de Secretarios de Estado y Subsecretarios?",
+    "opciones": [
+      "Al Secretario de Estado de la Presidencia.",
+      "Al Subsecretario de la Presidencia.",
+      "Al Ministro de la Presidencia.",
+      "Al Secretariado del Gobierno."
+    ],
+    "correcta": 1,
+    "explicacion": "Real Decreto 199/2012."
   }
 ]
+
