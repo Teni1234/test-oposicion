@@ -4995,5 +4995,1420 @@
       "C": "Correcta. Es el estándar para el firmware UEFI.",
       "D": "Incorrecta. Formato estándar de aplicaciones de usuario en Windows."
     }
+  },{
+  "pregunta": "¿Qué comando de Linux permite activar o habilitar un dispositivo o archivo para ser utilizado como espacio de intercambio (SWAP) de forma dinámica?",
+  "opciones": [
+    "a) mkswap /dev/sdb1",
+    "b) swapon /dev/sdb1",
+    "c) swapoff -a",
+    "d) free -m"
+  ],
+  "correcta": 1,
+  "explicacion": "El comando 'swapon' se utiliza para activar dispositivos y archivos para la paginación y el intercambio, permitiendo gestionar la memoria virtual sin reiniciar el sistema.",
+  "analisis_opciones": {
+    "A": "Incorrecta. 'mkswap' se usa para formatear la partición como swap, pero no la activa para su uso inmediato.",
+    "B": "Correcta. Es el comando específico para habilitar el área de intercambio en el kernel.",
+    "C": "Incorrecta. 'swapoff' realiza la acción contraria: desactiva el espacio de intercambio.",
+    "D": "Incorrecta. 'free -m' solo muestra el estado actual de la memoria RAM y SWAP en megabytes."
+  }
+},{
+    "pregunta": "¿Cuál es el proceso que recibe el PID 1 durante el arranque de un sistema Unix/Linux y actúa como el 'padre' de todos los procesos de usuario?",
+    "opciones": [
+      "a) Swapper",
+      "b) Init / systemd",
+      "c) Page Daemon",
+      "d) Shell (bash)"
+    ],
+    "correcta": 1,
+    "explicacion": "El proceso 'init' (o 'systemd' en versiones modernas) es el primer proceso que se ejecuta en modo usuario tras el arranque del kernel y es el antecesor de todos los demás procesos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El Swapper tiene asignado el PID 0 y gestiona el intercambio de memoria.",
+      "B": "Correcta. Es el proceso raíz de la jerarquía de procesos; si muere, el sistema se detiene.",
+      "C": "Incorrecta. El Page Daemon suele tener el PID 2 y se encarga de la paginación de memoria.",
+      "D": "Incorrecta. El Shell es un proceso hijo que se lanza mucho después del proceso de inicialización."
+    }
+  },{
+    "pregunta": "¿Qué componente de UNIX actúa como una capa de abstracción permitiendo que el kernel se comunique con diferentes tipos de sistemas de archivos de forma transparente para el usuario?",
+    "opciones": [
+      "a) NFS (Network File System)",
+      "b) FFS (Fast File System)",
+      "c) VFS (Virtual File System)",
+      "d) RFS (Remote File System)"
+    ],
+    "correcta": 2,
+    "explicacion": "El VFS (Virtual File System) es una interfaz que traduce las llamadas del sistema estándar (como open o read) al lenguaje específico de cada sistema de archivos (EXT4, NTFS, etc.).",
+    "analisis_opciones": {
+      "A": "Incorrecta. NFS es específicamente para archivos a través de red.",
+      "B": "Incorrecta. FFS es un sistema de archivos físico concreto de Berkeley.",
+      "C": "Correcta. Es la capa de abstracción 'universal' de SVR4.",
+      "D": "Incorrecta. RFS es un sistema de red antiguo de AT&T."
+    }
+  },{
+    "pregunta": "Si un administrador se encuentra en el directorio '/etc/network' y desea acceder al archivo 'hosts' ubicado en '/etc', ¿cuál sería la ruta RELATIVA correcta?",
+    "opciones": [
+      "a) /etc/hosts",
+      "b) ./hosts",
+      "c) ../hosts",
+      "d) hosts/"
+    ],
+    "correcta": 2,
+    "explicacion": "En las rutas relativas, '..' representa el directorio padre. Como el usuario está en '/etc/network', subir un nivel con '..' le sitúa en '/etc', donde se encuentra el archivo 'hosts'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es una ruta absoluta porque empieza por '/'.",
+      "B": "Incorrecta. './' hace referencia al directorio actual ('/etc/network').",
+      "C": "Correcta. Sube un nivel al directorio padre y busca el archivo ahí.",
+      "D": "Incorrecta. No es una sintaxis válida para subir de nivel."
+    }
+  },{
+    "pregunta": "¿En qué directorio de un sistema Linux se almacenan los archivos de configuración de todo el sistema y de las aplicaciones instaladas?",
+    "opciones": [
+      "a) /bin",
+      "b) /home",
+      "c) /etc",
+      "d) /usr"
+    ],
+    "correcta": 2,
+    "explicacion": "El directorio /etc es el repositorio estándar para todos los archivos de configuración del sistema operativo y los servicios.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Contiene los binarios ejecutables básicos.",
+      "B": "Incorrecta. Es el lugar para los datos personales de los usuarios.",
+      "C": "Correcta. Es donde se guardan los ficheros de configuración (ej. passwd, hosts).",
+      "D": "Incorrecta. Contiene recursos y programas para los usuarios, pero no configuraciones críticas."
+    }
+  },{
+    "pregunta": "¿Cuál es la principal característica que diferencia a los dispositivos de bloque (como un disco duro) de los dispositivos de carácter en un sistema UNIX/Linux?",
+    "opciones": [
+      "a) Los dispositivos de bloque no utilizan buffer-cache para optimizar el rendimiento.",
+      "b) Los dispositivos de carácter procesan la información en bloques de tamaño fijo de 512 bytes.",
+      "c) Los dispositivos de bloque utilizan secuencias de bytes estructuradas en bloques fijos y emplean buffer-cache.",
+      "d) Los dispositivos de bloque se consideran archivos 'raw' sin estructura."
+    ],
+    "correcta": 2,
+    "explicacion": "Los dispositivos de bloque están diseñados para mover grandes cantidades de datos de forma eficiente usando bloques de tamaño fijo (normalmente 512 bytes) y un almacén temporal (buffer-cache) para acelerar el acceso.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Precisamente el uso de buffer-cache es su mayor ventaja.",
+      "B": "Incorrecta. Esa es la descripción de un dispositivo de bloque, no de carácter.",
+      "C": "Correcta. Resume perfectamente el funcionamiento de los dispositivos de bloque.",
+      "D": "Incorrecta. Los dispositivos 'raw' o sin estructura son los de carácter."
+    }
+  }
+,
+  {
+    "pregunta": "Tras conectar una tarjeta de red nueva, el administrador nota que no funciona. ¿Qué comando debería usar para ver los mensajes del 'anillo del kernel' y comprobar si hubo un error de hardware al detectarla?",
+    "opciones": [
+      "a) uptime",
+      "b) cat /proc/net",
+      "c) dmesg",
+      "d) ls /dev/net"
+    ],
+    "correcta": 2,
+    "explicacion": "dmesg muestra el buffer de mensajes del kernel. Es la primera parada obligatoria para diagnosticar problemas de hardware recién conectado o errores durante el arranque del núcleo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Solo da tiempo de actividad.",
+      "B": "Incorrecta. Da info de red, pero no los mensajes de error del kernel al arrancar.",
+      "C": "Correcta. Es el comando 'chivato' del hardware.",
+      "D": "Incorrecta. Listaría los archivos de dispositivo, pero no explicaría el error."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función principal del archivo '/var/log/messages' en un sistema Linux estándar?",
+    "opciones": [
+      "a) Guardar las contraseñas de todos los usuarios del sistema.",
+      "b) Almacenar un registro general de mensajes del sistema, incluyendo eventos del kernel y de servicios (daemons).",
+      "c) Contener la lista de comandos que el administrador debe ejecutar al arrancar.",
+      "d) Guardar copias de seguridad de los archivos borrados recientemente."
+    ],
+    "correcta": 1,
+    "explicacion": "/var/log/messages es el 'diario de a bordo' principal donde se centralizan la mayoría de los eventos importantes que ocurren en el sistema.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso suele estar en /etc/shadow.",
+      "B": "Correcta. Es el log general por excelencia.",
+      "C": "Incorrecta. Eso sería más propio de scripts en /etc/init.d.",
+      "D": "Incorrecta. Para eso está /lost+found o la papelera, no un log."
+    }
+  },
+  {
+    "pregunta": "Un administrador sospecha que el servidor está sufriendo una sobrecarga de trabajo. ¿Qué comando le daría la información más rápida sobre el tiempo que lleva encendido y la carga media (load average) del sistema?",
+    "opciones": [
+      "a) date",
+      "b) ps -aux",
+      "c) uptime",
+      "d) last"
+    ],
+    "correcta": 2,
+    "explicacion": "uptime devuelve en una sola línea cuánto lleva el sistema activo, cuántos usuarios hay y los tres valores de 'load average' (1, 5 y 15 minutos).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Solo da la fecha y hora actual.",
+      "B": "Incorrecta. Da una lista de procesos, pero es más complejo de interpretar rápido.",
+      "C": "Correcta. Es la herramienta de diagnóstico rápido de carga.",
+      "D": "Incorrecta. Muestra quién se conectó por última vez."
+    }
+  },
+  {
+    "pregunta": "¿Por qué se dice que el directorio '/proc' es un sistema de archivos 'virtual'?",
+    "opciones": [
+      "a) Porque está encriptado y solo el administrador puede verlo.",
+      "b) Porque no existe físicamente en el disco; reside en la memoria y sirve de interfaz con el kernel.",
+      "c) Porque se utiliza para emular sistemas operativos distintos a Linux.",
+      "d) Porque solo contiene archivos temporales que se borran cada hora."
+    ],
+    "correcta": 1,
+    "explicacion": "/proc no ocupa espacio en disco. Es una forma que tiene el kernel de 'exponer' información del sistema (como CPU o memoria) tratándola como si fueran archivos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Aunque root tiene más acceso, no es por encriptación.",
+      "B": "Correcta. Es una ventana directa a la RAM y al estado del núcleo.",
+      "C": "Incorrecta. No es para emulación.",
+      "D": "Incorrecta. No se borran por tiempo, sino que desaparecen al apagar."
+    }
+  }
+,
+  {
+    "pregunta": "Si un administrador necesita cerrar una aplicación que no responde y conoce su identificador (PID), ¿qué comando debería utilizar?",
+    "opciones": [
+      "a) stop",
+      "b) kill",
+      "c) nohup",
+      "d) cron"
+    ],
+    "correcta": 1,
+    "explicacion": "El comando 'kill' se utiliza para enviar señales a los procesos, siendo la más común la señal de terminación.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es un comando estándar de gestión de procesos en este contexto.",
+      "B": "Correcta. Es la herramienta para finalizar procesos.",
+      "C": "Incorrecta. 'nohup' sirve para mantener procesos vivos, no para matarlos.",
+      "D": "Incorrecta. 'cron' es para programar tareas futuras."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la principal diferencia entre 'at' y 'cron'?",
+    "opciones": [
+      "a) 'at' es para tareas periódicas y 'cron' para tareas únicas.",
+      "b) 'at' solo lo puede usar el root y 'cron' cualquier usuario.",
+      "c) 'at' programa una tarea para un momento puntual y 'cron' programa tareas que se repiten en el tiempo.",
+      "d) No hay diferencia, son sinónimos en diferentes distribuciones."
+    ],
+    "correcta": 2,
+    "explicacion": "'at' es una ejecución puntual (one-shot), mientras que 'cron' se basa en una tabla (crontab) para repeticiones cíclicas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es exactamente al revés.",
+      "B": "Incorrecta. Ambos pueden ser usados por usuarios si tienen permiso.",
+      "C": "Correcta. Define perfectamente la naturaleza de agenda vs. rutina.",
+      "D": "Incorrecta. Tienen binarios y archivos de configuración distintos."
+    }
+  },
+  {
+    "pregunta": "¿Qué componente del sistema es el responsable de centralizar y direccionar los mensajes de log generados por el kernel y otros servicios?",
+    "opciones": [
+      "a) El proceso init",
+      "b) El daemon Syslogd",
+      "c) El archivo /etc/crontab",
+      "d) El comando dmesg"
+    ],
+    "correcta": 1,
+    "explicacion": "Syslogd actúa como un servidor de logs que recibe la información y la distribuye a los archivos correspondientes en /var/log/.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Init arranca el sistema, pero no gestiona los logs.",
+      "B": "Correcta. Es el 'cartero' de los logs.",
+      "C": "Incorrecta. Crontab gestiona horarios, no mensajes de error.",
+      "D": "Incorrecta. dmesg solo muestra los mensajes del buffer del kernel, no los gestiona de forma centralizada."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la principal desventaja de utilizar excesivamente el área de intercambio (swap) en lugar de la memoria física (RAM)?",
+    "options": [
+      "a) La swap es volátil y se borra si hay un microcorte de luz.",
+      "b) La swap reside en el disco duro, por lo que el acceso a los datos es mucho más lento que en la RAM.",
+      "c) La swap solo puede ser utilizada por el usuario root.",
+      "d) No existe desventaja; el rendimiento es idéntico al de la memoria física."
+    ],
+    "correcta": 1,
+    "explicacion": "Aunque la swap permite ejecutar más procesos de los que caben en la RAM, al estar en el disco duro (mecánico o SSD), la velocidad de lectura/escritura es órdenes de magnitud inferior a la memoria física.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La swap no es volátil (está en disco), la RAM sí lo es.",
+      "B": "Correcta. Es el 'cuello de botella' clásico en administración.",
+      "C": "Incorrecta. Todos los procesos pueden ser movidos a swap por el kernel.",
+      "D": "Incorrecta. El uso intenso de swap degrada notablemente el rendimiento."
+    }
+  },
+  {
+    "pregunta": "Si un administrador desea ver rápidamente la cantidad total, usada y libre de memoria RAM y Swap en megabytes, ¿qué comando debería ejecutar?",
+    "options": [
+      "a) meminfo -total",
+      "b) cat /etc/fstab",
+      "c) free -m",
+      "d) vmstat -total"
+    ],
+    "correcta": 2,
+    "explicacion": "El comando 'free' es la herramienta estándar para consultar el estado global de la memoria, y el flag '-m' facilita la lectura mostrando los datos en MB.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese comando no existe como estándar.",
+      "B": "Incorrecta. Solo muestra dónde está la partición, no cuánta memoria se está usando.",
+      "C": "Correcta. Es el comando de diagnóstico rápido por excelencia.",
+      "D": "Incorrecta. 'vmstat' da estadísticas de rendimiento, pero no es el más directo para ver totales libres."
+    }
+  },
+  {
+    "pregunta": "¿Qué comando proporciona estadísticas detalladas sobre el uso de la memoria virtual, incluyendo procesos, paginación y actividad de la CPU?",
+    "options": [
+      "a) ps",
+      "b) top",
+      "c) vmstat",
+      "d) fdisk"
+    ],
+    "correcta": 2,
+    "explicacion": "vmstat (Virtual Memory Statistics) es una herramienta potente que muestra informes sobre hilos del kernel, memoria virtual, trap e interrupciones y actividad de la CPU.",
+    "analisis_opciones": {
+      "A": "Incorrecta. 'ps' es para ver procesos individuales.",
+      "B": "Incorrecta. 'top' muestra procesos en tiempo real, pero 'vmstat' es el específico para estadísticas de memoria virtual.",
+      "C": "Correcta. Es la herramienta de análisis profundo descrita en el temario.",
+      "D": "Incorrecta. 'fdisk' es para particionar discos, no para ver la memoria en uso."
+    }
+  },{
+    "pregunta": "Si un administrador quiere que una nueva partición de datos se monte automáticamente cada vez que se reinicie el servidor, ¿en qué fichero debe añadir la configuración?",
+    "opciones": [
+      "a) /etc/mtab",
+      "b) /etc/fstab",
+      "c) /proc/partitions",
+      "d) /var/log/messages"
+    ],
+    "correcta": 1,
+    "explicacion": "/etc/fstab es el archivo de configuración que el sistema lee durante el arranque para saber qué dispositivos debe montar y en qué puntos de montaje.",
+    "analisis_opciones": {
+      "A": "Incorrecta. /etc/mtab se actualiza solo con lo que hay montado en tiempo real.",
+      "B": "Correcta. Es el archivo de 'planificación' de montajes.",
+      "C": "Incorrecta. /proc/partitions da info del kernel sobre el tamaño de los discos, pero no los monta.",
+      "D": "Incorrecta. Es un archivo de log para mensajes de error."
+    }
+  },{
+    "pregunta": "¿Qué símbolo muestra habitualmente el intérprete de comandos (shell) de UNIX/Linux para indicar que el usuario actual tiene privilegios de superusuario (root)?",
+    "opciones": [
+      "a) $",
+      "b) @",
+      "c) #",
+      "d) >"
+    ],
+    "correcta": 2,
+    "explicacion": "Por convención, el símbolo '#' identifica al usuario root, mientras que el símbolo '$' se utiliza para los usuarios sin privilegios administrativos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es el símbolo estándar para usuarios normales.",
+      "B": "Incorrecta. Se usa dentro de las direcciones de correo o para separar usuario y máquina en el prompt, pero no indica privilegios.",
+      "C": "Correcta. Es el inductor especial de superusuario mencionado en el temario.",
+      "D": "Incorrecta. Suele ser el símbolo de entrada de comandos en sistemas como Windows (CMD) o para redirección de salida."
+    }
+  },
+  {
+    "pregunta": "¿En qué archivo se debe modificar la configuración para evitar que un usuario con acceso físico al teclado pueda reiniciar la máquina pulsando la combinación CTRL+ALT+DEL?",
+    "opciones": [
+      "a) /etc/passwd",
+      "b) /etc/inittab",
+      "c) /etc/shadow",
+      "d) /boot/grub/grub.conf"
+    ],
+    "correcta": 1,
+    "explicacion": "El archivo /etc/inittab gestiona los procesos de inicio y el comportamiento del sistema ante señales como la combinación de teclas de reinicio.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es para datos de usuarios.",
+      "B": "Correcta. Es donde se define la acción 'ctrlaltdel'.",
+      "C": "Incorrecta. Es para contraseñas cifradas.",
+      "D": "Incorrecta. Es para el menú de arranque, no para el comportamiento del sistema ya encendido."
+    }
+  },
+  {
+    "pregunta": "El directorio /tmp permite que cualquier usuario escriba en él. ¿Qué permiso especial se utiliza para evitar que un usuario pueda borrar los archivos temporales creados por otro usuario?",
+    "opciones": [
+      "a) Setuid (+s)",
+      "b) Bit de lectura (r)",
+      "c) Sticky Bit (+t)",
+      "d) Bit de ejecución (x)"
+    ],
+    "correcta": 2,
+    "explicacion": "El Sticky Bit (t) restringe el borrado de archivos en un directorio compartido: solo el dueño del archivo o el dueño del directorio pueden eliminarlo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Setuid permite ejecutar archivos con privilegios de otro usuario.",
+      "B": "Incorrecta. La lectura no afecta al borrado.",
+      "C": "Correcta. Es la función específica del Sticky Bit en directorios como /tmp.",
+      "D": "Incorrecta. La ejecución permite entrar en el directorio o correr programas."
+    }
+  },
+  {
+    "pregunta": "¿Qué sistema de cifrado para correo electrónico utiliza un algoritmo simétrico IDEA y se basa en un sistema de claves públicas y privadas?",
+    "opciones": [
+      "a) crypt",
+      "b) DES de 56 bits",
+      "c) PGP",
+      "d) TCFS"
+    ],
+    "correcta": 2,
+    "explicacion": "PGP (Pretty Good Privacy) es la herramienta mencionada para cifrado de correo que utiliza claves públicas/privadas y el algoritmo IDEA.",
+    "analisis_opciones": {
+      "A": "Incorrecta. crypt es una herramienta más simple y antigua basada en DES.",
+      "B": "Incorrecta. DES es un algoritmo, no el sistema de correo completo.",
+      "C": "Correcta. Según el texto, PGP ofrece seguridad superior y usa IDEA.",
+      "D": "Incorrecta. TCFS es un sistema de cifrado de disco completo, no de correo."
+    }
+  },
+  {
+    "pregunta": "¿En qué archivo de configuración se encuentra la lista que asocia los nombres de los servicios (como ssh, http o ftp) con sus respectivos números de puerto y protocolos (tcp/udp)?",
+    "opciones": [
+      "a) /etc/protocols",
+      "b) /etc/services",
+      "c) /etc/inetd.conf",
+      "d) /etc/rpc"
+    ],
+    "correcta": 1,
+    "explicacion": "/etc/services es la base de datos estándar que mapea nombres de servicios con puertos (ej. HTTP -> 80) para que el sistema sepa a qué puerto dirigir cada petición.",
+    "analisis_opciones": {
+      "A": "Incorrecta. /etc/protocols lista los protocolos de nivel de red (IP, ICMP, etc.), no los puertos de servicios.",
+      "B": "Correcta. Es el archivo de referencia para puertos y servicios locales/red.",
+      "C": "Incorrecta. Es el archivo de configuración del superservidor inetd, no el mapa general de puertos.",
+      "D": "Incorrecta. Contiene la lista de servidores RPC y sus puertos asociados."
+    }
+  },
+  {
+    "pregunta": "Un administrador desea utilizar una herramienta de detección de intrusos (IDS) que verifique la integridad de los archivos del sistema mediante sumas de verificación MD5. ¿Qué herramienta de las siguientes debería elegir?",
+    "opciones": [
+      "a) Snort",
+      "b) Logcheck",
+      "c) TripWire",
+      "d) iptables"
+    ],
+    "correcta": 2,
+    "explicacion": "TripWire (y su versión libre AIDE) basa su funcionamiento en comparar el estado actual de los archivos con una base de datos de firmas MD5 creada previamente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Snort es un IDS de red, no de integridad de archivos locales.",
+      "B": "Incorrecta. Logcheck se centra en el análisis de ficheros log.",
+      "C": "Correcta. Es la herramienta clásica de verificación de integridad por MD5.",
+      "D": "Incorrecta. iptables es la herramienta de configuración del firewall, no un IDS."
+    }
+  },
+  {
+    "pregunta": "¿Cómo se denomina el subsistema interno del kernel Linux (versiones 2.4 y superiores) encargado del filtrado de paquetes y la traducción de direcciones (NAT)?",
+    "opciones": [
+      "a) IPtables",
+      "b) Netfilter",
+      "c) TCP Wrappers",
+      "d) xinetd"
+    ],
+    "correcta": 1,
+    "explicacion": "Netfilter es el framework dentro del kernel; iptables es la herramienta de usuario que utilizamos para enviarle reglas a dicho framework.",
+    "analisis_opciones": {
+      "A": "Incorrecta. IPtables es la interfaz de control, no el subsistema del kernel en sí.",
+      "B": "Correcta. Es el nombre técnico del componente de seguridad del kernel.",
+      "C": "Incorrecta. Son filtros de acceso de nivel de aplicación, no de red.",
+      "D": "Incorrecta. Es un superservidor de servicios, no un sistema de filtrado de paquetes."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es el proceso técnico mediante el cual un servidor Windows se convierte en un Controlador de Dominio (DC)?",
+    "opciones": [
+      "a) Instalación de Windows Update",
+      "b) Promoción del servidor tras instalar el rol AD DS",
+      "c) Formateo del disco en modo GPT",
+      "d) Activación del firewall de Windows"
+    ],
+    "correcta": 1,
+    "explicacion": "Instalar el paquete AD DS no crea el dominio; es el proceso de 'Promoción' el que configura la base de datos de Active Directory y el DC.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las actualizaciones no cambian la función del servidor.",
+      "B": "Correcta. La promoción es el paso crítico para activar el Directorio Activo.",
+      "C": "Incorrecta. GPT es un estilo de partición, no una función de dominio.",
+      "D": "Incorrecta. El firewall es una medida de seguridad, no de identidad."
+    }
+  },
+  {
+    "pregunta": "¿A qué elemento se deben vincular directamente las Directivas de Grupo (GPO) para que surtan efecto en los usuarios?",
+    "opciones": [
+      "a) A los Grupos Globales",
+      "b) A las Listas de Control de Acceso (ACL)",
+      "c) A las Unidades Organizativas (OU)",
+      "d) A los archivos .txt de configuración"
+    ],
+    "correcta": 2,
+    "explicacion": "Las GPO se vinculan a contenedores lógicos como Sitios, Dominios o Unidades Organizativas (SDOU). No se pueden vincular directamente a grupos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Los grupos sirven para filtrar, pero no para recibir el vínculo de la GPO.",
+      "B": "Incorrecta. Las ACL gestionan permisos de archivos, no políticas de sistema.",
+      "C": "Correcta. La OU es la carpeta lógica donde se aplican las leyes.",
+      "D": "Incorrecta. Las GPO se gestionan desde consolas específicas de Windows."
+    }
+  },
+  {
+    "pregunta": "En el contexto de seguridad NTFS, ¿qué es exactamente una ACL?",
+    "opciones": [
+      "a) Un protocolo de red para enviar correos",
+      "b) Una lista de permisos asociada a un objeto que define quién puede acceder a él",
+      "c) Una herramienta para monitorizar el rendimiento de la CPU",
+      "d) Un tipo de cable de red blindado"
+    ],
+    "correcta": 1,
+    "explicacion": "La ACL (Access Control List) es el 'portero' que contiene las ACE (entradas) con los permisos de cada usuario o grupo sobre ese archivo o carpeta.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería SMTP.",
+      "B": "Correcta. Es la lista de control de acceso grabada en los metadatos del objeto.",
+      "C": "Incorrecta. Eso sería el Monitor de Rendimiento.",
+      "D": "Incorrecta. ACL no tiene nada que ver con el hardware físico de red."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la limitación de tamaño más crítica de una tabla de particiones MBR?",
+    "opciones": [
+      "a) 512 GB",
+      "b) 128 TB",
+      "c) 2 TB",
+      "d) No tiene límite"
+    ],
+    "correcta": 2,
+    "explicacion": "MBR es un estándar antiguo que no puede direccionar espacio más allá de los 2 Terabytes de forma nativa.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un límite demasiado bajo.",
+      "B": "Incorrecta. Ese es un límite más propio de GPT.",
+      "C": "Correcta. Por encima de 2 TB, el espacio restante del disco queda inutilizado en MBR.",
+      "D": "Incorrecta. Todos los sistemas tienen límites físicos o lógicos."
+    }
+  },
+  {
+    "pregunta": "¿Por qué GPT se considera más fiable que MBR en caso de error en el disco?",
+    "opciones": [
+      "a) Porque es más rápido al encender",
+      "b) Porque almacena copias redundantes de la tabla de particiones en todo el disco",
+      "c) Porque utiliza cables de datos más gruesos",
+      "d) Porque no permite la entrada de virus"
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia de MBR que solo tiene una copia al inicio, GPT guarda réplicas para recuperar la estructura en caso de corrupción.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La velocidad depende más del SSD/HDD que de la tabla.",
+      "B": "Correcta. La redundancia es la clave de su fiabilidad.",
+      "C": "Incorrecta. No depende del cableado físico.",
+      "D": "Incorrecta. GPT no es un antivirus."
+    }
+  },
+  {
+    "pregunta": "¿Qué servicio es fundamental mantener activo para que el Menú Inicio y los paneles de Windows 10 no dejen de funcionar?",
+    "opciones": [
+      "a) Spooler de impresión",
+      "b) AppXSvc (Servicio de implementación de Appx)",
+      "c) Windows Update",
+      "d) DHCP Client"
+    ],
+    "correcta": 1,
+    "explicacion": "Muchos componentes de Windows 10 son aplicaciones UWP/Appx; si se detiene AppXSvc, la interfaz moderna falla.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Solo afectaría a las impresoras.",
+      "B": "Correcta. Es el motor que gestiona las aplicaciones de la plataforma universal.",
+      "C": "Incorrecta. Gestiona parches, no la interfaz actual.",
+      "D": "Incorrecta. Gestiona la IP, no el Menú Inicio."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es el nivel de telemetría de Windows 10 que menos información envía y que está limitado a versiones Enterprise/Education?",
+    "opciones": [
+      "a) Básico",
+      "b) Completo",
+      "c) Seguridad",
+      "d) Avanzado"
+    ],
+    "correcta": 2,
+    "explicacion": "El nivel 'Seguridad' es el más restrictivo y solo está disponible en ediciones profesionales para cumplir normativas de privacidad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El nivel Básico envía más datos que el de Seguridad.",
+      "B": "Incorrecta. El Completo es el que más datos envía (Insider).",
+      "C": "Correcta. Envía lo mínimo necesario para que Defender funcione.",
+      "D": "Incorrecta. Es un paso intermedio antes del Completo."
+    }
+  },
+  {
+    "pregunta": "¿Cómo se llama el mecanismo de autenticación en dos fases de Windows 10 que vincula un dispositivo con un PIN o gesto biométrico?",
+    "opciones": [
+      "a) Kerberos",
+      "b) Microsoft Passport",
+      "c) Internet Explorer 11",
+      "d) NTLM"
+    ],
+    "correcta": 1,
+    "explicacion": "Microsoft Passport es el sistema que permite eliminar contraseñas mediante el uso de un dispositivo registrado y un gesto local (Windows Hello).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Kerberos es el protocolo de red, no el sistema de gestos.",
+      "B": "Correcta. Es el nombre del componente que gestiona este doble factor.",
+      "C": "Incorrecta. Es un navegador antiguo.",
+      "D": "Incorrecta. Es un protocolo de autenticación antiguo y menos seguro."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función principal del chip TPM (Trusted Platform Module) en la seguridad del equipo?",
+    "opciones": [
+      "a) Aumentar los FPS en los juegos",
+      "b) Proporcionar un almacenamiento seguro basado en hardware para claves criptográficas",
+      "c) Servir como memoria RAM adicional",
+      "d) Enfriar el procesador mediante software"
+    ],
+    "correcta": 1,
+    "explicacion": "El TPM es un chip físico (o integrado) que actúa como una caja fuerte para guardar secretos que el sistema operativo no puede tocar directamente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tiene funciones gráficas.",
+      "B": "Correcta. Es el pilar de tecnologías como BitLocker o Credential Guard.",
+      "C": "Incorrecta. No es memoria volátil para procesos.",
+      "D": "Incorrecta. No tiene funciones térmicas."
+    }
+  },
+  {
+    "pregunta": "¿Qué ocurre técnicamente cuando un Administrador inicia sesión bajo el control de cuentas de usuario (UAC)?",
+    "opciones": [
+      "a) Se le conceden privilegios totales de forma permanente",
+      "b) Se le asigna un 'Split Token' (un token de usuario estándar y otro de administrador)",
+      "c) Se desactiva el antivirus automáticamente",
+      "d) El ordenador se vuelve más lento por el cifrado"
+    ],
+    "correcta": 1,
+    "explicacion": "Para mayor seguridad, el administrador navega con el token estándar y solo usa el de administrador cuando confirma un aviso de UAC.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso era en Windows XP y era inseguro.",
+      "B": "Correcta. Es el mecanismo de 'privilegio mínimo' incluso para jefes.",
+      "C": "Incorrecta. UAC y Antivirus son complementarios.",
+      "D": "Incorrecta. No afecta al rendimiento de forma perceptible."
+    }
+  },
+  {
+    "pregunta": "¿En qué se diferencia AppLocker de la versión Pro a la versión Enterprise de Windows 10?",
+    "opciones": [
+      "a) En la Pro no existe",
+      "b) En la Pro solo funciona en modo auditoría (no bloquea)",
+      "c) En la Enterprise es más lento",
+      "d) Son exactamente iguales"
+    ],
+    "correcta": 1,
+    "explicacion": "Microsoft limita la capacidad de bloqueo real de AppLocker a la versión Enterprise; en la Pro solo registra qué hubiera pasado.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sí existe, pero limitada.",
+      "B": "Correcta. El bloqueo efectivo de aplicaciones requiere licencia Enterprise.",
+      "C": "Incorrecta. No hay diferencia de rendimiento.",
+      "D": "Incorrecta. Hay una limitación de funcionalidad clara."
+    }
+  },
+  {
+    "pregunta": "¿Qué tecnología de Windows 10 Enterprise utiliza la virtualización para aislar los secretos de identidad (como tickets Kerberos) de ataques tipo Pass-the-Hash?",
+    "opciones": [
+      "a) DirectAccess",
+      "b) Windows To Go",
+      "c) Credential Guard",
+      "d) Cortana"
+    ],
+    "correcta": 2,
+    "explicacion": "Credential Guard crea un proceso LSA aislado mediante virtualización para que los hackers no puedan leer las credenciales de la RAM.",
+    "analisis_opciones": {
+      "A": "Incorrecta. DirectAccess es para conectividad remota.",
+      "B": "Incorrecta. Es para llevar Windows en un USB.",
+      "C": "Correcta. Es la defensa definitiva contra el robo de hashes.",
+      "D": "Incorrecta. Es el asistente personal."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función del servidor DNS dentro de un dominio de Active Directory?",
+    "opciones": [
+      "a) Guardar las contraseñas de los usuarios",
+      "b) Traducir nombres (como digimundo.local) en direcciones IP para que los clientes encuentren al DC",
+      "c) Limpiar los virus de la red",
+      "d) Hacer copias de seguridad de las fotos"
+    ],
+    "correcta": 1,
+    "explicacion": "Sin DNS, los PCs no sabrían qué dirección IP tiene el Controlador de Dominio y no podrían iniciar sesión.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso lo hace la base de datos NTDS.dit del AD.",
+      "B": "Correcta. Es el mapa de carreteras de la red.",
+      "C": "Incorrecta. No tiene funciones de escaneo de malware.",
+      "D": "Incorrecta. Es un servicio de resolución de nombres, no de archivos."
+    }
+  },
+  {
+    "pregunta": "¿Qué es 'DirectAccess' en Windows 10 Enterprise?",
+    "opciones": [
+      "a) Un acceso directo en el escritorio",
+      "b) Una VPN automática y bidireccional basada en IPsec e IPv6",
+      "c) Un programa para chatear con soporte técnico",
+      "d) Una forma de entrar al PC sin contraseña"
+    ],
+    "correcta": 1,
+    "explicacion": "Permite que el equipo esté siempre conectado a la oficina de forma transparente para el usuario, facilitando la administración remota.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Nombre similar, función distinta.",
+      "B": "Correcta. Es una evolución de la VPN que se conecta sola.",
+      "C": "Incorrecta. No es una herramienta de chat.",
+      "D": "Incorrecta. No elimina la autenticación."
+    }
+  },
+  {
+    "pregunta": "Si un disco MBR falla porque se corrompe su sector de inicio, ¿qué ocurre con los datos?",
+    "opciones": [
+      "a) Se recuperan automáticamente desde el final del disco",
+      "b) Son muy difíciles de recuperar porque solo existe una copia de la tabla de particiones",
+      "c) No pasa nada, el BIOS los arregla",
+      "d) Se borran físicamente por completo"
+    ],
+    "correcta": 1,
+    "explicacion": "Al no tener redundancia, si el sector 0 (donde está la tabla MBR) se daña, el disco parece vacío para el sistema.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es una característica de GPT.",
+      "B": "Correcta. Es la gran debilidad del formato MBR.",
+      "C": "Incorrecta. El BIOS no tiene funciones de reparación de tablas.",
+      "D": "Incorrecta. Los datos siguen ahí, pero 'nadie sabe dónde'."
+    }
+  },
+  {
+    "pregunta": "¿Para qué sirve crear Unidades Organizativas (OU) en el Active Directory?",
+    "opciones": [
+      "a) Para acelerar la velocidad de internet",
+      "b) Para organizar objetos y poder delegar administración o aplicar GPOs",
+      "c) Para que el servidor tenga más capacidad de disco",
+      "d) Para cambiar el nombre del dominio"
+    ],
+    "correcta": 1,
+    "explicacion": "Las OU permiten jerarquizar la empresa (Ventas, Contabilidad...) y aplicar leyes distintas a cada una.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No afecta al ancho de banda.",
+      "B": "Correcta. Es el contenedor básico para la gestión de políticas.",
+      "C": "Incorrecta. Es una estructura lógica, no física.",
+      "D": "Incorrecta. El nombre del dominio es independiente de las OU."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia principal entre un Grupo y una OU?",
+    "opciones": [
+      "a) El Grupo es una carpeta y la OU es una lista",
+      "b) La OU es un contenedor (habitación) y el Grupo es una lista de miembros (club)",
+      "c) No hay diferencia, son sinónimos",
+      "d) Los Grupos solo existen en Linux"
+    ],
+    "correcta": 1,
+    "explicacion": "Un usuario 'está' en una OU, pero 'pertenece' a uno o varios grupos. Las GPO se aplican a OUs, los permisos a Grupos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es justo al revés.",
+      "B": "Correcta. La OU organiza la estructura; el grupo otorga permisos.",
+      "C": "Incorrecta. Tienen funciones técnicas totalmente distintas.",
+      "D": "Incorrecta. Windows Server depende de los grupos para la seguridad."
+    }
+  },
+  {
+    "pregunta": "¿Qué significa que el UAC de Windows 10 use el 'Modo de aprobación de administrador'?",
+    "opciones": [
+      "a) Que el jefe tiene que venir a tu sitio a darte permiso",
+      "b) Que el administrador ve un mensaje para confirmar la acción antes de usar su token de privilegios",
+      "c) Que el PC se bloquea hasta que alguien aprueba el uso",
+      "d) Que todas las apps se ejecutan como administrador siempre"
+    ],
+    "correcta": 1,
+    "explicacion": "Es el diálogo que pregunta '¿Desea permitir...?' para que el admin sea consciente de que va a realizar una tarea crítica.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El propio usuario administrador puede aprobarlo.",
+      "B": "Correcta. Es la esencia de la protección contra malware involuntario.",
+      "C": "Incorrecta. No bloquea el sistema, solo la tarea en curso.",
+      "D": "Incorrecta. Precisamente evita que esto ocurra."
+    }
+  },
+  {
+    "pregunta": "¿Qué componente de Windows 10 permite realizar compras por volumen de aplicaciones y crear una tienda privada para empleados?",
+    "opciones": [
+      "a) Cortana",
+      "b) Windows Update for Business",
+      "c) Tienda Windows para empresas",
+      "d) Microsoft Edge"
+    ],
+    "correcta": 2,
+    "explicacion": "Permite a las organizaciones gestionar licencias de apps UWP y distribuirlas internamente de forma controlada.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Cortana es búsqueda y asistencia.",
+      "B": "Incorrecta. Eso es para parches del sistema.",
+      "C": "Correcta. Es la plataforma de distribución de software corporativo.",
+      "D": "Incorrecta. Es el navegador web."
+    }
+  },
+  {
+    "pregunta": "¿Qué limitación tiene 'Windows To Go' respecto al hardware del equipo donde se inicia?",
+    "opciones": [
+      "a) No puede usar la tarjeta de sonido",
+      "b) Los discos internos del equipo anfitrión están desconectados por seguridad",
+      "c) Obliga a formatear el PC donde se pincha",
+      "d) Solo funciona si el PC tiene más de 16GB de RAM"
+    ],
+    "correcta": 1,
+    "explicacion": "Para evitar fugas de datos o contaminación entre el sistema portátil y el fijo, el acceso a los discos internos se deshabilita.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El sonido y otros periféricos suelen funcionar.",
+      "B": "Correcta. Es una medida de aislamiento fundamental.",
+      "C": "Incorrecta. Precisamente está hecho para no alterar el PC anfitrión.",
+      "D": "Incorrecta. Tiene requisitos normales de Windows 10."
+    }
+  },
+  {
+    "pregunta": "¿Qué protocolo utiliza Windows 10 para asegurar las comunicaciones de 'DirectAccess' a través de Internet?",
+    "opciones": [
+      "a) FTP",
+      "b) IPsec",
+      "c) HTTP",
+      "d) POP3"
+    ],
+    "correcta": 1,
+    "explicacion": "IPsec proporciona el túnel cifrado y la autenticación necesaria para que la conexión sea segura.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es para transferencia de archivos sin cifrar.",
+      "B": "Correcta. Es el estándar de seguridad de red para túneles.",
+      "C": "Incorrecta. Es para navegación web básica.",
+      "D": "Incorrecta. Es para recepción de correos."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la herramienta administrativa para establecer relaciones de confianza entre diferentes dominios?",
+    "opciones": [
+      "a) Usuarios y equipos de Active Directory",
+      "b) Dominios y confianzas de Active Directory",
+      "c) Visor de sucesos",
+      "d) Administrador de servicios Internet"
+    ],
+    "correcta": 1,
+    "explicacion": "Esta consola permite unir bosques o dominios para que usuarios de uno puedan acceder a recursos del otro.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es para objetos internos del dominio.",
+      "B": "Correcta. Su nombre indica su función de federación.",
+      "C": "Incorrecta. Es para leer logs y errores.",
+      "D": "Incorrecta. Es para gestionar el servidor web IIS."
+    }
+  },
+  {
+    "pregunta": "¿Qué ventaja ofrece el estándar FIDO en la autenticación de Windows 10?",
+    "opciones": [
+      "a) Permite usar el PC sin internet",
+      "b) Permite la autenticación segura sin contraseñas en servicios web y de red",
+      "c) Hace que las contraseñas sean más largas",
+      "d) Sirve para conectar impresoras antiguas"
+    ],
+    "correcta": 1,
+    "explicacion": "FIDO es un estándar abierto que usa criptografía para que el usuario se identifique con biometría o llaves físicas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es su función principal.",
+      "B": "Correcta. Es la base de un futuro 'passwordless' (sin contraseñas).",
+      "C": "Incorrecta. Su objetivo es eliminar las contraseñas, no alargarlas.",
+      "D": "Incorrecta. No tiene relación con drivers de impresión."
+    }
+  },
+  {
+    "pregunta": "¿Qué ocurre si intentamos leer un disco con formato GPT usando una herramienta antigua que solo entiende MBR?",
+    "opciones": [
+      "a) El disco explota",
+      "b) Verá una partición 'MBR de protección' para evitar que sobrescriba los datos",
+      "c) La herramienta se actualiza sola",
+      "d) Los datos se convierten a MBR automáticamente"
+    ],
+    "correcta": 1,
+    "explicacion": "El 'Protective MBR' es un mecanismo de seguridad para que el software antiguo no crea que el disco está vacío.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El hardware no sufre daño físico.",
+      "B": "Correcta. Es el cartel de 'no tocar' para herramientas antiguas.",
+      "C": "Incorrecta. El software no tiene esa inteligencia.",
+      "D": "Incorrecta. Son formatos incompatibles entre sí de esa forma."
+    }
+  },
+  {
+    "pregunta": "¿Qué función cumple el servicio MBAM en una red corporativa?",
+    "opciones": [
+      "a) Controlar el aire acondicionado del servidor",
+      "b) Administrar y supervisar el cifrado BitLocker de forma centralizada",
+      "c) Instalar juegos en los puestos de trabajo",
+      "d) Sustituir al Administrador del dominio"
+    ],
+    "correcta": 1,
+    "explicacion": "MBAM facilita la recuperación de claves y el cumplimiento del cifrado en toda la empresa.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso es domótica, no sistemas.",
+      "B": "Correcta. Es la gestión empresarial de la protección de datos en disco.",
+      "C": "Incorrecta. No es un gestor de descargas lúdicas.",
+      "D": "Incorrecta. Es una herramienta del administrador, no su sustituto."
+    }
+  },
+  {
+    "pregunta": "¿Qué es una 'Aplicación Heredada' (Legacy App) en el contexto de Windows 10?",
+    "opciones": [
+      "a) Una aplicación que acabamos de comprar",
+      "b) Una aplicación antigua que a menudo requiere permisos de administrador para funcionar",
+      "c) Una aplicación que solo funciona en móviles",
+      "d) Una aplicación que no tiene iconos"
+    ],
+    "correcta": 1,
+    "explicacion": "Son programas diseñados antes de que existiera el UAC y que intentan realizar acciones prohibidas para un usuario estándar.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esas serían apps modernas.",
+      "B": "Correcta. Son el motivo principal de que sigamos usando 'Ejecutar como administrador'.",
+      "C": "Incorrecta. Eso sería una app móvil.",
+      "D": "Incorrecta. Tienen interfaz, pero mal diseño de seguridad."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la versión de Windows 10 que NO incluye Microsoft Edge ni la Tienda por motivos de estabilidad y mantenimiento?",
+    "opciones": [
+      "a) Home",
+      "b) Pro",
+      "c) LTSB (LTSC)",
+      "d) Mobile"
+    ],
+    "correcta": 2,
+    "explicacion": "La rama de servicio a largo plazo (LTSB) está pensada para sistemas críticos donde no se quieren cambios frecuentes ni apps innecesarias.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Tiene todo lo multimedia.",
+      "B": "Incorrecta. Incluye todas las funcionalidades de usuario.",
+      "C": "Correcta. Es la versión más 'limpia' y estática de Windows 10.",
+      "D": "Incorrecta. Estaba diseñada para smartphones."
+    }
+  },
+  {
+    "pregunta": "¿Qué protocolo utiliza Windows para permitir que un usuario se mueva por la red sin pedirle la contraseña en cada servidor?",
+    "opciones": [
+      "a) HTTP",
+      "b) Kerberos (basado en tickets)",
+      "c) DNS",
+      "d) DHCP"
+    ],
+    "correcta": 1,
+    "explicacion": "Kerberos emite tickets temporales que el usuario presenta ante los servicios para demostrar su identidad de forma automática (SSO).",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es para páginas web.",
+      "B": "Correcta. Es el estándar de oro en dominios Windows.",
+      "C": "Incorrecta. Es para resolver nombres.",
+      "D": "Incorrecta. Es para asignar IPs."
+    }
+  },
+  {
+    "pregunta": "En AppLocker, ¿qué permite una regla basada en la 'Firma del editor'?",
+    "opciones": [
+      "a) Que solo se ejecuten archivos que pesen menos de 1MB",
+      "b) Que se permitan todas las aplicaciones de un fabricante (como Microsoft) sin importar la versión",
+      "c) Que el usuario tenga que firmar con un boli en la pantalla",
+      "d) Que no se puedan borrar archivos"
+    ],
+    "correcta": 1,
+    "explicacion": "Es la forma más flexible de crear reglas, ya que confías en el origen del software independientemente de que se actualice.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El tamaño no garantiza la seguridad.",
+      "B": "Correcta. Es la regla más usada para permitir software corporativo oficial.",
+      "C": "Incorrecta. No existe la biometría por tinta en pantalla.",
+      "D": "Incorrecta. AppLocker controla la ejecución, no el borrado."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo principal del servicio de Telemetría?",
+    "opciones": [
+      "a) Ver las fotos de las vacaciones de los usuarios",
+      "b) Recolectar datos de uso y errores para mejorar el sistema operativo",
+      "c) Aumentar el precio de la licencia de Windows",
+      "d) Sustituir al servicio técnico humano"
+    ],
+    "correcta": 1,
+    "explicacion": "La telemetría ayuda a Microsoft a identificar fallos globales y optimizar el rendimiento mediante el análisis de datos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería una violación de privacidad masiva.",
+      "B": "Correcta. Es una herramienta de diagnóstico y mejora continua.",
+      "C": "Incorrecta. No tiene fines comerciales directos de ese tipo.",
+      "D": "Incorrecta. El soporte sigue necesitando humanos, pero con mejores datos."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de Windows Hello en el ecosistema de Windows?",
+    "opciones": [
+      "a) Crear una copia de seguridad de tus fotos en la nube",
+      "b) Permitir el inicio de sesión mediante biometría (facial o huella) eliminando la necesidad de contraseñas",
+      "c) Aumentar la velocidad del procesador mediante IA",
+      "d) Traducir textos de otros idiomas automáticamente"
+    ],
+    "correcta": 1,
+    "explicacion": "Windows Hello es el sistema de autenticación biométrica de Microsoft que busca sustituir las contraseñas tradicionales por rasgos físicos del usuario.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Esa es la función de OneDrive.",
+      "B": "Correcta. Utiliza el reconocimiento facial o de huella para un acceso rápido y seguro.",
+      "C": "Incorrecta. No afecta a la frecuencia del reloj del procesador.",
+      "D": "Incorrecta. No es una herramienta de traducción."
+    }
+  },
+  {
+    "pregunta": "¿Qué ventaja principal ofrece el uso de la aplicación Microsoft Authenticator?",
+    "opciones": [
+      "a) Sirve para editar documentos de Word en el móvil",
+      "b) Permite implementar la autenticación multifactor (MFA) y el inicio de sesión sin contraseña",
+      "c) Es un antivirus para smartphones",
+      "d) Permite descargar juegos gratuitos de la Microsoft Store"
+    ],
+    "correcta": 1,
+    "explicacion": "Microsoft Authenticator actúa como un segundo factor de seguridad o como un método de inicio de sesión directo mediante notificaciones en el teléfono.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es un editor de texto.",
+      "B": "Correcta. Facilita el inicio de sesión seguro y el autorrelleno de credenciales.",
+      "C": "Incorrecta. No tiene funciones de escaneo de malware.",
+      "D": "Incorrecta. No es una plataforma de distribución de juegos."
+    }
+  },
+  {
+    "pregunta": "En términos de seguridad, ¿cuál es el beneficio clave de las 'Claves de paso' (Passkeys) frente a las contraseñas tradicionales?",
+    "opciones": [
+      "a) Que son más cortas y fáciles de recordar",
+      "b) Que ofrecen una protección robusta contra la suplantación de identidad (phishing)",
+      "c) Que permiten compartir tu cuenta con más amigos",
+      "d) Que funcionan incluso sin electricidad"
+    ],
+    "correcta": 1,
+    "explicacion": "Las Passkeys son llaves digitales únicas que no se pueden robar mediante phishing, ya que requieren el dispositivo físico del usuario para funcionar.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No se trata de memorizar nada, sino de usar una llave digital.",
+      "B": "Correcta. Al no ser una cadena de texto que puedas escribir, un hacker no puede engañarte para que se la des.",
+      "C": "Incorrecta. Precisamente están hechas para vincular la identidad a una sola persona.",
+      "D": "Incorrecta. Requieren que el dispositivo electrónico esté encendido."
+    }
+  },
+  {
+    "pregunta": "Si un usuario activa el 'inicio de sesión por teléfono' en Microsoft Authenticator, ¿qué está eliminando de su proceso de acceso?",
+    "opciones": [
+      "a) La necesidad de tener conexión a internet",
+      "b) El uso de la contraseña de texto tradicional",
+      "c) La necesidad de encender el monitor",
+      "d) El pago de la suscripción de Windows"
+    ],
+    "correcta": 1,
+    "explicacion": "El inicio de sesión por teléfono permite aprobar el acceso simplemente tocando una notificación o usando el PIN del móvil, eliminando la contraseña.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Se requiere internet para enviar la notificación de aprobación.",
+      "B": "Correcta. Es un paso fundamental hacia el entorno 'passwordless'.",
+      "C": "Incorrecta. Sigues necesitando ver la interfaz del sistema.",
+      "D": "Incorrecta. No tiene relación con el licenciamiento del producto."
+    }
+  },
+  {
+    "pregunta": "¿Cómo se complementan Windows Hello y las Passkeys en un entorno moderno?",
+    "opciones": [
+      "a) No se complementan, son sistemas que compiten entre sí",
+      "b) Windows Hello puede actuar como el 'gesto' biométrico que desbloquea y utiliza tu Passkey",
+      "c) Windows Hello borra las Passkeys por seguridad",
+      "d) Solo se pueden usar si tienes instalado Windows 7"
+    ],
+    "correcta": 1,
+    "explicacion": "Windows Hello sirve para verificar que 'tú eres tú' localmente, permitiendo que el sistema use la Passkey (llave secreta) para entrar en la web o aplicación.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Trabajan juntos para mejorar la seguridad.",
+      "B": "Correcta. La biometría es el 'gatillo' que activa la seguridad de la clave de paso.",
+      "C": "Incorrecta. Al contrario, las protege y gestiona.",
+      "D": "Incorrecta. Son tecnologías nativas de Windows 10 y 11."
+    }
+  },
+  {
+    "pregunta": "¿Qué métodos utiliza Windows Hello para permitir el inicio de sesión sin necesidad de escribir una contraseña tradicional?",
+    "opciones": [
+      "a) Reconocimiento de voz y patrón de dibujo",
+      "b) Reconocimiento facial o huella digital",
+      "c) Envío de un SMS al móvil",
+      "d) Preguntas de seguridad sobre tu infancia"
+    ],
+    "correcta": 1,
+    "explicacion": "Windows Hello se basa en biometría de hardware (cara o dedo) para garantizar que la persona física frente al dispositivo es el usuario legítimo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Aunque existen, no son los pilares de Windows Hello.",
+      "B": "Correcta. Es el núcleo de la biometría nativa de Windows.",
+      "C": "Incorrecta. Eso es un método de verificación externa, no biometría de Hello.",
+      "D": "Incorrecta. Es un método antiguo y poco seguro."
+    }
+  },
+  {
+    "pregunta": "¿Qué funcionalidad de Microsoft Authenticator permite acceder a cuentas online sin introducir una contraseña de texto?",
+    "opciones": [
+      "a) El modo avión",
+      "b) El inicio de sesión por teléfono y la autenticación multifactor (MFA)",
+      "c) El borrado remoto del historial",
+      "d) El escaneo de códigos QR de publicidad"
+    ],
+    "correcta": 1,
+    "explicacion": "La app permite aprobar inicios de sesión mediante notificaciones 'push' o códigos temporales, sirviendo como llave digital.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El modo avión corta la comunicación necesaria para la app.",
+      "B": "Correcta. Combina facilidad (notificación) con seguridad (multifactor).",
+      "C": "Incorrecta. No es una función de privacidad de navegación.",
+      "D": "Incorrecta. Los QR se usan para configurar cuentas, no para publicidad."
+    }
+  },
+  {
+    "pregunta": "¿Contra qué amenaza específica son especialmente efectivas las 'Claves de paso' (Passkeys)?",
+    "opciones": [
+      "a) Contra la falta de espacio en el disco duro",
+      "b) Contra la suplantación de identidad (phishing)",
+      "c) Contra el sobrecalentamiento de la CPU",
+      "d) Contra los anuncios molestos en YouTube"
+    ],
+    "correcta": 1,
+    "explicacion": "Al ser llaves criptográficas vinculadas al dispositivo, no se pueden 'engañar' mediante una web falsa (phishing) como ocurre con las contraseñas escritas.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tienen relación con el almacenamiento de archivos.",
+      "B": "Correcta. Es su mayor ventaja: un atacante no puede pedirte que 'escribas' una clave de paso.",
+      "C": "Incorrecta. No afectan al hardware térmico.",
+      "D": "Incorrecta. No son un bloqueador de anuncios."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es el lema común que comparten Windows Hello, Authenticator y las Claves de paso?",
+    "opciones": [
+      "a) 'Protege tu monitor'",
+      "b) 'Olvídate de las contraseñas'",
+      "c) 'Instala siempre software pirata'",
+      "d) 'Comparte tu PIN con todos'"
+    ],
+    "correcta": 1,
+    "explicacion": "Estas tres tecnologías forman parte de la estrategia 'Passwordless' de Microsoft para eliminar la debilidad de las contraseñas tradicionales.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No se trata de protección física de hardware.",
+      "B": "Correcta. Buscan un futuro donde no existan cadenas de texto que recordar o robar.",
+      "C": "Incorrecta. Eso es un riesgo de seguridad masivo.",
+      "D": "Incorrecta. El PIN es personal e intransferible."
+    }
+  },
+  {
+    "pregunta": "¿Qué función de Microsoft Authenticator facilita el manejo de las contraseñas que aún conservas?",
+    "opciones": [
+      "a) El autorrelleno de contraseñas",
+      "b) El cambio de color de los iconos",
+      "c) La grabación de llamadas",
+      "d) El modo de ahorro de datos"
+    ],
+    "correcta": 0,
+    "explicacion": "Authenticator puede actuar como un gestor que rellena automáticamente tus credenciales guardadas en sitios web y apps.",
+    "analisis_opciones": {
+      "A": "Correcta. Proporciona comodidad para las cuentas que aún no usan Passkeys.",
+      "B": "Incorrecta. Es un cambio estético sin valor de seguridad.",
+      "C": "Incorrecta. La app no tiene funciones de grabación.",
+      "D": "Incorrecta. No es su función principal."
+    }
+  },
+  {
+    "pregunta": "¿Qué nuevo sistema de archivos introdujo Windows Server 2012 diseñado para la máxima integridad de datos y autorreparación?",
+    "opciones": [
+      "a) FAT32",
+      "b) NTFS 2.0",
+      "c) ReFS (Resilient File System)",
+      "d) EXT4"
+    ],
+    "correcta": 2,
+    "explicacion": "ReFS fue diseñado para soportar volúmenes de datos masivos y protegerlos contra la corrupción de metadatos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un sistema muy antiguo y limitado.",
+      "B": "Incorrecta. NTFS sigue existiendo pero no es el nuevo sistema 'Resiliente'.",
+      "C": "Correcta. Es el sistema de archivos de próxima generación de Microsoft.",
+      "D": "Incorrecta. Es el estándar principal de Linux, no de Windows."
+    }
+  },
+  {
+    "pregunta": "¿Cuál fue una de las mejoras más celebradas en la gestión de Active Directory con la llegada de Windows Server 2012?",
+    "opciones": [
+      "a) La eliminación de las contraseñas",
+      "b) La interfaz gráfica para la Papelera de Reciclaje de Active Directory",
+      "c) La prohibición de usar usuarios humanos",
+      "d) El fin del protocolo DNS"
+    ],
+    "correcta": 1,
+    "explicacion": "Antes de 2012, recuperar objetos borrados era un proceso complejo por línea de comandos; 2012 facilitó esto con una consola gráfica.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso ha llegado mucho después con las Passkeys.",
+      "B": "Correcta. Permitió recuperar usuarios y grupos borrados con un par de clics.",
+      "C": "Incorrecta. No tiene sentido en un sistema de identidad.",
+      "D": "Incorrecta. El DNS sigue siendo vital para el funcionamiento del AD."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia principal entre un Contenedor de Windows Server y un Contenedor de Hyper-V?",
+    "opciones": [
+      "a) El de Windows Server es más lento",
+      "b) El de Hyper-V no comparte el kernel con el host, ofreciendo mayor aislamiento",
+      "c) El de Windows Server solo funciona en Windows 7",
+      "d) No hay diferencia, son nombres comerciales distintos"
+    ],
+    "correcta": 1,
+    "explicacion": "Los contenedores de Hyper-V utilizan una máquina virtual optimizada para asegurar que el kernel no se comparta, aumentando la seguridad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Al contrario, suele ser más ligero y rápido.",
+      "B": "Correcta. Es el factor clave de aislamiento y seguridad.",
+      "C": "Incorrecta. Es una tecnología de Windows 10 y Server 2016 en adelante.",
+      "D": "Incorrecta. Tienen arquitecturas técnicas diferentes."
+    }
+  },
+  {
+    "pregunta": "¿Qué herramienta es necesaria implementar en Windows Server 2016 para poder trabajar con contenedores?",
+    "opciones": [
+      "a) Winamp",
+      "b) Docker",
+      "c) Adobe Reader",
+      "d) Paint 3D"
+    ],
+    "correcta": 1,
+    "explicacion": "Docker es el motor estándar de la industria que Windows Server 2016 integra para gestionar el ciclo de vida de los contenedores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un reproductor de música antiguo.",
+      "B": "Correcta. Es el software imprescindible para la gestión de contenedores.",
+      "C": "Incorrecta. Es para leer PDFs.",
+      "D": "Incorrecta. Es una herramienta de dibujo."
+    }
+  },
+  {
+    "pregunta": "Respecto a la administración de Nano Server, ¿cuál es su característica más destacada?",
+    "opciones": [
+      "a) Se gestiona principalmente de forma táctil",
+      "b) Solo puede ser administrado de forma remota",
+      "c) Tiene un escritorio idéntico a Windows 10",
+      "d) No necesita conexión a red para configurarse"
+    ],
+    "correcta": 1,
+    "explicacion": "Nano Server carece de interfaz gráfica local; se gestiona mediante herramientas remotas o PowerShell.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tiene interfaz visual para el tacto.",
+      "B": "Correcta. Es su gran diferencia respecto a las versiones con escritorio.",
+      "C": "Incorrecta. No tiene escritorio ni menús.",
+      "D": "Incorrecta. La red es vital para su gestión remota."
+    }
+  },{
+  "pregunta": "¿Qué concepto técnico define mejor el funcionamiento del PAM en Windows Server 2016?",
+  "opciones": [
+    "a) Autenticación por puerto 389 siempre",
+    "b) Administración Just-In-Time (JIT) o 'Justo a tiempo'",
+    "c) Instalación de módulos .deb de Linux",
+    "d) Eliminación total de la cuenta de Administrador"
+  ],
+  "correcta": 1,
+  "explicacion": "El acceso Just-In-Time permite que los privilegios se otorguen solo en el momento necesario y con una fecha de caducidad automática.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Ese es el funcionamiento básico de LDAP, no la filosofía de PAM.",
+    "B": "Correcta. Es la esencia de dar privilegios temporales.",
+    "C": "Incorrecta. Eso es gestión de paquetes en Linux, no tiene nada que ver.",
+    "D": "Incorrecta. El administrador sigue existiendo, pero sus poderes están limitados por tiempo."
+  }
+},
+  {
+    "pregunta": "¿Qué permite la funcionalidad 'Azure Active Directory Join' introducida en el entorno de Windows Server 2016 y Windows 10?",
+    "opciones": [
+      "a) Formatear el disco duro de forma remota",
+      "b) Registrar y administrar dispositivos en el Directorio Activo de la nube sin necesidad de un servidor local",
+      "c) Instalar juegos de Xbox en servidores de empresa",
+      "d) Eliminar la conexión a internet de los empleados"
+    ],
+    "correcta": 1,
+    "explicacion": "Azure AD Join facilita la gestión centralizada desde la nube, ideal para escenarios de movilidad y PYMES.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Aunque existen herramientas de borrado, no es la definición de AD Join.",
+      "B": "Correcta. Es la esencia de la identidad en la nube.",
+      "C": "Incorrecta. No tiene relación con el ocio doméstico.",
+      "D": "Incorrecta. Al contrario, requiere internet para funcionar."
+    }
+  },
+  {
+    "pregunta": "En el contexto de movilidad empresarial, ¿qué significan las siglas BYOD?",
+    "opciones": [
+      "a) Build Your Own Desktop (Construye tu propio escritorio)",
+      "b) Bring Your Own Device (Trae tu propio dispositivo)",
+      "c) Buy Your Online Data (Compra tus datos online)",
+      "d) Backup Your Old Documents (Copia tus documentos antiguos)"
+    ],
+    "correcta": 1,
+    "explicacion": "BYOD es la tendencia de permitir a los empleados usar sus propios equipos (móviles, tablets) para acceder a recursos corporativos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No se refiere a montaje de hardware.",
+      "B": "Correcta. Es el término estándar para el uso de hardware personal en el trabajo.",
+      "C": "Incorrecta. No existe tal acrónimo en este contexto.",
+      "D": "Incorrecta. No es una estrategia de backup."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la ventaja principal del Single Sign-On (SSO) para el usuario final?",
+    "opciones": [
+      "a) Que el ordenador va el doble de rápido",
+      "b) Que solo necesita iniciar sesión una vez para acceder a todos los recursos y aplicaciones de la organización",
+      "c) Que la contraseña se cambia sola cada 5 minutos",
+      "d) Que no necesita monitor para trabajar"
+    ],
+    "correcta": 1,
+    "explicacion": "El SSO mejora la experiencia del usuario y la seguridad al unificar el acceso a múltiples servicios (como Office 365) con una sola credencial.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No afecta al rendimiento del procesador.",
+      "B": "Correcta. Es la definición de inicio de sesión único.",
+      "C": "Incorrecta. El cambio de contraseña lo dictan las políticas de seguridad (GPO).",
+      "D": "Incorrecta. El monitor sigue siendo necesario para la interfaz gráfica."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de Microsoft Passport en Windows Server 2016?",
+    "opciones": [
+      "a) Guardar fotos de los viajes del usuario",
+      "b) Sustituir las contraseñas tradicionales por una combinación de dispositivo físico y gesto biométrico (2FA)",
+      "c) Permitir la instalación de aplicaciones piratas",
+      "d) Traducir el sistema operativo a otros idiomas"
+    ],
+    "correcta": 1,
+    "explicacion": "Microsoft Passport utiliza criptografía de clave pública para autenticar al usuario sin necesidad de enviar contraseñas por la red.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No es un servicio de almacenamiento de imágenes.",
+      "B": "Correcta. Es el núcleo de la estrategia 'Passwordless'.",
+      "C": "Incorrecta. No tiene relación con el licenciamiento de software.",
+      "D": "Incorrecta. No es una herramienta lingüística."
+    }
+  },
+  {
+    "pregunta": "¿Dónde se almacena de forma segura la clave criptográfica del usuario cuando se utiliza Microsoft Passport?",
+    "opciones": [
+      "a) En un archivo de texto en el escritorio",
+      "b) En el servidor DNS de la empresa",
+      "c) En el chip físico TPM (Módulo de plataforma segura) del dispositivo",
+      "d) En la memoria RAM de forma permanente"
+    ],
+    "correcta": 2,
+    "explicacion": "El chip TPM es un componente de hardware diseñado para proteger claves criptográficas y resistir ataques físicos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Sería totalmente inseguro.",
+      "B": "Incorrecta. El DNS gestiona nombres de dominio, no claves privadas.",
+      "C": "Correcta. Es el búnker de hardware del ordenador.",
+      "D": "Incorrecta. La RAM se borra al apagar el equipo."
+    }
+  },
+  {
+    "pregunta": "¿Qué dos elementos combina Microsoft Passport para ofrecer una autenticación de dos factores (2FA)?",
+    "opciones": [
+      "a) Una contraseña larga y una pregunta secreta",
+      "b) Un dispositivo específico y un gesto (biometría) o PIN",
+      "c) Un nombre de usuario y un correo electrónico",
+      "d) Una dirección IP y una dirección MAC"
+    ],
+    "correcta": 1,
+    "explicacion": "Al requerir el dispositivo físico (donde está el TPM) y la validación del usuario (Hello o PIN), se cumplen los dos factores de seguridad.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso son métodos de seguridad antiguos.",
+      "B": "Correcta. Es la combinación que hace que el sistema sea robusto.",
+      "C": "Incorrecta. Son datos públicos, no factores de seguridad.",
+      "D": "Incorrecta. Son identificadores de red, no de identidad de usuario."
+    }
+  },{
+  "pregunta": "Si un administrador necesita restaurar un archivo que fue modificado ayer, pero quiere que la copia de seguridad de anoche haya sido lo más rápida posible, ¿qué tipo de backup debería haber programado?",
+  "opciones": [
+    "a) Backup Completo",
+    "b) Backup Incremental",
+    "c) Replicación Síncrona",
+    "d) Copia en disquete"
+  ],
+  "correcta": 1,
+  "explicacion": "El backup incremental es el más rápido porque solo guarda los cambios realizados desde la última copia, ahorrando tiempo y espacio.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Es el más lento porque copia todo de nuevo.",
+    "B": "Correcta. Es la opción ideal para copias diarias rápidas.",
+    "C": "Incorrecta. La replicación es para disponibilidad inmediata, no para historial de archivos.",
+    "D": "Incorrecta. Es un método obsoleto."
+  }
+},
+  {
+    "pregunta": "¿En qué consiste la característica de 'Inmutabilidad' en las copias de seguridad modernas?",
+    "opciones": [
+      "a) Que los archivos cambian de color automáticamente",
+      "b) Que los datos se escriben en un formato que no puede ser modificado ni borrado durante un tiempo definido",
+      "c) Que el servidor de backup no necesita electricidad",
+      "d) Que la copia se guarda en 5 idiomas diferentes"
+    ],
+    "correcta": 1,
+    "explicacion": "La inmutabilidad evita que el ransomware pueda cifrar o borrar tus copias de seguridad, garantizando que siempre tengas un punto de retorno limpio.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tiene ninguna función estética.",
+      "B": "Correcta. Es la defensa número 1 contra el ciberataque moderno.",
+      "C": "Incorrecta. Todo hardware de backup requiere energía.",
+      "D": "Incorrecta. Se refiere a la integridad de los datos, no al idioma."
+    }
+  },
+  {
+    "pregunta": "Según la regla 3-2-1-1-0, ¿qué significa el '0' final?",
+    "opciones": [
+      "a) 0 euros de coste",
+      "b) 0 personas necesarias para gestionarlo",
+      "c) 0 errores detectados tras realizar pruebas de restauración",
+      "d) 0 minutos de tiempo de espera"
+    ],
+    "correcta": 2,
+    "explicacion": "Una copia no es válida si no se ha comprobado que realmente funciona. El 0 indica que la restauración ha sido probada y no tiene errores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. La seguridad profesional siempre tiene un coste.",
+      "B": "Incorrecta. El factor humano siempre supervisa la estrategia.",
+      "C": "Correcta. Es la validación final del sistema.",
+      "D": "Incorrecta. La restauración siempre lleva un tiempo (RTO)."
+    }
+  },
+  {
+    "pregunta": "¿Qué ventaja principal ofrece la característica de 'Hotpatch' en Windows Server 2025?",
+    "opciones": [
+      "a) Hace que el procesador se caliente para ir más rápido",
+      "b) Permite aplicar actualizaciones de seguridad sin necesidad de reiniciar el servidor",
+      "c) Borra automáticamente los archivos temporales",
+      "d) Permite instalar juegos de Steam de forma nativa"
+    ],
+    "correcta": 1,
+    "explicacion": "Hotpatch aplica parches en la memoria, manteniendo el tiempo de actividad (uptime) al máximo al evitar reinicios.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Eso sería sobrecalentamiento, no una función.",
+      "B": "Correcta. Es una de las funciones más demandadas para entornos 24/7.",
+      "C": "Incorrecta. Para eso existen otras herramientas de limpieza.",
+      "D": "Incorrecta. No es una funcionalidad de servidor."
+    }
+  },
+  {
+    "pregunta": "En cuanto a Active Directory 2025, ¿cuál es el cambio arquitectónico más importante en su base de datos?",
+    "opciones": [
+      "a) Que ahora es de color azul",
+      "b) El cambio del tamaño de página de base de datos de 8k a 32k",
+      "c) Que ya no necesita contraseña para los administradores",
+      "d) La eliminación de todos los grupos de seguridad"
+    ],
+    "correcta": 1,
+    "explicacion": "El paso a 32k mejora drásticamente la escalabilidad y permite objetos con muchos más atributos y valores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Los colores no afectan a la arquitectura.",
+      "B": "Correcta. Es un cambio histórico desde Windows 2000.",
+      "C": "Incorrecta. La seguridad sigue siendo crítica y basada en identidad.",
+      "D": "Incorrecta. Los grupos son la base del control de acceso."
+    }
+  },
+  {
+    "pregunta": "¿Qué edición de Windows 10/11 es necesaria como mínimo para poder unir un equipo a un dominio de Active Directory?",
+    "opciones": [
+      "a) Windows Home",
+      "b) Windows Pro",
+      "c) Windows Starter",
+      "d) Cualquier versión sirve"
+    ],
+    "correcta": 1,
+    "explicacion": "La versión Home está capada para uso doméstico; las funciones de red empresarial empiezan a partir de la versión Pro.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No tiene la opción de unión a dominio.",
+      "B": "Correcta. Es el estándar para empresas.",
+      "C": "Incorrecta. Es una versión muy antigua y limitada.",
+      "D": "Incorrecta. Microsoft diferencia las versiones por sus capacidades de red."
+    }
+  },
+  {
+    "pregunta": "De las novedades de Windows Server 2025, ¿cuál reduce drásticamente las ventanas de mantenimiento nocturnas?",
+    "opciones": [
+      "a) El nuevo Solitario",
+      "b) El Hotpatching",
+      "c) El Bluetooth nativo",
+      "d) Las pantallas de 32k"
+    ],
+    "correcta": 1,
+    "explicacion": "Hotpatching permite aplicar parches de seguridad en caliente, evitando el reinicio y por tanto la caída del servicio.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un juego.",
+      "B": "Correcta. Evita el tiempo de inactividad por actualizaciones.",
+      "C": "Incorrecta. Mejora la usabilidad pero no el mantenimiento del sistema.",
+      "D": "Incorrecta. Se refiere a la base de datos de AD, no a monitores."
+    }
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
+

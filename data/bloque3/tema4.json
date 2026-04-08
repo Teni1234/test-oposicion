@@ -2424,8 +2424,1048 @@
       "d)": "Incorrecta. Trata sobre creación de objetos."
     }
   }
-
+,
+  {
+    "pregunta": "1. Patrón creacional que garantiza la existencia de una única instancia y un acceso global a ella:",
+    "opciones": [
+      "a) Factory Method.",
+      "b) Prototype.",
+      "c) Singleton.",
+      "d) Builder."
+    ],
+    "correcta": 2,
+    "explicacion": "El Singleton asegura que solo haya un objeto 'soltero' en todo el programa y permite acceder a él desde cualquier sitio.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Centraliza la creación de subtipos.",
+      "b)": "Incorrecta. Se basa en la clonación de objetos.",
+      "c)": "Correcta. Es el patrón del objeto único (instancia única).",
+      "d)": "Incorrecta. Sirve para construir objetos complejos paso a paso."
+    }
+  },
+  {
+    "pregunta": "2. ¿Qué patrón estructural utilizarías para que dos interfaces incompatibles puedan trabajar juntas?",
+    "opciones": [
+      "a) Bridge.",
+      "b) Adapter.",
+      "c) Facade.",
+      "d) Proxy."
+    ],
+    "correcta": 1,
+    "explicacion": "El Adapter actúa como un 'traductor' o conversor entre dos piezas que originalmente no encajaban.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Desacopla la abstracción de la implementación.",
+      "b)": "Correcta. Adapta una interfaz para que otra clase pueda usarla.",
+      "c)": "Incorrecta. Ofrece una interfaz simplificada a un sistema complejo.",
+      "d)": "Incorrecta. Es un intermediario para controlar el acceso."
+    }
+  },
+  {
+    "pregunta": "3. Patrón de comportamiento que permite suscribirse a un objeto para recibir notificaciones de sus cambios:",
+    "opciones": [
+      "a) Strategy.",
+      "b) Command.",
+      "c) Observer.",
+      "d) Memento."
+    ],
+    "correcta": 2,
+    "explicacion": "El Observer define una relación uno-a-muchos donde los suscriptores se enteran automáticamente de los cambios de estado.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Permite elegir algoritmos en tiempo de ejecución.",
+      "b)": "Incorrecta. Encapsula una operación en un objeto.",
+      "c)": "Correcta. Es el sistema de suscripción y notificación (tipo YouTube).",
+      "d)": "Incorrecta. Sirve para volver a estados anteriores (deshacer)."
+    }
+  },
+  {
+    "pregunta": "4. El patrón creacional que crea objetos nuevos clonando una instancia ya existente es:",
+    "opciones": [
+      "a) Builder.",
+      "b) Abstract Factory.",
+      "c) Object Pool.",
+      "d) Prototype."
+    ],
+    "correcta": 3,
+    "explicacion": "Prototype evita el coste de creación desde cero mediante la duplicación (clonación) de un objeto molde.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Construye paso a paso.",
+      "b)": "Incorrecta. Crea familias de productos relacionados.",
+      "c)": "Incorrecta. Recicla objetos para ahorrar recursos.",
+      "d)": "Correcta. Utiliza la clonación para generar nuevas instancias."
+    }
+  },
+  {
+    "pregunta": "5. ¿Cuál es la diferencia clave entre Factory Method y Abstract Factory?",
+    "opciones": [
+      "a) Factory Method crea familias y Abstract Factory un solo producto.",
+      "b) Factory Method crea un solo producto y Abstract Factory familias de productos.",
+      "c) No hay diferencia, son el mismo patrón.",
+      "d) Uno es estructural y el otro es creacional."
+    ],
+    "correcta": 1,
+    "explicacion": "Factory Method se enfoca en un producto (subtipo), mientras que Abstract Factory maneja kits o familias completas.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Los conceptos están al revés.",
+      "b)": "Correcta. Es la distinción principal según su nivel de complejidad.",
+      "c)": "Incorrecta. Son patrones distintos del GoF.",
+      "d)": "Incorrecta. Ambos son patrones creacionales."
+    }
+  },
+  {
+    "pregunta": "6. Patrón estructural que permite añadir funcionalidades dinámicamente a un objeto sin usar la herencia:",
+    "opciones": [
+      "a) Composite.",
+      "b) Decorator.",
+      "c) Flyweight.",
+      "d) Bridge."
+    ],
+    "correcta": 1,
+    "explicacion": "El Decorator envuelve al objeto original con capas adicionales de funcionalidad (como las skins o accesorios).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Trata estructuras de árbol (parte-todo).",
+      "b)": "Correcta. Es el 'envoltorio' que añade funciones en tiempo de ejecución.",
+      "c)": "Incorrecta. Comparte información para ahorrar memoria.",
+      "d)": "Incorrecta. Une dos jerarquías independientes."
+    }
+  },
+  {
+    "pregunta": "7. El patrón Memento es ideal para implementar la funcionalidad de:",
+    "opciones": [
+      "a) Elegir un algoritmo de ordenación.",
+      "b) Traducir un lenguaje a otro.",
+      "c) Deshacer acciones (Undo) volviendo a un estado previo.",
+      "d) Centralizar la comunicación en un único punto."
+    ],
+    "correcta": 2,
+    "explicacion": "Memento guarda una 'foto' del estado del objeto para poder restaurarlo más tarde.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es el patrón Strategy.",
+      "b)": "Incorrecta. Eso es el patrón Interpreter.",
+      "c)": "Correcta. Su función es el 'recuerdo' de estados anteriores.",
+      "d)": "Incorrecta. Eso es el patrón Mediator."
+    }
+  },
+  {
+    "pregunta": "8. Patrón estructural que oculta la complejidad de un subsistema bajo una interfaz muy sencilla:",
+    "opciones": [
+      "a) Facade.",
+      "b) Proxy.",
+      "c) Adapter.",
+      "d) Decorator."
+    ],
+    "correcta": 0,
+    "explicacion": "La Facade (Fachada) simplifica el uso de un sistema complejo ofreciendo solo los métodos esenciales.",
+    "analisis_opciones": {
+      "a)": "Correcta. Es la 'máscara' simple para un lío interno.",
+      "b)": "Incorrecta. Controla el acceso pero no simplifica necesariamente la interfaz.",
+      "c)": "Incorrecta. Resuelve incompatibilidades.",
+      "d)": "Incorrecta. Añade responsabilidades."
+    }
+  },
+  {
+    "pregunta": "9. ¿Qué patrón de comportamiento utilizarías si el comportamiento de un objeto debe cambiar drásticamente según su humor o estado interno?",
+    "opciones": [
+      "a) Strategy.",
+      "b) State.",
+      "c) Template Method.",
+      "d) Visitor."
+    ],
+    "correcta": 1,
+    "explicacion": "El patrón State permite que el objeto parezca cambiar de clase cuando su estado interno cambia (ej: de activo a dormido).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Tú eliges la estrategia, no el estado interno.",
+      "b)": "Correcta. El objeto varía su lógica según su estado propio.",
+      "c)": "Incorrecta. Define el esqueleto de un algoritmo.",
+      "d)": "Incorrecta. Define operaciones externas sobre una clase."
+    }
+  },
+  {
+    "pregunta": "10. El grupo que definió los 23 patrones de diseño clásicos en los años 90 se conoce como:",
+    "opciones": [
+      "a) The Beatles of Code.",
+      "b) Gang of Four (GoF).",
+      "c) Alexander and Friends.",
+      "d) Beck & Cunningham Group."
+    ],
+    "correcta": 1,
+    "explicacion": "Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides son los autores del libro 'Design Patterns' de 1994.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. No existe tal grupo oficial.",
+      "b)": "Correcta. Es el nombre estándar (Banda de los Cuatro).",
+      "c)": "Incorrecta. Alexander fue el precursor en arquitectura de edificios.",
+      "d)": "Incorrecta. Ellos iniciaron el paso al software pero no los 23 patrones GoF."
+    }
+  },
+  {
+    "pregunta": "1. [Creacional] Patrón que garantiza una única instancia y un punto de acceso global:",
+    "opciones": ["a) Prototype", "b) Singleton", "c) Builder", "d) Proxy"],
+    "correcta": 1,
+    "explicacion": "El Singleton asegura que una clase solo tenga una instancia en todo el sistema.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Clona objetos.",
+      "b)": "Correcta. Es el 'soltero' único.",
+      "c)": "Incorrecta. Construye paso a paso.",
+      "d)": "Incorrecta. Es estructural, controla el acceso."
+    }
+  },
+  {
+    "pregunta": "2. [Creacional] Crea objetos nuevos clonando una instancia ya existente:",
+    "opciones": ["a) Prototype", "b) Factory Method", "c) Singleton", "d) Flyweight"],
+    "correcta": 0,
+    "explicacion": "Prototype usa un objeto 'molde' para duplicarlo y ahorrar costes de creación.",
+    "analisis_opciones": {
+      "a)": "Correcta. Se basa en la clonación.",
+      "b)": "Incorrecta. Delega la creación a subclases.",
+      "c)": "Incorrecta. Solo permite una instancia.",
+      "d)": "Incorrecta. Es estructural para ahorrar memoria."
+    }
+  },
+  {
+    "pregunta": "3. [Creacional] Recicla objetos caros de crear en lugar de destruirlos:",
+    "opciones": ["a) Memento", "b) Builder", "c) Object Pool", "d) Bridge"],
+    "correcta": 2,
+    "explicacion": "Object Pool mantiene una reserva de objetos listos para ser reusados, ahorrando recursos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Guarda estados pasados.",
+      "b)": "Incorrecta. Crea objetos complejos.",
+      "c)": "Correcta. Es el patrón del 'reciclaje'.",
+      "d)": "Incorrecta. Es estructural."
+    }
+  },
+  {
+    "pregunta": "4. [Creacional] Construye objetos complejos paso a paso separando la construcción de la representación:",
+    "opciones": ["a) Strategy", "b) Factory Method", "c) Builder", "d) Composite"],
+    "correcta": 2,
+    "explicacion": "El Builder permite crear distintas configuraciones de un objeto de forma guiada.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es de comportamiento (algoritmos).",
+      "b)": "Incorrecta. Crea un producto simple mediante subclases.",
+      "c)": "Correcta. Como montar un menú o un LEGO.",
+      "d)": "Incorrecta. Es estructural (árboles)."
+    }
+  },
+  {
+    "pregunta": "5. [Creacional] Delega en las subclases la decisión de qué clase concreta instanciar:",
+    "opciones": ["a) Factory Method", "b) Abstract Factory", "c) State", "d) Adapter"],
+    "correcta": 0,
+    "explicacion": "Factory Method centraliza la creación de un tipo pero deja que los hijos elijan el subtipo.",
+    "analisis_opciones": {
+      "a)": "Correcta. Crea un producto específico.",
+      "b)": "Incorrecta. Crea familias de productos.",
+      "c)": "Incorrecta. De comportamiento.",
+      "d)": "Incorrecta. Estructural."
+    }
+  },
+  {
+    "pregunta": "6. [Creacional] Proporciona una interfaz para crear familias de objetos relacionados:",
+    "opciones": ["a) Builder", "b) Abstract Factory", "c) Command", "d) Facade"],
+    "correcta": 1,
+    "explicacion": "Abstract Factory asegura que los objetos de una misma familia sean compatibles entre sí.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Construye un solo objeto complejo.",
+      "b)": "Correcta. La fábrica de kits o familias.",
+      "c)": "Incorrecta. Encapsula peticiones.",
+      "d)": "Incorrecta. Estructural (fachada)."
+    }
+  },
+  {
+    "pregunta": "7. [Estructural] Permite que dos interfaces incompatibles trabajen juntas:",
+    "opciones": ["a) Bridge", "b) Decorator", "c) Adapter", "d) Mediator"],
+    "correcta": 2,
+    "explicacion": "El Adapter actúa como un conversor o enchufe entre clases que no encajaban.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Separa abstracción de implementación.",
+      "b)": "Incorrecta. Añade funciones dinámicamente.",
+      "c)": "Correcta. Traduce una interfaz a otra.",
+      "d)": "Incorrecta. Coordina comunicación."
+    }
+  },
+  {
+    "pregunta": "8. [Estructural] Desacopla una abstracción de su implementación para que ambas varíen independientemente:",
+    "opciones": ["a) Bridge", "b) Proxy", "c) Composite", "d) Prototype"],
+    "correcta": 0,
+    "explicacion": "Bridge evita la explosión de clases al separar el 'qué' (mando) del 'dónde' (TV).",
+    "analisis_opciones": {
+      "a)": "Correcta. Une dos jerarquías con un 'puente'.",
+      "b)": "Incorrecta. Es un representante.",
+      "c)": "Incorrecta. Estructura de árbol.",
+      "d)": "Incorrecta. Es creacional."
+    }
+  },
+  {
+    "pregunta": "9. [Estructural] Trata objetos simples y compuestos (grupos) de la misma forma:",
+    "opciones": ["a) Iterator", "b) Facade", "c) Flyweight", "d) Composite"],
+    "correcta": 3,
+    "explicacion": "Composite permite crear estructuras de árbol donde la raíz y las hojas se usan igual.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Recorre colecciones.",
+      "b)": "Incorrecta. Simplifica interfaces.",
+      "c)": "Incorrecta. Ahorra memoria compartiendo datos.",
+      "d)": "Correcta. Jerarquía parte-todo."
+    }
+  },
+  {
+    "pregunta": "10. [Estructural] Añade funcionalidades a un objeto dinámicamente sin usar herencia:",
+    "opciones": ["a) Decorator", "b) State", "c) Strategy", "d) Adapter"],
+    "correcta": 0,
+    "explicacion": "El Decorator envuelve al objeto original para darle nuevos poderes (como capas de cebolla).",
+    "analisis_opciones": {
+      "a)": "Correcta. El 'envoltorio' funcional.",
+      "b)": "Incorrecta. Cambia comportamiento por estado interno.",
+      "c)": "Incorrecta. Intercambia algoritmos.",
+      "d)": "Incorrecta. Adapta interfaces."
+    }
+  },
+  {
+    "pregunta": "11. [Estructural] Ofrece una interfaz unificada y simple para un subsistema complejo:",
+    "opciones": ["a) Proxy", "b) Facade", "c) Builder", "d) Observer"],
+    "correcta": 1,
+    "explicacion": "La Facade es el botón único que esconde un montón de procesos complicados detrás.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Controla el acceso.",
+      "b)": "Correcta. La 'máscara' de simplicidad.",
+      "c)": "Incorrecta. Es creacional.",
+      "d)": "Incorrecta. De comportamiento."
+    }
+  },
+  {
+    "pregunta": "12. [Estructural] Comparte información común entre muchos objetos para ahorrar memoria:",
+    "opciones": ["a) Flyweight", "b) Prototype", "c) Memento", "d) Bridge"],
+    "correcta": 0,
+    "explicacion": "Flyweight reduce el peso del sistema compartiendo el estado intrínseco de los objetos.",
+    "analisis_opciones": {
+      "a)": "Correcta. Peso ligero (comparte recursos).",
+      "b)": "Incorrecta. Clona objetos enteros.",
+      "c)": "Incorrecta. Guarda estados pasados.",
+      "d)": "Incorrecta. Une jerarquías."
+    }
+  },
+  {
+    "pregunta": "13. [Estructural] Actúa como intermediario o sustituto para controlar el acceso a un objeto:",
+    "opciones": ["a) Mediator", "b) Facade", "c) Proxy", "d) Adapter"],
+    "correcta": 2,
+    "explicacion": "El Proxy intercepta las llamadas al objeto real para añadir seguridad o control.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Centraliza comunicación.",
+      "b)": "Incorrecta. Simplifica interfaces.",
+      "c)": "Correcta. El representante o 'segurata'.",
+      "d)": "Incorrecta. Convierte interfaces."
+    }
+  },
+  {
+    "pregunta": "14. [Comportamiento] Pasa una petición por una cadena de objetos hasta que uno la maneja:",
+    "opciones": ["a) Iterator", "b) Chain of Responsibility", "c) Command", "d) State"],
+    "correcta": 1,
+    "explicacion": "Cada eslabón de la cadena decide si procesa el mensaje o lo pasa al siguiente.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Recorre listas.",
+      "b)": "Correcta. Como un sistema de soporte por niveles.",
+      "c)": "Incorrecta. Convierte órdenes en objetos.",
+      "d)": "Incorrecta. Cambia según estado."
+    }
+  },
+  {
+    "pregunta": "15. [Comportamiento] Encapsula una petición como un objeto, permitiendo colas o deshacer acciones:",
+    "opciones": ["a) Command", "b) Memento", "c) Strategy", "d) Visitor"],
+    "correcta": 0,
+    "explicacion": "Command convierte el 'hacer algo' en un objeto que puedes guardar o pasar.",
+    "analisis_opciones": {
+      "a)": "Correcta. La orden hecha objeto.",
+      "b)": "Incorrecta. Guarda el estado interno.",
+      "c)": "Incorrecta. Algoritmos intercambiables.",
+      "d)": "Incorrecta. Operaciones externas."
+    }
+  },
+  {
+    "pregunta": "16. [Comportamiento] Define una gramática y un motor para interpretar un lenguaje específico:",
+    "opciones": ["a) Template Method", "b) Interpreter", "c) Proxy", "d) Facade"],
+    "correcta": 1,
+    "explicacion": "Interpreter se usa para evaluar expresiones o lenguajes propios (como SQL o Morse).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Esqueleto de algoritmo.",
+      "b)": "Correcta. Intérprete de lenguajes.",
+      "c)": "Incorrecta. Estructural.",
+      "d)": "Incorrecta. Estructural."
+    }
+  },
+  {
+    "pregunta": "17. [Comportamiento] Permite recorrer los elementos de una colección sin exponer su estructura interna:",
+    "opciones": ["a) Composite", "b) Visitor", "c) Iterator", "d) Chain of Responsibility"],
+    "correcta": 2,
+    "explicacion": "El Iterator da una forma estándar de ir uno a uno por los elementos (siguiente, siguiente...).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es estructural (árbol).",
+      "b)": "Incorrecta. Define nuevas operaciones.",
+      "c)": "Correcta. El 'mando' para listas.",
+      "d)": "Incorrecta. Pasa mensajes en cadena."
+    }
+  },
+  {
+    "pregunta": "18. [Comportamiento] Centraliza la comunicación compleja entre clases para que no hablen directamente:",
+    "opciones": ["a) Mediator", "b) Observer", "c) Facade", "d) Bridge"],
+    "correcta": 0,
+    "explicacion": "El Mediator evita el caos de conexiones cruzadas siendo el 'hub' central.",
+    "analisis_opciones": {
+      "a)": "Correcta. Torre de control de comunicaciones.",
+      "b)": "Incorrecta. Uno avisa a muchos suscriptores.",
+      "c)": "Incorrecta. Simplifica una interfaz compleja.",
+      "d)": "Incorrecta. Estructural."
+    }
+  },
+  {
+    "pregunta": "19. [Comportamiento] Captura y guarda el estado interno de un objeto para poder restaurarlo (Undo):",
+    "opciones": ["a) Proxy", "b) Memento", "c) State", "d) Prototype"],
+    "correcta": 1,
+    "explicacion": "Memento permite viajar al pasado de un objeto sin romper su encapsulamiento.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Intermediario.",
+      "b)": "Correcta. El 'recuerdo' o punto de guardado.",
+      "c)": "Incorrecta. Comportamiento por estado.",
+      "d)": "Incorrecta. Creacional (clon)."
+    }
+  },
+  {
+    "pregunta": "20. [Comportamiento] Notifica automáticamente cambios de estado a todos los objetos dependientes:",
+    "opciones": ["a) Mediator", "b) Strategy", "c) Observer", "d) Command"],
+    "correcta": 2,
+    "explicacion": "Observer es el patrón de las suscripciones (Sujeto - Observadores).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Coordina, no necesariamente notifica cambios.",
+      "b)": "Incorrecta. Algoritmos.",
+      "c)": "Correcta. Notificación 1 a muchos.",
+      "d)": "Incorrecta. Peticiones."
+    }
+  },
+  {
+    "pregunta": "21. [Comportamiento] Permite que un objeto cambie su comportamiento según su estado interno:",
+    "opciones": ["a) Strategy", "b) State", "c) Flyweight", "d) Decorator"],
+    "correcta": 1,
+    "explicacion": "En State, el objeto parece cambiar de clase cuando cambia su 'humor' o estado.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. El cliente elige el algoritmo de fuera.",
+      "b)": "Correcta. El objeto cambia por dentro.",
+      "c)": "Incorrecta. Estructural.",
+      "d)": "Incorrecta. Estructural."
+    }
+  },
+  {
+    "pregunta": "22. [Comportamiento] Permite intercambiar diferentes algoritmos para una tarea en tiempo de ejecución:",
+    "opciones": ["a) State", "b) Visitor", "c) Strategy", "d) Factory Method"],
+    "correcta": 2,
+    "explicacion": "Strategy encapsula algoritmos hermanos para que puedas elegir cuál usar según la prisa.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Cambios automáticos por estado.",
+      "b)": "Incorrecta. Operaciones externas.",
+      "c)": "Correcta. La 'estrategia' elegible.",
+      "d)": "Incorrecta. Es creacional."
+    }
+  },
+  {
+    "pregunta": "23. [Comportamiento] Define el esqueleto de un algoritmo pero delega algunos pasos a las subclases:",
+    "opciones": ["a) Template Method", "b) Strategy", "c) Abstract Factory", "d) Bridge"],
+    "correcta": 0,
+    "explicacion": "Template Method usa herencia para fijar la estructura pero dejar huecos libres.",
+    "analisis_opciones": {
+      "a)": "Correcta. El 'esqueleto' o plantilla.",
+      "b)": "Incorrecta. Usa composición, no herencia de esqueleto.",
+      "c)": "Incorrecta. Creacional.",
+      "d)": "Incorrecta. Estructural."
+    }
+  },
+  {
+    "pregunta": "24. [Comportamiento] Define una nueva operación sobre una jerarquía sin modificar sus clases:",
+    "opciones": ["a) Iterator", "b) Decorator", "c) Visitor", "d) Command"],
+    "correcta": 2,
+    "explicacion": "Visitor permite añadir funciones nuevas 'visitando' las clases existentes sin tocarlas.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Recorrido.",
+      "b)": "Incorrecta. Estructural (añade funciones al objeto, no a la jerarquía).",
+      "c)": "Correcta. El inspector externo.",
+      "d)": "Incorrecta. Petición."
+    }
+  },{
+    "pregunta": "1. ¿Cuál es el objetivo principal de los Diagramas de Estructura en UML?",
+    "opciones": [
+      "a) Mostrar cómo los objetos colaboran en el tiempo.",
+      "b) Enfatizar en los elementos que deben existir en el sistema modelado.",
+      "c) Describir las etapas de vida de un objeto.",
+      "d) Modelar las reglas de negocio y algoritmos."
+    ],
+    "correcta": 1,
+    "explicacion": "Los diagramas de estructura representan la vista estática del sistema, es decir, sus componentes y organización física o lógica.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es propio de los diagramas de interacción (Comportamiento).",
+      "b)": "Correcta. Se centran en la existencia de los elementos.",
+      "c)": "Incorrecta. Eso lo hace el diagrama de Estados.",
+      "d)": "Incorrecta. Eso se modela con diagramas de Actividad o de Comportamiento."
+    }
+  },
+  {
+    "pregunta": "2. Si un diagrama muestra instancias específicas con valores de atributos (ej: 'coche1: Coche'), estamos ante un:",
+    "opciones": [
+      "a) Diagrama de Clases.",
+      "b) Diagrama de Estructura Compuesta.",
+      "c) Diagrama de Objetos.",
+      "d) Diagrama de Despliegue."
+    ],
+    "correcta": 2,
+    "explicacion": "El diagrama de objetos es una 'foto' de un momento concreto que muestra instancias de clases y sus datos actuales.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Muestra el molde genérico, no la instancia con datos.",
+      "b)": "Incorrecta. Muestra la colaboración interna de una clase.",
+      "c)": "Correcta. Es el diagrama de ejemplares o instancias.",
+      "d)": "Incorrecta. Muestra hardware y nodos físicos."
+    }
+  },
+  {
+    "pregunta": "3. ¿Qué diagrama de estructura muestra la arquitectura física del hardware y la asignación de artefactos de software a nodos?",
+    "opciones": [
+      "a) Diagrama de Componentes.",
+      "b) Diagrama de Despliegue.",
+      "c) Diagrama de Paquetes.",
+      "d) Diagrama de Perfiles."
+    ],
+    "correcta": 1,
+    "explicacion": "El diagrama de despliegue (Deployment) se ocupa de la topología del hardware y de dónde se 'instala' el software físicamente.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Muestra módulos de software, no el hardware.",
+      "b)": "Correcta. Muestra servidores, dispositivos y redes.",
+      "c)": "Incorrecta. Organiza el modelo en contenedores lógicos.",
+      "d)": "Incorrecta. Sirve para extender y personalizar UML."
+    }
+  },
+  {
+    "pregunta": "4. El diagrama que permite agrupar elementos relacionados para reducir la complejidad de un modelo grande es el:",
+    "opciones": [
+      "a) Diagrama de Clases.",
+      "b) Diagrama de Estructura Compuesta.",
+      "c) Diagrama de Paquetes.",
+      "d) Diagrama de Objetos."
+    ],
+    "correcta": 2,
+    "explicacion": "Los paquetes funcionan como carpetas que agrupan clases u otros diagramas para organizar el proyecto.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Muestra las clases individuales, no su agrupación masiva.",
+      "b)": "Incorrecta. Analiza el interior de una sola clase compleja.",
+      "c)": "Correcta. Es el diagrama de organización por excelencia.",
+      "d)": "Incorrecta. Muestra instancias de datos."
+    }
+  },
+  {
+    "pregunta": "5. Introducido en UML 2.5, ¿qué diagrama de estructura permite extender la metamodelización para dominios específicos?",
+    "opciones": [
+      "a) Diagrama de Estructura Compuesta.",
+      "b) Diagrama de Perfiles (Profile).",
+      "c) Diagrama de Componentes.",
+      "d) Diagrama de Despliegue."
+    ],
+    "correcta": 1,
+    "explicacion": "El diagrama de Perfiles permite crear estereotipos y etiquetas para adaptar UML a necesidades concretas (médicas, espaciales, etc.).",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Este es de UML 2.0 y muestra partes internas.",
+      "b)": "Correcta. Es el mecanismo de personalización de UML 2.5.",
+      "c)": "Incorrecta. Muestra la organización modular del código.",
+      "d)": "Incorrecta. Muestra la infraestructura física."
+    }
+  },
+  {
+    "pregunta": "6. ¿Cuál de estos diagramas NO pertenece a la categoría de Estructura?",
+    "opciones": [
+      "a) Diagrama de Componentes.",
+      "b) Diagrama de Casos de Uso.",
+      "c) Diagrama de Clases.",
+      "d) Diagrama de Estructura Compuesta."
+    ],
+    "correcta": 1,
+    "explicacion": "El diagrama de Casos de Uso es de Comportamiento, ya que describe las funcionalidades y requisitos desde el punto de vista del usuario.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es estructural (módulos).",
+      "b)": "Correcta. Es un diagrama de comportamiento (qué hace el sistema).",
+      "c)": "Incorrecta. Es el diagrama estructural básico.",
+      "d)": "Incorrecta. Es estructural (detalles internos)."
+    }
+  },
+  {
+    "pregunta": "7. El diagrama que muestra cómo se organizan las clases en módulos de software independientes se llama:",
+    "opciones": [
+      "a) Diagrama de Componentes.",
+      "b) Diagrama de Despliegue.",
+      "c) Diagrama de Paquetes.",
+      "d) Diagrama de Estructura Compuesta."
+    ],
+    "correcta": 0,
+    "explicacion": "El diagrama de componentes describe cómo se divide el sistema en piezas físicas de software (librerías, archivos, etc.).",
+    "analisis_opciones": {
+      "a)": "Correcta. Define los módulos y sus interfaces.",
+      "b)": "Incorrecta. Se centra en el hardware.",
+      "c)": "Incorrecta. Se centra en la agrupación lógica, no necesariamente física.",
+      "d)": "Incorrecta. Muestra el interior de una clase."
+    }
+  },
+  {
+    "pregunta": "8. El diagrama de Estructura Compuesta (introducido en UML 2.0) sirve para:",
+    "opciones": [
+      "a) Dibujar todas las clases del sistema.",
+      "b) Detallar la colaboración interna y las partes que forman una clase compleja.",
+      "c) Mostrar la secuencia de mensajes entre objetos.",
+      "d) Listar los requisitos del cliente."
+    ],
+    "correcta": 1,
+    "explicacion": "Este diagrama 'abre' una clase para ver cómo sus partes internas se conectan y colaboran entre sí.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es el diagrama de clases general.",
+      "b)": "Correcta. Muestra la estructura interna y 'puertos' de un elemento.",
+      "c)": "Incorrecta. Eso es un diagrama de Secuencia (Comportamiento).",
+      "d)": "Incorrecta. Eso son los Casos de Uso."
+    }
+  },
+  {
+    "pregunta": "9. En UML, ¿qué diagrama resta protagonismo al diagrama de clases en las versiones modernas?",
+    "opciones": [
+      "a) Los diagramas de Objetos.",
+      "b) Los diagramas dinámicos (Estados e Interacción).",
+      "c) Los diagramas de Paquetes.",
+      "d) Ninguno, el de clases sigue siendo el más importante."
+    ],
+    "correcta": 1,
+    "explicacion": "Las versiones actuales de UML dan más peso a cómo evoluciona y se comunica el sistema (dinámica) que a su simple estructura estática.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Los de objetos son muy limitados en uso.",
+      "b)": "Correcta. Mejoran la descripción dinámica del sistema.",
+      "c)": "Incorrecta. Son solo organizativos.",
+      "d)": "Incorrecta. Aunque es vital, ha perdido peso frente a la descripción del comportamiento."
+    }
+  },
+  {
+    "pregunta": "10. ¿Cuál es el estándar que gestiona y promociona UML actualmente?",
+    "opciones": [
+      "a) ISO.",
+      "b) IEEE.",
+      "c) OMG (Object Management Group).",
+      "d) W3C."
+    ],
+    "correcta": 2,
+    "explicacion": "El OMG es el consorcio internacional encargado de estandarizar UML desde sus inicios.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. ISO suele adoptar estándares después, pero no lo crea.",
+      "b)": "Incorrecta. Es de ingenieros eléctricos y electrónicos.",
+      "c)": "Correcta. Es el grupo de gestión de objetos.",
+      "d)": "Incorrecta. Se encarga de estándares web (HTML, CSS)."
+    }
+  },
+  {
+    "pregunta": "1. ¿Cuál es el enfoque principal de los Diagramas de Comportamiento en UML?",
+    "opciones": [
+      "a) Los elementos estáticos que deben existir.",
+      "b) Lo que debe suceder en el sistema modelado.",
+      "c) La infraestructura de hardware y nodos.",
+      "d) La organización de archivos en carpetas."
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia de los estructurales, los de comportamiento modelan la dinámica y las acciones del sistema.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es de Estructura.",
+      "b)": "Correcta. Se centran en la ejecución y el suceso.",
+      "c)": "Incorrecta. Eso es Despliegue (Estructura).",
+      "d)": "Incorrecta. Eso es Paquetes (Estructura)."
+    }
+  },
+  {
+    "pregunta": "2. ¿Cómo se clasifican técnicamente los Diagramas de Interacción dentro de UML?",
+    "opciones": [
+      "a) Como un tipo independiente de diagrama.",
+      "b) Como un subtipo de los diagramas de estructura.",
+      "c) Como un subtipo de los diagramas de comportamiento.",
+      "d) Como una extensión de los diagramas de casos de uso."
+    ],
+    "correcta": 2,
+    "explicacion": "Aunque tienen su propia categoría interna, los de Interacción son una especialización del Comportamiento.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Están bajo el paraguas de Comportamiento.",
+      "b)": "Incorrecta. No son estáticos.",
+      "c)": "Correcta. Se centran en el flujo de control y datos entre elementos.",
+      "d)": "Incorrecta. Los casos de uso son hermanos, no padres."
+    }
+  },
+  {
+    "pregunta": "3. ¿Cuál de estos diagramas de interacción fue introducido específicamente en la versión UML 2.0?",
+    "opciones": [
+      "a) Diagrama de Secuencia.",
+      "b) Diagrama de Comunicación.",
+      "c) Diagrama de Tiempos (Timing).",
+      "d) Diagrama de Actividades."
+    ],
+    "correcta": 2,
+    "explicacion": "El diagrama de tiempos y el global de interacciones son adiciones de la versión 2.0 para mejorar el modelado dinámico.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Ya existía en versiones anteriores.",
+      "b)": "Incorrecta. Es el antiguo diagrama de Colaboración.",
+      "c)": "Correcta. Se añadió en UML 2.0 para sistemas en tiempo real.",
+      "d)": "Incorrecta. Es de comportamiento general, no de interacción."
+    }
+  },
+  {
+    "pregunta": "4. El 'Diagrama global de interacciones' también es conocido técnicamente como:",
+    "opciones": [
+      "a) Diagrama de flujo de datos.",
+      "b) Diagrama de vista de interacción.",
+      "c) Diagrama de arquitectura de mensajes.",
+      "d) Diagrama de estados compuesto."
+    ],
+    "correcta": 1,
+    "explicacion": "Ambos nombres se refieren al mismo diagrama de UML 2.0 que ofrece una visión de alto nivel de varias interacciones.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Ese es un término de metodologías estructuradas.",
+      "b)": "Correcta. Es el sinónimo oficial en el temario.",
+      "c)": "Incorrecta. No es un nombre estándar de UML.",
+      "d)": "Incorrecta. El de estados es otro tipo distinto."
+    }
+  },
+  {
+    "pregunta": "5. ¿Qué diagrama de interacción enfatiza especialmente el flujo de control y datos entre elementos del sistema?",
+    "opciones": [
+      "a) Diagrama de Casos de Uso.",
+      "b) Diagrama de Clases.",
+      "c) Diagramas de Interacción (en general).",
+      "d) Diagrama de Perfiles."
+    ],
+    "correcta": 2,
+    "explicacion": "La definición de interacción se centra precisamente en cómo fluyen los datos y el control entre los elementos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Muestra metas del usuario, no flujos de datos detallados.",
+      "b)": "Incorrecta. Es estático.",
+      "c)": "Correcta. Es la definición exacta de este subtipo.",
+      "d)": "Incorrecta. Es para extender UML (Estructura)."
+    }
+  },
+  {
+    "pregunta": "6. Si queremos modelar un sistema donde el tiempo exacto de respuesta es crítico, ¿qué diagrama de interacción usaríamos?",
+    "opciones": [
+      "a) Secuencia.",
+      "b) Comunicación.",
+      "c) Tiempos (Timing).",
+      "d) Actividades."
+    ],
+    "correcta": 2,
+    "explicacion": "El diagrama de tiempos se enfoca en las restricciones temporales y los cambios de estado a lo largo de una línea de tiempo.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Muestra orden, pero no precisión de tiempo real.",
+      "b)": "Incorrecta. Muestra la organización de los objetos.",
+      "c)": "Correcta. Es el diagrama ideal para latencias y tiempos.",
+      "d)": "Incorrecta. Muestra la lógica del algoritmo."
+    }
+  },
+  {
+    "pregunta": "7. ¿Cuál es el diagrama de interacción que muestra los mensajes intercambiados centrándose en la estructura de los objetos?",
+    "opciones": [
+      "a) Diagrama de Secuencia.",
+      "b) Diagrama de Comunicación.",
+      "c) Diagrama de Estados.",
+      "d) Diagrama de Componentes."
+    ],
+    "correcta": 1,
+    "explicacion": "A diferencia del de secuencia (que se centra en el tiempo), el de comunicación se centra en los enlaces entre objetos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Se centra en el tiempo (líneas de vida).",
+      "b)": "Correcta. Muestra cómo se conectan los objetos que hablan.",
+      "c)": "Incorrecta. Es de comportamiento, pero no de interacción.",
+      "d)": "Incorrecta. Es estructural."
+    }
+  },
+  {
+    "pregunta": "8. Los diagramas de actividades, casos de uso y estados tienen en común que:",
+    "opciones": [
+      "a) Todos son diagramas de estructura.",
+      "b) Todos son diagramas de comportamiento (no interacción).",
+      "c) Todos fueron eliminados en UML 2.0.",
+      "d) Todos modelan hardware físicamente."
+    ],
+    "correcta": 1,
+    "explicacion": "Estos tres, junto con los de interacción, forman el grupo de diagramas de comportamiento.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. No son estáticos.",
+      "b)": "Correcta. Son los pilares del comportamiento junto a las interacciones.",
+      "c)": "Incorrecta. Siguen siendo fundamentales.",
+      "d)": "Incorrecta. Eso es el diagrama de Despliegue."
+    }
+  },
+  {
+    "pregunta": "1. Diagrama que muestra una colección de elementos de modelado declarativo (estáticos) como clases, tipos y sus relaciones:",
+    "opciones": [
+      "a) Diagrama de Objetos.",
+      "b) Diagrama de Componentes.",
+      "c) Diagrama de Clases.",
+      "d) Diagrama de Estructura Compuesta."
+    ],
+    "correcta": 2,
+    "explicacion": "El diagrama de clases es la base del modelado estático y declarativo en UML.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Muestra objetos en un punto del tiempo.",
+      "b)": "Incorrecta. Muestra componentes y sus interfaces públicas.",
+      "c)": "Correcta. Define los tipos y contenidos estáticos del sistema.",
+      "d)": "Incorrecta. Muestra la estructura interna de un clasificador."
+    }
+  },
+  {
+    "pregunta": "2. ¿Cómo se representan las máquinas físicas y los procesadores en un Diagrama de Despliegue?",
+    "opciones": [
+      "a) Como artefactos.",
+      "b) Como componentes.",
+      "c) Como nodos.",
+      "d) Como paquetes."
+    ],
+    "correcta": 2,
+    "explicacion": "En el despliegue físico, los nodos representan el hardware donde se ubican los artefactos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Son los elementos de software que se sitúan en los nodos.",
+      "b)": "Incorrecta. Son piezas de software lógico.",
+      "c)": "Correcta. Los nodos simbolizan máquinas y procesadores físicos.",
+      "d)": "Incorrecta. Son unidades de organización lógica."
+    }
+  },
+  {
+    "pregunta": "3. El diagrama de Objetos se considera un caso especial de los diagramas de:",
+    "opciones": [
+      "a) Clases o Comunicaciones.",
+      "b) Secuencia o Tiempos.",
+      "c) Estados o Actividades.",
+      "d) Casos de Uso o Perfiles."
+    ],
+    "correcta": 0,
+    "explicacion": "Al mostrar relaciones en un punto del tiempo, se deriva de la estructura (Clases) o de la interacción (Comunicaciones).",
+    "analisis_opciones": {
+      "a)": "Correcta. Refleja instancias de clases o participantes en una comunicación.",
+      "b)": "Incorrecta. Estos son diagramas dinámicos de tiempo lineal.",
+      "c)": "Incorrecta. Son diagramas de comportamiento puro.",
+      "d)": "Incorrecta. No guardan relación estructural directa."
+    }
+  },
+  {
+    "pregunta": "4. En un Diagrama de Comunicaciones (antes Colaboración), ¿cómo se indica la secuencia de los mensajes?",
+    "opciones": [
+      "a) Mediante la posición vertical en el diagrama.",
+      "b) Mediante el grosor de las líneas de vida.",
+      "c) A través de un esquema de numerado de la secuencia.",
+      "d) No se indica la secuencia, solo la conexión."
+    ],
+    "correcta": 2,
+    "explicacion": "A diferencia del de secuencia, el de comunicación necesita números (1, 1.1, 2...) para marcar el orden.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es propio del diagrama de Secuencia.",
+      "b)": "Incorrecta. Las líneas de vida no definen el orden por su grosor.",
+      "c)": "Correcta. El numerado es esencial para entender el paso de mensajes.",
+      "d)": "Incorrecta. Sí se indica, pero mediante números."
+    }
+  },
+  {
+    "pregunta": "5. ¿Qué característica distingue al Diagrama de Revisión de la Interacción en su nivel de detalle?",
+    "opciones": [
+      "a) Muestra detalladamente las Líneas de Vida.",
+      "b) Las Líneas de Vida de los Mensajes NO aparecen en este nivel.",
+      "c) Se enfoca en los cambios de estado de un solo objeto.",
+      "d) Utiliza estereotipos para extender el metamodelo."
+    ],
+    "correcta": 1,
+    "explicacion": "Este diagrama eleva el nivel de abstracción; los nodos son interacciones completas, no líneas de vida individuales.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Las líneas de vida se ocultan en este nivel de revisión.",
+      "b)": "Correcta. Se enfoca en el flujo de control entre interacciones.",
+      "c)": "Incorrecta. Eso es el diagrama de Máquina de Estados.",
+      "d)": "Incorrecta. Eso es propio del diagrama de Perfiles."
+    }
+  },
+  {
+    "pregunta": "6. El propósito primario del Diagrama de Tiempos es mostrar:",
+    "opciones": [
+      "a) La lógica paralela dentro de un sistema.",
+      "b) Las relaciones entre actores y casos de uso.",
+      "c) Los cambios de estado o condición de una línea de vida a lo largo del tiempo lineal.",
+      "d) El despliegue de artefactos en nodos físicos."
+    ],
+    "correcta": 2,
+    "explicacion": "Se utiliza para ver cómo responde un objeto a estímulos en un eje cronológico preciso.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es más propio del diagrama de Actividades.",
+      "b)": "Incorrecta. Eso es el diagrama de Casos de Uso.",
+      "c)": "Correcta. Muestra la evolución temporal de la condición de una instancia.",
+      "d)": "Incorrecta. Eso es el diagrama de Despliegue."
+    }
+  },
+  {
+    "pregunta": "7. ¿Cuál de estos NO es uno de los tres mecanismos de extensión del Diagrama de Perfil (Profile)?",
+    "opciones": [
+      "a) Estereotipos (stereotypes).",
+      "b) Valores etiquetados (tagged values).",
+      "c) Restricciones (constraints).",
+      "d) Líneas de vida (lifelines)."
+    ],
+    "correcta": 3,
+    "explicacion": "Las líneas de vida son elementos de interacción, no mecanismos de extensión de metamodelos.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es un mecanismo básico (ej: <<stereotype>>).",
+      "b)": "Incorrecta. Permite añadir propiedades adicionales.",
+      "c)": "Incorrecta. Permite definir reglas sobre los elementos.",
+      "d)": "Correcta. No pertenece a los mecanismos de extensión de Perfiles."
+    }
+  },
+  {
+    "pregunta": "8. El diagrama de Máquinas de Estado ilustra el movimiento de un elemento entre estados mediante:",
+    "opciones": [
+      "a) Importaciones y extensiones de paquetes.",
+      "b) Disparadores de transiciones y guardias de restricciones.",
+      "c) Interfaces públicas y componentes Media.",
+      "d) Actores y sujetos del sistema."
+    ],
+    "correcta": 1,
+    "explicacion": "Las transiciones (disparadas por eventos) y las guardias (condiciones) explican el cambio de comportamiento.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Eso es del diagrama de Paquetes.",
+      "b)": "Correcta. Son los elementos que explican el movimiento entre estados.",
+      "c)": "Incorrecta. Eso es del diagrama de Componentes.",
+      "d)": "Incorrecta. Eso es del diagrama de Casos de Uso."
+    }
+  },
+  {
+    "pregunta": "9. ¿Qué diagrama puede modelar procesos de negocio de alto nivel y lógica compleja o paralela?",
+    "opciones": [
+      "a) Diagrama de Actividades.",
+      "b) Diagrama de Secuencias.",
+      "c) Diagrama de Estructura.",
+      "d) Diagrama de Comunicaciones."
+    ],
+    "correcta": 0,
+    "explicacion": "El diagrama de actividades es el sucesor de los flujogramas para procesos y concurrencia.",
+    "analisis_opciones": {
+      "a)": "Correcta. Maneja flujos de datos y lógica paralela.",
+      "b)": "Incorrecta. Se centra en la secuencia de mensajes, no en el proceso general.",
+      "c)": "Incorrecta. Se refiere a la estructura interna del clasificador.",
+      "d)": "Incorrecta. Se enfoca en la arquitectura de la interacción interna."
+    }
+  },
+  {
+    "pregunta": "10. En un diagrama de Perfil, un Perfil se define estereotipado como:",
+    "opciones": [
+      "a) <<metamodel>>",
+      "b) <<profile>>",
+      "c) <<extension>>",
+      "d) <<package>>"
+    ],
+    "correcta": 1,
+    "explicacion": "Según la definición, se define en un paquete UML con el estereotipo <<profile>>.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. El perfil extiende al metamodelo, no lo es.",
+      "b)": "Correcta. Es el estereotipo oficial para este tipo de paquete.",
+      "c)": "Incorrecta. Es una relación, no el estereotipo del paquete.",
+      "d)": "Incorrecta. Es el elemento base, pero necesita el estereotipo específico."
+    }
+  },
+  {
+    "pregunta": "38. Señale la respuesta INCORRECTA. El patrón de diseño “Composite”:",
+    "opciones": [
+      "a) Es un patrón de diseño estructural que permite componer objetos en estructuras de árbol.",
+      "b) Sirve para construir objetos complejos a partir de otros más simples y similares entre sí.",
+      "c) Simplifica el tratamiento de los objetos creados que, al poseer de una interfaz común, se tratan todos de la misma manera.",
+      "d) Se recomienda su uso cuando se quiere añadir responsabilidades a objetos concretos de manera dinámica y transparente y sin afectar a otros objetos."
+    ],
+    "correcta": 3,
+    "explicacion": "La opción D describe al patrón Decorator, no al Composite. El Composite se centra en jerarquías estructurales (árboles), no en añadir responsabilidades dinámicas.",
+    "analisis_opciones": {
+      "a)": "Correcta. Es la definición estructural base del Composite.",
+      "b)": "Correcta. Describe la relación parte-todo del patrón.",
+      "c)": "Correcta. El uso de una interfaz común para 'hojas' y 'compuestos' es su mayor ventaja.",
+      "d)": "INCORRECTA. Esta es la definición exacta del patrón Decorator (añadir funciones en tiempo de ejecución)."
+    }
+  },
+  {
+    "pregunta": "36. En el contexto de los lenguajes de programación, ¿con qué término de los siguientes se corresponde la abstracción de un dato y su comportamiento?",
+    "opciones": [
+      "a) Encapsulación.",
+      "b) Objeto.",
+      "c) Método.",
+      "d) Función."
+    ],
+    "correcta": 1,
+    "explicacion": "Un objeto es la unidad que combina tanto el estado (datos/atributos) como el comportamiento (métodos) en una única entidad abstracta.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. Es el mecanismo de ocultación/protección, no la abstracción conjunta de datos y actos.",
+      "b)": "Correcta. El objeto representa la unión de datos y funcionalidad.",
+      "c)": "Incorrecta. Solo representa la parte del comportamiento.",
+      "d)": "Incorrecta. Es un término procedimental que no implica necesariamente la unión con datos."
+    }
+  },
+  {
+    "pregunta": "37. Señale la respuesta INCORRECTA respecto al Lenguaje de Modelado Unificado (UML):",
+    "opciones": [
+      "a) Es un lenguaje basado en diagramas para la especificación, visualización, construcción y documentación de cualquier sistema software.",
+      "b) Es independiente de las metodologías de análisis y diseño y de los lenguajes de programación.",
+      "c) Se basa en el paradigma de la orientación a objetos.",
+      "d) Muestra únicamente el modelado estático de un sistema software."
+    ],
+    "correcta": 3,
+    "explicacion": "UML permite tanto el modelado estático (estructura) como el modelado dinámico (comportamiento). Decir que es 'únicamente' estático es falso.",
+    "analisis_opciones": {
+      "a)": "Correcta. Define los cuatro propósitos principales de UML.",
+      "b)": "Correcta. UML es un estándar agnóstico al lenguaje y a la metodología (Scrum, Cascada, etc.).",
+      "c)": "Correcta. Sus cimientos son clases, objetos y sus relaciones.",
+      "d)": "INCORRECTA. Ignora toda la rama de diagramas de comportamiento (Secuencia, Estados, Actividad)."
+    }
+  },
+  {
+    "pregunta": "41. La característica de la POO que permite definir dos métodos con el mismo nombre, pero distintos argumentos, se denomina:",
+    "opciones": [
+      "a) Sobrescritura",
+      "b) Polimorfismo",
+      "c) Herencia",
+      "d) Sobrecarga"
+    ],
+    "correcta": 3,
+    "explicacion": "La sobrecarga (overloading) permite que varios métodos compartan nombre siempre que su firma (parámetros) sea diferente.",
+    "analisis_opciones": {
+      "a)": "Incorrecta. La sobrescritura requiere misma firma y ocurre en herencia.",
+      "b)": "Incorrecta. Es el concepto general, pero la pregunta pide el término específico para los argumentos.",
+      "c)": "Incorrecta. Es el mecanismo de transmisión de propiedades entre clases.",
+      "d)": "Correcta. Es el término técnico preciso cuando cambian los argumentos."
+    }
+  },
+  {
+    "pregunta": "56. En POO, la posibilidad de tener dos o más funciones o métodos con el mismo nombre pero funcionalidad diferente, se denomina:",
+    "opciones": [
+      "a) Polimorfismo.",
+      "b) Refactorización.",
+      "c) Sobrecarga.",
+      "d) Reflexión."
+    ],
+    "correcta": 0,
+    "explicacion": "El polimorfismo es la propiedad general que permite que una misma interfaz (nombre) tenga múltiples implementaciones o comportamientos.",
+    "analisis_opciones": {
+      "a)": "Correcta. Es el concepto paraguas que abarca tanto sobrecarga como sobrescritura.",
+      "b)": "Incorrecta. Es mejorar el código interno sin cambiar su funcionalidad externa.",
+      "c)": "Incorrecta. Es un tipo de polimorfismo, pero la definición de la pregunta es la general del polimorfismo.",
+      "d)": "Incorrecta. Es la capacidad de un programa de auto-analizarse en ejecución."
+    }
+  },
+  {
+    "pregunta": "58. En diseño y programación orientada a objetos, una relación de generalización entre clases:",
+    "opciones": [
+      "a) Implica que la subclase hereda las propiedades, comportamiento y relaciones de la superclase, pudiendo añadir las suyas propias.",
+      "b) Describe un conjunto de enlaces semánticos entre instancias.",
+      "c) Asume una subordinación conceptual del tipo “todo/parte”.",
+      "d) Se representa mediante una línea discontinua."
+    ],
+    "correcta": 0,
+    "explicacion": "La generalización es sinónimo de herencia. Permite que una clase hija adquiera todo lo de la madre y se especialice.",
+    "analisis_opciones": {
+      "a)": "Correcta. Define perfectamente el mecanismo de herencia y especialización.",
+      "b)": "Incorrecta. Define una asociación simple entre objetos.",
+      "c)": "Incorrecta. Define agregación o composición (todo/parte).",
+      "d)": "Incorrecta. Se representa con línea sólida y un triángulo vacío."
+    }
+  }
 ]
+
+
+
+
+
 
 
 
