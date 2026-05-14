@@ -1,0 +1,1252 @@
+[
+  {
+    "pregunta": "Los valores superiores del ordenamiento jurídico que la Constitución Española establece en su artículo 1 son:",
+    "opciones": [
+      "A. La justicia, la libertad y la seguridad.",
+      "B. El principio de legalidad, la jerarquía normativa, la publicidad de las normas, la irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales, la seguridad jurídica, la responsabilidad y la interdicción de la arbitrariedad de los poderes públicos.",
+      "C. El principio de legalidad, la jerarquía normativa, la publicidad de las normas, la retroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales y colectivos, la seguridad jurídica, la responsabilidad y la interdicción de la arbitrariedad de los poderes públicos.",
+      "D. La libertad, la justicia, la igualdad y el pluralismo político."
+    ],
+    "correcta": 3,
+    "explicacion": "El artículo 1.1 de la Constitución Española establece explícitamente: 'España se constituye en un Estado social y democrático de Derecho, que propugna como valores superiores de su ordenamiento jurídico la libertad, la justicia, la igualdad y el pluralismo político'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Mezcla conceptos y omite valores como la igualdad.",
+      "B": "Incorrecta. Estos son los principios del artículo 9.3 de la CE.",
+      "C": "Incorrecta. Corresponde al artículo 9.3 y además contiene el error de 'retroactividad'.",
+      "D": "Correcta. Es la literalidad del artículo 1.1 CE."
+    }
+  },
+  {
+    "pregunta": "En relación con los derechos desarrollados en el artículo 18 de la Constitución Española, NO es correcto que:",
+    "opciones": [
+      "A. Se garantiza el derecho de las comunicaciones y, en especial, de las postales, telegráficas y telefónicas, salvo resolución judicial.",
+      "B. Se garantiza el derecho al honor, a la intimidad personal y familiar y a la propia imagen.",
+      "C. La ley limitará el uso de la informática para garantizar el honor y la intimidad personal y familiar de los ciudadanos en el pleno ejercicio de sus derechos.",
+      "D. El domicilio es inamovible. Ninguna entrada o registro podrá hacerse en él sin el consentimiento del titular o resolución judicial, salvo en caso de flagrante delito."
+    ],
+    "correcta": 3,
+    "explicacion": "La opción D es la incorrecta porque el artículo 18.2 de la CE establece que el domicilio es 'inviolable', no 'inamovible'.",
+    "analisis_opciones": {
+      "A": "Correcta según el art. 18.3 CE.",
+      "B": "Correcta según el art. 18.1 CE.",
+      "C": "Correcta según el art. 18.4 CE.",
+      "D": "Incorrecta. El error es el término 'inamovible'."
+    }
+  },
+  {
+    "pregunta": "El artículo 50 de la Constitución indica explícitamente que:",
+    "opciones": [
+      "A. Las pensiones serán adecuadas y periódicamente actualizadas.",
+      "B. Las pensiones serán suficientes y periódicamente actualizadas.",
+      "C. Las pensiones serán suficientes y anualmente actualizadas.",
+      "D. Las pensiones serán anualmente actualizadas."
+    ],
+    "correcta": 0,
+    "explicacion": "El artículo 50 CE establece que los poderes públicos garantizarán la suficiencia económica mediante 'pensiones adecuadas y periódicamente actualizadas'.",
+    "analisis_opciones": {
+      "A": "Correcta. Es el adjetivo literal que la Constitución asigna a las pensiones.",
+      "B": "Incorrecta. 'Suficiente' se refiere a la economía general del ciudadano, no a la pensión directamente.",
+      "C": "Incorrecta. La actualización no es obligatoriamente anual, sino periódica.",
+      "D": "Incorrecta. Omite el carácter de 'adecuadas'."
+    }
+  },
+  {
+    "pregunta": "En el caso de que el Congreso negase la confianza al Gobierno, según el artículo 114 de la Constitución Española:",
+    "opciones": [
+      "A. Éste presentará su dimisión al Rey, procediéndose a continuación a la designación del Presidente del Gobierno, según lo dispuesto en el artículo 99.",
+      "B. Éste presentará su dimisión al Rey, procediéndose a continuación a la disolución de las Cámaras y la posterior convocatoria de Elecciones Generales, según lo dispuesto en el artículo 99.",
+      "C. El Presidente del Gobierno presentará su dimisión al Rey, el cual podrá aceptarla o denegarla. En caso de aceptarse, se procederá a lo dispuesto en el artículo 99.",
+      "D. Sus signatarios no podrán presentar otra durante el mismo periodo de sesiones."
+    ],
+    "correcta": 0,
+    "explicacion": "Según el artículo 114.1, ante la denegación de la confianza, el Gobierno debe dimitir y se abre el proceso de investidura del artículo 99.",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. La disolución de cámaras no es el paso inmediato ni obligatorio en este supuesto.",
+      "C": "Incorrecta. La dimisión es obligatoria para el Rey en este caso constitucional.",
+      "D": "Incorrecta. Esto se refiere a la moción de censura."
+    }
+  },
+  {
+    "pregunta": "Con respecto a las solicitudes de acceso a la información pública, según el artículo 17 de la Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno, ¿Qué elemento de los siguientes el solicitante NO está obligado a presentar junto a la misma?",
+    "opciones": [
+      "A. La dirección de contacto, preferentemente electrónica, a efectos de comunicaciones.",
+      "B. La identidad del solicitante.",
+      "C. La motivación de la solicitud de acceso a la información.",
+      "D. Si es necesario, la modalidad que se prefiera para el acceso a la información."
+    ],
+    "correcta": 2,
+    "explicacion": "El artículo 17.3 de la Ley de Transparencia indica que el solicitante no está obligado a motivar su solicitud, aunque puede hacerlo si lo desea.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es un requisito obligatorio para las notificaciones.",
+      "B": "Incorrecta. La identificación es obligatoria.",
+      "C": "Correcta. No es necesario justificar por qué quieres la información.",
+      "D": "Incorrecta. Es un dato que se puede incluir pero no es la 'excepción' de obligación que define la ley."
+    }
+  },
+  {
+    "pregunta": "De acuerdo con la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, 'cualquier comportamiento realizado en función del sexo de una persona, con el propósito o el efecto de atentar contra su dignidad y de crear un entorno intimidatorio, degradante u ofensivo' es considerado...",
+    "opciones": [
+      "A. Acoso sexual.",
+      "B. Acoso por razón de sexo.",
+      "C. Discriminación sexual.",
+      "D. Discriminación directa por razón de sexo."
+    ],
+    "correcta": 1,
+    "explicacion": "Esta es la definición literal que da el artículo 7.2 de la Ley Orgánica 3/2007 para el acoso por razón de sexo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El acoso sexual requiere naturaleza sexual (Art 7.1).",
+      "B": "Correcta.",
+      "C": "Incorrecta. Término no técnico para esta definición.",
+      "D": "Incorrecta. El acoso es una forma de discriminación, pero el nombre del supuesto es el de la opción B."
+    }
+  },
+  {
+    "pregunta": "Según se indica en el Real Decreto 951/2005, de 29 de julio, por el que se establece el marco general para la mejora de la calidad en la Administración General del Estado, ¿Cuál de los siguientes programas de calidad se integra según el artículo 3?",
+    "opciones": [
+      "A. Programa de evaluación de calidad de la Administración Digital.",
+      "B. Programa de evaluación de la calidad de las organizaciones.",
+      "C. Programa de análisis de la oferta y de evaluación de la demanda de los usuarios de los servicios.",
+      "D. Programa de análisis del Observatorio de la Satisfacción de los Servicios Públicos."
+    ],
+    "correcta": 1,
+    "explicacion": "El artículo 3.2.b establece el 'Programa de evaluación de la calidad de las organizaciones' como parte del marco general.",
+    "analisis_opciones": {
+      "A": "Incorrecta. No figura en el listado del artículo 3.",
+      "B": "Correcta.",
+      "C": "Incorrecta. El nombre oficial es 'Análisis de la demanda y evaluación de la satisfacción'.",
+      "D": "Incorrecta. No existe tal programa en el RD."
+    }
+  },
+  {
+    "pregunta": "En el Esquema Nacional de Seguridad, regulado en el Real Decreto 311/2022 de 3 de mayo, seleccione cuál NO se contempla como uno de los principios básicos en materia de seguridad de la información según el artículo 5.",
+    "opciones": [
+      "A. Reevaluación continua.",
+      "B. Diferenciación de responsabilidades.",
+      "C. Prevención, detección, respuesta y conservación.",
+      "D. Existencia de líneas de defensa."
+    ],
+    "correcta": 0,
+    "explicacion": "El principio del art 5.e se llama 'Vigilancia continua'. El término 'Reevaluación' no es un principio básico del ENS.",
+    "analisis_opciones": {
+      "A": "Correcta (es la opción que NO es un principio). El término legal es Vigilancia.",
+      "B": "Incorrecta. SÍ es un principio (Art 5.f).",
+      "C": "Incorrecta. SÍ es un principio (Art 5.c).",
+      "D": "Incorrecta. SÍ es un principio (Art 5.d)."
+    }
+  },
+  {
+    "pregunta": "El Real Decreto Legislativo 5/2015 de la Ley del Estatuto Básico del Empleado Público, establece en su artículo 10 que los funcionarios interinos:",
+    "opciones": [
+      "A. Son nombrados con carácter temporal para el desempeño de funciones propias de funcionarios de carrera.",
+      "B. Son nombrados con carácter indefinido para el desempeño de funciones propias de funcionarios de carrera.",
+      "C. Son nombrados con carácter exclusivo para el desempeño de funciones propias de funcionarios de carrera o personal eventual.",
+      "D. Son nombrados con carácter temporal o indefinido para el desempeño de funciones propias de funcionarios de carrera o personal laboral."
+    ],
+    "correcta": 0,
+    "explicacion": "El interino se caracteriza por su nombramiento temporal para funciones de carrera por razones justificadas (Art 10.1 TREBEP).",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. Nunca son indefinidos.",
+      "C": "Incorrecta. No desempeñan funciones de personal eventual.",
+      "D": "Incorrecta. La interinidad no permite el carácter indefinido ni funciones laborales."
+    }
+  },
+  {
+    "pregunta": "En el Esquema Nacional de Interoperabilidad... ¿Cuál de los siguientes instrumentos almacenará, publicará y difundirá los modelos de datos...?",
+    "opciones": [
+      "A. Centro de Interoperabilidad Semántica de la Administración.",
+      "B. Centro de Transferencia de la Tecnología.",
+      "C. Centro Nacional de Referencia de Aplicación de las Tecnologías de la Información y la Comunicación.",
+      "D. Plataforma de Intercambio de Datos."
+    ],
+    "correcta": 0,
+    "explicacion": "El Centro de Interoperabilidad Semántica es el encargado de gestionar los modelos de datos comunes (Art 10.3 RD 4/2010).",
+    "analisis_opciones": {
+      "A": "Correcta.",
+      "B": "Incorrecta. El CTT es para compartir software y soluciones.",
+      "C": "Incorrecta. No tiene esta función asignada.",
+      "D": "Incorrecta. Es el nodo técnico de paso de datos, no el almacén de modelos."
+    }
+  },
+  
+  {
+    "pregunta": "11. La Resolución de 19 de julio de 2011 por la que se aprueba la Norma Técnica de Interoperabilidad de Documento Electrónico, ¿qué metadato mínimo obligatorio del documento electrónico indica la naturaleza del documento, sea original o copia?",
+    "opciones": [
+      "a) Estado de elaboración",
+      "b) Tipo documental",
+      "c) Naturaleza",
+      "d) Originalidad"
+    ],
+    "correcta": 0,
+    "explicacion": "El metadato 'Estado de elaboración' (Art. 1 NTI) es el que define si el documento es original, copia electrónica auténtica, etc.",
+    "analisis_opciones": {
+      "a": "Correcta. Es el metadato obligatorio para este fin.",
+      "b": "Incorrecta. Indica la categoría (ej. resolución, oficio).",
+      "c": "Incorrecta. No es un metadato mínimo obligatorio del esquema.",
+      "d": "Incorrecta. No existe con ese nombre en la NTI."
+    }
+  },
+  {
+    "pregunta": "12. De acuerdo con la Ley Orgánica 3/2018 (LOPDGDD), la figura encargada de bloquear los datos cuando proceda a su rectificación o supresión (artículo 32) es...",
+    "opciones": [
+      "a) El encargado del tratamiento.",
+      "b) El responsable y el encargado del tratamiento, indistintamente.",
+      "c) El responsable del tratamiento.",
+      "d) La Agencia Española de Protección de Datos."
+    ],
+    "correcta": 2,
+    "explicacion": "El artículo 32.1 de la LOPDGDD impone la obligación del bloqueo de datos específicamente al responsable del tratamiento.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Aunque colabore, la obligación es del responsable.",
+      "b": "Incorrecta. La ley no otorga la responsabilidad de forma indistinta.",
+      "c": "Correcta según la literalidad del artículo 32.",
+      "d": "Incorrecta. Es el organismo supervisor, no el gestor de los datos."
+    }
+  },
+  {
+    "pregunta": "13. De acuerdo con la Ley Orgánica 3/2018, ¿en qué caso el tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento?",
+    "opciones": [
+      "a) Cuando sea mayor de trece años.",
+      "b) Cuando sea mayor de dieciséis años.",
+      "c) Cuando sea menor de quince años.",
+      "d) Cuando sea mayor de catorce años."
+    ],
+    "correcta": 3,
+    "explicacion": "El artículo 7.1 de la LOPDGDD fija en 14 años la edad para consentir el tratamiento de datos personales en España.",
+    "analisis_opciones": {
+      "a": "Incorrecta. 13 años es el mínimo del RGPD, pero España eligió 14.",
+      "b": "Incorrecta. No es el límite para este derecho.",
+      "c": "Incorrecta. Opción fuera de la norma.",
+      "d": "Correcta según el artículo 7."
+    }
+  },
+  {
+    "pregunta": "14. Con respecto al Documento Nacional de Identidad, señale la respuesta correcta.",
+    "opciones": [
+      "a) La validez del DNI será permanente si se trata de una persona mayor de cuarenta años que acredite la condición de gran inválido.",
+      "b) Uno de los cambios de la nueva versión del DNI electrónico (4.0) es la eliminación de los datos personales del usuario del chip.",
+      "c) Por motivos de seguridad, no es posible cambiar el PIN del DNI a través de Internet, el usuario debe acudir físicamente a una Oficina de Expedición.",
+      "d) Uno de los cambios de la nueva versión del DNI electrónico (4.0) es la incorporación de un algoritmo de cifrado BLAKE3 de 2048 bits."
+    ],
+    "correcta": 2,
+    "explicacion": "La opción C se considera correcta porque el PIN es una clave local del chip. Su cambio 'sin saber el anterior' exige biometría en el PAD (Oficina). Además, técnicamente no se hace 'a través de Internet' (red externa), sino mediante una conexión local lector-tarjeta.",
+    "analisis_opciones": {
+      "a": "Incorrecta. La ley (RD 1553/2005) dice **30 años**, no 40. Esa cifra la invalida.",
+      "b": "Incorrecta. El chip sigue guardando los datos personales y biométricos.",
+      "c": "Correcta. El método oficial y seguro es el PAD (Punto de Actualización de DNI) en las oficinas.",
+      "d": "Incorrecta. BLAKE3 es un hash, no un cifrado de 2048 bits (que suele ser RSA)."
+    }
+  },
+  {
+    "pregunta": "15. Según la Ley 15/2022 y la Carta de Derechos Digitales, las AA.PP. promoverán una Inteligencia Artificial que sea...",
+    "opciones": [
+      "a) Neutral, justa y verificable.",
+      "b) Ética, confiable y respetuosa.",
+      "c) Moral, adecuada y fidedigna.",
+      "d) Precisa, objetiva y tolerante."
+    ],
+    "correcta": 1,
+    "explicacion": "El artículo 23.1 de la Ley 15/2022 utiliza literalmente los términos: 'ética, confiable y respetuosa con los derechos fundamentales'.",
+    "analisis_opciones": {
+      "a": "Incorrecta. No es la terminología legal exacta.",
+      "b": "Correcta según la Ley 15/2022.",
+      "c": "Incorrecta. Terminología no jurídica.",
+      "d": "Incorrecta. No son los adjetivos citados en la ley."
+    }
+  },
+  {
+    "pregunta": "16. ¿Cuál de las siguientes soluciones es 'El repositorio horizontal de usuarios de las Administraciones Públicas'?",
+    "opciones": [
+      "a) AutenticA",
+      "b) Acceda",
+      "c) TRAMA",
+      "d) SIGP"
+    ],
+    "correcta": 0,
+    "explicacion": "AutenticA es el repositorio común que permite gestionar el acceso y la identidad de los empleados públicos.",
+    "analisis_opciones": {
+      "a": "Correcta. Definición oficial de la solución del CTT.",
+      "b": "Incorrecta. Es para gestionar sedes electrónicas.",
+      "c": "Incorrecta. TRAMA es un gestor de expedientes.",
+      "d": "Incorrecta. Es un sistema de gestión de personal."
+    }
+  },
+  {
+    "pregunta": "17. Según el ENS, al certificado de firma electrónica expedido por un prestador cualificado que cumple el Reglamento (UE) 910/2014, se le denomina...",
+    "options": [
+      "a) Certificado avanzado de firma electrónica.",
+      "b) Certificado cualificado de firma electrónica.",
+      "c) Firma electrónica cualificada.",
+      "d) Certificado avanzado cualificado de firma electrónica."
+    ],
+    "correcta": 1,
+    "explicacion": "El eIDAS distingue entre la 'firma' (el resultado) y el 'certificado' (el documento electrónico). El nombre técnico es Certificado cualificado.",
+    "analisis_opciones": {
+      "a": "Incorrecta. El nivel avanzado es inferior al cualificado.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Se refiere al tipo de firma, no al certificado.",
+      "d": "Incorrecta. El término no existe en la normativa."
+    }
+  },
+  {
+    "pregunta": "18. Para que un documento electrónico administrativo sea válido, NO se considera obligatorio incluir (Art. 26 LPACAP):",
+    "opciones": [
+      "a) Una referencia temporal.",
+      "b) Una declaración clara y unívoca por escrito del emisor sobre la autenticidad.",
+      "c) Los metadatos mínimos exigidos.",
+      "d) Los datos de identificación para su individualización."
+    ],
+    "correcta": 1,
+    "explicacion": "La autenticidad e integridad se garantizan mediante la firma electrónica, no mediante una declaración escrita adicional.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es obligatoria (Art. 26.2.b).",
+      "b": "Correcta. No es un requisito de validez legal.",
+      "c": "Incorrecta. Es obligatorio (Art. 26.2.c).",
+      "d": "Incorrecta. Es obligatorio (Art. 26.2.a)."
+    }
+  },
+  {
+    "pregunta": "19. De acuerdo con el artículo 79 de la Ley LGTBI, las expresiones vejatorias por orientación sexual en servicios públicos...",
+    "opciones": [
+      "a) Infracción leve: multa de 300 a 3.000 euros.",
+      "b) Infracción leve: apercibimiento o multa de 200 a 2.000 euros.",
+      "c) Infracción grave: multa de 3.001 a 10.000 euros.",
+      "d) Infracción grave: multa de 2.001 a 20.000 euros."
+    ],
+    "correcta": 1,
+    "explicacion": "La Ley 4/2023 califica las expresiones vejatorias como infracción leve (Art. 79.2.a) con multa de hasta 2.000 euros.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Importes erróneos.",
+      "b": "Correcta según la Ley 4/2023.",
+      "c": "Incorrecta. No es infracción grave.",
+      "d": "Incorrecta. No es infracción grave."
+    }
+  },
+  {
+    "pregunta": "20. La NTI de Modelo de Datos para el intercambio de asientos entre entidades registrales es conocida como...",
+    "opciones": [
+      "a) SICRES4 (o SICRES 4.0)",
+      "b) SICRES3 (o SICRES 3.0)",
+      "c) SICRES2 (o SICRES 2.0)",
+      "d) Nueva SICRES"
+    ],
+    "correcta": 0,
+    "explicacion": "La Norma Técnica de Interoperabilidad correspondiente se basa en el estándar SICRES 4.0.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es una versión posterior, pero no la de la NTI original.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Versión antigua.",
+      "d": "Incorrecta. No es un término técnico oficial."
+    }
+  },
+  {
+    "pregunta": "21. En relación con las estructuras de datos, indica cuál es la afirmación correcta.",
+    "opciones": [
+      "a) Una estructura de datos dinámica no puede ser lineal debido a la distribución cambiante (dinámica) de sus datos.",
+      "b) Todos los grafos pueden describirse como árboles.",
+      "c) Una estructura de datos estática define su tamaño de memoria en el tiempo de ejecución, y este es fijo (estático).",
+      "d) Una estructura de datos dinámica define su tamaño de memoria en el tiempo de ejecución, y este es variable (dinámico)."
+    ],
+    "correcta": 3,
+    "explicacion": "Las estructuras dinámicas (como listas enlazadas o árboles) reservan memoria durante la ejecución (runtime) y su tamaño fluctúa según se necesite.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Una lista enlazada es dinámica y es lineal.",
+      "b": "Incorrecta. Es al revés: los árboles son un tipo de grafo sin ciclos.",
+      "c": "Incorrecta. Las estáticas definen su tamaño en tiempo de compilación.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "22. Cuando en una ALU nos encontramos el Flag 'OF', ¿Qué ha ocurrido en la operación?",
+    "opciones": [
+      "a) El resultado de la operación dio negativo.",
+      "b) El resultado de la operación dio cero.",
+      "c) El resultado de la operación se excedió.",
+      "d) El resultado de la operación dio positivo."
+    ],
+    "correcta": 2,
+    "explicacion": "OF significa 'Overflow Flag' (Indicador de Desbordamiento). Se activa cuando el resultado de una operación con signo excede la capacidad del registro.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso sería el Sign Flag (SF).",
+      "b": "Incorrecta. Eso sería el Zero Flag (ZF).",
+      "c": "Correcta. El valor no cabe en el registro de destino.",
+      "d": "Incorrecta. No existe un flag específico de positivo (se deduce si SF=0)."
+    }
+  },
+  {
+    "pregunta": "23. ¿Cuál es el voltaje que circula por una interfaz de USB-PD en su modo EPR?",
+    "opciones": [
+      "a) 48 A.",
+      "b) 24 A.",
+      "c) 60 A.",
+      "d) 50 A."
+    ],
+    "correcta": 0,
+    "explicacion": "El modo EPR (Extended Power Range) de USB-PD 3.1 permite subir el voltaje hasta los **48V**. Nota: El texto del examen contiene una errata técnica al poner 'A' (Amperios) en lugar de 'V' (Voltios).",
+    "analisis_opciones": {
+      "a": "Correcta (por valor numérico de voltaje EPR).",
+      "b": "Incorrecta.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "24. En relación con la representación del tamaño de archivos elige la respuesta correcta:",
+    "opciones": [
+      "a) 1 MiB > 1 Mibit > 1 MB > 1 Mbit.",
+      "b) 1 TB > 1 Tbit > 1 TiB > 1 Tibit.",
+      "c) 1 ZiB > 1 ZB > 1 Zibit > 1 Zbit.",
+      "d) 1 PB > 1 PiB > 1 Pbit > 1 Pibit."
+    ],
+    "correcta": 2,
+    "explicacion": "Los prefijos binarios (ZiB, MiB) usan base 2 (1024) y son mayores que los decimales (ZB, MB) que usan base 10 (1000). A su vez, los Bytes (B) son 8 veces mayores que los bits.",
+    "analisis_opciones": {
+      "a": "Incorrecta. 1 MB (decimal) es mucho mayor que 1 Mibit (binario de bits).",
+      "c": "Correcta. Sigue el orden decreciente: Byte Binario > Byte Decimal > bit Binario > bit Decimal.",
+      "d": "Incorrecta. El PiB (binario) es mayor que el PB (decimal)."
+    }
+  },
+  {
+    "pregunta": "25. En un bus paralelo...",
+    "opciones": [
+      "a) Se envía simultáneamente 1 byte.",
+      "b) Se envía 1 bit por pulso de reloj.",
+      "c) Se envía en un sentido bytes relacionados con las direcciones de datos...",
+      "d) El último bit del canal es un bit de paridad, usado en instrucciones críticas."
+    ],
+    "correcta": 0,
+    "explicacion": "Un bus paralelo transmite varios bits al mismo tiempo a través de múltiples hilos. Si tiene 8 hilos, envía 1 byte simultáneamente.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. Eso es un bus serie.",
+      "c": "Incorrecta. Mezcla conceptos de bus de datos y bus de direcciones.",
+      "d": "Incorrecta. No es una norma general del bus paralelo."
+    }
+  },
+  {
+    "pregunta": "26. Un procesador soldado en la placa base...",
+    "opciones": [
+      "a) Está unido a un zócalo LGA, se usa en dispositivos móviles.",
+      "b) No está unida a zócalos BGA o LGA y no se pueden reemplazar.",
+      "c) Está unido a un zócalo BGA, se usa en dispositivos móviles.",
+      "d) No está unido a un zócalo PGA, de ahí su mayor consumo energético."
+    ],
+    "correcta": 2,
+    "explicacion": "BGA (Ball Grid Array) es el tipo de montaje donde el procesador va soldado mediante bolas de estaño, típico en móviles y portátiles finos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. LGA usa pines en el zócalo y no va soldado (es reemplazable).",
+      "c": "Correcta.",
+      "d": "Incorrecta. El tipo de zócalo no determina directamente el consumo."
+    }
+  },
+  {
+    "pregunta": "27. De las siguientes alternativas de respuesta, indique cuál hace referencia a Darwin:",
+    "opciones": [
+      "a) Un lenguaje de programación basado en Swift.",
+      "b) El núcleo híbrido XNU, con código entre otros de FreeBSD, que conforman los sistemas operativos macOS y iOS, entre otros.",
+      "c) El nombre en clave que posee la rama dedicada de Windows 11...",
+      "d) El subnúcleo de CPU de la decimocuarta generación de Intel..."
+    ],
+    "correcta": 1,
+    "explicacion": "Darwin es el sistema operativo de código abierto basado en Unix que sirve de base para macOS, iOS, watchOS y tvOS.",
+    "analisis_opciones": {
+      "a": "Incorrecta.",
+      "b": "Correcta. Describe el núcleo XNU y su origen.",
+      "c": "Incorrecta.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "28. ¿Cuál es el nombre en clave de la versión estable de Debian, cuyo número de versión es 12?",
+    "opciones": [
+      "a) Bookworm",
+      "b) Betsy",
+      "c) Sid",
+      "d) Scratch"
+    ],
+    "correcta": 0,
+    "explicacion": "Debian 12 tiene como nombre en clave 'Bookworm'.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. 'Betsy' es de LMDE.",
+      "c": "Incorrecta. 'Sid' es siempre la versión inestable.",
+      "d": "Incorrecta."
+    }
+  },
+  {
+    "pregunta": "29. En relación con los procesos en un procesador, tenemos el proceso A que está en estado 'New' y el proceso B que está en estado 'Ready'.",
+    "opciones": [
+      "a) Los procesos 'A' y 'B' se están ejecutando.",
+      "b) El proceso 'A' se está ejecutando, el 'B' no.",
+      "c) Los procesos 'A' y 'B' no se están ejecutando.",
+      "d) El proceso 'A' no se está ejecutando, el 'B' sí."
+    ],
+    "correcta": 2,
+    "explicacion": "Un proceso en 'New' se está creando y uno en 'Ready' espera a que el planificador (scheduler) le asigne CPU. Solo se ejecutan si están en estado 'Running'.",
+    "analisis_opciones": {
+      "c": "Correcta. Ninguno de los dos ha llegado al estado de ejecución.",
+      "d": "Incorrecta. Ready no significa ejecutándose."
+    }
+  },
+  {
+    "pregunta": "30. ¿Qué solución de seguridad provocó... el 19 de julio de 2024 la caída de múltiples sistemas informáticos...?",
+    "opciones": [
+      "a) Microsoft Falcon",
+      "b) AWS Falcon",
+      "c) Sophos Falcon",
+      "d) Crowdstrike Falcon"
+    ],
+    "correcta": 3,
+    "explicacion": "Una actualización defectuosa del agente Falcon de Crowdstrike provocó pantallazos azules (BSOD) masivos en Windows a nivel mundial.",
+    "analisis_opciones": {
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "31. ¿Cuál de las siguientes siglas se refiere a una tecnología para escanear?",
+    "opciones": [
+      "a) EASY",
+      "b) WAI",
+      "c) TWAIN",
+      "d) SENA"
+    ],
+    "correcta": 2,
+    "explicacion": "TWAIN es el estándar de comunicación entre el software y los dispositivos de captura de imagen (escáneres).",
+    "analisis_opciones": {
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "32. ¿Cuál es el tamaño máximo de una trama Fast Ethernet que use VLAN (IEEE 802.1q)?",
+    "opciones": [
+      "a) 1522 bytes",
+      "b) 1518 bytes",
+      "c) 9000 bytes",
+      "d) 512 bytes"
+    ],
+    "correcta": 0,
+    "explicacion": "Una trama Ethernet estándar tiene un máximo de 1518 bytes. El protocolo 802.1q añade una etiqueta (tag) de 4 bytes, sumando un total de 1522 bytes.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. Es el tamaño máximo sin VLAN.",
+      "c": "Incorrecta. Estos son los 'Jumbo Frames'."
+    }
+  },
+  {
+    "pregunta": "33. ¿Cuál de los siguientes mecanismos provoca la entrada en Windows Recovery Environment?",
+    "opciones": [
+      "a) Ejecutar winre.msc.",
+      "b) Mantener pulsada la tecla ESC mientras se pulsa en 'Reiniciar'.",
+      "c) Tres fallos consecutivos de arranque del sistema.",
+      "d) Dos reinicios consecutivos en dos minutos tras inicios de sesión exitosos."
+    ],
+    "correcta": 2,
+    "explicacion": "Windows entra automáticamente en WinRE tras detectar tres intentos fallidos de arranque para facilitar la reparación.",
+    "analisis_opciones": {
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "34. En programación, la propiedad por la cual un método que se invoca varía en función de la clase de la instancia del objeto es conocida como...",
+    "opciones": [
+      "a) Encapsulamiento",
+      "b) Herencia",
+      "c) Polimorfismo",
+      "d) Abstracción"
+    ],
+    "correcta": 2,
+    "explicacion": "El polimorfismo permite que un mismo nombre de método se comporte de forma distinta según el objeto que lo llame.",
+    "analisis_opciones": {
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "35. En el marco de las bases de datos, ¿Qué nivel de aislamiento evita la anomalía conocida como 'lectura fantasma'?",
+    "opciones": [
+      "a) Serializable",
+      "b) Lecturas repetibles",
+      "c) Lecturas comprometidas",
+      "d) Lecturas no comprometidas"
+    ],
+    "correcta": 0,
+    "explicacion": "El nivel 'Serializable' es el más estricto y el único que garantiza evitar las lecturas fantasmas al bloquear el acceso a los rangos de datos.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. Este nivel evita 'Lecturas no repetibles', pero permite fantasmas."
+    }
+  },
+  {
+    "pregunta": "36. Con respecto a las reglas de Codd, a la no alteración a nivel lógico de los programas... cuando se realizan cambios en las representaciones de almacenamiento...",
+    "opciones": [
+      "a) Regla de la independencia física de los datos.",
+      "b) Regla de la independencia de la integridad.",
+      "c) Regla de la independencia del almacenamiento.",
+      "d) Regla de la independencia lógica de los datos."
+    ],
+    "correcta": 0,
+    "explicacion": "La Independencia Física asegura que puedes cambiar cómo se guardan los datos (discos, índices) sin tocar la lógica del programa.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "d": "Incorrecta. La lógica se refiere a cambiar la estructura de las tablas (esquema) sin romper aplicaciones."
+    }
+  },
+  {
+    "pregunta": "37. En el contexto de las bases de datos relacionales, ¿Qué significan las siglas SQL?",
+    "opciones": [
+      "a) Standard Query Language.",
+      "b) Systematic Questioning Language.",
+      "c) Structured Query Language.",
+      "d) Systematic Query Language."
+    ],
+    "correcta": 2,
+    "explicacion": "SQL significa Lenguaje de Consulta Estructurado.",
+    "analisis_opciones": {
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "38. En ciertas bases de datos, ACID son las siglas... La I de ACID corresponde al concepto de",
+    "opciones": [
+      "a) Independence (Independencia).",
+      "b) Isolation (Aislamiento).",
+      "c) Integrity (Integridad).",
+      "d) Inhibition (Inhibición)."
+    ],
+    "correcta": 1,
+    "explicacion": "ACID: Atomicity (Atomicidad), Consistency (Consistencia), Isolation (Aislamiento) y Durability (Durabilidad).",
+    "analisis_opciones": {
+      "b": "Correcta."
+    }
+  },
+  {
+    "pregunta": "39. Según MÉTRICA v3, ¿Cuál de los siguientes es considerada una metodología de Análisis y Gestión de Riesgos?",
+    "opciones": [
+      "a) PILAR",
+      "b) ALBRECHT",
+      "c) MAGERIT",
+      "d) ANA"
+    ],
+    "correcta": 2,
+    "explicacion": "MAGERIT es la metodología de análisis y gestión de riesgos desarrollada por el Consejo Superior de Administración Electrónica de España.",
+    "analisis_opciones": {
+      "a": "Incorrecta. PILAR es una herramienta que implementa MAGERIT, no la metodología en sí.",
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "40. En Java, al respecto de implements, “a implements b” implica que...",
+    "opciones": [
+      "a) Implementamos métodos (a) a las interfaces (b).",
+      "b) Implementamos interfaces (b) a las clases (a).",
+      "c) Implementamos clases (b) a las interfaces (a).",
+      "d) Implementamos métodos (b) a las clases (a)."
+    ],
+    "correcta": 1,
+    "explicacion": "En Java, una clase (a) usa la palabra reservada 'implements' para comprometerse a implementar el contrato de una interfaz (b).",
+    "analisis_opciones": {
+      "b": "Correcta."
+    }
+  },
+  {
+    "pregunta": "41. ¿Cuál de las siguientes es la principal herramienta usada para el modelo de desarrollo BDD (Behavior Driven Development)?",
+    "opciones": [
+      "a) Cucumber",
+      "b) Jenkins",
+      "c) Solar Qube",
+      "d) Ant"
+    ],
+    "correcta": 0,
+    "explicacion": "Cucumber es la herramienta de referencia para BDD, ya que permite escribir pruebas en lenguaje natural (Gherkin) que luego se ejecutan como código.",
+    "analisis_opciones": {
+      "a": "Correcta. Es la herramienta por excelencia para BDD.",
+      "b": "Incorrecta. Es una herramienta de Integración Continua (CI).",
+      "c": "Incorrecta. SonarQube se usa para análisis de calidad de código.",
+      "d": "Incorrecta. Ant es una herramienta para la automatización de la construcción de software (Java)."
+    }
+  },
+  {
+    "pregunta": "42. En ANSI SQL, ¿Sobre cuál sentencia NO pueden crearse disparadores?",
+    "opciones": [
+      "a) UPDATE",
+      "b) INSERT",
+      "c) SELECT",
+      "d) DELETE"
+    ],
+    "correcta": 2,
+    "explicacion": "Los disparadores (triggers) se activan ante eventos de modificación de datos (DML). El SELECT es una consulta de lectura, no activa disparadores.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Sí admite triggers.",
+      "b": "Incorrecta. Sí admite triggers.",
+      "c": "Correcta. No se pueden disparar eventos por una simple lectura.",
+      "d": "Incorrecta. Sí admite triggers."
+    }
+  },
+  {
+    "pregunta": "43. Dentro de los patrones de diseño de software del grupo conocido como 'Gang of Four' (GoF), ¿cuál de los siguientes patrones está englobado en los conocidos como 'patrones de comportamiento'?",
+    "opciones": [
+      "a) Prototype",
+      "b) Adapter",
+      "c) Iterator",
+      "d) Chain of relations"
+    ],
+    "correcta": 2,
+    "explicacion": "Iterator es un patrón de comportamiento que permite recorrer los elementos de una estructura sin exponer su representación interna.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es un patrón de creación.",
+      "b": "Incorrecta. Es un patrón estructural.",
+      "c": "Correcta.",
+      "d": "Incorrecta. El nombre real es 'Chain of Responsibility'."
+    }
+  },
+  {
+    "pregunta": "44. ¿Cuál es el framework o subsistemas de software para el desarrollo de aplicaciones y páginas web dinámicas basados en el lenguaje de programación JavaScript?",
+    "opciones": [
+      "a) LAMP",
+      "b) LYME",
+      "c) MEAN",
+      "d) XAMPP"
+    ],
+    "correcta": 2,
+    "explicacion": "MEAN es el acrónimo de MongoDB, Express, Angular y Node.js, donde todos los componentes usan JavaScript (o TypeScript).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Usa PHP, no JavaScript como base principal.",
+      "b": "Incorrecta. No es un stack estándar.",
+      "c": "Correcta.",
+      "d": "Incorrecta. Es un paquete de instalación de servidores (Apache, MariaDB, PHP, Perl)."
+    }
+  },
+  {
+    "pregunta": "45. Según el modelo de entidad-relación extendido, ¿A qué se le conoce como 'Cardinalidad'?",
+    "opciones": [
+      "a) A la representación de la participación en la relación de cada una de las entidades afectadas.",
+      "b) Al número máximo de ocurrencias de cada tipo de entidad que pueden intervenir en una ocurrencia de la relación tratada.",
+      "c) A la unidad básica de información que sirve para cuantificar o describir a la entidad.",
+      "d) A la descripción, con un alto nivel de abstracción, de la distribución de datos almacenados en su sistema."
+    ],
+    "correcta": 1,
+    "explicacion": "La cardinalidad máxima indica el número máximo de instancias de una entidad que pueden estar relacionadas con una instancia de otra entidad.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Eso se refiere al tipo de participación (total o parcial).",
+      "b": "Correcta.",
+      "c": "Incorrecta. Eso describe a un atributo.",
+      "d": "Incorrecta. Eso se refiere al esquema o modelo de datos."
+    }
+  },
+  {
+    "pregunta": "46. ¿Cuántos principios conforman el estándar WCAG 2.2.?",
+    "opciones": [
+      "a) 13 (Alternativas de texto, multimedia basado en tiempo...)",
+      "b) 4 (Perceptible, operable, comprensible, robusto).",
+      "c) 5 (Perceptible, operable, comprensible, robusto, compatible).",
+      "d) 12 (Alternativas de texto, multimedia basado en tiempo...)"
+    ],
+    "correcta": 1,
+    "explicacion": "WCAG se organiza en 4 principios fundamentales: Perceptible, Operable, Comprensible (Understandable) y Robusto (POUR).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Esos son pautas, no principios.",
+      "b": "Correcta.",
+      "c": "Incorrecta. El estándar tiene 4 principios.",
+      "d": "Incorrecta. Son pautas."
+    }
+  },
+  {
+    "pregunta": "47. Indique la afirmación correcta respecto a los siguientes mecanismos de intercambio de datos en Internet.",
+    "opciones": [
+      "a) REST es independiente del protocolo de transporte, mientras que SOAP requiere de HTTPS.",
+      "b) Gracias al reducido tamaño de los mensajes y el soporte de almacenamiento en caché, el rendimiento de SOAP es superior.",
+      "c) SOAP no tiene estado, por lo que los mensajes se procesan de manera independiente de los mensajes anteriores.",
+      "d) Mientras que SOAP solo admite intercambio de datos XML, REST admite además JSON, texto plano y HTML."
+    ],
+    "correcta": 3,
+    "explicacion": "SOAP es un protocolo basado estrictamente en XML, mientras que REST es un estilo arquitectónico que admite múltiples formatos de datos.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Al revés: SOAP puede viajar sobre SMTP, FTP, etc., mientras que REST suele depender de HTTP.",
+      "b": "Incorrecta. Los mensajes SOAP suelen ser más pesados por el encabezado XML.",
+      "c": "Incorrecta. REST es el que se define por no tener estado (stateless).",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "48. En un diagrama de clase, según MÉTRICA v3, las relaciones entre clases de asociación, herencia, agregación, composición y dependencia son todos relaciones...",
+    "opciones": [
+      "a) Dinámicas",
+      "b) Básicas",
+      "c) Físicas",
+      "d) Estáticas"
+    ],
+    "correcta": 3,
+    "explicacion": "El diagrama de clases es un diagrama estructural, por lo que las relaciones que muestra son estáticas (no cambian con el tiempo de ejecución).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Las dinámicas se ven en diagramas de interacción.",
+      "b": "Incorrecta. No es la clasificación técnica de Métrica v3.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "49. ¿Qué organización es la encargada de realizar el WCAG (Web Content Accesibility Guidelines)?",
+    "opciones": [
+      "a) Web Accesibility Initiative (WAI).",
+      "b) Advanced Research Projects Agency Network (ARPANET).",
+      "c) World Wide Web Consortium (W3C).",
+      "d) Internet Accesibility Workgroup (IAW)."
+    ],
+    "correcta": 2,
+    "explicacion": "Las WCAG son desarrolladas por el W3C (World Wide Web Consortium) a través de la iniciativa WAI.",
+    "analisis_opciones": {
+      "a": "Incorrecta. WAI es la iniciativa *dentro* del W3C, pero la organización madre es el W3C.",
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "50. ¿Cuál de las siguientes declaraciones de variables NO es correcta?",
+    "opciones": [
+      "a) En C++: int Resultado;",
+      "b) En Python: Resultado = int(100)",
+      "c) En JavaScript: let Resultado = 100;",
+      "d) En PHP: %Resultado = 100;"
+    ],
+    "correcta": 3,
+    "explicacion": "En PHP las variables deben comenzar obligatoriamente con el símbolo del dólar ($), no con el símbolo de porcentaje (%).",
+    "analisis_opciones": {
+      "d": "Correcta (es la declaración falsa)."
+    }
+  },
+  {
+    "pregunta": "51. Indique la opción correcta respecto a NuGet:",
+    "opciones": [
+      "a) Es un gestor de paquetes, usado principalmente para la distribución de software usando el framework .NET.",
+      "b) Es un sistema de automatización de construcción de código basado en Groovy...",
+      "c) Es un sistema de gestión de paquetes para programación en PHP...",
+      "d) Es el gestor de paquetes para JavaScript que usa por defecto el entorno de ejecución Node.js."
+    ],
+    "correcta": 0,
+    "explicacion": "NuGet es el gestor de paquetes oficial para la plataforma de desarrollo de Microsoft (.NET).",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. Eso describe a Gradle.",
+      "c": "Incorrecta. Eso describe a Composer.",
+      "d": "Incorrecta. Eso describe a npm."
+    }
+  },
+  {
+    "pregunta": "52. ¿Cuál de las siguientes herramientas NO es un software de control de versiones distribuido?",
+    "opciones": [
+      "a) Monotone",
+      "b) Subversion",
+      "c) Bazaar",
+      "d) Fossil"
+    ],
+    "correcta": 1,
+    "explicacion": "Subversion (SVN) es un sistema de control de versiones centralizado, a diferencia de Git, Mercurial, Bazaar o Fossil que son distribuidos.",
+    "analisis_opciones": {
+      "b": "Correcta (es el centralizado)."
+    }
+  },
+  {
+    "pregunta": "53. En MÉTRICA v3, ¿Cuál proceso de los que se indican da como resultado la evaluación del resultado de las pruebas de integración?",
+    "opciones": [
+      "a) Mantenimiento del Sistema de Información (MSI).",
+      "b) Análisis del Sistema de Información (ASI).",
+      "c) Construcción del Sistema de Información (CSI).",
+      "d) Planificación del Sistema de Información (PSI)."
+    ],
+    "correcta": 2,
+    "explicacion": "Dentro de CSI (Construcción), se realizan las pruebas unitarias y de integración de los componentes del sistema.",
+    "analisis_opciones": {
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "54. De las siguientes herramientas destinadas como lector de pantalla, indique cuál está desarrollada para sistemas Linux:",
+    "opciones": [
+      "a) JAWS",
+      "b) Hear Me",
+      "c) Zoomtext",
+      "d) Orca"
+    ],
+    "correcta": 3,
+    "explicacion": "Orca es el lector de pantalla libre y de código abierto estándar para entornos de escritorio Linux (como GNOME).",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es para Windows.",
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "55. MÉTRICA v3 proporciona a las organizaciones un instrumento útil para la sistematización de las actividades... con un enfoque orientado a...",
+    "opciones": [
+      "a) Sencillez",
+      "b) Viabilidad",
+      "c) Proceso",
+      "d) Semántica"
+    ],
+    "correcta": 2,
+    "explicacion": "Métrica v3 se basa en un enfoque de procesos para gestionar el ciclo de vida del software de forma estructurada.",
+    "analisis_opciones": {
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "56. De los siguientes diagramas, UML considera que estaría englobado en los conocidos como 'diagramas de comportamiento':",
+    "opciones": [
+      "a) Diagrama de despliegue",
+      "b) Diagrama de actividades",
+      "c) Diagrama de perfiles",
+      "d) Diagrama de usos"
+    ],
+    "correcta": 1,
+    "explicacion": "El diagrama de actividades describe el flujo de control o de datos y pertenece a la categoría de diagramas de comportamiento.",
+    "analisis_opciones": {
+      "a": "Incorrecta. Es estructural.",
+      "b": "Correcta.",
+      "c": "Incorrecta. Es estructural.",
+      "d": "Incorrecta. Seguramente se refiere al de Casos de Uso, que también es de comportamiento, pero 'Actividades' es el ejemplo canónico."
+    }
+  },
+  {
+    "pregunta": "57. ¿Cuál es el nombre del lenguaje estandarizado de consulta para especificar y modificar grafos de propiedades, estandarizado en la norma ISO 39075:2024?",
+    "opciones": [
+      "a) GQL (Graph Query Language)",
+      "b) GraphQL",
+      "c) SGQL (Structured Graph Query Language)",
+      "d) GLS (Graph Language Standard)"
+    ],
+    "correcta": 0,
+    "explicacion": "GQL es el nuevo estándar ISO para bases de datos de grafos, equivalente a lo que SQL es para las relacionales.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. Es un lenguaje de consulta para APIs creado por Facebook, no un estándar ISO de bases de datos de grafos."
+    }
+  },
+  {
+    "pregunta": "58. Indique cuál de las siguientes etiquetas NO se podría usar en el lenguaje HTML5:",
+    "opciones": [
+      "a) <font>",
+      "b) <dir>",
+      "c) <acronym>",
+      "d) <frame>"
+    ],
+    "correcta": 2,
+    "explicacion": "La etiqueta <acronym> fue eliminada en HTML5; se debe usar <abbr> en su lugar. (Nota: Las opciones estaban vacías en tu texto, he puesto las típicas de examen TAI).",
+    "analisis_opciones": {
+      "c": "Correcta. Es obsoleta."
+    }
+  },
+  {
+    "pregunta": "59. ¿Cuál de los siguientes comandos de SMTP, definidos en el RFC 5321, sirve para cerrar la conexión?",
+    "opciones": [
+      "a) EXIT",
+      "b) QUIT",
+      "c) LOGOUT",
+      "d) CLOSE"
+    ],
+    "correcta": 1,
+    "explicacion": "El comando estándar para finalizar una sesión SMTP es QUIT.",
+    "analisis_opciones": {
+      "b": "Correcta."
+    }
+  },
+  {
+    "pregunta": "60. ¿Cuál de los siguientes elementos NO se encuentra en la cabecera del protocolo TCP?",
+    "opciones": [
+      "a) Dirección IP de origen.",
+      "b) Checksum.",
+      "c) Bandera URG.",
+      "d) Data Offset."
+    ],
+    "correcta": 0,
+    "explicacion": "Las direcciones IP (origen y destino) están en la cabecera de red (IP), no en la de transporte (TCP).",
+    "analisis_opciones": {
+      "a": "Correcta (es la que NO está en TCP).",
+      "b": "Incorrecta. Sí está en TCP.",
+      "c": "Incorrecta. Sí es un bit de control de TCP.",
+      "d": "Incorrecta. Indica dónde empiezan los datos en TCP."
+    }
+  },
+  {
+    "pregunta": "61. ¿Cuál de las siguientes definiciones describe mejor la utilidad del protocolo ARQ?",
+    "opciones": [
+      "a) Es un protocolo utilizado para organizar y estructurar información...",
+      "b) Es un protocolo utilizado para el control de errores en la transmisión de datos.",
+      "c) Es un protocolo utilizado para establecer una asociación de seguridad...",
+      "d) Es un protocolo de conmutación y multiplexado asíncrono..."
+    ],
+    "correcta": 1,
+    "explicacion": "ARQ (Automatic Repeat Request) usa acuses de recibo y temporizadores para asegurar que los datos se retransmitan si hay errores.",
+    "analisis_opciones": {
+      "b": "Correcta."
+    }
+  },
+  {
+    "pregunta": "62. ¿Cuál de los siguientes es un protocolo de enrutamiento interno que utiliza vector de distancia?",
+    "opciones": [
+      "a) OSPF.",
+      "b) IS-IS.",
+      "c) BGP.",
+      "d) EIGRP."
+    ],
+    "correcta": 3,
+    "explicacion": "EIGRP es un protocolo híbrido que utiliza algoritmos basados en vector de distancia (DUAL). OSPF e IS-IS son de estado de enlace.",
+    "analisis_opciones": {
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "63. ¿Cuál de las siguientes aplicaciones... NO estará presente en Windows 11 a partir de la versión 24H2?",
+    "opciones": [
+      "a) Bloc de notas",
+      "b) Asistencia Rápida",
+      "c) WordPad",
+      "d) Google Chrome"
+    ],
+    "correcta": 2,
+    "explicacion": "Microsoft ha anunciado oficialmente la eliminación de WordPad en las versiones más recientes de Windows 11.",
+    "analisis_opciones": {
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "64. De las siguientes alternativas, señale la que NO se corresponde con un método de HTTP según RFC 9110:",
+    "opciones": [
+      "a) PULL",
+      "b) CONNECT",
+      "c) GET",
+      "d) TRACE"
+    ],
+    "correcta": 0,
+    "explicacion": "PULL no es un método HTTP oficial. Los métodos son GET, POST, PUT, DELETE, HEAD, OPTIONS, PATCH, CONNECT y TRACE.",
+    "analisis_opciones": {
+      "a": "Correcta (es el método inexistente)."
+    }
+  },
+  {
+    "pregunta": "65. Según la Guía de Seguridad de las TIC CCN-STIC 817... ¿Cuáles son los niveles de peligrosidad?",
+    "opciones": [
+      "a) 4 (No aplica, bajo, medio, alto).",
+      "b) 3 (Bajo, sustancial y alto).",
+      "c) 3 (Bajo, medio y alto).",
+      "d) 5 (Bajo, medio, alto, muy alto y crítico)."
+    ],
+    "correcta": 3,
+    "explicacion": "El CCN utiliza una escala de 5 niveles para clasificar la peligrosidad de los incidentes.",
+    "analisis_opciones": {
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "66. Con respecto al protocolo UDP, ¿Cuál es el comportamiento del protocolo en relación con un datagrama dañado?",
+    "opciones": [
+      "a) Tiene capacidad para detectarlo y lo retransmite.",
+      "b) Tiene capacidad para detectarlo y lo descarta.",
+      "c) Tiene capacidad para detectarlo y lo arregla.",
+      "d) No tiene capacidad para detectarlo."
+    ],
+    "correcta": 1,
+    "explicacion": "UDP puede detectar errores mediante el Checksum. Si es erróneo, lo descarta silenciosamente. No lo retransmite porque es un protocolo no orientado a conexión.",
+    "analisis_opciones": {
+      "b": "Correcta."
+    }
+  },
+  {
+    "pregunta": "67. Señala cuál es el procedimiento INCORRECTO sobre la firma electrónica a través de algoritmos de clave pública:",
+    "opciones": [
+      "a) El emisor adjunta al receptor el documento, el HMAC cifrado junto a su llave privada.",
+      "b) El emisor aplica una función Hash al documento para generar el HMAC.",
+      "c) El receptor no necesita usar llaves privadas para comprobar la firma digital.",
+      "d) El receptor descifra el HMAC con la llave pública del emisor para compararlo con el resumen del documento."
+    ],
+    "correcta": 0,
+    "explicacion": "NUNCA se debe adjuntar o enviar la llave privada. Esta debe permanecer bajo el control exclusivo del titular.",
+    "analisis_opciones": {
+      "a": "Correcta (es la opción incorrecta)."
+    }
+  },
+  {
+    "pregunta": "68. En una dirección MAC de una tarjeta de red, con respecto a los 3 primeros bytes, ¿Cuál de las siguientes respuestas los describe correctamente?",
+    "opciones": [
+      "a) Identifican al fabricante, los asigna la IETF.",
+      "b) Identifican al fabricante, los asigna la IEEE.",
+      "c) Identifican al controlador de red, los asigna la IANA.",
+      "d) Identifican al controlador de red, los asigna el fabricante."
+    ],
+    "correcta": 1,
+    "explicacion": "Los 3 primeros bytes de la MAC son el OUI (Organizationally Unique Identifier) y son asignados por la IEEE a los fabricantes.",
+    "analisis_opciones": {
+      "b": "Correcta."
+    }
+  },
+  {
+    "pregunta": "69. En un paquete IPv4, ¿Qué campo de la cabecera codifica el protocolo de transporte usado por el paquete?",
+    "opciones": [
+      "a) Transport",
+      "b) IHL",
+      "c) Protocol",
+      "d) Method"
+    ],
+    "correcta": 2,
+    "explicacion": "El campo 'Protocol' en la cabecera IPv4 indica si el paquete lleva TCP (6), UDP (17), ICMP (1), etc.",
+    "analisis_opciones": {
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "70. En relación con la virtualización, NO ES CORRECTO afirmar que:",
+    "opciones": [
+      "a) Un escritorio virtual dinámico permite conservar la configuración entre sesiones.",
+      "b) Un hipervisor alojado se encuentra en la capa 2 de los sistemas operativos.",
+      "c) Para poder ejecutar máquinas virtuales a través de la técnica Hardware/Servidor, es necesario que el hardware sea compatible...",
+      "d) La virtualización de contenedores es un ejemplo de virtualización sobre sistemas operativos."
+    ],
+    "correcta": 1,
+    "explicacion": "La opción B no tiene sentido técnico claro; los hipervisores tipo 2 (alojados) se ejecutan sobre el sistema operativo anfitrión como una aplicación, no en una 'capa 2'.",
+    "analisis_opciones": {
+      "b": "Correcta (es la afirmación incorrecta)."
+    }
+  },
+  {
+    "pregunta": "71. Con respecto al protocolo ARP, ¿cuál de las siguientes afirmaciones es la correcta?",
+    "opciones": [
+      "a) Este protocolo no aplica en direcciones IPv6.",
+      "b) Con este protocolo se obtiene, a partir de la dirección MAC... la dirección IP.",
+      "c) ARP es el acrónimo de 'Address Resolve Protocol'.",
+      "d) En redes ATM... se usa Frame Relay en vez de ARP."
+    ],
+    "correcta": 0,
+    "explicacion": "IPv6 no utiliza ARP; utiliza NDP (Neighbor Discovery Protocol) basado en ICMPv6.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "b": "Incorrecta. Es al revés: ARP obtiene MAC a partir de IP.",
+      "c": "Incorrecta. Es Address Resolution Protocol."
+    }
+  },
+  {
+    "pregunta": "72. ¿Cuál de los siguientes rangos de direcciones IP es usada para conexiones multicast?",
+    "opciones": [
+      "a) 240.0.0.0/4",
+      "b) 224.0.0.0/4",
+      "c) 240.0.0.0/8",
+      "d) 224.0.0.0/8"
+    ],
+    "correcta": 1,
+    "explicacion": "Las direcciones Multicast pertenecen a la Clase D, que va desde 224.0.0.0 hasta 239.255.255.255 (prefijo /4).",
+    "analisis_opciones": {
+      "b": "Correcta."
+    }
+  },
+  {
+    "pregunta": "73. En el estándar RFC 1035, ¿Cuál de los siguientes es considerado un tipo de registro destinado para 'intercambio de correo electrónico'?",
+    "opciones": [
+      "a) MAIL",
+      "b) EXCHANGE",
+      "c) AAAA",
+      "d) MX"
+    ],
+    "correcta": 3,
+    "explicacion": "El registro MX (Mail Exchange) especifica el servidor de correo responsable de aceptar mensajes para un dominio.",
+    "analisis_opciones": {
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "74. ¿Cuál de los siguientes puertos usa LDAP?",
+    "opciones": [
+      "a) 389",
+      "b) 636",
+      "c) 363",
+      "d) 386"
+    ],
+    "correcta": 0,
+    "explicacion": "El puerto estándar para LDAP es el 389. El 636 se usa para LDAPS (sobre SSL/TLS).",
+    "analisis_opciones": {
+      "a": "Correcta."
+    }
+  },
+  {
+    "pregunta": "75. Según RFC 4120, con respecto a Kerberos, es considerado un protocolo:",
+    "opciones": [
+      "a) De autorización.",
+      "b) De autenticación y autorización",
+      "c) De autenticación, autorización y verificación",
+      "d) De autenticación."
+    ],
+    "correcta": 3,
+    "explicacion": "Kerberos es fundamentalmente un protocolo de autenticación de red basado en tickets.",
+    "analisis_opciones": {
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "76. Dentro de un PKI, el encargado de otorgar información a los usuarios acerca del estado de los certificados es...",
+    "opciones": [
+      "a) La autoridad de certificación, gracias al protocolo OCSP.",
+      "b) La autoridad de registro, gracias al protocolo CSR.",
+      "c) La autoridad de certificación, gracias al protocolo CSR.",
+      "d) La autoridad de validación, gracias al protocolo OCSP."
+    ],
+    "correcta": 3,
+    "explicacion": "La Autoridad de Validación (VA) verifica la vigencia de los certificados, a menudo mediante OCSP (Online Certificate Status Protocol).",
+    "analisis_opciones": {
+      "d": "Correcta."
+    }
+  },
+  {
+    "pregunta": "77. ¿Cuál de las siguientes afirmaciones señala una diferencia fundamental de TLS 1.3 sobre su versión anterior...?",
+    "opciones": [
+      "a) El modo 0-RTT no es compatible con TLS 1.3.",
+      "b) Se añade 'ChangeCypherSec'...",
+      "c) Las suites de cifrado que usan Diffie-Hellman estáticos dejan de ser válidas.",
+      "d) Todos los mensajes de la fase Handshake están encriptados."
+    ],
+    "correcta": 2,
+    "explicacion": "TLS 1.3 eliminó el soporte para Diffie-Hellman estático y el intercambio de claves RSA estático en favor de Perfect Forward Secrecy (PFS).",
+    "analisis_opciones": {
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "78. De los siguientes IEEE, indique cuál de ellos hace referencia a la tecnología Power Over Ethernet + (PoE+).",
+    "opciones": [
+      "a) 802.3at",
+      "b) 802.1w",
+      "c) 802.11g",
+      "d) 802.3af"
+    ],
+    "correcta": 0,
+    "explicacion": "802.3af es PoE estándar. 802.3at es PoE+, que proporciona más potencia por puerto.",
+    "analisis_opciones": {
+      "a": "Correcta.",
+      "d": "Incorrecta. Es PoE estándar (15.4W)."
+    }
+  },
+  {
+    "pregunta": "79. Indique la afirmación correcta respecto a Wi-Fi 5:",
+    "opciones": [
+      "a) Supuso la introducción de MIMO...",
+      "b) Definida en 802.11n, supuso la introducción de MU-MIMO.",
+      "c) Definida en 802.11ac, no soporta canales de 2,4 GHz.",
+      "d) Puede llegar a alcanzar velocidades de 6933 Gbit/s."
+    ],
+    "correcta": 2,
+    "explicacion": "Wi-Fi 5 (802.11ac) opera exclusivamente en la banda de 5 GHz.",
+    "analisis_opciones": {
+      "c": "Correcta."
+    }
+  },
+  {
+    "pregunta": "80. En relación con los protocolos de telefonía móvil por IP y multimedia, el protocolo H.323...",
+    "opciones": [
+      "a) Se usa para la transmisión de audio y vídeo de extremo a extremo.",
+      "b) Se usa para codificar y comprimir la información de vídeo.",
+      "c) Se usa como protocolo para anunciar e invitar a sesiones multimedia.",
+      "d) Se usa para iniciar, mantener y cerrar sesiones."
+    ],
+    "correcta": 3,
+    "explicacion": "H.323 es un estándar de la UIT-T que define los protocolos para proveer sesiones de comunicación audiovisual sobre redes de paquetes.",
+    "analisis_opciones": {
+      "d": "Correcta."
+    }
+  }
+]
+
+
+

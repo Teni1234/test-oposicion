@@ -1,0 +1,799 @@
+[{
+  "pregunta": "En un sistema RAID en el que los datos se reparten en múltiples discos con los \"bits de paridad\" en un único disco, se habla de:",
+  "opciones": [
+    "a) RAID 1",
+    "b) RAID 0+1",
+    "c) RAID 3",
+    "d) RAID 5"
+  ],
+  "correcta": 2,
+  "tu_respuesta": "",
+  "explicacion": "RAID 3 distribuye los datos entre varios discos utilizando striping a nivel de bytes y almacena la paridad en un único disco dedicado. Esto permite tolerancia a fallos, ya que si un disco falla los datos pueden reconstruirse mediante la información de paridad.",
+  "analisis_opciones": {
+    "a": "Incorrecta. RAID 1 utiliza mirroring o duplicación de discos, sin paridad.",
+    "b": "Incorrecta. RAID 0+1 combina striping y mirroring, pero no usa un disco dedicado de paridad.",
+    "c": "Correcta. RAID 3 usa distribución de datos con paridad almacenada en un único disco dedicado.",
+    "d": "Incorrecta. RAID 5 también usa paridad, pero esta se distribuye entre todos los discos, no en uno solo."
+  },
+  "regla_de_oro": "PARIDAD EN UN SOLO DISCO = RAID 3. Si la pregunta dice 'disco dedicado de paridad', piensa directamente en RAID 3.",
+  "patron_examinador": "Patrón de Confusión de Paridad. El examen enfrenta RAID 3 y RAID 5 porque ambos usan paridad, pero la diferencia clave es dónde se almacena: RAID 3 la guarda en un único disco y RAID 5 la distribuye."
+},{
+  "pregunta": "En relación con los ficheros de audio, indique qué respuesta corresponde a formatos de audio sin comprimir:",
+  "opciones": [
+    "a) MPEG2 y MKV",
+    "b) MP3 y OGG",
+    "c) WMA y AAC",
+    "d) WAV y AIFF"
+  ],
+  "correcta": 3,
+  "tu_respuesta": "",
+  "explicacion": "WAV y AIFF son formatos de audio sin compresión, utilizados para almacenar audio con máxima calidad y sin pérdida de información. Suelen ocupar mucho más espacio que los formatos comprimidos.",
+  "analisis_opciones": {
+    "a": "Incorrecta. MPEG2 y MKV están relacionados principalmente con vídeo y contenedores multimedia, no son formatos de audio sin comprimir.",
+    "b": "Incorrecta. MP3 y OGG son formatos de audio comprimido con pérdida.",
+    "c": "Incorrecta. WMA y AAC son formatos comprimidos, orientados a reducir tamaño de archivo.",
+    "d": "Correcta. WAV y AIFF almacenan audio sin compresión, conservando toda la calidad original."
+  },
+  "regla_de_oro": "WAV y AIFF = audio RAW/sin comprimir. Si el archivo ocupa muchísimo y mantiene calidad máxima, suele ser WAV o AIFF.",
+  "patron_examinador": "Patrón de Mezcla Multimedia. El examen mezcla formatos de audio comprimido, contenedores de vídeo y formatos sin compresión para comprobar si distingues calidad original frente a compresión multimedia."
+},{
+  "pregunta": "A la hora de definir nuestra política de copias de seguridad deberemos tener en cuenta los siguientes conceptos:",
+  "opciones": [
+    "a) El tiempo de valoración o VTO, el tiempo máximo tolerable de caída o MTD, el tiempo mínimo de recuperación de servicio o TOL y el grado de dependencia de la actualidad de los datos o RPO.",
+    "b) El tiempo de recuperación o RTO, el tiempo máximo tolerable de caída o MTD, los niveles mínimos de recuperación de servicio o ROL y el grado de dependencia de la actualidad de los datos o RPO.",
+    "c) El tiempo máximo de recuperación o RMT, el tiempo máximo tolerable de caída o MTD, los niveles máximos de recuperación de servicio o ROL.",
+    "d) El tiempo de realización de la copia o RTC, el tiempo mínimo tolerable de caída o MTD, el tiempo de parada del sistema para realizar la copia o SSC y el grado de dependencia de la actualidad de los datos o RPO."
+  ],
+  "correcta": 1,
+  "tu_respuesta": "",
+  "explicacion": "En políticas de backup y continuidad de negocio se utilizan conceptos como RTO (Recovery Time Objective), MTD (Maximum Tolerable Downtime) y RPO (Recovery Point Objective). La opción b es la única que incluye términos reales y reconocidos en recuperación ante desastres, aunque introduce 'ROL' como distractor menos conocido.",
+  "analisis_opciones": {
+    "a": "Incorrecta. VTO y TOL no son siglas estándar utilizadas en continuidad de negocio o políticas de backup.",
+    "b": "Correcta. Incluye conceptos reales clave como RTO, MTD y RPO utilizados en recuperación y continuidad de servicio.",
+    "c": "Incorrecta. RMT y ROL no corresponden a métricas estándar ampliamente reconocidas en políticas de backup.",
+    "d": "Incorrecta. RTC y SSC son términos inventados o no estándar en continuidad de negocio."
+  },
+  "regla_de_oro": "BACKUPS Y CONTINUIDAD = RTO + RPO + MTD. Si aparecen siglas raras mezcladas con estas, normalmente son inventadas por el examen.",
+  "patron_examinador": "Patrón de Siglas Inventadas. El examinador mezcla siglas reales muy conocidas de disaster recovery (RTO, RPO, MTD) con otras que suenan técnicas pero no existen realmente para comprobar familiaridad con terminología de continuidad de negocio."
+},{
+  "pregunta": "Indique cuál es el componente del protocolo WoL (Wake on LAN) que consiste en un paquete que se envía por la red local compuesto por una cadena de 6 bytes de valor 255 en hexadecimal, seguida por 16 repeticiones de la dirección MAC del equipo al que se le envía:",
+  "opciones": [
+    "a) Paquete Mágico",
+    "b) Paquete Despertador",
+    "c) Componente WL",
+    "d) Paquete Amazon"
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "Wake on LAN utiliza un 'Magic Packet' o Paquete Mágico para despertar remotamente un equipo. Este paquete contiene 6 bytes con valor FF en hexadecimal seguidos de 16 repeticiones de la dirección MAC del dispositivo objetivo.",
+  "analisis_opciones": {
+    "a": "Correcta. El Magic Packet es el mecanismo real utilizado por WoL para activar equipos remotamente.",
+    "b": "Incorrecta. 'Paquete Despertador' suena lógico en español pero no es el nombre técnico real.",
+    "c": "Incorrecta. No existe un componente llamado WL en el protocolo WoL.",
+    "d": "Incorrecta. Es una opción humorística/inventada sin relación técnica."
+  },
+  "regla_de_oro": "WOL = MAGIC PACKET. Si ves FF FF FF + MAC repetida 16 veces, piensa automáticamente en Wake on LAN.",
+  "patron_examinador": "Patrón de Traducción Técnica. El examen sustituye términos técnicos oficiales en inglés ('Magic Packet') por traducciones plausibles en español para comprobar si conoces el nombre real del componente."
+},{
+  "pregunta": "¿Cuál de los siguientes no es un ataque a las conexiones?",
+  "opciones": [
+    "a) Man in The Middle (MiTM)",
+    "b) Denial Of Service (DOS)",
+    "c) Ransomware",
+    "d) Inyection SQL"
+  ],
+  "correcta": 2,
+  "tu_respuesta": "",
+  "explicacion": "Ransomware es un tipo de malware que cifra archivos o sistemas para exigir un rescate económico. No se considera específicamente un ataque a las conexiones o comunicaciones de red, a diferencia de MiTM o DoS.",
+  "analisis_opciones": {
+    "a": "Incorrecta. MiTM es un ataque clásico sobre comunicaciones y conexiones entre dos extremos.",
+    "b": "Incorrecta. DoS ataca la disponibilidad de servicios y conexiones saturando recursos.",
+    "c": "Correcta. Ransomware es malware de secuestro de datos, no un ataque específico contra conexiones.",
+    "d": "Incorrecta. SQL Injection es un ataque de inyección contra aplicaciones y comunicaciones cliente-servidor."
+  },
+  "regla_de_oro": "MITM y DoS atacan comunicaciones/conexiones. Ransomware ataca DATOS y sistemas.",
+  "patron_examinador": "Patrón de Categoría de Ataque. El examen mezcla ataques de red/comunicación con malware general para comprobar si distingues el objetivo técnico principal del ataque."
+},{
+  "pregunta": "Considera el siguiente código Python:\n\nimport numpy as np\narr = np.array([1, 2, 3, 4, 5])\narr[1:4] = [10, 20, 30]\nprint(arr)\n\n¿Qué imprimirá este código cuando se ejecute?",
+  "opciones": [
+    "A) [1, 10, 20, 30, 5]",
+    "B) [1, 2, 3, 4, 5]",
+    "C) [1, 10, 20, 30, 5, 4]",
+    "D) Error, no se puede asignar una lista a un segmento de un array de Numpy"
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "En NumPy es posible asignar una lista a un slice del array siempre que el número de elementos coincida. El segmento arr[1:4] corresponde a las posiciones 1, 2 y 3 del array original, por lo que los valores 2, 3 y 4 se reemplazan por 10, 20 y 30.",
+  "analisis_opciones": {
+    "A": "Correcta. El slice arr[1:4] reemplaza los valores [2,3,4] por [10,20,30], dejando el array como [1,10,20,30,5].",
+    "B": "Incorrecta. El array sí se modifica porque la asignación al slice es válida.",
+    "C": "Incorrecta. NumPy no añade elementos extra; reemplaza el contenido existente manteniendo el tamaño del array.",
+    "D": "Incorrecta. NumPy permite asignar listas a slices siempre que tengan longitud compatible."
+  },
+  "regla_de_oro": "En Python/NumPy, los slices permiten reemplazar varios elementos a la vez. arr[1:4] incluye índices 1,2,3 pero NO el 4.",
+  "patron_examinador": "Patrón de Slice Exclusivo. El examen juega con el error típico de olvidar que el índice final en Python es exclusivo y con la falsa creencia de que NumPy no permite asignaciones múltiples."
+},{
+  "pregunta": "Si estas tablas están en Segunda Forma Normal (2FN), ¿cuál de las siguientes afirmaciones es correcta?",
+  "opciones": [
+    "A) La tabla Estudiante no está en 2FN porque su clave primaria está compuesta solo por ID_Estudiante.",
+    "B) Las tablas cumplen con 2FN porque no existen dependencias parciales de los atributos no clave respecto a la clave primaria.",
+    "C) La tabla Inscripción no está en 2FN porque depende parcialmente de la clave primaria compuesta.",
+    "D) La tabla Curso no está en 2FN debido a que la clave primaria depende de los atributos de la tabla Inscripción."
+  ],
+  "correcta": 1,
+  "tu_respuesta": "",
+  "explicacion": "Una tabla está en Segunda Forma Normal (2FN) cuando todos los atributos no clave dependen completamente de la clave primaria y no existen dependencias parciales. En las tablas mostradas, los atributos dependen totalmente de sus respectivas claves primarias.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Tener una clave primaria simple no impide cumplir 2FN; de hecho, las tablas con clave simple normalmente ya cumplen automáticamente la 2FN.",
+    "B": "Correcta. No existen dependencias parciales de atributos respecto a claves compuestas, por lo que las tablas cumplen 2FN.",
+    "C": "Incorrecta. La tabla Inscripción solo contiene la relación entre claves y no presenta dependencias parciales.",
+    "D": "Incorrecta. La clave primaria de Curso no depende de otra tabla; la afirmación no tiene sentido desde el punto de vista de normalización."
+  },
+  "regla_de_oro": "2FN = NO dependencias parciales. Si un atributo depende de TODA la clave compuesta, la tabla puede estar en Segunda Forma Normal.",
+  "patron_examinador": "Patrón de Dependencia Parcial. El examen intenta confundir mezclando conceptos de claves compuestas y dependencias funcionales con frases técnicamente ambiguas o incorrectas."
+},{
+  "pregunta": "Considera el siguiente código Python:\n\nimport numpy as np\narr = np.array([1, 2, 3, 4, 5])\narr[1:4] = [10, 20, 30]\nprint(arr)\n\n¿Qué imprimirá este código cuando se ejecute?",
+  "opciones": [
+    "A) [1, 10, 20, 30, 5]",
+    "B) [1, 2, 3, 4, 5]",
+    "C) [1, 10, 20, 30, 5, 4]",
+    "D) Error, no se puede asignar una lista a un segmento de un array de Numpy"
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "El slice arr[1:4] selecciona las posiciones 1, 2 y 3 del array original. NumPy permite asignar una lista de la misma longitud al segmento seleccionado, reemplazando los valores existentes.",
+  "analisis_opciones": {
+    "A": "Correcta. Los valores [2,3,4] se sustituyen por [10,20,30], quedando [1,10,20,30,5].",
+    "B": "Incorrecta. El array sí se modifica porque la asignación al slice es válida.",
+    "C": "Incorrecta. NumPy reemplaza elementos, no añade nuevos manteniendo el anterior.",
+    "D": "Incorrecta. NumPy sí permite asignar listas a slices siempre que el tamaño sea compatible."
+  },
+  "regla_de_oro": "En Python y NumPy, los slices usan índice final exclusivo: arr[1:4] incluye 1,2,3 pero NO 4.",
+  "patron_examinador": "Patrón de Slice Exclusivo. El examen busca errores típicos con los índices de slicing y la falsa idea de que NumPy no admite reemplazo múltiple."
+},{
+  "pregunta": "¿Qué representa un diagrama de secuencia en UML?",
+  "opciones": [
+    "A) El flujo de control entre diferentes objetos en un sistema, mostrando cómo interactúan entre sí a lo largo del tiempo.",
+    "B) La estructura estática de un sistema, mostrando clases y sus relaciones.",
+    "C) El comportamiento de un sistema a lo largo del tiempo, representando los eventos que suceden en cada etapa del ciclo de vida de un objeto.",
+    "D) La interacción entre actores y el sistema, mostrando cómo se comunican con los casos de uso."
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "Un diagrama de secuencia en UML representa cómo interactúan distintos objetos entre sí mediante mensajes intercambiados a lo largo del tiempo. Se centra en el orden temporal de las interacciones dentro de un escenario concreto.",
+  "analisis_opciones": {
+    "A": "Correcta. El diagrama de secuencia muestra interacciones y flujo de mensajes entre objetos ordenados temporalmente.",
+    "B": "Incorrecta. Esa descripción corresponde al diagrama de clases, que representa estructura estática.",
+    "C": "Incorrecta. Esa definición se acerca más a un diagrama de estados o ciclo de vida de objetos.",
+    "D": "Incorrecta. Describe un diagrama de casos de uso, centrado en actores y funcionalidades."
+  },
+  "regla_de_oro": "SECUENCIA = mensajes + tiempo. Si aparecen objetos enviándose mensajes ordenados verticalmente en el tiempo, es un diagrama de secuencia UML.",
+  "patron_examinador": "Patrón de Diagramas UML Relacionados. El examen mezcla definiciones de diagramas de secuencia, clases, estados y casos de uso para comprobar si distingues estructura estática, comportamiento temporal e interacción funcional."
+},{
+  "pregunta": "Según las WCAG, el principio de accesibilidad que implica que los usuarios deben ser capaces de entender tanto la información como el funcionamiento de la interfaz:",
+  "opciones": [
+    "a) Perceptible",
+    "b) Operable",
+    "c) Comprensible",
+    "d) Robusta"
+  ],
+  "correcta": 2,
+  "tu_respuesta": "",
+  "explicacion": "El principio 'Comprensible' de las WCAG establece que tanto la información como el funcionamiento de la interfaz deben ser entendibles por los usuarios. Esto implica lenguaje claro, comportamiento predecible y ayudas para evitar errores.",
+  "analisis_opciones": {
+    "a": "Incorrecta. Perceptible significa que la información debe poder percibirse mediante distintos sentidos.",
+    "b": "Incorrecta. Operable implica que los componentes de la interfaz deben poder utilizarse e interactuarse.",
+    "c": "Correcta. Comprensible significa que el contenido y el funcionamiento de la interfaz deben entenderse fácilmente.",
+    "d": "Incorrecta. Robusta implica compatibilidad con diferentes navegadores, tecnologías y ayudas técnicas."
+  },
+  "regla_de_oro": "WCAG = POUR: Perceptible, Operable, Understandable (Comprensible), Robust. Si la pregunta habla de ENTENDER la interfaz, piensa en Comprensible.",
+  "patron_examinador": "Patrón de Principios WCAG. El examen usa verbos clave ('ver', 'usar', 'entender', 'compatibilidad') para asociarlos a los cuatro principios fundamentales de accesibilidad."
+},{
+  "pregunta": "Existe la posibilidad de que en el futuro haya una duplicación de sedes ¿Qué máscara deberá tener la red 192.168.22.0/24 para que se puedan crear ocho subredes?",
+  "opciones": [
+    "a) 255.255.255.0",
+    "b) 255.255.255.240",
+    "c) 255.255.255.192",
+    "d) 255.255.255.224"
+  ],
+  "correcta": 3,
+  "tu_respuesta": "",
+  "explicacion": "Partiendo de una red /24 y queriendo obtener 8 subredes, es necesario pedir prestados 3 bits para subnetting, ya que 2^3 = 8. Por tanto, la nueva máscara será /27, equivalente a 255.255.255.224.",
+  "analisis_opciones": {
+    "a": "Incorrecta. 255.255.255.0 corresponde a /24 y no crea subredes adicionales.",
+    "b": "Incorrecta. 255.255.255.240 es /28, lo que generaría 16 subredes.",
+    "c": "Incorrecta. 255.255.255.192 es /26, permitiendo solo 4 subredes.",
+    "d": "Correcta. 255.255.255.224 corresponde a /27 y genera exactamente 8 subredes."
+  },
+  "regla_de_oro": "SUBREDES = 2^n. Para 8 subredes necesitas 3 bits prestados → /27 → 255.255.255.224.",
+  "patron_examinador": "Patrón de Potencias de Dos. El examen juega con máscaras cercanas (/26, /27, /28) para comprobar si sabes calcular cuántos bits de subnetting necesitas realmente."
+},{
+  "pregunta": "Teniendo en cuenta el número de usuarios de la sede de Cáceres ¿Qué prefijo de red sería correcto?\n\nEn Zamora hay 55 usuarios, en Orense 30 y en Cáceres 63. Mirando a Cuenca, solamente 14 usuarios.",
+  "opciones": [
+    "a) /24",
+    "b) /25",
+    "c) /26",
+    "d) /27"
+  ],
+  "correcta": 1,
+  "tu_respuesta": "",
+  "explicacion": "Para soportar 63 usuarios se necesitan al menos 64 direcciones utilizables aproximadamente. Un prefijo /26 proporciona 64 direcciones totales, pero solo 62 hosts utilizables, ya que una es para red y otra para broadcast. Por ello, /26 no basta y es necesario usar /25, que proporciona 128 direcciones totales y 126 hosts utilizables.",
+  "analisis_opciones": {
+    "a": "Incorrecta. /24 funcionaría, pero desperdicia muchas direcciones y no es la opción más ajustada.",
+    "b": "Correcta. /25 ofrece 126 hosts utilizables, suficiente para 63 usuarios.",
+    "c": "Incorrecta. /26 solo permite 62 hosts utilizables y no alcanza para 63 usuarios.",
+    "d": "Incorrecta. /27 únicamente permite 30 hosts utilizables."
+  },
+  "regla_de_oro": "HOSTS útiles = 2^n - 2. El -2 es por dirección de red y broadcast. /26 = 62 hosts útiles, así que para 63 usuarios necesitas subir a /25.",
+  "patron_examinador": "Patrón del Host Límite. El examen coloca números justo por encima del límite real de hosts utilizables para provocar el error típico de olvidar restar red y broadcast."
+},{
+  "pregunta": "Se plantea la adquisición de una herramienta para gestionar las copias de seguridad ¿Cuál de los siguientes es un software para la gestión de Copias de Seguridad?",
+  "opciones": [
+    "a) Tivoli Storage Management.",
+    "b) Veritas NetBackup.",
+    "c) Veeam Backup.",
+    "d) Todos lo son."
+  ],
+  "correcta": 3,
+  "tu_respuesta": "",
+  "explicacion": "Tivoli Storage Management (IBM Spectrum Protect), Veritas NetBackup y Veeam Backup son soluciones reales y ampliamente utilizadas para gestión de copias de seguridad y recuperación de datos en entornos empresariales.",
+  "analisis_opciones": {
+    "a": "Correcta como software de backup empresarial de IBM, actualmente conocido como IBM Spectrum Protect.",
+    "b": "Correcta. Veritas NetBackup es una solución muy conocida de backup y recuperación empresarial.",
+    "c": "Correcta. Veeam Backup es una de las plataformas modernas más usadas para backups virtualizados y cloud.",
+    "d": "Correcta. Todas las opciones anteriores corresponden a herramientas reales de gestión de copias de seguridad."
+  },
+  "regla_de_oro": "Veeam, Veritas y Tivoli/Spectrum Protect = tríada clásica de software enterprise de backup.",
+  "patron_examinador": "Patrón de Producto Empresarial Real. El examen mezcla varias soluciones reales conocidas esperando que el alumno dude pensando que solo puede haber una correcta."
+},{
+  "pregunta": "¿Podrá el usuario \"ramon\", perteneciente al grupo \"jefes\", ejecutar el script \"hazesto.sh\" ubicado en una carpeta con permisos establecidos a \"766\" por los comandos \"sudo chown -R iz:jefes carpeta\" y \"sudo chmod -R 766 carpeta\" en los PCs de los usuarios de Cuenca?",
+  "opciones": [
+    "a) No podrá ejecutarlo, ya que solo los usuarios con privilegios de sudo pueden ejecutar scripts en un sistema Linux.",
+    "b) No podrá ejecutarlo porque el propietario de la carpeta es el usuario \"iz\". La única solución sería cambiar el propietario del archivo a \"ramon:ramon\".",
+    "c) No podrá ejecutarlo debido a la configuración de permisos. Cambiando los permisos con \"chmod\" a \"755\" permitiría la ejecución y también la edición del script.",
+    "d) No podrá ejecutarlo debido a la configuración de permisos. Cambiando los permisos con \"chmod\" a \"755\" permitiría la ejecución del script, pero no permitiría editarlo."
+  ],
+  "correcta": 3,
+  "tu_respuesta": "",
+  "explicacion": "Los permisos 766 equivalen a rwx para el propietario y rw- para grupo y otros. El usuario 'ramon', aunque pertenece al grupo 'jefes', no tiene permiso de ejecución porque al grupo le falta la 'x'. Cambiando a 755 (rwxr-xr-x) sí podría ejecutar el script, pero no editarlo, ya que solo el propietario tendría permisos de escritura.",
+  "analisis_opciones": {
+    "a": "Incorrecta. No es necesario tener sudo para ejecutar scripts; basta con permisos de ejecución adecuados.",
+    "b": "Incorrecta. El propietario no necesita ser 'ramon'; pertenecer al grupo adecuado sería suficiente si existieran permisos de ejecución.",
+    "c": "Incorrecta. Con permisos 755 el grupo puede ejecutar y leer, pero no escribir ni editar el archivo.",
+    "d": "Correcta. El cambio a 755 añade permiso de ejecución al grupo y otros, pero mantiene escritura solo para el propietario."
+  },
+  "regla_de_oro": "755 = ejecutar sí, editar no (para grupo y otros). Para ejecutar hace falta la 'x'; para modificar hace falta la 'w'.",
+  "patron_examinador": "Patrón de Permisos Linux. El examen mezcla ejecución y escritura para comprobar si distingues claramente permisos rwx y cómo afectan a propietario, grupo y otros."
+},{
+  "pregunta": "En uno de los servidores de Madrid ¿Con qué comando de los siguientes se ejecuta una shell con identificadores de grupo y usuario distintos a la sesión activa?",
+  "opciones": [
+    "a) rlogin",
+    "b) useradd",
+    "c) chown",
+    "d) su"
+  ],
+  "correcta": 3,
+  "tu_respuesta": "",
+  "explicacion": "El comando 'su' (substitute user o switch user) permite iniciar una shell con el identificador de otro usuario y grupo distintos de la sesión actual, normalmente para cambiar temporalmente a root u otro usuario.",
+  "analisis_opciones": {
+    "a": "Incorrecta. rlogin se utiliza para acceso remoto a otro sistema, no para cambiar de usuario localmente.",
+    "b": "Incorrecta. useradd crea usuarios en el sistema.",
+    "c": "Incorrecta. chown cambia propietario y grupo de archivos o directorios.",
+    "d": "Correcta. su permite abrir una shell con otro UID y GID."
+  },
+  "regla_de_oro": "SU = Switch/Substitute User. Si la pregunta habla de cambiar identidad de usuario o abrir shell como otro usuario, piensa en su.",
+  "patron_examinador": "Patrón de Comandos Linux Relacionados. El examen mezcla comandos de administración de usuarios, permisos y acceso remoto para comprobar si identificas la función exacta de cada uno."
+},{
+  "pregunta": "Vicente, el jefe de la sede de Orense, necesita exportar un certificado en su equipo sin su clave privada, en ese caso, se generará un archivo con extensión:",
+  "opciones": [
+    "a) .pfx",
+    "b) .cer",
+    "c) .p12",
+    "d) .pem"
+  ],
+  "correcta": 1,
+  "tu_respuesta": "",
+  "explicacion": "Los certificados exportados sin clave privada suelen utilizar formatos como .cer o .crt, que contienen únicamente el certificado público. En cambio, .pfx y .p12 suelen incluir también la clave privada y están protegidos mediante contraseña.",
+  "analisis_opciones": {
+    "a": "Incorrecta. .pfx se utiliza normalmente para exportar certificados junto con su clave privada.",
+    "b": "Correcta. .cer contiene habitualmente solo el certificado público, sin clave privada.",
+    "c": "Incorrecta. .p12 (PKCS#12) suele incluir certificado y clave privada.",
+    "d": "Incorrecta. .pem es un contenedor flexible que puede incluir certificados y claves, pero la respuesta clásica esperada para 'sin clave privada' es .cer."
+  },
+  "regla_de_oro": ".CER = certificado público. .PFX/.P12 = certificado + clave privada.",
+  "patron_examinador": "Patrón de Formatos de Certificados. El examen mezcla extensiones reales de certificados y contenedores PKI para comprobar si distingues exportación con o sin clave privada."
+},{
+  "pregunta": "De la red 192.168.22.128/28, indique cuántas direcciones de host se pueden asignar:",
+  "opciones": [
+    "a) 32",
+    "b) 30",
+    "c) 16",
+    "d) 14"
+  ],
+  "correcta": 3,
+  "tu_respuesta": "",
+  "explicacion": "Una red /28 deja 4 bits para hosts. Eso proporciona 2^4 = 16 direcciones totales. Restando la dirección de red y la de broadcast, quedan 14 hosts utilizables.",
+  "analisis_opciones": {
+    "a": "Incorrecta. 32 direcciones corresponderían a una red /27.",
+    "b": "Incorrecta. 30 hosts utilizables corresponden a una red /27.",
+    "c": "Incorrecta. /28 tiene 16 direcciones totales, pero no todas son asignables a hosts.",
+    "d": "Correcta. 16 direcciones totales menos red y broadcast dejan 14 hosts utilizables."
+  },
+  "regla_de_oro": "HOSTS útiles = 2^n - 2. En /28 quedan 4 bits host → 16 totales → 14 utilizables.",
+  "patron_examinador": "Patrón de Dirección Total vs Host Útil. El examen intenta que confundas direcciones totales con direcciones realmente asignables olvidando red y broadcast."
+},{
+  "pregunta": "¿Qué archivo se modificaría para configurar manualmente en línea de comando las interfaces de red en los PCs de usuario de la sede de Cuenca en su instalación predeterminada?",
+  "opciones": [
+    "a) /etc/network/interfaces",
+    "b) /etc/netplan/01-netcfg.yaml",
+    "c) /etc/resolv.conf",
+    "d) /etc/NetworkManager/NetworkManager.conf"
+  ],
+  "correcta": 1,
+  "tu_respuesta": "",
+  "explicacion": "En distribuciones Ubuntu modernas, la configuración de red por defecto suele realizarse mediante Netplan, utilizando archivos YAML ubicados en /etc/netplan/. Uno de los archivos típicos es 01-netcfg.yaml.",
+  "analisis_opciones": {
+    "a": "Incorrecta. /etc/network/interfaces era el método clásico en Debian/Ubuntu antiguos usando ifupdown.",
+    "b": "Correcta. Netplan usa archivos YAML en /etc/netplan/ para configurar interfaces de red.",
+    "c": "Incorrecta. /etc/resolv.conf configura resolución DNS, no interfaces de red completas.",
+    "d": "Incorrecta. Ese archivo configura aspectos generales de NetworkManager, no las interfaces manualmente como respuesta principal."
+  },
+  "regla_de_oro": "Ubuntu moderno = Netplan = /etc/netplan/*.yaml. Debian/Ubuntu antiguos = /etc/network/interfaces.",
+  "patron_examinador": "Patrón de Tecnología Antigua vs Moderna. El examen mezcla rutas clásicas Linux con sistemas actuales para comprobar si distingues configuraciones heredadas de Netplan."
+},{
+  "pregunta": "En uno de los equipos de usuario de Zamora existe una carpeta compartida llamada f:\\ransomware, se le pide que elimine ese recurso compartido porque se sospecha que contenga malware ¿Cuál es el comando correcto para hacerlo?",
+  "opciones": [
+    "a) net use f:\\ransomware /DELETE",
+    "b) net delete f:\\ransomware",
+    "c) net share f:\\ransomware /DELETE",
+    "d) net stop f:\\ransomware"
+  ],
+  "correcta": 2,
+  "tu_respuesta": "",
+  "explicacion": "El comando 'net share nombre_recurso /DELETE' se utiliza en Windows para eliminar recursos compartidos de red. En este caso elimina la carpeta compartida llamada ransomware.",
+  "analisis_opciones": {
+    "a": "Incorrecta. net use se utiliza para gestionar conexiones a recursos compartidos remotos, no para eliminar el recurso compartido local.",
+    "b": "Incorrecta. 'net delete' no es un comando válido en este contexto.",
+    "c": "Correcta. net share <recurso> /DELETE elimina el recurso compartido configurado.",
+    "d": "Incorrecta. net stop sirve para detener servicios de Windows, no recursos compartidos."
+  },
+  "regla_de_oro": "NET SHARE = compartir o eliminar carpetas compartidas. NET USE = conectar unidades de red.",
+  "patron_examinador": "Patrón de Comandos NET de Windows. El examen mezcla subcomandos reales de 'net' (share, use, stop) para comprobar si distingues gestión de recursos compartidos, servicios y conexiones remotas."
+},{
+  "pregunta": "Se ha instalado una solución de orquestador de contenedores llamada Kubernetes. Le piden el comando para listar los pods:",
+  "opciones": [
+    "a) kubelet list pods",
+    "b) kubectl get pods",
+    "c) kubectl list pods",
+    "d) kubelet get pods"
+  ],
+  "correcta": 1,
+  "tu_respuesta": "",
+  "explicacion": "El comando estándar para listar pods en Kubernetes es 'kubectl get pods'. kubectl es la herramienta CLI utilizada para interactuar con el clúster Kubernetes.",
+  "analisis_opciones": {
+    "a": "Incorrecta. kubelet es un componente interno del nodo Kubernetes, no la herramienta habitual de administración.",
+    "b": "Correcta. kubectl get pods muestra los pods existentes en el clúster o namespace.",
+    "c": "Incorrecta. El subcomando 'list' no existe en kubectl para este propósito.",
+    "d": "Incorrecta. kubelet no se utiliza así para listar pods desde administración habitual."
+  },
+  "regla_de_oro": "KUBECTL GET = consultar recursos Kubernetes. Ejemplo clásico: kubectl get pods.",
+  "patron_examinador": "Patrón de Sintaxis CLI DevOps. El examen mezcla nombres reales de componentes Kubernetes (kubectl, kubelet) con comandos plausibles para comprobar memoria exacta de sintaxis."
+},{
+  "pregunta": "También se está utilizando Docker. Se ha creado un contenedor con el nombre 'suspenso' y se quiere cambiar el nombre a 'aprobado'. ¿Cuál es el comando correcto?",
+  "opciones": [
+    "a) docker rename suspenso aprobado",
+    "b) docker rename aprobado suspenso",
+    "c) docker name suspenso aprobado",
+    "d) docker name aprobado suspenso"
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "El comando correcto para renombrar un contenedor Docker es 'docker rename <nombre_actual> <nuevo_nombre>'. En este caso, el contenedor llamado 'suspenso' pasará a llamarse 'aprobado'.",
+  "analisis_opciones": {
+    "a": "Correcta. La sintaxis exacta es docker rename nombre_actual nuevo_nombre.",
+    "b": "Incorrecta. El orden está invertido; primero va el nombre actual y después el nuevo.",
+    "c": "Incorrecta. El subcomando 'name' no existe en Docker para renombrar contenedores.",
+    "d": "Incorrecta. 'docker name' no es un comando válido y además el orden sería incorrecto."
+  },
+  "regla_de_oro": "DOCKER RENAME = actual → nuevo. Primero el nombre viejo, luego el nuevo.",
+  "patron_examinador": "Patrón de Sintaxis CLI Exacta. El examen cambia el orden de parámetros o inventa subcomandos muy creíbles para comprobar memoria precisa de comandos Docker."
+},{
+  "pregunta": "María del Socorro es una usuaria de la sede de Cáceres que le han dado la opción de teletrabajo. Para conectar a Internet, ha contratado con una operadora una tecnología que permite disfrutar de fibra con máxima cobertura y velocidad en cualquier habitación de tu casa:",
+  "opciones": [
+    "a) FTTH",
+    "b) FTTB",
+    "c) FTTC",
+    "d) FTTR"
+  ],
+  "correcta": 3,
+  "tu_respuesta": "",
+  "explicacion": "FTTR (Fiber To The Room) lleva la fibra óptica prácticamente hasta cada habitación del hogar, mejorando cobertura Wi-Fi, estabilidad y velocidad en toda la vivienda.",
+  "analisis_opciones": {
+    "a": "Incorrecta. FTTH (Fiber To The Home) lleva la fibra hasta la vivienda, pero no necesariamente a cada habitación.",
+    "b": "Incorrecta. FTTB (Fiber To The Building) lleva la fibra hasta el edificio.",
+    "c": "Incorrecta. FTTC (Fiber To The Curb/Cabinet) lleva la fibra hasta la acera o armario de distribución.",
+    "d": "Correcta. FTTR distribuye la fibra dentro de la vivienda para máxima cobertura y rendimiento."
+  },
+  "regla_de_oro": "FTTx: la última letra indica HASTA DÓNDE llega la fibra. R = Room → habitación.",
+  "patron_examinador": "Patrón de Acrónimos FTTx. El examen mezcla variantes muy parecidas de despliegue de fibra para comprobar si identificas el punto exacto donde termina la conexión óptica."
+},{
+  "pregunta": "En el CPD de Madrid se va a desplegar un servicio desarrollado por el CCN-CERT para la detección en tiempo real de las amenazas e incidentes existentes en el tráfico que fluye entre la red interna del Organismo e Internet. Estamos hablando de:",
+  "opciones": [
+    "a) SAT_INET",
+    "b) INES",
+    "c) LUCIA",
+    "d) CARMEN"
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "SAT-INET es una solución del CCN-CERT orientada a la monitorización y detección en tiempo real de amenazas e incidentes en el tráfico de red entre la organización e Internet.",
+  "analisis_opciones": {
+    "a": "Correcta. SAT-INET analiza tráfico de red para detectar amenazas, malware e incidentes de seguridad.",
+    "b": "Incorrecta. INES está relacionado con informes y estado de seguridad en organismos públicos.",
+    "c": "Incorrecta. LUCIA es una herramienta del CCN-CERT enfocada a gestión de ciberincidentes.",
+    "d": "Incorrecta. CARMEN no corresponde a esta solución de monitorización de tráfico."
+  },
+  "regla_de_oro": "SAT-INET = tráfico INTERNET. Si hablan de inspeccionar amenazas en tiempo real entre red interna e Internet, piensa en SAT-INET.",
+  "patron_examinador": "Patrón de Herramientas CCN-CERT. El examen mezcla nombres reales de soluciones del CCN-CERT con otras herramientas del mismo ecosistema para comprobar si identificas su función concreta."
+},{
+  "pregunta": "Para aumentar la seguridad se pretende implementar mTLS, ¿a qué nos estamos refiriendo?",
+  "opciones": [
+    "a) Es un tipo de autenticación mutua en el que las dos partes de una conexión se autentican mediante el uso del protocolo TLS.",
+    "b) No existe esta tecnología.",
+    "c) Es una mejora de la confidencialidad en el protocolo TLS en el que se hace uso de algoritmos criptográficos con tamaños de clave mayores.",
+    "d) Es una variante del protocolo TLS con una opción de consumo mínimo que está pensada para su uso en IoT."
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "mTLS (Mutual TLS) es una extensión del protocolo TLS donde tanto el cliente como el servidor se autentican mutuamente mediante certificados digitales. A diferencia del TLS habitual, donde normalmente solo se autentica el servidor, en mTLS ambas partes validan su identidad.",
+  "analisis_opciones": {
+    "a": "Correcta. mTLS significa Mutual TLS y utiliza autenticación mutua mediante certificados digitales.",
+    "b": "Incorrecta. mTLS es una tecnología real y ampliamente usada en APIs, microservicios y entornos Zero Trust.",
+    "c": "Incorrecta. mTLS no implica necesariamente claves más grandes ni cambios criptográficos en TLS.",
+    "d": "Incorrecta. No es una versión ligera de TLS para IoT."
+  },
+  "regla_de_oro": "mTLS = Mutual TLS = cliente y servidor se autentican mutuamente.",
+  "patron_examinador": "Patrón de Acrónimo Técnico Moderno. El examen inventa definiciones plausibles sobre rendimiento, cifrado o IoT para despistar frente al significado real del prefijo 'm' de mutual."
+},{
+  "pregunta": "¿Cuál de los siguientes es un algoritmo de clave secreta o simétrico?",
+  "opciones": [
+    "a) ElGamal",
+    "b) RSA",
+    "c) ADES",
+    "d) FEAL"
+  ],
+  "correcta": 3,
+  "tu_respuesta": "",
+  "explicacion": "FEAL (Fast Data Encipherment Algorithm) es un algoritmo de cifrado simétrico, es decir, utiliza la misma clave para cifrar y descifrar la información.",
+  "analisis_opciones": {
+    "a": "Incorrecta. ElGamal es un algoritmo de criptografía asimétrica o de clave pública.",
+    "b": "Incorrecta. RSA es uno de los algoritmos asimétricos más conocidos.",
+    "c": "Incorrecta. ADES no corresponde a un algoritmo simétrico reconocido en este contexto.",
+    "d": "Correcta. FEAL es un algoritmo de cifrado simétrico o de clave secreta."
+  },
+  "regla_de_oro": "RSA y ElGamal = asimétricos. FEAL, DES, AES, Blowfish = simétricos.",
+  "patron_examinador": "Patrón de Criptografía Mixta. El examen mezcla algoritmos asimétricos muy famosos con uno simétrico menos conocido para comprobar si distingues clave pública de clave secreta."
+},{
+  "pregunta": "Indique cuál de los siguientes términos NO corresponde con el nombre de una solución de infraestructura hiperconvergente (HCI):",
+  "opciones": [
+    "a) Cisco HyperFlex",
+    "b) Nutanix",
+    "c) IBM HyperSeed",
+    "d) VMWare vSAN"
+  ],
+  "correcta": 2,
+  "tu_respuesta": "",
+  "explicacion": "Cisco HyperFlex, Nutanix y VMware vSAN son soluciones reales de infraestructura hiperconvergente (HCI), que integran computación, almacenamiento y red en una plataforma unificada. 'IBM HyperSeed' no corresponde a ninguna solución HCI conocida y es un nombre inventado o alterado para confundir.",
+  "analisis_opciones": {
+    "a": "Correcta como tecnología HCI real de Cisco basada en UCS y almacenamiento definido por software.",
+    "b": "Correcta. Nutanix es una de las plataformas HCI más conocidas y pioneras del sector.",
+    "c": "Incorrecta y por tanto respuesta válida. IBM HyperSeed no es una solución HCI reconocida.",
+    "d": "Correcta. VMware vSAN es una solución real de almacenamiento definido por software integrada en entornos virtualizados."
+  },
+  "regla_de_oro": "En preguntas de tecnologías empresariales, el examinador suele inventar nombres 'creíbles' mezclando prefijos tecnológicos reales como Hyper-, Cloud-, Flex-, Sync- o Seed.",
+  "patron_examinador": "Patrón de Nombre Tecnológico Inventado. El examen mezcla productos reales muy conocidos con uno falso que suena corporativo y técnicamente plausible para detectar reconocimiento superficial."
+},{
+  "pregunta": "Indique cuál es una plataforma de tecnología open source que utiliza recursos virtuales agrupados para diseñar y gestionar nubes privadas y públicas y permite proporcionar infraestructura como servicio (IaaS):",
+  "opciones": [
+    "a) OpenVMS",
+    "b) OpenStack",
+    "c) OpenCloud",
+    "d) OVirt"
+  ],
+  "correcta": 1,
+  "tu_respuesta": "",
+  "explicacion": "OpenStack es una plataforma open source destinada a la creación y gestión de infraestructuras cloud públicas y privadas bajo el modelo IaaS (Infrastructure as a Service). Permite administrar recursos de computación, almacenamiento y red virtualizados.",
+  "analisis_opciones": {
+    "a": "Incorrecta. OpenVMS es un sistema operativo desarrollado originalmente por DEC, no una plataforma cloud IaaS.",
+    "b": "Correcta. OpenStack es una de las plataformas open source más conocidas para construir nubes IaaS.",
+    "c": "Incorrecta. OpenCloud suena plausible pero no corresponde a la plataforma IaaS estándar ampliamente reconocida en este contexto.",
+    "d": "Incorrecta. oVirt es una plataforma de virtualización basada en KVM, relacionada con gestión de máquinas virtuales, pero no es la respuesta típica de plataforma cloud IaaS integral que busca la pregunta."
+  },
+  "regla_de_oro": "OPENSTACK = CLOUD IaaS OPEN SOURCE. Si aparece una pregunta sobre creación de nubes privadas/públicas e infraestructura como servicio, OpenStack suele ser la respuesta clásica.",
+  "patron_examinador": "Patrón de Nombre Tecnológico Similar. El examen mezcla un producto real muy conocido (OpenStack) con nombres que parecen válidos ('OpenCloud') o tecnologías relacionadas pero de distinto ámbito (oVirt, OpenVMS)."
+},{
+  "pregunta": "¿En qué Forma Normal está una base de datos si cualquier campo que no dependa totalmente de la clave principal, se debe mover a otra tabla?",
+  "opciones": [
+    "a) Primera forma normal.",
+    "b) Segunda forma normal.",
+    "c) Forma normal de Boyce-Codd.",
+    "d) Tercera forma normal."
+  ],
+  "correcta": 1,
+  "tu_respuesta": "",
+  "explicacion": "La Segunda Forma Normal (2FN) exige que todos los atributos no clave dependan completamente de la clave principal. Si existe una dependencia parcial respecto a una clave compuesta, esos campos deben separarse en otra tabla.",
+  "analisis_opciones": {
+    "a": "Incorrecta. La Primera Forma Normal elimina grupos repetitivos y exige atomicidad de los campos.",
+    "b": "Correcta. La Segunda Forma Normal elimina dependencias parciales respecto de la clave principal.",
+    "c": "Incorrecta. La forma normal de Boyce-Codd es una versión más estricta relacionada con dependencias funcionales complejas.",
+    "d": "Incorrecta. La Tercera Forma Normal elimina dependencias transitivas, no las dependencias parciales."
+  },
+  "regla_de_oro": "2FN = dependencia TOTAL de la clave. Si un campo depende solo de parte de la clave compuesta, debe irse a otra tabla.",
+  "patron_examinador": "Patrón de Escalera de Normalización. El examen diferencia cada forma normal por el problema concreto que resuelve: 1FN atomicidad, 2FN dependencias parciales y 3FN dependencias transitivas."
+},{
+  "pregunta": "¿Qué sentencia SQL se utiliza para extraer datos únicos de una columna en una tabla?",
+  "opciones": [
+    "a) SELECT DISTINCT columna FROM tabla;",
+    "b) SELECT UNIQUE columna FROM tabla;",
+    "c) SELECT DIFFERENT columna FROM tabla;",
+    "d) SELECT ONLY columna FROM tabla;"
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "La cláusula DISTINCT se utiliza en SQL para devolver únicamente valores distintos o no repetidos de una columna o conjunto de columnas.",
+  "analisis_opciones": {
+    "a": "Correcta. DISTINCT elimina duplicados y muestra únicamente valores únicos.",
+    "b": "Incorrecta. UNIQUE existe como restricción de integridad en tablas, pero no como cláusula estándar SELECT para este propósito.",
+    "c": "Incorrecta. DIFFERENT no existe como palabra clave SQL para extracción de datos únicos.",
+    "d": "Incorrecta. ONLY no es la cláusula utilizada para eliminar duplicados en consultas SQL estándar."
+  },
+  "regla_de_oro": "DISTINCT = quitar duplicados. Si el examen pregunta por 'valores únicos' en una consulta SELECT, la respuesta casi siempre será DISTINCT.",
+  "patron_examinador": "Patrón de Palabra SQL Plausible. El examinador inventa palabras muy creíbles como UNIQUE o DIFFERENT aprovechando términos reales relacionados con bases de datos para confundir sintaxis SQL."
+},{
+  "pregunta": "¿Qué tecnología permite a los desarrolladores front-end y back-end comunicarse mediante la transferencia de datos en formato JSON?",
+  "opciones": [
+    "a) AJAX",
+    "b) GraphQL",
+    "c) CSS",
+    "d) JQuery"
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "AJAX (Asynchronous JavaScript and XML) permite la comunicación asíncrona entre el front-end y el back-end intercambiando datos sin recargar la página completa. Aunque originalmente estaba ligado a XML, hoy se utiliza masivamente con JSON.",
+  "analisis_opciones": {
+    "a": "Correcta. AJAX es la tecnología clásica usada para enviar y recibir datos JSON entre cliente y servidor de forma asíncrona.",
+    "b": "Incorrecta. GraphQL es un lenguaje de consultas para APIs, no la tecnología clásica de comunicación asíncrona que busca la pregunta.",
+    "c": "Incorrecta. CSS solo se utiliza para estilos y diseño visual.",
+    "d": "Incorrecta. jQuery es una librería JavaScript que facilita el uso de AJAX, pero AJAX es la tecnología base."
+  },
+  "regla_de_oro": "FRONT ↔ BACK + JSON + sin recargar página = AJAX. Si mencionan comunicación asíncrona web, AJAX suele ser la respuesta clásica.",
+  "patron_examinador": "Patrón de Tecnología Relacionada. El examen mezcla la tecnología base (AJAX) con herramientas que la utilizan o complementan (jQuery, GraphQL) para comprobar si distingues concepto fundamental de librerías o frameworks."
+},{
+  "pregunta": "Indique qué alternativa es la correcta para representar en formato JSON un array con las cadenas de texto que contengan los nombres de los días de la semana en castellano:",
+  "opciones": [
+    "a) {\"lunes\", \"martes\", \"miércoles\", \"jueves\", \"viernes\", \"sábado\", \"domingo\"}",
+    "b) {lunes ; martes ; miércoles ; jueves ; viernes ; sábado ; domingo}",
+    "c) [\"lunes\", \"martes\", \"miércoles\", \"jueves\", \"viernes\", \"sábado\", \"domingo\"]",
+    "d) [\"lunes\"; \"martes\"; \"miércoles\"; \"jueves\"; \"viernes\"; \"sábado\"; \"domingo\"]"
+  ],
+  "correcta": 2,
+  "tu_respuesta": "",
+  "explicacion": "En JSON, los arrays se representan utilizando corchetes [] y los elementos se separan mediante comas. Las cadenas de texto deben ir entre comillas dobles.",
+  "analisis_opciones": {
+    "a": "Incorrecta. Las llaves {} representan objetos JSON, no arrays.",
+    "b": "Incorrecta. JSON exige comillas dobles para strings y usa comas, no punto y coma.",
+    "c": "Correcta. Usa correctamente corchetes para arrays, comillas dobles para strings y comas como separadores.",
+    "d": "Incorrecta. Aunque usa corchetes y comillas correctamente, JSON no utiliza punto y coma como separador de elementos."
+  },
+  "regla_de_oro": "JSON ARRAY = [] + comas + comillas dobles. Si ves strings en JSON, piensa siempre en \"texto\" separados por comas.",
+  "patron_examinador": "Patrón de Error de Sintaxis JSON. El examen mezcla símbolos válidos de otros lenguajes ({}, ;, ausencia de comillas) para comprobar si recuerdas la sintaxis exacta de JSON."
+},{
+  "pregunta": "El artículo 103 de la CE señala que la Administración Pública sirve con objetividad los intereses generales actuando de acuerdo, entre otros, con el principio de:",
+  "opciones": [
+    "a) Coordinación.",
+    "b) Eficiencia.",
+    "c) Independencia.",
+    "d) Neutralidad."
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "El artículo 103.1 de la Constitución Española establece que la Administración Pública actúa de acuerdo con los principios de eficacia, jerarquía, descentralización, desconcentración, coordinación y sometimiento pleno a la ley y al Derecho. Por tanto, 'coordinación' sí aparece expresamente en el artículo.",
+  "analisis_opciones": {
+    "a": "Correcta. La coordinación aparece literalmente recogida en el artículo 103.1 CE.",
+    "b": "Incorrecta. La Constitución habla de 'eficacia', no de 'eficiencia', aunque ambos términos se confunden frecuentemente.",
+    "c": "Incorrecta. La independencia no figura entre los principios enumerados en el artículo 103 CE.",
+    "d": "Incorrecta. Neutralidad puede relacionarse doctrinalmente con la Administración, pero no aparece expresamente en este artículo."
+  },
+  "regla_de_oro": "Artículo 103 CE = EFICACIA, no eficiencia. El examinador suele cambiar palabras muy parecidas para provocar errores rápidos.",
+  "patron_examinador": "Patrón de Sustitución Semántica. El examen cambia términos constitucionales exactos por sinónimos modernos o administrativos muy creíbles ('eficiencia' por 'eficacia') para comprobar memoria literal del artículo."
+},{
+  "pregunta": "¿Cuántas direcciones hay disponibles para hosts en la subred del organismo?",
+  "opciones": [
+    "a) 4094",
+    "b) 65534",
+    "c) 4096",
+    "d) 65536"
+  ],
+  "correcta": 0,
+  "tu_respuesta": "d",
+  "explicacion": "El Ministerio parte de una red 10.9.0.0/16. El enunciado indica que se divide en 16 subredes. Para obtener 16 subredes necesitamos 4 bits (2^4 = 16). Estos bits se suman a la máscara original: 16 + 4 = /20. Para calcular los hosts útiles de un /20, usamos la fórmula 2^(32-20) - 2, lo que resulta en 2^12 - 2 = 4096 - 2 = 4094.",
+  "analisis_opciones": {
+    "a": "Correcta. Representa los hosts útiles (2^n - 2) de una máscara /20.",
+    "b": "Incorrecta. Es el número de hosts del /16 original (red ministerial).",
+    "c": "Incorrecta. Es el número total de direcciones de un /20 sin restar red y broadcast.",
+    "d": "Incorrecta. Es el número total de direcciones de un /16 sin restar nada."
+  },
+  "regla_de_oro": "Si el enunciado dice 'DIVIDIDO EN X', no puedes usar la máscara original. Primero halla la nueva máscara sumando bits (2^n = X) y luego calcula los hosts.",
+  "patron_examinador": "Pregunta de 'Dos Pasos'. El examinador oculta la máscara real (/20) bajo un nombre ('organismo') para obligarte a realizar la división antes del cálculo. Las opciones b y d siempre serán datos de la red padre para despistar."
+},{
+  "pregunta": "Al arrancar el servidor donde se aloja la web de profesores, aparecen errores en la partición sda8. ¿Qué comando hay que usar para reparar de forma automática los errores en el sistema de ficheros correspondiente, que no ha podido montarse?",
+  "opciones": [
+    "a) mount –T /dev/sda8",
+    "b) fsck -y /dev/sda8",
+    "c) fsck -m /dev/sda8",
+    "d) checkdisk /dev/sda8"
+  ],
+  "correcta": 1,
+  "tu_respuesta": "b (confundida con d en tu texto)",
+  "explicacion": "En sistemas Linux (como el Ubuntu del supuesto), la herramienta estándar para verificar la integridad del sistema de ficheros es fsck. Para que la reparación sea 'automática', se utiliza el parámetro -y, que responde afirmativamente a todas las preguntas de reparación sin intervención del usuario.",
+  "analisis_opciones": {
+    "a": "Incorrecta. mount sirve para montar sistemas de ficheros, no para repararlos. Además, el parámetro -T no es estándar aquí.",
+    "b": "Correcta. fsck es el comando de Linux y -y es el modo automático (yes).",
+    "c": "Incorrecta. El parámetro -m no es para reparación automática en fsck.",
+    "d": "Incorrecta (Trampa de S.O.). checkdisk es un concepto de Windows/DOS. En Linux ese comando no existe."
+  },
+  "regla_de_oro": "LINUX vs WINDOWS: Si el enunciado dice 'Ubuntu' o 'Linux', descarta cualquier respuesta que suene a Windows (como checkdisk, C:, o ipconfig). El comando de salud de disco siempre será fsck.",
+  "patron_examinador": "Suelen mezclar comandos de administración de Windows con los de Linux para ver si sabes en qué entorno estás trabajando según el supuesto."
+},{
+  "pregunta": "Analizando la seguridad del sistema, surge la duda de si abrir o no el puerto 80 en un servidor web expuesto mediante HTTPS. El Centro Criptológico Nacional recomienda:",
+  "opciones": [
+    "a) Exhibir una web estática en el puerto 80 indicando que esa no es la web actual.",
+    "b) Cambiar el puerto HTTPS al 8892.",
+    "c) Utilizar un analizador de peticiones en las cabeceras HTTP en el puerto 80.",
+    "d) Disponer del puerto TCP/80, configurando el servidor web para que lleve a cabo una redirección automática de HTTP a HTTPS."
+  ],
+  "correcta": 3,
+  "tu_respuesta": "d",
+  "explicacion": "Según las guías del CCN-STIC, la mejor práctica para servidores web es mantener el puerto 80 abierto exclusivamente para redirigir todo el tráfico entrante hacia el puerto 443 (HTTPS). Esto garantiza que no se envíe información en claro y mejora la experiencia del usuario.",
+  "analisis_opciones": {
+    "a": "Incorrecta. Es ineficiente y confunde al usuario.",
+    "b": "Incorrecta. Cambiar puertos estándar (Seguridad por oscuridad) no es una recomendación del CCN para servicios públicos.",
+    "c": "Incorrecta. No soluciona el problema de la comunicación insegura.",
+    "d": "Correcta. Es el estándar de industria para la transición segura a HTTPS."
+  },
+  "regla_de_oro": "PUERTO 80 + HTTPS = REDIRECCIÓN. Nunca se cierra del todo si quieres que la web sea accesible, pero nunca se deja para mostrar contenido. Siempre redirige al 443.",
+  "patron_examinador": "El 'Patrón CCN'. Al examinador le encanta preguntar por recomendaciones oficiales del Centro Criptológico Nacional. Suelen ser soluciones lógicas que combinan seguridad con sentido común administrativo."
+},{
+  "pregunta": "El CPD tiene un acceso con tarjeta y PIN. Hace dos días, alguien no autorizado entró esperando agazapado y pasando detrás de un autorizado sin que este lo advirtiera. Este incidente se conoce como:",
+  "opciones": [
+    "a) Tailgating o piggybacking.",
+    "b) Shoulder surfing.",
+    "c) Pretexto o Pretexting.",
+    "d) Dumpster diving."
+  ],
+  "correcta": 0,
+  "tu_respuesta": "a",
+  "explicacion": "El Tailgating consiste en seguir a una persona autorizada a un área restringida. Es un ataque de ingeniería social aplicado a la seguridad física. El enunciado especifica que el intruso pasó sin que el autorizado lo advirtiera, lo cual es la definición exacta de Tailgating.",
+  "analisis_opciones": {
+    "a": "Correcta. Son los términos para el acceso físico no autorizado siguiendo a otro.",
+    "b": "Incorrecta. Shoulder surfing es mirar por encima del hombro para ver una contraseña o PIN.",
+    "c": "Incorrecta. El pretexting requiere crear un escenario o historia falsa para engañar.",
+    "d": "Incorrecta. Dumpster diving es buscar información sensible en la basura."
+  },
+  "regla_de_oro": "SEGURIDAD FÍSICA: Si alguien 'sigue' a otro para entrar = Tailgating. Si alguien 'mira' lo que escribes = Shoulder surfing. Si alguien 'rebusca' en tu papelera = Dumpster diving.",
+  "patron_examinador": "Patrón de Ingeniería Social. El examinador suele poner situaciones cotidianas de oficina para que identifiques el término técnico en inglés. Siempre cae una de estas tres: Tailgating, Shoulder Surfing o Phishing."
+},{
+  "pregunta": "El organismo tiene un circuito cerrado de televisión (CCTV) con red coaxial y se necesita interconectar esta red a la red local Ethernet para poder monitorizarlas. ¿Con qué dispositivo de red puede hacerlo?",
+  "opciones": [
+    "a) Un cortafuegos (firewall).",
+    "b) Una pasarela (gateway).",
+    "c) Un conmutador (switch).",
+    "d) Un concentrador (hub)."
+  ],
+  "correcta": 1,
+  "tu_respuesta": "b",
+  "explicacion": "Una pasarela o gateway es un dispositivo que permite interconectar redes con arquitecturas y protocolos diferentes. En este caso, el CCTV coaxial (analógico o propietario) y la red Ethernet (digital/IP) necesitan un elemento que no solo cambie el medio físico, sino que traduzca la información para que sea legible en la red local.",
+  "analisis_opciones": {
+    "a": "Incorrecta. Gestiona políticas de seguridad, no traduce protocolos entre redes de distinta naturaleza.",
+    "b": "Correcta. Es el término genérico para dispositivos que unen redes incompatibles entre sí.",
+    "c": "Incorrecta. Solo sirve para unir dispositivos dentro de la misma arquitectura de red (Ethernet).",
+    "d": "Incorrecta. Es un dispositivo básico de Capa 1 que no realiza ninguna traducción de protocolos."
+  },
+  "regla_de_oro": "PASARELA (GATEWAY) = TRADUCTOR. Si la pregunta une dos mundos totalmente distintos (CCTV coaxial y Red IP, o Mainframe y PC), el dispositivo que 'traduce' el idioma de uno al otro es la Pasarela.",
+  "patron_examinador": "Patrón de Interconexión Total. El examinador usa 'Pasarela' cuando el salto es 'grande' (de analógico a digital o de protocolos muy distintos). Si solo fuera de fibra a cobre dentro de Ethernet, usaría 'Transceptor'."
+},{
+  "pregunta": "Según el art. 51 de la Ley Orgánica 3/2007, las Administraciones públicas en el ámbito de sus respectivas competencias y en aplicación del principio de igualdad entre mujeres y hombres, deberán:",
+  "opciones": [
+    "A. Evaluar periódicamente la efectividad del principio de igualdad en sus respectivos ámbitos de actuación.",
+    "B. Establecer medidas efectivas para eliminar las discriminaciones retributivas directas, pero no las indirectas, por razón de sexo.",
+    "C. Facilitar la conciliación de la vida personal, familiar y laboral, por encima de la promoción profesional.",
+    "D. Remover los obstáculos que impliquen la pervivencia de cualquier tipo de discriminación con el fin de ofrecer condiciones de igualdad efectiva entre mujeres y hombres en la obtención de ayudas de acción social."
+  ],
+  "correcta": 0,
+  "tu_respuesta": "",
+  "explicacion": "El artículo 51 de la Ley Orgánica 3/2007 establece diversas actuaciones que deben adoptar las Administraciones Públicas para garantizar la igualdad efectiva entre mujeres y hombres, entre ellas evaluar periódicamente la efectividad del principio de igualdad en sus ámbitos de actuación.",
+  "analisis_opciones": {
+    "A": "Correcta. El artículo 51 recoge expresamente la evaluación periódica de la efectividad del principio de igualdad.",
+    "B": "Incorrecta. La ley combate tanto discriminaciones directas como indirectas.",
+    "C": "Incorrecta. La conciliación debe facilitarse sin perjudicar la promoción profesional; la ley no establece prioridad de una sobre otra.",
+    "D": "Incorrecta. La redacción está alterada; la ley habla de igualdad efectiva en acceso al empleo público y condiciones de trabajo, no específicamente de ayudas de acción social."
+  },
+  "regla_de_oro": "Ley de Igualdad = eliminar discriminación DIRECTA e INDIRECTA y favorecer conciliación SIN perjudicar promoción profesional.",
+  "patron_examinador": "Patrón de Redacción Alterada. El examen modifica pequeños fragmentos literales de la ley ('solo directas', 'por encima de promoción', 'ayudas de acción social') para hacer opciones muy creíbles."
+},{
+  "pregunta": "Según el TREBEP, respecto a prescripción de las infracciones graves prescribirán a los:",
+  "opciones": [
+    "A) 3 años",
+    "B) 2 años",
+    "C) a los 6 meses",
+    "D) al año"
+  ],
+  "correcta": 1,
+  "tu_respuesta": "",
+  "explicacion": "El TREBEP establece que las infracciones disciplinarias graves prescriben a los 2 años. Las muy graves prescriben a los 3 años y las leves a los 6 meses.",
+  "analisis_opciones": {
+    "A": "Incorrecta. 3 años corresponde a las infracciones muy graves.",
+    "B": "Correcta. Las infracciones graves prescriben a los 2 años.",
+    "C": "Incorrecta. 6 meses corresponde a las infracciones leves.",
+    "D": "Incorrecta. El plazo de 1 año no corresponde a las infracciones graves en el TREBEP."
+  },
+  "regla_de_oro": "TREBEP: Muy graves = 3 años, Graves = 2 años, Leves = 6 meses.",
+  "patron_examinador": "Patrón de Escalera Temporal. El examen mezcla los plazos de prescripción de leves, graves y muy graves para comprobar si recuerdas la progresión exacta."
+},{
+  "pregunta": "Según la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, la prescripción de las sanciones por faltas graves son:",
+  "opciones": [
+    "A) 2 años",
+    "B) 3 años",
+    "C) 4 años",
+    "D) 5 años"
+  ],
+  "correcta": 1,
+  "tu_respuesta": "",
+  "explicacion": "La Ley 39/2006 establece que las sanciones derivadas de faltas graves prescriben a los 3 años. Las leves prescriben antes y las muy graves tienen plazos superiores.",
+  "analisis_opciones": {
+    "A": "Incorrecta. 2 años no es el plazo establecido para las sanciones por faltas graves en esta ley.",
+    "B": "Correcta. Las sanciones por faltas graves prescriben a los 3 años.",
+    "C": "Incorrecta. 4 años no corresponde al plazo legal de prescripción para faltas graves.",
+    "D": "Incorrecta. 5 años suele asociarse a faltas muy graves en distintos regímenes sancionadores."
+  },
+  "regla_de_oro": "Ley de Dependencia: graves = 3 años. Ojo porque no coincide con los plazos disciplinarios del TREBEP.",
+  "patron_examinador": "Patrón de Plazos Cruzados. El examen mezcla tiempos de prescripción de distintas leyes administrativas para provocar confusión entre normas similares."
+},{
+  "pregunta": "En el diseño de una base de datos hay que tener en cuenta que:",
+  "opciones": [
+    "A. La organización lógica puede ser cambiante y debe ser prevista para reorganizaciones periódicas.",
+    "B. Las técnicas de direccionamiento tienen gran efecto sobre las estructuras lógicas.",
+    "C. Las inserciones y eliminaciones de registros suelen tener un gran efecto sobre la distribución física de los datos.",
+    "D. La eliminación de la redundancia es uno de los objetivos de la organización física."
+  ],
+  "correcta": 2,
+  "tu_respuesta": "",
+  "explicacion": "Las inserciones y eliminaciones de registros afectan directamente a la distribución física de los datos en disco, ya que modifican el almacenamiento, ocupación y reorganización física de la información.",
+  "analisis_opciones": {
+    "A": "Incorrecta. La organización lógica busca estabilidad y abstracción respecto al almacenamiento físico.",
+    "B": "Incorrecta. Las técnicas de direccionamiento afectan principalmente a la organización física, no tanto a la lógica.",
+    "C": "Correcta. Altas inserciones y eliminaciones impactan en la distribución física, fragmentación y reorganización de datos.",
+    "D": "Incorrecta. La eliminación de redundancia es objetivo del diseño lógico y la normalización, no de la organización física."
+  },
+  "regla_de_oro": "Lógico = normalización y relaciones. Físico = almacenamiento real, rendimiento y distribución en disco.",
+  "patron_examinador": "Patrón de Confusión Lógico vs Físico. El examen mezcla objetivos del diseño lógico (redundancia, relaciones) con efectos físicos (direccionamiento, almacenamiento y reorganización)."
+},{
+  "pregunta": "Una tabla se encuentra en 5NF, Quinta Forma Normal, si:",
+  "opciones": [
+    "A. Si y solo si esta en 4NF o en BCNF (cualquiera de ambas) y no posee dependencias multivaluadas no triviales.",
+    "B. Si y solo si está en 4FN y cada dependencia funcional no trivial tiene una clave candidata como determinante",
+    "C. Si y solo si está en 4NF y cada dependencia de unión (join) en ella es implicada por las claves candidatas.",
+    "D. Si y solo si ninguno de sus atributos no-principales son funcionalmente dependientes en una parte (subconjunto propio) de una clave candidata."
+  ],
+  "correcta": 2,
+  "tu_respuesta": "",
+  "explicacion": "La Quinta Forma Normal (5NF o PJ/NF) se cumple cuando la tabla está en 4FN y todas las dependencias de unión (join dependencies) se derivan de las claves candidatas. Su objetivo es evitar redundancias derivadas de descomposiciones complejas mediante joins.",
+  "analisis_opciones": {
+    "A": "Incorrecta. Describe realmente la 4FN, relacionada con dependencias multivaluadas.",
+    "B": "Incorrecta. Esa condición corresponde a Boyce-Codd (BCNF).",
+    "C": "Correcta. La 5NF trata específicamente las dependencias de unión (join dependencies).",
+    "D": "Incorrecta. Describe la Segunda Forma Normal (2FN), eliminando dependencias parciales."
+  },
+  "regla_de_oro": "2FN = dependencias parciales. BCNF = determinante clave candidata. 4FN = dependencias multivaluadas. 5NF = dependencias JOIN.",
+  "patron_examinador": "Patrón de Formas Normales Cruzadas. El examen mezcla definiciones exactas de 2FN, BCNF, 4FN y 5NF para comprobar si identificas la palabra clave de cada una."
+}]

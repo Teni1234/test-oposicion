@@ -1,0 +1,227 @@
+[
+  {
+    "pregunta": "En un script de PHP se requiere que se incluya el archivo horarios.php y, en caso de que no sea posible por cualquier motivo, que el script se detenga de forma inmediata, ¿Qué estructura de control cumple con estos requisitos?",
+    "opciones": ["A. require","B. include","C. declare","D. match"],
+    "correcta": 0,
+    "explicacion": "require detiene la ejecución si falla.",
+    "analisis_opciones": {"A":"Correcta.","B":"Incorrecta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Con respecto a la etiqueta de apertura abreviada <? en PHP, ¿qué directiva presente en el fichero de configuración php.ini habría que modificar para permitir su uso?",
+    "opciones": ["A. open_tag","B. <?_tag","C. enable_<?","D. short_open_tag"],
+    "correcta": 3,
+    "explicacion": "Directiva real: short_open_tag.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Incorrecta.","D":"Correcta."}
+  },
+  {
+    "pregunta": "Se desea comprobar que el sistema de información, en su conjunto y condiciones normales, es capaz de operar dentro de los tiempos de respuesta previstos para comprobar si es necesario realizar algún tipo de ajuste o modificación. ¿Qué prueba de sistema permitiría comprobar dicho extremo?",
+    "opciones": ["A. Prueba de rendimiento","B. Prueba de sobrecarga","C. Prueba de funcionamiento normalizado","D. Prueba funcional"],
+    "correcta": 0,
+    "explicacion": "Evalúa tiempos en condiciones normales.",
+    "analisis_opciones": {"A":"Correcta.","B":"Incorrecta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Le solicitan ayuda para elegir un servidor web que soporte una mayor carga de peticiones por segundo. ¿Cuál de las siguientes alternativas, en igualdad de condiciones de hardware, sería la más apropiada?",
+    "opciones": ["A. Apache","B. TomEE","C. WildFly","D. nginx"],
+    "correcta": 3,
+    "explicacion": "nginx maneja mejor concurrencia.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Incorrecta.","D":"Correcta."}
+  },
+  {
+    "pregunta": "Se desea elaborar una página web con información sobre el proyecto, con idea de documentar a los usuarios del comportamiento del programa. Se le pide que la página cumpla con los estándares dictados en WCAG 2.2. ¿Cuál de estos NO es un criterio que recoge el documento?",
+    "opciones": [
+      "A. \"Título en las páginas\" (A): Las páginas web contienen un título que describe el asunto o propósito de la página.",
+      "B. \"Etiquetas o instrucciones\" (A): Las páginas web que requieran al usuario introducir datos deben proporcionar etiquetas o instrucciones para ello.",
+      "C. \"Identificación de errores\" (A): Si se detecta un error a la hora de introducir un dato, se debe identificar y el error debe ser descrito al usuario en formato texto.",
+      "D. \"Control de audio\" (A): Las páginas web no pueden contener elementos de audio que se ejecuten de forma autónoma sin consentimiento del usuario."
+    ],
+    "correcta": 3,
+    "explicacion": "WCAG permite audio pero exige control.",
+    "analisis_opciones": {"A":"Correcta.","B":"Correcta.","C":"Correcta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Para cumplir con lo enunciado en el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público, según el artículo 15 se debe proporcionar una declaración de accesibilidad detallada, exhaustiva y clara. ¿Cuál de los siguientes es un criterio que debe cumplir la misma, según el tenor literal del artículo?",
+    "opciones": [
+      "A. Contendrá una explicación sobre las partes del contenido que cumplan los requisitos de accesibilidad, junto a otras alternativas accesibles que se les ofrezcan.",
+      "B. Clara: El lenguaje empleado debe contener los menos tecnicismos posibles y, en el caso de que no se puedan evitar, se debe proporcionar al usuario una explicación alternativa con términos más simples.",
+      "C. Para atender a las personas con discapacidad auditiva y visual, se debe ofrecer enlaces a versiones en audio, lenguaje de signos y Braille. El acceso a dichas versiones no debe suponer una mayor dificultad de acceso que la versión estándar de la declaración de accesibilidad.",
+      "D. Debe estar disponible en todas las páginas del sitio web a través de un enlace llamado \"Accesibilidad\" o su equivalente en el idioma en el que esté la página."
+    ],
+    "correcta": 3,
+    "explicacion": "Debe estar accesible desde todas las páginas.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Incorrecta.","D":"Correcta."}
+  },
+  {
+    "pregunta": "En el proyecto del que forma parte se está usando git, y se desea confirmar los cambios realizados en los archivos en local para subirlos al servidor remoto. Considerando que el nombre del repositorio remoto es Controlador y la rama remota a la que se quiere subir los archivos es estable, el comando correcto sería:",
+    "opciones": [
+      "A. git push Controlador estable",
+      "B. git commit Controlador estable",
+      "C. git pull Controlador --branch estable",
+      "D. git upload Controlador estable"
+    ],
+    "correcta": 0,
+    "explicacion": "push sube cambios.",
+    "analisis_opciones": {"A":"Correcta.","B":"Incorrecta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Hay un segmento de código complicado que usted acaba de redactar en Java. ¿Cuál de las siguientes opciones permite poner un comentario en bloque?",
+    "opciones": [
+      "A. */ Comentario /*",
+      "B. ''' Comentario '''",
+      "C. /* Comentario */",
+      "D. # Comentario #"
+    ],
+    "correcta": 2,
+    "explicacion": "Formato /* */.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Correcta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Debido a un desafortunado malentendido, se ha realizado en la base de datos SQL el comando DROP TABLE proveedores; ¿Cómo podemos arreglar dicho incidente?",
+    "opciones": [
+      "A. TRUNCATE TABLE proveedores;",
+      "B. No existe comando en SQL que arregle esta situación, habría que usar una copia de seguridad.",
+      "C. ROLLBACK;",
+      "D. ROLLBACK TABLE proveedores;"
+    ],
+    "correcta": 1,
+    "explicacion": "Solo backup recupera.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Correcta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es la especificación, recomendada por el W3C, que detalla cómo describir de manera formal los elementos de un documento XML?",
+    "opciones": ["A. SOAP 2","B. XPath 2","C. XSD 1.1","D. DTD"],
+    "correcta": 2,
+    "explicacion": "XSD es estándar moderno.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Correcta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "En una página web de uso interno, deseamos ejecutar la función de JavaScript \"Ordenar\" si se hace doble clic sobre un botón determinado que tiene como texto \"Arreglar\". ¿Qué línea cumpliría con este propósito?",
+    "opciones": [
+      "A. <button ondclick=\"Ordenar()\" text=\"Arreglar\"></button>",
+      "B. <button ondblclick=\"Ordenar()\">Arreglar</button>",
+      "C. <button> <ondclick='Ordenar()'>Arreglar</button>",
+      "D. <button ondoubleclick='Ordenar()', \"Arreglar\"></button>"
+    ],
+    "correcta": 1,
+    "explicacion": "Evento ondblclick.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Correcta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Se desea que la imagen \"logotipo.jpg\" se cargue únicamente cuando el usuario haga scroll y vaya a estar próximo a aparecer la imagen en pantalla, para que la carga inicial de la página sea más rápida. ¿Cuál de las siguientes líneas de HTML cumplirían con este propósito?",
+    "opciones": [
+      "A. <img src=\"logotipo.jpg\" alt=\"Logotipo\" style=\"width:100%\">",
+      "B. <img src=\"logotipo.jpg\" alt=\"Logotipo\" style=\"width:100%\" loading=\"delayed\">",
+      "C. <img src=\"logotipo.jpg\" alt=\"Logotipo\" style=\"width:100%\" loading=\"onscreen\">",
+      "D. <img src=\"logotipo.jpg\" alt=\"Logotipo\" style=\"width:100%\" loading=\"lazy\">"
+    ],
+    "correcta": 3,
+    "explicacion": "loading lazy.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Incorrecta.","D":"Correcta."}
+  },
+  {
+    "pregunta": "La determinación de la letra del DNI se realiza dividiendo el DNI entre 23 y, dependiendo del resto de la operación, se le asigna una letra u otra. Considérese la variable DNI, en C++, ¿Qué línea de código de las siguientes permite asignar a la variable Resto el resto de la operación de dividir entre 23 el número del DNI?",
+    "opciones": [
+      "A. Resto = DNI//23;",
+      "B. Resto = DNI Mod 23;",
+      "C. Resto = DNI%23;",
+      "D. Resto = DNI[23];"
+    ],
+    "correcta": 2,
+    "explicacion": "Operador %.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Correcta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "El Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público, indica en su artículo 10 dos modalidades de comunicación en función de la naturaleza de la misma y los efectos y tratamiento que vayan a tener. ¿Cuáles son?",
+    "opciones": [
+      "A. \"Solicitudes sobre requisitos de accesibilidad\" y \"Comunicaciones de información no accesible\".",
+      "B. \"Comunicaciones sobre tecnologías asistivas\" y \"Solicitudes de información excluida\".",
+      "C. \"Comunicaciones sobre requisitos de accesibilidad\" y \"Solicitudes de información accesible y quejas\".",
+      "D. \"Comunicaciones de declaración de accesibilidad\" y \"Reclamaciones de información no accesible\"."
+    ],
+    "correcta": 2,
+    "explicacion": "Incluye comunicaciones y solicitudes.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Correcta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Entre los siguientes paquetes de Java, ¿Cuál de ellos contiene todas las clases para poder crear interfaces de usuarios, así como pintar gráficos e imágenes?",
+    "opciones": ["A. javax.gui","B. java.awt","C. java.applet","D. java.swing"],
+    "correcta": 1,
+    "explicacion": "AWT maneja gráficos.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Correcta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Necesita consultar la lista de estándares que están admitidos por la Administración General del Estado, para seleccionar aquellos que satisfagan las necesidades del proyecto. ¿Cuál de las siguientes es la \"Norma Técnica de Interoperabilidad del Catálogo de Estándares\"?",
+    "opciones": [
+      "A. Orden de 28 de junio de 2012, de la Secretaría de Estado para la Función Pública.",
+      "B. Decreto 311/2022, de 3 de mayo.",
+      "C. Instrucción de 22 de septiembre de 2012, de la Secretaría de Estado para la Administración Digital.",
+      "D. Resolución de 3 de octubre de 2012, de la Secretaría de Estado de Administraciones Públicas."
+    ],
+    "correcta": 3,
+    "explicacion": "Resolución 2012.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Incorrecta.","D":"Correcta."}
+  },
+  {
+    "pregunta": "Quiere implantar un patrón de diseño software que permita volver a estados anteriores del sistema para que se pueda restaurar dicho estado de manera sencilla. ¿Qué patrón de diseño habría que implementar?",
+    "opciones": ["A. Memento","B. State","C. Iterator","D. Proxy"],
+    "correcta": 0,
+    "explicacion": "Memento guarda estados.",
+    "analisis_opciones": {"A":"Correcta.","B":"Incorrecta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "A la hora de desarrollar una aplicación web, le sugieren usar el framework Spring. Dicho framework, ¿con cuál de los siguientes lenguajes de programación NO presenta compatibilidad nativa?",
+    "opciones": ["A. Java","B. PHP","C. Groovy","D. Kotlin"],
+    "correcta": 1,
+    "explicacion": "Spring es Java.",
+    "analisis_opciones": {"A":"Correcta.","B":"Incorrecta.","C":"Correcta.","D":"Correcta."}
+  },
+  {
+    "pregunta": "Se nos informa que, debido a que el procedimiento desde al que se puede acceder en la página web conlleva el pago de una tasa por parte de los usuarios, se la debe conectar a la pasarela de pagos de la Administración General del Estado. ¿Cuál es el nombre abreviado de dicha pasarela?",
+    "opciones": ["A. e_pago","B. Apoquina","C. PagAGE","D. Pagos"],
+    "correcta": 3,
+    "explicacion": "pagos",
+    "analisis_opciones": {"A":"Correcta.","B":"Incorrecta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Debido al auge de las herramientas de Inteligencia Artificial para asistencia de código, su superior le pide que, a su juicio, le exponga una herramienta para ayudarles a desarrollar código en Javascript. ¿Cuál de las siguientes aconsejaría?",
+    "opciones": ["A. Cloude AI","B. AlphaZero","C. Google DeepMind","D. Github Copilot"],
+    "correcta": 3,
+    "explicacion": "Copilot.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Incorrecta.","D":"Correcta."}
+  },
+  {
+    "pregunta": "En el lenguaje SQL, a la hora de contar filas que cumplan ciertas condiciones, se usa el comando “COUNT”. Al respecto del funcionamiento de dicho comando, ¿Tendría en cuenta los resultados considerados “nulos”?",
+    "opciones": ["A. Siempre los tiene en cuenta.","B. Nunca los tiene en cuenta.","C. No, salvo si se utiliza COUNT(*)","D. Sí, salvo si se utiliza COUNT(*)"],
+    "correcta": 2,
+    "explicacion": "COUNT(*) sí cuenta nulos.",
+    "analisis_opciones": {"A":"Incorrecta.","B":"Incorrecta.","C":"Correcta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Se ha producido un cambio sobre un componente de un sistema de información que ha introducido un comportamiento no deseado o errores adicionales en otros componentes no modificados. ¿Cómo se le conoce a este fenómeno?",
+    "opciones": ["A. Regresión descontrolada","B. Efecto onda","C. Error expandido","D. Fallo base"],
+    "correcta": 1,
+    "explicacion": "efecto onda.",
+    "analisis_opciones": {"A":"Correcta.","B":"Incorrecta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Se está contemplando la posibilidad de usar Python como lenguaje alternativo para la realización de partes del programa relacionadas con cálculos matemáticos, ¿Cuál de estos frameworks especializado en estas tareas usaría?",
+    "opciones": ["A. Numpy","B. Kivy","C. Pymaths","D. Numeral"],
+    "correcta": 0,
+    "explicacion": "NumPy.",
+    "analisis_opciones": {"A":"Correcta.","B":"Incorrecta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Una persona de su departamento escribe, en la ventana de login, como usuario y contraseña “” OR “”=“ ¿Qué está comprobando?",
+    "opciones": ["A. Si se puede realizar SQL Injection.","B. Si se puede realizar XML Injection.","C. Si se puede realizar XML Bomb.","D. Si se puede realizar SQL Bomb."],
+    "correcta": 0,
+    "explicacion": "SQL Injection.",
+    "analisis_opciones": {"A":"Correcta.","B":"Incorrecta.","C":"Incorrecta.","D":"Incorrecta."}
+  },
+  {
+    "pregunta": "Le solicitan la realización de un diagrama que describa el comportamiento dinámico del sistema de información. Debe mostrar la interacción entre los objetos, así como sus vínculos e intercambios de mensaje. Para mayor claridad de las relaciones, le sugieren que no muestre el orden en que suceden o pueden ocurrir los acontecimientos. ¿Cuál de los siguientes diagramas usaría?",
+    "opciones": ["A. Diagrama de colaboración","B. Diagrama de secuencia","C. Diagrama de estructura","D. Diagrama de interrelaciones"],
+    "correcta": 0,
+    "explicacion": "Colaboración no muestra orden temporal.",
+    "analisis_opciones": {"A":"Correcta.","B":"Incorrecta.","C":"Incorrecta.","D":"Incorrecta."}
+  }
+]

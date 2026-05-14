@@ -1876,5 +1876,890 @@
     "C": "Correcta. Definición clave.",
     "D": "Incorrecta. También usa JSON."
   }
-}
+},
+  {
+    "pregunta": "¿Cuál es el componente de Java encargado de traducir el bytecode a instrucciones específicas del procesador en tiempo de ejecución?",
+    "opciones": [
+      "A. El compilador javac",
+      "B. El Java Development Kit (JDK)",
+      "C. La Java Virtual Machine (JVM)",
+      "D. El archivo module-info.java"
+    ],
+    "correcta": 2,
+    "explicacion": "La JVM es el motor que interpreta o compila el bytecode (archivos .class) a lenguaje máquina nativo del sistema operativo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. javac crea el bytecode, no lo ejecuta.",
+      "B": "Incorrecta. El JDK es el kit de herramientas completo.",
+      "C": "Correcta. Es la función principal de la máquina virtual.",
+      "D": "Incorrecta. Es un archivo de configuración de módulos."
+    }
+  },
+  {
+    "pregunta": "¿Qué formato de archivo se utiliza para empaquetar una aplicación web completa, incluyendo Servlets, JSPs y archivos HTML?",
+    "opciones": [
+      "A. JAR (Java Archive)",
+      "B. WAR (Web Application Archive)",
+      "C. EAR (Enterprise Archive)",
+      "D. JNLP (Java Network Launch Protocol)"
+    ],
+    "correcta": 1,
+    "explicacion": "El formato WAR está diseñado específicamente para aplicaciones web que se despliegan en contenedores de servlets como Tomcat.",
+    "analisis_opciones": {
+      "A": "Incorrecta. El JAR es para librerías o aplicaciones de escritorio (Java SE).",
+      "B": "Correcta. Es el estándar para aplicaciones web Java EE.",
+      "C": "Incorrecta. El EAR agrupa múltiples módulos, incluyendo WARs y JARs.",
+      "D": "Incorrecta. JNLP es el protocolo usado por Java WebStart."
+    }
+  },
+  {
+    "pregunta": "En el contexto de JDBC, ¿cuál es la principal característica de un Driver de Tipo IV?",
+    "opciones": [
+      "A. Actúa como un puente hacia controladores ODBC de Microsoft.",
+      "B. Requiere la instalación de una API nativa del fabricante en el cliente.",
+      "C. Es un driver escrito 100% en Java que habla directamente el protocolo de la base de datos.",
+      "D. Utiliza un servidor intermedio (Middleware) para traducir las peticiones."
+    ],
+    "correcta": 2,
+    "explicacion": "El Driver Tipo IV (o Thin Driver) es el más eficiente porque no requiere software adicional y está escrito íntegramente en Java.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Ese es el Tipo I.",
+      "B": "Incorrecta. Ese es el Tipo II.",
+      "C": "Correcta. Es el estándar moderno por su portabilidad y rendimiento.",
+      "D": "Incorrecta. Ese es el Tipo III."
+    }
+  },
+  {
+    "pregunta": "¿Qué librería gráfica de Java introdujo el uso de CSS para el diseño de interfaces y el formato FXML para separar la vista del código?",
+    "opciones": [
+      "A. AWT",
+      "B. Swing",
+      "C. SWT",
+      "D. JavaFX"
+    ],
+    "correcta": 3,
+    "explicacion": "JavaFX es la evolución moderna que permite usar CSS y FXML, facilitando la separación de responsabilidades entre diseñadores y programadores.",
+    "analisis_opciones": {
+      "A": "Incorrecta. AWT usa componentes nativos pesados y es la más antigua.",
+      "B": "Incorrecta. Swing es multiplataforma pero no usa CSS nativamente.",
+      "C": "Incorrecta. SWT es la librería de IBM basada en componentes nativos.",
+      "D": "Correcta. Es la característica distintiva de JavaFX."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la librería java.lang es correcta?",
+    "opciones": [
+      "A. Debe ser importada explícitamente al inicio de cada archivo .java.",
+      "B. Contiene la clase ArrayList y otras estructuras de datos.",
+      "C. Se importa automáticamente por el compilador en todas las clases.",
+      "D. Se utiliza principalmente para el acceso a bases de datos SQL."
+    ],
+    "correcta": 2,
+    "explicacion": "java.lang contiene las clases fundamentales (como Object, String o System) y es el único paquete que no requiere la sentencia 'import'.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Su importación es automática.",
+      "B": "Incorrecta. ArrayList pertenece a java.util.",
+      "C": "Correcta. Es una regla básica del lenguaje Java.",
+      "D": "Incorrecta. Para bases de datos se usa java.sql."
+    }
+  },
+  {
+    "pregunta": "¿Qué diferencia técnica principal existe entre java.io y java.nio?",
+    "opciones": [
+      "A. java.io es más rápido para grandes volúmenes de datos.",
+      "B. java.io trabaja con flujos de datos (streams) y java.nio con bloques (buffers).",
+      "C. java.nio es el sistema más antiguo y está en desuso.",
+      "D. java.io es no bloqueante y java.nio es bloqueante."
+    ],
+    "correcta": 1,
+    "explicacion": "NIO (New IO) introdujo el uso de Buffers y Channels para mejorar el rendimiento, permitiendo además operaciones no bloqueantes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Generalmente NIO es más eficiente para grandes volúmenes.",
+      "B": "Correcta. Es la distinción arquitectónica fundamental entre ambos.",
+      "C": "Incorrecta. NIO apareció en Java 1.4 y sigue siendo el estándar de alto rendimiento.",
+      "D": "Incorrecta. Es justo al revés: NIO permite ser no bloqueante."
+    }
+  },
+  {
+    "pregunta": "¿Qué API de seguridad de Java se encarga específicamente de la autenticación y autorización de usuarios?",
+    "opciones": [
+      "A. JCE (Java Cryptography Extension)",
+      "B. JSSE (Java Secure Socket Extension)",
+      "C. JAAS (Java Authentication and Authorization Service)",
+      "D. JCA (Java Cryptography Architecture)"
+    ],
+    "correcta": 2,
+    "explicacion": "JAAS permite que las aplicaciones Java autentiquen a los usuarios y controlen sus permisos (qué pueden o no pueden hacer).",
+    "analisis_opciones": {
+      "A": "Incorrecta. JCE es para cifrado y encriptación.",
+      "B": "Incorrecta. JSSE es para comunicaciones seguras (SSL/TLS).",
+      "C": "Correcta. Es el servicio dedicado a la gestión de usuarios.",
+      "D": "Incorrecta. JCA es la arquitectura base para firmas y certificados."
+    }
+  },
+  {
+    "pregunta": "¿Qué hito importante introdujo la versión Java 21 (LTS)?",
+    "opciones": [
+      "A. Las expresiones Lambda y los Streams.",
+      "B. El sistema de módulos (Project Jigsaw).",
+      "C. Los Virtual Threads (hilos virtuales) de forma estándar.",
+      "D. La palabra clave 'var' para inferencia de tipos."
+    ],
+    "correcta": 2,
+    "explicacion": "Java 21 estabilizó los Virtual Threads, permitiendo una concurrencia masiva con un consumo mínimo de recursos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Las lambdas son de Java 8.",
+      "B": "Incorrecta. Los módulos son de Java 9.",
+      "C": "Correcta. Es el cambio más transformador de Java 21.",
+      "D": "Incorrecta. 'var' se introdujo en Java 10."
+    }
+  },
+  {
+    "pregunta": "¿Por qué el entorno de ejecución de Java (JRE) vuelve a verificar el código aunque ya haya sido revisado por el compilador?",
+    "opciones": [
+      "A. Para traducir el código a HTML automáticamente.",
+      "B. Porque el bytecode podría haber sido modificado tras la compilación para saltarse la seguridad.",
+      "C. Para comprobar que el programador ha puesto suficientes comentarios.",
+      "D. Es un proceso opcional que solo ocurre en sistemas Linux."
+    ],
+    "correcta": 1,
+    "explicacion": "Java no se fía solo del compilador; la JVM verifica el bytecode antes de ejecutarlo para asegurar que no contenga operaciones ilegales como uso de punteros o desbordamientos.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Java no traduce código a HTML de esta forma.",
+      "B": "Correcta. Es la base del modelo de seguridad 'paranoico' de Java.",
+      "C": "Incorrecta. La JVM ignora los comentarios.",
+      "D": "Incorrecta. Es un proceso fundamental y obligatorio en cualquier plataforma."
+    }
+  },
+  {
+    "pregunta": "¿Qué característica del diseño del lenguaje Java elimina el riesgo de acceso no autorizado a posiciones de memoria restringidas?",
+    "opciones": [
+      "A. El uso de la librería java.util.",
+      "B. La eliminación de operaciones con punteros.",
+      "C. El uso de archivos .WAR.",
+      "D. La interfaz JNDI."
+    ],
+    "correcta": 1,
+    "explicacion": "Al no permitir el manejo directo de punteros (como sí hace C++), Java evita que un programa pueda acceder o modificar zonas de memoria que no le corresponden.",
+    "analisis_opciones": {
+      "A": "Incorrecta. java.util es para colecciones y utilidades.",
+      "B": "Correcta. Es una de las decisiones de diseño clave para la seguridad.",
+      "C": "Incorrecta. .WAR es un formato de empaquetado web.",
+      "D": "Incorrecta. JNDI es para búsqueda de nombres y directorios."
+    }
+  },
+  {
+    "pregunta": "Sobre el paquete java.sql (JDBC), ¿cuál de las siguientes afirmaciones es cierta?",
+    "opciones": [
+      "A. Está formado casi exclusivamente por interfaces, no por clases.",
+      "B. Solo permite la conexión a bases de datos de Oracle.",
+      "C. Requiere que el programador escriba el código del driver a mano.",
+      "D. Elimina la necesidad de usar el lenguaje SQL."
+    ],
+    "correcta": 0,
+    "explicacion": "JDBC define qué métodos deben existir (interfaces) y los fabricantes de bases de datos implementan esos métodos en sus drivers.",
+    "analisis_opciones": {
+      "A": "Correcta. Esto permite que el código Java sea independiente del motor de base de datos.",
+      "B": "Incorrecta. JDBC es universal para cualquier BD con driver disponible.",
+      "C": "Incorrecta. El driver lo proporciona el fabricante (ej. MySQL o PostgreSQL).",
+      "D": "Incorrecta. JDBC sirve precisamente para enviar sentencias SQL a la base de datos."
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la principal desventaja del driver JDBC de Tipo I (Bridge JDBC-ODBC)?",
+    "opciones": [
+      "A. Es demasiado rápido y satura la red.",
+      "B. No permite el uso de sentencias SQL.",
+      "C. Su bajo rendimiento debido a las múltiples capas de software (JDBC -> Bridge -> ODBC).",
+      "D. Es el único que no funciona en Windows."
+    ],
+    "correcta": 2,
+    "explicacion": "Al tener que traducir las peticiones a través de tres niveles distintos de software, el rendimiento se resiente considerablemente.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Es precisamente el más lento de los cuatro tipos.",
+      "B": "Incorrecta. Sí usa SQL, pero lo traduce a ODBC.",
+      "C": "Correcta. Es su gran punto débil junto con la falta de portabilidad.",
+      "D": "Incorrecta. De hecho, se usaba principalmente en Windows."
+    }
+  },
+  {
+    "pregunta": "¿Qué API de seguridad se utiliza específicamente para cifrar y descifrar datos (encriptación)?",
+    "opciones": [
+      "A. JSSE",
+      "B. JCE (Java Cryptography Extension)",
+      "C. JNDI",
+      "D. JDBC"
+    ],
+    "correcta": 1,
+    "explicacion": "JCE proporciona el marco y las implementaciones para algoritmos de cifrado, gestión de claves y códigos de autenticación de mensajes.",
+    "analisis_opciones": {
+      "A": "Incorrecta. JSSE es para comunicaciones seguras en red (SSL/TLS).",
+      "B": "Correcta. Es la librería dedicada al cifrado de datos.",
+      "C": "Incorrecta. JNDI es para servicios de directorio.",
+      "D": "Incorrecta. JDBC es para bases de datos."
+    }
+  },
+  {
+    "pregunta": "Al utilizar JNI (Java Native Interface) para llamar a código en C++, ¿qué ventaja de Java se está sacrificando?",
+    "opciones": [
+      "A. La gestión de excepciones.",
+      "B. La posibilidad de usar bases de datos.",
+      "C. La portabilidad universal (independencia de la plataforma).",
+      "D. El uso de la librería java.lang."
+    ],
+    "correcta": 2,
+    "explicacion": "Al depender de librerías nativas (.dll o .so), el programa Java ya solo funcionará en el sistema operativo para el que se compiló ese código nativo.",
+    "analisis_opciones": {
+      "A": "Incorrecta. Java sigue gestionando sus propias excepciones.",
+      "B": "Incorrecta. JDBC sigue funcionando igual.",
+      "C": "Correcta. Es el precio a pagar por usar código específico de un procesador/SO.",
+      "D": "Incorrecta. java.lang es intrínseca al lenguaje y no se pierde."
+    }
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes tipos de Enterprise JavaBeans (EJB) tiene un funcionamiento asíncrono?",
+    "opciones": {
+      "A": "EJB de entidad con persistencia gestionada por el contenedor",
+      "B": "EJB de sesión sin estado (Stateless)",
+      "C": "EJB dirigido por mensajes (Message-driven)",
+      "D": "Todos los tipos de EJB"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Los Message-driven beans actúan como 'listeners' y procesan mensajes de forma asíncrona, permitiendo que el cliente no tenga que esperar a que termine la tarea."
+  },
+  {
+    "pregunta": "¿En qué paquete de Java se encuentran las clases necesarias para crear un Servlet que gestione peticiones web?",
+    "opciones": {
+      "A": "java.servlet",
+      "B": "javax.servlet.http",
+      "C": "java.web.servlet",
+      "D": "javax.ejb"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Los Servlets orientados a la web extienden de HttpServlet, que se encuentra en el paquete javax.servlet.http."
+  },
+  {
+    "pregunta": "Según la especificación Java EE, ¿cuál de estos NO se considera un 'Componente Web'?",
+    "opciones": {
+      "A": "Páginas JSP",
+      "B": "Servlets",
+      "C": "Applets",
+      "D": "JavaServer Faces (JSF)"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Aunque se ven en el navegador, los Applets se ejecutan en el cliente y no dentro del contenedor web del servidor, por lo que no son componentes web según Java EE."
+  },
+  {
+    "pregunta": "¿Qué sucede la primera vez que se solicita una página JSP al servidor?",
+    "opciones": {
+      "A": "Se descarga en el navegador del cliente para ejecutarse.",
+      "B": "El contenedor la traduce a un Servlet, la compila y la ejecuta.",
+      "C": "Se envía como texto plano HTML sin procesar.",
+      "D": "El navegador la compila usando el Java Plug-in."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "El JSP es en realidad un Servlet orientado a la presentación. El servidor lo preprocesa, lo convierte en .java y lo compila a .class la primera vez."
+  },
+  {
+    "pregunta": "¿Qué tipo de archivo se utiliza para empaquetar una aplicación Java EE completa, incluyendo componentes web y de negocio (EJB)?",
+    "opciones": {
+      "A": ".WAR (Web Archive)",
+      "B": ".JAR (Java Archive)",
+      "C": ".EAR (Enterprise Archive)",
+      "D": ".RAR (Resource Adapter)"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "El .EAR es el paquete de nivel superior que puede contener tanto módulos web (.WAR) como módulos de negocio (.JAR)."
+  },
+  {
+    "pregunta": "Si un EJB de sesión debe mantener los artículos de un carro de la compra durante toda la conversación con el cliente, ¿qué tipo elegirías?",
+    "opciones": {
+      "A": "Stateless Session Bean",
+      "B": "Stateful Session Bean",
+      "C": "Singleton Session Bean",
+      "D": "Message-driven Bean"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Los Stateful Session Beans mantienen el estado (la memoria) del cliente durante el tiempo que dura la sesión o conversación."
+  },
+  {
+    "pregunta": "¿Qué protocolo se utiliza para la comunicación cuando los componentes EJB están en máquinas distintas a los componentes que los invocan?",
+    "opciones": {
+      "A": "HTTP/HTTPS",
+      "B": "TCP/IP puro",
+      "C": "RMI/IIOP",
+      "D": "FTP"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Java EE utiliza RMI/IIOP para la invocación remota de métodos entre componentes distribuidos."
+  },
+  {
+    "pregunta": "¿Cuál es la principal diferencia entre un servidor web y un contenedor web?",
+    "opciones": {
+      "A": "El servidor web es para EJB y el contenedor para HTML.",
+      "B": "El servidor web sirve contenido estático y el contenedor ejecuta Servlets/JSPs.",
+      "C": "No hay diferencia, son el mismo software con distinto nombre.",
+      "D": "El contenedor web solo se ejecuta en el ordenador del cliente."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "El servidor web está optimizado para páginas estáticas (HTML), mientras que el contenedor web es el que 'cocina' el contenido dinámico ejecutando código Java."
+  },
+  {
+    "pregunta": "¿Cómo gestiona el contenedor web las peticiones de múltiples usuarios simultáneos?",
+    "opciones": {
+      "A": "Crea un proceso independiente por cada usuario.",
+      "B": "Ejecuta las peticiones una tras otra de forma secuencial.",
+      "C": "Crea y gestiona un nuevo hilo (thread) de ejecución por cada petición.",
+      "D": "Reinicia el servidor cada vez que entra un nuevo usuario."
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "El uso de hilos (threads) permite que el contenedor sea eficiente y pueda atender a muchos usuarios al mismo tiempo sin colapsar."
+  },
+  {
+    "pregunta": "¿Cuál es la implementación de referencia de un contenedor de Servlets?",
+    "opciones": {
+      "A": "JBoss",
+      "B": "Hibernate",
+      "C": "Apache Tomcat",
+      "D": "GlassFish"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Tomcat es la pieza estándar que muchos otros servidores de aplicaciones utilizan en su interior para gestionar la parte web."
+  },
+  {
+    "pregunta": "¿En qué tecnología se inspiró directamente la especificación JPA (Java Persistence API)?",
+    "opciones": {
+      "A": "Entity Beans de EJB 2.0",
+      "B": "Hibernate",
+      "C": "RMI/IIOP",
+      "D": "JavaScript"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Debido al fracaso de los Entity Beans originales por su complejidad, Java EE adoptó la sencillez del modelo de Hibernate para crear el estándar JPA."
+  },
+  {
+    "pregunta": "¿Qué ventaja ofrece la comunicación mediante la API JMS?",
+    "opciones": {
+      "A": "Es una comunicación fuertemente acoplada.",
+      "B": "Permite una comunicación débilmente acoplada y asíncrona.",
+      "C": "Obliga a que el receptor esté activo para que el emisor envíe el mensaje.",
+      "D": "Solo sirve para enviar correos electrónicos a personas."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "JMS permite que los componentes se envíen mensajes sin depender directamente el uno del otro (desacoplados) y sin tener que esperar respuesta (asíncronos)."
+  },
+  {
+    "pregunta": "¿Cuáles son los dos modelos de mensajería soportados por la API JMS?",
+    "opciones": {
+      "A": "Síncrono y Remoto",
+      "B": "TCP e IP",
+      "C": "Colas (point-to-point) y Suscripciones (publish-subscribe)",
+      "D": "Petición y Respuesta"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "El modelo de colas es para un solo receptor, mientras que el de suscripción permite que varios componentes reciban el mismo mensaje."
+  },
+  {
+    "pregunta": "¿De qué se encarga la API JTA (Java Transaction API)?",
+    "opciones": {
+      "A": "De enviar mensajes de WhatsApp entre servidores.",
+      "B": "De gestionar el inicio y fin de transacciones entre componentes y bases de datos.",
+      "C": "De convertir automáticamente el código Java en HTML.",
+      "D": "De acelerar la conexión a internet del usuario."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "JTA asegura que una operación compleja sea un 'todo o nada', garantizando que no se guarden datos a medias si algo falla."
+  },
+  {
+    "pregunta": "¿Qué objeto crea el contenedor web para pasarle la información del cliente al Servlet?",
+    "opciones": {
+      "A": "Un archivo .WAR",
+      "B": "Un objeto que implementa HttpServletRequest",
+      "C": "Un EJB de sesión",
+      "D": "Una base de datos relacional"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "El contenedor envuelve los datos que vienen del navegador en el objeto Request para que el Servlet pueda leerlos fácilmente."
+  },
+  {
+    "pregunta": "¿Cuál es la principal diferencia entre el modelo de parsing de SAX y StAX?",
+    "opciones": {
+      "A": "SAX es tipo pull y StAX es tipo push.",
+      "B": "SAX es tipo push (el parser manda) y StAX es tipo pull (el cliente manda).",
+      "C": "Ambos son de tipo push pero StAX es más lento.",
+      "D": "No existe diferencia en el modelo de control."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "En SAX el parser envía la información al cliente (push), mientras que en StAX el cliente controla el flujo pidiendo los datos (pull)."
+  },
+  {
+    "pregunta": "¿Qué ventaja ofrece la API StAX sobre la API SAX en cuanto a la manipulación de documentos?",
+    "opciones": {
+      "A": "StAX solo permite validar documentos.",
+      "B": "StAX es unidireccional, solo permite la lectura.",
+      "C": "StAX es bidireccional, permitiendo tanto la lectura como la escritura de XML.",
+      "D": "StAX carga todo el documento en memoria como DOM."
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "A diferencia de SAX, que solo lee, StAX permite tanto procesar como generar (escribir) documentos XML."
+  },
+  {
+    "pregunta": "¿Qué API de XML se describe en la especificación JSR-173 y utiliza cursores e iteradores?",
+    "opciones": {
+      "A": "JAXB",
+      "B": "JAXP",
+      "C": "StAX",
+      "D": "DOM"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "StAX es la API definida en JSR-173 que permite el procesamiento iterativo de XML mediante APIs de cursor o iterador."
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de JAXP?",
+    "opciones": {
+      "A": "Sustituir a los archivos XML por bases de datos.",
+      "B": "Proporcionar un nivel de conexión independiente de la implementación del procesador XML.",
+      "C": "Servir páginas HTML estáticas.",
+      "D": "Gestionar exclusivamente las transacciones JTA."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "JAXP facilita el acceso a XML permitiendo usar diferentes parsers (SAX, DOM) sin depender de una implementación concreta."
+  },
+  {
+    "pregunta": "¿Qué API de Java EE se encarga de asociar clases Java a representaciones XML (Binding)?",
+    "options": {
+      "A": "JAX-WS",
+      "B": "JAXB",
+      "C": "SAAJ",
+      "D": "JAF"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "JAXB (Java Architecture for XML Binding) es la API específica para convertir objetos Java en XML y viceversa."
+  },
+  {
+    "pregunta": "¿Qué ventaja principal ofrece JAAS en una aplicación Java EE?",
+    "options": {
+      "A": "Permite enviar correos electrónicos más rápido.",
+      "B": "Proporciona independencia entre el sistema de autenticación (password, tarjeta, etc.) y la aplicación.",
+      "C": "Sustituye a la arquitectura de conectores JCA.",
+      "D": "Solo sirve para aplicaciones que usan Kerberos."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "JAAS permite que la lógica de la aplicación no cambie aunque cambie el método de login (tarjeta criptográfica, password, etc.)."
+  },
+  {
+    "pregunta": "En la Arquitectura de Conectores, ¿qué elemento es equivalente a un 'driver JDBC'?",
+    "options": {
+      "A": "Un EJB de sesión",
+      "B": "Un Servlet",
+      "C": "Un Resource Adapter",
+      "D": "Un mensaje JMS"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "El Resource Adapter es el componente que permite al servidor Java EE interactuar con sistemas externos como ERPs o Mainframes."
+  },
+  {
+    "pregunta": "¿Qué API es utilizada intensivamente por JavaMail para gestionar diferentes tipos MIME?",
+    "options": {
+      "A": "JAXB",
+      "B": "JAF (JavaBeans Activation Framework)",
+      "C": "JACC",
+      "D": "SAAJ"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "JAF permite gestionar y reconocer diferentes formatos de datos (MIME), algo esencial para manejar archivos adjuntos en correos."
+  },
+  {
+    "pregunta": "¿Qué API se utiliza para manejar mensajes SOAP de bajo nivel con ficheros adjuntos?",
+    "options": {
+      "A": "SAAJ",
+      "B": "JAX-WS",
+      "C": "JDBC",
+      "D": "JTA"
+    },
+    "respuesta_correcta": "A",
+    "explicacion": "SAAJ es la API de bajo nivel para mensajes SOAP y SOAP con archivos adjuntos (MIME)."
+  },
+  {
+    "pregunta": "¿En qué formato de compresión están basados los archivos JAR, WAR y EAR?",
+    "opciones": {
+      "A": "RAR",
+      "B": "7Z",
+      "C": "ZIP",
+      "D": "TAR.GZ"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Todos los formatos de empaquetado de Java (JAR, WAR, EAR) utilizan el formato de compresión estándar ZIP."
+  },
+  {
+    "pregunta": "¿Qué archivo de configuración es imprescindible en un paquete .WAR para definir la correspondencia de los servlets?",
+    "opciones": {
+      "A": "config.xml",
+      "B": "web.xml",
+      "C": "servlet.json",
+      "D": "application.xml"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "El 'deployment descriptor' de una aplicación web se llama web.xml y contiene la configuración de servlets y recursos web."
+  },
+  {
+    "pregunta": "¿Qué tipo de archivo se utiliza para empaquetar específicamente componentes EJB?",
+    "opciones": {
+      "A": ".WAR",
+      "B": ".EXE",
+      "C": ".JAR",
+      "D": ".HTML"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Los componentes de negocio EJB se empaquetan en archivos Java Archive (.jar)."
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de un archivo .EAR (Enterprise Archive)?",
+    "opciones": {
+      "A": "Guardar solo las imágenes de la aplicación.",
+      "B": "Servir como navegador web para el cliente.",
+      "C": "Empaquetar una aplicación completa que puede incluir varios módulos WAR y JAR.",
+      "D": "Sustituir al sistema operativo del servidor."
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "El .ear es el nivel más alto de empaquetado; permite agrupar toda la aplicación corporativa (web y negocio) en un solo fichero."
+  },
+  {
+    "pregunta": "¿Qué puede contener un archivo .WAR según la especificación Java EE?",
+    "opciones": {
+      "A": "Solo código compilado de EJBs.",
+      "B": "Servlets, JSPs, ficheros HTML, librerías y el descriptor web.xml.",
+      "C": "Únicamente el motor de la base de datos.",
+      "D": "El Java Runtime Environment (JRE) completo."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "El .war contiene todos los recursos de la capa web necesarios para la ejecución de la aplicación en el contenedor web."
+  },
+  {
+    "pregunta": "¿Cuál es la principal limitación de Apache Tomcat frente a servidores como WildFly o GlassFish?",
+    "opciones": {
+      "A": "No puede ejecutar servlets.",
+      "B": "Es un contenedor web, no un servidor de aplicaciones Java EE completo.",
+      "C": "Solo funciona en sistemas Windows.",
+      "D": "No es de código abierto."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Tomcat está enfocado en tecnologías web (Servlets/JSPs) pero no implementa por defecto toda la pila de Java EE como los EJBs."
+  },
+  {
+    "pregunta": "¿Qué servidor de aplicaciones es un 'fork' de GlassFish enfocado al soporte empresarial y la nube?",
+    "opciones": {
+      "A": "WildFly",
+      "B": "WebLogic",
+      "C": "Payara",
+      "D": "Geronimo"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Payara nació como un derivado de GlassFish para mejorar su rendimiento y ofrecer soporte comercial."
+  },
+  {
+    "pregunta": "¿Cuál era el nombre anterior del servidor de aplicaciones WildFly?",
+    "opciones": {
+      "A": "Geronimo",
+      "B": "JBoss",
+      "C": "TomEE",
+      "D": "WebSphere"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "WildFly es el sucesor y nuevo nombre del popular servidor JBoss, desarrollado por Red Hat."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes se considera un servidor de aplicaciones comercial (no gratuito)?",
+    "opciones": {
+      "A": "GlassFish",
+      "B": "WebLogic (Oracle)",
+      "C": "WildFly",
+      "D": "Apache Geronimo"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "WebLogic y WebSphere son soluciones comerciales orientadas a entornos empresariales que requieren alta robustez."
+  },
+  {
+    "pregunta": "¿En qué factores enfocan sus elementos diferenciadores los servidores de aplicaciones compatibles?",
+    "opciones": {
+      "A": "Solo en el color de la interfaz.",
+      "B": "En cambiar las reglas de la especificación Java EE.",
+      "C": "En rendimiento, precio, fiabilidad, escalabilidad y herramientas de gestión.",
+      "D": "En obligar al uso de PHP en lugar de Java."
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Como la funcionalidad básica es igual para todos por norma, compiten en ser más rápidos, más baratos o más fáciles de configurar."
+  },
+  {
+    "pregunta": "¿Quién es el autor del libro que dio origen al framework Spring en 2002?",
+    "opciones": {
+      "A": "James Gosling",
+      "B": "Rod Johnson",
+      "C": "Gavin King",
+      "D": "Gavin Schmidt"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Rod Johnson escribió 'Expert One-on-One Java EE Design and Development', donde presentó las ideas que se convertirían en Spring."
+  },
+  {
+    "pregunta": "¿Qué técnica de Spring permite reducir las dependencias entre componentes inyectando las implementaciones necesarias?",
+    "opciones": {
+      "A": "Programación Orientada a Objetos",
+      "B": "Inyección de Dependencias (DI)",
+      "C": "Persistencia de Datos",
+      "D": "Encapsulamiento de Servlets"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "La Inyección de Dependencias es una forma de Inversión de Control que permite que Spring gestione la creación y entrega de objetos a los componentes."
+  },
+  {
+    "pregunta": "¿Qué módulo de Spring permite gestionar aspectos transversales como el 'logging' o la seguridad de forma modular?",
+    "opciones": {
+      "A": "Spring MVC",
+      "B": "Spring Core",
+      "C": "Spring AOP",
+      "D": "Spring DAO"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Spring AOP (Aspect-Oriented Programming) se encarga de los servicios transversales que afectan a múltiples módulos de la aplicación."
+  },
+  {
+    "pregunta": "¿Qué extensión de Spring se utiliza para definir flujos de interfaz de usuario complejos (diálogos guiados)?",
+    "opciones": {
+      "A": "Spring Security",
+      "B": "Spring WebFlow",
+      "C": "Spring Hibernate",
+      "D": "Spring Boot"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Spring WebFlow (SWF) permite definir y representar flujos de usuario de una forma clara y con un mayor nivel de abstracción que Spring MVC."
+  },
+  {
+    "pregunta": "Verdadero o Falso: Spring solo puede utilizarse para desarrollar aplicaciones web.",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Spring es un framework de propósito general que puede emplearse tanto en aplicaciones web como en aplicaciones de entorno cliente."
+  },
+  {
+    "pregunta": "¿Qué porcentaje de las tareas de programación de persistencia de datos se estima que Hibernate libera al desarrollador?",
+    "opciones": {
+      "A": "50%",
+      "B": "75%",
+      "C": "95%",
+      "D": "100%"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Hibernate automatiza casi la totalidad de la persistencia, encargándose de generar el SQL y de convertir los resultados en objetos Java."
+  },
+  {
+    "pregunta": "¿Cómo se denominan los objetos Java planos y sencillos que Hibernate permite persistir de forma transparente?",
+    "opciones": {
+      "A": "Beans EJB",
+      "B": "POJOs (Plain Old Java Objects)",
+      "C": "Servlets",
+      "D": "JSPs"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Hibernate destaca por permitir trabajar con objetos Java normales (POJOs) sin obligar a implementar interfaces propietarios."
+  },
+  {
+    "pregunta": "¿Qué librería de generación de código utiliza Hibernate en sus versiones más recientes para la reflexión y persistencia?",
+    "opciones": {
+      "A": "CGLIB",
+      "B": "Javassist",
+      "C": "JDBC Driver",
+      "D": "Struts Tiles"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Aunque inicialmente usaba CGLIB, Hibernate cambió a Javassist para la generación dinámica de código en tiempo de ejecución."
+  },
+  {
+    "pregunta": "¿Quién lideró el grupo de desarrolladores que creó originalmente Hibernate?",
+    "opciones": {
+      "A": "James Gosling",
+      "B": "Rod Johnson",
+      "C": "Gavin King",
+      "D": "Red Hat"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Gavin King fue el creador y líder original del proyecto Hibernate antes de ser contratado por JBoss."
+  },
+  {
+    "pregunta": "¿A partir de qué versión de Hibernate se introdujo el uso opcional de Anotaciones para definir el mapeo?",
+    "opciones": {
+      "A": "Versión 1.x",
+      "B": "Versión 2.x",
+      "C": "Versión 3.x",
+      "D": "Versión 4.x"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "La rama 3.x de Hibernate incorporó las anotaciones como alternativa a los archivos de configuración XML."
+  },
+  {
+    "pregunta": "¿Cuál es la implementación de referencia (RI) de la especificación JavaServer Faces?",
+    "opciones": {
+      "A": "Apache MyFaces",
+      "B": "Oracle Mojarra",
+      "C": "Hibernate",
+      "D": "Spring MVC"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Aunque existen varias implementaciones como MyFaces, Mojarra es la implementación de referencia oficial de Oracle para JSF."
+  },
+  {
+    "pregunta": "¿Qué sistema de plantillas utiliza por defecto JSF 2 en contraste con la versión 1.x?",
+    "opciones": {
+      "A": "JSP",
+      "B": "Facelets",
+      "C": "OGNL",
+      "D": "Velocity"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "JSF 2 cambió las antiguas JSPs por Facelets como motor de plantillas estándar para la interfaz de usuario."
+  },
+  {
+    "pregunta": "En Apache Tapestry, ¿qué atributo HTML se utiliza para indicar que una etiqueta representa a un componente Java?",
+    "opciones": {
+      "A": "id-java",
+      "B": "tapestry-id",
+      "C": "jwcid",
+      "D": "component-id"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "El atributo 'jwcid' (Java Web Component Id) es la clave que vincula la etiqueta HTML con el componente Tapestry."
+  },
+  {
+    "pregunta": "¿Cuál fue una de las mejoras más significativas introducidas en Tapestry 5 respecto a la versión 4?",
+    "opciones": {
+      "A": "Obligatoriedad de usar archivos XML pesados.",
+      "B": "Los cambios en las clases se recogen inmediatamente sin necesidad de reiniciar el servidor.",
+      "C": "Eliminación del soporte para POJOs.",
+      "D": "Vuelta al uso exclusivo de JSPs."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Tapestry 5 introdujo el live reloading y el uso de anotaciones en POJOs, eliminando la necesidad de reiniciar tras cada cambio."
+  },
+  {
+    "pregunta": "¿Qué framework está específicamente optimizado para entornos de Kubernetes y GraalVM con bajo consumo de memoria?",
+    "opciones": {
+      "A": "Struts",
+      "B": "Quarkus",
+      "C": "GlassFish",
+      "D": "Tapestry"
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Quarkus es conocido como 'Supersonic Subatomic Java' por su optimización para contenedores y la nube."
+  },
+  {
+    "pregunta": "¿Cuál es la principal ventaja de contar con un conjunto de APIs estandarizadas en Jakarta EE?",
+    "opciones": {
+      "A": "Que el código solo funcione en servidores de Oracle.",
+      "B": "Garantizar la portabilidad entre diferentes servidores y proveedores.",
+      "C": "Aumentar la complejidad del aprendizaje para los desarrolladores.",
+      "D": "Obligar al uso de hardware específico para cada aplicación."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "La estandarización permite que el código sea independiente del proveedor (vendor-neutral), facilitando el cambio de un servidor a otro sin rediseñar la app."
+  },
+  {
+    "pregunta": "¿Cómo se denomina ahora la especificación encargada de la persistencia de datos en el ecosistema Jakarta?",
+    "opciones": {
+      "A": "Jakarta JDBC",
+      "B": "Jakarta Data Storage",
+      "C": "Jakarta Persistence",
+      "D": "Jakarta SQL Manager"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Lo que antes se conocía como JPA (Java Persistence API) ha pasado a denominarse Jakarta Persistence bajo el nuevo estándar."
+  },
+  {
+    "pregunta": "¿Qué ocurre si un equipo decide cambiar su servidor de WildFly a Payara utilizando Jakarta EE?",
+    "opciones": {
+      "A": "Deben reescribir todo el código desde cero.",
+      "B": "La aplicación no funcionará porque las APIs son diferentes.",
+      "C": "Pueden cambiar de implementación sin necesidad de modificar significativamente el código.",
+      "D": "El lenguaje Java deja de ser compatible."
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Gracias a que ambos servidores cumplen las mismas especificaciones estándar, el código de la aplicación es portable y compatible."
+  },
+  {
+    "pregunta": "¿Qué API de Jakarta EE se encarga específicamente de la creación de servicios web RESTful?",
+    "opciones": {
+      "A": "Jakarta Messaging",
+      "B": "Jakarta Servlet",
+      "C": "Jakarta RESTful Web Services",
+      "D": "Jakarta Enterprise Beans"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "Jakarta RESTful Web Services (anteriormente JAX-RS) es la especificación estándar para desarrollar servicios web basados en arquitectura REST."
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo principal del enfoque cloud-native en Jakarta EE?",
+    "opciones": {
+      "A": "Hacer que las aplicaciones pesen más.",
+      "B": "Facilitar el despliegue eficiente en contenedores y orquestadores como Kubernetes.",
+      "C": "Sustituir la seguridad por velocidad.",
+      "D": "Evitar que la aplicación se conecte a internet."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Jakarta EE incluye especificaciones para que las apps funcionen perfectamente en entornos de nube moderna, usando contenedores y gestión automatizada."
+  },
+  {
+    "pregunta": "¿Qué patrones modernos de seguridad soporta de forma nativa la especificación Jakarta Security?",
+    "opciones": {
+      "A": "Solo contraseñas de texto plano.",
+      "B": "JWT (JSON Web Tokens) y OAuth 2.0.",
+      "C": "Únicamente tarjetas perforadas.",
+      "D": "No soporta estándares modernos."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Jakarta Security se integra con los estándares actuales de la industria para garantizar una autenticación y autorización segura en la web."
+  },
+  {
+    "pregunta": "¿Cómo se denomina el modelo de gestión de transacciones en Jakarta EE que simplifica el desarrollo?",
+    "opciones": {
+      "A": "Modelo manual",
+      "B": "Modelo opcional",
+      "C": "Modelo declarativo",
+      "D": "Modelo de riesgo"
+    },
+    "respuesta_correcta": "C",
+    "explicacion": "El modelo declarativo permite al desarrollador definir transacciones de forma sencilla, asegurando la integridad de los datos sin programar la lógica compleja a mano."
+  },
+  {
+    "pregunta": "¿Qué cambio técnico representa la transición de Java EE a Jakarta EE para los desarrolladores?",
+    "opciones": {
+      "A": "El cambio de lenguaje de Java a C++.",
+      "B": "La migración del namespace de javax a jakarta.",
+      "C": "La eliminación total de los Servlets.",
+      "D": "Que ya no se pueden usar bases de datos SQL."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Es el cambio más disruptivo: el nombre de los paquetes de las APIs pasó de empezar por 'javax' a empezar por 'jakarta'."
+  },
+  {
+    "pregunta": "¿Qué valores enfatiza el 'Eclipse Development Process' en la gobernanza de Jakarta EE?",
+    "opciones": {
+      "A": "Secretismo y control centralizado.",
+      "B": "Transparencia, colaboración comunitaria y meritocracia.",
+      "C": "Decisiones tomadas únicamente por Oracle.",
+      "D": "Velocidad sobre calidad de código."
+    },
+    "respuesta_correcta": "B",
+    "explicacion": "Al pasar a la Eclipse Foundation, el desarrollo se volvió abierto y democrático, permitiendo que toda la comunidad participe."
+  }
 ]
+
+
+
+
+
+
+
+
+
+
+
